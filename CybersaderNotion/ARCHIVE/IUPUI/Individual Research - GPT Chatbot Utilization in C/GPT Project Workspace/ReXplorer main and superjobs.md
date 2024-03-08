@@ -1,0 +1,13 @@
+# ReXplorer main and superjobs
+
+Okay, I want to make a class in my "[main.py](http://main.py/)" file for "ReXplorer" (my recursive topic exploring and web crawling system for training GPT. This class would now (like the data_acquisition.py implementation use a folder (in this case "superjobs") to store underlying jobs (for data acquisition) which was solved with the web crawler and stuff. A superjob starts by importing a "crawl_query.json". A superjob_id is generated, and then the data is added to crawling_queries.json file with the superjob_id as a key with child keys for a URLs list, a prompt string, a topics dict, or a keywords list. A folder is then created for each new superjob which stores a copied version of the "crawl_query.json" and also stores the underlying generated "jobs" folder for use with the "DataAcuisition" object. This means that each time a new DataAcquisition object is created for a superjob that the output_dir path will have to be changed based on the superjob_id since the folder will be named something like superjob__<superjob_id>. The superjob__<superjob_id> folder will also store tracking csv files or other json files to track the recursive progress of the underlying jobs and the "depth" at which they operate.
+
+---
+
+Okay here's the thing. In "crawl_query" I want to add another key called "config." Config will store two child keys: "max_depth" and "URL limit." I want these variables to be the main conditions for the recursive main loop stopping. If the URL limit or max_depth are reached, then stopped. Initially, 0 URLs will have been parsed, and the depth will be 0. 2 variables will then be tracked. I want intial and run_data_acquisition to use the depth and the job_number for that super_job as a part of the "job_name". For example, the initial_data_acquisition run would mean that the job_name would have to be "0__0__<superjob_id>" . The first 0 is the current depth and since there is only one job since multiple URL lists haven't been created via the topic expansion function, then the second number is also zero. "2__1__<superjob_id>" would mean a depth of 2 with the second list of URLs being processed.
+
+---
+
+Implement a trie-based data structure file that holds the URLs that have been processed. Store this in superjob_dir. Before incrementing the URLs processed put the URLs into the trie-based file. Before going into the job for loop, run a new function that checks if the current list of URLs is new and gets rid of ones that already exist in the trie. Then, before doing the job for loop check if the URLs list of lists is empty, then for each list (inside the for loop) make sure to check if the URLs is empty and exit loops if they are or continue through to the next list
+
+---

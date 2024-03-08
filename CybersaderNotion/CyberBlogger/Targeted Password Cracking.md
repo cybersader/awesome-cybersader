@@ -1,0 +1,46 @@
+# Targeted Password Cracking
+
+# Quantum Cryptography and Encryption
+
+- Qubits have an arbitrary combination of the numbers
+    - We can calculate all of the calculations at the same time and we are left with a superposition of the different answers
+    - With 300 cubits, we can represent more states then particles in the observable universe
+- The caveat
+    - answers are embedded in a superposition of states
+- How quantum computers get their “value”
+    - making a measurement gives you a value from the superposition of states at random
+    - We need a smart way to convert the superposition of states into only the values we want
+- What problems can quantum computers be used for?
+    - quantum fourier transform
+        - fourier transforms can find frequencies from a periodic signal
+        - we have a superposition of states that is periodic ( terms are separated by some regular amount )
+        - allows us to get frequency information from a periodic of superpositions
+- Problem example
+    - N = p*q
+        - p and q are primes
+        - N = 77
+        - pick a random number g that doesn’t share factors with N
+            - if you multiply it by itself over and over, then you will find a multiple of N + 1
+                - g^r = mN+1
+            - g=8 …. g^x/77 …. at some point you’ll find 77 R 1
+            - 8^10 found with R 1
+            - we can fix around the 8^10=mN+1 equation to find two integers that multiple to make N, then we can use Euclid algorithm to find the numbers
+- Where does quantum cryptography help though? — finding r for g^r
+    - remainders cycle as you go up through trying to find ‘r’
+    - How it works:
+        - 2 sets of qubits -
+        - 1st set - you could have thousands of qubits to have a superposition of 10^n with about 4100 qubits for something like 10^1234
+        - 2nd set - 2050 qubits in 0 state for now
+        - guess g and raise it to the power of the first set of qubits and divide by N
+        - store the remainder in the 2nd set of qubits
+        - the qubit sets are entangled
+        - we can’t measure the superposition or we get a random value
+        - we can measure the remainder part which has a cycle
+        - multiple exponents with the same remainders for g^n
+- Public Key Encryption can be broken (doesn’t apply to other algorithms though)
+- Quantum cryptography mitigations
+    - NIST had competition for new algorithms
+    - 82 proposals - some broken
+    - post-quantum algorithms:
+        - 3 are based on lattices -
+            - keys are comprised of vectors

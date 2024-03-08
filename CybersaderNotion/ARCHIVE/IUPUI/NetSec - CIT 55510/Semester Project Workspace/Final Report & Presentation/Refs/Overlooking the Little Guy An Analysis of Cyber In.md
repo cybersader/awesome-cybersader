@@ -1,0 +1,5 @@
+# Overlooking the Little Guy: An Analysis of Cyber Incidents and Individual Harms
+
+Tags: Attacks, Cybercrime, Home Networks, Threat Model, statistics
+Data: Through the analysis, we show that not only do harms exist for individuals as a result of cyber incidents, but that the extent of this harm is sizeable and can be greater than the harm to the entity for specific types of cyber incidents. Our results demonstrate that harms to individuals make up 42% of total losses experienced due to cyber attacks on US municipalities, or an additional 72% of harms currently captured. From a policy perspective, a discussion follows providing recommendations for avenues for remedy and redress for individuals who have experienced harm from cyber attacks.
+Section: Background, Introduction, RECENT HOME NET THREATS

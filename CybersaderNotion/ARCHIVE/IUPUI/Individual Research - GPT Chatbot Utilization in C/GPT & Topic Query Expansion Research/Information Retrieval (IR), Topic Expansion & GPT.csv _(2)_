@@ -1,0 +1,86 @@
+﻿Name/Link,Tags,the gist,Terms,Year
+https://www.sciencedirect.com/science/article/pii/S2667096821000367,"Information Retrieval, Query Expansion, Topic Modeling","Use topic modeling to predict latent semantic attribute-topics to use for expansion. ","- LOD (linked open data) (DBpedia)
+- (LDA) Latent Dirichlet Allocation 
+- Bose-Einstien Statistics (Bo1)",2021
+https://arxiv.org/abs/2009.07258,"Information Retrieval, Query Expansion",Novel query expansion using BERT-QE to select relevant information for query expansion.,"- BERT
+- BERT-QE",2020
+https://www.sciencedirect.com/science/article/abs/pii/S0306457318305466,"Information Retrieval, Query Expansion","Surveys QE techniques in IR from 1960 to 2017 with respect to core techniques, data sources used, weighting and ranking methodologies, user participation and applications – bringing out similarities and differences.","- Relevance feedback
+- Interactive Query Filtration
+- Corpus Dependent Knowledge Models
+- Corpus Independent Knowledge Models
+- Result clustering
+- Word Sense Disambiguation
+- Computational Costs of QE
+- ",2019
+https://www.sciencedirect.com/science/article/abs/pii/S0020025519303263,"Information Retrieval, Knowledge Model, Ontology-Based, Query Expansion","A method using Wikipedia-WordNet based QE technique (WWQE) that fetches initial query teams, extracts synsets of these synsets (terms). To score the expansion terms on Wikipedia, they proposed a weighting score (in-link) score. ","- Weighting Schemes
+- TF-IDF Scheme used with WordNet
+- Ontology/ Knowledge Model use for expansion
+- LOD cloud
+- Thesaurus-based QE
+- Wikipedia-WordNet based QE technique (WWQE)",2019
+https://www.sciencedirect.com/science/article/abs/pii/S030645731830339X,"Information Retrieval, Knowledge Model, Ontology-Based, Query Expansion",,"- word polysemy problem
+- knowledge-based, corpus-based approach, + relevance feedback",2019
+https://iopscience.iop.org/article/10.1088/1742-6596/1367/1/012001/meta,"Information Retrieval, Query Expansion",,"-Ontology-
+ Association Rules
+- Wordnet
+- Methathesaurus
+- Synonym mapping
+- Concept-based
+- Local Co-occurrence
+- Latent Semantic Indexing (LSI)",2019
+https://jurnalnasional.ump.ac.id/index.php/JUITA/article/view/9657,,,"query expansion
+- association rules
+- ontology
+- recall
+- precision
+- f-measure",2021
+https://ieeexplore.ieee.org/abstract/document/8625452,,,,2012
+https://www.sciencedirect.com/science/article/pii/S2667096821000021,,"To overcome the weaknesses of current web system and to utilize the strengths query expansion a novel framework based on fuzzy ontology is proposed for information retrieval. In the proposed framework, domain specific knowledge is utilized for ontology construction. In framework pre-defined domain ontologies and Global ontology, ConceptNet is used to construct a fuzzy ontology. Based on constructed fuzzy ontology most semantically related words for a query are identified and query is expanded. A fuzzy membership function is defined for different semantic relationships present among the Global ontology ConceptNet.
+Based on the proposed framework queries are expanded (Semantic query expansion) and evaluated on four popular search engines namely Google, Yahoo, Bing and Exalead. The performance metrics used are Precision, Mean Average Precision (MAP), Mean Reciprocal Rank (MRR), R-precision and Number of documents retrieved. The Web search engines are precision oriented. Based on the proposed framework all the metrics are improved approx. by 10%. Precision before the query expansion lies between 0.75-0.81 whereas after the query expansion lies between 0.85-0.89 on various search engines. The number of documents retrieved is almost improved 1/1000 after the query expansion.","- Semantic Web
+-Information retrieval
+-Fuzzy-ontology
+-Query-expansion
+-Search engines
+-Information systems development",2021
+https://dl.acm.org/doi/abs/10.1145/3486622.3493957,"GPT, Information Retrieval, Query Expansion","Expanding users’ query is a well-known way to improve the performance of document retrieval systems. Several approaches have been proposed in the literature, and some of them are considered as yielding state-of-the-art results in Information Retrieval. In this paper, we explore the use of text generation to automatically expand the queries. We rely on a well-known neural generative model, OpenAI’s GPT-2, that comes with pre-trained models for English but can also be fine-tuned on specific corpora. Through different experiments and several datasets, we show that text generation is a very effective way to improve the performance of an IR system, with a large margin (+10 %MAP gains), and that it outperforms strong baselines also relying on query expansion (RM3). This conceptually simple approach can easily be implemented on any IR system thanks to the availability of GPT code and models.","- GPT-2
+- large margin (+10 %MAP gains)
+- outperforms strong baselines also relying on query expansion (RM3)
+- GPT models are easily available",2021
+https://arxiv.org/abs/2012.08787,"GPT, Information Retrieval, Query Expansion","A well-known way to improve the performance of document retrieval is to expand the user's query. Several approaches have been proposed in the literature, and some of them are considered as yielding state-of-the-art results in IR. In this paper, we explore the use of text generation to automatically expand the queries. We rely on a well-known neural generative model, GPT-2, that comes with pre-trained models for English but can also be fine-tuned on specific corpora. Through different experiments, we show that text generation is a very effective way to improve the performance of an IR system, with a large margin (+10% MAP gains), and that it outperforms strong baselines also relying on query expansion (LM+RM3). This conceptually simple approach can easily be implemented on any IR system thanks to the availability of GPT code and models.",,2020
+https://arxiv.org/abs/2110.04888,"GPT, Knowledge Base Curation, Knowledge Model, Ontology-Based","Pre-trained language models (LMs) have recently gained attention for their potential as an alternative to (or proxy for) explicit knowledge bases (KBs). In this position paper, we examine this hypothesis, identify strengths and limitations of both LMs and KBs, and discuss the complementary nature of the two paradigms. In particular, we offer qualitative arguments that latent LMs are not suitable as a substitute for explicit KBs, but could play a major role for augmenting and curating KBs.","- KB (knowledge bases)
+- LM (language models)
+- LMs are good proxies for KB curation and creation…also taxonimization",2021
+https://arxiv.org/abs/2301.04408,"AI Deficiencies, GPT","GPT models still can’t outperform humans as “knowledge workers.” They have a long way to go, but they can still be very helpful with certain parts of information retrieval and knowledge curation. Especially, when it comes to memory and recall.","- GPT-3
+- REG exam
+- AICPA ( American Institute of Certified Public Accountants)
+- text-davinci-003
+",2023
+https://arxiv.org/abs/2207.02516,"GPT, Information Retrieval",Use GPT-3 to search for products. A process is shown for bridging GPT and a specific set of products for information retrival.,"- GPT-3
+- KB",2022
+https://arxiv.org/abs/2112.09332,"Bulk Training, GPT, Targeted Domain, Training GPT",They make a system that allows GPT to dynamically search the web to help it learn and answer questions.,"- GPT-3
+- ELI5
+- behavior cloning
+- rejection sampling
+- imitation learning",2021
+https://arxiv.org/abs/2212.09656,"Bulk Training, GPT, GPT for Chat, Targeted Domain, Training GPT","A QA system involving GPT-3 and Neural Reranking. Uses 3 steps: decompose the question, retrieve candidate passages with search engine, use LLM in few-shot setting to aggregate contents from passages. ","- Few-Shot LLM
+- LLM (large language model)
+- Visconde
+- datasets — IIRC, Qasper, StrategyQA",2022
+https://dl.acm.org/doi/full/10.1145/3534965,"GPT for Chat, Information Retrieval, Query Expansion",An overview of techniques for approaching ambiguous prompts is CSS (conversational search systems) like ChatGPT.,"- CSS (conversational search system)
+- GPT
+ - ambiguous query clarification",2022
+https://ieeexplore.ieee.org/abstract/document/9999111,"Bulk Training, GPT for Chat, Information Retrieval, Targeted Domain, Training GPT","During things like Zoom there is differing amounts of understandings with participants during the discussion. Consensus building is limited as a whole during discussion. An agent was developed to recommend information related to discussion as it happens. The agent somehow obtains discussion text during discussion, then information is recommended via a real-time search. Query words for the search are generated with a pre-trained query-term-generation model. A separate model is used to classify the data obtained during search. ",- query-term-generation model,2022
+https://arxiv.org/abs/2301.05198,"Bulk Training, GPT for Chat, Information Retrieval, Query Expansion, Targeted Domain, Training GPT","GPT-3 is used to generate potential keywords for identifying relevant text content from a target population. Keywords are validated, then downloaded and analyzed with GPT-3 embeddings and manifold reduction. Corpora is created to fine-tune GPT-2 models to explore latent information via prompt-based queries. ","- Python app
+- LLM
+- GPT-3",2023
+https://aclanthology.org/2020.findings-emnlp.354/,"Bulk Training, GPT for Chat, Information Retrieval, Query Expansion, Targeted Domain, Training GPT",This focuses on passage retrieval via a conversation search system,"- CTS (Conversation Term Selection)
+- MVR (multi-view reranking)
+- BERT for reranking
+- passage ranking
+",2020
+https://arxiv.org/abs/2103.13033,"GPT, GPT for Chat",They get GPT models to “think aloud” which generally improves deductive reasoning and natural language inference tasks,- fewshot learning,
+https://www.mdpi.com/2076-3417/10/11/3837,"Bulk Training, Information Retrieval, Knowledge Model, Ontology-Based, Query Expansion, Web Crawling",Use an ontology to help a web crawler,,
+https://link.springer.com/chapter/10.1007/978-3-030-77246-8_35,"Bulk Training, Knowledge Model, Web Crawling",,,
+https://www.researchgate.net/profile/Mohammed-Ibrahim-16/publication/331412964_An_Ontology-based_Web_Crawling_Approach_for_the_Retrieval_of_Materials_in_the_Educational_Domain/links/5f6b04b3299bf1b53ee9e2e5/An-Ontology-based-Web-Crawling-Approach-for-the-Retrieval-of-Materials-in-the-Educational-Domain.pdf,"Bulk Training, Ontology-Based, Web Crawling",,,
+https://www.mdpi.com/2414-4088/3/3/62#,Web Crawling,,,
+,,,,

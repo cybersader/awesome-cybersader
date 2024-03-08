@@ -1,0 +1,5 @@
+# Firmaster: Analysis Tool for Home Router Firmware | IEEE Conference Publication | IEEE Xplore
+
+Tags: Home Networks, Recommendation, Solution, routers
+Data: The common vulnerabilities in routers can be easily exploited by an attacker in order to obtain user's sensitive information or even compromise the devices to be a part of the botnet network. Therefore, we developed one-stop service firmware analysis tool that can perform both static and dynamic analysis for the router firmware called “Firmaster”. The program is operated under graphical user interface (GUI) of Qt creator running on the Ubuntu Linux machine. Vulnerabilities of firmware analyzed by Firmaster program are based on OWASP's Top 10 IoT Vulnerabilities 2014. Firmaster contains seven main functions: password cracking, SSL scanning, web static analysis, firmware update analysis, web dynamic analysis, port scanning and the summary report.
+Section: Perimeter Security, ROUTERS

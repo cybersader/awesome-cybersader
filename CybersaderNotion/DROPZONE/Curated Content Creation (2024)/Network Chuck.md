@@ -1,0 +1,55 @@
+# Network Chuck
+
+# Network Chuck “how i make videos”
+
+- equipment
+    - mics
+        - sm7b
+        - sennheiser mkh416
+    - cameras
+        - sony a73
+        - sony a7s3
+    - lighting
+- editing
+    - adobe premiere pro
+    - davinci resolve
+- project management
+    - Notion
+    - ClickUp
+    - Todoist (used to)
+- recording software
+    - vmix
+        - multiple sources at once
+        - many camera angles
+        - NDI over the network onto other devices
+    - epicpen to write on screen
+- screen on top of camera
+    - ninja atamos
+    - clean hdmi recorded to SSD drive
+- storage
+    - synology
+    - 45 drive server
+- scripting
+    - long pauses is better than resaying something usually and still making it fluid and editing easier
+    - way harder to be foundational
+- youtubers leaving?
+    - burnt out
+    - too much too fast
+    - mkbhd - like a treadmill
+    - best videos you can once or twice a week
+    - once a month
+    - it’s hard to run a business
+    - when it turns into a job, it’s hard
+- workers
+    - 5 complete peeps
+    - thumbnail artist
+    - graphic and web designers
+    - lawyer contract
+    - accountant
+    - hire slow, fire fast
+- tips
+    - just start recording right away please
+    - turn the camera on
+    - put out content
+    - consistency
+    - george almazan

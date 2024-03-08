@@ -1,0 +1,84 @@
+# Classmates
+
+# Intros &  Classmates
+
+- Noah Bumphrey
+    - CISSP
+    - Cellular Vehicle Stuff
+    - Security Consultant
+- John
+    - IUPUI informatics
+    - Airdrop vulns
+- Erica
+    - IU Information Systems
+    - Ring Cameras
+        - integrations w/police
+- Grace
+    - BSMS
+    - 5G tech
+- Jessica
+    - BSMS
+    - Alexa or Google Home
+- Evan
+    - 2nd sem
+    - MSCTS
+    - XDR - endpoint security w/ wireless devices
+- Ishmael
+    - MSCTS
+    - Wireless charging - interesting
+- 
+    - Telecommunication
+- Ashish
+- Abhjeet Ingale
+    - IT
+    - 4 years AV company
+    - malware analysis
+    - DFIR
+- Garvit
+    - MSCTS
+    - CompTech
+    - Quantum Computing related stuff
+        - advanced wireless communication
+- Abena
+    - MSCTS
+- Kiran
+- Justin
+    - Vehicle Autonomy
+- Nathan
+    - Pegasus Spyware
+    - MSCTS
+- Justin 2
+    - MSCTS
+    - bluetooth LE - multiple connection w/ low energy
+- Brian Garrison
+    - 2nd semester MSCTS
+    - Private LTE/5G
+- Gowtham
+    - MSCTS
+    - HAK5 pineapple
+- Brittany
+    - 2nd year MSCTS
+- Ahmed
+    - BSMS
+    - IR - radio freq
+- Timetope
+    - BSMS
+    - Machine learning
+    - Splunk
+- Herrion Dixon
+    - MSCTS
+    - Smart Hubs - challenges related to smart hub w/devices and communication over the internet
+    - OpenHub has known issues
+- Deja Trotter
+    - MSCTS
+    - BS Accounting
+    - 5G or LTE and how they work
+- Kalyan
+    - MSCTS
+    - Cryptography related stuff w/Wireless
+- Curtis Epp
+    - BSMS
+    - Airtags
+- Gavin Mcwhirter
+    - 3rd year
+    - Automotives and VPN

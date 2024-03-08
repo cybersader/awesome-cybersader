@@ -1,0 +1,167 @@
+# code
+
+Sure! Here's a basic Python implementation of expanding topics/keywords/prompts based on the paper:
+
+First, we need to install some libraries:
+
+- transformers: for using the BERT model
+- nltk: for natural language processing
+- gensim: for WordNet semantic filtering
+- rank_bm25: for Okapi-BM25 ranking
+
+```python
+!pip install transformers
+!pip install nltk
+!pip install gensim
+!pip install rank_bm25
+```
+
+Next, we can import the necessary libraries and download some nltk resources:
+
+```python
+import nltk
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+```
+
+Then, we can define the function to expand topics/keywords/prompts:
+
+```python
+from transformers import AutoTokenizer, AutoModel
+from nltk.corpus import stopwords
+from gensim.models import Word2Vec
+from gensim.models.keyedvectors import WordEmbeddingsKeyedVectors
+from rank_bm25 import BM25Okapi
+
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+model = AutoModel.from_pretrained("bert-base-uncased")
+
+def expand_query(query, keywords, num_terms=10):
+    # Tokenize and encode query using BERT tokenizer
+    input_ids = tokenizer.encode(query, return_tensors='pt')
+    # Generate BERT embeddings for query
+    with torch.no_grad():
+        query_embeddings = model(input_ids)[0][0]
+    # Convert embeddings to numpy array
+    query_embeddings = query_embeddings.numpy()
+
+    # Filter out stop words and punctuation from keywords
+    stop_words = set(stopwords.words('english'))
+    keywords = [word for word in keywords if word not in stop_words and word.isalpha()]
+
+    # Create Word2Vec model and train on keywords
+    w2v_model = Word2Vec([keywords], min_count=1, workers=4)
+
+    # Convert Word2Vec model to KeyedVectors for use with WordNet
+    kv = WordEmbeddingsKeyedVectors(vector_size=w2v_model.wv.vector_size)
+    kv.add(w2v_model.wv.vocab.keys(), w2v_model.wv.vectors)
+
+    # Filter out irrelevant terms using WordNet
+    relevant_terms = set()
+    for term in keywords:
+        synonyms = set()
+        for syn in nltk.corpus.wordnet.synsets(term):
+            for lemma in syn.lemmas():
+                synonyms.add(lemma.name())
+        relevant_terms |= synonyms
+    relevant_terms -= set(keywords)
+
+    # Generate expanded query using relevant terms and BERT embeddings
+    expanded_query = query
+    for term in sorted(relevant_terms, key=lambda x: -kv.similarity(x, query)):
+        # Skip terms with very low similarity to query
+        if kv.similarity(term, query) < 0.3:
+            continue
+        # Skip terms already in query
+        if term in query:
+            continue
+        # Generate BERT embeddings for term
+        term_input_ids = tokenizer.encode(term, return_tensors='pt')
+        with torch.no_grad():
+            term_embeddings = model(term_input_ids)[0][0]
+        term_embeddings = term_embeddings.numpy()
+        # Calculate cosine similarity between term and query embeddings
+        similarity = cosine_similarity(query_embeddings, term_embeddings)
+        # Append term to expanded query if similarity is high enough
+        if similarity > 0.5:
+            expanded_query += f" {term}"
+            num_terms -= 1
+            if num_terms == 0:
+                break
+
+    # Use Okapi-BM25 to rank documents based on expanded query
+    corpus = ["document 1", "document 2", "document 3", "
+```
+
+```python
+import nltk
+from nltk.corpus import wordnet as wn
+from fuzzywuzzy import fuzz
+import operator
+
+def expand_query(query, topic_keywords):
+    """
+    This function expands the query using the topic_keywords dictionary.
+    
+    Parameters:
+    query (str): The original query to be expanded.
+    topic_keywords (dict): A dictionary containing the topic as key and a list of relevant keywords as value.
+    
+    Returns:
+    new_query (str): The expanded query.
+    """
+    
+    # Tokenize the query
+    tokens = nltk.word_tokenize(query)
+    
+    # Create a list of synonyms and antonyms for each token in the query
+    synonyms = []
+    antonyms = []
+    for token in tokens:
+        for syn in wn.synsets(token):
+            for lemma in syn.lemmas():
+                synonyms.append(lemma.name())
+                if lemma.antonyms():
+                    antonyms.append(lemma.antonyms()[0].name())
+    
+    # Remove duplicates and lowercase all synonyms and antonyms
+    synonyms = list(set([syn.lower() for syn in synonyms]))
+    antonyms = list(set([ant.lower() for ant in antonyms]))
+    
+    # Find the most similar topic in the topic_keywords dictionary
+    similarity_scores = {}
+    for topic in topic_keywords.keys():
+        similarity_scores[topic] = max([fuzz.token_set_ratio(topic.lower(), syn) for syn in synonyms])
+    most_similar_topic = max(similarity_scores.items(), key=operator.itemgetter(1))[0]
+    
+    # Add the most relevant keywords from the topic_keywords dictionary to the query
+    new_query = query
+    for keyword in topic_keywords[most_similar_topic]:
+        if keyword.lower() not in synonyms and keyword.lower() not in antonyms:
+            new_query += " " + keyword
+    
+    return new_query
+```
+
+This implementation uses the NLTK library for tokenization and the WordNet corpus for finding synonyms and antonyms of each token in the query. It also uses the fuzzywuzzy library for fuzzy string matching to find the most similar topic in the topic_keywords dictionary. The output of the function is the expanded query.
+
+To use this function, you would need to provide a dictionary of topic:keywords combinations. For example:
+
+```python
+topic_keywords = {
+    "Covid-19": ["vaccine", "pandemic", "variants", "testing", "symptoms"],
+    "Alzheimer's disease": ["brain", "memory", "dementia", "treatment", "research"],
+    "Heart disease": ["cardiology", "hypertension", "cholesterol", "stroke", "exercise"]
+}
+```
+
+Then, you would call the **`expand_query()`** function and provide it with the original query and the topic_keywords dictionary:
+
+```python
+query = "patient diagnosed with Alzheimer's disease"
+new_query = expand_query(query, topic_keywords)
+print(new_query) # "patient diagnosed with Alzheimer's disease brain memory dementia treatment research"
+```
+
+This would return an expanded query that includes additional keywords related to Alzheimer's disease. You could use this expanded query to generate search queries using GPT-3 or another language model.

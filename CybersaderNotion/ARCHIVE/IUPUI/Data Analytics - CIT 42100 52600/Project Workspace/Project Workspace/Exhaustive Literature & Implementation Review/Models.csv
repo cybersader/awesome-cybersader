@@ -1,0 +1,39 @@
+﻿Name,Tags,Type,rank?
+https://link.springer.com/chapter/10.1007/978-3-030-39303-8_19?error=cookies_not_supported&code=e680b88f-c0b6-4690-b5d0-20c11f15381a,"GAN, IWGAN, PassGAN, RNN","Wordlist, generate",normal
+https://link.springer.com/chapter/10.1007/978-3-030-21568-2_11,"GAN, PassGAN, RNN","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9746731,Passtrans,"Wordlist, reuse",
+https://www.mdpi.com/1424-8220/22/17/6484#cite,"GAN, PassTCN-PPLL, RNN, TCN","Wordlist, generate",way better than PassGAN
+https://ieeexplore.ieee.org/abstract/document/9674437?casa_token=RAgKAGqJ_R8AAAAA:mRhTx9-vZ098tAHlk56N2veIqYIBTl5KqEzoiDn3Zyi4HlBOdxG7pmiLbYvf_8kTQOuwhoxJ3w,"PCFG, Segmentation","Wordlist, generate",
+https://link.springer.com/chapter/10.1007/978-3-030-96791-8_12,"GAN, RLPassGAN, RNN",,way better than PassGAN
+https://www.mdpi.com/2076-3417/10/20/7306#cite,"GAN, REDPACK, rPassGAN","Wordlist, generate","better than PCFG, way better than PassGAN"
+https://link.springer.com/chapter/10.1007/978-3-030-86365-4_2,"GAN, VAE","Wordlist, generate",
+https://dl.acm.org/doi/abs/10.1145/3538969.3539000,"CNN-encoder, GPT, Transformers, VAE","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/8855596,"Context-aware, GRU, Group attributes, LSTM",password strength,
+https://ieeexplore.ieee.org/abstract/document/8835247?casa_token=dff91EfQdEMAAAAA:_VPP0QA1OK6ydTfkvrLTFbMsWnWdfG-vQPGIrVnWqrDY8Cax9c7CyJ1BBx9L4J69YY6iNzFT6g,"PPSMs, Pass2path","Wordlist, generate, password strength, reuse",HIGHLY EFFECTIVE
+https://www.researchgate.net/publication/346933365_Generative_Deep_Learning_Techniques_for_Password_Generation,GAN,"Wordlist, generate",
+https://www.researchgate.net/publication/345398833_Research_on_Password_Cracking_Technology_Based_on_Improved_Transformer,"GPT, Transformers","Wordlist, generate",Too good to be true?
+https://www.researchgate.net/publication/360246704_Password_Guessing_Based_on_GAN_with_Gumbel-Softmax,"G-PAss, GAN, Gumbel-Softmax, LSTM","Wordlist, generate",better than PassGAN
+https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1529648&dswid=-6935,"GAN, Gender, IWGAN, OSINT, RNN, Region","Wordlist, generate",
+https://dl.acm.org/doi/abs/10.1145/3297280.3297464?casa_token=3GZGI08SUDoAAAAA:p4CyjZdJTWczhfokpslh30kkfS6SdXDPMQT1CLlQ-vdepVeyYbRqtXB5WKXuazDJJ5nJbiUu063L,"PCFG, Segmentation, coarse-grained memorable units","Wordlist, generate",
+https://link.springer.com/chapter/10.1007/978-3-031-15777-6_10,"Chunk+PCFG preprocessing, GAN, LSTM, PCFG, PassGAN, Pre-Processing","Wordlist, generate",improves PassGAN
+https://link.springer.com/chapter/10.1007/978-981-13-5913-2_6,"LSTM, Markov-based, PCFG","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9013139?casa_token=Vyjs1MOOBzwAAAAA:F7Ojjs0mpszjUvU1ClKoEzcXlrgsRc0i6L_cAaGBEC5rNJfwli8ld24hCu9X4sJvF5hEFKdG2A,"PassGAN, Segmentation, chunking",,
+https://arxiv.org/abs/2208.10413,"Attention-based, Autoencoder, GAN, IWGAN, RNN, VAE",password strength,
+https://ieeexplore.ieee.org/abstract/document/9642098,"Autoencoder, GAN, GS-PassGAN, Gumbel-Softmax, PassGAN, RNN, S-PassGAN","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9928405?casa_token=16w4-QKv5_QAAAAA:E7YsVlLZkJqRwzxAyOvc0CGahK0_HTUM3R4q63Plh-N6rVfqicATuWb32DcpOz_nlP-BLhj03A,"MDBSCAN, Mangling",Password Mangling,
+https://dl.acm.org/doi/abs/10.1145/3460120.3484743?casa_token=RTe4UHbC6EAAAAAA:RU4N0zIINcd7JUbZNxZ5qiqGX5yEvn73jziqccBUbW73S65J9Anxyt2tM2iRBJAz0SEzt3neDAsr,"Markov-based, NN, PCFG, chunking","Wordlist, generate, password strength",
+https://link.springer.com/article/10.1007/s10796-022-10325-x,RNN,"Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9519399?casa_token=HS-Iwt4Jm08AAAAA:4jV7jRAXAtgOXjrYT6Cu766Ru5izIaRTx2eB6BbeZImu_mqIb3oUinjiD3R9XAcbiux5aITTGw,Expectation Maximization-inspired framework,,
+https://ieeexplore.ieee.org/abstract/document/8832180,"GENPass, LSTM, PCFG, PCFG+LSTM","Wordlist, generate",
+https://www.sciencedirect.com/science/article/pii/S2666281720303723,OSINT,,
+https://link.springer.com/chapter/10.1007/978-3-030-30619-9_7,"GPT, Markov-based, PCFG, Transformers, bidirectional masked language model","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9138870,OSINT,,
+https://arxiv.org/abs/2112.03359,"GPT, Transformers","Wordlist, generate",
+https://ieeexplore.ieee.org/abstract/document/9833616,,,
+https://link.springer.com/chapter/10.1007/978-3-031-04826-5_20,suffix tree,"Wordlist, generate",
+https://link.springer.com/chapter/10.1007/978-3-030-22479-0_3,PCFG,,
+https://ieeexplore.ieee.org/abstract/document/9786736,"Knowledge Graph, OSINT",,
+https://link.springer.com/chapter/10.1007/978-3-031-17146-8_16,Mangling,,
+https://nceca.in/2021/4An_Implementation_and_Evaluation_of_PDF_Password_Cracking_Using_John_the_Ripper_and_Crunch.pdf,Mangling,,
+https://link.springer.com/chapter/10.1007/978-3-031-06365-7_10?error=cookies_not_supported&code=4fe63dea-3533-44f4-910a-9ed658d2ba76,,,
+,,,

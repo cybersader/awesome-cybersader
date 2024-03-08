@@ -1,0 +1,5 @@
+# Hardening a Work from Home Network with Wireguard and Suricata | IEEE Conference Publication | IEEE Xplore
+
+Tags: Home Networks, IDS, Recommendation, SIEM, Solution, Suricata, VPN, Wireguard, Work from Home
+Data: Virtual Private Network (VPN) is one solution for such remote activities. However, VPN products may be confusing for users due to their complexity and user unfriendliness. Fortunately, there existed Wireguard, which is kernel structure of VPN module, that balances in security and ease to use. Embedded system using Raspberry pi armed with VPN Wireguard and equipped with Security Information and Event Management (SIEM) Suricata being one of the solutions to overcome it. In this study, we tried hardening a Work from home network using Wireguard and Suricata. Combination of ease to use in compact hardware and hardening with Interruption Detection System (IDS) give capability result for operation with 18,7% CPU and 22,7% memory usage and protection with captured 100% event port scanning and exploit.
+Section: HOME NET MONITORING, State of Home NetSec Tech
