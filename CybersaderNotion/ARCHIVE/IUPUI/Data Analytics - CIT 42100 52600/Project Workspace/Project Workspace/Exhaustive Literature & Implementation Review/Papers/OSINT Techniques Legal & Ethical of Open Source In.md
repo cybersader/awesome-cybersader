@@ -1,1 +1,0 @@
-# OSINT Techniques | Legal & Ethical of Open Source Intelligence

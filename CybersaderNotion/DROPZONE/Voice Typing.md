@@ -1,4 +1,0 @@
-# Voice Typing
-
-- Gboard
--

@@ -1,5 +1,0 @@
-# [2012.08787] Query expansion with artificially generated texts
-
-Tags: GPT, Information Retrieval, Query Expansion
-Year: 2020
-the gist: A well-known way to improve the performance of document retrieval is to expand the user's query. Several approaches have been proposed in the literature, and some of them are considered as yielding state-of-the-art results in IR. In this paper, we explore the use of text generation to automatically expand the queries. We rely on a well-known neural generative model, GPT-2, that comes with pre-trained models for English but can also be fine-tuned on specific corpora. Through different experiments, we show that text generation is a very effective way to improve the performance of an IR system, with a large margin (+10% MAP gains), and that it outperforms strong baselines also relying on query expansion (LM+RM3). This conceptually simple approach can easily be implemented on any IR system thanks to the availability of GPT code and models.

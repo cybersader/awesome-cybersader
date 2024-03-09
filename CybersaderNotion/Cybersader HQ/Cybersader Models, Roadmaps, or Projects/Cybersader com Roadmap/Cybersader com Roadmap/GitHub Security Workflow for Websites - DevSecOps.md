@@ -1,1 +1,0 @@
-# GitHub Security Workflow for Websites - DevSecOps (Basic)

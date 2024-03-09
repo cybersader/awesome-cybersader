@@ -1,3 +1,0 @@
-# 4An_Implementation_and_Evaluation_of_PDF_Password_Cracking_Using_John_the_Ripper_and_Crunch.pdf
-
-Tags: Mangling

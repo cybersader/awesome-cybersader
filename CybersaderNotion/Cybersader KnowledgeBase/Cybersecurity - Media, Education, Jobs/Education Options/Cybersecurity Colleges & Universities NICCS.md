@@ -1,1 +1,0 @@
-# Cybersecurity Colleges & Universities | NICCS

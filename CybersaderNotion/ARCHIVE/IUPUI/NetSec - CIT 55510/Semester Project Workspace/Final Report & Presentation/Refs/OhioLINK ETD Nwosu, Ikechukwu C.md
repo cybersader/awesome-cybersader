@@ -1,5 +1,0 @@
-# OhioLINK ETD: Nwosu, Ikechukwu C
-
-Tags: Elastic, Firewall, Home Networks, Recommendation, SIEM, Snort, Solution, Work from Home
-Data: The researcher takes an experimentation approach at combining the functionalities of Elasticsearch SIEM and Snort IDS to reinforce a secure SOHO network. A virtual simulation of real-life cyber-attack scenarios was carried out. The researcher found that the design was more effective in reporting attacks than the most alternative. The tools allowed the researcher to analyze the detected attacks, visualize them, and correlate them with open-source rules that take further actions against detected intrusions. Although this design requires more than a basic understanding of setting up, the researcher believes that the quality of its effectiveness may spur further research on how SIEM configuration may be made more accessible and straightforward to use to SOHO administrators.
-Section: HOME NET MONITORING, State of Home NetSec Tech
