@@ -9,7 +9,7 @@
 
 [More osint](00%20DROPZONE/More%20osint.md)
 
-[Registry Keys & Defense Evasion](00%20DROPZONE/Registry%20Keys%20&%20Defense%20Evasion%20a073d3e4287f43fcac2ed0388d1764ae.md)
+[Registry Keys & Defense Evasion](00%20DROPZONE/Registry%20Keys%20%26%20Defense%20Evasion.md)
 
 [Minimum Viable Appsec](00%20DROPZONE/Minimum%20Viable%20Appsec.md)
 
