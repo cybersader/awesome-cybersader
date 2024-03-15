@@ -15,11 +15,11 @@
 
 [Home Networking Arsenal](03%20Awesome-Cyber/Home%20Networking%20Arsenal.md)
 
-[Apps & Tech](03%20Awesome-Cyber/Apps%20&%20Tech.md)
+[Apps & Tech](03%20Awesome-Cyber/Apps%20&%20Tech%205a9eda9c48e44828a20699d2088ad11b.md)
 
 ## Learn About Cyber?
 
-[Cybersecurity - Media, Education, Jobs](03%20Awesome-Cyber/Cybersecurity%20-%20Media,%20Education,%20Jobs.md)
+[Cybersecurity - Media, Education, Jobs](03%20Awesome-Cyber/Cybersecurity%20-%20Media,%20Education,%20Jobs%20c84ca284a7784e389009ba96f97b43d7.md)
 
 [Beginner Cyber Resources](03%20Awesome-Cyber/Beginner%20Cyber%20Resources.md)
 

@@ -4,6 +4,34 @@
 
 ---
 
+# TalkinBoutNews - 3/11/2024
+
+## News - Ideas, Takeaways, Tangents
+
+1. [Behind the doors of a Chinese hacking company, a sordid culture fueled by influence, alcohol and sex | AP News](https://apnews.com/article/chinese-hacking-leak-documents-surveillance-spying-6276e8662ddf6f2c1afbae994d8b3aa2) 
+    1. The hackers say they’re “patriotic” with hacking, but really they’re just in it for moneys, wammins, and droogs.
+    2. They have a lot of low level hackers and hate HR
+    3. They give access to zero days
+    4. “Bro this just sounds like a VC software company”
+2. CISA was hacked, but they aren’t going to say exactly what happened.  They had to take some systems offline
+    1. Better than someone piping up that they did the hack
+    2. DoD and government has a lot of young people, GS3s, and 19 year olds drinking at night trying to make it through classes
+    3. Govt has a hard time retaining talent because private sector pulls them away with $100k jobs
+3. IC3 Release for FBI reporting
+    1. personal data breaches were really high ~50k
+    2. Investment fraud most damages technically - SBF (sam bankmen freid)
+    3. When lockbit reports you to the SEC it falls into investment category 😆 
+4. Qnap-related NAS vuln
+    1. Don’t let NAS open up ports for UPnP
+    2. NAS open ports and have self-hosted services
+    3. Self-hosted is synonym for self-managed and unpatched (XD)
+    4. Web admin interface usually exposed to internet
+
+## BHIS Memes
+
+- CISA drinking its own Kool-Aid
+- Lil-NAS 😆
+
 # TalkinBoutNews - 3/4/2024
 
 ## News - Ideas, Takeaways, Tangents
