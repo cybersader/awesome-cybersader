@@ -6,7 +6,7 @@
 
 # MISC
 
-Knowledge Procurement is a difficult topic that is at the core of how we learn, communicate, gather knowledge.  It includes things like epistemology, curation steps, representing knowledge in various formats in engineered workflows.
+Knowledge Procurement (learning and information retrieval) is a difficult topic that is at the core of how we learn, communicate, gather knowledge.  It includes things like epistemology, curation steps, representing knowledge in various formats in engineered workflows.
 
 Put simply though, just ways get knowledge:
 

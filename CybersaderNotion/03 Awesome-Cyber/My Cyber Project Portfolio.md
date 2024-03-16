@@ -50,7 +50,7 @@ Check my [portfolio.cybersader.com](http://portfolio.cybersader.com) to see norm
 
 4 Awesome Papers! 😁 🔽🔽🔽🔽
 
-[Research Papers I’ve Authored](Research%20Papers%20I%E2%80%99ve%20Authored.md)
+[Grad School Papers and Presentations](Grad%20School%20Papers%20and%20Presentations.md)
 
 ## Work Projects 🏢
 

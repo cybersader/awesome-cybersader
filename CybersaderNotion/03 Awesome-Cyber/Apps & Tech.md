@@ -9,7 +9,7 @@
 
 [Desktop (mostly Windows)](Apps%20&%20Tech%205a9eda9c48e44828a20699d2088ad11b/Desktop%20(mostly%20Windows).md)
 
-[File Storage](Apps%20&%20Tech%205a9eda9c48e44828a20699d2088ad11b/File%20Storage.md)
+[File Hosting](Apps%20&%20Tech%205a9eda9c48e44828a20699d2088ad11b/File%20Hosting.md)
 
 [Misc](Apps%20&%20Tech%205a9eda9c48e44828a20699d2088ad11b/Misc.md)
 

@@ -1,6 +1,6 @@
 # 00 DROPZONE
 
-> Places to stage and drop content, files, and stuff to organize into knowledgebase later on
+> Place to stage and drop content, files, and stuff to organize into knowledgebase later on
 > 
 
 [https://www.cisa.gov/uscert/bsi/articles/best-practices/project-management/security-and-project-management](https://www.cisa.gov/uscert/bsi/articles/best-practices/project-management/security-and-project-management) 

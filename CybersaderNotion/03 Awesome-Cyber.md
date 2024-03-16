@@ -29,9 +29,11 @@
 
 ## Some of my work
 
-[Research Papers I’ve Authored](03%20Awesome-Cyber/Research%20Papers%20I%E2%80%99ve%20Authored.md)
-
 [My Cyber Project Portfolio](03%20Awesome-Cyber/My%20Cyber%20Project%20Portfolio.md)
+
+[Grad School Papers and Presentations](03%20Awesome-Cyber/Grad%20School%20Papers%20and%20Presentations.md)
+
+[Undergrad Projects](03%20Awesome-Cyber/Undergrad%20Projects.md)
 
 ---
 
