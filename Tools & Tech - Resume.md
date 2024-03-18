@@ -1,4 +1,9 @@
->This list is a work in progress as of 3/10/24 😁
+---
+created: 2024-03-10T22:16
+updated: 2024-03-18T13:55
+---
+
+>This list is a WIP (work in progress)
 >There is a LOT that needs to be added and organized
 
 Splunk, Sentinel, Wireshark, Snort, Excel, Python, JS, Linux/Unix CLI, Powershell, Docker, Ubuntu, Kali, VMware WP, VBox, AWS, Azure, VMware Cloud, Postgres, Oracle, GitHub, Velociraptor, Nmap, Burp, Checkmarx, Rapid7, Cybereason, Orca, Metasploit
@@ -18,6 +23,19 @@ Splunk, Sentinel, Wireshark, Snort, Excel, Python, JS, Linux/Unix CLI, Powershel
 - OneTrust
 - Azure DevOps
 
+# Dropzone
+- Azure Sentinel
+- Bloodhound
+- Plumhound
+- Bruteloops
+- GraphRunner
+- Hashcat
+- JohnTheRipper
+- Responder
+- DomainPasswordSpray
+- LocalPasswordSpray
+- BuiltWith
+- VMware Workstation Player 17
 # Misc
 - Splunk (SPL), Sentinel (KQL)
 - Excel, Power Query
@@ -82,7 +100,7 @@ Splunk, Sentinel, Wireshark, Snort, Excel, Python, JS, Linux/Unix CLI, Powershel
     - AWS, Azure, Heroku, Digital Ocean
     - VMware Cloud
     - Cloudflare
-- DBs
+- Databases
     - Postgres
     - Oracle DB
     - MySQL

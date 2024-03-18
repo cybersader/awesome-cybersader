@@ -10,10 +10,12 @@
   "ignoreCreatedFolder": [],
   "enableExperimentalHash": false,
   "fileHashMap": {
-    "Tools & Tech - Resume.md": "7440885fec88055a0959f77612c467e8c9177cfc8584635fdc18be184025734d",
+    "Tools & Tech - Resume.md": "7c06cb192fef424966250d11e4e7e92ebe9d854eb7ca1ef857ce87722a09eac3",
     "README.md": "efa67738f6d0f4e420a83459ab6787fd3cb57faa819c407f38481c4a92f45a32",
-    "INBOX, DROPZONE/Windows 11 UI Stuff.md": "ec25a34304898b696c42ef442bf539bc186fe131e0c83f9b136f5455fc829aeb",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md": "e1884fdb292c61914ffdbc946a7148450646168dcca936ce57612c28462b43f9",
-    "INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md": "538921e08b5331cbea4b182dd51df958e9a47a9e77903feee96e3c0ca538e3a0"
+    "INBOX, DROPZONE/Windows 11 UI Stuff.md": "a3732a1ca424b2956d52653432f37cb5f729f3c3a6542a523505f0e361228b0b",
+    "INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md": "99151f43ca5f03cfd4a5ba0b1aa69e5d77478d51e3cb7494e04ce90853f42366",
+    "99 - Changelog.md": "58933f4e597bb1801b588dcc3153d47fb862e43579fda0e76db25e91e3f0766a",
+    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md": "aa13a52e1881b2b2ef855598a0d6b61c392e040c018ec97afc87d4b44c91805e",
+    "INBOX, DROPZONE/New Tools.md": "f5b56fe4f850590a7645290ecd9e6dbd785e77af200add530ccc497713428c7f"
   }
 }

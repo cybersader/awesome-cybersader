@@ -1,1 +1,7 @@
-{}
+{
+  "propertiesInDocument": "visible",
+  "livePreview": true,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true
+}

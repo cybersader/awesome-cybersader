@@ -1,6 +1,6 @@
 ---
 created: 2024-03-18T09:55
-updated: 2024-03-18T10:00
+updated: 2024-03-18T11:18
 ---
 # Plugins
 - obsidian://show-plugin?id=note-refactor-obsidian

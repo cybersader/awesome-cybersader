@@ -1,6 +1,6 @@
 {
   "attachPath": {
-    "attachmentRoot": "__attachments",
+    "attachmentRoot": "attachments",
     "saveAttE": "nextToNote",
     "attachmentPath": "${notename}",
     "attachFormat": "IMG-${date}",
