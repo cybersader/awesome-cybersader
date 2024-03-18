@@ -1,0 +1,19 @@
+{
+  "dateFormat": "yyyy-MM-dd'T'HH:mm",
+  "enableCreateTime": true,
+  "headerUpdated": "updated",
+  "headerCreated": "created",
+  "minMinutesBetweenSaves": 1,
+  "ignoreGlobalFolder": [
+    "CybersaderNotion"
+  ],
+  "ignoreCreatedFolder": [],
+  "enableExperimentalHash": false,
+  "fileHashMap": {
+    "Tools & Tech - Resume.md": "7440885fec88055a0959f77612c467e8c9177cfc8584635fdc18be184025734d",
+    "README.md": "efa67738f6d0f4e420a83459ab6787fd3cb57faa819c407f38481c4a92f45a32",
+    "INBOX, DROPZONE/Windows 11 UI Stuff.md": "ec25a34304898b696c42ef442bf539bc186fe131e0c83f9b136f5455fc829aeb",
+    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md": "e1884fdb292c61914ffdbc946a7148450646168dcca936ce57612c28462b43f9",
+    "INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md": "538921e08b5331cbea4b182dd51df958e9a47a9e77903feee96e3c0ca538e3a0"
+  }
+}

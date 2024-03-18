@@ -1,0 +1,20 @@
+{
+  "attachPath": {
+    "attachmentRoot": "__attachments",
+    "saveAttE": "nextToNote",
+    "attachmentPath": "${notename}",
+    "attachFormat": "IMG-${date}",
+    "type": "GLOBAL"
+  },
+  "dateFormat": "YYYYMMDDHHmmssSSS",
+  "excludeExtensionPattern": "",
+  "autoRenameAttachment": true,
+  "excludedPaths": "CybersaderNotion",
+  "excludePathsArray": [
+    "CybersaderNotion"
+  ],
+  "excludeSubpaths": true,
+  "originalNameStorage": [],
+  "overridePath": {},
+  "disableNotification": false
+}
