@@ -8,30 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56dd14f3b7dfbc6b",
+            "id": "ba91bd4a35ecdf65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3fd71e83b36f0025",
+            "id": "0184b81c48f12f89",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "Resume - Training, Certifications, Conferences, Education.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad0f2a0165bfc9ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resume - Tools & Tech ⚒️.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1efe1ab17edb362b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md"
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md"
               }
             }
           }
@@ -159,52 +184,53 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "56dd14f3b7dfbc6b",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151013110.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+    "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
+    "CybersaderNotion/09 MISC TECH AND STACK",
+    "CybersaderNotion/09 MISC TECH AND STACK.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+    "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
     "99 - Changelog.md",
-    "INBOX, DROPZONE/New Tools.md",
-    "Tools & Tech - Resume.md",
-    "05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151013037.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012987.png",
-    "CS-[moral-tech.md",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012946.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012895.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012864.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012834.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012771.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012717.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/IMG-20240318151012664.png",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/attachments",
-    "INBOX, DROPZONE/INBOX, DROPZONE.md",
-    "INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "CybersaderNotion/00 DROPZONE/Golden Ticket to the Cloud.md",
-    "INBOX, DROPZONE/Windows 11 UI Stuff.md",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "05 - Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/05 Learning/Antisyphon, BHIS",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/__attachments/05 Learning",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/TEST FILE.md",
-    "05 Learning/Antisyphon, BHIS/Getting Started in Security with BHIS and MITRE ATT&CK/TEST file.md",
-    "05 Learning/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "README.md",
-    "05 - Learning/BHIS, Antisyphon",
-    "CybersaderNotion/03 Awesome-Cyber/Research Papers I’ve Authored.md",
-    "CybersaderNotion/03 Awesome-Cyber.md",
-    "CybersaderNotion/01 CyberNews/CyberNews Notes.md",
-    "CybersaderNotion/04 Cybersader’s Arsenal.md",
-    "CybersaderNotion/04 Cybersader’s Arsenal/Personal Privacy.md",
-    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech.md",
-    "03 Awesome-Cyber/Apps & Tech .md",
-    "03 Awesome-Cyber/Apps & Tech 5a9eda9c48e44828a20699d2088ad11b.md",
-    "CybersaderNotion/00 DROPZONE.md",
-    "CybersaderNotion/00 DROPZONE/WPA 2 Stuff.md"
+    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
+    "Resume - Tools & Tech ⚒️.md",
+    "Resume - Training, Certifications, Conferences, Education.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408644.png",
+    "CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md",
+    "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
+    "⬇ INBOX, DROPZONE/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408589.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320102535672.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408541.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408486.png",
+    "📁 05 - Learning/📁 05 - Learning.md",
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
+    "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple 1.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
+    "MoCs",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/X1. Paper Outline with Refs.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/8. Archival, Retention, & Restoration.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/5. SIEM.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/4. Data Pipeline Proxy.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/2. Hardware & Infrastructure Initialization.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Content/BenRader-CIT51600-SecureDBExposition.pptx",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Content",
+    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210125833301.png",
+    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210125823738.png",
+    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124945871.png",
+    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124729057.png",
+    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124656674.png"
   ]
 }

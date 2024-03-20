@@ -1,0 +1,113 @@
+# Proposal
+## Objectives: 
+- My primary objective of this project is to show how you can implement a self-hosted PostgreSQL database (at home) that is securely exposed to the internet. This includes various architectures or tech stacks for self-hosting (hardware, software, and networking) and for methods of exposing local devices on the internet.
+- To implement the networking and exposition of the server to the Internet, I plan on implementing either Cloudflare Tunnels, NGINX Reverse Proxy, or some other similar technology. This may also help defend against denial-of-service attacks which I will research, but realistically won’t be able to implement without various legal and ethical implications. 
+- The attacks that I will be threat modeling should include simple host discovery, port scanning, and general reconnaissance. 
+- I want to reiterate again that the main objective is to show how to self-host a database server to the public internet for use cases where the server needs to be exposed to the internet maybe as an interface for another system where there are tight constraints for the architecture. 
+-  In terms of attacks, I was also interested in whether the Postgres database allows for attacks on the operating system (privilege escalation, lateral movement, etc.) 
+
+## List of articles/papers to read or refer to: 
+- For tunneling and exposing the server: 
+	- https://github.com/anderspitman/awesome-tunneling 
+	- https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/ 
+	- https://developers.cloudflare.com/cloudflare-one/connections/connectnetworks/get-started/ 
+- For recon: 
+	- https://www.shodan.io/ - maybe 
+	- https://nmap.org/ 
+- Related to attacks that I’ll research: 
+	- https://www.bigbinary.com/blog/how-my-server-got-infected-with-acrypto-mining-malware-and-how-i-fixed-it 
+	- https://dev.to/sanchitsharma/investigation-into-postgres-malwarehack-2ai0 
+	- https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=postgres
+
+# Ideas, Paper, and Paper Search Queries - Related to Postgres
+- IAM - identity and access management
+	- Cloud, IAM, Databases
+		- [Cloud Security: The Future of Data Storage | SpringerLink](https://link.springer.com/chapter/10.1007/978-981-16-3961-6_9) 
+	- Postgres IAM 
+		- [[Postgres) | SpringerLink](Postgres)) 
+		- 
+- Backing up, immutable storage, ransomware protection, restoring, data recovery, backup retention, BCDR (business continuity & disaster recovery), redundancy, replication, redundancy, NAS
+	- Research
+		- Ransomware detection
+	- Postgres Backups, BCDR
+		- Backup Terms
+			- Incremental backups, differential backups, snapshots, full backups
+		- https://github.com/dhamaniasad/awesome-postgres#backups 
+		- [okhosting/awesome-storage: A curated list of storage open source tools. Backups, redundancy, sharing, distribution, encryption, etc.](https://github.com/okhosting/awesome-storage) 
+		- https://github.com/okhosting/awesome-storage#backups-replication-distribution 
+		- Immutable Postgres backups?
+			- Azure Blob with immutability
+			- S3 with object lock?
+		- Postgres Backups
+			- **pg_dump and pg_restore**: These are built-in PostgreSQL utilities for dumping and restoring databases.
+			- **Backup Software**: Commercial backup solutions like Veeam, Commvault, and Acronis can be used to create and manage database backups.
+			- **Continuous Data Protection (CDP)**: Solutions like ZFS or SAN-based replication can provide continuous, point-in-time recovery options.
+	- Ransomware resources
+		- [bbbbbrie/awesome-ransomware: Curated list of ransomware-related resources; awesome style.](https://github.com/bbbbbrie/awesome-ransomware) 
+		- [Sokow86/awesome-malware-resources: Just another collection of links, tools, reports and other stuff](https://github.com/Sokow86/awesome-malware-resources) 
+		- 
+- MFA, SSO Implementation
+- Vulnerability management PostgreSQL
+	- [Securing Relational Databases against Security Vulnerabilities: A Case of Microsoft SQL Server and PostgreSQL: Journal of Applied Security Research: Vol 18, No 3](https://www.tandfonline.com/doi/abs/10.1080/19361610.2021.2006032)  
+	- [Applied Sciences | Free Full-Text | Vulnerability Management Models Using a Common Vulnerability Scoring System](https://www.mdpi.com/2076-3417/11/18/8735) 
+	- 
+- SQL Injection Detection
+- Configuration management
+	- [Enabling Secure Cloud Governance using Policy as Code](https://odr.chalmers.se/items/a15a77b7-7005-4412-9dd3-5f3f639b558e) 
+- Secrets Managment
+	- [Security and Secrets Management | SpringerLink](https://link.springer.com/chapter/10.1007/978-1-4842-8673-9_9) 
+- Data Privacy
+	- Anonymization, Preservation
+- Pentesting
+	- Enumerating vulnerable databases with Shodan
+	- DBMS Fuzzing?
+		- [Griffin : Grammar-Free DBMS Fuzzing | Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering](https://dl.acm.org/doi/abs/10.1145/3551349.3560431) 
+		- [Industry Practice of Coverage-Guided Enterprise-Level DBMS Fuzzing | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9401989) 
+		- [Recent Papers Related To Fuzzing | FuzzingPaper](https://wcventure.github.io/FuzzingPaper/) 
+		- [Sequence Directed Hybrid Fuzzing | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/document/9054807) 
+		- [A model-based fuzzing approach for DBMS | Semantic Scholar](https://www.semanticscholar.org/paper/A-model-based-fuzzing-approach-for-DBMS-Wang-Zhang/a58239f7a8f2839db3b2ccf91e668904f44a3ced) 
+- Postgres DFIR, malware removal and/or analysis, etc
+	- Crypto miners on Postgres instances? (PGminer)
+		- [How my server got infected with a crypto mining malware and how I fixed it - BigBinary Blog](https://www.bigbinary.com/blog/how-my-server-got-infected-with-a-crypto-mining-malware-and-how-i-fixed-it)
+		- [(hack?) - DEV Community - PG malware](https://dev.to/sanchitsharma/investigation-into-postgres-malware-hack-2ai0)  
+		- 
+- Postgres Vulns
+	- https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=postgres
+- Database self hosting and remote connections
+	- Remote access related to self hosting a Postgres database (exposed to the internet while maintaining security)
+		- Proxy with cloud services
+			- Cloudflare tunnels
+			- Nginx Reverse Proxy
+		- Single stop methods 
+		- VPN solutions
+		- MFA
+		- SSO, IAM, IdP
+			- [(Casdoor IAM)](https://github.com/casdoor/casdoor) 
+			- https://github.com/authelia/authelia 
+			- https://github.com/zitadel/zitadel
+			- https://goauthentik.io/ 
+			- https://www.keycloak.org/ - best candidate
+			- [FreeIPA - Identity, Policy, Audit — FreeIPA documentation](https://www.freeipa.org/) 
+			- [Gluu - Open Source Identity and Access Management](https://gluu.org/#) 
+				- [Janssen Documentation](https://docs.jans.io/v1.0.18/) 
+			- [Shibboleth Consortium - Shaping the future of Shibboleth Software](https://www.shibboleth.net/)
+		- Firewall
+- Cyber deception
+	- Canary tokens in Postgres database
+	- Canary files in databases
+	- Attribution malware and beaconing methods via macro-enabled documents stored in databases
+- Contributable and federated Postgres database with security in mind?
+	- Public internet users -> domain name -> authentication and authorization system (keycloak, OIDC, Oauth2) -> Postgres database table
+	- Contributable system implemented with IdP (like Keycloak)
+	- Somehow expose a Postgres server to the public and allow certain aspects of the table to be changed such as adding data or rows while maintaining a level of access control or security
+	- [Partitioning vs. Federation vs. Sharding](https://lethargy.org/~jesus/writes/partitioning-vs-federation-vs-sharding/) 
+	- It seems that there's nothing easy to implement for this
+		- "Are there any federated systems or tech for IAM implementation" - not really at least in terms of a system where a user can own the authentication piece of the system using cryptography
+	- Federated IdP or IAM?
+		- Keycloak
+			- https://www.keycloak.org/docs/latest/server_admin/ 
+	- Postgres resources
+		- [devton/awesome-postgresql: A curated list of awesome PostgreSQL tools, scripts, slides, and short examples. inspired by the other awesome lists](https://github.com/devton/awesome-postgresql) 
+- Self-Hosted & Publicly Exposed PostgreSQL - Countering Reconnaissance & Vulnerability Scanning
+	- How to interface with a self hosted database
+	- How to expose it to the internet without allowing attackers to get much information about it or affect the operation of it

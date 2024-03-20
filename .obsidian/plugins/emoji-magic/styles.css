@@ -1,0 +1,112 @@
+/*
+Copyright 2019 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+/* Global stylesheet for this plugin. Not sure how it gets included, I guess by naming convention? */
+/* confirmed, I think: https://marcus.se.net/obsidian-plugin-docs/user-interface/html-elements#style-your-elements */
+
+
+
+.emoji-magic-modal .modal-close-button {
+  display: none; /* clicking in bg and escape key still work */
+}
+
+.emoji-magic-modal {
+  /* prevent "jitter" as the content height changes when users type */
+  align-self: flex-start;
+  top: 10%;
+
+  width: 300px; /* because of a flex container and related rules, this is functionally a max-width */
+}
+
+.emoji-magic-modal input[type="search"] {
+  width: 100%;
+  margin-bottom: var(--size-4-4); /* obsidian var */
+}
+
+.emoji-magic-modal footer {
+  margin-top: var(--size-4-4); /* obsidian var */
+  color: var(--text-faint);
+  font-size: var(--font-smallest);
+}
+
+.emoji-magic-modal footer a {
+  color: var(--text-faint);
+}
+
+.emoji-magic-modal footer a:hover,
+.emoji-magic-modal footer a:focus {
+  color: var(--link-color);
+}
+
+.emoji-magic-modal ol.results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 2rem);
+  grid-auto-rows: 2rem;
+}
+
+.emoji-magic-modal .results button:disabled {
+  cursor: default;
+}
+
+.emoji-magic-modal .results button {
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  padding-top: 4px; /* visually center the emojiiii */
+  overflow: hidden; /* in some cases, (ie: zwj fails) the text can overflow. don't let that confuse other parts of the UI. */
+}
+
+.emoji-magic-modal .results button:focus {
+  outline: none;
+  background: var(--interactive-hover);
+}
+
+.emoji-magic-modal .results button:hover {
+  background: var(--interactive-hover);
+}
+
+.emoji-magic-modal .results li {
+  text-align: center;
+}
+
+/* While search is focused, highlight the first item,
+because "enter" will copy and close */
+.emoji-magic-modal input[type="search"]:focus + .results li:first-of-type button {
+  background: var(--interactive-hover);
+}
+
+.emoji-magic-modal .results li:first-of-type button {
+  /* background: pink !important; */
+}
+
+.muted {
+  color: var(--text-faint);
+}
+
+.padded-sides {
+  padding: 0 4px;
+}

@@ -1,7 +1,8 @@
 {
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "source",
   "livePreview": true,
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./"
 }

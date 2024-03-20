@@ -1,5 +1,4 @@
 [
-  "update-time-on-edit",
   "folder-notes",
   "consistent-attachments-and-links",
   "attachment-management",
@@ -8,5 +7,12 @@
   "floating-toc",
   "obsidian-git",
   "obsidian-vault-changelog",
-  "various-complements"
+  "various-complements",
+  "obsidian-emoji-toolbar",
+  "emoji-shortcodes",
+  "update-time-on-edit",
+  "obsidian-linter",
+  "waypoint",
+  "url-into-selection",
+  "obsidian-underline"
 ]

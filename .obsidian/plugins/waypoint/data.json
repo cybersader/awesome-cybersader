@@ -1,0 +1,19 @@
+{
+  "waypointFlag": "%% Waypoint %%",
+  "landmarkFlag": "%% Landmark %%",
+  "stopScanAtFolderNotes": false,
+  "showFolderNotes": false,
+  "showNonMarkdownFiles": false,
+  "debugLogging": false,
+  "useWikiLinks": true,
+  "showEnclosingNote": false,
+  "folderNoteType": "INSIDE_FOLDER",
+  "ignorePaths": [
+    "_attachments",
+    "attachments",
+    "_/_.*",
+    "Excalidraw"
+  ],
+  "useSpaces": false,
+  "numSpaces": 2
+}

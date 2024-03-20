@@ -1,0 +1,17 @@
+{
+  "immediateReplace": true,
+  "suggester": true,
+  "historyPriority": true,
+  "historyLimit": 100,
+  "history": [
+    ":mag:",
+    ":star:",
+    ":smile:",
+    ":anger:",
+    ":warning:",
+    ":laughing:",
+    ":brain:",
+    ":arrow_down:",
+    ":mailbox:"
+  ]
+}
