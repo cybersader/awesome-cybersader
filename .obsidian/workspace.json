@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+                "file": "📁 02 - CyberNews/2024/March/March.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#KrebsOnSec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+                "file": "📁 02 - CyberNews/2024/March/March.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+                "file": "📁 02 - CyberNews/2024/March/March.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
+                "file": "📁 02 - CyberNews/2024/March/March.md"
               }
             }
           }
@@ -147,20 +148,28 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "c28a8a38fb4e82eb",
+  "active": "d1a916c00d2be73c",
   "lastOpenFiles": [
+    "📁 02 - CyberNews/📁 02 - CyberNews.md",
+    "📁 02 - CyberNews/2024/March/March.md",
+    "📁 02 - CyberNews/2024/2024.md",
+    "📁 02 - CyberNews/2024/March",
+    "📁 02 - CyberNews/2024",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+    "📁 02 - CyberNews",
+    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
+    "⬇ INBOX, DROPZONE/Daily Routine/Daily Routine.md",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+    "⬇ INBOX, DROPZONE/Daily Routine",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322085041846.png",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084723281.png",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084701216.png",
-    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows",
     "📁 01 - Logs, Journal/Untitled.md",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "Resume - Training, Certifications, Conferences, Education.md",
-    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "Resume - Tools & Tech ⚒️.md",
     "README.md",
@@ -180,20 +189,12 @@
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200339446.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS",
-    "📁 01 - Logs, Journal",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
     "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
-    "CybersaderNotion/09 MISC TECH AND STACK",
     "CybersaderNotion/09 MISC TECH AND STACK.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-    "99 - Changelog.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408644.png",
-    "CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments"
+    "99 - Changelog.md"
   ]
 }

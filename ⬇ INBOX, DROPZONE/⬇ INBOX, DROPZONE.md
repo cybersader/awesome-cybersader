@@ -8,6 +8,7 @@ date modified: Thursday, March 21st 2024, 8:21 pm
 %% Begin Waypoint %%
 - [[🐛 Known Base Bugs, Issues]]
 - [[Company Security Strategy from Zero]]
+- **[Daily Routine](./Daily%20Routine/Daily%20Routine.md)**
 - [[Go Pro as a Webcam]]
 - [[New Tools]]
 - [[Obsidian Plugins and Ideas for Contributions]]
