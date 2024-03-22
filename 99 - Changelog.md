@@ -1,3 +1,4 @@
+- 2024-03-22 at 12h48 · [[Honey Accounts in Windows AD]]
 - 2024-03-22 at 12h24 · [[03 - March BHIS]]
 - 2024-03-22 at 11h04 · [[03 - March Cyber News]]
 - 2024-03-22 at 10h58 · [[TalkinBoutNews - TEMPLATE]]
@@ -18,7 +19,6 @@
 - 2024-03-21 at 20h22 · [[Company Security Strategy from Zero]]
 - 2024-03-21 at 20h22 · [[BHIS, Antisyphon]]
 - 2024-03-21 at 20h22 · [[📁 05 - Learning]]
-- 2024-03-21 at 20h22 · [[Honey Accounts in Windows AD]]
 - 2024-03-21 at 20h22 · [[📁 98 - ARCHIVE]]
 - 2024-03-21 at 20h21 · [[Resume - Tools & Tech ⚒️]]
 - 2024-03-20 at 11h57 · [[Secure Database Exposition]]

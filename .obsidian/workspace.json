@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cyberMeme",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
+                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
+                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md"
+                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md"
               }
             }
           }
@@ -160,10 +160,13 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "d1a916c00d2be73c",
+  "active": "d368c6f7e7e493b8",
   "lastOpenFiles": [
-    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
+    "99 - Changelog.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
+    "CybersaderNotion/CybersaderNotion.md",
+    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec/TalkinBoutNews - TEMPLATE.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
@@ -204,9 +207,6 @@
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200339446.png",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
-    "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
-    "CybersaderNotion/09 MISC TECH AND STACK.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md"
+    "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md"
   ]
 }
