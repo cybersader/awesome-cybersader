@@ -2,14 +2,16 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 22nd 2024, 10:53 am
+date modified: Friday, March 22nd 2024, 3:35 pm
 ---
 
 # Hardware
 - Old PC
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240322153112079.png)
 ## HDDs
 - The most expensive part of NAS projects 😅
 	- [Amazon.com: Seagate IronWolf 12TB NAS Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage – Frustration Free Packaging (ST12000VNZ008) : Electronics](https://www.amazon.com/Seagate-IronWolf-12TB-Internal-Drive/dp/B084ZTSMWF)
+	- 
 # Misc Links
 - [(40) Building A Budget NAS with TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=iSpL9LnczVQ)
 - [(40) Building A DIY NAS On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)
@@ -27,7 +29,7 @@ date modified: Friday, March 22nd 2024, 10:53 am
 	- .
 ## Prepare Old PC - Hardware
 - In my case, I didn't have an SSD (NVMe in this case), so I added one from another old laptop
-	- 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240322153551912.png)
 ## Flashing TrueNAS to a USB Drive
 - Download TrueNAS Scale .iso file
 	- [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c) 
