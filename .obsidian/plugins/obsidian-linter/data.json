@@ -237,7 +237,7 @@
       "enabled": true
     },
     "prevent-double-checklist-indicator-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "prevent-double-list-item-indicator-on-paste": {
       "enabled": false
