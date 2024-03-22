@@ -20,7 +20,7 @@
 
 ## Quarterly
 
-- [Indianapolis OWASP Chapter Events](https://www.meetup.com/indyowasp/events/)
+- [Indianapolis OWASP Chapter Events](https://www.meetup.com/indyowasp/events/) - inactive since 2023
 
 ## Weekly
 
