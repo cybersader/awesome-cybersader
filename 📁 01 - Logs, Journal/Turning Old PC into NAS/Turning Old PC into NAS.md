@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 21st 2024, 8:17 pm
+date modified: Friday, March 22nd 2024, 8:45 am
 ---
 
 # Hardware
@@ -23,6 +23,9 @@ date modified: Thursday, March 21st 2024, 8:17 pm
 	- Check for necessary hardware on old PC
 	- Flash .iso file to a USB drive
 	- Plug in a initial install TrueNAS
+	- .
+## Prepare Old PC - Hardware
+- In my case, I didn't have an SSD (NVMe in this case), so I added one from another old laptop
 	- 
 ## Flashing TrueNAS to a USB Drive
 - Download TrueNAS Scale .iso file

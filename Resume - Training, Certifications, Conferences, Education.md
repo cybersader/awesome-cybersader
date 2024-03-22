@@ -1,8 +1,8 @@
 ---
 date created: Tuesday, March 19th 2024, 6:20 pm
-date modified: Wednesday, March 20th 2024, 4:57 pm
+date modified: Thursday, March 21st 2024, 8:23 pm
 created: Tuesday, Mar 19, 2024 06:20 PM
-updated: Wednesday, Mar 20, 2024 04:57 PM
+updated: Thursday, Mar 21, 2024 08:23 PM
 ---
 
 # Certifications

@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a334d57d8773e44f",
+        "id": "3b99f9d3cce57ae1",
         "type": "tabs",
         "children": [
           {
-            "id": "ba91bd4a35ecdf65",
+            "id": "c28a8a38fb4e82eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbb3206764cc7dc2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0184b81c48f12f89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resume - Training, Certifications, Conferences, Education.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad0f2a0165bfc9ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1efe1ab17edb362b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
+                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md"
+                "file": "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
               }
             }
           }
@@ -196,8 +147,29 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "bbb3206764cc7dc2",
+  "active": "c28a8a38fb4e82eb",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322085041846.png",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084723281.png",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084701216.png",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows",
+    "📁 01 - Logs, Journal/Untitled.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+    "Resume - Training, Certifications, Conferences, Education.md",
+    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
+    "Resume - Tools & Tech ⚒️.md",
+    "README.md",
+    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
+    "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
+    "📁 05 - Learning/📁 05 - Learning.md",
+    "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
+    "⬇ INBOX, DROPZONE/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321201727697.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200848777.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200816421.png",
@@ -207,42 +179,21 @@
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200339446.png",
-    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
     "📁 01 - Logs, Journal/Turning Old PC into NAS",
     "📁 01 - Logs, Journal",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
-    "📁 05 - Learning/📁 05 - Learning.md",
-    "Resume - Training, Certifications, Conferences, Education.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
-    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
-    "Resume - Tools & Tech ⚒️.md",
-    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
     "CybersaderNotion/09 MISC TECH AND STACK",
     "CybersaderNotion/09 MISC TECH AND STACK.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-    "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
     "99 - Changelog.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408644.png",
     "CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md",
-    "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
-    "⬇ INBOX, DROPZONE/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408589.png",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320102535672.png",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408541.png",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple 1.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
-    "MoCs",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/X1. Paper Outline with Refs.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace"
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments"
   ]
 }

@@ -5,9 +5,9 @@ tags:
   - Mitre
   - JohnStrand
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Wednesday, March 20th 2024, 4:55 pm
+date modified: Thursday, March 21st 2024, 8:23 pm
 created: Monday, Mar 18, 2024 11:08 AM
-updated: Wednesday, Mar 20, 2024 04:55 PM
+updated: Thursday, Mar 21, 2024 08:23 PM
 ---
 
 # MEMES, Quotes
