@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 02 - CyberNews/2024/March/March.md",
+                "file": "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#KrebsOnSec",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 02 - CyberNews/2024/March/March.md",
+                "file": "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 02 - CyberNews/2024/March/March.md",
+                "file": "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 02 - CyberNews/2024/March/March.md"
+                "file": "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md"
               }
             }
           }
@@ -148,13 +147,14 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "d1a916c00d2be73c",
+  "active": "c28a8a38fb4e82eb",
   "lastOpenFiles": [
     "📁 02 - CyberNews/📁 02 - CyberNews.md",
-    "📁 02 - CyberNews/2024/March/March.md",
-    "📁 02 - CyberNews/2024/2024.md",
-    "📁 02 - CyberNews/2024/March",
-    "📁 02 - CyberNews/2024",
+    "📁 02 - CyberNews/2024 Cyber News/2024 Cyber News.md",
+    "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md",
+    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
+    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News",
+    "📁 02 - CyberNews/2024 Cyber News",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
     "📁 02 - CyberNews",
     "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
@@ -194,7 +194,6 @@
     "CybersaderNotion/09 MISC TECH AND STACK.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-    "99 - Changelog.md"
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md"
   ]
 }
