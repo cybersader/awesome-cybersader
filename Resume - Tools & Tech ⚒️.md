@@ -1,8 +1,8 @@
 ---
 date created: Sunday, March 10th 2024, 10:16 pm
-date modified: Wednesday, March 20th 2024, 11:37 am
+date modified: Wednesday, March 20th 2024, 12:25 pm
 created: Sunday, Mar 10, 2024 10:16 PM
-updated: Wednesday, Mar 20, 2024 11:37 AM
+updated: Wednesday, Mar 20, 2024 12:25 PM
 ---
 
 >This list is a WIP (work in progress)
@@ -63,6 +63,7 @@ Splunk, Sentinel, Wireshark, Snort, Excel, Python, JS, Linux/Unix CLI, Powershel
 - Google API
 - Office 365
 - Okta
+- Mimikatz
 # Misc
 - Splunk (SPL), Sentinel (KQL)
 - Excel, Power Query

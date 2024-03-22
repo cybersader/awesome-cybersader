@@ -5,9 +5,9 @@ tags:
   - Mitre
   - JohnStrand
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Wednesday, March 20th 2024, 11:49 am
+date modified: Wednesday, March 20th 2024, 4:55 pm
 created: Monday, Mar 18, 2024 11:08 AM
-updated: Wednesday, Mar 20, 2024 11:49 AM
+updated: Wednesday, Mar 20, 2024 04:55 PM
 ---
 
 # MEMES, Quotes
@@ -320,7 +320,7 @@ updated: Wednesday, Mar 20, 2024 11:49 AM
 - Remove ads if you can anyway
 - Ads "add" a lot of noise to packet captures 
 - Adblocking tools
-	- uBlock origin
+	-  uBlock origin
 	- ad tree 
 ### DNS Filtering
 - Deny uncategorized stuff 

@@ -1,17 +1,18 @@
 ---
 date created: Tuesday, March 19th 2024, 6:20 pm
-date modified: Wednesday, March 20th 2024, 9:24 am
+date modified: Wednesday, March 20th 2024, 4:57 pm
 created: Tuesday, Mar 19, 2024 06:20 PM
-updated: Wednesday, Mar 20, 2024 09:24 AM
+updated: Wednesday, Mar 20, 2024 04:57 PM
 ---
 
 # Certifications
 - CND - in progress
 - CISSP - planned
 # Training and Classes
-1. 03/2024 - [Getting Started in Security with BHIS and MITRE ATT&CK – Antisyphon Training](https://www.antisyphontraining.com/event/getting-started-in-security-with-bhis-and-mitre-attck/2023-09-20/) #JohnStrand
-2. 09/2023 - [Linux Command Line for Analysts & Operators – Antisyphon Training](https://www.antisyphontraining.com/linux-command-line-for-analysts-operators/) #HalPomeranz
-3. 09/2022 - [Applied Purple Teaming w/ Kent Ickler and Jordan Drysdale – Antisyphon Training](https://www.antisyphontraining.com/live-courses-catalog/applied-purple-teaming-kent-ickler-and-jordan-drysdale/) #KentIckler #JordanDrysdale
+1. 04/2024 - [Linux Forensics w/ Hal Pomeranz – Antisyphon Training](https://www.antisyphontraining.com/on-demand-courses/linux-forensics-w-hal-pomeranz/)  #HalPomeranz 
+2. 03/2024 - [Getting Started in Security with BHIS and MITRE ATT&CK – Antisyphon Training](https://www.antisyphontraining.com/event/getting-started-in-security-with-bhis-and-mitre-attck/2023-09-20/) #JohnStrand
+3. 09/2023 - [Linux Command Line for Analysts & Operators – Antisyphon Training](https://www.antisyphontraining.com/linux-command-line-for-analysts-operators/) #HalPomeranz
+4. 09/2022 - [Applied Purple Teaming w/ Kent Ickler and Jordan Drysdale – Antisyphon Training](https://www.antisyphontraining.com/live-courses-catalog/applied-purple-teaming-kent-ickler-and-jordan-drysdale/) #KentIckler #JordanDrysdale 
 # Formal Education &  Relevant Coursework
 - <u>Master of Science in Cybersecurity and Trusted Systems (Purdue University/IUPUI)</u>
 	- **GPA: 4.0**

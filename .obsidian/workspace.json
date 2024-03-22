@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbb3206764cc7dc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resume - Tools & Tech ⚒️.md",
+                "file": "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md"
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md"
               }
             }
           }
@@ -184,20 +196,37 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "bbb3206764cc7dc2",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321201727697.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200848777.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200816421.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200727215.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200600459.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200536640.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200339446.png",
+    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS",
+    "📁 01 - Logs, Journal",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
+    "📁 05 - Learning/📁 05 - Learning.md",
+    "Resume - Training, Certifications, Conferences, Education.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
+    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
+    "Resume - Tools & Tech ⚒️.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
     "CybersaderNotion/09 MISC TECH AND STACK",
     "CybersaderNotion/09 MISC TECH AND STACK.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/X1. Reconnaissance Tools.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
     "99 - Changelog.md",
-    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
-    "Resume - Tools & Tech ⚒️.md",
-    "Resume - Training, Certifications, Conferences, Education.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408644.png",
     "CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
@@ -205,11 +234,7 @@
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408589.png",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320102535672.png",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408541.png",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK/IMG-20240320114408486.png",
-    "📁 05 - Learning/📁 05 - Learning.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
     "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple 1.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/_attachments/Getting Started in Security with BHIS and MITRE ATT&CK",
@@ -217,20 +242,7 @@
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
     "MoCs",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/X1. Paper Outline with Refs.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/8. Archival, Retention, & Restoration.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/5. SIEM.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/4. Data Pipeline Proxy.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/2. Hardware & Infrastructure Initialization.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Content/BenRader-CIT51600-SecureDBExposition.pptx",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Content",
-    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210125833301.png",
-    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210125823738.png",
-    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124945871.png",
-    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124729057.png",
-    "📁 98 - ARCHIVE/GradSchoolProjects/__attachments/SIEM Framework/Solution & Architecture Curation/IMG-20231210124656674.png"
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace"
   ]
 }
