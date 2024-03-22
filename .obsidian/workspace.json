@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
+                "file": "99 - Changelog.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
+                "file": "99 - Changelog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
+                "file": "99 - Changelog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md"
+                "file": "99 - Changelog.md"
               }
             }
           }
@@ -162,11 +162,13 @@
   },
   "active": "d368c6f7e7e493b8",
   "lastOpenFiles": [
+    "📄 Resume - Training, Certifications, Conferences, Education.md",
+    "📄 Resume - Tools & Tech ⚒️.md",
+    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
     "99 - Changelog.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "CybersaderNotion/CybersaderNotion.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec/TalkinBoutNews - TEMPLATE.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
@@ -188,9 +190,7 @@
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows",
     "📁 01 - Logs, Journal/Untitled.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "Resume - Training, Certifications, Conferences, Education.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
-    "Resume - Tools & Tech ⚒️.md",
     "README.md",
     "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
     "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
