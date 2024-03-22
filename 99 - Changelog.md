@@ -1,3 +1,4 @@
+- 2024-03-22 at 13h57 · [[Daily Routine]]
 - 2024-03-22 at 13h45 · [[📄 Resume - Tools & Tech ⚒️]]
 - 2024-03-22 at 12h48 · [[Honey Accounts in Windows AD]]
 - 2024-03-22 at 12h24 · [[03 - March BHIS]]
@@ -8,7 +9,6 @@
 - 2024-03-22 at 10h53 · [[Turning Old PC into NAS]]
 - 2024-03-22 at 10h33 · [[📁 01 - Logs, Journal]]
 - 2024-03-22 at 09h17 · [[Go Pro as a Webcam]]
-- 2024-03-22 at 09h03 · [[Daily Routine]]
 - 2024-03-22 at 08h58 · [[⬇ INBOX, DROPZONE]]
 - 2024-03-22 at 08h55 · [[Bluetooth Removal Issue Fix Windows]]
 - 2024-03-22 at 08h37 · [[08 Cybersader LOGS or JOURNAL (PUBLIC)]]

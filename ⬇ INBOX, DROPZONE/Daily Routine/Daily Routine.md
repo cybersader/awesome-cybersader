@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 22nd 2024, 8:58 am
-date modified: Friday, March 22nd 2024, 9:03 am
+date modified: Friday, March 22nd 2024, 1:57 pm
 ---
 
 # March 2024 Routine
@@ -15,7 +15,7 @@ date modified: Friday, March 22nd 2024, 9:03 am
 	- (optional) 
 		- Elevate session
 		- Anki
-	- CIAY 
+	- CIY, BIY, Prayer
 	- Tasks
 - Evening
 	- Workout, Walk
