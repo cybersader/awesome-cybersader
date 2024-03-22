@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 22nd 2024, 9:27 am
-date modified: Friday, March 22nd 2024, 9:54 am
+date modified: Friday, March 22nd 2024, 10:15 am
 ---
 
 # [Patch Tuesday, March 2024 Edition – Krebs on Security](https://krebsonsecurity.com/2024/03/patch-tuesday-march-2024-edition/) 
@@ -26,5 +26,4 @@ date modified: Friday, March 22nd 2024, 9:54 am
 		- Closing or reopening Authenticator allows attacker to obtain MFA codes and modify or delete accounts from the app
 	- [CVE-2024-21334](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21334): earned a CVSS (danger) score of 9.8 (10 is the worst), and it concerns a weakness in **Open Management Infrastructure** (OMI), a Linux-based cloud infrastructure in **Microsoft Azure**. Attacks can connect to OMI instance and send crafted data packets to get RCE on host Linux machine
 	- [CVE-2024-21435](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21435): RCE that uses OLE engine (backbone for some app-to-app comms on Windows), but 8.8 because it requires technical skill
-
 - 
