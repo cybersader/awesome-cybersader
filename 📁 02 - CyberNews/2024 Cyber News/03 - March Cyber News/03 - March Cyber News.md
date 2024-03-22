@@ -1,8 +1,17 @@
 ---
 date created: Friday, March 22nd 2024, 9:27 am
-date modified: Friday, March 22nd 2024, 10:29 am
+date modified: Friday, March 22nd 2024, 11:04 am
 ---
 
+# [A Close Up Look at the Consumer Data Broker Radaris – Krebs on Security](https://krebsonsecurity.com/2024/03/a-close-up-look-at-the-consumer-data-broker-radaris/) 
+- March 8, 2024
+#databroker #privacy #peoplesearch #russia #unitedstates
+- Radaris is a prominent data broker and shell company
+- What they run:
+	- vast number of people-search websites
+	- russian dating services
+	- affiliate programs
+- 
 # [Patch Tuesday, March 2024 Edition – Krebs on Security](https://krebsonsecurity.com/2024/03/patch-tuesday-march-2024-edition/) 
 #KrebsOnSec 
 - March 12, 2024
@@ -13,8 +22,8 @@ date modified: Friday, March 22nd 2024, 10:29 am
 - Microsoft patched 60 vulns!
 - Apple's macOS Sonoma addresses 68 weaknesses, and update for iOS fixes two zero-days
 	- [Apple Blunts Zero-Day Attacks With iOS 17.4 Update - SecurityWeek](https://www.securityweek.com/apple-blunts-zero-day-attacks-with-ios-17-4-update/) 
-- Feb 26 2024 - Biden admin report called from memory-safe programming languages - mitigates lots of mobile OS vulns 
-	- Hence why [Rust](https://www.rust-lang.org/) was mentioned
+- Feb 26 2024 - Biden admin report called from memory-safe programming languages - mitigates lots of mobile OS vulns
+	- Hence why [Rust](https://www.rust-lang.org/) was mentioned #rust
 	- [Statements of Support for Software Measurability and Memory Safety | ONCD | The White House](https://www.whitehouse.gov/oncd/briefing-room/2024/02/26/memory-safety-statements-of-support/) 
 - No zero-days seen on the Windows side (thankfully)
 - Windows - 60 CVEs and yet only 6 that could likely be used
