@@ -103,6 +103,11 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Ordered one overnight 🥴
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115107483.png)
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115310427.png)
+	- Still not detecting in TrueNAS installer, but is detecting in BIOS
+		- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
+			- Please ignore my previous post. I have fixed the problem.  
+			- I reformatted the boot disc to ExFAT, put it back in the NAS system and the installation USB recognised it.
+	- 
 ## Initial Install 
 
 # TrueNAS Configuration and Setup
