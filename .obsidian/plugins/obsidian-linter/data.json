@@ -265,7 +265,8 @@
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
-    "CybersaderNotion"
+    "CybersaderNotion",
+    "📁 99 - Changelog"
   ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",

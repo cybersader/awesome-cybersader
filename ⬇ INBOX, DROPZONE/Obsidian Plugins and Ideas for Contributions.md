@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Wednesday, March 20th 2024, 10:07 am
+date modified: Friday, March 22nd 2024, 7:28 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -13,3 +13,6 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Modify refactor plugin to have 
 	- option for copying md to README.md for github applicability
 	- Ability to add sub folders or pages from within note like Notion
+- Youtube links
+	- [Embed YouTube Videos in Notes & Link Timestamps to Embedded Video - Feature archive - Obsidian Forum](https://forum.obsidian.md/t/embed-youtube-videos-in-notes-link-timestamps-to-embedded-video/36779/4) 
+	- 

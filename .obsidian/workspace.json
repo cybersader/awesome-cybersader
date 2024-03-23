@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3b99f9d3cce57ae1",
+        "id": "87d61867fb807ea0",
         "type": "tabs",
         "children": [
           {
-            "id": "c28a8a38fb4e82eb",
+            "id": "8f2de26c5d09d141",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,24 +139,30 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "c28a8a38fb4e82eb",
+  "active": "8f2de26c5d09d141",
   "lastOpenFiles": [
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240322153551912.png",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 99 - Changelog",
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322195331132.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322195314784.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322194928178.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322193526832.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322193419746.png",
+    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
+    "⬇ INBOX, DROPZONE/Cyber Merch",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322153551912.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240322153253798.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240322183337356.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200600459.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321200339446.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/Turning Old PC into NAS.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240322183337356.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240321200600459.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/IMG-20240321200339446.png",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s",
-    "Untitled",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240322153112079.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240322153037606.png",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/Daily Routine/Daily Routine.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "📄 Resume - Tools & Tech ⚒️.md",
-    "99 - Changelog.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
@@ -180,20 +178,13 @@
     "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
     "⬇ INBOX, DROPZONE/Daily Routine",
-    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322085041846.png",
-    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084723281.png",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows",
     "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments",
-    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows/_attachments/Bluetooth Removal Issue Fix Windows/IMG-20240322084701216.png",
-    "📁 01 - Logs, Journal/Bluetooth Removal Issue Fix Windows",
     "📁 01 - Logs, Journal/Untitled.md",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "README.md",
     "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
-    "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md",
-    "📁 05 - Learning/📁 05 - Learning.md",
-    "⬇ INBOX, DROPZONE/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS/_attachments/Turning Old PC into NAS/IMG-20240321201727697.png"
+    "📁 05 - Learning/BHIS, Antisyphon/BHIS, Antisyphon.md"
   ]
 }

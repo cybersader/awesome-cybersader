@@ -2,12 +2,17 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 22nd 2024, 7:16 pm
+date modified: Friday, March 22nd 2024, 7:58 pm
+tags:
+  - TrueNAS
+  - NAS
+  - HomeLab
+  - Storage
 ---
 
-# Misc Links
-- [(40) Building A Budget NAS with TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=iSpL9LnczVQ)
-- [(40) Building A DIY NAS On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)
+# Misc Links & Videos
+- ![(40) Building A Budget NAS with TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=iSpL9LnczVQ)
+- ![(40) Building A DIY NAS On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)
 - [balenaEtcher - Flash OS images to SD cards & USB drives](https://etcher.balena.io/)
 - [Total Noob Here: trying to install TrueNas on USB pendrive | TrueNAS Community](https://www.truenas.com/community/threads/total-noob-here-trying-to-install-truenas-on-usb-pendrive.102312/)
 - [Ventoy](https://www.ventoy.net/en/index.html)
@@ -16,7 +21,7 @@ date modified: Friday, March 22nd 2024, 7:16 pm
 - [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/uiconfigurationscale/)
 # Hardware
 - Old PC
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240322153112079.png)
+	- ![](IMG-20240322153112079.png)
 ## HDDs
 - The most expensive part of NAS projects 😅
 	- [Amazon.com: Seagate IronWolf 12TB NAS Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage – Frustration Free Packaging (ST12000VNZ008) : Electronics](https://www.amazon.com/Seagate-IronWolf-12TB-Internal-Drive/dp/B084ZTSMWF)
@@ -42,21 +47,43 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- .
 ## Prepare Old PC - Hardware
 - In my case, I didn't have an SSD (NVMe in this case), so I added one from another old laptop
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240322153551912.png)
+	- ![](IMG-20240322153551912.png)
 - Make sure you have SATA cords for data and power to the HDD
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240322183337356.png)
+	- ![](IMG-20240322183337356.png)
 ## Flashing TrueNAS to a USB Drive
 - Download TrueNAS Scale .iso file
 	- [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c) 
 - "Flash" the .iso file to the USB drive with [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/)
 	- balenaEtcher 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200339446.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200536640.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200600459.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200727215.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200816421.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321200848777.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS/IMG-20240321201727697.png)
+		- ![](IMG-20240321200339446.png)
+		- ![](IMG-20240321200536640.png)
+		- ![](IMG-20240321200600459.png)
+		- ![](IMG-20240321200727215.png)
+		- ![](IMG-20240321200816421.png)
+		- ![](IMG-20240321200848777.png)
+		- ![](IMG-20240321201727697.png)
 - 
-##
+## Installing TrueNAS onto Old PC
+- Turn it on
+- You should get a blue screen that allows TrueNAS install
+	- Hit `Enter`
+	- ![](IMG-20240322193419746.png)
+- Errors:
+	- `bad shim signatures` and `you need to load the kernel first`
+	- [I can install and boot Truenas Scale on one pc and not another. | TrueNAS Community](https://www.truenas.com/community/threads/i-can-install-and-boot-truenas-scale-on-one-pc-and-not-another.106601/)
+		- `Try disabling secure boot from the BIOS.`
+	- Restart or Power off your PC, then turn it back on and hit `Delete` or `F2` a bunch of times till you get to BIOS setup
+		- Find and disable Secure Boot
+		- ![](IMG-20240322193526832.png)
+- Issue: Old OS on SSD, so it's not showing up in TrueNAS destination list
+	- I don't have any sort of access to OS.  Locked down.
+	- Solution:
+		- Restart to BIOS setup
+		- Look for something like "Data Wipe" or "Secure Erase"
+			- ![](IMG-20240322194928178.png)
+			- Are you sure? 🤔
+				- ![](IMG-20240322195314784.png)
+			- YESSSSS....ERASE IT ALLL 👿
+				- ![](IMG-20240322195331132.png)
+- 
 

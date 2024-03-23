@@ -8,6 +8,7 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 %% Begin Waypoint %%
 - [[🐛 Known Base Bugs, Issues]]
 - [[Company Security Strategy from Zero]]
+- **[Cyber Merch](./Cyber%20Merch/Cyber%20Merch.md)**
 - **[Daily Routine](./Daily%20Routine/Daily%20Routine.md)**
 - [[Go Pro as a Webcam]]
 - [[New Tools]]
