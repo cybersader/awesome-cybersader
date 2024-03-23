@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Saturday, March 23rd 2024, 3:06 pm
+date modified: Saturday, March 23rd 2024, 3:59 pm
 tags:
   - TrueNAS
   - NAS
@@ -115,7 +115,10 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- Used balenaEtcher to flash to a USB, plugged it in, and got a GNU Grub screen.  I'm pretty sure the CPU supports graphics, so not sure what the issue is
 		- Trying to flash Kali to USB with Rufus instead
 			- [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/)
-		- 
+		- Nm I used a Medicat USB I had lying around
+		- Couldn't see the drive
+		- Tried another SSD with old Windows.  It booted.  However, again, TrueNAS doesn't detect this SSD.
+		- Motherboard (mobo) issue? Like seriously?
 ## Initial Install 
 
 # TrueNAS Configuration and Setup
