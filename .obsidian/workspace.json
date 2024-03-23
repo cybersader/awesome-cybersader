@@ -11,8 +11,12 @@
             "id": "8f2de26c5d09d141",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+              }
             }
           }
         ]
