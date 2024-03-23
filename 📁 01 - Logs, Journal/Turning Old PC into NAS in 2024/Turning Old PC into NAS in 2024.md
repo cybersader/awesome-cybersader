@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 22nd 2024, 7:58 pm
+date modified: Friday, March 22nd 2024, 10:37 pm
 tags:
   - TrueNAS
   - NAS
@@ -19,6 +19,7 @@ tags:
 - [Installing SCALE |](https://www.truenas.com/docs/scale/gettingstarted/install/installingscale/)
 - [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c)
 - [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/uiconfigurationscale/)
+- [Preparing for SCALE UI Configuration |](https://www.truenas.com/docs/scale/gettingstarted/install/installprepnonenterprise/)
 # Hardware
 - Old PC
 	- ![](IMG-20240322153112079.png)
