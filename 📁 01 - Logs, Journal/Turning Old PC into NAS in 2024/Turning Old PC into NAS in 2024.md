@@ -100,5 +100,12 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232816814.png)
 	- [XPS 8940 Setup and Specifications | Dell US](https://www.dell.com/support/manuals/en-us/xps-8940-desktop/xps-8940-setup-and-specifications/specifications-of-xps-8940?guid=guid-7c9f07ce-626e-44ca-be3a-a1fb036413f9&lang=en-us) 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322233032344.png)
-- 
+	- Ordered one overnight 🥴
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115107483.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115310427.png)
+## Initial Install 
 
+# TrueNAS Configuration and Setup
+## Networking and Admin UI 
+- .
+- 
