@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Saturday, March 23rd 2024, 2:28 pm
+date modified: Saturday, March 23rd 2024, 3:06 pm
 tags:
   - TrueNAS
   - NAS
@@ -113,6 +113,8 @@ Always check for compatibility with your specific NAS model and consider buying 
 			- [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-live) 
 				- [gparted | Kali Linux Tools](https://www.kali.org/tools/gparted/)
 		- Used balenaEtcher to flash to a USB, plugged it in, and got a GNU Grub screen.  I'm pretty sure the CPU supports graphics, so not sure what the issue is
+		- Trying to flash Kali to USB with Rufus instead
+			- [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/)
 		- 
 ## Initial Install 
 
