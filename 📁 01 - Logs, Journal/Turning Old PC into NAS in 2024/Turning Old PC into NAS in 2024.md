@@ -112,6 +112,7 @@ Always check for compatibility with your specific NAS model and consider buying 
 			- Since Kali Linux has GParted, I'll just boot with that
 			- [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-live) 
 				- [gparted | Kali Linux Tools](https://www.kali.org/tools/gparted/)
+		- Used balenaEtcher to flash to a USB, plugged it in, and got a GNU Grub screen.  I'm pretty sure the CPU supports graphics, so not sure what the issue is
 		- 
 ## Initial Install 
 
