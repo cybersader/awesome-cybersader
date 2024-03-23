@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 22nd 2024, 11:30 pm
+date modified: Saturday, March 23rd 2024, 2:28 pm
 tags:
   - TrueNAS
   - NAS
@@ -107,7 +107,12 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
 			- Please ignore my previous post. I have fixed the problem.  
 			- I reformatted the boot disc to ExFAT, put it back in the NAS system and the installation USB recognised it.
-	- 
+		- I would put it onto my other computer, but it doesn't support Gen 3 PCIE....yayyyyy 😑
+		- There's one option only.  USB/live boot Linux onto the machine and reformat everything with GParted.  I swear I run into every issue under the sun with these projects 😆.
+			- Since Kali Linux has GParted, I'll just boot with that
+			- [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-live) 
+				- [gparted | Kali Linux Tools](https://www.kali.org/tools/gparted/)
+		- 
 ## Initial Install 
 
 # TrueNAS Configuration and Setup
