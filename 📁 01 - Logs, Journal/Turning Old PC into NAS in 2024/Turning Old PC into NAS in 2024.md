@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 22nd 2024, 10:37 pm
+date modified: Friday, March 22nd 2024, 11:30 pm
 tags:
   - TrueNAS
   - NAS
@@ -64,7 +64,7 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- ![](IMG-20240321200848777.png)
 		- ![](IMG-20240321201727697.png)
 - 
-## Installing TrueNAS onto Old PC
+## Installing TrueNAS onto Old PC (w/sidequests)
 - Turn it on
 - You should get a blue screen that allows TrueNAS install
 	- Hit `Enter`
@@ -86,5 +86,19 @@ Always check for compatibility with your specific NAS model and consider buying 
 				- ![](IMG-20240322195314784.png)
 			- YESSSSS....ERASE IT ALLL 👿
 				- ![](IMG-20240322195331132.png)
+- PC not detecting NVMe hard drive
+	- [M.2 Interface, Key and Socket explained](https://www.atpinc.com/blog/what-is-m.2-M-B-BM-key-socket-3)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232532184.png)
+	- [‎Dell SSD Classification | DELL Technologies](https://www.dell.com/community/en/conversations/inspiron/dell-ssd-classification/647f8d18f4ccf8a8ded8bf24)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322233725728.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232325273.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232412962.png)
+	- Ahhhhh it's a SATA SSD 😖
+	- Looks like I'll have to buy an actual **NVMe SSD** rather than an **M.2 SATA SSD** unless my XPS 8940 supports it
+		- SATA just refers to the connection type
+	- M.2 Form Factors
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232816814.png)
+	- [XPS 8940 Setup and Specifications | Dell US](https://www.dell.com/support/manuals/en-us/xps-8940-desktop/xps-8940-setup-and-specifications/specifications-of-xps-8940?guid=guid-7c9f07ce-626e-44ca-be3a-a1fb036413f9&lang=en-us) 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322233032344.png)
 - 
 
