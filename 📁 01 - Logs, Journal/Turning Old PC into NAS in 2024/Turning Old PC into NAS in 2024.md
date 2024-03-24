@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 12:46 pm
+date modified: Sunday, March 24th 2024, 2:09 pm
 tags:
   - TrueNAS
   - NAS
@@ -20,6 +20,7 @@ tags:
 - [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c)
 - [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/uiconfigurationscale/)
 - [Preparing for SCALE UI Configuration |](https://www.truenas.com/docs/scale/gettingstarted/install/installprepnonenterprise/)
+- [SCALE Hardware Guide |](https://www.truenas.com/docs/scale/gettingstarted/scalehardwareguide/)
 # Hardware
 - Old PC
 	- ![](IMG-20240322153112079.png)
@@ -76,6 +77,7 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Restart or Power off your PC, then turn it back on and hit `Delete` or `F2` a bunch of times till you get to BIOS setup
 		- Find and disable Secure Boot
 		- ![](IMG-20240322193526832.png)
+### Wrong SSD Type
 - Issue: Old OS on SSD, so it's not showing up in TrueNAS destination list
 	- I don't have any sort of access to OS.  Locked down.
 	- Solution:
@@ -103,27 +105,50 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Ordered one overnight 🥴
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115107483.png)
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115310427.png)
-	- Still not detecting in TrueNAS installer, but is detecting in BIOS
-		- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
-			- Please ignore my previous post. I have fixed the problem.  
-			- I reformatted the boot disc to ExFAT, put it back in the NAS system and the installation USB recognised it.
-		- I would put it onto my other computer, but it doesn't support Gen 3 PCIE....yayyyyy 😑
-		- There's one option only.  USB/live boot Linux onto the machine and reformat everything with GParted.  I swear I run into every issue under the sun with these projects 😆.
-			- Since Kali Linux has GParted, I'll just boot with that
-			- [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-live) 
-				- [gparted | Kali Linux Tools](https://www.kali.org/tools/gparted/)
-		- Used balenaEtcher to flash to a USB, plugged it in, and got a GNU Grub screen.  I'm pretty sure the CPU supports graphics, so not sure what the issue is
-		- Trying to flash Kali to USB with Rufus instead
-			- [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/)
-		- Nm I used a Medicat USB I had lying around
-		- Couldn't see the drive
-		- Tried another SSD with old Windows.  It booted.  However, again, TrueNAS doesn't detect this SSD.
-		- Motherboard (mobo) issue? Like seriously?
-		- Other links (SSD in BIOS but not booted OS):
-			- [M.2 Showing up in bios but not Windows : r/buildapc](https://www.reddit.com/r/buildapc/comments/yr7exj/m2_showing_up_in_bios_but_not_windows/)
-		- It's showing up????
-			- I changed a few settings in the BIOS before it started showing up:
-				- 
+### SSD Not Showing up in Destination List for Installing as TrueNAS Boot Drive - OS Not Seeing SSD
+- Still not detecting in TrueNAS installer, but is detecting in BIOS
+	- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
+		- Please ignore my previous post. I have fixed the problem.  
+		- I reformatted the boot disc to ExFAT, put it back in the NAS system and the installation USB recognised it.
+	- I would put it onto my other computer, but it doesn't support Gen 3 PCIE....yayyyyy 😑
+	- There's one option only.  USB/live boot Linux onto the machine and reformat everything with GParted.  I swear I run into every issue under the sun with these projects 😆.
+		- Since Kali Linux has GParted, I'll just boot with that
+		- [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-live) 
+			- [gparted | Kali Linux Tools](https://www.kali.org/tools/gparted/)
+	- Used balenaEtcher to flash to a USB, plugged it in, and got a GNU Grub screen.  I'm pretty sure the CPU supports graphics, so not sure what the issue is
+	- Trying to flash Kali to USB with Rufus instead
+		- [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/)
+	- Nm I used a Medicat USB I had lying around
+	- Couldn't see the drive
+	- Tried another SSD with old Windows.  It booted.  However, again, TrueNAS doesn't detect this SSD.
+	- Motherboard (mobo) issue? Like seriously?
+- SSD not showing up in OS, but showing up in BIOS (basic input output)
+	- Here's my thinking.  It's likely a BIOS setting or the drive is in some format that doesn't work with TrueNAS scale installation or being detected by the OS
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324130422678.png)
+	- SSD and storage formatting explained
+		- [Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md) 
+			- `Partition schemes are crucial for an OS to recognize, access, and manage the partitions within a storage device.`
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324131359397.png)
+	- RAID and AHCI
+		- **BIOS/UEFI Settings and SSD Detection**: If your BIOS is set to RAID mode but you're not using a RAID configuration, your OS might not recognize the SSD unless the correct RAID drivers are installed. Conversely, `setting it to AHCI mode typically allows for immediate recognition and utilization of the SSD by the OS, assuming the OS supports AHCI (which most modern operating systems do).`
+		- **MBR and Bootability**: Whether an SSD is formatted as MBR or GPT is more about the disk's partitioning scheme and doesn't directly impact how the BIOS/UEFI detects the SSD in terms of AHCI vs. RAID mode. However, `GPT is required for booting from disks larger than 2TB and for systems that use UEFI instead of traditional BIOS.`
+	- Changing settings in BIOS to make it show up:
+		- Enable AHCI instead of RAID
+			- This fixes things because GPT is required for UEFI-based boots instead of BIOS
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324133213957.png)
+		- Enable SMART Reporting
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324132559916.png)
+	- Boot to another USB like Medicat USB or a Linux distro then apt install or get "gparted", so we can change the partition from basic/classic MBR to GPT ........ *phew* that's a lot of stuff to get this silly SSD working
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324133623243.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134344592.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134503928.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134724320.png)
+	- SOLUTION SUMMARY:
+		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
+		- 
+### Installing Bootable TrueNAS to SSD from USB
+- [Using the TrueNAS Installer Console Setup](https://www.truenas.com/docs/scale/gettingstarted/install/installingscale/#using-the-truenas-installer-console-setup)
+- 
 ## Initial Install 
 
 # TrueNAS Configuration and Setup
