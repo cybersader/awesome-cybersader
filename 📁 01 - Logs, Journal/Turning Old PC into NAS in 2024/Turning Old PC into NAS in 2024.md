@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 3:01 pm
+date modified: Sunday, March 24th 2024, 3:36 pm
 tags:
   - TrueNAS
   - NAS
@@ -160,6 +160,11 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- I had enough space to do this
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143902847.png)
 # TrueNAS Configuration and Setup
+## Links & Resources
+- [Configuration Instructions |](https://www.truenas.com/docs/scale/gettingstarted/configure/) 
+	- [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) 
+	- [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/) 
+	- [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) 
 ## Booting Up TrueNAS
 - Went into BIOS and saw TrueNAS-0
 	- Made sure it was first in the boot sequence
@@ -179,11 +184,19 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Make sure we have connection on local network
 		- `ping truenas.local`
 		- `ip addr show`
-		- 
-## Links & Resources
-- [Configuration Instructions |](https://www.truenas.com/docs/scale/gettingstarted/configure/) 
-	- [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) 
-	- [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/) 
-	- [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) 
+	- Wifi on TrueNAS scale?
+		- [Wi-Fi on TrueNAS Scale? | TrueNAS Community](https://www.truenas.com/community/threads/wi-fi-on-truenas-scale.107057/) 
+		- #cyberMeme If I had a dollar for the amount of gatekeeping, maiden-less, grumpy, outdated, impatient IT professionals then I would be a millionaire
+		- No wifi out of the box.  This would require an additional AP with ethernet or install [Proxmox](https://www.proxmox.com/en/) and make TrueNAS a VM in it
+		- Solution? - [TrueNAS Scale with WiFi – Clint's Blog](https://clint.id.au/?p=2958#:~:text=In%20the%20web%20interface%20go,Init%2FShutdown%20Scripts%20%3E%20Add.&text=On%20the%20next%20reboot%20it,address%20from%20the%20DHCP%20server.) 
+			- Run `lspci` in TrueNAS command line to see if TrueNAS sees wireless adapter
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324152853295.png)
+			- ...actually...no. Above article probably works, but I can just use ethernet somehow
+	- Solution: Plug in ethernet or implement bridged connection to look like eternet
+- Web interface showed up!
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324153415574.png)
+- Accessing the web interface 
+	- Use the local IP that it displays or use the domain it assigned like `truenas.local`
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324153619475.png)
 ## Networking and Admin UI 
 - .
