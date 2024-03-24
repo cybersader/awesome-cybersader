@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 5:25 pm
+date modified: Sunday, March 24th 2024, 5:45 pm
 tags:
   - TrueNAS
   - NAS
@@ -27,7 +27,7 @@ tags:
 - [SCALE Hardware Guide |](https://www.truenas.com/docs/scale/gettingstarted/scalehardwareguide/)
 # Hardware
 - Old PC
-	- ![](IMG-20240322153112079.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732455.png)
 ## HDDs
 - The most expensive part of NAS projects 😅
 	- [Amazon.com: Seagate IronWolf 12TB NAS Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage – Frustration Free Packaging (ST12000VNZ008) : Electronics](https://www.amazon.com/Seagate-IronWolf-12TB-Internal-Drive/dp/B084ZTSMWF)
@@ -53,62 +53,62 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- .
 ## Prepare Old PC - Hardware
 - In my case, I didn't have an SSD (NVMe in this case), so I added one from another old laptop
-	- ![](IMG-20240322153551912.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732515.png)
 - Make sure you have SATA cords for data and power to the HDD
-	- ![](IMG-20240322183337356.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732559.png)
 ## Flashing TrueNAS to a USB Drive
 - Download TrueNAS Scale .iso file
 	- [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c) 
 - "Flash" the .iso file to the USB drive with [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/)
 	- balenaEtcher 
-		- ![](IMG-20240321200339446.png)
-		- ![](IMG-20240321200536640.png)
-		- ![](IMG-20240321200600459.png)
-		- ![](IMG-20240321200727215.png)
-		- ![](IMG-20240321200816421.png)
-		- ![](IMG-20240321200848777.png)
-		- ![](IMG-20240321201727697.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732603.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732680.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732743.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732800.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732846.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732899.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732956.png)
 - 
 ## Installing TrueNAS onto Old PC (w/sidequests)
 - Turn it on
 - You should get a blue screen that allows TrueNAS install
 	- Hit `Enter`
-	- ![](IMG-20240322193419746.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733007.png)
 - Errors:
 	- `bad shim signatures` and `you need to load the kernel first`
 	- [I can install and boot Truenas Scale on one pc and not another. | TrueNAS Community](https://www.truenas.com/community/threads/i-can-install-and-boot-truenas-scale-on-one-pc-and-not-another.106601/)
 		- `Try disabling secure boot from the BIOS.`
 	- Restart or Power off your PC, then turn it back on and hit `Delete` or `F2` a bunch of times till you get to BIOS setup
 		- Find and disable Secure Boot
-		- ![](IMG-20240322193526832.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733058.png)
 ### Wrong SSD Type
 - Issue: Old OS on SSD, so it's not showing up in TrueNAS destination list
 	- I don't have any sort of access to OS.  Locked down.
 	- Solution:
 		- Restart to BIOS setup
 		- Look for something like "Data Wipe" or "Secure Erase"
-			- ![](IMG-20240322194928178.png)
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733109.png)
 			- Are you sure? 🤔
-				- ![](IMG-20240322195314784.png)
+				- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733166.png)
 			- YESSSSS....ERASE IT ALLL 👿
-				- ![](IMG-20240322195331132.png)
+				- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733231.png)
 - PC not detecting NVMe hard drive
 	- [M.2 Interface, Key and Socket explained](https://www.atpinc.com/blog/what-is-m.2-M-B-BM-key-socket-3)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232532184.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733279.png)
 	- [‎Dell SSD Classification | DELL Technologies](https://www.dell.com/community/en/conversations/inspiron/dell-ssd-classification/647f8d18f4ccf8a8ded8bf24)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322233725728.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232325273.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232412962.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733318.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733365.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733407.png)
 	- Ahhhhh it's a SATA SSD 😖
 	- Looks like I'll have to buy an actual **NVMe SSD** rather than an **M.2 SATA SSD** unless my XPS 8940 supports it
 		- SATA just refers to the connection type
 	- M.2 Form Factors
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322232816814.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733478.png)
 	- [XPS 8940 Setup and Specifications | Dell US](https://www.dell.com/support/manuals/en-us/xps-8940-desktop/xps-8940-setup-and-specifications/specifications-of-xps-8940?guid=guid-7c9f07ce-626e-44ca-be3a-a1fb036413f9&lang=en-us) 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240322233032344.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733518.png)
 	- Ordered one overnight 🥴
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115107483.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240323115310427.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733567.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733620.png)
 ### SSD Not Showing up in Destination List for Installing as TrueNAS Boot Drive - OS Not Seeing SSD
 - Still not detecting in TrueNAS installer, but is detecting in BIOS
 	- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
@@ -128,25 +128,25 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Motherboard (mobo) issue? Like seriously?
 - SSD not showing up in OS, but showing up in BIOS (basic input output)
 	- Here's my thinking.  It's likely a BIOS setting or the drive is in some format that doesn't work with TrueNAS scale installation or being detected by the OS
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324130422678.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733667.png)
 	- SSD and storage formatting explained
 		- [Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md) 
 			- `Partition schemes are crucial for an OS to recognize, access, and manage the partitions within a storage device.`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324131359397.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733710.png)
 	- RAID and AHCI
 		- **BIOS/UEFI Settings and SSD Detection**: If your BIOS is set to RAID mode but you're not using a RAID configuration, your OS might not recognize the SSD unless the correct RAID drivers are installed. Conversely, `setting it to AHCI mode typically allows for immediate recognition and utilization of the SSD by the OS, assuming the OS supports AHCI (which most modern operating systems do).`
 		- **MBR and Bootability**: Whether an SSD is formatted as MBR or GPT is more about the disk's partitioning scheme and doesn't directly impact how the BIOS/UEFI detects the SSD in terms of AHCI vs. RAID mode. However, `GPT is required for booting from disks larger than 2TB and for systems that use UEFI instead of traditional BIOS.`
 	- Changing settings in BIOS to make it show up:
 		- Enable AHCI instead of RAID
 			- This fixes things because GPT is required for UEFI-based boots instead of BIOS
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324133213957.png)
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733761.png)
 		- Enable SMART Reporting
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324132559916.png)
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733799.png)
 	- Boot to another USB like Medicat USB or a Linux distro then apt install or get "gparted", so we can change the partition from basic/classic MBR to GPT ........ *phew* that's a lot of stuff to get this silly SSD working
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324133623243.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134344592.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134503928.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134724320.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733842.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733887.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733926.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733978.png)
 	- SOLUTION SUMMARY:
 		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
 ### Installing Bootable TrueNAS to SSD from USB
@@ -154,11 +154,11 @@ Always check for compatibility with your specific NAS model and consider buying 
 
 - Console Setup:
 	- `Spacebar` to select the drive, then `Enter`/ok
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143816808.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143829467.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143853153.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734023.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734064.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734107.png)
 	- I had enough space to do this
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143902847.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734159.png)
 # TrueNAS Configuration and Setup
 ## Links & Resources
 - [Configuration Instructions |](https://www.truenas.com/docs/scale/gettingstarted/configure/) 
@@ -168,17 +168,17 @@ Always check for compatibility with your specific NAS model and consider buying 
 ## Booting Up TrueNAS
 - Went into BIOS and saw TrueNAS-0
 	- Made sure it was first in the boot sequence
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324144550150.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734201.png)
 - Restart PC
 - Enter TrueNAS
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324144943208.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734245.png)
 ## Initial Login for TrueNAS & Networking
 - [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) - resources here
 - You can watch the monitor till you get the local address for Web UI
 - "Web interface could not be accessed"
 	- https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/#web-interface-access 
 	- This console popped up during the initial terminal screen
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324145228635.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734296.png)
 	- `When powering on a TrueNAS system, the system attempts to connect to a DHCP server from all live interfaces to access the web UI. On networks that support Multicast Domain Name Services (mDNS), the system can use a host name and domain to access the TrueNAS web interface. By default, TrueNAS uses the host name and domain **truenas.local**. To change the host name and domain in the web interface, go to **Network** and click **Settings** on the **Global Configuration** widget.`
 		- I don't think mDNS is an options for my current router, so I might have to reconfigure the router to make this work.
 	- Make sure we have connection on local network
@@ -190,14 +190,14 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- No wifi out of the box.  This would require an additional AP with ethernet or install [Proxmox](https://www.proxmox.com/en/) and make TrueNAS a VM in it
 		- Solution? - [TrueNAS Scale with WiFi – Clint's Blog](https://clint.id.au/?p=2958#:~:text=In%20the%20web%20interface%20go,Init%2FShutdown%20Scripts%20%3E%20Add.&text=On%20the%20next%20reboot%20it,address%20from%20the%20DHCP%20server.) 
 			- Run `lspci` in TrueNAS command line to see if TrueNAS sees wireless adapter
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324152853295.png)
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734382.png)
 			- ...actually...no. Above article probably works, but I can just use ethernet somehow
 	- Solution: Plug in ethernet or implement bridged connection to look like eternet
 - Web interface showed up!
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324153415574.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734432.png)
 - Accessing the web interface 
 	- Use the local IP that it displays or use the domain it assigned like `truenas.local`
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324153619475.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734479.png)
 ## Auto Turn On TrueNAS When Powered
 - [SOLVED - Automatically turn on and shutdown | TrueNAS Community](https://www.truenas.com/community/threads/automatically-turn-on-and-shutdown.95459/) 
 	- Set up Wake on LAN with hardware
@@ -205,20 +205,20 @@ Always check for compatibility with your specific NAS model and consider buying 
 ## Network Settings
 https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/#setting-up-networking
 - My TrueNAS is accessed via `truenas.local` and I have my router set as the default gateway and nameserver
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324164653473.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734512.png)
 ## Configure Groups and Users
 [Setting Up Users and Groups |](https://www.truenas.com/docs/core/coretutorials/settingupusersandgroups/)
 
 - Create group for regular home users
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163255194.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163326321.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734552.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734581.png)
 - Create user
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163404685.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734619.png)
 	- Create user under Primary group that you just created
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163524492.png)
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734654.png)
 		- Directories and permissions
 			- I just didn't select a directory and used "Create home directory"
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324164404410.png)
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734687.png)
 ## Setting Up Storage
 [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) - TrueNAS docs
 ### My Storage Strategy
@@ -237,14 +237,17 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Plugged in the SATA connectors while the computer is on
 	- Oops...guess that's a bad idea - [Can I plug in a hard drive while the computer is on? - Quora](https://www.quora.com/Can-I-plug-in-a-hard-drive-while-the-computer-is-on#:~:text=Technically%2C%20it%20is%20possible%20to,surges%2C%20or%20other%20electrical%20issues.) (Yes, but maybe don't)
 		- [hard drive - Can I connect and disconnect a SATA harddrive while my computer is running? - Super User](https://superuser.com/questions/221066/can-i-connect-and-disconnect-a-sata-harddrive-while-my-computer-is-running) 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324171043003.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734722.png)
 
 - Storage Tab
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324165321701.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734763.png)
 - Name the pool based on who will access it, what will be stored in it, or its purpose.
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324172457234.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734805.png)
 - Use a "stripe" layout since we have only 1 drive
 	- Use mirror if you have at least 2 and then RaidZ1 and so on if you have 3+ HDDs
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324172534694.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734845.png)
+- I don't need log, spare, cache, etc.
+- Review and Create 😄
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734882.png)
 - 
 
