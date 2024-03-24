@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 4:57 pm
+date modified: Sunday, March 24th 2024, 5:25 pm
 tags:
   - TrueNAS
   - NAS
@@ -223,13 +223,15 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) - TrueNAS docs
 ### My Storage Strategy
 - For now
-	- Start out with one 12 TB HDD
+	- Start out with one 12 TB HDD in "Stripe" storage mode
 		- `While a single-disk pool is technically allowed, it is not recommended.`
 		- This is not ideal, but I don't have money to throw around right now
 	- Back storage up to cloud via S3, Backblaze, etc
 	- Back up boot drive somehow
 - Later
-	- Add another drive for RAID and redundancy
+	- Add another drive for RAID and redundancy using mirror layout
+- (AND/OR) Later
+	- Have 3 total drives using RaidZ1 layout
 ### TrueNAS UI Storage Pool Configuration
 - Plugging in my HDD
 	- Plugged in the SATA connectors while the computer is on
@@ -240,5 +242,9 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Storage Tab
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324165321701.png)
 - Name the pool based on who will access it, what will be stored in it, or its purpose.
-	- 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324172457234.png)
+- Use a "stripe" layout since we have only 1 drive
+	- Use mirror if you have at least 2 and then RaidZ1 and so on if you have 3+ HDDs
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324172534694.png)
+- 
 
