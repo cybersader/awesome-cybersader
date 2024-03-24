@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 12:27 pm
+date modified: Sunday, March 24th 2024, 12:46 pm
 tags:
   - TrueNAS
   - NAS
@@ -119,6 +119,11 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- Couldn't see the drive
 		- Tried another SSD with old Windows.  It booted.  However, again, TrueNAS doesn't detect this SSD.
 		- Motherboard (mobo) issue? Like seriously?
+		- Other links (SSD in BIOS but not booted OS):
+			- [M.2 Showing up in bios but not Windows : r/buildapc](https://www.reddit.com/r/buildapc/comments/yr7exj/m2_showing_up_in_bios_but_not_windows/)
+		- It's showing up????
+			- I changed a few settings in the BIOS before it started showing up:
+				- 
 ## Initial Install 
 
 # TrueNAS Configuration and Setup
