@@ -1,4 +1,4 @@
-- 2024-03-24 at 15h36 · [[Turning Old PC into NAS in 2024]]
+- 2024-03-24 at 16h18 · [[Turning Old PC into NAS in 2024]]
 - 2024-03-24 at 15h36 · [[📁 01 - Logs, Journal]]
 - 2024-03-24 at 15h01 · [[Software RAID vs Hardware RAID - TrueNAS Scale]]
 - 2024-03-24 at 13h18 · [[RAID vs AHCI]]

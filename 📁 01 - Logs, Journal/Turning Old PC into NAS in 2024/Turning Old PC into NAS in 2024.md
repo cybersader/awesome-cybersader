@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 3:36 pm
+date modified: Sunday, March 24th 2024, 4:18 pm
 tags:
   - TrueNAS
   - NAS
@@ -172,7 +172,7 @@ Always check for compatibility with your specific NAS model and consider buying 
 - Restart PC
 - Enter TrueNAS
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324144943208.png)
-## Initial Login for TrueNAS
+## Initial Login for TrueNAS & Networking
 - [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) - resources here
 - You can watch the monitor till you get the local address for Web UI
 - "Web interface could not be accessed"
@@ -198,5 +198,8 @@ Always check for compatibility with your specific NAS model and consider buying 
 - Accessing the web interface 
 	- Use the local IP that it displays or use the domain it assigned like `truenas.local`
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324153619475.png)
-## Networking and Admin UI 
-- .
+## Auto Turn On TrueNAS When Powered
+- [SOLVED - Automatically turn on and shutdown | TrueNAS Community](https://www.truenas.com/community/threads/automatically-turn-on-and-shutdown.95459/) 
+	- Set up Wake on LAN with hardware
+	- Use clocked power switch
+## Configure TrueNAS
