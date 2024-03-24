@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Saturday, March 23rd 2024, 3:59 pm
+date modified: Sunday, March 24th 2024, 12:27 pm
 tags:
   - TrueNAS
   - NAS
@@ -124,4 +124,3 @@ Always check for compatibility with your specific NAS model and consider buying 
 # TrueNAS Configuration and Setup
 ## Networking and Admin UI 
 - .
-- 
