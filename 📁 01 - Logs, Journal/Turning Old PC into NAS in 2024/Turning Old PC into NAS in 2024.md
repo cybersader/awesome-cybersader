@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 4:18 pm
+date modified: Sunday, March 24th 2024, 4:57 pm
 tags:
   - TrueNAS
   - NAS
@@ -202,4 +202,43 @@ Always check for compatibility with your specific NAS model and consider buying 
 - [SOLVED - Automatically turn on and shutdown | TrueNAS Community](https://www.truenas.com/community/threads/automatically-turn-on-and-shutdown.95459/) 
 	- Set up Wake on LAN with hardware
 	- Use clocked power switch
-## Configure TrueNAS
+## Network Settings
+https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/#setting-up-networking
+- My TrueNAS is accessed via `truenas.local` and I have my router set as the default gateway and nameserver
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324164653473.png)
+## Configure Groups and Users
+[Setting Up Users and Groups |](https://www.truenas.com/docs/core/coretutorials/settingupusersandgroups/)
+
+- Create group for regular home users
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163255194.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163326321.png)
+- Create user
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163404685.png)
+	- Create user under Primary group that you just created
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324163524492.png)
+		- Directories and permissions
+			- I just didn't select a directory and used "Create home directory"
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324164404410.png)
+## Setting Up Storage
+[Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) - TrueNAS docs
+### My Storage Strategy
+- For now
+	- Start out with one 12 TB HDD
+		- `While a single-disk pool is technically allowed, it is not recommended.`
+		- This is not ideal, but I don't have money to throw around right now
+	- Back storage up to cloud via S3, Backblaze, etc
+	- Back up boot drive somehow
+- Later
+	- Add another drive for RAID and redundancy
+### TrueNAS UI Storage Pool Configuration
+- Plugging in my HDD
+	- Plugged in the SATA connectors while the computer is on
+	- Oops...guess that's a bad idea - [Can I plug in a hard drive while the computer is on? - Quora](https://www.quora.com/Can-I-plug-in-a-hard-drive-while-the-computer-is-on#:~:text=Technically%2C%20it%20is%20possible%20to,surges%2C%20or%20other%20electrical%20issues.) (Yes, but maybe don't)
+		- [hard drive - Can I connect and disconnect a SATA harddrive while my computer is running? - Super User](https://superuser.com/questions/221066/can-i-connect-and-disconnect-a-sata-harddrive-while-my-computer-is-running) 
+- 
+
+- Storage Tab
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324165321701.png)
+- Name the pool based on who will access it, what will be stored in it, or its purpose.
+- 
+
