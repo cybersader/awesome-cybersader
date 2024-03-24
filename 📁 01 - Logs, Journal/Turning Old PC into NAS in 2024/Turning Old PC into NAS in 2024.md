@@ -2,12 +2,16 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 2:09 pm
+date modified: Sunday, March 24th 2024, 3:01 pm
 tags:
   - TrueNAS
   - NAS
   - HomeLab
   - Storage
+  - Hardware
+  - BIOS
+  - UEFI
+  - Filesystem
 ---
 
 # Misc Links & Videos
@@ -147,10 +151,39 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
 ### Installing Bootable TrueNAS to SSD from USB
 - [Using the TrueNAS Installer Console Setup](https://www.truenas.com/docs/scale/gettingstarted/install/installingscale/#using-the-truenas-installer-console-setup)
-- `Spacebar` to select the drive, then `Enter`/ok
-- 
-## Initial Install 
 
+- Console Setup:
+	- `Spacebar` to select the drive, then `Enter`/ok
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143816808.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143829467.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143853153.png)
+	- I had enough space to do this
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324143902847.png)
 # TrueNAS Configuration and Setup
+## Booting Up TrueNAS
+- Went into BIOS and saw TrueNAS-0
+	- Made sure it was first in the boot sequence
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324144550150.png)
+- Restart PC
+- Enter TrueNAS
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324144943208.png)
+## Initial Login for TrueNAS
+- [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) - resources here
+- You can watch the monitor till you get the local address for Web UI
+- "Web interface could not be accessed"
+	- https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/#web-interface-access 
+	- This console popped up during the initial terminal screen
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324145228635.png)
+	- `When powering on a TrueNAS system, the system attempts to connect to a DHCP server from all live interfaces to access the web UI. On networks that support Multicast Domain Name Services (mDNS), the system can use a host name and domain to access the TrueNAS web interface. By default, TrueNAS uses the host name and domain **truenas.local**. To change the host name and domain in the web interface, go to **Network** and click **Settings** on the **Global Configuration** widget.`
+		- I don't think mDNS is an options for my current router, so I might have to reconfigure the router to make this work.
+	- Make sure we have connection on local network
+		- `ping truenas.local`
+		- `ip addr show`
+		- 
+## Links & Resources
+- [Configuration Instructions |](https://www.truenas.com/docs/scale/gettingstarted/configure/) 
+	- [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) 
+	- [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/) 
+	- [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) 
 ## Networking and Admin UI 
 - .
