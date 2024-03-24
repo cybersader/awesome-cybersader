@@ -1,4 +1,4 @@
-- 2024-03-24 at 14h09 · [[Turning Old PC into NAS in 2024]]
+- 2024-03-24 at 14h27 · [[Turning Old PC into NAS in 2024]]
 - 2024-03-24 at 13h47 · [[📁 01 - Logs, Journal]]
 - 2024-03-24 at 13h18 · [[RAID vs AHCI]]
 - 2024-03-24 at 13h15 · [[Filesystems and Partition Schemes]]

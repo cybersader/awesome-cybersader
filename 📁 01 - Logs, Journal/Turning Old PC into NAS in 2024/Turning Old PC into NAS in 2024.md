@@ -145,9 +145,9 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324134724320.png)
 	- SOLUTION SUMMARY:
 		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
-		- 
 ### Installing Bootable TrueNAS to SSD from USB
 - [Using the TrueNAS Installer Console Setup](https://www.truenas.com/docs/scale/gettingstarted/install/installingscale/#using-the-truenas-installer-console-setup)
+- `Spacebar` to select the drive, then `Enter`/ok
 - 
 ## Initial Install 
 
