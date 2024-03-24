@@ -235,10 +235,10 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Plugged in the SATA connectors while the computer is on
 	- Oops...guess that's a bad idea - [Can I plug in a hard drive while the computer is on? - Quora](https://www.quora.com/Can-I-plug-in-a-hard-drive-while-the-computer-is-on#:~:text=Technically%2C%20it%20is%20possible%20to,surges%2C%20or%20other%20electrical%20issues.) (Yes, but maybe don't)
 		- [hard drive - Can I connect and disconnect a SATA harddrive while my computer is running? - Super User](https://superuser.com/questions/221066/can-i-connect-and-disconnect-a-sata-harddrive-while-my-computer-is-running) 
-- 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324171043003.png)
 
 - Storage Tab
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324165321701.png)
 - Name the pool based on who will access it, what will be stored in it, or its purpose.
-- 
+	- 
 
