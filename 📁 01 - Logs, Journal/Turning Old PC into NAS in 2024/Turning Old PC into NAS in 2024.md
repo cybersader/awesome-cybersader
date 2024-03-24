@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 5:45 pm
+date modified: Sunday, March 24th 2024, 7:09 pm
 tags:
   - TrueNAS
   - NAS
@@ -110,6 +110,8 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733567.png)
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733620.png)
 ### SSD Not Showing up in Destination List for Installing as TrueNAS Boot Drive - OS Not Seeing SSD
+- TLDR 😆 - [LawrenceTechTips answer/solution to my question - YouTube clip](https://youtube.com/clip/UgkxoJhZaSWuA89uWk8NBZqkMjexvh31yF5N?si=g0mqJ534weA0tIe6)
+
 - Still not detecting in TrueNAS installer, but is detecting in BIOS
 	- [Truenas Scale not seeing SSD to install on | TrueNAS Community](https://www.truenas.com/community/threads/truenas-scale-not-seeing-ssd-to-install-on.104153/)
 		- Please ignore my previous post. I have fixed the problem.  
@@ -148,6 +150,7 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733926.png)
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733978.png)
 	- SOLUTION SUMMARY:
+		- [LawrenceTechTips answer to my question - YouTube clip](https://youtube.com/clip/UgkxoJhZaSWuA89uWk8NBZqkMjexvh31yF5N?si=g0mqJ534weA0tIe6)
 		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
 ### Installing Bootable TrueNAS to SSD from USB
 - [Using the TrueNAS Installer Console Setup](https://www.truenas.com/docs/scale/gettingstarted/install/installingscale/#using-the-truenas-installer-console-setup)
