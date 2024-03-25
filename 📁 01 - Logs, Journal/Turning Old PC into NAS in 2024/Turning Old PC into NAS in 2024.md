@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 7:31 pm
+date modified: Sunday, March 24th 2024, 10:41 pm
 tags:
   - TrueNAS
   - NAS
@@ -252,6 +252,9 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - I don't need log, spare, cache, etc.
 - Review and Create 😄
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734882.png)
+### Don't Lose Power While Creating an Encrypted Pool 😵
+- Long story short, I cancelled a pool creation job in TrueNAS or I lost power during it and it caused my drive to have an ATA security password on it that I can't find.
+
 - Errors!
 	- I got an error `error fsyncing/closing/dev/sda: input/output error`
 	- Hard to tell if this is from losing power during the drive encryption job or the fact that it's encrypted
