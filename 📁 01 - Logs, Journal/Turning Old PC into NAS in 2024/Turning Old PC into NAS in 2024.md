@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, March 24th 2024, 10:41 pm
+date modified: Sunday, March 24th 2024, 11:38 pm
 tags:
   - TrueNAS
   - NAS
@@ -265,5 +265,21 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- [Cannot Unlock ATA Security Locked Hard Drive Locked During Secure Erase - Super User](https://superuser.com/questions/1478206/cannot-unlock-ata-security-locked-hard-drive-locked-during-secure-erase) 
 		- [Secure Erase - Powerful, easy to use, and inexpensive.](https://partedmagic.com/secure-erase/) 
 		- [Parted Magic Secure Erase - Sufficient to wipe a standard HDD? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/j18b1s/parted_magic_secure_erase_sufficient_to_wipe_a/) 
-		- 
+- Trying to fix the issue
+	- [io - Centos7 - Buffer I/O error on dev sda, logical block xxxxxxxxx, lost async page write - Server Fault](https://serverfault.com/questions/866109/centos7-buffer-i-o-error-on-dev-sda-logical-block-xxxxxxxxx-lost-async-page) 
+- I don't care about the data.  Is there a way to wipe it and restart here?
+	- [Bricked SSD while doing ATA erase using hdparm : r/linuxquestions](https://www.reddit.com/r/linuxquestions/comments/4jm9yw/bricked_ssd_while_doing_ata_erase_using_hdparm/) 
+	- Trying to use `hdparm` Linux CLI tool to remove security
+		- `sudo hdparm --security-unlock "-" /dev/sda`
+	- [linux - Remove unknown ata password with hdparm - Super User](https://superuser.com/questions/1671399/remove-unknown-ata-password-with-hdparm) 
+		- I had same output as this user
+	- [Understanding ATA Security » ADMIN Magazine](https://www.admin-magazine.com/Archive/2014/19/Using-the-ATA-security-features-of-modern-hard-disks-and-SSDs/%28offset%29/3) 
+		- `sudo hdparm -I /dev/sda | grep -I Security -A 10`
+			- It has a high security level and user password locking it down
+			- The literally firmware of the HDD has a password on it
+		- `sudo hdparm --user-master m --security-disable 36808 /dev/sda`
+		- Didn't work - "bad missing sense data"
+- GPT Conversation - [ATA Security](ATA%20Security/ATA%20Security.md) 
+- Gotta return it 😵.... I've tried everything except moving the platter to a completely new disk or writing a script to crack the password which won't work with its supposed length
+
 

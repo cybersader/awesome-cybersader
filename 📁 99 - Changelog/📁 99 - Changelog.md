@@ -1,5 +1,6 @@
-- 2024-03-24 at 22h51 · [[Turning Old PC into NAS in 2024]]
-- 2024-03-24 at 22h00 · [[📁 01 - Logs, Journal]]
+- 2024-03-24 at 23h38 · [[Turning Old PC into NAS in 2024]]
+- 2024-03-24 at 23h37 · [[ATA Security]]
+- 2024-03-24 at 23h35 · [[📁 01 - Logs, Journal]]
 - 2024-03-24 at 15h01 · [[Software RAID vs Hardware RAID - TrueNAS Scale]]
 - 2024-03-24 at 13h18 · [[RAID vs AHCI]]
 - 2024-03-24 at 13h15 · [[Filesystems and Partition Schemes]]
@@ -97,4 +98,3 @@
 - 2024-03-19 at 20h48 · [[4.5 - Applying Research]]
 - 2024-03-19 at 20h48 · [[5 - Cyber Deception]]
 - 2024-03-19 at 20h48 · [[0 - Notes & Parameters]]
-- 2024-03-19 at 20h48 · [[1 - Azure AD Sys Admin]]
