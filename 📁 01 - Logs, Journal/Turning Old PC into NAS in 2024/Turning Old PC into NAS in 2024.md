@@ -255,5 +255,12 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Errors!
 	- I got an error `error fsyncing/closing/dev/sda: input/output error`
 	- Hard to tell if this is from losing power during the drive encryption job or the fact that it's encrypted
+	- Trying to fix hard drive, but keep getting error to convert to GPT 
+	- Found it used "Parted Magic" from Medicat USB:
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324220055173.png)
+	- Wipe drive and convert to GPT when locked by ATA
+		- [Cannot Unlock ATA Security Locked Hard Drive Locked During Secure Erase - Super User](https://superuser.com/questions/1478206/cannot-unlock-ata-security-locked-hard-drive-locked-during-secure-erase) 
+		- [Secure Erase - Powerful, easy to use, and inexpensive.](https://partedmagic.com/secure-erase/) 
+		- [Parted Magic Secure Erase - Sufficient to wipe a standard HDD? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/j18b1s/parted_magic_secure_erase_sufficient_to_wipe_a/) 
 		- 
 
