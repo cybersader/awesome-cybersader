@@ -254,6 +254,6 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734882.png)
 - Errors!
 	- I got an error `error fsyncing/closing/dev/sda: input/output error`
-	- To fix this, I used my Medicat USB then went into EaseUS Partition Master, wiped the partition for the HDD, then changed it to the GPT partition scheme.
-- 
+	- Hard to tell if this is from losing power during the drive encryption job or the fact that it's encrypted
+		- 
 
