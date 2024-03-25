@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Monday, March 25th 2024, 12:03 am
+date modified: Monday, March 25th 2024, 9:25 am
 tags:
   - TrueNAS
   - NAS
@@ -253,13 +253,14 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Review and Create 😄
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734882.png)
 ### Don't Lose Power While Creating an Encrypted Pool 😵
-- Long story short, I cancelled a pool creation job in TrueNAS or I lost power during it and it caused my drive to have an ATA security password on it that I can't find.
+- Long story short, I cancelled a pool creation job in TrueNAS or I lost power during it and it caused my drive be locked with an ATA security password on it that I can't find.
 
 - Errors!
 	- I got an error `error fsyncing/closing/dev/sda: input/output error`
 	- Hard to tell if this is from losing power during the drive encryption job or the fact that it's encrypted
-	- Trying to fix hard drive, but keep getting error to convert to GPT 
-	- Found it used "Parted Magic" from Medicat USB:
+	- Trying to fix hard drive, but keep getting error when trying to convert to GPT 
+	- Found the drive using "Parted Magic" from Medicat USB:
+		- Locked by ATA security on the HDD firmware
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324220055173.png)
 	- Attempt - Wipe drive and convert to GPT when locked by ATA (doesn't work)
 		- [Cannot Unlock ATA Security Locked Hard Drive Locked During Secure Erase - Super User](https://superuser.com/questions/1478206/cannot-unlock-ata-security-locked-hard-drive-locked-during-secure-erase) 
@@ -267,7 +268,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- [Parted Magic Secure Erase - Sufficient to wipe a standard HDD? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/j18b1s/parted_magic_secure_erase_sufficient_to_wipe_a/) 
 - Same error found by other user
 	- [io - Centos7 - Buffer I/O error on dev sda, logical block xxxxxxxxx, lost async page write - Server Fault](https://serverfault.com/questions/866109/centos7-buffer-i-o-error-on-dev-sda-logical-block-xxxxxxxxx-lost-async-page) 
-- I don't care about the data.  Is there a way to wipe it and restart here?
+- I don't care about the data.  Is there a way to wipe it and restart?
 	- Short answer....no
 	- [Bricked SSD while doing ATA erase using hdparm : r/linuxquestions](https://www.reddit.com/r/linuxquestions/comments/4jm9yw/bricked_ssd_while_doing_ata_erase_using_hdparm/) 
 	- Trying to use `hdparm` Linux CLI tool to remove security
@@ -277,7 +278,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- [Understanding ATA Security » ADMIN Magazine](https://www.admin-magazine.com/Archive/2014/19/Using-the-ATA-security-features-of-modern-hard-disks-and-SSDs/%28offset%29/3) 
 		- `sudo hdparm -I /dev/sda | grep -I Security -A 10`
 			- It has a high security level and user password locking it down
-			- The literally firmware of the HDD has a password on it
+			- The literal firmware of the HDD has a password on it. 
 		- `sudo hdparm --user-master m --security-disable 36808 /dev/sda`
 		- Didn't work - "bad missing sense data"
 - GPT Conversation - [ATA Security](ATA%20Security/ATA%20Security.md) 
