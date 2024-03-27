@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Monday, March 25th 2024, 9:25 am
+date modified: Tuesday, March 26th 2024, 8:46 pm
 tags:
   - TrueNAS
   - NAS
@@ -25,6 +25,8 @@ tags:
 - [Configuring SCALE Using the UI |](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/uiconfigurationscale/)
 - [Preparing for SCALE UI Configuration |](https://www.truenas.com/docs/scale/gettingstarted/install/installprepnonenterprise/)
 - [SCALE Hardware Guide |](https://www.truenas.com/docs/scale/gettingstarted/scalehardwareguide/)
+- [(3) TrueNAS Scale: A Step-by-Step Guide to Dataset, Shares, and App Permissions - YouTube](https://www.youtube.com/watch?v=59NGNZ0kO04)
+- [(3) How To Setup TrueNAS Scale Apps With Shares For Host Path Volumes - YouTube](https://www.youtube.com/watch?v=vXGs221il3g) 
 # Hardware
 - Old PC
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732455.png)
@@ -284,4 +286,54 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - GPT Conversation - [ATA Security](ATA%20Security/ATA%20Security.md) 
 - Gotta return it 😵.... I've tried everything except moving the platter to a completely new disk or writing a script to crack the password which won't work with its supposed length.  [Im fubbernucked](https://www.youtube.com/watch?v=oB6Lj-OjN30) 
 
+#### Setting Up Storage Pool - Attempt #2
+- I'm too scared to use encryption now as I may mess things up, so I'll start without encryption for now and test with smaller drives later
+- To make sure my new HDD is in the right format, I'll load up [Medicat USB](https://medicatusb.com/) and use a Partition managing application to check out the drives
+- Just opened up EaseUS Partition Master and took a look at drives.  Since they are more than 2TB [they have to be GPT](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/support-for-hard-disks-exceeding-2-tb)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326194639387.png)
+- Created a storage pool with the new hard drive called "personal"
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195444520.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195411098.png)
+- Success!
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195704890.png)
+### TrueNAS Dataset Configuration
+- Link to docs - [Creating Datasets |](https://www.truenas.com/docs/core/coretutorials/storage/pools/datasets/)
 
+- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326200005678.png)
+- Name the dataset and choose the share type
+	- There are lots of other settings, but these are the most important 
+		- Share type:
+			- Share type options:
+				- Generic: Unix permission based
+				- SMB: More advanced ACLs
+				- Apps: More advanced ACLs
+				- Multiprotocol: 
+			- If we choose to add a TrueNAS App later that points to that dataset, then [we can fix it to use Apps later if need be](https://youtu.be/59NGNZ0kO04?si=6jkp0cnMkSfV0iYz&t=222)
+			- The `SMB` share type is usually the way to go
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326200713609.png)
+#### Dataset Permissions
+- We can give certain users access to the shares via "Permissions" where we can edit the ACL (access control list)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326202400387.png)
+	- Edit this as necessary 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326202419566.png)
+### Setting Up Shares
+- TrueNAS Doc link - [Setting Up Data Sharing |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupsharing/)
+
+- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326203245175.png)
+- Select the path to the desired dataset 
+	- Default share parameters are fine
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326203419142.png)
+## Accessing Shares with File Explorer
+- This is easy.
+- Go to File Explorer, Network tab, then your TrueNAS
+- Login with user created earlier
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326204044917.png)
+## Setting Up Cloud Backups
+- .
+
+## Setting Up Nextcloud - TrueNAS Scale App
+- Links
+	- [(3) Setting Up Your Own Cloud: A Guide to Nextcloud on TrueNAS SCALE - YouTube](https://www.youtube.com/watch?v=8Cxg1mAYtL8) 
+		- You gotta patch and update it!
+		- Put this behind a VPN, an overlay network like Tailscale, or Cloudflare Tunnels
+- 
