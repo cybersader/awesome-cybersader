@@ -328,6 +328,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Go to File Explorer, Network tab, then your TrueNAS
 - Login with user created earlier
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326204044917.png)
+## 
 ## Setting Up Cloud Backups
 - .
 
