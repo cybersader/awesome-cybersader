@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Tuesday, March 26th 2024, 8:46 pm
+date modified: Tuesday, March 26th 2024, 10:52 pm
 tags:
   - TrueNAS
   - NAS
@@ -328,13 +328,20 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Go to File Explorer, Network tab, then your TrueNAS
 - Login with user created earlier
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326204044917.png)
-## 
-## Setting Up Cloud Backups
-- .
+## Enabled App Service
+- https://www.truenas.com/docs/scale/scaletutorials/apps/ 
+- [TrueNAS Scale | Application Configuration](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/vmandappconfigscale/#application-configuration) 
 
+- 
 ## Setting Up Nextcloud - TrueNAS Scale App
 - Links
+	- [Nextcloud |](https://www.truenas.com/docs/scale/scaletutorials/apps/communityapps/installnextcloudmedia/)
 	- [(3) Setting Up Your Own Cloud: A Guide to Nextcloud on TrueNAS SCALE - YouTube](https://www.youtube.com/watch?v=8Cxg1mAYtL8) 
 		- You gotta patch and update it!
 		- Put this behind a VPN, an overlay network like Tailscale, or Cloudflare Tunnels
+- Set up App config dataset (folder)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326224306889.png)
 - 
+## Setting Up Cloud Backups
+- .
+
