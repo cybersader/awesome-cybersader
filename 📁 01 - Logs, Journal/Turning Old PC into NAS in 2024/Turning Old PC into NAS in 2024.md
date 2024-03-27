@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Tuesday, March 26th 2024, 10:52 pm
+date modified: Tuesday, March 26th 2024, 11:32 pm
 tags:
   - TrueNAS
   - NAS
@@ -328,20 +328,48 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Go to File Explorer, Network tab, then your TrueNAS
 - Login with user created earlier
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326204044917.png)
-## Enabled App Service
+## Enable App Service By Selecting a Pool
 - https://www.truenas.com/docs/scale/scaletutorials/apps/ 
 - [TrueNAS Scale | Application Configuration](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/vmandappconfigscale/#application-configuration) 
 
-- 
-## Setting Up Nextcloud - TrueNAS Scale App
+- Choose pool
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231425810.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231439588.png)
+	- 
+- The pool that is used for the App Service data is [not necessary to back up - hard to restore](https://youtu.be/vXGs221il3g?si=0x_ujzH5Xlcy0mUw&t=209)
+- It's better to make a dataset for the application configs
+	- To restore apps, we just need these configs backed up, point the new app to the config, and as long as the data is there then it's restored
+## Set Up App Data Dataset/Folder
+- Alternatively you can call it App_config or something similar
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326224306889.png)
+## Preparing Datasets for Apps Data
 - Links
 	- [Nextcloud |](https://www.truenas.com/docs/scale/scaletutorials/apps/communityapps/installnextcloudmedia/)
 	- [(3) Setting Up Your Own Cloud: A Guide to Nextcloud on TrueNAS SCALE - YouTube](https://www.youtube.com/watch?v=8Cxg1mAYtL8) 
 		- You gotta patch and update it!
 		- Put this behind a VPN, an overlay network like Tailscale, or Cloudflare Tunnels
-- Set up App config dataset (folder)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326224306889.png)
-- 
+
+- Add dataset (folder icon) to your app data dataset for the app to store its data
+	- This makes it possible to recover if we lose our drive/pool
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231913727.png)
+	- Nextcloud_Database
+		- Share Type: `Generic` 
+- Add `Nextcloud_Data` to your root dataset
+	- Create this NOT under the app configs directory, but under root instead
+	- Share type: `Apps`
+- Set permissions for Nextcloud data (`Nextcloud_Data`) dataset
+	- Add `www-data` for Owner and Owner Group
+	- This is necessary for the Nextcloud App to work
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326233516439.png)
+## Install Collabora and Nextcloud
+- Apps > filter by name
+- Install Collabora
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234002535.png)
+	- Only add an username and password - keep other settings
+	- I was getting password bugs and just made sure not to have a dash - using Bitwarden password generator
+- Install Nextcloud 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234604541.png)
+	- 
 ## Setting Up Cloud Backups
 - .
 
