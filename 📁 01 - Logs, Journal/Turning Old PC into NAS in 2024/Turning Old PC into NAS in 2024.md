@@ -379,7 +379,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- `Update: I gave another try and Nextcloud finally deployed. Still unknown what file was corrupted, but the app is up and running again. After properly deleting and creating new datasets (deleting old config files in each) the app is running once again. Thanks for your views and this thread can be resolved.`
 - Solution to Nextcloud stuck in deploy:
 	- How to delete data from datasets 
-- 
+		- 
 ## Setting Up Cloud Backups
 - .
 
