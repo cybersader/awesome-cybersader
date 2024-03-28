@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Tuesday, March 26th 2024, 11:32 pm
+date modified: Wednesday, March 27th 2024, 8:23 pm
 tags:
   - TrueNAS
   - NAS
@@ -369,7 +369,11 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- I was getting password bugs and just made sure not to have a dash - using Bitwarden password generator
 - Install Nextcloud 
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234604541.png)
-	- 
+- Nextcloud settings 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203422725.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203621352.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203856963.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203944981.png)
 ## Setting Up Cloud Backups
 - .
 
