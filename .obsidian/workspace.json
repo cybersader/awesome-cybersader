@@ -105,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -186,6 +187,9 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328165608993.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328165606440.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328164651103.png",
     "📁 01 - Logs, Journal/Portainer in TrueNAS/Portainer in TrueNAS.md",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/Portainer in TrueNAS",
@@ -199,8 +203,6 @@
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240326233516439.png",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240326231913727.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240326231439588.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240326231425810.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/ATA Security",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
@@ -230,7 +232,6 @@
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "📄 Resume - Tools & Tech ⚒️.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
+    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md"
   ]
 }

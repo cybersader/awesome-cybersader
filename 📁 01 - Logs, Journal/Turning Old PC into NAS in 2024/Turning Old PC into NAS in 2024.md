@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 28th 2024, 2:53 pm
+date modified: Thursday, March 28th 2024, 4:56 pm
 tags:
   - TrueNAS
   - NAS
@@ -360,7 +360,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Set permissions for Nextcloud data (`Nextcloud_Data`) dataset
 	- Add `www-data` for Owner and Owner Group
 	- This is necessary for the Nextcloud App to work
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326233516439.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328164651103.png)
 ## Install Collabora and Nextcloud
 - Apps > filter by name
 - Install Collabora
@@ -379,7 +379,12 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- `Update: I gave another try and Nextcloud finally deployed. Still unknown what file was corrupted, but the app is up and running again. After properly deleting and creating new datasets (deleting old config files in each) the app is running once again. Thanks for your views and this thread can be resolved.`
 - Solution to Nextcloud stuck in deploy:
 	- How to delete data from datasets 
-		- 
+		- You have to delete the dataset it seems - [Adding and Managing Datasets |](https://www.truenas.com/docs/scale/scaletutorials/datasets/datasetsscale/#:~:text=Deleting%20a%20Dataset,and%20any%20snapshots%20from%20TrueNAS.) 
+	- Then reload past steps
+- Working!
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165606440.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165608993.png)
+- 
 ## Setting Up Cloud Backups
 - .
 
