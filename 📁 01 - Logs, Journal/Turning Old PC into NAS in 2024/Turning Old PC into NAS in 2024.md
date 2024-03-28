@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Wednesday, March 27th 2024, 8:23 pm
+date modified: Thursday, March 28th 2024, 2:53 pm
 tags:
   - TrueNAS
   - NAS
@@ -374,6 +374,12 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203621352.png)
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203856963.png)
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203944981.png)
+- Deployed it, but it still hasn't deployed after more than a day
+	- There's forum posts talking about TrueNAS Scale 23 (the Cobia relesae) having issues deploying Nextcloud - [Nextcloud will not deploy since latest Scale update 23.10.0.1 | TrueNAS Community](https://www.truenas.com/community/threads/nextcloud-will-not-deploy-since-latest-scale-update-23-10-0-1.114458/) 
+	- `Update: I gave another try and Nextcloud finally deployed. Still unknown what file was corrupted, but the app is up and running again. After properly deleting and creating new datasets (deleting old config files in each) the app is running once again. Thanks for your views and this thread can be resolved.`
+- Solution to Nextcloud stuck in deploy:
+	- How to delete data from datasets 
+- 
 ## Setting Up Cloud Backups
 - .
 
