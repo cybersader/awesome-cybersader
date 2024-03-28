@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 28th 2024, 4:56 pm
+date modified: Thursday, March 28th 2024, 6:03 pm
 tags:
   - TrueNAS
   - NAS
@@ -361,7 +361,8 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Add `www-data` for Owner and Owner Group
 	- This is necessary for the Nextcloud App to work
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328164651103.png)
-## Install Collabora and Nextcloud
+# Setting Up Nextcloud 
+## Setup Collabora and Nextcloud
 - Apps > filter by name
 - Install Collabora
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234002535.png)
@@ -384,7 +385,34 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Working!
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165606440.png)
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165608993.png)
+- Connecting Nextcloud to Collabora 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328171554125.png)
+	- Find, download and enable Nextcloud Office 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328171644170.png)
+	- Go to administration settings > Nextcloud Office > "use your own server"
+		- Go to TrueNAS Scale apps and get the local IP and port for Collabora 
+			- `192.168.1.96:9980`
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328172216266.png)
+	- To fix above error, make sure to have a self-signed certificate for the server 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328173213605.png)
+- Now we can edit and manage docs from within Nextcloud
+# Setting Up DNS and Remote Access
+- Links
+	- [TrueNAS Scale | Cloudflare Tunnel ](https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/) 
+	- 
+
+- In this case, I'll attempt to use Cloudflare Tunnels (at least for now)
+- Set up the tunnel in Cloudflare (under Zero Trust > Networks > Tunnels)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180253740.png)
+	- "Add a tunnel"
+	- Cloudflared connector
+	- Name something like "truenas-home"
+	- `The operating system selection does not matter as the same token is used for all options.`
+	- Copy the token from one of the commands for installing the connector
+		- 
+- Get the Cloudflared app for Cloudflare Tunnels 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180019052.png)
 - 
-## Setting Up Cloud Backups
+# Setting Up Cloud Backups
 - .
 
