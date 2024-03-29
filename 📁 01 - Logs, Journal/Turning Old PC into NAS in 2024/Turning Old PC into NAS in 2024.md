@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 28th 2024, 10:54 pm
+date modified: Thursday, March 28th 2024, 11:51 pm
 tags:
   - TrueNAS
   - NAS
@@ -418,10 +418,34 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225404536.png)
 	- TrueNAS status
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225440226.png)
-## Setting Up Nextcloud for Reverse Proxies or Cloudflare Tunnels 
+- Setup subdomain (nextcloud in this case) and domain (or path instead) to map to local truenas URL with port for desired service
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328232600104.png)
+	- Enable `No TLS Verify`
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328232929020.png)
+## Setting Up Nextcloud for Reverse Proxies or Cloudflare Tunnels - Using Subdomain 
 - Links
 	- [Reverse proxy — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) 
-	- 
+	- https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/#nextcloud-configuration
+- Go to Apps in TrueNAS Scale
+- Go to Nextcloud 
+- Scroll down to `Advanced DNS Settings`
+- Make two Name:Value combinations 
+	- OVERWRITECLIURL - nextcloud.example.com
+	- OVERWRITEHOST - nextcloud.example.com
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328233511530.png)
+## Additional Remote Access Security
+- Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
+	- Nextcloud MFA apps
+		- https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/two_factor-auth.html
+	- Cloudflare Access
+		- https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/#additional-security-considerations
+- Cloudflare MFA via "Cloudflare Access"
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234542323.png)
+	- Self-hosted
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234629314.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234853778.png)
+	- Select rules for allowing access to self-hosted resource
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
 # Setting Up Cloud Backups
 - .
 

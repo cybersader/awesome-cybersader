@@ -1,5 +1,5 @@
-- 2024-03-28 at 22h59 · [[Turning Old PC into NAS in 2024]]
-- 2024-03-28 at 22h54 · [[📁 01 - Logs, Journal]]
+- 2024-03-28 at 23h51 · [[Turning Old PC into NAS in 2024]]
+- 2024-03-28 at 23h51 · [[📁 01 - Logs, Journal]]
 - 2024-03-28 at 14h53 · [[Portainer in TrueNAS]]
 - 2024-03-27 at 20h23 · [[New Tools]]
 - 2024-03-26 at 23h27 · [[Cyber Merch]]

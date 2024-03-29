@@ -1,0 +1,10 @@
+{
+	"id": "size-history",
+	"name": "Size History",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Admire the growth of your Obsidian vault with a \"hand-drawn\" chart.",
+	"author": "Piotr Borowski",
+	"authorUrl": "https://github.com/pbrw",
+	"isDesktopOnly": false
+}
