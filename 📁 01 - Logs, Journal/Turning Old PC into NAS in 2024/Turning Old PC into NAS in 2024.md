@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 11:29 am
+date modified: Friday, March 29th 2024, 11:45 am
 tags:
   - TrueNAS
   - NAS
@@ -450,6 +450,11 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329112742994.png)
 		- Ctrl-X and Y to save
 	- Stop and start Nextcloud in "Apps > Installed"
+		- Didn't work still
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329114509877.png)
+	- Trying to change `overwritehost` and `overwrite.cli.url`
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329114543512.png)
+	- 
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
