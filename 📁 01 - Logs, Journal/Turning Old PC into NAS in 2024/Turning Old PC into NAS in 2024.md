@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 1:42 pm
+date modified: Friday, March 29th 2024, 2:29 pm
 tags:
   - TrueNAS
   - NAS
@@ -12,6 +12,9 @@ tags:
   - BIOS
   - UEFI
   - Filesystem
+  - DNS
+  - CloudflareTunnels
+  - RemoteAccess
 ---
 
 # Misc Links & Videos
@@ -480,8 +483,26 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234853778.png)
 	- Select rules for allowing access to self-hosted resource
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
-## Cloudflare Tunnels Remote Access Issues
+## Mobile App - Cloudflare Tunnels Remote Access Issues
 - The Nextcloud mobile app probably doesn't account the Cloudflare Access login page and therefore may have errors when attaching to the nextcloud domain 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329135344176.png)
+- We can't use Access for MFA if we want mobile app usage
+	- We cant still configure MFA via Nextcloud Apps - [Two-factor authentication — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/two_factor-auth.html) 
+	- Had to delete the Access > Applications > nextcloud in Cloudflare dashboard
+# Setting Up Nextcloud for Phone and Computer Backups
+- Links
+	- [Using TrueNAS Scale to completely replace the cloud : r/truenas](https://www.reddit.com/r/truenas/comments/154svta/using_truenas_scale_to_completely_replace_the/)
+
+- Create users in Nextcloud
+	- Add users with various quotas if you need
+	- I also set the storage location via "User management settings" so I have a better understanding of where the data is
+- Setting to avoid populating new accounts with test files
+	- [Providing default files — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/default_files_configuration.html) 
+	- have to change/add line in `config.php` that says `'skeletondirectory' => '',` 
+	- Go to Apps > Nextcloud > find the pod shell related to Nextcloud that is just "nextcloud", `apt install nano`, `nano config/config.php`, edit it, Ctrl-X, Y, then restart nextcloud
+# Can We Recover Data from Outside Nextcloud?
 - 
-# Setting Up Cloud Backups
-- .
+# Setting Up TrueNAS to Cloud Backups
+- 
+# Setting Up Windows 11 Backups
+- Use Duplicati with data share
