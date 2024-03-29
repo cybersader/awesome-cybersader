@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 10:40 am
+date modified: Friday, March 29th 2024, 11:29 am
 tags:
   - TrueNAS
   - NAS
@@ -428,13 +428,28 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/#nextcloud-configuration
 	- [NextCloud Without Port Forwarding via Cloudflare Tunnels - YouTube](https://youtu.be/p0I8pikm2P4?si=pUVjiLEirGQCMq3Q&t=959)
 	- [How to modify application configuration when using TrueCharts NextCloud | TrueNAS Community](https://www.truenas.com/community/threads/how-to-modify-application-configuration-when-using-truecharts-nextcloud.106405/) 
+	- https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html#defining-trusted-proxies
+	- [Access NextCloud | TrueNAS Community](https://www.truenas.com/community/threads/access-nextcloud.72564/)
+	- 
 - Go to Apps in TrueNAS Scale
 - Go to Nextcloud 
 - Scroll down to `Advanced DNS Settings`
-- Modify the Nextcloud environment variables in the TrueNAS Scale GUI under the Nextcloud app in the Nextcloud configuration section
-	- OVERWRITECLIURL - nextcloud.example.com
-	- OVERWRITEHOST - nextcloud.example.com
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329104744957.png)
+- Tried to use the environment variables in TrueNAS, but hasn't been shown to work with tests from URL
+	- Modify the Nextcloud environment variables in the TrueNAS Scale GUI under the Nextcloud app in the Nextcloud configuration section
+		- OVERWRITECLIURL - nextcloud.example.com
+		- OVERWRITEHOST - nextcloud.example.com
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329104744957.png)
+- Try using CLI of Nextcloud container from within TrueNAS 
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329111350536.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329111542092.png)
+	- Use `pwd` to show the working directory
+		- It should be `/var/www/html` or else you may have to change to other shells/pods till you find the right one
+	- `apt update`
+	- `apt install nano` - to edit files
+	- Run `nano config/config.php`
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329112742994.png)
+		- Ctrl-X and Y to save
+	- Stop and start Nextcloud in "Apps > Installed"
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
