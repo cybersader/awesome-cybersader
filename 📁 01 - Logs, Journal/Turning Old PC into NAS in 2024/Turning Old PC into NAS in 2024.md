@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 1:06 pm
+date modified: Friday, March 29th 2024, 1:42 pm
 tags:
   - TrueNAS
   - NAS
@@ -467,7 +467,6 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- We could also manage a local DNS server and create local DNS that Cloudflare tunnels and TrueNAS could be configured to use
 		- TrueNAS Network Global Config
 			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329130759027.png)
-- 
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
@@ -482,6 +481,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Select rules for allowing access to self-hosted resource
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
 ## Cloudflare Tunnels Remote Access Issues
+- The Nextcloud mobile app probably doesn't account the Cloudflare Access login page and therefore may have errors when attaching to the nextcloud domain 
 - 
 # Setting Up Cloud Backups
 - .

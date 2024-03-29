@@ -1,4 +1,4 @@
-- 2024-03-29 at 13h25 · [[Turning Old PC into NAS in 2024]]
+- 2024-03-29 at 13h42 · [[Turning Old PC into NAS in 2024]]
 - 2024-03-29 at 13h07 · [[📁 01 - Logs, Journal]]
 - 2024-03-29 at 12h55 · [[mDNS and Cloudflare Tunnels]]
 - 2024-03-28 at 14h53 · [[Portainer in TrueNAS]]
