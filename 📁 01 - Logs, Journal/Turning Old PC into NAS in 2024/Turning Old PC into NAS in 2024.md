@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 28th 2024, 6:03 pm
+date modified: Thursday, March 28th 2024, 10:54 pm
 tags:
   - TrueNAS
   - NAS
@@ -396,7 +396,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- To fix above error, make sure to have a self-signed certificate for the server 
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328173213605.png)
 - Now we can edit and manage docs from within Nextcloud
-# Setting Up DNS and Remote Access
+# Setting Up DNS and Remote Access (+Nextcloud)
 - Links
 	- [TrueNAS Scale | Cloudflare Tunnel ](https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/) 
 	- 
@@ -408,11 +408,20 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Cloudflared connector
 	- Name something like "truenas-home"
 	- `The operating system selection does not matter as the same token is used for all options.`
+- Set up TrueNAS app with token
+	- Get the Cloudflared app for Cloudflare Tunnels 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180019052.png)
 	- Copy the token from one of the commands for installing the connector
-		- 
-- Get the Cloudflared app for Cloudflare Tunnels 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180019052.png)
-- 
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328223947536.png)
+	- Click Install
+	- Cloudflare status
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225404536.png)
+	- TrueNAS status
+		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225440226.png)
+## Setting Up Nextcloud for Reverse Proxies or Cloudflare Tunnels 
+- Links
+	- [Reverse proxy — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) 
+	- 
 # Setting Up Cloud Backups
 - .
 
