@@ -467,7 +467,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- We could also manage a local DNS server and create local DNS that Cloudflare tunnels and TrueNAS could be configured to use
 		- TrueNAS Network Global Config
 			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329130759027.png)
-		- 
+- 
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
@@ -481,6 +481,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234853778.png)
 	- Select rules for allowing access to self-hosted resource
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
-
+## Cloudflare Tunnels Remote Access Issues
+- 
 # Setting Up Cloud Backups
 - .
