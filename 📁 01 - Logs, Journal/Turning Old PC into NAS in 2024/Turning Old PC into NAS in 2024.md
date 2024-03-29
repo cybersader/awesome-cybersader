@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Thursday, March 28th 2024, 11:51 pm
+date modified: Friday, March 29th 2024, 10:40 am
 tags:
   - TrueNAS
   - NAS
@@ -426,13 +426,15 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Links
 	- [Reverse proxy — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) 
 	- https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/#nextcloud-configuration
+	- [NextCloud Without Port Forwarding via Cloudflare Tunnels - YouTube](https://youtu.be/p0I8pikm2P4?si=pUVjiLEirGQCMq3Q&t=959)
+	- [How to modify application configuration when using TrueCharts NextCloud | TrueNAS Community](https://www.truenas.com/community/threads/how-to-modify-application-configuration-when-using-truecharts-nextcloud.106405/) 
 - Go to Apps in TrueNAS Scale
 - Go to Nextcloud 
 - Scroll down to `Advanced DNS Settings`
-- Make two Name:Value combinations 
+- Modify the Nextcloud environment variables in the TrueNAS Scale GUI under the Nextcloud app in the Nextcloud configuration section
 	- OVERWRITECLIURL - nextcloud.example.com
 	- OVERWRITEHOST - nextcloud.example.com
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328233511530.png)
+	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329104744957.png)
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
