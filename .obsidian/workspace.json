@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "ede4d3a92d526fcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8f2de26c5d09d141",
             "type": "leaf",
             "state": {
@@ -187,6 +199,10 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329130759027.png",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329114543512.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329114509877.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329112742994.png",
@@ -197,9 +213,7 @@
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328235107769.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328234853778.png",
     "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328234629314.png",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240328234542323.png",
     "📁 01 - Logs, Journal/Portainer in TrueNAS/Portainer in TrueNAS.md",
-    "📁 01 - Logs, Journal/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/Portainer in TrueNAS",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
@@ -224,14 +238,12 @@
     "⬇ INBOX, DROPZONE/AI Content Workflows",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/ComfyUI Setup/ComfyUI Setup.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md",
-    "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/ComfyUI Setup",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/Daily Routine/Daily Routine.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "📄 Resume - Tools & Tech ⚒️.md",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md"
+    "📄 Resume - Training, Certifications, Conferences, Education.md"
   ]
 }

@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 12:11 pm
+date modified: Friday, March 29th 2024, 1:06 pm
 tags:
   - TrueNAS
   - NAS
@@ -456,6 +456,17 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Trying to change `overwritehost` and `overwrite.cli.url`
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329114543512.png)
 	- Restart `cloudflared` app and `nextcloud` app
+		- Didn't Work
+- Solution to 502 errors
+	- Had to use local address instead of DNS resolving hostname
+		- `192.168.1.96` instead of `truenas.local`
+		- Why?
+			- This issue comes down to how `truenas.local` is resolved.
+			- When a `.local` address is typed in on the network, mDNS can be used the OS to broadcast a "hey who is this address" on the local network till a machine answers back.  This is also ironically used by hackers with tools like Responder ([Layer 2 Attacks with Responder | John Strand | BHIS Nuggets - YouTube](https://www.youtube.com/watch?v=l6IWp6PLNq0))
+		- [mDNS and Cloudflare Tunnels](mDNS%20and%20Cloudflare%20Tunnels/mDNS%20and%20Cloudflare%20Tunnels.md) - notes on the subject of CF Tunnels and `.local` mDNS addresses
+	- We could also manage a local DNS server and create local DNS that Cloudflare tunnels and TrueNAS could be configured to use
+		- TrueNAS Network Global Config
+			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329130759027.png)
 		- 
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
@@ -470,6 +481,6 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234853778.png)
 	- Select rules for allowing access to self-hosted resource
 		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
+
 # Setting Up Cloud Backups
 - .
-
