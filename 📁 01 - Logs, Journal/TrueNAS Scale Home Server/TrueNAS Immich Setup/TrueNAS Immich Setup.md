@@ -1,6 +1,6 @@
 ---
 date created: Saturday, March 30th 2024, 11:40 am
-date modified: Saturday, March 30th 2024, 12:52 pm
+date modified: Saturday, March 30th 2024, 2:15 pm
 tags:
   - TrueNAS
   - NAS
@@ -10,6 +10,7 @@ tags:
 
 # Links
 - [Immich | TrueNAS Docs](https://www.truenas.com/docs/scale/scaletutorials/apps/communityapps/immich/)
+- [TrueNAS SCALE [Community] | Immich](https://immich.app/docs/install/truenas) - docs from Immich
 # Immich
 
 > Immich integrates photo and video storage with a web portal and mobile app. It includes features such as libraries, automatic backup, bulk upload, partner sharing, Typesense search, facial recognition, and reverse geocoding.
@@ -26,12 +27,23 @@ In this case, I'm making an Immich dataset, then 7 child datasets for each of th
 	- In this case, I have an `immich` folder as the parent
 - Created child datasets
 	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330133940758.png)
+### Dataset Permissions and User Ownership
+The installation process of the immich app should handle the below configuration for you, but it's there if need be.
+
+- The **pgData** dataset must be owned by the user `netdata` (UID 999) for postgres to start. The other datasets must be owned by the user `root` (UID 0) or a group that includes the user `root` (UID 0) for immich to have the necessary permissions.
+## Immich App Settings
+- Add the datasets or use the auto-generated ixVolume setting
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330135625993.png)
+- Allocate GPU resources to Immich if you want
+- Deploy
+## Note on Updates
+- When updates become available, SCALE alerts and provides easy updates.
 ## Immich Environment Variables
 > Before installing the Immich app in SCALE, review their [Environment Variables](https://documentation.immich.app/docs/install/environment-variables) documentation and to see if you want to configure any during installation. You can configure environment variables at any time after deploying the application.
 
+- Docs - [editing-environment-variables - TrueNAS SCALE Community | Immich](https://immich.app/docs/install/truenas#editing-environment-variables)
+- Environment variables [Environment Variables | Immich](https://immich.app/docs/install/environment-variables)
 
-## Immich App Settings
-- 
-- Allocate GPU resources to Immich if you want
-## Note on Updates
-- When updates become available, SCALE alerts and provides easy updates.
+## Immich Web Portal
+- Go to the app and click `web portal` or just type in the TrueNAS ip with the port into a browser
+- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330141511998.png)
