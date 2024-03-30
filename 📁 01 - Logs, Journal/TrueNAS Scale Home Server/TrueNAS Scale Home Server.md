@@ -1,11 +1,12 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Saturday, March 30th 2024, 2:47 pm
+date modified: Saturday, March 30th 2024, 3:14 pm
 ---
 
 %% Begin Waypoint %%
 - **[Immich vs Photoprism](./Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)**
 - **[Plex Media Server](./Plex%20Media%20Server/Plex%20Media%20Server.md)**
+- **[Portainer in TrueNAS](./Portainer%20in%20TrueNAS/Portainer%20in%20TrueNAS.md)**
 - **[Rsync Related](./Rsync%20Related/Rsync%20Related.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
