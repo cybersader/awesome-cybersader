@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md"
               }
             }
           }
@@ -199,8 +199,9 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
@@ -210,7 +211,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329135344176.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329135314995.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329130759027.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329114543512.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329114509877.png",

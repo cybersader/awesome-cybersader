@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Friday, March 29th 2024, 10:58 pm
+date modified: Friday, March 29th 2024, 11:22 pm
 tags:
   - TrueNAS
   - NAS
@@ -19,6 +19,8 @@ tags:
 	- Les Pas App
 	- Nextcloud Memories 
 - Immich - [Immich | TrueNAS Docs](https://www.truenas.com/docs/scale/scaletutorials/apps/communityapps/immich/) 
-- PhotoPrism
-	- Photosync
+	- [Home | Immich](https://immich.app/) 
+- PhotoPrism - [Browse Your Life in Pictures – PhotoPrism](https://www.photoprism.app/)
+	- [Docs - PhotoPrism](https://docs.photoprism.app/user-guide/)
+	- Photosync - [PhotoSync – Photo Transfer and Backup App | For iOS & Android - PhotoSync](https://www.photosync-app.com/home) 
 #
