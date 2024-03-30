@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 10:30 pm
+date modified: Saturday, March 30th 2024, 2:47 pm
 tags:
   - TrueNAS
   - NAS
@@ -471,6 +471,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- TrueNAS Network Global Config
 			- ![](IMG-20240329130759027.png)
 ## Additional Remote Access Security
+> ❗THIS DOESN'T WORK IF YOU WILL BE USING MOBILE APP BECAUSE IT BLOCKS BANNER 
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
 		- https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/two_factor-auth.html
@@ -500,9 +501,3 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- [Providing default files — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/default_files_configuration.html) 
 	- have to change/add line in `config.php` that says `'skeletondirectory' => '',` 
 	- Go to Apps > Nextcloud > find the pod shell related to Nextcloud that is just "nextcloud", `apt install nano`, `nano config/config.php`, edit it, Ctrl-X, Y, then restart nextcloud
-# Can We Recover Data from Outside Nextcloud?
-- 
-# Setting Up TrueNAS to Cloud Backups
-- 
-# Setting Up Windows 11 Backups
-- Use Duplicati with data share

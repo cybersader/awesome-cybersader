@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Saturday, March 30th 2024, 11:40 am
+date modified: Saturday, March 30th 2024, 2:47 pm
 ---
 
 %% Begin Waypoint %%
@@ -16,3 +16,9 @@ date modified: Saturday, March 30th 2024, 11:40 am
 	- **[Software RAID vs Hardware RAID - TrueNAS Scale](./Turning%20Old%20PC%20into%20NAS%20in%202024/Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale/Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale.md)**
 
 %% End Waypoint %%
+
+# Todo Projects
+- Can We Recover Data from Outside Nextcloud? - BCDR test
+- Setting Up TrueNAS to Cloud Backups
+- Setting Up Windows 11 Backups
+	- Use Duplicati with data share

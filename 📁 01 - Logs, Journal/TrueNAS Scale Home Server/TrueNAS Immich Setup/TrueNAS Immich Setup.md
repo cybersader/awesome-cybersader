@@ -1,6 +1,6 @@
 ---
 date created: Saturday, March 30th 2024, 11:40 am
-date modified: Saturday, March 30th 2024, 2:15 pm
+date modified: Saturday, March 30th 2024, 3:01 pm
 tags:
   - TrueNAS
   - NAS
@@ -47,3 +47,19 @@ The installation process of the immich app should handle the below configuration
 ## Immich Web Portal
 - Go to the app and click `web portal` or just type in the TrueNAS ip with the port into a browser
 - ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330141511998.png)
+- Create first admin account
+- Login
+# Setup Public Domain & Remote Access - Cloudflare Tunnels
+- Cloudflare Account is already set up
+- Zero Trust dashboard
+- Already have domain for my home lab and self-hosting stuff
+- Tunnel already set up for TrueNAS stuff
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330143721928.png)
+- Configure the tunnel > Public Hostname > Add a public hostname
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330144535924.png)
+# Client Setup
+- Simply download the Android (Google Play) or iOS (App Store) clients, put the server URL in, and log in
+## Client Approach and Bugs
+- I want to divide things up at the remote/immich by putting them into albums
+- Had trouble creating albums on clients even though I hit create.  Did it no computer instead
+- 
