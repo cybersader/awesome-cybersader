@@ -2,7 +2,7 @@
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Friday, March 29th 2024, 2:29 pm
+date modified: Friday, March 29th 2024, 10:30 pm
 tags:
   - TrueNAS
   - NAS
@@ -32,7 +32,7 @@ tags:
 - [(3) How To Setup TrueNAS Scale Apps With Shares For Host Path Volumes - YouTube](https://www.youtube.com/watch?v=vXGs221il3g) 
 # Hardware
 - Old PC
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732455.png)
+	- ![](IMG-20240324174732455.png)
 ## HDDs
 - The most expensive part of NAS projects 😅
 	- [Amazon.com: Seagate IronWolf 12TB NAS Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage – Frustration Free Packaging (ST12000VNZ008) : Electronics](https://www.amazon.com/Seagate-IronWolf-12TB-Internal-Drive/dp/B084ZTSMWF)
@@ -58,62 +58,62 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- .
 ## Prepare Old PC - Hardware
 - In my case, I didn't have an SSD (NVMe in this case), so I added one from another old laptop
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732515.png)
+	- ![](IMG-20240324174732515.png)
 - Make sure you have SATA cords for data and power to the HDD
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732559.png)
+	- ![](IMG-20240324174732559.png)
 ## Flashing TrueNAS to a USB Drive
 - Download TrueNAS Scale .iso file
 	- [Download TrueNAS SCALE - Data Storage Software](https://www.truenas.com/download-truenas-scale/?submissionGuid=b256dc43-0345-4eee-9ce8-83b058681d6c) 
 - "Flash" the .iso file to the USB drive with [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/)
 	- balenaEtcher 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732603.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732680.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732743.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732800.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732846.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732899.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174732956.png)
+		- ![](IMG-20240324174732603.png)
+		- ![](IMG-20240324174732680.png)
+		- ![](IMG-20240324174732743.png)
+		- ![](IMG-20240324174732800.png)
+		- ![](IMG-20240324174732846.png)
+		- ![](IMG-20240324174732899.png)
+		- ![](IMG-20240324174732956.png)
 - 
 ## Installing TrueNAS onto Old PC (w/sidequests)
 - Turn it on
 - You should get a blue screen that allows TrueNAS install
 	- Hit `Enter`
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733007.png)
+	- ![](IMG-20240324174733007.png)
 - Errors:
 	- `bad shim signatures` and `you need to load the kernel first`
 	- [I can install and boot Truenas Scale on one pc and not another. | TrueNAS Community](https://www.truenas.com/community/threads/i-can-install-and-boot-truenas-scale-on-one-pc-and-not-another.106601/)
 		- `Try disabling secure boot from the BIOS.`
 	- Restart or Power off your PC, then turn it back on and hit `Delete` or `F2` a bunch of times till you get to BIOS setup
 		- Find and disable Secure Boot
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733058.png)
+		- ![](IMG-20240324174733058.png)
 ### Wrong SSD Type
 - Issue: Old OS on SSD, so it's not showing up in TrueNAS destination list
 	- I don't have any sort of access to OS.  Locked down.
 	- Solution:
 		- Restart to BIOS setup
 		- Look for something like "Data Wipe" or "Secure Erase"
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733109.png)
+			- ![](IMG-20240324174733109.png)
 			- Are you sure? 🤔
-				- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733166.png)
+				- ![](IMG-20240324174733166.png)
 			- YESSSSS....ERASE IT ALLL 👿
-				- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733231.png)
+				- ![](IMG-20240324174733231.png)
 - PC not detecting NVMe hard drive
 	- [M.2 Interface, Key and Socket explained](https://www.atpinc.com/blog/what-is-m.2-M-B-BM-key-socket-3)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733279.png)
+	- ![](IMG-20240324174733279.png)
 	- [‎Dell SSD Classification | DELL Technologies](https://www.dell.com/community/en/conversations/inspiron/dell-ssd-classification/647f8d18f4ccf8a8ded8bf24)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733318.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733365.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733407.png)
+		- ![](IMG-20240324174733318.png)
+	- ![](IMG-20240324174733365.png)
+	- ![](IMG-20240324174733407.png)
 	- Ahhhhh it's a SATA SSD 😖
 	- Looks like I'll have to buy an actual **NVMe SSD** rather than an **M.2 SATA SSD** unless my XPS 8940 supports it
 		- SATA just refers to the connection type
 	- M.2 Form Factors
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733478.png)
+		- ![](IMG-20240324174733478.png)
 	- [XPS 8940 Setup and Specifications | Dell US](https://www.dell.com/support/manuals/en-us/xps-8940-desktop/xps-8940-setup-and-specifications/specifications-of-xps-8940?guid=guid-7c9f07ce-626e-44ca-be3a-a1fb036413f9&lang=en-us) 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733518.png)
+		- ![](IMG-20240324174733518.png)
 	- Ordered one overnight 🥴
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733567.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733620.png)
+		- ![](IMG-20240324174733567.png)
+		- ![](IMG-20240324174733620.png)
 ### SSD Not Showing up in Destination List for Installing as TrueNAS Boot Drive - OS Not Seeing SSD
 - TLDR 😆 - [LawrenceTechTips answer/solution to my question - YouTube clip](https://youtube.com/clip/UgkxoJhZaSWuA89uWk8NBZqkMjexvh31yF5N?si=g0mqJ534weA0tIe6)
 
@@ -135,25 +135,25 @@ Always check for compatibility with your specific NAS model and consider buying 
 	- Motherboard (mobo) issue? Like seriously?
 - SSD not showing up in OS, but showing up in BIOS (basic input output)
 	- Here's my thinking.  It's likely a BIOS setting or the drive is in some format that doesn't work with TrueNAS scale installation or being detected by the OS
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733667.png)
+		- ![](IMG-20240324174733667.png)
 	- SSD and storage formatting explained
 		- [Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md) 
 			- `Partition schemes are crucial for an OS to recognize, access, and manage the partitions within a storage device.`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733710.png)
+		- ![](IMG-20240324174733710.png)
 	- RAID and AHCI
 		- **BIOS/UEFI Settings and SSD Detection**: If your BIOS is set to RAID mode but you're not using a RAID configuration, your OS might not recognize the SSD unless the correct RAID drivers are installed. Conversely, `setting it to AHCI mode typically allows for immediate recognition and utilization of the SSD by the OS, assuming the OS supports AHCI (which most modern operating systems do).`
 		- **MBR and Bootability**: Whether an SSD is formatted as MBR or GPT is more about the disk's partitioning scheme and doesn't directly impact how the BIOS/UEFI detects the SSD in terms of AHCI vs. RAID mode. However, `GPT is required for booting from disks larger than 2TB and for systems that use UEFI instead of traditional BIOS.`
 	- Changing settings in BIOS to make it show up:
 		- Enable AHCI instead of RAID
 			- This fixes things because GPT is required for UEFI-based boots instead of BIOS
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733761.png)
+			- ![](IMG-20240324174733761.png)
 		- Enable SMART Reporting
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733799.png)
+			- ![](IMG-20240324174733799.png)
 	- Boot to another USB like Medicat USB or a Linux distro then apt install or get "gparted", so we can change the partition from basic/classic MBR to GPT ........ *phew* that's a lot of stuff to get this silly SSD working
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733842.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733887.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733926.png)
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174733978.png)
+		- ![](IMG-20240324174733842.png)
+		- ![](IMG-20240324174733887.png)
+		- ![](IMG-20240324174733926.png)
+		- ![](IMG-20240324174733978.png)
 	- SOLUTION SUMMARY:
 		- [LawrenceTechTips answer to my question - YouTube clip](https://youtube.com/clip/UgkxoJhZaSWuA89uWk8NBZqkMjexvh31yF5N?si=g0mqJ534weA0tIe6)
 		- Enable AHCI instead of RAID to see the MBR-formatted partition on SSD, reformat to GPT
@@ -162,11 +162,11 @@ Always check for compatibility with your specific NAS model and consider buying 
 
 - Console Setup:
 	- `Spacebar` to select the drive, then `Enter`/ok
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734023.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734064.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734107.png)
+		- ![](IMG-20240324174734023.png)
+	- ![](IMG-20240324174734064.png)
+	- ![](IMG-20240324174734107.png)
 	- I had enough space to do this
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734159.png)
+		- ![](IMG-20240324174734159.png)
 # TrueNAS Configuration and Setup
 ## Links & Resources
 - [Configuration Instructions |](https://www.truenas.com/docs/scale/gettingstarted/configure/) 
@@ -176,17 +176,17 @@ Always check for compatibility with your specific NAS model and consider buying 
 ## Booting Up TrueNAS
 - Went into BIOS and saw TrueNAS-0
 	- Made sure it was first in the boot sequence
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734201.png)
+	- ![](IMG-20240324174734201.png)
 - Restart PC
 - Enter TrueNAS
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734245.png)
+	- ![](IMG-20240324174734245.png)
 ## Initial Login for TrueNAS & Networking
 - [Logging Into SCALE the First Time |](https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/) - resources here
 - You can watch the monitor till you get the local address for Web UI
 - "Web interface could not be accessed"
 	- https://www.truenas.com/docs/scale/gettingstarted/configure/firsttimelogin/#web-interface-access 
 	- This console popped up during the initial terminal screen
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734296.png)
+		- ![](IMG-20240324174734296.png)
 	- `When powering on a TrueNAS system, the system attempts to connect to a DHCP server from all live interfaces to access the web UI. On networks that support Multicast Domain Name Services (mDNS), the system can use a host name and domain to access the TrueNAS web interface. By default, TrueNAS uses the host name and domain **truenas.local**. To change the host name and domain in the web interface, go to **Network** and click **Settings** on the **Global Configuration** widget.`
 		- I don't think mDNS is an options for my current router, so I might have to reconfigure the router to make this work.
 	- Make sure we have connection on local network
@@ -198,14 +198,14 @@ Always check for compatibility with your specific NAS model and consider buying 
 		- No wifi out of the box.  This would require an additional AP with ethernet or install [Proxmox](https://www.proxmox.com/en/) and make TrueNAS a VM in it
 		- Solution? - [TrueNAS Scale with WiFi – Clint's Blog](https://clint.id.au/?p=2958#:~:text=In%20the%20web%20interface%20go,Init%2FShutdown%20Scripts%20%3E%20Add.&text=On%20the%20next%20reboot%20it,address%20from%20the%20DHCP%20server.) 
 			- Run `lspci` in TrueNAS command line to see if TrueNAS sees wireless adapter
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734382.png)
+			- ![](IMG-20240324174734382.png)
 			- ...actually...no. Above article probably works, but I can just use ethernet somehow
 	- Solution: Plug in ethernet or implement bridged connection to look like eternet
 - Web interface showed up!
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734432.png)
+	- ![](IMG-20240324174734432.png)
 - Accessing the web interface 
 	- Use the local IP that it displays or use the domain it assigned like `truenas.local`
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734479.png)
+	- ![](IMG-20240324174734479.png)
 ## Auto Turn On TrueNAS When Powered
 - [SOLVED - Automatically turn on and shutdown | TrueNAS Community](https://www.truenas.com/community/threads/automatically-turn-on-and-shutdown.95459/) 
 	- Set up Wake on LAN with hardware
@@ -213,20 +213,20 @@ Always check for compatibility with your specific NAS model and consider buying 
 ## Network Settings
 https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale/#setting-up-networking
 - My TrueNAS is accessed via `truenas.local` and I have my router set as the default gateway and nameserver
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734512.png)
+	- ![](IMG-20240324174734512.png)
 ## Configure Groups and Users
 [Setting Up Users and Groups |](https://www.truenas.com/docs/core/coretutorials/settingupusersandgroups/)
 
 - Create group for regular home users
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734552.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734581.png)
+	- ![](IMG-20240324174734552.png)
+	- ![](IMG-20240324174734581.png)
 - Create user
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734619.png)
+	- ![](IMG-20240324174734619.png)
 	- Create user under Primary group that you just created
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734654.png)
+		- ![](IMG-20240324174734654.png)
 		- Directories and permissions
 			- I just didn't select a directory and used "Create home directory"
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734687.png)
+			- ![](IMG-20240324174734687.png)
 ## Setting Up Storage
 [Setting Up Storage |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupstoragescale/) - TrueNAS docs
 ### My Storage Strategy
@@ -245,18 +245,18 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Plugged in the SATA connectors while the computer is on
 	- Oops...guess that's a bad idea - [Can I plug in a hard drive while the computer is on? - Quora](https://www.quora.com/Can-I-plug-in-a-hard-drive-while-the-computer-is-on#:~:text=Technically%2C%20it%20is%20possible%20to,surges%2C%20or%20other%20electrical%20issues.) (Yes, but maybe don't)
 		- [hard drive - Can I connect and disconnect a SATA harddrive while my computer is running? - Super User](https://superuser.com/questions/221066/can-i-connect-and-disconnect-a-sata-harddrive-while-my-computer-is-running) 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734722.png)
+	- ![](IMG-20240324174734722.png)
 
 - Storage Tab
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734763.png)
+	- ![](IMG-20240324174734763.png)
 - Name the pool based on who will access it, what will be stored in it, or its purpose.
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734805.png)
+	- ![](IMG-20240324174734805.png)
 - Use a "stripe" layout since we have only 1 drive
 	- Use mirror if you have at least 2 and then RaidZ1 and so on if you have 3+ HDDs
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734845.png)
+	- ![](IMG-20240324174734845.png)
 - I don't need log, spare, cache, etc.
 - Review and Create 😄
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324174734882.png)
+	- ![](IMG-20240324174734882.png)
 ### Don't Lose Power While Creating an Encrypted Pool 😵
 - Long story short, I cancelled a pool creation job in TrueNAS or I lost power during it and it caused my drive be locked with an ATA security password on it that I can't find.
 
@@ -266,7 +266,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Trying to fix hard drive, but keep getting error when trying to convert to GPT 
 	- Found the drive using "Parted Magic" from Medicat USB:
 		- Locked by ATA security on the HDD firmware
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240324220055173.png)
+		- ![](IMG-20240324220055173.png)
 	- Attempt - Wipe drive and convert to GPT when locked by ATA (doesn't work)
 		- [Cannot Unlock ATA Security Locked Hard Drive Locked During Secure Erase - Super User](https://superuser.com/questions/1478206/cannot-unlock-ata-security-locked-hard-drive-locked-during-secure-erase) 
 		- [Secure Erase - Powerful, easy to use, and inexpensive.](https://partedmagic.com/secure-erase/) 
@@ -293,16 +293,16 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - I'm too scared to use encryption now as I may mess things up, so I'll start without encryption for now and test with smaller drives later
 - To make sure my new HDD is in the right format, I'll load up [Medicat USB](https://medicatusb.com/) and use a Partition managing application to check out the drives
 - Just opened up EaseUS Partition Master and took a look at drives.  Since they are more than 2TB [they have to be GPT](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/support-for-hard-disks-exceeding-2-tb)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326194639387.png)
+	- ![](IMG-20240326194639387.png)
 - Created a storage pool with the new hard drive called "personal"
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195444520.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195411098.png)
+	- ![](IMG-20240326195444520.png)
+	- ![](IMG-20240326195411098.png)
 - Success!
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326195704890.png)
+	- ![](IMG-20240326195704890.png)
 ### TrueNAS Dataset Configuration
 - Link to docs - [Creating Datasets |](https://www.truenas.com/docs/core/coretutorials/storage/pools/datasets/)
 
-- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326200005678.png)
+- ![](IMG-20240326200005678.png)
 - Name the dataset and choose the share type
 	- There are lots of other settings, but these are the most important 
 		- Share type:
@@ -313,38 +313,38 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 				- Multiprotocol: 
 			- If we choose to add a TrueNAS App later that points to that dataset, then [we can fix it to use Apps later if need be](https://youtu.be/59NGNZ0kO04?si=6jkp0cnMkSfV0iYz&t=222)
 			- The `SMB` share type is usually the way to go
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326200713609.png)
+	- ![](IMG-20240326200713609.png)
 #### Dataset Permissions
 - We can give certain users access to the shares via "Permissions" where we can edit the ACL (access control list)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326202400387.png)
+	- ![](IMG-20240326202400387.png)
 	- Edit this as necessary 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326202419566.png)
+		- ![](IMG-20240326202419566.png)
 ### Setting Up Shares
 - TrueNAS Doc link - [Setting Up Data Sharing |](https://www.truenas.com/docs/scale/gettingstarted/configure/setupsharing/)
 
-- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326203245175.png)
+- ![](IMG-20240326203245175.png)
 - Select the path to the desired dataset 
 	- Default share parameters are fine
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326203419142.png)
+	- ![](IMG-20240326203419142.png)
 ## Accessing Shares with File Explorer
 - This is easy.
 - Go to File Explorer, Network tab, then your TrueNAS
 - Login with user created earlier
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326204044917.png)
+	- ![](IMG-20240326204044917.png)
 ## Enable App Service By Selecting a Pool
 - https://www.truenas.com/docs/scale/scaletutorials/apps/ 
 - [TrueNAS Scale | Application Configuration](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/vmandappconfigscale/#application-configuration) 
 
 - Choose pool
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231425810.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231439588.png)
+	- ![](IMG-20240326231425810.png)
+	- ![](IMG-20240326231439588.png)
 	- 
 - The pool that is used for the App Service data is [not necessary to back up - hard to restore](https://youtu.be/vXGs221il3g?si=0x_ujzH5Xlcy0mUw&t=209)
 - It's better to make a dataset for the application configs
 	- To restore apps, we just need these configs backed up, point the new app to the config, and as long as the data is there then it's restored
 ## Set Up App Data Dataset/Folder
 - Alternatively you can call it App_config or something similar
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326224306889.png)
+	- ![](IMG-20240326224306889.png)
 ## Preparing Datasets for Apps Data
 - Links
 	- [Nextcloud |](https://www.truenas.com/docs/scale/scaletutorials/apps/communityapps/installnextcloudmedia/)
@@ -354,7 +354,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 
 - Add dataset (folder icon) to your app data dataset for the app to store its data
 	- This makes it possible to recover if we lose our drive/pool
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326231913727.png)
+	- ![](IMG-20240326231913727.png)
 	- Nextcloud_Database
 		- Share Type: `Generic` 
 - Add `Nextcloud_Data` to your root dataset
@@ -363,21 +363,21 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 - Set permissions for Nextcloud data (`Nextcloud_Data`) dataset
 	- Add `www-data` for Owner and Owner Group
 	- This is necessary for the Nextcloud App to work
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328164651103.png)
+	- ![](IMG-20240328164651103.png)
 # Setting Up Nextcloud 
 ## Setup Collabora and Nextcloud
 - Apps > filter by name
 - Install Collabora
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234002535.png)
+	- ![](IMG-20240326234002535.png)
 	- Only add an username and password - keep other settings
 	- I was getting password bugs and just made sure not to have a dash - using Bitwarden password generator
 - Install Nextcloud 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240326234604541.png)
+	- ![](IMG-20240326234604541.png)
 - Nextcloud settings 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203422725.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203621352.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203856963.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240327203944981.png)
+	- ![](IMG-20240327203422725.png)
+	- ![](IMG-20240327203621352.png)
+	- ![](IMG-20240327203856963.png)
+	- ![](IMG-20240327203944981.png)
 - Deployed it, but it still hasn't deployed after more than a day
 	- There's forum posts talking about TrueNAS Scale 23 (the Cobia relesae) having issues deploying Nextcloud - [Nextcloud will not deploy since latest Scale update 23.10.0.1 | TrueNAS Community](https://www.truenas.com/community/threads/nextcloud-will-not-deploy-since-latest-scale-update-23-10-0-1.114458/) 
 	- `Update: I gave another try and Nextcloud finally deployed. Still unknown what file was corrupted, but the app is up and running again. After properly deleting and creating new datasets (deleting old config files in each) the app is running once again. Thanks for your views and this thread can be resolved.`
@@ -386,18 +386,18 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- You have to delete the dataset it seems - [Adding and Managing Datasets |](https://www.truenas.com/docs/scale/scaletutorials/datasets/datasetsscale/#:~:text=Deleting%20a%20Dataset,and%20any%20snapshots%20from%20TrueNAS.) 
 	- Then reload past steps
 - Working!
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165606440.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328165608993.png)
+	- ![](IMG-20240328165606440.png)
+	- ![](IMG-20240328165608993.png)
 - Connecting Nextcloud to Collabora 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328171554125.png)
+	- ![](IMG-20240328171554125.png)
 	- Find, download and enable Nextcloud Office 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328171644170.png)
+		- ![](IMG-20240328171644170.png)
 	- Go to administration settings > Nextcloud Office > "use your own server"
 		- Go to TrueNAS Scale apps and get the local IP and port for Collabora 
 			- `192.168.1.96:9980`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328172216266.png)
+		- ![](IMG-20240328172216266.png)
 	- To fix above error, make sure to have a self-signed certificate for the server 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328173213605.png)
+		- ![](IMG-20240328173213605.png)
 - Now we can edit and manage docs from within Nextcloud
 # Setting Up DNS and Remote Access (+Nextcloud)
 - Links
@@ -406,25 +406,25 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 
 - In this case, I'll attempt to use Cloudflare Tunnels (at least for now)
 - Set up the tunnel in Cloudflare (under Zero Trust > Networks > Tunnels)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180253740.png)
+	- ![](IMG-20240328180253740.png)
 	- "Add a tunnel"
 	- Cloudflared connector
 	- Name something like "truenas-home"
 	- `The operating system selection does not matter as the same token is used for all options.`
 - Set up TrueNAS app with token
 	- Get the Cloudflared app for Cloudflare Tunnels 
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328180019052.png)
+		- ![](IMG-20240328180019052.png)
 	- Copy the token from one of the commands for installing the connector
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328223947536.png)
+		- ![](IMG-20240328223947536.png)
 	- Click Install
 	- Cloudflare status
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225404536.png)
+		- ![](IMG-20240328225404536.png)
 	- TrueNAS status
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328225440226.png)
+		- ![](IMG-20240328225440226.png)
 - Setup subdomain (nextcloud in this case) and domain (or path instead) to map to local truenas URL with port for desired service
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328232600104.png)
+	- ![](IMG-20240328232600104.png)
 	- Enable `No TLS Verify`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328232929020.png)
+		- ![](IMG-20240328232929020.png)
 ## Setting Up Nextcloud for Reverse Proxies or Cloudflare Tunnels - Using Subdomain 
 - Links
 	- [Reverse proxy — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) 
@@ -442,22 +442,22 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Modify the Nextcloud environment variables in the TrueNAS Scale GUI under the Nextcloud app in the Nextcloud configuration section
 		- OVERWRITECLIURL - nextcloud.example.com
 		- OVERWRITEHOST - nextcloud.example.com
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329104744957.png)
+		- ![](IMG-20240329104744957.png)
 - Try using CLI of Nextcloud container from within TrueNAS 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329111350536.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329111542092.png)
+	- ![](IMG-20240329111350536.png)
+	- ![](IMG-20240329111542092.png)
 	- Use `pwd` to show the working directory
 		- It should be `/var/www/html` or else you may have to change to other shells/pods till you find the right one
 	- `apt update`
 	- `apt install nano` - to edit files
 	- Run `nano config/config.php`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329112742994.png)
+		- ![](IMG-20240329112742994.png)
 		- Ctrl-X and Y to save
 	- Stop and start Nextcloud in "Apps > Installed"
 		- Didn't work still
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329114509877.png)
+		- ![](IMG-20240329114509877.png)
 	- Trying to change `overwritehost` and `overwrite.cli.url`
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329114543512.png)
+		- ![](IMG-20240329114543512.png)
 	- Restart `cloudflared` app and `nextcloud` app
 		- Didn't Work
 - Solution to 502 errors
@@ -469,7 +469,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 		- [mDNS and Cloudflare Tunnels](mDNS%20and%20Cloudflare%20Tunnels/mDNS%20and%20Cloudflare%20Tunnels.md) - notes on the subject of CF Tunnels and `.local` mDNS addresses
 	- We could also manage a local DNS server and create local DNS that Cloudflare tunnels and TrueNAS could be configured to use
 		- TrueNAS Network Global Config
-			- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329130759027.png)
+			- ![](IMG-20240329130759027.png)
 ## Additional Remote Access Security
 - Two places you can add security for Nextcloud and/or Cloudflare Tunnels 
 	- Nextcloud MFA apps
@@ -477,15 +477,15 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- Cloudflare Access
 		- https://www.truenas.com/docs/scale/scaletutorials/apps/appsecurity/cloudflaretunnel/#additional-security-considerations
 - Cloudflare MFA via "Cloudflare Access"
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234542323.png)
+	- ![](IMG-20240328234542323.png)
 	- Self-hosted
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234629314.png)
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328234853778.png)
+	- ![](IMG-20240328234629314.png)
+	- ![](IMG-20240328234853778.png)
 	- Select rules for allowing access to self-hosted resource
-		- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240328235107769.png)
+		- ![](IMG-20240328235107769.png)
 ## Mobile App - Cloudflare Tunnels Remote Access Issues
 - The Nextcloud mobile app probably doesn't account the Cloudflare Access login page and therefore may have errors when attaching to the nextcloud domain 
-	- ![](_attachments/Turning%20Old%20PC%20into%20NAS%20in%202024/IMG-20240329135344176.png)
+	- ![](IMG-20240329135344176.png)
 - We can't use Access for MFA if we want mobile app usage
 	- We cant still configure MFA via Nextcloud Apps - [Two-factor authentication — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/two_factor-auth.html) 
 	- Had to delete the Access > Applications > nextcloud in Cloudflare dashboard
