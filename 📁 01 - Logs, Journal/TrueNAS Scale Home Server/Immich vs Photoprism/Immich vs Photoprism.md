@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Friday, March 29th 2024, 11:22 pm
+date modified: Saturday, March 30th 2024, 11:39 am
 tags:
   - TrueNAS
   - NAS
@@ -23,4 +23,3 @@ tags:
 - PhotoPrism - [Browse Your Life in Pictures – PhotoPrism](https://www.photoprism.app/)
 	- [Docs - PhotoPrism](https://docs.photoprism.app/user-guide/)
 	- Photosync - [PhotoSync – Photo Transfer and Backup App | For iOS & Android - PhotoSync](https://www.photosync-app.com/home) 
-#
