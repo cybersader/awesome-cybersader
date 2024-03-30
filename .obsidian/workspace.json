@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md"
+                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md"
               }
             }
           }
@@ -200,6 +200,9 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+    "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
+    "📁 01 - Logs, Journal/Bitwarden Stuff",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Portainer in TrueNAS/Portainer in TrueNAS.md",
@@ -215,7 +218,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330124433935.png",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Rsync Related/Rsync Related.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Rsync Related",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup",
@@ -232,7 +234,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Portainer in TrueNAS",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/RAID vs AHCI/RAID vs AHCI.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Filesystems and Partition Schemes/Filesystems and Partition Schemes.md",
