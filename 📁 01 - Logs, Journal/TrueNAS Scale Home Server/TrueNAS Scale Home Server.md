@@ -6,6 +6,7 @@ date modified: Saturday, March 30th 2024, 11:40 am
 %% Begin Waypoint %%
 - **[Immich vs Photoprism](./Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)**
 - **[Plex Media Server](./Plex%20Media%20Server/Plex%20Media%20Server.md)**
+- **[Rsync Related](./Rsync%20Related/Rsync%20Related.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
