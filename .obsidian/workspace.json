@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
               }
             }
           }
@@ -199,8 +199,10 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism",
@@ -234,7 +236,6 @@
     "📁 01 - Logs, Journal/📁 01 - Logs, Journal.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/Inpainting.md",
-    "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/A111 Inpaint",
     "⬇ INBOX, DROPZONE/AI Content Workflows/AI Content Workflows.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/SD Web UI Setup/SD Web UI Setup.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/ComfyUI Setup/ComfyUI Setup.md",
@@ -243,7 +244,6 @@
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/Daily Routine/Daily Routine.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
-    "📄 Resume - Tools & Tech ⚒️.md"
+    "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md"
   ]
 }

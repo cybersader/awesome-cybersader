@@ -5,6 +5,7 @@ date modified: Friday, March 29th 2024, 10:30 pm
 
 %% Begin Waypoint %%
 - **[Immich vs Photoprism](./Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)**
+- **[Plex Media Server](./Plex%20Media%20Server/Plex%20Media%20Server.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
 	- **[Filesystems and Partition Schemes](./Turning%20Old%20PC%20into%20NAS%20in%202024/Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md)**
