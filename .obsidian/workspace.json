@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "97ff40270d76002c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7dec4f077364a354",
             "type": "leaf",
             "state": {
@@ -165,11 +177,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -187,9 +200,15 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330130725907.png",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330124433935.png",
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
+    "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Rsync Related/Rsync Related.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Rsync Related",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup",
@@ -210,17 +229,13 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329112029143.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329111542092.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329111350536.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329104744957.png",
     "📁 01 - Logs, Journal/Portainer in TrueNAS/Portainer in TrueNAS.md",
     "📁 01 - Logs, Journal/Portainer in TrueNAS",
-    "⬇ INBOX, DROPZONE/New Tools.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/RAID vs AHCI/RAID vs AHCI.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/RAID vs AHCI",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Filesystems and Partition Schemes/Filesystems and Partition Schemes.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/A111 Inpaint/A111 Inpaint.md",
     "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md",
@@ -230,8 +245,6 @@
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/SD Web UI Setup/SD Web UI Setup.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/ComfyUI Setup/ComfyUI Setup.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
-    "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
+    "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md"
   ]
 }
