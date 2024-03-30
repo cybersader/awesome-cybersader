@@ -23,9 +23,9 @@ tags:
 In this case, I'm making an Immich dataset, then 7 child datasets for each of the storage components mentioned in the Immich configuration.
 
 - Add parent dataset under app folders
-	- In this case, I have APP_Configs as the parent
-	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330130725907.png)
-- 
+	- In this case, I have an `immich` folder as the parent
+- Created child datasets
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240330133940758.png)
 ## Immich Environment Variables
 > Before installing the Immich app in SCALE, review their [Environment Variables](https://documentation.immich.app/docs/install/environment-variables) documentation and to see if you want to configure any during installation. You can configure environment variables at any time after deploying the application.
 
