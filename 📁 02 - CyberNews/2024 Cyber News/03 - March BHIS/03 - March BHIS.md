@@ -1,11 +1,67 @@
 ---
 date created: Friday, March 22nd 2024, 10:58 am
-date modified: Friday, March 22nd 2024, 12:24 pm
+date modified: Monday, April 1st 2024, 4:32 pm
 tags:
   - BHIS
   - BHISTalkinBoutNews
   - NewsCyber
 ---
+
+# [BHIS - Talkin' Bout [infosec] News 2024-03-25 #infosecnews - YouTube](https://www.youtube.com/watch?v=1-GlU7nxV6o&t=9s)
+#BHISTalkinBoutNews 
+1. [Cisco acquires Splunk - Cisco](https://www.cisco.com/site/us/en/about/corporate-strategy-office/acquisitions/splunk/index.html) 
+	1. #Splunk #Cisco 
+	3. 50/50 chance of this working
+	4. They took over Duo and just let it do it's thing
+	5. You have to wonder what they'll do with the pricing
+	6. A good place to look for vulns is to look at when something was integrated.  They should keep developers or a lot of holes open up with patched together products
+2. [General Motors Quits Sharing Driving Behavior With Data Brokers - The New York Times](https://www.nytimes.com/2024/03/22/technology/gm-onstar-driver-data.html)
+	1. #privacy #databroker 
+	2. GM was sharing speed with a data broker and selling it
+	3. They backed out of LexisNexis deal after getting dogged on 
+	4. Actively evaluating privacy policies and procedures
+	5. Hard no to be jaded w/companies and how they handle user data
+	6. They may have been listening to the news and their customers
+	7. Data brokering can be used to lower prices like ads with free apps, but this is only the case if the market is competitive enough
+3. [Florida’s DeSantis signs social media law requiring age verification - The Verge](https://www.theverge.com/2024/3/25/24087979/florida-desantis-social-media-age-verification-parental-consent-law)
+	1. #childprivacy #persuasivetech #techethics #politics #internet 
+	2. Under 16 requiring social media platforms to use 3rd party verification systems
+	3. HB3 law 
+	4. up to 50k per violation
+	5. Tech is harmful and parents should have control 
+	6. How will tourism be affected?
+	7. How do the social media companies potentially try to circumvent this?
+	8. Lots of edge cases with how this is handled in cases of moving to another state
+	9. Disney and DeSantis battle - Disney has a self-governed area - Reedy Creek District could be tied Disney
+	10. What counts as social media? - anywhere where other people can share interests and affect other users' behavior in a direct way
+4. [House passes bill banning sale of US personal data to foreign adversaries - The Verge](https://www.theverge.com/2024/3/20/24106991/house-data-broker-foreign-adversaries-bill-passes)
+	1. #politics #FTC 
+	3. [The Protecting Americans’ Data from Foreign Adversaries Act, or HR 7520](https://www.congress.gov/bill/118th-congress/house-bill/7520/text)
+	4. You know it's an issue when America has to say "no you can't sell data to foreign adversaries" #cyberMeme 
+	5. Imposes a broad limit on data brokers’ ability to “sell, license, rent, trade, transfer, release, disclose, provide access to, or otherwise make available sensitive data of a United States individual” to foreign adversaries or organizations they control
+	6. The sensitive data covered by the bill includes biometric and genetic information, Social Security numbers, health diagnoses or treatments, and precise geolocation data.
+	7. FTC enforces the legislation, so it really falls on them.  They probably need more resources now since they handle most if not all privacy enforcement.
+5. [Unsaflok | Unsaflok is a series of serious security vulnerabilities in the Saflok brand of hotel locks.](https://unsaflok.com/)
+	1. [Hackers Found a Way to Open Any of 3 Million Hotel Keycard Locks in Seconds | WIRED](https://www.wired.com/story/saflok-hotel-lock-unsaflok-hack-technique/)
+	2. Malicious cards can get around deadbolt on the hotel room doors too
+	3. Saflok-brand doors
+	4. NFC Taginfo app can check the type of keycard
+	5. Not just cloning a badge.  It's a skelton key to Saflok brand locks as long as you have one.  
+	6. The company is Dormakaba
+	7. Attack can be performed with any device capable of reading and writing or emulating MIFARE Classic cards. Proxmark3 and Flipper Zero, but also an NFC capable Android phone can do it
+6. [Canada revisits decision to ban Flipper Zero | Malwarebytes](https://www.malwarebytes.com/blog/news/2024/03/canada-revisits-decision-to-ban-flipper-zero)
+	1. They may not ban it but rather appeal it and let some individuals have it. Only legitimate actor
+7. [Cloud Email Filtering Bypass Attack Works 80% of the Time](https://www.darkreading.com/cloud-security/cloud-email-filtering-bypass-attack) 
+8. [Truck-to-truck worm could infect entire US fleet • The Register](https://www.theregister.com/2024/03/22/boffins_tucktotruck_worm/) 
+	1. #wireless #bluetooth #CISA #CyberWar
+	2. Big rigs are very connected.  They have ELDs (electronic logging devices) that track tons of metrics and telemetry
+	3. ELDs can be accessed over Bluetooth and Wifi too
+	4. Some vulns with weak firmware
+	5. They can disable the truck remotely in under 14 seconds
+	6. This could be used in war.  We RELY on groceries. It only takes a day to lose all the important food at a grocery store
+	7. Reported to CISA and manufacturer.
+	8. Large variety of ELD and firmware, so it's not easy to make a worm that covers all of them.
+
 
 # [BHIS - Talkin' Bout [infosec] News 2024-03-18 - YouTube](https://www.youtube.com/watch?v=yXDejLVOlSk) 
 #BHISTalkinBoutNews 
