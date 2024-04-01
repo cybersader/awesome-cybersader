@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
               }
             }
           }
@@ -200,11 +200,13 @@
   },
   "active": "3f616b23bd23585d",
   "lastOpenFiles": [
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups",
     "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Immich vs Photoprism/Immich vs Photoprism.md",
     "📁 01 - Logs, Journal/Bitwarden Stuff",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Portainer in TrueNAS/Portainer in TrueNAS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330144535924.png",
@@ -231,7 +233,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329135314995.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329130759027.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Portainer in TrueNAS",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
@@ -244,7 +245,6 @@
     "⬇ INBOX, DROPZONE/AI Content Workflows/AI Content Workflows.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/SD Web UI Setup/SD Web UI Setup.md",
     "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/ComfyUI Setup/ComfyUI Setup.md",
-    "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md",
-    "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md"
+    "⬇ INBOX, DROPZONE/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md"
   ]
 }

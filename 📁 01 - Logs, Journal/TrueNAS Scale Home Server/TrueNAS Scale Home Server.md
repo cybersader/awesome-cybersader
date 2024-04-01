@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Saturday, March 30th 2024, 3:14 pm
+date modified: Sunday, March 31st 2024, 12:27 pm
 ---
 
 %% Begin Waypoint %%
@@ -8,6 +8,7 @@ date modified: Saturday, March 30th 2024, 3:14 pm
 - **[Plex Media Server](./Plex%20Media%20Server/Plex%20Media%20Server.md)**
 - **[Portainer in TrueNAS](./Portainer%20in%20TrueNAS/Portainer%20in%20TrueNAS.md)**
 - **[Rsync Related](./Rsync%20Related/Rsync%20Related.md)**
+- **[TrueNAS Cloud Backups](./TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
@@ -20,6 +21,5 @@ date modified: Saturday, March 30th 2024, 3:14 pm
 
 # Todo Projects
 - Can We Recover Data from Outside Nextcloud? - BCDR test
-- Setting Up TrueNAS to Cloud Backups
 - Setting Up Windows 11 Backups
 	- Use Duplicati with data share
