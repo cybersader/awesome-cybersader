@@ -1,6 +1,6 @@
 ---
 date created: Friday, March 29th 2024, 10:30 pm
-date modified: Sunday, March 31st 2024, 12:27 pm
+date modified: Sunday, March 31st 2024, 10:09 pm
 ---
 
 %% Begin Waypoint %%
@@ -9,6 +9,7 @@ date modified: Sunday, March 31st 2024, 12:27 pm
 - **[Portainer in TrueNAS](./Portainer%20in%20TrueNAS/Portainer%20in%20TrueNAS.md)**
 - **[Rsync Related](./Rsync%20Related/Rsync%20Related.md)**
 - **[TrueNAS Cloud Backups](./TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)**
+- **[TrueNAS Drive Data Recovery](./TrueNAS%20Drive%20Data%20Recovery/TrueNAS%20Drive%20Data%20Recovery.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
@@ -23,3 +24,8 @@ date modified: Sunday, March 31st 2024, 12:27 pm
 - Can We Recover Data from Outside Nextcloud? - BCDR test
 - Setting Up Windows 11 Backups
 	- Use Duplicati with data share
+# Misc
+- TrueCharts
+	- TrueCharts is **a catalog of highly optimised Helm Charts and TrueNAS SCALE Apps**. Made for the community, By the community! All our charts are supposed to work together, be easy to setup using both Helm and the TrueNAS UI and, above all, give the average user more than enough options to tune things to their liking.
+	- [Chart List | TrueCharts](https://truecharts.org/charts/description_list) - other apps that can be added to TrueNAS?  What is this?
+	- [Getting Started with TrueCharts | TrueCharts](https://truecharts.org/manual/SCALE/guides/getting-started/) 
