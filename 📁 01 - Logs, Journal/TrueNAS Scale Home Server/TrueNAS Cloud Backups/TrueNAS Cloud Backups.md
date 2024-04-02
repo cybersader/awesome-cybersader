@@ -1,6 +1,6 @@
 ---
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Tuesday, April 2nd 2024, 9:47 am
+date modified: Tuesday, April 2nd 2024, 11:28 am
 tags:
   - NAS
   - TrueNAS
@@ -70,3 +70,41 @@ The gist:
 	- $6 * 12 TB * 12 months = $864
 	- Restore is around $120 or so for 12 TB
 # iX Storj Setup and Pricing
+- Make account here - [TrueNAS iX-Storj Cloud Storage: Secure Data Solutions](https://www.truenas.com/ix-storj/) 
+## Pricing and Plan Options
+- iX-Storj Starter Package
+	- $150 for 5TB storage and egress bandwidth for one year
+- Pro Account
+	- $4/TB per month and $7/TB for download bandwidth 
+	- 25 GB Free
+- Free Trial 
+	- Free up to 25 GB storage and egress 
+## iX-Storj Setup
+- [TrueNAS Integration with Storj for Secure Data Storage - Storj Docs](https://docs.storj.io/dcs/third-party-tools/ix-systems-truenas) 
+- https://docs.storj.io/dcs/third-party-tools/ix-systems-truenas#setting-up-storj
+- Steps:
+	- Create a bucket
+	- Generate S3 creds
+		- **access key**, **secret key**, and **endpoint**
+		- Permissions:
+			- All
+			- Buckets: created bucket here
+			- No expiration date needed
+	- Access encryption
+		- use same passphrase as Storj account or use separate passphrase
+		- Save this into password manager
+		- In order to see the data uploaded to your bucket in the web console, you must unlock the bucket with the same encryption passphrase as the credentials.
+## Connecting TrueNAS to iX-Storj 
+- Go into TrueNAS UI
+- Create a Cloud Credential / Backup Credentials
+- Use the creds from Storj
+- Create a Cloud Sync Task in Data Protection menu
+	- Add a Cloud Sync task
+	- Direction: PUSH
+	- Transfer Mode: COPY
+	- Credential: Storj-related credential
+	- Bucket: TrueNAS bucket created within Storj
+	- Folder (optional): path where data should be stored
+	- Directory/Files: folder in directory to push from
+# Testing Recovery Process
+- TODO

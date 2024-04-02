@@ -4,13 +4,14 @@ date modified: Sunday, March 31st 2024, 10:09 pm
 ---
 
 %% Begin Waypoint %%
-- **[Immich vs Photoprism](./Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)**
+- **[Misc TrueNAS](./Misc%20TrueNAS/Misc%20TrueNAS.md)**
+	- **[Immich vs Photoprism](./Misc%20TrueNAS/Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)**
+	- **[Rsync Related](./Misc%20TrueNAS/Rsync%20Related/Rsync%20Related.md)**
+	- **[TrueNAS Drive Data Recovery](./Misc%20TrueNAS/TrueNAS%20Drive%20Data%20Recovery/TrueNAS%20Drive%20Data%20Recovery.md)**
 - **[Plex Media Server](./Plex%20Media%20Server/Plex%20Media%20Server.md)**
 - **[Portainer in TrueNAS](./Portainer%20in%20TrueNAS/Portainer%20in%20TrueNAS.md)**
-- **[Rsync Related](./Rsync%20Related/Rsync%20Related.md)**
 - **[TrueNAS Cloud Backups](./TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)**
 	- **[Cheapest Archive Storage](./TrueNAS%20Cloud%20Backups/Cheapest%20Archive%20Storage/Cheapest%20Archive%20Storage.md)**
-- **[TrueNAS Drive Data Recovery](./TrueNAS%20Drive%20Data%20Recovery/TrueNAS%20Drive%20Data%20Recovery.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
