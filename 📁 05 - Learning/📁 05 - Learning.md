@@ -7,6 +7,7 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 
 %% Begin Waypoint %%
 - **[BHIS, Antisyphon](./BHIS,%20Antisyphon/BHIS,%20Antisyphon.md)**
+	- **[Cyber Team Building](./BHIS,%20Antisyphon/Cyber%20Team%20Building/Cyber%20Team%20Building.md)**
 	- **[Getting Started in Security with BHIS and MITRE ATT&CK](./BHIS,%20Antisyphon/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK.md)**
 
 %% End Waypoint %%

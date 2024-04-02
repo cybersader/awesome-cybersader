@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/New Tools.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/New Tools.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/New Tools.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/New Tools.md"
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md"
               }
             }
           }
@@ -189,6 +189,16 @@
   },
   "active": "979847f4593c0248",
   "lastOpenFiles": [
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240402164117628.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240402163137664.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
+    "⬇ INBOX, DROPZONE/Cyber Books/Cyber Books.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
+    "⬇ INBOX, DROPZONE/Cyber Books",
+    "⬇ INBOX, DROPZONE/New Tools.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
@@ -211,7 +221,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups",
     "📁 01 - Logs, Journal/Bitwarden Stuff/Bitwarden Stuff.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Immich vs Photoprism/Immich vs Photoprism.md",
-    "📁 01 - Logs, Journal/Bitwarden Stuff",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330144535924.png",
@@ -220,20 +229,11 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330135625993.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330133940758.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330130725907.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330124433935.png",
-    "⬇ INBOX, DROPZONE/New Tools.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329135344176.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329135314995.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329130759027.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/RAID vs AHCI/RAID vs AHCI.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Filesystems and Partition Schemes/Filesystems and Partition Schemes.md",
-    "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/A111 Inpaint/A111 Inpaint.md"
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md"
   ]
 }
