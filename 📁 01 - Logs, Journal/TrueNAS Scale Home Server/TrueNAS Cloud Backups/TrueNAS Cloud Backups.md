@@ -69,3 +69,5 @@ The gist:
 	- [Cloud Storage Pricing Comparison: Calculate Your Costs](https://www.backblaze.com/cloud-storage/pricing) 
 	- $6 * 12 TB * 12 months = $864
 	- Restore is around $120 or so for 12 TB
+# iX Storj Setup and Pricing
+- 
