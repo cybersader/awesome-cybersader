@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "9a7f2b1c6fec762d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
+          },
+          {
             "id": "979847f4593c0248",
             "type": "leaf",
             "state": {
@@ -68,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,7 +209,7 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "e8b907a8d64e3eed",
+  "active": "9a7f2b1c6fec762d",
   "lastOpenFiles": [
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
