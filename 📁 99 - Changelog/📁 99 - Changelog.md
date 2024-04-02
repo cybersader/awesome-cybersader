@@ -1,7 +1,7 @@
+- 2024-04-02 at 12h21 · [[TrueNAS Cloud Backups]]
 - 2024-04-02 at 11h35 · [[Misc TrueNAS]]
 - 2024-04-02 at 11h35 · [[TrueNAS Scale Home Server]]
 - 2024-04-02 at 11h35 · [[📁 01 - Logs, Journal]]
-- 2024-04-02 at 11h28 · [[TrueNAS Cloud Backups]]
 - 2024-04-02 at 09h48 · [[Backups Tech]]
 - 2024-04-01 at 20h15 · [[03 - March BHIS]]
 - 2024-04-01 at 15h49 · [[Cyber Merch]]

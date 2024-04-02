@@ -1,6 +1,6 @@
 ---
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Tuesday, April 2nd 2024, 11:28 am
+date modified: Tuesday, April 2nd 2024, 12:21 pm
 tags:
   - NAS
   - TrueNAS
@@ -106,5 +106,6 @@ The gist:
 	- Bucket: TrueNAS bucket created within Storj
 	- Folder (optional): path where data should be stored
 	- Directory/Files: folder in directory to push from
+		- Don't select mnt -- use one of the mounted datasets below it.  In my case, I'm using my `personal` dataset
 # Testing Recovery Process
 - TODO
