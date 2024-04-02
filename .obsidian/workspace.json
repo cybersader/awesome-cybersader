@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "46d4f2d8afe510d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,32 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "97ff40270d76002c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7dec4f077364a354",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -133,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "⬇ INBOX, DROPZONE/New Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "⬇ INBOX, DROPZONE/New Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+                "file": "⬇ INBOX, DROPZONE/New Tools.md"
               }
             }
           }
@@ -198,16 +187,20 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "25e26d83ca1c74fc",
+  "active": "979847f4593c0248",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "⬇ INBOX, DROPZONE/Obsidian Publish Analytics",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery.md",
     "📁 01 - Logs, Journal/Backups Tech/Backups Tech.md",
-    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/Cheapest Archive Storage/Cheapest Archive Storage.md",
     "📁 01 - Logs, Journal/Backups Tech",
@@ -230,13 +223,10 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330124433935.png",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329135344176.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/_attachments/Turning Old PC into NAS in 2024/IMG-20240329135314995.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/IMG-20240329130759027.png",
@@ -244,7 +234,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/RAID vs AHCI/RAID vs AHCI.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Filesystems and Partition Schemes/Filesystems and Partition Schemes.md",
-    "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/A111 Inpaint/A111 Inpaint.md",
-    "📁 98 - ARCHIVE/📁 98 - ARCHIVE.md"
+    "⬇ INBOX, DROPZONE/AI Content Workflows/Inpainting/A111 Inpaint/A111 Inpaint.md"
   ]
 }

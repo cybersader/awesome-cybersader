@@ -14,6 +14,7 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 - [[Go Pro as a Webcam]]
 - [[New Tools]]
 - [[Obsidian Plugins and Ideas for Contributions]]
+- **[Obsidian Publish Analytics](./Obsidian%20Publish%20Analytics/Obsidian%20Publish%20Analytics.md)**
 - **[Planning Deadwood 2024 WWHF Trip](./Planning%20Deadwood%202024%20WWHF%20Trip/Planning%20Deadwood%202024%20WWHF%20Trip.md)**
 - **[Vehicle Selection in 2020s](./Vehicle%20Selection%20in%202020s/Vehicle%20Selection%20in%202020s.md)**
 - [[Windows 11 UI Stuff]]
