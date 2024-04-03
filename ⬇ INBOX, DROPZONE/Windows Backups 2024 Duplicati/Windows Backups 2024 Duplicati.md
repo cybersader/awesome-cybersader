@@ -1,11 +1,15 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Wednesday, April 3rd 2024, 2:24 pm
+date modified: Wednesday, April 3rd 2024, 3:06 pm
 tags:
   - Backups
   - BCDR
   - NAS
   - Windows
+  - Duplicati
+  - Nextcloud
+  - WebDAV
+  - OS
 ---
 
 # Windows Backups
