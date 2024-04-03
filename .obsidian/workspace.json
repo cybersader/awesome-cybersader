@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024/Windows Backups 2024.md",
+                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/Windows Backups 2024 Duplicati.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024/Windows Backups 2024.md",
+                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/Windows Backups 2024 Duplicati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024/Windows Backups 2024.md",
+                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/Windows Backups 2024 Duplicati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024/Windows Backups 2024.md"
+                "file": "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/Windows Backups 2024 Duplicati.md"
               }
             }
           }
@@ -189,12 +189,16 @@
   },
   "active": "979847f4593c0248",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/Windows Backups 2024/_attachments/Windows Backups 2024",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024/_attachments",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024/_attachments/Windows Backups 2024/IMG-20240403134800062.png",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024 Duplicati",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024 Duplicati/IMG-20240403141956655.png",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024/IMG-20240403140834097.png",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024/IMG-20240403140815047.png",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/IMG-20240403134800062.png",
     "⬇ INBOX, DROPZONE/Backups Tech/Backups Tech.md",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024/Windows Backups 2024.md",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/Windows Backups 2024 Duplicati.md",
+    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati",
     "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive.md",
     "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
     "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive",
@@ -218,7 +222,6 @@
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/Cheapest Archive Storage/Cheapest Archive Storage.md",
@@ -231,9 +234,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330144535924.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330143721928.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330141511998.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330135625993.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330133940758.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330130725907.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330124433935.png"
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Immich Setup/_attachments/TrueNAS Immich Setup/IMG-20240330135625993.png"
   ]
 }
