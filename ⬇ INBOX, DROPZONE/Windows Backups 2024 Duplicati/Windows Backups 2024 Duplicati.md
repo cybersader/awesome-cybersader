@@ -30,5 +30,5 @@ tags:
 	- `remote.php/dav/files/USERNAME_HERE/Ben_Windows_PC_Backups`
 	- Enter in details and test the connection
 		- I have mine behind Cloudflare tunnels, so I use 443 for HTTPS
-		- ![](_attachments/Windows%20Backups%202024%20Duplicati/IMG-20240403141956655.png)
+		- ![](_attachments/Windows%20Backups%202024%20Duplicati/IMG-20240403192839887.png)
 	
