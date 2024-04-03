@@ -8,6 +8,7 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 %% Begin Waypoint %%
 - [[🐛 Known Base Bugs, Issues]]
 - **[AI Content Workflows](./AI%20Content%20Workflows/AI%20Content%20Workflows.md)**
+- **[Backups Tech](./Backups%20Tech/Backups%20Tech.md)**
 - [[Company Security Strategy from Zero]]
 - **[Cyber Books](./Cyber%20Books/Cyber%20Books.md)**
 - **[Cyber Memes](./Cyber%20Memes/Cyber%20Memes.md)**
@@ -21,5 +22,6 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 - **[Recover Files Old Windows Boot Drive](./Recover%20Files%20Old%20Windows%20Boot%20Drive/Recover%20Files%20Old%20Windows%20Boot%20Drive.md)**
 - **[Vehicle Selection in 2020s](./Vehicle%20Selection%20in%202020s/Vehicle%20Selection%20in%202020s.md)**
 - [[Windows 11 UI Stuff]]
+- **[Windows Backups 2024](./Windows%20Backups%202024/Windows%20Backups%202024.md)**
 
 %% End Waypoint %%
