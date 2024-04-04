@@ -1,6 +1,6 @@
 ---
 date created: Sunday, March 31st 2024, 10:39 pm
-date modified: Tuesday, April 2nd 2024, 9:48 am
+date modified: Wednesday, April 3rd 2024, 7:43 pm
 tags:
   - "#Backups"
 ---
@@ -10,4 +10,7 @@ tags:
 - [autorestic – Nextra](https://autorestic.vercel.app/) 
 - [restic · Backups done right!](https://restic.net/) 
 - [Duplicati](https://www.duplicati.com/) 
+- [UrBackup - Client/Server Open Source Network Backup for Windows and Linux](https://www.urbackup.org/) 
+- [Kopia](https://kopia.io/) 
+- [BorgBackup – Deduplicating archiver with compression and authenticated encryption](https://www.borgbackup.org/) 
 - 
