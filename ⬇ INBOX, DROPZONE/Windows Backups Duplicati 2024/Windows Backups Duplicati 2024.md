@@ -51,3 +51,6 @@ tags:
 - To start over - [Error while running - Support - Duplicati](https://forum.duplicati.com/t/error-while-running/14111/3)
 	- The quickest way to do that is to double check that the destination `W:\work` is still empty, then click on the backup job in the Duplicati Web UI to expand options, then click “Database …”, then click “Delete”. (Don’t click “Repair” or “Recreate”.)
 	- With the local database deleted AND the back end empty, the next time you run the backup job it will behave as if it’s the first backup.
+- Error with no files showing up and running out of space dur to large volume size chosen (might just mean the temp files were filling up space because they kept failing)
+	- Trying with 20 GB volume size instead
+	- 
