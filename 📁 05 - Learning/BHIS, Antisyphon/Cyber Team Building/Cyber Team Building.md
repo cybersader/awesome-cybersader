@@ -1,6 +1,6 @@
 ---
 date created: Tuesday, April 2nd 2024, 4:04 pm
-date modified: Tuesday, April 2nd 2024, 4:46 pm
+date modified: Friday, April 5th 2024, 4:04 pm
 tags:
   - talentAcquisition
   - CISO
@@ -80,3 +80,56 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 - You do. I watch. We talk. (Screen share, Zoom)
 - You do. We talk (1:1 meetings)
 - You do
+## Common Delegation Errors
+- They might not be ready
+- Your task training may be confusing, abstract, or incomplete
+	- be careful with delegating abstract tasks that have 20 new acronyms #cyberMeme 
+- Moving to leaf too quickly
+- Don't always start at the root
+	- If they know enough, it can be demotivating for them
+- Back off and don't micromanage
+## Micromanagement?
+- It's just on-the-job training
+	- We are trying to set them up for success and save resources
+## Delegation Practice
+- b.link/delegation
+## HR Partner Exercise
+- You need to hire new member for cyber/SOC/InfoRisk team
+- What are your largest blockers related to your HR department
+	- A GROC (gross rent occupancy cost) lobster? #cyberMeme 
+	- low budget
+	- they are being too literal with description
+- How to remove blockers
+	- Take HR out to lunch...actually
+- What does a supportive HR partner look like?
+	- Taking our objectives and helping us look at local talent pool related to those problems
+		- Understands needs and servant attitude
+	- Final say on job description
+	- Understand and support your approach but don't provide much material support - they get out of your way (acceptable)
+	- Handle some minor things and stay out of my way (can be acceptable)
+- Two types of HR departments
+	- strategic mode and transactional mode
+	- transactional HR mode
+		- most people know this one
+		- get butts in seats for low cost
+		- focus too much on hard skills and pedigrees
+	- strategic HR mode
+		- really see people as company's assets
+		- look for people with great soft skills that can't be trained on the job
+## Our Role in Hiring
+- Do you treat hiring with importance?
+- We need to give our HR relationship time and attention
+- This allows us to delegate and execute
+	- Work on and not in your program
+- Go to events and meet people to gauge things yourself
+## First Talk with HR
+- Need your help - review hiring criteria for open position
+- Use Common Cybersecurity Org Chart and Service Catalog - HR-Security Toolkit
+	- ![](_attachments/Cyber%20Team%20Building/IMG-20240405160111258.png)
+	- ![](_attachments/Cyber%20Team%20Building/IMG-20240405160201563.png)
+- Explain areas you tend to hire in the most - lots of turnover?
+- Tell them the criteria for job trying to fill - look for and make adjustments
+	- Most likely be less restrictive - ask for exceptions to hiring policy if need be
+## Why HR Support For Security Can Be Difficult
+- HR department was a well oiled machine for certain positions and not others
+	- They look at

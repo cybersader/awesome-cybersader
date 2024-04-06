@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
+                "file": "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md"
               }
             }
           }
@@ -189,8 +189,14 @@
   },
   "active": "8f2de26c5d09d141",
   "lastOpenFiles": [
-    "README.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160201563.png",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160111258.png",
+    "⬇ INBOX, DROPZONE/Cyber Content Ideas/Cyber Content Ideas.md",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
+    "⬇ INBOX, DROPZONE/Cyber Content Ideas",
+    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+    "README.md",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive.md",
     "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
@@ -217,13 +223,9 @@
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/_attachments/Windows Backups 2024 Duplicati",
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/_attachments/Windows Backups 2024 Duplicati/IMG-20240403141956655.png",
     "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024/IMG-20240403140834097.png",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024/IMG-20240403140815047.png",
     "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024",
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/_attachments",
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024",
-    "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive",
-    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
@@ -232,8 +234,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March Cyber News/03 - March Cyber News.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/Cheapest Archive Storage/Cheapest Archive Storage.md"
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery.md"
   ]
 }
