@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "5aae0d0e59d5d4d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8f2de26c5d09d141",
             "type": "leaf",
             "state": {
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md"
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
               }
             }
           }
@@ -187,10 +199,11 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "8f2de26c5d09d141",
+  "active": "5aae0d0e59d5d4d5",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/Books/Books.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
+    "⬇ INBOX, DROPZONE/Books/Books.md",
     "⬇ INBOX, DROPZONE/Cyber Posters",
     "⬇ INBOX, DROPZONE/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
@@ -229,7 +242,6 @@
     "⬇ INBOX, DROPZONE/New Tools.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
