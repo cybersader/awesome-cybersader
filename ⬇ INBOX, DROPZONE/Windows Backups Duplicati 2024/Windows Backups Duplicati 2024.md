@@ -53,4 +53,7 @@ tags:
 	- With the local database deleted AND the back end empty, the next time you run the backup job it will behave as if it’s the first backup.
 - Error with no files showing up and running out of space dur to large volume size chosen (might just mean the temp files were filling up space because they kept failing)
 	- Trying with 20 GB volume size instead
+	- Still errors -- the only reason my drive is filling up is because it fills the Temp drive with temp files everytime I run Duplicati
+- Must be some webdav bug with Nextcloud 
+	- [WebDAV connection error using 3rd part app - ℹ️ Support - Nextcloud community](https://help.nextcloud.com/t/webdav-connection-error-using-3rd-part-app/155446) 
 	- 
