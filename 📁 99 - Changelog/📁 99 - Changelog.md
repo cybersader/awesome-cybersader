@@ -1,5 +1,6 @@
-- 2024-04-07 at 14h45 · [[Books]]
-- 2024-04-07 at 14h43 · [[⬇ INBOX, DROPZONE]]
+- 2024-04-07 at 15h02 · [[Cyber Posters]]
+- 2024-04-07 at 15h02 · [[⬇ INBOX, DROPZONE]]
+- 2024-04-07 at 14h59 · [[Books]]
 - 2024-04-07 at 14h41 · [[Windows Backups Duplicati 2024]]
 - 2024-04-05 at 16h04 · [[Cyber Team Building]]
 - 2024-04-05 at 16h02 · [[📁 05 - Learning]]
@@ -97,4 +98,3 @@
 - 2024-03-19 at 20h48 · [[SIEM, Visibility, and Event-Driven Architecture Curated Solutions]]
 - 2024-03-19 at 20h48 · [[SIEM_framework_2023]]
 - 2024-03-19 at 20h48 · [[Data Architecting & Engineering Terminology]]
-- 2024-03-19 at 20h48 · [[X0. Research, Refs, Reports]]
