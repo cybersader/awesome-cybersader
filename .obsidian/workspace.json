@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "urbackup",
+                "query": "cyberduck",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +114,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,7 +200,7 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "5aae0d0e59d5d4d5",
+  "active": "d1a916c00d2be73c",
   "lastOpenFiles": [
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
