@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Sunday, April 7th 2024, 2:41 pm
+date modified: Sunday, April 7th 2024, 8:43 pm
 tags:
   - Backups
   - BCDR
@@ -56,4 +56,7 @@ tags:
 	- Still errors -- the only reason my drive is filling up is because it fills the Temp drive with temp files everytime I run Duplicati
 - Must be some webdav bug with Nextcloud 
 	- [WebDAV connection error using 3rd part app - ℹ️ Support - Nextcloud community](https://help.nextcloud.com/t/webdav-connection-error-using-3rd-part-app/155446) 
+- Found another Duplicati forum post
+	- [Backup to WeDAV / Nextcloud never completes - Support - Duplicati](https://forum.duplicati.com/t/backup-to-wedav-nextcloud-never-completes/12143) 
+	- Look at About > Show log
 	- 
