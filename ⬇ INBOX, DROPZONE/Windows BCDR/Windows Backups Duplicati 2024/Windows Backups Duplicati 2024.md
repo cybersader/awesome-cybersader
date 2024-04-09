@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Monday, April 8th 2024, 7:13 pm
+date modified: Monday, April 8th 2024, 10:32 pm
 tags:
   - Backups
   - BCDR
@@ -74,4 +74,7 @@ tags:
 		- [Nextcloud 413 Request entity too large | TrueNAS Community](https://www.truenas.com/community/threads/nextcloud-413-request-entity-too-large.103704/)
 		- [WebDAV App - "413 Request Entity Too Large" | TrueNAS Community](https://www.truenas.com/community/threads/webdav-app-413-request-entity-too-large.111682/) 
 		- [413 error the file is too large - 📱 Desktop & mobile clients / 🍏 iOS - Nextcloud community](https://help.nextcloud.com/t/413-error-the-file-is-too-large/151499) 
-		- 
+		- Found this in Nextcloud > Admin > Admin Settings > System
+			- Looks like it's still somehow set to 3GB
+			- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408223253769.png)
+			- 

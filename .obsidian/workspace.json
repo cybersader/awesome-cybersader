@@ -114,8 +114,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,8 +199,9 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "d1a916c00d2be73c",
+  "active": "5aae0d0e59d5d4d5",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408223253769.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
@@ -246,7 +246,6 @@
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery.md"
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md"
   ]
 }
