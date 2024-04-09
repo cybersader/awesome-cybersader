@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Monday, April 8th 2024, 10:32 pm
+date modified: Monday, April 8th 2024, 11:38 pm
 tags:
   - Backups
   - BCDR
@@ -77,4 +77,8 @@ tags:
 		- Found this in Nextcloud > Admin > Admin Settings > System
 			- Looks like it's still somehow set to 3GB
 			- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408223253769.png)
-			- 
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408232742589.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408232856931.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233004298.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233145136.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233847141.png)
