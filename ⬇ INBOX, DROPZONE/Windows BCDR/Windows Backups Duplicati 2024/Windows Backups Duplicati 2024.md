@@ -69,4 +69,9 @@ tags:
 		- For TrueNAS Scale, go to Apps > Nextcloud > edit the config
 		- Change Max Upload Size to 200 GB or wherever you want
 		- This corresponds to `client_max_body_size` in nginx and both `post_max_size` and `upload_max_filesize` in php
+		- Didn't work.  Still getting errors in Duplicati with (413)
+	- Trying a bunch of articles to see if there's other files that need changing
+		- [Nextcloud 413 Request entity too large | TrueNAS Community](https://www.truenas.com/community/threads/nextcloud-413-request-entity-too-large.103704/)
+		- [WebDAV App - "413 Request Entity Too Large" | TrueNAS Community](https://www.truenas.com/community/threads/webdav-app-413-request-entity-too-large.111682/) 
+		- [413 error the file is too large - 📱 Desktop & mobile clients / 🍏 iOS - Nextcloud community](https://help.nextcloud.com/t/413-error-the-file-is-too-large/151499) 
 		- 
