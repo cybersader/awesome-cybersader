@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
+                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md"
               }
             }
           }
@@ -198,11 +198,18 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "25e26d83ca1c74fc",
   "lastOpenFiles": [
-    "📁 05 - Learning/Untitled",
-    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro",
+    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+    "📁 05 - Learning/Ninestar Classes",
+    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
     "⬇ INBOX, DROPZONE/Books/Books.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Backup Tech Stack/Backup Tech Stack.md",
@@ -236,15 +243,8 @@
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200939702.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200649582.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data",
-    "⬇ INBOX, DROPZONE/Windows BCDR/_attachments/Windows BCDR",
-    "⬇ INBOX, DROPZONE/Windows BCDR/_attachments",
-    "⬇ INBOX, DROPZONE/Windows BCDR",
     "⬇ INBOX, DROPZONE/Backups Tech/Backups Tech.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
-    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md",
-    "⬇ INBOX, DROPZONE/New Tools.md",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md"
+    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md"
   ]
 }
