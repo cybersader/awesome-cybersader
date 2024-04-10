@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "46d4f2d8afe510d3",
+            "id": "090e1597f099abae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
+                "file": "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "📁 03 - Curations/Misc Tech/Misc Tech.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,8 +198,19 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "5aae0d0e59d5d4d5",
+  "active": "25e26d83ca1c74fc",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+    "⬇ INBOX, DROPZONE/Books/Books.md",
+    "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Backup Tech Stack/Backup Tech Stack.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Backup Tech Stack",
+    "📁 03 - Curations/Misc Tech/Misc Tech.md",
+    "📁 03 - Curations/📁 03 - Curations.md",
+    "📁 03 - Curations/Misc Tech",
+    "📁 03 - Curations",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233847141.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233145136.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233004298.png",
@@ -209,11 +219,8 @@
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408223253769.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
-    "⬇ INBOX, DROPZONE/Books/Books.md",
     "⬇ INBOX, DROPZONE/Cyber Posters",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160201563.png",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160111258.png",
@@ -223,12 +230,10 @@
     "README.md",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive.md",
-    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200939702.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200649582.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240403200423178.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data",
     "⬇ INBOX, DROPZONE/Windows BCDR/_attachments/Windows BCDR",
@@ -237,15 +242,9 @@
     "⬇ INBOX, DROPZONE/Backups Tech/Backups Tech.md",
     "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
     "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups 2024 Duplicati",
-    "⬇ INBOX, DROPZONE/Windows Backups 2024 Duplicati/_attachments/Windows Backups 2024",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
-    "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Misc TrueNAS.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Misc TrueNAS/Rsync Related/Rsync Related.md"
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
   ]
 }
