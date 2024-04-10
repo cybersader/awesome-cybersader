@@ -1,0 +1,338 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 15 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 15: Recover Deleted File</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+    <ol>
+      <li>Look for deleted entries in directory files</li><p>
+	<li>Determine the block group for a file or directory</li><p>
+	<li>Extract all blocks associated with a given block group</li><p>
+	<li>Use string search to locate deleted file data</li><p>
+	<li>Extract full contents of a deleted file</tt></li><p>
+</ol>
+
+</h1>
+
+<h1>Before You Get Started</h1>
+
+Note that for this lab to work, you will need to have our compromised
+web server image mounted. If your 
+<tt>/mnt/test/data</tt> directory is empty, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_10/index.html">Exercise 10</a> to mount the image.</p>
+
+
+<h1>1. Deleted Directory Entries</h1>
+
+<p>In a previous exerise, the <tt>/root/.bash_history</tt> showed somebody
+  removing the file <tt>/tmp/37292.c</tt>. We suspect this may have been the
+  source code for the CVE-2015-1328 privilege escalation exploit found in <tt>/tmp</tt>.
+  We are going to try and recover this file.</p>
+
+<p>Previously we used the <tt>fls</tt> tool from the Sleuthkit to generate
+  the "body" file for our timelines. <tt>fls</tt> can also be used to list
+  directories--including entries for deleted files-- in a more human-readable format:</p>
+
+<pre>
+  [root@LAB ~]# <b>ls -id /mnt/test/data/tmp</b>
+  1177346 /mnt/test/data/tmp
+  [root@LAB ~]# <b>fls -rp /dev/VulnOSv2-vg/root 1177346</b>
+  r/r * 1177364:  sh-thd-2797907191
+  r/r * 1177373:  ccK6FJ39.s
+  r/r * 1177374:  ccnpfgGI.o
+  r/r * 1177375:  ccOOU3I8.c
+  r/r * 1177376:  ccsuW6mH.o
+  r/r 1177371:    apache-xTRhUVX
+  r/r * 1177377:  ccHf490f.ld
+  r/r * 1177378:  cciXjdFO.le
+  r/r * 1177379:  ofs-lib.so
+  r/r * 1178168:  libraries-7.x-1.0.zip
+  r/r * 1178175:  token-7.x-1.6.zip
+  r/r * 1178196:  views-7.x-3.13.zip
+  r/r * 1177350(realloc): tmp.S692hUwVC8
+  r/r * 1177362(realloc): util-linux.config.UogfqR
+  r/r * 1177363(realloc): libssl1.0.0.template.6fbl0m
+  r/r * 1177364:  libssl1.0.0.config.T9bOfC
+  r/r * 1177365:  resolvconf.template.9u3iwR
+  r/d * 1177366:  resolvconf.config.LHjPM6
+  r/d * 1177367:  libpam-runtime.template.rI8r6u
+  r/d * 1177368:  libpam-runtime.config.YK8kBK
+  r/r * 1177369:  man-db.template.X6OY7Z
+  r/l * 1177370:  man-db.config.WSxDEf
+  r/r * 1177371(realloc): apparmor.template.a0Ylpr
+  r/r * 1177372:  apparmor.config.NRku6G
+  r/r * 1177373:  ca-certificates.template.Ylf7Iq
+  r/r * 1177374:  ca-certificates.config.GMjLvG
+  r/r * 1177375:  irqbalance.template.nY5NjW
+  r/r * 1177376:  irqbalance.config.HgMR7b
+  r/r * 1177377:  byobu.template.rs84Zu
+  r/r * 1177378:  byobu.config.oXLLWK
+  r/r * 1177379:  landscape-common.template.o02KT0
+  r/r * 1177380:  landscape-common.config.rfdMQg
+  r/r * 1177381:  unattended-upgrades.template.jeNBTw
+  r/r * 1177382:  unattended-upgrades.config.L68rWM
+</pre>
+
+<p>To use <tt>fls</tt> in this mode, we first use the normal <tt>ls</tt>
+  command to determine the inode number for the <tt>/mnt/test/data/tmp</tt>
+  directory. This inode number is an argument to <tt>fls</tt> along with
+  the file system device that contains our <tt>/tmp</tt> directory (if you've
+  forgotten the file system, "<tt>df /mnt/test/data/tmp</tt>" can help).
+  The "<tt>-p</tt>" option tells <tt>fls</tt> to output the information in
+  human-readable form with full pathname data. As before "<tt>-r</tt>" means
+  <i>recursively</i> show all subdirectory contents from <tt>/tmp</tt> downwards
+  (there are no subdirectories in this example).</p>
+
+<p>Deleted file entries are the ones marked with "<tt>*</tt>". Only the suspicious
+  <tt>apache-xTRhUVX</tt> actually remains in the directory. All of the other entries
+  are for deleted files. We do not see a file named "<tt>37292.c</tt>"-- it's possible
+  that this directory entry got overwritten. However, we do
+  a different "<tt>*.c</tt>" file, along with "<tt>*.s</tt>" and "<tt>*.o</tt>" files
+  that could be artifacts of compilation.</p>
+
+
+<h1>2. Which Block Group?</h1>
+
+<p>If <tt>/tmp/37292.c</tt> ever existed, it's likely that it was placed in the same
+  block group as the <tt>/tmp</tt> directory. The <tt>istat</tt> command from the Sleuthkit
+  can quickly tell us which block group that is:</p>
+
+<pre>
+  [root@LAB ~]# <b>istat /dev/VulnOSv2-vg/root 1177346 | head</b>
+  inode: 1177346
+  Allocated
+  Group: 144
+  Generation Id: 1875510207
+  uid / gid: 0 / 0
+  mode: drwxrwxrwx
+  Flags: Extents,
+  size: 4096
+  num of links: 2
+</pre>
+
+<p>We feed <tt>istat</tt> the same arguments we used with <tt>fls</tt>-- the file system
+  device and the inode number. The output shows us this inode belongs to block group 144.</p>
+
+<p>We can get more detail about that block group using the Sleuthkit's <tt>fsstat</tt> command:</p>
+
+<pre>
+  [root@LAB ~]# <b>fsstat /dev/VulnOSv2-vg/root</b>
+  FILE SYSTEM INFORMATION
+  --------------------------------------------
+  File System Type: Ext4
+  Volume Name:
+  Volume ID: 46c34db340bee5aa35423fd055183259
+
+  Last Written at: 2019-10-05 09:41:50 (UTC)
+  Last Checked at: 2016-04-03 16:05:48 (UTC)
+
+  Last Mounted at: 2019-10-05 09:41:50 (UTC)
+  Unmounted properly
+  Last mounted on: /
+
+  [...]
+
+  Group: 144:
+    Inode Range: 1177345 - 1185520
+    Block Range: 4718592 - 4751359
+    Layout:
+      Data bitmap: 4718592 - 4718592
+      Inode bitmap: 4718608 - 4718608
+      Inode Table: 4718624 - 4719134
+      Data Blocks: 4718609 - 4718623, 4719135 - 4751359
+    Free Inodes: 8156 (99%)
+    Free Blocks: 24558 (74%)
+    Total Directories: 2
+
+  [...]
+</pre>
+
+<p>There will be a large amount of output, but if you page through it all you
+  will find the details for block group 144. Here's a little bit of
+  command-line kung fu to extract this information more quickly:</p>
+
+<pre>
+  [root@LAB ~]# <b>fsstat /dev/VulnOSv2-vg/root | grep -A 10 'Group: 144:'</b>
+  Group: 144:
+    Inode Range: 1177345 - 1185520
+    Block Range: 4718592 - 4751359
+    Layout:
+      Data bitmap: 4718592 - 4718592
+      Inode bitmap: 4718608 - 4718608
+      Inode Table: 4718624 - 4719134
+      Data Blocks: 4718609 - 4718623, 4719135 - 4751359
+    Free Inodes: 8156 (99%)
+    Free Blocks: 24558 (74%)
+    Total Directories: 2
+</pre>
+
+<p>Matching on the "<tt>Group: 144:</tt>" header, we tell <tt>grep</tt> to give
+  us 10 additional lines after the matching line ("<tt>-A 10</tt>") to get the
+  detailed information about the block group.</p>
+
+<p>But what good is this information? Since we believe the deleted file contents
+  are someplace in this block group, then we are going to extract these blocks
+  and search through them for the deleted source code.</p>
+
+  
+<h1>3. Carving Blocks</h1>
+
+<p>From the <tt>fsstat</tt> information we know that our block group starts at
+  block 4718592 and should run 32K (32*1024=32768) blocks. Let's have some fun
+  with the <tt>dd</tt> command:</p>
+
+<pre>
+  [root@LAB ~]# <b>mkdir -p /images/Ex_10</b>
+  [root@LAB ~]# <b>cd /images/Ex_10</b>
+  [root@LAB Ex_10]# <b>dd if=/dev/VulnOSv2-vg/root bs=4096 skip=4718592 count=32768 >blkgrp144.raw</b>
+  32768+0 records in
+  32768+0 records out
+  134217728 bytes (134 MB) copied, 0.691746 s, 194 MB/s
+</pre>
+
+<p>The arguments to <tt>dd</tt> are the file system device ("<tt>if=/dev/VulnOSv2-vg/root</tt>"),
+  the block size ("<tt>bs=4096</tt>"), the "<tt>skip</tt>" factor to jump to the first block of
+  the block group (blocks are numbered starting from zero), and the "<tt>count</tt>" of 32K blocks
+  to extract. <tt>dd</tt> is great for chopping up data runs into just the pieces you want!</p>
+
+<p>We've now got the blocks from the block group of interest, but how can we find our source code?
+How about a little string searching? C source code files normally start with a number of "<tt>#include</tt>"
+  lines, so let's use that as our search pattern. We can extract ASCII strings in Linux with the
+  <tt>strings</tt> command, and the "<tt>-t d</tt>" option will even give us (decimal) byte offsets
+to where the string appears in the block run:</p>
+
+<pre>
+  [root@LAB Ex_10]# <b>strings -a -t d blkgrp144.raw | grep '#include'</b>
+</pre>
+
+<p>Well that's disappointing! Maybe <tt>/tmp</tt> got so full during the attack that our
+  <tt>*.c</tt> file got pushed into the next block group. It's "lather, rinse, repeat"
+  to inspect the blocks from block group 145:</p>
+
+<pre>
+  [root@LAB Ex_10]# <b>fsstat /dev/VulnOSv2-vg/root | grep -A 10 'Group: 145:'</b>
+  Group: 145:
+    Inode Range: 1185521 - 1193696
+    Block Range: 4751360 - 4784127
+    Layout:
+      Data bitmap: 4718593 - 4718593
+      Inode bitmap: 4718609 - 4718609
+      Inode Table: 4719135 - 4719645
+      Data Blocks: 4719646 - 4784127
+    Free Inodes: 8176 (100%)
+    Free Blocks: 32295 (98%)
+    Total Directories: 0
+  [root@LAB Ex_10]# <b>dd if=/dev/VulnOSv2-vg/root bs=4096 skip=4751360 count=32768 >blkgrp145.raw</b>
+  32768+0 records in
+  32768+0 records out
+  134217728 bytes (134 MB) copied, 1.33826 s, 100 MB/s
+  [root@LAB Ex_10]# <b>strings -a -t d blkgrp145.raw | grep '#include'</b>
+  1926261 #include &lt;stdio.h&gt;
+  1926281 #include &lt;stdlib.h&gt;
+  1926302 #include &lt;unistd.h&gt;
+  1926323 #include &lt;sched.h&gt;
+  1926343 #include &lt;sys/stat.h&gt;
+  1926366 #include &lt;sys/types.h&gt;
+  1926390 #include &lt;sys/mount.h&gt;
+  1926414 #include &lt;stdio.h&gt;
+  1926434 #include &lt;stdlib.h&gt;
+  1926455 #include &lt;unistd.h&gt;
+  1926476 #include &lt;sched.h&gt;
+  1926496 #include &lt;sys/stat.h&gt;
+  1926519 #include &lt;sys/types.h&gt;
+  1926543 #include &lt;sys/mount.h&gt;
+  1926567 #include &lt;sys/types.h&gt;
+  1926591 #include &lt;signal.h&gt;
+  1926612 #include &lt;fcntl.h&gt;
+  1926632 #include &lt;string.h&gt;
+  1926653 #include &lt;linux/sched.h&gt;
+  1926681 #define LIB "#include &lt;unistd.h&gt;\n\nuid_t(*_real_getuid) (void);\nchar path[128];\n\nuid_t\ngetuid...
+  1937528 #include &lt;unistd.h&gt;
+  38420818 #include &lt;linux/types.h&gt;
+  38420843 #include &lt;linux/keyboard.h&gt;
+  38420871 #include &lt;linux/kd.h&gt;
+</pre>
+
+<p>That looks considerably more promising! We can calculate a block offset simply by dividing the
+  byte offset in the <tt>strings</tt> output by the block size (4096). Then a little more <tt>dd</tt>
+  action will extract the block we want:</p>
+
+<pre>
+  [root@LAB Ex_10]# <b>expr 1926261 / 4096</b>
+  470
+  [root@LAB Ex_10]# <b>dd if=blkgrp145.raw bs=4096 skip=470 count=1</b>
+  /*
+  # Exploit Title: ofs.c - overlayfs local root in ubuntu
+  # Date: 2015-06-15
+  # Exploit Author: rebel
+  # Version: Ubuntu 12.04, 14.04, 14.10, 15.04 (Kernels before 2015-06-15)
+  # Tested on: Ubuntu 12.04, 14.04, 14.10, 15.04
+  # CVE : CVE-2015-1328     (http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-1328.html)
+
+  *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  CVE-2015-1328 / ofs.c
+  overlayfs incorrect permission handling + FS_USERNS_MOUNT
+
+  user@ubuntu-server-1504:~$ uname -a
+  Linux ubuntu-server-1504 3.19.0-18-generic #18-Ubuntu SMP Tue May 19 18:31:35 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+  user@ubuntu-server-1504:~$ gcc ofs.c -o ofs
+  user@ubuntu-server-1504:~$ id
+  uid=1000(user) gid=1000(user) groups=1000(user),24(cdrom),30(dip),46(plugdev)
+  user@ubuntu-server-1504:~$ ./ofs
+  spawning threads
+  mount #1
+  mount #2
+  child threads done
+  /etc/ld.so.preload created
+  creating shared library
+  # id
+  uid=0(root) gid=0(root) groups=0(root),24(cdrom),30(dip),46(plugdev),1000(user)
+
+  greets to beist & kaliman
+  2015-05-24
+  %rebel%
+  *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  */
+
+  #include &lt;stdio.h&gt;
+  #include &lt;stdlib.h&gt;
+      [...]
+
+      if((init = fork()) == 0) {
+          pid_t pid =
+              clone(child_exec, child_stack + (1024*1024), clone_flags, NULL);
+          if(1+0 records in
+  1+0 records out
+  4096 bytes (4.1 kB) copied, 6.3073e-05 s, 64.9 MB/s
+</pre>
+
+<p>Compare the data you found above against
+  <a href="https://www.exploit-db.com/exploits/37292" target="_blank">https://www.exploit-db.com/exploits/37292</a>.
+  The file we are looking for was named <tt>37292.c</tt> and seems to be an exact match for the Exploit DB
+  CVE-2015-1328 privilege escalation exploit at Exploit DB node 37292. This is not a coincidence.</p>
+
+<p>Actually, the full source code is longer than a single block. Check out the end of the output above, which
+  cuts out in the middle of an "<tt>if</tt>" statement. To recover the full exploit code, use a "<tt>count=2</tt>"
+  parameter to dump two consecutive blocks.</p>
+
+<p>String search is a good way to recover text data like source code and log files. For binary data such as
+  executables, image files (GIF, JPEG, etc), PDF and Office documents, etc consider using a file carving tool
+  like Photorec or Foremost.</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

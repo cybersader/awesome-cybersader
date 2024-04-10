@@ -1,0 +1,28 @@
+body { margin: 10; 
+       padding: 0; 
+       background: #ffffff; 
+       color: #000000; 
+       font-family: arial,helvetica,sans-serif; 
+       font-size: 16px;
+       max-width: 750px; }
+
+.page_title { font-weight: bold; font-size: 24px; }
+.page_subtitle { font-size: 20px; }
+
+h1 { font-size: 20px; font-weight: bold; padding-top: 20px; }
+h2 { font-size: 16px; font-weight: bold; padding-top: 16px; }
+
+dt { font-weight: bold; }
+
+blockquote { border: 1px; border-style: solid; border-color: #000000; 
+             padding: 10; margin: 0; 
+             background: #b4d0e9; 
+             font-weight: bold; }
+
+pre { padding-left: 40; margin: 0; }
+
+td.index_table_rightcol { font-size: 16px; }
+td.index_table_leftcol { background: #0161b3; 
+	                 color: white; 
+                         font-size: 16px; 
+                         font-weight: bold; }

@@ -1,11 +1,22 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Wednesday, April 10th 2024, 10:52 am
+date modified: Wednesday, April 10th 2024, 12:05 pm
+tags:
+  - Linux
+  - "#HalPomeranz"
+  - DFIR
+  - Forensics
+  - DigitalForensics
+  - IncidentResponse
+  - BlueTeam
+  - DataAcquisition
+  - UAC
 ---
 
 > Linux Forensics by Hal Pomeranz
 
 %% Begin Landmark %%
+- **[Exercises](./Exercises/Exercises.md)**
 - **[Linux Intro](./Linux%20Intro/Linux%20Intro.md)**
 - **[Live Linux Triage](./Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
 - **[UAC Tool](./UAC%20Tool/UAC%20Tool.md)**
@@ -23,6 +34,9 @@ date modified: Wednesday, April 10th 2024, 10:52 am
 	- Understand parent/child process relationships
 - Quick Wins
 	- `grep -F '> /' live_response/process/running_processes_full_paths.txt | grep -Fv /usr`
+	- grep -F doesn't have to set up regex engine, so it's a lot faster with fixed strings (-F)
+- Awk
+	- reads input one line at a time
 	- 
 # Linux Filesystem
 - ![](_attachments/Linux%20Forensics/IMG-20240410100320912.png)
@@ -60,9 +74,41 @@ date modified: Wednesday, April 10th 2024, 10:52 am
 - live_response/process/lsof_-nPl.txt
 - bodyfile/bodyfile.txt
 
-
+# Linux Processes
+- Windows malware like to use servicehost under explorer to run malware
+- Knowing the Linux process hierarchy helps find bad
+- ![](_attachments/Linux%20Forensics/IMG-20240410114115080.png)
+- `pstree` command shows process hierarchy in Linux
+- ssh is normal
+- Nested SSH shell from another process is a bad sign - SSH is bad when you see bash shell coming out of web server
+	- ![](_attachments/Linux%20Forensics/IMG-20240410114814870.png)
+- Square bracket processes are kernel made processes - some attackers hide their coin miners and malware as these
+	- You shouldn't see spontaneous processes ran out of interactive user shells
+	- They will still have higher PID values and the start time will be hours, days, or weeks after systemd and first startup
+## Orphaned Processes
+- ![](_attachments/Linux%20Forensics/IMG-20240410114826273.png)
+- When process that started you goes away, then PS can show process ID as systemd as if it started the program.
+- What's really happening is some background process was started and the shell was closed
+- There is a way to differentiate between orphaned processes and systemd started processes
+	- look at proc status file at the `NSsid` value - that's the original parent process
+	- You can see the same thing with `stat file` under `proc` folder
+	- UAC captures this, but you could call it off with a custom YAML as well
+## Scheduled Tasks and Persistence
+- ![](_attachments/Linux%20Forensics/IMG-20240410115643521.png)
+- Linux has a lot of overlapping task scheduling systems
+- cron and spool are common names
+- Linux has at least 3 that happen simultaneously
+- `ls /etc/*cron*`
+- systemd timers is also common - [(13) All About Linux Systemd Timers w/ Hal Pomeranz - YouTube](https://www.youtube.com/watch?v=rAe9Iw08Fn0) 
+## Process Network Behavior
+- Most malware beacons out to a website - it happens fast though.  Look for process listening in the netstat output
+- ![](_attachments/Linux%20Forensics/IMG-20240410120128233.png)
+- UAC grabs a lot of this and netstat_-lpeanut is a good place to start
+- Is it normal for this process to be listening on this port?
+- To understand what's normal, look at the netstat peanut output of all machines on the network and stack the outputs 
+- 
 # Q&A
 - Do you bring tuned artifact YAMLs and configs with you to an investigation or just start from scratch each time?
 	- 
-- Are proactive antiforensics measures common as opposed to reactice antiforensics measures?
+- Are proactive antiforensics measures common as opposed to reactive antiforensics measures? More specifically, do they watch for forensics activities?
 	- 
