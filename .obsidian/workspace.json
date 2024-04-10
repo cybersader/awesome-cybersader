@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "46e48f52f2d49692",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/PomeranzLinuxForensics.pdf"
+              }
+            }
+          },
+          {
             "id": "090e1597f099abae",
             "type": "leaf",
             "state": {
@@ -117,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -200,8 +211,15 @@
   },
   "active": "25e26d83ca1c74fc",
   "lastOpenFiles": [
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410100320912.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/PomeranzLinuxForensics.pdf",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/PomeranzLinuxForensics.pdf.crdownload",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro",
@@ -218,7 +236,6 @@
     "📁 03 - Curations/Misc Tech/Misc Tech.md",
     "📁 03 - Curations/📁 03 - Curations.md",
     "📁 03 - Curations/Misc Tech",
-    "📁 03 - Curations",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233847141.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233145136.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240408233004298.png",
@@ -228,12 +245,10 @@
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
     "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
-    "⬇ INBOX, DROPZONE/Cyber Posters",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160201563.png",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240405160111258.png",
     "⬇ INBOX, DROPZONE/Cyber Content Ideas/Cyber Content Ideas.md",
-    "⬇ INBOX, DROPZONE/Cyber Content Ideas",
     "📁 05 - Learning/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
     "README.md",
     "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
@@ -241,10 +256,6 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200939702.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/IMG-20240403200649582.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024",
-    "⬇ INBOX, DROPZONE/Backups Tech/Backups Tech.md",
-    "📁 02 - CyberNews/2024 Cyber News/03 - March BHIS/03 - March BHIS.md",
-    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md"
+    "⬇ INBOX, DROPZONE/Backups Tech/Backups Tech.md"
   ]
 }
