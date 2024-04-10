@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Monday, April 8th 2024, 11:38 pm
+date modified: Tuesday, April 9th 2024, 10:22 pm
 tags:
   - Backups
   - BCDR
@@ -65,6 +65,7 @@ tags:
 	- [Files not getting synced (413 Request Entity Too Large) - ℹ️ Support / 📦 Appliances (Docker, Snappy, VM, NCP, AIO) - Nextcloud community](https://help.nextcloud.com/t/files-not-getting-synced-413-request-entity-too-large/45681/1) 
 	- [BadRequest expected filesize during file sync in shared folder · Issue #762 · nextcloud/docker](https://github.com/nextcloud/docker/issues/762#issuecomment-504225433) 
 	- [413 Request entity too large error! : r/NextCloud](https://www.reddit.com/r/NextCloud/comments/ugmpbt/413_request_entity_too_large_error/) 
+	- [413 error code nextcode | TrueNAS Community](https://www.truenas.com/community/threads/413-error-code-nextcode.108306/)
 	- [Uploading big files > 512MB — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/20/admin_manual/configuration_files/big_file_upload_configuration.html?highlight=max%20upload%20size#:~:text=The%20default%20maximum%20file,2GB%20on%2032Bit%20OS%2Darchitecture)
 		- For TrueNAS Scale, go to Apps > Nextcloud > edit the config
 		- Change Max Upload Size to 200 GB or wherever you want
