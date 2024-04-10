@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Wednesday, April 10th 2024, 8:58 am
+date modified: Wednesday, April 10th 2024, 9:37 am
 ---
 
 > Linux Forensics by Hal Pomeranz
@@ -23,4 +23,6 @@ date modified: Wednesday, April 10th 2024, 8:58 am
 	- there's timestamps between commands
 	- you can find where the most time is being taken
 # Lab 1 - Running UAC
+- Simple to run
+- Change the yaml to run commands you want
 - 
