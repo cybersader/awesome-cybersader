@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Wednesday, April 10th 2024, 8:34 pm
+date modified: Wednesday, April 10th 2024, 8:42 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -11,6 +11,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 
 # Misc
 - [Easy Way to Generate/Copy Wiki Internal Link to Current Note? - Help - Obsidian Forum](https://forum.obsidian.md/t/easy-way-to-generate-copy-wiki-internal-link-to-current-note/56699)
+- [Peerdraft - Secure real-time collaboration for Obsidian](https://www.peerdraft.app/)
 - obsidian://show-plugin?id=copy-publish-url
 # Misc Ideas
 - Modify refactor plugin to have 

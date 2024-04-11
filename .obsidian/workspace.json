@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📄 Resume - Tools & Tech ⚒️.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 437.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📄 Resume - Tools & Tech ⚒️.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📄 Resume - Tools & Tech ⚒️.md",
+                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📄 Resume - Tools & Tech ⚒️.md"
+                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md"
               }
             }
           }
@@ -226,30 +226,30 @@
   "active": "882f83605293e059",
   "lastOpenFiles": [
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
-    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410160745111.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410203409676.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410160056391.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410155613428.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410155146055.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410154608422.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410154449751.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410153754572.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410153405187.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410203409675.png",
-    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
-    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
-    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts",
-    "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+    "📄 Resume - Tools & Tech ⚒️.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852178.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852177.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852176.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852175.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410203837743.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852157.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852152.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852151.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852150.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852149.png",
+    "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "⬇ INBOX, DROPZONE/Obsidian Publish SEO",
+    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
+    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts",
+    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "conflict-files-obsidian-git.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
-    "⬇ INBOX, DROPZONE/Obsidian Publish SEO",
-    "📄 Resume - Tools & Tech ⚒️.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/style/HalEx.css",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_17/index.html",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_16/index.html",

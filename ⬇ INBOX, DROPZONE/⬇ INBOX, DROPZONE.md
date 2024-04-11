@@ -17,9 +17,11 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 - **[Cyber Posters](./Cyber%20Posters/Cyber%20Posters.md)**
 - **[Daily Routine](./Daily%20Routine/Daily%20Routine.md)**
 - [[Go Pro as a Webcam]]
+- **[Handling Obsidian Git Conflicts](./Handling%20Obsidian%20Git%20Conflicts/Handling%20Obsidian%20Git%20Conflicts.md)**
 - [[New Tools]]
 - [[Obsidian Plugins and Ideas for Contributions]]
 - **[Obsidian Publish Analytics](./Obsidian%20Publish%20Analytics/Obsidian%20Publish%20Analytics.md)**
+- **[Obsidian Publish SEO](./Obsidian%20Publish%20SEO/Obsidian%20Publish%20SEO.md)**
 - **[Planning Deadwood 2024 WWHF Trip](./Planning%20Deadwood%202024%20WWHF%20Trip/Planning%20Deadwood%202024%20WWHF%20Trip.md)**
 - **[Recover Files Old Windows Boot Drive](./Recover%20Files%20Old%20Windows%20Boot%20Drive/Recover%20Files%20Old%20Windows%20Boot%20Drive.md)**
 - **[Vehicle Selection in 2020s](./Vehicle%20Selection%20in%202020s/Vehicle%20Selection%20in%202020s.md)**

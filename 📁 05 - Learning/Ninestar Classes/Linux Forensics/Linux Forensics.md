@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Wednesday, April 10th 2024, 8:38 pm
+date modified: Wednesday, April 10th 2024, 8:43 pm
 tags:
   - Linux
   - "#HalPomeranz"
@@ -54,10 +54,14 @@ tags:
 	- checking through the various configurations for these cron jobs will show benign patterns and the activation of legitimate executables
 	- Checking files under `/var/spool/cron`
 		- Cron config with "atjob"/one shot job.  
+<<<<<<< Updated upstream
 		- ![](_attachments/Linux%20Forensics/IMG-20240410203409674.png)
+=======
+		- ![](_attachments/Linux%20Forensics/IMG-20240410194852149.png)
+>>>>>>> Stashed changes
 		- Turns out this is the scheduled task that is designed to remove coin miners from the system using a bash script
 - Network misbehavior:
-	- ![](_attachments/Linux%20Forensics/IMG-20240410133118890.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852143.png)
 	- All of the foreign/external IPs are super sus
 	- The agettyd process is definitely a crypto miner
 ## Lab 4 - Honeypot Part 3
@@ -69,7 +73,7 @@ tags:
 	5. Audit the system Sudo configuration and related groups
 	6. Check for suspicious set-UID and set-GID files
 - Bad, bad users
-	- ![](_attachments/Linux%20Forensics/IMG-20240410141533360.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852084.png)
 	- All of the suspicious processes we noted in the earlier lab are listed here, Plus we can now see the bash processes that are the parent processes for PIDs 15853 and 21785. Also, perhaps unsurprisingly, we see that the web server process ("/usr/bin/httpd") is running as user "daemon". This aligns with our theory that all of the suspicious processes were spawned due to the CVE-2021-41773 web vulnerability.
 	- This essentially means that somehow httpd had a web vuln that spawned a listening process "agettyd" that's now a C2 for the the cryptominer 
 - Pivoting into the filesystem
@@ -98,7 +102,11 @@ tags:
 	4. Mount "dirty" (underplayed) file systems
 	5. Reverse the process and deactivate mounted images
 # Linux Filesystem
+<<<<<<< Updated upstream
 - ![](_attachments/Linux%20Forensics/IMG-20240410203409673.png)
+=======
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852175.png)
+>>>>>>> Stashed changes
 - 3rd party software in usr/local , but also sometimes in opt for optional software
 - `usr` is rarely changed, so you can check for changes here
 - Think of `etc` as the system32 config or registry for Linux
@@ -136,16 +144,16 @@ tags:
 # Linux Processes
 - Windows malware like to use servicehost under explorer to run malware
 - Knowing the Linux process hierarchy helps find bad
-- ![](_attachments/Linux%20Forensics/IMG-20240410114115080.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852176.png)
 - `pstree` command shows process hierarchy in Linux
 - ssh is normal
 - Nested SSH shell from another process is a bad sign - SSH is bad when you see bash shell coming out of web server
-	- ![](_attachments/Linux%20Forensics/IMG-20240410114814870.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852077.png)
 - Square bracket processes are kernel made processes - some attackers hide their coin miners and malware as these
 	- You shouldn't see spontaneous processes ran out of interactive user shells
 	- They will still have higher PID values and the start time will be hours, days, or weeks after systemd and first startup
 ## Orphaned Processes
-- ![](_attachments/Linux%20Forensics/IMG-20240410114826273.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852135.png)
 - When process that started you goes away, then PS can show process ID as systemd as if it started the program.
 - What's really happening is some background process was started and the shell was closed
 - There is a way to differentiate between orphaned processes and systemd started processes
@@ -153,7 +161,7 @@ tags:
 	- You can see the same thing with `stat file` under `proc` folder
 	- UAC captures this, but you could call it off with a custom YAML as well
 ## Scheduled Tasks and Persistence
-- ![](_attachments/Linux%20Forensics/IMG-20240410115643521.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410203837740.png)
 - Linux has a lot of overlapping task scheduling systems
 - cron and spool are common names
 - Linux has at least 3 that happen simultaneously
@@ -161,12 +169,12 @@ tags:
 - systemd timers is also common - [(13) All About Linux Systemd Timers w/ Hal Pomeranz - YouTube](https://www.youtube.com/watch?v=rAe9Iw08Fn0) 
 ## Process Network Behavior
 - Most malware beacons out to a website - it happens fast though.  Look for process listening in the netstat output
-- ![](_attachments/Linux%20Forensics/IMG-20240410120128233.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852065.png)
 - UAC grabs a lot of this and netstat_-lpeanut is a good place to start
 - Is it normal for this process to be listening on this port?
 - To understand what's normal, look at the netstat peanut output of all machines on the network and stack the outputs 
 # User Context & Identity
-- ![](_attachments/Linux%20Forensics/IMG-20240410133253231.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852111.png)
 - groups in Linux merely allow sharing of projects
 - users have UIDs and belong to one or more groups (with at least the group GID that corresponds to their user) -- creation of user also creates a group associated specifically with that user
 - only root files can change ownership on files
@@ -180,7 +188,7 @@ tags:
 - What other files/dirs do they own?
 
 - We can use UAC
-	 - ![](_attachments/Linux%20Forensics/IMG-20240410134321198.png)
+	 - ![](_attachments/Linux%20Forensics/IMG-20240410194852178.png)
 
 ## UID Notes
 - UID 0 is admin rights
@@ -189,12 +197,12 @@ tags:
 	- Should be locked
 	- No interactive logins like user accounts have
 - Use `sort -t: -k3,3 -n /etc/passwd` to find UID 0 accounts with a file/directories 
-	- ![](_attachments/Linux%20Forensics/IMG-20240410134620645.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852095.png)
 	- www-data is an account dropped by web application - these should have UIDs under 1000
 - The service accounts should have `sbin/nologin` and `/bin/false` to use them as backdoors
 - Attackers have to set a password in the `etc/shadow` file to have a usable password instead of `*`.  Service accounts have `*` which means no password, so it's obvious when an attacker adds one
 ## Sudo
-![](_attachments/Linux%20Forensics/IMG-20240410135240309.png)
+![](_attachments/Linux%20Forensics/IMG-20240410194852177.png)
 - Job of attacker in Linux is to get admin access on box unless you just want a coin miner
 - They need root to have guaranteed persistence 
 - Sadly, priv esc Linux vulns come out monthly
@@ -211,12 +219,12 @@ tags:
 
 ## Authorized Keys
 - You don't need a user and password to login.  For example, you can use SSH instead
-- ![](_attachments/Linux%20Forensics/IMG-20240410140039443.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852105.png)
 - Attackers will drop their own keys into root's authorized keys file for persistence
 - Check the `$HOME/.ssh/authorized_keys` file 
 - If you see the same key over multiple machines, then that points to an automated attack
 # Post-Exploitation Checklist
-- ![](_attachments/Linux%20Forensics/IMG-20240410140225856.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852157.png)
 - authorized_keys entries are popular lately
 
 # The Bad Old Days - Memory, Bulk Extractor, Before Volatility
@@ -230,7 +238,7 @@ tags:
 	- Finds important data types/fields - URLs, hostnames, IPs, emails, etc.
 	- Forensics like this is an artform and more akin to gambling in the streets than something flashy
 	- Bulk extractor can work better for those 4 TB images than Volatility 
-	- ![](_attachments/Linux%20Forensics/IMG-20240410143729623.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852150.png)
 	- You can use `b e viewer` the Java GUI to look at memory with the BE image 
 	- `strings -a -t d victoria-v8.memdump.img | gzip >hc07/strings.asc.gz`
 		- string indexes the common strings
@@ -265,18 +273,22 @@ tags:
 			- `ewfacquire`- runs in CLI to get compressed image
 			- Maybe pull out disk and use write blocker last resort -- good luck
 - Default Disk Geometries
+<<<<<<< Updated upstream
 	- ![](_attachments/Linux%20Forensics/IMG-20240410203409675.png)
+=======
+	- ![](_attachments/Linux%20Forensics/IMG-20240410203837742.png)
+>>>>>>> Stashed changes
 	- Linux does weird stuff with disk boxes
 		- Example: Software RAID interface -> LVM (logical volume mgmt) layer -> then maybe ZFS
 		- Commercial forensics suite can't do this, so you need open source tools to do it
 	- File systems can be dirty or corrupted if unplugged
 - Layers
-	- ![](_attachments/Linux%20Forensics/IMG-20240410153405187.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852144.png)
 	- Lots are in expert witness EWF or E01 format
 	- You have to assemble them, then they might be encrypted or have software RAID
 	- You have to get all the way to unencrypted disk volumes to use this data with your forensics tools
 ## Example 
-- ![](_attachments/Linux%20Forensics/IMG-20240410153754572.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410203837741.png)
 - you can use `ewfmount` with the E01 (first piece) and it will find and use E02, E03, etc.
 - `ewfmount` quickly runs by lying to the Linux OS
 	- It's a file system and userspace driver
@@ -285,9 +297,9 @@ tags:
 - Now we can examine the raw disk image with tools like `mmls` from Sleuthkit
 - `mmls` dumps partition table from the front of the disk
 - Standard geometry with MBR (master boot record)
-	- ![](_attachments/Linux%20Forensics/IMG-20240410154449751.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852112.png)
 - Time to figure out how to boot
-	- ![](_attachments/Linux%20Forensics/IMG-20240410154608422.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852151.png)
 	- Ext2 filesystem 
 	- It mounted last on the `/boot` directory which has everything we need to boot into the Linux OS
 	- We need to replicate what the OS does during boot with our own tools manually since we're working with an image
@@ -296,11 +308,11 @@ tags:
 	- ![](_attachments/Linux%20Forensics/IMG-20240410154848647.png)
 	- `file -s /dev/loop0` to look at it
 - Now we need to activate the soft partitions in the volume
-	- ![](_attachments/Linux%20Forensics/IMG-20240410155146055.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852079.png)
 	- The device nodes you see on the slide are the actual Linux file systems. If you wanted to acquire an image of the raw file system, then use ewfacquire or dc3ddon /dev/VulnOSv2-vg/root. But I’m more interested in mounting this file system so that I can find and extract artifacts with standard Linux command-line tools.
 	- swap space in linux is messy.  No tools that get much from it, but you can use bulk extractor and strings
 - To run some tools over the file system, we need to mount
-	- ![](_attachments/Linux%20Forensics/IMG-20240410155613428.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852145.png)
 	- mount read only, no execution
 	- The file system is dirty - usually the filesystem driver looks at the filesystem journal on disk so it knows what happened
 		- This doesn't keep your data safe, but only your filesystem
@@ -308,17 +320,21 @@ tags:
 		- use `noload`
 		- We still also have the `/boot` filesystem
 			- mount command has an option to not have to make loopback without "losetup"
-			- ![](_attachments/Linux%20Forensics/IMG-20240410160056391.png)
+			- ![](_attachments/Linux%20Forensics/IMG-20240410203837743.png)
 			- TURNS OUT THIS DOESN'T WORK EITHER, because it will overlap with the other existing loopback device
 			- We can also mount the /boot partition directly. We need to set up a loopback device for this, but the mount command will accept “loop” and “offset” options and set up the loopback device for us. If you recall, /boot is an EXT2 file system, and EXT2 does not have a file system journal. So the “noload” option is not necessary here.
 - Tearing all this down manually
+<<<<<<< Updated upstream
 	- ![](_attachments/Linux%20Forensics/IMG-20240410203409676.png)
+=======
+	- ![](_attachments/Linux%20Forensics/IMG-20240410194852127.png)
+>>>>>>> Stashed changes
 	- unmount backwards
 	- turn off the volume groups with "n"
 	- losetup -d to get rid of loopback devices
 	- unmount ewf mount 
 ## Linux Disk Acquisition Cheatsheet
-- ![](_attachments/Linux%20Forensics/IMG-20240410160745111.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410194852152.png)
 - Also look here - [Microsoft PowerPoint - dm-crypt LVM2.pptx](https://deer-run.com/users/hal/CEIC-dm-crypt-LVM2.pdf) 
 
 
