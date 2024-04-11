@@ -1,0 +1,1247 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 16 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 16: XFS Archeology</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+    <ol>
+      <li>Use <tt>xfs_db</tt> to decode superblocks, inodes, directories, etc</li><p>
+	<li>Examine raw data in hex with <tt>xfs_db</tt></li><p>
+	<li>Decode deleted directory entries</li><p>
+	<li>Manually decode XFS extent structures</li><p>
+	<li>Extract raw disk blocks with <tt>dd</tt></li><p>
+</ol>
+
+</h1>
+
+
+<h1>1. Setting the stage</h1>
+
+<p>I created a small text file called <tt>/tmp/IMDELETED</tt> in our <tt>centos-root.raw</tt>
+  image. Then I deleted it. Our goal is going to be recovering the deleted file contents using only <tt>xfs_db</tt>.
+  Along the way I am going to show you some other cool features of <tt>xfs_db</tt>.</p>
+
+<p>First we need to open up the file system with <tt>xfs_db</tt>:</p>
+
+<pre>
+[lab@LAB ~]$ <b>cd /images/All-Images/CentOS-XFS/</b>
+[lab@LAB CentOS-XFS]$ <b>xfs_db -r centos-root.raw</b>
+xfs_db>
+</pre>
+
+<p>Normally you would begin decoding the file system by looking at the primary superblock in AG 0.
+  We can use <tt>xfs_db</tt> to decode it for us:</p>
+
+<pre>
+xfs_db> <b>sb 0</b>
+xfs_db> <b>print</b>
+magicnum = 0x58465342
+blocksize = 4096
+dblocks = 2621440
+rblocks = 0
+rextents = 0
+uuid = 97fc7f0f-26f2-4239-98dc-ef3e397bb0c5
+logstart = 2097156
+rootino = 64
+rbmino = 65
+rsumino = 66
+rextsize = 1
+agblocks = 655360
+agcount = 4
+rbmblocks = 0
+logblocks = 2560
+versionnum = 0xb4b5
+sectsize = 512
+inodesize = 512
+inopblock = 8
+fname = "\000\000\000\000\000\000\000\000\000\000\000\000"
+blocklog = 12
+sectlog = 9
+inodelog = 9
+inopblog = 3
+agblklog = 20
+rextslog = 0
+inprogress = 0
+imax_pct = 25
+icount = 188672
+ifree = 111
+fdblocks = 1250431
+frextents = 0
+uquotino = null
+gquotino = null
+qflags = 0
+flags = 0
+shared_vn = 0
+inoalignmt = 4
+unit = 0
+width = 0
+dirblklog = 0
+logsectlog = 0
+logsectsize = 0
+logsunit = 1
+features2 = 0x18a
+bad_features2 = 0x18a
+features_compat = 0
+features_ro_compat = 0
+features_incompat = 0x5
+features_log_incompat = 0
+crc = 0xdb08c83d (correct)
+spino_align = 0
+pquotino = null
+lsn = 0x3a00000046
+meta_uuid = d4ce0430-f5e3-4206-a7e1-a43c1a7f59d1
+</pre>
+
+<p>In class I showed you some of the fields like "<tt>dblocks</tt>", "<tt>agcount</tt>"
+  "<tt>agblocks</tt>", and "<tt>agblklog</tt>". This time, we are interested in
+  "<tt>rootino</tt>", which is the inode address of the root directory. By default,
+  XFS puts the root directory at inode 64, and I have never seen an XFS file system
+  where this is not the case. But it is always good to check.</p>
+
+<p>We can use <tt>xfs_db</tt> to inspect this inode:</p>
+
+<pre>
+xfs_db> <b>inode 64</b>
+xfs_db> <b>print</b>
+core.magic = 0x494e
+core.mode = 040555
+core.version = 3
+core.format = 1 (local)
+core.nlinkv2 = 18
+core.onlink = 0
+core.projid_lo = 0
+core.projid_hi = 0
+core.uid = 0
+core.gid = 0
+core.flushiter = 0
+core.atime.sec = Thu Jul  7 01:54:02 2022
+core.atime.nsec = 107522888
+core.mtime.sec = Fri Mar 13 23:44:08 2020
+core.mtime.nsec = 935920057
+core.ctime.sec = Fri Mar 13 23:44:08 2020
+core.ctime.nsec = 935920057
+core.size = 238
+core.nblocks = 0
+core.extsize = 0
+core.nextents = 0
+core.naextents = 0
+core.forkoff = 36
+core.aformat = 1 (local)
+core.dmevmask = 0
+core.dmstate = 0
+core.newrtbm = 0
+core.prealloc = 0
+core.realtime = 0
+core.immutable = 0
+core.append = 0
+core.sync = 0
+core.noatime = 0
+core.nodump = 0
+core.rtinherit = 0
+core.projinherit = 0
+core.nosymlinks = 0
+core.extsz = 0
+core.extszinherit = 0
+core.nodefrag = 0
+core.filestream = 0
+core.gen = 0
+next_unlinked = null
+v3.crc = 0x244d62bd (correct)
+v3.change_count = 39
+v3.lsn = 0x3a00000031
+v3.flags2 = 0
+v3.crtime.sec = Fri Mar 13 19:11:43 2020
+v3.crtime.nsec = 062310000
+v3.inumber = 64
+v3.uuid = d4ce0430-f5e3-4206-a7e1-a43c1a7f59d1
+u3.sfdir3.hdr.count = 20
+u3.sfdir3.hdr.i8count = 0
+u3.sfdir3.hdr.parent.i4 = 64
+u3.sfdir3.list[0].namelen = 4
+u3.sfdir3.list[0].offset = 0x60
+u3.sfdir3.list[0].name = "boot"
+u3.sfdir3.list[0].inumber.i4 = 67
+u3.sfdir3.list[0].filetype = 2
+u3.sfdir3.list[1].namelen = 3
+u3.sfdir3.list[1].offset = 0x70
+u3.sfdir3.list[1].name = "dev"
+u3.sfdir3.list[1].inumber.i4 = 8388672
+u3.sfdir3.list[1].filetype = 2
+u3.sfdir3.list[2].namelen = 4
+u3.sfdir3.list[2].offset = 0x80
+u3.sfdir3.list[2].name = "home"
+u3.sfdir3.list[2].inumber.i4 = 16797760
+u3.sfdir3.list[2].filetype = 2
+u3.sfdir3.list[3].namelen = 4
+u3.sfdir3.list[3].offset = 0x90
+u3.sfdir3.list[3].name = "proc"
+u3.sfdir3.list[3].inumber.i4 = 25165888
+u3.sfdir3.list[3].filetype = 2
+u3.sfdir3.list[4].namelen = 3
+u3.sfdir3.list[4].offset = 0xa0
+u3.sfdir3.list[4].name = "run"
+u3.sfdir3.list[4].inumber.i4 = 68
+u3.sfdir3.list[4].filetype = 2
+u3.sfdir3.list[5].namelen = 3
+u3.sfdir3.list[5].offset = 0xb0
+u3.sfdir3.list[5].name = "sys"
+u3.sfdir3.list[5].inumber.i4 = 8388673
+u3.sfdir3.list[5].filetype = 2
+u3.sfdir3.list[6].namelen = 3
+u3.sfdir3.list[6].offset = 0xc0
+u3.sfdir3.list[6].name = "var"
+u3.sfdir3.list[6].inumber.i4 = 16797761
+u3.sfdir3.list[6].filetype = 2
+u3.sfdir3.list[7].namelen = 3
+u3.sfdir3.list[7].offset = 0xd0
+u3.sfdir3.list[7].name = "etc"
+u3.sfdir3.list[7].inumber.i4 = 25165889
+u3.sfdir3.list[7].filetype = 2
+u3.sfdir3.list[8].namelen = 4
+u3.sfdir3.list[8].offset = 0xe0
+u3.sfdir3.list[8].name = "root"
+u3.sfdir3.list[8].inumber.i4 = 69
+u3.sfdir3.list[8].filetype = 2
+u3.sfdir3.list[9].namelen = 3
+u3.sfdir3.list[9].offset = 0xf0
+u3.sfdir3.list[9].name = "tmp"
+u3.sfdir3.list[9].inumber.i4 = 8388674
+u3.sfdir3.list[9].filetype = 2
+u3.sfdir3.list[10].namelen = 3
+u3.sfdir3.list[10].offset = 0x120
+u3.sfdir3.list[10].name = "usr"
+u3.sfdir3.list[10].inumber.i4 = 16797762
+u3.sfdir3.list[10].filetype = 2
+u3.sfdir3.list[11].namelen = 3
+u3.sfdir3.list[11].offset = 0x130
+u3.sfdir3.list[11].name = "bin"
+u3.sfdir3.list[11].inumber.i4 = 4278
+u3.sfdir3.list[11].filetype = 7
+u3.sfdir3.list[12].namelen = 4
+u3.sfdir3.list[12].offset = 0x140
+u3.sfdir3.list[12].name = "sbin"
+u3.sfdir3.list[12].inumber.i4 = 76
+u3.sfdir3.list[12].filetype = 7
+u3.sfdir3.list[13].namelen = 3
+u3.sfdir3.list[13].offset = 0x150
+u3.sfdir3.list[13].name = "lib"
+u3.sfdir3.list[13].inumber.i4 = 121
+u3.sfdir3.list[13].filetype = 7
+u3.sfdir3.list[14].namelen = 5
+u3.sfdir3.list[14].offset = 0x160
+u3.sfdir3.list[14].name = "lib64"
+u3.sfdir3.list[14].inumber.i4 = 125
+u3.sfdir3.list[14].filetype = 7
+u3.sfdir3.list[15].namelen = 5
+u3.sfdir3.list[15].offset = 0x178
+u3.sfdir3.list[15].name = "media"
+u3.sfdir3.list[15].inumber.i4 = 16797818
+u3.sfdir3.list[15].filetype = 2
+u3.sfdir3.list[16].namelen = 3
+u3.sfdir3.list[16].offset = 0x190
+u3.sfdir3.list[16].name = "mnt"
+u3.sfdir3.list[16].inumber.i4 = 25166014
+u3.sfdir3.list[16].filetype = 2
+u3.sfdir3.list[17].namelen = 3
+u3.sfdir3.list[17].offset = 0x1a0
+u3.sfdir3.list[17].name = "opt"
+u3.sfdir3.list[17].inumber.i4 = 77
+u3.sfdir3.list[17].filetype = 2
+u3.sfdir3.list[18].namelen = 3
+u3.sfdir3.list[18].offset = 0x1b0
+u3.sfdir3.list[18].name = "srv"
+u3.sfdir3.list[18].inumber.i4 = 8388711
+u3.sfdir3.list[18].filetype = 2
+u3.sfdir3.list[19].namelen = 6
+u3.sfdir3.list[19].offset = 0x1c0
+u3.sfdir3.list[19].name = "images"
+u3.sfdir3.list[19].inumber.i4 = 8847007
+u3.sfdir3.list[19].filetype = 2
+a.sfattr.hdr.totsize = 42
+a.sfattr.hdr.count = 1
+a.sfattr.list[0].namelen = 7
+a.sfattr.list[0].valuelen = 28
+a.sfattr.list[0].root = 0
+a.sfattr.list[0].secure = 1
+a.sfattr.list[0].name = "selinux"
+a.sfattr.list[0].value = "system_u:object_r:root_t:s0\000"
+</pre>
+
+<p>This is an interesting inode to look at because the root directory is small
+  enough that it is stored as a "short form" directory in the inode (similar to
+  resident MFT data in NTFS). "<tt>core.format = 1</tt>" means we are dealing
+  with resident data. At the moment, XFS only supports resident data for small
+  directories and not for files.</p>
+
+<p>Because the directory data is resident in the inode, <tt>xfs_db</tt> decodes
+  it for us. So we can see that the inode number of the <tt>/tmp</tt> directory
+  is 8388674. This will be the next stop on our journey.</p>
+
+
+<h1>2. Decoding </tt>/tmp</tt></h1>
+
+<p>Now we can examine the inode for <tt>/tmp</tt>:</p>
+
+<pre>
+xfs_db> <b>inode 8388674</b>
+xfs_db> <b>print</b>
+core.magic = 0x494e
+core.mode = 041777
+core.version = 3
+core.format = 2 (extents)
+core.nlinkv2 = 20
+core.onlink = 0
+core.projid_lo = 0
+core.projid_hi = 0
+core.uid = 0
+core.gid = 0
+core.flushiter = 0
+core.atime.sec = Thu Jul  7 02:00:21 2022
+core.atime.nsec = 373309392
+core.mtime.sec = Thu Jul  7 02:00:22 2022
+core.mtime.nsec = 653318805
+core.ctime.sec = Thu Jul  7 02:00:22 2022
+core.ctime.nsec = 653318805
+core.size = 4096
+core.nblocks = 1
+core.extsize = 0
+core.nextents = 1
+core.naextents = 0
+core.forkoff = 36
+core.aformat = 1 (local)
+core.dmevmask = 0
+core.dmstate = 0
+core.newrtbm = 0
+core.prealloc = 0
+core.realtime = 0
+core.immutable = 0
+core.append = 0
+core.sync = 0
+core.noatime = 0
+core.nodump = 0
+core.rtinherit = 0
+core.projinherit = 0
+core.nosymlinks = 0
+core.extsz = 0
+core.extszinherit = 0
+core.nodefrag = 0
+core.filestream = 0
+core.gen = 2667780503
+next_unlinked = null
+v3.crc = 0x80a4dca2 (correct)
+v3.change_count = 90
+v3.lsn = 0x3a00000040
+v3.flags2 = 0
+v3.crtime.sec = Fri Mar 13 19:11:44 2020
+v3.crtime.nsec = 275992321
+v3.inumber = 8388674
+v3.uuid = d4ce0430-f5e3-4206-a7e1-a43c1a7f59d1
+u3.bmx[0] = [startoff,startblock,blockcount,extentflag] 0:[0,1098002,1,0]
+a.sfattr.hdr.totsize = 41
+a.sfattr.hdr.count = 1
+a.sfattr.list[0].namelen = 7
+a.sfattr.list[0].valuelen = 27
+a.sfattr.list[0].root = 0
+a.sfattr.list[0].secure = 1
+a.sfattr.list[0].name = "selinux"
+a.sfattr.list[0].value = "system_u:object_r:tmp_t:s0\000"
+</pre>
+
+<p>In this case, "<tt>core.format = 2</tt>" means that the contents of <tt>/tmp</tt>
+  are stored in the traditional format of blocks on disk. The location of those
+  blocks will be given by extent structures in the inode.</p>
+
+<p>We can see the extent structures in the "<tt>u3.bmx</tt>" array towards the
+  bottom of the output. Most files will not be fragmented, and so you will only
+  have a single extent as we have here. The contents of <tt>/tmp</tt> are in
+  a single block at "fsblock" address 1098002.</p>
+
+<p>We can use <tt>xfs_db</tt> to decode the directory file for us as well:</p>
+
+<pre>
+xfs_db> <b>fsblock 1098002</b>
+xfs_db> <b>type dir3</b>
+xfs_db> <b>print</b>
+bhdr.hdr.magic = 0x58444233
+bhdr.hdr.crc = 0x143efb46 (correct)
+bhdr.hdr.bno = 5638288
+bhdr.hdr.lsn = 0x3a00000040
+bhdr.hdr.uuid = d4ce0430-f5e3-4206-a7e1-a43c1a7f59d1
+bhdr.hdr.owner = 8388674
+bhdr.bestfree[0].offset = 0x498
+bhdr.bestfree[0].length = 0x138
+bhdr.bestfree[1].offset = 0xb90
+bhdr.bestfree[1].length = 0x118
+bhdr.bestfree[2].offset = 0x6c0
+bhdr.bestfree[2].length = 0xf8
+bu[0].inumber = 8388674
+bu[0].namelen = 1
+bu[0].name = "."
+bu[0].filetype = 2
+bu[0].tag = 0x40
+bu[1].inumber = 64
+bu[1].namelen = 2
+bu[1].name = ".."
+bu[1].filetype = 2
+bu[1].tag = 0x50
+bu[2].freetag = 0xffff
+bu[2].length = 0x38
+bu[2].filetype = 0
+bu[2].tag = 0x60
+bu[3].inumber = 17295128
+bu[3].namelen = 9
+bu[3].name = ".ICE-unix"
+bu[3].filetype = 2
+bu[3].tag = 0x98
+bu[4].inumber = 25629802
+bu[4].namelen = 9
+bu[4].name = ".X11-unix"
+bu[4].filetype = 2
+bu[4].tag = 0xb0
+bu[5].inumber = 821686
+bu[5].namelen = 9
+bu[5].name = ".XIM-unix"
+bu[5].filetype = 2
+bu[5].tag = 0xc8
+bu[6].inumber = 9169003
+bu[6].namelen = 10
+bu[6].name = ".Test-unix"
+bu[6].filetype = 2
+bu[6].tag = 0xe0
+bu[7].inumber = 17295129
+bu[7].namelen = 10
+bu[7].name = ".font-unix"
+bu[7].filetype = 2
+bu[7].tag = 0xf8
+bu[8].freetag = 0xffff
+bu[8].length = 0x60
+bu[8].filetype = 1
+bu[8].tag = 0x110
+bu[9].inumber = 8398817
+bu[9].namelen = 68
+bu[9].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-cups.service-mxEWwh"
+bu[9].filetype = 2
+bu[9].tag = 0x170
+bu[10].inumber = 27855809
+bu[10].namelen = 16
+bu[10].name = "ssh-UEJUgAUfp6zd"
+bu[10].filetype = 2
+bu[10].tag = 0x1c0
+bu[11].inumber = 1410555
+bu[11].namelen = 9
+bu[11].name = ".esd-1000"
+bu[11].filetype = 2
+bu[11].tag = 0x1e0
+bu[12].freetag = 0xffff
+bu[12].length = 0x18
+bu[12].filetype = 1
+bu[12].tag = 0x1f8
+bu[13].inumber = 18926992
+bu[13].namelen = 69
+bu[13].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-fwupd.service-LE9TmL"
+bu[13].filetype = 2
+bu[13].tag = 0x210
+bu[14].freetag = 0xffff
+bu[14].length = 0xc0
+bu[14].filetype = 2
+bu[14].tag = 0x268
+bu[15].inumber = 8723824
+bu[15].namelen = 41
+bu[15].name = "yum_save_tx.2022-06-16.06-46.brJPDu.yumtx"
+bu[15].filetype = 1
+bu[15].tag = 0x328
+bu[16].inumber = 8723826
+bu[16].namelen = 41
+bu[16].name = "yum_save_tx.2022-06-17.06-46.O5fR0W.yumtx"
+bu[16].filetype = 1
+bu[16].tag = 0x360
+bu[17].inumber = 1410497
+bu[17].namelen = 76
+bu[17].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-rtkit-daemon.service-7l0JUF"
+bu[17].filetype = 2
+bu[17].tag = 0x398
+bu[18].inumber = 1410499
+bu[18].namelen = 71
+bu[18].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-chronyd.service-LWp1Wp"
+bu[18].filetype = 2
+bu[18].tag = 0x3f0
+bu[19].inumber = 27855804
+bu[19].namelen = 10
+bu[19].name = ".ICEd-unix"
+bu[19].filetype = 2
+bu[19].tag = 0x448
+bu[20].inumber = 8756824
+bu[20].namelen = 41
+bu[20].name = "yum_save_tx.2022-07-06.06-29.jbj3ZK.yumtx"
+bu[20].filetype = 1
+bu[20].tag = 0x460
+bu[21].freetag = 0xffff
+bu[21].length = 0x138
+bu[21].filetype = 4
+bu[21].tag = 0x498
+bu[22].inumber = 9144872
+bu[22].namelen = 4
+bu[22].name = "list"
+bu[22].filetype = 1
+bu[22].tag = 0x5d0
+bu[23].inumber = 1410501
+bu[23].namelen = 26
+bu[23].name = "vmware-root_897-3979643105"
+bu[23].filetype = 2
+bu[23].tag = 0x5e0
+bu[24].freetag = 0xffff
+bu[24].length = 0x18
+bu[24].filetype = 6
+bu[24].tag = 0x608
+bu[25].inumber = 9142485
+bu[25].namelen = 8
+bu[25].name = ".X0-lock"
+bu[25].filetype = 1
+bu[25].tag = 0x620
+bu[26].inumber = 27855807
+bu[26].namelen = 68
+bu[26].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-bolt.service-B85Nzk"
+bu[26].filetype = 2
+bu[26].tag = 0x638
+bu[27].inumber = 9142488
+bu[27].namelen = 41
+bu[27].name = "yum_save_tx.2022-07-05.17-29.sWAHvk.yumtx"
+bu[27].filetype = 1
+bu[27].tag = 0x688
+bu[28].freetag = 0xffff
+bu[28].length = 0xf8
+bu[28].filetype = 6
+bu[28].tag = 0x6c0
+bu[29].inumber = 8723823
+bu[29].namelen = 41
+bu[29].name = "yum_save_tx.2022-06-15.06-46.vBSs5F.yumtx"
+bu[29].filetype = 1
+bu[29].tag = 0x7b8
+bu[30].inumber = 8723825
+bu[30].namelen = 15
+bu[30].name = "tmpaddon-b1d8fd"
+bu[30].filetype = 1
+bu[30].tag = 0x7f0
+bu[31].inumber = 8723829
+bu[31].namelen = 41
+bu[31].name = "yum_save_tx.2022-06-19.06-46.6TWhv9.yumtx"
+bu[31].filetype = 1
+bu[31].tag = 0x810
+bu[32].inumber = 8723827
+bu[32].namelen = 41
+bu[32].name = "yum_save_tx.2022-06-20.06-46.0sUU1O.yumtx"
+bu[32].filetype = 1
+bu[32].tag = 0x848
+bu[33].inumber = 8723832
+bu[33].namelen = 41
+bu[33].name = "yum_save_tx.2022-06-21.19-45.wge4tp.yumtx"
+bu[33].filetype = 1
+bu[33].tag = 0x880
+bu[34].inumber = 9356112
+bu[34].namelen = 41
+bu[34].name = "yum_save_tx.2022-06-21.20-25.dYrWZD.yumtx"
+bu[34].filetype = 1
+bu[34].tag = 0x8b8
+bu[35].inumber = 9142491
+bu[35].namelen = 26
+bu[35].name = "tracker-extract-files.1000"
+bu[35].filetype = 2
+bu[35].tag = 0x8f0
+bu[36].freetag = 0xffff
+bu[36].length = 0xf0
+bu[36].filetype = 9
+bu[36].tag = 0x918
+bu[37].inumber = 9142599
+bu[37].namelen = 14
+bu[37].name = "recovered-bash"
+bu[37].filetype = 1
+bu[37].tag = 0xa08
+bu[38].inumber = 9142600
+bu[38].namelen = 10
+bu[38].name = "backup.log"
+bu[38].filetype = 1
+bu[38].tag = 0xa28
+bu[39].inumber = 9142601
+bu[39].namelen = 10
+bu[39].name = "backup.err"
+bu[39].filetype = 1
+bu[39].tag = 0xa40
+bu[40].freetag = 0xffff
+bu[40].length = 0x58
+bu[40].filetype = 10
+bu[40].tag = 0xa58
+bu[41].inumber = 1410500
+bu[41].namelen = 26
+bu[41].name = "vmware-root_922-2722632355"
+bu[41].filetype = 2
+bu[41].tag = 0xab0
+bu[42].freetag = 0xffff
+bu[42].length = 0x60
+bu[42].filetype = 10
+bu[42].tag = 0xad8
+bu[43].inumber = 9142487
+bu[43].namelen = 70
+bu[43].name = "systemd-private-eee5778ecb4b4dc9b40ea071d97ee455-colord.service-KVduxf"
+bu[43].filetype = 2
+bu[43].tag = 0xb38
+bu[44].freetag = 0xffff
+bu[44].length = 0x118
+bu[44].filetype = 11
+bu[44].tag = 0xb90
+bu[45].inumber = 8723828
+bu[45].namelen = 41
+bu[45].name = "yum_save_tx.2022-06-18.06-46.TFcFa_.yumtx"
+bu[45].filetype = 1
+bu[45].tag = 0xca8
+bu[46].freetag = 0xffff
+bu[46].length = 0x58
+bu[46].filetype = 12
+bu[46].tag = 0xce0
+bu[47].inumber = 17862
+bu[47].namelen = 26
+bu[47].name = "vmware-root_923-3988752765"
+bu[47].filetype = 2
+bu[47].tag = 0xd38
+bu[48].freetag = 0xffff
+bu[48].length = 0x30
+bu[48].filetype = 13
+bu[48].tag = 0xd60
+bu[49].inumber = 9144871
+bu[49].namelen = 7
+bu[49].name = "testing"
+bu[49].filetype = 1
+bu[49].tag = 0xd90
+bu[50].freetag = 0xffff
+bu[50].length = 0xf0
+bu[50].filetype = 13
+bu[50].tag = 0xda8
+bleaf[0].hashval = 0x2e
+bleaf[0].address = 0x8
+bleaf[1].hashval = 0x172e
+bleaf[1].address = 0xa
+bleaf[2].hashval = 0x5a29694
+bleaf[2].address = 0x42
+bleaf[3].hashval = 0x68e58b3
+bleaf[3].address = 0
+bleaf[4].hashval = 0xb618102
+bleaf[4].address = 0x195
+bleaf[5].hashval = 0xcd687f1
+bleaf[5].address = 0xbc
+bleaf[6].hashval = 0xd9a79f4
+bleaf[6].address = 0xba
+bleaf[7].hashval = 0x140473bd
+bleaf[7].address = 0x7e
+bleaf[8].hashval = 0x145980f9
+bleaf[8].address = 0x1a7
+bleaf[9].hashval = 0x18cd7d59
+bleaf[9].address = 0x109
+bleaf[10].hashval = 0x1c5ebc96
+bleaf[10].address = 0xfe
+bleaf[11].hashval = 0x1f60127a
+bleaf[11].address = 0x73
+bleaf[12].hashval = 0x25425db8
+bleaf[12].address = 0x102
+bleaf[13].hashval = 0x2fe19532
+bleaf[13].address = 0x141
+bleaf[14].hashval = 0x3e9ba448
+bleaf[14].address = 0x1b2
+bleaf[15].hashval = 0x3ecda5ba
+bleaf[15].address = 0xf7
+bleaf[16].hashval = 0x61c06461
+bleaf[16].address = 0x110
+bleaf[17].hashval = 0x641c9879
+bleaf[17].address = 0x145
+bleaf[18].hashval = 0x641ed6ec
+bleaf[18].address = 0x148
+bleaf[19].hashval = 0x7918ed60
+bleaf[19].address = 0x38
+bleaf[20].hashval = 0x79caa4eb
+bleaf[20].address = 0xd1
+bleaf[21].hashval = 0x7c57c19a
+bleaf[21].address = 0x11e
+bleaf[22].hashval = 0x812e30e8
+bleaf[22].address = 0
+bleaf[23].hashval = 0x821009de
+bleaf[23].address = 0x8c
+bleaf[24].hashval = 0x8317dbf2
+bleaf[24].address = 0x117
+bleaf[25].hashval = 0x8847bd44
+bleaf[25].address = 0
+bleaf[26].hashval = 0x8a707b4d
+bleaf[26].address = 0x1c
+bleaf[27].hashval = 0x91605970
+bleaf[27].address = 0xc7
+bleaf[28].hashval = 0x973ca3cd
+bleaf[28].address = 0x89
+bleaf[29].hashval = 0x9d2de5d6
+bleaf[29].address = 0x65
+bleaf[30].hashval = 0x9fc0dc20
+bleaf[30].address = 0x6c
+bleaf[31].hashval = 0xa06df307
+bleaf[31].address = 0
+bleaf[32].hashval = 0xb8640f4d
+bleaf[32].address = 0x1f
+bleaf[33].hashval = 0xd27a108f
+bleaf[33].address = 0x2e
+bleaf[34].hashval = 0xddc69069
+bleaf[34].address = 0xc4
+bleaf[35].hashval = 0xdf3a95a5
+bleaf[35].address = 0x167
+bleaf[36].hashval = 0xf00a9292
+bleaf[36].address = 0x19
+bleaf[37].hashval = 0xf00b7172
+bleaf[37].address = 0x16
+bleaf[38].hashval = 0xf028bad2
+bleaf[38].address = 0x13
+bleaf[39].hashval = 0xf20a7aa2
+bleaf[39].address = 0
+bleaf[40].hashval = 0xf8e7d712
+bleaf[40].address = 0x3c
+bleaf[41].hashval = 0xfa4c8971
+bleaf[41].address = 0x156
+bleaf[42].hashval = 0xfd125a60
+bleaf[42].address = 0
+bleaf[43].hashval = 0xffd9a919
+bleaf[43].address = 0
+btail.count = 44
+btail.stale = 7
+</pre>
+
+<p>Note that we have to explicitly tell <tt>xfs_db</tt> to decode this block
+  as a directory ("<tt>type dir3</tt>"). <tt>xfs_db</tt> has no functionality
+  to automatically recognize this block as a directory, even though directory
+  files in XFS all start with the magic number "XDB3" (hex 0x58444233).</p>
+
+<p>We can see all of the active directory entries and their inodes. At the
+  bottom of the output we can see the hash lookup table XFS uses to locate
+  file entries quickly.</p>
+
+
+  
+<h1>3. Deleted entries</h1>
+
+<p>Unfortunately, we are unable to see deleted directory entries in the normal
+  directory decoding. So we need to look at the hex dump view of the directory:
+
+<pre>
+xfs_db> <b>type text</b>
+xfs_db> <b>print</b>
+000:  58 44 42 33 14 3e fb 46 00 00 00 00 00 56 08 90  XDB3...F.....V..
+010:  00 00 00 3a 00 00 00 40 d4 ce 04 30 f5 e3 42 06  ...........0..B.
+020:  a7 e1 a4 3c 1a 7f 59 d1 00 00 00 00 00 80 00 42  ......Y........B
+030:  04 98 01 38 0b 90 01 18 06 c0 00 f8 00 00 00 00  ...8............
+040:  00 00 00 00 00 80 00 42 01 2e 02 00 00 00 00 40  .......B........
+050:  00 00 00 00 00 00 00 40 02 2e 2e 02 00 00 00 50  ...............P
+060:  ff ff 00 38 00 80 00 43 07 79 75 6d 2e 6c 6f 67  ...8...C.yum.log
+070:  01 00 00 00 00 00 00 60 00 00 00 00 01 04 f7 8b  ................
+080:  0f 68 73 70 65 72 66 64 61 74 61 5f 72 6f 6f 74  .hsperfdata.root
+090:  02 00 00 00 00 00 00 60 00 00 00 00 01 07 e7 18  ................
+0a0:  09 2e 49 43 45 2d 75 6e 69 78 02 00 00 00 00 98  ..ICE.unix......
+0b0:  00 00 00 00 01 87 14 6a 09 2e 58 31 31 2d 75 6e  .......j..X11.un
+0c0:  69 78 02 00 00 00 00 b0 00 00 00 00 00 0c 89 b6  ix..............
+0d0:  09 2e 58 49 4d 2d 75 6e 69 78 02 00 00 00 00 c8  ..XIM.unix......
+0e0:  00 00 00 00 00 8b e8 6b 0a 2e 54 65 73 74 2d 75  .......k..Test.u
+0f0:  6e 69 78 02 00 00 00 e0 00 00 00 00 01 07 e7 19  nix.............
+100:  0a 2e 66 6f 6e 74 2d 75 6e 69 78 02 00 00 00 f8  ..font.unix.....
+110:  ff ff 00 60 01 20 cd 88 50 73 79 73 74 65 6d 64  ........Psystemd
+120:  2d 70 72 69 76 61 74 65 2d 65 65 65 35 37 37 38  .private.eee5778
+130:  65 63 62 34 62 34 64 63 39 62 34 30 65 61 30 37  ecb4b4dc9b40ea07
+140:  31 64 39 37 65 65 34 35 35 2d 73 79 73 74 65 6d  1d97ee455.system
+150:  64 2d 6d 61 63 68 69 6e 65 64 2e 73 65 72 76 69  d.machined.servi
+160:  63 65 2d 33 75 4b 44 55 32 02 00 00 00 8b 01 10  ce.3uKDU2.......
+170:  00 00 00 00 00 80 27 e1 44 73 79 73 74 65 6d 64  ........Dsystemd
+180:  2d 70 72 69 76 61 74 65 2d 65 65 65 35 37 37 38  .private.eee5778
+190:  65 63 62 34 62 34 64 63 39 62 34 30 65 61 30 37  ecb4b4dc9b40ea07
+1a0:  31 64 39 37 65 65 34 35 35 2d 63 75 70 73 2e 73  1d97ee455.cups.s
+1b0:  65 72 76 69 63 65 2d 6d 78 45 57 77 68 02 01 70  ervice.mxEWwh..p
+1c0:  00 00 00 00 01 a9 0b c1 10 73 73 68 2d 55 45 4a  .........ssh.UEJ
+1d0:  55 67 41 55 66 70 36 7a 64 02 01 50 00 8b 01 c0  UgAUfp6zd..P....
+1e0:  00 00 00 00 00 15 85 fb 09 2e 65 73 64 2d 31 30  ..........esd.10
+1f0:  30 30 02 38 65 65 01 e0 ff ff 00 18 00 8b 80 d8  00.8ee..........
+200:  0b 68 61 7a 65 2d 47 42 55 44 51 36 02 69 01 f8  .haze.GBUDQ6.i..
+210:  00 00 00 00 01 20 cd 90 45 73 79 73 74 65 6d 64  ........Esystemd
+220:  2d 70 72 69 76 61 74 65 2d 65 65 65 35 37 37 38  .private.eee5778
+230:  65 63 62 34 62 34 64 63 39 62 34 30 65 61 30 37  ecb4b4dc9b40ea07
+240:  31 64 39 37 65 65 34 35 35 2d 66 77 75 70 64 2e  1d97ee455.fwupd.
+250:  73 65 72 76 69 63 65 2d 4c 45 39 54 6d 4c 02 65  service.LE9TmL.e
+260:  2d 30 32 61 38 37 02 10 ff ff 00 c0 35 34 32 65  .02a87......542e
+270:  35 38 61 33 61 64 61 63 66 34 65 30 65 66 30 61  58a3adacf4e0ef0a
+280:  31 2d 63 75 70 73 2e 73 65 72 76 69 63 65 2d 55  1.cups.service.U
+290:  49 75 6a 78 73 02 01 10 00 00 00 00 00 85 1d 5d  Iujxs...........
+2a0:  46 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Fsystemd.private
+2b0:  2d 30 32 61 38 37 63 31 34 36 64 32 35 34 32 65  .02a87c146d2542e
+2c0:  35 38 61 33 61 64 61 63 66 34 65 30 65 66 30 61  58a3adacf4e0ef0a
+2d0:  31 2d 63 6f 6c 6f 72 64 2e 73 65 72 76 69 63 65  1.colord.service
+2e0:  2d 6b 31 38 57 6e 53 02 ff ff 02 90 00 00 01 10  .k18WnS.........
+2f0:  00 00 00 00 00 07 9e b5 29 54 65 6d 70 2d 34 33  .........Temp.43
+300:  33 66 34 66 34 62 2d 65 63 61 64 2d 34 66 36 36  3f4f4b.ecad.4f66
+310:  2d 61 31 30 30 2d 35 65 37 31 37 34 31 38 65 63  .a100.5e717418ec
+320:  65 38 02 30 65 66 02 68 00 00 00 00 00 85 1d 70  e8.0ef.h.......p
+330:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+340:  32 2d 30 36 2d 31 36 2e 30 36 2d 34 36 2e 62 72  2.06.16.06.46.br
+350:  4a 50 44 75 2e 79 75 6d 74 78 01 20 00 85 03 28  JPDu.yumtx......
+360:  00 00 00 00 00 85 1d 72 29 79 75 6d 5f 73 61 76  .......r.yum.sav
+370:  65 5f 74 78 2e 32 30 32 32 2d 30 36 2d 31 37 2e  e.tx.2022.06.17.
+380:  30 36 2d 34 36 2e 4f 35 66 52 30 57 2e 79 75 6d  06.46.O5fR0W.yum
+390:  74 78 01 30 65 66 03 60 00 00 00 00 00 15 85 c1  tx.0ef..........
+3a0:  4c 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Lsystemd.private
+3b0:  2d 65 65 65 35 37 37 38 65 63 62 34 62 34 64 63  .eee5778ecb4b4dc
+3c0:  39 62 34 30 65 61 30 37 31 64 39 37 65 65 34 35  9b40ea071d97ee45
+3d0:  35 2d 72 74 6b 69 74 2d 64 61 65 6d 6f 6e 2e 73  5.rtkit.daemon.s
+3e0:  65 72 76 69 63 65 2d 37 6c 30 4a 55 46 02 03 98  ervice.7l0JUF...
+3f0:  00 00 00 00 00 15 85 c3 47 73 79 73 74 65 6d 64  ........Gsystemd
+400:  2d 70 72 69 76 61 74 65 2d 65 65 65 35 37 37 38  .private.eee5778
+410:  65 63 62 34 62 34 64 63 39 62 34 30 65 61 30 37  ecb4b4dc9b40ea07
+420:  31 64 39 37 65 65 34 35 35 2d 63 68 72 6f 6e 79  1d97ee455.chrony
+430:  64 2e 73 65 72 76 69 63 65 2d 4c 57 70 31 57 70  d.service.LWp1Wp
+440:  02 65 64 2e 73 65 03 f0 00 00 00 00 01 a9 0b bc  .ed.se..........
+450:  0a 2e 49 43 45 64 2d 75 6e 69 78 02 39 31 04 48  ..ICEd.unix.91.H
+460:  00 00 00 00 00 85 9e 58 29 79 75 6d 5f 73 61 76  .......X.yum.sav
+470:  65 5f 74 78 2e 32 30 32 32 2d 30 37 2d 30 36 2e  e.tx.2022.07.06.
+480:  30 36 2d 32 39 2e 6a 62 6a 33 5a 4b 2e 79 75 6d  06.29.jbj3ZK.yum
+490:  74 78 01 37 65 65 04 60 ff ff 01 38 00 8b 80 d3  tx.7ee.....8....
+4a0:  09 49 4d 44 45 4c 45 54 45 44 01 69 76 61 04 98  .IMDELETED.iva..
+4b0:  ff ff 01 20 00 8b 80 d4 0d 2e 66 6c 61 67 2e 74  ..........flag.t
+4c0:  78 74 2e 73 77 70 01 37 31 64 39 37 65 65 04 98  xt.swp.71d97ee..
+4d0:  00 00 00 00 00 85 1d 6c 08 66 6c 61 67 2e 74 78  .......l.flag.tx
+4e0:  74 01 61 76 68 76 04 d0 ff ff 00 e8 65 65 04 98  t.avhv......ee..
+4f0:  ff ff 00 e0 73 74 65 6d 64 2d 6c 6f 63 61 6c 65  ....stemd.locale
+500:  64 2e 73 65 72 76 69 63 65 2d 4a 7a 47 73 4b 37  d.service.JzGsK7
+510:  02 39 39 66 33 31 04 b8 ff ff 00 b8 35 34 34 35  .99f31......5445
+520:  66 39 63 62 32 63 62 30 35 61 36 62 38 65 37 36  f9cb2cb05a6b8e76
+530:  61 2d 73 79 73 74 65 6d 64 2d 68 6f 73 74 6e 61  a.systemd.hostna
+540:  6d 65 64 2e 73 65 72 76 69 63 65 2d 57 4c 35 34  med.service.WL54
+550:  51 6d 02 00 00 00 04 f8 00 00 00 00 00 1d 4a 72  Qm............Jr
+560:  10 73 73 68 2d 74 4d 51 48 46 55 6c 46 7a 6a 78  .ssh.tMQHFUlFzjx
+570:  6a 02 54 46 62 02 04 a8 00 00 00 00 00 99 e8 34  j.TFb..........4
+580:  09 2e 65 73 64 2d 31 30 30 30 02 00 00 00 05 78  ..esd.1000.....x
+590:  ff ff 00 18 01 16 96 ea 0b 68 61 7a 65 2d 69 67  .........haze.ig
+5a0:  63 47 73 63 02 00 04 a8 00 00 00 00 01 16 96 eb  cGsc............
+5b0:  1a 74 72 61 63 6b 65 72 2d 65 78 74 72 61 63 74  .tracker.extract
+5c0:  2d 66 69 6c 65 73 2e 31 30 30 30 02 00 00 04 98  .files.1000.....
+5d0:  00 00 00 00 00 8b 8a 28 04 6c 69 73 74 01 05 d0  .........list...
+5e0:  00 00 00 00 00 15 85 c5 1a 76 6d 77 61 72 65 2d  .........vmware.
+5f0:  72 6f 6f 74 5f 38 39 37 2d 33 39 37 39 36 34 33  root.897.3979643
+600:  31 30 35 02 65 34 05 e0 ff ff 00 18 00 8b 80 d5  105.e4..........
+610:  09 2e 74 58 30 2d 6c 6f 63 6b 01 36 34 30 06 08  ..tX0.lock.640..
+620:  00 00 00 00 00 8b 80 d5 08 2e 58 30 2d 6c 6f 63  ..........X0.loc
+630:  6b 01 01 88 00 8b 06 20 00 00 00 00 01 a9 0b bf  k...............
+640:  44 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Dsystemd.private
+650:  2d 65 65 65 35 37 37 38 65 63 62 34 62 34 64 63  .eee5778ecb4b4dc
+660:  39 62 34 30 65 61 30 37 31 64 39 37 65 65 34 35  9b40ea071d97ee45
+670:  35 2d 62 6f 6c 74 2e 73 65 72 76 69 63 65 2d 42  5.bolt.service.B
+680:  38 35 4e 7a 6b 02 06 38 00 00 00 00 00 8b 80 d8  85Nzk..8........
+690:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+6a0:  32 2d 30 37 2d 30 35 2e 31 37 2d 32 39 2e 73 57  2.07.05.17.29.sW
+6b0:  41 48 76 6b 2e 79 75 6d 74 78 01 37 65 65 06 88  AHvk.yumtx.7ee..
+6c0:  ff ff 00 f8 73 74 65 6d 64 2d 68 6f 73 74 6e 61  ....stemd.hostna
+6d0:  6d 65 64 2e 73 65 72 76 69 63 65 2d 68 38 31 37  med.service.h817
+6e0:  53 78 02 37 35 30 06 88 ff ff 00 d0 00 85 1d 6e  Sx.750.........n
+6f0:  08 74 6d 70 61 64 64 6f 6e 01 31 30 35 34 06 e8  .tmpaddon.1054..
+700:  ff ff 00 30 00 8b 8b 28 09 2e 74 58 30 2d 6c 6f  ...0......tX0.lo
+710:  63 6b 01 37 30 34 07 00 00 00 00 00 00 8b 8b 28  ck.704..........
+720:  08 2e 58 30 2d 6c 6f 63 6b 01 61 63 62 33 06 e8  ..X0.lock.acb3..
+730:  00 00 00 00 00 80 00 43 29 79 75 6d 5f 73 61 76  .......C.yum.sav
+740:  65 5f 74 78 2e 32 30 32 32 2d 30 36 2d 31 34 2e  e.tx.2022.06.14.
+750:  31 36 2d 34 36 2e 72 54 6b 54 37 34 2e 79 75 6d  16.46.rTkT74.yum
+760:  74 78 01 30 65 66 07 30 ff ff 00 18 01 08 32 1a  tx.0ef.0......2.
+770:  07 66 69 72 65 66 6f 78 02 2d 6b 6b 47 52 06 e8  .firefox..kkGR..
+780:  00 00 00 00 01 a7 31 f0 29 54 65 6d 70 2d 63 63  ......1..Temp.cc
+790:  33 64 62 34 66 37 2d 31 37 30 66 2d 34 38 37 64  3db4f7.170f.487d
+7a0:  2d 38 64 30 39 2d 65 33 31 33 38 31 35 32 39 38  .8d09.e313815298
+7b0:  63 66 02 69 76 61 06 c0 00 00 00 00 00 85 1d 6f  cf.iva.........o
+7c0:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+7d0:  32 2d 30 36 2d 31 35 2e 30 36 2d 34 36 2e 76 42  2.06.15.06.46.vB
+7e0:  53 73 35 46 2e 79 75 6d 74 78 01 30 00 85 07 b8  Ss5F.yumtx.0....
+7f0:  00 00 00 00 00 85 1d 71 0f 74 6d 70 61 64 64 6f  .......q.tmpaddo
+800:  6e 2d 62 31 64 38 66 64 01 35 38 38 33 36 07 f0  n.b1d8fd.58836..
+810:  00 00 00 00 00 85 1d 75 29 79 75 6d 5f 73 61 76  .......u.yum.sav
+820:  65 5f 74 78 2e 32 30 32 32 2d 30 36 2d 31 39 2e  e.tx.2022.06.19.
+830:  30 36 2d 34 36 2e 36 54 57 68 76 39 2e 79 75 6d  06.46.6TWhv9.yum
+840:  74 78 01 73 65 72 08 10 00 00 00 00 00 85 1d 73  tx.ser.........s
+850:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+860:  32 2d 30 36 2d 32 30 2e 30 36 2d 34 36 2e 30 73  2.06.20.06.46.0s
+870:  55 55 31 4f 2e 79 75 6d 74 78 01 02 35 34 08 48  UU1O.yumtx..54.H
+880:  00 00 00 00 00 85 1d 78 29 79 75 6d 5f 73 61 76  .......x.yum.sav
+890:  65 5f 74 78 2e 32 30 32 32 2d 30 36 2d 32 31 2e  e.tx.2022.06.21.
+8a0:  31 39 2d 34 35 2e 77 67 65 34 74 70 2e 79 75 6d  19.45.wge4tp.yum
+8b0:  74 78 01 30 65 66 08 80 00 00 00 00 00 8e c3 50  tx.0ef.........P
+8c0:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+8d0:  32 2d 30 36 2d 32 31 2e 32 30 2d 32 35 2e 64 59  2.06.21.20.25.dY
+8e0:  72 57 5a 44 2e 79 75 6d 74 78 01 30 65 66 08 b8  rWZD.yumtx.0ef..
+8f0:  00 00 00 00 00 8b 80 db 1a 74 72 61 63 6b 65 72  .........tracker
+900:  2d 65 78 74 72 61 63 74 2d 66 69 6c 65 73 2e 31  .extract.files.1
+910:  30 30 30 02 39 34 08 f0 ff ff 00 f0 31 31 65 36  000.94......11e6
+920:  30 65 38 30 61 36 62 64 38 2d 72 74 6b 69 74 2d  0e80a6bd8.rtkit.
+930:  64 61 65 6d 6f 6e 2e 73 65 72 76 69 63 65 2d 49  daemon.service.I
+940:  5a 4b 46 51 75 02 08 f0 ff ff 00 50 00 8b 8b 28  ZKFQu......P....
+950:  44 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Dsystemd.private
+960:  2d 63 30 37 66 38 34 39 62 36 38 61 39 34 65 37  .c07f849b68a94e7
+970:  30 61 34 36 31 31 65 36 30 65 38 30 61 36 62 64  0a4611e60e80a6bd
+980:  38 2d 63 75 70 73 2e 73 65 72 76 69 63 65 2d 71  8.cups.service.q
+990:  67 58 6b 45 45 02 08 f0 00 00 00 00 00 8e c3 54  gXkEE..........T
+9a0:  46 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Fsystemd.private
+9b0:  2d 63 30 37 66 38 34 39 62 36 38 61 39 34 65 37  .c07f849b68a94e7
+9c0:  30 61 34 36 31 31 65 36 30 65 38 30 61 36 62 64  0a4611e60e80a6bd
+9d0:  38 2d 63 6f 6c 6f 72 64 2e 73 65 72 76 69 63 65  8.colord.service
+9e0:  2d 6f 66 66 70 79 34 02 65 32 37 31 61 30 08 f0  .offpy4.e271a0..
+9f0:  00 00 00 00 01 98 66 a1 0a 2e 49 43 45 64 2d 75  ......f...ICEd.u
+a00:  6e 69 78 02 65 72 09 18 00 00 00 00 00 8b 81 47  nix.er.........G
+a10:  0e 72 65 63 6f 76 65 72 65 64 2d 62 61 73 68 01  .recovered.bash.
+a20:  31 30 01 37 66 38 0a 08 00 00 00 00 00 8b 81 48  10.7f8.........H
+a30:  0a 62 61 63 6b 75 70 2e 6c 6f 67 01 33 30 0a 28  .backup.log.30..
+a40:  00 00 00 00 00 8b 81 49 0a 62 61 63 6b 75 70 2e  .......I.backup.
+a50:  65 72 72 01 73 65 0a 40 ff ff 00 58 00 15 85 c1  err.se.....X....
+a60:  4c 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Lsystemd.private
+a70:  2d 35 63 35 65 63 37 39 66 30 37 35 65 34 66 37  .5c5ec79f075e4f7
+a80:  63 61 39 34 66 66 34 62 65 32 63 34 66 34 33 34  ca94ff4be2c4f434
+a90:  38 2d 72 74 6b 69 74 2d 64 61 65 6d 6f 6e 2e 73  8.rtkit.daemon.s
+aa0:  65 72 76 69 63 65 2d 47 66 6b 45 32 77 02 0a 58  ervice.GfkE2w..X
+ab0:  00 00 00 00 00 15 85 c4 1a 76 6d 77 61 72 65 2d  .........vmware.
+ac0:  72 6f 6f 74 5f 39 32 32 2d 32 37 32 32 36 33 32  root.922.2722632
+ad0:  33 35 35 02 61 64 0a b0 ff ff 00 60 00 8b 80 d3  355.ad..........
+ae0:  51 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Qsystemd.private
+af0:  2d 65 65 65 35 37 37 38 65 63 62 34 62 34 64 63  .eee5778ecb4b4dc
+b00:  39 62 34 30 65 61 30 37 31 64 39 37 65 65 34 35  9b40ea071d97ee45
+b10:  35 2d 73 79 73 74 65 6d 64 2d 68 6f 73 74 6e 61  5.systemd.hostna
+b20:  6d 65 64 2e 73 65 72 76 69 63 65 2d 50 33 61 47  med.service.P3aG
+b30:  44 4f 02 30 65 66 0a d8 00 00 00 00 00 8b 80 d7  DO.0ef..........
+b40:  46 73 79 73 74 65 6d 64 2d 70 72 69 76 61 74 65  Fsystemd.private
+b50:  2d 65 65 65 35 37 37 38 65 63 62 34 62 34 64 63  .eee5778ecb4b4dc
+b60:  39 62 34 30 65 61 30 37 31 64 39 37 65 65 34 35  9b40ea071d97ee45
+b70:  35 2d 63 6f 6c 6f 72 64 2e 73 65 72 76 69 63 65  5.colord.service
+b80:  2d 4b 56 64 75 78 66 02 51 73 79 73 74 65 0b 38  .KVduxf.Qsyste.8
+b90:  ff ff 01 18 00 8b 80 d3 09 66 6c 61 67 2e 74 78  .........flag.tx
+ba0:  74 7e 01 08 77 78 0b 90 ff ff 01 00 61 64 0b 90  t...wx......ad..
+bb0:  ff ff 00 f8 65 66 30 61 31 2d 73 79 73 74 65 6d  ....ef0a1.system
+bc0:  64 2d 68 6f 73 74 6e 61 6d 65 64 2e 73 65 72 76  d.hostnamed.serv
+bd0:  69 63 65 2d 6e 56 42 61 61 57 02 69 76 61 09 f0  ice.nVBaaW.iva..
+be0:  00 00 00 00 01 a7 31 f3 44 73 79 73 74 65 6d 64  ......1.Dsystemd
+bf0:  2d 70 72 69 76 61 74 65 2d 30 32 61 38 37 63 31  .private.02a87c1
+c00:  34 36 64 32 35 34 32 65 35 38 61 33 61 64 61 63  46d2542e58a3adac
+c10:  66 34 65 30 65 66 30 61 31 2d 62 6f 6c 74 2e 73  f4e0ef0a1.bolt.s
+c20:  65 72 76 69 63 65 2d 41 6d 36 65 43 54 02 09 f0  ervice.Am6eCT...
+c30:  00 00 00 00 01 a7 31 f1 10 73 73 68 2d 5a 64 31  ......1..ssh.Zd1
+c40:  34 47 52 69 63 54 38 49 6a 02 32 61 38 37 09 f0  4GRicT8Ij.2a87..
+c50:  00 00 00 00 00 07 9e bc 45 73 79 73 74 65 6d 64  ........Esystemd
+c60:  2d 70 72 69 76 61 74 65 2d 30 32 61 38 37 63 31  .private.02a87c1
+c70:  34 36 64 32 35 34 32 65 35 38 61 33 61 64 61 63  46d2542e58a3adac
+c80:  66 34 65 30 65 66 30 61 31 2d 66 77 75 70 64 2e  f4e0ef0a1.fwupd.
+c90:  73 65 72 76 69 63 65 2d 6c 78 58 4d 52 38 02 33  service.lxXMR8.3
+ca0:  34 64 31 32 30 34 0b 90 00 00 00 00 00 85 1d 74  4d1204.........t
+cb0:  29 79 75 6d 5f 73 61 76 65 5f 74 78 2e 32 30 32  .yum.save.tx.202
+cc0:  32 2d 30 36 2d 31 38 2e 30 36 2d 34 36 2e 54 46  2.06.18.06.46.TF
+cd0:  63 46 61 5f 2e 79 75 6d 74 78 01 30 65 66 0c a8  cFa..yumtx.0ef..
+ce0:  ff ff 00 58 00 00 45 8d 47 73 79 73 74 65 6d 64  ...X..E.Gsystemd
+cf0:  2d 70 72 69 76 61 74 65 2d 63 30 37 66 38 34 39  .private.c07f849
+d00:  62 36 38 61 39 34 65 37 30 61 34 36 31 31 65 36  b68a94e70a4611e6
+d10:  30 65 38 30 61 36 62 64 38 2d 63 68 72 6f 6e 79  0e80a6bd8.chrony
+d20:  64 2e 73 65 72 76 69 63 65 2d 6d 42 6a 6d 4e 76  d.service.mBjmNv
+d30:  02 6f 02 61 61 63 0c e0 00 00 00 00 00 00 45 c6  .o.aac........E.
+d40:  1a 76 6d 77 61 72 65 2d 72 6f 6f 74 5f 39 32 33  .vmware.root.923
+d50:  2d 33 39 38 38 37 35 32 37 36 35 02 30 34 0d 38  .3988752765.04.8
+d60:  ff ff 00 30 00 8e c3 52 09 2e 74 58 30 2d 6c 6f  ...0...R..tX0.lo
+d70:  63 6b 01 35 38 36 0d 60 00 00 00 00 00 8e c3 52  ck.586.........R
+d80:  08 2e 58 30 2d 6c 6f 63 6b 01 01 38 00 85 0d 60  ..X0.lock..8....
+d90:  00 00 00 00 00 8b 8a 27 07 74 65 73 74 69 6e 67  .........testing
+da0:  01 35 35 33 32 36 0d 90 ff ff 00 f0 00 8b 8a 29  .55326..........
+db0:  0a 66 69 6c 65 4a 36 56 43 73 4b 01 31 31 0d a8  .fileJ6VCsK.11..
+dc0:  ff ff 00 d8 61 36 62 64 38 2d 66 70 72 69 6e 74  ....a6bd8.fprint
+dd0:  64 2e 73 65 72 76 69 63 65 2d 79 6b 67 32 64 67  d.service.ykg2dg
+de0:  02 2d 73 4e 55 75 0d 90 ff ff 00 b0 72 76 0d 90  ..sNUu......rv..
+df0:  ff ff 00 a8 59 47 4a 4e 02 00 00 00 00 00 0d a8  ....YGJN........
+e00:  ff ff 00 c0 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e10:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e20:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e30:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e40:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e50:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e60:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e70:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e80:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+e90:  00 00 00 00 00 00 0d a8 00 00 00 2e 00 00 00 08  ................
+ea0:  00 00 17 2e 00 00 00 0a 05 a2 96 94 00 00 00 42  ...............B
+eb0:  06 8e 58 b3 00 00 00 00 0b 61 81 02 00 00 01 95  ..X......a......
+ec0:  0c d6 87 f1 00 00 00 bc 0d 9a 79 f4 00 00 00 ba  ..........y.....
+ed0:  14 04 73 bd 00 00 00 7e 14 59 80 f9 00 00 01 a7  ..s......Y......
+ee0:  18 cd 7d 59 00 00 01 09 1c 5e bc 96 00 00 00 fe  ...Y............
+ef0:  1f 60 12 7a 00 00 00 73 25 42 5d b8 00 00 01 02  ...z...s.B......
+f00:  2f e1 95 32 00 00 01 41 3e 9b a4 48 00 00 01 b2  ...2...A...H....
+f10:  3e cd a5 ba 00 00 00 f7 61 c0 64 61 00 00 01 10  ........a.da....
+f20:  64 1c 98 79 00 00 01 45 64 1e d6 ec 00 00 01 48  d..y...Ed......H
+f30:  79 18 ed 60 00 00 00 38 79 ca a4 eb 00 00 00 d1  y......8y.......
+f40:  7c 57 c1 9a 00 00 01 1e 81 2e 30 e8 00 00 00 00  .W........0.....
+f50:  82 10 09 de 00 00 00 8c 83 17 db f2 00 00 01 17  ................
+f60:  88 47 bd 44 00 00 00 00 8a 70 7b 4d 00 00 00 1c  .G.D.....p.M....
+f70:  91 60 59 70 00 00 00 c7 97 3c a3 cd 00 00 00 89  ..Yp............
+f80:  9d 2d e5 d6 00 00 00 65 9f c0 dc 20 00 00 00 6c  .......e.......l
+f90:  a0 6d f3 07 00 00 00 00 b8 64 0f 4d 00 00 00 1f  .m.......d.M....
+fa0:  d2 7a 10 8f 00 00 00 2e dd c6 90 69 00 00 00 c4  .z.........i....
+fb0:  df 3a 95 a5 00 00 01 67 f0 0a 92 92 00 00 00 19  .......g........
+fc0:  f0 0b 71 72 00 00 00 16 f0 28 ba d2 00 00 00 13  ..qr............
+fd0:  f2 0a 7a a2 00 00 00 00 f8 e7 d7 12 00 00 00 3c  ..z.............
+fe0:  fa 4c 89 71 00 00 01 56 fd 12 5a 60 00 00 00 00  .L.q...V..Z.....
+ff0:  ff d9 a9 19 00 00 00 00 00 00 00 2c 00 00 00 07  ................
+</pre>
+
+<p>We can see the "<tt>IMDELETED</tt>" file name at offset 0x4a0:</p>
+
+<pre>
+<i>[... snip ...]</i>
+490:  74 78 01 37 65 65 04 60 ff ff 01 38 00 8b 80 d3  tx.7ee.....8....
+4a0:  09 49 4d 44 45 4c 45 54 45 44 01 69 76 61 04 98  .IMDELETED.iva..  
+<i>[... snip ...]</i>
+</pre>
+
+<p>Each directory entry begins with the 8-byte inode address, followed by
+  a single byte for the length of the file name, followed by the file name
+  itself. So working backwards, we see the length byte 0x09 at offset 0x4a0.
+  And so the 8 bytes at the end of the line above are the inode number
+  (note that XFS employs padding so that directory entries are always 8-byte
+  aligned).</p>
+
+<p>However, because this is a deleted entry, the first two bytes are
+  overwritten with 0xFFFF, and the next two bytes represent how much free
+  space follows (0x0138 == 312 bytes). We can still clearly make out
+  the inode number of the deleted file in the lower 32 bits: 0x008b80d3.
+  Remember that XFS data is always big-endian-- this is the time when
+  that really makes our lives easier!</p>
+
+<p>Under normal circumstances, we probably would not know the name of the
+  deleted file. But remember you can always look for the 0xFFFF markers
+  that start "slack" space in a directory and see if you can spot deleted
+  directory entries in the free space.</p>
+
+
+<h1>4. Looking at the unallocated inode</h1>
+
+<p>To continue our journey, we can look at the inode of the deleted file:</p>
+
+<pre>
+xfs_db> <b>inode 0x8b80d3</b>
+xfs_db> <b>print</b>
+core.magic = 0x494e
+core.mode = 0
+core.version = 3
+core.format = 2 (extents)
+core.nlinkv2 = 0
+core.onlink = 0
+core.projid_lo = 0
+core.projid_hi = 0
+core.uid = 1000
+core.gid = 1000
+core.flushiter = 0
+core.atime.sec = Thu Jul  7 01:54:09 2022
+core.atime.nsec = 964580437
+core.mtime.sec = Thu Jul  7 01:54:28 2022
+core.mtime.nsec = 827718603
+core.ctime.sec = Thu Jul  7 02:00:22 2022
+core.ctime.nsec = 653318805
+core.size = 0
+core.nblocks = 0
+core.extsize = 0
+core.nextents = 0
+core.naextents = 0
+core.forkoff = 0
+core.aformat = 2 (extents)
+core.dmevmask = 0
+core.dmstate = 0
+core.newrtbm = 0
+core.prealloc = 0
+core.realtime = 0
+core.immutable = 0
+core.append = 0
+core.sync = 0
+core.noatime = 0
+core.nodump = 0
+core.rtinherit = 0
+core.projinherit = 0
+core.nosymlinks = 0
+core.extsz = 0
+core.extszinherit = 0
+core.nodefrag = 0
+core.filestream = 0
+core.gen = 1309603779
+next_unlinked = null
+v3.crc = 0x4a0d570f (correct)
+v3.change_count = 18
+v3.lsn = 0x3a00000040
+v3.flags2 = 0
+v3.crtime.sec = Thu Jul  7 01:54:09 2022
+v3.crtime.nsec = 964580437
+v3.inumber = 9142483
+v3.uuid = d4ce0430-f5e3-4206-a7e1-a43c1a7f59d1
+u3 = (empty)
+</pre>
+
+<p>The file size is zero ("<tt>core.size = 0</tt>") and the number of extents is zero
+  ("<tt>core.nextents = 0</tt>"). The file was created at 2022-07-07 01:54:09, and
+  according to the ctime was deleted at 02:00:22.</p>
+
+<p>Yes, the file size and number of extents have been zeroed out. But if we look at
+  the inode in hex, we will be able to see the original extent structures:</p>
+
+<pre>
+xfs_db> <b>type text</b>
+xfs_db> <b>print</b>
+000:  49 4e 00 00 03 02 00 00 00 00 03 e8 00 00 03 e8  IN..............
+010:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+020:  62 c6 3c c1 39 7e 54 55 62 c6 3c d4 31 55 fb cb  b...9.TUb...1U..
+030:  62 c6 3e 36 26 f0 da 95 00 00 00 00 00 00 00 00  b..6............
+040:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+050:  00 00 00 02 00 00 00 00 00 00 00 00 4e 0e f7 c3  ............N...
+060:  ff ff ff ff 4a 0d 57 0f 00 00 00 00 00 00 00 12  ....J.W.........
+070:  00 00 00 3a 00 00 00 40 00 00 00 00 00 00 00 00  ................
+080:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+090:  62 c6 3c c1 39 7e 54 55 00 00 00 00 00 8b 80 d3  b...9.TU........
+0a0:  d4 ce 04 30 f5 e3 42 06 a7 e1 a4 3c 1a 7f 59 d1  ...0..B.......Y.
+0b0:  00 00 00 00 00 00 00 00 00 00 02 2e 01 40 00 01  ................
+0c0:  00 00 00 00 00 00 20 00 00 00 02 2d fa 40 00 01  ................
+0d0:  00 00 00 00 00 00 40 00 00 00 02 2e 00 00 00 02  ................
+0e0:  00 00 00 00 00 00 60 00 00 00 02 2e 00 40 00 01  ................
+0f0:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+100:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+110:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+120:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+130:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+140:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+150:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+160:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+170:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+180:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+190:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+1a0:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+1b0:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+1c0:  00 00 00 00 00 00 00 00 00 32 01 15 07 24 04 73  .........2.....s
+1d0:  65 6c 69 6e 75 78 75 6e 63 6f 6e 66 69 6e 65 64  elinuxunconfined
+1e0:  5f 75 3a 6f 62 6a 65 63 74 5f 72 3a 75 73 65 72  .u.object.r.user
+1f0:  5f 74 6d 70 5f 74 3a 73 30 00 00 00 00 00 00 00  .tmp.t.s0.......
+</pre>
+
+<p>The "inode core" holding the standard inode fields is 176 bytes long.
+  The extent structures start immediately after the inode core at
+  offset 0x0b0. Each extent structure is 128 bits, or one 16 byte line
+  in the hex dump output above.</p>
+
+<p>It appears that the file was fragmented and we have multiple extents
+  to decode. In reality, the "<tt>IMDELETED</tt>" file was only a single
+  block in a single extent. The other extent structures you see are
+  actually residual data from a previous file that occupied this inode.
+  Of course, you would have no way of knowing that, and that is just
+  the kind of thing that makes digital forensics fun and challenging!</p>
+
+
+<h1>5. Decoding extents the hard way</h1>
+
+<p>When we were looking at the inode for <tt>/tmp</tt>, <tt>xfs_db</tt>
+  automatically decoded the extent structure for us. Unfortunately,
+  <tt>xfs_db</tt> does not recognize the extent structures in the unallocated
+  inodes so we get to decode them by hand.</p>
+
+<p>Here is the next bit of bad news: XFS extent structures are not byte-aligned.
+  Frankly, I would like to have a serious discussion with the engineer who designed
+  the XFS extent structure, but here is the layout:</p>
+
+<pre>
+  1 bit          Pre-allocation flag
+  54 bits        Logical offset of extent
+  52 bits        Starting fsblock
+  21 bits        Block count
+</pre>
+
+<p>Look, I am sorry, but there is no way we need 54 bits to keep track of the extent
+  ordering in the file. Let the block count expand to 24 bits, have 64 bits for the
+  starting fsblock, and we will still have 40 bits for the flag and logical offset.
+  And everything will be byte aligned for the most part, and we will not have to weep
+  every time we sit down to manually decode an extent structure.
+  But nobody listens to me, so prepare to weep bitter tears.</p>
+
+<p>First I am going to convert the non-zero portion of the extent structure into
+  its binary string representation using some clever <tt>xxd</tt> hackery:</p>
+
+<pre>
+[lab@LAB CentOS-XFS]$ echo 022e01400001 | xxd -r -p | xxd -b -c 6
+0000000: 00000010 00101110 00000001 01000000 00000000 00000001  ...@..
+</pre>
+
+<p>"<tt>xxd -r -p</tt>" converts the hex string back into binary data. Then I use
+  "<tt>xxd -b</tt>" to output the binary string.</p>
+
+<p>Throw away the block count in the lower 21 bits. That leaves us with the
+  binary string "00000010 00101110 00000001 010". Pop open the calculator
+  (in the Centos menu you will find it under Applications -> Accessories)
+  and switch to "Programming Mode". This will allow you to convert the binary
+  string to hex or decimal. The correct value for the starting fsblock is
+  0x11700A or decimal 1142794.</p>
+
+
+<h1>6. Show me the ASCII!</h1>
+
+<p>We can use <tt>xfs_db</tt> to dump the block:</p>
+
+<pre>
+xfs_db> <b>fsblock 1142794</b>
+xfs_db> <b>type text</b>
+xfs_db> <b>print</b>
+000:  46 4c 41 47 20 2d 2d 20 30 63 35 66 65 34 62 31  FLAG....0c5fe4b1
+010:  61 35 61 61 38 32 32 37 37 35 34 63 35 63 62 65  a5aa8227754c5cbe
+020:  36 37 35 37 64 33 65 39 0a 0a 59 6f 75 27 72 65  6757d3e9..You.re
+030:  20 61 20 67 72 61 6e 64 20 6f 6c 64 20 66 6c 61  .a.grand.old.fla
+040:  67 21 20 59 6f 75 27 72 65 20 61 20 68 69 67 68  g..You.re.a.high
+050:  2d 66 6c 79 69 6e 67 20 66 6c 61 67 21 0a 00 00  .flying.flag....
+060:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+070:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+080:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+090:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+0a0:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+0b0:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+<i>[... snip ...]</i>
+</pre>
+
+<p>We see some ASCII text and then the rest of the block is NULLs.
+  Remember that Unix file systems NULL-fill their slack space. This is
+  a possible clue that the "<tt>IMDELETED</tt>" file was just a small
+  text file and that the other extent structures we saw in the inode
+  were potential residue from other files that used the same inode.
+  But you would have to decode those other extents just to be sure.</p>
+
+<p>Suppose we wanted to dump the raw block? We will need to do the
+  block arithmetic and compute "(agno * agblocks + agblock)":</p>
+
+<pre>
+xfs_db> <b>sb 0</b>
+xfs_db> <b>print agblocks</b>
+agblocks = 655360
+xfs_db> <b>convert fsblock 1142794 agno</b>
+0x1 (1)
+xfs_db> <b>convert fsblock 1142794 agblock</b>
+0x1700a (94218)
+xfs_db> <b>quit</b>
+[lab@LAB CentOS-XFS]$ <b>dd if=centos-root.raw bs=4096 skip=$((1*655360 + 94218)) count=1</b>
+FLAG -- 0c5fe4b1a5aa8227754c5cbe6757d3e9
+
+You're a grand old flag! You're a high-flying flag!
+1+0 records in
+1+0 records out
+4096 bytes (4.1 kB) copied, 4.3104e-05 s, 95.0 MB/s
+</pre>
+
+<p>And so, like the song says, "Woot! There it is!"</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

@@ -1,0 +1,290 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 8 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 8: Rootkit!</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Look for hidden kernel modules and kernel hooks</li><p>
+<li>Look for indications of an LD_PRELOAD rootkit</li><p>
+<li>Find suspicious processes</li><p>
+<li>Gather details related to suspicious proceses-- command line, open files, etc</li><p>
+<li>Gather network info related to suspicious processes</li><p>
+<li>Examine command history of suspicious session</li></p>
+</ol>
+</h1>
+
+
+<h1>1. Mission Briefing and Files</h1>
+
+<p>You have reports of a machine in your environment behaving strangely. The CPU is maxed but the SREs
+can find no process using that much of the CPU. The machine is making connections to external IP addresses,
+but again there is no process that appears to be responsible for them. The machine has been isolated and
+a memory dump taken. You have been tasked to analyze the memory image and report your findings.</p>
+
+<p>First uncompress the memory image of the infected machine into the <tt>/images/lab08</tt> directory:</p>
+
+<pre>
+root@LAB:/images/lab06$ <b>cd /images/lab08/</b>
+root@LAB:/images/lab08$ <b>zcat /images/All-Images/rootkit-memory/memory-father.lime.gz &gt;memory.lime</b>
+root@LAB:/images/lab08$ <b>ls</b>
+clean-check_syscall  memory.lime  profile.json
+</pre>
+
+<p>Let's assume you were able to beg, borrow, or steal an appropriate Volatility profile to match the memory
+image-- saved here as <tt>profile.json</tt>.</p>
+
+
+<h1>2. Looking for Evil Modules</h1>
+
+<p>If you suspect an LKM rootkit, your best bet is to try
+the <tt>Check_modules</tt> plugin:</p>
+
+<pre>
+$ <b>vol3.py -s . -f memory.lime linux.check_modules.Check_modules</b>
+
+Module Address  Module Name
+
+0xffffc0bb0b40  vmw_vsock_virtio_transport_commo
+</pre>
+
+<p>Unfortunately, no obvious smoking gun here, just an apparent false-positive that we have seen before.</p>
+
+<p>If we had an uncompromised system to compare against, we could use our trick of comparing the output
+from <tt>Check_syscall</tt>. The <tt>clean-check_syscall</tt> files contains the output of the <tt>Check_syscall</tt>
+plugin from an uninfected system of the same type as the infected machine. Let's see what our trick
+tells us:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.check_syscall.Check_syscall >infected-check_syscall</b>
+lab@LAB:/images/lab08$ <b>awk '{print $5}' clean-check_syscall infected-check_syscall | sort | uniq -u</b>
+</pre>
+
+<p>It appears that the two systems are showing identical syscall interfaces. Based on our in-class discussion,
+this would seemingly indicate no syscall type hooks in the infected memory image.</p>
+
+
+<h1>3. Alternate Theories</h1>
+
+<p>At this point we are seeing no indications of an LKM style rootkit. But reports of possible hidden processes
+would seem to indicate some type of rootkit is present.</p>
+
+<p>Another possibility would be an "LD_PRELOAD" style rootkit. LD_PRELOAD rootkits are userspace-based rootkits
+that use malicious shared libraries to accomplish their mission. Processes are forced to load the malicious
+shared object, which then hooks various system and library calls in order to subvert their behavior. And this isn't
+even hard to do in Linux-- it's as simple as adding the path to your malicious shared library in a file
+like <tt>/etc/ld.so.preload</tt>.</p>
+
+<p>The thing about LD_PRELOAD rootkits is that they are extremely indiscriminate in most cases. You'll find the 
+malicious module in the memory space of every userland process on the system. And a little command line trickery
+makes them stand out:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.elfs.Elfs | awk '{print $5}' | sort | uniq -c | sort -n</b>
+<i>[...snip...]</i>
+     56 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.1
+     58 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/libselinux.so.1
+     72 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+     78 /usr/usr/lib/usr/lib/libpersist.so.1
+     78 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/ld-2.31.so
+     78 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/libc-2.31.so
+     78 /usr/usr/lib/usr/lib/x86_64-linux-gnu/usr/lib/x86_64-linux-gnu/libdl-2.31.so
+     81 [vdso]
+</pre>
+
+<p>Take all of the object paths from the <tt>Elfs</tt> plugin and count the number of times each path appears in the
+output ("<tt>... | sort | uniq -c</tt>"). Then we sort the output by the counts ("<tt>... | sort -n</tt>").</p>
+
+<p>Only four objects appear to be linked into all processes. The system C library ("<tt>libc-*.so</tt>") is
+expected, as are the dynamic link loader libraries ("<tt>ld-*.so</tt>" and "<tt>libdl-*.so</tt>").
+But never in my life have I seen a library named <tt>/usr/lib/libpersist.so.1</tt>. This is almost certainly
+a malicious module, and you will want to extract it from the system image and hand it off to your malware
+analysts.</p>
+
+
+
+<h1>4. Hidden Processes</h1>
+
+<p>The SREs operating the infected machine could find no trace of the process that was consuming so much CPU.
+But now that we are analyzing the memory image without the rootkit's interference, we may have better luck.</p>
+
+<p>Again we will fall back on the technique of looking for processes running from suspcious directories:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.elfs.Elfs | grep -v /usr | grep -v vdso</b>
+
+PID     Process Start   End     File Path
+
+1346    xmrig   0x55f5cb808000  0x55f5cb80b000  /root/root/qazwsx/root/qazwsx/xmrig
+</pre>
+
+<p><tt>xmrig</tt> is a known cryptocurrency miner and that executable path certainly looks suspicious,
+even ignoring the mess Volatility is making of the path.</p>
+
+<p>Let's see if we can get any further details about this process:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.psaux.PsAux | grep 1346</b>
+1346    1341    xmrig   /root/qazwsx/xmrig 107.178.104.10
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.lsof.Lsof --pid 1346</b>
+
+PID     Process FD      Path
+
+1346    xmrig   0       /dev/pts/0
+1346    xmrig   1       /dev/null
+1346    xmrig   2       /dev/null
+1346    xmrig   3       socket:[24290]
+1346    xmrig   4       socket:[24292]
+</pre>
+
+<p>We can see an IP address of interest on the command line reported by <tt>PsAux</tt>. The <tt>Lsof</tt>
+output is interesting in a couple of ways. Most obviously it appears that the program is using network
+sockets-- not surprising based on the initial reports of network activity and the command line option
+we see in the <tt>PsAux</tt> output. However, also note that the standard input (FD 0) for the process
+is <tt>/dev/pts/0</tt> indicating the process may be running from an existing interactive session on 
+the machine.</p>
+
+
+<h1>5. Network Details</h1>
+
+<p>Let's look at the network info related to our suspicious process:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.sockstat.Sockstat --pid 1346</b>
+
+NetNS   Pid     FD      Sock Offset     Family  Type    Proto   Source Addr     Source Port     Destination Addr       Destination Port State   Filter
+
+4026531992      1346    3       0x92ff85d45c00  AF_INET RAW     ICMP    0.0.0.0 1       0.0.0.0 0       UNCONNECTED    -
+4026531992      1346    4       0x92ffa1a71300  AF_INET6        RAW     ICMPv6  ::      58      ::      0       UNCONNECTED     -
+</pre>
+
+<p>Interesting! The socket connections are ICMP based rather than TCP or UDP. Could our coin miner be tunneling
+communications over ICMP? You should alert your malware analysis team to this possibility.</p>
+
+
+<h1>6. Session Information</h1>
+
+<p>If we suspect the process was started by an interactive session, perhaps <tt>PsTree</tt> will give us
+some insights:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.pstree.PsTree</b>
+<i>[...snip...]</i>
+* 0x92ff86128000        668     668     1       sshd
+** 0x92ff88e92f80       1214    1214    668     sshd
+*** 0x92ff87a397c0      1252    1252    1214    sshd
+**** 0x92ff88ad4740     1279    1279    1252    bash
+***** 0x92ff89bf5f00    1341    1341    1279    bash
+****** 0x92ff8a0c4740   1346    1346    1341    xmrig
+<i>[...snip...]</i>
+</pre>
+
+<p>The suspicious process was indeed started by an interactive login session. The bash shells appear to be
+active, so perhaps we can get some command history.</p>
+
+<p>Let's work backwards. We'll start with the shell that started our suspicious <tt>xmrig</tt> process:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.bash.Bash --pid 1341</b>
+
+PID     Process CommandTime     Command
+
+1341    bash    2023-04-02 15:06:45.000000      /root/qazwsx/xmrig 107.178.104.10 &gt;/dev/null 2&gt;&amp;1 &amp;
+</pre>
+
+<p>The command line is certainly clear, but what's curious is that there doesn't appear to be any
+of the previous history loaded from the <tt>bash_history</tt> file. Something is definitely off about
+this shell process.</p>
+
+<p>Now let's look at the earlier bash process:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>vol3.py -s . -f memory.lime linux.bash.Bash --pid 1279</b>
+
+PID     Process CommandTime     Command
+
+1279    bash    2023-04-02 15:05:42.000000      /bin/su
+1279    bash    2023-04-02 15:05:42.000000      sudo reboot
+1279    bash    2023-04-02 15:05:42.000000      hostname -I
+1279    bash    2023-04-02 15:05:42.000000      sudo reboot
+1279    bash    2023-04-02 15:05:42.000000      sudo -s
+1279    bash    2023-04-02 15:05:42.000000      internal_fifos
+1279    bash    2023-04-02 15:05:42.000000      sudo -s
+1279    bash    2023-04-02 15:05:42.000000      sudo -s
+1279    bash    2023-04-02 15:05:42.000000      type fullstat
+1279    bash    2023-04-02 15:05:42.000000      sudo -s
+(c79    bash    2023-04-02 15:05:42.000000      ATA��SH��
+1279    bash    2023-04-02 15:05:51.000000      /usr/share/bash-completion/bash_completion
+1279    bash    2023-04-02 15:05:51.000000      export HISTFILE=/dev/null
+1279    bash    2023-04-02 15:05:57.000000      qazwsx=foo su
+</pre>
+
+<p>We have some loaded history here. In fact, all but the last three commands appear to come from previous
+shell history. Note the attempt at some history antiforensics-- "<tt>export HISTFILE=/dev/null.</tt>"<p>
+
+<p>The final command is very interesting though. The <tt>su</tt> program is executed but first the user
+sets a strange variable. Note that this variable name matches the name of the directory where the <tt>xmrig</tt>
+program was located. The string "<tt>qazwsx</tt>" seems to be significant to the malware. We could look
+for this string in the memory image:</p>
+
+<pre>
+lab@LAB:/images/lab08$ <b>strings -a memory.lime | grep qazwsx | sort -u</b>
+[00m$ qazwsx=foo s
+[00m$ qazwsx=foo su
+[00m# /root/qazwsx/xmrig
+[00m# /root/qazwsx/xmrig 107.178.104.10 &gt;/dev/null 2&gt;&amp;1 &amp;
+qazwsx
+qazwsxc.swp
+qazwsxedc
+qazwsx=foo
+qazwsx=foo su
+/root/qazwsx/xm
+/root/qazwsx xmrig
+/root/qazwsx/xmrig
+_=/root/qazwsx/xmrig
+/root/qazwsx/xmrig 107.178.104.10 &gt; /dev/null 2&gt;&amp;1
+/root/qazwsx/xmrig 107.178.104.10 &gt;/dev/null 2&gt;&amp;1 &amp;
+root/qazwsx/xmrig 107.178.104.10 &gt;/dev/null 2&gt;&amp;1
+root/qazwsx/xmrig 107.178.104.10 &gt;/dev/null 2&gt;&amp;1 &amp;
+</pre>
+
+<p>Honestly nothing too interesting here, or at least nothing that we haven't seen before.</p>
+
+<p>What is interesting is the fact that the <tt>su</tt> program is being executed but we don't see
+any record of that in the <tt>PsTree</tt> output. Normally if the su program were executed to escalate privileges
+it would appear in the <tt>PsTree</tt>
+output between the two bash shells. But we don't see that here. Something is definitely hinky.</p>
+
+
+<H1>SPOILERS!</H1>
+
+<p>I hope you had fun with this investigation! There are some unanswered questions, but we're reaching the
+limits of Volatility's current capabilities.</p>
+
+<p>I infected this memory image with the "Father" (<a href="https://github.com/mav8557/Father" target=_blank>https://github.com/mav8557/Father</a>) LD_PRELOAD rootkit:</p>
+
+<ul>
+<li><tt>/usr/lib/libpersist.so.1</tt> is the renamed <tt>rk.so</tt> library
+<li><tt>/etc/ld.so.preload</tt> contains the pointer to the rootkit library. <tt>ld.so.preload</tt> is automatically hidden by the Father rootkit
+<li>I configured the rootkit to hide all files and directories that start with the string "<tt>qazwsxi</tt>"-- the <tt>xmrig</tt> program is operating from a hidden directory
+<li>"<tt>qazwsx</tt>" is also the magic environment variable you set to get the rootkit to escalate your privileges. The <tt>su</tt> program never really executes-- it's the rootkit that's giving me the root shell.
+<li><tt>xmrig</tt> and other programs that execute within that shell are automatically hidden by the rootkit
+<li>The <tt>xmrig</tt> program is actually just a renamed <tt>ping</tt> binary. As far as I know, <tt>xmrig</tt> has no ICMP tunneling capabilities.
+</ul>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

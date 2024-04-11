@@ -1,0 +1,8 @@
+{
+  "bgColorEnabled": true,
+  "bgColor": "#ababab",
+  "opMode": "BalanceMode",
+  "zoomByWheelAndGesture": true,
+  "zoomValue": 1,
+  "extraFileExt": ""
+}

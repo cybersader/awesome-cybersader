@@ -1,0 +1,279 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 1 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 1: Using UAC</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Create a modified UAC profile</li><p>
+<li>Add more artifacts to be collected</li><p>
+<li>Run UAC, collecting memory</li><p>
+<li>Examine collected data and verify integrity</li><p>
+</ol>
+</h1>
+
+
+<h1>1. Creating a new UAC profile</h1>
+
+<p>UAC is currently installed under <tt>/usr/local/src/uac</tt>. Head on over there
+  and check out the existing profiles.</p>
+
+<pre>
+[lab@LAB ~]$ <b>sudo -s</b>
+[sudo] password for lab:
+[root@LAB lab]# <b>cd /usr/local/src/uac</b>
+root@LAB:/usr/local/src/uac# <b>ls</b>
+artifacts  CHANGELOG.md        config           DCO-1.1.txt  LICENSE         profiles   tools
+bin        CODE_OF_CONDUCT.md  CONTRIBUTING.md  lib          MAINTAINERS.md  README.md  uac
+root@LAB:/usr/local/src/uac# <b>ls profiles</b>
+full.yaml  ir_triage.yaml
+</pre>
+
+<p>We discussed in class how we could add memory capture as an artifact on the command line with
+the "<tt>-a</tt>" switch. But if we want to at least try to collect memory every time, why not just
+create a modified profile to do that?</p>
+
+<p>"<tt>ir_triage.yaml</tt>" is a good place to start:</p>
+
+<pre>
+[root@LAB uac]# <b>cp profiles/ir_triage.yaml profiles/ir_triage_memory.yaml</b>
+</pre>
+
+<p>Now edit "<tt>ir_triage_memory.yaml</tt>". The example in class used "<tt>memory_dump/avml.yaml</tt>"
+  as the artifact name on the command line. Use this same artifact name as the 
+  <i>first</i> line in the list of artifacts. We want to collect memory before doing anything
+  else that might change the state of the system. <b>You should also change the "<tt>name:</tt>"
+  and "<tt>description:</tt>" lines</b>. When finished, the top of your file might look like:</p>
+
+<pre>
+name: ir_triage_memory
+description: Incident response triage data plus memory collection.
+artifacts:
+  - memory_dump/avml.yaml
+  - live_response/process/ps.yaml
+  - live_response/process/lsof.yaml
+  - live_response/process/top.yaml
+<i>[... snip ...]</i>
+</pre>
+
+
+
+<h1>2. Collecting additional artifacts</h1>
+
+<p>UAC uses configuration files under "<tt>artifacts</tt>" to describe how to collect different
+  types of information from each system. These are the <tt>*.yaml</tt> files referenced by
+  the profile files. For example, our "<tt>ir_triage_memory.yaml</tt>" profile file includes
+  "<tt>live_response/process/lsof.yaml</tt>" for collecting information about open files on
+  various operating systems:</p>
+
+<pre>
+root@LAB:/usr/local/src/uac# <b>cat artifacts/live_response/process/lsof.yaml</b>
+version: 2.0
+artifacts:
+  -
+    description: Collect the list open files.
+    supported_os: [android]
+    collector: command
+    command: lsof -l
+    output_file: lsof_-l.txt
+  -
+    description: Collect the list open files.
+    supported_os: [aix, esxi, freebsd, linux, macos, netscaler, openbsd, solaris]
+    collector: command
+    command: lsof -nPl
+    output_file: lsof_-nPl.txt
+</pre>
+
+<p>"<tt>lsof -nPl"</tt> will capture a huge file with information about all open files on
+the system. But I would also like to output a smaller collection of data with the output
+of "<tt>lsof +L1</tt>" which will show files that are still open but which have been 
+deleted from the file system (the command options mean "show me open files with link count
+less than one"-- zero link count means the file has been deleted). Attackers sometimes use
+these "open but unlinked" files to hide malware and other data.</p>
+
+<p>Modify the existing "<tt>lsof.yaml</tt>" file so that it looks like the one below:</p>
+
+<pre>
+version: 2.1
+artifacts:
+  -
+    description: Collect the list open files.
+    supported_os: [android]
+    collector: command
+    command: lsof -l
+    output_file: lsof_-l.txt
+  -
+    description: Collect the list open files.
+    supported_os: [aix, esxi, freebsd, linux, macos, netscaler, openbsd, solaris]
+    collector: command
+    command: lsof -nPl
+    output_file: lsof_-nPl.txt
+  -
+    description: Collect open but unlinked files
+    supported_os: [aix, esxi, freebsd, linux, macos, netscaler, openbsd, solaris]
+    collector: command
+    command: lsof +L1
+    output_file: lsof_+L1.txt
+</pre>
+
+<p>Note that I've updated the "<tt>version:</tt>" line at the top of the file. This is
+  good practice though not strictly necessary.</p>
+
+
+
+<h1>3. Running UAC</h1>
+
+<p>I have created a script that will create some "interesting" yet harmless artifacts to
+  look at in the output of UAC. Go ahead and run this script now:</p>
+
+<pre>
+[root@LAB uac]# <b>bash ~lab/Exercises/Ex_01/make-artifacts.sh</b>
+</pre>
+
+<p>No output is expected.</p>
+
+<p>Now we are ready to begin collecting data using our new UAC profile! We will make a directory
+  to where we will collect the data:</p>
+
+<pre>
+[root@LAB uac]# <b>mkdir -p /images/lab01</b>
+[root@LAB uac]# <b>./uac -p ir_triage_memory /images/lab01</b>
+--------------------------------------------------------------------------------
+  __   __ _______ _______
+ |: | |  |:  _   |:  ____|
+ |  |_|  |  | |  |  |____
+ |_______|__| |__|_______|
+
+ Unix-like Artifacts Collector 2.5.0
+--------------------------------------------------------------------------------
+Operating System    : linux
+System Architecture : x86_64
+Hostname            : LAB
+Mount Point         : /
+Running as          : root
+Temp Directory      : /images/lab01/uac-data.tmp
+--------------------------------------------------------------------------------
+Artifacts collection started...
+[001/234] 2023-04-01 17:26:12 +0000 memory_dump/avml.yaml
+[002/234] 2023-04-01 17:26:29 +0000 live_response/process/ps.yaml
+[003/234] 2023-04-01 17:26:30 +0000 live_response/process/lsof.yaml
+[004/234] 2023-04-01 17:26:30 +0000 live_response/process/top.yaml
+[005/234] 2023-04-01 17:26:31 +0000 live_response/process/procfs_information.yaml
+	<i>[... snip ...]</i>
+[232/234] 2023-04-01 17:35:05 +0000 files/system/networkmanager.yaml
+[233/234] 2023-04-01 17:35:06 +0000 files/system/quarantine_events.yaml
+[234/234] 2023-04-01 17:35:06 +0000 files/system/apple_accounts.yaml
+--------------------------------------------------------------------------------
+Artifacts collection complete. Total running time: 534 seconds
+Creating output file. Please wait...
+Output file created '/images/lab01/uac-LAB-linux-20230401173506.tar.gz'
+Hashing output file. Please wait...
+Acquisition log created '/images/lab01/uac-LAB-linux-20230401173506.log'	
+</pre>
+
+<p>Expect long pauses during the "<tt>memory_dump/avml.yaml</tt>", "<tt>bodyfile/bodyfile.yaml</tt>",
+and "<tt>hash_executables/hash_executables.yaml</tt>" steps.</p>
+
+
+
+<h1>4. Examining the collection</h1>
+
+<p>Now we can look at the data we collected:</p>
+
+<pre>
+root@LAB:/usr/local/src/uac# <b>cd /images/lab01/</b>
+root@LAB:/images/lab01# <b>ls -lh</b>
+total 9.6G
+-rw-r--r-- 1 root root  482 Apr  1 17:41 uac-LAB-linux-20230401173506.log
+-rw-r--r-- 1 root root 9.6G Apr  1 17:41 uac-LAB-linux-20230401173506.tar.gz
+root@LAB:/images/lab01# <b>cat uac-LAB-linux-20230401173506.log</b>
+Created by UAC (Unix-like Artifacts Collector) 2.5.0
+
+[Case Information]
+Case Number:
+Evidence Number:
+Description:
+Examiner:
+Notes:
+
+[System Information]
+Operating System: linux
+System Architecture: x86_64
+Hostname: LAB
+
+[Acquisition Information]
+Mount Point: /
+Acquisition started at: Sat Apr 01 17:26:12 2023 +0000
+Acquisition finished at: Sat Apr 01 17:35:06 2023 +0000
+
+[Output File MD5 Computed Hash]
+786692858b7c9cdbbad25b6d55bc0457  uac-LAB-linux-20230401173506.tar.gz
+</pre>
+
+<p>Note that the log includes the start and end time of the collection and an MD5 checksum to
+  verify the collected archive file (looks good!). Information items like the case number and
+  examiner can be filled in with command-line options when you run UAC.</p>
+
+
+
+<h1>5. Unpacking the archive</h1>
+
+<p>Now we can make a directory and unpack the data UAC collected:</p>
+
+<pre>
+root@LAB:/images/lab01# <b>mkdir uac-output</b>
+root@LAB:/images/lab01# <b>cd uac-output/</b>
+root@LAB:/images/lab01/uac-output# <b>tar zxf ../uac-LAB-linux-20230401173506.tar.gz</b>
+root@LAB:/images/lab01/uac-output# <b>ls</b>
+ bodyfile   chkrootkit   hash_executables   live_response   memory_dump  '[root]'   uac.log   uac.log.stderr
+root@LAB:/images/lab01/uac-output# <b>ls -lh memory_dump/</b>
+total 16G
+-rw------- 1 root root 16G Apr  1 17:26 avml.raw
+root@LAB:/images/lab01/uac-output# <b>ls -l live_response/process/lsof*.txt</b>
+-rw-r--r-- 1 root root     796 Apr  1 17:26 live_response/process/lsof_+L1.txt
+-rw-r--r-- 1 root root 2190928 Apr  1 17:26 live_response/process/lsof_-nPl.txt
+</pre>
+
+<p>If everything went to plan, we should have a memory dump and a "<tt>lsof_+L1.txt</tt>"
+  output file.</p>
+
+<p>If you are interested in exactly how much time some of the longer collection steps took,
+  here is a little bit of command line kung fu to help with that:</p>
+
+<pre>
+[root@LAB uac-output]# <b>grep INFO uac.log | grep -A1 memory_dump</b>
+2023-04-01 17:26:12 +0000 INFO Parsing artifacts file 'memory_dump/avml.yaml'
+2023-04-01 17:26:29 +0000 INFO Parsing artifacts file 'live_response/process/ps.yaml'
+[root@LAB uac-output]# <b>grep INFO uac.log | grep -A1 bodyfile</b>
+2023-04-01 17:27:34 +0000 INFO Parsing artifacts file 'bodyfile/bodyfile.yaml'
+2023-04-01 17:33:37 +0000 INFO Parsing artifacts file 'live_response/system/auditctl.yaml'
+[root@LAB uac-output]# <b>grep INFO uac.log | grep -A1 hash_executables</b>
+2023-04-01 17:34:28 +0000 INFO Parsing artifacts file 'hash_executables/hash_executables.yaml'
+2023-04-01 17:34:41 +0000 INFO Parsing artifacts file 'files/logs/var_log.yaml'
+</pre>
+
+<p>Looks like the slowest step was gathering the bodyfile (file system time stamp data)
+from the system (6m3sec).  We will discuss body files
+  more in the <i>Timeline Analysis</i> section of the course.</p>
+
+<p>For now though we have UAC data we can look at during the next few sections of the course.
+  The lab exercises will use UAC data collected from a compromised honeypot. Thanks to
+  Tyler Hudak (@SecShoggoth) for providing this data to the community!</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

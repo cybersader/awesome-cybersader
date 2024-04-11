@@ -1,0 +1,418 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 12 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 12: Log Analysis</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Investigate successful and failed logins</li><p>
+<li>Track activity for <tt>mail</tt> user</li><p>
+<li>Include log data in file system timeline</li><p>
+<li>Continue to enhance incident timeline with new information</li><p>
+</ol>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+Note that for this lab to work, you will need to have our compromised
+web server image mounted. If your 
+<tt>/mnt/test/data</tt> directory is empty, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_10/index.html">Exercise 10</a> to mount the image.</p>
+
+
+<h1>1. <tt>wtmp</tt> and <tt>btmp</tt></h1>
+
+<p><tt>/var/log/wtmp</tt> is often a good place to start for a summary of
+login activity:</p>
+
+<pre>
+[root@LAB lab11]# <b>cd /mnt/test/data/var/log</b>
+[root@LAB log]# <b>ls</b>
+alternatives.log  dbconfig-common  dmesg.4.gz  lastlog     samba
+apache2           dist-upgrade     dpkg.log    mail.err    syslog
+apt               dmesg            faillog     mail.log    udev
+auth.log          dmesg.0          fsck        mysql       unattended-upgrades
+boot.log          dmesg.1.gz       installer   mysql.err   upstart
+bootstrap.log     dmesg.2.gz       kern.log    mysql.log   wtmp
+btmp              dmesg.3.gz       landscape   postgresql
+[root@LAB log]# <b>last -if wtmp | head</b>
+mail     pts/1        192.168.210.131  Sat Oct  5 11:23 - 11:24  (00:00)    
+mail     pts/1        192.168.210.131  Sat Oct  5 11:21 - 11:21  (00:00)    
+mail     pts/1        192.168.210.131  Sat Oct  5 11:18 - 11:19  (00:00)    
+mail     pts/1        192.168.210.131  Sat Oct  5 11:13 - 11:18  (00:04)    
+reboot   system boot  0.0.0.0          Sat Oct  5 09:41 - 21:36 (164+11:54) 
+root     tty1         0.0.0.0          Wed May  4 17:36 - down   (00:01)    
+vulnosad pts/0        192.168.56.101   Wed May  4 17:35 - 17:36  (00:00)    
+root     tty1         0.0.0.0          Wed May  4 17:34 - 17:34  (00:00)    
+reboot   system boot  0.0.0.0          Wed May  4 17:33 - 17:37  (00:03)    
+root     pts/0        192.168.56.101   Wed May  4 17:01 - down   (00:06)    
+</pre>
+
+<p>I think we can safely say that artifacts before Oct 5 are not part of
+the scenario. But within the context of the scenario we see multiple logins
+by user <tt>mail</tt> all originating from 192.168.210.131. If this were
+a real-world compromise, that IP would now be in scope. If it belonged to
+my client, I'd be grabbing memory and investigating that box ASAP.</p>
+
+<p>The <tt>btmp</tt> file exists on this system, so we can also take a 
+look at failed login activity:</p>
+
+<pre>
+[root@LAB log]# <b>lastb -if btmp</b>
+mail     ssh:notty    192.168.210.131  Sat Oct  5 11:20 - 11:20  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    0.0.0.0          Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    0.0.0.0          Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:52 - 10:52  (00:00)    
+<i>[... snip ...]</i>
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:42 - 10:42  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:39 - 10:39  (00:00)    
+root     ssh:notty    192.168.210.131  Sat Oct  5 10:39 - 10:39  (00:00)    
+UNKNOWN  tty1         0.0.0.0          Wed May  4 08:41 - 08:41  (00:00)    
+UNKNOWN  tty1         0.0.0.0          Wed May  4 08:40 - 08:40  (00:00)    
+vulnosad ssh:notty    192.168.56.103   Mon May  2 16:50 - 16:50  (00:00)    
+vulnosad tty1         0.0.0.0          Mon May  2 16:49 - 16:49  (00:00)    
+vulnosad ssh:notty    192.168.56.101   Wed Apr 20 17:22 - 17:22  (00:00)    
+vulnosad tty1         0.0.0.0          Wed Apr 20 15:01 - 15:01  (00:00)    
+UNKNOWN  tty1         0.0.0.0          Sun Apr  3 16:51 - 16:51  (00:00)    
+UNKNOWN  tty1         0.0.0.0          Sun Apr  3 16:16 - 16:16  (00:00)    
+
+btmp begins Sun Apr  3 16:16:54 2016
+[root@LAB log]# <b>lastb -if btmp | grep 192.168.210.131 | wc -l</b>
+1260
+</pre>
+
+<p>It's easy to get overwhelmed by the output here. The first line
+is a failed login for user <tt>mail</tt> during the time our compromise
+was going on.</p>
+
+<p>But then we have over 1200 failed root logins from our suspect IP address. 
+Notice
+the timestamps-- the 1200 login attempts happened in a roughly 10 minute
+interval and well before our existing compromise timeline starts. That 
+seems like a failed brute force password guessing attack to me.</p>
+
+
+<h1>2. Getting More Data From Syslog</h1>
+
+<p>Let's see if we can gain some additional insights from the <tt>auth.log</tt>
+file. First I'm going to look at activity related to the <tt>mail</tt> user:</p>
+
+<pre>
+[root@LAB log]# <b>grep mail auth.log</b>
+Oct  5 13:08:31 VulnOSv2 chsh[2536]: changed user 'mail' shell to '/bin/bash'
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_unix(chpasswd:chauthtok): password changed for mail
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to group 'sudo'
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to shadow group 'sudo'
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: Accepted password for mail from 192.168.210.131 port 57686 ssh2
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+Oct  5 13:14:04 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:14:04 VulnOSv2 sudo: pam_unix(sudo:session): session opened for user root by mail(uid=0)
+Oct  5 13:14:04 VulnOSv2 su[2721]: pam_unix(su:session): session opened for user root by mail(uid=0)
+Oct  5 13:18:48 VulnOSv2 sshd[2624]: pam_unix(sshd:session): session closed for user mail
+Oct  5 13:18:54 VulnOSv2 sshd[2825]: Accepted password for mail from 192.168.210.131 port 57704 ssh2
+Oct  5 13:18:54 VulnOSv2 sshd[2825]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+Oct  5 13:19:21 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:19:21 VulnOSv2 sudo: pam_unix(sudo:session): session opened for user root by mail(uid=0)
+Oct  5 13:19:21 VulnOSv2 su[2884]: pam_unix(su:session): session opened for user root by mail(uid=0)
+Oct  5 13:19:42 VulnOSv2 sshd[2825]: pam_unix(sshd:session): session closed for user mail
+Oct  5 13:20:57 VulnOSv2 sshd[2999]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.210.131  user=mail
+Oct  5 13:20:59 VulnOSv2 sshd[2999]: Failed password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:21:03 VulnOSv2 sshd[2999]: Accepted password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:21:03 VulnOSv2 sshd[2999]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+Oct  5 13:21:11 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:11 VulnOSv2 sudo: pam_unix(sudo:session): session opened for user root by mail(uid=0)
+Oct  5 13:21:11 VulnOSv2 su[3055]: pam_unix(su:session): session opened for user root by mail(uid=0)
+Oct  5 13:21:30 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:30 VulnOSv2 sudo: pam_unix(sudo:session): session opened for user root by mail(uid=0)
+Oct  5 13:21:30 VulnOSv2 su[3082]: pam_unix(su:session): session opened for user root by mail(uid=0)
+Oct  5 13:21:45 VulnOSv2 sshd[2999]: pam_unix(sshd:session): session closed for user mail
+Oct  5 13:23:34 VulnOSv2 sshd[3108]: Accepted password for mail from 192.168.210.131 port 57708 ssh2
+Oct  5 13:23:34 VulnOSv2 sshd[3108]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+Oct  5 13:23:39 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:23:39 VulnOSv2 sudo: pam_unix(sudo:session): session opened for user root by mail(uid=0)
+Oct  5 13:23:39 VulnOSv2 su[3164]: pam_unix(su:session): session opened for user root by mail(uid=0)
+Oct  5 13:24:11 VulnOSv2 sshd[3108]: pam_unix(sshd:session): session closed for user mail
+</pre>
+
+<p>There's a lot going on here, so let's take it in chunks. First we have some detail
+that supports findings from our timeline analysis:</p>
+
+<pre>
+Oct  5 13:08:31 VulnOSv2 chsh[2536]: changed user 'mail' shell to '/bin/bash'
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_unix(chpasswd:chauthtok): password changed for mail
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to group 'sudo'
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to shadow group 'sudo'
+</pre>
+
+<p>We suspected from the timeline that <tt>chsh</tt> and <tt>chpasswd</tt> could 
+have been used to unlock the <tt>mail</tt> account, and now the <tt>auth.log</tt>
+supports that. And, also as expected, <tt>usermod</tt> added <tt>mail</tt> to
+the <tt>sudo</tt> group.
+But the timestamps are two hours off! Our timeline showed this activity in the
+11am hour, yet here the timestamps are in the 1pm time range.</p>
+
+<p>Think back to what we know from our initial triage of the system. The default
+time zone for the compromised machine was CET. Our analysis workstation is using UTC.
+When we made the timeline, we were dumping dates/times in UTC--two hours earlier than
+the home time zone of the compromised system. Unfortunately, Syslog defaults to using
+the compromised system's default time zone. But at least we have an explanation for
+the time discrepancy.</p>
+
+<p>Similarly, the <tt>auth.log</tt> shows the first login for user <tt>mail</tt>
+at 13:13:53:</p>
+
+<pre>
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: Accepted password for mail from 192.168.210.131 port 57686 ssh2
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+</pre>
+
+<p>The <tt>last</tt> output above shows the login time as 11:13 because <tt>last</tt>
+outputs the times in whatever time zone your analyst terminal is using.</p>
+
+<p>With the right pattern match we can easily compare against all of the timestamps
+we saw in the <tt>last</tt> and <tt>lastb</tt> output:</p>
+
+<pre>
+[root@LAB log]# <b>grep 'password for mail' auth.log</b>
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: Accepted password for mail from 192.168.210.131 port 57686 ssh2
+Oct  5 13:18:54 VulnOSv2 sshd[2825]: Accepted password for mail from 192.168.210.131 port 57704 ssh2
+Oct  5 13:20:59 VulnOSv2 sshd[2999]: Failed password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:21:03 VulnOSv2 sshd[2999]: Accepted password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:23:34 VulnOSv2 sshd[3108]: Accepted password for mail from 192.168.210.131 port 57708 ssh2
+</pre>
+
+<p>Comparing login information from different sources can help tell you whether
+your attackers have been modifying your system logs. By the way, if you want to
+see all the failed logins for user <tt>root</tt> that appeared in our <tt>lastb</tt>
+output, try changing the above search to "<tt>password for root</tt>" instead.</p>
+
+<p>The <tt>sudo</tt> activity logs also confirm another hypothesis from our
+timeline analysis:</p>
+
+<pre>
+[root@LAB log]# <b>grep mail auth.log | grep TTY=</b>
+Oct  5 13:14:04 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:19:21 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:11 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:30 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:23:39 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+</pre>
+
+<p>The timeline showed initial <tt>sudo</tt> activity for user mail starting at
+11:14:02 UTC, and we saw atime updates on <tt>/root/.bashrc</tt> and
+<tt>/root/.profile</tt> as well as <tt>/etc/pam.d/su</tt>. 
+That looked to me like "<tt>sudo su</tt>" and the
+sudo logs confirm that.</p>
+
+<p>There's a lot of detail in the logs for user <tt>mail</tt>. But what about the
+<tt>php</tt> user?</p>
+
+<pre>
+[root@LAB log]# <b>grep php auth.log</b>
+<i>[... snip ...]</i>
+Oct  5 13:06:38 VulnOSv2 sudo:     root : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/sbin/useradd -d /usr/php -m --system --shell /bin/bash --skel /etc/skel -G sudo php
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: new group: name=php, GID=999
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: new user: name=php, UID=999, GID=999, home=/usr/php, shell=/bin/bash
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: add 'php' to group 'sudo'
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: add 'php' to shadow group 'sudo'
+Oct  5 13:21:24 VulnOSv2 passwd[3080]: passwd: can't view or modify password information for php
+Oct  5 13:21:34 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_unix(passwd:chauthtok): password changed for php
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+</pre>
+
+<p>Ignoring all the noise prior to Oct 5, we get some useful information here.
+Apparently our attackers ran "<tt>sudo useradd ...</tt>" as <tt>root</tt> even
+though the sudo command wasn't really necessary since they already had root access.
+We see they added group <tt>sudo</tt> as an additional group via <tt>useradd</tt>.</p>
+
+<p>Later apparently they had some trouble updating the password for the <tt>php</tt>
+account. This may be the reason they edited the password file and moved the entry
+for the account.</p>
+
+
+<h1>3. Enhancing Timelines With Logs</h1>
+
+<p>Adding some of this log information to our timeline would certainly help
+tell our story more clearly. It's a fine line to walk. Some log data helps support
+information from the file system artifacts, but too much log information makes
+the timeline too noisy to read.</p>
+
+<p>Here are the pieces I find useful in this case:</p>
+
+<pre>
+[root@LAB log]# <b>grep mail auth.log | head -6</b>
+Oct  5 13:08:31 VulnOSv2 chsh[2536]: changed user 'mail' shell to '/bin/bash'
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_unix(chpasswd:chauthtok): password changed for mail
+Oct  5 13:09:03 VulnOSv2 chpasswd[2558]: pam_smbpass(chpasswd:chauthtok): Failed to find entry for user mail.
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to group 'sudo'
+Oct  5 13:09:18 VulnOSv2 usermod[2561]: add 'mail' to shadow group 'sudo'
+[root@LAB log]# <b>grep 'password for mail' auth.log</b>
+Oct  5 13:13:53 VulnOSv2 sshd[2624]: Accepted password for mail from 192.168.210.131 port 57686 ssh2
+Oct  5 13:18:54 VulnOSv2 sshd[2825]: Accepted password for mail from 192.168.210.131 port 57704 ssh2
+Oct  5 13:20:59 VulnOSv2 sshd[2999]: Failed password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:21:03 VulnOSv2 sshd[2999]: Accepted password for mail from 192.168.210.131 port 57706 ssh2
+Oct  5 13:23:34 VulnOSv2 sshd[3108]: Accepted password for mail from 192.168.210.131 port 57708 ssh2
+[root@LAB log]# <b>grep mail auth.log | grep TTY=</b>
+Oct  5 13:14:04 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:19:21 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:11 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:30 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:23:39 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+[root@LAB log]# <b>grep php auth.log | grep 'Oct  5'</b>
+Oct  5 13:06:38 VulnOSv2 sudo:     root : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/sbin/useradd -d /usr/php -m --system --shell /bin/bash --skel /etc/skel -G sudo php
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: new group: name=php, GID=999
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: new user: name=php, UID=999, GID=999, home=/usr/php, shell=/bin/bash
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: add 'php' to group 'sudo'
+Oct  5 13:06:38 VulnOSv2 useradd[2525]: add 'php' to shadow group 'sudo'
+Oct  5 13:21:24 VulnOSv2 passwd[3080]: passwd: can't view or modify password information for php
+Oct  5 13:21:34 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_unix(passwd:chauthtok): password changed for php
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+</pre>
+
+<p>I'm going to save the output of these commands in a file in the directory
+where we built our timeline. It won't matter that the entries are not in
+chronological order.</p>
+
+<pre>
+[root@LAB log]# <b>grep mail auth.log | head -6 >/images/lab11/syslogs</b>
+[root@LAB log]# <b>grep 'password for mail' auth.log >>/images/lab11/syslogs</b>
+[root@LAB log]# <b>grep mail auth.log | grep TTY= >>/images/lab11/syslogs</b>
+[root@LAB log]# <b>grep php auth.log | grep 'Oct  5' >>/images/lab11/syslogs</b>
+</pre>
+
+<p>I've written a small script to convert Syslog style logs into a bodyfile
+in mactime format. You'll find it installed in your virtual machine as
+<tt>syslog2mactime</tt> (it's also available from
+<a href="https://github.com/halpomeranz/dfis" target="_blank">https://github.com/halpomeranz/dfis</a>). It's not hard to use:</p>
+
+<pre>
+[root@LAB log]# <b>cd /images/lab11</b>
+[root@LAB lab11]# <b>export TZ=CET</b>
+[root@LAB lab11]# <b>syslog2mactime -y 2019 syslogs | gzip >bodyfile-syslog.gz</b>
+[root@LAB lab11]# <b>unset TZ</b>
+</pre>
+
+<p>Unfortunately the Syslog timestamps don't include year information.
+<tt>syslog2mactime</tt> will default to using the current year, but in this
+case our logs come from 2019. So we use "<tt>-y 2019</tt>" to make the dates
+correct.</p>
+
+<p>But the other problem is that the log timestamps are written in the local
+time zone of our compromised system. So before running <tt>syslog2mactime</tt>
+be sure to set your terminal to use the local timezone of the machine you
+are investigating. <tt>mactime</tt> format body files use the so-called
+"Unix epoch" date format (seconds since Jan 1, 1970), and everything gets
+normalized to UTC in the bodyfile.</p>
+
+<p>Be sure to set your timezone back to
+UTC by unsetting the <tt>TZ</tt> environment variable! That way your
+timeline will be showing times in UTC and not CET.</p>
+
+<p>Now we can merge our logfile information in with our other body files.
+Since we have a better idea of when our incident started, I'm just going to
+build my new timeline starting at Oct 5.</p>
+
+<pre>
+[root@LAB lab11]# <b>zcat bodyfile-* | 
+                     mactime -d 2019-10-05 | 
+                     grep -v deleted-realloc &gt;timeline-with-logs.csv</b>
+[root@LAB lab11]# <b>wc -l timeline-with-logs.csv</b>
+3349 timeline-with-logs.csv
+</pre>
+
+<p>Below are a couple of screenshots from different portions of
+the timeline where the log information helps tell a more complete story:</p>
+
+<img src="images/01-mailacct.png"><p>
+
+<img src="images/02-logins.png"><p>
+
+
+<h1>Summary of Findings</h1>
+
+<p>We can continue fleshing out our incident timeline with this new data:</p>
+
+<pre>
+&lt;time unknown&gt;   Possible Drupal remote code exploit
+
+2019-10-05 11:04:14    /tmp/apache-xTRhUVX executable dropped by www-data
+                       (CVE-2015-1328 privilege escalation? compiled on system?)
+
+2019-10-05 11:06:38    root "sudo useradd ... php"
+
+2019-10-05 11:08:31    chsh command runs, user mail shell set to /bin/bash
+
+2019-10-05 11:09:03    chpasswd sets password for user mail
+
+2019-10-05 11:09:18    usermod adds mail to "sudo" group
+
+2019-10-05 11:13:53    First login by user mail from 192.168.210.131
+
+2019-10-05 11:14:04    mail account first "sudo su -"
+
+2019-10-05 11:14:38    /etc/passwd modifications (php account moved via vim?)
+
+2019-10-05 11:17:42    /var/www/html/jabc/scripts/update.php webshell
+                       added by root account
+
+2019-10-05 11:21:34    passwd command fails to update php account
+
+2019-10-05 11:21:39    passwd command used to change php password
+
+2019-10-05 11:23:34    last login for mail user from 192.168.210.131
+
+2019-10-05 11:23:39    last "sudo su -" for mail user
+</pre>
+
+<p>To keep things from getting too cluttered, I just added information
+about the first and last logins and <tt>sudo</tt> activity for user <tt>mail</tt>.
+Feel free to add more detail if you think it is relevant.</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

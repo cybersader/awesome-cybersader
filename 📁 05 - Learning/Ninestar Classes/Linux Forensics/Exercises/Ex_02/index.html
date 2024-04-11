@@ -1,0 +1,585 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 2 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 2: Honeypot Part 1 - File Analysis</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Spot suspicious process executable paths</li><p>
+<li>Recognize suspicious process working directories</li><p>
+<li>Get more detailed information about suspicious processes</li><p>
+<li>Understand parent/child process relationships</li><p>
+</ol><p>
+
+  <p>We found four suspicious processes, several of their children, and one false-positive.
+    How did you do?</p>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>The next several labs will be using data collected from a compromised honeypot system.  The data comes
+from Tyler Hudak-- thanks Tyler!</p>
+
+<pre>
+[root@LAB uac-output]# <b>mkdir /images/uac-honeypot</b>
+[root@LAB uac-output]# <b>cd /images/uac-honeypot</b>
+[root@LAB uac-honeypot]# <b>tar zxf /images/All-Images/HudaksHoneypot/uac.tgz</b>
+[root@LAB uac-honeypot]# <b>ls</b>
+uac-ApacheWebServer-linux-20211208202503.log  uac-ApacheWebServer-linux-20211208202503.tar.gz
+[root@LAB uac-honeypot]# <b>tar zxf uac-ApacheWebServer-linux-20211208202503.tar.gz</b>
+[root@LAB uac-honeypot]# <b>ls</b>
+[root]      hash_executables                              uac-ApacheWebServer-linux-20211208202503.tar.gz
+bodyfile    live_response                                 uac.log
+chkrootkit  uac-ApacheWebServer-linux-20211208202503.log  uac.log.stderr
+</pre>
+
+<p>Here are the contents of the <tt>readme.txt</tt> that Tyler provided
+  with the images, describing how the honeypot came to be:</p>
+
+<blockquote>
+This Ubuntu Linux honeypot was put online in Azure in early October with the sole purpose of watching what happens with those exploiting CVE-2021-41773.<p>
+
+Initially there was a large amount of cryptominers that hit the system. You will see one cron script that is meant to remove files named kinsing in /tmp. This was my way of preventing these miners so more interesting things could occur.<p>
+
+Then, as with many things, I got busy and forgot about it. Fast forward to now (early December) and I remembered it was still up. I logged on and saw CPU usage through the roof. Instead of just shutting it down, I grabbed a disk snapshot, memory snapshot, and ran a tool named UAC (https://github.com/tclahr/uac) to grab live response. The results of this are in this directory.<p>
+
+There are three files:<p>
+
+- sdb.vhd.gz - VHD of the main drive obtained through an Azure disk snapshot<br>
+- ubuntu.20211208.mem.gz - Dump of memory using Lime<br>
+- uac.tgz - Results of UAC running on the system<p>
+
+Items were obtained in the order above - drive was snapshotted, memory was grabbed, then UAC was run.<p>
+
+Please feel free to share this. All I ask is that if you do any analysis to share it with the community.<p>
+
+If anyone would like to offer a more permanent home for the files, please let me know.<p>
+
+Thanks!<p>
+
+Tyler Hudak
+</blockquote>
+
+
+<h1>1. Quick wins</h1>
+
+<p>We can examine the information on running processes to spot processes running from executable paths
+  outside of <tt>/usr</tt>. You can do this visually just by looking at the content of
+  <tt>live_response/process/running_processes_full_paths.txt</tt> in a text editor. Or we can employ
+  some command-line kung fu:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -F '> /' live_response/process/running_processes_full_paths.txt | grep -Fv /usr</b>
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/1/exe -> /lib/systemd/systemd
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/1084/exe -> /sbin/agetty
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/1103/exe -> /sbin/agetty
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/15851/exe -> /bin/bash
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/15853/exe -> /bin/dash
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/20645/exe -> /bin/dash
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/21783/exe -> /bin/bash
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/21785/exe -> /bin/dash
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/22096/exe -> /opt/omi/bin/omiserver
+lrwxrwxrwx 1 omi              omi              0 Dec  8 18:51 /proc/22101/exe -> /opt/omi/bin/omiengine
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/22182/exe -> /opt/omi/bin/omiagent
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/24330/exe -> /tmp/agettyd (deleted)
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/27623/exe -> /lib/systemd/systemd-journald
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/4148/exe -> /opt/microsoft/auoms/bin/auoms
+lrwxrwxrwx 1 azureuser        azureuser        0 Dec  8 18:51 /proc/4205/exe -> /bin/bash
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/447/exe -> /sbin/lvmetad
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/457/exe -> /lib/systemd/systemd-udevd
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/494/exe -> /opt/microsoft/auoms/bin/auomscollect
+lrwxrwxrwx 1 azureuser        azureuser        0 Dec  8 18:51 /proc/602/exe -> /lib/systemd/systemd
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/603/exe -> /lib/systemd/systemd
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/609/exe -> / (deleted)
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/6388/exe -> /bin/sleep
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/6445/exe -> /bin/dash
+lrwxrwxrwx 1 systemd-timesync systemd-timesync 0 Dec  8 18:51 /proc/702/exe -> /lib/systemd/systemd-timesyncd
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/7900/exe -> /lib/systemd/systemd-logind
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:52 /proc/8078/exe -> /bin/sleep
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:52 /proc/8081/exe -> /bin/sleep
+lrwxrwxrwx 1 omsagent         omiusers         0 Dec  8 18:51 /proc/828/exe -> /opt/microsoft/omsagent/ruby/bin/ruby
+lrwxrwxrwx 1 root             root             0 Dec  8 18:52 /proc/8385/exe -> /bin/dash
+lrwxrwxrwx 1 systemd-network  systemd-network  0 Dec  8 18:51 /proc/859/exe -> /lib/systemd/systemd-networkd
+lrwxrwxrwx 1 systemd-resolve  systemd-resolve  0 Dec  8 18:51 /proc/870/exe -> /lib/systemd/systemd-resolved
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/9314/exe -> /bin/su
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/9331/exe -> /bin/bash
+</pre>
+
+<p>Hmmm, frankly that is more output than we wanted. Maybe we can expand that second pattern to suppress
+more other "safe" directories like <tt>/bin</tt>, <tt>/sbin</tt>, <tt>/lib</tt>, and <tt>/opt</tt> to focus
+in on the real outliers:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -F '> /' live_response/process/running_processes_full_paths.txt | grep -Ev '/(bin|sbin|lib|opt|usr)/'</b>
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/24330/exe -> /tmp/agettyd (deleted)
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/609/exe -> / (deleted)
+</pre>
+
+<p>Both of these processes look suspicious-- particularly PID 609 which is not showing any executable path
+at all! We will need to dig into these processes in more detail later.</p>
+
+<p>We also want to look for processes whose current working directory is suspicious. Tyler captured this data
+with an older version of UAC that did not capture
+<tt>live_response/process/ls_-l_proc_pid_cwd.txt</tt>. Happily, we do have output from the "<tt>lsof</tt>"
+command, which also includes information on process current working directories.</p>
+
+<p>Here's a little command-line kung fu to pull out the current working directory data, but ignore processes
+running from the root directory ("<tt>/</tt>"). Running from the root directory is typical for system processes
+run by <tt>systemd</tt>.</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>awk '/cwd/ && !/\/$/' live_response/process/lsof_-nPl.txt</b>
+atd        1003              1  cwd       DIR               8,17     4096      68442 /var/spool/cron/atjobs
+cron       1029              0  cwd       DIR               8,17     4096      68440 /var/spool/cron
+bash       4205           1000  cwd       DIR               8,17     4096     527081 /home/azureuser/src/LiME/src
+sleep      6388              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+uac        6445              0  cwd       DIR               8,17     4096     528610 /root/uac
+uac        7755              0  cwd       DIR               8,17     4096     528610 /root/uac
+lsof       7978              0  cwd       DIR               8,17     4096     528610 /root/uac
+lsof       7984              0  cwd       DIR               8,17     4096     528610 /root/uac
+sudo       9303              0  cwd       DIR               8,17     4096     527081 /home/azureuser/src/LiME/src
+su         9314              0  cwd       DIR               8,17     4096     527081 /home/azureuser/src/LiME/src
+bash       9331              0  cwd       DIR               8,17     4096     528610 /root/uac
+bash      15851              1  cwd       DIR               8,17     4096         12 /bin
+sh        15853              1  cwd       DIR               8,17    12288       4059 /tmp
+sh        20645              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+bash      21783              1  cwd       DIR               8,17     4096         12 /bin
+sh        21785              1  cwd       DIR               8,17    12288       4059 /tmp
+omiserver 22096              0  cwd       DIR               8,17     4096     516132 /var/opt/omi/run
+omiengine 22101            999  cwd       DIR               8,17     4096     516132 /var/opt/omi/run
+omiagent  22182              0  cwd       DIR               8,17     4096     516132 /var/opt/omi/run
+omiagent  22182 22190        0  cwd       DIR               8,17     4096     516132 /var/opt/omi/run
+omiagent  22182 22191        0  cwd       DIR               8,17     4096     516132 /var/opt/omi/run
+python3   27968              0  cwd       DIR               8,17     4096    1552795 /var/lib/waagent/WALinuxAgent-2.5.0.2
+python3   27968 28623        0  cwd       DIR               8,17     4096    1552795 /var/lib/waagent/WALinuxAgent-2.5.0.2
+python3   27968 28625        0  cwd       DIR               8,17     4096    1552795 /var/lib/waagent/WALinuxAgent-2.5.0.2
+python3   27968 28627        0  cwd       DIR               8,17     4096    1552795 /var/lib/waagent/WALinuxAgent-2.5.0.2
+python3   27968 28630        0  cwd       DIR               8,17     4096    1552795 /var/lib/waagent/WALinuxAgent-2.5.0.2
+</pre>
+
+<p>Hmmm, what if we focus in on just the processes running from <tt>/tmp</tt> directories?</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>awk '/cwd/ && /\/tmp/' live_response/process/lsof_-nPl.txt</b>
+sleep      6388              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+sh        15853              1  cwd       DIR               8,17    12288       4059 /tmp
+sh        20645              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+sh        21785              1  cwd       DIR               8,17    12288       4059 /tmp
+</pre>
+
+<p>It is possible that the "<tt>sh</tt>" processes running from <tt>/tmp</tt> are legit, but I doubt it.
+Certainly the processes running from the deleted directory
+<tt>/var/tmp/.log/101068/.spoollog</tt> are suspect!</p>
+
+
+
+<h1>2. Drilling in... and finding a probable false-positive</h1>
+
+<p>Process ID 609 certainly looked suspicious, since its executable path was reported as 
+"<tt>/ (deleted)</tt>". We can use the data that UAC collected to gather more information
+about this process.</p>
+
+<p>Linux tracks detailed information about each process running on the system in directories
+under <tt>/proc</tt>. Every running process has its own <tt>/proc/&lt;PID&gt;</tt> directory.
+UAC extracts some of this information and saves it under 
+<tt>live_response/process/proc/&lt;PID&gt;</tt>.</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/609/</b>
+cmdline.txt     comm.txt        fd.txt          maps.txt        strings.txt.gz
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/609/cmdline.txt</b>
+bpfilter_umh
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/609/comm.txt</b>
+none
+</pre>
+
+<p>"<tt>cmdline.txt</tt>" is normally the command line (with arguments) that the program was
+invoked with, while "<tt>comm.txt</tt>" is typically just the name of the executable. However,
+the program is allowed to change either or both of these values during runtime, which is
+perhaps what happened here. <tt>comm.txt</tt>
+is currently blank, and that is what gave us the strange executable path output of "<tt>/ (deleted)</tt>"
+that we saw earlier.</p>
+
+<p>However, we also have "<tt>bpfilter_umh</tt>" in <tt>cmdline.txt</tt>. You can do a little
+  Google searching, but "<tt>bpfilter_umh</tt>" is the userland portion of the BPF kernel filter.
+  I even found <a href="https://github.com/CISOfy/lynis/issues/935" target=_blank>this issue report</a>
+  where the Lynis security monitoring tool is flagging this process as a false-positive. So given that
+  we have other "interesting" processes to look at, we can put this one aside for now.</p>
+
+
+
+<h1>3. Not your typical <tt>agetty</tt> process</h1>
+
+<p>Earlier we observed PID 24330, which was executing from the deleted <tt>/tmp/agettyd</tt>
+  binary. It turns out that there is a standard Linux process named "<tt>agetty</tt>" (without the
+  "<tt>d</tt>"), which we can actually see from the UAC output:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep agetty live_response/process/running_processes_full_paths.txt</b>
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/1084/exe -> /sbin/agetty
+lrwxrwxrwx 1 root             root             0 Dec  8 18:51 /proc/1103/exe -> /sbin/agetty
+lrwxrwxrwx 1 daemon           daemon           0 Dec  8 18:51 /proc/24330/exe -> /tmp/agettyd (deleted)
+</pre>
+
+<p>The "<tt>agetty</tt>" process is what makes the "<tt>login:</tt>" prompt appear on the text-mode
+  console of the system. But what is our suspicious <tt>/tmp/agettyd</tt> process up to?</p>
+
+<p>Again we will drill into the <tt>/proc</tt> information collected by UAC:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/24330</b>
+cmdline.txt  comm.txt  environ.txt  fd.txt  maps.txt  strings.txt.gz
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/24330/comm.txt</b>
+agettyd
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/24330/cmdline.txt</b>
+agettyd
+noresetd
+</pre>
+
+<p>Hmmm. Not a lot of help so far.</p>
+
+<p>"<tt>strings.txt.gz</tt>" is a compressed file containing ASCII strings captured from the running
+  process. There tends to be a lot of garbage in these files, but one trick I have learned is to
+  look for the help text or "usage" message from the process to get some clues:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>zgrep -Fi usage: live_response/process/proc/24330/strings.txt.gz</b>
+Usage: xmrig [OPTIONS]
+[root@LAB uac-honeypot]# <b>zgrep -Fi -A20 usage: live_response/process/proc/24330/strings.txt.gz</b>
+Usage: xmrig [OPTIONS]
+Network:
+  -o, --url=URL                 URL of mining server
+  -a, --algo=ALGO               mining algorithm https://xmrig.com/docs/algorithms
+      --coin=COIN               specify coin instead of algorithm
+  -u, --user=USERNAME           username for mining server
+  -p, --pass=PASSWORD           password for mining server
+  -O, --userpass=U:P            username:password pair for mining server
+  -x, --proxy=HOST:PORT         connect through a SOCKS5 proxy
+  -k, --keepalive               send keepalived packet for prevent timeout (needs pool support)
+      --nicehash                enable nicehash.com support
+      --rig-id=ID               rig identifier for pool-side statistics (needs pool support)
+      --tls                     enable SSL/TLS support (needs pool support)
+      --tls-fingerprint=HEX     pool TLS certificate fingerprint for strict certificate pinning
+      --dns-ipv6                prefer IPv6 records from DNS responses
+      --dns-ttl=N               N seconds (default: 30) TTL for internal DNS cache
+      --daemon                  use daemon RPC instead of pool for solo mining
+      --daemon-poll-interval=N  daemon poll interval in milliseconds (default: 1000)
+      --self-select=URL         self-select block templates from URL
+      --submit-to-origin        also submit solution back to self-select URL
+      -r, --retries=N               number of times to retry before switch to backup server (default: 5)
+</pre>
+
+<p>When I get a hit on the "Usage" message, I follow up with a command to get more context after
+  the matching line. Looks very much like the XMRig cryptocurrency mining software.</p>
+
+<p>We could try checking the executable hash against VirusTotal. UAC collects MD5 and SHA1 hashes
+  of all running executables in <tt>live_response/process/hash_running_processes.{md5,sha1}</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep 24330 live_response/process/hash_running_processes.md5</b>
+e83658008d6d9dc6fe5dbb0138a4942b  /proc/24330/exe
+</pre>
+
+<p>Unfortunately, as of this writing, this hash does not appear in VirusTotal. However, if you
+  search for this hash value in Google, it will bring you to one part of the writeup I did
+  based on my investigation of this data.</p>
+
+
+
+<h1>4. Process relationships</h1>
+
+<p>Earlier we noted multiple processes with their current working directory in <tt>/tmp</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>awk '/cwd/ && /\/tmp/' live_response/process/lsof_-nPl.txt</b>
+sleep      6388              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+sh        15853              1  cwd       DIR               8,17    12288       4059 /tmp
+sh        20645              1  cwd       DIR               8,17        0     528743 /var/tmp/.log/101068/.spoollog (deleted)
+sh        21785              1  cwd       DIR               8,17    12288       4059 /tmp
+</pre>
+
+<p>There are multiple approaches to getting further information about these processes. Previously we
+  exploited data from <tt>/proc</tt>, but here is another method you can try:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep 15853 live_response/process/ps_-ef.txt</b>
+daemon    6830 15853  0 18:51 ?        00:00:00 sleep 30
+daemon   15853 15851  0 Nov30 ?        00:25:04 sh
+[root@LAB uac-honeypot]# <b>grep 21785 live_response/process/ps_-ef.txt</b>
+daemon    6803 21785  0 18:51 ?        00:00:00 sleep 30
+daemon   21785 21783  0 Nov30 ?        00:25:02 sh
+[root@LAB uac-honeypot]# <b>grep 20645 live_response/process/ps_-ef.txt</b>
+daemon    6388 20645  0 18:50 ?        00:00:00 sleep 300
+daemon   20645     1  0 Nov14 ?        03:01:59 sh .src.sh
+</pre>
+
+<p>I started with PIDs 15853 and 21785, the "<tt>sh</tt>" processes running from <tt>/tmp</tt>.
+  The second column in the "<tt>ps -ef</tt>" output is the PID and you can see the matching
+  "<tt>sh</tt>" processes. What also pops out though are the matches in the third column, which
+  is parent PID. So each one of our shell processes has a child process executing "<tt>sleep 30</tt>".</p>
+
+<p>When we look at PID 20645, the "<tt>sh</tt>" processes running from the deleted <tt>/var/tmp/...</tt>
+  directory, it turns out to be the parent of PID 6388. PID 6388 is the "<tt>sleep</tt>" process
+  we saw in the "<tt>lsof</tt>" data, which was also running from the deleted <tt>/var/tmp/...</tt>.</p>
+
+<p>So now we have some more data about process relationships. Sometimes the data in <tt>/proc</tt>
+  can give you more:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/20645/</b>
+children.txt  cmdline.txt  comm.txt  environ.txt  fd.txt  maps.txt  strings.txt.gz
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/20645/children.txt</b>
+28025
+[root@LAB uac-honeypot]# <b>grep 28025 live_response/process/ps_-ef.txt</b>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/28025</b>
+ls: cannot access live_response/process/proc/28025: No such file or directory
+</pre>
+
+<p>The "<tt>children.txt</tt>" file suggests that PID 28025 is also a child process of
+  PID 20645. Unfortunately, we cannot find any information about PID 28025. Perhaps the
+  process exited before UAC could collect the data.</p>
+
+
+
+<h1>5. Process ID 20645</h1>
+
+<p>OK, we can try to drill into PID 20645 in more detail using other data from <tt>/proc</tt>:
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/20645/cmdline.txt</b>
+.src.sh
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/20645/comm.txt</b>
+sh
+[root@LAB uac-honeypot]# <b>zgrep -Fi usage live_response/process/proc/20645/strings.txt.gz</b>
+Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+Usage: getopts optstring var [arg]
+usage: printf format [arg ...]
+[root@LAB uac-honeypot]# <b>zgrep -Fi -A10 usage live_response/process/proc/20645/strings.txt.gz</b>
+Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+kill -l [exitstatus]
+invalid signal number or name: %s
+invalid signal number or exit status: %s
+you have mail
+Use "exit" to leave shell.
+$HOME/.profile
+/etc/profile
+%s: not found
+Out of space
+unlimited
+--
+Usage: getopts optstring var [arg]
+efIimnsxvVECabup
+Syntax error: %s
+%s unexpected (expecting %s)
+%s unexpected
+Bad fd number
+Missing '))'
+Unterminated quoted string
+Missing '}'
+EOF in backquote substitution
+Bad for loop variable
+--
+usage: printf format [arg ...]
+closing paren expected
+argument expected
+missing ]
+unexpected operator
+%dm%fs %dm%fs
+%dm%fs %dm%fs
+%.*s: is read only
+%.*s: bad variable name
+%s%s%.*s%s
+not in a function
+</pre>
+
+<p>So far, this data is not so interesting. It seems to confirm that the process is running a shell
+  script, but the "usage" data we are seeing is just help text for standard shell commands.</p>
+
+<p>The "<tt>environ.txt</tt>" file contains information about environment variables that are set
+  in the shell environment of this process. There turns out to be a lot of useful information here,
+  and I have highlighted some of the more important items below:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/20645/environ.txt</b>
+CONTENT_TYPE=application/x-www-form-urlencoded
+GATEWAY_INTERFACE=CGI/1.1
+LD_LIBRARY_PATH=/usr/lib
+<b><i>REMOTE_ADDR=116.202.187.77</i></b>
+QUERY_STRING=
+OLDPWD=/var/tmp
+<b><i>HOME=/var/tmp/.log/101068/.spoollog/.api
+HTTP_USER_AGENT=curl/7.79.1</i></b>
+DOCUMENT_ROOT=/usr/share/apache2/default-site/htdocs
+REMOTE_PORT=56590
+HTTP_ACCEPT=*/*
+SERVER_SIGNATURE=
+CONTENT_LENGTH=5971
+CONTEXT_DOCUMENT_ROOT=/usr/lib/cgi-bin/
+SCRIPT_FILENAME=/bin/sh
+HTTP_HOST=13.82.150.103
+<b><i>REQUEST_URI=/cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh</i></b>
+SERVER_SOFTWARE=Apache/2.4.49 (Unix)
+REQUEST_SCHEME=http
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+SERVER_PROTOCOL=HTTP/1.1
+PYTHONUSERBASE=/var/tmp/.log/101068/.spoollog/.api/.mnc
+<b><i>REQUEST_METHOD=POST</i></b>
+SERVER_ADDR=10.0.0.4
+SERVER_ADMIN=you@example.com
+CONTEXT_PREFIX=/cgi-bin/
+<b><i>PWD=/var/tmp/.log/101068/.spoollog</i></b>
+SERVER_PORT=80
+<b><i>SCRIPT_NAME=/cgi-bin/../../../../bin/sh</i></b>
+SERVER_NAME=13.82.150.103
+</pre>
+
+<p>Tyler set up the honeypot to study CVE-2021-41773, a directory traversal bug in Apache. In this case
+  we are getting the benefit of several environment variables populated by the Apache web server into
+  the environment of this process. It looks like a POST request (<tt>REQUEST_METHOD=POST</tt>) from
+  IP address 116.202.187.77 (<tt>REMOTE_ADDR</tt>) executed <tt>/cgi-bin/../../../../bin/sh</tt>
+  (<tt>REQUEST_URI</tt> and <tt>SCRIPT_NAME</tt>) using Curl v7.79.1 (<tt>USER_AGENT</tt>). This information
+  gives us plenty of leads to go diving into the web logs of the system, which we will pursue in a
+  future exercise.</p>
+
+
+<h1>6. What about PIDs 15853 and 21785?</h1>
+
+<p>Again we will use <tt>/proc</tt> data to get more information about our other suspicious processes:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/15853</b>
+children.txt  comm.txt  environ.txt  fd.txt  maps.txt  strings.txt.gz
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/15853/comm.txt</b>
+sh
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/15853/children.txt</b>
+27267
+[root@LAB uac-honeypot]# <b>grep 27267 live_response/process/ps_-ef.txt</b>
+[root@LAB uac-honeypot]# <b>ls live_response/process/proc/27267</b>
+ls: cannot access live_response/process/proc/27267: No such file or directory
+[root@LAB uac-honeypot]# <b>zgrep -Fi usage live_response/process/proc/15853/strings.txt.gz</b>
+Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+Usage: getopts optstring var [arg]
+usage: printf format [arg ...]
+</pre>
+
+<p>So far, this is looking very similar to the previous process we investigated. Hopefully
+  "<tt>environ.txt</tt>" will be helpful:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/15853/environ.txt</b>
+HTTP_HOST=13.82.150.103
+LD_LIBRARY_PATH=/usr/lib
+CONTEXT_DOCUMENT_ROOT=/usr/lib/cgi-bin/
+<b><i>HTTP_USER_AGENT=curl/7.79.1</i></b>
+SERVER_ADMIN=you@example.com
+CONTEXT_PREFIX=/cgi-bin/
+SERVER_PORT=80
+SERVER_NAME=13.82.150.103
+QUERY_STRING=
+SCRIPT_FILENAME=/bin/bash
+PWD=/bin
+HTTP_ACCEPT=*/*
+CONTENT_TYPE=application/x-www-form-urlencoded
+<b><i>REQUEST_METHOD=POST</i></b>
+SERVER_SIGNATURE=
+<b><i>SCRIPT_NAME=/cgi-bin/../../../../../../../bin/bash</i></b>
+REMOTE_PORT=47374
+DOCUMENT_ROOT=/usr/share/apache2/default-site/htdocs
+SHLVL=1
+SERVER_PROTOCOL=HTTP/1.1
+<b><i>REQUEST_URI=/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/bash</i></b>
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+SERVER_ADDR=10.0.0.4
+GATEWAY_INTERFACE=CGI/1.1
+REQUEST_SCHEME=http
+<b><i>REMOTE_ADDR=5.2.72.226</i></b>
+CONTENT_LENGTH=103
+SERVER_SOFTWARE=Apache/2.4.49 (Unix)
+_=/bin/sh
+</pre>
+
+<p>A POST request from 5.2.72.226 for <tt>/cgi-bin/../../../../../../../bin/bash</tt> again using Curl v7.79.1.
+  Interestingly, the "<tt>environ.txt</tt>" file for PID 21785 is exactly identical except for the remote
+  connection information:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>diff live_response/process/proc/15853/environ.txt live_response/process/proc/21785/environ.txt</b>
+17c17
+&lt; REMOTE_PORT=47374
+---
+&gt; REMOTE_PORT=36748
+26c26
+&lt; REMOTE_ADDR=5.2.72.226
+---
+&gt; REMOTE_ADDR=104.244.76.13
+</pre>
+
+<p>Is this one attacker using multiple source IPs, or different attackers using the same exploit toolkit?
+  Again, deeper investigation will wait for a future exercise.</p>
+
+
+<h1>7. The return of <tt>/tmp/agettyd</tt></h1>
+
+<p>We never did look at the "<tt>environ.txt</tt>" file for PID 24330, our XMRig cryptocurrency miner
+  masquerading as <tt>/tmp/agettyd</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/process/proc/24330/environ.txt</b>
+CONTENT_TYPE=application/x-www-form-urlencoded
+GATEWAY_INTERFACE=CGI/1.1
+LD_LIBRARY_PATH=/usr/lib
+SHLVL=1
+REMOTE_ADDR=5.2.72.226
+QUERY_STRING=
+OLDPWD=/tmp
+HTTP_USER_AGENT=curl/7.79.1
+REMOTE_PORT=47374
+DOCUMENT_ROOT=/usr/share/apache2/default-site/htdocs
+HTTP_ACCEPT=*/*
+SERVER_SIGNATURE=
+CONTENT_LENGTH=103
+CONTEXT_DOCUMENT_ROOT=/usr/lib/cgi-bin/
+SCRIPT_FILENAME=/bin/bash
+HTTP_HOST=13.82.150.103
+REQUEST_URI=/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/bash
+_=/bin/sh
+SERVER_SOFTWARE=Apache/2.4.49 (Unix)
+REQUEST_SCHEME=http
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp:/bin:/usr/bin:/usr/local/bin:/usr/sbin:/tmp:/bin:/usr/bin:/usr/local/bin:/usr/sbin
+SERVER_PROTOCOL=HTTP/1.1
+LANG=C.UTF-8
+REQUEST_METHOD=POST
+SERVER_ADMIN=you@example.com
+SERVER_ADDR=10.0.0.4
+CONTEXT_PREFIX=/cgi-bin/
+PWD=/tmp
+LC_ALL=C.UTF-8
+SERVER_PORT=80
+SCRIPT_NAME=/cgi-bin/../../../../../../../bin/bash
+SERVER_NAME=13.82.150.103
+</pre>
+
+<p>This is very similar to the "<tt>environ.txt</tt>" file for PID 15853. Same remote IP address,
+  web request details, and user-agent string. The files even share the same ephemeral remote port
+  number. So while the <tt>/tmp/agettyd</tt> process is not a direct child process of PID 15853,
+  this data strongly suggests that <tt>/tmp/agettyd</tt> is at least a descendent of this process.</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

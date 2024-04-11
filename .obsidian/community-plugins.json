@@ -15,5 +15,7 @@
   "url-into-selection",
   "obsidian-underline",
   "obsidian-excalidraw-plugin",
-  "size-history"
+  "size-history",
+  "obsidian-importer",
+  "obsidian-html-plugin"
 ]

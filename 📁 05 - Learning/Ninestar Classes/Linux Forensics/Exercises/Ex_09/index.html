@@ -1,0 +1,439 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 9 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 9: Disk Mounting Challenge</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Convert E01 images with <tt>ewfmount</tt></li><p>
+<li>Activate RAID sets through loopback mounts</li><p>
+<li>Enable LVM Volume Groups manually</li><p>
+<li>Mount "dirty" (underplayed) file systems</li><p>
+<li>Reverse the process and deactivate mounted images</li><p>
+</ol>
+</h1>
+
+
+<h1>1. Using <tt>ewfmount</tt></h1>
+
+<p>You should find copies of the E01 files for both disks in <tt>/images/lab09</tt>:</p>
+
+<pre>
+[lab@LAB ~]$ <b>cd /images/lab09</b>
+[lab@LAB lab09]$ <b>ls</b>
+disk1.E01  disk1.E02  disk1.txt  disk2.E01  disk2.E02  disk2.txt
+</pre>
+
+<p>We will need to make directories for <tt>ewfmount</tt> to work in, and then we
+can go ahead and run <tt>ewfmount</tt>:</p>
+
+<pre>
+[lab@LAB lab09]$ <b>sudo -s</b>
+[sudo] password for lab: <b><i>(not echoed)</i></b>
+[root@LAB lab09]# <b>mkdir -p /mnt/lab09/disk1-ewf</b>
+[root@LAB lab09]# <b>mkdir -p /mnt/lab09/disk2-ewf</b>
+[root@LAB lab09]# <b>ewfmount disk1.E01 /mnt/lab09/disk1-ewf</b>
+ewfmount 20140608
+
+[root@LAB lab09]# <b>ewfmount disk2.E01 /mnt/lab09/disk2-ewf</b>
+ewfmount 20140608
+
+[root@LAB lab09]# <b>ls -lh /mnt/lab09/*</b>
+/mnt/lab09/disk1-ewf:
+total 0
+-r--r--r--. 1 root root 100G Mar 13 14:15 ewf1
+
+/mnt/lab09/disk2-ewf:
+total 0
+-r--r--r--. 1 root root 100G Mar 13 14:15 ewf1
+</pre>
+
+<p>So far, so good!</p>
+
+<p>Now let's use the Sleuthkit's <tt>mmls</tt> command to get an
+idea of how the disks are partitioned. We are going to need this data
+in order to access the information on the drives:</p>
+
+<pre>
+[root@LAB lab09]# <b>mmls /mnt/lab09/disk1-ewf/ewf1</b>
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  000:000   0000002048   0007817215   0007815168   Linux RAID (0xfd)
+003:  000:001   0007817216   0209715199   0201897984   Linux RAID (0xfd)
+[root@LAB lab09]# <b>mmls /mnt/lab09/disk2-ewf/ewf1</b>
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  000:000   0000002048   0007817215   0007815168   Linux RAID (0xfd)
+003:  000:001   0007817216   0209715199   0201897984   Linux RAID (0xfd)
+</pre>
+
+<p>The disk are laid out in identical fashion, which is typical for a
+RAID-1 configuration. We have a small RAID volume starting at sector 2048,
+and a larger RAID volume starting at sector 7817216. Similar to the example
+in the course slides, this is most likely a small <tt>/boot</tt> partition
+and a large volume that probably uses Linux LVM. But let's see if that
+theory is correct.</p>
+
+
+<h1>2. Setting up the first RAID set</h1>
+
+<p>On modern Linux systems, RAID setup is more or less automatic.
+We just need to create a couple of loopback devices and the OS will do
+the rest:</p>
+
+<pre>
+[root@LAB lab09]# <b>losetup -rf -o $((2048*512)) /mnt/lab09/disk1-ewf/ewf1</b>
+[root@LAB lab09]# <b>losetup -rf -o $((2048*512)) /mnt/lab09/disk2-ewf/ewf1</b>
+</pre>
+
+<p>Linux commands don't give a lot of feedback if everything goes right, so how
+do we know if the system recognized the RAID set? The <tt>/proc/mdstat</tt> 
+file gives a summary of active RAID devices:</p>
+
+<pre>
+[root@LAB lab09]# <b>cat /proc/mdstat</b>
+Personalities : [raid1] 
+md127 : active (read-only) raid1 loop1[1] loop0[0](F)
+      3904512 blocks super 1.2 [2/1] [_U]
+      bitmap: 0/1 pages [0KB], 65536KB chunk
+
+unused devices: &lt;none&gt;
+</pre>
+
+<p>This tells us that we now have an active RAID device called <tt>/dev/md127</tt>
+in "<tt>raid1</tt>" configuration, using our two loopback devices. We can get more
+details with the Linux <tt>file</tt> command and TSK's <tt>fsstat</tt>:</p>
+
+<pre>
+[root@LAB lab09]# <b>file -s /dev/md127</b>
+/dev/md127: Linux rev 1.0 ext4 filesystem data, UUID=fbd719a9-9a94-491d-a5aa-c16aa407a23e (needs journal recovery) (extents) (64bit) (large files) (huge files)
+[root@LAB lab09]# <b>fsstat /dev/md127 | head -20</b>
+FILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: Ext4
+Volume Name: 
+Volume ID: 3ea207a46ac1aaa51d49949aa919d7fb
+
+Last Written at: 2020-02-12 12:36:50 (EST)
+Last Checked at: 2020-02-12 07:09:40 (EST)
+
+Last Mounted at: 2020-02-12 07:36:26 (EST)
+Unmounted properly
+Last mounted on: /boot
+
+Source OS: Linux
+Dynamic Structure
+Compat Features: Journal, Ext Attributes, Resize Inode, Dir Index
+InCompat Features: Filetype, Needs Recovery, Extents, 64bit, Flexible Block Groups, 
+Read Only Compat Features: Sparse Super, Large File, Huge File, Extra Inode Size
+
+Journal ID: 00
+</pre>
+
+<p>Both commands agree we have an EXT4 file system, and <tt>fsstat</tt> tells
+us the file system was last mounted on <tt>/boot</tt>. This is what we were
+expecting based on the disk layout.</p>
+
+<p>If for some reason the RAID set did not get activated automatically, you
+can always fall back to using the <tt>mdadm</tt> command to get things going
+manually. <tt>mdadm --examine</tt> can give you information about an individual
+device in the RAID set:</p>
+
+<pre>
+[root@LAB lab09]# <b>mdadm --examine /dev/loop0</b>
+/dev/loop0:
+          Magic : a92b4efc
+        Version : 1.2
+    Feature Map : 0x1
+     Array UUID : cccdcc9b:f86a0b98:98df7949:8f2f7bb8
+           Name : localhost:boot
+  Creation Time : Wed Feb 12 07:09:35 2020
+     Raid Level : raid1
+   Raid Devices : 2
+
+ Avail Dev Size : 7809024 (3.72 GiB 4.00 GB)
+     Array Size : 3904512 (3.72 GiB 4.00 GB)
+    Data Offset : 6144 sectors
+   Super Offset : 8 sectors
+   Unused Space : before=6064 sectors, after=201897984 sectors
+          State : clean
+    Device UUID : d8ce6d12:2f2b584f:2ee20f39:02e05ee4
+
+Internal Bitmap : 8 sectors from superblock
+    Update Time : Wed Feb 12 12:39:40 2020
+  Bad Block Log : 512 entries available at offset 16 sectors
+       Checksum : 5fe2660d - correct
+         Events : 46
+
+
+   Device Role : Active device 0
+   Array State : AA ('A' == active, '.' == missing, 'R' == replacing)
+</pre>
+
+<p>To start the RAID set manually, you would run "<tt>mdadm -IR /dev/loop0</tt>"
+and "<tt>mdadm -IR /dev/loop1</tt>". The <tt>-I</tt> flag is for <i>incremental
+assembly</i> mode where you are activating one device at a time. <tt>-R</tt> means 
+start the device <i>running</i> as soon as the required devices are found.</p>
+
+
+<h1>3. Setting up the second RAID device</h1>
+
+<p>Well that first RAID device went smoothly! Let's try our luck with the second
+device:</p>
+
+<pre>
+[root@LAB lab09]# <b>losetup -rf -o $((512*7817216)) /mnt/lab09/disk1-ewf/ewf1</b>
+[root@LAB lab09]# <b>losetup -rf -o $((512*7817216)) /mnt/lab09/disk2-ewf/ewf1</b>
+[root@LAB lab09]# <b>cat /proc/mdstat</b>
+Personalities : [raid1] 
+md126 : active (read-only) raid1 loop3[1](F) loop2[0]
+      100882432 blocks super 1.2 [2/1] [U_]
+      bitmap: 0/1 pages [0KB], 65536KB chunk
+
+md127 : active (read-only) raid1 loop1[1] loop0[0](F)
+      3904512 blocks super 1.2 [2/1] [_U]
+      bitmap: 0/1 pages [0KB], 65536KB chunk
+
+unused devices: &lt;none&gt;
+</pre>
+
+<p>Now we have a <tt>/dev/md126</tt> device! Let's see what the <tt>file</tt>
+command tells us:</p>
+
+<pre>
+[root@LAB lab09]# <b>file -s /dev/md126</b>
+/dev/md126: LVM2 PV (Linux Logical Volume Manager), UUID: BXfTcf-PS2q-ng8Y-t2Ed-wCbl-3rCY-vS1H3b, size: 103303610368
+</pre>
+
+<p>We were expecting this larger RAID set to be using Linux LVM, and again
+it seems we were right. So now we have to activate the LVM volumes.</p>
+
+
+<h1>4. Activating LVM</h1>
+
+<p>We should be able to get more information with <tt>pvdisplay</tt>:</p>
+
+<pre>
+[root@LAB lab09]# <b>pvdisplay /dev/md126</b>
+  --- Physical volume ---
+  PV Name               /dev/md126
+  VG Name               grp1
+  PV Size               &lt;96.21 GiB / not usable 2.00 MiB
+  Allocatable           yes (but full)
+  PE Size               4.00 MiB
+  Total PE              24629
+  Free PE               0
+  Allocated PE          24629
+  PV UUID               BXfTcf-PS2q-ng8Y-t2Ed-wCbl-3rCY-vS1H3b
+</pre>
+
+<p><tt>pvdisplay</tt> tells us the volume group name ("<tt>VG Name</tt>") is 
+"<tt>grp1</tt>". We will use that group name in later commands.</p>
+
+<p>Activating the LVM volume is no different from the example in the slides:</p>
+
+<pre>
+[root@LAB lab09]# <b>vgscan</b>
+  Reading all physical volumes.  This may take a while...
+  Found volume group "grp1" using metadata type lvm2
+  Found volume group "cl" using metadata type lvm2
+[root@LAB lab09]# <b>vgchange -a y grp1</b>
+  2 logical volume(s) in volume group "grp1" now active
+[root@LAB lab09]# <b>lvscan | grep grp1</b>
+  ACTIVE            '/dev/grp1/home' [76.21 GiB] inherit
+  ACTIVE            '/dev/grp1/root' [&lt;20.00 GiB] inherit
+</pre>
+
+<p>After activating the volume group with <tt>vgchange</tt>, we see
+two active devices named <tt>/dev/grp1/root</tt> and
+<tt>/dev/grp1/home</tt>. However, it turns out that these names are
+actually just symbolic links to the real device nodes:</p>
+
+<pre>
+[root@LAB lab09]# <b>ls -l /dev/grp1</b>
+total 0
+lrwxrwxrwx. 1 root root 7 Mar 13 22:23 home -> ../dm-3
+lrwxrwxrwx. 1 root root 7 Mar 13 22:23 root -> ../dm-4
+[root@LAB lab09]# <b>file -s /dev/dm04</b>
+/dev/dm04: cannot open (No such file or directory)
+[root@LAB lab09]# <b>file -s /dev/dm-4</b>
+/dev/dm-4: SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)
+[root@LAB lab09]# <b>file -s /dev/dm-3</b>
+/dev/dm-3: SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)
+[root@LAB lab09]# <b>fsstat /dev/dm-4</b>
+Cannot determine file system type
+</pre>
+
+<p>So <tt>/dev/grp1/root</tt> is really <tt>/dev/dm-4</tt> and 
+<tt>/dev/grp1/home</tt> is really <tt>/dev/dm-3</tt>. The <tt>file</tt>
+command tells us that these are XFS file systems. Unfortunately, TSK
+doesn't know how to deal with XFS. But we should at least be able to
+mount these file systems!</p>
+
+<h1>5. Mount file systems</h1>
+
+<p>Let's just go ahead and try and mount <tt>/dev/grp1/root</tt> read-only:</p>
+
+<pre>
+[root@LAB lab09]# <b>mkdir /mnt/lab09/data</b>
+[root@LAB lab09]# <b>mount -o ro,noexec /dev/grp1/root /mnt/lab09/data</b>
+mount: cannot mount /dev/mapper/grp1-root read-only
+</pre>
+
+<p>Hmmm, not a very helpful error message. Maybe <tt>dmesg</tt> can help:</p>
+
+<pre>
+[root@LAB lab09]# <b>dmesg | tail</b>
+[  422.889501] md: super_written gets error=-5, uptodate=0
+[  687.190849] XFS (dm-4): Superblock has unknown read-only compatible features (0x4) enabled.
+[  687.191277] XFS (dm-4): Mounting V5 Filesystem
+[  687.232175] XFS (dm-4): xfs_do_force_shutdown(0x1) called from line 1242 of file fs/xfs/xfs_buf.c.  Return address = 0xffffffffc036413c
+[  687.232179] XFS (dm-4): I/O Error Detected. Shutting down filesystem
+[  687.232181] XFS (dm-4): Please umount the filesystem and rectify the problem(s)
+[  687.232183] XFS (dm-4): metadata I/O error: block 0x14005d5 ("xlog_bwrite") error 30 numblks 8192
+[  687.232296] XFS (dm-4): failed to locate log tail
+[  687.232297] XFS (dm-4): log mount/recovery failed: error -30
+[  687.232368] XFS (dm-4): log mount failed
+</pre>
+
+<p>Well it's at least more information, although the meaning of all this might
+not be clear at first glance. The situation is essentially the same as the example
+in the slides-- the file system was not shut down cleanly and the XFS drivers
+are unable to repair the file system because we are trying to start the file system
+in read-only mode. Hence the "<tt>log mount/recovery failed</tt>" error above.</p>
+
+<p>For EXT4 file systems, we used the "<tt>noload</tt>" option. The equivalent 
+option for XFS is "<tt>norecovery</tt>":</p>
+
+<pre>
+[root@LAB lab09]# <b>mount -o ro,noexec,norecovery /dev/grp1/root /mnt/lab09/data</b>
+[root@LAB lab09]# <b>ls /mnt/lab09/data</b>
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+</pre>
+
+<p>Yes! That worked!</p>
+
+<p>Following these patterns, we should be able to mount the other XFS file
+system in <tt>/dev/grp1/home</tt> and our EXT4 <tt>/boot</tt> file system
+from <tt>/dev/md127</tt>:</p>
+
+<pre>
+[root@LAB lab09]# <b>mount -o ro,noexec,norecovery /dev/grp1/home /mnt/lab09/data/home</b>
+[root@LAB lab09]# <b>ls /mnt/lab09/data/home</b>
+lab
+[root@LAB lab09]# <b>mount -o ro,noexec,noload /dev/md127 /mnt/lab09/data/boot</b>
+[root@LAB lab09]# <b>ls /mnt/lab09/data/boot</b>
+config-4.18.0-80.el8.x86_64
+efi
+grub2
+initramfs-0-rescue-84860d5e28f14321ba30d13748b38600.img
+initramfs-4.18.0-80.el8.x86_64.img
+initramfs-4.18.0-80.el8.x86_64kdump.img
+loader
+lost+found
+System.map-4.18.0-80.el8.x86_64
+vmlinuz-0-rescue-84860d5e28f14321ba30d13748b38600
+vmlinuz-4.18.0-80.el8.x86_64
+</pre>
+
+<p>Hooray! You just manually reassembled a complicated drive layout from a forensic image
+in E01 format!</p>
+
+
+<h1>6. Teardown</h1>
+
+<p>After completing an investigation, you would want to unmount the disk image
+and clean everything up. Rebooting the machine would certainly accomplish that,
+but maybe you have tasks running in the background that you do not wish to interrupt.
+We can manually unmount everything, mostly by just following the setup process 
+in reverse order.</p>
+
+<p>First we need to unmount the mounted file systems. We need to umount "<tt>/boot</tt>"
+and "<tt>/home</tt>" first because they are mounted on top of the root file system:<p>
+
+<pre>
+[root@LAB lab09]# <b>umount /mnt/lab09/data/boot</b>
+[root@LAB lab09]# <b>umount /mnt/lab09/data/home</b>
+[root@LAB lab09]# <b>umount /mnt/lab09/data</b>
+[root@LAB lab09]# <b>ls /mnt/lab09/data</b>
+</pre>
+
+<p>With everything unmounted, <tt>/mnt/lab09/data</tt> is clean and empty.</p>
+
+<p>Disabling the volume group is done with "<tt>vgchange -n</tt>":</p>
+
+<pre>
+[root@LAB lab09]# <b>vgchange -a n grp1</b>
+  0 logical volume(s) in volume group "grp1" now active
+[root@LAB lab09]# <b>lvscan | grep grp1</b>
+  inactive          '/dev/grp1/home' [76.21 GiB] inherit
+  inactive          '/dev/grp1/root' [&lt;20.00 GiB] inherit
+</pre>
+
+<p>Our logical volumes are now "<tt>inactive</tt>".</p>
+
+<p>The RAID sets can be stopped with "<tt>mdadm -S</tt>" (<tt>-S</tt>
+for <i>stop</i>):</p>
+
+<pre>
+[root@LAB lab09]# <b>mdadm -S /dev/md126</b>
+mdadm: stopped /dev/md126
+[root@LAB lab09]# <b>mdadm -S /dev/md127</b>
+mdadm: stopped /dev/md127
+[root@LAB lab09]# <b>cat /proc/mdstat</b>
+Personalities : [raid1] 
+unused devices: &lt;none&gt;
+</pre>
+
+<p>The only item left is to shut down the loopback devices using 
+"<tt>losetup -d</tt>" to <i>detach</i> the device:</p>
+
+<pre>
+[root@LAB lab09]# <b>losetup -a</b>
+/dev/loop1: [0050]:2 (/mnt/lab09/disk2-ewf/ewf1), offset 1048576
+/dev/loop2: [0049]:2 (/mnt/lab09/disk1-ewf/ewf1), offset 4002414592
+/dev/loop0: [0049]:2 (/mnt/lab09/disk1-ewf/ewf1), offset 1048576
+/dev/loop3: [0050]:2 (/mnt/lab09/disk2-ewf/ewf1), offset 4002414592
+[root@LAB lab09]# <b>losetup -a | grep lab09 | cut -f1 -d:</b>
+/dev/loop1
+/dev/loop2
+/dev/loop0
+/dev/loop3
+[root@LAB lab09]# <b>losetup -d $(losetup -a | grep lab09 | cut -f1 -d:)</b>
+[root@LAB lab09]# <b>losetup -a</b>
+</pre>
+
+<p>Because you might have other loopback devices set up, I'm being careful
+to only delete the devices associated with the "<tt>lab09</tt>" exercise.
+I'm using a little command-line kung fu to get the names of the loopback
+devices associated with the "<tt>lab09</tt>" paths. Then I use the "<tt>$(...)</tt>"
+syntax to substitute the output from this pipeline into the "<tt>losetup -d</tt>"
+command and remove the matching devices.</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

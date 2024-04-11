@@ -1,0 +1,268 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 7 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 7: Volatility</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Get help and plugin information from Volatility</li><p>
+<li>Examine process information</li><p>
+<li>Get information about network connections</li><p>
+<li>Extract shell command history</li><p>
+</ol>
+</h1>
+
+
+<h1>1. Getting Help</h1>
+
+<p>Help is always available with the "<tt>-h</tt>" switch. The help text not only contains an overview
+of the various command-line options, it also lists all available plugins. We can zero in on just the
+Linux plugins for looking for lines matching "<tt>linux.</tt>":
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -h</b>
+usage: volatility [-h] [-c CONFIG] [--parallelism [{processes,threads,off}]] [-e EXTEND] [-p PLUGIN_DIRS]
+                  [-s SYMBOL_DIRS] [-v] [-l LOG] [-o OUTPUT_DIR] [-q] [-r RENDERER] [-f FILE] [--write-config]
+                  [--save-config SAVE_CONFIG] [--clear-cache] [--cache-path CACHE_PATH] [--offline]
+                  [--single-location SINGLE_LOCATION] [--stackers [STACKERS ...]]
+                  [--single-swap-locations [SINGLE_SWAP_LOCATIONS ...]]
+                  plugin ...
+
+An open-source memory forensics framework
+
+optional arguments:
+  -h, --help            Show this help message and exit, for specific plugin options use 'volatility <pluginname>
+                        --help'
+  -c CONFIG, --config CONFIG
+                        Load the configuration from a json file
+  <i>[... snip ...]</i>
+root@LAB:/images/lab06# <b>vol3.py -h | grep -F linux.</b>
+    linux.bash.Bash     Recovers bash command history from memory.
+    linux.check_afinfo.Check_afinfo
+    linux.check_creds.Check_creds
+    linux.check_idt.Check_idt
+    linux.check_modules.Check_modules
+    linux.check_syscall.Check_syscall
+    linux.elfs.Elfs     Lists all memory mapped ELF files for all processes.
+    linux.keyboard_notifiers.Keyboard_notifiers
+    linux.kmsg.Kmsg     Kernel log buffer reader
+    linux.lsmod.Lsmod   Lists loaded kernel modules.
+    linux.lsof.Lsof     Lists all memory maps for all processes.
+    linux.malfind.Malfind
+    linux.mountinfo.MountInfo
+    linux.proc.Maps     Lists all memory maps for all processes.
+    linux.psaux.PsAux   Lists processes with their command line arguments
+    linux.pslist.PsList
+    linux.psscan.PsScan
+    linux.pstree.PsTree
+    linux.sockstat.Sockstat
+    linux.tty_check.tty_check
+</pre>
+
+<p>Plugin-specific help is often available by specifying the plugin name before
+the "<tt>-h</tt>" flag:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py linux.sockstat.Sockstat -h</b>
+usage: volatility linux.sockstat.Sockstat [-h] [--unix] [--pids [PIDS ...]] [--netns NETNS]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --unix             Show UNIX domain Sockets only
+  --pids [PIDS ...]  Filter results by process IDs. It takes the root PID namespace identifiers.
+  --netns NETNS      Filter results by network namespace. Otherwise, all of them are shown.
+</pre>
+
+
+<h1>2. Process Triage</h1>
+
+<p>We can use some of the same techniques we used with the UAC data to begin looking
+for suspicious artifacts in the memory image. For example, the <tt>Elfs</tt> plugin
+can give us executable and shared library paths. Let's try looking for paths outside
+of the <tt>/usr</tt> directory:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.elfs.Elfs | grep -v /usr</b>
+
+PID     Process Start   End     File Path
+
+1       systemd 0x7ffe3bf39000  0x7ffe3bf3b000  [vdso]
+284     systemd-journal 0x7ffcf198a000  0x7ffcf198c000  [vdso]
+309     vmware-vmblock- 0x7ffd6b7bb000  0x7ffd6b7bd000  [vdso]
+<i>[... Hit Ctrl-C to abort ...]</i>
+</pre>
+
+<p>Ugh! Let's get rid of those "<tt>[vdso]</tt>" lines too:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.elfs.Elfs | grep -v /usr | grep -v vdso</b>
+
+PID     Process Start   End     File Path
+
+1412    lsof    0x55dbca358000  0x55dbca35a000  /dev/shm/.rk/.rk/lsof
+1418    xterm   0x558ee0927000  0x558ee0929000  /dev/shm/.rk/.rk/xterm
+</pre>
+
+<p>OK, that's useful data, although Volatility is somewhat mangling the paths in
+the output.</p>
+
+<p>Now let's get some basic information about our suspicous processes. I'm going to run the
+<tt>PsAux</tt> plugin and grep for the suspicious PIDs we saw in the <tt>Elfs</tt> output.
+<b>Make sure you use the PID numbers from your output and not the ones here in the example!</b></p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.psaux.PsAux | grep 141[28]</b>
+1412    1       lsof    lsof -l -k -p 1337
+1418    1       xterm   xterm
+</pre>
+
+<p>Drilling in a little more, we can see if the <tt>Lsof</tt> plugin supplies any useful
+context:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.lsof.Lsof --pid 1412</b>
+
+PID     Process FD      Path
+
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.lsof.Lsof --pid 1418</b>
+
+PID     Process FD      Path
+
+1418    xterm   0       /dev/shm/.rk/.rk/data
+1418    xterm   1       socket:[25895]
+1418    xterm   2       /dev/null
+</pre>
+
+<p>And as long as we're looking at the <tt>Lsof</tt> data, let's see if any other processes
+are using files under <tt>/dev/shm</tt>:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.lsof.Lsof | grep /dev/shm</b>
+1418    xterm   0       /dev/shm/.rk/.rk/data
+1419    tail    1       /dev/shm/.rk/.rk/data
+</pre>
+
+<p>The third column in the output is the file descriptor number. File descriptor zero is normall
+associated with the standard output of a process, while descriptor one is the standard input.
+So this suggests that <tt>xterm</tt> is writing to the <tt>data</tt> file and the <tt>tail</tt>
+program is reading it.</p>
+
+<p>None of this is particularly surprising given our earlier in-class examples with UAC.
+But it just shows how memory analysis can accomplish at least some of the same mission as capturing
+live command output with UAC.</p>
+
+
+<h1>3. Network Information</h1>
+
+<p>We can use the <tt>Sockstat</tt> plugin to get information related to network behavior of
+our suspcious processes. <b>Again remember to use your PID information in the commands below
+rather than the PIDs from this example.</b>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.sockstat.Sockstat | grep 141[82]</b>
+4026531992      1418    1       0x9afaa05be900  AF_INET STREAM  TCP     192.168.10.137  44196   192.168.10.137  1337   ESTABLISHED      -
+</pre>
+
+<p>Based on the process information above, PID 1418 is the <tt>xterm</tt> process. The <tt>Sockstat</tt> data
+shows it communicating with some process on the same system using port 1337. Interesting that <tt>Sockstat</tt>
+doesn't show us network information for the other process using port 1337. I am wondering if this is a bug.</p>
+
+<p>Remember if you want to see all network related entries, just filter the <tt>Sockstat</tt> output for
+<tt>AF_INET</tt>:
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.sockstat.Sockstat | grep AF_INET</b>
+4026531992      603     12      0x9afa841a3fc0  AF_INET DGRAM   UDP     0.0.0.0 5353    0.0.0.0 0       UNCONNECTED    -
+4026531992      603     13      0x9afa853c4600  AF_INET6        DGRAM   UDP     ::      5353    ::      0       UNCONNECTED     -
+4026531992      603     14      0x9afa841a50c0  AF_INET DGRAM   UDP     0.0.0.0 34664   0.0.0.0 0       UNCONNECTED    -
+4026531992      603     15      0x9afa853c7300  AF_INET6        DGRAM   UDP     ::      33384   ::      0       UNCONNECTED     -
+4026531992      607     21      0x9afa84b18000  AF_INET6        RAW     ICMPv6  ::      58      ::      0       UNCONNECTED     -
+4026531992      607     23      0x9afaa2536e80  AF_INET DGRAM   UDP     192.168.10.137  68      192.168.10.254  67     UNCONNECTED      filter_type=socket_filter,bpf_filter_type=cBPF
+4026531992      641     6       0x9afa85b6c280  AF_INET6        STREAM  TCP     ::1     631     ::      0       LISTEN -
+4026531992      641     7       0x9afa85b74ec0  AF_INET STREAM  TCP     127.0.0.1       631     0.0.0.0 0       LISTEN -
+4026531992      657     3       0x9afa8626b480  AF_INET STREAM  TCP     0.0.0.0 22      0.0.0.0 0       LISTEN  -
+4026531992      657     4       0x9afa86273900  AF_INET6        STREAM  TCP     ::      22      ::      0       LISTEN -
+4026531992      666     7       0x9afa841a5d80  AF_INET DGRAM   UDP     0.0.0.0 631     0.0.0.0 0       UNCONNECTED    -
+4026531992      1044    4       0x9afa85b70000  AF_INET STREAM  TCP     127.0.0.1       25      0.0.0.0 0       LISTEN -
+4026531992      1044    5       0x9afa85b6a600  AF_INET6        STREAM  TCP     ::1     25      ::      0       LISTEN -
+4026531992      1224    4       0x9afa85b74600  AF_INET STREAM  TCP     192.168.10.137  22      192.168.10.1    60764  ESTABLISHED      -
+4026531992      1287    4       0x9afa85b74600  AF_INET STREAM  TCP     192.168.10.137  22      192.168.10.1    60764  ESTABLISHED      -
+4026531992      1418    1       0x9afaa05be900  AF_INET STREAM  TCP     192.168.10.137  44196   192.168.10.137  1337   ESTABLISHED      -
+</pre>
+
+
+
+<h1>4. Process Information (Again)</h1>
+
+<p>Let's have a little fun looking at the AVML process we used to grab this memory dump.
+Think of this as an example of how you might investigate an evil process from an 
+interactive user session in the memory dump.</p>
+
+<p>See if you can locate the AVML process in the <tt>PsTree</tt> output:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.pstree.PsTree</b>
+<i>[...snip...]</i>
+* 0x9afa85b80000        657     657     1       sshd
+** 0x9afa85bf97c0       1224    1224    657     sshd
+*** 0x9afa887a17c0      1287    1287    1224    sshd
+**** 0x9afaa29997c0     1299    1299    1287    bash
+***** 0x9afa8a1ec740    1393    1393    1299    sudo
+****** 0x9afa8687df00   1394    1394    1393    bash
+******* 0x9afad7cd5f00  1433    1433    1394    avml
+<i>[...snip...]</i>
+</pre>
+
+<p>And we can get command line information and <tt>Lsof</tt> data about this process:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.psaux.PsAux | grep avml</b>
+1433    1394    avml    avml memory-avml.lime
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.lsof.Lsof --pid 1433</b>
+
+PID     Process FD      Path
+
+1433    avml    0       /dev/pts/0
+1433    avml    1       /dev/pts/0
+1433    avml    2       /dev/pts/0
+1433    avml    3       /proc/kcore
+1433    avml    4       /images/lab06/lab06/memory-avml.lime
+</pre>
+
+<p>In the <tt>PsTree</tt> output we see that the AVML process was executed from a bash shell
+with PID 1394 (<b>again your PIDs will differ--make sure you use the right values!</b>). Let's
+try seeing the rest of the command history from that shell:</p>
+
+<pre>
+root@LAB:/images/lab06# <b>vol3.py -s . -f memory-avml.lime linux.bash.Bash --pid 1394</b>
+<i>[...snip...]</i>
+1394    bash    2023-04-02 11:52:36.000000      ls -lh
+1394    bash    2023-04-02 11:52:36.000000      ls -lh
+1394    bash    2023-04-02 11:52:36.000000      ls -lh
+1394    bash    2023-04-02 11:52:42.000000      bash make-artifacts.sh
+1394    bash    2023-04-02 11:52:51.000000      mkdir -p /images/lab06
+1394    bash    2023-04-02 11:53:02.000000      cd /images/lab06/
+1394    bash    2023-04-02 11:53:11.000000      avml memory-avml.lime
+</pre>
+
+<p>Apparently the shell history for this session starts with running <tt>make-artifacts.sh</tt>
+since the prior timestamps are all the same. So this shell started at 11:52:36 on 2023-04-02.</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

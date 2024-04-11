@@ -1,0 +1,277 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 3 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 3: Honeypot Part 2 - Further Process Analysis</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Find suspicious executables that are not currently running</li><p>
+<li>Identify suspicious scheduled tasks</li><p>
+<li>Recognize suspicious processes based on network behavior</li><p>
+</ol><p>
+
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>In a previous lab we unpacked the UAC data from Tyler Hudak's honeypot.
+  If you do not currently have a <tt>/images/uac-honeypot</tt> directory in your
+  virtual machine, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_02/index.html">Exercise 2</a> to create this directory.</p>
+
+
+
+<h1>1. Digging deeper</h1>
+
+<p>We actually did a good job in the previous exercise spotting the suspicious running processes.
+  Now we try to dig in a little deeper and see what, if anything, we missed.</p>
+
+<p>In the lecture, I suggested looking at <tt>hash_executables/list_of_executable_files.txt</tt>
+  for other executables in unexpected directories. Unfortunately, my first attempt at filtering
+  out "normal" executables was not so successful:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -Fv /usr hash_executables/list_of_executable_files.txt</b>
+/bin/bash
+/bin/btrfs
+/bin/btrfs-debug-tree
+/bin/btrfs-find-root
+/bin/btrfs-image
+<i>[... over 1400 more lines not shown ...]</i>
+</pre>
+
+<p>Can you come up with a better filter to whittle down to just the real outliers?</p>
+
+<p>My final filter ended up becoming rather long, but I did finally get down to just a few
+  definitely interesting entries:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -Ev '/(usr|lib|etc|bin|sbin|opt|boot|home|var/lib)/' hash_executables/list_of_executable_f</b>
+iles.txt
+/root/.remove.sh
+/run/lock/dk86
+/var/tmp/dk86
+</pre>
+
+<p>Unfortunately, UAC did not capture any of these files. So we will have to wait for a later lab exercise
+  where we can dig into the file system image of the compromised honeypot.</p>
+
+
+<h1>2. Scheduled tasks</h1>
+
+<p>It is always a good idea to audit your scheduled task configuration. Unfortunately, as I mentioned
+  in class, that can leave us with a lot of places to check:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>find \[root\]/ -name \*cron\* -ls</b>
+7865918    4 drwxr-xr-x   4 root     root         4096 Jul  4 14:57 [root]/var/spool/cron
+7865921    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/var/spool/cron/crontabs
+7864673    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/etc/cron.monthly
+7864657    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/etc/cron.daily
+7864671    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/etc/cron.hourly
+7864679    4 -rw-r--r--   1 root     root          722 Nov 16  2017 [root]/etc/crontab
+7864675    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/etc/cron.weekly
+7864795    4 -rwxr-xr-x   1 root     root         3049 Nov 16  2017 [root]/etc/init.d/cron
+7864698    4 -rw-r--r--   1 root     root          150 Nov 16  2017 [root]/etc/default/cron
+7864649    4 drwxr-xr-x   2 root     root         4096 Jul  4 14:57 [root]/etc/cron.d
+7865165    4 -rw-r--r--   1 root     root          606 Nov 16  2017 [root]/etc/pam.d/cron
+7865435    4 -rw-r--r--   1 root     root          251 Nov 16  2017 [root]/lib/systemd/system/cron.service
+</pre>
+
+<p>We can start by looking at the configuration files in <tt>/etc</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# ls -lrt \[root\]/etc/cron.* \[root\]/etc/crontab
+-rw-r--r--. 1 root root  722 Nov 16  2017 [root]/etc/crontab
+
+[root]/etc/cron.weekly:
+total 8
+-rwxr-xr-x. 1 root root 723 Apr  7  2018 man-db
+-rwxr-xr-x. 1 root root 403 Aug 23  2021 update-notifier-common
+
+[root]/etc/cron.monthly:
+total 0
+
+[root]/etc/cron.hourly:
+total 0
+
+[root]/etc/cron.daily:
+total 48
+-rwxr-xr-x. 1 root root  372 Aug 21  2017 logrotate
+-rwxr-xr-x. 1 root root 1176 Nov  2  2017 dpkg
+-rwxr-xr-x. 1 root root  355 Dec 29  2017 bsdmainutils
+-rwxr-xr-x. 1 root root  314 Jan 17  2018 aptitude
+-rwxr-xr-x. 1 root root  249 Jan 25  2018 passwd
+-rwxr-xr-x. 1 root root 3477 Feb 21  2018 popularity-contest
+-rwxr-xr-x. 1 root root  538 Mar  1  2018 mlocate
+-rwxr-xr-x. 1 root root 1065 Apr  7  2018 man-db
+-rwxr-xr-x. 1 root root 1478 Apr 20  2018 apt-compat
+-rwxr-xr-x. 1 root root  376 Nov 11  2019 apport
+-rwxr-xr-x. 1 root root  539 Jan 14  2020 mdadm
+-rwxr-xr-x. 1 root root  214 May 14  2021 update-notifier-common
+
+[root]/etc/cron.d:
+total 24
+-rw-r--r--. 1 root root 589 Jan 14  2020 mdadm
+-rw-r--r--. 1 root root 191 Sep 28  2021 popularity-contest
+-rw-r--r--. 1 root root 121 Oct  7  2021 omilogrotate
+-rw-r--r--. 1 root root 135 Oct  7  2021 scxagent
+-rw-r--r--. 1 root root 118 Oct  7  2021 omsagent
+-rw-r--r--. 1 root root  79 Oct  7  2021 OMSConsistencyInvoker
+</pre>
+
+<p>I'm listing the files and directories here according to their last modified date
+  (the "<tt>-t</tt>" option to "<tt>ls</tt>") so it's easier to see if attackers
+  might have modified files recently.</p>
+
+<p>Frankly the majority of these jobs look "normal" to me, based on other Linux
+  systems I have looked at. Even if you are not sure, a quick look at some of these
+  configuration files shows them calling legitimate OS executables:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/cron.daily/update-notifier-common</b>
+#!/bin/sh
+
+set -e
+
+[ -x /usr/lib/update-notifier/package-data-downloader ] || exit 0
+
+# Try to rerun any package data downloads that failed at package install time.
+/usr/lib/update-notifier/package-data-downloader
+</pre>
+
+<p>Even the ones I am not sure about seem benign:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/cron.d/scxagent</b>
+0 */4 * * * root /usr/sbin/logrotate /etc/logrotate.d/scxagent --state /var/opt/microsoft/scx/log/scx-logrotate.status >/dev/null 2>&1
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/cron.d/omsagent</b>
+*/5 * * * * root /usr/sbin/logrotate -s /var/lib/logrotate/omsagent-status /etc/logrotate.d/omsagent* >/dev/null 2>&1
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/cron.d/OMSConsistencyInvoker</b>
+5,20,35,50 * * * * omsagent /opt/omi/bin/OMSConsistencyInvoker >/dev/null 2>&1
+</pre>
+
+<p>Now we can check the files under <tt>/var/spool/cron</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls \[root\]/var/spool/cron/*</b>
+[root]/var/spool/cron/atjobs:
+
+[root]/var/spool/cron/crontabs:
+root
+[root@LAB uac-honeypot]# <b>cat \[root\]/var/spool/cron/crontabs/root</b>
+# DO NOT EDIT THIS FILE - edit the master and reinstall.
+# (/tmp/crontab.wTJQJi/crontab installed on Mon Oct 11 20:05:59 2021)
+# (Cron version -- $Id: crontab.c,v 2.13 1994/01/17 03:20:37 vixie Exp $)
+# Edit this file to introduce tasks to be run by cron.
+#
+    <i>[... snip ...]</i>
+#
+# m h  dom mon dow   command
+* * * * * /root/.remove.sh
+</pre>
+
+<p>"<tt>atjobs</tt>" are like one-shot scheduled tasks, but there are currently none configured.
+  There is, however, a scheduled task configured to run as the "<tt>root</tt>" administrative
+  user. It executes the <tt>/root/.remove.sh</tt> we found earlier in the list of system
+  executables. I would definitely call this an interesting finding!</p>
+
+<p>The "<tt>readme.txt</tt>" file that Tyler distributed with the honeypot images mentions a
+  scheduled task that he created to clear out all of the coin miners that were being dropped
+  on his system. It turns out that this is the scheduled task he created. We will be able to see
+  this more clearly in a future lab exercise when we can examine the file system.</p>
+
+
+<h1>3. Network misbehavior</h1>
+
+<p>Take a look at <tt>live_response/network/netstat_-lpeanut.txt</tt>. Do you see any entries there
+  that are of interest?</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/network/netstat_-lpeanut.txt</b>
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name
+tcp        0      0 0.0.0.0:25324           0.0.0.0:*               LISTEN      998        49309827   828/ruby
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      101        18019      870/systemd-resolve
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      0          21667      1106/sshd
+tcp        0      0 10.0.0.4:46070          18.198.162.56:443       ESTABLISHED 0          112596287  27359/filebeat
+tcp        0      0 10.0.0.4:42372          169.254.169.254:80      TIME_WAIT   0          0          -
+tcp        0   1081 10.0.0.4:22             221.131.165.75:45983    FIN_WAIT1   0          0          -
+tcp        0      0 10.0.0.4:38278          20.42.73.133:443        TIME_WAIT   0          0          -
+tcp        0      0 10.0.0.4:43088          40.79.154.87:443        TIME_WAIT   0          0          -
+tcp        0      0 10.0.0.4:44214          107.178.104.10:443      ESTABLISHED 1          112585467  24330/agettyd
+tcp        0      0 10.0.0.4:38286          20.42.73.133:443        TIME_WAIT   0          0          -
+tcp        0      0 10.0.0.4:22             64.233.202.242:29953    ESTABLISHED 0          112069942  4092/sshd: azureuse
+tcp        0      0 10.0.0.4:43062          40.79.154.87:443        TIME_WAIT   0          0          -
+tcp        0      0 10.0.0.4:46082          18.198.162.56:443       ESTABLISHED 0          112596648  27359/filebeat
+tcp6       0      0 :::80                   :::*                    LISTEN      0          734076     801/httpd
+tcp6       0      0 :::22                   :::*                    LISTEN      0          21669      1106/sshd
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           101        18018      870/systemd-resolve
+udp        0      0 10.0.0.4:68             0.0.0.0:*                           100        17994      859/systemd-network
+udp        0      0 127.0.0.1:25224         0.0.0.0:*                           998        49310893   828/ruby
+</pre>
+
+<p>Right in the middle of the ouput, there's an SSL connection to 107.178.104.10 associated with
+  PID 24330. This is our suspicious <tt>/tmp/agettyd</tt> process that turned out to be an XMRig
+  cryptocurrency miner. That means host 107.178.104.10 is very interesting to us. There is a fair
+  amount of open source intel associated with this IP address if you just Google it. You might also
+  try simply browsing to http://107.178.104.10 and see what you get.</p>
+
+<p>How many of you flagged the entries that are not associated with any process at all and simply
+  have a "<tt>-</tt>" in the last column? These are not at all normal entries and could possibly
+  indicate hidden processes of some sort.</p>
+
+<p>20.42.73.133 and 40.79.154.87 belong to netblocks that the WHOIS data says are owned by Microsoft.
+  Perhaps these are somehow part of the Azure service offering. If I were the customer who owned this
+  instance, I would follow up with Azure support.</p>
+
+<p>221.131.165.75 is associated with a netblock owned by China Mobile Communications Corp (chinamobile.com).
+  This is an inbound SSH connection to the web server we are investigating. Maybe we can find more
+  information related to this address in the UAC collection:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -Frl 221.131.165.75 *</b>
+[root]/var/log/auth.log.1
+[root]/var/log/journal/3f2384ad405440dc9c3469e593485d63/system@25602ecd838648949ece61bc20d3a796-000000000390cad8-0005d2a5fc4b6eae.journal
+[root]/var/log/auth.log
+live_response/network/ss_-anp.txt
+live_response/network/netstat_-a.txt
+live_response/network/lsof_-nPli.txt
+live_response/network/ss_-tanp.txt
+live_response/network/ss_-tap.txt
+live_response/network/netstat_-anp.txt
+live_response/network/netstat_-an.txt
+live_response/network/ss_-ap.txt
+live_response/network/netstat_-lpeanut.txt
+</pre>
+
+<p>Looking in <tt>/var/log/auth.log</tt>, there are multiple pairs of log entries like:</p>
+
+<pre>
+Dec  5 11:45:59 ApacheWebServer sshd[15502]: Received disconnect from 221.131.165.75 port 54515:11:  [preauth]
+Dec  5 11:45:59 ApacheWebServer sshd[15502]: Disconnected from authenticating user root 221.131.165.75 port 54515 [preauth]
+</pre>
+
+<p>So in this case the lack of process information may indicate the network connection never lasted long
+  enough for an SSH process to "<tt>accept()</tt>" the request and associate it with a process.</p>
+
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

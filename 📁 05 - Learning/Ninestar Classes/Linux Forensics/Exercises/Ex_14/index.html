@@ -1,0 +1,301 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 14 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 14: User (Mis)Behavior</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Examine user command history for <tt>mail</tt> and <tt>root</tt></li><p>
+<li>Correlate activity with system logs and file system data</li><p>
+<li>Discover more information about privilege escalation exploit</li><p>
+<li>Examine <tt>/root/.viminfo</tt></li><p>
+<li>Finalize incident timeline (for now)</li><p>
+</ol>
+</h1>
+
+<h1>Before You Get Started</h1>
+
+Note that for this lab to work, you will need to have our compromised
+web server image mounted. If your 
+<tt>/mnt/test/data</tt> directory is empty, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_10/index.html">Exercise 10</a> to mount the image.</p>
+
+
+<h1>1. User <tt>mail</tt></h1>
+
+<p>From our early disk triage and timeline analysis, we know that the
+<tt>/var/mail/.bash_history</tt> file was updated during the incident.
+Let's take a look at that first:</p>
+
+<pre>
+[root@LAB lab13]# <b>cd /mnt/test/data/var/mail/</b>
+[root@LAB mail]# <b>ls -A</b>
+.bash_history  .cache
+[root@LAB mail]# <b>cat .bash_history</b>
+sudo su -
+w
+ll
+ls -l
+ls -la
+pwd
+logout 
+w
+last
+sudo su -
+logout 
+sudo su -
+passwd php
+sudo su -
+logout 
+sudo su -
+logout 
+</pre>
+
+<p>There's not a huge amount of information here. Mostly our attacker logged in as
+mail, sometimes ran the "<tt>w</tt>" command to see if anybody else was logged into
+the system, and then did "<tt>sudo su -</tt>" to get root privileges.</p>
+
+<p>While there are
+no timestamps in the logs, we should be able to pinpoint the times of the 
+"<tt>sudo su -</tt>" commands using the Sudo logs in <tt>auth.log</tt>:</p>
+
+<pre>
+[root@LAB mail]# <b>grep 'sudo: *mail' /mnt/test/data/var/log/auth.log</b>
+Oct  5 13:14:04 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:19:21 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:11 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:21:30 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+Oct  5 13:23:39 VulnOSv2 sudo:     mail : TTY=pts/1 ; PWD=/var/mail ; USER=root ; COMMAND=/bin/su -
+</pre>
+
+<p>It's a reasonable assumption that the timestamps on the five log entries above
+correspond with the "<tt>sudo su -</tt>" commands from <tt>.bash_history</tt>.</p>
+
+<p>Also mixed into the <tt>.bash_history</tt> is a "<tt>passwd php</tt>" command.
+This command should fail--normal users are not allowed to reset passwords for other users.
+Let's see what the logs have to say:</p>
+
+<pre>
+[root@LAB mail]# <b>grep passwd /mnt/test/data/var/log/auth.log | grep php</b>
+Oct  5 13:21:24 VulnOSv2 passwd[3080]: passwd: can't view or modify password information for php
+Oct  5 13:21:34 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_unix(passwd:chauthtok): password changed for php
+Oct  5 13:21:39 VulnOSv2 passwd[3097]: pam_smbpass(passwd:chauthtok): Failed to find entry for user php.
+</pre>
+
+<p>"<tt>passwd: can't view or modify password information for
+  php</tt>"-- that's the log message you're going to get when you
+  "<tt>passwd php</tt>" as a regular user. This message occurs at
+  timestamp 13:21:24.  Looking at the <tt>.bash_history</tt> entries,
+  the "<tt>passwd php</tt>" command comes between the third (at
+  13:21:11) and fourth (13:21:30) "<tt>sudo su -</tt>" commands.  So
+  everything seems to line up here from a timing perspective.</p>
+
+
+<h1>2. Looking at <tt>/root/.bash_history</tt></h1>
+
+<p>Now let's take a look at <tt>/root/.bash_history</tt>:</p>
+
+<pre>
+[root@LAB mail]# <b>cd /mnt/test/data/root</b>
+[root@LAB root]# <b>ls -A</b>
+.bash_history  .bashrc  .cache  flag.txt  .profile  .psql_history  .viminfo
+[root@LAB root]# <b>cat .bash_history</b>
+poweroff
+whoami
+id
+pwd
+vim /etc/passwd
+ll
+vim flag.txt 
+cat .psql_history 
+cd /var/www/html/
+ll
+cd jabc
+ll
+cat .htaccess 
+ll
+vim scripts/update.php
+ls -lh scripts/
+w
+logout 
+vim /var/log/lastlog 
+logout 
+passwd php 
+logout 
+cd /tmp/
+ll
+rm 37292.c 
+cd
+ls -lha
+ls .cache/
+cat .cache/motd.legal-displayed 
+logout 
+</pre>
+
+<p>Can we correlate what we see here against the data points from our previous
+investigations of the system?</p>
+
+<ul>
+<li>Looking at the timeline data, we speculated that at 11:14:38 UTC 
+the attacker edited 
+<tt>/etc/passwd</tt> with <tt>vim</tt>, possibly to move the <tt>php</tt>
+account entry. This could be the <tt>vim /etc/passwd</tt> command we see above.</li><p>
+
+<li>The creation time on the <tt>update.php</tt> webshell was 11:17:42 UTC.
+You can see "<tt>vim scripts/update.php</tt>" in the history above.</li><p>
+
+<li>Log messages show the password for the <tt>php</tt> account was successfully
+changed at 11:21:39 UTC. That would be the "<tt>passwd php</tt>" command in
+the history above.</li><p>
+</ul>
+
+<p>However, there are other entries in the history that we did not place in our
+incident timeline. I will let you investigate <tt>/root/flag.txt</tt> on your own
+and let you decide if it's relevant to our scenario.</p>
+
+<p>The part of the history that I am more interested in is these few lines:</p>
+
+<pre>
+cd /tmp/
+ll
+rm 37292.c 
+</pre>
+
+<p>That appears to be <tt>root</tt> removing a file named <tt>/tmp/37292.c</tt>.
+During our timeline analysis lab, it appeared that the suspected privilege escalation
+exploit found in <tt>/tmp</tt> was compiled from source on this machine. But we never
+found the source code. Could the source have been in <tt>/tmp/37292.c</tt>?</p>
+
+<p>If your Google-ing for the CVE-2015-1328 privilege escalation brought you to
+the Exploit DB web site, then you might recognise "37292" as the Exploit DB entry
+number for the CVE-2015-1328 exploit. Did our attackers simply download the
+exploit from Exploit DB and compile it? At least it gives us something definitive
+to look for in unallocated. Can you find the deleted source code file now?</p>
+
+
+<h1>3. <tt>/root/.viminfo</tt></h1>
+
+<p>The <tt>/root/.bash_history</tt> shows a number of <tt>vim</tt> commands. That means
+we should be able to see some more detail in <tt>/root/.viminfo</tt>. Here are a chunk
+of the more relevant lines:</p>
+
+<pre>
+<i>[... snip ...]</i>
+# Registers:
+"0	LINE	0
+	php:x:999:999::/usr/php:/bin/bash
+"1	LINE	0
+	php:x:999:999::/usr/php:/bin/bash
+
+# File marks:
+'0  1  0  /var/log/lastlog
+'1  3  1  /var/www/html/jabc/scripts/update.php
+'2  2  0  ~/flag.txt
+'3  29  0  /etc/passwd
+'4  6  25  ~/flag.txt
+'5  1  26  /etc/issue
+
+# Jumplist (newest first):
+-'  1  0  /var/log/lastlog
+-'  3  1  /var/www/html/jabc/scripts/update.php
+-'  1  0  /var/www/html/jabc/scripts/update.php
+-'  2  0  ~/flag.txt
+-'  1  0  ~/flag.txt
+-'  29  0  /etc/passwd
+-'  1  0  /etc/passwd
+-'  6  25  ~/flag.txt
+-'  1  26  /etc/issue
+-'  1  26  /etc/issue
+<i>[... snip ...]</i>
+</pre>
+
+<p>The <tt>Registers:</tt> section implies that the <tt>php</tt> user password entry
+was yanked and pasted within the editor. This matches our theory that somebody used <tt>vim</tt>
+to move this account entry in the file.</p>
+
+<p><tt>File marks:</tt> show files that the user edited and the <tt>Jumplist</tt> gives 
+the order the files were edited in (most recent to oldest). The ordering here matches
+both the <tt>.bash_history</tt> and our timeline. So if the attacker were engaged in
+some kind of anti-forensics here, they were either very good or very lucky.</p>
+
+<p>Frankly the <tt>.viminfo</tt> file is not well documented. There's an interesting 
+forensics paper/presentation in reverse-engineering the format of this file and discussing
+the areas of forensic relevance.</p>
+
+
+
+<h1>Summary of Findings</h1>
+
+<p>There's plenty more investigation you could do on your own, but let's try to
+create a "final" incident timeline based on what we've learned:</p>
+
+<pre>
+2019-10-05 11:01:27    Metasploit? CVE-2018-7600? exploit launched from 192.168.210.131
+2019-10-05 11:01:29    Metasploit? CVE-2018-7600? exploit launched from 192.168.210.131
+
+2019-10-05 11:04:14    /tmp/apache-xTRhUVX executable dropped by www-data
+                       (CVE-2015-1328 privilege escalation? compiled on system?)
+                       ("rm /tmp/37292.c" in /root/.bash_history may reference Exploit DB)
+
+2019-10-05 11:06:38    root "sudo useradd ... php"
+
+2019-10-05 11:08:31    chsh command runs, user mail shell set to /bin/bash
+
+2019-10-05 11:09:03    chpasswd sets password for user mail
+
+2019-10-05 11:09:18    usermod adds mail to "sudo" group
+
+2019-10-05 11:13:53    First login by user mail from 192.168.210.131
+
+2019-10-05 11:14:04    mail account first "sudo su -"
+
+2019-10-05 11:14:38    /etc/passwd modifications (php account moved via vim?)
+                       (supported by /root/.bash_history and .viminfo)
+
+2019-10-05 11:17:42    /var/www/html/jabc/scripts/update.php webshell
+                       added by root account (see /root/.bash_history)
+
+2019-10-05 11:17:49    update.php webshell access from 192.168.210.131
+                       (errors in Apache error_log)
+
+2019-10-05 11:17:54    update.php webshell access from 192.168.210.131
+
+2019-10-05 11:21:34    passwd command fails to update php account
+                       (/var/mail/.bash_history)
+
+2019-10-05 11:21:39    passwd command used to change php password
+                       (/root/.bash_history)
+
+2019-10-05 11:23:34    last login for mail user from 192.168.210.131
+
+2019-10-05 11:23:39    last "sudo su -" for mail user
+</pre>
+
+<p>At this point you might be asking yourself why <tt>/root/.bash_history</tt>
+isn't showing the "<tt>sudo useradd ... php</tt>" command, or the commands
+that were used to unlock the <tt>mail</tt> account. Those commands would have
+started in a root shell that came from running the <tt>/tmp/apache-xTRhUVX</tt>
+privilege escalation exploit after compromising the system with the Drupal 
+remote code exploit. It's likely that shell was in such a weird state that
+no history would be logged--either that or the attacker intentionally disabled
+shell history. But the "root shell was in a strange state" theory is probably more
+believable.</p>
+
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>

@@ -1,0 +1,311 @@
+<HTML>
+<HEAD>
+   <TITLE>Exercise 4 -- Linux Forensics</TITLE>
+   <link rel="stylesheet" type="text/css" href="../style/HalEx.css">
+</HEAD>
+<BODY>
+
+<p align="center">
+   <span class="page_title">Exercise 4: Honeypot Part 3 - User Relationships</span><br>
+   <span class="page_subtitle">Hands-On Exercise</span>
+</p>
+
+
+<h1>Goals For This Lab<p>
+
+<ol>
+<li>Identify the process owner of our suspicious processes</li><p>
+<li>Find other related suspicious processes</li><p>
+<li>Find potentially suspicious files in the file system</li><p>
+<li>Audit user accounts and <tt>authorized_keys</tt> files for potential backdoors</li><p>
+<li>Audit the system Sudo configuration and related groups</li><p>
+<li>Check for suspicious set-UID and set-GID files</li><p>    
+</ol><p>
+
+</h1>
+
+
+<h1>Before You Get Started</h1>
+
+<p>In a previous lab we unpacked the UAC data from Tyler Hudak's honeypot.
+  If you do not currently have a <tt>/images/uac-honeypot</tt> directory in your
+  virtual machine, follow the steps in the
+<b>Before You Get Started</b> section of
+<a href="../Ex_02/index.html">Exercise 2</a> to create this directory.</p>
+
+
+
+<h1>1. Bad, bad users</h1>
+
+<p>We previously identified the <tt>/tmp/agettyd</tt> process as being an XMRig cryptocurrency
+  miner. What user was this process running as?</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep agettyd live_response/process/ps_-ef.txt</b>
+daemon   24330     1 49 Dec05 ?        1-16:41:54 agettyd -c noresetd
+</pre>
+
+<p>It appears to be running as user "<tt>daemon</tt>". What other processes are running as this
+  user?</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>awk '$1 == "daemon"' live_response/process/ps_-ef.txt</b>
+daemon    1003     1  0 Oct09 ?        00:00:00 /usr/sbin/atd -f
+daemon    1693   801  0 Nov18 ?        00:00:48 /usr/sbin/httpd -k start
+daemon    1813   801  0 Nov18 ?        00:00:40 /usr/sbin/httpd -k start
+daemon    2539   801  0 Nov18 ?        00:00:39 /usr/sbin/httpd -k start
+daemon    2632   801  0 Nov18 ?        00:01:23 /usr/sbin/httpd -k start
+daemon    6388 20645  0 18:50 ?        00:00:00 sleep 300
+daemon    6803 21785  0 18:51 ?        00:00:00 sleep 30
+daemon    6830 15853  0 18:51 ?        00:00:00 sleep 30
+daemon   15851     1  0 Nov30 ?        00:00:00 /bin/bash
+daemon   15853 15851  0 Nov30 ?        00:25:04 sh
+daemon   20645     1  0 Nov14 ?        03:01:59 sh .src.sh
+daemon   21783     1  0 Nov30 ?        00:00:00 /bin/bash
+daemon   21785 21783  0 Nov30 ?        00:25:02 sh
+daemon   24330     1 49 Dec05 ?        1-16:41:54 agettyd -c noresetd
+</pre>
+
+<p>All of the suspicious processes we noted in the earlier lab are listed here, Plus we can now
+  see the <tt>bash</tt> processes that are the parent processes for PIDs 15853 and 21785. Also,
+  perhaps unsurprisingly, we see that the web server process ("<tt>/usr/bin/httpd</tt>") is
+  running as user "<tt>daemon</tt>". This aligns with our theory that all of the suspicious
+  processes were spawned due to the CVE-2021-41773 web vulnerability.</p>
+
+<p>Note that on this particular version of Linux it is normal for <tt>/usr/sbin/atd</tt> to
+  run as user "<tt>daemon</tt>". We need not be alarmed by this.</p>
+
+
+
+<h1>2. Pivoting into the file system</h1>
+
+<p>Did these web exploits leave any files behind? Most of the processes we saw were running from
+  deleted executables and directories. But perhaps there is some residue?</p>
+
+<p>UAC does not make a complete forensic image of the file system, but it does capture file metadata
+  in <tt>bodyfile/bodyfile.txt</tt>. This file is just a pipe-delimited text file:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>head bodyfile/bodyfile.txt</b>
+0|/1|38528|-rw-r--r--|0|0|0|1633565632|1633565632|1633565632|1633565632
+0|/bin/bash|42|-rwxr-xr-x|0|0|1113504|1638991321|1559860095|1632845357|1632845357
+0|/bin/btrfs-debug-tree|169|-rwxr-xr-x|0|0|375952|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs-find-root|170|-rwxr-xr-x|0|0|371856|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs-image|171|-rwxr-xr-x|0|0|396432|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs-map-logical|172|-rwxr-xr-x|0|0|375952|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs-select-super|173|-rwxr-xr-x|0|0|371856|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs-zero-log|174|-rwxr-xr-x|0|0|371856|1638944748|1520895867|1632845358|1632845358
+0|/bin/btrfstune|175|-rwxr-xr-x|0|0|375952|1632844842|1520895867|1632845358|1632845358
+0|/bin/btrfs|168|-rwxr-xr-x|0|0|716464|1638944748|1520895867|1632845358|1632845358
+</pre>
+
+<p>The fifth field in each line is the numeric UID of the file owner. We need to figure out the
+  numeric UID of user "<tt>daemon</tt>". Fortunately, UAC grabs a copy of the <tt>/etc/passwd</tt>
+  file from the machine:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -F daemon \[root\]/etc/passwd</b>
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+[root@LAB uac-honeypot]# <b>awk -F\| '$5 == 1' bodyfile/bodyfile.txt</b>
+0|/run/lock/dk86|7|-rwxr-xr-x|1|1|48748|1636657791|1636657791|1636657791|0
+0|/run/lock/linux.lock|5|-rw-------|1|1|0|1633968193|1633968193|1633968193|0
+0|/usr/bin/at|4594|-rwxr-xr-x|1|1|51464|1632844846|1519109983|1632845358|1632845358
+0|/var/spool/cron/atjobs/.SEQ|63365|-rw-------|1|1|2|1632845123|1632844761|1632845362|1632845362
+0|/var/tmp/dk86|35170|-rwxr-xr-x|1|1|48748|1636657791|1636657791|1636657791|1636657791
+</pre>
+
+<p>User "<tt>daemon</tt>" is UID 1, and we use a little AWK-fu to find files in the bodyfile
+  that are owned by this UID.</p>
+
+<p>Aside from files related to the "<tt>atd</tt>" system, we see our old friends
+  <tt>/var/tmp/dk86</tt> and <tt>/run/lock/dk86</tt>. This leads us to suspect that these
+  files may have been dropped via the Apache web vulnerability.</p>
+
+
+
+<h1>3. User account audit</h1>
+
+<p>The system was clearly compromised, although we have no indication any of the exploits ever achieved
+  administrative access. Still, we should audit the system thoroughly.</p>
+
+<p>First we can check for potentially unlocked accounts in <tt>/etc/passwd</tt>:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep -Fv nologin \[root\]/etc/passwd</b>
+root:x:0:0:root:/root:/bin/bash
+sync:x:4:65534:sync:/bin:/bin/sync
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+azureuser:x:1000:1000:Ubuntu:/home/azureuser:/bin/bash
+omi:x:999:998::/home/omi:/bin/false
+omsagent:x:998:999:OMS agent:/var/opt/microsoft/omsagent/run:/bin/bash
+nxautomation:x:997:996:nxOMSAutomation:/home/nxautomation/run:/bin/bash
+</pre>
+
+<p>We do not have a copy of <tt>/etc/shadow</tt> in the UAC output, but any of the accounts with
+  "<tt>/bin/bash</tt>" as the shell are potentially open for interactive logins.</p>
+
+<p>We should confirm that there are no "extra" UID 0 accounts in the <tt>/etc/passwd</tt> file:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>awk -F: '$3 == 0' \[root\]/etc/passwd</b>
+root:x:0:0:root:/root:/bin/bash
+</pre>
+
+<p>Looks good!</p>
+
+
+<h1> 4. <tt>authorized_keys</tt> files</h1>
+
+<p>We could also look for <tt>authorized_keys</tt> files that might be used for account access:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>find \[root\]/ -name authorized_keys -ls</b>
+7865705    4 -rw-------   1 root     root          720 Oct  6  2021 [root]/root/.ssh/authorized_keys
+7865394    4 -rw-------   1 lab      lab           553 Oct  6  2021 [root]/home/azureuser/.ssh/authorized_keys
+[root@LAB uac-honeypot]# <b>cat \[root\]/root/.ssh/authorized_keys</b>
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"azureuser\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzSL076hDhDVbWrzsAy0is0DnR1Kh9th4aRRsEdmUipXkcnH/M9aH9+o73yZK+75a6VSRVF8vC07TDoTZtr/TjN7yV9tQQ+vsSjoSEyqYftjfwPFGM+NZbJVyTS6maEzB8YHy6vGR55PGhYl5OiN2Gc9/Ru/obGxhr60wCS1uYvammUlgbLyYg90H9H9lgIB/2Q9pFPxxz9m9tTtfPckATlkHlOSvLSPrIokIfd13Uykgwdqa/octb3ULmJarrlAeDa3yIUkSWGCrBUR9ZdIBV/UDcaEhNMifepyeYhPTn9QFHCz81JXUsuY4a3WSQ2e7VzzSOhVbjkFB1waKK28utFzT7nwKbymEXrAatIQZZ0M+VTcREpQq9XNUy6wy8ILdilOxjG8crSKTo5Nf76F0gTOgro8/9gvlZG5kLTLBlBZ94BCBgfI1/Ax3BcSuU/FJBCadzKhLHz0Zl/jjmoxLrDNg8pak4jj9uHqHX+QPqHeeH+AdC/BBOg58qGQcF980=
+[root@LAB uac-honeypot]# <b>cat \[root\]/home/azureuser/.ssh/authorized_keys</b>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzSL076hDhDVbWrzsAy0is0DnR1Kh9th4aRRsEdmUipXkcnH/M9aH9+o73yZK+75a6VSRVF8vC07TDoTZtr/TjN7yV9tQQ+vsSjoSEyqYftjfwPFGM+NZbJVyTS6maEzB8YHy6vGR55PGhYl5OiN2Gc9/Ru/obGxhr60wCS1uYvammUlgbLyYg90H9H9lgIB/2Q9pFPxxz9m9tTtfPckATlkHlOSvLSPrIokIfd13Uykgwdqa/octb3ULmJarrlAeDa3yIUkSWGCrBUR9ZdIBV/UDcaEhNMifepyeYhPTn9QFHCz81JXUsuY4a3WSQ2e7VzzSOhVbjkFB1waKK28utFzT7nwKbymEXrAatIQZZ0M+VTcREpQq9XNUy6wy8ILdilOxjG8crSKTo5Nf76F0gTOgro8/9gvlZG5kLTLBlBZ94BCBgfI1/Ax3BcSuU/FJBCadzKhLHz0Zl/jjmoxLrDNg8pak4jj9uHqHX+QPqHeeH+AdC/BBOg58qGQcF980=
+</pre>
+
+<p>While I would want to confirm with the owner of the system, things look "normal" here. The files were
+  last modified roughly around the time Tyler specified the system was put online. Also, there's only one
+  key per file, suggesting that no new keys have been added.</p>
+
+
+<h1>5. A Sudo audit</h1>
+
+<p>We go to the <tt>/etc/sudoers</tt> file to see what users and groups have special permissions configured
+  in Sudo:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/sudoers</b>
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+</pre>
+
+<p>The "<tt>admin</tt>" and "<tt>sudo</tt>" groups have unlimited administrative privileges, so we
+  should check the <tt>/etc/group</tt> entries for these groups:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>grep admin \[root\]/etc/group</b>
+admin:x:113:
+[root@LAB uac-honeypot]# <b>grep sudo \[root\]/etc/group</b>
+sudo:x:27:azureuser
+[root@LAB uac-honeypot]# <b>awk -F: '$4 == 113 || $4 == 27' \[root\]/etc/passwd</b>
+</pre>
+
+<p>"<tt>azureuser</tt>" is a member of group "<tt>sudo</tt>" but that's it. The final "<tt>awk</tt>"
+  command confirms that no users have either group as their default group in <tt>/etc/passwd</tt>.</p>
+
+<p>However, <tt>/etc/sudoers</tt> also has the "<tt>#includedir /etc/sudoers.d</tt>" configuration.
+  So we need to audit whatever files are under this directory:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>ls -lrt \[root\]/etc/sudoers.d/</b>
+total 12
+-r--r-----. 1 root root  958 Jan 18  2018 README
+-r--r-----. 1 root root  157 Oct  6  2021 90-cloud-init-users
+-r--r-----. 1 root root 3702 Oct  7  2021 omsagent
+[root@LAB uac-honeypot]# <b>cat \[root\]/etc/sudoers.d/90-cloud-init-users</b>
+# Created by cloud-init v. 21.2-3-g899bfaa9-0ubuntu2~18.04.1 on Wed, 06 Oct 2021 18:53:38 +0000
+
+# User rules for azureuser
+azureuser ALL=(ALL) NOPASSWD:ALL
+</pre>
+
+<p>Since "<tt>azureuser</tt>" is a member of group "<tt>sudo</tt>", the configuration in
+  "<tt>90-cloud-init-users</tt>" is largely redundant. It does add the "<tt>NOPASSWD</tt>"
+  option, which means "<tt>azureuser</tt>" never has to type their password then using Sudo.
+  Better hope attackers never manage to get access to this account.</p>
+
+<p><tt>/etc/sudoers.d/omsagent</tt> is a large configuration file that grants the "<tt>omsagent</tt>"
+  user rights to run specific commands under "<tt>/opt/microsoft/oms*</tt>". This does not seem
+  to be anything that was specifically configured by an attacker, though who knows if all of these
+  tools are safe to run.</p>
+
+
+<h1>6. Set-UID and set-GID files</h1>
+
+<p>We should quickly check the set-UID and set-GID file lists created by UAC just to make sure there is
+  nothing unexpected here:</p>
+
+<pre>
+[root@LAB uac-honeypot]# <b>cat live_response/system/suid.txt</b>
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/su
+/bin/umount
+/sbin/mount.cifs
+/usr/bin/at
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/newgidmap
+/usr/bin/newgrp
+/usr/bin/newuidmap
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/sudo
+/usr/bin/traceroute6.iputils
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/snapd/snap-confine
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+[root@LAB uac-honeypot]# <b>cat live_response/system/sgid.txt</b>
+/sbin/pam_extrausers_chkpwd
+/sbin/unix_chkpwd
+/usr/bin/at
+/usr/bin/bsd-write
+/usr/bin/chage
+/usr/bin/crontab
+/usr/bin/expiry
+/usr/bin/mlocate
+/usr/bin/ssh-agent
+/usr/bin/wall
+/usr/lib/x86_64-linux-gnu/utempter/utempter
+</pre>
+
+<p>I do not see anything out of the ordinary here. If you are not sure whether a program should be
+  set-UID, just look at the same program on your lab virtual machine for comparison.</p>
+  
+
+<h1> </h1>
+<hr>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Linux Forensics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Hal Pomeranz</span> is licensed under a 
+<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+</BODY>
+</HTML>
