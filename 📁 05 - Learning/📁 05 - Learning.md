@@ -12,6 +12,7 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 - **[Ninestar Classes](./Ninestar%20Classes/Ninestar%20Classes.md)**
 	- **[Linux Forensics](./Ninestar%20Classes/Linux%20Forensics/Linux%20Forensics.md)**
 		- **[Exercises](./Ninestar%20Classes/Linux%20Forensics/Exercises/Exercises.md)**
+		- **[Linux Forensics Cheat Sheet](./Ninestar%20Classes/Linux%20Forensics/Linux%20Forensics%20Cheat%20Sheet/Linux%20Forensics%20Cheat%20Sheet.md)**
 		- **[Linux Intro](./Ninestar%20Classes/Linux%20Forensics/Linux%20Intro/Linux%20Intro.md)**
 		- **[Live Linux Triage](./Ninestar%20Classes/Linux%20Forensics/Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
 		- **[UAC Tool](./Ninestar%20Classes/Linux%20Forensics/UAC%20Tool/UAC%20Tool.md)**

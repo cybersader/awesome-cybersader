@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Wednesday, April 10th 2024, 8:57 pm
+date modified: Thursday, April 11th 2024, 11:45 am
 tags:
   - Linux
   - "#HalPomeranz"
@@ -17,6 +17,7 @@ tags:
 
 %% Begin Landmark %%
 - **[Exercises](./Exercises/Exercises.md)**
+- **[Linux Forensics Cheat Sheet](./Linux%20Forensics%20Cheat%20Sheet/Linux%20Forensics%20Cheat%20Sheet.md)**
 - **[Linux Intro](./Linux%20Intro/Linux%20Intro.md)**
 - **[Live Linux Triage](./Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
 - **[UAC Tool](./UAC%20Tool/UAC%20Tool.md)**
@@ -54,10 +55,7 @@ tags:
 	- checking through the various configurations for these cron jobs will show benign patterns and the activation of legitimate executables
 	- Checking files under `/var/spool/cron`
 		- Cron config with "atjob"/one shot job.  
-<<<<<<< Updated upstream
 		- ![](_attachments/Linux%20Forensics/IMG-20240410203409674.png)
-=======
-		- ![](_attachments/Linux%20Forensics/IMG-20240410194852149.png)
 >>>>>>> Stashed changes
 		- Turns out this is the scheduled task that is designed to remove coin miners from the system using a bash script
 - Network misbehavior:
@@ -101,11 +99,46 @@ tags:
 	3. Enable LVM Volume Groups manually
 	4. Mount "dirty" (underplayed) file systems
 	5. Reverse the process and deactivate mounted images
+- .
+## Lab 10 - Web Server Mount & Disk Triage
+- The attackers changed the passwd file
+- You can actually compare the old and new version with the `diff` tool
+	- `diff passwd- passwd`
+- Sometimes attackers leave behind multiple backdoors to fake you out
+	- In this case, they leave the obvious mail user but also the php user
+- We can see with the `etc/shadow` file that the mail user has a hashed password now for interactive login (shell)
+- Php and mail account were made part of the sudo group.  This is obviously **bad**
+- All of these files are only available to edit with root user, so we can know that they had root at least by some timestamp
+- With last modified files, we can see files related to the temporary time you get using `sudo` (5 minutes by default). 
+- `var/lib/sudo/mail` shows someone interacting with sudo as mail account
+- Use `stat` to see when `/update.php` backdoor was created  and by who
+- `file apache-xTRhx...`
+	- we can use `strings` to look at the binary file still
+- The conclusion:
+	- They dropped a web vuln at 11:04 and got root with an overlayfs priv esc vuln
+	- Start looking at other machines in the organization for similar activity too
+- We can figure out if the executable was actually run by looking at the "access" (usually run) time
+## Lab 11 - Timeline Analysis
+- Goals for the lab:
+	- Create body files that are easy for forensic tools to use
+	- Generate a timeline, removing distracting information
+	- Investigate creation/execution of privilege escalation exploit
+	- Examine artifacts of account creation/modification
+	- Look at Sudo artifacts 
+	- Continue to fill in incident timeline
+- Timeline explorer
+	- Look around the modify and access time of malware
+	- You may see a bunch of header files which may point to compilation
+	- You won't see C file which likely means it was deleted, but you can probably still recover it from unallocated space
+	- Found `/bin/su` and overlayfs right after. 
+	- After the exploit, we see `whoami` then `useradd`
+	- We can see `chsh` and that's why we have the `passwd-` backup copy (created if they use `chsh`)
+		- Newer generations use `chsh` so it's probably not a Unix dinosaur
+	- Is it automated or not?
+		- Probably not because of the time gaps
+	- A lot of this generates logs, so we can validate the evidence with more log-based evidence
 # Linux Filesystem
-<<<<<<< Updated upstream
 - ![](_attachments/Linux%20Forensics/IMG-20240410203409673.png)
-=======
-- ![](_attachments/Linux%20Forensics/IMG-20240410194852175.png)
 >>>>>>> Stashed changes
 - 3rd party software in usr/local , but also sometimes in opt for optional software
 - `usr` is rarely changed, so you can check for changes here
@@ -242,7 +275,6 @@ tags:
 	- You can use `b e viewer` the Java GUI to look at memory with the BE image 
 	- `strings -a -t d victoria-v8.memdump.img | gzip >hc07/strings.asc.gz`
 		- string indexes the common strings
-		- 
 	- The command-line "tshark" program is excellent for quickly extracting a few fields from each packet and letting me create a quick histogram with some command line kung fu:
 		- `tshark -n -r packets.pcap -Tfields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport | sort | uniq -c`
 	- Tcpflow
@@ -273,10 +305,7 @@ tags:
 			- `ewfacquire`- runs in CLI to get compressed image
 			- Maybe pull out disk and use write blocker last resort -- good luck
 - Default Disk Geometries
-<<<<<<< Updated upstream
 	- ![](_attachments/Linux%20Forensics/IMG-20240410203409675.png)
-=======
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711953.png)
 >>>>>>> Stashed changes
 	- Linux does weird stuff with disk boxes
 		- Example: Software RAID interface -> LVM (logical volume mgmt) layer -> then maybe ZFS
@@ -324,9 +353,6 @@ tags:
 			- TURNS OUT THIS DOESN'T WORK EITHER, because it will overlap with the other existing loopback device
 			- We can also mount the /boot partition directly. We need to set up a loopback device for this, but the mount command will accept “loop” and “offset” options and set up the loopback device for us. If you recall, /boot is an EXT2 file system, and EXT2 does not have a file system journal. So the “noload” option is not necessary here.
 - Tearing all this down manually
-<<<<<<< Updated upstream
-	- ![](_attachments/Linux%20Forensics/IMG-20240410203409676.png)
-=======
 	- ![](_attachments/Linux%20Forensics/IMG-20240410204711950.png)
 >>>>>>> Stashed changes
 	- unmount backwards
@@ -336,18 +362,182 @@ tags:
 ## Linux Disk Acquisition Cheatsheet
 - ![](_attachments/Linux%20Forensics/IMG-20240410194852152.png)
 - Also look here - [Microsoft PowerPoint - dm-crypt LVM2.pptx](https://deer-run.com/users/hal/CEIC-dm-crypt-LVM2.pdf) 
+## Running Through It Again
+- We want into the LVM partition because it's got the root file system
+- We need a loopback device to emulate for mounting to
+- We run losetup to get loopback device set up
+- We run vgscan, then vgchange and lvscan to get the LVM activated
+- Run fsstat to check the file system
+- We run mount with ro and noexec 
+- After we are done running our various Linux and UAC forensics tools, we can teardown backwards with umount, vgchange, losetup, and then umount again
+# "Quick Hit" Disk Artifacts
+- In an investigation, make sure you move through devices rapidly before going deep so you don't waste time
+### Important Directories to Triage in Linux
+- ![](_attachments/Linux%20Forensics/IMG-20240411082641320.png)
+- User profile directories are popular for malware
+- Temporary directories are also important to look through because that's typically the only place to plant malware
+### Basic System Info to Gather Right Away
+- ![](_attachments/Linux%20Forensics/IMG-20240411082913593.png)
+- From the customer:
+	- Get a "runbook" of what's expected to be running on most machines and the purpose of each application
+- Distros have different package managers and file setups (including permissions)
+- Finding release
+	- `cat os-release` under `/etc`
+	- `ls *-release`
+	- LTS is good because it's usually supported for at least 5 years.  Management should change these out that often.
+- IP address
+	- `cat /etc/hosts` 
+	- If it's dynamic look at `var/lib/NetworkManager`
+		- files can end in `.lease` from local DHCP lease
+		- `.lease` will have IP, subnet masks, maybe domain names
+	- You can use `.lease` files in an investigation to know where they visited because these never get deleted #attribution 
+# Post-Exploitation Goals & Forensic Framing
+- Usually persistence because it's annoying for attackers to have to rely on a vuln/exploit that can quickly get patched.
+## Common Back Doors
+- ![](_attachments/Linux%20Forensics/IMG-20240411085358935.png)
+- web shell - RCE through web vulns
+	- easy to spot -- small apps -- timestamp will differ from other apps 
+	- names like "eval", "exec"
+	- they are usually obfuscated which makes string searching annoying, but it's obvious once you find them
+- Another common back door in the Linux universe is a replacement SSH service with a hardcoded username/password for gaining admin access.
+## Malware Persistence
+- ![](_attachments/Linux%20Forensics/IMG-20240411085735523.png)
+- modify system boot process to start up malware
+	- systemd config file 
+	- A stealthy approach with the boot process is to activate another script.  They will change the 2nd script rather than the boot owner 
+## IOCs on Multiple Systems
+- The same campaign will match on multiple machines
+# Recent Modifications
+- ![](_attachments/Linux%20Forensics/IMG-20240411085955173.png)
+- Attackers can modify timestamps, but they usually don't
+	- Changing timestamps also requires command line
+	- Changing timestamps has to be done down to the nanoseconds. Naturally occurring all zero timestamps don't exist ever. This would point to a sophisticated attacker.
+- Hackers don't often do antiforensics 
+- `ls -lArt` - show me the newest stuff sorted by modified time in this directory
+- Example: you see bash_history under `/mail`.  You shouldn't have bash running from mail applications
 
+# Timeline Analysis, Timezones
+- Linux distro creation times 
+	- There isn't an artifact that directly tells you the install date of a Linux system
+	- You can look at the creation time of the root directory
+	- You can use timestamps on SSH host keys too because boot scripts usually generate those
+		- `etc/ssh` 
+		- `stat ssh_host_rsa_key` 
+		- It wouldn't be common to have this differ from the image creation time and this because people reuse images from their own catalogs
+	- Some distros have Linux install script timestamps 
+- How to find timezone?
+	- `etc/localtime` stores default time zone data
+	- System logs written in default time zone for machine
+	- Binary file format:
+		- Use "zdump" on Linux
+		- `strings -a /etc/localtime` often works
+		- Look for matching file under `usr/share/zoneinfo`
+- You can change timezone on the fly in Linux shell
+	- export `TZ=TIMEZONE_HERE`
+## Timeline Analysis
+- ![](_attachments/Linux%20Forensics/IMG-20240411101042473.png)
+- This is usually the next step
+- Commercial tools suck at this
+- The analogy is a beach:
+	- It's easy in the morning to see your footprints, but coming back later will have other peoples' footprints and the water could have washed it away
+- The nearer you can put your timeline to the point of compromise, the easier it will be to find bad
+- Timelines are NOT evidence:
+	- requires a technically adept person to understand timeline
+	- normal activity can trample these 
+- Timelines are a map to where the evidence lives
+- You are limited by time in an incident
+	- Organizations want to get back up and they have limited money
+### Timeline Rules
+- Files in EXT4 and later:
+	- MACNB
+		- M - last modified - last time file content was changed
+		- A - last accessed time - last time contents were viewed or exe or shell was executed 
+			- This used to be straightforward, but now it's a bit more complex. Most file systems don't rigorously update A time.  NTFS doesn't update A time at all by default. 
+			- Now they have relative A time updates.
+			- A time gets updated when:
+				- If accessed and current last M time is later than A time. 
+				- If A time is older than 24 hours. This can create useful artifacts.
+			- A time now means first time program got executed in a 24 hour time window.
+			- A time is important on weird esoteric files being used by attackers
+		- C - metadata change time 
+			- everything except file content:
+				- links to file
+				- ownership (chown)
+				- permissions (chmod)
+		- B - creation time
+			- relatively recent addition (EXT4 and recent release of XFS, ZFS, etc.)
+- ![](_attachments/Linux%20Forensics/IMG-20240411102227116.png)
 
+### Timeline Caveats
+- ![](_attachments/Linux%20Forensics/IMG-20240411102640395.png)
+- Timelines are a guide to evidence, not evidence themselves
+### How to Timeline - Tools
+- Plaso, Super Timelining - Good for Windows - Registry last updates, pre-fetch, link files, and Windows user-tracking artifacts
+	- not useful for Linux
+- Collect raw data into a body file (UAC)
+- Create chronological output (usually as CSV)
+- Jump to key pivot points for analysis
+- Timeline Explorer - Eric Zimmerman
+	- [Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md)
+	- any csv data
+### How to Timeline - Process
+- ![](_attachments/Linux%20Forensics/IMG-20240411103549746.png)
+	- `fls` from Sleuthkit is a good tool
+	- “-r” to recursively read through the entire file system (rather than just dumping information from the top-level directory, which is the default). You want to be sure to collect evidence from all files and directories. 
+	- “-m ” to specify the output format of fls should be in mactimeformat (which is simply a pipe-delimited text file). We will be using mactime in the next step to make our timeline. The argument to -m is the path the file system is normally mounted on—see the second example on the slide where we are dumping data from /boot. The mount pathname will be added to the front of the file paths in the flsoutput so that the path names are consistent with the way the file system was used on the live machine. 
+	- “-o” lets you specify a sector offset into a full disk image to find the start of the file system
+	- You must also specify a raw file system of a type TSK tools can recognize. The EXT4 /bootfile system can be accessed directly from the raw disk image created by ewfmount(and if TSK is compiled with libewf support, it can read the E01 files directly). But TSK doesn’t understand Linux LVM, so we must first associate the logical volumes with disk devices that fls can read. 
+	- Note that because mactime format body files are just plain ASCII text, they compress very well. So were are gzip-ing them to save space. 
+	- While some analysts will concatenate all of their body file data into a single large file, I prefer to dump each file system as a separate body file. That way, if I mess up one command, I only have to rebuild that one body file. Otherwise the bad data from my one wrong command might pollute the file with all of my other good data.
+- Convert bodyfiles in chronological CSVs
+- ![](_attachments/Linux%20Forensics/IMG-20240411104126635.png)
+	- Once we have all of our body file data collected, we feed it into the mactimetool to produce our timeline. Here I’m using zcat to uncompress the body files I made in the previous step and piping the uncompressed output into mactime. Useful arguments to mactime include: 
+		- “-d” to produce delimited (CSV) output 
+		- “-y” for ISO 8601 date output in UTC (2019-10-05T11:31:37Z)
+		- “-p” and “-g” to specify the location of the passwd and shadow files from the image you are analyzing so you see the right user and group names in the output
+			- Timeline Explorer likes them in numeric format, so you just ignore these if that's the case
+- ![](_attachments/Linux%20Forensics/IMG-20240411104521326.png)
+	- The 2 big questions to answer with intrusion analysis:
+		- How did they break in?
+		- How did they get admin privileges?
+# Core Log Analysis
+- 
 # Q&A
 - Do you bring tuned artifact YAMLs and configs with you to an investigation or just start from scratch each time?
 	- 
-- Are proactive antiforensics measures common as opposed to reactive antiforensics measures? More specifically, does malware ever monitor for forensics activities?
-	- anti EDR, process dumps
-	- more common on Windows though
-	- There are kernel-level ways of hiding forensics activities
 - When should responders/investigators hide their forensics activities?
 	- 
 - How can security teams and companies make it easier for forensicators, incident responders, and investigators to do their jobs on sprawling networks and systems?
 	- 
+- Does the usage of containers ever complicate investigations?
+	- 
+- What are the lower and upper bounds for the time it has taken to do an investigation?
+	- 
+- Any tips on interacting with DFIR-related firms?
+	- 
 - Any bad experiences with how cyber insurance interplays with investigations?
 	- Definitely have to do the CBA on it.  A lot of the times insurance companies will charge a lot more than you will ever need and not give you enough for an actual incident.  Cyber insurance usually lets you use certain forensics firms and not others
+- What does team work look like for forensics
+	- Google doc with Sheets of timelines.
+	- Sheet of hosts in scope that are being tracked - status, when are they due, compromised, etc.
+	- Checksums, IoCs, etc.
+	- Typically, there's a non-technical person interfacing with customer and sending signals (don't shut them down), and communicating between peoples
+	- Hal usually contracts with a forensics group. Hal usually works for Crowdstrike on a contract.
+- Case management tools
+	- Sometimes teams that are dedicated and permanent will use tools like TheHive, but dynamic teams with contractors will use simpler collaboration platforms like Google workspace
+- Do you sandbox malware or have a malware engineer?
+	- They will usually "throw it over the wall" to malware analysts to get some IoCs, compare it to other campaigns, etc.
+	- Sometimes a quick thing to do on malware is use `strings` and look at the imports table to quickly see what the capabilities of the malware are
+	- It can give them some direction during an investigation when the results come back.
+- Are proactive antiforensics measures common as opposed to reactive antiforensics measures? More specifically, does malware ever monitor for forensics activities?
+	- anti EDR, process dumps
+	- more common on Windows though
+	- There are kernel-level ways of hiding forensics activities
+# Misc Convos
+- WSL2 is for people managing Linux instances in the cloud from Windows
+	- Guess it's getting discontinued
+- Deft, Kain, and Paladin are some good forensic distros
+- AI is bull crap.  It's a scheme to make money with hype.
+	- Me: ehhhhh...but it's efficient for rapid learning and information retrieval (statisically) than Google Search sometimes is
+	- Books are good too because it's thoughtful content.  AI-generated content is garbage currently, but it does allow for you to bridge over to new concepts, mental models, and terminologies.
+- 
