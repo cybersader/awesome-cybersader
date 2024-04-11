@@ -30,6 +30,18 @@
             }
           },
           {
+            "id": "929c3b80686029f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5aae0d0e59d5d4d5",
             "type": "leaf",
             "state": {
@@ -66,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -198,25 +210,28 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "baa4b14277f94231",
+  "active": "929c3b80686029f1",
   "lastOpenFiles": [
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711954.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711953.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852144.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711952.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711951.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711950.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711949.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852111.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711948.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711947.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711946.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852145.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852149.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852150.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852151.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852152.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852157.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852175.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852176.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852177.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852178.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410203409673.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+    "conflict-files-obsidian-git.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO",
     "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_09/index.html",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_06/index.html",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_05/index.html",
@@ -237,14 +252,11 @@
     "HTML import/index 12.md",
     "HTML import/index 11.md",
     "HTML import/index 10.md",
-    "HTML import/Attachments",
     "HTML import/index 9.md",
     "HTML import/index 8.md",
     "HTML import/index 7.md",
     "HTML import/index 6.md",
     "HTML import/index 5.md",
-    "HTML import/index 4.md",
-    "HTML import/index 3.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md"
+    "HTML import/index 4.md"
   ]
 }

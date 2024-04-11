@@ -6,7 +6,7 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 ---
 
 %% Begin Waypoint %%
-- [[🐛 Known Base Bugs, Issues]]
+- **[🐛 Known Base Bugs, Issues](./%F0%9F%90%9B%20Known%20Base%20Bugs,%20Issues/%F0%9F%90%9B%20Known%20Base%20Bugs,%20Issues.md)**
 - **[AI Content Workflows](./AI%20Content%20Workflows/AI%20Content%20Workflows.md)**
 - **[Backups Tech](./Backups%20Tech/Backups%20Tech.md)**
 - **[Books](./Books/Books.md)**
