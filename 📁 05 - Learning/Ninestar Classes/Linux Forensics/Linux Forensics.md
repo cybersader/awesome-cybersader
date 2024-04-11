@@ -507,7 +507,7 @@ tags:
 	- 
 - When should responders/investigators hide their forensics activities?
 	- 
-- How can security teams and companies make it easier for forensicators, incident responders, and investigators to do their jobs on sprawling networks and systems?
+- How can security teams and companies make it easier for forensicators, incident responders, and investigators to do their jobs on sprawling networks and systems? SMBs vs larger companies?
 	- 
 - Does the usage of containers ever complicate investigations?
 	- 
