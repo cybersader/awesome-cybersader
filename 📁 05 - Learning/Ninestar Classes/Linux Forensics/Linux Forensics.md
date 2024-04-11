@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Wednesday, April 10th 2024, 4:18 pm
+date modified: Wednesday, April 10th 2024, 8:38 pm
 tags:
   - Linux
   - "#HalPomeranz"
@@ -54,7 +54,7 @@ tags:
 	- checking through the various configurations for these cron jobs will show benign patterns and the activation of legitimate executables
 	- Checking files under `/var/spool/cron`
 		- Cron config with "atjob"/one shot job.  
-		- ![](_attachments/Linux%20Forensics/IMG-20240410132410647.png)
+		- ![](_attachments/Linux%20Forensics/IMG-20240410203409674.png)
 		- Turns out this is the scheduled task that is designed to remove coin miners from the system using a bash script
 - Network misbehavior:
 	- ![](_attachments/Linux%20Forensics/IMG-20240410133118890.png)
@@ -98,7 +98,7 @@ tags:
 	4. Mount "dirty" (underplayed) file systems
 	5. Reverse the process and deactivate mounted images
 # Linux Filesystem
-- ![](_attachments/Linux%20Forensics/IMG-20240410100320912.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240410203409673.png)
 - 3rd party software in usr/local , but also sometimes in opt for optional software
 - `usr` is rarely changed, so you can check for changes here
 - Think of `etc` as the system32 config or registry for Linux
@@ -265,7 +265,7 @@ tags:
 			- `ewfacquire`- runs in CLI to get compressed image
 			- Maybe pull out disk and use write blocker last resort -- good luck
 - Default Disk Geometries
-	- ![](_attachments/Linux%20Forensics/IMG-20240410153320510.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410203409675.png)
 	- Linux does weird stuff with disk boxes
 		- Example: Software RAID interface -> LVM (logical volume mgmt) layer -> then maybe ZFS
 		- Commercial forensics suite can't do this, so you need open source tools to do it
@@ -312,7 +312,7 @@ tags:
 			- TURNS OUT THIS DOESN'T WORK EITHER, because it will overlap with the other existing loopback device
 			- We can also mount the /boot partition directly. We need to set up a loopback device for this, but the mount command will accept “loop” and “offset” options and set up the loopback device for us. If you recall, /boot is an EXT2 file system, and EXT2 does not have a file system journal. So the “noload” option is not necessary here.
 - Tearing all this down manually
-	- ![](_attachments/Linux%20Forensics/IMG-20240410160534925.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240410203409676.png)
 	- unmount backwards
 	- turn off the volume groups with "n"
 	- losetup -d to get rid of loopback devices
