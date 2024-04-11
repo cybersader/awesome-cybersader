@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 10th 2024, 8:20 am
-date modified: Thursday, April 11th 2024, 11:45 am
+date modified: Thursday, April 11th 2024, 2:21 pm
 tags:
   - Linux
   - "#HalPomeranz"
@@ -137,6 +137,14 @@ tags:
 	- Is it automated or not?
 		- Probably not because of the time gaps
 	- A lot of this generates logs, so we can validate the evidence with more log-based evidence
+## Lab 12 - Log Analysis
+- Goals For This Lab
+	1. Investigate successful and failed logins
+	2. Track activity for mail user
+	3. Include log data in file system timeline
+	4. Continue to enhance incident timeline with new information
+- You can convert syslog to mactime and use timeline explorer to look through logs
+- Tune your logs
 # Linux Filesystem
 - ![](_attachments/Linux%20Forensics/IMG-20240410203409673.png)
 >>>>>>> Stashed changes
@@ -501,8 +509,91 @@ tags:
 		- How did they break in?
 		- How did they get admin privileges?
 # Core Log Analysis
-- 
+- Most of forensics is swimming through logs
+- ![](_attachments/Linux%20Forensics/IMG-20240411123710059.png)
+- Most Linux runs log rotate that retains logs for a week
+	- Default is keeping about a month of logs 
+- Syslog on Linux makes it easy to send your logs to your SIEM, data lake, or warehouse
+- Revisit log retention strategy
+- Correlating across all your logs is better than one machine
+- Logs are text, so they are easy to change for attackers
+- You can diff logs, but not sure how to pragmatically do that at scale
+- backdoor SSH demon (daemon) #cyberMeme 
+- Trust by verify with logs
+## Logs and Format
+- ![](_attachments/Linux%20Forensics/IMG-20240411124150630.png)
+- With wtmp and last, `:0` refers to a login through the GUI
+- `btmp` - this is optional - sysadmin has to create this
+	- this logs user name associated with failed login
+	- This is risky because you can sometimes accidentally type in your password in the username section
+- You could potentially find password sprays or brute forces if you had `lastb`/`btmp` from numerous machines
+- `lastlog` - rarely useful - only handy if all the other logs have rolled away.
+	- It uses a weird sparse format
+	- Lots of analysis tools have issues parsing this
+	- last log parser from tigerphoenixdragon
+## Syslog
+- ![](_attachments/Linux%20Forensics/IMG-20240411124957889.png)
+- Traditional used UDP 514, but modern uses TCP
+- Talk to lawyers:
+	- How much logs should you keep?
+	- Keep enough for compliance and incidents
+	- Keep them for as long as possible
+- ![](_attachments/Linux%20Forensics/IMG-20240411125455499.png)
+- Set up config as part of Linux image template with remote hosts so that logs automatically get routed to log management and SIEM nodes on the network
+- `etc/rsyslog*`or `/etc/syslog-ng*`, or `/etc/syslog.conf`
+- ![](_attachments/Linux%20Forensics/IMG-20240411130110675.png)
+- Timestamps jump around with replays attacks 
+- ![](_attachments/Linux%20Forensics/IMG-20240411130737435.png)
+# Additional Logs - Apps, Web
+- There are lots of web-based exploits, so web logs should be a focus for IR
+- ![](_attachments/Linux%20Forensics/IMG-20240411134423992.png)
+- Linux has `auditd` and the new EBPF (extended Berkley packet filtering)
+- Linux systems may have kernel-level auditing enabled. This is similar to Windows Sysmon. The information is incredibly detailed but can be difficult to understand. Plus it needs specialized configuration in order to provide the most useful information. If you are the administrator of a Linux system, you might want to look into enabling this logging.
+- Log the user input piece on web apps #detectionEngineering #logManagement
+- ![](_attachments/Linux%20Forensics/IMG-20240411134733347.png)
+- Apache log format - created from old httpd
+- Every web server uses this format because lots of tools are made to parse these
+- Don't parse these logs
+- Web logs are typically found in directories under /var/log like /var/log/httpdor …/apache* or …/nginx.
+- ![](_attachments/Linux%20Forensics/IMG-20240411135821035.png)
+- Sometimes attackers base64 encode and web servers might break with it and log as error
+## Kernel-level Auditing in Linux, Sysmon for Linux, Auditd
+- ![](_attachments/Linux%20Forensics/IMG-20240411135956495.png)
+- DoD made rainbow book logging standards which turned into mandatory logging which turned into `auditd` style logging at the kernel-level #logManagement
+- Can't monitor everything or you degrade machine performance
+- Look at CIS Benchmarks for auditd #logManagement
+- [bfuzzy/auditd-attack: A Linux Auditd rule set mapped to MITRE's Attack Framework](https://github.com/bfuzzy/auditd-attack) 
+- auditd lets you monitor system calls closely
+- auditd can turn into a keystroke monitor at the kernel-level 
+	- Easy to drop this into the PAM configuration
+- ![](_attachments/Linux%20Forensics/IMG-20240411140755683.png)
+- `ausearch` is the best command for going through auditd logs
+- `ausearch` converts the epoch timestamps and gather related log entries
+- When gathered up the audit ID, you can get a picture of what was going on
+- audit ID resets everytime the system is rebooted
+- aureport lets you summarize, then you drill down with ausearch by audit ID number
+- ![](_attachments/Linux%20Forensics/IMG-20240411141548109.png)
+- `aulast` goes through chronological auditd log file
+- Good place to corroborate wtmp
+- User logins in Linux:  #logManagement #detectionEngineering
+	- audit log
+	- wtmp file
+	- auth logs
 # Q&A
+- Do you ever have to do hardware-based data recovery?
+	- 
+- Ever non-malicious interests investigations - operational related?
+	- 
+- Does syslog-ng queue and cache? 
+	- Yes - if it has that feature
+	- Some other agent-based tools do it
+- Should Linux images be defaulted with some syslog config in devops?
+	- Yes, but it will be messy especially with apps and how they decide their facility and priority values
+- The syslog config in Linux also assumes apps deciding on facility and priority? How does that differ from daemon?
+	- Apps choose their facility locally and over the wire with the 8 bit number format like "<--->"
+	- It's a mess and although you have things like syslog-ng trying to fix that, a lot of old systems, Solaris Linux, and apps handle it differently.
+- Windows has sysmon when you want to log more.  Does Linux have a popular way of auditing and logging more?
+	- 
 - Do you bring tuned artifact YAMLs and configs with you to an investigation or just start from scratch each time?
 	- 
 - When should responders/investigators hide their forensics activities?
@@ -534,10 +625,11 @@ tags:
 	- more common on Windows though
 	- There are kernel-level ways of hiding forensics activities
 # Misc Convos
+- Trim sucks - SSDs wipe themselves
 - WSL2 is for people managing Linux instances in the cloud from Windows
 	- Guess it's getting discontinued
 - Deft, Kain, and Paladin are some good forensic distros
 - AI is bull crap.  It's a scheme to make money with hype.
 	- Me: ehhhhh...but it's efficient for rapid learning and information retrieval (statisically) than Google Search sometimes is
 	- Books are good too because it's thoughtful content.  AI-generated content is garbage currently, but it does allow for you to bridge over to new concepts, mental models, and terminologies.
-- 
+- You can tranship logs or pick your agent to transport logs over the network
