@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "882f83605293e059",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "090e1597f099abae",
             "type": "leaf",
             "state": {
@@ -92,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+                "file": "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+                "file": "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md"
+                "file": "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md"
               }
             }
           }
@@ -223,13 +211,16 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "882f83605293e059",
+  "active": "584642437d169780",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
-    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
     "📄 Resume - Tools & Tech ⚒️.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852178.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410194852177.png",
@@ -257,7 +248,6 @@
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_14/index.html",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_13/index.html",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_12/index.html",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_12/images",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
@@ -268,7 +258,6 @@
     "📁 03 - Curations/Misc Tech/Misc Tech.md",
     "📁 03 - Curations/📁 03 - Curations.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
-    "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
-    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md"
+    "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md"
   ]
 }
