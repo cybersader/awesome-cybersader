@@ -6,15 +6,28 @@
       {
         "id": "87d61867fb807ea0",
         "type": "tabs",
-        "dimension": 56.9060773480663,
         "children": [
           {
-            "id": "7dbe409e9b666c88",
+            "id": "85be8f8f6c2aa067",
             "type": "leaf",
             "state": {
-              "type": "html-view",
+              "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_12/index.html"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "584642437d169780",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -24,57 +37,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+                "file": "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ca5a29c4be23a56",
+            "id": "5aae0d0e59d5d4d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
+                "file": "📁 03 - Curations/Misc Tech/Misc Tech.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2ed285e47d1c5cb1",
+            "id": "8f2de26c5d09d141",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+                "file": "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f60278cb4aa8c077",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
-      },
-      {
-        "id": "d8ff63f265abc450",
-        "type": "tabs",
-        "dimension": 43.0939226519337,
-        "children": [
-          {
-            "id": "baa4b14277f94231",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet/Linux Forensics Cheat Sheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cyberduck",
+                "query": "delegation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md"
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md"
               }
             }
           }
@@ -203,56 +209,56 @@
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "size-history:Vault size history": false,
-      "obsidian-importer:Open Importer": false
+      "size-history:Vault size history": false
     }
   },
-  "active": "2ed285e47d1c5cb1",
+  "active": "584642437d169780",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411141548109.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411140755683.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411135956495.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411135821035.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411134733347.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411134423992.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_12/index.html",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_11/index.html",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411130737435.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411130110675.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411125455499.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411124957889.png",
-    "Untitled.md",
-    "📁 03 - Curations/Misc Tech/Misc Tech.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model/IMG-20240412102823483.png",
+    "conflict-files-obsidian-git.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/three-lines-model-updated.pdf",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model",
+    "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt",
+    "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+    "⬇ INBOX, DROPZONE/Untitled",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411082913593.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411082641320.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454304.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711953.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454311.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711951.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711950.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711949.png",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454303.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet/Linux Forensics Cheat Sheet.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_09/index.html",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet",
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits/GitHub Repo Size Limits.md",
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet",
-    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
-    "conflict-files-obsidian-git.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "📄 Resume - Tools & Tech ⚒️.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO",
+    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_06/index.html",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Ex_05/index.html",
+    "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md",
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
-    "HTML import/index 13.md",
-    "HTML import/index 2.md",
-    "HTML import/index 1.md",
-    "HTML import/index.md",
-    "HTML import/index 17.md",
-    "HTML import/index 16.md",
-    "HTML import/index 15.md",
-    "HTML import/index 14.md",
-    "HTML import/index 12.md",
-    "HTML import/index 11.md",
-    "HTML import/index 10.md",
-    "HTML import/index 9.md",
-    "HTML import/index 8.md"
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md",
+    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md"
   ]
 }

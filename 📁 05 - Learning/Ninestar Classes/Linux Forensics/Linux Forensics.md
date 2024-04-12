@@ -59,7 +59,7 @@ tags:
 >>>>>>> Stashed changes
 		- Turns out this is the scheduled task that is designed to remove coin miners from the system using a bash script
 - Network misbehavior:
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711952.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240411205454311.png)
 	- All of the foreign/external IPs are super sus
 	- The agettyd process is definitely a crypto miner
 ## Lab 4 - Honeypot Part 3
@@ -71,7 +71,7 @@ tags:
 	5. Audit the system Sudo configuration and related groups
 	6. Check for suspicious set-UID and set-GID files
 - Bad, bad users
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711946.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240411205454298.png)
 	- All of the suspicious processes we noted in the earlier lab are listed here, Plus we can now see the bash processes that are the parent processes for PIDs 15853 and 21785. Also, perhaps unsurprisingly, we see that the web server process ("/usr/bin/httpd") is running as user "daemon". This aligns with our theory that all of the suspicious processes were spawned due to the CVE-2021-41773 web vulnerability.
 	- This essentially means that somehow httpd had a web vuln that spawned a listening process "agettyd" that's now a C2 for the the cryptominer 
 - Pivoting into the filesystem
@@ -210,7 +210,7 @@ tags:
 - systemd timers is also common - [(13) All About Linux Systemd Timers w/ Hal Pomeranz - YouTube](https://www.youtube.com/watch?v=rAe9Iw08Fn0) 
 ## Process Network Behavior
 - Most malware beacons out to a website - it happens fast though.  Look for process listening in the netstat output
-- ![](_attachments/Linux%20Forensics/IMG-20240410204711943.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240411205454309.png)
 - UAC grabs a lot of this and netstat_-lpeanut is a good place to start
 - Is it normal for this process to be listening on this port?
 - To understand what's normal, look at the netstat peanut output of all machines on the network and stack the outputs 
@@ -238,7 +238,7 @@ tags:
 	- Should be locked
 	- No interactive logins like user accounts have
 - Use `sort -t: -k3,3 -n /etc/passwd` to find UID 0 accounts with a file/directories 
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711947.png)
+	- ![](_attachments/Linux%20Forensics/IMG-20240411205454310.png)
 	- www-data is an account dropped by web application - these should have UIDs under 1000
 - The service accounts should have `sbin/nologin` and `/bin/false` to use them as backdoors
 - Attackers have to set a password in the `etc/shadow` file to have a usable password instead of `*`.  Service accounts have `*` which means no password, so it's obvious when an attacker adds one
@@ -260,7 +260,7 @@ tags:
 
 ## Authorized Keys
 - You don't need a user and password to login.  For example, you can use SSH instead
-- ![](_attachments/Linux%20Forensics/IMG-20240410204711948.png)
+- ![](_attachments/Linux%20Forensics/IMG-20240411205454303.png)
 - Attackers will drop their own keys into root's authorized keys file for persistence
 - Check the `$HOME/.ssh/authorized_keys` file 
 - If you see the same key over multiple machines, then that points to an automated attack
@@ -357,7 +357,7 @@ tags:
 		- use `noload`
 		- We still also have the `/boot` filesystem
 			- mount command has an option to not have to make loopback without "losetup"
-			- ![](_attachments/Linux%20Forensics/IMG-20240410204711954.png)
+			- ![](_attachments/Linux%20Forensics/IMG-20240411205454304.png)
 			- TURNS OUT THIS DOESN'T WORK EITHER, because it will overlap with the other existing loopback device
 			- We can also mount the /boot partition directly. We need to set up a loopback device for this, but the mount command will accept “loop” and “offset” options and set up the loopback device for us. If you recall, /boot is an EXT2 file system, and EXT2 does not have a file system journal. So the “noload” option is not necessary here.
 - Tearing all this down manually
