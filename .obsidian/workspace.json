@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md"
               }
             }
           }
@@ -214,11 +214,13 @@
   },
   "active": "584642437d169780",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model/IMG-20240412102823483.png",
     "conflict-files-obsidian-git.md",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/three-lines-model-updated.pdf",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model",
@@ -248,9 +250,7 @@
     "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
     "📄 Resume - Tools & Tech ⚒️.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "⬇ INBOX, DROPZONE/Obsidian Publish SEO",
     "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
-    "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",

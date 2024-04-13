@@ -19,6 +19,7 @@ date modified: Wednesday, April 3rd 2024, 8:18 pm
 	- **[mDNS and Cloudflare Tunnels](./Turning%20Old%20PC%20into%20NAS%20in%202024/mDNS%20and%20Cloudflare%20Tunnels/mDNS%20and%20Cloudflare%20Tunnels.md)**
 	- **[RAID vs AHCI](./Turning%20Old%20PC%20into%20NAS%20in%202024/RAID%20vs%20AHCI/RAID%20vs%20AHCI.md)**
 	- **[Software RAID vs Hardware RAID - TrueNAS Scale](./Turning%20Old%20PC%20into%20NAS%20in%202024/Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale/Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale.md)**
+- **[Wake on LAN](./Wake%20on%20LAN/Wake%20on%20LAN.md)**
 
 %% End Waypoint %%
 
