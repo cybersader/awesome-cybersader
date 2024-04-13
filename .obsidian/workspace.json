@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
               }
             }
           }
@@ -214,9 +214,12 @@
   },
   "active": "584642437d169780",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments/Wake on LAN",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/IMG-20240413154330173.png",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN/Wake on LAN.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Wake on LAN",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model/IMG-20240412102823483.png",
@@ -236,14 +239,12 @@
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711951.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711950.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711949.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454303.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet/Linux Forensics Cheat Sheet.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet",
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits/GitHub Repo Size Limits.md",
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
-    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
@@ -258,7 +259,6 @@
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md",
-    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md"
+    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md"
   ]
 }
