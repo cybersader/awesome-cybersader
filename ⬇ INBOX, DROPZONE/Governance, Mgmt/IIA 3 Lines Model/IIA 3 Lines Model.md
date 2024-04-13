@@ -1,6 +1,6 @@
 ---
 date created: Friday, April 12th 2024, 10:04 am
-date modified: Friday, April 12th 2024, 10:28 am
+date modified: Friday, April 12th 2024, 10:45 am
 ---
 
 # Three Lines Model Whitepaper
@@ -49,4 +49,17 @@ The Three Lines Model helps organizations identify structures and processes that
 - Cooperation, communication, and collaboration == good decision making and coherence 
 ## Key Roles
 ### Governing Body
-- 
+- Delegation, enablement, assurance to stakeholders, and expectation setting
+### 1st line
+- Leads and directs actions (risk mgmt) and application of resources 
+- Dialogue with governing body:
+	- Reports on:
+		- planned, actual, and expected outcomes
+		- risk
+- structures and processes for management of operations and risk (including internal control)
+- Ensures compliance
+### 2nd line
+- Provide expertise, support, monitoring, and challenge to management of risk
+	- development, implementation, and continuous improvement of risk management practices at a process, systems, and entity level
+- Reports to governing body with:
+	- analysis and reporting on effectiveness of risk management (1st line)
