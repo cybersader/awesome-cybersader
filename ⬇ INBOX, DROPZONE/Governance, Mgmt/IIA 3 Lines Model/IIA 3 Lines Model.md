@@ -1,6 +1,6 @@
 ---
 date created: Friday, April 12th 2024, 10:04 am
-date modified: Friday, April 12th 2024, 10:45 am
+date modified: Saturday, April 13th 2024, 11:54 am
 ---
 
 # Three Lines Model Whitepaper
@@ -61,5 +61,6 @@ The Three Lines Model helps organizations identify structures and processes that
 ### 2nd line
 - Provide expertise, support, monitoring, and challenge to management of risk
 	- development, implementation, and continuous improvement of risk management practices at a process, systems, and entity level
+	- 2nd line doesn't make development and strategy decisions alone but in tandem with the 1st line - advising, informing, directing, and innovating with them.
 - Reports to governing body with:
 	- analysis and reporting on effectiveness of risk management (1st line)
