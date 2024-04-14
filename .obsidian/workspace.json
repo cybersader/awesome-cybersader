@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "85be8f8f6c2aa067",
+            "id": "a578052ebe2ea705",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "584642437d169780",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,21 +54,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f60278cb4aa8c077",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "delegation",
+                "query": "three lines",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md"
               }
             }
           }
@@ -212,25 +187,33 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "584642437d169780",
+  "active": "a578052ebe2ea705",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
+    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
+    "📁 03 - Curations/Misc Tech/Misc Tech.md",
+    "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",
+    "README.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/Cyber Mgmt.md",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt/IMG-20240413210614353.png",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments/Wake on LAN",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/IMG-20240413154330173.png",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model/IMG-20240412102823483.png",
     "conflict-files-obsidian-git.md",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/three-lines-model-updated.pdf",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt",
     "⬇ INBOX, DROPZONE/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
-    "⬇ INBOX, DROPZONE/Untitled",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411082913593.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411082641320.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454304.png",
@@ -238,11 +221,8 @@
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240411205454311.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711951.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711950.png",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/_attachments/Linux Forensics/IMG-20240410204711949.png",
     "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet/Linux Forensics Cheat Sheet.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics Cheat Sheet",
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits/GitHub Repo Size Limits.md",
-    "⬇ INBOX, DROPZONE/GitHub Repo Size Limits",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
@@ -253,12 +233,7 @@
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "⬇ INBOX, DROPZONE/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "⬇ INBOX, DROPZONE/Cyber Merch/Cyber Merch.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/UAC Tool/UAC Tool.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Live Linux Triage/Live Linux Triage.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Intro/Linux Intro.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Exercises/Exercises.md"
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
   ]
 }

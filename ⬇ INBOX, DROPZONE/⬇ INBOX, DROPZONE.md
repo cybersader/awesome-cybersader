@@ -26,7 +26,6 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 - **[Obsidian Publish SEO](./Obsidian%20Publish%20SEO/Obsidian%20Publish%20SEO.md)**
 - **[Planning Deadwood 2024 WWHF Trip](./Planning%20Deadwood%202024%20WWHF%20Trip/Planning%20Deadwood%202024%20WWHF%20Trip.md)**
 - **[Recover Files Old Windows Boot Drive](./Recover%20Files%20Old%20Windows%20Boot%20Drive/Recover%20Files%20Old%20Windows%20Boot%20Drive.md)**
-- **Untitled**
 - **[Vehicle Selection in 2020s](./Vehicle%20Selection%20in%202020s/Vehicle%20Selection%20in%202020s.md)**
 - [[Windows 11 UI Stuff]]
 - **[Windows BCDR](./Windows%20BCDR/Windows%20BCDR.md)**
