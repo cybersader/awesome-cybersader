@@ -1,3 +1,4 @@
+- 2024-04-13 at 21h56 · [[Windows Backups Duplicati 2024]]
 - 2024-04-13 at 21h07 · [[Cyber Memes]]
 - 2024-04-13 at 21h07 · [[Misc Tech]]
 - 2024-04-13 at 21h07 · [[README]]
@@ -15,7 +16,6 @@
 - 2024-04-11 at 20h54 · [[Handling Obsidian Git Conflicts]]
 - 2024-04-11 at 20h54 · [[Obsidian Publish SEO]]
 - 2024-04-10 at 20h46 · [[🐛 Known Base Bugs, Issues]]
-- 2024-04-10 at 20h43 · [[Windows Backups Duplicati 2024]]
 - 2024-04-10 at 20h42 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-04-10 at 20h38 · [[📄 Resume - Tools & Tech ⚒️]]
 - 2024-04-10 at 20h38 · [[Cyber Merch]]

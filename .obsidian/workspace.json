@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "5d3bd228ed84b56e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a578052ebe2ea705",
             "type": "leaf",
             "state": {
@@ -121,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md"
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
               }
             }
           }
@@ -187,11 +199,11 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "a578052ebe2ea705",
+  "active": "5d3bd228ed84b56e",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations/Misc Tech/Misc Tech.md",
     "⬇ INBOX, DROPZONE/Cyber Posters/Cyber Posters.md",

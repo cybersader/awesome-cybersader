@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Wednesday, April 10th 2024, 8:43 pm
+date modified: Saturday, April 13th 2024, 9:56 pm
 tags:
   - Backups
   - BCDR
@@ -83,4 +83,6 @@ tags:
 		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233004298.png)
 		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233145136.png)
 		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233847141.png)
-	- 
+- I kind of gave up on this until Nextcloud or Duplicati fixes the issues
+## Duplicati to SMB Share
+- 
