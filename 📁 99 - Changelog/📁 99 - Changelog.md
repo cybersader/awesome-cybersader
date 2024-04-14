@@ -1,4 +1,4 @@
-- 2024-04-13 at 15h53 · [[Home Server Power]]
+- 2024-04-13 at 16h05 · [[Home Server Power]]
 - 2024-04-13 at 15h53 · [[TrueNAS Scale Home Server]]
 - 2024-04-13 at 15h53 · [[📁 01 - Logs, Journal]]
 - 2024-04-13 at 11h54 · [[IIA 3 Lines Model]]

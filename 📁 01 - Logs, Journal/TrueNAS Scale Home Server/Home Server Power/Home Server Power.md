@@ -1,6 +1,6 @@
 ---
 date created: Saturday, April 13th 2024, 2:44 pm
-date modified: Saturday, April 13th 2024, 3:44 pm
+date modified: Saturday, April 13th 2024, 4:05 pm
 ---
 
 # WoL (wake on lan) - Solution Components
