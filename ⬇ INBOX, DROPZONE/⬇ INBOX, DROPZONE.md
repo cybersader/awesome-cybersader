@@ -14,8 +14,6 @@ date modified: Friday, March 22nd 2024, 3:28 pm
 - **[Content Curation](./Content%20Curation/Content%20Curation.md)**
 - **[Cyber Content Ideas](./Cyber%20Content%20Ideas/Cyber%20Content%20Ideas.md)**
 - **[Cyber Memes](./Cyber%20Memes/Cyber%20Memes.md)**
-- **[Cyber Merch](./Cyber%20Merch/Cyber%20Merch.md)**
-- **[Cyber Posters](./Cyber%20Posters/Cyber%20Posters.md)**
 - **[Daily Routine](./Daily%20Routine/Daily%20Routine.md)**
 - **[GitHub Repo Size Limits](./GitHub%20Repo%20Size%20Limits/GitHub%20Repo%20Size%20Limits.md)**
 - [[Go Pro as a Webcam]]
