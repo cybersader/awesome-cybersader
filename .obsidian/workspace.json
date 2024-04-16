@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md"
+                "file": "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md"
               }
             }
           }
@@ -189,8 +189,16 @@
   },
   "active": "a578052ebe2ea705",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
+    "📁 03 - Curations, Stacks/Cyber Youtube/Cyber Youtube.md",
+    "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
+    "📁 03 - Curations, Stacks/Cyber Youtube",
+    "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
+    "📁 03 - Curations, Stacks/Cyber Documentaries",
+    "📁 05 - Learning/Movies, Documentaries/Movies, Documentaries.md",
+    "📁 03 - Curations, Stacks/Cyber Movies",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+    "📁 05 - Learning/Movies, Documentaries",
+    "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "⬇ INBOX, DROPZONE/Content Curation",
     "📁 05 - Learning/Misc Learning/Tech Startup/Founder Lifestyle/Founder Lifestyle.md",
     "📁 05 - Learning/Misc Learning/Tech Startup/Tech Startup.md",
@@ -209,12 +217,8 @@
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt/IMG-20240413210614353.png",
-    "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/IIA 3 Lines Model.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments/Wake on LAN",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/_attachments",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power/IMG-20240413154330173.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Home Server Power",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/IIA 3 Lines Model/_attachments/IIA 3 Lines Model/IMG-20240412102823483.png",
     "conflict-files-obsidian-git.md",
     "📁 05 - Learning/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
@@ -230,10 +234,6 @@
     "⬇ INBOX, DROPZONE/GitHub Repo Size Limits/GitHub Repo Size Limits.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 05 - Learning/Ninestar Classes/Ninestar Classes.md",
-    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md",
-    "📁 05 - Learning/Ninestar Classes/Linux Forensics/Linux Forensics.md",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
-    "📄 Resume - Tools & Tech ⚒️.md",
-    "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md"
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues.md"
   ]
 }
