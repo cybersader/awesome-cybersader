@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Saturday, April 13th 2024, 9:56 pm
+date modified: Tuesday, April 16th 2024, 8:31 pm
 tags:
   - Backups
   - BCDR
@@ -85,4 +85,11 @@ tags:
 		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233847141.png)
 - I kind of gave up on this until Nextcloud or Duplicati fixes the issues
 ## Duplicati to SMB Share
+- We can use the "\\" syntax or the Network tab to find SMB shares that we made in TrueNAS Scale
+	- [TrueNAS Core: Configuring Shares, Permissions, Snapshots & Shadow Copies - YouTube](https://www.youtube.com/watch?v=QIdy6sR0HrI) 
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416202219179.png)
+- Set up connection in Duplicati
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416202439913.png)
+- If you want the SMB share to be easily accessed from file explorer, use "map network drive..."
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416203146927.png)
 - 
