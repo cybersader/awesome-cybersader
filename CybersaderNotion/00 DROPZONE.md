@@ -20,3 +20,12 @@
 [Intro to IOT Hacking](00%20DROPZONE/Intro%20to%20IOT%20Hacking.md)
 
 [WPA 2 Stuff](00%20DROPZONE/WPA%202%20Stuff.md)
+
+# Misc Ideas
+
+- Simply Cyber - ransomware prep
+    - Backups
+    - Tabletop exercises
+    - Educate workforce
+- HR Security Toolkit - from Simply Cyber?
+-
