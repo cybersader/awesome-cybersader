@@ -9,3 +9,9 @@
 # Misc
 
 [Darknet diaries EP 52 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20EP%2052.md)
+
+[Fintech and Payment Card Risks](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Fintech%20and%20Payment%20Card%20Risks.md)
+
+[The cybersecurity hiring gap](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/The%20cybersecurity%20hiring%20gap.md)
+
+[Punchmade Dev and Famous Scammers Rappers](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Punchmade%20Dev%20and%20Famous%20Scammers%20Rappers.md)
