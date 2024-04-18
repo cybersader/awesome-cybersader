@@ -1,12 +1,11 @@
 ---
 date created: Tuesday, March 19th 2024, 6:20 pm
-date modified: Thursday, March 21st 2024, 8:23 pm
+date modified: Wednesday, April 17th 2024, 8:52 pm
 created: Tuesday, Mar 19, 2024 06:20 PM
 updated: Thursday, Mar 21, 2024 08:23 PM
 ---
 
 # Certifications
-- CND - in progress
 - CISSP - planned
 # Training and Classes
 1. 04/2024 - [Linux Forensics w/ Hal Pomeranz – Antisyphon Training](https://www.antisyphontraining.com/on-demand-courses/linux-forensics-w-hal-pomeranz/)  #HalPomeranz 
@@ -58,3 +57,5 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - Planned:
 	- Oct 2024 - [2024 - Deadwood WWHF 2024](https://wildwesthackinfest.com/)
 	- [BSides Bloomington 2024](https://bsidesbloomington.org/)
+- Debating
+	- [BSidesFortWayne 2024 Tickets, Sat, May 4, 2024 at 8:00 AM | Eventbrite](https://www.eventbrite.com/e/bsidesfortwayne-2024-tickets-789388280597) 
