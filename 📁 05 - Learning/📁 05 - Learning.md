@@ -10,8 +10,6 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 	- **[Cyber Team Building](./BHIS,%20Antisyphon/Cyber%20Team%20Building/Cyber%20Team%20Building.md)**
 	- **[Getting Started in Security with BHIS and MITRE ATT&CK](./BHIS,%20Antisyphon/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK.md)**
 - **[Misc Learning](./Misc%20Learning/Misc%20Learning.md)**
-	- **[Tech Startup](./Misc%20Learning/Tech%20Startup/Tech%20Startup.md)**
-		- **[Founder Lifestyle](./Misc%20Learning/Tech%20Startup/Founder%20Lifestyle/Founder%20Lifestyle.md)**
 - **[Movies, Documentaries](./Movies,%20Documentaries/Movies,%20Documentaries.md)**
 	- **[Money Explained](./Movies,%20Documentaries/Money%20Explained/Money%20Explained.md)**
 - **[Ninestar Classes](./Ninestar%20Classes/Ninestar%20Classes.md)**

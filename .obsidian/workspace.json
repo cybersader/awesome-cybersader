@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📄 Resume - Tools & Tech ⚒️.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1167d0d0ad2994f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
+                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
+                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
+                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md"
+                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md"
               }
             }
           }
@@ -212,10 +200,13 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "1167d0d0ad2994f1",
+  "active": "dd8636cec6c919e2",
   "lastOpenFiles": [
-    "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
+    "📁 05 - Learning/Misc Learning/Misc Learning.md",
+    "📄 Resume - Tools & Tech ⚒️.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
+    "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The cybersecurity hiring gap.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Punchmade Dev and Famous Scammers Rappers.md",
@@ -223,11 +214,9 @@
     "📁 05 - Learning/Movies, Documentaries/Movies, Documentaries.md",
     "📁 05 - Learning/Movies, Documentaries/Money Explained",
     "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
-    "📄 Resume - Tools & Tech ⚒️.md",
     "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 3.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 1.png",
@@ -258,7 +247,6 @@
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
     "📁 05 - Learning/Misc Learning/Tech Startup/Founder Lifestyle/Founder Lifestyle.md",
-    "📁 05 - Learning/Misc Learning/Tech Startup/Tech Startup.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt/IMG-20240413210614353.png"
   ]
 }
