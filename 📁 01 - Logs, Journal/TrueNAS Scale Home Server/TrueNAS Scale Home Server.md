@@ -15,6 +15,7 @@ date modified: Wednesday, April 3rd 2024, 8:18 pm
 - **[TrueNAS Cloud Backups](./TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)**
 	- **[Cheapest Archive Storage](./TrueNAS%20Cloud%20Backups/Cheapest%20Archive%20Storage/Cheapest%20Archive%20Storage.md)**
 - **[TrueNAS Immich Setup](./TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)**
+- **[TrueNAS mDNS](./TrueNAS%20mDNS/TrueNAS%20mDNS.md)**
 - **[Turning Old PC into NAS in 2024](./Turning%20Old%20PC%20into%20NAS%20in%202024/Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
 	- **[ATA Security](./Turning%20Old%20PC%20into%20NAS%20in%202024/ATA%20Security/ATA%20Security.md)**
 	- **[Filesystems and Partition Schemes](./Turning%20Old%20PC%20into%20NAS%20in%202024/Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md)**

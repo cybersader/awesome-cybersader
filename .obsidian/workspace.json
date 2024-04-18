@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md"
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md"
               }
             }
           }
@@ -202,11 +202,13 @@
   },
   "active": "dd8636cec6c919e2",
   "lastOpenFiles": [
+    "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS",
     "📁 05 - Learning/Misc Learning/Misc Learning.md",
     "📄 Resume - Tools & Tech ⚒️.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
-    "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The cybersecurity hiring gap.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Punchmade Dev and Famous Scammers Rappers.md",
@@ -243,10 +245,8 @@
     "📁 03 - Curations, Stacks/Cyber Youtube/Cyber Youtube.md",
     "📁 03 - Curations, Stacks/Cyber Youtube",
     "📁 03 - Curations, Stacks/Cyber Documentaries",
-    "📁 03 - Curations, Stacks/Cyber Movies",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Governance, Mgmt.md",
-    "📁 05 - Learning/Misc Learning/Tech Startup/Founder Lifestyle/Founder Lifestyle.md",
     "⬇ INBOX, DROPZONE/Governance, Mgmt/Cyber Mgmt/_attachments/Cyber Mgmt/IMG-20240413210614353.png"
   ]
 }
