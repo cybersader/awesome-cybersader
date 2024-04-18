@@ -1,4 +1,4 @@
-- 2024-04-18 at 10h47 · [[COBRA Insurance Between Jobs]]
+- 2024-04-18 at 12h22 · [[COBRA Insurance Between Jobs]]
 - 2024-04-18 at 10h46 · [[⬇ INBOX, DROPZONE]]
 - 2024-04-18 at 10h46 · [[Money Explained]]
 - 2024-04-17 at 21h31 · [[The cybersecurity hiring gap]]
