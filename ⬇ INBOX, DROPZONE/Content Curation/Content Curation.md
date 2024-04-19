@@ -1,9 +1,12 @@
 ---
 date created: Monday, April 15th 2024, 3:33 pm
-date modified: Monday, April 15th 2024, 3:35 pm
+date modified: Thursday, April 18th 2024, 7:58 pm
 ---
 
 # YouTube Playlists
 - [UnTube - A Youtube Playlist Manager](https://bakaabu.pythonanywhere.com/) 
+	- [sleepytaco/UnTube: A simple, comprehensive YouTube playlist manager web app powered by YouTube Data API V3. Built with ❤ using Django, htmx and Bootstrap.](https://github.com/sleepytaco/UnTube?tab=readme-ov-file)
 - [6 Free Tools to Improve YouTube Playlists and Create Playlists Without an Account](https://www.makeuseof.com/free-tools-improve-youtube-playlists/)
+- [YouTube Playlist Manager by PocketTube](https://pockettube.io/playlists.html)
+- [PocketTube - YouTube Subscription Manager](https://pockettube.io/) 
 - 
