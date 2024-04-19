@@ -4,6 +4,7 @@ date modified: Wednesday, April 3rd 2024, 8:18 pm
 ---
 
 %% Begin Waypoint %%
+- **[Dataset Available Space Bug](./Dataset%20Available%20Space%20Bug/Dataset%20Available%20Space%20Bug.md)**
 - **[Home Server Power](./Home%20Server%20Power/Home%20Server%20Power.md)**
 
 - **[Misc TrueNAS](./Misc%20TrueNAS/Misc%20TrueNAS.md)**

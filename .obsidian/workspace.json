@@ -8,36 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f785e78b38948bcd",
+            "id": "cc55242febb48b6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
+                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dd8636cec6c919e2",
+            "id": "6be6f575bf994248",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "626ebd5aab76c82d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/Dataset Available Space Bug.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md"
+                "file": "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
               }
             }
           }
@@ -212,18 +200,28 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "626ebd5aab76c82d",
+  "active": "6be6f575bf994248",
   "lastOpenFiles": [
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/Dataset Available Space Bug.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug/IMG-20240418201356638.png",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug/IMG-20240418201329650.png",
+    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
+    "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 07 - Business/📁 07 - Business.md",
     "📁 05 - Learning/Misc Learning/Misc Learning.md",
-    "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
     "📁 07 - Business",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/Pasted image 20240418192733.png",
     "📁 05 - Learning/Movies, Documentaries/Money Explained/Money Explained.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS",
     "📄 Resume - Tools & Tech ⚒️.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
     "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The cybersecurity hiring gap.md",
@@ -233,7 +231,6 @@
     "📁 05 - Learning/Movies, Documentaries/Money Explained",
     "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
     "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 3.png",
@@ -246,19 +243,10 @@
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries EP 52.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416203146927.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416203112958.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416202439913.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416202219179.png",
     "📁 03 - Curations, Stacks/Misc Tech/Misc Tech.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
-    "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
-    "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
-    "📁 03 - Curations, Stacks/Cyber Books",
-    "📁 03 - Curations, Stacks/Cyber Youtube/Cyber Youtube.md",
-    "📁 03 - Curations, Stacks/Cyber Youtube"
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
   ]
 }
