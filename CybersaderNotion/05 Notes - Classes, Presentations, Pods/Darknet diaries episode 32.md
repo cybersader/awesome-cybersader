@@ -1,0 +1,57 @@
+# Darknet diaries episode 32
+
+https://darknetdiaries.com/episode/32/
+
+- Most credit cards in PayPal and not accepted to pay for things on the dark web
+- Everything's linked to identifying information
+- Western Union is a doable place for crime but it's not instant
+- Bitcoin wasn't used widely in 2007 so Liberty reserve was the best option
+- Liberty reserve is a lot like PayPal but they don't require a lot of identifying information
+- Vending is all done with trust on the dark web and with payment cards it revolves around validity rates
+- The secret service is a big defender of financial fraud not to mention also protecting the president and their families
+- Ncux was very popular at one point
+- Carding world was another popular forum
+- Ncux was translated to seek in Russian
+- Carder su was popular
+- Track 2 was one popular user that showed up
+- All of the sudden this new user was a trusted user which was a title that was hard to get. It was also noticed that other vendors started dropping off the site at the same time
+- There were to investigations that were linked to each other based on malware at a deli store and payment cards being used illegally
+- It was found at the person's house based on a forensic image that they had visited a website called track 2 and another website
+- They found ICQ chat logs with a person named track 2
+- The other website was bulba CC
+- The track 2 website was for untrusted customers and either they would become trusted or pay $1,000 to get in
+- Bulba CC was the elite website hosted by track 2
+- Liberty reserve was required to buy credit cards from here
+- The who is information for the websites was actually linked to two Yahoo emails
+- These warrants take a while to process
+- The BECU or Boeing engineers credit Union was reporting fraudulent usage of credit cards
+- Kameo malware was used on machines at Capitol Hill in Seattle and the investigator happened to be there so he went and forensicated the machines
+- This was loaded onto credit card machines
+- The initial exploitation was done by browsing to a website and downloading malware which likely meant there was physical access
+- They looked through the email after it was finally provided and found PayPal
+- PayPal requires you to provide actual identification and verification so they linked it back to Roman solevsky who was the same person from NCUX
+- It seems that the FSB from Russia had tipped him off and so he covered his tracks into his old aliases
+- They had also been renting a server from Hop One in Virginia and so it weren't was obtained
+- It looked like the initial access was not physical access and rather exploiting public facing RDP
+- The process went like this: search the web for public facing RDP on Windows, see if there's credit card processing software, load Kameo onto it, if the credit cards and payment card info, and move it to his server.
+- They put a pen trap onto the server so they could get detailed information about where the communication was coming from
+- It was very common for restaurants to be on the list
+- The technical term for the software being exploited is point of sale or POS software
+- It was found that Romans father was actually a part of the Russian Parliament and it's probably why the feds of Russia were not cooperating
+- The secret service had access to his flight booking so they could know when he went on vacation.  They managed to capture him once they saw that he was going to Morocco with his wife. Important piece here is that he went to a country that will cooperate
+- An extremist bombing happened in the restaurant that he went to randomly
+- So last night was found taking trips to his vacation home then in Indonesia but he kept taking direct flights and buying tickets at the last minute to avoid extradition.  He also avoided any connecting flights that had extradition treaties
+- Later on another website called Tupac.cc popped up
+- This website also did reselling from other breaches
+- In 2013 the IRS, FTC, and the secret service were all fed up with Liberty reserve so they decided to take them down
+- They arrested the owner and took down the company which was based in Costa Rica
+- Roman was still avoiding the extradition treaty companies but the secret service managed to convince the Maldives to expel him and therefore the secret service would be able to capture him
+- His laptop was encrypted but they managed to find the password in clear text in one of the emails he was sent by a website he registered to with bad security
+- A good criminal will be aware of everyone who has access to the data related to your crimes
+- Roman had terrible opsec
+- The investigators looked through slackspace in the drives and also volume shadow copies
+- Roman's father talked to him about paying off prosecutors with millions of dollars
+- Most of these restaurants and even zoos had already pee open to the public so that they could do IT support. They reused passwords because they operated with a lot of businesses
+- When these business stop following good security practices then they get audited by people like Visa and MasterCard because they're supposed to be following PCI DSS
+- Roman is in a North Carolina prison
+-

@@ -15,3 +15,7 @@
 [The cybersecurity hiring gap](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/The%20cybersecurity%20hiring%20gap.md)
 
 [Punchmade Dev and Famous Scammers Rappers](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Punchmade%20Dev%20and%20Famous%20Scammers%20Rappers.md)
+
+[Is CS dead?](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Is%20CS%20dead.md)
+
+[Darknet diaries episode 32 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%2032.md)
