@@ -1,13 +1,10 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Thursday, April 18th 2024, 8:57 pm
+date modified: Thursday, April 18th 2024, 9:29 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
-# My Vision
-One big problem I have is conceptualizing and understanding how Obsidian maps to an SSG like Astro. Not to mention, creating a system where Obsidian Communitiy Plugins can integrate into it (example - getting dataview to run from within something like GitHub actions instead of relying on generated markdown) Instead of requiring plugins to generate markdown to work with "Publish," this logic could run along with the JS framwork or SSG or from within something like GitHub actions. The reason I'm mentioning this is that my dream would be a contributable system where people can use GitHub PRs to contribute, git clone the vault and contribute, or even some custom web-based CMS to contribute to the vault. They could contribute from anywhere based on what's convenient and have the funcionality that community plugins provide. The issue with this and anything like Obsidian Publish is that it seems difficult to make a system where Community Plugins can be applied at any layer. FYI - I'm not a developer and surely not a web developer, but I at least have a vision of what would be awesome. One example of this with a CMS would be Decap CMS from Netlify. It took my awhile to find this, but they have an "Open Authoring" [Open Authoring | Decap CMS | Open-Source Content Management System](https://decapcms.org/docs/open-authoring/ "Open Authoring | Decap CMS | Open-Source Content Management System
-(https://decapcms.org/docs/open-authoring/)") The hardest layer here would be creating an engine where some community plugins can run on multiple platforms (Github Actions, custom serverless functions, client-side with a custom CMS web-app, etc.)
 # Plugins
 - obsidian://show-plugin?id=note-refactor-obsidian
 - [Is Waypoint plugin still used by people for MOC (Map of Content) or is it abandoned? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/17o995c/is_waypoint_plugin_still_used_by_people_for_moc/) 

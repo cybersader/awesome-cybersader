@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,8 +126,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md"
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
               }
             }
           }
@@ -215,6 +214,11 @@
   },
   "active": "a51a87177e94404d",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki",
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md",
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 32.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
@@ -254,12 +258,7 @@
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1/Untitled.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries EP 52.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416203146927.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416203112958.png",
-    "📁 03 - Curations, Stacks/Misc Tech/Misc Tech.md"
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/_attachments/Windows Backups Duplicati 2024/IMG-20240416203112958.png"
   ]
 }
