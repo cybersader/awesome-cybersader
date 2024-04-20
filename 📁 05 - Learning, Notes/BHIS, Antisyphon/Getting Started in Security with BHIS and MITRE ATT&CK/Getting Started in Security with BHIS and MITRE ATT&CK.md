@@ -64,18 +64,18 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 ## Mitre Defense Coverage Approach
 - Don't approach by technique - try to cover large sets of attacks instead
 # Application Allow Listing
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114405577.png)
+![](IMG-20240320114405577.png)
 - How to approach white and blacklisting applications
 - We are hardwired to like denylists
 	- Don't snuggle with grizzly bears - cavemen evolution
 ## Six Dumbest Ideas in Security
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114405645.png)
+![](IMG-20240320114405645.png)
 /## Examples: Ghostwriting, LOLBins
 - If we XOR data to itself then it should always be 0
 - If we do this in assembly then we can avoid lots of AV
 - Living of the land binaries can be used to avoid denylisting AV out there
 ## Application Allow listing: Directories
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114405783.png)
+![](IMG-20240320114405783.png)
 - Go by dir
 	- Only from Program Files, Program Files x86
 	- Avoids from Downloads, Desktop, etc.
@@ -83,9 +83,9 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 ## By Hash
 - This works too
 ## By Digital Certs
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114405861.png)
+![](IMG-20240320114405861.png)
 ## AppLocker
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114405928.png)
+![](IMG-20240320114405928.png)
 - You need pro license to use it
 ## AppLocker LAB
 [IntroLabs/IntroClassFiles/Tools/IntroClass/AppLocker/AppLocker.md at master · strandjs/IntroLabs](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/AppLocker/AppLocker.md)
@@ -94,7 +94,7 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - `su` - switch user
 - `sudo su` - avoids having to type psw in multiple times
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406020.png)
+![](IMG-20240320114406020.png)
 
 - Made a malicious executable that's hidden
 - Ran a C2 in WSL
@@ -102,34 +102,34 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - Used my local IP `172.19.78.82`
 - Ran TrustMe.exe 
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406099.png)
+![](IMG-20240320114406099.png)
 
 ## AppLocker Setup
 - Start > Local Security Policy
 - Application Control Policies > AppLocker
 - Create default rules for each category
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406152.png)
+	- ![](IMG-20240320114406152.png)
 - Enforce the rules
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406229.png)
+	- ![](IMG-20240320114406229.png)
 - Start the Application identity service
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406301.png)
+	- ![](IMG-20240320114406301.png)
 - Run `gpudate /force` to force policy update
 ## Testing AppLocker
 - Signed into allowlist account
 - Ran exe from tools folder
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406366.png)
+	- ![](IMG-20240320114406366.png)
 # Password Controls
 ## Password Sprays
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406425.png)
+![](IMG-20240320114406425.png)
 - Using one easy guessable password over tons of different accounts or services instead of focusing on one account with many passwords
 - One to many instead of many to one
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406493.png)
+![](IMG-20240320114406493.png)
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406550.png)
+![](IMG-20240320114406550.png)
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406617.png)
+![](IMG-20240320114406617.png)
 ## Password Spray LAB
 [IntroLabs/IntroClassFiles/Tools/IntroClass/PasswordSpray/PasswordSpray.md at master · strandjs/IntroLabs](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/PasswordSpray/PasswordSpray.md#password-spray)
 
@@ -143,21 +143,21 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - How many accounts per number of accounts to cover most password spray type passwords?  I've tried to see if there was a way to allow for an account to accept a password from a list of passwords for the ultimate honey account, but this is impossible to do.  Seems like I would need to create many accounts to cover lots of easy ones depending on what wordlists or guesses I think attackers would use.
 
 # 2FA
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406676.png)
+![](IMG-20240320114406676.png)
 
 - SMS-based 2FA can be bad if your threat profile is against APTs with things like SIM swapping
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406741.png)
+![](IMG-20240320114406741.png)
 
 - Service accounts can't have MFA because they aren't people, so how to secure them?
 
 ## Kerberoasting
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406794.png)
+![](IMG-20240320114406794.png)
 
 - user accounts can request these tickets for service accounts, grab hashes, and then crack the hashes offline
 # LLMNR, MDNS, NBNS - Name Resolution
 
-![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406892.png)
+![](IMG-20240320114406892.png)
 
 - Can still be used to harvest hashes and passwords
 - Name resolution:
@@ -177,36 +177,36 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 
 - Evilginx
 	- Really effective at proxying 2FA
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114406951.png)
+	- ![](IMG-20240320114406951.png)
 
 # Identity
 ## Password Managers
 - If these get compromised without 2FA, then you're in trouble
 - Just use them
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407017.png)
+- ![](IMG-20240320114407017.png)
 
 ## Privileged Identity Management
 - 3rd party identity provision
 - Makes post exploitation difficult with reused passwords
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407066.png)
+- ![](IMG-20240320114407066.png)
 
 # Hashcat LAB
 - TODO
 
 # Logs
 ## MITRE and UEBA
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407136.png)
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407199.png)
+- ![](IMG-20240320114407136.png)
+- ![](IMG-20240320114407199.png)
 - Speaking of drowning in logs, my task for the day is actually to get a sysmon config and Windows auditing config set up to use across our workstations. The issue being that I need to multiply the throughput by 5000 machines and manage to stay under 2 TB daily. 
 - If you don't have a lot of control over the volume of logs being generated, then you will generally need a proxy between log sources and log consumers that filters out the stuff you don't want.
 ## UEBA - user and entity behavior analytics
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407247.png)
+- ![](IMG-20240320114407247.png)
 - Tools:
 	- LogonTracer - lateral movement
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407317.png)
+- ![](IMG-20240320114407317.png)
 
 ## AD Logs
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407374.png)
+- ![](IMG-20240320114407374.png)
 
 ## ActiveWhite CLI
 - .
@@ -215,9 +215,9 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - .
 
 # Windows Event Logging 
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407442.png)
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407494.png)
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407568.png)
+- ![](IMG-20240320114407442.png)
+- ![](IMG-20240320114407494.png)
+- ![](IMG-20240320114407568.png)
 	- You have to set a bunch of audit policies in Windows 
 - Powershell Logging 
 	- You need a bunch of PowerShell settings first to get this working
@@ -229,17 +229,17 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 ## Sysmon Lab
 - I didn't really do the lab here, because I already know how
 - I'm using the defcon 3 sysmon config from that one BHIS video with Noah and Nick . It looks like this sysmon config with some additional Windows audit policies goes at about 20 KBps which translates to 1.728 GB per day. For 5000 machines (larger org), this equates to ~3-8 TB per day of logs. Notice how a small config for sysmon and audit policies can quickly become expensive. Anyone got recommendations for this? I barely have much turned on for Advanced audit policies and nothing for Basic "Audit Policy". Sysmon config here mentioned by Noah from BHIS - [https://github.com/blackhillsinfosec/EventLogging/blob/master/DEFCON3/sysmon/sysmonconfig.xml](https://github.com/blackhillsinfosec/EventLogging/blob/master/DEFCON3/sysmon/sysmonconfig.xml "https://github.com/blackhillsinfosec/EventLogging/blob/master/DEFCON3/sysmon/sysmonconfig.xml") 
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407649.png)
-	- ![500](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407724.png)
+	- ![](IMG-20240320114407649.png)
+	- ![500](IMG-20240320114407724.png)
 # AV to EDR
 - Signature AV went to EDR which changed everything
 ## Cylance AV Tried to Sue John Strand
 - Online Consumer Protection Act
 	- customers can say negative things about the products and vendors they use
 ## EDR is Great and Relates to Other Defenses
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407827.png)
+- ![](IMG-20240320114407827.png)
 ## Enterprise EDR is Expensive
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407885.png)
+- ![](IMG-20240320114407885.png)
 - 
 # DFIR
 
@@ -261,7 +261,7 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 	- Don't break CoD - chain of custody
 	- Do file hashes of drives if you can during chain of custody as long as you documented chain of custody
 # Threat Emulation, Simulation, Purple Team
-- ![500](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114407941.png)
+- ![500](IMG-20240320114407941.png)
 ## Caldera
 - Does post exploit stuff open source threat emulation 
 - .
@@ -280,16 +280,16 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - They've changed since then, but it still can't be trusted as the single source of truth 
 - [ATT&CK® Evaluations](https://attackevals.mitre-engenuity.org/) 
 # Firewalls and Segmentation
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408009.png)
+- ![](IMG-20240320114408009.png)
 	- It's fine to get compromised but not to have them on your network for months
 - Firewalls aren't everything - you need IDS
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408068.png)
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408126.png)
+	- ![](IMG-20240320114408068.png)
+	- ![](IMG-20240320114408126.png)
 - Firewalls 
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408191.png)
+	- ![](IMG-20240320114408191.png)
 	- You can use your EDR firewall instead of Windows firewall
 	- ideally, get a professional firewall that is gateway and/or distributed
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408252.png)
+	- ![](IMG-20240320114408252.png)
 ## Defense in Depth - Endpoint Security Architecture
 - AV/EDR 
 - NSM
@@ -299,20 +299,20 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 [IntroLabs/IntroClassFiles/Tools/IntroClass/Nmap/Nmap.md at master · strandjs/IntroLabs](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/Nmap/Nmap.md)
 - Had to turn firewall off - `netsh advfirewall set allprofiles state off`
 - Then run nmap from the Linux terminal against the eth0 interface for Windows
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408310.png)
+	- ![](IMG-20240320114408310.png)
 - Turn FW on - `netsh advfirewall set allprofiles state on`
 - Run nmap again
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408377.png)
+	- ![](IMG-20240320114408377.png)
 - Exploits
 	- What happens when you try to pop exploits with firewall involved
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408436.png)
+	- ![](IMG-20240320114408436.png)
 
 # DNS
 ## Domain Allowlisting
 - Hackers can quickly get domains that fly under the radar
 - The web domain market is a big thing
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408486.png)
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408541.png)
+- ![](IMG-20240320114408486.png)
+- ![](IMG-20240320114408541.png)
 ## Web Surfing Behavior of Company Users
 - How many legit sites do users go to?
 	- 100s, 1000s
@@ -355,7 +355,7 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - Many go by IP address
 - 1000 IPs x 25 vulns per = 25,000 vulns
 ### The Correct Way
-- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408589.png)
+- ![](IMG-20240320114408589.png)
 - Break it down by vulns and solves large groups off them at a time
 - Use automation 
 - Works regardless of the tool
@@ -392,7 +392,7 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 - Getting caught
 	- The organization needs to be able to catch you though
 - Everybody is purple
-	- ![](_attachments/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/IMG-20240320114408644.png)
+	- ![](IMG-20240320114408644.png)
 ## Burp and ZAP - LAB
 - Use DVWA (damn vulnerable web app) with Burp and Zap to learn some web testing
 

@@ -55,11 +55,11 @@ tags:
 	- checking through the various configurations for these cron jobs will show benign patterns and the activation of legitimate executables
 	- Checking files under `/var/spool/cron`
 		- Cron config with "atjob"/one shot job.  
-		- ![](_attachments/Linux%20Forensics/IMG-20240410203409674.png)
+		- ![](IMG-20240410203409674.png)
 >>>>>>> Stashed changes
 		- Turns out this is the scheduled task that is designed to remove coin miners from the system using a bash script
 - Network misbehavior:
-	- ![](_attachments/Linux%20Forensics/IMG-20240411205454311.png)
+	- ![](IMG-20240411205454311.png)
 	- All of the foreign/external IPs are super sus
 	- The agettyd process is definitely a crypto miner
 ## Lab 4 - Honeypot Part 3
@@ -71,7 +71,7 @@ tags:
 	5. Audit the system Sudo configuration and related groups
 	6. Check for suspicious set-UID and set-GID files
 - Bad, bad users
-	- ![](_attachments/Linux%20Forensics/IMG-20240411205454298.png)
+	- ![](IMG-20240411205454298.png)
 	- All of the suspicious processes we noted in the earlier lab are listed here, Plus we can now see the bash processes that are the parent processes for PIDs 15853 and 21785. Also, perhaps unsurprisingly, we see that the web server process ("/usr/bin/httpd") is running as user "daemon". This aligns with our theory that all of the suspicious processes were spawned due to the CVE-2021-41773 web vulnerability.
 	- This essentially means that somehow httpd had a web vuln that spawned a listening process "agettyd" that's now a C2 for the the cryptominer 
 - Pivoting into the filesystem
@@ -146,7 +146,7 @@ tags:
 - You can convert syslog to mactime and use timeline explorer to look through logs
 - Tune your logs
 # Linux Filesystem
-- ![](_attachments/Linux%20Forensics/IMG-20240410203409673.png)
+- ![](IMG-20240410203409673.png)
 >>>>>>> Stashed changes
 - 3rd party software in usr/local , but also sometimes in opt for optional software
 - `usr` is rarely changed, so you can check for changes here
@@ -185,16 +185,16 @@ tags:
 # Linux Processes
 - Windows malware like to use servicehost under explorer to run malware
 - Knowing the Linux process hierarchy helps find bad
-- ![](_attachments/Linux%20Forensics/IMG-20240410194852176.png)
+- ![](IMG-20240410194852176.png)
 - `pstree` command shows process hierarchy in Linux
 - ssh is normal
 - Nested SSH shell from another process is a bad sign - SSH is bad when you see bash shell coming out of web server
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711944.png)
+	- ![](IMG-20240410204711944.png)
 - Square bracket processes are kernel made processes - some attackers hide their coin miners and malware as these
 	- You shouldn't see spontaneous processes ran out of interactive user shells
 	- They will still have higher PID values and the start time will be hours, days, or weeks after systemd and first startup
 ## Orphaned Processes
-- ![](_attachments/Linux%20Forensics/IMG-20240410204711951.png)
+- ![](IMG-20240410204711951.png)
 - When process that started you goes away, then PS can show process ID as systemd as if it started the program.
 - What's really happening is some background process was started and the shell was closed
 - There is a way to differentiate between orphaned processes and systemd started processes
@@ -202,7 +202,7 @@ tags:
 	- You can see the same thing with `stat file` under `proc` folder
 	- UAC captures this, but you could call it off with a custom YAML as well
 ## Scheduled Tasks and Persistence
-- ![](_attachments/Linux%20Forensics/IMG-20240410203837740.png)
+- ![](IMG-20240410203837740.png)
 - Linux has a lot of overlapping task scheduling systems
 - cron and spool are common names
 - Linux has at least 3 that happen simultaneously
@@ -210,12 +210,12 @@ tags:
 - systemd timers is also common - [(13) All About Linux Systemd Timers w/ Hal Pomeranz - YouTube](https://www.youtube.com/watch?v=rAe9Iw08Fn0) 
 ## Process Network Behavior
 - Most malware beacons out to a website - it happens fast though.  Look for process listening in the netstat output
-- ![](_attachments/Linux%20Forensics/IMG-20240411205454309.png)
+- ![](IMG-20240411205454309.png)
 - UAC grabs a lot of this and netstat_-lpeanut is a good place to start
 - Is it normal for this process to be listening on this port?
 - To understand what's normal, look at the netstat peanut output of all machines on the network and stack the outputs 
 # User Context & Identity
-- ![](_attachments/Linux%20Forensics/IMG-20240410194852111.png)
+- ![](IMG-20240410194852111.png)
 - groups in Linux merely allow sharing of projects
 - users have UIDs and belong to one or more groups (with at least the group GID that corresponds to their user) -- creation of user also creates a group associated specifically with that user
 - only root files can change ownership on files
@@ -229,7 +229,7 @@ tags:
 - What other files/dirs do they own?
 
 - We can use UAC
-	 - ![](_attachments/Linux%20Forensics/IMG-20240410194852178.png)
+	 - ![](IMG-20240410194852178.png)
 
 ## UID Notes
 - UID 0 is admin rights
@@ -238,12 +238,12 @@ tags:
 	- Should be locked
 	- No interactive logins like user accounts have
 - Use `sort -t: -k3,3 -n /etc/passwd` to find UID 0 accounts with a file/directories 
-	- ![](_attachments/Linux%20Forensics/IMG-20240411205454310.png)
+	- ![](IMG-20240411205454310.png)
 	- www-data is an account dropped by web application - these should have UIDs under 1000
 - The service accounts should have `sbin/nologin` and `/bin/false` to use them as backdoors
 - Attackers have to set a password in the `etc/shadow` file to have a usable password instead of `*`.  Service accounts have `*` which means no password, so it's obvious when an attacker adds one
 ## Sudo
-![](_attachments/Linux%20Forensics/IMG-20240410194852177.png)
+![](IMG-20240410194852177.png)
 - Job of attacker in Linux is to get admin access on box unless you just want a coin miner
 - They need root to have guaranteed persistence 
 - Sadly, priv esc Linux vulns come out monthly
@@ -260,12 +260,12 @@ tags:
 
 ## Authorized Keys
 - You don't need a user and password to login.  For example, you can use SSH instead
-- ![](_attachments/Linux%20Forensics/IMG-20240411205454303.png)
+- ![](IMG-20240411205454303.png)
 - Attackers will drop their own keys into root's authorized keys file for persistence
 - Check the `$HOME/.ssh/authorized_keys` file 
 - If you see the same key over multiple machines, then that points to an automated attack
 # Post-Exploitation Checklist
-- ![](_attachments/Linux%20Forensics/IMG-20240410194852157.png)
+- ![](IMG-20240410194852157.png)
 - authorized_keys entries are popular lately
 
 # The Bad Old Days - Memory, Bulk Extractor, Before Volatility
@@ -279,7 +279,7 @@ tags:
 	- Finds important data types/fields - URLs, hostnames, IPs, emails, etc.
 	- Forensics like this is an artform and more akin to gambling in the streets than something flashy
 	- Bulk extractor can work better for those 4 TB images than Volatility 
-	- ![](_attachments/Linux%20Forensics/IMG-20240410194852150.png)
+	- ![](IMG-20240410194852150.png)
 	- You can use `b e viewer` the Java GUI to look at memory with the BE image 
 	- `strings -a -t d victoria-v8.memdump.img | gzip >hc07/strings.asc.gz`
 		- string indexes the common strings
@@ -313,19 +313,19 @@ tags:
 			- `ewfacquire`- runs in CLI to get compressed image
 			- Maybe pull out disk and use write blocker last resort -- good luck
 - Default Disk Geometries
-	- ![](_attachments/Linux%20Forensics/IMG-20240410203409675.png)
+	- ![](IMG-20240410203409675.png)
 >>>>>>> Stashed changes
 	- Linux does weird stuff with disk boxes
 		- Example: Software RAID interface -> LVM (logical volume mgmt) layer -> then maybe ZFS
 		- Commercial forensics suite can't do this, so you need open source tools to do it
 	- File systems can be dirty or corrupted if unplugged
 - Layers
-	- ![](_attachments/Linux%20Forensics/IMG-20240410194852144.png)
+	- ![](IMG-20240410194852144.png)
 	- Lots are in expert witness EWF or E01 format
 	- You have to assemble them, then they might be encrypted or have software RAID
 	- You have to get all the way to unencrypted disk volumes to use this data with your forensics tools
 ## Example 
-- ![](_attachments/Linux%20Forensics/IMG-20240410203837741.png)
+- ![](IMG-20240410203837741.png)
 - you can use `ewfmount` with the E01 (first piece) and it will find and use E02, E03, etc.
 - `ewfmount` quickly runs by lying to the Linux OS
 	- It's a file system and userspace driver
@@ -334,22 +334,22 @@ tags:
 - Now we can examine the raw disk image with tools like `mmls` from Sleuthkit
 - `mmls` dumps partition table from the front of the disk
 - Standard geometry with MBR (master boot record)
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711949.png)
+	- ![](IMG-20240410204711949.png)
 - Time to figure out how to boot
-	- ![](_attachments/Linux%20Forensics/IMG-20240410194852151.png)
+	- ![](IMG-20240410194852151.png)
 	- Ext2 filesystem 
 	- It mounted last on the `/boot` directory which has everything we need to boot into the Linux OS
 	- We need to replicate what the OS does during boot with our own tools manually since we're working with an image
 	- Trick the OS to think it's talking to a boot device
 - Making a readonly view of the data for Linux OS to use
-	- ![](_attachments/Linux%20Forensics/IMG-20240410154848647.png)
+	- ![](IMG-20240410154848647.png)
 	- `file -s /dev/loop0` to look at it
 - Now we need to activate the soft partitions in the volume
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711945.png)
+	- ![](IMG-20240410204711945.png)
 	- The device nodes you see on the slide are the actual Linux file systems. If you wanted to acquire an image of the raw file system, then use ewfacquire or dc3ddon /dev/VulnOSv2-vg/root. But I’m more interested in mounting this file system so that I can find and extract artifacts with standard Linux command-line tools.
 	- swap space in linux is messy.  No tools that get much from it, but you can use bulk extractor and strings
 - To run some tools over the file system, we need to mount
-	- ![](_attachments/Linux%20Forensics/IMG-20240410194852145.png)
+	- ![](IMG-20240410194852145.png)
 	- mount read only, no execution
 	- The file system is dirty - usually the filesystem driver looks at the filesystem journal on disk so it knows what happened
 		- This doesn't keep your data safe, but only your filesystem
@@ -357,18 +357,18 @@ tags:
 		- use `noload`
 		- We still also have the `/boot` filesystem
 			- mount command has an option to not have to make loopback without "losetup"
-			- ![](_attachments/Linux%20Forensics/IMG-20240411205454304.png)
+			- ![](IMG-20240411205454304.png)
 			- TURNS OUT THIS DOESN'T WORK EITHER, because it will overlap with the other existing loopback device
 			- We can also mount the /boot partition directly. We need to set up a loopback device for this, but the mount command will accept “loop” and “offset” options and set up the loopback device for us. If you recall, /boot is an EXT2 file system, and EXT2 does not have a file system journal. So the “noload” option is not necessary here.
 - Tearing all this down manually
-	- ![](_attachments/Linux%20Forensics/IMG-20240410204711950.png)
+	- ![](IMG-20240410204711950.png)
 >>>>>>> Stashed changes
 	- unmount backwards
 	- turn off the volume groups with "n"
 	- losetup -d to get rid of loopback devices
 	- unmount ewf mount 
 ## Linux Disk Acquisition Cheatsheet
-- ![](_attachments/Linux%20Forensics/IMG-20240410194852152.png)
+- ![](IMG-20240410194852152.png)
 - Also look here - [Microsoft PowerPoint - dm-crypt LVM2.pptx](https://deer-run.com/users/hal/CEIC-dm-crypt-LVM2.pdf) 
 ## Running Through It Again
 - We want into the LVM partition because it's got the root file system
@@ -381,11 +381,11 @@ tags:
 # "Quick Hit" Disk Artifacts
 - In an investigation, make sure you move through devices rapidly before going deep so you don't waste time
 ### Important Directories to Triage in Linux
-- ![](_attachments/Linux%20Forensics/IMG-20240411082641320.png)
+- ![](IMG-20240411082641320.png)
 - User profile directories are popular for malware
 - Temporary directories are also important to look through because that's typically the only place to plant malware
 ### Basic System Info to Gather Right Away
-- ![](_attachments/Linux%20Forensics/IMG-20240411082913593.png)
+- ![](IMG-20240411082913593.png)
 - From the customer:
 	- Get a "runbook" of what's expected to be running on most machines and the purpose of each application
 - Distros have different package managers and file setups (including permissions)
@@ -402,21 +402,21 @@ tags:
 # Post-Exploitation Goals & Forensic Framing
 - Usually persistence because it's annoying for attackers to have to rely on a vuln/exploit that can quickly get patched.
 ## Common Back Doors
-- ![](_attachments/Linux%20Forensics/IMG-20240411085358935.png)
+- ![](IMG-20240411085358935.png)
 - web shell - RCE through web vulns
 	- easy to spot -- small apps -- timestamp will differ from other apps 
 	- names like "eval", "exec"
 	- they are usually obfuscated which makes string searching annoying, but it's obvious once you find them
 - Another common back door in the Linux universe is a replacement SSH service with a hardcoded username/password for gaining admin access.
 ## Malware Persistence
-- ![](_attachments/Linux%20Forensics/IMG-20240411085735523.png)
+- ![](IMG-20240411085735523.png)
 - modify system boot process to start up malware
 	- systemd config file 
 	- A stealthy approach with the boot process is to activate another script.  They will change the 2nd script rather than the boot owner 
 ## IOCs on Multiple Systems
 - The same campaign will match on multiple machines
 # Recent Modifications
-- ![](_attachments/Linux%20Forensics/IMG-20240411085955173.png)
+- ![](IMG-20240411085955173.png)
 - Attackers can modify timestamps, but they usually don't
 	- Changing timestamps also requires command line
 	- Changing timestamps has to be done down to the nanoseconds. Naturally occurring all zero timestamps don't exist ever. This would point to a sophisticated attacker.
@@ -443,7 +443,7 @@ tags:
 - You can change timezone on the fly in Linux shell
 	- export `TZ=TIMEZONE_HERE`
 ## Timeline Analysis
-- ![](_attachments/Linux%20Forensics/IMG-20240411101042473.png)
+- ![](IMG-20240411101042473.png)
 - This is usually the next step
 - Commercial tools suck at this
 - The analogy is a beach:
@@ -474,10 +474,10 @@ tags:
 				- permissions (chmod)
 		- B - creation time
 			- relatively recent addition (EXT4 and recent release of XFS, ZFS, etc.)
-- ![](_attachments/Linux%20Forensics/IMG-20240411102227116.png)
+- ![](IMG-20240411102227116.png)
 
 ### Timeline Caveats
-- ![](_attachments/Linux%20Forensics/IMG-20240411102640395.png)
+- ![](IMG-20240411102640395.png)
 - Timelines are a guide to evidence, not evidence themselves
 ### How to Timeline - Tools
 - Plaso, Super Timelining - Good for Windows - Registry last updates, pre-fetch, link files, and Windows user-tracking artifacts
@@ -489,7 +489,7 @@ tags:
 	- [Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md)
 	- any csv data
 ### How to Timeline - Process
-- ![](_attachments/Linux%20Forensics/IMG-20240411103549746.png)
+- ![](IMG-20240411103549746.png)
 	- `fls` from Sleuthkit is a good tool
 	- “-r” to recursively read through the entire file system (rather than just dumping information from the top-level directory, which is the default). You want to be sure to collect evidence from all files and directories. 
 	- “-m ” to specify the output format of fls should be in mactimeformat (which is simply a pipe-delimited text file). We will be using mactime in the next step to make our timeline. The argument to -m is the path the file system is normally mounted on—see the second example on the slide where we are dumping data from /boot. The mount pathname will be added to the front of the file paths in the flsoutput so that the path names are consistent with the way the file system was used on the live machine. 
@@ -498,19 +498,19 @@ tags:
 	- Note that because mactime format body files are just plain ASCII text, they compress very well. So were are gzip-ing them to save space. 
 	- While some analysts will concatenate all of their body file data into a single large file, I prefer to dump each file system as a separate body file. That way, if I mess up one command, I only have to rebuild that one body file. Otherwise the bad data from my one wrong command might pollute the file with all of my other good data.
 - Convert bodyfiles in chronological CSVs
-- ![](_attachments/Linux%20Forensics/IMG-20240411104126635.png)
+- ![](IMG-20240411104126635.png)
 	- Once we have all of our body file data collected, we feed it into the mactimetool to produce our timeline. Here I’m using zcat to uncompress the body files I made in the previous step and piping the uncompressed output into mactime. Useful arguments to mactime include: 
 		- “-d” to produce delimited (CSV) output 
 		- “-y” for ISO 8601 date output in UTC (2019-10-05T11:31:37Z)
 		- “-p” and “-g” to specify the location of the passwd and shadow files from the image you are analyzing so you see the right user and group names in the output
 			- Timeline Explorer likes them in numeric format, so you just ignore these if that's the case
-- ![](_attachments/Linux%20Forensics/IMG-20240411104521326.png)
+- ![](IMG-20240411104521326.png)
 	- The 2 big questions to answer with intrusion analysis:
 		- How did they break in?
 		- How did they get admin privileges?
 # Core Log Analysis
 - Most of forensics is swimming through logs
-- ![](_attachments/Linux%20Forensics/IMG-20240411123710059.png)
+- ![](IMG-20240411123710059.png)
 - Most Linux runs log rotate that retains logs for a week
 	- Default is keeping about a month of logs 
 - Syslog on Linux makes it easy to send your logs to your SIEM, data lake, or warehouse
@@ -521,7 +521,7 @@ tags:
 - backdoor SSH demon (daemon) #cyberMeme 
 - Trust by verify with logs
 ## Logs and Format
-- ![](_attachments/Linux%20Forensics/IMG-20240411124150630.png)
+- ![](IMG-20240411124150630.png)
 - With wtmp and last, `:0` refers to a login through the GUI
 - `btmp` - this is optional - sysadmin has to create this
 	- this logs user name associated with failed login
@@ -532,33 +532,33 @@ tags:
 	- Lots of analysis tools have issues parsing this
 	- last log parser from tigerphoenixdragon
 ## Syslog
-- ![](_attachments/Linux%20Forensics/IMG-20240411124957889.png)
+- ![](IMG-20240411124957889.png)
 - Traditional used UDP 514, but modern uses TCP
 - Talk to lawyers:
 	- How much logs should you keep?
 	- Keep enough for compliance and incidents
 	- Keep them for as long as possible
-- ![](_attachments/Linux%20Forensics/IMG-20240411125455499.png)
+- ![](IMG-20240411125455499.png)
 - Set up config as part of Linux image template with remote hosts so that logs automatically get routed to log management and SIEM nodes on the network
 - `etc/rsyslog*`or `/etc/syslog-ng*`, or `/etc/syslog.conf`
-- ![](_attachments/Linux%20Forensics/IMG-20240411130110675.png)
+- ![](IMG-20240411130110675.png)
 - Timestamps jump around with replays attacks 
-- ![](_attachments/Linux%20Forensics/IMG-20240411130737435.png)
+- ![](IMG-20240411130737435.png)
 # Additional Logs - Apps, Web
 - There are lots of web-based exploits, so web logs should be a focus for IR
-- ![](_attachments/Linux%20Forensics/IMG-20240411134423992.png)
+- ![](IMG-20240411134423992.png)
 - Linux has `auditd` and the new EBPF (extended Berkley packet filtering)
 - Linux systems may have kernel-level auditing enabled. This is similar to Windows Sysmon. The information is incredibly detailed but can be difficult to understand. Plus it needs specialized configuration in order to provide the most useful information. If you are the administrator of a Linux system, you might want to look into enabling this logging.
 - Log the user input piece on web apps #detectionEngineering #logManagement
-- ![](_attachments/Linux%20Forensics/IMG-20240411134733347.png)
+- ![](IMG-20240411134733347.png)
 - Apache log format - created from old httpd
 - Every web server uses this format because lots of tools are made to parse these
 - Don't parse these logs
 - Web logs are typically found in directories under /var/log like /var/log/httpdor …/apache* or …/nginx.
-- ![](_attachments/Linux%20Forensics/IMG-20240411135821035.png)
+- ![](IMG-20240411135821035.png)
 - Sometimes attackers base64 encode and web servers might break with it and log as error
 ## Kernel-level Auditing in Linux, Sysmon for Linux, Auditd
-- ![](_attachments/Linux%20Forensics/IMG-20240411135956495.png)
+- ![](IMG-20240411135956495.png)
 - DoD made rainbow book logging standards which turned into mandatory logging which turned into `auditd` style logging at the kernel-level #logManagement
 - Can't monitor everything or you degrade machine performance
 - Look at CIS Benchmarks for auditd #logManagement
@@ -566,13 +566,13 @@ tags:
 - auditd lets you monitor system calls closely
 - auditd can turn into a keystroke monitor at the kernel-level 
 	- Easy to drop this into the PAM configuration
-- ![](_attachments/Linux%20Forensics/IMG-20240411140755683.png)
+- ![](IMG-20240411140755683.png)
 - `ausearch` is the best command for going through auditd logs
 - `ausearch` converts the epoch timestamps and gather related log entries
 - When gathered up the audit ID, you can get a picture of what was going on
 - audit ID resets everytime the system is rebooted
 - aureport lets you summarize, then you drill down with ausearch by audit ID number
-- ![](_attachments/Linux%20Forensics/IMG-20240411141548109.png)
+- ![](IMG-20240411141548109.png)
 - `aulast` goes through chronological auditd log file
 - Good place to corroborate wtmp
 - User logins in Linux:  #logManagement #detectionEngineering
