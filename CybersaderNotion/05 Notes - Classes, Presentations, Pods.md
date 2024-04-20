@@ -19,3 +19,13 @@
 [Is CS dead?](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Is%20CS%20dead.md)
 
 [Darknet diaries episode 32 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%2032.md)
+
+[The reality of tech jobs in 2024](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/The%20reality%20of%20tech%20jobs%20in%202024.md)
+
+[A new kind of email phishing attack](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/A%20new%20kind%20of%20email%20phishing%20attack.md)
+
+[Check washing](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Check%20washing.md)
+
+[Darknet diaries episode 23](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%2023.md)
+
+[Darknet diaries episode 120 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%20120.md)
