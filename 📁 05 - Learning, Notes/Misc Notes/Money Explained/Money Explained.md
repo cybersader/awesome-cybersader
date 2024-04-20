@@ -1,0 +1,61 @@
+---
+date created: Wednesday, April 17th 2024, 8:58 pm
+date modified: Thursday, April 18th 2024, 10:46 am
+tags:
+  - cyberDocumentary
+  - documentary
+  - financeSec
+  - fintech
+  - scams
+  - scamming
+  - phishing
+  - fraud
+  - financialFraud
+---
+Netflix - Money Explained
+# Ep 1: Get Rich Quick
+- These schemes have been around for a long time
+- If it seems too good to be true, then it probably is
+- One guy in England scammed everyone by allowing them to buy a part of a fictitious land that had gold and good harvests
+- Scams/Schemes
+	- Advance fee scam
+		- Pay a little now for a lot later (later never comes)
+	- Pump and dump
+		- Get a bunch of people to invest in something to boost the price, then sell your insider stock when the price is higher
+	- Ponzi Scheme/Scam
+		- 1920s Italian
+		- I'll double your money in 90 days
+		- Paying early investors money from new investors
+		- Borrowing and borrowing
+		- If a bunch of people ask for their money back, then the whole structure collapses
+		- Also called affiliation scams - they victimize people who have something in common with the scammer
+	- Pyramid
+		- Payment trickles down by recruitment and referrals
+		- MLM - multi level marketing 
+		- MLM is legit as long as the money comes from the outside of the structure
+	- Coaching schemes
+		- Pay money for knowledge that promises you will make money
+		-  They never deliver and classes get progressively more expensive
+		- They always have social proof
+		- Urgency
+		- Pretty similar to phishing when it comes to the psychology
+- 80s Infomercials TV products scams
+	- Format changed with cable TV
+	- Media and communication platforms reduce the cost of entry
+	- FOMO - fear of missing out - classic
+- Cryptocurrency
+	- A lot of scams here even though the technology can be legit
+	- Ruja with Onecoin - pleaded to wire fraud and money laundering
+- Complaints aren't filed often because it's not worth it
+	- Most of the time, it's these complaints that actually help to get something done
+	- Fraud.org
+	- Econsumer.gov
+	- EC.europa.eu
+	- tina.org
+	- reportfraud.ftc.gov
+- Complaints forwarded to FTC
+	- FTC database looks for correlations and tries to help law enforcement find big scammers
+- Businesses can legally market with "puffery" or subjective and exaggerated claims
+	- hard to define where scamming starts
+- Trust is linked to prosperity
+- A world where no one trusts no one is a broken world.  

@@ -16,7 +16,7 @@ tags:
 > Linux Forensics by Hal Pomeranz
 
 %% Begin Landmark %%
-- **[Exercises](./Exercises/Exercises.md)**
+- **[Exercises](Exercises/Exercises.md)**
 - **[Linux Forensics Cheat Sheet](./Linux%20Forensics%20Cheat%20Sheet/Linux%20Forensics%20Cheat%20Sheet.md)**
 - **[Linux Intro](./Linux%20Intro/Linux%20Intro.md)**
 - **[Live Linux Triage](./Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
