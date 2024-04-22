@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 17th 2024, 8:58 pm
-date modified: Thursday, April 18th 2024, 10:46 am
+date modified: Sunday, April 21st 2024, 11:46 pm
 tags:
   - cyberDocumentary
   - documentary
@@ -12,6 +12,7 @@ tags:
   - fraud
   - financialFraud
 ---
+
 Netflix - Money Explained
 # Ep 1: Get Rich Quick
 - These schemes have been around for a long time
