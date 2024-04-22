@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "44437faa4c28f5e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f55e3b0673367413",
             "type": "leaf",
             "state": {
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md"
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md"
               }
             }
           }
@@ -236,7 +248,7 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "f55e3b0673367413",
+  "active": "44437faa4c28f5e3",
   "lastOpenFiles": [
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",

@@ -1,0 +1,10 @@
+{
+	"id": "nested-daily-todos",
+	"name": "Nested Daily Todos",
+	"version": "1.1.1",
+	"minAppVersion": "0.15.0",
+	"description": "Carry over incomplete todos from Daily Notes grouped by headers, with support for nesting and flexible todo states.",
+	"author": "Thomas Brezinski",
+	"authorUrl": "https://github.com/thomasbrezinski",
+	"isDesktopOnly": false
+}
