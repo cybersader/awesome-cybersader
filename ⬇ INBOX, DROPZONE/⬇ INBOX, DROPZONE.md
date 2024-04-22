@@ -14,17 +14,17 @@ date modified: Thursday, April 18th 2024, 8:47 pm
 - [[Company Security Strategy from Zero]]
 - **[Content Curation](./Content%20Curation/Content%20Curation.md)**
 - **[Contributable Obsidian Wiki](./Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)**
+	- **[Handling Obsidian Git Conflicts](./Contributable%20Obsidian%20Wiki/Handling%20Obsidian%20Git%20Conflicts/Handling%20Obsidian%20Git%20Conflicts.md)**
+	- [[Obsidian Plugins and Ideas for Contributions]]
+	- **[Obsidian Publish Analytics](./Contributable%20Obsidian%20Wiki/Obsidian%20Publish%20Analytics/Obsidian%20Publish%20Analytics.md)**
+	- **[Obsidian Publish SEO](./Contributable%20Obsidian%20Wiki/Obsidian%20Publish%20SEO/Obsidian%20Publish%20SEO.md)**
 - **[Cyber Content Ideas](./Cyber%20Content%20Ideas/Cyber%20Content%20Ideas.md)**
 - **[Cyber Memes](./Cyber%20Memes/Cyber%20Memes.md)**
 - **[Daily Routine](./Daily%20Routine/Daily%20Routine.md)**
 - **[GitHub Repo Size Limits](./GitHub%20Repo%20Size%20Limits/GitHub%20Repo%20Size%20Limits.md)**
 - [[Go Pro as a Webcam]]
 - **[Governance, Mgmt](./Governance,%20Mgmt/Governance,%20Mgmt.md)**
-- **[Handling Obsidian Git Conflicts](./Handling%20Obsidian%20Git%20Conflicts/Handling%20Obsidian%20Git%20Conflicts.md)**
 - [[New Tools]]
-- [[Obsidian Plugins and Ideas for Contributions]]
-- **[Obsidian Publish Analytics](./Obsidian%20Publish%20Analytics/Obsidian%20Publish%20Analytics.md)**
-- **[Obsidian Publish SEO](./Obsidian%20Publish%20SEO/Obsidian%20Publish%20SEO.md)**
 - **[Planning Deadwood 2024 WWHF Trip](./Planning%20Deadwood%202024%20WWHF%20Trip/Planning%20Deadwood%202024%20WWHF%20Trip.md)**
 - **[Recover Files Old Windows Boot Drive](./Recover%20Files%20Old%20Windows%20Boot%20Drive/Recover%20Files%20Old%20Windows%20Boot%20Drive.md)**
 - **[Vehicle Selection in 2020s](./Vehicle%20Selection%20in%202020s/Vehicle%20Selection%20in%202020s.md)**

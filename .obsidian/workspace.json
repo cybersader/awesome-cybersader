@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc55242febb48b6f",
+            "id": "a3f8258ed75f9457",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md"
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md"
               }
             }
           }
@@ -224,11 +223,18 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "a51a87177e94404d",
+  "active": "a3f8258ed75f9457",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats",
+    "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
-    "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS",
@@ -239,16 +245,14 @@
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md",
     "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
     "📁 05 - Learning, Notes/Ninestar Classes/Ninestar Classes.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 05 - Learning, Notes/Cyber Classes",
-    "⬇ INBOX, DROPZONE/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 32.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
-    "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/IMG-20240418201356638.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/_attachments/Dataset Available Space Bug",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/_attachments",
@@ -257,14 +261,9 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
-    "📁 07 - Business/📁 07 - Business.md",
-    "📁 05 - Learning, Notes/Misc Notes/Misc Notes.md",
     "📁 07 - Business",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/Pasted image 20240418192733.png",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS",
-    "📄 Resume - Tools & Tech ⚒️.md",
-    "⬇ INBOX, DROPZONE/COBRA Insurance Between Jobs",
-    "📁 05 - Learning, Notes/Misc Notes/Money Explained",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 3.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 1.png",

@@ -6,6 +6,8 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 ---
 
 %% Begin Waypoint %%
+- **[001 Notes Drop](./001%20Notes%20Drop/001%20Notes%20Drop.md)**
+- **[Annual Reports and Cyber Stats](./Annual%20Reports%20and%20Cyber%20Stats/Annual%20Reports%20and%20Cyber%20Stats.md)**
 - **[BHIS, Antisyphon](./BHIS,%20Antisyphon/BHIS,%20Antisyphon.md)**
 	- **[Cyber Team Building](./BHIS,%20Antisyphon/Cyber%20Team%20Building/Cyber%20Team%20Building.md)**
 
@@ -18,6 +20,6 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 		- **[Linux Intro](./Cyber%20Classes/Linux%20Forensics/Linux%20Intro/Linux%20Intro.md)**
 		- **[Live Linux Triage](./Cyber%20Classes/Linux%20Forensics/Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
 		- **[UAC Tool](./Cyber%20Classes/Linux%20Forensics/UAC%20Tool/UAC%20Tool.md)**
-- **[Misc Notes](./Misc%20Notes/Misc%20Notes.md)**
+- **[Financial Industry and Cyber](./Financial%20Industry%20and%20Cyber/Financial%20Industry%20and%20Cyber.md)**
 
 %% End Waypoint %%
