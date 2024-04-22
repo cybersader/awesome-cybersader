@@ -1,0 +1,10 @@
+{
+	"id": "automatic-tags",
+	"name": "Automatic Tags",
+	"version": "1.1.1",
+	"minAppVersion": "0.15.0",
+	"description": "Add tags to new notes automatically based on their path.",
+	"author": "Jamalam",
+	"authorUrl": "https://jamalam.tech",
+	"isDesktopOnly": false
+}
