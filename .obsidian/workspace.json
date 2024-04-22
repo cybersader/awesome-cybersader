@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/Dataset Available Space Bug.md",
+                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,8 +226,10 @@
   },
   "active": "a51a87177e94404d",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
     "📁 05 - Learning, Notes/Misc Notes/Money Explained/Money Explained.md",
+    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md",
@@ -247,14 +249,12 @@
     "⬇ INBOX, DROPZONE/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/Dataset Available Space Bug.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug/IMG-20240418201356638.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug/_attachments/Dataset Available Space Bug/IMG-20240418201329650.png",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/IMG-20240418201356638.png",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/_attachments/Dataset Available Space Bug",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/_attachments",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/IMG-20240418201329650.png",
     "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space Bug",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 07 - Business/📁 07 - Business.md",
