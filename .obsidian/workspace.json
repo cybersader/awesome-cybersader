@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f55e3b0673367413",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "mode": "source",
                 "source": false
@@ -91,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -223,8 +236,11 @@
       "size-history:Vault size history": false
     }
   },
-  "active": "a3f8258ed75f9457",
+  "active": "f55e3b0673367413",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+    "📁 03 - Curations, Stacks/Physical Storage",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
@@ -232,7 +248,6 @@
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats",
     "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
@@ -260,10 +275,8 @@
     "⬇ INBOX, DROPZONE/Cyber Memes/Cyber Memes.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "📁 07 - Business",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/Pasted image 20240418192733.png",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 3.png",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/Untitled 1.png",
