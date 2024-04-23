@@ -1,6 +1,6 @@
 ---
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Monday, April 22nd 2024, 3:18 pm
+date modified: Tuesday, April 23rd 2024, 11:08 am
 ---
 
 %% Begin Waypoint %%
@@ -10,6 +10,7 @@ date modified: Monday, April 22nd 2024, 3:18 pm
 # Financial - Fraud, Theft, White Collar Crime, Hacking, Banks and Credit Unions
 > I'm looking for some movies to gear up for my next cybersecurity job with a credit union.  Although these movies may not be realistic, they can inspire me in a number of ways to branch out and have a high-level risk aware view and mindset
 
+- [Money Explained](Money%20Explained/Money%20Explained.md) 
 - The Blacklist
 - StartUp
 - Dirty Money
@@ -28,6 +29,7 @@ date modified: Monday, April 22nd 2024, 3:18 pm
 - Trust No One: The Hunt for Crypto King
 - Swindled
 - The China Hustle
+- Downfall: The Case Against Boeing
 - Cyber Warriors: The Frontline
 - In the Realm of Hackers
 - Rogue Trader

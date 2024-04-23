@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 17th 2024, 8:58 pm
-date modified: Tuesday, April 23rd 2024, 12:13 am
+date modified: Tuesday, April 23rd 2024, 11:03 am
 tags:
   - cyberDocumentary
   - documentary
@@ -19,7 +19,8 @@ tags:
 ---
 
 Netflix - Money Explained
-# Ep 2: 
+
+# Ep 2: Credit Cards
 - 1958 Fresno & Credit Cards
 	- Bank Americard started giving credit cards
 	- 60k residents got a credit card in the mail
@@ -146,7 +147,7 @@ Netflix - Money Explained
 
 - Model was fee driven before 2009 and is now interest driven
 
-- The purpose of credit cards in a moral world
+- The purpose of credit cards in an ethical world
 	- ![](_attachments/Money%20Explained/IMG-20240423001045634.png)
 
 - Credit card rules for consumers

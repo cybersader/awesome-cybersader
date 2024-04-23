@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "c123d12770ae0b3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a3f8258ed75f9457",
             "type": "leaf",
             "state": {
@@ -115,7 +127,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md"
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md"
               }
             }
           }
@@ -247,10 +260,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f55e3b0673367413",
+  "active": "c123d12770ae0b3f",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Websites Boredom Cure/Websites Boredom Cure.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+    "📁 03 - Curations, Stacks/Websites Boredom Cure/Websites Boredom Cure.md",
     "📁 03 - Curations, Stacks/Websites Boredom Cure",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423001045634.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000945614.png",
