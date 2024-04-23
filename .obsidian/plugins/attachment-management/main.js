@@ -1954,18 +1954,17 @@ var AttachmentManagementPlugin = class extends import_obsidian11.Plugin {
       })
     );
     this.registerEvent(
-      this.app.vault.on("modify", async (file) => {
-        debugLog("create queue:", this.createdQueue);
+      this.app.vault.on("modify", (file) => {
+        debugLog("on modify event - create queue:", this.createdQueue);
         if (this.createdQueue.length < 1 || !(file instanceof import_obsidian11.TFile)) {
           return;
         }
         debugLog("on modify event - file:", file.path);
         this.app.vault.adapter.process(file.path, (data) => {
-          debugLog("on modify event - file content:", data);
-          this.createdQueue.forEach((f) => {
+          const f = this.createdQueue.first();
+          if (f != void 0) {
             this.app.vault.adapter.exists(f.path, true).then((exist) => {
               if (exist) {
-                debugLog("on modify event - file exist:", f.path);
                 const processor = new CreateHandler(this, this.settings);
                 const link = this.app.fileManager.generateMarkdownLink(f, file.path);
                 if (file.extension == "md" && data.indexOf(link) != -1 || file.extension == "canvas" && data.indexOf(f.path) != -1) {
@@ -1973,10 +1972,11 @@ var AttachmentManagementPlugin = class extends import_obsidian11.Plugin {
                   processor.processAttach(f, file);
                 }
               } else {
+                debugLog("on modify event - file does not exist:", f.path);
                 this.createdQueue.remove(f);
               }
             });
-          });
+          }
           return data;
         });
       })

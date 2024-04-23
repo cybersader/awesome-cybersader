@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, April 22nd 2024, 10:40 pm
+date modified: Monday, April 22nd 2024, 11:06 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -34,6 +34,9 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 	- Smart connections
 	- [Contextual auto-tagging in Obsidian using AI : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/12c23j7/contextual_autotagging_in_obsidian_using_ai/) 
 	- [Auto-linking : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/kdhtw3/autolinking/) 
+	- [mymind is the extension for your mind.](https://mymind.com/) 
+	- [AI Obsidian Manager - Never Organize your Obsidian Vault](https://fileorganizer2000.com/) 
+		- [(29) File Organizer 2000: Tips & Tricks - YouTube](https://www.youtube.com/playlist?list=PLgRcC-DFR5jdUxbSBuNeymwYTH_FSVxio) 
 - Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
 	- Timeline plugin like this?
 # Misc Visuals Plugins

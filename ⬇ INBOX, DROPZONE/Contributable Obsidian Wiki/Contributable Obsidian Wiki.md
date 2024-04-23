@@ -1,8 +1,15 @@
 ---
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Thursday, April 18th 2024, 9:33 pm
+date modified: Monday, April 22nd 2024, 11:14 pm
 ---
 
+%% Begin Waypoint %%
+- **[[Handling Obsidian Git Conflicts]]**
+- [[Obsidian Plugins and Ideas for Contributions]]
+- **[[Obsidian Publish Analytics]]**
+- **[[Obsidian Publish SEO]]**
+
+%% End Waypoint %%
 # My Vision
 
 The dream:

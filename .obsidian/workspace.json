@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "f55e3b0673367413",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a3f8258ed75f9457",
             "type": "leaf",
             "state": {
@@ -20,36 +32,12 @@
             }
           },
           {
-            "id": "44437faa4c28f5e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "072825ba79e1fc3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f55e3b0673367413",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,8 +115,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md"
               }
             }
           }
@@ -255,22 +242,23 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "size-history:Vault size history": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "072825ba79e1fc3d",
+  "active": "f55e3b0673367413",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "CybersaderNotion/01 CyberNews/4-22-2024.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "📁 03 - Curations, Stacks/Diagrams",
-    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
     "📁 03 - Curations, Stacks/Physical Storage",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats",
     "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
@@ -288,7 +276,6 @@
     "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
     "📁 05 - Learning, Notes/Ninestar Classes/Ninestar Classes.md",
     "📁 05 - Learning, Notes/Cyber Classes",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 32.md",
