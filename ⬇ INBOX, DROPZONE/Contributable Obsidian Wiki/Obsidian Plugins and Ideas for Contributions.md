@@ -1,14 +1,16 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Thursday, April 18th 2024, 9:29 pm
+date modified: Monday, April 22nd 2024, 9:46 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
-# Plugins
+# Research tools that integrate with Obsidian
+- [HomePage | Pkmer.net](https://pkmer.net/en/) 
+# Plugins & Tools
 - obsidian://show-plugin?id=note-refactor-obsidian
 - [Is Waypoint plugin still used by people for MOC (Map of Content) or is it abandoned? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/17o995c/is_waypoint_plugin_still_used_by_people_for_moc/) 
-
+- [Thino | PKMer.net](https://thino.pkmer.net/en/)
 # Misc
 - [Easy Way to Generate/Copy Wiki Internal Link to Current Note? - Help - Obsidian Forum](https://forum.obsidian.md/t/easy-way-to-generate-copy-wiki-internal-link-to-current-note/56699)
 - [Peerdraft - Secure real-time collaboration for Obsidian](https://www.peerdraft.app/)

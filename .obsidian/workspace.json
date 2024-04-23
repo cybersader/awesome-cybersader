@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "072825ba79e1fc3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f55e3b0673367413",
             "type": "leaf",
             "state": {
@@ -116,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md"
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
               }
             }
           }
@@ -236,7 +248,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-importer:Open Importer": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -245,14 +256,15 @@
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "size-history:Vault size history": false
+      "size-history:Vault size history": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "44437faa4c28f5e3",
+  "active": "072825ba79e1fc3d",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "CybersaderNotion/01 CyberNews/4-22-2024.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "📁 03 - Curations, Stacks/Diagrams",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
