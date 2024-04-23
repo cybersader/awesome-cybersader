@@ -1,11 +1,11 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, April 22nd 2024, 10:34 pm
+date modified: Monday, April 22nd 2024, 10:40 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
-- [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish ➕ 2024-04-22 
+- [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔺 ➕ 2024-04-22
 # Research tools that integrate with Obsidian
 - [HomePage | Pkmer.net](https://pkmer.net/en/) 
 # Plugins & Tools
@@ -34,6 +34,8 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 	- Smart connections
 	- [Contextual auto-tagging in Obsidian using AI : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/12c23j7/contextual_autotagging_in_obsidian_using_ai/) 
 	- [Auto-linking : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/kdhtw3/autolinking/) 
+- Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
+	- Timeline plugin like this?
 # Misc Visuals Plugins
 - [https://github.com/joethei/obsidian-tagcloud](https://github.com/joethei/obsidian-tagcloud) - Show a cloud of your tags/words/links in a note
 # Misc Plugins

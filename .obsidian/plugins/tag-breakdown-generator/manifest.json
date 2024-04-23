@@ -1,0 +1,14 @@
+{
+	"id": "tag-breakdown-generator",
+	"name": "Tag Breakdown Generator",
+	"version": "1.0.10",
+	"minAppVersion": "0.15.0",
+	"description": "Breakdown nested tags into multiple parent tags",
+	"author": "Hananoshika Yomaru",
+	"authorUrl": "https://yomaru.dev",
+	"fundingUrl": {
+		"buymeacoffee": "https://www.buymeacoffee.com/yomaru",
+		"Github Sponsor": "https://github.com/sponsors/HananoshikaYomaru"
+	},
+	"isDesktopOnly": true
+}
