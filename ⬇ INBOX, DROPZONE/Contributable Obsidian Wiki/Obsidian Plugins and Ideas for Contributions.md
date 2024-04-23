@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, April 22nd 2024, 11:06 pm
+date modified: Monday, April 22nd 2024, 11:56 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -39,6 +39,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 		- [(29) File Organizer 2000: Tips & Tricks - YouTube](https://www.youtube.com/playlist?list=PLgRcC-DFR5jdUxbSBuNeymwYTH_FSVxio) 
 - Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
 	- Timeline plugin like this?
+- Auto headings and bullets?
 # Misc Visuals Plugins
 - [https://github.com/joethei/obsidian-tagcloud](https://github.com/joethei/obsidian-tagcloud) - Show a cloud of your tags/words/links in a note
 # Misc Plugins

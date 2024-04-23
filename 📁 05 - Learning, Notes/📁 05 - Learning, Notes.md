@@ -6,20 +6,20 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 ---
 
 %% Begin Waypoint %%
-- **[001 Notes Drop](./001%20Notes%20Drop/001%20Notes%20Drop.md)**
-- **[Annual Reports and Cyber Stats](./Annual%20Reports%20and%20Cyber%20Stats/Annual%20Reports%20and%20Cyber%20Stats.md)**
-- **[BHIS, Antisyphon](./BHIS,%20Antisyphon/BHIS,%20Antisyphon.md)**
-	- **[Cyber Team Building](./BHIS,%20Antisyphon/Cyber%20Team%20Building/Cyber%20Team%20Building.md)**
+- **[[001 Notes Drop]]**
+- **[[Annual Reports and Cyber Stats]]**
+- **[[BHIS, Antisyphon]]**
+	- **[[Cyber Team Building]]**
 
-	- **[Getting Started in Security with BHIS and MITRE ATT&CK](./BHIS,%20Antisyphon/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK/Getting%20Started%20in%20Security%20with%20BHIS%20and%20MITRE%20ATT&CK.md)**
+	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
-- **[Cyber Classes](./Cyber%20Classes/Cyber%20Classes.md)**
-	- **[Linux Forensics](./Cyber%20Classes/Linux%20Forensics/Linux%20Forensics.md)**
-		- **[Exercises](./Cyber%20Classes/Linux%20Forensics/Exercises/Exercises.md)**
-		- **[Linux Forensics Cheat Sheet](./Cyber%20Classes/Linux%20Forensics/Linux%20Forensics%20Cheat%20Sheet/Linux%20Forensics%20Cheat%20Sheet.md)**
-		- **[Linux Intro](./Cyber%20Classes/Linux%20Forensics/Linux%20Intro/Linux%20Intro.md)**
-		- **[Live Linux Triage](./Cyber%20Classes/Linux%20Forensics/Live%20Linux%20Triage/Live%20Linux%20Triage.md)**
-		- **[UAC Tool](./Cyber%20Classes/Linux%20Forensics/UAC%20Tool/UAC%20Tool.md)**
-- **[Financial Industry and Cyber](./Financial%20Industry%20and%20Cyber/Financial%20Industry%20and%20Cyber.md)**
+- **[[Cyber Classes]]**
+	- **[[Linux Forensics]]**
+		- **[[Exercises]]**
+		- **[[Linux Forensics Cheat Sheet]]**
+		- **[[Linux Intro]]**
+		- **[[Live Linux Triage]]**
+		- **[[UAC Tool]]**
+- **[[Financial Industry and Cyber]]**
 
 %% End Waypoint %%

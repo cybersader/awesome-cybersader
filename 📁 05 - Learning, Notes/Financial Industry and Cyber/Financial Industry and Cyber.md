@@ -4,7 +4,7 @@ date modified: Monday, April 22nd 2024, 3:18 pm
 ---
 
 %% Begin Waypoint %%
-- **[Money Explained](./Money%20Explained/Money%20Explained.md)**
+- **[[Money Explained]]**
 
 %% End Waypoint %%
 # Financial - Fraud, Theft, White Collar Crime, Hacking, Banks and Credit Unions
