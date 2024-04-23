@@ -1,0 +1,10 @@
+{
+	"id": "quick-links",
+	"name": "Quick Links",
+	"version": "0.2.3",
+	"minAppVersion": "0.15.0",
+	"description": "Create quick link shortcuts to Wikipedia and other sites",
+	"author": "Ian Fisher",
+	"authorUrl": "https://iafisher.com",
+	"isDesktopOnly": false
+}

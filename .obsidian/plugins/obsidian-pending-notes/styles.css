@@ -1,0 +1,141 @@
+.pending-notes-view-container h1 {
+	margin: 0;
+}
+
+.pending-notes-view-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 8px 0 32px;
+}
+
+.pending-notes-view-container ul li {
+	align-items: center;
+	display: flex;
+	gap: 8px;
+	margin: 0;
+	padding: 4px;
+}
+
+
+.pending-notes-view-container button,
+.pending-notes-view-container ul li strong {
+	display: block;
+}
+
+.pending-notes-view-container ul li a {
+	text-decoration: none;
+}
+
+.pending-notes-view-container button {
+	padding: 0 8px;
+}
+
+.pending-notes-view-container .title {
+	align-items: center;
+	display: flex;
+	gap: 8px;
+	margin-bottom: 4px;
+}
+
+
+.pending-notes-view-container .item {
+	align-items: center;
+	display: flex;
+	gap: 4px;
+}
+
+
+.dots {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	line-height: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+ }
+ 
+ .dots:after {
+	position: absolute;
+	content: "";
+	color: white;
+	-webkit-animation: display-dots steps(1, end) 1s infinite;
+	-moz-animation: display-dots steps(1, end) 1s infinite;
+	-o-animation: display-dots steps(1, end) 1s infinite;
+	animation: display-dots steps(1, end) 1s infinite;
+ }
+ 
+ @-webkit-keyframes display-dots {
+	0% {
+	 content: "";
+	}
+	25% {
+		content: "\2022\00A0\2022\00A0\2022";
+	}
+	50% {
+		content: "\2022\00A0\2022";
+	}
+	75% {
+		content: "\2022";
+	}
+	100% {
+	 content: "";
+	}
+ }
+ @-moz-keyframes display-dots {
+	0% {
+	 content: "";
+	}
+	25% {
+	 content: "\2022";
+	}
+	50% {
+	 content: "\2022\00A0\2022";
+	}
+	75% {
+	 content: "\2022\00A0\2022\00A0\2022";
+	}
+	100% {
+	 content: "";
+	}
+ }
+ @-o-keyframes display-dots {
+	0% {
+	 content: "";
+	}
+	25% {
+	 content: "\2022";
+	}
+	50% {
+	 content: "\2022\00A0\2022";
+	}
+	75% {
+	 content: "\2022\00A0\2022\00A0\2022";
+	}
+	100% {
+	 content: "";
+	}
+ }
+ @keyframes display-dots {
+	0% {
+	 content: "";
+	}
+	25% {
+	 content: "\2022";
+	}
+	50% {
+	 content: "\2022\00A0\2022";
+	}
+	75% {
+	 content: "\2022\00A0\2022\00A0\2022";
+	}
+	100% {
+	 content: "";
+	}
+ }
+ 
+
+
+

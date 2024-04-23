@@ -11,6 +11,8 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - obsidian://show-plugin?id=note-refactor-obsidian
 - [Is Waypoint plugin still used by people for MOC (Map of Content) or is it abandoned? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/17o995c/is_waypoint_plugin_still_used_by_people_for_moc/) 
 - [Thino | PKMer.net](https://thino.pkmer.net/en/)
+- [LinkStowr — Save links to Obsidian](https://linkstowr.com/) 
+- 
 # Misc
 - [Easy Way to Generate/Copy Wiki Internal Link to Current Note? - Help - Obsidian Forum](https://forum.obsidian.md/t/easy-way-to-generate-copy-wiki-internal-link-to-current-note/56699)
 - [Peerdraft - Secure real-time collaboration for Obsidian](https://www.peerdraft.app/)

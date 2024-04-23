@@ -1,0 +1,10 @@
+{
+	"id": "callout-suggestions",
+	"name": "Callout Suggestions",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Adds a fuzzy searched suggestion modal for callouts.",
+	"author": "cwfryer",
+	"authorUrl": "https://github.com/cwfryer/",
+	"isDesktopOnly": false
+}
