@@ -1,0 +1,11 @@
+{
+	"id": "image-search",
+	"name": "Image Search",
+	"version": "0.0.4",
+	"minAppVersion": "1.5.12",
+	"description": "Search and insert images using Google API",
+	"author": "Mohammad Razeghi",
+	"authorUrl": "https://github.com/razeghi71",
+	"fundingUrl": "https://www.buymeacoffee.com/marzghi",
+	"isDesktopOnly": false
+}

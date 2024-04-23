@@ -1,3 +1,5 @@
+- 2024-04-22 at 21h26 · [[4-22-2024]]
+- 2024-04-22 at 21h26 · [[01 CyberNews]]
 - 2024-04-22 at 19h44 · [[Diagrams]]
 - 2024-04-22 at 19h44 · [[📁 03 - Curations, Stacks]]
 - 2024-04-22 at 19h33 · [[Obsidian Publish SEO]]
@@ -96,5 +98,3 @@
 - 2024-03-22 at 23h11 · [[AI Content Workflows]]
 - 2024-03-22 at 23h10 · [[Inpainting]]
 - 2024-03-22 at 23h10 · [[Stable Diffusion Setup]]
-- 2024-03-22 at 23h10 · [[SD Web UI Setup]]
-- 2024-03-22 at 23h07 · [[ComfyUI Setup]]

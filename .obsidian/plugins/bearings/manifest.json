@@ -1,0 +1,13 @@
+{
+	"id": "bearings",
+	"name": "Bearings",
+	"version": "1.2.12",
+	"minAppVersion": "1.4.14",
+	"description": "Dynamically-scoped collapsible tree views of your vault's semantic and logical architectures.",
+	"author": "Jeet Sukumaran",
+	"authorUrl": "https://github/jeetsukumaran/obsidian-bearings",
+	"fundingUrl": {
+	    "Buy Me a Coffee": "https://www.buymeacoffee.com/jeetsukumaran"
+    },
+	"isDesktopOnly": false
+}
