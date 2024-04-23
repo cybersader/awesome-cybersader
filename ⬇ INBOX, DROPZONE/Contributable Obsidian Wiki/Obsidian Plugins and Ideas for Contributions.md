@@ -1,10 +1,11 @@
 ---
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, April 22nd 2024, 9:46 pm
+date modified: Monday, April 22nd 2024, 10:34 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
+- [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish ➕ 2024-04-22 
 # Research tools that integrate with Obsidian
 - [HomePage | Pkmer.net](https://pkmer.net/en/) 
 # Plugins & Tools
@@ -20,6 +21,10 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Better changelog plugin or fork of it
 	- [https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14](https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14 "https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14")
 # Misc Ideas
+- AI-based note enricher 
+	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
+	- Enrich notes with text at bottom to help with finding with search
+	- Kind of inspired by my old "rexplorer" idea
 - Modify refactor plugin to have 
 	- option for copying md to README.md for github applicability
 	- Ability to add sub folders or pages from within note like Notion
