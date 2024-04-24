@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md"
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md"
               }
             }
           }
@@ -296,12 +296,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "427629655d164c47",
+  "active": "e747b716bd866b53",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104402.png",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424103945.png",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424103924.png",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/The Case Against Boeing/The Case Against Boeing.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/The Case Against Boeing",
@@ -316,12 +321,9 @@
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000701572.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000637325.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000310178.png",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000003465.png",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240422235928764.png",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240422233819144.png",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
@@ -341,8 +343,6 @@
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 23.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 120.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md",
-    "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/IMG-20240418201356638.png"
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md"
   ]
 }

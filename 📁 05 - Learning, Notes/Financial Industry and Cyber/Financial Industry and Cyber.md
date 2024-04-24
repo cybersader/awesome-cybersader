@@ -5,6 +5,7 @@ date modified: Wednesday, April 24th 2024, 12:12 am
 
 %% Begin Waypoint %%
 - **[[Inside Job - 2008 Financial Crisis]]**
+
 - **[[Money Explained]]**
 - **[[The Case Against Boeing]]**
 
