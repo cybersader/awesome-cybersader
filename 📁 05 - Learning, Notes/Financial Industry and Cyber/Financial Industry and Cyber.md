@@ -1,10 +1,11 @@
 ---
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Tuesday, April 23rd 2024, 11:08 am
+date modified: Tuesday, April 23rd 2024, 11:57 pm
 ---
 
 %% Begin Waypoint %%
 - **[[Money Explained]]**
+- **[[The Case Against Boeing]]**
 
 %% End Waypoint %%
 # Financial - Fraud, Theft, White Collar Crime, Hacking, Banks and Credit Unions
@@ -29,7 +30,7 @@ date modified: Tuesday, April 23rd 2024, 11:08 am
 - Trust No One: The Hunt for Crypto King
 - Swindled
 - The China Hustle
-- Downfall: The Case Against Boeing
+- [The Case Against Boeing](The%20Case%20Against%20Boeing/The%20Case%20Against%20Boeing.md) 
 - Cyber Warriors: The Frontline
 - In the Realm of Hackers
 - Rogue Trader
