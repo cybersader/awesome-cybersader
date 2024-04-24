@@ -21,6 +21,12 @@
 
 [WPA 2 Stuff](00%20DROPZONE/WPA%202%20Stuff.md)
 
+# Notes and learning
+
+[I failed an AI job interview](00%20DROPZONE/I%20failed%20an%20AI%20job%20interview.md)
+
+[The case against Boeing](00%20DROPZONE/The%20case%20against%20Boeing.md)
+
 # Misc Ideas
 
 - Simply Cyber - ransomware prep
