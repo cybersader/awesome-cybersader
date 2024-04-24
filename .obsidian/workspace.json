@@ -25,7 +25,43 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e747b716bd866b53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "427629655d164c47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b0545f94619a652",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -260,18 +296,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c123d12770ae0b3f",
+  "active": "427629655d164c47",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/The Case Against Boeing/The Case Against Boeing.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/The Case Against Boeing/The Case Against Boeing.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/The Case Against Boeing",
     "CybersaderNotion/00 DROPZONE/The case against Boeing.md",
     "CybersaderNotion/00 DROPZONE/I failed an AI job interview/1000010089.png",
     "CybersaderNotion/00 DROPZONE/I failed an AI job interview",
     "CybersaderNotion/00 DROPZONE/I failed an AI job interview.md",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
-    "📁 03 - Curations, Stacks/Websites Boredom Cure/Websites Boredom Cure.md",
-    "📁 03 - Curations, Stacks/Websites Boredom Cure",
+    "📁 03 - Curations, Stacks/Website to Cure Boredom/Website to Cure Boredom.md",
+    "📁 03 - Curations, Stacks/Website to Cure Boredom",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423001045634.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000945614.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000701572.png",
@@ -298,15 +337,12 @@
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 23.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 120.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md",
     "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
-    "📁 05 - Learning, Notes/Ninestar Classes/Ninestar Classes.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/IMG-20240418201356638.png"
   ]
 }

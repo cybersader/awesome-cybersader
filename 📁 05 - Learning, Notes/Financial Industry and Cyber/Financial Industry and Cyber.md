@@ -1,9 +1,10 @@
 ---
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Tuesday, April 23rd 2024, 11:57 pm
+date modified: Wednesday, April 24th 2024, 12:12 am
 ---
 
 %% Begin Waypoint %%
+- **[[Inside Job - 2008 Financial Crisis]]**
 - **[[Money Explained]]**
 - **[[The Case Against Boeing]]**
 
@@ -33,6 +34,7 @@ date modified: Tuesday, April 23rd 2024, 11:57 pm
 - [The Case Against Boeing](The%20Case%20Against%20Boeing/The%20Case%20Against%20Boeing.md) 
 - Cyber Warriors: The Frontline
 - In the Realm of Hackers
+- The Big Short
 - Rogue Trader
 - Breaking the Bank
 - The Card Game
