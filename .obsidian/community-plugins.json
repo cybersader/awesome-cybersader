@@ -19,5 +19,8 @@
   "obsidian-importer",
   "obsidian-html-plugin",
   "media-notes",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "callout-manager",
+  "callout-integrator",
+  "callout-suggestions"
 ]

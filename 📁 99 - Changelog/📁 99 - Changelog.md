@@ -1,4 +1,4 @@
-- 2024-04-24 at 16h40 · [[Customizing Obsidian Publish]]
+- 2024-04-24 at 16h54 · [[Customizing Obsidian Publish]]
 - 2024-04-24 at 16h40 · [[⬇ INBOX, DROPZONE]]
 - 2024-04-24 at 16h40 · [[Contributable Obsidian Wiki]]
 - 2024-04-24 at 16h39 · [[Inside Job - 2008 Financial Crisis]]

@@ -1,0 +1,13 @@
+.callout[data-callout="folder-1"] {
+  --callout-color: var(--text-normal);
+  --callout-icon: folder;
+  background-color: var(--color-base-25);
+  mix-blend-mode: normal;
+}
+
+.callout[data-callout="folder-2"] {
+  --callout-color: var(--text-normal);
+  --callout-icon: folder;
+  background-color: var(--color-base-35);
+  mix-blend-mode: normal;
+}
