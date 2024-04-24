@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
                 "mode": "source",
                 "source": false
               }
@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -193,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "plugin",
+                "query": "publish.js",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -210,7 +210,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -230,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md"
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
               }
             }
           }
@@ -296,15 +297,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e747b716bd866b53",
+  "active": "d1a916c00d2be73c",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104402.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424103945.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424103924.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Financial Industry and Cyber.md",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/Money Explained.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis",
@@ -320,13 +325,10 @@
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000945614.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000701572.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000637325.png",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained/IMG-20240423000310178.png",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments/Money Explained",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Money Explained/_attachments",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "CybersaderNotion/01 CyberNews/4-22-2024.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "📁 03 - Curations, Stacks/Diagrams",
@@ -334,7 +336,6 @@
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats",
     "📁 03 - Curations, Stacks/Cyber Movies/Cyber Movies.md",
-    "📁 05 - Learning, Notes/Financial Industry and Cyber",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
