@@ -270,8 +270,20 @@
   ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
-  "lintCommands": [],
-  "customRegexes": [],
+  "lintCommands": [
+    {
+      "id": "",
+      "name": ""
+    }
+  ],
+  "customRegexes": [
+    {
+      "label": "No spaces below heading line",
+      "find": "(\\#{1,6}\\s.*\\n)(\\n)",
+      "replace": "$1",
+      "flags": "gm"
+    }
+  ],
   "commonStyles": {
     "aliasArrayStyle": "single-line",
     "tagArrayStyle": "single-line",

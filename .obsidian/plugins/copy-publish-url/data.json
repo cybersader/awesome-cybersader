@@ -1,0 +1,9 @@
+{
+  "homeNote": "",
+  "publishPath": "https://base.cybersader.com/",
+  "enableContext": true,
+  "enableOpenUrl": true,
+  "enableGithub": false,
+  "remoteUrl": "",
+  "branch": "main"
+}

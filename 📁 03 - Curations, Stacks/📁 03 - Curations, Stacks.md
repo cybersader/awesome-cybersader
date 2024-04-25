@@ -10,6 +10,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Diagrams]]**
 - **[[Misc Tech]]**
 - **[[Physical Storage]]**
+- **[[Resume & CV Builders]]**
 - **[[Website to Cure Boredom]]**
 - **[[Wiki, KB, KMS]]**
 

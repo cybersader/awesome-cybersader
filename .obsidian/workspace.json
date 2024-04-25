@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "file": "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6af5145afc4a7a1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "peerdra",
+                "query": "forum.obsidian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+                "file": "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+                "file": "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md"
+                "file": "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md"
               }
             }
           }
@@ -261,10 +273,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a3f8258ed75f9457",
+  "active": "ae36d7494b471d55",
   "lastOpenFiles": [
+    "📁 08 - Hobbies/📁 08 - Hobbies.md",
+    "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
+    "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
+    "📁 03 - Curations, Stacks/Resume & CV Builders",
+    "📁 08 - Hobbies/Hobbies List/Hobbies List.md",
+    "📁 01 - Logs, Journal/Phone Pick in 2024",
+    "📁 08 - Hobbies/Hobbies List",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "📁 08 - Hobbies",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/001 Notes Drop/001 Notes Drop.md",
     "📁 05 - Learning, Notes/📁 05 - Learning, Notes.md",
@@ -278,18 +302,10 @@
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive.md",
     "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "📁 01 - Logs, Journal/iOS vs Android/iOS vs Android.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 01 - Logs, Journal/iOS vs Android",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
-    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
@@ -304,10 +320,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing",
-    "CybersaderNotion/00 DROPZONE/I failed an AI job interview",
-    "📁 03 - Curations, Stacks/Website to Cure Boredom"
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png"
   ]
 }

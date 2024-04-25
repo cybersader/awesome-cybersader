@@ -26,5 +26,7 @@
   "md-image-caption",
   "image-captions",
   "templater-obsidian",
-  "multi-properties"
+  "multi-properties",
+  "obsidian-heading-shifter",
+  "copy-publish-url"
 ]
