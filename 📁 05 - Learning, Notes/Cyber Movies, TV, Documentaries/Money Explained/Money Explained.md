@@ -16,6 +16,7 @@ tags:
   - creditCards
   - economics
   - economy
+publish: true
 ---
 
 Netflix - Money Explained

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # PKI - Common Pitfalls
 
 # PKI Stuff Lately

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Linus Tech Tips - YouTube
 
 Tags: General IT

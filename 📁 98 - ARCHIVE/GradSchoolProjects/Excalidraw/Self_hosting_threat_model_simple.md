@@ -4,6 +4,7 @@ tags:
   - excalidraw
 created: Tuesday, Mar 19, 2024 08:49 PM
 updated: Wednesday, Mar 20, 2024 09:55 AM
+publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 

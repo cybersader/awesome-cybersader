@@ -10,6 +10,7 @@ tags:
   - Nextcloud
   - WebDAV
   - OS
+publish: true
 ---
 
 # Windows Backups

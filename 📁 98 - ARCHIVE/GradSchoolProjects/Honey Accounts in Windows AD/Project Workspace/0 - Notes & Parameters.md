@@ -1,3 +1,6 @@
+---
+publish: true
+---
 ### Connectivity to Workstations & Servers
 
 |System|Context|Hostname|LAN IP|WAN IP|Connection|Username|Password|

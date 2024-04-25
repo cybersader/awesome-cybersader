@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # SIEM Components, Features, Constraints
 - Data models, compatibility, or normalization approaches and/or logic
 - Query language/syntax, building analytics?

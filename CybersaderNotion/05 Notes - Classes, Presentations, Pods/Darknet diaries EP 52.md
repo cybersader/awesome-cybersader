@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Darknet diaries EP 52
 
 - Gas pump skimmers are really common because they're out from the open whereas store clerk once are more uncommon to see because somebody's usually watching them

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Data Architecting & Engineering Ontology
 
 ## Related Acronyms or Terms

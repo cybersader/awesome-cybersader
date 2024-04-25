@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Automated Web Scraping
 
 [https://github.com/lorien/awesome-web-scraping/](https://github.com/lorien/awesome-web-scraping/blob/master/python.md)

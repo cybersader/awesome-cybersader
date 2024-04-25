@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # APIs & Integrations
 
 # Working with JSON

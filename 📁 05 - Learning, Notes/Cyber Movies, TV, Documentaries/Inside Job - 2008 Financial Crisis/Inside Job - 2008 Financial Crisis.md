@@ -1,6 +1,7 @@
 ---
 date created: Wednesday, April 24th 2024, 12:12 am
 date modified: Wednesday, April 24th 2024, 10:55 pm
+publish: true
 ---
 
 # Part 1: Iceland's Ponzi Banks & History

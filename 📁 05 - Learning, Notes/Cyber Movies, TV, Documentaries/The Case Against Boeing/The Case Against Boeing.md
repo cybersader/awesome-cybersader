@@ -1,6 +1,7 @@
 ---
 date created: Tuesday, April 23rd 2024, 11:53 pm
 date modified: Tuesday, April 23rd 2024, 11:56 pm
+publish: true
 ---
 
 # The case against Boeing

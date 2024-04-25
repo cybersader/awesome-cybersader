@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # SANS Institute - YouTube
 
 Tags: Cybersecurity Seminars

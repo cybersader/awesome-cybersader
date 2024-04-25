@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Pragmatic Data Privacy for Cyber Professionals
 
 # Random

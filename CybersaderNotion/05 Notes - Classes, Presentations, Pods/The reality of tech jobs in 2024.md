@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # The reality of tech jobs in 2024
 
 https://youtu.be/j6DG1NqgkSU?si=6_WJ5__YaBXOLQkI

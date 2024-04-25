@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Sending & Sharing - files,links,etc.
 
 <aside>

@@ -1,6 +1,7 @@
 ---
 date created: Tuesday, April 2nd 2024, 4:25 pm
 date modified: Sunday, April 7th 2024, 2:59 pm
+publish: true
 ---
 
 # Misc

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Black Hat - YouTube
 
 Tags: Cybersecurity Seminars

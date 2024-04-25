@@ -1,6 +1,9 @@
 ---
+aliases: 
+tags: 
+publish: true
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Wednesday, April 24th 2024, 5:12 pm
+date modified: Thursday, April 25th 2024, 1:34 pm
 ---
 
 %% Begin Waypoint %%

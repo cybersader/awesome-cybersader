@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # TalkinBoutNews - TEMPLATE
 
 # TalkinBoutNews - DATE_HERE

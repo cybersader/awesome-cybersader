@@ -1,6 +1,7 @@
 ---
 date created: Wednesday, April 10th 2024, 8:32 am
 date modified: Wednesday, April 10th 2024, 8:32 am
+publish: true
 ---
 
 # Why is Linux Everywhere?

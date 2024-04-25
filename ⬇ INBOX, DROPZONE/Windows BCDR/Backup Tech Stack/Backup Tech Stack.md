@@ -1,6 +1,7 @@
 ---
 date created: Tuesday, April 9th 2024, 9:04 pm
 date modified: Tuesday, April 9th 2024, 9:06 pm
+publish: true
 ---
 
 - Hardware -> OS -> Apps

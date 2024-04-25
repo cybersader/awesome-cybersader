@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # ETL (Extract Transform Load) & Data Integration & Data Replication
 
 # Lists & Resources

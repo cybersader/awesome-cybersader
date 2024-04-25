@@ -1,6 +1,7 @@
 ---
 date created: Thursday, April 11th 2024, 9:15 am
 date modified: Thursday, April 11th 2024, 9:29 am
+publish: true
 ---
 
 # Acquisition, Scripts

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Infrastructure
 
 ## Azure

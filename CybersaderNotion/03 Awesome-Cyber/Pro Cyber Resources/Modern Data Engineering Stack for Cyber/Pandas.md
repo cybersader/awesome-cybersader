@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Pandas
 
 # Using a GUI to learn

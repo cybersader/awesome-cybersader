@@ -24,5 +24,7 @@
   "callout-integrator",
   "callout-suggestions",
   "md-image-caption",
-  "image-captions"
+  "image-captions",
+  "templater-obsidian",
+  "multi-properties"
 ]

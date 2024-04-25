@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # The Importance of a SIEM
 - SIEMs (security and information event management "systems") are essential to handling security of IT assets, networks, and information at scale
 

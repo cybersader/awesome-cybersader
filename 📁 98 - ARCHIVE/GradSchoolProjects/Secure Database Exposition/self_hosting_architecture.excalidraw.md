@@ -1,8 +1,8 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
+publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 

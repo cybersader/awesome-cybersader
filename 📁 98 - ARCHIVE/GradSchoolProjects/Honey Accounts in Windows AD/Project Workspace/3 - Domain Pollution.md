@@ -1,3 +1,6 @@
+---
+publish: true
+---
 This is in order to properly set up the user structure for Azure Entra ID / AAD (Azure AD)
 ## AD Pollution with BadBlood
 ### Prereqs & Setup

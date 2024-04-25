@@ -3,6 +3,7 @@ date created: Monday, March 18th 2024, 10:26 pm
 date modified: Wednesday, March 20th 2024, 11:10 am
 created: Monday, Mar 18, 2024 10:26 PM
 updated: Wednesday, Mar 20, 2024 11:10 AM
+publish: true
 ---
 
 # Deadwood 2024 Locations 

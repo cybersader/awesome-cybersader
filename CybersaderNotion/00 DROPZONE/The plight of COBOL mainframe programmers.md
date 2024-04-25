@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # The plight of COBOL mainframe programmers
 
 https://youtu.be/qNytWcW38us?si=4Yle2jeMVBM5MnK5

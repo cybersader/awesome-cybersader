@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Fireship - YouTube
 
 Tags: AWESOME CYBER RESOURCE, Programming & Development

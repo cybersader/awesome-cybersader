@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Project Proposal
 - Creation/Ideation:
 	- Cost-effective framework/architecture to obtain event/log visibility

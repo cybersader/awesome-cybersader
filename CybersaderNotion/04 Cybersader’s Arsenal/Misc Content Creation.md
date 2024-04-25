@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Misc Content Creation
 
 # Diagrams as Code (DaC) & Diagramming

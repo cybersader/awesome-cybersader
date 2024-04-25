@@ -31,8 +31,8 @@
       "force-multi-line-array-style": ""
     },
     "insert-yaml-attributes": {
-      "enabled": false,
-      "text-to-insert": "aliases: \ntags: "
+      "enabled": true,
+      "text-to-insert": "aliases: \ntags: \npublish: true"
     },
     "move-tags-to-yaml": {
       "enabled": false,
@@ -240,7 +240,7 @@
       "enabled": true
     },
     "prevent-double-list-item-indicator-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "proper-ellipsis-on-paste": {
       "enabled": false
@@ -249,7 +249,7 @@
       "enabled": false
     },
     "remove-leading-or-trailing-whitespace-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "remove-leftover-footnotes-from-quote-on-paste": {
       "enabled": false
@@ -261,7 +261,7 @@
   "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
-  "lintOnFileChange": true,
+  "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [

@@ -1,6 +1,7 @@
 ---
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Wednesday, April 24th 2024, 11:28 pm
+date modified: Thursday, April 25th 2024, 1:01 pm
+publish: true
 ---
 
 %% Begin Waypoint %%
@@ -16,7 +17,7 @@ date modified: Wednesday, April 24th 2024, 11:28 pm
 ## Fraud, Theft, White Collar Crime, Hacking, Banks and Credit Unions
 > I'm looking for some movies to gear up for my next cybersecurity job with a credit union.  Although these movies may not be realistic, they can inspire me in a number of ways to branch out and have a high-level risk aware view and mindset
 
-- [Money Explained](Money%20Explained/Money%20Explained.md) 
+- [Money Explained](Money%20Explained/Money%20Explained.md) - great breakdown of some scams/schemes and the credit card industry.
 - The Blacklist
 - StartUp
 - Dirty Money
@@ -31,11 +32,11 @@ date modified: Wednesday, April 24th 2024, 11:28 pm
 	- [Darknet diaries episode 23](../../CybersaderNotion/05%20Notes%20-%20Classes,%20Presentations,%20Pods/Darknet%20diaries%20episode%2023.md) 
 - The Missing Cryptoqueen
 - Banking on Bitcoin
-- [Inside Job - 2008 Financial Crisis](Inside%20Job%20-%202008%20Financial%20Crisis/Inside%20Job%20-%202008%20Financial%20Crisis.md) 
+- [Inside Job - 2008 Financial Crisis](Inside%20Job%20-%202008%20Financial%20Crisis/Inside%20Job%20-%202008%20Financial%20Crisis.md) - informative, great interviews, but maybe opinionated in some regards
 - Trust No One: The Hunt for Crypto King
 - Swindled
 - The China Hustle
-- [The Case Against Boeing](The%20Case%20Against%20Boeing/The%20Case%20Against%20Boeing.md) 
+- [The Case Against Boeing](The%20Case%20Against%20Boeing/The%20Case%20Against%20Boeing.md) - great example about risk management with companies during competition, governance dilemmas.
 - Cyber Warriors: The Frontline
 - In the Realm of Hackers
 - The Big Short
@@ -61,5 +62,5 @@ date modified: Wednesday, April 24th 2024, 11:28 pm
 ## Documentaries
 - .
 # Scams, Phishing
-### Entertainment > Education?
-- [[The Beekeeper|The Beekeeper]]
+### Entertainment > Education
+- [[The Beekeeper|The Beekeeper]] - super over the top with the violence and phishing - so much so that it's satirical

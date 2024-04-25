@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Darknet diaries episode 120
 
 - Kuwait malware researcher

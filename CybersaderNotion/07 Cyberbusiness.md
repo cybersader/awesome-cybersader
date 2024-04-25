@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # 07 Cyberbusiness
 
 A curated and opinionated fortress of all of my resources, tools, architectures and workflows for building an SaaS business.

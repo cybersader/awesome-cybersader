@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # CS-[moral-tech]
 
 # Random

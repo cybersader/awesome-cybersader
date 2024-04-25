@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # First Principles Approach
 - I love this approach to problem solving
 - It involves embracing studiousness rather than curiosity and skepticism

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Personal Cyber Resilience Arsenal
 
 <aside>

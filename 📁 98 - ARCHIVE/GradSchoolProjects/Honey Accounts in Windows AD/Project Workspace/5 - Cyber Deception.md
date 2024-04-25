@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Lab Overview
 This lab will demonstrate the ease of creating detection for some common attacks using various deception techniques.  
 **Please make the following considerations.**  

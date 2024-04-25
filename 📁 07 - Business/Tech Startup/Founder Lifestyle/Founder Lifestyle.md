@@ -1,6 +1,7 @@
 ---
 date created: Monday, April 15th 2024, 3:22 pm
 date modified: Monday, April 15th 2024, 3:30 pm
+publish: true
 ---
 
 # Founder Lifestyle Notes

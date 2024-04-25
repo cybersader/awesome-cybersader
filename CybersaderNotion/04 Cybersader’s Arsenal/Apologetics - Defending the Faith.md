@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Apologetics - Defending the Faith
 
 # Scripture and Catechesis

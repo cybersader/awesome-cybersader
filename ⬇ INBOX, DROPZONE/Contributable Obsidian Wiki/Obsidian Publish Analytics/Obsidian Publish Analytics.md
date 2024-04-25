@@ -1,6 +1,9 @@
 ---
+aliases: 
+tags: 
+publish: true
 date created: Tuesday, April 2nd 2024, 12:43 pm
-date modified: Tuesday, April 2nd 2024, 12:44 pm
+date modified: Thursday, April 25th 2024, 1:35 pm
 ---
 
 - [Enable Plausible Analytics on an Obsidian Publish site - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/enable-plausible-analytics-on-an-obsidian-publish-site/34661)

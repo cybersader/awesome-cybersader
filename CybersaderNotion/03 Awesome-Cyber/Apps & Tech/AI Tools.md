@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # AI Tools
 
 # Misc

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Cyber Deception & Psychology
 - [Examining the Efficacy of Decoy-based and Psychological Cyber Deception | USENIX](https://www.usenix.org/conference/usenixsecurity21/presentation/ferguson-walter)
 # Journals

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Lab Overview
 This lab covers the installation of the BloodHound-UI.
 ## Objectives

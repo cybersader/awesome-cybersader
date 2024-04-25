@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "427629655d164c47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b0545f94619a652",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3f8258ed75f9457",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "072825ba79e1fc3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,6 +26,30 @@
               "type": "markdown",
               "state": {
                 "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "427629655d164c47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a3f8258ed75f9457",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
                 "mode": "source",
                 "source": false
               }
@@ -139,7 +127,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -205,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
+                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
+                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -245,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md"
+                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md"
               }
             }
           }
@@ -268,18 +257,41 @@
       "publish:Publish changes...": false,
       "size-history:Vault size history": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "427629655d164c47",
+  "active": "a3f8258ed75f9457",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+    "📁 05 - Learning, Notes/001 Notes Drop/001 Notes Drop.md",
+    "📁 05 - Learning, Notes/📁 05 - Learning, Notes.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md",
+    "📄 Resume - Tools & Tech ⚒️.md",
+    "📄 Resume - Training, Certifications, Conferences, Education.md",
+    "README.md",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
+    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
+    "⬇ INBOX, DROPZONE/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
+    "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
+    "⬇ INBOX, DROPZONE/Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive.md",
+    "⬇ INBOX, DROPZONE/Content Curation/Content Curation.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
+    "📁 01 - Logs, Journal/iOS vs Android/iOS vs Android.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 01 - Logs, Journal/iOS vs Android",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
+    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper",
@@ -289,34 +301,13 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240424235823.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240424235813024.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper",
-    "📁 03 - Curations, Stacks/Cyber Movies & TV/Cyber Movies & TV.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
-    "CybersaderNotion/00 DROPZONE/The plight of COBOL mainframe programmers.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing",
-    "CybersaderNotion/00 DROPZONE/The case against Boeing.md",
     "CybersaderNotion/00 DROPZONE/I failed an AI job interview",
-    "CybersaderNotion/00 DROPZONE/I failed an AI job interview.md",
-    "📁 03 - Curations, Stacks/Website to Cure Boredom/Website to Cure Boredom.md",
-    "📁 03 - Curations, Stacks/Website to Cure Boredom",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/_attachments/Money Explained",
-    "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
-    "CybersaderNotion/01 CyberNews/4-22-2024.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
-    "⬇ INBOX, DROPZONE/New Tools.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md"
+    "📁 03 - Curations, Stacks/Website to Cure Boredom"
   ]
 }

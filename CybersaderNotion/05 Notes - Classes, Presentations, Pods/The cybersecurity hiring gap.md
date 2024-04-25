@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # The cybersecurity hiring gap
 
 https://youtu.be/uFNqXgjwVyI?si=qcRwQ0HjNJosr2hk

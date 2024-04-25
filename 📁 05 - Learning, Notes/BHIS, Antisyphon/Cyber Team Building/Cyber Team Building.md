@@ -8,6 +8,7 @@ tags:
   - management
   - BHIS
   - AntisyphonTraining
+publish: true
 ---
 
 Link - [(3) How to Accelerate Finding and Professionally Developing Talented InfoSec Team Members | Kip Boyle - YouTube](https://www.youtube.com/watch?v=pXn0ai5DPdE&t=4s)

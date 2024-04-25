@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Researchers and Blogs
 - [Troy Hunt: Have I Been Pwned - Troy Hunt](https://www.troyhunt.com/tag/have-i-been-pwned-3f/) 
 	- One of the key projects I'm involved in today is [Have I Been Pwned](https://haveibeenpwned.com/?ref=troyhunt.com) (HIBP), a free service that aggregates data breaches and helps people establish if they've been impacted by malicious activity on the web. As well as being a useful service for the community, HIBP has given me an avenue to ship code that runs at scale on Microsoft's Azure cloud platform, one of the best ways we have of standing up services on the web today.

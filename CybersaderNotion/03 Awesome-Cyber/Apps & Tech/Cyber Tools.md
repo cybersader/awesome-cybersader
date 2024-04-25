@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Cyber Tools
 
 <aside>

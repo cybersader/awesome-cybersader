@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Intro to IOT Hacking
 
 # Why hack these?

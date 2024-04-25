@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Research
 - [Information | Free Full-Text | A Novel Authentication Method That Combines Honeytokens and Google Authenticator](https://www.mdpi.com/2078-2489/14/7/386) 
 	- Not a great reputable paper, but could be theoretical

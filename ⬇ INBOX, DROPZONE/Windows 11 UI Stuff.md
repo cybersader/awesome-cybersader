@@ -3,6 +3,7 @@ date created: Sunday, March 10th 2024, 5:27 pm
 date modified: Tuesday, March 19th 2024, 8:27 pm
 created: Sunday, Mar 10, 2024 05:27 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
+publish: true
 ---
 
 # Getting Rid of "Show more options" and using old Win 10 default

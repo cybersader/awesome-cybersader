@@ -1,3 +1,6 @@
+---
+publish: true
+---
 Top Journals, Transactions, Proceedings ,etc.
 # Journal Access
 - [University Library Website | University Library](https://ulib.iupui.edu/) 

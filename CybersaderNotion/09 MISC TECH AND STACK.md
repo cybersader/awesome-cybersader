@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # 09 MISC TECH AND STACK
 
 # Misc Pages:

@@ -1,6 +1,7 @@
 ---
 date created: Friday, April 12th 2024, 10:03 am
 date modified: Saturday, April 13th 2024, 9:07 pm
+publish: true
 ---
 
 %% Begin Waypoint %%

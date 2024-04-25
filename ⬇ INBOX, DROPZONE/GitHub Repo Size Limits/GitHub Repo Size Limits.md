@@ -1,6 +1,7 @@
 ---
 date created: Thursday, April 11th 2024, 10:51 am
 date modified: Thursday, April 11th 2024, 10:51 am
+publish: true
 ---
 
 - [About large files on GitHub - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

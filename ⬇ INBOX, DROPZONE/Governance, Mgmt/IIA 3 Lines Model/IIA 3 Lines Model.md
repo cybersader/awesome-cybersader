@@ -1,6 +1,7 @@
 ---
 date created: Friday, April 12th 2024, 10:04 am
 date modified: Saturday, April 13th 2024, 11:54 am
+publish: true
 ---
 
 # Three Lines Model Whitepaper

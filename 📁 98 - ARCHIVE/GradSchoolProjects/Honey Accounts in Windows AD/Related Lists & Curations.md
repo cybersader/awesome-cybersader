@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # BlackHillsInfoSec
 ## AntiSyphon Training
 - [AntiSyphon Training](https://github.com/AntiSyphon) 

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 TL;DR (too long didn't read):
 - I want to design a principled framework for log management and SIEM (security information and event management) systems. The goal is to produce a cost-effective system that can be used to obtain IT event visibility in an organization, namely, for security events.
 

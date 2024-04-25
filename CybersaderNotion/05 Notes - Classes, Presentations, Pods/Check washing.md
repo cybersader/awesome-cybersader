@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Check washing
 
 https://youtu.be/6au2YS68Dgw?si=NrhtXLXa4ZJwxza4

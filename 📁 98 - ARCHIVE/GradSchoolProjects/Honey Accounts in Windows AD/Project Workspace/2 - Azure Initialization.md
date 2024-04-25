@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Azure Account Initialization
 ## Important Notes
 - Azure account must be upgraded

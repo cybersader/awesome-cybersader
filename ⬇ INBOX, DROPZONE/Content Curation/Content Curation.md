@@ -1,6 +1,9 @@
 ---
+aliases: 
+tags: 
 date created: Monday, April 15th 2024, 3:33 pm
-date modified: Thursday, April 18th 2024, 7:58 pm
+date modified: Thursday, April 25th 2024, 1:36 pm
+publish: true
 ---
 
 # YouTube Playlists

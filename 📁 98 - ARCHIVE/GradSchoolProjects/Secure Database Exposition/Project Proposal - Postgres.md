@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Proposal
 ## Objectives: 
 - My primary objective of this project is to show how you can implement a self-hosted PostgreSQL database (at home) that is securely exposed to the internet. This includes various architectures or tech stacks for self-hosting (hardware, software, and networking) and for methods of exposing local devices on the internet.

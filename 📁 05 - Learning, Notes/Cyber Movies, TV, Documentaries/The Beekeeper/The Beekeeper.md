@@ -1,12 +1,13 @@
 ---
 date created: Wednesday, April 24th 2024, 11:28 pm
-date modified: Thursday, April 25th 2024, 12:29 pm
+date modified: Thursday, April 25th 2024, 12:56 pm
 tags:
   - "#scams"
   - scamming
   - phishing
   - cybercrime
   - cyberMovie
+publish: true
 ---
 
 > [!tldr] This movie is an ironic intersection of my fear of buzzing insects yet love of honeybees, and my not-so-much love but study of cybercrime, and phishing...wow.  Either this will be an absolute bop or an absolute flop
@@ -58,4 +59,3 @@ tags:
 - They keep showing Josh/Derek and mentioning how well known and powerful he is.  Seems like his mom is the president or something
 - Yup...she's the president 
 - The company with the malware and victim targeting software is headed by the president
-- 

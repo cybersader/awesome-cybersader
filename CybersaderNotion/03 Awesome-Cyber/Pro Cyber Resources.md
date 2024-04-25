@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Pro Cyber Resources
 
 <aside>

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 f# Recon Curations
 ## Vuln Stuff
 - Awesome lists

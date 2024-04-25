@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # 03 Awesome-Cyber
 
 <aside>

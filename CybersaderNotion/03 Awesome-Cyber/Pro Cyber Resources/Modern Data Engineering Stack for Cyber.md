@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Modern Data Engineering Stack for Cyber
 
 ---

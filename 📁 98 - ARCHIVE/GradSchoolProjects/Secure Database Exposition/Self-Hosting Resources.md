@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Lists and Curations
 - [https://github.com/mikeroyal/Self-Hosting-Guide > log-management](https://github.com/mikeroyal/Self-Hosting-Guide#log-management) 
 - [https://github.com/paulveillard/cybersecurity-self-hosted > self-hosting-solutions](https://github.com/paulveillard/cybersecurity-self-hosted#self-hosting-solutions) 

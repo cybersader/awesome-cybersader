@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # How to Annoy Attackers so They Cry w/ John Strand | 1-Hour - YouTube
 
 - Cyber deception is always what they recommend for moderate to advanced teams

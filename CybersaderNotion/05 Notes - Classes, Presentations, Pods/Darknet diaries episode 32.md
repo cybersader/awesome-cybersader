@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Darknet diaries episode 32
 
 https://darknetdiaries.com/episode/32/

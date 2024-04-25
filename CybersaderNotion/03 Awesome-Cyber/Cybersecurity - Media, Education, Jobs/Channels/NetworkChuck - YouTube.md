@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # NetworkChuck - YouTube
 
 Tags: Beginner -> Intermediate , Networking

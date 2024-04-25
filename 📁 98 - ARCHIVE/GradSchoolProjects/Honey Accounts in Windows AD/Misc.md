@@ -1,3 +1,6 @@
+---
+publish: true
+---
 - It’s possible this could be run using Azure Directory in combination with some pentesting tools:
     - BadBlood
     - Bloodhound, Plumhound

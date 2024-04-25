@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # File Hosting
 
 > Self-hosted storage, file storage, file backups, storage backups, cloud, on-prem, NAS, hardware, file-hosting, file sync, file sharing, content caching, backup and disaster recovery

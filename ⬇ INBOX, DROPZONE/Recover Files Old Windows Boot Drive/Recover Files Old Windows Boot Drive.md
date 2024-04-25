@@ -1,11 +1,13 @@
 ---
+aliases: 
 date created: Wednesday, April 3rd 2024, 10:19 am
-date modified: Wednesday, April 3rd 2024, 11:00 am
+date modified: Thursday, April 25th 2024, 1:36 pm
 tags:
   - Bitlocker
   - Windows
   - DataRecovery
   - Hardware
+publish: true
 ---
 
 Person: 

@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Darknet diaries episode 23
 
 - The x25 protocol from TeleNet became popular in the '80s.  This is when the internet started popping off because it was free to use something like TeleNet

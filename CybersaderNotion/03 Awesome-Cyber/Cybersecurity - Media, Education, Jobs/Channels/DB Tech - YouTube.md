@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # DB Tech - YouTube
 
 Tags: Self-Hosting Tech

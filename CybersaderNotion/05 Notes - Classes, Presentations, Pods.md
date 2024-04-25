@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # 05 Notes - Classes, Presentations, Pods
 
 # BHIS

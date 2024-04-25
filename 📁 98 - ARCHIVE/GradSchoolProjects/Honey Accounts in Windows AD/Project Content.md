@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Implementation
 - [AppliedPurpleTeaming/APT-9S22: APT-9S22](https://github.com/AppliedPurpleTeaming/APT-9S22) 
 	- [https://github.com/DefensiveOrigins/APT-PreReqs](https://github.com/DefensiveOrigins/APT-PreReqs) 

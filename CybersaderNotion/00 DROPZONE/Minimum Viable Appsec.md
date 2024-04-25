@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Minimum Viable Appsec
 
 - Defense sector has sucky appsec apparently

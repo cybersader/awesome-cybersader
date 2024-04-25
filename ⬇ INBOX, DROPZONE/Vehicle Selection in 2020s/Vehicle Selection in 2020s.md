@@ -1,6 +1,9 @@
 ---
+aliases: 
+tags: 
 date created: Friday, March 22nd 2024, 6:35 pm
-date modified: Friday, March 22nd 2024, 6:52 pm
+date modified: Thursday, April 25th 2024, 1:36 pm
+publish: true
 ---
 
 # EVs

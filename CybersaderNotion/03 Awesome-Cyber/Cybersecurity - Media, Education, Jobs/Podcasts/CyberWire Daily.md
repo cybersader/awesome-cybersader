@@ -1,1 +1,4 @@
+---
+publish: true
+---
 # CyberWire Daily

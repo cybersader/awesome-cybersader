@@ -11,6 +11,7 @@ tags:
   - BlueTeam
   - DataAcquisition
   - UAC
+publish: true
 ---
 
 > Linux Forensics by Hal Pomeranz

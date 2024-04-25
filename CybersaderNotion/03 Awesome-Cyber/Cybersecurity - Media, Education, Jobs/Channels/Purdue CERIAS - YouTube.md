@@ -1,3 +1,6 @@
+---
+publish: true
+---
 # Purdue CERIAS - YouTube
 
 Tags: Cybersecurity Seminars
