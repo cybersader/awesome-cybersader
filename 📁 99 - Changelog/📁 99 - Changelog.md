@@ -1,4 +1,4 @@
-- 2024-04-24 at 22h13 · [[Inside Job - 2008 Financial Crisis]]
+- 2024-04-24 at 22h55 · [[Inside Job - 2008 Financial Crisis]]
 - 2024-04-24 at 21h32 · [[09 MISC TECH AND STACK]]
 - 2024-04-24 at 21h32 · [[00 DROPZONE]]
 - 2024-04-24 at 21h32 · [[The plight of COBOL mainframe programmers]]

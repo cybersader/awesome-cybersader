@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 24th 2024, 12:12 am
-date modified: Wednesday, April 24th 2024, 4:39 pm
+date modified: Wednesday, April 24th 2024, 10:55 pm
 ---
 
 # Part 1: Iceland's Ponzi Banks & History
@@ -293,4 +293,81 @@ The results
 	- "Enhanced financial stability" 
 	- "Milder and less recessions"
 	- "Distributes risk"
-	- 
+- Columbia and Harvard presidents declined interviews
+- Economics discipline is part of the problem
+
+# Part 5: Where We Are Now (2010)
+- The rising power of financial sector was part of a big change in America
+- GM and big companies were poorly managed and falling behind foreign competitors, so they started sending jobs overseas
+- America's manufacturing base was destroyed
+- US started leading in IT
+- IT jobs require education and that's not reachable for everyone
+- Private universities have billions in endowments
+- Public university funding was shrinking and tuition rising
+	- $650 in 70s to $10,000 in 2010
+	- determinate for going to college is money to pay for it
+- American tax policy shifted to favor wealthy
+- Bush administration had Glenn Hubbard design tax cuts on investment gains, stock dividends, and the estate tax (all helping wealthy 1%)
+- The American response to this were 1 of 2:
+	- work longer hours
+	- go into debt
+- Middle class fell behind, so they made it easier to get credit
+- People went into debt and borrowed to finance cars, homes, healthcare, and education
+- Bottom 90% people lost ground between 1980 and 2007 - all going to top 1%
+- Average Americans had less education than parents
+
+- 2008 Obama pointed to Wall Street greed and lack of oversight
+	- Change finance sector culture of greed
+	- Risk regulator
+	- Increased capital requirements
+	- Consumer financial protection agency
+- Enacted mid-2010 and yet reforms were somewhat weak
+	- Weak in:
+		- rating agencies
+		- lobbying
+		- compensation
+- Why didn't they follow through?
+
+> [!quote] It's a Wall Street government 
+
+Obama's Corrupt Arsenal?
+- Obama chose Timothy Geithner as Treasury Secretary 
+	- (President of New York Federal Reserve during crisis)
+- Key player in decision to pay Goldman Sachs 100 cents on the dollar for their credit default swaps
+- When he was testifying to be Treasury Secretary, he said "I've never been a regulator."
+- He did not understand his job
+- The new President of Federal Reserve Bank of New York became William Dudley - former chief economist of Goldman Sachs
+	- same guy who wrote paper with Hubbard that praised derivatives
+- Geithner's chief of staff was Mark Patterson
+	- (former lobbyist for Goldman)
+- Senior Treasury Advisor became Lewis Sachs
+	- (oversaw Tricadia - bet against mortgage securities it was selling)
+- Commodity Futures Trading Commission
+	- Obama chose Gary Gensler (Goldman Sachs executive)
+		- Helped ban regulation of derivatives
+- Head of SEC
+	- Obama chose Mary Schapiro (former CEO of FINRA)
+	- investment banking's self-regulation body
+- Chief of Staff
+	- Obama chose Rahm Emanuel
+	- Rahm made 320k serving on the board of Freddie Mac
+- Obama's Economic Recovery Board
+	- Martin Feldstein and Laura Tyson
+- Chief Economic Advisor
+	- Obama chose Larry Summers
+- These were the people who built the risky greedy structure
+
+Obama's result
+- resisted regulation of bank compensation
+- foreign leaders did the opposite with their governments
+	- 2009 September - finance ministers of Sweden, Netherlands, Luxembourg, Italy, Spain, and Germany called for G20 nations (including US) to put strict regulations on bank compensation
+	- Obama administration didn't respond
+- By 2010, no financial firm had been criminally prosecuted
+
+- Prostitutes even took plea bargains
+
+> [!quote] Why should a financial engineer be paid 10-100 times more than a real engineer? A real engineer build bridges. A financial engineer build dreams. When those dreams turn out to be nightmares, other people pay for it.
+
+- The will tell us we need them, that we don't understand, and that it won't happen again
+- It won't be easy, but some things are worth fighting for
+
