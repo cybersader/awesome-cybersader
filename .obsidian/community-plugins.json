@@ -22,5 +22,7 @@
   "obsidian-tasks-plugin",
   "callout-manager",
   "callout-integrator",
-  "callout-suggestions"
+  "callout-suggestions",
+  "md-image-caption",
+  "image-captions"
 ]

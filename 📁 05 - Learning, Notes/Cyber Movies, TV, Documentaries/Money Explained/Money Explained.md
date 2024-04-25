@@ -38,7 +38,7 @@ Netflix - Money Explained
 
 - Before credit cards you would get a loan at the bank
 - Assessed back then on 3 C's
-	- ![](_attachments/Money%20Explained/IMG-20240422233819144.png)
+	- ![](IMG-20240422233819144.png)
 	- Capacity - can you pay back
 	- Capital - money or stuff that can be taken
 	- Character - what kind of person are you, job, etc.
@@ -105,9 +105,9 @@ Netflix - Money Explained
 - Deals per category
 	- **transactors** get perk cards
 		- Requires a lot a spending before perks kick in to combat credit hackers
-		- ![500](_attachments/Money%20Explained/IMG-20240422235928764.png)
+		- ![500](IMG-20240422235928764.png)
 	- **revolvers** get introductory offers - no interest for the first year - high interest rate kicks in later
-		- ![](_attachments/Money%20Explained/IMG-20240423000003465.png)
+		- ![](IMG-20240423000003465.png)
 - They use psychology too
 	- People with more credit line spend more into debt
 - Low credit score strategy
@@ -117,7 +117,7 @@ Netflix - Money Explained
 	- Minimum payment
 	- They anchor to the minimum rather than going over
 - Minimum Payment Label Law
-	- ![](_attachments/Money%20Explained/IMG-20240423000310178.png)
+	- ![](IMG-20240423000310178.png)
 	- How much money you save by paying more each month
 	- People aren't encouraged on paper - just notified
 
@@ -131,10 +131,10 @@ Netflix - Money Explained
 	- Are they making lives better or not?
 
 - Credit card debt has a stigma so people inaccurately report it on surveys
-	- ![](_attachments/Money%20Explained/IMG-20240423000637325.png)
+	- ![](IMG-20240423000637325.png)
 
 - Most people can't pay during a crisis - most don't have savings accounts
-	- ![300](_attachments/Money%20Explained/IMG-20240423000701572.png)
+	- ![300](IMG-20240423000701572.png)
 - People use credit cards as their savings accounts
 
 - 2009 crisis resulted in "Credit Card Accountability Responsibility and Disclosure Act of 2009"
@@ -142,13 +142,13 @@ Netflix - Money Explained
 	- Limits on fees and interest charges
 	- Prevention of deceptive marketing
 	- Privacy protection #privacy 
-	- ![](_attachments/Money%20Explained/IMG-20240423000945614.png)
+	- ![](IMG-20240423000945614.png)
 	- Some estimate this saved $12 billion a year
 
 - Model was fee driven before 2009 and is now interest driven
 
 - The purpose of credit cards in an ethical world
-	- ![](_attachments/Money%20Explained/IMG-20240423001045634.png)
+	- ![](IMG-20240423001045634.png)
 
 - Credit card rules for consumers
 	- Don't let the credit card pick you - fit your needs

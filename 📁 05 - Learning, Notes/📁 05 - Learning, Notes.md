@@ -20,6 +20,6 @@ date modified: Wednesday, March 20th 2024, 7:23 pm
 		- **[[Linux Intro]]**
 		- **[[Live Linux Triage]]**
 		- **[[UAC Tool]]**
-- **[[Financial Industry and Cyber]]**
+- **[[Cyber Movies, TV, Documentaries]]**
 
 %% End Waypoint %%

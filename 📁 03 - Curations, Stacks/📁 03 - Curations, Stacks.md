@@ -6,7 +6,6 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Cyber Books]]**
 - **[[Cyber Documentaries]]**
 - **[[Cyber Merch]]**
-- **[[Cyber Movies]]**
 - **[[Cyber Youtube]]**
 - **[[Diagrams]]**
 - **[[Misc Tech]]**
