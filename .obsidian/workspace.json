@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -226,7 +226,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -242,7 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +260,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +283,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+                "file": "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md"
               }
             }
           }
@@ -308,12 +309,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ae36d7494b471d55",
+  "active": "e747b716bd866b53",
   "lastOpenFiles": [
+    "CybersaderNotion/00 DROPZONE/The plight of COBOL mainframe programmers.md",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
     "📁 05 - Learning, Notes/Financial Industry and Cyber/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png",
@@ -354,7 +356,6 @@
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 23.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 120.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md"
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md"
   ]
 }

@@ -3,7 +3,7 @@ date created: Wednesday, April 24th 2024, 12:12 am
 date modified: Wednesday, April 24th 2024, 4:39 pm
 ---
 
-# Iceland's Ponzi Banks
+# Part 1: Iceland's Ponzi Banks & History
 - Iceland
 	- 13 billion GDP in 2008
 	- Bank losses : $100 billion
@@ -163,4 +163,134 @@ date modified: Wednesday, April 24th 2024, 4:39 pm
 	- "Do you a duty to act in best interest of clients" -- reply: "Show them prices on transactions that they ask for" (so no)
 	- What do you think about selling securities that your company knows is crap?  
 	- "It's unfortunate someone said that in email" -- ...WOW
+
+- Hedge funds like Tricadia and Magnetar made billions betting against "AAA" CDOs they designed with Merril Lynch, J.P. Morgan, and Lehman Brothers.
+- CDOs were sold to customers as "safe" investments
+
+- How these subprime were rated AAA
+- Moody's, S&P, and Fitch made billions giving high ratings
+- They quadrupled profits
+- Hundreds of billions of dollars were being rated AAA
+
+- The argument/lawyer from the credit rating agencies: "Our ratings are our opinions"
+
+# Part 3: The Collapse
+How the bubble could burst
+- a bank would become insolvent if they had something like a 33:1 leverage and their assets (home mortgages) that they borrowed decreased
+-  house prices decreased and enough people started selling houses then everyone starts wanting their money back from the bottom (homebuyers)?
+
+- By 2008, home foreclosures skyrocketed
+- Securitization food chain imploded
+- Lenders could no longer sell to investment banks and loans started going bad
+- The market for CDOs collapsed - left them with CDOs, loans, and real estate that they couldn't sell
+
+The beginning of the recession
+- March 16, 2008 - Bear Stearns ran out of cash.  They were borrowing from mortgages that weren't being paid off, so the money ran out
+	- Bear Stearns was acquired for 2 dollars per share
+	- This deal was backed by 30 million dollars of emergency guarantee from the Federal Reserve
+- September 7, 2008 - Fannie Mae and Freddie Mac (mortgage lenders) were about to collapse
+	- Too many risky loans that weren't being paid off so money was lost
+- Lehman Brothers had catastrophic losses of 3.2 billion dollars and the stock collapsed
+	- They relied on lenders, and they were on the hook from investors
+	- Their assets were essentially dissolved
+- All had high investment grade ratings days before failing or being bailed out
+- Regulators weren't aware of their ratings and thought they had been downgraded over time
+- Governor Mishkin left Federal Reserve in the middle of crisis to go teach at business school
+- September 12, 2008 - Lehman Brothers ran out of cash 
+- September 14, 2008 - Merril Lynch about to fail - acquired by Bank of America
+	- The Federal Government had not planned for this either
+
+Effects of Bankruptcy 
+- Lehman's failure caused collapse in paper markets - couldn't make payroll, documents, etc.
+
+- AIG owed $13 million to credit default swap holders
+- AIG was a hub - if it stopped, plane companies would have to stop flying
+- September 17, 2008 - AIG taken over by the government
+- Alternative would be a financial collapse of the national and global economy
+
+> [!quote] "All of the potential root causes were called out by Secretary Paulson" 
+> 
+> Interviewer: 'ummmm no'
+> 
+> Ironically, Paulson was the senior advocate for prohibiting regulation of credit default swaps and lifting leverage regulations for banks"
+
+- When AIG was bailed out, owners of credit default swaps were paid $61 billion the next day
+	- Paulson, Bernanke, and Tim Geithner forced AIG to pay all of the money rather than negotiate lower prices (more money in Goldman Sachs pockets)
+	- The most prominent receiver of this payment was Goldman Sachs
+	- This bailout costs taxpayers over $150 billion - essentially $600 or more per citizen
+	- $14 billion went to Goldman Sachs
+
+- The person in charge of dealing with the crisis was the previous CEO of Goldman Sachs
+- Paulson and Geithner forced AIG to surrender its right to sue Goldman and other banks for fraud
+- GW Bush signed $700 billion bailout bill
+
+The results
+- Bailout did not stem the tide of layoffs and foreclosures
+- GM and Chrysler faced bankruptcy
+- US consumer cut back on spending and Chinese manufacturer sales plummet - 10 million migrant worker lose jobs
+
+> [!important] Our economies are linked globally...we sort of need each other
+
+- 6 million foreclosures by early 2010
+- Foreclosures affect everyone around the house
+- House will go back onto the market at a lower price, it won't be maintained for awhile, etc.
+- It will lower the value of homes
+- Many were defrauded by mortgage brokers who had been paid by predatory lenders who had no money left to give
+# Part 4: Accountability
+- The CEOs of the banks walked away with their fortunes - stolen money from a globally colluded Ponzi Scheme
+- Top 5 execs of Lehman Brothers left with $1 billion
+
+- Who's accountable in the business?
+	- The board - they hire and fire CEO
+	- Board composition in America is problematic because it's elected many times by the CEO
+	- Board of directors and compensation committees are best situated to choose pay packages for the executives
+	- Board and compensation about a "B" for grade
+
+- Bonuses and severance 
+	- Board of directors at companies gave CEOs and exec hundreds of millions of dollars
+	- AIGFP Joseph Cassano was kept as a consultant for a million a month instead of being fired
+
+- JP Morgan, Walls Fargo, and Bank of America conglomerating
+
+- Still fighting to stay unregulated
+	- Financial Services Roundtable and Financial Sector hired 3000 lobbyists - 5 for each member of Congress
+	- Financial industry has political influence
+	- You can walk into a hearing room, but you can't write lobbying checks
+
+- Subtle ways financial sector exerts influence
+	- Deregulation is taught in business school
+	- Since 1980s, academic economists had turned into deregulation fanatics
+	- They opposed reform even after crisis
+
+- To Harvard economist - "Over last decade financial sector made about $5 billion political contributions...does that bother you?" -- No
+- Martin Feldstein was on board of AIG and financial products making him millions
+- "I cannot say anything more about AIG"
+- Glenn Hubbard ( Harvard, Columbia, etc) - Chairman of Council of Economic Advisors under George W Bush
+	- Do you think financial sector has too much political power? -- No
+- Does economics discipline have a conflict of interest problem? -- No.  They don't make a lot of money usually
+- They usually are for hire for huge banks
+
+- These economists were paid big bucks to write a paper on how good the deregulated Icelandic economy was despite the collapse later
+- John Campbell - Chairman of Harvard Economics Department - Does Harvard require disclosure of financial conflicts of interest with publications? -- No
+	- Do you need to report compensation from outside activities? -- No -- Is that a problem? -- Don't see why
+- To Martin Feldstein (Dir. AIG & AIGFP till 2009)
+	- You wrote so many articles...why none around unregulated credit default swaps or executive compensation, regulation of corporate governance? -- I wouldn't have anything to add
+- Glenn Hubbard:
+	- Made millions consulting
+	- Interviewer: "Most of your outside activities are consulting and directorship arrangement with financial sector -- correct?" 
+		- My consulting clients aren't even on my CVs
+	- Interviewer: "Who are your consulting clients?"
+		- I don't have to discuss that with you.  In fact, you have a few more minutes and the interview's over
+	- Interviewer: "Do they include other financial services firms?"
+		- Possibly
+	- Interview: "Do you remember?"
+		- This isn't a deposition sir.  3 more minutes.
+- Ferguson:
+	- Do you consult? -- I don't want to go into detail about that
+
+- 2004 (height of bubble) - Paper with Hubbard and Dudley from Goldman Sachs
+	- Praised derivative markets - improved allocation of capital and of risk
+	- "Enhanced financial stability" 
+	- "Milder and less recessions"
+	- "Distributes risk"
 	- 
