@@ -22,5 +22,6 @@ publish: true
 		- **[[Live Linux Triage]]**
 		- **[[UAC Tool]]**
 - **[[Cyber Movies, TV, Documentaries]]**
+- **[[ISP Shenanigans]]**
 
 %% End Waypoint %%

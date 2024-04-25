@@ -1,0 +1,11 @@
+{
+	"id": "run",
+	"name": "Run",
+	"version": "1.0.8",
+	"minAppVersion": "0.15.0",
+	"description": "Generate markdown from dataview query and javascript",
+	"author": "Hananoshika Yomaru",
+	"authorUrl": "https://yomaru.dev",
+	"fundingUrl": "https://www.buymeacoffee.com/yomaru",
+	"isDesktopOnly": false
+}

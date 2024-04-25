@@ -28,5 +28,8 @@
   "templater-obsidian",
   "multi-properties",
   "obsidian-heading-shifter",
-  "copy-publish-url"
+  "copy-publish-url",
+  "quickadd",
+  "dataview",
+  "run"
 ]
