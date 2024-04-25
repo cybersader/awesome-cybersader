@@ -6,6 +6,7 @@ date modified: Wednesday, April 24th 2024, 5:12 pm
 %% Begin Waypoint %%
 - **[[Customizing Obsidian Publish]]**
 - **[[Handling Obsidian Git Conflicts]]**
+- **[[Obsidian Plugins and 3rd Party Tools]]**
 - [[Obsidian Plugins and Ideas for Contributions]]
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**

@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, April 24th 2024, 11:28 pm
-date modified: Thursday, April 25th 2024, 12:35 am
+date modified: Thursday, April 25th 2024, 12:29 pm
 tags:
   - "#scams"
   - scamming
@@ -55,3 +55,7 @@ tags:
 > [!failure] Vengeance is not justice...just to be clear, and it surely isn't moral
 
 - The guy getting thrown into the river by the car looked so fake and ragdoll-like 😆...good job on that one.  Realistic violence in movies subverts human dignity - at least when they use it for shock factor
+- They keep showing Josh/Derek and mentioning how well known and powerful he is.  Seems like his mom is the president or something
+- Yup...she's the president 
+- The company with the malware and victim targeting software is headed by the president
+- 
