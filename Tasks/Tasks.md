@@ -36,7 +36,6 @@ not done
 show urgency
 sort by urgency
 ```
-
 # COMPLETED ✅
 ```tasks
 done

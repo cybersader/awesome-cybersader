@@ -7,7 +7,9 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 ---
 
 %% Begin Waypoint %%
+- **[[🐛 Known Base Bugs, Issues]]**
 - **[[Customizing Obsidian Publish]]**
+- **[[GitHub Repo Size Limits]]**
 - **[[Handling Obsidian Git Conflicts]]**
 - [[Obsidian Plugins and Ideas for Contributions]]
 - **[[Obsidian Publish Analytics]]**

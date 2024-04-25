@@ -9,24 +9,11 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- **[[🐛 Known Base Bugs, Issues]]**
-- **[[AI Content Workflows]]**
-- **[[Backups Tech]]**
-- **[[Books]]**
-- **[[COBRA Insurance Between Jobs]]**
 - [[Company Security Strategy from Zero]]
-- **[[Content Curation]]**
 - **[[Contributable Obsidian Wiki]]**
-- **[[Cyber Content Ideas]]**
-- **[[Cyber Memes]]**
-- **[[Daily Routine]]**
-- **[[GitHub Repo Size Limits]]**
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
 - [[New Tools]]
-- **[[Planning Deadwood 2024 WWHF Trip]]**
-- **[[Recover Files Old Windows Boot Drive]]**
-- **[[Vehicle Selection in 2020s]]**
 - [[Windows 11 UI Stuff]]
 - **[[Windows BCDR]]**
 

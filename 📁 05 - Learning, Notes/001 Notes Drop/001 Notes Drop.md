@@ -5,6 +5,8 @@ publish: true
 ---
 
 %% Begin Waypoint %%
+- **[[COBRA Insurance Between Jobs]]**
 - **[[ISP Shenanigans]]**
+- **[[Recover Files Old Windows Boot Drive]]**
 
 %% End Waypoint %%
