@@ -6,6 +6,9 @@
 
 # Misc
 
+- Decentralized Social Media?
+    - Mastodon
+    - [Nostr, a simple protocol for decentralizing social media that has a chance of working](https://nostr.com/)
 - Malware Sandboxing and Analysis
     - [Search · awesome malware](https://github.com/search?q=awesome+malware)
     - [Kasm Workspaces | The Container Streaming Platform](https://www.kasmweb.com/)
@@ -24,6 +27,8 @@
 ## Misc misc
 
 - [Home | nivo](https://nivo.rocks/) - nivo provides a rich set of dataviz components, built on top of D3 and React.
+- [omg.lol - A lovable web page and email address, just for you](https://home.omg.lol/)
+- 
 
 ## CSS Framework Stuff
 

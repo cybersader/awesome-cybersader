@@ -25,7 +25,7 @@
 
 [I failed an AI job interview](00%20DROPZONE/I%20failed%20an%20AI%20job%20interview.md)
 
-[The case against Boeing](00%20DROPZONE/The%20case%20against%20Boeing.md)
+[The plight of COBOL mainframe programmers](00%20DROPZONE/The%20plight%20of%20COBOL%20mainframe%20programmers.md)
 
 # Misc Ideas
 
