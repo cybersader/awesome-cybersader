@@ -1,6 +1,6 @@
 ---
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Monday, April 22nd 2024, 11:14 pm
+date modified: Wednesday, April 24th 2024, 5:12 pm
 ---
 
 %% Begin Waypoint %%
@@ -12,6 +12,7 @@ date modified: Monday, April 22nd 2024, 11:14 pm
 
 %% End Waypoint %%
 # My Vision
+The platform agnostic Obsidian as a CMS contributable, sync-able, customizable, collaborative, wiki
 
 The dream:
 - Edit page -> then it allows you to edit it as it appear right there
