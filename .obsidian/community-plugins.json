@@ -31,5 +31,6 @@
   "copy-publish-url",
   "quickadd",
   "dataview",
-  "run"
+  "run",
+  "obsidian-charts"
 ]

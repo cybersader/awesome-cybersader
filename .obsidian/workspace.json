@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "file": "Tasks/Tasks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fce735bfae9f8929",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b85c9b3dac23f0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +139,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -144,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "forum.obsidian",
+                "query": "starlight",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md"
               }
             }
           }
@@ -248,43 +273,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "fce735bfae9f8929",
   "lastOpenFiles": [
+    "Tasks/Tasks.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
+    "📁 09 - My Obsidian Stack/Dataview/Dataview.md",
+    "📁 09 - My Obsidian Stack/Dataview",
+    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
+    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
+    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests",
     "📁 09 - My Obsidian Stack/Templater/Templater.md",
-    "📁 09 - My Obsidian Stack/Untitled",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 09 - My Obsidian Stack/Templater",
-    "Tasks/Tasks.md",
     "📁 09 - My Obsidian Stack",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "Tasks",
-    "📁 05 - Learning, Notes/ISP Shenanigans/ISP Shenanigans.md",
+    "📁 05 - Learning, Notes/001 Notes Drop/ISP Shenanigans/ISP Shenanigans.md",
     "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
-    "📁 05 - Learning, Notes/ISP Shenanigans",
+    "📁 05 - Learning, Notes/001 Notes Drop/ISP Shenanigans",
     "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
     "📁 03 - Curations, Stacks/Browser Extensions",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 08 - Hobbies/📁 08 - Hobbies.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
     "📁 03 - Curations, Stacks/Resume & CV Builders",
     "📁 08 - Hobbies/Hobbies List/Hobbies List.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024",
-    "📁 08 - Hobbies/Hobbies List",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/001 Notes Drop/001 Notes Drop.md",
     "📁 05 - Learning, Notes/📁 05 - Learning, Notes.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md",
     "📄 Resume - Tools & Tech ⚒️.md",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "README.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md",
-    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",

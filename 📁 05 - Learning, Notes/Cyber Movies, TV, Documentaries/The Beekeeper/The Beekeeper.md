@@ -44,7 +44,7 @@ publish: true
 > [!quote] Sometimes I use fire to smoke out the hornets
 
 - No way. Our boy Pita Bread from Hunger Games is a call center mastermind.
-- 30 minutes in and they already found his bees.  I swear this is about to turn into Keanu Reeves John Wick if they miss with his bees.
+- 30 minutes in and they already found his bees.  I swear this is about to turn into Keanu Reeves John Wick if they mess with his bees.
 
 ![](_attachments/The%20Beekeeper/IMG-20240425002226786.gif)
 

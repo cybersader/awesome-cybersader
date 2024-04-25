@@ -5,6 +5,6 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-
+- **[[ISP Shenanigans]]**
 
 %% End Waypoint %%
