@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tasks/Tasks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b85c9b3dac23f0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3f8258ed75f9457",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md"
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
               }
             }
           }
@@ -177,44 +152,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8b85c9b3dac23f0c",
+  "active": "6af5145afc4a7a1f",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+    "✅ Tasks/✅ Tasks.md",
+    "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian",
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones/Place to Buy Phones.md",
+    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
+    "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
     "📁 03 - Curations, Stacks/01 - Tech Dropzone/01 - Tech Dropzone.md",
     "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
-    "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 09 - My Obsidian Stack/Obsidian Run",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 76.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
     "📁 11 - Content Creation/📁 11 - Content Creation.md",
-    "📁 10 - Community/📁 10 - Community.md",
     "📁 11 - Content Creation",
     "📁 10 - Community",
-    "Tasks/Tasks.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/The Beekeeper.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
-    "📁 09 - My Obsidian Stack/Dataview/Dataview.md",
     "📁 09 - My Obsidian Stack/Dataview",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
     "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests",
     "📁 09 - My Obsidian Stack/Templater",
-    "📁 09 - My Obsidian Stack",
-    "Tasks",
-    "📁 05 - Learning, Notes/001 Notes Drop/ISP Shenanigans",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",

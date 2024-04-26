@@ -10,7 +10,6 @@ publish: true
 
 %% Begin Waypoint %%
 - [[Company Security Strategy from Zero]]
-- **[[Contributable Obsidian Wiki]]**
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
 - [[New Tools]]

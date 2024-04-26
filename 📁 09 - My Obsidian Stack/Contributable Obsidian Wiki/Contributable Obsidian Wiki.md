@@ -12,6 +12,7 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 - **[[Customizing Obsidian Publish]]**
 - **[[GitHub Repo Size Limits]]**
 - **[[Handling Obsidian Git Conflicts]]**
+- **[[Media Hosting in Obsidian]]**
 - [[Obsidian Plugins and Ideas for Contributions]]
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**

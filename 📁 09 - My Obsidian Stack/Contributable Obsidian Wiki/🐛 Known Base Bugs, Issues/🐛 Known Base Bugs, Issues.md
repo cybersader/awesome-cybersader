@@ -3,7 +3,7 @@ date created: Wednesday, April 10th 2024, 8:46 pm
 date modified: Wednesday, April 10th 2024, 8:46 pm
 publish: true
 ---
-`
+
 - Brackets in file name (from Notion) (CS-\[moral-tech\])
 # Design Issues
 - Publish page content width is narrow

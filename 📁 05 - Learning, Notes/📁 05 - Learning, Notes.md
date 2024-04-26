@@ -7,7 +7,7 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- **[[001 Notes Drop]]**
+- **[[⬇️ Notes Drop]]**
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
 	- **[[Cyber Team Building]]**
