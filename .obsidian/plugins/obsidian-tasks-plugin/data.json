@@ -2,7 +2,7 @@
   "globalQuery": "",
   "globalFilter": "",
   "removeGlobalFilter": false,
-  "taskFormat": "dataview",
+  "taskFormat": "tasksPluginEmoji",
   "setCreatedDate": true,
   "setDoneDate": true,
   "setCancelledDate": true,
