@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "b7d626d2dc6e16e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6af5145afc4a7a1f",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file organizer 2000",
+                "query": "\"Obsidian Sync\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
               }
             }
           }
@@ -201,53 +213,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ef49a409835bd033",
+  "active": "b7d626d2dc6e16e6",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171407130.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171407072.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171407011.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406955.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406850.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406901.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426163507942.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406764.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406699.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426171406587.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426161014856.png",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+    "📁 09 - My Obsidian Stack/Obsidian to Ghost/Obsidian to Ghost.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish/Folder Notes & Publish.md",
+    "✅ Tasks/✅ Tasks.md",
+    "📁 09 - My Obsidian Stack/Obsidian to Ghost",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/Auto-Tagging & Linking.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Auto-Tagging & Linking",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish/Folder Notes & Publish.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
     "📁 09 - My Obsidian Stack/Attachment Management/_attachments/Attachment Management",
     "📁 09 - My Obsidian Stack/Attachment Management/_attachments",
-    "📁 09 - My Obsidian Stack/Attachment Management/_attachments/Attachment Management/IMG-20240426152800236.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 09 - My Obsidian Stack/Attachment Management",
-    "✅ Tasks/✅ Tasks.md",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish",
     "📁 09 - My Obsidian Stack/Autocompletion/Autocompletion.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "📁 09 - My Obsidian Stack/Autocompletion",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Astro with Content Layer/Astro with Content Layer.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Astro with Content Layer",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
-    "📁 03 - Curations, Stacks/Awesome Anime",
     "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones/Place to Buy Phones.md",
-    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425000550383.gif",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425000430005.gif",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240425000203.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240424235823.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240424235813024.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917929.png"
+    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md"
   ]
 }

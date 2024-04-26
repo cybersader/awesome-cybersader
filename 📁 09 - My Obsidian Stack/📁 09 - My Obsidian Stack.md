@@ -15,7 +15,9 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**
+- **[[Obsidian to Ghost]]**
 - **[[Syncing Obsidian]]**
+	- **[[Syncthing for Obsidian Notes]]**
 - **[[Templater]]**
 
 %% End Landmark %%
