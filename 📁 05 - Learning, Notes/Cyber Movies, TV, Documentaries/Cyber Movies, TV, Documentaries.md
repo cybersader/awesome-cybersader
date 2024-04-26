@@ -2,13 +2,12 @@
 aliases: 
 tags: 
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Friday, April 26th 2024, 1:15 pm
+date modified: Friday, April 26th 2024, 1:19 pm
 publish: true
 ---
 
 %% Begin Waypoint %%
 - **[[Inside Job - 2008 Financial Crisis]]**
-
 - **[[Money Explained]]**
 - **[[The Beekeeper]]**
 - **[[The Case Against Boeing]]**

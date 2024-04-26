@@ -3,9 +3,10 @@
   "landmarkFlag": "%% Landmark %%",
   "stopScanAtFolderNotes": false,
   "showFolderNotes": false,
-  "showNonMarkdownFiles": false,
+  "showNonMarkdownFiles": true,
   "debugLogging": false,
   "useWikiLinks": true,
+  "useFrontMatterTitle": false,
   "showEnclosingNote": false,
   "folderNoteType": "INSIDE_FOLDER",
   "ignorePaths": [

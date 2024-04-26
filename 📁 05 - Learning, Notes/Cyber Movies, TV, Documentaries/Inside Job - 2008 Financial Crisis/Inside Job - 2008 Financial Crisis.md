@@ -116,14 +116,14 @@ publish: true
 - A global Ponzi scheme
 - SEC had no one working
 
-- ![](Pasted%20image%2020240424104600.png)
+- ![](_attachments/Inside%20Job%20-%202008%20Financial%20Crisis/IMG-20240426131917892.png)
 
 - Investment banks borrowed to buy more loans and create CDOs
 - Ratio between bank's money and borrowed money ("leverage") meant more borrowed money - more leverage
 - 2004 - Goldman Sachs got SEC to relax limits on leverage - allowed banks to get more leverage and gamble more
 - The amount of leverage went from 3:1 to like 33:1
 - You can do the math on this to see when they fail
-- ![](Pasted%20image%2020240424104613.png)
+- ![](_attachments/Inside%20Job%20-%202008%20Financial%20Crisis/IMG-20240426131917929.png)
 - Leverage and failure threshold:
 	- 33:1 means 100/33 = ~%3 decrease in value of asset till they lose everything
 	- If they had a slight decrease and took too much risk, then they can't pay anyone back
@@ -136,7 +136,7 @@ publish: true
 	- Speculators could also buy these to bet against CDOs that they didn't own
 	- These were unregulated
 	- AIG didn't have to put money aside for losses - they would pay employees cash bonuses when contracts were signed - this left AIG on the hook
-	- ![](Pasted%20image%2020240424104402.png)
+	- ![](_attachments/Inside%20Job%20-%202008%20Financial%20Crisis/IMG-20240426131917979.png)
 	- 
 - This was a distorted system of compensation
 

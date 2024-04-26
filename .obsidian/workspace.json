@@ -20,19 +20,43 @@
             }
           },
           {
+            "id": "5efc6512ccdeee81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "10fa3cad6579bb61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ca3052974fefe7cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md"
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md"
               }
             }
           }
@@ -165,10 +189,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ca3052974fefe7cb",
+  "active": "10fa3cad6579bb61",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
     "✅ Tasks/✅ Tasks.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
@@ -179,7 +208,6 @@
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones/Place to Buy Phones.md",
     "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones",
@@ -196,13 +224,9 @@
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish",
     "📁 09 - My Obsidian Stack/Obsidian Run",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 76.md",
-    "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
-    "📁 11 - Content Creation/📁 11 - Content Creation.md",
     "📁 11 - Content Creation",
     "📁 10 - Community",
     "📁 09 - My Obsidian Stack/Dataview",
-    "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests",
-    "📁 09 - My Obsidian Stack/Templater",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
@@ -211,7 +235,7 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240425000203.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240424235823.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240424235813024.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104613.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Pasted image 20240424104600.png"
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917929.png",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917892.png"
   ]
 }
