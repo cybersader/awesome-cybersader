@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Thursday, April 25th 2024, 1:35 pm
+date modified: Friday, April 26th 2024, 3:31 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -37,13 +37,6 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 	- Ability to add sub folders or pages from within note like Notion
 - Youtube links
 	- [Embed YouTube Videos in Notes & Link Timestamps to Embedded Video - Feature archive - Obsidian Forum](https://forum.obsidian.md/t/embed-youtube-videos-in-notes-link-timestamps-to-embedded-video/36779/4) 
-- Auto-linking and tagging
-	- Smart connections
-	- [Contextual auto-tagging in Obsidian using AI : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/12c23j7/contextual_autotagging_in_obsidian_using_ai/) 
-	- [Auto-linking : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/kdhtw3/autolinking/) 
-	- [mymind is the extension for your mind.](https://mymind.com/) 
-	- [AI Obsidian Manager - Never Organize your Obsidian Vault](https://fileorganizer2000.com/) 
-		- [(29) File Organizer 2000: Tips & Tricks - YouTube](https://www.youtube.com/playlist?list=PLgRcC-DFR5jdUxbSBuNeymwYTH_FSVxio) 
 - Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
 	- Timeline plugin like this?
 - Auto headings and bullets?

@@ -61,5 +61,14 @@
       ],
       "key": "-"
     }
+  ],
+  "advanced-paste:removeBlankLines": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "V"
+    }
   ]
 }

@@ -8,8 +8,10 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 
 %% Begin Waypoint %%
 - **[[🐛 Known Base Bugs, Issues]]**
+- **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
 - **[[Customizing Obsidian Publish]]**
+- **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
 - **[[Handling Obsidian Git Conflicts]]**
 - **[[Media Hosting in Obsidian]]**

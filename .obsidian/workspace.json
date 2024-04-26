@@ -8,6 +8,54 @@
         "type": "tabs",
         "children": [
           {
+            "id": "8796f069415c9ca4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "✅ Tasks/✅ Tasks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a87d86fed72ebd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish/Folder Notes & Publish.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "12f07c1d2d2869de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/Auto-Tagging & Linking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef49a409835bd033",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6af5145afc4a7a1f",
             "type": "leaf",
             "state": {
@@ -18,45 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5efc6512ccdeee81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10fa3cad6579bb61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca3052974fefe7cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,10 +97,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "auto publ",
+                "query": "file organizer 2000",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
               }
             }
           }
@@ -189,44 +201,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "10fa3cad6579bb61",
+  "active": "ef49a409835bd033",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/Auto-Tagging & Linking.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Auto-Tagging & Linking",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish/Folder Notes & Publish.md",
+    "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
+    "📁 09 - My Obsidian Stack/Attachment Management/_attachments/Attachment Management",
+    "📁 09 - My Obsidian Stack/Attachment Management/_attachments",
+    "📁 09 - My Obsidian Stack/Attachment Management/_attachments/Attachment Management/IMG-20240426152800236.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 09 - My Obsidian Stack/Attachment Management",
+    "✅ Tasks/✅ Tasks.md",
+    "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish",
+    "📁 09 - My Obsidian Stack/Autocompletion/Autocompletion.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+    "📁 09 - My Obsidian Stack/Autocompletion",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Astro with Content Layer/Astro with Content Layer.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Astro with Content Layer",
+    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 03 - Curations, Stacks/Awesome Anime",
+    "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/Inside Job - 2008 Financial Crisis.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Money Explained/Money Explained.md",
-    "✅ Tasks/✅ Tasks.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones/Place to Buy Phones.md",
     "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
-    "📁 01 - Logs, Journal/Phone Pick in 2024/Place to Buy Phones",
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
-    "📁 03 - Curations, Stacks/01 - Tech Dropzone/01 - Tech Dropzone.md",
-    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
-    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
-    "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md",
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish",
-    "📁 09 - My Obsidian Stack/Obsidian Run",
-    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 76.md",
-    "📁 11 - Content Creation",
-    "📁 10 - Community",
-    "📁 09 - My Obsidian Stack/Dataview",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
@@ -235,7 +248,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240425000203.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Pasted image 20240424235823.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240424235813024.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917929.png",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917892.png"
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Inside Job - 2008 Financial Crisis/_attachments/Inside Job - 2008 Financial Crisis/IMG-20240426131917929.png"
   ]
 }

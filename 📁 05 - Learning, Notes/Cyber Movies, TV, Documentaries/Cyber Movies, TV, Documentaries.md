@@ -1,10 +1,13 @@
 ---
 aliases: 
-tags: 
+tags:
+  - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Friday, April 26th 2024, 1:19 pm
+date modified: Friday, April 26th 2024, 3:23 pm
 publish: true
 ---
+
+[📁 03 - Curations, Stacks](../../📁%2003%20-%20Curations,%20Stacks/📁%2003%20-%20Curations,%20Stacks.md) 
 
 %% Begin Waypoint %%
 - **[[Inside Job - 2008 Financial Crisis]]**
@@ -48,20 +51,43 @@ publish: true
 - Capital in the 21st Century
 - Abacus: Small Enough to Jail
 - The Flaw
-- Cyber Crime: Netflix Series
 - Terms and Conditions May Apply
 - InRealLife
 - American Experience: The Crash of 1929
 - Money, Power and Wall Street
 - The Ascent of Money
 - The Perfect Weapon
+- CSI Cyber
+- Caught in the Net
+- Witness to Murder: Digital Evidence
+- Silicon Valley
+- Hackers
+- The Undeclared War
+- Algorithm
+### Economy, Workplace, Finance, Business
+- <u>Related Anime?</u>
+	- Battle Programmer Shirase
+	- Serial Experiments Lain
+	- Paprika?
+	- How a Realist Hero Rebuilt the Kingdom
+	- The Genius Prince's Guide to Raising a Nation Out of Debt
+	- Spice and Wolf?
+	- Steins;Gate
+	- Great Pretender (MC pulls off scams for money)
+	- Banished from the Hero's Party (MC opens a potion shop)
+	- Management of a Novice Alchemist (MC opens an alchemy shop)
+	- Parallel World Pharmacy (MC opens a pharmacy)
+	- By the Grace of the Gods (MC opens a laundry mat)
+	- The Dungeon of Black Company (bad work conditions)
+	- The Money of Soul and Possibility Control Uses Money as Power
+	- Maoyu Establishes a Blooming Economy From Scratch
 ## Misc News Stories and Investigative Reports
 - .
 # Hacking, Cybercrime
 ## Nonfiction
 - Mr. Robot
 ## Documentaries
-- .
+- Cyber Crime: Netflix Series
 # Scams, Phishing
-### Entertainment > Education
+## Entertainment > Education
 - [[The Beekeeper|The Beekeeper]] - super over the top with the violence and phishing - so much so that it's satirical
