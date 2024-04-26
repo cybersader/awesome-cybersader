@@ -54,6 +54,7 @@ publish: true
 - American Experience: The Crash of 1929
 - Money, Power and Wall Street
 - The Ascent of Money
+- The Perfect Weapon
 ## Misc News Stories and Investigative Reports
 - .
 # Hacking, Cybercrime

@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 11 - Content Creation/📁 11 - Content Creation.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 11 - Content Creation/📁 11 - Content Creation.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 11 - Content Creation/📁 11 - Content Creation.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 11 - Content Creation/📁 11 - Content Creation.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
               }
             }
           }
@@ -261,12 +261,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "6be6f575bf994248",
   "lastOpenFiles": [
-    "📁 10 - Community/📁 10 - Community.md",
-    "📁 11 - Content Creation/📁 11 - Content Creation.md",
-    "📁 11 - Content Creation",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "📁 03 - Curations, Stacks/Cyber Documentaries/Cyber Documentaries.md",
+    "📁 11 - Content Creation/📁 11 - Content Creation.md",
+    "📁 10 - Community/📁 10 - Community.md",
+    "📁 11 - Content Creation",
     "📁 10 - Community",
     "Tasks/Tasks.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish Analytics/Obsidian Publish Analytics.md",
@@ -298,7 +299,6 @@
     "📁 08 - Personal/Hobbies List/Hobbies List.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
