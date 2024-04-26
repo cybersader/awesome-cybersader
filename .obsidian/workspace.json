@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "427629655d164c47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a3f8258ed75f9457",
             "type": "leaf",
             "state": {
@@ -54,69 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a51a87177e94404d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ee3c6859c84a5ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "090e1597f099abae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5aae0d0e59d5d4d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Misc Tech/Misc Tech.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8f2de26c5d09d141",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md"
+                "file": "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md"
               }
             }
           }
@@ -249,9 +177,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a51a87177e94404d",
+  "active": "8b85c9b3dac23f0c",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md",
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
+    "📁 03 - Curations, Stacks/01 - Tech Dropzone/01 - Tech Dropzone.md",
+    "📁 01 - Logs, Journal/TrueNAS Scale Home Server/Dataset Available Space/Dataset Available Space.md",
+    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
+    "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md",
+    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
@@ -275,18 +210,11 @@
     "📁 09 - My Obsidian Stack/Dataview/Dataview.md",
     "📁 09 - My Obsidian Stack/Dataview",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 09 - My Obsidian Stack/Obsidian Issues & Feature Requests",
-    "📁 09 - My Obsidian Stack/Templater/Templater.md",
-    "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 09 - My Obsidian Stack/Templater",
     "📁 09 - My Obsidian Stack",
-    "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Publish SEO/Obsidian Publish SEO.md",
     "Tasks",
-    "📁 05 - Learning, Notes/001 Notes Drop/ISP Shenanigans/ISP Shenanigans.md",
-    "📁 03 - Curations, Stacks/Resume & CV Builders/Resume & CV Builders.md",
     "📁 05 - Learning, Notes/001 Notes Drop/ISP Shenanigans",
-    "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
     "⬇ INBOX, DROPZONE/Contributable Obsidian Wiki/Obsidian Plugins and 3rd Party Tools/Pasted image 20240425123028.png",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002348276.gif",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/_attachments/The Beekeeper/IMG-20240425002226786.gif",
