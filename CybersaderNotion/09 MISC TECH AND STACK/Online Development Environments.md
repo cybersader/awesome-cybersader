@@ -1,6 +1,3 @@
----
-publish: true
----
 # Online Development Environments
 
 | Online Environment | Type | Dependencies | Open Source | Free/Paid | Languages/Frameworks Included | Security | Cron Jobs & Automation | Webhooks & APIs |

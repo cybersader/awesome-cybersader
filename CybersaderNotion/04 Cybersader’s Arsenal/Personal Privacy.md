@@ -1,6 +1,3 @@
----
-publish: true
----
 # Personal Privacy
 
 - Privacy controls

@@ -1,6 +1,3 @@
----
-publish: true
----
 # 05 Notes - Classes, Presentations, Pods
 
 # BHIS
@@ -10,6 +7,8 @@ publish: true
 [The Most Offensive Con That Ever Offensived - Bypass Edition 3_13_24](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/The%20Most%20Offensive%20Con%20That%20Ever%20Offensived%20-%20Bypa.md)
 
 # Misc
+
+[Darknet diaries episode 76](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%2076.md)
 
 [Darknet diaries EP 52 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20EP%2052.md)
 

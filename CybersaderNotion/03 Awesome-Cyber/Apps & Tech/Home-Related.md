@@ -1,6 +1,3 @@
----
-publish: true
----
 # Home-Related
 
 # Real Estate Search

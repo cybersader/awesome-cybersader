@@ -1,6 +1,3 @@
----
-publish: true
----
 # Awesome Home Networking-CN
 
 # Awesome Home Networking

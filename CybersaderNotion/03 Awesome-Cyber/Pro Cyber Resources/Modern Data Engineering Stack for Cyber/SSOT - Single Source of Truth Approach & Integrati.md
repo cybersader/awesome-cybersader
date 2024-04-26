@@ -1,6 +1,3 @@
----
-publish: true
----
 # SSOT - Single Source of Truth Approach & Integration
 
 ---

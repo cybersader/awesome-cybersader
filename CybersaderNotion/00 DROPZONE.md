@@ -1,6 +1,3 @@
----
-publish: true
----
 # 00 DROPZONE
 
 > Place to stage and drop content, files, and stuff to organize into knowledgebase later on

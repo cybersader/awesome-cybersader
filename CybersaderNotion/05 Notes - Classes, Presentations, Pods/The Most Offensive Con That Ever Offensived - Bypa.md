@@ -1,6 +1,3 @@
----
-publish: true
----
 # The Most Offensive Con That Ever Offensived - Bypass Edition 3_13_24
 
 # Panel Discussion

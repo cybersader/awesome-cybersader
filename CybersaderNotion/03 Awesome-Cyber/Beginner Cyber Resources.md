@@ -1,6 +1,3 @@
----
-publish: true
----
 # Beginner Cyber Resources
 
 # Penetration Testing

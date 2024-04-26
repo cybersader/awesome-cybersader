@@ -1,6 +1,3 @@
----
-publish: true
----
 # Registry Keys & Defense Evasion
 
 # Registry Overview

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Awesome Purple Teaming
 
 # Random

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Research Tools
 
 # Research Summarizers

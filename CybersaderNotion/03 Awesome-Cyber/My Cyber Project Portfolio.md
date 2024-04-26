@@ -1,6 +1,3 @@
----
-publish: true
----
 # My Cyber Project Portfolio
 
 <aside>

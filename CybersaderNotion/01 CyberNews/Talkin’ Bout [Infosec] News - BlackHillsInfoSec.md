@@ -1,6 +1,3 @@
----
-publish: true
----
 # Talkin’ Bout [Infosec] News - BlackHillsInfoSec
 
 [TalkinBoutNews - TEMPLATE](Talkin%E2%80%99%20Bout%20%5BInfosec%5D%20News%20-%20BlackHillsInfoSec/TalkinBoutNews%20-%20TEMPLATE.md)

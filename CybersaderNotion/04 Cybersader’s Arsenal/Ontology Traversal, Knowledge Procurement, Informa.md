@@ -1,6 +1,3 @@
----
-publish: true
----
 # Ontology Traversal, Knowledge Procurement, Information Retrieval
 
 # Knowledge Graph Sources

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Grad School Papers and Presentations
 
 ---

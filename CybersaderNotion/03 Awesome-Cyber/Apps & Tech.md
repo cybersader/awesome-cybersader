@@ -1,6 +1,3 @@
----
-publish: true
----
 # Apps & Tech
 
 <aside>

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Data Integration
 
 # Column/Attribute - *Column Concatenation, Column Matching, Column Comparison, Schema Clustering, Schema Alignment, Schema Mapping, Column Mapping, Column Alignment, Schema Matching*

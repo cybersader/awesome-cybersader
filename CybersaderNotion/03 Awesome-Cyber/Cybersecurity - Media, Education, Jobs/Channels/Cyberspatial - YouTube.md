@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cyberspatial - YouTube
 
 Tags: AWESOME CYBER RESOURCE

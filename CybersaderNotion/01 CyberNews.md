@@ -1,6 +1,3 @@
----
-publish: true
----
 # 01 CyberNews
 
 # Cybersecurity

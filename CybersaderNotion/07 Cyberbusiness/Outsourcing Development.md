@@ -1,6 +1,3 @@
----
-publish: true
----
 # Outsourcing Development
 
 Related Terminology:

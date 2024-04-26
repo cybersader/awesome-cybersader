@@ -1,6 +1,3 @@
----
-publish: true
----
 # A new kind of email phishing attack
 
 https://youtu.be/3DxMHGRKJNs?si=9ppU9sIywKYtAK3j

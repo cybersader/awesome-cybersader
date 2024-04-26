@@ -1,6 +1,3 @@
----
-publish: true
----
 # Self-Promotion & Personal Branding
 
 # Resume/CV Creation 📄 😶‍🌫️

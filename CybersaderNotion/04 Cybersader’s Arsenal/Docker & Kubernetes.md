@@ -1,4 +1,1 @@
----
-publish: true
----
 # Docker & Kubernetes

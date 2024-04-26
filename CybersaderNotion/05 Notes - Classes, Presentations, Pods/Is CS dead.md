@@ -1,6 +1,3 @@
----
-publish: true
----
 # Is CS dead?
 
 https://youtu.be/yzZnpvpjv_o?si=oGmpbU6Wp7AYKk5q

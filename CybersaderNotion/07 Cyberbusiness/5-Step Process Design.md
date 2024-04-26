@@ -1,6 +1,3 @@
----
-publish: true
----
 # 5-Step Process Design
 
 I have a rule that I implement rigorously which is the **5 Step Process**.

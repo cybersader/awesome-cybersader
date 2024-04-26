@@ -1,6 +1,3 @@
----
-publish: true
----
 # Threat Hunting
 
 # Some Tasks

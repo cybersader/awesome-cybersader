@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cyber Legal
 
 - [Legal Considerations when Gathering Online

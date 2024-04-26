@@ -1,6 +1,3 @@
----
-publish: true
----
 # More osint
 
 - Microfiche

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Excel for Cyber
 
 # External Tools - (Useful, Opinionated, Unorganized)

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Digital Content Creation
 
 # Video

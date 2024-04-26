@@ -1,6 +1,3 @@
----
-publish: true
----
 # App / Tool / Solution Discovery , Catalogues, Curations
 
 ---

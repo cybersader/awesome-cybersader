@@ -1,6 +1,3 @@
----
-publish: true
----
 # Jack Rhysider - YouTube
 
 Tags: Entertainment, Understanding Hackers

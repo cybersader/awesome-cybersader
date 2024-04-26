@@ -1,6 +1,3 @@
----
-publish: true
----
 # Punchmade Dev and Famous Scammers Rappers
 
 https://youtu.be/y4BwEdAwgVQ?si=kL1YX2fm3ruHw-LW

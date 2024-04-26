@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cloud Security - Architecture, Virtualization, Containerization
 
 # Misc

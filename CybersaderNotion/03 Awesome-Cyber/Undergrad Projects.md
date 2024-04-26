@@ -1,6 +1,3 @@
----
-publish: true
----
 # Undergrad Projects
 
 # Misc - TODO

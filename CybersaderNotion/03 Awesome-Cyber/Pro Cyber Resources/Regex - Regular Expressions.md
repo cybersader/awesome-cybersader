@@ -1,6 +1,3 @@
----
-publish: true
----
 # Regex - Regular Expressions
 
 # Resources

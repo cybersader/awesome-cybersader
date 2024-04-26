@@ -1,6 +1,3 @@
----
-publish: true
----
 # Deploying Python Servers
 
 # Hosting Python Server Options

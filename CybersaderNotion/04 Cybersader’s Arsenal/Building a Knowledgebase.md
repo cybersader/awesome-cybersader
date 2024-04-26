@@ -1,6 +1,3 @@
----
-publish: true
----
 # Building a Knowledgebase
 
 <aside>

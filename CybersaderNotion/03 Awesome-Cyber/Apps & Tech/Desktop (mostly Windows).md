@@ -1,6 +1,3 @@
----
-publish: true
----
 # Desktop (mostly Windows)
 
 ---

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Golden Ticket to the Cloud
 
 # Cloud Threat Landscape

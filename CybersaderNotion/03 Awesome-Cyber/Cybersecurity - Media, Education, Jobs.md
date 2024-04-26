@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cybersecurity - Media, Education, Jobs
 
 <aside>

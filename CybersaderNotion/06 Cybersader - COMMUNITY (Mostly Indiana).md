@@ -1,6 +1,3 @@
----
-publish: true
----
 # 06 Cybersader - COMMUNITY (Mostly Indiana)
 
 > This is all related to events that I typically attend

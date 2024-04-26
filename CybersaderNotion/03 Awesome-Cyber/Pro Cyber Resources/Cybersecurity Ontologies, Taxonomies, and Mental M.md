@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cybersecurity Ontologies, Taxonomies, and Mental Models
 
 - Videos

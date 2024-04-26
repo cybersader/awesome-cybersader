@@ -1,6 +1,3 @@
----
-publish: true
----
 # Awesome CTF Resources
 
 <aside>

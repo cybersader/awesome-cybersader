@@ -1,6 +1,3 @@
----
-publish: true
----
 # 04 Cybersader’s Arsenal
 
 [Research Tools](04%20Cybersader%E2%80%99s%20Arsenal/Research%20Tools.md)

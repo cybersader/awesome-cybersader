@@ -1,6 +1,3 @@
----
-publish: true
----
 # Cyber & Privacy Research & Reports
 
 # Organizations

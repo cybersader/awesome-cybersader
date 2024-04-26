@@ -1,6 +1,3 @@
----
-publish: true
----
 # I failed an AI job interview
 
 https://youtu.be/FllnUBvhoUc?si=QVyomb9RnxUUrKIC

@@ -1,6 +1,3 @@
----
-publish: true
----
 # Awesome Home Networking
 
 ## Websites and Resources

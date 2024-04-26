@@ -1,6 +1,3 @@
----
-publish: true
----
 # Home Networking Arsenal
 
 <aside>

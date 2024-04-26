@@ -1,6 +1,3 @@
----
-publish: true
----
 # Social
 
 <aside>

@@ -1,6 +1,3 @@
----
-publish: true
----
 # David Bombal - YouTube
 
 Tags: Beginner -> Intermediate 

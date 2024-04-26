@@ -1,6 +1,3 @@
----
-publish: true
----
 # Fintech and Payment Card Risks
 
 - Secondary - depending on member decisions
