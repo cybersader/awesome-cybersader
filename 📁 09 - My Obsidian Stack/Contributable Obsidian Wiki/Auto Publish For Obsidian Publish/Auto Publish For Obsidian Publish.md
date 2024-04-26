@@ -3,11 +3,12 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, April 25th 2024, 9:38 pm
-date modified: Friday, April 26th 2024, 1:27 pm
+date modified: Friday, April 26th 2024, 1:40 pm
 ---
 
 > [!quote] You can make use of Obsidian Publish api, it is possible because I have tried - Yomaru the dev
 
+- [ ] Get auto publishing working either via Templater and/or Run ➕ 2024-04-26
 # Links
 - [obsidianmd/obsidian-api: Type definitions for the latest Obsidian API.](https://github.com/obsidianmd/obsidian-api/tree/master) 
 ## Automatic Publish
