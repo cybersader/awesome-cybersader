@@ -9,6 +9,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Dataview]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
+- **[[Obsidian Run]]**
 - **[[Obsidian Wiki Ideas]]**
 - **[[Templater]]**
 
