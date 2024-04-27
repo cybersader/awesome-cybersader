@@ -90,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4e243545877f18d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md"
+                "file": "📁 99 - Changelog/📁 99 - Changelog.md"
               }
             }
           },
@@ -232,19 +244,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2fc1e6cecea406b6",
+  "active": "4e243545877f18d9",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
     "✅ Tasks/✅ Tasks.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary File Size Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240426233855880.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240426233855814.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240426233855742.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445555.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445488.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445417.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
@@ -260,7 +273,6 @@
     "_FileOrganizer2000/Processed/Attachments",
     "_FileOrganizer2000/Processed",
     "_FileOrganizer2000/Inbox",
-    "_FileOrganizer2000",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/_attachments/Syncing Obsidian/IMG-20240426174826311.png",
     "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md",
     "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
