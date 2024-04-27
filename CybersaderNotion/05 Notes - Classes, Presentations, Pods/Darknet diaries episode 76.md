@@ -85,6 +85,7 @@
 
 - They didn't steal any money!
 - The only stole email addresses of bank customers
+- There's a number of ways to steal money from a bank from cyberspace.  They could have gone the gift card route, reward points route, or even using money to push a stock price up
 - There was all say Florida man attached to the attack
 
 - Turns out the FBI had found Anthony the Florida man right after the JP Morgan attack and were watching him to see if they could find connections to the other hackers
@@ -93,6 +94,62 @@
 - Webologic logic was really a cover for a stock fraud outfit
 - It wasn't really Russia. It was a bunch of fraudsters
 
-- The lawsuit on them came from the SEC
+- The lawsuit on them came from the SEC - securities and exchange commission
 - 36 20
+- Here's some of the indictment. They were buying stock from a South Carolina medical equipment company. Launched a marketing campaign to pump up the stock prices.
+- This is the classic pump and dump scheme
+- How they did it
+    - Forged documents to look like legitimate stock brokers
+    - They seek out investment opportunities for clients
+    - Three companies equated to about $460,000
+    - Altogether they made 3.5 million in a couple of years
+- Pump and dump was not the only scheme that they had making money for them
+- They found some stock for motors to help them find companies that were good targets for a pump and dump scheme
+- IPOs are a long process - lots of auditing
+- Gary would find lots of private companies that would be easily and falsely promoted for a pump and dumb scheme. But how could he get these companies to go public?
+- Over the years Gary had set up numerous shell companies
+- Gary's strategy for turning private into public companies and then pumping and dumping them went like this
+    - He would first find companies that were good targets
+    - Then he would reverse merge them with one of his publicly traded shell companies
+    - He did this under the guise of a hopeful stockbroker just helping companies become public
+    - Gary and his friends could set up their stock before these mergers to make it easy for them to exit with money later on
+    - Ziv was the ops and IT manager.  He also managed all the brokerage accounts, websites, and more
+- The fact that they sold so many emails is connected to their campaign
+- A lot of these pump and dumb schemes use email as a medium for spamming
+- They wanted to have an accurate list of actual stock market investors but they didn't know how to require such a list.  Traders are always looking for a hot stock.
+- The JP Morgan hack was merely to get leads for their marketing campaign
+- Bank PII and customer data are great sources to get targets for financial scams, fraud, and other deceptive campaigns
+
+- Gary and ziv ironically were part of a even larger online gambling scam related set of companies including a website called revenue jet and affactive
+- The gaming software that was used for these was called rival NRTG
+- The casino sites were unreliable for payouts
+- Tons of delays and fake security procedures to slow and stop the withdrawal process
+- Then after they're 90 days of waiting there would be some excuse like you haven't been here for a few weeks so we can't give you a payout
+- The house always wins
+- These online casinos crumbled right after the indictments
+
+- The US was still trying to get them extradited for the stock fraud charges
+- It was still unclear who conducted the hack against JP Morgan and Chase and all of the other financial institutions
+- These guys were market manipulators but not exactly hackers
+
+- Tons of stock brokers we're revealing that their customer data had been compromised
+- Even Dow Jones who publishes stock information was hacked.  They only found the theft of contact and payment data and suspected the hackers could have been there for 3 years
+
+- November 10th 2015. The superseding indictment came out for the three individuals
+- Altogether this was information for over 100 million customers
+- Even a market risk intelligence company was hacked
+- 83 million from JP Morgan and Chase
+- Schemes were operated through over 75 shell companies
+- 200 false identification documents
+- 30 false passports from 17 different countries
+- New indictment had 23 accounts including computer fraud, hacking, why are fraud, securities fraud, money laundering, identity theft, etc
+- hundreds of millions of dollars and they had to launder a lot of it
+- There are a few ways that they went about laundering this money
+- They started using the same shell companies they'd used for the reverse mergers
+- Take invoices from fake transactions over time across all of their shell companies and deposited into banks in cyprus
+- Gary had 75 different shell companies
+
+- In 2011 the same year that Gary had started his pump and dump schemes, he created two online payment processing companies - ID pay and two-door
+- This was used to deposit into gaming accounts in his casinos
+- 84
 -
