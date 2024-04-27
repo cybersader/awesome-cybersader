@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, April 27th 2024, 11:21 am
-date modified: Saturday, April 27th 2024, 11:50 am
+date modified: Saturday, April 27th 2024, 12:10 pm
 ---
 
 - [Windows BCDR](../../⬇%20INBOX,%20DROPZONE/Windows%20BCDR/Windows%20BCDR.md) 
@@ -21,10 +21,20 @@ date modified: Saturday, April 27th 2024, 11:50 am
 > [!info] If you're looking to backup your messages for Signal, the better option is to use a one-way syncing utility from mobile to remote storage - you could use Syncthing, Nextcloud, etc.
 
 #syncthing #file_syncing 
-# Setting Up Backups on Mobile
+# Setting Up Backups on Mobile with Nextcloud
+> [!info] If you don't have Nextcloud or your own NAS, you can use Google Drive or really anything.
+> 
+> - [TrueNAS Cloud Backups](../TrueNAS%20Scale%20Home%20Server/TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)
+
 - Go into Chats settings on Signal mobile
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427115025745.png)
+	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427121037732.png)
 - Make a folder for Signal Backups
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427115025861.png)
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427115025921.png)
-- 
+	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427120804631.png)
+	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427120804679.png)
+- On the Nextcloud mobile app, go to Settings > Auto Upload
+	- ![200](_attachments/Backing%20Up%20Signal/IMG-20240427120804796.png)
+- Add a custom folder
+	- Choose a source and destination folder
+	- ![200](Pasted%20image%2020240427120854.png)
+	- Notice the handling of files if they already exist or even the dating option to store different versions
+		- ![200](Pasted%20image%2020240427121022.png)

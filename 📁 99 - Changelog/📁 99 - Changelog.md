@@ -1,5 +1,5 @@
-- 2024-04-27 at 11h50 · [[📁 01 - Logs, Journal]]
-- 2024-04-27 at 11h50 · [[Backing Up Signal]]
+- 2024-04-27 at 12h10 · [[Backing Up Signal]]
+- 2024-04-27 at 12h10 · [[📁 01 - Logs, Journal]]
 - 2024-04-27 at 11h36 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-04-27 at 00h34 · [[Temporary Files Filling Up Drive]]
 - 2024-04-27 at 00h34 · [[Windows BCDR]]
