@@ -3,7 +3,7 @@
   "landmarkFlag": "%% Landmark %%",
   "stopScanAtFolderNotes": false,
   "showFolderNotes": false,
-  "showNonMarkdownFiles": true,
+  "showNonMarkdownFiles": false,
   "debugLogging": false,
   "useWikiLinks": true,
   "useFrontMatterTitle": false,
