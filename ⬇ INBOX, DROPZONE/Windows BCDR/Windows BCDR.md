@@ -8,7 +8,7 @@ publish: true
 - **[[Backup Tech Stack]]**
 - **[[Windows Backups Duplicati 2024]]**
 	- **[[Duplicati Source Data]]**
-	- **[[Temporary File Size Filling Up Drive]]**
+	- **[[Temporary Files Filling Up Drive]]**
 
 %% End Waypoint %%
 # Misc Tools
