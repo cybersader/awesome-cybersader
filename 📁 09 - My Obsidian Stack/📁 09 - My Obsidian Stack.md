@@ -8,7 +8,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 %% Begin Landmark %%
 - **[[⬇️ Obsidian Ideas Drop]]**
 - **[[Attachment Management]]**
-- **[[Auto-Tagging & Linking]]**
+- **[[Auto - Tagging, Linking, Dropzones & Organizers]]**
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
 - **[[Contributable Obsidian Wiki]]**
