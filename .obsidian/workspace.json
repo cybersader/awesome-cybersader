@@ -103,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -169,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/Temporary File Size Filling Up Drive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md",
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/Temporary File Size Filling Up Drive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md"
+                "file": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/Temporary File Size Filling Up Drive.md"
               }
             }
           },
@@ -243,14 +244,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8796f069415c9ca4",
+  "active": "97c6a72afc60a62a",
   "lastOpenFiles": [
+    "✅ Tasks/✅ Tasks.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/Temporary File Size Filling Up Drive.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426224303234.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426224303101.png",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426224303011.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426231346699.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426231346647.png",
+    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive/_attachments/Temporary File Size Filling Up Drive/IMG-20240426231346596.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary File Size Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
@@ -262,7 +264,6 @@
     "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/Auto-Tagging & Linking.md",
     "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/File Organizer 2000/File Organizer 2000.md",
     "📁 09 - My Obsidian Stack/Auto-Tagging & Linking/File Organizer 2000",
-    "✅ Tasks/✅ Tasks.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Folder Notes & Publish/Folder Notes & Publish.md",
     "📁 09 - My Obsidian Stack/Obsidian to Ghost/Obsidian to Ghost.md",
     "_FileOrganizer2000/Templates",
