@@ -1,6 +1,7 @@
 ---
+aliases: 
 date created: Wednesday, April 3rd 2024, 11:01 am
-date modified: Tuesday, April 16th 2024, 8:31 pm
+date modified: Friday, April 26th 2024, 10:35 pm
 tags:
   - Backups
   - BCDR
@@ -13,6 +14,11 @@ tags:
 publish: true
 ---
 
+%% Begin Landmark %%
+- **[[Duplicati Source Data]]**
+- **[[Temporary File Size Filling Up Drive]]**
+
+%% End Landmark %%
 # Windows Backups
 ## Duplicati to Nextcloud Using WebDAV Protocol
 - Links
@@ -31,24 +37,24 @@ publish: true
 	- `remote.php/dav/files/USERNAME_HERE/Ben_Windows_PC_Backups`
 	- Enter in details and test the connection
 		- I have mine behind Cloudflare tunnels, so I use 443 for HTTPS
-		- ![](IMG-20240403192839887.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223515675.png)
 ### Duplicati Source Data
 - Discussion on Duplicati Source Data selection
 	- [Duplicati Source Data](Duplicati%20Source%20Data/Duplicati%20Source%20Data.md)
 - Default source data setup
-	- ![](IMG-20240403195943758.png)
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223515743.png)
 ### Duplicati Backup Schedule
-- ![](IMG-20240403200046053.png)
+- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223515803.png)
 ### Choosing Volume Size
 - [Choosing Sizes in Duplicati • Duplicati](https://www.duplicati.com/articles/Choosing-Sizes/#remote-volume-size)
 - The downside of using larger volumes are seen when restoring files. As Duplicati cannot read data from inside the volumes, it needs to download the entire remote volume before it can extract the desired data. If a file is split across many remote volumes, e.g. due to updates, this will require a large amount of downloads to extract the chunks.
 	- Not really an issue
 - Use larger volumes with stable connections
-- ![](IMG-20240403200649582.png)
+- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223515868.png)
 ### Backing Up to Nextcloud
 - Click Run Now
 - If you've been using the backup config before, then you will get an error about missing files
-	- ![](IMG-20240403200939702.png)
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223515991.png)
 - To start over - [Error while running - Support - Duplicati](https://forum.duplicati.com/t/error-while-running/14111/3)
 	- The quickest way to do that is to double check that the destination `W:\work` is still empty, then click on the backup job in the Duplicati Web UI to expand options, then click “Database …”, then click “Delete”. (Don’t click “Repair” or “Recreate”.)
 	- With the local database deleted AND the back end empty, the next time you run the backup job it will behave as if it’s the first backup.
@@ -78,19 +84,19 @@ publish: true
 		- [413 error the file is too large - 📱 Desktop & mobile clients / 🍏 iOS - Nextcloud community](https://help.nextcloud.com/t/413-error-the-file-is-too-large/151499) 
 		- Found this in Nextcloud > Admin > Admin Settings > System
 			- Looks like it's still somehow set to 3GB
-			- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408223253769.png)
-		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408232742589.png)
-		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408232856931.png)
-		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233004298.png)
-		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233145136.png)
-		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240408233847141.png)
+			- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516042.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516101.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516186.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516246.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516353.png)
+		- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516407.png)
 - I kind of gave up on this until Nextcloud or Duplicati fixes the issues
 ## Duplicati to SMB Share
 - We can use the "\\" syntax or the Network tab to find SMB shares that we made in TrueNAS Scale
 	- [TrueNAS Core: Configuring Shares, Permissions, Snapshots & Shadow Copies - YouTube](https://www.youtube.com/watch?v=QIdy6sR0HrI) 
-	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416202219179.png)
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516468.png)
 - Set up connection in Duplicati
-	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416202439913.png)
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516527.png)
 - If you want the SMB share to be easily accessed from file explorer, use "map network drive..."
-	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240416203146927.png)
+	- ![](_attachments/Windows%20Backups%20Duplicati%202024/IMG-20240426223516584.png)
 - 

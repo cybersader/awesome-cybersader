@@ -8,7 +8,7 @@ created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
-- [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔺 ➕ 2024-04-22
+- [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
 # Research tools that integrate with Obsidian
 - [HomePage | Pkmer.net](https://pkmer.net/en/) 
 # Plugins & Tools

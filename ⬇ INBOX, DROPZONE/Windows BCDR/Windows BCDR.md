@@ -5,9 +5,10 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- **[Backup Tech Stack](./Backup%20Tech%20Stack/Backup%20Tech%20Stack.md)**
-- **[Windows Backups Duplicati 2024](./Windows%20Backups%20Duplicati%202024/Windows%20Backups%20Duplicati%202024.md)**
-	- **[Duplicati Source Data](./Windows%20Backups%20Duplicati%202024/Duplicati%20Source%20Data/Duplicati%20Source%20Data.md)**
+- **[[Backup Tech Stack]]**
+- **[[Windows Backups Duplicati 2024]]**
+	- **[[Duplicati Source Data]]**
+	- **[[Temporary File Size Filling Up Drive]]**
 
 %% End Waypoint %%
 # Misc Tools
