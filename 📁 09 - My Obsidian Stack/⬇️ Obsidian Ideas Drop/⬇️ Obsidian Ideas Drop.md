@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, April 26th 2024, 10:08 pm
+date modified: Saturday, April 27th 2024, 11:36 am
 ---
 
 # Misc
@@ -15,3 +15,4 @@ date modified: Friday, April 26th 2024, 10:08 pm
 - [ ] Decide on strategy for connecting, linking, backlinks - helps with pages that could be in two places ⏫ ➕ 2024-04-26
 - [ ] Github style readme with badges implementation for Obsidian pages or properties? ➕ 2024-04-26
 - [ ] Obsidian page templates when new pages are opened? ➕ 2024-04-26
+- [ ] Automatically go to image size with pasting an image to choose size immediately without having to click ➕ 2024-04-27
