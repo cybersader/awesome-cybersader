@@ -1,0 +1,20 @@
+{
+  "API_KEY": "",
+  "useLogs": true,
+  "defaultDestinationPath": "_FileOrganizer2000/Processed",
+  "attachmentsPath": "_FileOrganizer2000/Processed/Attachments",
+  "pathToWatch": "_FileOrganizer2000/Inbox",
+  "logFolderPath": "_FileOrganizer2000/Logs",
+  "useSimilarTags": true,
+  "renameDocumentTitle": true,
+  "useAliases": true,
+  "useAutoAppend": false,
+  "defaultServerUrl": "https://app.fileorganizer2000.com",
+  "customServerUrl": "https://file-organizer-2000.vercel.app/",
+  "useCustomServer": false,
+  "useSimilarTagsInFrontmatter": true,
+  "enableEarlyAccess": false,
+  "earlyAccessCode": "",
+  "processedTag": true,
+  "templatePaths": "_FileOrganizer2000/Templates"
+}

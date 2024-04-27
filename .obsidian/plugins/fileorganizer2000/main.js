@@ -52,7 +52,7 @@ var logMessage = (...args) => {
 };
 
 // src/modules/name.ts
-async function useName(document, { baseUrl, apiKey }) {
+async function useName(document2, { baseUrl, apiKey }) {
   const data = {
     messages: [
       {
@@ -61,7 +61,7 @@ async function useName(document, { baseUrl, apiKey }) {
       },
       {
         role: "user",
-        content: "Give a title to this document: \n " + document
+        content: "Give a title to this document: \n " + document2
       }
     ]
   };
@@ -188,28 +188,10 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
     super(app, plugin);
     this.plugin = plugin;
   }
-  async sendSecretApiRequest(jsonPayload) {
-    const url = `${this.plugin.settings.defaultServerUrl}/api/secret`;
-    try {
-      const response = await (0, import_obsidian5.requestUrl)({
-        url,
-        method: "POST",
-        body: JSON.stringify(jsonPayload),
-        headers: {
-          Authorization: `Bearer ${this.plugin.settings.API_KEY}`,
-          "Content-Type": "application/json"
-        }
-      });
-      return response;
-    } catch (error) {
-      console.error("Error sending secret API request:", error);
-      throw error;
-    }
-  }
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    const apiKeySetting = new import_obsidian5.Setting(containerEl).setName("File Organizer API Key").setDesc(
+    new import_obsidian5.Setting(containerEl).setName("File Organizer API Key").setDesc(
       "Enter your API Key here. Get it at https://app.fileorganizer2000.com/ "
     ).addText(
       (text) => text.setPlaceholder("Enter your API Key").setValue(this.plugin.settings.API_KEY).onChange(async (value) => {
@@ -298,40 +280,31 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
       })
     );
     new import_obsidian5.Setting(containerEl).setName("Experimental features").setHeading();
-    new import_obsidian5.Setting(containerEl).setName("Early access features").setDesc(
-      "Activate early access features. Go to https://dub.sh/2000 to support."
-    ).addText(
-      (text) => text.setPlaceholder("Enter access code for Early Access Features").setValue(this.plugin.settings.earlyAccessCode).onChange(async (value) => {
-        if (value.length !== 8) {
+    new import_obsidian5.ButtonComponent(containerEl).setButtonText("Become an Early Supporter").setCta().onClick(() => {
+      window.open("https://app.fileorganizer2000.com/", "_blank");
+    });
+    new import_obsidian5.Setting(containerEl).setName("Enable Early Access").setDesc(
+      "Enable early access to new features. You need to be a supporter to enable this."
+    ).addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.enableEarlyAccess).onChange(async (value) => {
+        new import_obsidian5.Notice("Checking for early access...");
+        if (!value) {
+          this.plugin.settings.enableEarlyAccess = false;
+          await this.plugin.saveSettings();
           return;
         }
-        const jsonPayload = {
-          code: value
-        };
-        try {
-          const url = `${this.plugin.settings.defaultServerUrl}/api/secret`;
-          const response = await (0, import_obsidian5.requestUrl)({
-            url,
-            method: "POST",
-            body: JSON.stringify(jsonPayload),
-            headers: {
-              Authorization: `Bearer ${this.plugin.settings.API_KEY}`,
-              "Content-Type": "application/json"
-            }
-          });
-          logMessage(response);
-          if (response.status !== 200) {
-            new import_obsidian5.Notice("Failed to activate Early Access Features.");
-            return;
-          }
-          this.plugin.settings.earlyAccessCode = value;
-          this.plugin.settings.enableEarlyAccess = true;
-          await this.plugin.saveSettings();
-          new import_obsidian5.Notice("Early Access Features Activated Successfully");
-        } catch (error) {
-          console.error("Error activating Early Access Features:", error);
-          new import_obsidian5.Notice("Error during activation process.");
+        const isCustomer = await this.plugin.checkForEarlyAccess();
+        if (!isCustomer) {
+          new import_obsidian5.Notice(
+            "You need to be a supporter to enable Early Access Features.",
+            6e3
+          );
+          toggle.setValue(false);
+          return;
         }
+        this.plugin.settings.enableEarlyAccess = true;
+        new import_obsidian5.Notice("Early Access Features enabled.");
+        return;
       })
     );
     new import_obsidian5.Setting(containerEl).setName("Use Self-hosted").setDesc("Toggle to use a custom server instead of the default.").addToggle(
@@ -340,11 +313,9 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
         await this.plugin.saveSettings();
         if (!value) {
           customServerSetting.settingEl.hide();
-          this.plugin.settings.enableEarlyAccess = false;
           return;
         }
         customServerSetting.settingEl.show();
-        this.plugin.settings.enableEarlyAccess = true;
       })
     );
     const customServerSetting = new import_obsidian5.Setting(containerEl).setName("Self-hosted URL").setDesc("Enter the address of your custom server.").addText(
@@ -360,17 +331,17 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
     if (!this.plugin.settings.API_KEY) {
       loginButton.settingEl.show();
     }
-    new import_obsidian5.Setting(containerEl).setName("Custom vision prompt").setDesc("Enter your custom prompt for vision processing here").addText(
-      (text) => text.setPlaceholder("Enter your custom prompt").setValue(this.plugin.settings.customVisionPrompt).onChange(async (value) => {
-        this.plugin.settings.customVisionPrompt = value;
-        await this.plugin.saveSettings();
-      })
+    new import_obsidian5.Setting(containerEl).setName("AI Assistant (available in early access)").setDesc(
+      "A sidebar that gives you more control in your file management."
     );
-    new import_obsidian5.Setting(containerEl).setName("AI Assistant (available in early access)").setDesc("A sidebar that gives you more control in your file management.");
     new import_obsidian5.Setting(containerEl).setName("Experimental: Describe workflow (in progress)").setDesc(
       "Use words to explain how File Organizer uses GPT-4 to organize your files."
     ).setDisabled(true);
     new import_obsidian5.Setting(containerEl).setName("Experimental: Full Auto Org (in progress)").setDesc("Let file Organizer work fully automatically.").setDisabled(true);
+    new import_obsidian5.Setting(containerEl).setName("Custom Formatting (early access only works for supporters)").setHeading();
+    new import_obsidian5.Setting(containerEl).setName("Document Type Configuration").setDesc(
+      "To specify the document type for AI formatting, please add a file inside the template folder of File Organizer. Each file should be named according to the document type it represents (e.g., 'workout'). The content of each file should be the prompt that will be applied to the formatting. Additionally, you can access and manage these document types directly through the AI sidebar in the application."
+    ).setDisabled(true);
   }
 };
 
@@ -378,17 +349,14 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
 var import_obsidian6 = require("obsidian");
 var ASSISTANT_VIEW_TYPE = "fo2k.assistant.sidebar";
 var AssistantView = class extends import_obsidian6.ItemView {
-  // Added for rename suggestion
   constructor(leaf, plugin) {
     super(leaf);
-    this.suggestLinks = async (file, content) => {
-      const links = await this.plugin.getMostSimilarFileByName(content, file);
-      this.similarLinkBox.empty();
-      const child = this.similarLinkBox.createEl("a", { text: links.basename });
-      child.onclick = () => {
-        this.app.workspace.openLinkText(links.path, "", true);
-      };
-      this.similarLinkBox.appendChild(child);
+    this.displayTitle = async (file) => {
+      const title = file.basename;
+      this.selectedFileBox.empty();
+      const titleElement = this.selectedFileBox.createEl("span", { text: title });
+      titleElement.style.fontSize = "1rem";
+      this.selectedFileBox.appendChild(titleElement);
     };
     this.suggestTags = async (file, content) => {
       const tags = await this.plugin.getSimilarTags(content, file.basename);
@@ -410,6 +378,10 @@ var AssistantView = class extends import_obsidian6.ItemView {
           );
           child.style.cursor = "pointer";
           child.style.margin = "2px";
+          if (tags.indexOf(tag) === 0) {
+            child.style.margin = "0px";
+          }
+          child.style.fontSize = "1rem";
           child.addEventListener("click", () => {
             if (!tag.startsWith("#")) {
               tag = `#${tag}`;
@@ -420,6 +392,7 @@ var AssistantView = class extends import_obsidian6.ItemView {
         });
       } else {
         this.suggestionBox.setText("No suggestions");
+        this.suggestionBox.style.color = "var(--text-accent)";
       }
       this.loading.style.display = "none";
     };
@@ -435,10 +408,14 @@ var AssistantView = class extends import_obsidian6.ItemView {
         cls: ["clickable-icon", "setting-editor-extra-setting-button"]
       });
       (0, import_obsidian6.setIcon)(renameIcon, "plus");
+      renameIcon.style.cursor = "pointer";
+      renameIcon.style.margin = "5px";
       renameIcon.onclick = async () => {
         logMessage("Adding alias " + suggestedName + " to " + file.basename);
         this.plugin.appendToFrontMatter(file, "alias", suggestedName);
       };
+      nameElement.style.fontSize = "1rem";
+      nameElement.style.color = "var(--text-accent)";
       this.aliasSuggestionBox.appendChild(nameElement);
       this.aliasSuggestionBox.appendChild(renameIcon);
     };
@@ -456,18 +433,54 @@ var AssistantView = class extends import_obsidian6.ItemView {
       });
       (0, import_obsidian6.setIcon)(moveFilebutton, "folder-input");
       moveFilebutton.style.cursor = "pointer";
-      moveFilebutton.style.margin = "8px";
+      moveFilebutton.style.margin = "5px";
       moveFilebutton.onclick = () => {
         this.plugin.moveContent(file, file.basename, folder);
       };
+      this.similarFolderBox.style.fontSize = "1rem";
+      this.similarFolderBox.style.color = "var(--text-accent)";
       this.similarFolderBox.appendChild(moveFilebutton);
     };
     this.handleFileOpen = async (file) => {
+      this.containerEl.empty();
+      this.initUI();
+      if (!this.plugin.settings.enableEarlyAccess) {
+        return;
+      }
+      this.loading.style.display = "block";
+      if (!file) {
+        this.suggestionBox.setText("No file opened");
+        this.loading.style.display = "none";
+        return;
+      }
+      if (!file.extension.includes("md")) {
+        this.containerEl.empty();
+        this.containerEl.createEl("h5", {
+          text: "The AI Assistant only works with markdown files."
+        });
+        this.loading.style.display = "none";
+        return;
+      }
+      const aiAssistantSidebar = document.querySelector(
+        ".assistant-container"
+      );
+      if (aiAssistantSidebar) {
+        aiAssistantSidebar.style.display = "none";
+      }
+      this.displayTitle(file);
       const content = await this.plugin.getTextFromFile(file);
       this.suggestTags(file, content);
-      this.suggestLinks(file, content);
       this.suggestFolders(file, content);
-      this.suggestAlias(file, content);
+      await this.suggestAlias(file, content);
+      await this.displayClassification(file, content);
+      if (aiAssistantSidebar) {
+        aiAssistantSidebar.style.display = "";
+      }
+    };
+    this.createHeader = (text) => {
+      const header = this.containerEl.createEl("h6", { text });
+      header.style.paddingLeft = "24px";
+      return header;
     };
     this.plugin = plugin;
   }
@@ -480,11 +493,31 @@ var AssistantView = class extends import_obsidian6.ItemView {
   getIcon() {
     return "pencil";
   }
+  async displayClassification(file, content) {
+    logMessage("Checking document type");
+    const classification = await this.plugin.useCustomClassifier(
+      content,
+      file.basename
+    );
+    logMessage("Current document type: " + (classification == null ? void 0 : classification.type));
+    this.classificationBox.empty();
+    this.classificationBox.style.display = "flex";
+    this.classificationBox.style.alignItems = "center";
+    const typeElement = this.classificationBox.createEl("span", {
+      text: classification == null ? void 0 : classification.type
+    });
+    typeElement.style.fontSize = "1rem";
+    if (classification) {
+      new import_obsidian6.ButtonComponent(this.classificationBox).setButtonText("Change").onClick(async () => {
+        await this.plugin.formatContent(file, content, classification);
+      });
+    }
+  }
   initUI() {
     this.containerEl.empty();
-    this.containerEl.addClass("tag-container");
+    this.containerEl.addClass("assistant-container");
     if (!this.plugin.settings.enableEarlyAccess) {
-      this.containerEl.createEl("h3", {
+      this.containerEl.createEl("h5", {
         text: "The AI Assistant is an early access feature currently available to supporters."
       });
       const supportLink = this.containerEl.createEl("a", {
@@ -493,30 +526,21 @@ var AssistantView = class extends import_obsidian6.ItemView {
       });
       supportLink.setAttr("target", "_blank");
     }
-    this.containerEl.createEl("h4", {
-      text: "Similar tags",
-      cls: ["tree-item-self"]
-    });
+    this.createHeader("Looking at");
+    this.selectedFileBox = this.containerEl.createEl("div");
+    this.selectedFileBox.style.paddingLeft = "24px";
+    this.createHeader("Similar tags");
     this.suggestionBox = this.containerEl.createEl("div");
     this.suggestionBox.style.paddingLeft = "24px";
-    this.containerEl.createEl("h4", {
-      text: "Most similar link",
-      cls: ["tree-item-self"]
-    });
-    this.similarLinkBox = this.containerEl.createEl("div");
-    this.similarLinkBox.style.paddingLeft = "24px";
-    this.containerEl.createEl("h4", {
-      text: "Most similar folder",
-      cls: ["tree-item-self"]
-    });
-    this.similarFolderBox = this.containerEl.createEl("div");
-    this.similarFolderBox.style.paddingLeft = "24px";
-    this.containerEl.createEl("h4", {
-      text: "Suggested Alias",
-      cls: ["tree-item-self"]
-    });
+    this.createHeader("Suggested alias");
     this.aliasSuggestionBox = this.containerEl.createEl("div");
     this.aliasSuggestionBox.style.paddingLeft = "24px";
+    this.createHeader("Suggested folder");
+    this.similarFolderBox = this.containerEl.createEl("div");
+    this.similarFolderBox.style.paddingLeft = "24px";
+    this.createHeader("Looks like a");
+    this.classificationBox = this.containerEl.createEl("div");
+    this.classificationBox.style.paddingLeft = "24px";
     this.loading = this.suggestionBox.createEl("div", {
       text: "Loading..."
     });
@@ -524,24 +548,18 @@ var AssistantView = class extends import_obsidian6.ItemView {
   }
   async onOpen() {
     this.containerEl.empty();
-    this.containerEl.addClass("tag-container");
+    this.containerEl.addClass("assistant-container");
+    this.handleFileOpen(this.app.workspace.getActiveFile());
     this.initUI();
-    this.registerEvent(
-      this.app.workspace.on("file-open", async (file) => {
-        if (!this.plugin.settings.enableEarlyAccess) {
-          return;
-        }
-        this.loading.style.display = "block";
-        if (!file) {
-          this.suggestionBox.setText("No file opened");
-          this.loading.style.display = "none";
-          return;
-        }
-        this.handleFileOpen(file);
-      })
-    );
+    this.fileOpenEventRef = this.app.workspace.on("file-open", async (file) => {
+      this.handleFileOpen(file);
+    });
+    this.registerEvent(this.fileOpenEventRef);
   }
   async onClose() {
+    if (this.fileOpenEventRef) {
+      this.app.workspace.offref(this.fileOpenEventRef);
+    }
   }
 };
 
@@ -560,8 +578,6 @@ var FileOrganizerSettings = class {
     // default value is true
     this.useAliases = false;
     // default value is false
-    this.customVisionPrompt = "";
-    // default value is an empty string
     this.useAutoAppend = false;
     this.defaultServerUrl = "https://app.fileorganizer2000.com";
     this.customServerUrl = "https://file-organizer-2000.vercel.app/";
@@ -570,6 +586,8 @@ var FileOrganizerSettings = class {
     this.enableEarlyAccess = false;
     this.earlyAccessCode = "";
     this.processedTag = false;
+    // new formatting
+    this.templatePaths = "_FileOrganizer2000/Templates";
   }
 };
 var validAudioExtensions = ["mp3", "wav", "webm", "m4a"];
@@ -595,7 +613,13 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
       await this.checkAndCreateFolders();
       const text = await this.getTextFromFile(originalFile);
       const isRenameEnabled = this.settings.renameDocumentTitle;
+      if (isRenameEnabled) {
+        new import_obsidian7.Notice(`Generating name for ${text.substring(0, 20)}...`, 3e3);
+      }
       const humanReadableFileName = isRenameEnabled ? await this.generateNameFromContent(text) : originalFile.basename;
+      if (isRenameEnabled) {
+        new import_obsidian7.Notice(`Generated name: ${humanReadableFileName}`, 3e3);
+      }
       if (validMediaExtensions.includes(originalFile.extension)) {
         const annotatedFile = await this.createFileFromContent(text);
         this.appendToCustomLogFile(
@@ -636,35 +660,68 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
     const tag = "#fo2k";
     this.appendTag(file, tag);
   }
-  // experimental meant to extend user capabilities
-  async useCustomClassifier(content) {
-    const classifications = [
-      { type: "todos", moveTo: "/todos" },
-      { type: "notes", moveTo: "/notes" },
-      { type: "morning notes", moveTo: "/morning-notes" },
-      { type: "reminder", moveTo: "/reminders" }
-    ];
+  async getClassifications() {
+    const templateFolder = this.app.vault.getAbstractFileByPath(
+      this.settings.templatePaths
+    );
+    if (!templateFolder || !(templateFolder instanceof import_obsidian7.TFolder)) {
+      console.error("Template folder not found or is not a valid folder.");
+      return [];
+    }
+    const templateFiles = templateFolder.children.filter(
+      (file) => file instanceof import_obsidian7.TFile
+    );
+    const classifications = await Promise.all(
+      templateFiles.map(async (file) => ({
+        type: file.basename,
+        formattingInstruction: await this.app.vault.read(file)
+      }))
+    );
+    return classifications;
+  }
+  async useCustomClassifier(content, name) {
+    const classifications = await this.getClassifications();
+    logMessage("classifications", classifications);
+    const prompt = `Name: ${name}
+  Content:
+  ${content}
+  classifications:${classifications.map((c) => c.type).join(", ")}
+Which of the following classifications would 
+  be the most appropriate for the given content?`;
     const whatTypeOfDocument = await text_default(
-      `Content:
-				${content} 
-				classifications:
-				${classifications.join(",")},
-				'", which of the following classifications would be the most appropriate?`,
+      prompt,
       "Please respond with the name of the most appropriate classification from the provided list. If none of the classifications are suitable, respond with 'None'.",
       {
         baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
         apiKey: this.settings.API_KEY
       }
     );
-    logMessage("This is closest to the following", whatTypeOfDocument);
-    return whatTypeOfDocument;
+    logMessage("whatTypeOfDocument", whatTypeOfDocument);
+    const selectedClassification = classifications.find(
+      (c) => c.type.toLowerCase() === whatTypeOfDocument.toLowerCase()
+    );
+    return selectedClassification || null;
   }
+  async formatContent(file, fileContent, selectedClassification) {
+    const formattedContent = await text_default(
+      fileContent,
+      selectedClassification.formattingInstruction,
+      {
+        baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
+        apiKey: this.settings.API_KEY
+      }
+    );
+    await this.app.vault.modify(file, formattedContent);
+  }
+  /* experimental above until further notice */
   async organizeFile(file, content) {
     const destinationFolder = await this.getAIClassifiedFolder(content, file);
+    new import_obsidian7.Notice(`Most similar folder: ${destinationFolder}`, 3e3);
     await this.moveContent(file, file.basename, destinationFolder);
   }
   async renameTagAndOrganize(file, content, fileName) {
     const destinationFolder = await this.getAIClassifiedFolder(content, file);
+    new import_obsidian7.Notice(`Most similar folder: ${destinationFolder}`, 3e3);
     await this.appendAlias(file, file.basename);
     await this.moveContent(file, fileName, destinationFolder);
     await this.appendSimilarTags(content, file);
@@ -762,13 +819,11 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
     );
   }
   async generateNameFromContent(content) {
-    new import_obsidian7.Notice(`Generating name for ${content.substring(0, 20)}...`, 3e3);
     const name = await name_default(content, {
       baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
       apiKey: this.settings.API_KEY
     });
     const safeName = formatToSafeName(name);
-    new import_obsidian7.Notice(`Generated name: ${safeName}`, 3e3);
     return safeName;
   }
   async generateTranscriptFromAudio(file) {
@@ -806,6 +861,7 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
     this.ensureFolderExists(this.settings.defaultDestinationPath);
     this.ensureFolderExists(this.settings.attachmentsPath);
     this.ensureFolderExists(this.settings.logFolderPath);
+    this.ensureFolderExists(this.settings.templatePaths);
   }
   async getBacklog() {
     const allFiles = this.app.vault.getFiles();
@@ -830,29 +886,23 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
     const tagNames = Object.keys(tags);
     const uniqueTags = [...new Set(tagNames)];
     logMessage("uniqueTags", uniqueTags);
-    const prompt = `Given the text "${content}" (and if relevant ${fileName}), which of the following tags are the most relevant? ${uniqueTags.join(
-      ", "
-    )}`;
-    const mostSimilarTags = await text_default(
-      prompt,
-      "Always answer with a list of tag names from the provided list. If none of the tags are relevant, answer with an empty list.",
-      {
-        baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
-        apiKey: this.settings.API_KEY
+    const data = {
+      content,
+      fileName,
+      tags: uniqueTags
+    };
+    const response = await (0, import_obsidian7.requestUrl)({
+      url: `${this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl}/api/tagging`,
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${this.settings.API_KEY}`
       }
-    );
-    logMessage("mostSimilarTags", mostSimilarTags);
-    logMessage("content", content);
-    const normalizedTags = mostSimilarTags.replace(/[^a-zA-Z0-9# ]/g, "").split(" ").map((tag) => tag.startsWith("#") ? tag : `#${tag}`).map((tag) => tag.trim()).filter((tag) => !content.includes(tag)).filter(async (tag) => {
-      const frontMatterRegex = new RegExp(
-        `^tags:\\s*\\[.*?${tag.slice(1)}.*?\\]`,
-        "m"
-      );
-      const inlineTagRegex = new RegExp(`\\s${tag}(\\s|$)`);
-      return !frontMatterRegex.test(content) && !inlineTagRegex.test(content);
     });
-    logMessage("normalizedTags", normalizedTags);
-    return normalizedTags;
+    const result = await response.json;
+    console.log(result, "test");
+    return result.tags;
   }
   isTFolder(file) {
     return file instanceof import_obsidian7.TFolder;
@@ -871,19 +921,22 @@ var FileOrganizer = class extends import_obsidian7.Plugin {
       return folder !== ((_a = file.parent) == null ? void 0 : _a.path);
     }).filter((folder) => folder !== this.settings.defaultDestinationPath).filter((folder) => folder !== this.settings.attachmentsPath).filter((folder) => folder !== this.settings.logFolderPath).filter((folder) => folder !== this.settings.pathToWatch);
     logMessage("uniqueFolders", uniqueFolders);
-    const mostSimilarFolder = await text_default(
-      `Given the text content "${content}" (and if the file name "${file.basename}"), which of the following folders would be the most appropriate location for the file? Available folders: ${uniqueFolders.join(
-        ", "
-      )}`,
-      "Please respond with the name of the most appropriate folder from the provided list. If none of the folders are suitable, respond with 'None'.",
-      {
-        baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
-        apiKey: this.settings.API_KEY
+    const data = {
+      content,
+      fileName: file.basename,
+      folders: uniqueFolders
+    };
+    const response = await (0, import_obsidian7.requestUrl)({
+      url: `${this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl}/api/folders`,
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${this.settings.API_KEY}`
       }
-    );
-    logMessage("mostSimilarFolder", mostSimilarFolder);
-    new import_obsidian7.Notice(`Most similar folder: ${mostSimilarFolder}`, 3e3);
-    const sanitizedFolderName = mostSimilarFolder.replace(/[\\:*?"<>|]/g, "");
+    });
+    const result = await response.json;
+    const sanitizedFolderName = result.folder.replace(/[\\:*?"<>|]/g, "");
     if (sanitizedFolderName === "None") {
       destinationFolder = this.settings.defaultDestinationPath;
     }
@@ -918,31 +971,6 @@ ${tag}`);
     new import_obsidian7.Notice(`Added similar tags to ${file.basename}`, 3e3);
     return;
   }
-  async getMostSimilarFileByName(content, currentFile) {
-    const allMarkdownFiles = this.app.vault.getMarkdownFiles();
-    const allMarkdownFilePaths = allMarkdownFiles.filter((file2) => file2.path !== currentFile.path).map((file2) => file2.path);
-    const mostSimilarFile = await text_default(
-      `Given the request of the user to append it in a certain file in "${content}", which of the following files would match the user request the most? Available files: ${allMarkdownFilePaths.join(
-        ","
-      )}`,
-      "Please only respond with the full path of the most appropriate file from the provided list.",
-      {
-        baseUrl: this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl,
-        apiKey: this.settings.API_KEY
-      }
-    );
-    const sanitizedFileName = mostSimilarFile.replace(/[\\:*?"<>|]/g, "");
-    const file = this.app.vault.getAbstractFileByPath(sanitizedFileName);
-    if (!file) {
-      throw new Error(`Could not find file with path ${sanitizedFileName}`);
-    }
-    if (!(file instanceof import_obsidian7.TFile)) {
-      throw new Error(
-        `File with path ${sanitizedFileName} is not a markdown file`
-      );
-    }
-    return file;
-  }
   async appendToCustomLogFile(contentToAppend, action = "") {
     if (!this.settings.useLogs) {
       return;
@@ -972,32 +1000,6 @@ ${tag}`);
       );
     }
   }
-  async appendToSimilarFile(incomingFile) {
-    try {
-      new import_obsidian7.Notice(`Processing incoming file ${incomingFile.basename}`, 3e3);
-      const content = await this.getTextFromFile(incomingFile);
-      const similarFile = await this.getMostSimilarFileByName(
-        content,
-        incomingFile
-      );
-      if (similarFile) {
-        await this.app.vault.append(similarFile, `
-${content}`);
-        new import_obsidian7.Notice(
-          `Appended content to similar file: ${similarFile.basename}`,
-          3e3
-        );
-        this.appendToCustomLogFile(
-          `Appended content from [[${incomingFile.basename}]] to similar file [[${similarFile.basename}]]`
-        );
-      } else {
-        new import_obsidian7.Notice(`No similar file found for ${incomingFile.basename}`, 3e3);
-      }
-    } catch (error) {
-      console.error("Error appending to similar file:", error);
-      new import_obsidian7.Notice("Error processing incoming file.");
-    }
-  }
   // native
   async onload() {
     await this.initializePlugin();
@@ -1016,6 +1018,13 @@ ${content}`);
       id: "show-assistant",
       name: "Show Assistant",
       callback: async () => {
+        if (!this.settings.enableEarlyAccess) {
+          new import_obsidian7.Notice(
+            "This feature is only available for early access supporters",
+            3e3
+          );
+          return;
+        }
         await this.showAssistantSidebar();
       }
     });
@@ -1040,16 +1049,6 @@ ${content}`);
         }
       }
     });
-    this.addCommand({
-      id: "append-to-similar-file",
-      name: "Append to similar file",
-      callback: async () => {
-        const activeFile = this.app.workspace.getActiveFile();
-        if (activeFile) {
-          await this.appendToSimilarFile(activeFile);
-        }
-      }
-    });
     this.app.workspace.onLayoutReady(this.registerEventHandlers.bind(this));
     this.processBacklog();
   }
@@ -1065,12 +1064,31 @@ ${content}`);
   }
   async initializePlugin() {
     await this.loadSettings();
-    this.ensureFolderExists(this.settings.pathToWatch);
+    await this.checkAndCreateFolders();
     this.addSettingTab(new FileOrganizerSettingTab(this.app, this));
     this.registerView(
       ASSISTANT_VIEW_TYPE,
       (leaf) => new AssistantView(leaf, this)
     );
+  }
+  async checkForEarlyAccess() {
+    try {
+      const response = await (0, import_obsidian7.requestUrl)({
+        url: `${this.settings.useCustomServer ? this.settings.customServerUrl : this.settings.defaultServerUrl}/api/early-access`,
+        method: "POST",
+        body: JSON.stringify({ code: this.settings.earlyAccessCode }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${this.settings.API_KEY}`
+        }
+      });
+      const result = await response.json;
+      return result.isCustomer;
+    } catch (e) {
+      new import_obsidian7.Notice("Error checking for early access", 3e3);
+      console.error("Error checking for early access", e);
+      return false;
+    }
   }
   registerEventHandlers() {
     this.registerEvent(

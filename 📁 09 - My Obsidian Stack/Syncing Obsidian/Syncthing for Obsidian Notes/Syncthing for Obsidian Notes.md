@@ -3,9 +3,11 @@ aliases:
 tags:
   - decentralized
   - syncthing
+  - Backups
+  - file_syncing
 publish: true
 date created: Friday, April 26th 2024, 4:05 pm
-date modified: Friday, April 26th 2024, 5:49 pm
+date modified: Friday, April 26th 2024, 10:04 pm
 ---
 
 - [ ] Implement Syncthing for Obsidian Desktop and mobile clients ➕ 2024-04-26
@@ -19,8 +21,8 @@ date modified: Friday, April 26th 2024, 5:49 pm
 1. Download Syncthing from an app store
 	1. The Android app is available on [Google Play](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) and [F-Droid](https://f-droid.org/packages/com.nutomic.syncthingandroid/).
 2. Choose and/or create a new local folder from "Create new vault" in Obsidian Mobile
-	1. ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174942822.png)
-	2. ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174942892.png)
+	1. ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220404992.png)
+	2. ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405069.png)
 3. .
 # Syncthing Desktop Setup
 - [Download](https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases/) Syncthing for Desktop (Windows)
@@ -35,20 +37,20 @@ date modified: Friday, April 26th 2024, 5:49 pm
 > [Firewall Setup — Syncthing documentation](https://docs.syncthing.net/users/firewall.html#firewall-setup)
 
 - "Add Remote Device"
-	- ![450](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943025.png)
+	- ![450](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405191.png)
 
 - Select the ID of the associated mobile device (assuming you're on the same LAN)
-	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943113.png)
+	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405322.png)
 
 - If you aren't on the same network, then obtain the ID from mobile Syncthing.  Device ID does not need to be kept secret .[^1]
-![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943180.png)
+![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405450.png)
 
 - On the mobile device or other client, follow the same process
 	- On mobile
-		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943245.png)
+		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405627.png)
 	- Clicked button to use camera with QR code
 	- On PC, opened up identification
-		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943320.png)
+		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405737.png)
 
 # Syncing Obsidian Vault to Other Clients (PC to Mobile)
 - On PC > Syncthing Web UI > "Add Folder"
@@ -57,22 +59,22 @@ date modified: Friday, April 26th 2024, 5:49 pm
 		- Use a folder ID that will be used on all cluster devices
 		- Copy and paste the folder path of the applicable existing Obsidian vault
 		- Ignore the quote I put at the end accidentally
-			- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943379.png)
+			- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405816.png)
 	- Sharing
 		- Select clients you want to sync to, add a password if you need to.
 	- Advanced
 		- [ ] Figure out what advanced sharing options to use with - extended attributes? ➕ 2024-04-26
 		- You can begin as "send only" at first, then switch it up once things have been synced just to be safe
-		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943440.png)
+		- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220405941.png)
 
 - To set up mobile, set up a folder and use the same exact "Folder ID"
-	- ![200](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943498.png)
-	- ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943613.png)
+	- ![200](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220406114.png)
+	- ![300](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220406211.png)
 
 - Scanning progress
-	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943683.png)
+	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220406300.png)
 - Syncing Progress
-	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426174943755.png)
+	- ![](_attachments/Syncthing%20for%20Obsidian%20Notes/IMG-20240426220406432.png)
 # Issues and Limitations?
 - [Obsidian + Syncthing = Killer Combination](https://deepakness.com/blog/obsidian-syncthing/)
 
@@ -87,6 +89,8 @@ date modified: Friday, April 26th 2024, 5:49 pm
 > For my use case, it wasn’t working efficiently and that’s why I decided to get Obsidian Sync.
 > 
 > However, if all your devices are always connected to the same network, you can keep using the Obsidian and Syncthing setup.
+
+- If it's true that you have to be on the same LAN, then this might be a deal breaker
 # Related Links
 - [How do you share your files? - User Stories - Syncthing Community Forum](https://forum.syncthing.net/t/how-do-you-share-your-files/2515)
 - [Link to share files - Feature - Syncthing Community Forum](https://forum.syncthing.net/t/link-to-share-files/2825/2) 

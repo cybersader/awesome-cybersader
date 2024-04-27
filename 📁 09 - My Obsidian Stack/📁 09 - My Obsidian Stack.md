@@ -9,10 +9,12 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[⬇️ Obsidian Ideas Drop]]**
 - **[[Attachment Management]]**
 - **[[Auto-Tagging & Linking]]**
+	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
 - **[[Contributable Obsidian Wiki]]**
 - **[[Dataview]]**
 - **[[Obsidian File Recovery]]**
+- **[[Obsidian Git]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**
