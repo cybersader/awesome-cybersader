@@ -12,6 +12,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Autocompletion]]**
 - **[[Contributable Obsidian Wiki]]**
 - **[[Dataview]]**
+- **[[Obsidian File Recovery]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**

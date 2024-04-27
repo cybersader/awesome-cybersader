@@ -1,6 +1,8 @@
 ---
 aliases: 
-tags: 
+tags:
+  - decentralized
+  - syncthing
 publish: true
 date created: Friday, April 26th 2024, 4:05 pm
 date modified: Friday, April 26th 2024, 5:49 pm
@@ -85,9 +87,6 @@ date modified: Friday, April 26th 2024, 5:49 pm
 > For my use case, it wasn’t working efficiently and that’s why I decided to get Obsidian Sync.
 > 
 > However, if all your devices are always connected to the same network, you can keep using the Obsidian and Syncthing setup.
-
-
-
 # Related Links
 - [How do you share your files? - User Stories - Syncthing Community Forum](https://forum.syncthing.net/t/how-do-you-share-your-files/2515)
 - [Link to share files - Feature - Syncthing Community Forum](https://forum.syncthing.net/t/link-to-share-files/2825/2) 

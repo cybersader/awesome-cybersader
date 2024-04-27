@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,17 +186,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
+                "file": "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md"
               }
+            }
+          },
+          {
+            "id": "7a3d6da4267bc82f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 407.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,12 +220,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b7d626d2dc6e16e6",
+  "active": "7a3d6da4267bc82f",
   "lastOpenFiles": [
+    "New Text Document.txt",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+    "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
+    "📁 09 - My Obsidian Stack/Obsidian File Recovery",
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/WarGames.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/_attachments/Syncing Obsidian",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/_attachments",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426174943755.png",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426174943613.png",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/_attachments/Syncthing for Obsidian Notes/IMG-20240426174943498.png",
@@ -245,7 +256,6 @@
     "📁 09 - My Obsidian Stack/Attachment Management/_attachments/Attachment Management",
     "📁 09 - My Obsidian Stack/Attachment Management/_attachments",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 09 - My Obsidian Stack/Attachment Management",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 09 - My Obsidian Stack/Autocompletion/Autocompletion.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Astro with Content Layer/Astro with Content Layer.md",
@@ -257,8 +267,6 @@
     "📁 09 - My Obsidian Stack/Obsidian Wiki Ideas/Obsidian Wiki Ideas.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/1. Hardware & OS Setup - RPI 3.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
-    "📁 01 - Logs, Journal/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md"
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
   ]
 }
