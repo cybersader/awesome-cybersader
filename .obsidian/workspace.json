@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "87d61867fb807ea0",
+        "id": "7ee9c8f8ecbdf9aa",
         "type": "tabs",
         "children": [
           {
-            "id": "e9afa85693c076f0",
+            "id": "65bc69ff97ff2722",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -64,13 +60,20 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "c07d9fad4dc75148",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -86,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md"
-              }
+              "state": {}
             }
           },
           {
@@ -160,8 +159,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e9afa85693c076f0",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
+    "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/0. Introduction - Purpose, Design.md",
@@ -178,7 +178,6 @@
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/2. Hardware & Infrastructure Initialization.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/6. Cost-Savings Estimations.md",
-    "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
     "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",

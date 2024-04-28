@@ -3,9 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, April 28th 2024, 2:37 pm
-date modified: Sunday, April 28th 2024, 2:37 pm
+date modified: Sunday, April 28th 2024, 6:07 pm
 ---
 
+> Just some quick notes before actually talking into the camera.  I'm new to this so I definitely need to practice more and get used to content creation and speaking more.
 # Questions and answers
 1. I’d like to start of this discussion by getting to know you personally, can you tell me a little about yourself and your journey to getting where you are in your career today?
     1. I grew up in the age of the social media boom. For kids my age at the time that happened around 2007 and on. The thing about the internet is that when you build something so vast it always comes with its curses. I noticed this even as a kid and I thought that someone has to do something about it. With privacy it's all about staying private so that information about you can't be exploited against you. With cybersecurity it's a little bit different. It's a lot more technical or complicated. A hacker for instance is someone who is exploiting IT systems for their own gain. However that exploitation is against the interests of the company that actually owns those systems. So the whole point of cybersecurity is to account for the unconsented exploitation or misuse of someone's IT systems for conflicting interests.
