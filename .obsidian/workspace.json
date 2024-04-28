@@ -13,14 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
+                "file": "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db135bdfc95bd999",
+            "id": "f94afcb51a1fe6cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a039a999bc9d378e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6394cb152666869e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -91,7 +115,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -157,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md"
               }
             }
           },
@@ -231,12 +256,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "a039a999bc9d378e",
   "lastOpenFiles": [
-    "📁 13 - Journal, Diary/⬇️ Journal Drop",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days",
+    "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
+    "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Questions/⬇️ Ontological Questions.md",
     "📁 12 - Religion, Ontology, Philsophy/📁 12 - Religion, Ontology, Philsophy.md",
-    "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
+    "📁 13 - Journal, Diary/⬇️ Journal Drop",
     "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary",
     "📁 13 - Journal, Diary/_attachments",
     "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary/IMG-20240427210355186.gif",
@@ -259,11 +290,8 @@
     "📁 01 - Logs, Journal/Backing Up Signal/_attachments/Backing Up Signal/IMG-20240427121229225.png",
     "📁 01 - Logs, Journal/Backing Up Signal/_attachments/Backing Up Signal/IMG-20240427120804572.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
-    "📁 01 - Logs, Journal/Backing Up Signal",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Duplicati Source Data/Duplicati Source Data.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary File Size Filling Up Drive",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445555.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445488.png",
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/_attachments/Temporary Files Filling Up Drive/IMG-20240427003445417.png",
@@ -275,9 +303,6 @@
     "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md",
     "📁 09 - My Obsidian Stack/Obsidian File Recovery/Obsidian File Recovery.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/WarGames.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md",
-    "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md"
   ]
 }

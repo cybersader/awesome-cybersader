@@ -7,6 +7,7 @@ publish: true
 %% Begin Waypoint %%
 - **[[COBRA Insurance Between Jobs]]**
 - **[[ISP Shenanigans]]**
+- **[[Rabbit OS & R1]]**
 - **[[Recover Files Old Windows Boot Drive]]**
 
 %% End Waypoint %%

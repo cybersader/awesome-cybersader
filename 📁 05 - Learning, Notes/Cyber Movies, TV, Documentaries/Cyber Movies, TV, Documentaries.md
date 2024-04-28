@@ -14,6 +14,7 @@ publish: true
 - **[[Money Explained]]**
 - **[[The Beekeeper]]**
 - **[[The Case Against Boeing]]**
+- **[[Zero Days]]**
 
 %% End Waypoint %%
 # Financial Sector and Cyber
@@ -26,7 +27,7 @@ publish: true
 - Dirty Money
 - The Great Hack
 - The Lazarus Heist
-- Zero Days
+- [[Zero Days|Zero Days]]
 - Stolen Youth: Inside the Cult at Sarah Lawrence
 - Darknet Diaries:
 	- [Darknet diaries EP 52](../../CybersaderNotion/05%20Notes%20-%20Classes,%20Presentations,%20Pods/Darknet%20diaries%20EP%2052.md) 
