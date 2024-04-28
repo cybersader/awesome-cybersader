@@ -47,7 +47,7 @@ date modified: Sunday, April 28th 2024, 2:37 pm
 9. What are expectations that one could expect from a successful analyst? 1.
 10. What are some practices that help you to get better at coding?
     1. The number one thing that I could say is to work with another coder
-    2. However, also, work on projects that you're actually interested in. Work on the kind of projects that you get sucked into like a vortex.
+    2. However, also, work on projects that you're actually interested in. 
     3. When you need to code something at work, take your time to figure out if there's a library already designed for it. This usually means looking up terminology or asking some large language model if it's ever heard of solutions related to that problem. A lot of the times a masterfully designed library is only hard to find because it uses specific terminology - merely because it relates to a niche problem.
     4. Use AI to help you code, but make sure to break up the logic into small pieces. The AI will quickly turn your solution into a spaghetti mess if you don't break up the solution/code into smaller pieces and solve them one at a time.
 11. How do you still improve after being in the field a little while?
