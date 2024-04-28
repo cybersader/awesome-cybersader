@@ -30,7 +30,10 @@ date modified: Sunday, April 28th 2024, 2:37 pm
     3. One day to day task that will always be applicable though is staying on top of the news or more specifically threat intelligence related to your organization.
     4. This could be as simple as checking an RSS feed or an email your subscribe to for vulnerabilities or current attack campaigns related to your organization's technology or risk surface.
     5. As much as businesses like to be proactive, a lot of cybersecurity programs in an organization are more so reactive and have the goal of the lessening the blow to the organization when an incident does occur.
-6. What do you find to be a good workflow or routine for your day to day? 1.
+6. What do you find to be a good workflow or routine for your day to day?
+	1. Check the news and threat feeds
+	2. Check company wiki and chat for any activity
+	3. day-to-day changes all the time
 7. What are some of the tools and programs that you use to convey data in a way for others to interpret easily?
     1. CSV files with Excel or Python, markdown formatted plain text, diagram drawing tools like excali draw, and others.
     2. Query languages and regex
