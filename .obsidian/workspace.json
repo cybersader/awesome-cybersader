@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8ce6e03f01de13fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -173,8 +162,22 @@
   },
   "active": "e9afa85693c076f0",
   "lastOpenFiles": [
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/0. Introduction - Purpose, Design.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Secure Database Exposition.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple 1.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM_framework_2023.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.45.17.excalidraw.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.04.56.excalidraw.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation/Data Architecting & Engineering Terminology.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation/SIEM, Visibility, and Event-Driven Architecture Curated Solutions.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/2. Hardware & Infrastructure Initialization.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/6. Cost-Savings Estimations.md",
     "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
     "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
@@ -191,25 +194,11 @@
     "⬇ INBOX, DROPZONE/_attachments",
     "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam/IMG-20240428134807354.png",
     "README.md",
-    "📁 12 - Religion, Ontology, Philsophy/Jesus and the Eucharist - Augustine Institute/Jesus and the Eucharist - Augustine Institute.md",
-    "📁 12 - Religion, Ontology, Philsophy/📁 12 - Religion, Ontology, Philsophy.md",
-    "📁 12 - Religion, Ontology, Philsophy/⬇️ Religion Drop/⬇️ Religion Drop.md",
     "📁 12 - Religion, Ontology, Philsophy/Jesus and the Eucharist - Augustine Institute",
-    "📁 08 - Personal/Games from Childhood/Games from Childhood.md",
     "📁 08 - Personal/Games from Childhood",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Religion Drop",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/My Dislike of Small Talk/My Dislike of Small Talk.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 13 - Journal, Diary/⬇️ Journal Drop/My Dislike of Small Talk",
-    "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
-    "⬇ INBOX, DROPZONE/Windows 11 UI Stuff.md",
-    "⬇ INBOX, DROPZONE/New Tools.md",
-    "⬇ INBOX, DROPZONE/Company Security Strategy from Zero.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary/IMG-20240427210355186.gif",
     "📁 01 - Logs, Journal/Backing Up Signal/_attachments/Backing Up Signal/IMG-20240427121229383.png",
     "📁 01 - Logs, Journal/Backing Up Signal/_attachments/Backing Up Signal/IMG-20240427121229338.png",

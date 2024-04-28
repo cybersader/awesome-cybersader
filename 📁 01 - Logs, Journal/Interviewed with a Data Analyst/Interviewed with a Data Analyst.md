@@ -70,5 +70,7 @@ date modified: Sunday, April 28th 2024, 2:37 pm
 16. Are there different levels of analysts or coders? Entry-level, Mid-level, Senior, etc?
     1. There are different levels. The mid-level and senior people usually define the architectures and large-scale processes. They also implement some of the core logic that's more advanced
     2. The senior people usually interact with other departments or upper level management to make sure that there's a buy-in and resources for people to do their job
-17. Are there any new and innovative programs or technologies that is to be expected for this field either now or in the future? 1.
-18. Is there anything that you would like to talk about specifically? 1.
+17. Are there any new and innovative programs or technologies that is to be expected for this field either now or in the future?
+	1. 
+18. Is there anything that you would like to talk about specifically?
+	1. 
