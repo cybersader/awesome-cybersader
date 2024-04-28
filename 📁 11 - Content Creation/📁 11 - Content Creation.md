@@ -9,5 +9,6 @@ date modified: Thursday, April 25th 2024, 5:55 pm
 - **[[⬇️ Cyber Content Ideas]]**
 - **[[AI Content Workflows]]**
 - **[[Content Curation]]**
+- **[[Mic Setup Audio 2024]]**
 
 %% End Waypoint %%

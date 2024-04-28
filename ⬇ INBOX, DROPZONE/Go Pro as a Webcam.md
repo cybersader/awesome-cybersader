@@ -7,7 +7,7 @@ date created: Wednesday, March 20th 2024, 2:37 pm
 date modified: Saturday, April 27th 2024, 11:31 pm
 publish: true
 ---
-
+ 
 # Issues
 1. Latency
 	- Anywhere from 150 - 500 ms
