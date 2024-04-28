@@ -5,5 +5,3 @@ publish: true
 date created: Saturday, April 27th 2024, 9:48 pm
 date modified: Saturday, April 27th 2024, 9:48 pm
 ---
-
-- Why I don't like small talk - the next thing

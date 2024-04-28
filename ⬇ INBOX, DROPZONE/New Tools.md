@@ -1,11 +1,16 @@
 ---
+aliases: 
+tags: 
 date created: Monday, March 18th 2024, 1:59 pm
-date modified: Sunday, April 21st 2024, 11:47 pm
+date modified: Saturday, April 27th 2024, 11:31 pm
 created: Monday, Mar 18, 2024 01:59 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
 publish: true
 ---
 
+# Daily Drivers
+- [Rabbit OS & R1](../📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/Rabbit%20OS%20&%20R1/Rabbit%20OS%20&%20R1.md) 
+- 
 # Content Creation, Documentation
 - Use in combination with Sharex
 	- [Jagailo/YetAnotherKeyDisplayer: The application for displaying pressed keys of the keyboard](https://github.com/Jagailo/YetAnotherKeyDisplayer) - one that is lightweight and lets you move window for smaller selected region use cases with ShareX
