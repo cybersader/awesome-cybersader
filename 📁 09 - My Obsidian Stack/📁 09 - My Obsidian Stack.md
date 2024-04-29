@@ -11,9 +11,11 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Auto - Tagging, Linking, Dropzones & Organizers]]**
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
+- [[Breaking Vault Changes]]
 - **[[Contributable Obsidian Wiki]]**
 - **[[Dataview]]**
-- **[[Obsidian Dictionary]]**
+- **[[File Order]]**
+- **[[Obsidian Dictionary and Grammar]]**
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
 - **[[Obsidian Issues & Feature Requests]]**

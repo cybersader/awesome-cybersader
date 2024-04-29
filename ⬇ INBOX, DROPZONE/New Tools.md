@@ -10,7 +10,6 @@ publish: true
 
 # Daily Drivers
 - [Rabbit OS & R1](../📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/Rabbit%20OS%20&%20R1/Rabbit%20OS%20&%20R1.md) 
-- 
 # Cyber
 - [Security Certification Roadmap - Paul Jerimy Media](https://pauljerimy.com/security-certification-roadmap/)
 - [Cloudflare | Log Explorer: monitor security events without third-party storage](https://blog.cloudflare.com/log-explorer)

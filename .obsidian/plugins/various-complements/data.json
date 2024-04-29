@@ -1,11 +1,11 @@
 {
-  "strategy": "default",
+  "strategy": "english-only",
   "cedictPath": "./cedict_ts.u8",
-  "matchStrategy": "prefix",
+  "matchStrategy": "partial",
   "fuzzyMatch": true,
   "minFuzzyMatchScore": 0.5,
   "matchingWithoutEmoji": true,
-  "treatAccentDiacriticsAsAlphabeticCharacters": false,
+  "treatAccentDiacriticsAsAlphabeticCharacters": true,
   "treatUnderscoreAsPartOfWord": false,
   "maxNumberOfSuggestions": 4,
   "maxNumberOfWordsAsPhrase": 3,
@@ -70,7 +70,7 @@
   "includeCurrentVaultPathPrefixPatterns": "",
   "excludeCurrentVaultPathPrefixPatterns": "",
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
-  "enableCustomDictionaryComplement": false,
+  "enableCustomDictionaryComplement": true,
   "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
   "columnDelimiter": "Tab",
   "customDictionaryWordRegexPattern": "",
@@ -88,7 +88,7 @@
     "after": ""
   },
   "frontMatterKeyForExclusionInternalLink": "",
-  "enableFrontMatterComplement": false,
+  "enableFrontMatterComplement": true,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
   "intelligentSuggestionPrioritization": {
