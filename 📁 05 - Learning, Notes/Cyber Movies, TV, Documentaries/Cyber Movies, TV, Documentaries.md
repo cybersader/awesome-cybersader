@@ -66,6 +66,15 @@ publish: true
 - Hackers
 - The Undeclared War
 - Algorithm
+- U.S. Secret Service: On the Front Line
+- Inside the U.S. Secret Service
+- the good shepherd
+- Submergence
+- The Kennedy Detail
+- The Green Prince
+- [United States of Secrets, Part One (full documentary ... YouTube · FRONTLINE PBS | Official 1 hour, 53 minutes, 18 seconds Sep 9, 2021](https://www.youtube.com/watch?v=kaUemcqIQ-k) 
+- [Inside the United States Secret Service YouTube · TopGunMilitary 1 hour, 29 minutes, 13 seconds Oct 21, 2015](https://www.youtube.com/watch?v=DJppvSWb2v4) 
+- 
 ### Economy, Workplace, Finance, Business
 - <u>Related Anime?</u>
 	- Battle Programmer Shirase

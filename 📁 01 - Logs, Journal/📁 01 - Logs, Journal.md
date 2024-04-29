@@ -7,7 +7,7 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Backing Up Signal]]**
 - **[[Bitwarden Stuff]]**
 - **[[Bluetooth Removal Issue Fix Windows]]**
-- **[[Interviewed with a Data Analyst]]**
+- **[[Interview with a Data Analyst]]**
 - **[[Phone Pick in 2024]]**
 - **[[TrueNAS Scale Home Server]]**
 - **[[Vehicle Selection in 2020s]]**

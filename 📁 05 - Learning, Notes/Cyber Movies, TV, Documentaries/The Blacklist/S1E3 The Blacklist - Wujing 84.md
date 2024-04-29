@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, April 29th 2024, 11:57 am
-date modified: Monday, April 29th 2024, 12:10 pm
+date modified: Monday, April 29th 2024, 2:08 pm
 ---
 
 - MC "Keen" is undercover and the bad guys run her prints through all of the databases
@@ -26,6 +26,8 @@ date modified: Monday, April 29th 2024, 12:10 pm
 > [!info] 🤔 I wonder if intelligence companies and agencies look closely at construction and architecture companies.  They design installations, buildings, etc.
 > 
 > Construction is directly connected to risk with kinetic or even espionage and hacking, so construction, floor plans, and other information about buildings is valuable.
+> 
+> Does the NSA, HSA, and CIA hack large construction companies? -- my guess..probably
 
 > [!quote] Any contact with a government server is flagged for review
 > 
