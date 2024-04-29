@@ -13,18 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
+                "file": "📁 14 - Finance/Using Multiple Banks or Unions.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "f1412c3256b27207",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -39,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📁 14 - Finance/Using Multiple Banks or Unions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📁 14 - Finance/Using Multiple Banks or Unions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "📁 14 - Finance/Using Multiple Banks or Unions.md"
+              }
             }
           },
           {
@@ -184,19 +179,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f1412c3256b27207",
+  "active": "bd803499dbea1fd3",
   "lastOpenFiles": [
-    "📁 14 - Finance/Using Multiple Banks or Unions",
     "📁 14 - Finance/📁 14 - Finance.md",
-    "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
+    "📁 14 - Finance/Using Multiple Banks or Unions.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
+    "📁 14 - Finance/Using Multiple Banks or Unions",
+    "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S2E2 The Blacklist.md",
     "📁 14 - Finance",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
@@ -221,7 +217,6 @@
     "📁 11 - Content Creation/Audio Stack/Audio Stack.md",
     "📁 11 - Content Creation/Audio Stack",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio",
-    "📁 11 - Content Creation/Sync Video and Audio/_attachments",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012111.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
