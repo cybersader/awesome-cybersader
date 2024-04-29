@@ -10,6 +10,7 @@ date modified: Monday, April 29th 2024, 12:29 am
 %% Begin Waypoint %%
 - [[S1E1 The Blacklist]]
 - [[S1E2 The Blacklist]]
+- [[S1E3 The Blacklist - Wujing 84]]
 
 %% End Waypoint %%
 
