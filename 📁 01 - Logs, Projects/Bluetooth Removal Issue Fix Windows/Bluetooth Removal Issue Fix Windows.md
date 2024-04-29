@@ -10,9 +10,9 @@ date modified: Friday, March 22nd 2024, 8:55 am
 - [How To Remove Stubborn Bluetooth Devices in Windows | Tom's Hardware](https://www.tomshardware.com/how-to/remove-stubborn-bluetooth-devices-in-windows) 
 # Solution
 - Device manager: Right click and uninstall 
-	- ![](_attachments/Bluetooth%20Removal%20Issue%20Fix%20Windows/IMG-20240322084701216.png)
-	- ![](_attachments/Bluetooth%20Removal%20Issue%20Fix%20Windows/IMG-20240322084723281.png)
+	- ![](IMG-20240322084701216.png)
+	- ![](IMG-20240322084723281.png)
 - Registry editor
 	- Path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Devices`
-	- ![](_attachments/Bluetooth%20Removal%20Issue%20Fix%20Windows/IMG-20240322085041846.png)
+	- ![](IMG-20240322085041846.png)
 - Reboot 🙂

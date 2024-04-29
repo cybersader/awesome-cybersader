@@ -3,10 +3,11 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Friday, April 26th 2024, 3:23 pm
+date modified: Monday, April 29th 2024, 2:39 pm
 publish: true
 ---
 
+[Financial Sector & Cyber](../Financial%20Sector%20&%20Cyber/Financial%20Sector%20&%20Cyber.md) 
 [📁 03 - Curations, Stacks](../../📁%2003%20-%20Curations,%20Stacks/📁%2003%20-%20Curations,%20Stacks.md) 
 
 %% Begin Waypoint %%

@@ -27,14 +27,14 @@ date modified: Saturday, April 27th 2024, 12:10 pm
 > - [TrueNAS Cloud Backups](../TrueNAS%20Scale%20Home%20Server/TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)
 
 - Go into Chats settings on Signal mobile
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427121229184.png)
+	- ![300](IMG-20240427121229184.png)
 - Make a folder for Signal Backups
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427121229225.png)
-	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240427121229272.png)
+	- ![300](IMG-20240427121229225.png)
+	- ![300](IMG-20240427121229272.png)
 - On the Nextcloud mobile app, go to Settings > Auto Upload
-	- ![200](_attachments/Backing%20Up%20Signal/IMG-20240427121229308.png)
+	- ![200](IMG-20240427121229308.png)
 - Add a custom folder
 	- Choose a source and destination folder
-	- ![200](_attachments/Backing%20Up%20Signal/IMG-20240427121229338.png)
+	- ![200](IMG-20240427121229338.png)
 	- Notice the handling of files if they already exist or even the dating option to store different versions
-		- ![200](_attachments/Backing%20Up%20Signal/IMG-20240427121229383.png)
+		- ![200](IMG-20240427121229383.png)
