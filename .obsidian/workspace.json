@@ -11,11 +11,28 @@
             "id": "65bc69ff97ff2722",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f15b62f42db13582",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "✅ Tasks/✅ Tasks.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "✅ Tasks/✅ Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "✅ Tasks/✅ Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +145,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "✅ Tasks/✅ Tasks.md"
+              }
             }
           },
           {
@@ -159,8 +180,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "f15b62f42db13582",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
+    "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
     "📁 01 - Logs, Journal/Interviewed with a Data Analyst/Interviewed with a Data Analyst.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md",
@@ -178,21 +204,16 @@
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/1. Tech Stack & Architecture Design.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/2. Hardware & Infrastructure Initialization.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Project Workspace/6. Cost-Savings Estimations.md",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/⬇️ Journal Drop.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
     "📁 11 - Content Creation/OBS Stack/OBS Stack.md",
     "📁 11 - Content Creation/OBS Stack",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 01 - Logs, Journal/Interviewed with a Data Analyst",
-    "📁 11 - Content Creation/Mic Setup Audio 2024/Mic Setup Audio 2024.md",
-    "⬇ INBOX, DROPZONE/Go Pro as a Webcam.md",
     "📁 11 - Content Creation/Mic Setup Audio 2024",
     "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam",
     "⬇ INBOX, DROPZONE/_attachments",
     "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam/IMG-20240428134807354.png",
-    "README.md",
     "📁 12 - Religion, Ontology, Philsophy/Jesus and the Eucharist - Augustine Institute",
     "📁 08 - Personal/Games from Childhood",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Religion Drop",
