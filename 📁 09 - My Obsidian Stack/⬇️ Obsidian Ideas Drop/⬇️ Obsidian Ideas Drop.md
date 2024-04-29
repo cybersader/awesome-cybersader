@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Monday, April 29th 2024, 11:56 am
+date modified: Monday, April 29th 2024, 1:28 pm
 ---
 
 # Misc
@@ -21,3 +21,4 @@ date modified: Monday, April 29th 2024, 11:56 am
 - [ ] Auto folder note title name by selecting text to turn into folder note - [File Organizer 2000](../Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 🔽 ➕ 2024-04-28
 - [ ] Fix publish JS and CSS file to account for images, getting rid of sidebar, and folder notes ➕ 2024-04-28
 - [ ] Changelog page that can work like dataview or summarize your past work based on collection of pages (some query) - "Study was done this week on __" ➕ 2024-04-28
+- [ ] Obsidian Plugin that uses an LLM funnel or other LLM and AI technology to take recently added to pages (using content hashes?) and summarizes work done in a certain format along with layers of templates.  Then a "firehose" folder is generated with pages of summaries based on schedules ⏬ ➕ 2024-04-29
