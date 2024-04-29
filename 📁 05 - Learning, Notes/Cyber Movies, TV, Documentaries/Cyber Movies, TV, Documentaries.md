@@ -13,6 +13,7 @@ publish: true
 - **[[Inside Job - 2008 Financial Crisis]]**
 - **[[Money Explained]]**
 - **[[The Beekeeper]]**
+- **[[The Blacklist]]**
 - **[[The Case Against Boeing]]**
 - **[[Zero Days]]**
 
