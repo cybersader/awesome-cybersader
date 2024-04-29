@@ -8,9 +8,10 @@ date modified: Thursday, April 25th 2024, 5:55 pm
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Content Ideas]]**
 - **[[AI Content Workflows]]**
+- **[[Audio Stack]]**
 - **[[Content Curation]]**
 - **[[Mic Setup Audio 2024]]**
-- **[[OBS Stack]]**
+- **[[Screen Recording, Streaming Stack]]**
 - **[[Sync Video and Audio]]**
 - **[[Webcams]]**
 
