@@ -13,6 +13,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Autocompletion]]**
 - **[[Contributable Obsidian Wiki]]**
 - **[[Dataview]]**
+- **[[Obsidian Dictionary]]**
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
 - **[[Obsidian Issues & Feature Requests]]**
@@ -22,5 +23,6 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
 - **[[Templater]]**
+- **[[Test Vault Workflow]]**
 
 %% End Landmark %%

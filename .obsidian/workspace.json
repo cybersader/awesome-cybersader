@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f15b62f42db13582",
+            "id": "4ccd0bef2731e024",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary/Obsidian Dictionary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bd803499dbea1fd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/New Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary/Obsidian Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary/Obsidian Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✅ Tasks/✅ Tasks.md"
+                "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary/Obsidian Dictionary.md"
               }
             }
           },
@@ -180,8 +192,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f15b62f42db13582",
+  "active": "4ccd0bef2731e024",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Test Vault Workflow/Test Vault Workflow.md",
+    "📁 09 - My Obsidian Stack/Obsidian Dictionary/Obsidian Dictionary.md",
+    "📁 09 - My Obsidian Stack/Obsidian Dictionary",
+    "📁 11 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md",
+    "📁 09 - My Obsidian Stack/Test Vault Workflow",
+    "⬇ INBOX, DROPZONE/New Tools.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "✅ Tasks/✅ Tasks.md",
+    "📁 08 - Personal/Games from Childhood/Games from Childhood.md",
     "📁 11 - Content Creation/Webcams/Webcams.md",
     "📁 11 - Content Creation/OBS Alternatives/OBS Alternatives.md",
     "📁 11 - Content Creation/OBS Alternatives",
@@ -189,7 +211,6 @@
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png",
     "📁 11 - Content Creation/Mic Setup Audio 2024/Mic Setup Audio 2024.md",
     "📁 11 - Content Creation/Audio Stack/Audio Stack.md",
-    "📁 11 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md",
     "📁 11 - Content Creation/Audio Stack",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments",
@@ -199,8 +220,6 @@
     "📁 11 - Content Creation/Mic Setup Audio 2024/_attachments",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",
     "📁 11 - Content Creation/Webcams",
-    "✅ Tasks/✅ Tasks.md",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
@@ -214,13 +233,6 @@
     "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Self_hosting_threat_model_simple 1.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md",
     "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM_framework_2023.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.45.17.excalidraw.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.04.56.excalidraw.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation/Data Architecting & Engineering Terminology.md",
-    "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Solution & Architecture Curation/SIEM, Visibility, and Event-Driven Architecture Curated Solutions.md",
-    "📁 11 - Content Creation/Screen Recording, Streaming Stack",
-    "📁 01 - Logs, Journal/Interviewed with a Data Analyst",
     "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam/IMG-20240428134807354.png",
     "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary/IMG-20240427210355186.gif",
     "📁 01 - Logs, Journal/Backing Up Signal/_attachments/Backing Up Signal/IMG-20240427121229383.png",
