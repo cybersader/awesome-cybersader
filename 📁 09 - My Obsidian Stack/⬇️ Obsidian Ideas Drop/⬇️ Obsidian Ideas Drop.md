@@ -4,10 +4,11 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, April 28th 2024, 10:35 pm
+date modified: Monday, April 29th 2024, 11:56 am
 ---
 
 # Misc
+- [ ] BUG with deleting files taking a long time 🔺 ➕ 2024-04-29
 - Have AI generate smart permalinks for pages
 	- [Permalinks - Publish and unpublish notes - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Publish+and+unpublish+notes#Permalinks)
 - Color gradient based on how recently visited a page/folder was

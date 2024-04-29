@@ -6,5 +6,6 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./",
   "autoPairMarkdown": false,
-  "autoPairBrackets": false
+  "autoPairBrackets": false,
+  "promptDelete": false
 }
