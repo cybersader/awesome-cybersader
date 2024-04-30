@@ -9,10 +9,8 @@ date modified: Tuesday, April 30th 2024, 10:37 am
 ---
 # S1 E6 Gina Zanetakos 152
 - corporate terrorist
-- 
 # S1E5 The Courier
 - NSA analyst is a 20 million dollar target
-- 
 # S1E4 - The Stewmaker 161
 - Stewmaker stealing MC
 - Red knows that the criminal has a dog and has the name of the criminal but no place of residence
