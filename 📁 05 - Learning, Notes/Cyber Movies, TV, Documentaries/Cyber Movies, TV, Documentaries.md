@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Monday, April 29th 2024, 2:39 pm
+date modified: Monday, April 29th 2024, 3:21 pm
 publish: true
 ---
 
@@ -75,7 +75,15 @@ publish: true
 - The Green Prince
 - [United States of Secrets, Part One (full documentary ... YouTube · FRONTLINE PBS | Official 1 hour, 53 minutes, 18 seconds Sep 9, 2021](https://www.youtube.com/watch?v=kaUemcqIQ-k) 
 - [Inside the United States Secret Service YouTube · TopGunMilitary 1 hour, 29 minutes, 13 seconds Oct 21, 2015](https://www.youtube.com/watch?v=DJppvSWb2v4) 
-- 
+- The Internet's Own Boy: The Story of Aaron Swartz.
+- Lazarus: The Rise of North Korean Cyber Criminals
+- L0pht: Heavy Industries Video Press Kit (1999)
+- The Man Who Angered Anonymous and Lived to Regret It
+- TBP AFK: The Pirate Bay Away From His Keyboard
+- Hackers Ruined Christmas For 100,000 People by Crumb
+- Wanna Cry: The World's Largest Ransomware Attack
+- The Social Media Dilemma
+- We Steal Secrets: The Story of Wiki Leaks
 ### Economy, Workplace, Finance, Business
 - <u>Related Anime?</u>
 	- Battle Programmer Shirase
@@ -95,11 +103,31 @@ publish: true
 	- Maoyu Establishes a Blooming Economy From Scratch
 ## Misc News Stories and Investigative Reports
 - .
-# Hacking, Cybercrime
+# Hacking, Cybercrime, Internet
 ## Nonfiction
 - Mr. Robot
+- The Score
+- 
 ## Documentaries
 - Cyber Crime: Netflix Series
+- Hackers in Wonderland
+- Revolution OS
+- Secret History of Hacking
+- Freedom Downtime
+- 
 # Scams, Phishing
 ## Entertainment > Education
 - [[The Beekeeper|The Beekeeper]] - super over the top with the violence and phishing - so much so that it's satirical
+# Movies with "Hacking"
+- Jurassic Park
+- The Net
+- Masterminds
+- Webmaster
+- Office Space
+- Netforce
+- Takedown
+- Antitrust
+- Swordfish
+# Curated Cyber Movie Lists
+- [The Complete List Of Hacker And Cyber Security Movies | by Priya Reddy | Lotus Fruit | Medium](https://medium.com/lotus-fruit/the-complete-list-of-hacker-and-cyber-security-movies-7313d11358c9)
+- [The Complete List of Hacker And Cybersecurity Movies](https://cybersecurityventures.com/movies-about-cybersecurity-and-hacking/)

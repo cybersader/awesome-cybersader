@@ -1,6 +1,6 @@
-- 2024-04-29 at 14h39 · [[Cyber Movies, TV, Documentaries]]
+- 2024-04-29 at 15h22 · [[Cyber Movies, TV, Documentaries]]
+- 2024-04-29 at 14h59 · [[Financial Sector & Cyber]]
 - 2024-04-29 at 14h39 · [[📁 05 - Learning, Notes]]
-- 2024-04-29 at 14h39 · [[Financial Sector & Cyber]]
 - 2024-04-29 at 14h38 · [[📁 01 - Logs, Projects]]
 - 2024-04-29 at 14h38 · [[TrueNAS Scale Home Server]]
 - 2024-04-29 at 14h38 · [[TrueNAS Immich Setup]]
