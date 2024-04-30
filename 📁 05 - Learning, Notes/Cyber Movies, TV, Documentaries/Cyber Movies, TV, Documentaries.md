@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Monday, April 29th 2024, 10:23 pm
+date modified: Monday, April 29th 2024, 10:41 pm
 publish: true
 ---
 
@@ -24,7 +24,7 @@ publish: true
 > I'm looking for some movies to gear up for my next cybersecurity job with a credit union.  Although these movies may not be realistic, they can inspire me in a number of ways to branch out and have a high-level risk aware view and mindset
 
 - [Money Explained](Money%20Explained/Money%20Explained.md) - great breakdown of some scams/schemes and the credit card industry.
-- The Blacklist
+- [The Blacklist](The%20Blacklist/The%20Blacklist.md)
 - StartUp
 - Dirty Money
 - The Great Hack
