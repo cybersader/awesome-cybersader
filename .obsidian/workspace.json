@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -167,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 15 - Logs/Obsidian Delete Hanging.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 15 - Logs/Obsidian Delete Hanging.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 15 - Logs/Obsidian Delete Hanging.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
               }
             }
           },
@@ -241,22 +241,26 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "781737b13d70489b",
+  "active": "cbd8ff7871a095f9",
   "lastOpenFiles": [
-    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240429235332243.png",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 15 - Logs/Obsidian Delete Hanging.md",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555186.png",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555159.png",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555106.png",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555042.png",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103554995.png",
     "📁 15 - Logs/Pasted image 20240429235227.png",
     "📁 15 - Logs/Pasted image 20240429235225.png",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging",
     "📁 15 - Logs/_attachments",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240429235215171.png",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "📁 15 - Logs/Obsidian Delete Hanging.md",
     "📁 09 - My Obsidian Stack/Untitled",
     "📁 15 - Logs/📁 15 - Logs.md",
     "📁 14 - Personal Finance/When to Sell House in Indiana.md",
     "📁 15 - Logs",
     "📁",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
@@ -283,11 +287,6 @@
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
-    "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png",
-    "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012111.png",
-    "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",
-    "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam/IMG-20240428134807354.png",
-    "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary/IMG-20240427210355186.gif",
-    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229383.png"
+    "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png"
   ]
 }

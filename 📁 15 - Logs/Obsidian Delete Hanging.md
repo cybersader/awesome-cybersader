@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, April 29th 2024, 10:10 pm
-date modified: Monday, April 29th 2024, 11:52 pm
+date modified: Tuesday, April 30th 2024, 10:35 am
 ---
 
 - I tried to delete anything in Obsidian and it would freeze
@@ -23,8 +23,13 @@ date modified: Monday, April 29th 2024, 11:52 pm
 - Attempt #1
 	- Paste into Terminal > `Run as Administrator` > `del /F /Q %APPDATA%\Microsoft\Windows\Recent\*`
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations\*`
-		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332238.png)
-		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332296.png)
-		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332243.png)
-		- 
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103554922.png)
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103554956.png)
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103554995.png)
+		- ProcessExplorer64 from [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) 
+			- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103555042.png)
+			- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103555106.png)
+			- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103555159.png)
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\CustomDestinations\*`
+- Seems to have worked so far
+	- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240430103555186.png)
