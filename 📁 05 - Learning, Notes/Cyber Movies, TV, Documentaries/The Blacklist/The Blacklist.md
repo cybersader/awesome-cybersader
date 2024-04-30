@@ -7,7 +7,9 @@ publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
 date modified: Tuesday, April 30th 2024, 10:37 am
 ---
-
+# S1 E6 Gina Zanetakos 152
+- corporate terrorist
+- 
 # S1E5 The Courier
 - NSA analyst is a 20 million dollar target
 - 
