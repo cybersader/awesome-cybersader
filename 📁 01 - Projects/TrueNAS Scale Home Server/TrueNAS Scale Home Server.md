@@ -7,28 +7,28 @@ date modified: Thursday, April 25th 2024, 1:29 pm
 ---
 
 %% Begin Waypoint %%
-- **[[Dataset Available Space]]**
+- **[[Dataset Available Space/Dataset Available Space]]**
 
-- **[[Home Server Power]]**
+- **[[Home Server Power/Home Server Power]]**
 
-- **[[Misc TrueNAS]]**
-	- **[[Immich vs Photoprism]]**
-	- **[[Rsync Related]]**
-	- **[[TrueNAS Drive Data Recovery]]**
-- **[[Plex Media Server]]**
-- **[[Portainer in TrueNAS]]**
-- **[[TrueNAS Cloud Backups]]**
-	- **[[Cheapest Archive Storage]]**
-- **[[TrueNAS Immich Setup]]**
+- **[[Misc TrueNAS/Misc TrueNAS]]**
+	- **[[Misc TrueNAS/Immich vs Photoprism/Immich vs Photoprism]]**
+	- **[[Misc TrueNAS/Rsync Related/Rsync Related]]**
+	- **[[Misc TrueNAS/TrueNAS Drive Data Recovery/TrueNAS Drive Data Recovery]]**
+- **[[Plex Media Server/Plex Media Server]]**
+- **[[Portainer in TrueNAS/Portainer in TrueNAS]]**
+- **[[TrueNAS Cloud Backups/TrueNAS Cloud Backups]]**
+	- **[[TrueNAS Cloud Backups/Cheapest Archive Storage/Cheapest Archive Storage]]**
+- **[[TrueNAS Immich Setup/TrueNAS Immich Setup]]**
 
-- **[[TrueNAS mDNS]]**
+- **[[TrueNAS mDNS/TrueNAS mDNS]]**
 
-- **[[Turning Old PC into NAS in 2024]]**
-	- **[[ATA Security]]**
-	- **[[Filesystems and Partition Schemes]]**
-	- **[[mDNS and Cloudflare Tunnels]]**
-	- **[[RAID vs AHCI]]**
-	- **[[Software RAID vs Hardware RAID - TrueNAS Scale]]**
+- **[[Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024]]**
+	- **[[Turning Old PC into NAS in 2024/ATA Security/ATA Security]]**
+	- **[[Turning Old PC into NAS in 2024/Filesystems and Partition Schemes/Filesystems and Partition Schemes]]**
+	- **[[Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels]]**
+	- **[[Turning Old PC into NAS in 2024/RAID vs AHCI/RAID vs AHCI]]**
+	- **[[Turning Old PC into NAS in 2024/Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale]]**
 
 %% End Waypoint %%
 - **[Dataset Available Space](Dataset%20Available%20Space/Dataset%20Available%20Space.md)*[[Immic[Home Server Power](Home%20Server%20Power/Home%20Server%20Power.md)a Recove[Misc TrueNAS](Misc%20TrueNAS/Misc%20TrueNAS.md) in True[Immich vs Photoprism](Misc%20TrueNAS/Immich%20vs%20Photoprism/Immich%20vs%20Photoprism.md)ich Setu[Rsync Related](Misc%20TrueNAS/Rsync%20Related/Rsync%20Related.md)]**
