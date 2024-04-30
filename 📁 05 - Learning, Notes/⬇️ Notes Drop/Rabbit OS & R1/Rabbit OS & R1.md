@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, April 27th 2024, 9:55 pm
-date modified: Monday, April 29th 2024, 2:07 pm
+date modified: Monday, April 29th 2024, 9:45 pm
 ---
 
 ![](https://www.youtube.com/watch?v=RDTXzrEMEQQ&t=2502s)
@@ -14,7 +14,7 @@ date modified: Monday, April 29th 2024, 2:07 pm
 - I've always thought that with the internet and everything connected, the next step to making applications more connected is creating a system that can fuzzily interface between apps. Rabbit OS and the R1 attempt to solve this problem with a LAM (large action model)
 
 - Roadmap
-	- ![](_attachments/Rabbit%20OS%20&%20R1/IMG-20240429140746022.png)
+	- ![](_attachments/Rabbit%20OS%20&%20R1/IMG-20240429214552203.png)
 - Rabbit as a virtual secretary that's trainable - replacing APIs for integrating apps and services, automating stuff
 	- my take
 		- The internet these days is interconnected in so many ways

@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d5b7b4b37cda141a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "971d3c6da2f7e70a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ffbdb5097cabc82d",
             "type": "leaf",
             "state": {
@@ -68,6 +44,18 @@
             }
           },
           {
+            "id": "5fc836f4a8316856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 14 - Personal Finance/When to Sell House in Indiana.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b79632556c528616",
             "type": "leaf",
             "state": {
@@ -92,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,8 +134,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
+                "file": "📁 14 - Personal Finance/When to Sell House in Indiana.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
+                "file": "📁 14 - Personal Finance/When to Sell House in Indiana.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md"
+                "file": "📁 14 - Personal Finance/When to Sell House in Indiana.md"
               }
             }
           },
@@ -241,8 +228,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "971d3c6da2f7e70a",
+  "active": "5fc836f4a8316856",
   "lastOpenFiles": [
+    "📁",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Untitled.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
@@ -252,16 +243,13 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber",
     "📁 14 - Personal Finance/When to Sell House in Indiana.md",
     "📁 14 - Personal Finance/Using Multiple Banks or Unions.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1/IMG-20240429140746022.png",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1/IMG-20240429214552203.png",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled/Untitled.md",
@@ -279,7 +267,6 @@
     "📁 09 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md",
     "📁 09 - My Obsidian Stack/File Order/File Order.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes",
-    "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012111.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",

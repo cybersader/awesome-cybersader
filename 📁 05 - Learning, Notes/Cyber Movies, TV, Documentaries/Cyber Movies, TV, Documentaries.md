@@ -84,6 +84,12 @@ publish: true
 - Wanna Cry: The World's Largest Ransomware Attack
 - The Social Media Dilemma
 - We Steal Secrets: The Story of Wiki Leaks
+- Enron: The Smartest Guys in the Room
+- Operation Varsity Blues
+- Lords of Scam
+- Billion Dollar Heist
+- Easy Money: the biggest fraud in US history
+- 
 ### Economy, Workplace, Finance, Business
 - <u>Related Anime?</u>
 	- Battle Programmer Shirase
@@ -114,6 +120,13 @@ publish: true
 - Revolution OS
 - Secret History of Hacking
 - Freedom Downtime
+- How cybercrime has become organized warfare
+- The Dark Web
+- The Digital Threat To Nations
+- 21st Century Hackers
+- Behind the booming ransomware industry: How hackers hold businesses hostage
+- A hacker shares his biggest fears
+- We Are Legion: The Story of the Hacktivists
 - 
 # Scams, Phishing
 ## Entertainment > Education
