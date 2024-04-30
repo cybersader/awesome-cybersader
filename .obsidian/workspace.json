@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "b79632556c528616",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "58d27d679a47807c",
             "type": "leaf",
             "state": {
@@ -67,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md"
               }
             }
           },
@@ -216,10 +227,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cbd8ff7871a095f9",
+  "active": "bd803499dbea1fd3",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
+    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
+    "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber",
     "📁 14 - Personal Finance/When to Sell House in Indiana.md",
     "📁 14 - Personal Finance/Using Multiple Banks or Unions.md",
@@ -229,8 +242,6 @@
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1/IMG-20240429140746022.png",
-    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
-    "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled/Untitled.md",
