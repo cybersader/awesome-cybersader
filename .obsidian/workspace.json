@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bd803499dbea1fd3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cca24b71c60cdbb2",
+            "id": "d5b7b4b37cda141a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -91,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,13 +227,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "d5b7b4b37cda141a",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E2 The Blacklist.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
@@ -263,7 +251,6 @@
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled/Untitled.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E2 The Blacklist.md",
     "📁 14 - Personal Finance/📁 14 - Personal Finance.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
