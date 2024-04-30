@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cca24b71c60cdbb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +91,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
               }
             }
           },
@@ -227,8 +240,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd803499dbea1fd3",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
@@ -237,7 +255,6 @@
     "📁 14 - Personal Finance/When to Sell House in Indiana.md",
     "📁 14 - Personal Finance/Using Multiple Banks or Unions.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments",
@@ -247,15 +264,12 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled/Untitled.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E2 The Blacklist.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
     "📁 14 - Personal Finance/📁 14 - Personal Finance.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
     "📁 14 - Finance/Using Multiple Banks or Unions",
     "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
     "📁 14 - Personal Finance",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E1 The Blacklist.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
@@ -265,7 +279,6 @@
     "📁 09 - My Obsidian Stack/Breaking Vault Changes",
     "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
     "📁 09 - My Obsidian Stack/Test Vault Workflow/Test Vault Workflow.md",
-    "📁 11 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012111.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",
