@@ -9,6 +9,7 @@ date modified: Tuesday, April 30th 2024, 10:37 am
 ---
 
 # S1E5 The Courier
+- NSA analyst is a 20 million dollar target
 - 
 # S1E4 - The Stewmaker 161
 - Stewmaker stealing MC
