@@ -8,6 +8,8 @@ date modified: Monday, April 29th 2024, 2:07 pm
 
 ![](https://www.youtube.com/watch?v=RDTXzrEMEQQ&t=2502s)
 
+> [!tldr] I'm addicted to screen too much. This would replace that for parts of my day as an assistant one and integrate with services without APIs. I like the vision. If they refactor a bit and go hard on the LAM stuff, I'm down.
+
 - I'm really excited about this 😄
 - I've always thought that with the internet and everything connected, the next step to making applications more connected is creating a system that can fuzzily interface between apps. Rabbit OS and the R1 attempt to solve this problem with a LAM (large action model)
 
