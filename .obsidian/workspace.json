@@ -20,12 +20,36 @@
             }
           },
           {
+            "id": "781737b13d70489b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 15 - Logs/Obsidian Delete Hanging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ffbdb5097cabc82d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b79632556c528616",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,18 +80,6 @@
             }
           },
           {
-            "id": "b79632556c528616",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "58d27d679a47807c",
             "type": "leaf",
             "state": {
@@ -79,7 +91,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -228,8 +241,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "804a9c2c020c0413",
+  "active": "781737b13d70489b",
   "lastOpenFiles": [
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240429235332243.png",
+    "📁 15 - Logs/Pasted image 20240429235227.png",
+    "📁 15 - Logs/Pasted image 20240429235225.png",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging",
+    "📁 15 - Logs/_attachments",
+    "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240429235215171.png",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 15 - Logs/Obsidian Delete Hanging.md",
     "📁 09 - My Obsidian Stack/Untitled",
@@ -257,11 +276,9 @@
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled/Untitled.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Untitled",
     "📁 14 - Personal Finance/📁 14 - Personal Finance.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
-    "📁 14 - Finance/Using Multiple Banks or Unions",
     "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
@@ -271,9 +288,6 @@
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012192.png",
     "⬇ INBOX, DROPZONE/_attachments/Go Pro as a Webcam/IMG-20240428134807354.png",
     "📁 13 - Journal, Diary/_attachments/📁 13 - Journal, Diary/IMG-20240427210355186.gif",
-    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229383.png",
-    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229338.png",
-    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229308.png",
-    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229272.png"
+    "📁 01 - Projects/Backing Up Signal/IMG-20240427121229383.png"
   ]
 }

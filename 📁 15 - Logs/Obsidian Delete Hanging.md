@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, April 29th 2024, 10:10 pm
-date modified: Monday, April 29th 2024, 10:52 pm
+date modified: Monday, April 29th 2024, 11:52 pm
 ---
 
 - I tried to delete anything in Obsidian and it would freeze
@@ -23,4 +23,8 @@ date modified: Monday, April 29th 2024, 10:52 pm
 - Attempt #1
 	- Paste into Terminal > `Run as Administrator` > `del /F /Q %APPDATA%\Microsoft\Windows\Recent\*`
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations\*`
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332238.png)
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332296.png)
+		- ![](_attachments/Obsidian%20Delete%20Hanging/IMG-20240429235332243.png)
+		- 
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\CustomDestinations\*`
