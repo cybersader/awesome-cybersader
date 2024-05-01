@@ -11,7 +11,10 @@ date modified: Friday, April 26th 2024, 11:28 am
 
 %% Begin Waypoint %%
 - **[[iOS vs Android]]**
-- **[[Place to Buy Phones]]**
+- **[[Mint Mobile]]**
+- [[Phone Shopping 2024]]
+- **[[Phone Strategy - Provider, Plans, Warranties]]**
+- **[[Providers, Phones, Plans]]**
 
 %% End Waypoint %%
 
@@ -20,3 +23,4 @@ date modified: Friday, April 26th 2024, 11:28 am
 Options:
 1. Keep old Samsung S21 Ultra, get new S24 Ultra and trade in old iPhone
 2. Trade in S21 Ultra for S23 and get S24 Ultra
+
