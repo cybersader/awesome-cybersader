@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "804a9c2c020c0413",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 15 - Logs/Obsidian Delete Hanging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "781737b13d70489b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 15 - Logs/Obsidian Delete Hanging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ffbdb5097cabc82d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b79632556c528616",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -121,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rabbit",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -146,8 +110,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
               }
             }
           },
@@ -243,10 +206,14 @@
   },
   "active": "cbd8ff7871a095f9",
   "lastOpenFiles": [
-    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 15 - Logs/Obsidian Delete Hanging.md",
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555186.png",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555159.png",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555106.png",
@@ -257,13 +224,11 @@
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging",
     "📁 15 - Logs/_attachments",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240429235215171.png",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 09 - My Obsidian Stack/Untitled",
     "📁 15 - Logs/📁 15 - Logs.md",
     "📁 14 - Personal Finance/When to Sell House in Indiana.md",
     "📁 15 - Logs",
     "📁",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Beekeeper/Untitled.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/S1E3 The Blacklist - Wujing 84.md",
@@ -284,7 +249,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
     "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
     "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png"

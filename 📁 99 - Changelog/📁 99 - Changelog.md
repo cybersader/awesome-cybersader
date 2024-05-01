@@ -1,3 +1,4 @@
+- 2024-04-30 at 22h19 · [[COBRA Insurance Between Jobs]]
 - 2024-04-30 at 21h52 · [[The Blacklist]]
 - 2024-04-30 at 10h48 · [[⬇️ Content Creation Stack Ideas]]
 - 2024-04-30 at 10h35 · [[📁 15 - Logs]]
@@ -97,4 +98,3 @@
 - 2024-04-25 at 21h24 · [[07 Cyberbusiness]]
 - 2024-04-25 at 21h24 · [[The cybersecurity hiring gap]]
 - 2024-04-25 at 21h24 · [[The reality of tech jobs in 2024]]
-- 2024-04-25 at 21h24 · [[06 Cybersader - COMMUNITY (Mostly Indiana)]]
