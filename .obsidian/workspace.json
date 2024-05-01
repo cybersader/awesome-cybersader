@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
               }
             }
           },
@@ -204,16 +203,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cbd8ff7871a095f9",
+  "active": "ffbdb5097cabc82d",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
+    "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+    "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 15 - Logs/Obsidian Delete Hanging.md",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555186.png",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555159.png",
     "📁 15 - Logs/_attachments/Obsidian Delete Hanging/IMG-20240430103555106.png",
@@ -248,9 +250,6 @@
     "📁 14 - Personal Finance/📁 14 - Personal Finance.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Zero Days/Zero Days.md",
     "📁 14 - Finance/📁 14 - Finance (365791).md",
-    "📁 14 - Finance/Using Multiple Banks or Unions/Using Multiple Banks or Unions.md",
-    "📁 09 - My Obsidian Stack/Breaking Vault Changes.md",
-    "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png"
   ]
 }
