@@ -7,6 +7,12 @@ publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
 date modified: Tuesday, April 30th 2024, 10:37 am
 ---
+# S1E8 General Ludd 109
+- Seems like an anonymous copycat
+- Plane crash - debris spread out - midair break apart or bomb
+- "It's a movement" ... yeah.  General Ludd comes from Luddites.  Sounds a lot like Anonymous 
+- Fertilizer is a target for materials to create bombs
+- 
 # S1 E6 Gina Zanetakos 152
 - corporate terrorist
 # S1E5 The Courier
