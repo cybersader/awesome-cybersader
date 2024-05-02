@@ -12,7 +12,7 @@ date modified: Tuesday, April 30th 2024, 9:52 pm
 - When black sites get attacked or it's assumed they're compromised
 	- code sent over secure transmission to detain anyone who doesn't know it
 	- they destroy all computers and route data to central servers - in this case, to Quantico Virginia 
-- 
+-   Bad guys have a jammer and stopped telecom, simplex, and duplex signals - 
 # S1E8 General Ludd 109
 - Seems like an anonymous copycat
 - Plane crash - debris spread out - midair break apart or bomb
