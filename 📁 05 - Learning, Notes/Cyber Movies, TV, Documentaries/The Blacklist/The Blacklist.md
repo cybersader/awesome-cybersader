@@ -18,7 +18,7 @@ date modified: Tuesday, April 30th 2024, 9:52 pm
 		2. **Simplex**: Simplex communication is a one-way communication channel where data flows in only one direction, from the transmitter to the receiver. Examples include television broadcasts, radio transmissions, and pager systems. Disabling simplex signals would involve blocking or interfering with these one-way communication channels.
 		3. **Duplex**: Duplex communication allows data to flow in both directions simultaneously, enabling two-way communication between the transmitter and the receiver. Examples of duplex communication include telephone conversations, video conferencing, and internet browsing. Disabling duplex signals would involve disrupting or blocking the bidirectional transmission of data.
 - Used IMEI analysis somehow to find where calls were coming from
-- 
+-  
 # S1E8 General Ludd 109
 - Seems like an anonymous copycat
 - Plane crash - debris spread out - midair break apart or bomb
