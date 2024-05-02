@@ -5,10 +5,12 @@ tags:
   - law-enforcement
 publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
-date modified: Tuesday, April 30th 2024, 9:52 pm
+date modified: Wednesday, May 1st 2024, 11:14 pm
 ---
 
-# S1E9 and 10 Anso Garrick 16
+# S1E10 The Good Samaritan
+- 
+# S1E9 and 10 Anslo Garrick 16
 - When black sites get attacked or it's assumed they're compromised
 	- code sent over secure transmission to detain anyone who doesn't know it
 	- they destroy all computers and route data to central servers - in this case, to Quantico Virginia 
