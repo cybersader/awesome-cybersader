@@ -8,11 +8,17 @@ date created: Sunday, April 28th 2024, 11:53 pm
 date modified: Tuesday, April 30th 2024, 9:52 pm
 ---
 
-# S1E9 Anso Garrick 16 P1
+# S1E9 and 10 Anso Garrick 16
 - When black sites get attacked or it's assumed they're compromised
 	- code sent over secure transmission to detain anyone who doesn't know it
 	- they destroy all computers and route data to central servers - in this case, to Quantico Virginia 
--   Bad guys have a jammer and stopped telecom, simplex, and duplex signals - 
+-   Bad guys have a jammer and stopped telecom, simplex, and duplex signals
+	- In the context of telecommunications and signal jamming, "telecom," "simplex," and "duplex" refer to different types of communication channels and signals:
+		1. **Telecom**: This is a general term that refers to telecommunications, which encompasses various methods of transmitting information over long distances. In the context of signal jamming, disabling "telecom" likely means disrupting or blocking communication channels used for telecommunication purposes, such as voice calls, data transmission, or internet connectivity.
+		2. **Simplex**: Simplex communication is a one-way communication channel where data flows in only one direction, from the transmitter to the receiver. Examples include television broadcasts, radio transmissions, and pager systems. Disabling simplex signals would involve blocking or interfering with these one-way communication channels.
+		3. **Duplex**: Duplex communication allows data to flow in both directions simultaneously, enabling two-way communication between the transmitter and the receiver. Examples of duplex communication include telephone conversations, video conferencing, and internet browsing. Disabling duplex signals would involve disrupting or blocking the bidirectional transmission of data.
+- Used IMEI analysis somehow to find where calls were coming from
+- 
 # S1E8 General Ludd 109
 - Seems like an anonymous copycat
 - Plane crash - debris spread out - midair break apart or bomb
