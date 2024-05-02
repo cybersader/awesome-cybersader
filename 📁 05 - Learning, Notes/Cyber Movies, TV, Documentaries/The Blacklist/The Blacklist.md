@@ -5,16 +5,17 @@ tags:
   - law-enforcement
 publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
-date modified: Wednesday, May 1st 2024, 11:14 pm
+date modified: Thursday, May 2nd 2024, 9:59 am
 ---
 
-# S1E10 The Good Samaritan
+# S1E12 The Alchemist 101
+- 
+# S1E11 The Good Samaritan
 - Red wants Aram to steal 5 million dollars from an account with just the account and routing number
 - He expects him to do it in under 2 minutes.  That's largely unrealistic.
 - It showed Swift code related to the Swift money transfer system
 - He made it untraceable somehow.  A "ripple exchange" to have fiat currency converted to eCash and bitcoin. Through a cryptographic extension at the protocol level, then a two-tier secure laundry service I know I can trust. 
 - Someone created a money trail that leads to the good hacker, but it wasn't him.
--  
 # S1E9 and 10 Anslo Garrick 16
 - When black sites get attacked or it's assumed they're compromised
 	- code sent over secure transmission to detain anyone who doesn't know it
