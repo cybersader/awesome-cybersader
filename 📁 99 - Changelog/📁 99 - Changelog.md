@@ -1,3 +1,4 @@
+- 2024-05-01 at 21h53 · [[The Blacklist]]
 - 2024-05-01 at 12h00 · [[Mint Mobile]]
 - 2024-05-01 at 11h56 · [[📁 01 - Projects]]
 - 2024-05-01 at 11h56 · [[Phone Pick in 2024]]
@@ -6,7 +7,6 @@
 - 2024-05-01 at 11h23 · [[Providers, Phones, Plans]]
 - 2024-04-30 at 23h02 · [[Backing Up Signal]]
 - 2024-04-30 at 22h19 · [[COBRA Insurance Between Jobs]]
-- 2024-04-30 at 21h52 · [[The Blacklist]]
 - 2024-04-30 at 10h48 · [[⬇️ Content Creation Stack Ideas]]
 - 2024-04-30 at 10h35 · [[📁 15 - Logs]]
 - 2024-04-30 at 10h35 · [[Obsidian Delete Hanging]]

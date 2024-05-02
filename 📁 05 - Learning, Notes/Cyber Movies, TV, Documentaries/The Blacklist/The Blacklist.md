@@ -8,6 +8,11 @@ date created: Sunday, April 28th 2024, 11:53 pm
 date modified: Tuesday, April 30th 2024, 9:52 pm
 ---
 
+# S1E9 Anso Garrick 16 P1
+- When black sites get attacked or it's assumed they're compromised
+	- code sent over secure transmission to detain anyone who doesn't know it
+	- they destroy all computers and route data to central servers - in this case, to Quantico Virginia 
+- 
 # S1E8 General Ludd 109
 - Seems like an anonymous copycat
 - Plane crash - debris spread out - midair break apart or bomb
