@@ -1,3 +1,4 @@
+- 2024-05-03 at 12h11 · [[Syncthing for Obsidian Notes]]
 - 2024-05-03 at 11h59 · [[⬇ INBOX, DROPZONE]]
 - 2024-05-03 at 11h59 · [[The Blacklist]]
 - 2024-05-02 at 11h57 · [[⬇ Tech Dropzone]]
@@ -62,7 +63,6 @@
 - 2024-04-27 at 20h48 · [[✅ Tasks]]
 - 2024-04-27 at 13h50 · [[Auto - Tagging, Linking, Dropzones & Organizers]]
 - 2024-04-27 at 13h18 · [[File Organizer 2000]]
-- 2024-04-27 at 13h18 · [[Syncthing for Obsidian Notes]]
 - 2024-04-27 at 13h17 · [[Syncing Obsidian]]
 - 2024-04-27 at 00h34 · [[Temporary Files Filling Up Drive]]
 - 2024-04-27 at 00h34 · [[Windows BCDR]]

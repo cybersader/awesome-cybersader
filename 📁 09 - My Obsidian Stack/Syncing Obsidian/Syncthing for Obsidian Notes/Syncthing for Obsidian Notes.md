@@ -95,6 +95,7 @@ date modified: Saturday, April 27th 2024, 1:17 pm
 > However, if all your devices are always connected to the same network, you can keep using the Obsidian and Syncthing setup.
 
 - If it's true that you have to be on the same LAN, then this might be a deal breaker
+
 # Related Links
 - [How do you share your files? - User Stories - Syncthing Community Forum](https://forum.syncthing.net/t/how-do-you-share-your-files/2515)
 - [Link to share files - Feature - Syncthing Community Forum](https://forum.syncthing.net/t/link-to-share-files/2825/2) 
