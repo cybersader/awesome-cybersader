@@ -5,12 +5,14 @@ tags:
   - law-enforcement
 publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
-date modified: Friday, May 3rd 2024, 12:35 pm
+date modified: Friday, May 3rd 2024, 12:54 pm
 ---
 
+# S1E16 Mako Tanida
+- 
 # S1E15 The Judge 57
 - An eye for an eye makes the whole world blind
-- 
+- Apparently Christians who wanted truth and justice. 
 # S1E14 Madeline Pratt 73
 - Sim card swapped to steal messages.  Actually really smart, but not easy to do
 # S1E11 The Good Samaritan

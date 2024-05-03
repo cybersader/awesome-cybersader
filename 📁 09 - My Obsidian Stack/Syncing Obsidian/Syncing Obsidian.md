@@ -8,6 +8,7 @@ date modified: Friday, April 26th 2024, 5:48 pm
 
 %% Begin Landmark %%
 - **[[Syncthing for Obsidian Notes]]**
+- **[[Syncthing Incompatible with Git]]**
 
 %% End Landmark %%
 - [ ] Decide on syncing solution that allows for large size vaults, back and forth use between clients, and easy configuration ➕ 2024-04-26

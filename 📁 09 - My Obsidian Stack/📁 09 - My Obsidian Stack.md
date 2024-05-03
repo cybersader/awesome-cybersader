@@ -24,8 +24,8 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian to Ghost]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
+	- **[[Syncthing Incompatible with Git]]**
 - **[[Templater]]**
 - **[[Test Vault Workflow]]**
-- **Untitled**
 
 %% End Landmark %%
