@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
+                "file": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
               }
             }
           },
@@ -240,10 +240,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3a26fb667c677ea2",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "⬇ INBOX, DROPZONE/Untitled",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
@@ -284,8 +285,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/Untitled",
     "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber",
-    "📁 14 - Personal Finance/Using Multiple Banks or Unions.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/_attachments/Rabbit OS & R1/IMG-20240429214552203.png",
     "📁 11 - Content Creation/Sync Video and Audio/_attachments/Sync Video and Audio/IMG-20240428210012281.png"
   ]

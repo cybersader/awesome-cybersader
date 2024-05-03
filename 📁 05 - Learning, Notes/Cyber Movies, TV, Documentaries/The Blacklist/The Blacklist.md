@@ -5,11 +5,11 @@ tags:
   - law-enforcement
 publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
-date modified: Thursday, May 2nd 2024, 9:59 am
+date modified: Friday, May 3rd 2024, 11:59 am
 ---
+
 # S1E15 The Judge 57
 - An eye for an eye makes the whole world blind
-- 
 # S1E14 Madeline Pratt 73
 - Sim card swapped to steal messages.  Actually really smart, but not easy to do
 # S1E11 The Good Samaritan
