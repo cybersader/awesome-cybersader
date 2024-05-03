@@ -8,8 +8,7 @@ date created: Sunday, April 28th 2024, 11:53 pm
 date modified: Thursday, May 2nd 2024, 9:59 am
 ---
 
-# S1E13 The Cyprus Agency 64
-- 
+
 # S1E11 The Good Samaritan
 - Red wants Aram to steal 5 million dollars from an account with just the account and routing number
 - He expects him to do it in under 2 minutes.  That's largely unrealistic.
