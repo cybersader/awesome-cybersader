@@ -9,6 +9,7 @@ publish: true
 ---
 
 %% Begin Waypoint %%
+- **[[Arc Browser on Windows]]**
 - [[Company Security Strategy from Zero]]
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
