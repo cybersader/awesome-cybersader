@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
               }
             }
           },
@@ -240,12 +240,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e92adf18b26242e2",
+  "active": "3a26fb667c677ea2",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
