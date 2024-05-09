@@ -6,8 +6,9 @@ tags:
   - Windows
 publish: true
 date created: Friday, May 3rd 2024, 1:31 pm
-date modified: Friday, May 3rd 2024, 1:45 pm
+date modified: Sunday, May 5th 2024, 10:12 pm
 ---
+
 - [ ] Test arc ➕ 2024-05-05
 # Arc Windows Launch
 [(7) Arc on Windows is here. Now what... - YouTube](https://www.youtube.com/watch?v=OfvkfnAQ3JQ)
