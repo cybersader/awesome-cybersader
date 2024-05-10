@@ -4,6 +4,16 @@
 
 ---
 
+# TalkinBoutNews - May 9th 2024
+
+- The RSA conference is going right now
+- The power of AI compels you
+- Kelly shortridge makes sense of the 2024 Verizon DBIR annual report
+    - Attackers are not using generative AI
+    - Most of the attacks that people will experience will be the financial focused crimes such as ransomware , business email compromise.
+    - Business email compromise has the largest financial impact
+    - 
+
 # TalkinBoutNews - 3/11/2024
 
 ## News - Ideas, Takeaways, Tangents
