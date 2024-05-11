@@ -6,6 +6,6 @@ date created: Friday, May 10th 2024, 10:14 pm
 date modified: Friday, May 10th 2024, 10:14 pm
 ---
 %% Begin Waypoint %%
-- **[[Debate - Marriage and Men]]**
+- **[[Debate - Why Marriage is Good for Men]]**
 
 %% End Waypoint %%

@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+                "file": "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
                 "mode": "source",
                 "source": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md"
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md"
               }
             }
           },
@@ -229,13 +229,29 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "bee40236adcd78db",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "fa037d588565d607",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 407.5,
-    "collapsed": true
+    "width": 407.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,7 +286,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+                    "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
                     "mode": "source",
                     "source": false
                   }
@@ -289,15 +305,17 @@
       }
     ]
   },
-  "active": "88893f18972046ec",
+  "active": "fa037d588565d607",
   "lastOpenFiles": [
+    "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
     "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+    "📁 11 - Content Creation/YouTube Transcription",
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 16 - Society, Culture/📁 16 - Society, Culture.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "📁 16 - Society, Culture/Debate - Marriage and Men",
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 16 - Society, Culture",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
@@ -326,7 +344,6 @@
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments/Syncthing Incompatible with Git",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
@@ -335,7 +352,6 @@
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md"
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
   ]
 }

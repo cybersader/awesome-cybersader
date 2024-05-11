@@ -15,5 +15,6 @@ date modified: Thursday, April 25th 2024, 5:55 pm
 - **[[Screen Recording, Streaming Stack]]**
 - **[[Sync Video and Audio]]**
 - **[[Webcams]]**
+- **[[YouTube Transcription]]**
 
 %% End Waypoint %%
