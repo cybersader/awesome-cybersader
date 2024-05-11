@@ -21,24 +21,24 @@ First I found a template @ [Best Made In Webflow Websites | Free Examples & Desi
 
 I copied it, edited it, then added some Javascript in the page settings in Webflow 
 
-- ![200](_attachments/Mothers%20Day%20Website/IMG-20240509213552663.png)
+- ![200](IMG-20240509213552663.png)
 - I used the slick JS library to make a carousel
 	- [kenwheeler/slick: the last carousel you'll ever need](https://github.com/kenwheeler/slick)
-	- ![400](_attachments/Mothers%20Day%20Website/IMG-20240509213552720.png)
+	- ![400](IMG-20240509213552720.png)
 
 I got an account on [Netlify](https://www.netlify.com/), then added a site by exporting the code from Webflow and importing it as a "deploy" in Netlify
 
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552759.png)
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552796.png)
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552837.png)
+- ![](IMG-20240509213552759.png)
+- ![](IMG-20240509213552796.png)
+- ![](IMG-20240509213552837.png)
 
 To attach the website I bought in Cloudflare, I had to set DNS records from within Cloudflare after getting IPs or hosts/FQDNs to "point" at.
 
 [Register a new domain · Cloudflare Registrar docs](https://developers.cloudflare.com/registrar/get-started/register-domain/)
 [Custom domains | Netlify Docs](https://docs.netlify.com/domains-https/custom-domains/) 
 
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552876.png)
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552917.png)
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552951.png)
-- ![](_attachments/Mothers%20Day%20Website/IMG-20240509213552984.png)
+- ![](IMG-20240509213552876.png)
+- ![](IMG-20240509213552917.png)
+- ![](IMG-20240509213552951.png)
+- ![](IMG-20240509213552984.png)
 - 

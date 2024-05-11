@@ -80,36 +80,12 @@
             }
           },
           {
-            "id": "f172dd39efdd4f61",
+            "id": "a90390b263ad8dec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/Mothers Day Website.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4d2975986318251",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e92adf18b26242e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -202,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/Mothers Day Website.md",
+                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/Mothers Day Website.md",
+                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/Mothers Day Website.md"
+                "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md"
               }
             }
           },
@@ -276,53 +252,90 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f172dd39efdd4f61",
+  "floating": {
+    "id": "0ef4600252884483",
+    "type": "floating",
+    "children": [
+      {
+        "id": "efebb3f878eca572",
+        "type": "window",
+        "children": [
+          {
+            "id": "2e8a94b0def6ff2f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "88893f18972046ec",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1104,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "88893f18972046ec",
   "lastOpenFiles": [
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552984.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552951.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552917.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552876.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552837.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552759.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552796.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509212439762.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552720.png",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509213552663.png",
+    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+    "📁 16 - Society, Culture/Debate - Marriage and Men/Debate - Marriage and Men.md",
+    "📁 16 - Society, Culture/📁 16 - Society, Culture.md",
+    "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
+    "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 16 - Society, Culture/Debate - Marriage and Men",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 16 - Society, Culture",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+    "📁 01 - Projects/Mothers Day Website/Mothers Day Website.md",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552876.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552837.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552759.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552796.png",
+    "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509212439762.png",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552720.png",
+    "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website",
+    "📁 01 - Projects/Mothers Day Website/_attachments",
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png",
     "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website/Mothers Day Website.md",
-    "📁 13 - Journal, Diary/⬇️ Journal Drop/Mothers Day Website",
+    "📁 01 - Projects/Mothers Day Website",
     "📁 08 - Personal/⬇️ Personal Drop/⬇️ Personal Drop.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 08 - Personal/⬇️ Personal Drop",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-    "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/Syncthing Incompatible with Git.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments/Syncthing Incompatible with Git",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments/Syncthing Incompatible with Git/IMG-20240503132924641.png",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
-    "📁 01 - Projects/Phone Pick in 2024/Untitled",
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile",
     "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
     "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
-    "📁 15 - Logs/Obsidian Delete Hanging.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/COBRA Insurance Between Jobs/COBRA Insurance Between Jobs.md",
-    "📁 15 - Logs/📁 15 - Logs.md"
+    "📁 99 - Changelog/📁 99 - Changelog.md"
   ]
 }
