@@ -102,9 +102,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "88893f18972046ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -162,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -251,7 +264,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407.5
+    "width": 273.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,43 +280,6 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false
     }
-  },
-  "floating": {
-    "id": "0ef4600252884483",
-    "type": "floating",
-    "children": [
-      {
-        "id": "efebb3f878eca572",
-        "type": "window",
-        "children": [
-          {
-            "id": "2e8a94b0def6ff2f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "88893f18972046ec",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 0,
-        "width": 1024,
-        "height": 1104,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
   },
   "active": "88893f18972046ec",
   "lastOpenFiles": [
