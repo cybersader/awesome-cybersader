@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "24343e8dbe411d1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -174,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -191,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
               }
             }
           },
@@ -264,7 +275,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,13 +293,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "88893f18972046ec",
+  "active": "fa037d588565d607",
   "lastOpenFiles": [
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
     "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
     "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 11 - Content Creation/YouTube Transcription",
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 16 - Society, Culture/📁 16 - Society, Culture.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
@@ -327,7 +340,6 @@
     "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
-    "📁 05 - Learning, Notes/Cyber Classes/Cyber Classes.md"
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md"
   ]
 }

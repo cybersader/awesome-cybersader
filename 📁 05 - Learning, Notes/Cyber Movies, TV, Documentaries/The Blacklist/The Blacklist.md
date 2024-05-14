@@ -5,10 +5,15 @@ tags:
   - law-enforcement
 publish: true
 date created: Sunday, April 28th 2024, 11:53 pm
-date modified: Friday, May 3rd 2024, 12:54 pm
+date modified: Tuesday, May 14th 2024, 7:08 am
 ---
 
-# S1E16 Mako Tanida
+# S1E17 Ivan 88
+- Ivan hacked the computers and stole data
+- He had the 90s hacker vibes when he started making devices go crazy - not easy or realistic, but definitely 80s or 90s vibes
+- "look at cars ECU to find if it was manipulated" - is this normal for forensics?
+- Left a message in the CAN BUS
+- This seems like a StuxNET parallel
 - 
 # S1E15 The Judge 57
 - An eye for an eye makes the whole world blind
