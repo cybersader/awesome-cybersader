@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Friday, April 26th 2024, 3:31 pm
+date modified: Tuesday, May 14th 2024, 6:35 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -19,9 +19,6 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 # Contribution Ideas
 - Have a contribution workflow website that hooks into Obsidian like screen.garden kind of does.  
 - Have a contributors file or page that tracks all contributors -- makes the contributor tracking platform agnostic
-# Collab, Links, Sharing
-- [screen.garden](https://screen.garden/) 
-- [Peerdraft - Secure real-time collaboration for Obsidian](https://www.peerdraft.app/)
 # Misc
 - [Easy Way to Generate/Copy Wiki Internal Link to Current Note? - Help - Obsidian Forum](https://forum.obsidian.md/t/easy-way-to-generate-copy-wiki-internal-link-to-current-note/56699)
 - obsidian://show-plugin?id=copy-publish-url

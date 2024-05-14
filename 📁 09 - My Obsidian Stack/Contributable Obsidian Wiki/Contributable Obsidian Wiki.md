@@ -10,6 +10,7 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 - **[[🐛 Known Base Bugs, Issues]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
+- **[[Collaboration in Obsidian]]**
 - **[[Customizing Obsidian Publish]]**
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**

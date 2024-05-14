@@ -126,9 +126,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b234e4f2cb46bc2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "363825a62abd3ec3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 11 - Content Creation/Content Analytics & Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -157,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "arc brow",
+                "query": "analytics",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -202,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
               }
             }
           },
@@ -293,8 +317,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fa037d588565d607",
+  "active": "b234e4f2cb46bc2e",
   "lastOpenFiles": [
+    "📁 11 - Content Creation/Content Analytics & Recon.md",
+    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
@@ -308,7 +338,6 @@
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 16 - Society, Culture",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 01 - Projects/Mothers Day Website/Mothers Day Website.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
@@ -332,14 +361,9 @@
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/Syncthing Incompatible with Git.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments/Syncthing Incompatible with Git",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/_attachments",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
-    "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md"
+    "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md"
   ]
 }
