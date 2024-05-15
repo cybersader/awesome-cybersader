@@ -3,9 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, May 14th 2024, 7:34 pm
-date modified: Tuesday, May 14th 2024, 7:35 pm
+date modified: Tuesday, May 14th 2024, 10:06 pm
 media_link: https://www.youtube.com/watch?v=wy_c6lDQZEw
 ---
+
 > [!info] A reflection of the discussion
 
 - Atheism, climate change, marriage advice
