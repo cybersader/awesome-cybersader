@@ -1,3 +1,5 @@
+- 2024-05-14 at 21h32 · [[09 MISC TECH AND STACK]]
+- 2024-05-14 at 21h32 · [[12 - Religion, Ontology, Philosophy]]
 - 2024-05-14 at 20h11 · [[Pints with Aquinas - JP]]
 - 2024-05-14 at 19h34 · [[📁 12 - Religion, Ontology, Philsophy]]
 - 2024-05-14 at 19h34 · [[⬇️ Society Drop]]
@@ -96,5 +98,3 @@
 - 2024-04-26 at 15h16 · [[Astro with Content Layer]]
 - 2024-04-26 at 13h41 · [[Obsidian Run]]
 - 2024-04-26 at 13h40 · [[Auto Publish For Obsidian Publish]]
-- 2024-04-26 at 13h19 · [[Inside Job - 2008 Financial Crisis]]
-- 2024-04-26 at 13h17 · [[Money Explained]]
