@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "analytics",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -226,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
+                "file": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
               }
             }
           },
@@ -319,6 +319,11 @@
   },
   "active": "24343e8dbe411d1b",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
+    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "CybersaderNotion/09 MISC TECH AND STACK/12 - Religion, Ontology, Philosophy.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/⬇️ Society Drop.md",
@@ -326,19 +331,15 @@
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 11 - Content Creation/Content Analytics & Recon.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
     "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 11 - Content Creation/YouTube Transcription",
     "📁 16 - Society, Culture/📁 16 - Society, Culture.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 16 - Society, Culture",
@@ -363,7 +364,6 @@
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/Syncthing Incompatible with Git.md",
-    "⬇ INBOX, DROPZONE/Arc Browser on Windows",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
+    "⬇ INBOX, DROPZONE/Arc Browser on Windows"
   ]
 }

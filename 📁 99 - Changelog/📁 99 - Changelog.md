@@ -1,3 +1,4 @@
+- 2024-05-14 at 21h50 · [[Obsidian Plugins and 3rd Party Tools]]
 - 2024-05-14 at 21h32 · [[09 MISC TECH AND STACK]]
 - 2024-05-14 at 21h32 · [[12 - Religion, Ontology, Philosophy]]
 - 2024-05-14 at 20h11 · [[Pints with Aquinas - JP]]
@@ -15,7 +16,6 @@
 - 2024-05-13 at 20h15 · [[Zero Days]]
 - 2024-05-11 at 22h54 · [[Debate - Why Marriage is Good for Men]]
 - 2024-05-11 at 10h47 · [[YouTube Transcription]]
-- 2024-05-10 at 22h32 · [[Obsidian Plugins and 3rd Party Tools]]
 - 2024-05-10 at 22h08 · [[📁 01 - Projects]]
 - 2024-05-10 at 22h08 · [[Mothers Day Website]]
 - 2024-05-10 at 22h08 · [[📁 13 - Journal, Diary]]
