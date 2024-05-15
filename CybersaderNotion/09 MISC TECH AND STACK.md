@@ -2,6 +2,8 @@
 
 # Misc Pages:
 
+[12 - Religion, Ontology, Philosophy](09%20MISC%20TECH%20AND%20STACK/12%20-%20Religion,%20Ontology,%20Philosophy%2054b848ac9fb34d6986686bd609838cc4.md)
+
 [Online Development Environments](09%20MISC%20TECH%20AND%20STACK/Online%20Development%20Environments.md)
 
 # Misc
