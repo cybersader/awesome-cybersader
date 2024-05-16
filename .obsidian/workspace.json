@@ -104,18 +104,6 @@
             }
           },
           {
-            "id": "88893f18972046ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "24343e8dbe411d1b",
             "type": "leaf",
             "state": {
@@ -152,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -324,6 +312,43 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false
     }
+  },
+  "floating": {
+    "id": "5bb761176b61c35e",
+    "type": "floating",
+    "children": [
+      {
+        "id": "45483ff08e2ba4fc",
+        "type": "window",
+        "children": [
+          {
+            "id": "8ff46e9423c29070",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "88893f18972046ec",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -247,
+        "y": -8,
+        "width": 913,
+        "height": 1108,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
   },
   "active": "88893f18972046ec",
   "lastOpenFiles": [
