@@ -104,6 +104,18 @@
             }
           },
           {
+            "id": "88893f18972046ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "24343e8dbe411d1b",
             "type": "leaf",
             "state": {
@@ -140,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -214,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
+                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md"
               }
             }
           },
@@ -295,8 +307,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5,
-    "collapsed": true
+    "width": 273.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -313,45 +324,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "5bb761176b61c35e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "45483ff08e2ba4fc",
-        "type": "window",
-        "children": [
-          {
-            "id": "8ff46e9423c29070",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "88893f18972046ec",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -247,
-        "y": -8,
-        "width": 913,
-        "height": 1108,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "88893f18972046ec",
   "lastOpenFiles": [
+    "📁 16 - Society, Culture/⬇️ Society Drop/⬇️ Society Drop.md",
+    "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
@@ -367,7 +343,6 @@
     "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "CybersaderNotion/09 MISC TECH AND STACK/12 - Religion, Ontology, Philosophy.md",
-    "📁 16 - Society, Culture/⬇️ Society Drop/⬇️ Society Drop.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
@@ -396,7 +371,6 @@
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png",
     "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
     "📁 01 - Projects/Mothers Day Website",
-    "📁 08 - Personal/⬇️ Personal Drop/⬇️ Personal Drop.md",
     "📁 08 - Personal/⬇️ Personal Drop"
   ]
 }
