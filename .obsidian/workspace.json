@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
+                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
               }
             }
           },
@@ -325,10 +325,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "88893f18972046ec",
   "lastOpenFiles": [
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
+    "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 03 - Curations, Stacks/Awesome AI",
     "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
@@ -370,8 +372,6 @@
     "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
     "📁 01 - Projects/Mothers Day Website",
     "📁 08 - Personal/⬇️ Personal Drop/⬇️ Personal Drop.md",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
-    "📁 08 - Personal/⬇️ Personal Drop",
-    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
+    "📁 08 - Personal/⬇️ Personal Drop"
   ]
 }
