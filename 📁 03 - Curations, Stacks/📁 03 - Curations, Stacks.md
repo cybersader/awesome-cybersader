@@ -4,6 +4,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 ---
 %% Begin Waypoint %%
 - **[[⬇ Tech Dropzone]]**
+- **[[Awesome AI]]**
 - **[[Awesome Anime]]**
 - **[[Backups Tech]]**
 - **[[Books]]**

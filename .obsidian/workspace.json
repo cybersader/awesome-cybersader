@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gpt",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -226,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+                "file": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
               }
             }
           },
@@ -307,7 +307,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -324,8 +325,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fa037d588565d607",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+    "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+    "📁 03 - Curations, Stacks/Awesome AI",
+    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
     "📁 11 - Content Creation/Content Analytics & Recon.md",
     "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
@@ -339,7 +345,6 @@
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
     "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
@@ -348,7 +353,6 @@
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 16 - Society, Culture",
     "📁 01 - Projects/Mothers Day Website/Mothers Day Website.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
@@ -368,9 +372,6 @@
     "📁 08 - Personal/⬇️ Personal Drop/⬇️ Personal Drop.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 08 - Personal/⬇️ Personal Drop",
-    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/Syncthing Incompatible with Git.md",
-    "⬇ INBOX, DROPZONE/Arc Browser on Windows"
+    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
   ]
 }
