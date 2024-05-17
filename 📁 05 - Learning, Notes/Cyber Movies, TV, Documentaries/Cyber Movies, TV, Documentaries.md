@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Monday, April 29th 2024, 10:41 pm
+date modified: Thursday, May 16th 2024, 9:20 pm
 publish: true
 ---
 
@@ -89,7 +89,7 @@ publish: true
 - Lords of Scam
 - Billion Dollar Heist
 - Easy Money: the biggest fraud in US history
-- 
+- [The Power of the Fed (full documentary) | FRONTLINE - YouTube](https://www.youtube.com/watch?v=9RbL8lTsITY) 
 ### Economy, Workplace, Finance, Business
 - <u>Related Anime?</u>
 	- Battle Programmer Shirase
