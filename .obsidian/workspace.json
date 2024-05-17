@@ -80,36 +80,12 @@
             }
           },
           {
-            "id": "a90390b263ad8dec",
+            "id": "5bd9fd828ca56178",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58d27d679a47807c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88893f18972046ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
                 "mode": "source",
                 "source": false
               }
@@ -152,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -226,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md"
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md"
               }
             }
           },
@@ -285,29 +261,14 @@
               "type": "transcript-view",
               "state": {}
             }
-          },
-          {
-            "id": "fa037d588565d607",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "9a2ec551abdf9884",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 498.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -324,14 +285,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "88893f18972046ec",
+  "active": "5bd9fd828ca56178",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/⬇️ Notes Drop.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
+    "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
+    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/⬇️ Society Drop.md",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 03 - Curations, Stacks/Awesome AI",
     "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
@@ -347,16 +312,13 @@
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
-    "📁 11 - Content Creation/YouTube Transcription/YouTube Transcription.md",
     "📁 11 - Content Creation/YouTube Transcription",
     "📁 16 - Society, Culture/📁 16 - Society, Culture.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
     "📁 16 - Society, Culture",
-    "📁 01 - Projects/Mothers Day Website/Mothers Day Website.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",
@@ -369,7 +331,6 @@
     "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website",
     "📁 01 - Projects/Mothers Day Website/_attachments",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png",
-    "📁 13 - Journal, Diary/📁 13 - Journal, Diary.md",
     "📁 01 - Projects/Mothers Day Website",
     "📁 08 - Personal/⬇️ Personal Drop"
   ]

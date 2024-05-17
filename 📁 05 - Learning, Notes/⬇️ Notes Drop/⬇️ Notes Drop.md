@@ -6,6 +6,7 @@ publish: true
 
 %% Begin Waypoint %%
 - **[[COBRA Insurance Between Jobs]]**
+- [[How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website.]]
 - **[[ISP Shenanigans]]**
 - **[[Rabbit OS & R1]]**
 - **[[Recover Files Old Windows Boot Drive]]**
