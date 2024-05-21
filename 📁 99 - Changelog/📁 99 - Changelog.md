@@ -1,4 +1,4 @@
-- 2024-05-20 at 20h21 · [[Cybersecurity Culture Building]]
+- 2024-05-20 at 20h45 · [[Cybersecurity Culture Building]]
 - 2024-05-20 at 20h17 · [[📁 03 - Curations, Stacks]]
 - 2024-05-20 at 20h14 · [[12 - Religion, Ontology, Philosophy]]
 - 2024-05-20 at 20h14 · [[Zero Days]]
