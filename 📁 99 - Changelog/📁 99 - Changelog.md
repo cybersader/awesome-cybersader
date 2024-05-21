@@ -1,3 +1,5 @@
+- 2024-05-20 at 20h21 · [[Cybersecurity Culture Building]]
+- 2024-05-20 at 20h17 · [[📁 03 - Curations, Stacks]]
 - 2024-05-20 at 20h14 · [[12 - Religion, Ontology, Philosophy]]
 - 2024-05-20 at 20h14 · [[Zero Days]]
 - 2024-05-16 at 21h20 · [[Cyber Movies, TV, Documentaries]]
@@ -7,7 +9,6 @@
 - 2024-05-16 at 19h31 · [[Debate - Why Marriage is Good for Men]]
 - 2024-05-15 at 21h28 · [[Wiki, KB, KMS]]
 - 2024-05-15 at 21h28 · [[Awesome AI]]
-- 2024-05-15 at 21h13 · [[📁 03 - Curations, Stacks]]
 - 2024-05-15 at 21h13 · [[AI Tools]]
 - 2024-05-14 at 22h06 · [[Pints with Aquinas - JP]]
 - 2024-05-14 at 21h50 · [[Obsidian Plugins and 3rd Party Tools]]
@@ -97,4 +98,3 @@
 - 2024-04-26 at 21h23 · [[Darknet diaries episode 76]]
 - 2024-04-26 at 16h06 · [[Obsidian to Ghost]]
 - 2024-04-26 at 15h28 · [[Attachment Management]]
-- 2024-04-26 at 15h22 · [[Folder Notes & Publish]]

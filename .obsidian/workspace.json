@@ -68,6 +68,18 @@
             }
           },
           {
+            "id": "7e3ae0041d65f7fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "24343e8dbe411d1b",
             "type": "leaf",
             "state": {
@@ -104,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -178,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
               }
             }
           },
@@ -261,8 +273,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f9d1842cc11800a5",
+  "active": "7e3ae0041d65f7fe",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building",
+    "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
@@ -280,7 +296,6 @@
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
     "📁 03 - Curations, Stacks/Awesome AI",
     "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
     "📁 11 - Content Creation/Content Analytics & Recon.md",
     "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
@@ -288,9 +303,7 @@
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
     "CybersaderNotion/09 MISC TECH AND STACK/12 - Religion, Ontology, Philosophy.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
     "📁 16 - Society, Culture/⬇️ Society Drop",
-    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
     "📁 11 - Content Creation/YouTube Transcription",
     "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
@@ -307,7 +320,6 @@
     "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website",
     "📁 01 - Projects/Mothers Day Website/_attachments",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png",
-    "📁 01 - Projects/Mothers Day Website",
-    "📁 08 - Personal/⬇️ Personal Drop"
+    "📁 01 - Projects/Mothers Day Website"
   ]
 }
