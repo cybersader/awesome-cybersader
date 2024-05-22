@@ -1,3 +1,4 @@
+- 2024-05-21 at 21h27 · [[Talkin’ Bout [Infosec] News - BlackHillsInfoSec]]
 - 2024-05-20 at 20h45 · [[Cybersecurity Culture Building]]
 - 2024-05-20 at 20h17 · [[📁 03 - Curations, Stacks]]
 - 2024-05-20 at 20h14 · [[12 - Religion, Ontology, Philosophy]]
@@ -29,7 +30,6 @@
 - 2024-05-10 at 22h08 · [[Mothers Day Website]]
 - 2024-05-10 at 22h08 · [[📁 13 - Journal, Diary]]
 - 2024-05-10 at 22h08 · [[⬇️ Journal Drop]]
-- 2024-05-09 at 21h35 · [[Talkin’ Bout [Infosec] News - BlackHillsInfoSec]]
 - 2024-05-09 at 21h20 · [[⬇️ Personal Drop]]
 - 2024-05-09 at 21h20 · [[📁 08 - Personal]]
 - 2024-05-08 at 22h01 · [[Financial Sector & Cyber]]
