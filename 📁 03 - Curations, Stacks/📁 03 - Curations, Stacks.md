@@ -7,8 +7,10 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 	- **[[Custom Merch]]**
 	- **[[Cybersecurity Culture Building]]**
 	- **[[Data Entry Tools]]**
+	- **[[Home Surveillance]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
+- **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**
 - **[[Books]]**
 - **[[Browser Extensions]]**

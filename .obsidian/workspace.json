@@ -61,7 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Threat Intelligence/Awesome Threat Intelligence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de976db9b817f3e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -133,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "camer",
+                "query": "FINTECH",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -158,8 +170,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -179,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "file": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "file": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+                "file": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md"
               }
             }
           },
@@ -262,12 +273,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d1a916c00d2be73c",
+  "active": "de976db9b817f3e2",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md",
+    "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks",
+    "CybersaderNotion/05 Notes - Classes, Presentations, Pods/Fintech and Payment Card Risks.md",
+    "📁 03 - Curations, Stacks/Awesome Threat Intelligence/Awesome Threat Intelligence.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Home Surveillance/Home Surveillance.md",
+    "📁 03 - Curations, Stacks/Awesome Threat Intelligence",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Home Surveillance",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Untitled",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
@@ -276,7 +295,6 @@
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
-    "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
@@ -290,16 +308,9 @@
     "📁 03 - Curations, Stacks/Diagrams/Diagrams.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
     "📁 03 - Curations, Stacks/Awesome AI",
-    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md",
-    "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
-    "📁 11 - Content Creation/Content Analytics & Recon.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
     "📁 11 - Content Creation/YouTube Transcription",
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men",
-    "📁 16 - Society, Culture",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",
