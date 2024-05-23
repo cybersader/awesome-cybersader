@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gpt",
+                "query": "camer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -158,7 +158,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -178,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md"
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
               }
             }
           },
@@ -261,11 +262,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f9d1842cc11800a5",
+  "active": "d1a916c00d2be73c",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Untitled",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
