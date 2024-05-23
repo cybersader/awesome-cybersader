@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Custom Merch",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md"
+    },
+    {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
     },
     {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
+    },
+    {
+      "basename": "Data Entry Tools",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -191,14 +199,6 @@
     {
       "basename": "Rabbit OS & R1",
       "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/Rabbit OS & R1/Rabbit OS & R1.md"
-    },
-    {
-      "basename": "The Case Against Boeing",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Case Against Boeing/The Case Against Boeing.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     }
   ],
   "omittedPaths": [],

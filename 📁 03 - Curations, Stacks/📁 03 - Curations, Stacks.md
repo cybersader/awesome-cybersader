@@ -4,7 +4,9 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 ---
 %% Begin Waypoint %%
 - **[[⬇ Tech Dropzone]]**
+	- **[[Custom Merch]]**
 	- **[[Cybersecurity Culture Building]]**
+	- **[[Data Entry Tools]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
 - **[[Backups Tech]]**

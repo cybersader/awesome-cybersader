@@ -61,19 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e3ae0041d65f7fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -190,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md"
               }
             }
           },
@@ -273,12 +261,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7e3ae0041d65f7fe",
+  "active": "f9d1842cc11800a5",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Untitled",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md",
@@ -300,9 +293,6 @@
     "📁 11 - Content Creation/Content Analytics & Recon.md",
     "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md",
-    "CybersaderNotion/09 MISC TECH AND STACK/12 - Religion, Ontology, Philosophy.md",
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
     "📁 11 - Content Creation/YouTube Transcription",
@@ -317,9 +307,6 @@
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552796.png",
     "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website/IMG-20240509212439762.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552720.png",
-    "📁 01 - Projects/Mothers Day Website/_attachments/Mothers Day Website",
-    "📁 01 - Projects/Mothers Day Website/_attachments",
-    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png",
-    "📁 01 - Projects/Mothers Day Website"
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552663.png"
   ]
 }
