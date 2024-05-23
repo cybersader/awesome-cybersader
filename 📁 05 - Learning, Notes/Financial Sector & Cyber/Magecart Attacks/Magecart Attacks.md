@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, May 22nd 2024, 9:33 pm
-date modified: Wednesday, May 22nd 2024, 9:36 pm
+date modified: Wednesday, May 22nd 2024, 10:02 pm
 ---
 
 # Links
@@ -17,3 +17,36 @@ date modified: Wednesday, May 22nd 2024, 9:36 pm
 - [The Magecart Mess | F5 blog](https://www.f5.com/company/blog/the-margecart-mess)
 - [What is Magecart? | Attack Types &amp; Prevention](https://www.humansecurity.com/learn/topics/what-is-magecart)
 - [What is Magecart Attack | Radware?](https://www.radware.com/cyberpedia/application-security/magecart/)
+- [What is MageCart? How to Detect &amp; Prevent Attacks | Sucuri](https://sucuri.net/guides/what-is-magecart/)
+- [Navigating the maze of Magecart: a cautionary tale of a Magecart impacted website](https://blog.cloudflare.com/navigating-the-maze-of-magecart)
+- [OWASP Mobile Application Security | OWASP Foundation](https://owasp.org/www-project-mobile-app-security/)
+- [owasp magecart - Google Search](https://www.google.com/search?q=owasp+magecart&oq=owasp+magecart&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCDI1NDNqMGo3qAIUsAIB&sourceid=chrome-mobile&ie=UTF-8)
+- [Third Party Javascript Management - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html)
+- [Iframes in XSS, CSP and SOP | HackTricks | HackTricks](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/iframes-in-xss-and-csp)
+- [What is Clickjacking? Tutorial &amp; Examples | Web Security Academy](https://portswigger.net/web-security/clickjacking)
+- [iframe sandboxing xss clickjacking magecart - Google Search](https://www.google.com/search?q=iframe+sandboxing+xss+clickjacking+magecart&sca_esv=f7d78de355298e03&sca_upv=1&ei=REYgZtbxGefCp84P_I21gAs&oq=iframe+sandboxing+xss+clickjacking+magecart&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIitpZnJhbWUgc2FuZGJveGluZyB4c3MgY2xpY2tqYWNraW5nIG1hZ2VjYXJ0MgUQIRigATIFECEYoAFIiRdQkAlYpxRwAXgBkAEAmAHGAaABlQiqAQMyLje4AQPIAQD4AQGYAgqgAscIwgIKEAAYRxjWBBiwA8ICBRAhGJ8FmAMAiAYBkAYIkgcFMi43LjGgB4Al&sclient=mobile-gws-wiz-serp)
+- [iFrame sandbox permissions tutorial | Google Cloud Blog](https://cloud.google.com/blog/products/data-analytics/iframe-sandbox-tutorial)
+- [Play safely in sandboxed IFrames | Articles | web.dev](https://web.dev/articles/sandboxed-iframes)
+- [Clickjacking Defense - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html)
+- [Detecting Magecart-Style attacks with Page Shield](https://blog.cloudflare.com/detecting-magecart-style-attacks-for-pageshield)
+- [Making Content Security Policies (CSPs) easy with Page Shield](https://blog.cloudflare.com/making-content-security-policies-csps-easy-with-page-shield)
+- [Content Security Policies (CSPs) and Cloudflare · Cloudflare Fundamentals docs](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/content-security-policies/)
+- [cloudflare cdn csp content security policy magecart - Google Search](https://www.google.com/search?q=cloudflare+cdn+csp+content+security+policy+magecart&oq=cloudflare+cdn+csp+content+security+policy+magecart&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigAdIBCTEzNjU4ajBqN6gCFLACAQ&sourceid=chrome-mobile&ie=UTF-8)
+- [cdn - Google Search](https://www.google.com/search?q=cdn&oq=cdn+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgwIAhAAGEMYgAQYigUyEggDEAAYQxiDARixAxiABBiKBTINCAQQABiDARixAxiABDIMCAUQABhDGIAEGIoFMgoIBhAuGIAEGOUEMgYIBxAAGAMyBwgIEAAYgAQyDQgJEC4YrwEYxwEYgATSAQgyMzE3ajBqN6gCFLACAQ&sourceid=chrome-mobile&ie=UTF-8)
+- [Shopify Imagery](https://cdn.shopify.com/)
+- [ahopify pay security magecart - Google Search](https://www.google.com/search?q=ahopify+pay+security+magecart&oq=ahopify+pay+security+magecart&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKABMgkIAhAhGAoYoAEyCQgDECEYChigAdIBCDQ1MzRqMGo3qAIUsAIB&sourceid=chrome-mobile&ie=UTF-8)
+- [Locksmith - Flexible access control for Shopify stores | Shopify App Store](https://apps.shopify.com/locksmith)
+- [Quick Start | Locksmith](https://www.locksmith.guide/)
+- [ahopify locksmith - Google Search](https://www.google.com/search?q=ahopify+locksmith&oq=ahopify+locksmith&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMgkIAhAAGA0YgAQyCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yDAgGEAAYCBgNGA8YHjIMCAcQABgIGA0YDxgeMggICBAAGBYYHjINCAkQABiGAxiABBiKBTIKCAoQABiABBiiBNIBCDI4ODhqMGo3qAIUsAIB&sourceid=chrome-mobile&ie=UTF-8)
+- [Envoy proxy - home](https://www.envoyproxy.io/)
+- [Spearphish General Store](https://spearphish-general-store.myshopify.com/)
+- [How to prevent Magecart attacks - Security Boulevard](https://securityboulevard.com/2021/05/how-to-prevent-magecart-attacks/)
+- [Revealing Magecart Vulnerability: Safeguarding Your E-commerce Store | LinkedIn](https://www.linkedin.com/pulse/revealing-magecart-vulnerability-safeguarding-your-e-commerce/)
+- [magecart web skim csp content security policy riskiq ecommerce shopify - Google Search](https://www.google.com/search?q=magecart+web+skim+csp+content+security+policy+riskiq+ecommerce+shopify&sca_esv=f7d78de355298e03&sca_upv=1&ei=lkIgZvOfFdC8p84PxtS2gA8&oq=magecart+web+skim+csp+content+security+policy+riskiq+ecommerce+shopify&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIkZtYWdlY2FydCB3ZWIgc2tpbSBjc3AgY29udGVudCBzZWN1cml0eSBwb2xpY3kgcmlza2lxIGVjb21tZXJjZSBzaG9waWZ5SOMXUKkGWI4WcAB4ApABAJgBkAGgAZYHqgEDNS40uAEDyAEA-AEBmAIBoAIJwgIEEAAYR5gDAIgGAZAGCJIHATGgB5UH&sclient=mobile-gws-wiz-serp)
+- [Homepage – Reflectiz](https://www.reflectiz.com/)
+- [Unmasking the Latest Magecart Attacks: Interview with Ysrael Gurt](https://www.reflectiz.com/blog/ysrael-gurt-interview-magecart/)
+- [magecart web skim csp content security policy riskiq ecommerce - Google Search](https://www.google.com/search?q=magecart+web+skim+csp+content+security+policy+riskiq+ecommerce+&sca_esv=f7d78de355298e03&sca_upv=1&source=hp&ei=jEEgZvShCLXakPIP_uWXQA&oq=magecart+web+skim+csp+content+security+policy+riskiq+ecommerce+&gs_lp=EhFtb2JpbGUtZ3dzLXdpei1ocCI_bWFnZWNhcnQgd2ViIHNraW0gY3NwIGNvbnRlbnQgc2VjdXJpdHkgcG9saWN5IHJpc2tpcSBlY29tbWVyY2UgSPXqAVDIB1jLwgFwBXgAkAEAmAHvAaAB9zuqAQcyMC40NS4yuAEDyAEA-AEBmAJFoALmPKgCD8ICEBAAGAMYjwEY5QIY6gIYjAPCAhAQLhgDGI8BGOUCGOoCGIwDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgUQABiABMICCxAuGIAEGMcBGNEDwgIOEC4YgAQYsQMYxwEY0QPCAg4QABiABBiKBRixAxiDAcICDhAuGIAEGIoFGLEDGIMBwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAggQLhiABBixA8ICDRAuGIAEGMcBGNEDGArCAgcQABiABBgKwgIKEAAYgAQYChixA8ICBxAAGIAEGA3CAgkQABiABBgNGArCAgYQABgWGB7CAgUQIRigAcICBRAhGJ8FwgIEECEYFZgDDpIHBzE0LjUzLjKgB6WfAg&sclient=mobile-gws-wiz-hp)
+- [Will a content security policy (CSP) stop Magecart group attacks?](https://www.reflectiz.com/blog/csp-magecart-exposure/)
+- [Pricing](https://csper.io/pricing)
+- [Content Security Policy](https://csper.io/docs/content-security-policy)
+- [Magecart – Darknet Diaries](https://darknetdiaries.com/transcript/52/)
