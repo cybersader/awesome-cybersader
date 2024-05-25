@@ -1,3 +1,4 @@
+- 2024-05-25 at 13h11 · [[Phone Pick in 2024]]
 - 2024-05-25 at 12h59 · [[Phone Strategy - Provider, Plans, Warranties]]
 - 2024-05-25 at 12h51 · [[Data Entry Tools]]
 - 2024-05-25 at 12h51 · [[Cybersecurity Culture Building]]
@@ -50,7 +51,6 @@
 - 2024-05-03 at 12h11 · [[Syncthing for Obsidian Notes]]
 - 2024-05-02 at 11h57 · [[⬇ Tech Dropzone]]
 - 2024-05-01 at 12h00 · [[Mint Mobile]]
-- 2024-05-01 at 11h56 · [[Phone Pick in 2024]]
 - 2024-05-01 at 11h56 · [[Phone Shopping 2024]]
 - 2024-05-01 at 11h23 · [[Providers, Phones, Plans]]
 - 2024-04-30 at 23h02 · [[Backing Up Signal]]
