@@ -6,6 +6,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[⬇ Tech Dropzone]]**
 	- **[[Custom Merch]]**
 	- **[[Cybersecurity Culture Building]]**
+	- **[[Daily Driver Stuff]]**
 	- **[[Data Entry Tools]]**
 	- **[[Home Surveillance]]**
 - **[[Awesome AI]]**
