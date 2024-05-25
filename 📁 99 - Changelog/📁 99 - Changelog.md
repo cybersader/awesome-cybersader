@@ -1,3 +1,5 @@
+- 2024-05-25 at 10h56 · [[My Cyber Project Portfolio]]
+- 2024-05-22 at 22h31 · [[Cybersecurity Culture Building]]
 - 2024-05-22 at 22h02 · [[Magecart Attacks]]
 - 2024-05-22 at 21h33 · [[📁 05 - Learning, Notes]]
 - 2024-05-22 at 21h33 · [[Financial Sector & Cyber]]
@@ -7,7 +9,6 @@
 - 2024-05-22 at 21h26 · [[Home Surveillance]]
 - 2024-05-22 at 20h58 · [[Cyber Merch]]
 - 2024-05-22 at 20h57 · [[Custom Merch]]
-- 2024-05-22 at 20h27 · [[Cybersecurity Culture Building]]
 - 2024-05-22 at 20h13 · [[Data Entry Tools]]
 - 2024-05-21 at 21h27 · [[Talkin’ Bout [Infosec] News - BlackHillsInfoSec]]
 - 2024-05-20 at 20h14 · [[12 - Religion, Ontology, Philosophy]]
@@ -97,4 +98,3 @@
 - 2024-04-27 at 13h18 · [[File Organizer 2000]]
 - 2024-04-27 at 00h34 · [[Temporary Files Filling Up Drive]]
 - 2024-04-27 at 00h34 · [[Windows BCDR]]
-- 2024-04-27 at 00h34 · [[Windows Backups Duplicati 2024]]
