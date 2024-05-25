@@ -11,7 +11,7 @@ date created: Saturday, May 25th 2024, 12:16 pm
 date modified: Saturday, May 25th 2024, 12:26 pm
 ---
 
-# Phone Cases
+# "Rugged" Phone Cases
 - [dbrand » Official Shop](https://dbrand.com/) 
 - [Defender Series Protective Phone Cases | OtterBox](https://www.otterbox.com/en-us/defender-series) 
 # Laptops

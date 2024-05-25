@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
+                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,19 +44,19 @@
             }
           },
           {
-            "id": "b234e4f2cb46bc2e",
+            "id": "363825a62abd3ec3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "363825a62abd3ec3",
+            "id": "1c95a756d291d42c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e3ad968075f68d17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md",
+                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md",
+                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
+                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md"
               }
             }
           },
@@ -225,15 +237,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "363825a62abd3ec3",
+  "active": "b8b903d8eb7add8a",
   "lastOpenFiles": [
+    "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
+    "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
+    "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
+    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
+    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
+    "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff",
     "📁 11 - Content Creation/Content Analytics & Recon.md",
-    "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
     "📁 01 - Projects/Backing Up Signal/Backing Up Signal.md",
     "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md",
     "📁 03 - Curations, Stacks/Awesome Threat Intelligence/Awesome Threat Intelligence.md",
@@ -249,7 +265,6 @@
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
     "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building",
@@ -257,9 +272,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
     "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/⬇️ Notes Drop.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 03 - Curations, Stacks/Awesome AI",
     "📁 16 - Society, Culture/⬇️ Society Drop",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian",
