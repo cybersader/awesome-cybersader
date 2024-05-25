@@ -28,7 +28,7 @@ Check my [portfolio.cybersader.com](http://portfolio.cybersader.com) to see norm
 # Past Projects / Backlog / On-Hold ✅
 
 - Notion-to-Ghost Converter
-- **[WebsiteTechMiner-py ⛏](https://github.com/cybersader/WebsiteTechMiner-py) -** Automate gathering website profiling data from “BuiltWith” & “Wappalyzer” for tech stack information, technographic data, website reports, website tech lookups, website architecture lookups, etc. All done with APIs, Python, and simple configuration.
+- [**WebsiteTechMiner-py ⛏](https://github.com/cybersader/WebsiteTechMiner-py) -** Automate gathering website profiling data from “BuiltWith” & “Wappalyzer” for tech stack information, technographic data, website reports, website tech lookups, website architecture lookups, etc. All done with APIs, Python, and simple configuration.
     - Uses of WebsiteTechMiner
         - 👁️ Data Privacy Activities
             - Vendor Discovery for Websites
