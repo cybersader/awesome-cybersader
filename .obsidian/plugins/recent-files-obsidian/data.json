@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Data Entry Tools",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
+    },
+    {
+      "basename": "Jumping & Diving Spots",
+      "path": "📁 08 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
+    },
+    {
+      "basename": "Daily Driver Stuff",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Obsidian Plugins and 3rd Party Tools",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
+    },
+    {
       "basename": "Phone Pick in 2024",
       "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
     },
@@ -21,24 +41,12 @@
       "path": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
     },
     {
-      "basename": "Obsidian Plugins and 3rd Party Tools",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
-    },
-    {
       "basename": "Pints with Aquinas - JP",
       "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md"
     },
     {
-      "basename": "Data Entry Tools",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
-    },
-    {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
-    },
-    {
-      "basename": "Daily Driver Stuff",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
     },
     {
       "basename": "Content Analytics & Recon",
@@ -87,10 +95,6 @@
     {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -195,10 +199,6 @@
     {
       "basename": "Syncthing Incompatible with Git",
       "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing Incompatible with Git/Syncthing Incompatible with Git.md"
-    },
-    {
-      "basename": "Syncing Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
     }
   ],
   "omittedPaths": [],

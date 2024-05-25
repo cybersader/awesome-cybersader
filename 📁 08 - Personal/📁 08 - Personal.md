@@ -10,5 +10,6 @@ date modified: Thursday, April 25th 2024, 2:40 pm
 - **[[Daily Routine]]**
 - **[[Games from Childhood]]**
 - **[[Hobbies List]]**
+- **[[Jumping & Diving Spots]]**
 
 %% End Waypoint %%

@@ -1,3 +1,5 @@
+- 2024-05-25 at 14h14 · [[Jumping & Diving Spots]]
+- 2024-05-25 at 13h42 · [[📁 08 - Personal]]
 - 2024-05-25 at 13h11 · [[Phone Pick in 2024]]
 - 2024-05-25 at 12h59 · [[Phone Strategy - Provider, Plans, Warranties]]
 - 2024-05-25 at 12h51 · [[Data Entry Tools]]
@@ -43,7 +45,6 @@
 - 2024-05-10 at 22h08 · [[📁 13 - Journal, Diary]]
 - 2024-05-10 at 22h08 · [[⬇️ Journal Drop]]
 - 2024-05-09 at 21h20 · [[⬇️ Personal Drop]]
-- 2024-05-09 at 21h20 · [[📁 08 - Personal]]
 - 2024-05-05 at 22h12 · [[Arc Browser on Windows]]
 - 2024-05-03 at 13h31 · [[⬇ INBOX, DROPZONE]]
 - 2024-05-03 at 13h31 · [[Syncthing Incompatible with Git]]
@@ -97,4 +98,3 @@
 - 2024-04-27 at 20h48 · [[✅ Tasks]]
 - 2024-04-27 at 13h50 · [[Auto - Tagging, Linking, Dropzones & Organizers]]
 - 2024-04-27 at 13h18 · [[File Organizer 2000]]
-- 2024-04-27 at 00h34 · [[Temporary Files Filling Up Drive]]
