@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "supple",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -134,7 +134,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -237,7 +238,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1a027eff67de8c33",
+  "active": "d1a916c00d2be73c",
   "lastOpenFiles": [
     "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants/ADHD and Stimulants.md",
     "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md",

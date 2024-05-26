@@ -3,59 +3,88 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, May 26th 2024, 12:21 pm
-date modified: Sunday, May 26th 2024, 4:13 pm
+date modified: Sunday, May 26th 2024, 5:11 pm
 ---
 
 # Wellness Plan and Schedule w/Research
-## Constraints
-- NO Alcohol
-	- Risk with medications
-	- Impairment
-
+## Constraints, Guides
+## NO Alcohol
+- Risk with medications
+- Impairment
+- Lots of unnecessary calories
+### Exercise and Activity
+- 150 - 200 minutes of zone 2 cardio per week
+- As we get older focus on tissue health and not being injured
+- Lower weight high rep grows muscle and low rep high weight makes you stronger without getting big
+- Challenge muscles not weight
+- ## Difficulties
+- Being in a job where exercise isn't core makes things difficult
+- Near impossible to have consistent schedule
+- Weather
 ## Schedule
 - [Andrew Huberman Diet and Routine - What He Eats & Why](https://fastlifehacks.com/andrew-huberman-diet-and-routine/) - yes...I would rather trust someone else who is in much better shape than myself
 ### Sleep
 - 7 hours of sleep at least
 ### Morning - Hydration, Caffeine, and Exercise
 - Wake up 5-6:30 am
-
 #### Hydration and Salt Intake
 - Hydrate 
 	- Add salt if low carb diets
 	- People on lower carb diets tend to be consuming less processed food – thus limiting their intake of salt.
 	- People on lower carb diets are sometimes more active (often due to being more interested in health and weight loss), as exertion and perspiration will deplete your body’s sodium reserves.
-
-#### Caffeine Consumption
-- Delay caffeine by 90 minutes to 2 hours
-
-#### Supplements
-- Take nutritional supplements (e.g. AG1)
-	- Yerba Mate?
-
+#### Pre-Workout Supplements
+- Yerba Mate?
 #### Exercise
 - Swim/Build 5:30 - 6:30 am
-
 #### Stimulants
 - Small dosage of slow release (~12 hour) ADHD medication
-
-- Take supplements and/or stimulants
-- WORK
-
-- LUNCH
-
-- WORK
+#### Post-Workout Supplements
+- AG1
+#### (Optional Breakfast) 
+- Breakfast & Lunch
+    - Steak and Rice or Oatmeal
+    - Eggs
+    - Ground beef
+    - Brazil nuts
+- Have carbs post workout if high cardio
+### Work & Lunch
+#### Caffeine Consumption
+- Delay caffeine by 90 minutes to 2 hours
+#### Lunch
+- Preferably low carbs or meat
+- Have carbs post workout if high cardio
+- Breakfast & Lunch
+    - Steak and Rice or Oatmeal
+    - Eggs
+    - Ground beef
+    - Brazil nuts
+- Primary Choices:
+	- From home:
+		- Two hamburger patties
+		- Whey protein
+	- From out and about:
+		- fdsafsdaf
+### Evening - Exercise, Walking, Dinner
+#### Evening Activity
 - Swim/Build 5:15 - 6 pm
-- DINNER?
-
 - (Park) Walk till before 8pm
-
-- DINNER
+#### Dinner
+- Too much meat close to bedtime has longer gastric clearance, so walk after dinner?
+	- or be prepared to have a little more trouble falling asleep sometimes 
+- Options:
+	- Pasta
+	- Vegetables
+	- Rice
+	- Popcorn
+- Glycogen in the morning is restored by these
 
 # Misc Links
 - [Andrew Huberman Diet and Routine - What He Eats & Why](https://fastlifehacks.com/andrew-huberman-diet-and-routine/)
 - [Andrew Huberman Supplements List (with Dosage) 2024](https://fastlifehacks.com/andrew-huberman-supplements-list/)
 - [https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health](https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health)
-# Related Research
+# Food Hacks
+- You can use catering services from a grocery to get large things of meat
+- # Related Research
 ## How Many Meals a Day and When?
 - Strategy
 	- If we can't resist eating, then we should get used to eating the most in the afternoon and eating while still keeping it healthy (not desserts every night or pigging out)
@@ -81,7 +110,7 @@ date modified: Sunday, May 26th 2024, 4:13 pm
 	- Review results
 	- Adjust dosage and time - may decide not to stay on
 ## Satiating Healthy Foods
-- Lunch
+- Breakfast & Lunch
     - Steak and Rice or Oatmeal
     - Eggs
 - Dinner
