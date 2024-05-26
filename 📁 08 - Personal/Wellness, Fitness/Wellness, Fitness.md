@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, May 26th 2024, 12:21 pm
-date modified: Sunday, May 26th 2024, 5:11 pm
+date modified: Sunday, May 26th 2024, 5:32 pm
 ---
 
 # Wellness Plan and Schedule w/Research
@@ -17,7 +17,7 @@ date modified: Sunday, May 26th 2024, 5:11 pm
 - As we get older focus on tissue health and not being injured
 - Lower weight high rep grows muscle and low rep high weight makes you stronger without getting big
 - Challenge muscles not weight
-- ## Difficulties
+## Difficulties
 - Being in a job where exercise isn't core makes things difficult
 - Near impossible to have consistent schedule
 - Weather
@@ -82,9 +82,17 @@ date modified: Sunday, May 26th 2024, 5:11 pm
 - [Andrew Huberman Diet and Routine - What He Eats & Why](https://fastlifehacks.com/andrew-huberman-diet-and-routine/)
 - [Andrew Huberman Supplements List (with Dosage) 2024](https://fastlifehacks.com/andrew-huberman-supplements-list/)
 - [https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health](https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health)
+# Supplements Stack Links to Buy
+- [Complete Supplement Stack - Huberman Lab Official Partner – Momentous](https://www.livemomentous.com/products/full-huberman-product-stack)
+- [AG1®](https://drinkag1.com/) 
+- Fish Oil
+	- [Amazon.com: Carlson Labs Very Finest Fish Oil Nutritional Supplement, Lemon, 16.9 Fluid Ounce : Health & Household](https://www.amazon.com/Carlson-Finest-Nutritional-Supplement-Lemon/dp/B016K68N2Y) 
+	- [Amazon.com: Nature's Bounty Fish Oil, Supports Heart Health, 1200 Mg, 360 Mg Omega-3, Rapid Release Softgels, 200 Ct : Health & Household](https://www.amazon.com/Natures-Bounty-Supplement-Supporting-Cardiovascular/dp/B000NPYY04)
+- Sleep
+	- [Amazon.com: L-Theanine 200mg by Nature's Trove - 120 Vegetarian Capsules : Health & Household](https://www.amazon.com/L-Theanine-200mg-Natures-Trove-Vegetarian/dp/B01D1YQBOK) 
 # Food Hacks
 - You can use catering services from a grocery to get large things of meat
-- # Related Research
+# Related Research
 ## How Many Meals a Day and When?
 - Strategy
 	- If we can't resist eating, then we should get used to eating the most in the afternoon and eating while still keeping it healthy (not desserts every night or pigging out)
@@ -95,6 +103,7 @@ date modified: Sunday, May 26th 2024, 5:11 pm
 		- Essentially the study concluded that people eating most of their calories in the evening correlated with cardio death.  Could have been people eating unhealthily or really anything. The author even stated this.
 ## Stimulants
 [[ADHD and Stimulants|ADHD and Stimulants]]
+[[Stimulants and Insurance|Stimulants and Insurance]]
 
 - Why ADHD meds?
 	- Hard to focus in environment

@@ -289,7 +289,7 @@
     },
     {
       "label": "No spaces after bullet point",
-      "find": "(^\\s*-\\s)(\\s{1,8})",
+      "find": "(^\\s*- )( {1,8})",
       "replace": "$1",
       "flags": "gm"
     }

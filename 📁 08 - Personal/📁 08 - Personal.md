@@ -13,5 +13,6 @@ date modified: Thursday, April 25th 2024, 2:40 pm
 - **[[Jumping & Diving Spots]]**
 - **[[Wellness, Fitness]]**
 	- **[[ADHD and Stimulants]]**
+	- **[[Stimulants and Insurance]]**
 
 %% End Waypoint %%
