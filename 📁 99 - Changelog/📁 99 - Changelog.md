@@ -1,3 +1,5 @@
+- 2024-05-26 at 12h21 · [[Wellness, Fitness]]
+- 2024-05-26 at 12h21 · [[📁 08 - Personal]]
 - 2024-05-26 at 12h18 · [[09 MISC TECH AND STACK]]
 - 2024-05-26 at 12h18 · [[12 - Religion, Ontology, Philosophy]]
 - 2024-05-25 at 14h56 · [[Cyber Community]]
@@ -5,7 +7,6 @@
 - 2024-05-25 at 14h48 · [[📄 Resume - Training, Certifications, Conferences, Education]]
 - 2024-05-25 at 14h47 · [[06 Cybersader - COMMUNITY (Mostly Indiana)]]
 - 2024-05-25 at 14h14 · [[Jumping & Diving Spots]]
-- 2024-05-25 at 13h42 · [[📁 08 - Personal]]
 - 2024-05-25 at 13h11 · [[Phone Pick in 2024]]
 - 2024-05-25 at 12h59 · [[Phone Strategy - Provider, Plans, Warranties]]
 - 2024-05-25 at 12h51 · [[Data Entry Tools]]
@@ -97,4 +98,3 @@
 - 2024-04-28 at 12h15 · [[Games from Childhood]]
 - 2024-04-28 at 00h14 · [[My Dislike of Small Talk]]
 - 2024-04-27 at 23h32 · [[Windows 11 UI Stuff]]
-- 2024-04-27 at 23h31 · [[Company Security Strategy from Zero]]
