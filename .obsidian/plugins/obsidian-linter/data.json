@@ -286,6 +286,12 @@
       "find": "(\\#{1,6}\\s.*\\n)(\\n)",
       "replace": "$1",
       "flags": "gm"
+    },
+    {
+      "label": "No spaces after bullet point",
+      "find": "(^\\s*-\\s)(\\s{1,8})",
+      "replace": "$1",
+      "flags": "gm"
     }
   ],
   "commonStyles": {

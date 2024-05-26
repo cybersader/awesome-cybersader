@@ -5,16 +5,56 @@
       "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
     },
     {
+      "basename": "ADHD and Stimulants",
+      "path": "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants/ADHD and Stimulants.md"
+    },
+    {
+      "basename": "Custom Merch",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md"
+    },
+    {
+      "basename": "Cyber Team Building",
+      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md"
+    },
+    {
+      "basename": "BHIS - Sourcing Cyber",
+      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/BHIS - Sourcing Cyber/BHIS - Sourcing Cyber.md"
+    },
+    {
+      "basename": "Cybersecurity Culture Building",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+    },
+    {
+      "basename": "Getting Started in Security with BHIS and MITRE ATT&CK",
+      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md"
+    },
+    {
+      "basename": "Cyber ONBOARDING",
+      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Cyber ONBOARDING.md"
+    },
+    {
+      "basename": "Cybersecurity Jobs",
+      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Cybersecurity Jobs.md"
+    },
+    {
+      "basename": "Cybersecurity Colleges & Universities NICCS",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity Colleges & Universities NICCS.md"
+    },
+    {
+      "basename": "Cyber Books",
+      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
+    },
+    {
+      "basename": "Books",
+      "path": "📁 03 - Curations, Stacks/Books/Books.md"
+    },
+    {
       "basename": "Cyber Community",
       "path": "📁 10 - Community/Cyber Community/Cyber Community.md"
     },
     {
       "basename": "📄 Resume - Training, Certifications, Conferences, Education",
       "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
-    },
-    {
-      "basename": "Custom Merch",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Custom Merch/Custom Merch.md"
     },
     {
       "basename": "06 Cybersader - COMMUNITY (Mostly Indiana)",
@@ -63,10 +103,6 @@
     {
       "basename": "Pints with Aquinas - JP",
       "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md"
-    },
-    {
-      "basename": "Cybersecurity Culture Building",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
     },
     {
       "basename": "Content Analytics & Recon",
@@ -153,10 +189,6 @@
       "path": "📁 16 - Society, Culture/⬇️ Society Drop/⬇️ Society Drop.md"
     },
     {
-      "basename": "Cyber Books",
-      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
-    },
-    {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "Awesome AI",
       "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
-    },
-    {
-      "basename": "AI Tools",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/AI Tools.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Browser Extensions",
-      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
-      "basename": "⬇️ Content Creation Stack Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
-    },
-    {
-      "basename": "📁 16 - Society, Culture",
-      "path": "📁 16 - Society, Culture/📁 16 - Society, Culture.md"
-    },
-    {
-      "basename": "Attachment Management",
-      "path": "📁 09 - My Obsidian Stack/Attachment Management/Attachment Management.md"
     }
   ],
   "omittedPaths": [],

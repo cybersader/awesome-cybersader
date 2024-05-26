@@ -11,7 +11,6 @@ publish: true
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
 	- **[[Cyber Team Building]]**
-
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
 - **[[Cyber Classes]]**
