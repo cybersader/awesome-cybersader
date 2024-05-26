@@ -1,4 +1,4 @@
-- 2024-05-26 at 12h21 · [[Wellness, Fitness]]
+- 2024-05-26 at 12h47 · [[Wellness, Fitness]]
 - 2024-05-26 at 12h21 · [[📁 08 - Personal]]
 - 2024-05-26 at 12h18 · [[09 MISC TECH AND STACK]]
 - 2024-05-26 at 12h18 · [[12 - Religion, Ontology, Philosophy]]
