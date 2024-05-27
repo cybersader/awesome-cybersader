@@ -6,7 +6,7 @@ publish: true
 date created: Sunday, May 26th 2024, 8:17 pm
 date modified: Sunday, May 26th 2024, 8:26 pm
 ---
-
+> [!tldr] The gist:  I can't afford a bunker in this current situation. Also, the energy and resources required to build fallout shelters for the general population would be so incredible that it's not a realistic option for mitigation of nuclear disaster.
 # Home Bunker Options
 - JerryRigEverything
 	- [(1) How to Install an Elevator in your Backyard - YouTube](https://www.youtube.com/watch?v=VOpe-uEuVs8&list=PL0vZL9uwyfOE6Of8qi5dtIFgdSt1hlOZm&index=8)

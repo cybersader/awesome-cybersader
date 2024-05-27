@@ -37,14 +37,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md",
+                "file": "📁 04 - Organizational Cyber/Cyber Team Building/Cyber Team Building.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73925f28521ececc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1dff7ba13bc2843f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c5f5192a088ff2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach/Backdoors & Breach.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -73,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cultur",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -118,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md",
+                "file": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach/Backdoors & Breach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md",
+                "file": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach/Backdoors & Breach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md"
+                "file": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach/Backdoors & Breach.md"
               }
             }
           },
@@ -201,11 +237,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e3ad968075f68d17",
+  "active": "9c5f5192a088ff2d",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 04 - Organizational Cyber/Cyber Team Building/Cyber Team Building.md",
+    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach/Backdoors & Breach.md",
+    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breach",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md",
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md",
+    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop",
+    "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
+    "📁 04 - Organizational Cyber",
     "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 08 - Personal/Nuclear Disaster Recovery",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
     "📁 08 - Personal/Wellness, Fitness/Stimulants and Insurance/Stimulants and Insurance.md",
@@ -214,35 +258,27 @@
     "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md",
     "📁 08 - Personal/Wellness, Fitness/Stimulants and Insurance",
     "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/BHIS - Sourcing Cyber/BHIS - Sourcing Cyber.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "📁 04 - Organizational Cyber/Cyber Team Building/BHIS - Sourcing Cyber/BHIS - Sourcing Cyber.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/BHIS - Sourcing Cyber/_attachments/BHIS - Sourcing Cyber",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building",
+    "📁 04 - Organizational Cyber/Cyber Team Building/BHIS - Sourcing Cyber/_attachments/BHIS - Sourcing Cyber",
+    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/BHIS - Sourcing Cyber/_attachments/Sourcing Cyber",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304899.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304837.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304790.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304683.png",
+    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304899.png",
+    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304837.png",
+    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304790.png",
+    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304683.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments/Sourcing Cyber Talent - BHIS",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/_attachments",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building",
     "CybersaderNotion/04 Cybersader’s Arsenal/Cyber ONBOARDING.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Cybersecurity Jobs.md",
     "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity Colleges & Universities NICCS.md",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 03 - Curations, Stacks/Books/Books.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
-    "📁 08 - Personal/Wellness, Fitness",
     "CybersaderNotion/12 - Religion, Ontology, Philosophy.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "CybersaderNotion/06 Cybersader - COMMUNITY (Mostly Indiana).md",
     "📁 08 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md",
-    "📁 09 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
-    "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",

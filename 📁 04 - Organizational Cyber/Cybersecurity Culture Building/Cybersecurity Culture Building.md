@@ -5,11 +5,11 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 20th 2024, 8:15 pm
-date modified: Sunday, May 26th 2024, 1:47 pm
+date modified: Monday, May 27th 2024, 10:01 am
 ---
 
-[BHIS - Sourcing Cyber](../../../📁%2005%20-%20Learning,%20Notes/BHIS,%20Antisyphon/Cyber%20Team%20Building/BHIS%20-%20Sourcing%20Cyber/BHIS%20-%20Sourcing%20Cyber.md)
-[Cyber Team Building](../../../📁%2005%20-%20Learning,%20Notes/BHIS,%20Antisyphon/Cyber%20Team%20Building/Cyber%20Team%20Building.md)
+[BHIS - Sourcing Cyber](../../../📁%2004%20-%20Organizational%20Cyber/Cyber%20Team%20Building/BHIS%20-%20Sourcing%20Cyber/BHIS%20-%20Sourcing%20Cyber.md)
+[Cyber Team Building](../../../📁%2004%20-%20Organizational%20Cyber/Cyber%20Team%20Building/Cyber%20Team%20Building.md)
 
 Building a cybersecurity culture is incredibly difficult.  By it's nature, cybersecurity needs to account for malicious intent in all aspects of the organization. Granted, a pragmatic and prioritization approach should be taken.
 
@@ -106,23 +106,23 @@ Building a cybersecurity culture is incredibly difficult.  By it's nature, cyber
 	- **Visible Leadership Support**: Ensure that leadership visibly supports and participates in security initiatives. When employees see that security is a priority for leadership, they are more likely to take it seriously.
 	- **Clear and Consistent Communication**: Communicate security policies, updates, and best practices clearly and consistently. Use multiple channels, such as emails, intranet posts, and team meetings, to reach all employees.
 - Personal edited videos from the security department
-	-   **Creating Videos**:
-	    -   **Tools for Recording**: Use your smartphone or a basic webcam to record videos. Most modern smartphones have excellent video quality.
-	    -   **Editing Software**: Use free or low-cost editing tools like iMovie (Mac), Windows Video Editor (Windows), or online tools like Kapwing and Clipchamp. These tools are user-friendly and sufficient for basic editing needs.
-	    -   **Microphone**: Invest in a good quality, low-cost microphone like the Blue Snowball or a lavalier mic for clear audio.
-	    -   **Lighting**: Use natural light or inexpensive ring lights to improve video quality.
-	-   **Hosting and Sharing Videos**:
-	    -   **Intranet**: If your company has an intranet, host the videos there. Tools like SharePoint or Google Sites can be used to create a simple video library.
-	    -   **Video Platforms**: Use platforms like YouTube (unlisted videos for privacy), Vimeo, or internal tools like Microsoft Stream if your organization uses Office 365.
-	    -   **Email and Messaging**: Share video links through company emails or messaging platforms like Slack or Microsoft Teams to ensure everyone has easy access.
-	-   **Specialized Training for Departments**:
-	    -   **Learning Management Systems (LMS)**: Use low-cost LMS options like TalentLMS or Teachable to create and manage customized training modules for different departments.
-	    -   **Interactive Platforms**: Tools like Articulate Rise or EdApp allow you to create interactive, mobile-friendly courses. These platforms often have free or affordable plans for small teams.
-	    -   **Gamification Tools**: Use tools like Kahoot! for quizzes and challenges, or create interactive scenarios with Twine or BranchTrack.
-	-   **Implementing Training**:
-	    -   **Schedule Regular Sessions**: Set a regular schedule for releasing new videos or training modules, such as monthly updates or quarterly training sessions.
-	    -   **Department-Specific Content**: Work with department leaders to identify key security concerns and customize content accordingly. Use tools like Google Forms or SurveyMonkey to gather input on relevant topics.
-	    -   **Feedback and Interaction**: Encourage employees to leave comments or questions on video platforms or LMS. Conduct short surveys after training sessions to gather feedback and measure effectiveness.
-	-   **Tracking and Reporting**:
-	    -   **Analytics**: Use the built-in analytics features of video hosting platforms or LMS to track views, completion rates, and engagement.
-	    -   **Reports**: Generate regular reports to review progress and identify areas for improvement. Share these reports with department heads to keep them informed and engaged.
+	- **Creating Videos**:
+	    - **Tools for Recording**: Use your smartphone or a basic webcam to record videos. Most modern smartphones have excellent video quality.
+	    - **Editing Software**: Use free or low-cost editing tools like iMovie (Mac), Windows Video Editor (Windows), or online tools like Kapwing and Clipchamp. These tools are user-friendly and sufficient for basic editing needs.
+	    - **Microphone**: Invest in a good quality, low-cost microphone like the Blue Snowball or a lavalier mic for clear audio.
+	    - **Lighting**: Use natural light or inexpensive ring lights to improve video quality.
+	- **Hosting and Sharing Videos**:
+	    - **Intranet**: If your company has an intranet, host the videos there. Tools like SharePoint or Google Sites can be used to create a simple video library.
+	    - **Video Platforms**: Use platforms like YouTube (unlisted videos for privacy), Vimeo, or internal tools like Microsoft Stream if your organization uses Office 365.
+	    - **Email and Messaging**: Share video links through company emails or messaging platforms like Slack or Microsoft Teams to ensure everyone has easy access.
+	- **Specialized Training for Departments**:
+	    - **Learning Management Systems (LMS)**: Use low-cost LMS options like TalentLMS or Teachable to create and manage customized training modules for different departments.
+	    - **Interactive Platforms**: Tools like Articulate Rise or EdApp allow you to create interactive, mobile-friendly courses. These platforms often have free or affordable plans for small teams.
+	    - **Gamification Tools**: Use tools like Kahoot! for quizzes and challenges, or create interactive scenarios with Twine or BranchTrack.
+	- **Implementing Training**:
+	    - **Schedule Regular Sessions**: Set a regular schedule for releasing new videos or training modules, such as monthly updates or quarterly training sessions.
+	    - **Department-Specific Content**: Work with department leaders to identify key security concerns and customize content accordingly. Use tools like Google Forms or SurveyMonkey to gather input on relevant topics.
+	    - **Feedback and Interaction**: Encourage employees to leave comments or questions on video platforms or LMS. Conduct short surveys after training sessions to gather feedback and measure effectiveness.
+	- **Tracking and Reporting**:
+	    - **Analytics**: Use the built-in analytics features of video hosting platforms or LMS to track views, completion rates, and engagement.
+	    - **Reports**: Generate regular reports to review progress and identify areas for improvement. Share these reports with department heads to keep them informed and engaged.

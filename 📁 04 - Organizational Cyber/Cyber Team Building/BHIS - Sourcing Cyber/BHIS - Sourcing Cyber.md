@@ -13,7 +13,7 @@ tags:
 publish: true
 ---
 
-[Cybersecurity Culture Building](../../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
+[Cybersecurity Culture Building](../../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 
 Link - [(3) How to Accelerate Finding and Professionally Developing Talented InfoSec Team Members | Kip Boyle - YouTube](https://www.youtube.com/watch?v=pXn0ai5DPdE&t=4s)
 
@@ -70,7 +70,7 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 	- Leaf
 		- Make the decision/solution, act on it, don't talk to me
 		- If there's a major exception, then you can escalate to me
-	- ![](_attachments/BHIS%20-%20Sourcing%20Cyber/IMG-20240526140346555.png)
+	- ![](IMG-20240526140346555.png)
 ### When to Delegate
 - Opportunity to grow and develop team members
 - Task will recur in a similar form in the future
@@ -79,7 +79,7 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 ### Tool
 - Top half is boilerplate
 - Share with delegates.  Use company system, wiki, daily or weekly checkups, and project tracking to keep up.
-- ![](_attachments/BHIS%20-%20Sourcing%20Cyber/IMG-20240526140346659.png)
+- ![](IMG-20240526140346659.png)
 ## Process for I do, we do, you do
 - I do. You watch. We talk. (OBS)
 - You do. I watch. We talk. (Screen share, Zoom)
@@ -130,8 +130,8 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 ## First Talk with HR
 - Need your help - review hiring criteria for open position
 - Use Common Cybersecurity Org Chart and Service Catalog - HR-Security Toolkit
-	- ![](_attachments/BHIS%20-%20Sourcing%20Cyber/IMG-20240526140346733.png)
-	- ![](_attachments/BHIS%20-%20Sourcing%20Cyber/IMG-20240526140346770.png)
+	- ![](IMG-20240526140346733.png)
+	- ![](IMG-20240526140346770.png)
 - Explain areas you tend to hire in the most - lots of turnover?
 - Tell them the criteria for job trying to fill - look for and make adjustments
 	- Most likely be less restrictive - ask for exceptions to hiring policy if need be
