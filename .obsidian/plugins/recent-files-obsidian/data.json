@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
       "basename": "Social Engineering",
       "path": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Syncthing for Obsidian Notes",
       "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
-    },
-    {
-      "basename": "Arc Browser on Windows",
-      "path": "⬇ INBOX, DROPZONE/Arc Browser on Windows/Arc Browser on Windows.md"
-    },
-    {
-      "basename": "How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website.",
-      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website..md"
-    },
-    {
-      "basename": "⬇️ Notes Drop",
-      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/⬇️ Notes Drop.md"
     }
   ],
   "omittedPaths": [],

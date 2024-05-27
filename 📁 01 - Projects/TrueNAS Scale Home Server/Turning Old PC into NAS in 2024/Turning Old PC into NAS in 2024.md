@@ -16,7 +16,14 @@ tags:
   - CloudflareTunnels
   - RemoteAccess
 ---
+%% Begin Waypoint %%
+- **[[ATA Security]]**
+- **[[Filesystems and Partition Schemes]]**
+- **[[mDNS and Cloudflare Tunnels]]**
+- **[[RAID vs AHCI]]**
+- **[[Software RAID vs Hardware RAID - TrueNAS Scale]]**
 
+%% End Waypoint %%
 # Misc Links & Videos
 - [(40) Building A Budget NAS with TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=iSpL9LnczVQ)
 - [(40) Building A DIY NAS On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)

@@ -78,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "546970a4f3430bad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -154,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
               }
             }
           },
@@ -237,10 +249,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9c5f5192a088ff2d",
+  "active": "546970a4f3430bad",
   "lastOpenFiles": [
-    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breaches/Backdoors & Breaches.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md",
+    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 04 - Organizational Cyber/Social Engineering",
     "📁 04 - Organizational Cyber/Cyber Team Building/Cyber Team Building.md",
     "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breaches",
@@ -276,9 +291,6 @@
     "📁 03 - Curations, Stacks/Books/Books.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
     "CybersaderNotion/12 - Religion, Ontology, Philosophy.md",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "CybersaderNotion/06 Cybersader - COMMUNITY (Mostly Indiana).md",
-    "📁 08 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",
