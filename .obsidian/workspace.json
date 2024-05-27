@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md"
               }
             }
           },
@@ -251,9 +251,17 @@
   },
   "active": "546970a4f3430bad",
   "lastOpenFiles": [
+    "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/Cannot Connect to Truenas SMB.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Custom Local Domain/Custom Local Domain.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Custom Local Domain",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/_attachments/Cannot Connect to Truenas SMB",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/_attachments",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/_attachments/Cannot Connect to Truenas SMB/IMG-20240527133723685.png",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB",
     "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md",
     "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 04 - Organizational Cyber/Social Engineering",
@@ -274,12 +282,8 @@
     "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants/ADHD and Stimulants.md",
     "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md",
     "📁 08 - Personal/Wellness, Fitness/Stimulants and Insurance",
-    "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants",
     "📁 04 - Organizational Cyber/Cyber Team Building/BHIS - Sourcing Cyber/BHIS - Sourcing Cyber.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/Getting Started in Security with BHIS and MITRE ATT&CK/Getting Started in Security with BHIS and MITRE ATT&CK.md",
-    "📁 04 - Organizational Cyber/Cyber Team Building/BHIS - Sourcing Cyber/_attachments/BHIS - Sourcing Cyber",
-    "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/BHIS - Sourcing Cyber/_attachments/Sourcing Cyber",
     "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304899.png",
     "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304837.png",
     "📁 04 - Organizational Cyber/Cyber Team Building/_attachments/Cyber Team Building/IMG-20240526140304790.png",
@@ -288,14 +292,10 @@
     "CybersaderNotion/04 Cybersader’s Arsenal/Cybersecurity Jobs.md",
     "CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity Colleges & Universities NICCS.md",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-    "📁 03 - Curations, Stacks/Books/Books.md",
-    "📁 10 - Community/Cyber Community/Cyber Community.md",
-    "CybersaderNotion/12 - Religion, Ontology, Philosophy.md",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552984.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552951.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552917.png",
     "📁 01 - Projects/Mothers Day Website/IMG-20240509213552876.png",
-    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552837.png",
-    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552759.png"
+    "📁 01 - Projects/Mothers Day Website/IMG-20240509213552837.png"
   ]
 }

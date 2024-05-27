@@ -7,6 +7,8 @@ date modified: Monday, May 27th 2024, 1:14 pm
 ---
 
 %% Begin Waypoint %%
+- **[[Cannot Connect to Truenas SMB]]**
+- **[[Custom Local Domain]]**
 - **[[Dataset Available Space]]**
 
 - **[[Home Server Power]]**

@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+      "basename": "TrueNAS mDNS",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md"
+    },
+    {
+      "basename": "Cannot Connect to Truenas SMB",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/Cannot Connect to Truenas SMB.md"
     },
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "Custom Local Domain",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Custom Local Domain/Custom Local Domain.md"
+    },
+    {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "TrueNAS Cloud Backups",
@@ -187,18 +199,6 @@
     {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
-    },
-    {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
-      "basename": "The Blacklist",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/The Blacklist/The Blacklist.md"
-    },
-    {
-      "basename": "Syncthing for Obsidian Notes",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
     }
   ],
   "omittedPaths": [],
