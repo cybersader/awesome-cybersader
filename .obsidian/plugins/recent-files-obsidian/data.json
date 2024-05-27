@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Nuclear Disaster Recovery",
+      "path": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
       "basename": "Cyber Team Building",
       "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/Cyber Team Building/Cyber Team Building.md"
     },
@@ -75,10 +83,6 @@
     {
       "basename": "Daily Driver Stuff",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Obsidian Plugins and 3rd Party Tools",
@@ -195,10 +199,6 @@
     {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
-    },
-    {
-      "basename": "Diagrams",
-      "path": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md"
     }
   ],
   "omittedPaths": [],
