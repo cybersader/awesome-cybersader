@@ -9,6 +9,14 @@
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/Cannot Connect to Truenas SMB.md"
     },
     {
+      "basename": "Home Network Wars",
+      "path": "📁 01 - Projects/Home Network Wars/Home Network Wars.md"
+    },
+    {
+      "basename": "Home Server Power",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+    },
+    {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
-      "basename": "Cyber Merch",
-      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
-    },
-    {
-      "basename": "⬇️ Ontological Drop",
-      "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
     }
   ],
   "omittedPaths": [],

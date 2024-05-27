@@ -24,7 +24,6 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Immich Setup]]**
 
 - **[[TrueNAS mDNS]]**
-
 - **[[Turning Old PC into NAS in 2024]]**
 
 %% End Waypoint %%
