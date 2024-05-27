@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Social Engineering",
+      "path": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md"
+    },
+    {
       "basename": "Backdoors & Breaches",
       "path": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/Backdoors & Breaches/Backdoors & Breaches.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Notes Drop",
       "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/⬇️ Notes Drop.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     }
   ],
   "omittedPaths": [],

@@ -8,12 +8,16 @@ tags:
   - "#AntisyphonTraining"
 publish: true
 date created: Monday, May 27th 2024, 10:06 am
-date modified: Monday, May 27th 2024, 12:17 pm
+date modified: Monday, May 27th 2024, 12:55 pm
 ---
 
+# Scenario Brainstorm
+- 
+# Resources
 - [Backdoors & Breaches - Black Hills Information Security](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/)
 	- Game mat image files
-	- Resources
+	- Resources from BHIS
+- [Backdoors & Breaches, THE Incident Response Card Game – Antisyphon Training](https://www.antisyphontraining.com/backdoors-and-breaches/)
 - [Backdoors & Breaches: Using a Tabletop Exercise Game to Teach Cybersecurity Incident Response - 2021 Proceedings of the EDSIG Conference](https://proc.iscap.info/2021/pdf/5562.pdf)
 ## Online, Virtual
 - [B&B Shuffle by Richard Phung/P3hndrx](https://play.backdoorsandbreaches.com/)

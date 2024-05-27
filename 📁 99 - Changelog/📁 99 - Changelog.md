@@ -1,4 +1,5 @@
-- 2024-05-27 at 12h17 · [[Backdoors & Breaches]]
+- 2024-05-27 at 13h00 · [[Social Engineering]]
+- 2024-05-27 at 12h56 · [[Backdoors & Breaches]]
 - 2024-05-27 at 12h16 · [[⬇️ Cyber Culture Drop]]
 - 2024-05-27 at 10h03 · [[Cyber Team Building]]
 - 2024-05-27 at 10h01 · [[Cybersecurity Culture Building]]
@@ -97,4 +98,3 @@
 - 2024-04-28 at 20h36 · [[Mic Setup Audio 2024]]
 - 2024-04-28 at 18h07 · [[Interview with a Data Analyst]]
 - 2024-04-28 at 15h58 · [[10.X Password Spray & Detections]]
-- 2024-04-28 at 15h52 · [[0. Introduction - Purpose, Design]]
