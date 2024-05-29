@@ -3,44 +3,46 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 27th 2024, 3:53 pm
-date modified: Tuesday, May 28th 2024, 9:37 pm
+date modified: Wednesday, May 29th 2024, 7:43 pm
 ---
 
 # DNS Exfiltration & Attack from India?
 ## Day 1: Sus Detected
 - Malformed packet going to a phone company in India?  Why???
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548576.png)
+	- `_ws.col.protocol=="MDNS"`
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304485.png)
 - Quick IP rep checks
 	- https://www.virustotal.com/gui/ip-address/114.69.235.183/detection
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548635.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304554.png)
 	- https://talosintelligence.com/reputation_center/lookup?search=114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548695.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304615.png)
 	- https://www.whois.com/whois/114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548756.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304721.png)
 - Okay, but why am I sending malformed mDNS packets (destination port 5353) on a periodic basis?
 - Scanning their IP with Nmap
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548805.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304786.png)
 	- Found SSL cert stuff from China
 		- `443/tcp open   ssl/https | ssl-cert: Subject: commonName=192.168.1.1/organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN | Issuer: organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN
 - Worldphone company in India?
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548875.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304863.png)
 	- https://www.url2png.com/
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548922.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304930.png)
 ## Day 2: Investigation - more Wireshark, netstat, SysInternals
 - Running `netstat` and `tasklist` in Windows to find network connection and "listening" processes
 	- `netstat -bano | findstr :5353`
 	- Port 5353 is mDNS
 	- Netstat and tasklist results:
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548967.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304991.png)
 	- Opened process explorer (from SysInternals) to look at related processes
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528220549014.png)
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528220549085.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529194305049.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529194305106.png)
 - Wireshark filter for non-local destination with mDNS
 	- You have to also exclude the broadcast address in ipv4 and v6
 	- `(_ws.col.protocol == "MDNS") && !(ip.dst==10.0.0.0/8) && !(ip.dst==192.168.0.0/16) && !(ip.dst==224.0.0.251) && !(ipv6.dst == ff02::fb)`
 	- Nothing is showing up
 - TCP View Results
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220549148.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194305194.png)
+## Day 3: More Packet Analysis
 - 
 # ChatGPT Convo
 ## Netstat and Sysinternals
