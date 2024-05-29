@@ -24,6 +24,7 @@ date modified: Monday, May 27th 2024, 12:55 pm
 - [Steam Workshop::BHIS Backdoors & Breaches](https://steamcommunity.com/sharedfiles/filedetails/?id=2401033477)
 - [blackhillsinfosec/play.backdoorsandbreaches.com: Dashboard for conducting Backdoors and Breaches sessions over Zoom.](https://github.com/blackhillsinfosec/play.backdoorsandbreaches.com) 
 - https://bnb.silverday.de/
+- [Backdoors & Breaches for PlayingCards.io](https://github.com/FirmGuardian/backdoors-and-breaches-pcio)
 ## Shop, Physical Game, Playmats
 - [Backdoors & Breaches, Incident Response Card Game – Spearphish General Store](https://spearphish-general-store.myshopify.com/collections/backdoors-breaches-incident-response-card-game)
 - Print custom playmats - [Custom Playmats](https://www.inkedgaming.com/pages/custom-playmats-1) 
