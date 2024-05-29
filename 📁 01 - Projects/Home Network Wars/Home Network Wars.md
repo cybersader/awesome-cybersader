@@ -9,38 +9,38 @@ date modified: Tuesday, May 28th 2024, 9:37 pm
 # DNS Exfiltration & Attack from India?
 ## Day 1: Sus Detected
 - Malformed packet going to a phone company in India?  Why???
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720127.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548576.png)
 - Quick IP rep checks
 	- https://www.virustotal.com/gui/ip-address/114.69.235.183/detection
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720184.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548635.png)
 	- https://talosintelligence.com/reputation_center/lookup?search=114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720243.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548695.png)
 	- https://www.whois.com/whois/114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720310.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548756.png)
 - Okay, but why am I sending malformed mDNS packets (destination port 5353) on a periodic basis?
 - Scanning their IP with Nmap
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720415.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548805.png)
 	- Found SSL cert stuff from China
 		- `443/tcp open   ssl/https | ssl-cert: Subject: commonName=192.168.1.1/organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN | Issuer: organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN
 - Worldphone company in India?
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720462.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548875.png)
 	- https://www.url2png.com/
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720524.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548922.png)
 ## Day 2: Investigation - more Wireshark, netstat, SysInternals
 - Running `netstat` and `tasklist` in Windows to find network connection and "listening" processes
 	- `netstat -bano | findstr :5353`
 	- Port 5353 is mDNS
 	- Netstat and tasklist results:
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720581.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240528220548967.png)
 	- Opened process explorer (from SysInternals) to look at related processes
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528213720628.png)
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528213720678.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528220549014.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240528220549085.png)
 - Wireshark filter for non-local destination with mDNS
 	- You have to also exclude the broadcast address in ipv4 and v6
 	- `(_ws.col.protocol == "MDNS") && !(ip.dst==10.0.0.0/8) && !(ip.dst==192.168.0.0/16) && !(ip.dst==224.0.0.251) && !(ipv6.dst == ff02::fb)`
 	- Nothing is showing up
 - TCP View Results
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240528213720758.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240528220549148.png)
 - 
 # ChatGPT Convo
 ## Netstat and Sysinternals
