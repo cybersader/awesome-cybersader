@@ -1,5 +1,5 @@
-- 2024-05-28 at 20h53 · [[Home Network Wars]]
-- 2024-05-28 at 20h40 · [[📁 01 - Projects]]
+- 2024-05-28 at 21h37 · [[Home Network Wars]]
+- 2024-05-28 at 21h37 · [[📁 01 - Projects]]
 - 2024-05-27 at 17h10 · [[TrueNAS Scale Home Server]]
 - 2024-05-27 at 17h10 · [[TrueNAS mDNS]]
 - 2024-05-27 at 13h45 · [[Cannot Connect to Truenas SMB]]
