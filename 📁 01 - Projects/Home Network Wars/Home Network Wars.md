@@ -3,47 +3,55 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 27th 2024, 3:53 pm
-date modified: Wednesday, May 29th 2024, 7:43 pm
+date modified: Wednesday, May 29th 2024, 8:05 pm
 ---
 
 # DNS Exfiltration & Attack from India?
 ## Day 1: Sus Detected
 - Malformed packet going to a phone company in India?  Why???
 	- `_ws.col.protocol=="MDNS"`
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304485.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529657.png)
 - Quick IP rep checks
 	- https://www.virustotal.com/gui/ip-address/114.69.235.183/detection
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304554.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529796.png)
 	- https://talosintelligence.com/reputation_center/lookup?search=114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304615.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529870.png)
 	- https://www.whois.com/whois/114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304721.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529940.png)
 - Okay, but why am I sending malformed mDNS packets (destination port 5353) on a periodic basis?
 - Scanning their IP with Nmap
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304786.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530005.png)
 	- Found SSL cert stuff from China
 		- `443/tcp open   ssl/https | ssl-cert: Subject: commonName=192.168.1.1/organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN | Issuer: organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN
 - Worldphone company in India?
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304863.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530064.png)
 	- https://www.url2png.com/
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304930.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530141.png)
 ## Day 2: Investigation - more Wireshark, netstat, SysInternals
 - Running `netstat` and `tasklist` in Windows to find network connection and "listening" processes
 	- `netstat -bano | findstr :5353`
 	- Port 5353 is mDNS
 	- Netstat and tasklist results:
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529194304991.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530208.png)
 	- Opened process explorer (from SysInternals) to look at related processes
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529194305049.png)
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529194305106.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529200530317.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529200530383.png)
 - Wireshark filter for non-local destination with mDNS
 	- You have to also exclude the broadcast address in ipv4 and v6
 	- `(_ws.col.protocol == "MDNS") && !(ip.dst==10.0.0.0/8) && !(ip.dst==192.168.0.0/16) && !(ip.dst==224.0.0.251) && !(ipv6.dst == ff02::fb)`
 	- Nothing is showing up
 - TCP View Results
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529194305194.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530488.png)
 ## Day 3: More Packet Analysis
-- 
+- Found call and response (conversation) with my machine starting it from port 6881
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530579.png)
+- Nothing found on that port constantly communicating.  Could be starting and stopping though if this is a compromise.
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530732.png)
+- Port 6881 normally used for bittorrent
+	- This suspicious activity had recently stopped
+	- When the potential "attack" happened, I started uninstalled apps that were risky such as "Utorrent"
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529639.png)
+	- 
 # ChatGPT Convo
 ## Netstat and Sysinternals
 Let's break down the NetStat commands and then discuss Sysinternals tools for a more thorough forensic analysis.
