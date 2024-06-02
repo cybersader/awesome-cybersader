@@ -3,55 +3,140 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 27th 2024, 3:53 pm
-date modified: Wednesday, May 29th 2024, 8:05 pm
+date modified: Wednesday, May 29th 2024, 9:08 pm
 ---
 
 # DNS Exfiltration & Attack from India?
 ## Day 1: Sus Detected
 - Malformed packet going to a phone company in India?  Why???
 	- `_ws.col.protocol=="MDNS"`
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529657.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210844804.png)
 - Quick IP rep checks
 	- https://www.virustotal.com/gui/ip-address/114.69.235.183/detection
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529796.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529210844874.png)
 	- https://talosintelligence.com/reputation_center/lookup?search=114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529870.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529210844937.png)
 	- https://www.whois.com/whois/114.69.235.183
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529940.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845003.png)
 - Okay, but why am I sending malformed mDNS packets (destination port 5353) on a periodic basis?
 - Scanning their IP with Nmap
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530005.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845086.png)
 	- Found SSL cert stuff from China
 		- `443/tcp open   ssl/https | ssl-cert: Subject: commonName=192.168.1.1/organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN | Issuer: organizationName=ZTE/stateOrProvinceName=JiangSu/countryName=CN
 - Worldphone company in India?
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530064.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845167.png)
 	- https://www.url2png.com/
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530141.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845222.png)
 ## Day 2: Investigation - more Wireshark, netstat, SysInternals
 - Running `netstat` and `tasklist` in Windows to find network connection and "listening" processes
 	- `netstat -bano | findstr :5353`
 	- Port 5353 is mDNS
 	- Netstat and tasklist results:
-		- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530208.png)
+		- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845292.png)
 	- Opened process explorer (from SysInternals) to look at related processes
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529200530317.png)
-		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529200530383.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529210845353.png)
+		- ![400](_attachments/Home%20Network%20Wars/IMG-20240529210845442.png)
 - Wireshark filter for non-local destination with mDNS
 	- You have to also exclude the broadcast address in ipv4 and v6
 	- `(_ws.col.protocol == "MDNS") && !(ip.dst==10.0.0.0/8) && !(ip.dst==192.168.0.0/16) && !(ip.dst==224.0.0.251) && !(ipv6.dst == ff02::fb)`
 	- Nothing is showing up
 - TCP View Results
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530488.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845502.png)
 ## Day 3: More Packet Analysis
 - Found call and response (conversation) with my machine starting it from port 6881
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530579.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845561.png)
 - Nothing found on that port constantly communicating.  Could be starting and stopping though if this is a compromise.
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200530732.png)
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845615.png)
 - Port 6881 normally used for bittorrent
 	- This suspicious activity had recently stopped
 	- When the potential "attack" happened, I started uninstalled apps that were risky such as "Utorrent"
-	- ![](_attachments/Home%20Network%20Wars/IMG-20240529200529639.png)
-	- 
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845684.png)
+- ChatGPT - this is a "bencoded" message that's part of the DHT protocol with BitTorrent
+	- It appears that the UDP packets are related to BitTorrent traffic, specifically involving the DHT (Distributed Hash Table) protocol used by BitTorrent clients like uTorrent. Here’s a breakdown of what you’re seeing and steps you can take to analyze this further.
+### Breakdown of the UDP Stream
+- The content of the UDP stream you’ve provided is a portion of a DHT protocol message used in BitTorrent networks: 
+	- **d1:ad2:id20:...** : This is a bencoded dictionary. Bencoding is a way of encoding data structures used in the BitTorrent protocol. 
+	- **d** : Start of a dictionary. 
+	- **** : Dictionary with a single key "a" containing another dictionary "d". 
+	- **2:id20:...** : This indicates a key "id" with a 20-byte value (node ID). 
+	- **** : This part contains the actual message: 
+	- **e** : End of dictionary. 
+	- **** : This is a "ping" query. 
+	- **1:t2:..** : Transaction ID. 
+	- **..** : Client identifier. 
+	- **** : Message type "q" for query. 
+	- **** : This part likely contains a response: 
+	- **d1:rd2:id20:888888886** : Another dictionary starting with "r" (response), containing an "id". 
+	- **** : Transaction ID and response.
+### Explanation and Analysis 
+1. **BitTorrent DHT Protocol** :
+- DHT is used by BitTorrent clients to find peers without the need for a centralized tracker.
+- The messages typically include "ping", "find_node", "get_peers", and "announce_peer" queries. 
+2. **Port 6881** :
+- Port 6881 is commonly used by BitTorrent clients for peer-to-peer communication.
+### Steps for Further Analysis 
+1. **Uninstalling uTorrent** :
+- As you observed, uninstalling uTorrent stopped the UDP traffic. This indicates that uTorrent was generating this traffic. 
+2. **Verify No Residual Traffic** :
+- After uninstalling uTorrent, ensure that there is no residual BitTorrent traffic by monitoring your network with Wireshark. 
+- Use filters to check for any remaining traffic on port 6881: `udp.port == 6881`. 
+3. **Check for Other Applications** :
+- Ensure no other applications are inadvertently using the same port or similar protocols. 
+4. **System Security** :
+- Run a full system scan using antivirus and anti-malware tools to ensure no other applications are causing suspicious network activity.
+### Using Wireshark for Detailed Inspection 
+1. **Capture Traffic** :
+- Continue capturing network traffic to monitor for any residual BitTorrent or other suspicious activity. 
+2. **Filter Specific Traffic** : 
+- Use filters like `udp.port == 6881` to isolate BitTorrent traffic. 
+3. **Follow Streams** :
+- Right-click on packets and select "Follow UDP Stream" to see the full context of the communication. 
+4. **Inspect Packet Contents** :
+- Expand the packet details in Wireshark to understand the structure and content of the DHT messages.
+### Example Wireshark Filters 
+- **Filter for BitTorrent Traffic** :
+
+```plaintext
+udp.port == 6881
+``` 
+- **Filter for DHT Protocol Messages** :
+
+```plaintext
+bt-dht
+```
+- Conclusion
+	- Uninstalling uTorrent had resolved the specific issue with the UDP packets on port 6881, confirming that the traffic was related to BitTorrent activity. 
+
+### IT'S UTORRENT...but why and why to an Indian Telecom company????
+Below is the result of following the UDP stream in Wireshark:
+`d1:ad2:id20:....r.{\.f......V...e1:q4:ping1:t2:..1:v4:LT..1:y1:qed1:rd2:id20:888888886.......x}h.e1:t2:..1:v4:.B.{1:y1:re`
+
+I know that this must be related to UTorrent, but there are still many questions:
+- Why can't I find anything online about Utorrent using mDNS malformed packets
+- Why was my machine sending malformed mDNS packets to an Indian Telecom company?
+- How deep does this go?
+
+- Wireshark and UTorrent
+	- https://wiki.wireshark.org/BitTorrent
+
+#### Attacks with malformed UTorrent packets
+- CVE-2007-0927 - security vulnerability details")Heap-based buffer overflow in uTorrent 1.6 allows remote attackers to execute arbitrary code via a torrent file with a crafted announce header.
+	- This is from 2007 and UTorrent was updated
+
+#### Wireshark filter for mDNS or BitTorrent 
+`!(ip.dst == 224.0.0.251) and (!(ipv6.dst == ff02::fb) and ((udp.dstport >= 6881 and udp.dstport <=6890) || (udp.dstport == 5353)))`
+
+Nothing appeared after 20 minutes...
+#### Why is UTorrent using mDNS with DHT and Peer Discovery
+- [P2P Peer Discovery](https://jsantell.com/p2p-peer-discovery/)
+	- Each technique has its own strengths and weaknesses. The ideal discovery mechanism depends on the use case, and since discovery can be abstracted as `ids = discovery(topic)`, the same underlying P2P technology can handle discovery differently depending on the application (e.g. a torrent application can use mDNS, trackers, or DHT). To increase the likelihood of peers, applications will typically use several of these techniques simultaneously.
+- My port was marked as 6881, but "theirs" was 5353 for mDNS
+- My guess is that this is a censorship mechanism or some way of avoiding BitTorrent protocol detection, but it makes no sense...I'm still very much confused.
+#### Why an Indian Telecom company
+- Torrents illegal in India?
+	- ![](_attachments/Home%20Network%20Wars/IMG-20240529210845748.png)
+- Could simply be a user from the company that was establishing with me as a peer as a part of DHT
+
 # ChatGPT Convo
 ## Netstat and Sysinternals
 Let's break down the NetStat commands and then discuss Sysinternals tools for a more thorough forensic analysis.
