@@ -9,3 +9,6 @@ date modified: Sunday, April 7th 2024, 7:16 pm
 # Misc Images
 - https://bitwarden.com/password-strength/#Password-Strength-Testing-Tool
 - 
+
+# Getting custom posters
+- 
