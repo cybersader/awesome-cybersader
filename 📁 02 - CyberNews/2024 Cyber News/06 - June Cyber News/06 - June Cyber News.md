@@ -1,3 +1,25 @@
+- [Enforcement Alert: Drinking Water Systems to Address Cybersecurity Vulnerabilities](https://www.epa.gov/enforcement/enforcement-alert-drinking-water-systems-address-cybersecurity-vulnerabilities)
+    - EPA has recognized that cyber attacks are a legit threat to water infrastructure
+    - Attacks on utilities
+    - Stunning statement from EPA: "When on site, EPA has identified alarming cyber vulns and taken actions to address them.  Some water systems use single logins, default passwords, no access control large scale, etc."
+    - When they're in the FAX room @ EPA: "Yo have you seen that stuff from CISA? Should we do something about this?"
+    - 
+- [How the FBI's fake cell phone company put criminals into real jail cells](https://www.npr.org/2024/05/31/1197959218/fbi-phone-company-anom)
+    - FBI made a fake cellphone company with the help of prior cyber criminals
+    - The FBI used these phones to surveil
+    - FBI did all this overseas and couldn't do so on US citizens
+    - The FBI couldn't handle the caseload and scenarios, so they had to shut it down
+    - There's a book coming out called "Darkwire"
+- [US dismantles 911 S5 botnet used for cyberattacks, arrests admin](https://www.bleepingcomputer.com/news/security/us-dismantles-911-s5-residential-proxy-botnet-used-for-cyberattacks-arrests-admin/)
+    - US took town the 911 botnet which used tons of people's computers to use for hosting various services whether "benign" or malicious
+    - Lots of 3 letter agencies that are less known - Bureau or Industry and Security (BIS) and Office of Export Enforcement (OEE)
+    - These botnets also host VPNs or proxies for people
+- [Chinese hide on govt networks for years](https://www.bleepingcomputer.com/news/security/exploit-released-for-maximum-severity-fortinet-rce-bug-patch-now/)
+    - We need better threat hunting and an approach that assumes long-term compromise and exploitation
+    - If we are improving and auditing, then we shouldn't have unadvanced threats on our systems for years on end
+    - Ex: 150 people on govt COMM squadron with 10 of them being cyber.  There was no SOC.  Rather, the entirety of their work was reactive, patch management, and things like POAMs and inspection prep.  There was an MSP for multiple bases, but they only really worried about was connectivity and keeping things up.  
+    - People trust AV and EDR much.
+    - 
 - Okta warns of credential stuffing attacks targeting its CORS feature
     - https://www.bleepingcomputer.com/news/security/okta-warns-of-credential-stuffing-attacks-targeting-its-cors-feature/
     - Exploitation of Okta's CIC CORS feature to automate credential stuffing

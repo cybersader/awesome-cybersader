@@ -1,0 +1,16 @@
+# 05/2024
+- https://www.theverge.com/2024/5/9/24152918/maryland-kids-code-online-privacy-act-netchoice
+    - Scope:
+        - Targets businesses that control or process data more than 30k people
+        - Revenue from selling data to 100k or more customers
+    - Universal opt-out mechanism
+    - Maryland age-appropriate design code act
+        - Restrict auto-play media, spamming notifications, or rewarding for more time on platform
+        - Maryland kids code
+- https://arstechnica.com/tech-policy/2024/05/fbi-urges-employees-to-look-for-ways-to-collect-americans-messages/#:~:text=FBI%20Deputy%20Director%20Paul%20Abbate's,Intelligence%20Surveillance%20Act%20(FISA).
+    - FBI email urged employees to be innovative in doing warrantless surveillance
+    - FBI and other federal agencies are big customers for data brokers now
+    - Urged warrantless wire taps - technically illegal - under surveillance program, the target must be foreign and not on US soil - else it's illegal
+    - This may have been planned to get Americans thinking about their privacy and encouraging "American Privacy Rights Act"
+- American Privacy Rights Act
+    - https://iapp.org/resources/article/american-privacy-rights-act-cheat-sheet/
