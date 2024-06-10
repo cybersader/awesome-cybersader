@@ -3,12 +3,14 @@
 #  Links
 - DISA
     - [DoD DISA STIGs Homepage](https://public.cyber.mil/stigs/)
+    - [DISA STIG Downloads](https://public.cyber.mil/stigs/downloads/)
     - [DoD STIGs Automation | SCAP Tool (Security Content Automation Protocol)](https://public.cyber.mil/stigs/scap/)
         - Use recent SCAP content if possible
         - Download most recent SCC tool - [SCC 5.9 Windows](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/scc-5.9_Windows_bundle.zip)
         - There's a SCC tool/scanner for Ubuntu, Windows, Solaris, RHEL, and Oracle Linux.
+        - Includes STIG Benchmarks for SCAP
     - [DISA STIG Content for Config Management Tools](https://public.cyber.mil/stigs/supplemental-automation-content/)
-    - [Control Correlation Identifier (CCI)](https://public.cyber.mil/stigs/cci/) - use this to map yourown policies from high-level to actual technical settings.
+    - [Control Correlation Identifier (CCI)](https://public.cyber.mil/stigs/cci/) - use this to map your own policies from high-level to actual technical settings.
     - [STIGs Group Policy Objects](https://public.cyber.mil/stigs/gpo/)
     - [Sunset Products](https://public.cyber.mil/stigs/sunset-products/)
     - [SRG/STIG Library Compilations](https://public.cyber.mil/stigs/compilations/)
