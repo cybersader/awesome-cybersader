@@ -4,6 +4,7 @@
 - DISA
     - [DoD DISA STIGs Homepage](https://public.cyber.mil/stigs/)
     - [DISA STIG Downloads](https://public.cyber.mil/stigs/downloads/)
+    - [DISA STIG Viewer 3.x Downloads](https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=stig-viewer-3x)
     - [DoD STIGs Automation | SCAP Tool (Security Content Automation Protocol)](https://public.cyber.mil/stigs/scap/)
         - Use recent SCAP content if possible
         - Download most recent SCC tool - [SCC 5.9 Windows](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/scc-5.9_Windows_bundle.zip)
