@@ -1,0 +1,12 @@
+- Okta warns of credential stuffing attacks targeting its CORS feature
+    - https://www.bleepingcomputer.com/news/security/okta-warns-of-credential-stuffing-attacks-targeting-its-cors-feature/
+    - Exploitation of Okta's CIC CORS feature to automate credential stuffing
+- 361 million stolen accounts leaked on Telegram added to HIBP
+    - https://www.bleepingcomputer.com/news/security/361-million-stolen-accounts-leaked-on-telegram-added-to-hibp/
+    - 361 million unique email addresses, with 151 million never previously seen by the data breach notification service
+    - Huge breach - tremendous opportunity for attackers to credential stuff and fuel other high dollar exploits
+- Ticketmaster confirms massive breach after stolen data for sale online
+    - https://www.bleepingcomputer.com/news/security/ticketmaster-confirms-massive-breach-after-stolen-data-for-sale-online/
+    - While the breach has allegedly exposed the data of over 560 million Ticketmaster users, the company states that they do not believe that the breach will have a material impact on the overall business operations or its financial condition.
+    - According to the threat actor, they used credentials stolen using information-stealing malware to breach a Snowflake employee's ServiceNow account, which they used to exfiltrate information from the company. This information included unexpired auth tokens that could be used to create session tokens and access customer accounts to download data.
+    - The threat actor claims that they used this method to steal data from other companies, including Anheuser-Busch, State Farm, Mitsubishi, Progressive, Neiman Marcus, Allstate, and Advance Auto Parts.
