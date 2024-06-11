@@ -1,3 +1,14 @@
+
+- UNC 5537 Snowflake Data Breach
+    - Doing dark web scraping is a fool's errand.  It's not easy to to.
+    - Dark web ecosystem: People gather logs, post them into forums, sell access to botnets with stealers, they repackage them and resell them, etc.
+    - Flare and Spycloud are good
+    - Traditional cred abuse detections - creds from browser and some other locations (files, docs, clipboard)
+    - You can have detections for tools querying these sensitive file locations for the browser
+    - Browser security and sensitive data: browser data is encrypted on the machine by default, and that data is queryable or obtained via the "data protection" (DP) API which can access the data in the SQLite database or the browser.  The issue is that the key for the DP API can be obtained by non-privileged users, so it sort of defeats the purpose.
+    - T1555.003 - Creds from Web Browser
+    - Mitigations: don't save creds in browsers, limit the browsers users can use if possible, and have detections made from the attack ID to detect the infostealers.
+    -   
 - [Enforcement Alert: Drinking Water Systems to Address Cybersecurity Vulnerabilities](https://www.epa.gov/enforcement/enforcement-alert-drinking-water-systems-address-cybersecurity-vulnerabilities)
     - EPA has recognized that cyber attacks are a legit threat to water infrastructure
     - Attacks on utilities
