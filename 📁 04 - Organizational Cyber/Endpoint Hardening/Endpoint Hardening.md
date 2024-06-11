@@ -1,5 +1,17 @@
 
 
+# Mapping STIG to NIST
+https://public.cyber.mil/stigs/compilations/
+https://public.cyber.mil/stigs/cci/
+https://public.cyber.mil/stigs/downloads/
+file:///C:/Users/RaderB/Downloads/U_SRG-STIG_Library/_%202024%2004%20SRG-STIG%20Updates%20Released%20w%20changes.pdf
+https://www.reddit.com/r/NISTControls/comments/gicdnr/stig_flow_down_chart/
+https://www.google.com/search?q=DISA+STIG+CCI+Nist+800-53+revision+5&sca_esv=1994aae6371246d6&sca_upv=1&rlz=1C1GCEU_enUS1109US1110&ei=j6poZquAHsiKptQPupTx2Q8&ved=0ahUKEwjrg7CkqdSGAxVIhYkEHTpKPPsQ4dUDCBA&uact=5&oq=DISA+STIG+CCI+Nist+800-53+revision+5&gs_lp=Egxnd3Mtd2l6LXNlcnAiJERJU0EgU1RJRyBDQ0kgTmlzdCA4MDAtNTMgcmV2aXNpb24gNTIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYR0itHVC7BliaHHAAeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgeYAwCIBgGQBgiSBwExoAcA&sclient=gws-wiz-serp#ip=1
+https://public.cyber.mil/announcement/stig-srg-updates-for-nist-sp-800-53-rev-5-set-for-july-2/
+https://www.reddit.com/r/NISTControls/comments/wg8bit/comprehensive_list_of_ccis/
+https://public.cyber.mil/announcement/disa-releases-the-cci-list-revision-5/
+https://public.cyber.mil/stigs/downloads/
+
 #  Links
 - DISA
     - [DoD DISA STIGs Homepage](https://public.cyber.mil/stigs/)
