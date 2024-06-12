@@ -7,6 +7,11 @@ date created: Friday, April 26th 2024, 11:33 am
 date modified: Monday, April 29th 2024, 1:28 pm
 ---
 
+# Ideas
+- Make extension for usage in Github.dev for helping do markdown without code in innovative and safe ways
+  - If this doesn't work then look at how other in-the-browser code editors are safe and if they could somehow be implemented
+- Obsidian GitHub action for running code like a vault would
+
 # Misc
 - [ ] BUG with deleting files taking a long time 🔺 ➕ 2024-04-29
 - Have AI generate smart permalinks for pages
