@@ -1,6 +1,16 @@
+# Mapping Technical Configuration to NIST Controls
 
+## RMF (Risk Management Framework)
+- https://csrc.nist.gov/Projects/risk-management/about-rmf
+- https://rmfdb.com/search
+- https://csrc.nist.gov/CSRC/media/Projects/risk-management/documents/04-Implement%20Step/NIST%20RMF%20Implement%20Step-FAQs.pdf
+- 
 
-# Mapping STIG to NIST
+## What is SCAP (Security Content Automation Protocol)
+- https://csrc.nist.gov/projects/security-content-automation-protocol/
+- 
+
+## Mapping STIG to NIST
 
 - STIG Flow Down Chart
     - ![How STIGs are Developed](STIGS_FLOWDOWN.png)

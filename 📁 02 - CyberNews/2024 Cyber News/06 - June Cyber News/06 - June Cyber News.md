@@ -1,4 +1,12 @@
 
+- Windows Recall Issues with Hacker Tools and Infostealers
+    - They backed it up and made the feature opt-in
+    - Links
+        - https://doublepulsar.com/recall-stealing-everything-youve-ever-typed-or-viewed-on-your-own-windows-pc-is-now-possible-da3e12e9465e
+        - https://www.wired.com/story/total-recall-windows-recall-ai/
+    - It's not a good look for PR
+    - This is a big issue for stalkers and abusers because they don't need to have spouseware, spyware, or any malware since the OS can now do it
+    - 
 - UNC 5537 Snowflake Data Breach
     - Doing dark web scraping is a fool's errand.  It's not easy to to.
     - Dark web ecosystem: People gather logs, post them into forums, sell access to botnets with stealers, they repackage them and resell them, etc.
