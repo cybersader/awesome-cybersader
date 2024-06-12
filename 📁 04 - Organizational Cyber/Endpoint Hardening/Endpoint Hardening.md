@@ -1,5 +1,20 @@
 # Mapping Technical Configuration to NIST Controls
 
+## Government Technical Standards Overview - The Technical Mapping Problem
+- Links:
+    - https://medium.com/@cyber.stack/nist-vs-iso-vs-cis-vs-stig-a-comprehensive-guide-7de5c788be07
+    - https://govcyberhub.com/2022/03/07/stigs-for-dummies/
+    - https://rmfdb.com/search
+    - CSF2.0
+        - https://www.nist.gov/cyberframework
+        - https://www.nist.gov/informative-references
+    - Automated mapping?
+        - https://dale-bingham-soteriasoftware.medium.com/automatically-relate-nist-families-and-controls-to-your-disa-stig-checklists-with-openrmf-330e1a944e7b
+        - https://www.openrmf.io/
+        - https://github.com/Cingulara/openrmf-docs/releases
+    - Checklist Repository - https://ncp.nist.gov/repository
+    - 
+
 ## RMF (Risk Management Framework)
 - https://csrc.nist.gov/Projects/risk-management/about-rmf
 - https://rmfdb.com/search
@@ -8,7 +23,7 @@
 
 ## What is SCAP (Security Content Automation Protocol)
 - https://csrc.nist.gov/projects/security-content-automation-protocol/
-- 
+- https://csrc.nist.gov/Projects/risk-management/about-rmf/implement-step/security-configuration-settings
 
 ## Mapping STIG to NIST
 
@@ -27,7 +42,7 @@ https://public.cyber.mil/stigs/downloads/
 
 #  Links
 - RMFDB?
-    - 
+    - https://rmfdb.com/search
 - DISA
     - [DoD DISA STIGs Homepage](https://public.cyber.mil/stigs/)
     - [DISA STIG Downloads](https://public.cyber.mil/stigs/downloads/)
