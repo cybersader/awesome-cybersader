@@ -1,6 +1,10 @@
 
 
 # Mapping STIG to NIST
+
+- STIG Flow Down
+    - ![How STIGs are Developed](STIGS_FLOWDOWN.png)
+
 https://public.cyber.mil/stigs/compilations/
 https://public.cyber.mil/stigs/cci/
 https://public.cyber.mil/stigs/downloads/
