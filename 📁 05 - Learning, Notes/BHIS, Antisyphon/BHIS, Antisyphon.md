@@ -10,6 +10,7 @@ tags:
 ---
 
 %% Begin Landmark %%
+- [[Adversarial Emulation Extravaganza w Kent & Jordan]]
 - **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
 

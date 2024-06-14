@@ -10,6 +10,7 @@ publish: true
 - **[[⬇️ Notes Drop]]**
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
+	- [[Adversarial Emulation Extravaganza w Kent & Jordan]]
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
 - **[[Cyber Classes]]**

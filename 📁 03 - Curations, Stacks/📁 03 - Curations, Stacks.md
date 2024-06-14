@@ -10,10 +10,12 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 	- **[[Home Surveillance]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
+- [[Awesome Cyber Resource Curations]]
 - **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**
 - **[[Books]]**
 - **[[Browser Extensions]]**
+- [[Cyber Blogs]]
 - **[[Cyber Books]]**
 - **[[Cyber Memes]]**
 - **[[Cyber Merch]]**

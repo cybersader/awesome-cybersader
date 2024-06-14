@@ -10,6 +10,10 @@ publish: true
 
 %% Begin Waypoint %%
 - **[[Arc Browser on Windows]]**
+- **[[Awesome Password Security]]**
+	- [[Self-Hosted Bitwarden]]
+- **BCDR, DFIR**
+	- [[Awesome DFIR]]
 - [[Company Security Strategy from Zero]]
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
