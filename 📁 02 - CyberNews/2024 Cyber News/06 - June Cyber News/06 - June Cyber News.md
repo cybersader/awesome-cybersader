@@ -1,5 +1,30 @@
-
-
+- [🔴June 14's Top Cyber News NOW! - Ep 644](https://www.youtube.com/watch?v=gOevvYvwuPs)
+    - Talk with Wade Wells
+        - Do you need SOC experience to be in GRC? Understanding the technical side from a SOC translates well to GRC. 
+        - Do you need Docker and Kubernetes? Yes...you can set up environments at supersonic speed.  You can load in all sorts of tools without being limited by your OS. You can network a lot of cool stuff.
+        - Docker is way easier to dive into than doing crazy virtualization
+        - Getting a cyber job: network, network, network, and get a YouTube channel where you talk with other people in cyber.  Learn to use content tools.
+        - TheHive, Yeti, and OpenCTI are good. Cortex is good for ticketing threat intel and stuff.
+        - Tracelabs VM has good CTI tools
+        - Mandiant has Flare and Threat Pursuit
+    - Panera data breach
+        - Classic data selling after ransomware
+        - They offered classic ID theft protection - Meme trying to keep door closed that stored all of the ID protection from breached companies.  Marketing and giving people identity protection. #cyberMeme
+        - Is SSN that important in post-digital era? - not so much anymore
+    - NATO reacting against Russian cyber sabotage and spying
+        - https://www.reuters.com/world/europe/nato-members-crack-down-russian-spies-response-sabotage-says-stoltenberg-2024-06-13/
+    - [Cyber Insurance Claims Hit Record High in North America](https://www.infosecurity-magazine.com/news/cyber-insurance-claims-record/#:~:text=Cyber%20insurance%20claims%20in%20North,growing%20sophistication%20of%20cyber%2Dattacks)
+        - There's an ecosystem around cyber insurance on where you can go (firms) for IR
+        - [S02E05 - Hacking, InfoSec & Cyber Insurance w/ Jeremiah Grossman](https://www.youtube.com/watch?v=BTnUeIz5pF4&pp=ygUhamVyZW1pYWggZ3Jvc3NtYW4gY3liZXIgaW5zdXJhbmNl)
+        - In 2015, he gave a talk on cyber insurance - it will dictate security programs
+        - Insurance was handing out cyber insurance like crazy
+        - When NotPetya hit, it set a precedent for cyber insurance. Mondelez sued the insurance firm and it flipped things upside down to where insurance scrutinizes you when you get insurance.
+        - [An Insider's Guide to Cyber-Insurance and Security Guarantees](https://www.youtube.com/watch?v=nFtchKxtGmc&t=171s&pp=ygUhamVyZW1pYWggZ3Jvc3NtYW4gY3liZXIgaW5zdXJhbmNl)
+        - These companies are putting up high premiums because ransomware payouts are crazy high
+        - Cyber Insurance is not a mitigation:
+            - This insurance just helps you to deal with the incident.  
+            - The issue with cyber insurance is that there's not enough smart assessment and maturity in the industry, so insurance policies are conditional are when they can apply.  You won't be able to have insurance unless you check certain boxes.
+            - Security and GRC teams have to put in a lot of work to have a good policy and show the company's security posture
 - [Windows Recall Issues with Hacker Tools and Infostealers](https://www.wired.com/story/total-recall-windows-recall-ai/)
     - They backed it up and made the feature opt-in
     - Links
