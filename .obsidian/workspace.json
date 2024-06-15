@@ -80,6 +80,16 @@
             }
           },
           {
+            "id": "a3e3413bc75d064c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
+          },
+          {
             "id": "9c5f5192a088ff2d",
             "type": "leaf",
             "state": {
@@ -104,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -261,7 +271,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3cfa6ad677498ee6",
+  "active": "a3e3413bc75d064c",
   "lastOpenFiles": [
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md",
