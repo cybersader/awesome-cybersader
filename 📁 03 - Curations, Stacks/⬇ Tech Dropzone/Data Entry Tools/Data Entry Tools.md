@@ -21,6 +21,9 @@ date modified: Wednesday, May 22nd 2024, 8:13 pm
 	- Appsmith integrated with other tools
 - Microsoft, O365
 	- Microsoft Forms into Excel
+
+
+
 # Misc
 - [Nocode tool for on-premises use : r/nocode](https://www.reddit.com/r/nocode/comments/vjnjay/nocode_tool_for_onpremises_use/)
 - [Pay for what you use, capped at $20/user/month](https://www.appsmith.com/pricing)
@@ -37,6 +40,7 @@ date modified: Wednesday, May 22nd 2024, 8:13 pm
 - [Quick Start Installation of OhMyForm | OhMyForm](https://ohmyform.com/docs/install/)
 - [super-easy-forms/super-easy-forms: The easiest way to generate forms for your static site](https://github.com/super-easy-forms/super-easy-forms)
 - [calipseo/formio - Docker Image | Docker Hub](https://hub.docker.com/r/calipseo/formio)
+
 ## Unified Data Entry Suite
 -   **Google Forms**: Easy-to-create forms that can collect data and automatically populate Google Sheets.
 -   **Typeform**: User-friendly forms and surveys that can integrate with various databases and applications.

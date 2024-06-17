@@ -1,3 +1,32 @@
+- [🔴June 17's Top Cyber News NOW! - Ep 645](https://youtube.com/watch?v=S32ANB6GfTY)
+    - MS Outlook Security Changing
+        - Links
+            - https://www.bleepingcomputer.com/news/security/microsoft-new-outlook-security-changes-coming-to-personal-accounts/
+            - Microsoft has announced new cybersecurity enhancements for Outlook personal email accounts as part of its 'Secure Future Initiative,' including the deprecation of basic authentication (username + password) by September 16, 2024.
+            - [Keeping our Outlook Personal Email Users Safe: Reinforcing Our Commitment to Security](https://techcommunity.microsoft.com/t5/outlook-blog/keeping-our-outlook-personal-email-users-safe-reinforcing-our/ba-p/4164184#:~:text=To%20help%20keep%20Outlook%20personal,to%20sign%20into%20their%20account.)
+    - CISA leads tabletop exercise for AI cybersecurity
+        - https://www.cisa.gov/news-events/news/cisa-jcdc-government-and-industry-partners-conduct-ai-tabletop-exercise
+        - https://www.cisa.gov/topics/partnerships-and-collaboration/joint-cyber-defense-collaborative/Joint-Cyber-Defense-Collaborative-Artificial-Intelligence-Cyber-Tabletop-Exercise
+        - https://www.cisa.gov/sites/default/files/2024-06/Joint%20Cyber%20Defense%20Collaborative%20Artificial%20Intelligence%20Cyber%20Tabletop%20Exercise.pdf
+        - Tabletop exercises are awesome - it's good that federal regulators are setting tone with this even without concrete regulations
+        - GRC Pros know how good tabletop exercises are
+        - BCDR tabletops are different - they are more mature
+        - These new tabletops are grander are looking for the big problems
+        - Tabletops can be to be optimize and find weakpoints or to get ideas - mature and immature IT teams can use them
+        - Early 2025 will give us opportunities to have tabletops and playbooks based on lessons learned and experiences from these federal agencies and their current tabletops.  Most businesses have CIO or CISO and they can leverage the AI-related tabletops from CISA. CISOs need an opinion and position on AI.
+        - When cloud came on the scene, there was no guidance. Don't be in absence of information with AI.
+    - Keytronic breach from BlackBasta
+        - 530 GB of stolen data
+        - Interfered with business apps
+        - PII data involved
+        - Manufacturing and healthcare are compromised A LOT - meta at being hacked
+        - Use stories not for "FUD" (fear, uncertainty, and doubt)
+        - A company was down for 2 weeks - 2 things you can use for budget and board: 
+            - 1) 2 weeks of operations gone - daily revenue times time, and..
+            - 2) Millions in damages (10s likely in bigger companies)
+        - We don't want to be the next case study
+        
+
 - [🔴June 14's Top Cyber News NOW! - Ep 644](https://www.youtube.com/watch?v=gOevvYvwuPs)
     - Talk with Wade Wells
         - Do you need SOC experience to be in GRC? Understanding the technical side from a SOC translates well to GRC. 
