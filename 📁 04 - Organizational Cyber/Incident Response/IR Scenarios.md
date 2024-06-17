@@ -1,7 +1,5 @@
-
 ---
-aliases: 
-    IR Tabletops, IR Tabletop Scenarios
+aliases: IR Tabletops, IR Tabletop Scenarios
 ---
 
 # Curated Tabletop Scenarios
