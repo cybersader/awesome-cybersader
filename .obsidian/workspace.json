@@ -102,9 +102,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "850faf6b6ceb62c5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -261,7 +271,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3cfa6ad677498ee6",
+  "active": "850faf6b6ceb62c5",
   "lastOpenFiles": [
     "📁 02 - CyberNews/📁 02 - CyberNews.md",
     "📁 01 - Projects/Home Network Wars/Home Network Wars.md",
