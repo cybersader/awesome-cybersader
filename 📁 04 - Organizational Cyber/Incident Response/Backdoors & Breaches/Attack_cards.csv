@@ -1,0 +1,71 @@
+Title,Description,Detection,Tools/Tech,Links,Deck,Revision Date,Category,Sub-Category
+Cloud Service Password Spray,,"Cloud Event Log Analysis, Cyber Deception, SIEM Log Analysis, User and Entity Behavior Analytics","SprayingToolkit, FireProx, Hydra, MailSniper, BruteLoops, MSOLSpray",,Cloud Security,5/12/2023,Attack,1 - Initial Compromise
+Cloud Service Provider Vulnerability,,,,,Cloud Security,5/17/2023,Attack,1 - Initial Compromise
+Credentials Posted Publicly in a Code Repository,,,,,Cloud Security,5/18/2023,Attack,1 - Initial Compromise
+Malicious OAuth Application,,,,,Cloud Security,5/14/2023,Attack,1 - Initial Compromise
+Misconfigured MFA,,,,,Cloud Security,5/16/2023,Attack,1 - Initial Compromise
+Out-of-Band Phish,,,,,Cloud Security,5/13/2023,Attack,1 - Initial Compromise
+Public Storage Bucket Exposed,,,,,Cloud Security,5/15/2023,Attack,1 - Initial Compromise
+Bring Your Own (Exploited) Device,,"Firewall Log Review, Network Threat Hunting - Zeek/RITA Analysis",The completely asinine belief that somehow allowing people to bring their own devices in is a worthy cost savings.,,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Credential Stuffing,,"Server Analysis, User and Entity Behavior Analytics",,,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Exploitable External Service,,"Firewall Log Review, Server Analysis","Metasploit, Failed Patching Process, Unauthorized System Stood Up by Employee",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+External Cloud Access,,SIEM Log Analysis,"SprayingToolkit, truffleHog, FireProx",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Password Spray,,"SIEM Log Analysis, Cyber Deception, User and Entity Behavior Analytics, Firewall Log Review","SprayingToolkit, MailSniper, FireProx, Hydra, BruteLoops, MSOLSpray",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Phish,,"SIEM Log Analysis, Server Analysis, Endpoint Security Protection Analysis","modalishka, evilginx, GoPhish",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Social Engineering,,"Endpoint Security Protection Analysis, Network Threat Hunting - Zeek/RITA Analysis, User Awareness Training","Phone, A goal and a dream of evil, People trusting people",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Trusted Relationship,A trusted third partywho has access to your network is compromised.  The attackers use this to pivot to your internal resources.,"SIEM Log Analysis, User and Entity Behavior Analytics",An unfortunate and unfounded trust in humanity and business partners who are complete strangers.,,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Web Server Compromise,The attackers take over an external web server. They use it to pivot to your internal network.,"Server Analysis, SIEM Log Analysis, Network Threat Hunting - Zeek/RITA Analysis","Zed Attack Proxy, Burp Proxy, sqlmap",,CoreV2.2,4/14/2023,Attack,1 - Initial Compromise
+Insider Threat,,"User and Entity Behavior Analytics, Cyber Deception, DLP (Ha! Ha! Kidding. DLP never works.), Working with HR","Being considered a Full-Time Expenditure (FTE), Long Hours, Addiction",,Expansion 1.2,4/24/2023,Attack,1 - Initial Compromise
+Missing HTTP Strict Transport Security (HSTS) Protection,,"Firewall Log Review, Network Threat Hunting - Zeek/RITA Analysis",,,Expansion 1.2,4/24/2023,Attack,1 - Initial Compromise
+Physical Access,,"Physical Security Review, User Awareness Training","Clipboard, Crowbar, RFID Badge Cloner, Lockpicks, Stolen Keys, Counterfeit Work ID, Brick, Ladder",,Expansion 1.2,4/24/2023,Attack,1 - Initial Compromise
+Supply Chain Attack,,"Endpoint Security Protection Analysis, Endpoint Analysis, Network Threat Hunting - Zeek/RITA Analysis","SUNBURST, SUPERNOVA",,Expansion 1.2,4/24/2023,Attack,1 - Initial Compromise
+Compromised Virtual Host,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+Corrupted Employee,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+Forest Trusts,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+Malicious Extension,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+SQL Injection,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+SSO Provider Compromise,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+Weaponized Hardware Security Key,,,,,Trimarc,4/14/2023,Attack,1 - Initial Compromise
+Broadcast/Multicast Protocol Poisoning,,"Cyber Deception, User and Entity Behavior Analytics, Firewall Log Review","mitm6 attacks DHCPv6, Responder attacks (LLMNR, NBT-NS, WPAD, and mDNS)",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Credential Stuffing,,"SIEM Log Analysis, User and Entity Behavior Analytics, Cyber Deception","Powersploit (Invoke-ShareFinder; Invoke-FileFinder; Find-InterestingFile), ADExplorer.exe, MailSniper, Snaffler, CrackMapExec",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Internal Password Spray,,"User and Entity Behavior Analytics, Cyber Deception, SIEM Log Anaysis","DomainPasswordSpray, BruteLoops, Kerbrute, Metasploit",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Kerberoasting/ASREPRoasting,,"SIEM Log Analysis, User and Entity Behavior Analytics, Cyber Deception","GhostPack (Rubeus), Impacket (GetNPUsers.py; GetUserSPNs.py), Hashcat for Cracking",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Local PrivEsc,,"Endpoint Analysis, Cyber Deception, Endpoint Security Protection Analysis","Meterpreter Post-Exploitation Scripts, DLLHijackTest, PowerSploit (PowerUp), GhostPack (SharpUp)",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+New Service Creation/Modification,,"Endpoint Analysis, Endpoint Security Protection Analysis","Sysinternals PSEXEC services.msc, Impacket (psexec.py), Metasploit (psexec; getsystem)",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Weaponizing AD,,"SIEM Log Analysis, User and Entity Behavior Analytics, Endpoint Security Protection Analysis, Cyber Deception","BloodHound, DeathStar, CrackMapExec",,CoreV2.2,4/14/2023,Attack,2 - Pivot and Escalate
+Access Token Manipulation,,"Endpoint Security Protection Analysis, Endpoint Analysis, Cyber Deception","PowerSploit, Empire, PoshC2",,Expansion 1.2,4/24/2023,Attack,2 - Pivot and Escalate
+Cleartext Passwords in Files,,"User and Entity Behavior Analytics, Cyber Deception, Endpoint Analysis","Snaffler, PowerShellEmpire",,Expansion 1.2,4/24/2023,Attack,2 - Pivot and Escalate
+Internal Spearphishing,,"Server Analysis, SIEM Log Analysis, User Awareness Training","Internal Existing Email Services, Gamaredon Group",,Expansion 1.2,4/24/2023,Attack,2 - Pivot and Escalate
+SMB Weakness,,"User and Entity Behavior Analytics, SIEM Log Analysis, Firewall Log Review","NTLMRelayX, CrackMapExec, Responder, Inveigh",,Expansion 1.2,4/24/2023,Attack,2 - Pivot and Escalate
+Stale Network Address Configurations (SNAC) Attack,,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review",Eavesarp,,Expansion 1.2,4/24/2023,Attack,2 - Pivot and Escalate
+Golden Ticket Attack,,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+Misconfigured Certificate Templates (ESC1),,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+Overprivileged Group Policy/High Profile GPO,,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+Passwords in AD Attribute,,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+Server Management Compromise,,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+vCenter Console Coercion,,,,,,4/14/2023,Attack,2 - Pivot and Escalate
+DNS as C2,,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review",dnscat2,,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+Domain Fronting as C2,,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review",CobaltStrike,,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+"Gmail, Tumblr, Salesforce, Twitter as C2",,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review","Gcat, SneakyCreeper",,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+HTTP as Exfil,,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review","Metasploit Reverse HTTP Payloads, C2 Matrix",,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+HTTPS as Exfil,,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review","Metasploit Reverse HTTPS Payloads, SILENTTRINITY",,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+Windows Background Intelligent Transfer Service (BITS),,"Network Threat Hunting - Zeek/RITA Analysis, Firewall Log Review","Leviathan, UboatRAT",,CoreV2.2,4/14/2023,Attack,3 - C2 & Exfil
+Exfiltration Over Physical Medium,,"Physical Security Review, Endpoint Security Protection Analysis, Endpoint Analysis, User Awareness Training",USB drive/socks and a dream…a dream of evil,,Expansion 1.2,4/24/2023,Attack,3 - C2 & Exfil
+GIFs as C2,,,,,,4/14/2023,Attack,3 - C2 & Exfil
+Living Off Trusted Sites (LOTS),,,,,,4/14/2023,Attack,3 - C2 & Exfil
+Accessibility Features,,"Endpoint Security Protection Analysis, Memory Analysis, Endpoint Analysis","Bash Bunny - For examples, USB Rubber Ducky - For examples",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Application Shimming,,"Endpoint Security Protection Analysis, Endpoint Analysis",Windows Assessment and Deployment Kit (ADK),,CoreV2.2,4/14/2023,Attack,4 - Persistence
+DLL Attacks,,"Endpoint Security Protection Analysis, Memory Analysis, Endpoint Analysis","DLLHijackTest, PowerSploit (PowerUp)",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Evil Firmware,,"Endpoint Security Protection Analysis, Endpoint Analysis, Prayers to an Engaged and Merciful God","Hacking Team UEFI Rootkit, BadBIOS (…maybe.), Trickbot",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Logon Scripts,,"Endpoint Security Protection Analysis, Endpoint Analysis",Meterpreter Persistence,,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Malicious Browser Plugins,,"Endpoint Security Protection Analysis, Endpoint Analysis, Firewall Log Review, Network Threat Hunting - Zeek/RITA Analysis","Grammarly is a Keylogger, graniet/chromebackdoor",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Malicious Driver,,"Endpoint Security Protection Analysis, Memory Analysis, Endpoint Analysis","Pasam, Wingbird, SeaDuke, ROCKBOOT, Alureon",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Malicious Service,,"Endpoint Security Protection Analysis, Memory Analysis, Endpoint Analysis","Meterpreter Persistence Modules, msconfig.exe, Sysinternals: (autoruns.exe)",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+New User Added,,"Endpoint Security Protection Analysis, Endpoint Analysis","Metasploit, Cobalt Strike",,CoreV2.2,4/14/2023,Attack,4 - Persistence
+Event Triggered Malware,,"Endpoint Security Protection Analysis, Endpoint Analysis, SIEM Log Analysis","Tsunami, WMI Malware",,Expansion 1.2,4/24/2023,Attack,4 - Persistence
+Malicious Email Rules,,"Endpoint Security Protection Analysis, Endpoint Analysis, SIEM Log Analysis",Gamaredon Group,,Expansion 1.2,4/24/2023,Attack,4 - Persistence
+Malware Injection Into Client Software,,"User and Entity Behavior Analytics, Endpoint Security Protection Analysis, Endpoint Analysis","Stuxnet, Bonadan",,Expansion 1.2,4/24/2023,Attack,4 - Persistence
+Registry Keys for Persistence,,"Endpoint Security Protection Analysis, Endpoint Analysis",reg command,,Expansion 1.2,4/24/2023,Attack,4 - Persistence
+Windows Service Recovery Actions,,"Endpoint Security Protection Analysis, Endpoint Analysis",Windows Service Recovery Actions,,Expansion 1.2,4/24/2023,Attack,4 - Persistence
+AdminSDHolder Rights Modification,,,,,,4/14/2023,Attack,4 - Persistence
+Cloud Application Impersonation,,,,,,4/14/2023,Attack,4 - Persistence

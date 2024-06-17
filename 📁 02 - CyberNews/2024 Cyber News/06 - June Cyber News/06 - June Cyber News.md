@@ -25,7 +25,9 @@
             - 1) 2 weeks of operations gone - daily revenue times time, and..
             - 2) Millions in damages (10s likely in bigger companies)
         - We don't want to be the next case study
-        
+    - New Linux malware is controlled through emojis sent from Discord
+        - Anything can be a C2 if it can send data in and out of the environment
+        - 
 
 - [🔴June 14's Top Cyber News NOW! - Ep 644](https://www.youtube.com/watch?v=gOevvYvwuPs)
     - Talk with Wade Wells

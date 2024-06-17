@@ -6,6 +6,10 @@ aliases:
   - Assessment Tools
   - Internal Questionnaire Tools
   - Survey Tools
+  - Survey Software
+  - Internal Audit Software
+  - Staff Feedback Tools
+  - Internal Control Questionnaire (ICQ) Software
 tags: 
 publish: true
 date created: Wednesday, May 22nd 2024, 8:07 pm
@@ -22,7 +26,8 @@ date modified: Wednesday, May 22nd 2024, 8:13 pm
 - Microsoft, O365
 	- Microsoft Forms into Excel
 
-
+# Audit and Internal Control
+- 
 
 # Misc
 - [Nocode tool for on-premises use : r/nocode](https://www.reddit.com/r/nocode/comments/vjnjay/nocode_tool_for_onpremises_use/)
