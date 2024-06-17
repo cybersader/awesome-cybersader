@@ -1,7 +1,5 @@
 [[Endpoint Hardening]]
 
-
-
 # Links
 - https://public.cyber.mil
 - https://public.cyber.mil/external-resources/
@@ -57,4 +55,31 @@
 - [DHS Cyber Hygiene Scans](https://www.cisa.gov/cyber-hygiene-services)
 - https://www.cisa.gov/resources-tools/resources/free-cybersecurity-services-and-tools
 - 
-    
+
+# Cyber Information Retrieval, Ontology Traversal, Communication, Knowledge
+○ I know lots of these.  In fact, I've specifically made curations of things like "Unbiased Informational Retrieval or Ontology Traversal for Cyber."  In other words, what are great resources for knowledge that isn't biased, in an echo chamber, and actually valuable for learning.  This is why I love the idea of creating a wiki and sharing knowledge with others.  It defeats the crappy issues of saturated marketing blogs and things of that nature.  
+○ I'll get a big list put into our wiki for guiding on this - been meaning to build something out for that years ago
+
+○ A shoot at the hip answer for this:
+§ If you want to learn about something, Google used to be the place for that classical problem philosophers call "information retrieval," but that has some caveats and nuance.  That system has since been exploited and saturated with junk or it's just hard to find what you're actually looking for and rather the people who are paying money find you.
+§ For me, here are some great places to start:
+    □ YouTube videos
+        ® (they take a long time, but can be good)
+    □ ChatGPT or other AI that have already scowerd the internet
+        ® (these are good because they can give you the paths and terminology to go down to be more specific and retrieve/Google search for the answers you need)
+    □ Personally posted knowledge on the web
+        ® Blog posts - Medium.com, LinkedIn blogs, DEV community, hackernoon, Ghost blogs, Wordpress website blogs (certain google dorks for these)
+        ® Literally use google dorks to only look at blog websites you want to see and avoid vendors
+    □ For solutions and curations:
+        ® Look for an awesome list on GitHub - most awesome lists are made by the users and technical people and not by the vendors (sales don't know sh** about contributing to a GitHub awesome list, so it works like a security gate for marketing garbo)
+    □ Forums
+        ® Reddit, Quora
+    □ Q&A websites
+        ® https://security.stackexchange.com/
+        ® Stack exchange and other Q&A websites can be useful
+    □ Ask somebody, talk to people
+§ The issue and why it's hard to find stuff
+    □ In order to retrieve information about things, someone needs to put it on the internet and only an infinitesimal--small amount of that knowledge is distilled and shared online.  The issue is one of communication large scale and the design of information retrieval systems like Google.  This is why AI like ChatGPT can help for that learning and exploration.
+
+# Curated Cyber Resources
+- https://www.simplycyber.io/free-cyber-resources
