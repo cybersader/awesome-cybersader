@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Scheduled Backups",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups/Scheduled Backups.md"
+    },
+    {
       "basename": "Workforce Education",
       "path": "📁 04 - Organizational Cyber/Workforce Education/Workforce Education.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Magecart Attacks",
       "path": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md"
-    },
-    {
-      "basename": "Financial Sector & Cyber",
-      "path": "📁 05 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md"
     }
   ],
   "omittedPaths": [],

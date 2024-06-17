@@ -19,6 +19,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 	- **[[TrueNAS Drive Data Recovery]]**
 - **[[Plex Media Server]]**
 - **[[Portainer in TrueNAS]]**
+- **[[Scheduled Backups]]**
 - **[[TrueNAS Cloud Backups]]**
 	- **[[Cheapest Archive Storage]]**
 - **[[TrueNAS Immich Setup]]**
