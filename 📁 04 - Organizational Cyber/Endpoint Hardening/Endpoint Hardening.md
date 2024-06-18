@@ -1,5 +1,11 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Thursday, June 13th 2024, 8:33 pm
+date modified: Monday, June 17th 2024, 9:37 pm
+---
 # Mapping Technical Configuration to NIST Controls
-
 ## Government Technical Standards Overview - The Technical Mapping Problem
 - Links:
     - https://medium.com/@cyber.stack/nist-vs-iso-vs-cis-vs-stig-a-comprehensive-guide-7de5c788be07
@@ -26,9 +32,8 @@
 - https://csrc.nist.gov/Projects/risk-management/about-rmf/implement-step/security-configuration-settings
 
 ## Mapping STIG to NIST
-
 - STIG Flow Down Chart
-    - ![How STIGs are Developed](STIGS_FLOWDOWN.png)
+    - ![How STIGs are Developed](_attachments/Endpoint%20Hardening/IMG-20240617213729171.png)
 
 https://public.cyber.mil/stigs/compilations/
 https://public.cyber.mil/stigs/cci/

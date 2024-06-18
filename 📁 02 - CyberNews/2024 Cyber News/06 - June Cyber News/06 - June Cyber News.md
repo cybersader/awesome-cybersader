@@ -1,3 +1,10 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Thursday, June 13th 2024, 8:33 pm
+date modified: Monday, June 17th 2024, 9:37 pm
+---
 - [🔴June 17's Top Cyber News NOW! - Ep 645](https://youtube.com/watch?v=S32ANB6GfTY)
     - MS Outlook Security Changing
         - Links
@@ -74,7 +81,7 @@
     - Browser security and sensitive data: browser data is encrypted on the machine by default, and that data is queryable or obtained via the "data protection" (DP) API which can access the data in the SQLite database or the browser.  The issue is that the key for the DP API can be obtained by non-privileged users, so it sort of defeats the purpose.
     - T1555.003 - Creds from Web Browser
     - Mitigations: don't save creds in browsers, limit the browsers users can use if possible, and have detections made from the attack ID to detect the infostealers.
-    -   
+    - 
 - [Enforcement Alert: Drinking Water Systems to Address Cybersecurity Vulnerabilities](https://www.epa.gov/enforcement/enforcement-alert-drinking-water-systems-address-cybersecurity-vulnerabilities)
     - EPA has recognized that cyber attacks are a legit threat to water infrastructure
     - Attacks on utilities

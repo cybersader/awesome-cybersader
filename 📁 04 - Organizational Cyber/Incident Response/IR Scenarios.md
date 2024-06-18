@@ -1,5 +1,9 @@
 ---
+tags: 
+publish: true
 aliases: IR Tabletops, IR Tabletop Scenarios
+date created: Monday, June 17th 2024, 9:32 pm
+date modified: Monday, June 17th 2024, 9:37 pm
 ---
 
 # Curated Tabletop Scenarios
