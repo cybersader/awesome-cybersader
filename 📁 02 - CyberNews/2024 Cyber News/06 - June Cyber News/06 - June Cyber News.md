@@ -5,6 +5,41 @@ publish: true
 date created: Thursday, June 13th 2024, 8:33 pm
 date modified: Monday, June 17th 2024, 9:37 pm
 ---
+- [BHIS - Talkin' Bout [infosec] News 2024-06-17](https://www.youtube.com/watch?v=QUdWSrMg-qs)
+    - MS RCE via Wifi that affects all versions of Windows
+        - Patch was released, but there's no POC
+        - Requires connection to the network via Wifi and using a specially crafted packet
+        - Packet crafting exploits haven't been as common or popular nowadays
+        - Scapy and Hping3 are the popular tools - Scapy was popular with people like Judy Nobak - FW bypass with packet back then
+        - No auth as user, no access to filesystem or settings
+        - Requires EvilTwin or Karma attacks to be on the same wireless network first
+        - 8.8 CVE - really high for needing local network access
+    - Flippers and RF stuff
+        - We can do fox hounts with DF (directional find) tools
+        - We can use multiple collection points to pinpoint on a larger scale
+        - It costs a good bit of money and time to set this up
+    - BHIS is releasing a full wireless training lab for 802.11 with Mininet
+        - You emulate wireless protocols with a VM like Kali
+        - It's called "WiFi Forge"
+        - We could set up a HackRF with a flipper
+    - Recall "recall"
+        - They delayed Recall due to LOTS of pushback
+        - "They are putting security above everything" - yeah right
+        - What was Recall designed for?  Is this for early onset dementia, pentesters, or average users?
+        - It's not an issue if you're doing it on a device without sensitive data
+    - Privacy Anonymization is not easy
+        - You can't just add a layer of abstraction between AI and the company to deanonymize data
+        - Entity resolution is a thing and you can still likely get back to an identity without needing recognizable PII like emails and names
+    - Emojis used for Discord facilitated C2
+        - "BLOCK EMOJIS"
+    - 165 orgs affected by Snowflake breach
+        - Customer service account was compromised by stealer malware
+        - Can be defended by using Threat Intel like Flare or Spycloud along with a better approach to credential management
+        - It's taxing having to keep track of all these data sources for threats
+    - STOPPING POINT
+        - https://www.youtube.com/live/QUdWSrMg-qs?si=FvCOgdlLcawxoYxQ&t=2249
+    - 
+
 - [🔴June 17's Top Cyber News NOW! - Ep 645](https://youtube.com/watch?v=S32ANB6GfTY)
     - MS Outlook Security Changing
         - Links
