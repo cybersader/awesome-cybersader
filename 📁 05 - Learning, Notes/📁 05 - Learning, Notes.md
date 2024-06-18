@@ -11,8 +11,10 @@ publish: true
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
 	- [[Adversarial Emulation Extravaganza w Kent & Jordan]]
+	- [[DNS Deep Diving - Serena DiPenti]]
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
+	- [[Phishtory and the Phuture of Phishing with Joseph]]
 - **[[Cyber Classes]]**
 	- **[[Linux Forensics]]**
 		- **[[Exercises]]**

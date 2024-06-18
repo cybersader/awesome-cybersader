@@ -11,7 +11,9 @@ tags:
 
 %% Begin Landmark %%
 - [[Adversarial Emulation Extravaganza w Kent & Jordan]]
+- [[DNS Deep Diving - Serena DiPenti]]
 - **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
+- [[Phishtory and the Phuture of Phishing with Joseph]]
 
 %% End Landmark %%

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "New Tools",
+      "path": "⬇ INBOX, DROPZONE/New Tools.md"
+    },
+    {
+      "basename": "📁 04 - Organizational Cyber",
+      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
       "basename": "Scheduled Backups",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups/Scheduled Backups.md"
     },
@@ -19,10 +31,6 @@
     {
       "basename": "06 - June Cyber News",
       "path": "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md"
-    },
-    {
-      "basename": "📁 04 - Organizational Cyber",
-      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
     },
     {
       "basename": "📁 02 - CyberNews",
@@ -79,10 +87,6 @@
     {
       "basename": "Nuclear Disaster Recovery",
       "path": "📁 08 - Personal/Nuclear Disaster Recovery/Nuclear Disaster Recovery.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Data Entry Tools",
@@ -195,10 +199,6 @@
     {
       "basename": "Awesome Threat Intelligence",
       "path": "📁 03 - Curations, Stacks/Awesome Threat Intelligence/Awesome Threat Intelligence.md"
-    },
-    {
-      "basename": "Magecart Attacks",
-      "path": "📁 05 - Learning, Notes/Financial Sector & Cyber/Magecart Attacks/Magecart Attacks.md"
     }
   ],
   "omittedPaths": [],
