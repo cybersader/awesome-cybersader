@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Friday, April 26th 2024, 10:24 pm
+date modified: Wednesday, June 19th 2024, 3:33 pm
 ---
 
 - [ ] Update anime list 🔽 ➕ 2024-04-26
@@ -12,15 +12,15 @@ date modified: Friday, April 26th 2024, 10:24 pm
 > [!tldr] All the anime I would recommend
 
 1. Dr. Stone
-2. Astra Lost in Space
-3. Code Geass
-4. My Hero Academia
-5. Demon Slayer
-6. Steins;Gate
-7. Fullmetal Alchemist: Brotherhood
-8. One Punch Man
-9. Attack on Titan
-10. Erased
+2. Code Geass
+3. My Hero Academia
+4. Demon Slayer
+5. Steins;Gate
+6. Fullmetal Alchemist: Brotherhood
+7. One Punch Man
+8. Attack on Titan
+9. Erased
+10. Astra Lost in Space
 11. Haikyuu!!
 12. Toradora!
 13. Amagi Brilliant Park

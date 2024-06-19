@@ -7,5 +7,7 @@
   "attachmentFolderPath": "./",
   "autoPairMarkdown": false,
   "autoPairBrackets": false,
-  "promptDelete": false
+  "promptDelete": false,
+  "showRibbon": true,
+  "showUnsupportedFiles": true
 }

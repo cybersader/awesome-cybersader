@@ -14,6 +14,8 @@ tags:
 - [[DNS Deep Diving - Serena DiPenti]]
 - **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
+- **[[IR Summit 2024]]**
+
 - [[Phishtory and the Phuture of Phishing with Joseph]]
 
 %% End Landmark %%

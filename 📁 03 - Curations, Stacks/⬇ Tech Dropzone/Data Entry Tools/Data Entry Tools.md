@@ -13,7 +13,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, May 22nd 2024, 8:07 pm
-date modified: Wednesday, May 22nd 2024, 8:13 pm
+date modified: Wednesday, June 19th 2024, 11:39 am
 ---
 
 # Curated Solution Stacks
@@ -47,14 +47,14 @@ date modified: Wednesday, May 22nd 2024, 8:13 pm
 - [calipseo/formio - Docker Image | Docker Hub](https://hub.docker.com/r/calipseo/formio)
 
 ## Unified Data Entry Suite
--   **Google Forms**: Easy-to-create forms that can collect data and automatically populate Google Sheets.
--   **Typeform**: User-friendly forms and surveys that can integrate with various databases and applications.
--   **Microsoft Forms**: Part of Office 365, allows for data collection and integration with Excel and other Microsoft tools.
--   **JotForm**: Versatile form builder with extensive integration options.
--   **Airtable**: Combines the simplicity of a spreadsheet with the power of a database, allowing for easy data entry and management.
--   **Zapier**: Automation tool that can connect forms and other data entry tools with numerous databases and applications.
--   **Formstack**: Flexible form builder with powerful data management capabilities.
--   **Smartsheet**: Work management tool that supports data entry, project tracking, and integration with various databases.
--   **KoboToolbox**: Open-source tool for data collection, ideal for field data entry.
--   **SurveyMonkey**: Popular survey tool that can collect data and integrate with various platforms.
+- **Google Forms**: Easy-to-create forms that can collect data and automatically populate Google Sheets.
+- **Typeform**: User-friendly forms and surveys that can integrate with various databases and applications.
+- **Microsoft Forms**: Part of Office 365, allows for data collection and integration with Excel and other Microsoft tools.
+- **JotForm**: Versatile form builder with extensive integration options.
+- **Airtable**: Combines the simplicity of a spreadsheet with the power of a database, allowing for easy data entry and management.
+- **Zapier**: Automation tool that can connect forms and other data entry tools with numerous databases and applications.
+- **Formstack**: Flexible form builder with powerful data management capabilities.
+- **Smartsheet**: Work management tool that supports data entry, project tracking, and integration with various databases.
+- **KoboToolbox**: Open-source tool for data collection, ideal for field data entry.
+- **SurveyMonkey**: Popular survey tool that can collect data and integrate with various platforms.
 - 

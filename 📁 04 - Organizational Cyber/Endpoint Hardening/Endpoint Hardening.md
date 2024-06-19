@@ -19,14 +19,11 @@ date modified: Monday, June 17th 2024, 9:37 pm
         - https://www.openrmf.io/
         - https://github.com/Cingulara/openrmf-docs/releases
     - Checklist Repository - https://ncp.nist.gov/repository
-    - 
 
 ## RMF (Risk Management Framework)
 - https://csrc.nist.gov/Projects/risk-management/about-rmf
 - https://rmfdb.com/search
 - https://csrc.nist.gov/CSRC/media/Projects/risk-management/documents/04-Implement%20Step/NIST%20RMF%20Implement%20Step-FAQs.pdf
-- 
-
 ## What is SCAP (Security Content Automation Protocol)
 - https://csrc.nist.gov/projects/security-content-automation-protocol/
 - https://csrc.nist.gov/Projects/risk-management/about-rmf/implement-step/security-configuration-settings

@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, March 19th 2024, 6:20 pm
-date modified: Thursday, April 25th 2024, 1:40 pm
+date modified: Wednesday, June 19th 2024, 12:19 pm
 created: Tuesday, Mar 19, 2024 06:20 PM
 updated: Thursday, Mar 21, 2024 08:23 PM
 ---
@@ -53,8 +53,15 @@ updated: Thursday, Mar 21, 2024 08:23 PM
 		- [NetworkChuck - YouTube](https://www.youtube.com/@NetworkChuck)
 	- Weekly:
 		- [BHIS - Talkin' Bout Infosec News - YouTube](https://www.youtube.com/@BlackHillsInformationSecurity/streams)
+
+# Summits
+- Attended:
+	- 2024 - [IR Summit 2024](📁%2005%20-%20Learning,%20Notes/BHIS,%20Antisyphon/IR%20Summit%202024/IR%20Summit%202024.md) 
+- Planned:
+- Debating:
 # Security Conferences
 - Attended:
+	- 2024
 	- 2023 - [CircleCityCon](https://circlecitycon.org/)
 	- 2022 - CircleCityCon
 - Planned:

@@ -1,0 +1,22 @@
+{
+  "markdown_overcharge": false,
+  "extensions": "t",
+  "is_onload": false,
+  "is_onload_unsafe": false,
+  "forced_extensions": "",
+  "is_ignore": false,
+  "ignore_extensions": "",
+  "ignore_masks": "",
+  "is_grouped": false,
+  "grouped_extensions": "",
+  "mobile_settings": {
+    "enable": false,
+    "extensions": "txt",
+    "stable": true
+  },
+  "stable": true,
+  "errors": {
+    "": "Error from UNITADE plugin: Error: Attempting to register an existing view type \"\""
+  },
+  "debug_mode": false
+}

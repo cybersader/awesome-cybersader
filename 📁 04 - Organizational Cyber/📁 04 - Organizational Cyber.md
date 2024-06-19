@@ -11,10 +11,8 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Cyber Team Building]]**
 - **[[Cybersecurity Culture Building]]**
 - **[[Endpoint Hardening]]**
-- **Incident Response**
-	- **Backdoors & Breaches**
-
-	- [[IR Scenarios]]
+- **[[Game-Based Tabletops]]**
+- **[[Incident Response]]**
 - **[[Social Engineering]]**
 - **[[Workforce Education]]**
 

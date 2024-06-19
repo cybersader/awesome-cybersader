@@ -9,6 +9,7 @@ publish: true
 ---
 
 %% Begin Waypoint %%
+- [[⬇️ New Tools]]
 - **[[Arc Browser on Windows]]**
 - **[[Awesome Password Security]]**
 	- [[Self-Hosted Bitwarden]]
@@ -17,7 +18,6 @@ publish: true
 - [[Company Security Strategy from Zero]]
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
-- [[New Tools]]
 - [[Windows 11 UI Stuff]]
 - **[[Windows BCDR]]**
 

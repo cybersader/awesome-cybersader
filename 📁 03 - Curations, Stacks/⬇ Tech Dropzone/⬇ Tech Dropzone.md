@@ -9,7 +9,7 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 # Software, Web
 - Todo Apps
 	- Requirements: multi-platform, synced, shareable
-- [Analyst Builder](https://www.analystbuilder.com/) 
+- [Analyst Builder](https://www.analystbuilder.com/)
 - .
 # Hardware, Gadgets
 - Portable Video, Smart Glasses, Video Glasses
