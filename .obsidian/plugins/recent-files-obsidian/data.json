@@ -5,6 +5,14 @@
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
     },
     {
+      "basename": "Awesome Bags",
+      "path": "📁 03 - Curations, Stacks/Awesome Bags/Awesome Bags.md"
+    },
+    {
+      "basename": "Kubernetes Home Server",
+      "path": "📁 01 - Projects/Kubernetes Home Server/Kubernetes Home Server.md"
+    },
+    {
       "basename": "06 - June Cyber News",
       "path": "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Mint Mobile",
       "path": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
-    },
-    {
-      "basename": "Pints with Aquinas - JP",
-      "path": "📁 12 - Religion, Ontology, Philsophy/⬇️ Ontological Drop/Pints with Aquinas - JP.md"
-    },
-    {
-      "basename": "Content Analytics & Recon",
-      "path": "📁 11 - Content Creation/Content Analytics & Recon.md"
     }
   ],
   "omittedPaths": [],

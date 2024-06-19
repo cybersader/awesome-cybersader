@@ -7,9 +7,11 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 	- **[[Custom Merch]]**
 	- **[[Daily Driver Stuff]]**
 	- **[[Data Entry Tools]]**
+	- **[[Deepfakes]]**
 	- **[[Home Surveillance]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
+- **[[Awesome Bags]]**
 - [[Awesome Cyber Resource Curations]]
 - **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**

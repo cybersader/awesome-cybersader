@@ -10,6 +10,7 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 
 - **[[Home Network Wars]]**
 - **[[Interview with a Data Analyst]]**
+- **[[Kubernetes Home Server]]**
 - **[[Mothers Day Website]]**
 
 - **[[Phone Pick in 2024]]**
