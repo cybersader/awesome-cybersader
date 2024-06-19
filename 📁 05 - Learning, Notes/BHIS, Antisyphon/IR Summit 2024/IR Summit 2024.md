@@ -7,11 +7,13 @@ tags:
   - Conference
 publish: true
 date created: Wednesday, June 19th 2024, 10:56 am
-date modified: Wednesday, June 19th 2024, 3:06 pm
+date modified: Wednesday, June 19th 2024, 4:50 pm
 ---
 
 2024-06-19
 
+# Main Takeaways
+- 
 # Dumpster Fires: 3 Things About IR I Learned By Being a Firefighter
 - 02:59
 - Catherine Ullman
@@ -25,9 +27,9 @@ date modified: Wednesday, June 19th 2024, 3:06 pm
 	- Stop attacker
 	- Minimize damage
 - Firefighting cycle is about the same
-	- ![](_attachments/IR%20Summit%202024/IMG-20240619150657598.png)
+	- ![](_attachments/IR%20Summit%202024/IMG-20240619165016782.png)
 - ICS (incident command system) - approach to command and control in firefighting
-	- ![](Pasted%20image%2020240619151037.png)
+	- ![](_attachments/IR%20Summit%202024/IMG-20240619165016849.png)
 
 - Breakdown
 	- IC - incident goals and operational objectives
@@ -169,7 +171,7 @@ date modified: Wednesday, June 19th 2024, 3:06 pm
 	- Excif and EM client can do stuff with mailboxes?
 
 ## BEC Defense
-- ![](_attachments/IR%20Summit%202024/IMG-20240619150657676.png)
+- ![](_attachments/IR%20Summit%202024/IMG-20240619165016930.png)
 - Blumira Cloud SIEM is completely free?
 ## Takeaways
 - MFA does not stop hackers completely when social engineering is involved.  EvilNginx websites that grab tokens, but redirect to legit websites
@@ -230,7 +232,7 @@ date modified: Wednesday, June 19th 2024, 3:06 pm
 	- Offsite backups - Cloud etc.
 - Detection of scanning and scripts
 	- detect things like OpenVAS, Nessus, Netscan, Sharefinder, etc.
-- ![](_attachments/IR%20Summit%202024/IMG-20240619150657749.png)
+- ![](_attachments/IR%20Summit%202024/IMG-20240619165016999.png)
 - 
 # Demystifying AWS IR: A Practical Perspective
 - 01:30
@@ -429,7 +431,7 @@ date modified: Wednesday, June 19th 2024, 3:06 pm
 	- Jupyter Notebook was related
 	- He decided the threat applied to his organization
 	- https://chaosdb.wiz.io/
-		- ![](_attachments/IR%20Summit%202024/IMG-20240619150657878.gif)
+		- ![](_attachments/IR%20Summit%202024/IMG-20240619165017070.gif)
 	- Attacker can use Jupyter to get into CosmosDb and grab the primary keys.  
 	- Vuln Overview
 		- Impact?
