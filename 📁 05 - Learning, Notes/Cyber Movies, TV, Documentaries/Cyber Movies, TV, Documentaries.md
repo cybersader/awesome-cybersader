@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Wednesday, June 19th 2024, 5:29 pm
+date modified: Wednesday, June 19th 2024, 5:31 pm
 publish: true
 ---
 
@@ -67,7 +67,7 @@ Subfolders:
 - Dirty Money
 - The Great Hack
 - The Lazarus Heist
-- [[Zero Days|Zero Days]]
+- [[Zero Days]]
 - [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
 - Stolen Youth: Inside the Cult at Sarah Lawrence
 - Darknet Diaries:
