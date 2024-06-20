@@ -1,3 +1,4 @@
+- 2024-06-19 at 21h34 · [[05 Notes - Classes, Presentations, Pods]]
 - 2024-06-19 at 20h13 · [[Cybersecurity Culture Building]]
 - 2024-06-19 at 20h06 · [[7. Risks of Insecure Exposition]]
 - 2024-06-19 at 20h06 · [[📁 98 - ARCHIVE]]
@@ -52,7 +53,6 @@
 - 2024-06-19 at 19h53 · [[Monetization & Funding]]
 - 2024-06-19 at 19h45 · [[Awesome Anime]]
 - 2024-06-19 at 17h28 · [[WarGames]]
-- 2024-06-19 at 17h27 · [[WarGames]]
 - 2024-06-19 at 17h19 · [[IR Summit 2024]]
 - 2024-06-19 at 16h49 · [[Desktop (mostly Windows)]]
 - 2024-06-19 at 15h00 · [[Cyber Books]]
