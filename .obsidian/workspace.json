@@ -90,21 +90,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "62818c2a49a68ae9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -178,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md"
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
               }
             }
           },
@@ -262,8 +250,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "62818c2a49a68ae9",
+  "active": "78f94ca15005b1ef",
   "lastOpenFiles": [
+    "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
@@ -278,7 +267,6 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/HackBack/HackBack.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/HackBack",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
