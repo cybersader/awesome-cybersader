@@ -1,4 +1,4 @@
-- 2024-06-20 at 14h21 · [[Knowledge Organization]]
+- 2024-06-20 at 15h11 · [[Knowledge Organization]]
 - 2024-06-20 at 14h18 · [[📁 17 - Knowledge Engineering]]
 - 2024-06-20 at 14h16 · [[⬇️ KnowEng Drop]]
 - 2024-06-20 at 14h03 · [[📁 12 - Religion, Ontology, Philosophy]]

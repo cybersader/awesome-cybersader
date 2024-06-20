@@ -5,6 +5,7 @@ publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
 date modified: Thursday, June 20th 2024, 2:21 pm
 ---
+
 # Links
 2024-06-20
 - [latch system wiki obsidian - Google Search](https://www.google.com/search?q=latch+system+wiki+obsidian&sca_upv=1)
