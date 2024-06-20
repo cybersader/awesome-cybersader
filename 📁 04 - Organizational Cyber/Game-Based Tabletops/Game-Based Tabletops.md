@@ -1,6 +1,9 @@
 ---
 aliases: 
-tags: 
+tags:
+  - ttrpg
+  - ttx
+  - tabletops
 publish: true
 date created: Wednesday, June 19th 2024, 1:50 pm
 date modified: Wednesday, June 19th 2024, 1:54 pm

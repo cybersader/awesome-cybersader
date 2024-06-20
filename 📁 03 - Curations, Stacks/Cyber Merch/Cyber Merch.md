@@ -9,7 +9,8 @@ date modified: Wednesday, May 22nd 2024, 8:58 pm
 [Custom Merch](../⬇%20Tech%20Dropzone/Custom%20Merch/Custom%20Merch.md) 
 # Sub Pages
 %% Begin Waypoint %%
-- **[Cyber Posters](./Cyber%20Posters/Cyber%20Posters.md)**
+- **[[Cyber Posters]]**
+- [[Cyber Stickers]]
 
 %% End Waypoint %%
 # General Clothing Stores

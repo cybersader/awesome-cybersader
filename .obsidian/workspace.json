@@ -78,8 +78,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "78f94ca15005b1ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62818c2a49a68ae9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -108,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "backdoors",
+                "query": "posters",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -137,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -153,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md"
+                "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md"
               }
             }
           },
@@ -237,49 +262,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "76003b6d8cbd2f0e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "02086e199fc39181",
-        "type": "window",
-        "children": [
-          {
-            "id": "62a75a408c2cc51a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f740762f69e485cf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -960,
-        "y": -1155,
-        "width": 1152,
-        "height": 1327,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "28af64838c88035c",
+  "active": "62818c2a49a68ae9",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+    "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
+    "📁 11 - Content Creation/Content Analytics/Content Analytics.md",
+    "📁 11 - Content Creation/Content Analytics",
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Stickers.md",
+    "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering/Awesome SecOps Data Engineering.md",
+    "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/HackBack/HackBack.md",
@@ -289,7 +284,6 @@
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
     "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md",
     "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 04 - Organizational Cyber/Incident Response/IR Tabletop Scenarios.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches Data/Attack_cards.csv",
@@ -298,7 +292,6 @@
     "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md",
     "📁 03 - Curations, Stacks/Awesome Bags/Awesome Bags.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools/Markdown Tools.md",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
@@ -311,16 +304,11 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024",
     "📁 03 - Curations, Stacks/Awesome Bags",
     "📁 01 - Projects/Kubernetes Home Server/Kubernetes Home Server.md",
-    "📁 01 - Projects/Kubernetes Home Server",
     "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts",
     "📁 04 - Organizational Cyber/Workforce Education/Workforce Education.md",
-    "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
-    "⬇ INBOX, DROPZONE/New Tools.md",
     "📁 04 - Organizational Cyber/Endpoint Hardening/_attachments/Endpoint Hardening/IMG-20240617213729171.png",
     "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845748.png",
     "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845684.png",
-    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845615.png",
-    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845561.png"
+    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845615.png"
   ]
 }
