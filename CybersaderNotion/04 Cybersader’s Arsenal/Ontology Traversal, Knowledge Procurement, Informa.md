@@ -8,7 +8,7 @@
 
 Knowledge Procurement (learning and information retrieval) is a difficult topic that is at the core of how we learn, communicate, gather knowledge.  It includes things like epistemology, curation steps, representing knowledge in various formats in engineered workflows.
 
-Put simply though, just ways get knowledge:
+Put simply though, just ways to get knowledge:
 
 - Specific Knowledge Curation & Ontology Representation Websites or Areas of Knowledge and Problem Domain Curation
     - Problem Domain (ontology) exploration
@@ -38,7 +38,6 @@ Put simply though, just ways get knowledge:
 - Social Networks
 
 # Books
-
 - FInd some books on the subject of gathering knowledge and learning
 
 # Semantic Knowledge & Ontology Traversal
