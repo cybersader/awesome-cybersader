@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,8 +115,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +206,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md"
+                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
               }
             }
           },
@@ -251,7 +250,7 @@
             }
           },
           {
-            "id": "459321c5d288d52c",
+            "id": "69344f0dc130b673",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -263,8 +262,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -320,11 +318,13 @@
       }
     ]
   },
-  "active": "f4d7db1d352742d7",
+  "active": "28af64838c88035c",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620170809140.png",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132074.png",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132019.png",
@@ -356,7 +356,6 @@
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Ontology Traversal, Knowledge Procurement, Informa.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 11 - Content Creation/Content Analytics/Content Analytics.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Stickers.md",
@@ -365,7 +364,6 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657878.gif"
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png"
   ]
 }

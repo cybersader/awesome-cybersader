@@ -35,3 +35,5 @@ date modified: Thursday, June 20th 2024, 4:21 pm
 		- It will take awhile to download and verify the files
 	- It should work in Obsidian once it's running
 	- Make sure you matched the model you're running and the settings in Obsidian
+		- ![400](_attachments/File%20Organizer%202000/IMG-20240620170809140.png)
+		- 
