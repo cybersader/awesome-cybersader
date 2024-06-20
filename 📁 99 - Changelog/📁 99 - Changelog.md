@@ -1,4 +1,4 @@
-- 2024-06-20 at 17h25 · [[📄 Resume - Training, Certifications, Conferences, Education]]
+- 2024-06-20 at 17h32 · [[📄 Resume - Training, Certifications, Conferences, Education]]
 - 2024-06-20 at 17h11 · [[File Organizer 2000]]
 - 2024-06-20 at 17h11 · [[📁 09 - My Obsidian Stack]]
 - 2024-06-20 at 17h11 · [[Auto - Tagging, Linking, Dropzones & Organizers]]
