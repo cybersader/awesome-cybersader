@@ -1,5 +1,5 @@
+- 2024-06-19 at 22h29 · [[Cybersecurity Culture Building]]
 - 2024-06-19 at 21h34 · [[05 Notes - Classes, Presentations, Pods]]
-- 2024-06-19 at 20h13 · [[Cybersecurity Culture Building]]
 - 2024-06-19 at 20h06 · [[7. Risks of Insecure Exposition]]
 - 2024-06-19 at 20h06 · [[📁 98 - ARCHIVE]]
 - 2024-06-19 at 20h06 · [[GradSchoolProjects]]
