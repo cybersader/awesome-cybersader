@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Wednesday, June 19th 2024, 3:33 pm
+date modified: Wednesday, June 19th 2024, 7:45 pm
 ---
 
 - [ ] Update anime list 🔽 ➕ 2024-04-26
@@ -40,3 +40,7 @@ date modified: Wednesday, June 19th 2024, 3:33 pm
 27. Fairy Tail
 28. Restaurant to Another World
 29. Assassination Classroom
+30. Psycho-Pass
+31. Guilty Crown
+32. Haibane Renmei
+33. Id:Invaded
