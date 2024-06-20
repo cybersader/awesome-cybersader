@@ -12,6 +12,7 @@ date modified: Wednesday, June 19th 2024, 12:01 pm
 # Misc
 - https://bitwarden.com/password-strength/#Password-Strength-Testing-Tool
 - https://www.sans.org/media/score/504-incident-response-cycle.pdf
+- https://mattturck.com/landscape/mad2024.pdf
 - 
 
 # Getting custom posters

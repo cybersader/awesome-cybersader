@@ -16,6 +16,9 @@ date created: Wednesday, May 22nd 2024, 8:07 pm
 date modified: Wednesday, June 19th 2024, 11:39 am
 ---
 
+# Search Queries
+- no code database ICQ data entry assessment sruvery feedback questionnaire
+
 # Curated Solution Stacks
 - On-Prem (naive option)
 	- Network Share + Excel + Forms option in Excel (optional) 
@@ -26,8 +29,104 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 - Microsoft, O365
 	- Microsoft Forms into Excel
 
-# Audit and Internal Control
-- 
+# Misc Solutions by Target
+
+## Business Data Management
+- Cloud, Expensive
+  - SAP
+- Open-Source SAP Alternatives
+  - https://www.odoo.com/
+  - https://erpnext.com/
+  - https://civicrm.org/
+  - https://suitecrm.com/
+  - 
+
+## Managed Governance Platforms, GRC
+
+- Dilligent
+- MetricStream
+- Camms
+- LogicGate
+- ServiceNow
+- SAI360
+- NAVEX
+- Archer
+- Workiva
+- Riskonnect
+- Resolver
+
+### Data Governance Tools
+
+https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effective-10-data-governance-tools
+
+- Privacy, 3rd party, and risk mgmt
+  - https://www.onetrust.com/ - data governance and privacy
+  - https://transcend.io/
+  - https://securiti.ai/
+  - https://bigid.com/
+  - https://www.cookiebot.com/
+
+- Data Catalog, Data Discovery, Metadata
+  - https://www.amundsen.io/
+  - https://datahub.io/
+  - https://datahubproject.io/
+  - https://atlas.apache.org/#/
+  - https://magda.io/
+  - https://open-metadata.org/
+  - https://github.com/odpi/egeria
+  - https://www.truedat.io/
+  - https://data.world/
+  - https://atlan.com/?ref=/
+
+## Open-Source No Code Databases with Form Functionality, Open-Source Internal Tools Platforms
+- NocoDB
+  - https://github.com/nocodb/nocodb
+  - https://nocodb.com/
+- https://www.tooljet.com/
+- https://baserow.io/
+- https://www.rowy.io/
+- https://budibase.com/
+- https://www.appsmith.com/
+- https://lowdefy.com/ - ehhh
+- Expensive, Cloud
+  - https://www.knack.com/
+  - https://www.airtable.com/
+  - https://stackerhq.com/
+  - https://retool.com/
+  - https://www.microsoft.com/en-us/power-platform/products/power-apps#solutions
+  - 
+
+## Employee Survey Tools
+- Cloud
+  - https://workleap.com/get/employee-pulse-survey-tool/
+  - https://eletive.com/lp/employeeengagementsurveys/
+  - https://surveysparrow.com/lp/best-employee-feedback-software-demo/
+  - https://www.thrivesparrow.com/lp/employees-engagement
+  - https://lattice.com/lp/employee-survey
+  - 
+
+## Audit and Internal Control, ICQs (Intnernal Control Questionnaire)
+- Cloud, Expensive
+  - SAP Internal Audit
+  - https://www.ideagen.com/solutions/audit-and-risk/internal-audit
+  - https://www.wolterskluwer.com/en/solutions/teammate
+  - https://www.metricstream.com/products/internal-audit-management.htm
+  - https://www.auditboard.com/product/operational-audit/
+  - https://www.workiva.com/solutions/internal-audit-management
+  - https://www.diligent.com/
+  - https://onspring.com/solutions/governance-risk-compliance/internal-audit-assurance/
+  - https://www.netwrix.com/auditor.html
+  - 
+- Open-Source
+  - 
+
+## Forms & Surveys
+- Cloud
+  - https://www.typeform.com/
+  - https://www.fillout.com/
+  - https://www.surveymonkey.com/
+  - https://tally.so/
+
 
 # Misc
 - [Nocode tool for on-premises use : r/nocode](https://www.reddit.com/r/nocode/comments/vjnjay/nocode_tool_for_onpremises_use/)
