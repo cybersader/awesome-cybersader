@@ -1,3 +1,4 @@
+- 2024-06-20 at 19h40 · [[Awesome Anime]]
 - 2024-06-20 at 17h32 · [[📄 Resume - Training, Certifications, Conferences, Education]]
 - 2024-06-20 at 17h11 · [[File Organizer 2000]]
 - 2024-06-20 at 17h11 · [[📁 09 - My Obsidian Stack]]
@@ -70,7 +71,6 @@
 - 2024-06-19 at 20h06 · [[⬇️ Journal Drop]]
 - 2024-06-19 at 20h06 · [[Honey Accounts in Windows AD]]
 - 2024-06-19 at 19h53 · [[Monetization & Funding]]
-- 2024-06-19 at 19h45 · [[Awesome Anime]]
 - 2024-06-19 at 17h28 · [[WarGames]]
 - 2024-06-19 at 17h19 · [[IR Summit 2024]]
 - 2024-06-19 at 16h49 · [[Desktop (mostly Windows)]]

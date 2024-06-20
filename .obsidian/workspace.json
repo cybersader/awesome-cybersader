@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "d9bd192f9a10963b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e4a40875c0eaff41",
             "type": "leaf",
             "state": {
@@ -115,7 +127,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📄 Resume - Training, Certifications, Conferences, Education.md"
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
               }
             }
           },
@@ -318,10 +331,11 @@
       }
     ]
   },
-  "active": "8d5c949a02fb1ef0",
+  "active": "d9bd192f9a10963b",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
+    "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",

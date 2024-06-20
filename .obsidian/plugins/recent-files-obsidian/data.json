@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
       "basename": "📄 Resume - Training, Certifications, Conferences, Education",
       "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
+    },
+    {
+      "basename": "Awesome AI",
+      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     },
     {
       "basename": "File Organizer 2000",
@@ -87,10 +95,6 @@
     {
       "basename": "Monetization & Funding",
       "path": "📁 07 - Business/Monetization & Funding/Monetization & Funding.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
     {
       "basename": "WarGames",
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS mDNS",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md"
-    },
-    {
-      "basename": "Cannot Connect to Truenas SMB",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Cannot Connect to Truenas SMB/Cannot Connect to Truenas SMB.md"
     }
   ],
   "omittedPaths": [],
