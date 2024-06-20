@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+                "file": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md"
               }
             }
           },
@@ -263,7 +263,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -311,15 +312,15 @@
         ],
         "direction": "vertical",
         "x": -960,
-        "y": -16,
-        "width": 960,
-        "height": 1107,
+        "y": -17,
+        "width": 1152,
+        "height": 1326,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "459321c5d288d52c",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
