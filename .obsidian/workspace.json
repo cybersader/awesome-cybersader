@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -189,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+                "file": "📄 Resume - Training, Certifications, Conferences, Education.md"
               }
             }
           },
@@ -250,7 +251,7 @@
             }
           },
           {
-            "id": "69344f0dc130b673",
+            "id": "f1c529614f985d2c",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -262,7 +263,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 229.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -286,15 +287,15 @@
     "type": "floating",
     "children": [
       {
-        "id": "586e7885391eef2c",
+        "id": "9475daf9e3cc5ca9",
         "type": "window",
         "children": [
           {
-            "id": "7b1c7895a760e7fc",
+            "id": "d94df4c595e95c0a",
             "type": "tabs",
             "children": [
               {
-                "id": "ba0af2a23a11a1d6",
+                "id": "c13cd90e1f1eddf2",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -310,9 +311,9 @@
         ],
         "direction": "vertical",
         "x": -960,
-        "y": -17,
-        "width": 1152,
-        "height": 1326,
+        "y": -16,
+        "width": 960,
+        "height": 1107,
         "maximize": false,
         "zoom": 0
       }
@@ -320,19 +321,19 @@
   },
   "active": "28af64838c88035c",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620170809140.png",
-    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132074.png",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132019.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131972.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131907.png",
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",
+    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106978.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106868.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106822.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131840.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106760.png",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md",

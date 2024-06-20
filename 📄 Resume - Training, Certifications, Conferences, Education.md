@@ -1,5 +1,7 @@
 ---
-aliases: 
+aliases:
+  - 
+  - Resume - Professional Development & Education
 tags: 
 publish: true
 date created: Tuesday, March 19th 2024, 6:20 pm
