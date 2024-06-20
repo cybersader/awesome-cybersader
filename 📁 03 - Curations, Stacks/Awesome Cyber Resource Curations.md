@@ -1,4 +1,4 @@
-[[Endpoint Hardening]]
+[Endpoint Hardening](Endpoint%20Hardening.md)
 
 # Links
 - https://public.cyber.mil

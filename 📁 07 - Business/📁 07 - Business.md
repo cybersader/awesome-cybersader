@@ -5,8 +5,8 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- **[[Monetization & Funding]]**
-- **[[Tech Startup]]**
-	- **[[Founder Lifestyle]]**
+- **[Monetization & Funding](Monetization%20&%20Funding.md)**
+- **[Tech Startup](Tech%20Startup.md)**
+	- **[Founder Lifestyle](Founder%20Lifestyle.md)**
 
 %% End Waypoint %%

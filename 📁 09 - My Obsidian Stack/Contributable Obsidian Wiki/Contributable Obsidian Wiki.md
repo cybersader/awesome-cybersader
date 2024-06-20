@@ -7,18 +7,18 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 ---
 
 %% Begin Waypoint %%
-- **[[🐛 Known Base Bugs, Issues]]**
-- **[[Astro with Content Layer]]**
-- **[[Auto Publish For Obsidian Publish]]**
-- **[[Collaboration in Obsidian]]**
-- **[[Customizing Obsidian Publish]]**
-- **[[Folder Notes & Publish]]**
-- **[[GitHub Repo Size Limits]]**
-- **[[Handling Obsidian Git Conflicts]]**
-- **[[Media Hosting in Obsidian]]**
-- [[Obsidian Plugins and Ideas for Contributions]]
-- **[[Obsidian Publish Analytics]]**
-- **[[Obsidian Publish SEO]]**
+- **[🐛 Known Base Bugs, Issues](🐛%20Known%20Base%20Bugs,%20Issues.md)**
+- **[Astro with Content Layer](Astro%20with%20Content%20Layer.md)**
+- **[Auto Publish For Obsidian Publish](Auto%20Publish%20For%20Obsidian%20Publish.md)**
+- **[Collaboration in Obsidian](Collaboration%20in%20Obsidian.md)**
+- **[Customizing Obsidian Publish](Customizing%20Obsidian%20Publish.md)**
+- **[Folder Notes & Publish](Folder%20Notes%20&%20Publish.md)**
+- **[GitHub Repo Size Limits](GitHub%20Repo%20Size%20Limits.md)**
+- **[Handling Obsidian Git Conflicts](Handling%20Obsidian%20Git%20Conflicts.md)**
+- **[Media Hosting in Obsidian](Media%20Hosting%20in%20Obsidian.md)**
+- [Obsidian Plugins and Ideas for Contributions](Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+- **[Obsidian Publish Analytics](Obsidian%20Publish%20Analytics.md)**
+- **[Obsidian Publish SEO](Obsidian%20Publish%20SEO.md)**
 
 %% End Waypoint %%
 # My Vision

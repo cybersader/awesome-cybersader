@@ -102,8 +102,8 @@ date modified: Sunday, May 26th 2024, 5:32 pm
 	- "8-hour time-restricted eating linked to a 91% higher risk of cardiovascular death" - [not true](https://www.youtube.com/watch?v=GspirekMLqg&t=40s)
 		- Essentially the study concluded that people eating most of their calories in the evening correlated with cardio death.  Could have been people eating unhealthily or really anything. The author even stated this.
 ## Stimulants
-[[ADHD and Stimulants|ADHD and Stimulants]]
-[[Stimulants and Insurance|Stimulants and Insurance]]
+[ADHD and Stimulants](ADHD%20and%20Stimulants.md)
+[Stimulants and Insurance](Stimulants%20and%20Insurance.md)
 
 - Why ADHD meds?
 	- Hard to focus in environment

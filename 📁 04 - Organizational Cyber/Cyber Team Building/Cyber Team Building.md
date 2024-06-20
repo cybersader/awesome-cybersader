@@ -9,7 +9,7 @@ date modified: Monday, May 27th 2024, 10:03 am
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 
 %% Begin Waypoint %%
-- **[[BHIS - Sourcing Cyber]]**
+- **[BHIS - Sourcing Cyber](BHIS%20-%20Sourcing%20Cyber.md)**
 
 
 %% End Waypoint %%

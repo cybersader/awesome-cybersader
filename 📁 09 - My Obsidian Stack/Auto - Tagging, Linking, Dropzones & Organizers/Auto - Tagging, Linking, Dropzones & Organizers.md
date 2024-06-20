@@ -7,7 +7,7 @@ date modified: Saturday, April 27th 2024, 1:50 pm
 ---
 
 %% Begin Landmark %%
-- **[[File Organizer 2000]]**
+- **[File Organizer 2000](File%20Organizer%202000.md)**
 
 %% End Landmark %%
 

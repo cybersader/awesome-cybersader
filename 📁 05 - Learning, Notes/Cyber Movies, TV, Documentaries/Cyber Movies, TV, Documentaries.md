@@ -12,13 +12,13 @@ publish: true
 
 Subfolders:
 %% Begin Waypoint %%
-- **[[Inside Job - 2008 Financial Crisis]]**
-- **[[Money Explained]]**
-- **[[The Beekeeper]]**
-- **[[The Blacklist]]**
-- **[[The Case Against Boeing]]**
-- **[[WarGames]]**
-- **[[Zero Days]]**
+- **[Inside Job - 2008 Financial Crisis](Inside%20Job%20-%202008%20Financial%20Crisis.md)**
+- **[Money Explained](Money%20Explained.md)**
+- **[The Beekeeper](The%20Beekeeper.md)**
+- **[The Blacklist](The%20Blacklist.md)**
+- **[The Case Against Boeing](The%20Case%20Against%20Boeing.md)**
+- **[WarGames](WarGames.md)**
+- **[Zero Days](Zero%20Days.md)**
 
 %% End Waypoint %%
 # Curated Cyber Movie Lists
@@ -45,7 +45,7 @@ Subfolders:
 - We Are Legion: The Story of the Hacktivists
 # Scams, Phishing
 ## Entertainment > Education
-- [[The Beekeeper|The Beekeeper]] - super over the top with the violence and phishing - so much so that it's satirical
+- [The Beekeeper](The%20Beekeeper.md) - super over the top with the violence and phishing - so much so that it's satirical
 # Movies with "Hacking"
 - Jurassic Park
 - The Net
@@ -67,7 +67,7 @@ Subfolders:
 - Dirty Money
 - The Great Hack
 - The Lazarus Heist
-- [[Zero Days]]
+- [Zero Days](Zero%20Days.md)
 - [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
 - Stolen Youth: Inside the Cult at Sarah Lawrence
 - Darknet Diaries:

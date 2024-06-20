@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Cybersecurity Culture Building",
+      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+    },
+    {
       "basename": "Cyber Movies, TV, Documentaries",
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+    },
+    {
+      "basename": "File Organizer 2000",
+      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
     },
     {
       "basename": "Monetization & Funding",
@@ -31,10 +39,6 @@
     {
       "basename": "Desktop (mostly Windows)",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md"
-    },
-    {
-      "basename": "Cybersecurity Culture Building",
-      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
     },
     {
       "basename": "Incident Response",
@@ -195,10 +199,6 @@
     {
       "basename": "ADHD and Stimulants",
       "path": "📁 08 - Personal/Wellness, Fitness/ADHD and Stimulants/ADHD and Stimulants.md"
-    },
-    {
-      "basename": "Wellness, Fitness",
-      "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
     }
   ],
   "omittedPaths": [],

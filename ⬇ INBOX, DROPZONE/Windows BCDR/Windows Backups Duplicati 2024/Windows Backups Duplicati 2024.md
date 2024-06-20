@@ -15,8 +15,8 @@ publish: true
 ---
 
 %% Begin Landmark %%
-- **[[Duplicati Source Data]]**
-- **[[Temporary Files Filling Up Drive]]**
+- **[Duplicati Source Data](Duplicati%20Source%20Data.md)**
+- **[Temporary Files Filling Up Drive](Temporary%20Files%20Filling%20Up%20Drive.md)**
 
 %% End Landmark %%
 # Windows Backups

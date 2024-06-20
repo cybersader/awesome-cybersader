@@ -10,11 +10,11 @@ date modified: Saturday, May 25th 2024, 1:11 pm
 ---
 
 %% Begin Waypoint %%
-- **[[iOS vs Android]]**
-- **[[Mint Mobile]]**
-- [[Phone Shopping 2024]]
-- **[[Phone Strategy - Provider, Plans, Warranties]]**
-- **[[Providers, Phones, Plans]]**
+- **[iOS vs Android](iOS%20vs%20Android.md)**
+- **[Mint Mobile](Mint%20Mobile.md)**
+- [Phone Shopping 2024](Phone%20Shopping%202024.md)
+- **[Phone Strategy - Provider, Plans, Warranties](Phone%20Strategy%20-%20Provider,%20Plans,%20Warranties.md)**
+- **[Providers, Phones, Plans](Providers,%20Phones,%20Plans.md)**
 
 %% End Waypoint %%
 

@@ -7,7 +7,7 @@ date modified: Wednesday, June 19th 2024, 1:29 pm
 ---
 
 %% Begin Waypoint %%
-- **[[Markdown Tools]]**
+- **[Markdown Tools](Markdown%20Tools.md)**
 
 %% End Waypoint %%
 # Opinionated Options

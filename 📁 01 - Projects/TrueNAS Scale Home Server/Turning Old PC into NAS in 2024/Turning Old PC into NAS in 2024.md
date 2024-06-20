@@ -17,11 +17,11 @@ tags:
   - RemoteAccess
 ---
 %% Begin Waypoint %%
-- **[[ATA Security]]**
-- **[[Filesystems and Partition Schemes]]**
-- **[[mDNS and Cloudflare Tunnels]]**
-- **[[RAID vs AHCI]]**
-- **[[Software RAID vs Hardware RAID - TrueNAS Scale]]**
+- **[ATA Security](ATA%20Security.md)**
+- **[Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes.md)**
+- **[mDNS and Cloudflare Tunnels](mDNS%20and%20Cloudflare%20Tunnels.md)**
+- **[RAID vs AHCI](RAID%20vs%20AHCI.md)**
+- **[Software RAID vs Hardware RAID - TrueNAS Scale](Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale.md)**
 
 %% End Waypoint %%
 # Misc Links & Videos

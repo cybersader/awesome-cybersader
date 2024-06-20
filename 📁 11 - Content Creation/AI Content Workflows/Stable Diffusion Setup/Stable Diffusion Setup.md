@@ -5,7 +5,7 @@ publish: true
 ---
 
 %% Begin Landmark %%
-- **[[ComfyUI Setup]]**
-- **[[SD Web UI Setup]]**
+- **[ComfyUI Setup](ComfyUI%20Setup.md)**
+- **[SD Web UI Setup](SD%20Web%20UI%20Setup.md)**
 
 %% End Landmark %%

@@ -5,10 +5,10 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- **[[Inpainting]]**
-	- **[[A111 Inpaint]]**
-- **[[Stable Diffusion Setup]]**
-	- **[[ComfyUI Setup]]**
-	- **[[SD Web UI Setup]]**
+- **[Inpainting](Inpainting.md)**
+	- **[A111 Inpaint](A111%20Inpaint.md)**
+- **[Stable Diffusion Setup](Stable%20Diffusion%20Setup.md)**
+	- **[ComfyUI Setup](ComfyUI%20Setup.md)**
+	- **[SD Web UI Setup](SD%20Web%20UI%20Setup.md)**
 
 %% End Waypoint %%

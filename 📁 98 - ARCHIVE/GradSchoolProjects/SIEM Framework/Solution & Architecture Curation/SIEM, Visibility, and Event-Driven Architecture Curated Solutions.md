@@ -15,7 +15,7 @@ publish: true
 # Curated Solutions
 ## Research & Consulting
 - SIEM Matrices
-	- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231108213438736.png)
+	- ![](IMG-20231108213438736.png)
 ## Curated Lists
 - [[SOAR)" awesome list.](SOAR)"%20awesome%20list.](https://github.com/correlatedsecurity/Awesome-SOAR) 
 - https://github.com/meirwah/awesome-incident-response#playbooks 
@@ -348,16 +348,16 @@ publish: true
 - 
 # More Gartner Magic Quadrants
 - Analytics & Business Intelligence
-	- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231210124551307.png)
+	- ![](IMG-20231210124551307.png)
 - iPaas (Integration Platform)
-	- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231210125833301.png)
+	- ![](IMG-20231210125833301.png)
 - Data Science & ML Platforms
 	- 2023
 		- .
 	- 2021
-		- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231210124945871.png)
+		- ![](IMG-20231210124945871.png)
 	 - 2020
-		- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231210124729057.png)
+		- ![](IMG-20231210124729057.png)
 - Personalization Engines?
-	- ![](../../__attachments/SIEM%20Framework/Solution%20&%20Architecture%20Curation/IMG-20231210124656674.png)
+	- ![](IMG-20231210124656674.png)
 - 

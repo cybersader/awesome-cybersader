@@ -7,10 +7,10 @@ date modified: Wednesday, June 19th 2024, 1:54 pm
 ---
 
 %% Begin Waypoint %%
-- **[[Backdoors & Breaches]]**
+- **[Backdoors & Breaches](Backdoors%20&%20Breaches.md)**
 	- **Backdoors & Breaches Data**
 
-- **[[HackBack]]**
+- **[HackBack](HackBack.md)**
 
 %% End Waypoint %%
 
