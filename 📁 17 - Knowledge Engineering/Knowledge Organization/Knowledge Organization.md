@@ -1,11 +1,19 @@
 ---
-aliases: 
-tags: 
+aliases:
+  - Obsidian Vault Structure
+tags:
+  - knowledge_management
+  - wiki_organization
+  - taxonomies
+  - taxonomy
+  - wiki_structure
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Thursday, June 20th 2024, 2:21 pm
+date modified: Thursday, June 20th 2024, 3:48 pm
 ---
-
+> [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
+# Wiki Organization Methodologies, Taxonomies, Structures
+- 
 # Links
 2024-06-20
 - [latch system wiki obsidian - Google Search](https://www.google.com/search?q=latch+system+wiki+obsidian&sca_upv=1)

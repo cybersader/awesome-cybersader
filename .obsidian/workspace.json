@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87d40f8fdef15d64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0ed3ddf1c5a4346",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ontology",
+                "query": "fileorgani",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -225,18 +249,24 @@
               "type": "transcript-view",
               "state": {}
             }
+          },
+          {
+            "id": "459321c5d288d52c",
+            "type": "leaf",
+            "state": {
+              "type": "fo2k.assistant.sidebar2",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 498.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "cmdr:Open settings": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -247,14 +277,75 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "size-history:Vault size history": false,
       "obsidian-importer:Open Importer": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "cmdr:Open settings": false,
+      "fileorganizer2000:Fo2k Assistant View": false
     }
   },
-  "active": "a7e07cc9e93c4f8a",
+  "floating": {
+    "id": "76003b6d8cbd2f0e",
+    "type": "floating",
+    "children": [
+      {
+        "id": "586e7885391eef2c",
+        "type": "window",
+        "children": [
+          {
+            "id": "7b1c7895a760e7fc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ba0af2a23a11a1d6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -960,
+        "y": -16,
+        "width": 960,
+        "height": 1107,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "459321c5d288d52c",
   "lastOpenFiles": [
-    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
-    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
+    "📄 Resume - Training, Certifications, Conferences, Education.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132074.png",
+    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162132019.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131972.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131907.png",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620162131840.png",
+    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
+    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
+    "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md",
+    "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md",
+    "CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md",
+    "📁 05 - Learning, Notes/📁 05 - Learning, Notes.md",
+    "📁 05 - Learning, Notes/Cyber Reports & Stats/Cyber Reports & Stats.md",
+    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md",
+    "📁 05 - Learning, Notes/Cyber Reports & Stats",
+    "📁 03 - Curations, Stacks/Awesome Markdown/Awesome Markdown.md",
+    "📁 03 - Curations, Stacks/Awesome Splunk",
+    "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md",
+    "📁 03 - Curations, Stacks/Awesome Markdown",
+    "📁 06 - Cybersader Arsenal",
     "📁 17 - Knowledge Engineering/Knowledge Organization",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
@@ -267,36 +358,13 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 11 - Content Creation/Content Analytics/Content Analytics.md",
-    "📁 11 - Content Creation/Content Analytics",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Stickers.md",
     "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering/Awesome SecOps Data Engineering.md",
-    "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/HackBack/HackBack.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/HackBack",
-    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
-    "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md",
-    "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
-    "📁 04 - Organizational Cyber/Incident Response/IR Tabletop Scenarios.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches Data/Attack_cards.csv",
-    "📁 01 - Projects/Home Network Wars/Home Network Wars.md",
-    "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md",
-    "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md",
-    "📁 03 - Curations, Stacks/Awesome Bags/Awesome Bags.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools/Markdown Tools.md",
-    "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657878.gif",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619120832.png",
-    "📁 04 - Organizational Cyber/Endpoint Hardening/_attachments/Endpoint Hardening/IMG-20240617213729171.png",
-    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845748.png",
-    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845684.png",
-    "📁 01 - Projects/Home Network Wars/_attachments/Home Network Wars/IMG-20240529210845615.png"
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657878.gif"
   ]
 }

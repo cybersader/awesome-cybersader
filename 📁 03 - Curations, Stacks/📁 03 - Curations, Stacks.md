@@ -13,7 +13,9 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome Anime]]**
 - **[[Awesome Bags]]**
 - [[Awesome Cyber Resource Curations]]
+- **[[Awesome Markdown]]**
 - **[[Awesome SecOps Data Engineering]]**
+- **[[Awesome Splunk]]**
 - **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**
 - **[[Books]]**

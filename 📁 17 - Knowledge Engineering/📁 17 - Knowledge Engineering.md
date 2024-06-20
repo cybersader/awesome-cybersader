@@ -6,7 +6,7 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, June 20th 2024, 2:09 pm
-date modified: Thursday, June 20th 2024, 2:18 pm
+date modified: Thursday, June 20th 2024, 3:51 pm
 ---
 
 %% Begin Waypoint %%
@@ -14,6 +14,9 @@ date modified: Thursday, June 20th 2024, 2:18 pm
 - **[[Knowledge Organization]]**
 
 %% End Waypoint %%
+
+Linked:
+- [📁 09 - My Obsidian Stack](../📁%2009%20-%20My%20Obsidian%20Stack/📁%2009%20-%20My%20Obsidian%20Stack.md) 
 
 > [!tldr] The term that encompasses the science of knowledge, information retrieval, and ontology traversal is **"Knowledge Engineering"**. This interdisciplinary field involves the development of systems that can understand, model, and manage knowledge, facilitating information retrieval and effective navigation through complex ontologies. Knowledge engineering combines principles from computer science, artificial intelligence, information science, and cognitive science to create frameworks and tools for capturing, organizing, and utilizing knowledge in various domains for the purpose of knowledge work.
 
