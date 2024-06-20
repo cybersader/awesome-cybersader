@@ -169,8 +169,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -251,7 +250,7 @@
             }
           },
           {
-            "id": "f1c529614f985d2c",
+            "id": "8d5c949a02fb1ef0",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -319,7 +318,7 @@
       }
     ]
   },
-  "active": "28af64838c88035c",
+  "active": "8d5c949a02fb1ef0",
   "lastOpenFiles": [
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
