@@ -16,12 +16,6 @@
 
 [Self-Hosting for Cyber](04%20Cybersader%E2%80%99s%20Arsenal/Self-Hosting%20for%20Cyber.md)
 
-[Splunk](04%20Cybersader%E2%80%99s%20Arsenal/Splunk.md)
-
-[Markdown](04%20Cybersader%E2%80%99s%20Arsenal/Markdown.md)
-
-[Ontology Traversal, Knowledge Procurement, Information Retrieval](04%20Cybersader%E2%80%99s%20Arsenal/Ontology%20Traversal,%20Knowledge%20Procurement,%20Informa%20f0601f35e3f443938357fad196b07745.md)
-
 [Awesome Home Networking-CN](04%20Cybersader%E2%80%99s%20Arsenal/Awesome%20Home%20Networking-CN.md)
 
 [Awesome Home Networking](04%20Cybersader%E2%80%99s%20Arsenal/Awesome%20Home%20Networking.md)
