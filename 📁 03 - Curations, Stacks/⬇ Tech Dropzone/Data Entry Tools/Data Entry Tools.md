@@ -16,7 +16,33 @@ date created: Wednesday, May 22nd 2024, 8:07 pm
 date modified: Wednesday, June 19th 2024, 11:39 am
 ---
 
+# THE GOAL: Information-Gathering in an Organization
+
 >! [info] The goal is to create a system for doing customized internal questionnaires that build out a database table for initiatives like data governance or data mapping.
+
+## Opinionated/Curated Tech Stack Options 
+- On-Prem (naive option)
+	- Network Share + Excel + Forms option in Excel (optional) 
+- Cloud, Hybrid
+  - OneTrust
+    - Out of the box solution, but it's expensive
+  - Tally/Survey Monkey + Integration Tool + On-Prem Database + DBeaver
+    - Convoluted and adds a bunch of risk
+    - The integration tool would alone cost money and only be worth it if other teams use it
+    - Only works easily if you have something like Google Sheets
+- On-Prem - Custom Tools
+	- Appsmith integrated with other tools
+    - https://www.appsmith.com/pricing#plan-comparison
+    - In a realistic situation, this will only cost about $1000 a year in a small org only sending out forms for people to fill out once or twice a year
+    - Development hours are free. Deployed app usage is what counts toward cost.
+  - Formbricks + n8n + Database
+    - Completely free. Just takes a bit of time to set up.
+    - https://n8n.io/integrations/spreadsheet-file/
+    - Could write onto a local spreadsheet file
+  - https://www.tooljet.com/pricing
+  - 
+- Microsoft, O365
+	- Microsoft Forms into Excel
 
 # Search Queries
 - no code database ICQ data entry assessment survey feedback questionnaire
@@ -96,6 +122,8 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - https://stackerhq.com/
   - https://retool.com/
   - https://www.microsoft.com/en-us/power-platform/products/power-apps#solutions
+  - https://jestor.com/plans-and-pricing/
+  - https://www.quickbase.com/
   - 
 
 ## Employee Survey Tools
@@ -123,12 +151,13 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - 
 
 ## Forms & Surveys
+- On-Prem
+  - https://formbricks.com/
 - Cloud
   - https://www.typeform.com/
   - https://www.fillout.com/
   - https://www.surveymonkey.com/
   - https://tally.so/
-
 
 # Misc
 - [Nocode tool for on-premises use : r/nocode](https://www.reddit.com/r/nocode/comments/vjnjay/nocode_tool_for_onpremises_use/)
