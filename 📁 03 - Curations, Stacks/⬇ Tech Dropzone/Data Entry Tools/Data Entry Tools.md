@@ -31,7 +31,7 @@ date modified: Wednesday, June 19th 2024, 11:39 am
     - The integration tool would alone cost money and only be worth it if other teams use it
     - Only works easily if you have something like Google Sheets
 - On-Prem - Custom Tools
-	- [Appsmith](https://www.appsmith.com/pricing#plan-comparison) integrated with other tools
+  - [Appsmith](https://www.appsmith.com/pricing#plan-comparison) integrated with other tools
     - https://www.appsmith.com/pricing#plan-comparison
     - In a realistic situation, this will only cost about $1000 a year in a small org only sending out forms for people to fill out once or twice a year
     - Development hours are free. Deployed app usage is what counts toward cost.
