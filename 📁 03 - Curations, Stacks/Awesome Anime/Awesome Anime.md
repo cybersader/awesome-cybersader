@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Thursday, June 20th 2024, 7:31 pm
+date modified: Thursday, June 20th 2024, 8:50 pm
 ---
 
 - [ ] Update anime list 🔽 ➕ 2024-04-26
