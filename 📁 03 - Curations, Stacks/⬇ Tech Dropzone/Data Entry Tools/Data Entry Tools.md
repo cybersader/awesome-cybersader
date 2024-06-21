@@ -19,7 +19,7 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 >! [info] The goal is to create a system for doing customized internal questionnaires that build out a database table for initiatives like data governance or data mapping.
 
 # Search Queries
-- no code database ICQ data entry assessment sruvery feedback questionnaire
+- no code database ICQ data entry assessment survey feedback questionnaire
 
 # Curated Solution Stacks
 - On-Prem (naive option)
