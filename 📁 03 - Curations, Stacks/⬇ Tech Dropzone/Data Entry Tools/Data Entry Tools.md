@@ -23,13 +23,6 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 ## Opinionated/Curated Tech Stack Options 
 - On-Prem (naive option)
 	- Network Share + Excel + Forms option in Excel (optional) 
-- Cloud, Hybrid
-  - [OneTrust](https://www.onetrust.com/)
-    - Out of the box solution, but it's expensive
-  - Tally/Survey Monkey + Integration Tool + On-Prem Database + DBeaver
-    - Convoluted and adds a bunch of risk
-    - The integration tool would alone cost money and only be worth it if other teams use it
-    - Only works easily if you have something like Google Sheets
 - On-Prem - Custom Tools
   - [Appsmith](https://www.appsmith.com/pricing#plan-comparison) integrated with other tools
     - https://www.appsmith.com/pricing#plan-comparison
@@ -40,9 +33,15 @@ date modified: Wednesday, June 19th 2024, 11:39 am
     - https://n8n.io/integrations/spreadsheet-file/
     - Could write onto a local spreadsheet file
   - https://www.tooljet.com/pricing
-  - 
 - Microsoft, O365
 	- Microsoft Forms into Excel
+- Cloud, Hybrid
+  - [OneTrust](https://www.onetrust.com/)
+    - Out of the box solution, but it's expensive
+  - Tally/Survey Monkey + Integration Tool + On-Prem Database + DBeaver
+    - Convoluted and adds a bunch of risk
+    - The integration tool would alone cost money and only be worth it if other teams use it
+    - Only works easily if you have something like Google Sheets
 
 # Search Queries
 - no code database ICQ data entry assessment survey feedback questionnaire
