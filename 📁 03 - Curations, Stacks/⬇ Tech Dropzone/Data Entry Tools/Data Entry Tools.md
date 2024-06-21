@@ -16,7 +16,7 @@ date created: Wednesday, May 22nd 2024, 8:07 pm
 date modified: Wednesday, June 19th 2024, 11:39 am
 ---
 
-# THE GOAL: Information-Gathering in an Organization
+# THE GOAL: Customized Information-Gathering in an Organization
 
 >! [info] The goal is to create a system for doing customized internal questionnaires that build out a database table for initiatives like data governance or data mapping.
 
