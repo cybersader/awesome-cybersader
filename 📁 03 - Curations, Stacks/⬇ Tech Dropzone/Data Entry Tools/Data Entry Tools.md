@@ -24,18 +24,18 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 - On-Prem (naive option)
 	- Network Share + Excel + Forms option in Excel (optional) 
 - Cloud, Hybrid
-  - OneTrust
+  - [OneTrust](https://www.onetrust.com/)
     - Out of the box solution, but it's expensive
   - Tally/Survey Monkey + Integration Tool + On-Prem Database + DBeaver
     - Convoluted and adds a bunch of risk
     - The integration tool would alone cost money and only be worth it if other teams use it
     - Only works easily if you have something like Google Sheets
 - On-Prem - Custom Tools
-	- Appsmith integrated with other tools
+	- [Appsmith](https://www.appsmith.com/pricing#plan-comparison) integrated with other tools
     - https://www.appsmith.com/pricing#plan-comparison
     - In a realistic situation, this will only cost about $1000 a year in a small org only sending out forms for people to fill out once or twice a year
     - Development hours are free. Deployed app usage is what counts toward cost.
-  - Formbricks + n8n + Database
+  - [Formbricks](https://formbricks.com/pricing) + [n8n](https://docs.n8n.io/hosting/) + Database (Postgres container)
     - Completely free. Just takes a bit of time to set up.
     - https://n8n.io/integrations/spreadsheet-file/
     - Could write onto a local spreadsheet file
