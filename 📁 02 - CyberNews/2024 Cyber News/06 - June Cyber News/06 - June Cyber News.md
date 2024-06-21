@@ -43,7 +43,8 @@ date modified: Monday, June 17th 2024, 9:37 pm
         - It's taxing having to keep track of all these data sources for threats
     - STOPPING POINT
         - https://www.youtube.com/live/QUdWSrMg-qs?si=FvCOgdlLcawxoYxQ&t=2249
-    - 
+    - PureStorage had data breach from Snowflake supply chain
+        - 
 
 - [🔴June 17's Top Cyber News NOW! - Ep 645](https://youtube.com/watch?v=S32ANB6GfTY)
     - MS Outlook Security Changing

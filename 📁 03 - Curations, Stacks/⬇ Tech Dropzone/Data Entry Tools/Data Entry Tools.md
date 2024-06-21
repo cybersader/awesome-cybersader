@@ -16,6 +16,8 @@ date created: Wednesday, May 22nd 2024, 8:07 pm
 date modified: Wednesday, June 19th 2024, 11:39 am
 ---
 
+>! [info] The goal is to create a system for doing customized internal questionnaires that build out a database or mapping for initiatives like data governance or data mapping.
+
 # Search Queries
 - no code database ICQ data entry assessment sruvery feedback questionnaire
 
