@@ -32,7 +32,6 @@
 - 2024-06-20 at 15h39 · [[📁 06 - Cybersader Arsenal]]
 - 2024-06-20 at 14h16 · [[⬇️ KnowEng Drop]]
 - 2024-06-20 at 14h03 · [[📁 12 - Religion, Ontology, Philosophy]]
-- 2024-06-20 at 13h58 · [[Ontology Traversal, Knowledge Procurement, Informa]]
 - 2024-06-20 at 13h32 · [[Game-Based Tabletops]]
 - 2024-06-20 at 13h27 · [[📁 11 - Content Creation]]
 - 2024-06-20 at 13h27 · [[Content Analytics]]
@@ -98,3 +97,4 @@
 - 2024-06-18 at 20h37 · [[Kubernetes Home Server]]
 - 2024-06-17 at 21h34 · [[⬇️ New Tools]]
 - 2024-06-17 at 21h32 · [[Phishtory and the Phuture of Phishing with Joseph]]
+- 2024-06-16 at 22h03 · [[Scheduled Backups]]
