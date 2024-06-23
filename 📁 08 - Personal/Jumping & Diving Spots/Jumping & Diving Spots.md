@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, May 25th 2024, 2:14 pm
+date modified: Sunday, June 23rd 2024, 5:07 pm
 ---
 
 # Indiana Spots
@@ -21,6 +21,10 @@ date modified: Saturday, May 25th 2024, 2:14 pm
 		- Any flips, requires life vest (kinda smart though)
 		- Mix of wholesome fams and college partiers
 	- Berne Indiana - [Pine Lake Water Park](https://pinelakewaterpark.com/) 
+		- Boards are Maxiflex Model A (recreation boards) 
+			- bottoms out on jumps, lots of shifting
+		- 30 foot open for an hour
+		- Tons of fun
 - Cliff jumping - not a lot of options here
 	- Indiana
 		- Some place out by Turkey Run where they do kayaking
@@ -35,6 +39,11 @@ date modified: Saturday, May 25th 2024, 2:14 pm
 			- [(21) indiana cataract lake cliff jump - YouTube](https://www.youtube.com/results?search_query=indiana+cataract+lake+cliff+jump) 
 		- The Big L is a quarry located in Bedford, Indiana. It is a popular location for jumping as the cliffs are very high.
 		- The Rooftop Quarry is located in Bloomington, Indiana. The top peak in the quarry is referred to as “The Rooftop” and is around 65 feet in height. This cliff diving quarry was featured in the film Breaking Away which came out in 1979.
+
+# Ohio
+- Quarry park
+# Kentucky, Tennessee 
+- Compression Falls?
 # Out of Indiana - U.S.
 - Ohio
 	- Slip'n'fly
