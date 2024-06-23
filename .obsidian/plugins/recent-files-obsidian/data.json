@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Hard Disk Drives",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md"
+    },
+    {
+      "basename": "Cyber Merch",
+      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
+    },
+    {
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
+    },
+    {
+      "basename": "Cyber Books",
+      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
+    },
+    {
+      "basename": "📄 Resume - Training, Certifications, Conferences, Education",
+      "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
+    },
+    {
       "basename": "Obsidian Vault Security",
       "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
     },
@@ -11,10 +31,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "📄 Resume - Training, Certifications, Conferences, Education",
-      "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
     },
     {
       "basename": "Awesome AI",
@@ -117,10 +133,6 @@
       "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
     },
     {
-      "basename": "Cyber Books",
-      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
-    },
-    {
       "basename": "Windows BCDR",
       "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
     },
@@ -157,10 +169,6 @@
       "path": "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md"
     },
     {
-      "basename": "Awesome Bags",
-      "path": "📁 03 - Curations, Stacks/Awesome Bags/Awesome Bags.md"
-    },
-    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "📁 04 - Organizational Cyber",
       "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
-    },
-    {
-      "basename": "Scheduled Backups",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups/Scheduled Backups.md"
-    },
-    {
-      "basename": "📁 02 - CyberNews",
-      "path": "📁 02 - CyberNews/📁 02 - CyberNews.md"
     }
   ],
   "omittedPaths": [],
