@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "⬇️ New Tools",
+      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
+    },
+    {
       "basename": "Test note",
       "path": "📦 VAULT SANDBOX TESTING/Test note.md"
     },
@@ -157,10 +165,6 @@
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md"
     },
     {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
-    },
-    {
       "basename": "Windows BCDR",
       "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Endpoint Hardening",
       "path": "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     }
   ],
   "omittedPaths": [],

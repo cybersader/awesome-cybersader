@@ -13,7 +13,7 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - https://www.nocode.tech/tools
 - https://datahub.io/
 - https://opensourcesecurityindex.io/
-- 
+- [futo.org](https://futo.org/)
 
 # Hardware, Gadgets
 - Portable Video, Smart Glasses, Video Glasses
