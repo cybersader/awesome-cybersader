@@ -33,3 +33,5 @@
 [Darknet diaries episode 120 ](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Darknet%20diaries%20episode%20120.md)
 
 [Zero Days](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Zero%20Days.md)
+
+[Testing DR Edition](05%20Notes%20-%20Classes,%20Presentations,%20Pods%200b8b1d8d71cf497c81aaea7f34e966ec/Testing%20DR%20Edition.md)

@@ -23,5 +23,9 @@ date modified: Thursday, June 20th 2024, 1:46 pm
 - https://www.halock.com/infosec-tip-posters/
 - https://its.ucsc.edu/security/poster.html
 - 
+
+- Excel Shortcuts
+- CIA Triad
+
 # Getting custom posters
 - 

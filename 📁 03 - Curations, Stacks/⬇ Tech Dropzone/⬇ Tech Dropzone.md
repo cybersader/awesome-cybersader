@@ -12,6 +12,7 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - [Analyst Builder](https://www.analystbuilder.com/)
 - https://www.nocode.tech/tools
 - https://datahub.io/
+- https://opensourcesecurityindex.io/
 - 
 
 # Hardware, Gadgets

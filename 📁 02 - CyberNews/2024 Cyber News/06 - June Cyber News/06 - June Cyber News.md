@@ -5,6 +5,11 @@ publish: true
 date created: Thursday, June 13th 2024, 8:33 pm
 date modified: Monday, June 17th 2024, 9:37 pm
 ---
+- [🔴June 21's Top Cyber News NOW! - Ep 649](https://www.youtube.com/watch?v=UfA4edTtgBs)
+    - Big budget does not equal easy security.  You still have to deliver on that budget.
+    - Do you get more certs in the cyber market or lab it up?..It's kinda a quagmire right now. Lab it up honestly. Technical skills are huge right now, and publicly show the skills you have.
+    - Do you learn vendor neutral stuff or specific ones? You can kick butt on specific stuff sure, but the general skills are still transferable. Firewall and email gateway stuff is transferable and the principles are similar.  However, cloud can differ widely.
+    - 
 - [BHIS - Talkin' Bout [infosec] News 2024-06-17](https://www.youtube.com/watch?v=QUdWSrMg-qs)
     - MS RCE via Wifi that affects all versions of Windows
         - Patch was released, but there's no POC
@@ -38,7 +43,8 @@ date modified: Monday, June 17th 2024, 9:37 pm
         - It's taxing having to keep track of all these data sources for threats
     - STOPPING POINT
         - https://www.youtube.com/live/QUdWSrMg-qs?si=FvCOgdlLcawxoYxQ&t=2249
-    - 
+    - PureStorage had data breach from Snowflake supply chain
+        - 
 
 - [🔴June 17's Top Cyber News NOW! - Ep 645](https://youtube.com/watch?v=S32ANB6GfTY)
     - MS Outlook Security Changing
