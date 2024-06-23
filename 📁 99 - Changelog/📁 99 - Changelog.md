@@ -1,4 +1,4 @@
-- 2024-06-23 at 13h01 · [[Obsidian Vault Security]]
+- 2024-06-23 at 14h16 · [[Obsidian Vault Security]]
 - 2024-06-23 at 12h57 · [[📁 09 - My Obsidian Stack]]
 - 2024-06-20 at 20h50 · [[Awesome Anime]]
 - 2024-06-20 at 17h32 · [[📄 Resume - Training, Certifications, Conferences, Education]]
