@@ -26,7 +26,7 @@
   "anthropicApiKey": "",
   "anthropicModel": "claude-3-opus-20240229",
   "enableOpenAI": true,
-  "openAIApiKey": "sk-fake_key",
+  "openAIApiKey": "",
   "openAIModel": "gpt-4o",
   "enableOllama": false,
   "ollamaUrl": "http://localhost:11434/api",

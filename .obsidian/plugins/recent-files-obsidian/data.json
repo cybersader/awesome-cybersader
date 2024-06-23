@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Vault Security",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
+    },
+    {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "📁 02 - CyberNews",
       "path": "📁 02 - CyberNews/📁 02 - CyberNews.md"
-    },
-    {
-      "basename": "TrueNAS mDNS",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS mDNS/TrueNAS mDNS.md"
     }
   ],
   "omittedPaths": [],

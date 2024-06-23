@@ -22,6 +22,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**
 - **[[Obsidian to Ghost]]**
+- **[[Obsidian Vault Security]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
 	- **[[Syncthing Incompatible with Git]]**
