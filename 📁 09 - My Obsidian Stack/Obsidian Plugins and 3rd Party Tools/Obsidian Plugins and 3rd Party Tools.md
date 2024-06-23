@@ -3,9 +3,11 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, April 25th 2024, 12:29 pm
-date modified: Tuesday, May 14th 2024, 9:50 pm
+date modified: Sunday, June 23rd 2024, 3:32 pm
 ---
 
+# Links
+- [Folder Notes - Breadcrumbs - Obsidian Publish](https://publish.obsidian.md/breadcrumbs-docs/Explicit+Edge+Builders/Folder+Notes)
 # Plugins and Workflows
 - YouTube note taking
 	- [Obsidian and Youtube Workflow - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-and-youtube-workflow/33641) 
