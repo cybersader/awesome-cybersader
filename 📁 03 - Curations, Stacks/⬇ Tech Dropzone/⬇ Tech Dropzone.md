@@ -14,6 +14,9 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - https://datahub.io/
 - https://opensourcesecurityindex.io/
 - [futo.org](https://futo.org/)
+- https://keybase.io/
+- https://transcend.io/integrations
+- 
 
 # Hardware, Gadgets
 - Portable Video, Smart Glasses, Video Glasses

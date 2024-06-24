@@ -10,7 +10,11 @@ aliases:
   - Internal Audit Software
   - Staff Feedback Tools
   - Internal Control Questionnaire (ICQ) Software
-tags: 
+  - Data Mapping
+  - Data Governance Tools
+tags:
+  - data_governance
+  - data_mapping
 publish: true
 date created: Wednesday, May 22nd 2024, 8:07 pm
 date modified: Wednesday, June 19th 2024, 11:39 am
@@ -92,6 +96,20 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - https://securiti.ai/
   - https://bigid.com/
   - https://www.cookiebot.com/
+
+- Data Privacy & Data Mapping
+  - https://www.onetrust.com/
+  - https://www.ketch.com/platform/data-mapping
+  - https://www.cyera.io/
+  - https://www.informatica.com/platform.html
+  - https://www.datagrail.io/platform/live-data-map/
+  - https://www.relyance.ai/platform
+  - https://www.symmetry-systems.com/product/
+  - Transcend
+    - https://transcend.io/platform/data-inventory
+    - https://transcend.io/platform/data-lineage
+
+- 
 
 - Data Catalog, Data Discovery, Metadata
   - https://www.amundsen.io/
