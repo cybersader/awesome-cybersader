@@ -1,4 +1,6 @@
 
+https://www.youtube.com/watch?v=xfm3tLFuGJU
+
 # Characters and Organization Parallel
 - Ned Stark & CISO
     - Ned Stark
