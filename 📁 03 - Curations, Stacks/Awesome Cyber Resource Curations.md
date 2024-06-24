@@ -94,3 +94,5 @@
 
 # Curated Cyber Resources
 - https://www.simplycyber.io/free-cyber-resources
+- https://www.purdueglobal.edu/blog/information-technology/cybersecurity-industry-resources/
+- 
