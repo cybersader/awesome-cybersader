@@ -96,3 +96,9 @@
 - https://www.simplycyber.io/free-cyber-resources
 - https://www.purdueglobal.edu/blog/information-technology/cybersecurity-industry-resources/
 - 
+
+# 0 - 100 Guide - Books, CISO Guides
+- https://www.mitre.org/sites/default/files/2022-04/11-strategies-of-a-world-class-cybersecurity-operations-center.pdf
+- 
+
+
