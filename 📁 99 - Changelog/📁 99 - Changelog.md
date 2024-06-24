@@ -1,3 +1,4 @@
+- 2024-06-24 at 19h58 · [[TrueNAS Immich Setup]]
 - 2024-06-24 at 19h03 · [[📁 05 - Learning, Notes]]
 - 2024-06-24 at 19h03 · [[📁 04 - Organizational Cyber]]
 - 2024-06-24 at 19h03 · [[⬇️ Notes Drop]]
@@ -97,4 +98,3 @@
 - 2024-06-19 at 15h00 · [[Cyber Books]]
 - 2024-06-19 at 13h57 · [[HackBack]]
 - 2024-06-19 at 13h53 · [[⬇️ Cyber Culture Drop]]
-- 2024-06-19 at 13h52 · [[Backdoors & Breaches]]

@@ -3,7 +3,7 @@
   "defaultLanguage": "en_US",
   "normalLang": "en_US",
   "shouldShowSynonymPopover": true,
-  "shouldShowCustomContextMenu": true,
+  "shouldShowCustomContextMenu": false,
   "apiSettings": {
     "en_US": {
       "definitionApiName": "Free Dictionary API",
@@ -64,7 +64,7 @@
   },
   "partOfSpeechApiName": "Systran API",
   "advancedSynonymAnalysis": false,
-  "useCaching": true,
+  "useCaching": false,
   "folder": "",
   "capitalizedFileName": true,
   "prefix": "",

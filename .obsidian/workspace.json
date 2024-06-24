@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📄 Resume - Training, Certifications, Conferences, Education.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,8 +127,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
               }
             }
           },
@@ -287,53 +286,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "size-history:Vault size history": false,
       "obsidian-importer:Open Importer": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
       "fileorganizer2000:Fo2k Assistant View": false,
       "cmdr:Open settings": false
     }
   },
-  "floating": {
-    "id": "76003b6d8cbd2f0e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "9475daf9e3cc5ca9",
-        "type": "window",
-        "children": [
-          {
-            "id": "d94df4c595e95c0a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c13cd90e1f1eddf2",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1346,
-        "y": 63,
-        "width": 1664,
-        "height": 1326,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "c13cd90e1f1eddf2",
+  "active": "28af64838c88035c",
   "lastOpenFiles": [
+    "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity",
@@ -345,7 +308,6 @@
     "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 09 - My Obsidian Stack/Obsidian Vault Security",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
