@@ -1,0 +1,136 @@
+
+# Characters and Organization Parallel
+- Ned Stark & CISO
+    - Ned Stark
+        - FUD
+        - Leadership
+        - Vigilant and preparedness
+        - Winter is coming
+    - CISO
+        - Integrity
+    - Joseph Sullivan from Uber
+        - Tried to cover it up
+        - Moral decisions
+        - Allies turned on him
+        - Held accountable
+- Cersei Lannister & Business Leaders
+    - GOT
+        - Moves like a snake in the grass
+        - Budget power plays
+        - Political mastermind
+        - Ambitious
+    - Business leaders
+        - sabotage each others' agendas
+        - knee cap budgets because networking
+- Small Council & The Board
+    - Advisors to the king
+    - Diverse backgrounds
+    - They always ask "are we secure?"
+    - When you speak to the board, speak their language.
+    - Straight cash
+    - They care about their niches
+- White Walkers & Threat Actors
+    - Deliberate and focused attacks
+    - Origins shrouded in mystery
+    - Recruitment and expansion
+    - Botnets, weaponized tooling, insiders
+    - Actions on objectives - persistence and exfil
+- Tyrion Lannister & Cyber Pros
+    - Low to no budget pro
+    - Savvy and scrappy to resolve issues
+    - Leverage resources you have
+
+# Capabilities to play the game
+- The Sparrows & Risk Analysis
+    - religious sect
+    - means to an end
+    - faith militant
+    - cersei full compromise
+    - Cersei didn't do RA
+        - Yassss GRC
+        - Underestimated threat
+        - Misunderstood motivation
+        - Over permissioned access
+        - Massive cost to correct
+- Night's Watch & The SOC
+    - They are vigilant
+    - This is the SOC
+    - Triage, alert, respond
+- Viserion & Weaponzied Tooling
+    - A powerful dragon
+    - Advantageous weapons system
+    - Converted by night king to an ice dragon
+    - At some point, the leader of the white walkers converted it to an ice dragon
+    - Threat actors can weaponize our stuff against us
+- The Unsullied & Consistent Training
+    - Effective military
+    - Rigorous training
+    - TTXs
+    - Focused training
+    - End user awareness
+- Varys Master of Whispers & Threat Intel
+    - Extensive spy net
+    - Keep those in power informed
+    - Data collection, telemetry
+    - Analysis and intentions
+    - Actionable, serve the realm
+
+# Processes and Cyber Work Parallels
+- Catspaw dagger & Security Breach
+    - assassination attempt on bran stark
+    - left behind in failed attempt
+    - key evidence in trial
+    - Tyrion gets blamed for attempted murder on Bran - he almost dies
+    - Peter/little finger was never held accountable
+    - Attack - Detect - IR
+        - EDR detected
+    - Misattribution - that's this person's
+    - Failed root cause analysis - 
+- Sam and Oldetown (Citadel Library) & Documentation
+    - Documented known knowledge
+    - Dragonglass cache - could kill white walkers
+    - Greyscale treatment - could cure tons of peoples' diseases
+    - Tons of super useful knowledge in Citadel library
+    - Tactical: IOCs, ISACS
+    - Operational: SOPS, WIKI, LESSONS LEARNED
+    - Process Improvement
+    - NOTE: traditional SOPs suck, go out of date - video SOPs (seriously - use OBS, Loom, etc.)
+        - In wikis, don't document secrets
+- Jon Snow & Abandoned Projects
+    - Commander of knight's watch and doing awesome stuff
+    - They never resolved the storyline - new season sucked
+    - Kick off meeting
+        - Everybody is excited, but then you let it go stale
+    - Poor oversight
+    - Sec Tech Deployment
+        - New tech that isn't being managed consistently or you gave up on it
+- Sept of Baelor & How Not to Do Disaster Recovery
+    - Church major power player
+    - Destroyed all threats inside
+    - Catastrophic failure
+    - All of the key assets and players in one place
+    - Do a thorough risk assessment (ERA - enterprise risk assessment)
+    - Zero contingency
+    - All material assets collocated
+
+# Cyber Career is Dark and Full of Terrors
+- Sansa
+    - Naive to battle hardened
+    - Experiences shaped her
+    - Queen of the North
+    - Lessons learned to predict future threats
+- Sansa and the Hound - Give Mentorship
+    - Hostile
+    - Shared experiences
+    - Protect and Guide
+    - Empower others
+- Sansa and Olenna Tyrell
+    - Honesty
+    - Mutual respect
+    - Shared desire to challenge status quo
+- Cersei and Sansa
+    - False security
+    - Avoid toxicity
+    - Work org structure
+    - Malicious community
+
