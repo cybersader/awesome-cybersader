@@ -286,13 +286,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes...": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "size-history:Vault size history": false,
-      "obsidian-importer:Open Importer": false,
-      "templater-obsidian:Templater": false,
-      "cmdr:Open settings": false,
-      "fileorganizer2000:Fo2k Assistant View": false
+      "publish:Publish changes...": false
     }
   },
   "floating": {
@@ -324,9 +318,9 @@
         ],
         "direction": "vertical",
         "x": -960,
-        "y": -16,
-        "width": 960,
-        "height": 1107,
+        "y": -17,
+        "width": 1152,
+        "height": 1326,
         "maximize": false,
         "zoom": 0
       }
