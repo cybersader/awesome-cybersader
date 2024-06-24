@@ -14,3 +14,21 @@ date modified: Friday, April 26th 2024, 9:49 pm
 - Settings > Obsidian Git > "Advanced" > "Disable on this device"
 # What is Backup?
 - Merely a combination of the stage, commit, pull, and push steps 🙂
+
+# Excluding Sensitive Data from Repo
+It's easy to use the `.gitignore` file to ignore putting files into the repo. However, if the file was already in the repo before you added the sensitive data, then you will need to remove it first.
+
+## Removing Files from Repo
+- Links
+  - https://stackoverflow.com/questions/2047465/how-do-i-delete-a-file-from-a-git-repository
+  - https://docs.github.com/en/repositories/working-with-files/managing-files/deleting-files-in-a-repository
+
+- Using CLI
+  - `git rm --cached file.txt`
+
+- Using GitHub
+  - Browse to the file or directory and delete it 
+  - https://docs.github.com/en/repositories/working-with-files/managing-files/deleting-files-in-a-repository#deleting-a-directory
+  - Make sure to save a version of the files if you need to. I'm not sure this option retains the data locally or tries to delete it when pulling from the repo.
+
+  
