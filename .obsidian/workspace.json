@@ -182,7 +182,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -286,7 +287,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "size-history:Vault size history": false,
+      "obsidian-importer:Open Importer": false,
+      "templater-obsidian:Templater": false,
+      "fileorganizer2000:Fo2k Assistant View": false,
+      "cmdr:Open settings": false
     }
   },
   "floating": {
@@ -326,7 +333,7 @@
       }
     ]
   },
-  "active": "d9bd192f9a10963b",
+  "active": "c07d9fad4dc75148",
   "lastOpenFiles": [
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
