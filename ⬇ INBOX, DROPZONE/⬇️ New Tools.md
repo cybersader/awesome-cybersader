@@ -2,12 +2,14 @@
 aliases: 
 tags: 
 date created: Monday, March 18th 2024, 1:59 pm
-date modified: Monday, June 17th 2024, 9:34 pm
+date modified: Sunday, June 23rd 2024, 8:40 pm
 created: Monday, Mar 18, 2024 01:59 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
 publish: true
 ---
 
+[04 Cybersader’s Arsenal](../CybersaderNotion/04%20Cybersader’s%20Arsenal.md) 
+[Desktop (mostly Windows)](../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Desktop%20(mostly%20Windows).md) 
 # Daily Drivers
 - [Rabbit OS & R1](../📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/Rabbit%20OS%20&%20R1/Rabbit%20OS%20&%20R1.md) 
 # Cyber
