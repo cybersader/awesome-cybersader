@@ -19,7 +19,7 @@
       "template": ""
     }
   ],
-  "syntax_highlighting": true,
+  "syntax_highlighting": false,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     ""

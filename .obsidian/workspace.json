@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
+                "file": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,8 +182,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -203,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
+                "file": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
+                "file": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
+                "file": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md"
               }
             }
           },
@@ -333,10 +332,11 @@
       }
     ]
   },
-  "active": "c07d9fad4dc75148",
+  "active": "d9bd192f9a10963b",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+    "📦 VAULT SANDBOX TESTING/Test note.md",
     "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
+    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 09 - My Obsidian Stack/Obsidian Vault Security",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
@@ -376,7 +376,6 @@
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 11 - Content Creation/Content Analytics/Content Analytics.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Stickers.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",

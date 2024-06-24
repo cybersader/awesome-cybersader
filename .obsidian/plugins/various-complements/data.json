@@ -92,7 +92,7 @@
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
   "intelligentSuggestionPrioritization": {
-    "enabled": true,
+    "enabled": false,
     "historyFilePath": "",
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
