@@ -5,6 +5,12 @@ publish: true
 date created: Thursday, June 13th 2024, 8:33 pm
 date modified: Monday, June 17th 2024, 9:37 pm
 ---
+
+- [🔴June 24's Top Cyber News NOW! - Ep 650](https://www.youtube.com/watch?v=n4FJU43_F0A)
+    - Spies w/upgraded Gh0st RAT appear to be new operation
+        - Lots of people at Defcon don't give out their real names. It's a thing.
+        - Government-focused deploy applications?
+
 - [🔴June 21's Top Cyber News NOW! - Ep 649](https://www.youtube.com/watch?v=UfA4edTtgBs)
     - Big budget does not equal easy security.  You still have to deliver on that budget.
     - Do you get more certs in the cyber market or lab it up?..It's kinda a quagmire right now. Lab it up honestly. Technical skills are huge right now, and publicly show the skills you have.
