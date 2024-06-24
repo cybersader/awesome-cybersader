@@ -22,6 +22,8 @@ date modified: Thursday, June 20th 2024, 1:46 pm
 - https://www.cisecurity.org/insights/white-papers/ms-isac-posters
 - https://www.halock.com/infosec-tip-posters/
 - https://its.ucsc.edu/security/poster.html
+- https://next.d3fend.mitre.org/poster
+- https://d3fend.mitre.org/poster
 - 
 
 - Excel Shortcuts
