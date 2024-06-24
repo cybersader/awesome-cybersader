@@ -3,7 +3,26 @@
   "showAddCommand": true,
   "debug": false,
   "editorMenu": [],
-  "fileMenu": [],
+  "fileMenu": [
+    {
+      "id": "workspace:copy-path",
+      "icon": "lucide-copy",
+      "name": "Copy file path",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:export-pdf",
+      "icon": "paperclip",
+      "name": "Export to PDF...",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:export-pdf",
+      "icon": "paperclip",
+      "name": "Export to PDF...",
+      "mode": "any"
+    }
+  ],
   "leftRibbon": [
     {
       "id": "app:open-settings",
