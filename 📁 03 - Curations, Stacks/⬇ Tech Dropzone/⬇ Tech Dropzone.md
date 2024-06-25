@@ -16,6 +16,7 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - [futo.org](https://futo.org/)
 - https://keybase.io/
 - https://transcend.io/integrations
+- https://mintlify.com/pricing
 - 
 
 # Hardware, Gadgets

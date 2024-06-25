@@ -7,6 +7,10 @@ date created: Tuesday, May 14th 2024, 6:34 pm
 date modified: Tuesday, May 14th 2024, 6:56 pm
 ---
 
+# Live Sync with File Shares / File-Level
+- https://forum.obsidian.md/t/obsidian-sync-live-team-collaborative-editing/6058/10
+- 
+
 # Live Collab/Sync
 - [screen.garden](https://screen.garden/) 
 - [Peerdraft - Secure real-time collaboration for Obsidian](https://www.peerdraft.app/)
@@ -23,4 +27,4 @@ date modified: Tuesday, May 14th 2024, 6:56 pm
 - [Gogs: A painless self-hosted Git service](https://gogs.io/)
 - [Radicle: An Open-Source, Peer-to-Peer, GitHub Alternative | Hackaday](https://hackaday.com/2024/03/16/radicle-an-open-source-peer-to-peer-github-alternative/#:~:text=Radicle%20is%20an%20open%2Dsource,%2C%20thus%2C%20some%20fault%20tolerance.) 
 	- [Radicle: the sovereign forge](https://radicle.xyz/) 
-	- 
+- https://github.com/canton7/SyncTrayzor

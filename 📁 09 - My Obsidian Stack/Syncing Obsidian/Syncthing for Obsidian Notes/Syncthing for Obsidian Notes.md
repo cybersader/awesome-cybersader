@@ -113,5 +113,6 @@ date modified: Saturday, April 27th 2024, 1:17 pm
 - [Syncthing - The Based Way to Sync Your Files - YouTube](https://www.youtube.com/watch?v=Uag8PJaO0N4)
 - [Backing Up My Home Server Files - Setting Up Syncthing - YouTube](https://www.youtube.com/watch?v=V4kWJ8JcdtM)
 - [(39) Syncthing Made EASY - YouTube](https://www.youtube.com/watch?v=PSx-BkMOPF4)
+- [The holy grail of note-taking: Private data, efficient methodology and P2P encrypted sync across all your devices](https://dev.to/maxime1992/the-holy-grail-of-note-taking-private-data-efficient-methodology-and-p2p-encrypted-sync-across-all-your-devices-1ih3)
 
 [^1]: This is like a public key, so it's not bad if other people have it.  Connections have to be mutual to work.

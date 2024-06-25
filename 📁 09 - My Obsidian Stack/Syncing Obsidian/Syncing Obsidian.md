@@ -12,6 +12,11 @@ date modified: Friday, April 26th 2024, 5:48 pm
 
 %% End Landmark %%
 - [ ] Decide on syncing solution that allows for large size vaults, back and forth use between clients, and easy configuration ➕ 2024-04-26
+
 # Options
 - [Obsidian Sync Obsidian https://obsidian.md › sync](https://obsidian.md/sync)
 - [Syncthing for Obsidian Notes](Syncthing%20for%20Obsidian%20Notes/Syncthing%20for%20Obsidian%20Notes.md) 
+
+# Other Misc Links
+- https://github.com/canton7/SyncTrayzor - Windows tray utility / filesystem watcher / launcher for Syncthing
+
