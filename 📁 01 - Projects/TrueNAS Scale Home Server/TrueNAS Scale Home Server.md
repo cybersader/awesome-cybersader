@@ -7,25 +7,25 @@ date modified: Monday, May 27th 2024, 1:14 pm
 ---
 
 %% Begin Waypoint %%
-- **[Cannot Connect to Truenas SMB](Cannot%20Connect%20to%20Truenas%20SMB.md)**
-- **[Custom Local Domain](Custom%20Local%20Domain.md)**
-- **[Dataset Available Space](Dataset%20Available%20Space.md)**
+- **[[Cannot Connect to Truenas SMB]]**
+- **[[Custom Local Domain]]**
+- **[[Dataset Available Space]]**
 
-- **[Home Server Power](Home%20Server%20Power.md)**
+- **[[Home Server Power]]**
 
-- **[Misc TrueNAS](Misc%20TrueNAS.md)**
-	- **[Immich vs Photoprism](Immich%20vs%20Photoprism.md)**
-	- **[Rsync Related](Rsync%20Related.md)**
-	- **[TrueNAS Drive Data Recovery](TrueNAS%20Drive%20Data%20Recovery.md)**
-- **[Plex Media Server](Plex%20Media%20Server.md)**
-- **[Portainer in TrueNAS](Portainer%20in%20TrueNAS.md)**
-- **[Scheduled Backups](Scheduled%20Backups.md)**
-- **[TrueNAS Cloud Backups](TrueNAS%20Cloud%20Backups.md)**
-	- **[Cheapest Archive Storage](Cheapest%20Archive%20Storage.md)**
-- **[TrueNAS Immich Setup](TrueNAS%20Immich%20Setup.md)**
-
-- **[TrueNAS mDNS](TrueNAS%20mDNS.md)**
-- **[TrueNAS Scale Apps, Adding TrueCharts](TrueNAS%20Scale%20Apps,%20Adding%20TrueCharts.md)**
-- **[Turning Old PC into NAS in 2024](Turning%20Old%20PC%20into%20NAS%20in%202024.md)**
+- **[[Immich & Cloudflare Tunnels]]**
+- **[[Misc TrueNAS]]**
+	- **[[Immich vs Photoprism]]**
+	- **[[Rsync Related]]**
+	- **[[TrueNAS Drive Data Recovery]]**
+- **[[Plex Media Server]]**
+- **[[Portainer in TrueNAS]]**
+- **[[Scheduled Backups]]**
+- **[[TrueNAS Cloud Backups]]**
+	- **[[Cheapest Archive Storage]]**
+- **[[TrueNAS Immich Setup]]**
+- **[[TrueNAS mDNS]]**
+- **[[TrueNAS Scale Apps, Adding TrueCharts]]**
+- **[[Turning Old PC into NAS in 2024]]**
 
 %% End Waypoint %%

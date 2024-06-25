@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Immich & Cloudflare Tunnels",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+    },
+    {
       "basename": "TrueNAS Immich Setup",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Social Engineering",
       "path": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md"
-    },
-    {
-      "basename": "Endpoint Hardening",
-      "path": "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md"
     }
   ],
   "omittedPaths": [],

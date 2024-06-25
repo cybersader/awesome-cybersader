@@ -54,11 +54,12 @@ The installation process of the immich app should handle the below configuration
 - Zero Trust dashboard
 - Already have domain for my home lab and self-hosting stuff
 - Tunnel already set up for TrueNAS stuff
-	- ![](IMG-20240330143721928.png)
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240624195831791.png)
 - Configure the tunnel > Public Hostname > Add a public hostname
-	- ![](IMG-20240330144535924.png)
+	- ![](_attachments/TrueNAS%20Immich%20Setup/IMG-20240624195831849.png)
 # Client Setup
 - Simply download the Android (Google Play) or iOS (App Store) clients, put the server URL in, and log in
 ## Client Approach and Bugs
 - I want to divide things up at the remote/immich by putting them into albums
-- Had trouble creating albums on clients even though I hit 
+- Had trouble creating albums on clients even though I hit create.  Did it no computer instead
+- 

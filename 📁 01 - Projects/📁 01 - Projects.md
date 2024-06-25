@@ -4,17 +4,17 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 ---
 
 %% Begin Waypoint %%
-- **[Backing Up Signal](Backing%20Up%20Signal.md)**
-- **[Bitwarden Stuff](Bitwarden%20Stuff.md)**
-- **[Bluetooth Removal Issue Fix Windows](Bluetooth%20Removal%20Issue%20Fix%20Windows.md)**
+- **[[Backing Up Signal]]**
+- **[[Bitwarden Stuff]]**
+- **[[Bluetooth Removal Issue Fix Windows]]**
 
-- **[Home Network Wars](Home%20Network%20Wars.md)**
-- **[Interview with a Data Analyst](Interview%20with%20a%20Data%20Analyst.md)**
-- **[Kubernetes Home Server](Kubernetes%20Home%20Server.md)**
-- **[Mothers Day Website](Mothers%20Day%20Website.md)**
+- **[[Home Network Wars]]**
+- **[[Interview with a Data Analyst]]**
+- **[[Kubernetes Home Server]]**
+- **[[Mothers Day Website]]**
 
-- **[Phone Pick in 2024](Phone%20Pick%20in%202024.md)**
-- **[TrueNAS Scale Home Server](TrueNAS%20Scale%20Home%20Server.md)**
-- **[Vehicle Selection in 2020s](Vehicle%20Selection%20in%202020s.md)**
+- **[[Phone Pick in 2024]]**
+- **[[TrueNAS Scale Home Server]]**
+- **[[Vehicle Selection in 2020s]]**
 
 %% End Waypoint %%

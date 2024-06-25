@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
                 "mode": "source",
                 "source": false
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
               }
             }
           },
@@ -296,6 +296,10 @@
   },
   "active": "28af64838c88035c",
   "lastOpenFiles": [
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/Immich + Cloud",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
@@ -333,11 +337,7 @@
     "📁 03 - Curations, Stacks/Awesome Markdown/Awesome Markdown.md",
     "📁 03 - Curations, Stacks/Awesome Splunk",
     "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md",
-    "📁 03 - Curations, Stacks/Awesome Markdown",
-    "📁 06 - Cybersader Arsenal",
     "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md",
-    "📁 06 - Knowledge Engineering/📁 06 - Knowledge Engineering.md",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
