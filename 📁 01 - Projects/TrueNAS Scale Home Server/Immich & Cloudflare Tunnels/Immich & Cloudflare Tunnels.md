@@ -5,7 +5,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, June 24th 2024, 8:00 pm
-date modified: Monday, June 24th 2024, 8:02 pm
+date modified: Monday, June 24th 2024, 9:42 pm
 ---
 
 > [!tldr] When using Immich with Cloudflare, you may run into errors when uploading photos or video.  It seems that the proxy has inherent limits per request.  Immich needs to implement a "chunked" approach for such cases.
@@ -19,8 +19,8 @@ date modified: Monday, June 24th 2024, 8:02 pm
 - [Has anyone solved cloudflare's problem with uploading files larger than 1GB?](https://github.com/immich-app/immich/discussions/8299#discussioncomment-9569293)
 
 # Workarounds
-- 
-
+The best solution would 
+- [How To Bypass Cloudflare Max Upload Size 100 MB Limit - YouTube](https://www.youtube.com/watch?v=V61Z0WEbVtE&t=286s)
 # The Solution
 - Can't use Cloudflare Tunnels
 
