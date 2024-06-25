@@ -18,6 +18,9 @@ date modified: Monday, June 24th 2024, 8:02 pm
 - [Community Guides | Immich](https://immich.app/docs/community-guides/)
 - [Has anyone solved cloudflare's problem with uploading files larger than 1GB?](https://github.com/immich-app/immich/discussions/8299#discussioncomment-9569293)
 
+# Workarounds
+- 
+
 # The Solution
 - Can't use Cloudflare Tunnels
 

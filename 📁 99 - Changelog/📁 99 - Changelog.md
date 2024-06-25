@@ -1,4 +1,4 @@
-- 2024-06-24 at 20h26 · [[Immich & Cloudflare Tunnels]]
+- 2024-06-24 at 20h46 · [[Immich & Cloudflare Tunnels]]
 - 2024-06-24 at 20h00 · [[📁 01 - Projects]]
 - 2024-06-24 at 20h00 · [[TrueNAS Scale Home Server]]
 - 2024-06-24 at 19h59 · [[TrueNAS Immich Setup]]
