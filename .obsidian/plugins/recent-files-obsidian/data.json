@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Stream Deck Alternatives",
+      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
+    },
+    {
+      "basename": "Awesome Streaming",
+      "path": "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md"
+    },
+    {
       "basename": "Immich & Cloudflare Tunnels",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
     },
     {
       "basename": "TrueNAS Immich Setup",
@@ -187,18 +199,6 @@
     {
       "basename": "IR Tabletop Scenarios",
       "path": "📁 04 - Organizational Cyber/Incident Response/IR Tabletop Scenarios.md"
-    },
-    {
-      "basename": "Attack_cards",
-      "path": "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches Data/Attack_cards.csv"
-    },
-    {
-      "basename": "Home Network Wars",
-      "path": "📁 01 - Projects/Home Network Wars/Home Network Wars.md"
-    },
-    {
-      "basename": "Social Engineering",
-      "path": "📁 04 - Organizational Cyber/Social Engineering/Social Engineering.md"
     }
   ],
   "omittedPaths": [],

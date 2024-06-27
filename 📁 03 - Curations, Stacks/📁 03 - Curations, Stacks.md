@@ -11,12 +11,14 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 	- **[[Home Surveillance]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
+- **[[Awesome Collaboration]]**
 - [[Awesome Cyber Resource Curations]]
 - **[[Awesome EDC]]**
 - [[Awesome Hard Disk Drives]]
 - **[[Awesome Markdown]]**
 - **[[Awesome SecOps Data Engineering]]**
 - **[[Awesome Splunk]]**
+- **[[Awesome Stream Deck Alternatives]]**
 - **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**
 - **[[Books]]**
