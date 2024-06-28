@@ -6,6 +6,7 @@ date created: Thursday, June 13th 2024, 8:33 pm
 date modified: Monday, June 17th 2024, 9:37 pm
 ---
 
+
 - [BHIS - Talkin' Bout [infosec] News 2024-06-24](https://www.youtube.com/watch?v=keEwKOly61M)
     - https://www.insideprivacy.com/data-privacy/colorado-privacy-act-amended-to-include-biometric-data-provisions/#:~:text=Colorado%20Privacy%20Act%20Amended%20To%20Include%20Biometric%20Data%20Provisions,-By%20Priya%20Leeds&text=On%20May%2031%2C%202024%2C%20Colorado,a%20private%20right%20of%20action.
         - 4 constraints around selling biometric: 1) you have to pay the consumer for it, 2) you have to obtain consent, and 3) purchase cannot be related to provision of product or service to a customer
