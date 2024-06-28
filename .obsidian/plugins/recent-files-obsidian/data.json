@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Immich & Cloudflare Tunnels",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
       "basename": "Awesome Stream Deck Alternatives",
       "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
     },
     {
       "basename": "Awesome Streaming",
       "path": "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md"
-    },
-    {
-      "basename": "Immich & Cloudflare Tunnels",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
     },
     {
       "basename": "🕸️ UNSTRUCTURED",
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Cyber Culture Drop",
       "path": "📁 04 - Organizational Cyber/⬇️ Cyber Culture Drop/⬇️ Cyber Culture Drop.md"
-    },
-    {
-      "basename": "IR Tabletop Scenarios",
-      "path": "📁 04 - Organizational Cyber/Incident Response/IR Tabletop Scenarios.md"
     }
   ],
   "omittedPaths": [],

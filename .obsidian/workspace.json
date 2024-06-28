@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "85f252c17f2d4b29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e4a40875c0eaff41",
             "type": "leaf",
             "state": {
@@ -127,8 +115,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +206,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
               }
             }
           },
@@ -295,12 +282,14 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "85f252c17f2d4b29",
+  "active": "2207cc5a290c91e7",
   "lastOpenFiles": [
-    "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md",
-    "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
-    "📁 11 - Content Creation/Awesome Streaming",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
+    "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
+    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
+    "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md",
+    "📁 11 - Content Creation/Awesome Streaming",
     "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md",
     "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives",
     "🕸️ UNSTRUCTURED",
@@ -337,8 +326,6 @@
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106822.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106760.png",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
-    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
-    "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
