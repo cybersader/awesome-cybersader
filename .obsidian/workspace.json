@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4a40875c0eaff41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f3574d783d856041",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7e07cc9e93c4f8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,18 +68,6 @@
             }
           },
           {
-            "id": "2a9220bbe0399de9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "78f94ca15005b1ef",
             "type": "leaf",
             "state": {
@@ -115,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -285,10 +248,17 @@
   },
   "active": "f3574d783d856041",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
+    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
+    "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
+    "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
+    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
-    "📁 03 - Curations, Stacks/Awesome Office Organizing",
+    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
+    "📁 03 - Curations, Stacks/Awesome Office Organizing",
     "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md",
     "📁 02 - CyberNews/📁 02 - CyberNews.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
@@ -313,14 +283,7 @@
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/Immich + Cloud",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
     "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity",
-    "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
-    "📁 04 - Organizational Cyber/AI Usage in Orgs/AI Usage in Orgs.md",
-    "📦 VAULT SANDBOX TESTING/Test note.md",
-    "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
-    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
-    "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106978.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png",
