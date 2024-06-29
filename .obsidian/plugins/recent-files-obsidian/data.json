@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Office Organizing",
+      "path": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md"
+    },
+    {
+      "basename": "Awesome Hard Disk Drives",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md"
+    },
+    {
+      "basename": "Cyber Books",
+      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
+    },
+    {
       "basename": "06 - June Cyber News",
       "path": "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md"
     },
@@ -105,20 +117,12 @@
       "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
     },
     {
-      "basename": "Awesome Hard Disk Drives",
-      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md"
-    },
-    {
       "basename": "Cyber Merch",
       "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
     },
     {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "Cyber Books",
-      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
     },
     {
       "basename": "📄 Resume - Training, Certifications, Conferences, Education",
@@ -195,10 +199,6 @@
     {
       "basename": "Windows BCDR",
       "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
-    },
-    {
-      "basename": "Windows 11 UI Stuff",
-      "path": "⬇ INBOX, DROPZONE/Windows 11 UI Stuff.md"
     }
   ],
   "omittedPaths": [],
