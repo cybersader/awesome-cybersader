@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
               }
             }
           },
@@ -248,13 +248,18 @@
   },
   "active": "f3574d783d856041",
   "lastOpenFiles": [
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630181613577.png",
+    "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
-    "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
@@ -280,10 +285,6 @@
     "📁 03 - Curations, Stacks/Awesome Collaboration",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/Immich + Cloud",
-    "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106978.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png",
@@ -292,7 +293,6 @@
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106760.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/Pasted image 20240619151037.png",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657598.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657749.png"
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/_attachments/IR Summit 2024/IMG-20240619150657676.png"
   ]
 }

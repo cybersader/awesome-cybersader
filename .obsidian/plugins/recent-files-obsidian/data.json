@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Scale RAID Setup",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+    },
+    {
       "basename": "Awesome Office Organizing",
       "path": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "WarGames",
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/WarGames/WarGames.md"
-    },
-    {
-      "basename": "Windows BCDR",
-      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
     }
   ],
   "omittedPaths": [],
