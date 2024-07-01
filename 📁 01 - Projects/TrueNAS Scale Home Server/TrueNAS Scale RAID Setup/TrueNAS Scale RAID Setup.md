@@ -48,6 +48,9 @@ In your case, you’re moving from RAID 0 (no redundancy) to something with redu
 
 By doing this, you’re adding that extra layer of protection, ensuring your data stays safe even if a drive fails.
 # Adding a Drive to Current Pool, Upgrading to RAID 1 (Two Drives)
+
+- Just to be clear, I'm not rich and therefore I had to slowly buy drives.  I started with 1 drive - hence RAID 0.  Now I have 2 drives which is why I'm moving to a mirrored setup for basic redundancy.
+
 - ![600](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146461.png)
 
 - Some people seem to think it's simple to upgrade from RAID 0 (1 drive without redundancy) to RAID 1 (mirrored mode)
