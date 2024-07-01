@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
               }
             }
           },
@@ -248,19 +248,34 @@
   },
   "active": "f3574d783d856041",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/Misc Resources.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/Log Management & SIEM.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/2024 Threat Patterns.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Misc Resources.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928578.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929239.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929171.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929116.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929054.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928999.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928911.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928849.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929756.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929703.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/__attachments/oCISO Wiki",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/__attachments",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki",
+    "⬇ INBOX, DROPZONE/From Other Wiki/2024 Threat Patterns.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "⬇ INBOX, DROPZONE/From Other Wiki",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146857.png",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146794.png",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146696.png",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146623.png",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146576.png",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146526.png",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146461.png",
     "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
@@ -278,21 +293,6 @@
     "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
-    "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md",
-    "📁 11 - Content Creation/Awesome Streaming",
-    "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md",
-    "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives",
-    "🕸️ UNSTRUCTURED",
-    "📁 10 - Community/Community Tools/Community Tools.md",
-    "📁 10 - Community/Community Tools",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contribution System/Contribution System.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contribution System",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/IDs, Verification, and MFA.md",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Get an Epic Cyber Education for Free (almost) - Carrie Roberts.md",
-    "📁 03 - Curations, Stacks/Awesome Collaboration/Awesome Collaboration.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106978.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png"
+    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
   ]
 }
