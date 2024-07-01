@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f3574d783d856041",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87d40f8fdef15d64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c0ed3ddf1c5a4346",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -137,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -153,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
               }
             }
           },
@@ -246,53 +222,53 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "f3574d783d856041",
+  "active": "c0ed3ddf1c5a4346",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/Misc Resources.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/Log Management & SIEM.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/2024 Threat Patterns.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Misc Resources.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928578.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929239.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929171.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929116.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929054.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928999.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928911.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212928849.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929756.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/_attachments/2024 Threat Patterns/IMG-20240630212929703.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/__attachments/oCISO Wiki",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/__attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki",
-    "⬇ INBOX, DROPZONE/From Other Wiki/2024 Threat Patterns.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments",
-    "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup",
-    "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
-    "📁 04 - Organizational Cyber/Incident Response/Incident Response.md",
-    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Lab.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/002 - Administrative Network Security.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/001 - Network Attacks & Defense Strategies.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD - 112.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Company Device Remote Wiping.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Automotive Threat Reports.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/PCI 4.0 Rants with John Strand.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Log File Analysis - Gleaning Insights From Log Files.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Exploring Python psutil Under Windows - Joff Thyer.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Discovering and Exploiting N-Days.md",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
-    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
-    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
-    "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md",
-    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
-    "📁 03 - Curations, Stacks/Awesome Office Organizing",
-    "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md",
-    "📁 02 - CyberNews/📁 02 - CyberNews.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md",
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-31.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-29.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-30.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-24.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-28.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-27.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-23.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/I Want the Log I Can't Have.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/Big Mad Blue Team.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/7 Ways to Frustrate Attackers.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/InfraGard Indiana Members Alliance, Communication Sector Conference - Ransomware & the Cyberpocalyse.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments/Misc",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/Setting Up Sysmon for Local Usage.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/GoPro Firewall Workaround.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments/CND - Network Defender",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/008 -.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/005 - Endpoint Security-Windows Systems Lab.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/007 - Endpoint Security- Mobile Devices.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/006 - Endpoint Security-Linux Systems.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/005 - Endpoint Security-Windows Systems.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Security.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/003 - Technical Network Security.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender"
   ]
 }

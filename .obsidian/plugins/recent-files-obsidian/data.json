@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Learning",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
+    },
+    {
+      "basename": "004 - Network Perimeter Lab",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Lab.md"
+    },
+    {
+      "basename": "002 - Administrative Network Security",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/002 - Administrative Network Security.md"
+    },
+    {
+      "basename": "001 - Network Attacks & Defense Strategies",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/001 - Network Attacks & Defense Strategies.md"
+    },
+    {
+      "basename": "DD 108",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md"
+    },
+    {
+      "basename": "DD - 112",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD - 112.md"
+    },
+    {
+      "basename": "Company Device Remote Wiping",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Company Device Remote Wiping.md"
+    },
+    {
+      "basename": "Automotive Threat Reports",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Automotive Threat Reports.md"
+    },
+    {
+      "basename": "PCI 4.0 Rants with John Strand",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/PCI 4.0 Rants with John Strand.md"
+    },
+    {
+      "basename": "Log File Analysis - Gleaning Insights From Log Files",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Log File Analysis - Gleaning Insights From Log Files.md"
+    },
+    {
+      "basename": "Exploring Python psutil Under Windows - Joff Thyer",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Exploring Python psutil Under Windows - Joff Thyer.md"
+    },
+    {
+      "basename": "Discovering and Exploiting N-Days",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Discovering and Exploiting N-Days.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
       "basename": "SecOps Stack & Resources",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
     },
@@ -51,14 +107,6 @@
     {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
-    },
-    {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "📁 03 - Curations, Stacks",
@@ -151,54 +199,6 @@
     {
       "basename": "Cyber Merch",
       "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "📄 Resume - Training, Certifications, Conferences, Education",
-      "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
-    },
-    {
-      "basename": "Obsidian Vault Security",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "Awesome AI",
-      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
-    },
-    {
-      "basename": "IR Summit 2024",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/IR Summit 2024/IR Summit 2024.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
-      "basename": "Awesome Splunk",
-      "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
-    },
-    {
-      "basename": "Annual Reports and Cyber Stats",
-      "path": "📁 05 - Learning, Notes/Annual Reports and Cyber Stats/Annual Reports and Cyber Stats.md"
-    },
-    {
-      "basename": "Personal Cyber Resilience Arsenal",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md"
-    },
-    {
-      "basename": "📁 05 - Learning, Notes",
-      "path": "📁 05 - Learning, Notes/📁 05 - Learning, Notes.md"
-    },
-    {
-      "basename": "App Tool Solution Discovery , Catalogues, Curation",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md"
     }
   ],
   "omittedPaths": [],

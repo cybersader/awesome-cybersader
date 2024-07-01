@@ -5,7 +5,6 @@
   "note-refactor-obsidian",
   "copy-url-in-preview",
   "floating-toc",
-  "obsidian-git",
   "obsidian-vault-changelog",
   "obsidian-emoji-toolbar",
   "emoji-shortcodes",
@@ -41,5 +40,6 @@
   "obsidian-timestamper",
   "cmdr",
   "obsidian-divide-and-conquer",
-  "various-complements"
+  "various-complements",
+  "obsidian-git"
 ]
