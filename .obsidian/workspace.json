@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md"
               }
             }
           },
@@ -248,6 +248,10 @@
   },
   "active": "f3574d783d856041",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146857.png",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146794.png",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146696.png",
@@ -258,7 +262,6 @@
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240630195146461.png",
     "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
@@ -288,11 +291,8 @@
     "📁 05 - Learning, Notes/⬇️ Notes Drop/IDs, Verification, and MFA.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Get an Epic Cyber Education for Free (almost) - Carrie Roberts.md",
     "📁 03 - Curations, Stacks/Awesome Collaboration/Awesome Collaboration.md",
-    "📁 03 - Curations, Stacks/Awesome Collaboration",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171107027.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106978.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106868.png"
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/_attachments/File Organizer 2000/IMG-20240620171106919.png"
   ]
 }
