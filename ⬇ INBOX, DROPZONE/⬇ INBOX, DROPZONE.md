@@ -17,7 +17,6 @@ publish: true
 	- [[Awesome DFIR]]
 - [[Company Security Strategy from Zero]]
 - **[[From Other Wiki]]**
-	- [[Password Sharing Regex]]
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
 - [[Windows 11 UI Stuff]]
