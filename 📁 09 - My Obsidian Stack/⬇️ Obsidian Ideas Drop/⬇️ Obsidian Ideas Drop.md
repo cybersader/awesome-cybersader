@@ -12,6 +12,7 @@ date modified: Monday, April 29th 2024, 1:28 pm
   - If this doesn't work then look at how other in-the-browser code editors are safe and if they could somehow be implemented
 - Obsidian GitHub action for running code like a vault would
 - StackEdit with GitHub as alternative to Github.dev?
+- Linting for filenames and folders to make sure that they work on Windows (No ":" and other characters)
 
 # Obsidian in the Web?
 - https://www.reddit.com/r/ObsidianMD/comments/10sj378/web_version_of_obsidian/
