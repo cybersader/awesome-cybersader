@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hard drive",
+                "query": "anime",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -129,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
               }
             }
           },
@@ -222,10 +223,19 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "c0ed3ddf1c5a4346",
+  "active": "1dff7ba13bc2843f",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Lab.md",
+    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How/MailFail - Who's Spoofing Your Email and How.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How",
+    "📁 03 - Curations, Stacks/⬇️ Curation Dropzone.md",
+    "📁 02 - CyberNews/2024 Cyber News/07 - July Cyber News/07 - July Cyber News.md",
+    "📁 02 - CyberNews/2024 Cyber News/07 - July Cyber News",
+    "⬇ INBOX, DROPZONE/Public Threat Actor Reporting, Blacklists.md",
+    "⬇ INBOX, DROPZONE/Malware Sandboxing.md",
+    "⬇ INBOX, DROPZONE/Lookalike Domain Defenses.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Lab.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/002 - Administrative Network Security.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/001 - Network Attacks & Defense Strategies.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md",
@@ -260,15 +270,6 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/Setting Up Sysmon for Local Usage.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/GoPro Firewall Workaround.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments/CND - Network Defender",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/008 -.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/005 - Endpoint Security-Windows Systems Lab.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/007 - Endpoint Security- Mobile Devices.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/006 - Endpoint Security-Linux Systems.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/005 - Endpoint Security-Windows Systems.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Security.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/003 - Technical Network Security.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments/CND - Network Defender"
   ]
 }

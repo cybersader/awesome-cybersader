@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Thursday, June 20th 2024, 8:50 pm
+date modified: Wednesday, July 3rd 2024, 9:23 pm
 ---
 
 - [ ] Update anime list 🔽 ➕ 2024-04-26
@@ -15,36 +15,37 @@ date modified: Thursday, June 20th 2024, 8:50 pm
 2. Code Geass
 3. My Hero Academia
 4. Demon Slayer
-5. Steins;Gate
-6. Fullmetal Alchemist: Brotherhood
-7. So I'm a Spider, So What?
-8. One Punch Man
-9. Attack on Titan
-10. Erased
-11. Astra Lost in Space
-12. Haikyuu!!
-13. Toradora!
-14. Amagi Brilliant Park
-15. Konosuba
-16. My Love Story
-17. Hellsing Ultimate
-18. ReLIFE
-19. Re:Zero
-20. Violet Evergarden
-21. Log Horizon
-22. GATE
-23. Charlotte
-24. My Little Monster
-25. Angel Beats!
-26. Made in Abyss
-27. Black Clover
-28. Fairy Tail
-29. Restaurant to Another World
-30. Assassination Classroom
-31. Psycho-Pass
-32. Guilty Crown
-33. Haibane Renmei
-34. Id:Invaded
-35. BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense
-36. Wandering Witch: The Journey of Elaina
-37. Kino's Journey: The Beautiful World
+5. Spice and Wolf (2024 remake)
+6. Steins;Gate
+7. Fullmetal Alchemist: Brotherhood
+8. So I'm a Spider, So What?
+9. One Punch Man
+10. Attack on Titan
+11. Erased
+12. Astra Lost in Space
+13. Haikyuu!!
+14. Toradora!
+15. Amagi Brilliant Park
+16. Konosuba
+17. My Love Story
+18. Hellsing Ultimate
+19. ReLIFE
+20. Re:Zero
+21. Violet Evergarden
+22. Log Horizon
+23. GATE
+24. Charlotte
+25. My Little Monster
+26. Angel Beats!
+27. Made in Abyss
+28. Black Clover
+29. Fairy Tail
+30. Restaurant to Another World
+31. Assassination Classroom
+32. Psycho-Pass
+33. Guilty Crown
+34. Haibane Renmei
+35. Id:Invaded
+36. BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense
+37. Wandering Witch: The Journey of Elaina
+38. Kino's Journey: The Beautiful World
