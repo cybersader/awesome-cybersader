@@ -10,4 +10,11 @@
     - Supreme court looking at Florida and Texas state laws on social media and moderation
         - Should the intersection between free speech and social media have a stoplight?  These platforms should be treated like a business and restricted from removing posts?
         - Platforms are pushing back on the states by saying they are being forced to push speech that they don't want to disseminate.  Supreme court vacated the decision.  Lower court apparently didn't do a proper assessment of the 1st Amendment issue.
-    - 
+    - [CISA: Most critical open source projects not using memory safe code](https://www.bleepingcomputer.com/news/security/cisa-most-critical-open-source-projects-not-using-memory-safe-code/)
+        - This is a WASTE OF TIME
+        - You might as well say "code written by humans has vulns"
+        - People say to use a certain language because of memory safety and garbage collection
+        - CISA needs to focus on valuable topics like companies not patching
+        - "This reeks of theoryware from a bunch of people with PhDs who've never been in a real environment."
+        - They can do security by design and do research, but they need to peddle and do outreach on the important stuff (MFA, social engineering, business logic, vulns and patching).
+        - You have to go out of your way to get these vulns into your environments, so this shouldn't be an "initiative" from CISA.
