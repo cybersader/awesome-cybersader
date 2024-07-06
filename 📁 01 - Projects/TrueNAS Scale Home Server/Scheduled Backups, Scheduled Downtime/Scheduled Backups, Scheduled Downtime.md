@@ -2,7 +2,14 @@
 aliases:
   - Scheduled TrueNAS Power
   - Scheduled Storj Backups
-tags: 
+  - TrueNAS Scheduled Apps Downtime
+  - Scheduled Shutoff
+  - TrueNAS Scale Power Saving
+tags:
+  - HomeLab
+  - home/server
+  - home/lab
+  - home/server/power_saving
 publish: true
 date created: Sunday, June 16th 2024, 9:19 pm
 date modified: Sunday, June 16th 2024, 10:03 pm
@@ -17,3 +24,4 @@ date modified: Sunday, June 16th 2024, 10:03 pm
 # Scheduling Backups for iX-Storj with TrueNAS Scale 
 > [!summary] The goal is to avoid all of the crazy errors I've been getting when doing backups of my TrueNAS Scale server to IX-Storj.  By turning off apps at night, I may be able to have successful backups.
 
+- 

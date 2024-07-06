@@ -25,7 +25,79 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a38920f6b4288bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc1e0add6ead84a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0995e0b83c63aecd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac36437643c5c3a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d688167294effce4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "021ddd82987085e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -85,10 +157,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "awesome hard",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -110,8 +182,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -131,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
               }
             }
           },
@@ -224,10 +295,21 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "1dff7ba13bc2843f",
+  "active": "d688167294effce4",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
+    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes",
+    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
+    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
+    "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
+    "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How/MailFail - Who's Spoofing Your Email and How.md",
@@ -245,11 +327,6 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD - 112.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Company Device Remote Wiping.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Automotive Threat Reports.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/PCI 4.0 Rants with John Strand.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Log File Analysis - Gleaning Insights From Log Files.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Exploring Python psutil Under Windows - Joff Thyer.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Discovering and Exploiting N-Days.md",
-    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
@@ -262,15 +339,9 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-23.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/I Want the Log I Can't Have.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/Big Mad Blue Team.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/7 Ways to Frustrate Attackers.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/InfraGard Indiana Members Alliance, Communication Sector Conference - Ransomware & the Cyberpocalyse.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments/Misc",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments/CND - Network Defender"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments"
   ]
 }

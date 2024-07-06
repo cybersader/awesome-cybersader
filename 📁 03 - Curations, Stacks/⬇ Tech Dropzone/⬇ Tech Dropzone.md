@@ -17,6 +17,9 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - https://keybase.io/
 - https://transcend.io/integrations
 - https://mintlify.com/pricing
+- [Conduit - Your own chat server](https://conduit.rs/)
+- https://www.openhab.org/
+- https://zulip.com/
 - 
 
 # Hardware, Gadgets
