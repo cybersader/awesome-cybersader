@@ -1,12 +1,16 @@
 ---
+aliases: 
+publish: true
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Tuesday, April 9th 2024, 10:46 pm
+date modified: Saturday, July 6th 2024, 2:46 pm
 tags:
   - NAS
   - TrueNAS
   - Backups
   - BCDR
 ---
+
+[Scheduled Backups, Scheduled Downtime](../Scheduled%20Backups,%20Scheduled%20Downtime/Scheduled%20Backups,%20Scheduled%20Downtime.md) 
 
 > The big goal here is to have cheap and reliable cloud backups that are a last resort.
 # Links
@@ -33,7 +37,7 @@ The gist:
 
 - [iX Storj](https://www.truenas.com/ix-storj/)
 	- [TrueNAS iX-Storj Cloud Storage: Secure Data Solutions](https://www.truenas.com/ix-storj/) 
-	-  $576 per year 12 TB or $150 per 5 TB per year
+	- $576 per year 12 TB or $150 per 5 TB per year
 	- X-Storj provides S3-Compatible cloud storage at [$4/TB per month](https://www.storj.io/pricing) and a starter package at $150 per year for 5 Terabytes, an unbeatable value.
 	- $7 per TB egress - $84 for 12 TB
 	- [Advice Needed: Uploading 10TB to AWS Glacier Deep Archive from TrueNAS-SCALE-23.10.1 | TrueNAS Community](https://www.truenas.com/community/threads/advice-needed-uploading-10tb-to-aws-glacier-deep-archive-from-truenas-scale-23-10-1.115646/#:~:text=One%20of%20the%20suggestions%20was,and%20manage%2C%20no%20ingress%20costing.)
@@ -110,6 +114,8 @@ The gist:
 # Testing Recovery Process
 - TODO
 # Bad Digest Error
+[Scheduled Backups, Scheduled Downtime](../Scheduled%20Backups,%20Scheduled%20Downtime/Scheduled%20Backups,%20Scheduled%20Downtime.md) 
+
 > Attempt 3/3 failed with 3 errors and: BadDigest: The Content-Md5 you specified did not match what we received.
 
 - [amazon s3 - An exception "The Content-MD5 you specified did not match what we received" - Stack Overflow](https://stackoverflow.com/questions/36179310/an-exception-the-content-md5-you-specified-did-not-match-what-we-received)

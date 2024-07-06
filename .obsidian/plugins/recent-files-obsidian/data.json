@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Template_1",
       "path": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
     }
   ],
   "omittedPaths": [],

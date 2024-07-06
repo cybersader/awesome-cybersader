@@ -1,3 +1,4 @@
+- 2024-07-06 at 14h47 · [[TrueNAS Cloud Backups]]
 - 2024-07-06 at 14h22 · [[Scheduled Backups, Scheduled Downtime]]
 - 2024-07-06 at 14h07 · [[⬇ Tech Dropzone]]
 - 2024-07-06 at 13h35 · [[📁 01 - Projects]]
@@ -465,7 +466,6 @@
 - 2024-04-22 at 11h05 · [[Dataset Available Space]]
 - 2024-04-16 at 15h02 · [[Cyber Youtube]]
 - 2024-04-13 at 16h05 · [[Home Server Power]]
-- 2024-04-09 at 22h46 · [[TrueNAS Cloud Backups]]
 - 2024-04-01 at 20h15 · [[03 - March BHIS]]
 - 2024-03-31 at 23h21 · [[Cheapest Archive Storage]]
 - 2024-03-31 at 22h02 · [[TrueNAS Drive Data Recovery]]
