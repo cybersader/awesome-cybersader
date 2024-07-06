@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "anime",
+                "query": "awesome hard",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -110,7 +110,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,6 +226,8 @@
   },
   "active": "1dff7ba13bc2843f",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How/MailFail - Who's Spoofing Your Email and How.md",
@@ -267,8 +270,6 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments/Misc",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/Setting Up Sysmon for Local Usage.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/GoPro Firewall Workaround.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/__attachments/CND - Network Defender"
   ]
