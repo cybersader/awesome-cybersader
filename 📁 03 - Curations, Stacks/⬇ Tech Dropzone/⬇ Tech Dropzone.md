@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Thursday, May 2nd 2024, 11:57 am
+date modified: Saturday, July 6th 2024, 2:07 pm
 ---
 
 # Software, Web
@@ -20,6 +20,7 @@ date modified: Thursday, May 2nd 2024, 11:57 am
 - [Conduit - Your own chat server](https://conduit.rs/)
 - https://www.openhab.org/
 - https://zulip.com/
+- [tldr InBrowser.App](https://tldr.inbrowser.app/)
 - 
 
 # Hardware, Gadgets
