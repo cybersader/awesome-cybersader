@@ -16,7 +16,7 @@ More troubleshooting to get to SMB shares - [Cannot Connect to Truenas SMB](../C
 
 - Weirdly enough, `truenas.local` still works on my phone
 - Current Network config:
-	- ![](_attachments/TrueNAS%20mDNS/IMG-20240527171013552.png)
+	- ![](IMG-20240527171013552.png)
 - So, I have a truenas.local host on my local network that can resolve to the local IP address. Right now, my phone can resolve the .local domain to the IP address, but my Windows computer couldn't in either the file explorer on the browser. What's going on? I have mDNS and WS-DISCOVERY also turned on for the Networking in the TrueNAS Scale settings
 
 # Solution
@@ -30,7 +30,7 @@ This is a client-side issue for Windows since it works on the phone.  Here's som
 
 ## Fixing Windows mDNS
 - When typing in the `.local` address as configured in my TrueNAS (`truenas.local`), I see the requests going out in Wireshark
-	- ![](_attachments/TrueNAS%20mDNS/IMG-20240527171013647.png)
+	- ![](IMG-20240527171013647.png)
 - To see multicast traffic, we can use `(_ws.col.protocol == "MDNS" || _ws.col.protocol == "LLMNR" || _ws.col.protocol == "NBNS" )`
 	- The issue is that I'm not getting any replies
 # Solution: Wireless and Ethernet Using Different Networks

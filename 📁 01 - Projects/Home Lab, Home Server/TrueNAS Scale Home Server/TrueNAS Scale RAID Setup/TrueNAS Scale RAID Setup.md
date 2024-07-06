@@ -51,7 +51,7 @@ By doing this, you’re adding that extra layer of protection, ensuring your dat
 
 - Just to be clear, I'm not rich and therefore I had to slowly buy drives.  I started with 1 drive - hence RAID 0.  Now I have 2 drives which is why I'm moving to a mirrored setup for basic redundancy.
 
-- ![600](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146461.png)
+- ![600](IMG-20240630195146461.png)
 
 - Some people seem to think it's simple to upgrade from RAID 0 (1 drive without redundancy) to RAID 1 (mirrored mode)
 	- [Just delete the pool and recrate a new pool with RAID level you want. Export disconnect/delete....](https://www.truenas.com/community/threads/how-to-upgrade-the-raid.115473/)
@@ -60,17 +60,17 @@ By doing this, you’re adding that extra layer of protection, ensuring your dat
 - TL;DR - you can't just add one drive to the pool...well actually you kind of can?
 
 - ZFS uses Data VDEVs
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146526.png)
+	- ![400](IMG-20240630195146526.png)
 - VDEVs don't need same size
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146576.png)
+	- ![400](IMG-20240630195146576.png)
 - VDEV does not need to be symmetrical size or drive count
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146623.png)
+	- ![400](IMG-20240630195146623.png)
 - Mirrors
 	- You can use this but it's expensive for storage
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146696.png)
+	- ![400](IMG-20240630195146696.png)
 - You can have many pools
 	- Datasets are not shared between pools
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146794.png)
+	- ![400](IMG-20240630195146794.png)
 - Losing a VDEV loses the pool
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240630195146857.png)
+	- ![400](IMG-20240630195146857.png)
 - 

@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "📁 01 - Projects",
+      "path": "📁 01 - Projects/📁 01 - Projects.md"
+    },
+    {
+      "basename": "Kubernetes Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
+    },
+    {
+      "basename": "TrueNAS Monitoring and Logging",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md"
+    },
+    {
       "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
     {
       "basename": "Home Server Power",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     },
     {
       "basename": "TrueNAS Scale Home Server",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
@@ -134,7 +154,7 @@
     },
     {
       "basename": "TrueNAS Scale RAID Setup",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
     },
     {
       "basename": "Awesome Office Organizing",
@@ -170,7 +190,7 @@
     },
     {
       "basename": "Immich & Cloudflare Tunnels",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
     },
     {
       "basename": "📁 99 - Changelog",
@@ -179,26 +199,6 @@
     {
       "basename": "Awesome Stream Deck Alternatives",
       "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
-    },
-    {
-      "basename": "Awesome Streaming",
-      "path": "📁 11 - Content Creation/Awesome Streaming/Awesome Streaming.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "TrueNAS Immich Setup",
-      "path": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
-    },
-    {
-      "basename": "File Organizer 2000",
-      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
-    },
-    {
-      "basename": "Template_1",
-      "path": "📦 VAULT SANDBOX TESTING/Templater Templates/Template_1.md"
     }
   ],
   "omittedPaths": [],

@@ -17,16 +17,8 @@ tags:
   - RemoteAccess
 ---
 %% Begin Waypoint %%
-- **[ATA Security](ATA%20Security.md)**
-- **[Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes.md)**
-- **[mDNS and Cloudflare Tunnels](mDNS%20and%20Cloudflare%20Tunnels.md)**
-- **[RAID vs AHCI](RAID%20vs%20AHCI.md)**
-- **[Software RAID vs Hardware RAID - TrueNAS Scale](Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale.md)**
-
-%% End Waypoint %%
-# Misc Links & Videos
-- [(40) Building A Budget NAS with TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=iSpL9LnczVQ)
-- [(40) Building A DIY NAS On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)
+- **[ATA Security](ATA%20Security/ATA%20Security.md)ems and[Filesystems and Partition Schemes](Filesystems%20and%20Partition%20Schemes/Filesystems%20and%20Partition%20Schemes.md)]]**
+- [mDNS and Cloudflare Tunnels](mDNS%20and%20Cloudflare%20Tunnels/mDNS%20and%20Cloudflare%20Tunnels.md)oint %%[RAID vs AHCI](RAID%20vs%20AHCI/RAID%20vs%20AHCI.md)ding A [Software RAID vs Hardware RAID - TrueNAS Scale](Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale/Software%20RAID%20vs%20Hardware%20RAID%20-%20TrueNAS%20Scale.md)On A Budget - TrueNAS Scale - YouTube](https://www.youtube.com/watch?v=jf_5FaVFnrU)
 - [balenaEtcher - Flash OS images to SD cards & USB drives](https://etcher.balena.io/)
 - [Total Noob Here: trying to install TrueNas on USB pendrive | TrueNAS Community](https://www.truenas.com/community/threads/total-noob-here-trying-to-install-truenas-on-usb-pendrive.102312/)
 - [Ventoy](https://www.ventoy.net/en/index.html)

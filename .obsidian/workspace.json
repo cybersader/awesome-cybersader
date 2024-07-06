@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "efc3e0e82c060349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c66aa83c80b8ebad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cd1a0fa6657fe8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -169,7 +205,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "storj",
+                "query": "kubernetes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -214,7 +250,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +267,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +290,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
               }
             }
           },
@@ -307,12 +343,19 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "8dd23e1aa7c6d278",
+  "active": "c66aa83c80b8ebad",
   "lastOpenFiles": [
-    "📁 01 - Projects/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
-    "📁 01 - Projects/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
+    "📁 01 - Projects/📁 01 - Projects.md",
+    "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+    "📁 01 - Projects/Home Lab, Home Server",
+    "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
@@ -334,11 +377,6 @@
     "📁 02 - CyberNews/2024 Cyber News/07 - July Cyber News",
     "⬇ INBOX, DROPZONE/Public Threat Actor Reporting, Blacklists.md",
     "⬇ INBOX, DROPZONE/Malware Sandboxing.md",
-    "⬇ INBOX, DROPZONE/Lookalike Domain Defenses.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/004 - Network Perimeter Lab.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/002 - Administrative Network Security.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/001 - Network Attacks & Defense Strategies.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
@@ -352,8 +390,6 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments/Misc",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc/__attachments"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences"
   ]
 }

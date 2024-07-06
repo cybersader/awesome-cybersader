@@ -8,6 +8,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 
 %% Begin Waypoint %%
 - **[[Cannot Connect to Truenas SMB]]**
+
 - **[[Custom Local Domain]]**
 - **[[Dataset Available Space]]**
 
@@ -24,9 +25,13 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Cloud Backups]]**
 	- **[[Cheapest Archive Storage]]**
 - **[[TrueNAS Immich Setup]]**
+
 - **[[TrueNAS mDNS]]**
+
+- **[[TrueNAS Monitoring and Logging]]**
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
 - **[[TrueNAS Scale RAID Setup]]**
+
 - **[[Turning Old PC into NAS in 2024]]**
 
 %% End Waypoint %%

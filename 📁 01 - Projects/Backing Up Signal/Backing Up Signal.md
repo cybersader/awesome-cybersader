@@ -25,7 +25,7 @@ date modified: Tuesday, April 30th 2024, 11:02 pm
 # Setting Up Backups on Mobile with Nextcloud
 > [!info] If you don't have Nextcloud or your own NAS, you can use Google Drive or really anything.
 > 
-> - [TrueNAS Cloud Backups](../TrueNAS%20Scale%20Home%20Server/TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)
+> - [TrueNAS Cloud Backups](../Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/TrueNAS%20Cloud%20Backups/TrueNAS%20Cloud%20Backups.md)
 
 - Go into Chats settings on Signal mobile
 	- ![300](_attachments/Backing%20Up%20Signal/IMG-20240430230242002.png)
