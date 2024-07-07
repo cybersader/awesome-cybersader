@@ -1,3 +1,5 @@
+- 2024-07-06 at 21h49 · [[First sessions]]
+- 2024-07-06 at 21h49 · [[00 DROPZONE]]
 - 2024-07-06 at 21h29 · [[TrueNAS Cloud Backups]]
 - 2024-07-06 at 21h25 · [[📁 01 - Projects]]
 - 2024-07-06 at 21h25 · [[TrueNAS Scale Home Server]]
@@ -363,7 +365,6 @@
 - 2024-04-25 at 21h24 · [[Intro to IOT Hacking]]
 - 2024-04-25 at 21h24 · [[More osint]]
 - 2024-04-25 at 21h24 · [[PKI - Common Pitfalls]]
-- 2024-04-25 at 21h24 · [[00 DROPZONE]]
 - 2024-04-25 at 21h24 · [[Golden Ticket to the Cloud]]
 - 2024-04-25 at 21h24 · [[I failed an AI job interview]]
 - 2024-04-25 at 17h55 · [[Planning Deadwood 2024 WWHF Trip]]
