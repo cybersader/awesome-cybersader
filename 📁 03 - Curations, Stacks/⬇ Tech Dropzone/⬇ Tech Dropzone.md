@@ -21,6 +21,11 @@ date modified: Saturday, July 6th 2024, 2:07 pm
 - https://www.openhab.org/
 - https://zulip.com/
 - [tldr InBrowser.App](https://tldr.inbrowser.app/)
+- [Ladybird](https://ladybird.org/) - new browser, not chromium
+- [Tuple: the best remote pair programming app on macOS and Windows](https://tuple.app/)
+- [playbit](https://playb.it/)
+- [xkcd: Pole Vault](https://xkcd.com/) - A webcomic of romance,  
+sarcasm, math, and language.
 - 
 
 # Hardware, Gadgets

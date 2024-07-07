@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -250,7 +250,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,7 +267,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -290,7 +290,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
               }
             }
           },
@@ -343,10 +343,10 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "c66aa83c80b8ebad",
+  "active": "021ddd82987085e3",
   "lastOpenFiles": [
-    "📁 01 - Projects/📁 01 - Projects.md",
     "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+    "📁 01 - Projects/📁 01 - Projects.md",
     "📁 01 - Projects/Home Lab, Home Server",
     "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
