@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "1dff7ba13bc2843f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9a38920f6b4288bc",
             "type": "leaf",
             "state": {
@@ -85,31 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8dd23e1aa7c6d278",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "efc3e0e82c060349",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "mode": "source",
                 "source": false
               }
@@ -176,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -250,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -290,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
               }
             }
           },
@@ -323,8 +287,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5,
-    "collapsed": true
+    "width": 229.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -343,33 +306,33 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "021ddd82987085e3",
+  "active": "d688167294effce4",
   "lastOpenFiles": [
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
+    "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
     "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
+    "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 01 - Projects/📁 01 - Projects.md",
     "📁 01 - Projects/Home Lab, Home Server",
-    "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
-    "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
     "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How/MailFail - Who's Spoofing Your Email and How.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/MailFail - Who's Spoofing Your Email and How",
     "📁 03 - Curations, Stacks/⬇️ Curation Dropzone.md",

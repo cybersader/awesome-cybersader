@@ -14,4 +14,5 @@ date modified: Saturday, July 6th 2024, 1:16 pm
 # Examples with Style
 - [The Threshold](https://hermitage.utsob.me/)
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
-- 
+- [Callout - Cards - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Callouts/Callout+-+Cards)
+- [🦉Another Quick Switcher - Minerva](https://minerva.mamansoft.net/%F0%9F%A6%89My+Products/%F0%9F%A6%89Another+Quick+Switcher) 

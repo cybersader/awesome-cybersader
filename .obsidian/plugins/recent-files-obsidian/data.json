@@ -1,40 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "📁 01 - Projects",
-      "path": "📁 01 - Projects/📁 01 - Projects.md"
-    },
-    {
-      "basename": "Kubernetes Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
-    },
-    {
-      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
-    },
-    {
-      "basename": "TrueNAS Monitoring and Logging",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md"
-    },
-    {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+      "basename": "Home Server Power",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     },
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
     {
-      "basename": "Home Server Power",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+      "basename": "TrueNAS Monitoring and Logging",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md"
+    },
+    {
+      "basename": "Kubernetes Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Learning",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "📁 01 - Projects",
+      "path": "📁 01 - Projects/📁 01 - Projects.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
     {
       "basename": "TrueNAS Scale Home Server",
@@ -61,10 +69,6 @@
       "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
     },
     {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
-    },
-    {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
     },
@@ -79,10 +83,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "Learning",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
     },
     {
       "basename": "004 - Network Perimeter Lab",
