@@ -1,8 +1,12 @@
 ---
+aliases: 
+tags: 
+publish: true
 date created: Saturday, April 13th 2024, 2:44 pm
-date modified: Saturday, April 13th 2024, 4:05 pm
+date modified: Saturday, July 6th 2024, 9:25 pm
 ---
 
+[Scheduled Backups, Scheduled Downtime](../Scheduled%20Backups,%20Scheduled%20Downtime/Scheduled%20Backups,%20Scheduled%20Downtime.md) 
 # WoL (wake on lan) - Solution Components
 - At&t Modem and Router
 - TrueNAS Scale
@@ -21,4 +25,4 @@ date modified: Saturday, April 13th 2024, 4:05 pm
 - AC Recovery - this accounts for 95% of the cases 
 	- Last Power State
 		- PC will go to last state before losing power
-	- ![](IMG-20240413154330173.png)
+	- ![](_attachments/Home%20Server%20Power/IMG-20240706212550496.png)
