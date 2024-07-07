@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS K3S to Docker Compose",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
+    },
+    {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "Awesome Stream Deck Alternatives",
-      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
     }
   ],
   "omittedPaths": [],

@@ -25,6 +25,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 	- **[[Cheapest Archive Storage]]**
 - **[[TrueNAS Immich Setup]]**
 
+- **[[TrueNAS K3S to Docker Compose]]**
 - **[[TrueNAS mDNS]]**
 
 - **[[TrueNAS Monitoring and Logging]]**
