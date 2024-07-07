@@ -21,6 +21,10 @@
 
 [WPA 2 Stuff](00%20DROPZONE/WPA%202%20Stuff.md)
 
+# Back doors and breaches
+
+[First sessions](00%20DROPZONE/First%20sessions.md)
+
 # Notes and learning
 
 [I failed an AI job interview](00%20DROPZONE/I%20failed%20an%20AI%20job%20interview.md)

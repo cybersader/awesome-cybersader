@@ -1,0 +1,25 @@
+# First sessions
+
+- Do we want to relate this to our company or a different company to get a change on perspective and force ourselves to think differently?
+- Some IR responders will already be thinking of routes that the attacker could have gone down.  You don't want to start listing off things that you would do. The responders need to come to a consensus after having a full discussion for each step including step one.
+- You can roleplay on doing things and the incident master can decide if that actually affects the game.
+- They're two types of questions you can ask in b&b.  You can ask for clarity and you can ask for analysis or actions
+- You can build out aspects to the team or players that give them modifiers on things whether negative or positive
+- Actions don't require dice roll
+- Cool off periods show the unexpectedness
+- The question that reveals posture - reason why the failed action could fail financially, politically, personnel wise, or technologically why the action could fail
+    - Anything you can think of is a possible finding
+    - Where do we have maybes
+    - Don't have a long list of things you learn and feel you have to fix.  Pick only one thing that you have to do from the game.
+- Established procedures should be documented as SOPs, playbooks, or in a wiki the team has access to
+- For nat crit fails you see understand how it failed and there can be repercussions
+- For crit fails an inject is put in
+- Injects - 1, 20, or 3 failed rows in a row
+- You can call 1 consultant per game
+- At what point is an event, an incident, and then a crisis.  You need someone to say it is or it isn't
+- Responders can make assumptions and also build the story but the IM can correct them
+- Server analysis is endpoint analysis on a server
+- Is this a plausible attack?
+- You can make up stories based on initial compromise or pivot
+- We are looking for the important maybes
+-
