@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Wednesday, June 19th 2024, 5:31 pm
+date modified: Sunday, July 7th 2024, 9:02 pm
 publish: true
 ---
 
@@ -24,7 +24,7 @@ Subfolders:
 # Curated Cyber Movie Lists
 - [The Complete List Of Hacker And Cyber Security Movies | by Priya Reddy | Lotus Fruit | Medium](https://medium.com/lotus-fruit/the-complete-list-of-hacker-and-cyber-security-movies-7313d11358c9)
 - [The Complete List of Hacker And Cybersecurity Movies](https://cybersecurityventures.com/movies-about-cybersecurity-and-hacking/)
-# Hacking, Cybercrime, Internet
+# Hacking, Cybercrime, Internet, Cyberwar
 ## Nonfiction
 - Mr. Robot
 - The Score
@@ -43,6 +43,12 @@ Subfolders:
 - Behind the booming ransomware industry: How hackers hold businesses hostage
 - A hacker shares his biggest fears
 - We Are Legion: The Story of the Hacktivists
+- [(1) Are Hackers the Biggest Threat to America’s Critical Infrastructure? | Cyberwar - YouTube](https://www.youtube.com/watch?v=0pOlAaLU7Xc)
+- [(1) Behind the Hacks: The Origins of Anonymous | Cyberwar - YouTube](https://www.youtube.com/watch?v=ggGmxDq2HBA)
+- [(1) How Russian Hackers Stole $100M from US Banks | Cyberwar - YouTube](https://www.youtube.com/watch?v=kNmR-UsWgxo)
+- [(1) Meeting a Russian Hacker Who Was Hacking VICE | CYBERWAR - YouTube](https://www.youtube.com/watch?v=cdfZsJd4D28)
+- [(1) The Largest Teen Hacking Group In The World - Documentary - YouTube](https://www.youtube.com/watch?v=AWhLA3vBJS8)
+- [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
 # Scams, Phishing
 ## Entertainment > Education
 - [The Beekeeper](The%20Beekeeper.md) - super over the top with the violence and phishing - so much so that it's satirical
@@ -68,7 +74,6 @@ Subfolders:
 - The Great Hack
 - The Lazarus Heist
 - [Zero Days](Zero%20Days.md)
-- [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
 - Stolen Youth: Inside the Cult at Sarah Lawrence
 - Darknet Diaries:
 	- [Darknet diaries EP 52](../../CybersaderNotion/05%20Notes%20-%20Classes,%20Presentations,%20Pods/Darknet%20diaries%20EP%2052.md) 
