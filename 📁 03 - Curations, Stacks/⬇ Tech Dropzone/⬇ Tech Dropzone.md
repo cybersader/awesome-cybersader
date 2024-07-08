@@ -26,6 +26,7 @@ date modified: Saturday, July 6th 2024, 2:07 pm
 - [playbit](https://playb.it/)
 - [xkcd: Pole Vault](https://xkcd.com/) - A webcomic of romance,  
 sarcasm, math, and language.
+- https://www.saymine.com/
 - 
 
 # Hardware, Gadgets
