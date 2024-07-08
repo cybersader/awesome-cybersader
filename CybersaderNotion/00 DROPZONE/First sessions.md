@@ -22,4 +22,23 @@
 - Is this a plausible attack?
 - You can make up stories based on initial compromise or pivot
 - We are looking for the important maybes
--
+
+- Initial compromise
+    - Compromise virtual host
+    - Exploitable external service
+    - Exchange zero day
+    - Public facing database compromise
+    - Phish
+    - Vishing
+    - Password spray
+    - Out of band phishing
+    - Credential Stuffing
+    - Gatekeeper bypass
+    - 
+- Pivot
+    - Vcenter console coercion
+    - Malicious file upload to shared file service
+    - Unpatched critical security update
+    - Lsass cred dump
+- C2
+    -
