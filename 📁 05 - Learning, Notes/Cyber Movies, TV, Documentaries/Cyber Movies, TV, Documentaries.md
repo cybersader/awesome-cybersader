@@ -49,6 +49,7 @@ Subfolders:
 - [(1) Meeting a Russian Hacker Who Was Hacking VICE | CYBERWAR - YouTube](https://www.youtube.com/watch?v=cdfZsJd4D28)
 - [(1) The Largest Teen Hacking Group In The World - Documentary - YouTube](https://www.youtube.com/watch?v=AWhLA3vBJS8)
 - [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
+- [(1) The Million-Dollar Hacker - YouTube](https://www.youtube.com/watch?v=icyTUMjlvMg)
 # Scams, Phishing
 ## Entertainment > Education
 - [The Beekeeper](The%20Beekeeper.md) - super over the top with the violence and phishing - so much so that it's satirical
