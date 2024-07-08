@@ -27,7 +27,8 @@ date modified: Saturday, July 6th 2024, 2:07 pm
 - [xkcd: Pole Vault](https://xkcd.com/) - A webcomic of romance,  
 sarcasm, math, and language.
 - https://www.saymine.com/
-- 
+- https://www.vanta.com/
+- https://www.nudgesecurity.com/
 
 # Hardware, Gadgets
 - Portable Video, Smart Glasses, Video Glasses
