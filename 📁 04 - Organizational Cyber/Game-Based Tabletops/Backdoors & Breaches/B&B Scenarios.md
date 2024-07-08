@@ -37,7 +37,7 @@
 
 You gather your team for an urgent meeting to discuss this anomaly. It could be nothing, or it could be the beginning of a larger issue. Your task is to investigate this incident thoroughly, using all the tools and procedures at your disposal. You'll need to roll the dice to determine the success of your investigative actions, but remember, time is of the essence."
 
-### Tools and Procedures
+### How it could be detected in a realistic scenario?
 
 **Tools and Techniques:**
 
