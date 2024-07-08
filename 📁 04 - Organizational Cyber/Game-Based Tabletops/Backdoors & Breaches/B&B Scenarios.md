@@ -9,7 +9,7 @@
 
 **Stage 1: Initial Compromise (Credential Stuffing)**
 
-*The attacker gathers a list of email addresses and passwords from previous data breaches. They perform credential stuffing against the credit union's VPN login portal. Despite MFA being enabled, they focus on user accounts with known weak passwords. After several attempts, they successfully gain access to an account with minimal privileges.*
+*The attacker gathers a list of email addresses and passwords from previous data breaches. They perform credential stuffing against the company's VPN login portal. Despite MFA being enabled, they focus on user accounts with known weak passwords. After several attempts, they successfully gain access to an account with minimal privileges.*
 
 **Stage 2: Pivot and Escalate (LSASS Credential Dumping via Social Engineering)**
 
