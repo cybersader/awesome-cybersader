@@ -1,0 +1,95 @@
+
+
+# First Session
+- Cards
+    - Attack Setup
+        - Initial Compromise
+            - Credential Stuffing
+            - Password Spray
+            - Vishing
+            - Public facing database compromise
+        - Pivot
+            - Vcenter console coercion
+            - Malicious file upload to shared file service
+            - Unpatched critical security update
+            - Lsass cred dump
+        - C2
+            - Misuse of Remote Access Software / Authorized Remote Tools
+            - GIFs as C2
+            - Rotating C2 Server Location
+            - HTTPS as Exfil
+            - TCP Handshakes as Morse Code
+            - Windows Background Intelligent Transfer Service (BITS)
+            - DNS as C2
+        - Persistence
+            - Golden Ticket Attack
+            - Malicious Report Macros
+            - Spawn Web Shell
+            - DLL Attacks
+            - Malicious Driver
+            - Logon Scripts
+            - Application Shimming
+            - Malicious Service
+            - Malware Injection into Client Software
+            - Event Triggered Malware
+            
+    - Starting Condition Pile
+        - Take One Procedure Card Away
+        - Cat on Keyboard Deletes Production Database?
+        - Honeypots Deployed
+        - Legal Takes Your Most Skilled Handler into a Meeting to Explain the Incident
+        - Data Uploaded to Pastebin
+        - A Little Help From My Friends
+        - Security Awareness Training for the Win!
+        - Risk Accepted
+        - It's a Feature, Not a Bug
+        - Communication Infrastructure DDoS
+        - Executive Buy-In
+        - Crank Up the Pressure
+        - Dude, Where's Our Docs?
+        - Take One Procedure Card Away
+        - Give the Defenders a Random Procedure Card
+    - Inject Pile
+        - Is it Getting Hot in Here?
+        - Bobby the Intern Kills the System You are Reviewing
+        - It was a Pentest
+        - This Isn't the First Time, and Won't Be the Last
+        - Lead Handler has a Baby, Takes FMLA Leave
+        - Attackers Timestomp Key Evidence Files
+        - Our Friend "Hacky"
+        - EDR Compromise?
+        - Dangling Domains
+        - Back to Basics
+        - Alert Fatigue is Real
+        - Read to the End
+        - Haste Makes Waste
+        - Major Failure Alert
+        - Cat on Keyboard Deletes Production Database
+        - Water, Water Everywhere!
+        - Crank Up the Pressure
+        - DiscountConsultant.lol
+        - Dude, Where's Our Docs?
+        - Take One Procedure Card Away
+        - Give the Defenders a Random Procedure Card
+    - Procedures
+        - Established
+            - Endpoint Security Protection Analysis
+            - Isolation
+            - Firewall Log Review
+            - Permissions Audit?
+        - Other
+            - Cyber Deception
+            - Permissions Audit
+            - Protocol Analysis
+            - Endpoint Analysis
+            - Server Analysis
+            - Call a Consultant
+            - Cyber Deception
+            - Memory Analysis
+            - Crisis Management
+            - SIEM Log Analysis
+            - Physical Security Review
+            - Cloud Event Log Analysis
+            - UEBA
+                
+- Not Included, But Could Draw?
