@@ -1,3 +1,14 @@
+- [🔴July 8's Top Cyber News NOW! - Ep 659](https://www.youtube.com/watch?v=PJ9NOHabfaQ)
+    - ISACs can be noisy
+    - OpenAI Breach
+        - New York Times reported breach at OpenAI for employee conversations.
+        - Unless you are cleared by legal, don't comment or do interviews
+        - Be careful doing security talks about stuff you did at work. Get it cleared first.
+        - OpenAI doesn't have to report the breach because it's private
+        - There's diminishing returns on cybersecurity investment
+        - University of Maryland (Lawson) did an analysis. Around 37% you get diminishing returns on cyber investment.
+        - You will always have residual risk - #grcmafia
+        - 
 
 - [BHIS - Talkin' Bout [infosec] News 2024-07-01
 ](https://www.youtube.com/watch?v=eUzASE1389A)
