@@ -1,3 +1,8 @@
+
+- [BHIS - Talkin' Bout [infosec] News 2024-07-08
+](https://www.youtube.com/watch?v=tBRZNE3guR4)
+    - 
+
 - [🔴July 8's Top Cyber News NOW! - Ep 659](https://www.youtube.com/watch?v=PJ9NOHabfaQ)
     - ISACs can be noisy
     - OpenAI Breach

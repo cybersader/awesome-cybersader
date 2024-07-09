@@ -12,4 +12,5 @@ A curated list of delightful productivity resources. - jyguyomarch/awesome-produ
 - https://github.com/mikalv/awesome-i2p
 - https://github.com/yowainwright/awesome-writing-tools
 - https://senja.io/
+- https://krebsonsecurity.com/tools-for-a-safer-pc/
 - 
