@@ -1,7 +1,35 @@
 
 - [BHIS - Talkin' Bout [infosec] News 2024-07-08
 ](https://www.youtube.com/watch?v=tBRZNE3guR4)
-    - 
+    - Story # 1b: National Crime Agency leads international operation to degrade illegal versions of Cobalt Strike
+        - Europol took out a bunch of Cobalt Strike servers
+        - Cobalt Strike is easy to find artifacts for - there are methods. 
+        - If they aren't using proxies and have bad OPSEC, then it can be easy to find those malicious servers and their "mothership."
+        - Looks like ISP-level blackholing because law enforcement were involved
+    - RockYou2024
+        - Look like a bunch of junk, hashes, duplicates, and lack of thorough cleaning that is worthy to be called "RockYou2024."
+        - You really just need to check your environment for password reuse, DLP for password hygiene and using weird sources, etc.
+    - Story # 3: Ticketmaster Breach: ShinyHunters Leak 440K Taylor Swift Eras Tour Ticket Data
+        - https://hackread.com/ticketmaster-breach-shinyhunters-leak-taylor-swift-eras-tour-tickets/
+        - Exfil'd 22 billion $ worth of data supposedly
+        - LiveNation was gonna pay 1 million to shush
+        - ShinyHunters realized they had Taylor Swift ticket data and upped the price to $8 million.
+        - The ShinyHunters hackers extorted them for $1 million with a $7 million processing fee #cyberMeme #dataBreach
+    - Story # 4: US Supreme Court ruling will likely cause cyber regulation chaos
+        - https://www.csoonline.com/article/2512955/us-supreme-court-ruling-will-likely-cause-cyber-regulation-chaos.html
+        - Regulatory earthquake
+        - Supreme court overturned the "Chevron Deference or Chevron Doctrine"
+        - The court case was called "Loper Bright Enterprises v. Raimondo"
+        - Chevron instructed lower courts to defer to regulatory agencies in cases requiring interpretation of congressional intent.
+        - People are asking "what will happen to FTC and FCC regulations?
+        - There is binding precedence on what happened before, but it opens up challenges to cybersecurity regulations.
+        - Regulatory agencies can still give their interpretations of congress laws, but now judges can have disgression if they believe the regulatory agency is correct or not.
+        - We will see more cases around data breach reporting requirements, AI regulations, etc.
+        - Things are subject to judicial review again if there is a "lack of clarity" in laws passed by Congress.
+        - Laws don't have to spell out what agencies can do, but there has to be definitions of theses agencies' mandates.
+        - We've been banging the drum and inching forward with a disciplined approach and now we are on shaky ground again. Sometimes we have to beat people over the head with regulations. This can cause GRC to lose a bit of its backing.
+        - These agencies are appointed and not elected and subject to weird changes due to party changes. This is forcing Congress to delegate authority into the law. If Congress gets this delegation encoded into law, then it could help. In the short term, it will be a mess.
+        - 
 
 - [🔴July 8's Top Cyber News NOW! - Ep 659](https://www.youtube.com/watch?v=PJ9NOHabfaQ)
     - ISACs can be noisy
