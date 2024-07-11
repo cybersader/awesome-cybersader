@@ -12,13 +12,14 @@ date modified: Wednesday, June 19th 2024, 1:52 pm
 
 
 # Curated Tabletop Scenarios
-- https://www.cisa.gov/sites/default/files/2024-06/Joint%20Cyber%20Defense%20Collaborative%20Artificial%20Intelligence%20Cyber%20Tabletop%20Exercise.pdf
-- https://www.cisa.gov/resources-tools/resources/cybersecurity-scenarios
-- https://www.cisa.gov/resources-tools/services/cisa-tabletop-exercise-packages
-- https://www.fsisac.com/exercises
-  - https://www.fsisac.com/events#exercises
-- https://www.huntress.com/resources/incident-response-tabletop-in-a-box
-- https://www.cisecurity.org/insights/white-papers/six-tabletop-exercises-prepare-cybersecurity-team
+- Curated 
+  - https://www.cisa.gov/sites/default/files/2024-06/Joint%20Cyber%20Defense%20Collaborative%20Artificial%20Intelligence%20Cyber%20Tabletop%20Exercise.pdf
+  - https://www.cisa.gov/resources-tools/resources/cybersecurity-scenarios
+  - https://www.cisa.gov/resources-tools/services/cisa-tabletop-exercise-packages
+  - https://www.fsisac.com/exercises
+    - https://www.fsisac.com/events#exercises
+  - https://www.huntress.com/resources/incident-response-tabletop-in-a-box
+  - https://www.cisecurity.org/insights/white-papers/six-tabletop-exercises-prepare-cybersecurity-team
 
 - Scenario Ideas (not full scenarios, seeds)
   - https://github.com/northvein/TabletopTuesday/blob/main/TableTopTuesday_Scenarios
