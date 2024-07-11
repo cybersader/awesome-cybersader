@@ -29,6 +29,13 @@
         - Laws don't have to spell out what agencies can do, but there has to be definitions of theses agencies' mandates.
         - We've been banging the drum and inching forward with a disciplined approach and now we are on shaky ground again. Sometimes we have to beat people over the head with regulations. This can cause GRC to lose a bit of its backing.
         - These agencies are appointed and not elected and subject to weird changes due to party changes. This is forcing Congress to delegate authority into the law. If Congress gets this delegation encoded into law, then it could help. In the short term, it will be a mess.
+        - Going forward, cyber regulations may have challenges. The SEC regulations for 4 days on cybersecurity materiality has people upset, so some of these might go up to the courts.
+        - Judges can now simply have more disgression on whether agency interpretations of laws are correct or not.
+        - "Lack of clarity" on a law is an important delineation. Agencies that don't relate to security or technology will be moreso in the firing line. 
+        - The interpretive authority used to be regulatory agencies, but now it won't always be the case. This can be good, but it can also be bad.
+        - Congress should realistically delegate authority to agencies
+    - 00:43:08 - Story # 5: California Advances Unique Safety Regulations for AI Companies Despite Tech Firm opposition
+        - https://www.bankinfosecurity.com/openai-did-disclose-2023-breach-to-feds-public-report-a-25713
         - 
 
 - [🔴July 8's Top Cyber News NOW! - Ep 659](https://www.youtube.com/watch?v=PJ9NOHabfaQ)
