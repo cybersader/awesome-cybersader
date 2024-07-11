@@ -14,7 +14,11 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Endpoint Hardening]]**
 - **[[Game-Based Tabletops]]**
 - **[[Incident Response]]**
+- **Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards**
+	- [[Indiana Cyber Regulation, Laws]]
 - **[[Org Data Governance]]**
+	- [[PI Types]]
+- **[[Organization Documentation & Wikis]]**
 - **[[Social Engineering]]**
 - **[[Workforce Education]]**
 

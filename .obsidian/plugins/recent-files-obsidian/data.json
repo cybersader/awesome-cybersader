@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
       "basename": "TrueNAS K3S to Docker Compose",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "TrueNAS Cloud Backups",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 02 - CyberNews",
       "path": "📁 02 - CyberNews/📁 02 - CyberNews.md"
-    },
-    {
-      "basename": "Immich & Cloudflare Tunnels",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
     }
   ],
   "omittedPaths": [],
