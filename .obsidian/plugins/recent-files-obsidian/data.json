@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Podman Environment",
+      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md"
+    },
+    {
+      "basename": "Secure Cyber Environment",
+      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md"
+    },
+    {
       "basename": "TrueNAS K3S to Docker Compose",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Incident Response",
       "path": "📁 04 - Organizational Cyber/Incident Response/Incident Response.md"
-    },
-    {
-      "basename": "Cyber Books",
-      "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
-    },
-    {
-      "basename": "06 - June Cyber News",
-      "path": "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md"
     }
   ],
   "omittedPaths": [],
