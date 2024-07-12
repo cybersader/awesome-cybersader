@@ -5,6 +5,14 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
     },
     {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
+      "basename": "📁 03 - Curations, Stacks",
+      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
+    },
+    {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
@@ -185,20 +193,12 @@
       "path": "📁 04 - Organizational Cyber/Incident Response/Incident Response.md"
     },
     {
-      "basename": "📁 03 - Curations, Stacks",
-      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
-    },
-    {
       "basename": "Cyber Books",
       "path": "📁 03 - Curations, Stacks/Cyber Books/Cyber Books.md"
     },
     {
       "basename": "06 - June Cyber News",
       "path": "📁 02 - CyberNews/2024 Cyber News/06 - June Cyber News/06 - June Cyber News.md"
-    },
-    {
-      "basename": "📁 02 - CyberNews",
-      "path": "📁 02 - CyberNews/📁 02 - CyberNews.md"
     }
   ],
   "omittedPaths": [],
