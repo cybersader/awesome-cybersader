@@ -9,6 +9,8 @@ date modified: Monday, May 27th 2024, 9:59 am
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Culture Drop]]**
 - **[[AI Usage in Orgs]]**
+- **[[Container Security]]**
+	- **[[Secure Podman Setup]]**
 - **[[Cyber Team Building]]**
 - **[[Cybersecurity Culture Building]]**
 - **[[Endpoint Hardening]]**
@@ -19,6 +21,7 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Org Data Governance]]**
 	- [[PI Types]]
 - **[[Organization Documentation & Wikis]]**
+- **[[Scripting vs Development Risks on Endpoints]]**
 - **[[Secure Cyber Environment]]**
 - **[[Social Engineering]]**
 - **[[Workforce Education]]**

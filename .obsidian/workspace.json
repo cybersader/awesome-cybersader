@@ -56,24 +56,12 @@
             }
           },
           {
-            "id": "50d35e134aea7973",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 19 - Politics, Government/📁 19 - Politics, Government.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8b2f7a8231b823ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
+                "file": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
                 "mode": "source",
                 "source": false
               }
@@ -214,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 19 - Politics, Government/📁 19 - Politics, Government.md",
+                "file": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 19 - Politics, Government/📁 19 - Politics, Government.md",
+                "file": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
+                "file": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
               }
             }
           },
@@ -306,15 +294,25 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "50d35e134aea7973",
+  "active": "8b2f7a8231b823ad",
   "lastOpenFiles": [
+    "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
+    "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
+    "🕸️ UNSTRUCTURED/Reporting Phishing.md",
+    "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints",
+    "📁 12 - Religion, Ontology, Philosophy/📁 12 - Religion, Ontology, Philosophy.md",
     "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md",
+    "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
+    "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md",
+    "📁 04 - Organizational Cyber/Container Security/Container Security.md",
+    "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup",
+    "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
+    "📁 04 - Organizational Cyber/Container Security",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 19 - Politics, Government/📁 19 - Politics, Government.md",
     "📁 19 - Politics, Government",
-    "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
     "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md",
@@ -329,21 +327,11 @@
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "JS/publish search hotkey.js",
-    "JS/Reader view for Obsidian Publish",
-    "JS",
-    "CSS/Reader view",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md",
-    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
-    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-    "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md",
-    "📁 04 - Organizational Cyber/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards/Indiana Cyber Regulation, Laws.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",

@@ -1,24 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "📁 19 - Politics, Government",
-      "path": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
+      "basename": "Markdown Practices in Obsidian",
+      "path": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
+    },
+    {
+      "basename": "Scripting vs Development Risks on Endpoints",
+      "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
+    },
+    {
+      "basename": "Reporting Phishing",
+      "path": "🕸️ UNSTRUCTURED/Reporting Phishing.md"
+    },
+    {
+      "basename": "📁 12 - Religion, Ontology, Philosophy",
+      "path": "📁 12 - Religion, Ontology, Philosophy/📁 12 - Religion, Ontology, Philosophy.md"
     },
     {
       "basename": "Church Operations During Conflict",
       "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
     },
     {
+      "basename": "📁 04 - Organizational Cyber",
+      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
+    },
+    {
+      "basename": "Secure Podman Setup",
+      "path": "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md"
+    },
+    {
+      "basename": "Container Security",
+      "path": "📁 04 - Organizational Cyber/Container Security/Container Security.md"
+    },
+    {
       "basename": "Securing Python on Workstations",
       "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md"
     },
     {
-      "basename": "Secure Cyber Environment",
-      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md"
-    },
-    {
       "basename": "Home Server Power",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+    },
+    {
+      "basename": "📁 19 - Politics, Government",
+      "path": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
+    },
+    {
+      "basename": "Secure Cyber Environment",
+      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -171,34 +199,6 @@
     {
       "basename": "DD 108",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md"
-    },
-    {
-      "basename": "DD - 112",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD - 112.md"
-    },
-    {
-      "basename": "Company Device Remote Wiping",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Company Device Remote Wiping.md"
-    },
-    {
-      "basename": "Automotive Threat Reports",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/Automotive Threat Reports.md"
-    },
-    {
-      "basename": "PCI 4.0 Rants with John Strand",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/PCI 4.0 Rants with John Strand.md"
-    },
-    {
-      "basename": "Log File Analysis - Gleaning Insights From Log Files",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Log File Analysis - Gleaning Insights From Log Files.md"
-    },
-    {
-      "basename": "Exploring Python psutil Under Windows - Joff Thyer",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Exploring Python psutil Under Windows - Joff Thyer.md"
-    },
-    {
-      "basename": "Discovering and Exploiting N-Days",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/BHIS Videos/Discovering and Exploiting N-Days.md"
     }
   ],
   "omittedPaths": [],
