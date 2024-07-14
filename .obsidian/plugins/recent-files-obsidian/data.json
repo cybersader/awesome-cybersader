@@ -5,6 +5,10 @@
       "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
       "basename": "Company Examples of Privacy Violation",
       "path": "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "From Other Wiki",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
-    },
-    {
-      "basename": "Password Sharing Regex",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md"
     }
   ],
   "omittedPaths": [],

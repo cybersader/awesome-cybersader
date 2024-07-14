@@ -169,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "examples",
+                "query": "CMS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -306,10 +306,11 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "7aba871cbefcf3e6",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
+    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "JS/publish search hotkey.js",
     "JS/Reader view for Obsidian Publish",
     "JS",
@@ -343,7 +344,6 @@
     "CybersaderNotion/00 DROPZONE/First sessions.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
