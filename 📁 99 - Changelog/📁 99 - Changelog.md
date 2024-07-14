@@ -1,5 +1,5 @@
+- 2024-07-14 at 15h15 · [[Awesome Obsidian Wiki Examples]]
 - 2024-07-14 at 14h48 · [[Company Examples of Privacy Violation]]
-- 2024-07-14 at 14h46 · [[Awesome Obsidian Wiki Examples]]
 - 2024-07-14 at 13h58 · [[Customizing Obsidian Publish]]
 - 2024-07-14 at 13h50 · [[🕸️ UNSTRUCTURED]]
 - 2024-07-14 at 13h40 · [[Cybersader Wiki Features and Changes]]
