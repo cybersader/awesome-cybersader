@@ -282,12 +282,6 @@
   ],
   "customRegexes": [
     {
-      "label": "No spaces below heading line",
-      "find": "(\\#{1,6}\\s.*\\n)(\\n)",
-      "replace": "$1",
-      "flags": "gm"
-    },
-    {
       "label": "No spaces after bullet point",
       "find": "(^\\s*- )( {1,8})",
       "replace": "$1",

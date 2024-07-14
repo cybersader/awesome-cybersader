@@ -4,10 +4,11 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Monday, April 29th 2024, 1:28 pm
+date modified: Sunday, July 14th 2024, 7:26 pm
 ---
 
 # Ideas
+
 - Make extension for usage in Github.dev for helping do markdown without code in innovative and safe ways
   - If this doesn't work then look at how other in-the-browser code editors are safe and if they could somehow be implemented
 - Obsidian GitHub action for running code like a vault would
@@ -15,6 +16,7 @@ date modified: Monday, April 29th 2024, 1:28 pm
 - Linting for filenames and folders to make sure that they work on Windows (No ":" and other characters)
 
 # Obsidian in the Web?
+
 - https://www.reddit.com/r/ObsidianMD/comments/10sj378/web_version_of_obsidian/
 - https://github.com/sytone/obsidian-remote
 - https://vscode.dev/
@@ -22,12 +24,13 @@ date modified: Monday, April 29th 2024, 1:28 pm
 - https://neverinstall.com/
 
 # Obsidian Conflicts and Syncing on Network Share?
+
 - [📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md](/📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md)
 
 - Somehow use a WebDav client and have the vault stored in cloud
 
-
 # Misc
+
 - [ ] BUG with deleting files taking a long time 🔺 ➕ 2024-04-29
 - Have AI generate smart permalinks for pages
 	- [Permalinks - Publish and unpublish notes - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Publish+and+unpublish+notes#Permalinks)

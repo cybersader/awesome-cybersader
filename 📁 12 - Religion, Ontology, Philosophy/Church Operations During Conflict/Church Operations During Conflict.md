@@ -6,10 +6,11 @@ tags:
   - crisis_management
 publish: true
 date created: Sunday, July 14th 2024, 6:02 pm
-date modified: Sunday, July 14th 2024, 7:15 pm
+date modified: Sunday, July 14th 2024, 7:31 pm
 ---
 
 # Sacraments During Conflict
+
 The Catholic Church has a well-established structure and plan for serving the sacraments and communicating during times of conflict and crisis. 
 
 Firstly, the Church recognizes that even in the face of grave crises and challenges, the "powers of death shall not prevail against it" .[^2] The Church's structure, as a "universal communion in faith and sacramental life", allows it to present a consistent and united position at the diocesan, national, and universal levels .[^1] This ensures the continuity of the Church's sacramental ministry even in times of turmoil.
@@ -34,6 +35,7 @@ In summary, the Catholic Church has a well-developed structure and plan for serv
 [^10] [Evangelii Praecones 69](https://www.vatican.va/content/pius-xii/en/encyclicals/documents/hf_p-xii_enc_02061951_evangelii-praecones.html)
 
 # Holy Orders During Conflict
+
 Based on the Catholic Church's teachings, the sacrament of Holy Orders can still be conferred and the Church's sacramental ministry maintained even during times of conflict and crisis.
 
 The Catechism of the Catholic Church affirms that the sacrament of Holy Orders, through which the mission entrusted by Christ to the apostles continues to be exercised in the Church, is essential for the Church's existence .[^2] The Church has a well-established structure and process for ordaining bishops, priests, and deacons to ensure the continuity of this sacramental ministry .[^1][^3][^7]

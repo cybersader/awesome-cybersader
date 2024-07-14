@@ -12,13 +12,14 @@ publish: true
 
 Subfolders:
 %% Begin Waypoint %%
-- **[Inside Job - 2008 Financial Crisis](Inside%20Job%20-%202008%20Financial%20Crisis.md)**
-- **[Money Explained](Money%20Explained.md)**
-- **[The Beekeeper](The%20Beekeeper.md)**
-- **[The Blacklist](The%20Blacklist.md)**
-- **[The Case Against Boeing](The%20Case%20Against%20Boeing.md)**
-- **[WarGames](WarGames.md)**
-- **[Zero Days](Zero%20Days.md)**
+- **[[How to Rob a Bank]]**
+- **[[Inside Job - 2008 Financial Crisis]]**
+- **[[Money Explained]]**
+- **[[The Beekeeper]]**
+- **[[The Blacklist]]**
+- **[[The Case Against Boeing]]**
+- **[[WarGames]]**
+- **[[Zero Days]]**
 
 %% End Waypoint %%
 # Curated Cyber Movie Lists

@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "How to Rob a Bank",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank/How to Rob a Bank.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+    },
+    {
+      "basename": "Church Operations During Conflict",
+      "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
+    },
+    {
+      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
+    },
+    {
+      "basename": "Home Server Power",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
       "basename": "Markdown Practices in Obsidian",
       "path": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
     },
@@ -15,10 +51,6 @@
     {
       "basename": "📁 12 - Religion, Ontology, Philosophy",
       "path": "📁 12 - Religion, Ontology, Philosophy/📁 12 - Religion, Ontology, Philosophy.md"
-    },
-    {
-      "basename": "Church Operations During Conflict",
-      "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
     },
     {
       "basename": "📁 04 - Organizational Cyber",
@@ -37,10 +69,6 @@
       "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md"
     },
     {
-      "basename": "Home Server Power",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
-    },
-    {
       "basename": "📁 19 - Politics, Government",
       "path": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
     },
@@ -49,20 +77,8 @@
       "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md"
     },
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
-    },
-    {
       "basename": "🕸️ UNSTRUCTURED",
       "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
     },
     {
       "basename": "Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards",
@@ -121,10 +137,6 @@
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
     {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
@@ -139,14 +151,6 @@
     {
       "basename": "Kubernetes Home Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
@@ -195,10 +199,6 @@
     {
       "basename": "001 - Network Attacks & Defense Strategies",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/EC Council/CND - Network Defender/001 - Network Attacks & Defense Strategies.md"
-    },
-    {
-      "basename": "DD 108",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Cyber News, TTP, Learning/DD 108.md"
     }
   ],
   "omittedPaths": [],
