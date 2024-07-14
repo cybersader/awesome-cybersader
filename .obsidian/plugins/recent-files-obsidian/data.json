@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Home Server Power",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards",
+      "path": "📁 04 - Organizational Cyber/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards.md"
+    },
+    {
       "basename": "Awesome Obsidian Wiki Examples",
       "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
     {
       "basename": "Contributable Obsidian Wiki",
@@ -19,18 +47,6 @@
     {
       "basename": "📁 09 - My Obsidian Stack",
       "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "Knowledge Organization",
@@ -79,10 +95,6 @@
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "Home Server Power",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     },
     {
       "basename": "TrueNAS Monitoring and Logging",
@@ -187,18 +199,6 @@
     {
       "basename": "oCISO Wiki",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md"
-    },
-    {
-      "basename": "2024 Threat Patterns",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/2024 Threat Patterns.md"
-    },
-    {
-      "basename": "Misc Resources",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Misc Resources.md"
-    },
-    {
-      "basename": "From Other Wiki",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
     }
   ],
   "omittedPaths": [],

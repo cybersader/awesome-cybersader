@@ -1,0 +1,156 @@
+.publish-renderer pre.frontmatter.language-yaml {
+    /* !important is required to override a style attribute declaration on the element */
+    display: block !important; 
+}
+
+.markdown-preview-view .internal-embed img {
+	cursor: zoom-in;
+}
+  
+.markdown-preview-view .internal-embed.zoomed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100; /* Below the image, covers the viewport */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.markdown-preview-view .internal-embed.zoomed::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--background-primary);
+	z-index: -1; /* Behind the content of .internal-embed */
+}
+  
+.markdown-preview-view .internal-embed.zoomed img {
+	cursor: zoom-out;
+	max-height: 100vh;
+	max-width: 100vw;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
+
+/* Mobile CSS Settings */
+@media (max-width: 1000px) {
+    .render-container {
+      position: relative;
+      max-width: 100%;
+/*      height: 100%;*/
+      width: 100%;
+/*      overflow: hidden;*/
+      flex-direction: column;
+    }
+
+    .render-container-inner {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+
+  .graph-view-outer{
+    margin-top: 12px !important;
+  }
+
+  .site-body-right-column-inner{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .site-body-right-column {
+    line-height: 1.3;
+    width: 100% !important;
+    border-top: var(--sidebar-left-border-width) solid var(--sidebar-left-border-color);
+  }
+
+  .publish-renderer > .markdown-preview-view > .markdown-preview-sizer {
+    margin-right: 0;
+  }
+  .published-container.has-outline .site-body-right-column,
+  .published-container.has-graph .site-body-right-column {
+    display: block;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+	.publish-renderer > .markdown-preview-view > .markdown-preview-sizer {
+	  margin-right: 0;
+	}
+	.published-container.has-outline .site-body-right-column,
+	.published-container.has-graph .site-body-right-column {
+	  display: none;
+	}
+}
+
+/* Show properties of a note in the published pages */
+/* formats the overall properties block except aliases and tags */
+.propertyitemtable {
+    display: block; 
+    justify-content: end; 
+    gap: 3px; 
+    font-family: var(--font-monospace); 
+    font-size: var(--font-smaller);
+}
+
+/* formats each row of properties */
+.propertyitem {
+    font-size: var(--font-smallest);
+    font-weight: normal;
+    z-index: 1;
+    cursor: default;
+    padding: 5px 20px;
+    text-align: justify;
+    font-family: var(--font-monospace);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* formats the row of tags */
+.propertyitemtags {
+    margin: 10px;
+    font-size: var(--font-smaller);
+}
+
+/* formats each tag */
+.propertyitemtags a.tag {
+    background-color: var(--tag-background);
+    border: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    color: var(--tag-color);
+    font-size: var(--tag-size);
+    font-weight: var(--tag-weight);
+    text-decoration: var(--tag-decoration);
+    padding: var(--tag-padding-y) var(--tag-padding-x);
+    line-height: 1;
+}
+
+/* formats the row of aliases */
+.propertyitemaliases {
+    margin: 10px; 
+    font-size: var(--font-smaller); 
+    text-align: center;    
+    cursor: default;
+}
+
+/* formats each alias */
+.propertyitemaliases a.alias {
+    background-color: var(--tag-background);
+    border: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    color: var(--tag-color);
+    font-size: var(--tag-size);
+    font-weight: var(--tag-weight);
+    text-decoration: var(--tag-decoration);
+    padding: var(--tag-padding-y) var(--tag-padding-x);
+    line-height: 1;
+}

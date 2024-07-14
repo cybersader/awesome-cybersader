@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Sunday, July 14th 2024, 3:29 pm
+date modified: Sunday, July 14th 2024, 3:58 pm
 ---
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
@@ -17,12 +17,15 @@ date modified: Sunday, July 14th 2024, 3:29 pm
     - [obsidian-community/obsidian-hub: Resource hub for Obsidian resources.](https://github.com/obsidian-community/obsidian-hub)
 - [Index - Data Engineering Wiki](https://dataengineering.wiki/Index)
     - [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
-# Examples with Style
+# Examples
 - [The Threshold](https://hermitage.utsob.me/)
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [Callout - Cards - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Callouts/Callout+-+Cards)
 - [🦉Another Quick Switcher - Minerva](https://minerva.mamansoft.net/%F0%9F%A6%89My+Products/%F0%9F%A6%89Another+Quick+Switcher) 
 - [About - The Integral Guide to Well-Being](https://integralguide.com/About) 
+- https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0
+- https://notes.philoserf.com/Home
+- 
 
 # Misc JS and CSS
 - https://gist.github.com/elkadre
