@@ -3,8 +3,11 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Saturday, July 6th 2024, 1:16 pm
+date modified: Sunday, July 14th 2024, 1:59 pm
 ---
+
+[Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
+[Folder Notes & Publish](../Contributable%20Obsidian%20Wiki/Folder%20Notes%20&%20Publish/Folder%20Notes%20&%20Publish.md)
 # Contributable Wiki Git-Based
 - [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - [00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
@@ -16,3 +19,7 @@ date modified: Saturday, July 6th 2024, 1:16 pm
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [Callout - Cards - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Callouts/Callout+-+Cards)
 - [🦉Another Quick Switcher - Minerva](https://minerva.mamansoft.net/%F0%9F%A6%89My+Products/%F0%9F%A6%89Another+Quick+Switcher) 
+
+# Reader View, Sidebar, Hamburger Button
+- [Reader view in Publish using cssClasses - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/reader-view-in-publish-using-cssclasses/84229)
+- 

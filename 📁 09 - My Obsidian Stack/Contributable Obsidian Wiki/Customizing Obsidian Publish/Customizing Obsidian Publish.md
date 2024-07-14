@@ -3,8 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, April 24th 2024, 4:40 pm
-date modified: Sunday, June 23rd 2024, 4:48 pm
+date modified: Sunday, July 14th 2024, 1:58 pm
 ---
+
+[Awesome Obsidian Wiki Examples](../../Awesome%20Obsidian%20Wiki%20Examples/Awesome%20Obsidian%20Wiki%20Examples.md)
 
 > [!tldr] Customization is mainly done with publish.js and publish.css
 
@@ -17,7 +19,6 @@ date modified: Sunday, June 23rd 2024, 4:48 pm
 - [Obsidian Publish resources - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-resources/74582/20)
 - Obsidian Hub
 	- https://github.com/obsidian-community/obsidian-hub/blob/main/publish.css
-	- 
 ## GitHub Scripts & Actions
 - [obsidian-hub/.github at main · obsidian-community/obsidian-hub](https://github.com/obsidian-community/obsidian-hub/tree/main/.github)
 - 
@@ -27,7 +28,6 @@ date modified: Sunday, June 23rd 2024, 4:48 pm
 	- [How to redirect to note when clicking on folder in Publish - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/how-to-redirect-to-note-when-clicking-on-folder-in-publish/38042)
 
 # Templating, Output as Markdown
-
 > [!tldr] The value of this approach is that we don't have to rely on GitHub actions or external processes that interact with Obsidian Publish in weird ways.  We can simply do the processing and programmatic stuff right in the vault and output as HTML or markdown.
 
 - [Introduction - Templater](https://silentvoid13.github.io/Templater/introduction.html) - Templater Docs

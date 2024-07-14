@@ -7,5 +7,6 @@ date modified: Friday, July 12th 2024, 11:45 am
 ---
 %% Begin Waypoint %%
 - **[[Podman Environment]]**
+- **[[Securing Python on Workstations]]**
 
 %% End Waypoint %%

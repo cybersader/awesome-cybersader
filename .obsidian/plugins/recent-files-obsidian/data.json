@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Customizing Obsidian Publish",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
+    },
+    {
+      "basename": "📁 09 - My Obsidian Stack",
+      "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Learning",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
+    },
+    {
+      "basename": "Securing Python on Workstations",
+      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md"
+    },
+    {
       "basename": "Podman Environment",
       "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md"
     },
@@ -57,14 +93,6 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
     },
     {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
-    },
-    {
-      "basename": "Learning",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
-    },
-    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
@@ -75,18 +103,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "📁 17 - Knowledge Engineering",
@@ -183,22 +199,6 @@
     {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
-    },
-    {
-      "basename": "Awesome Office Organizing",
-      "path": "📁 03 - Curations, Stacks/Awesome Office Organizing/Awesome Office Organizing.md"
-    },
-    {
-      "basename": "Cyber Posters",
-      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
-    },
-    {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
-    },
-    {
-      "basename": "Incident Response",
-      "path": "📁 04 - Organizational Cyber/Incident Response/Incident Response.md"
     }
   ],
   "omittedPaths": [],
