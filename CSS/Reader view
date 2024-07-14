@@ -1,0 +1,148 @@
+
+/************************  READER ************************/
+
+@media screen and (min-width: 751px) {
+    #toggle-sidebar-btn {
+        margin: 0px;
+        width: 30px;
+        background: none;
+        padding: 5px;
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        background: none;
+        border-radius: 50%;
+        background: var(--background-primary);
+        opacity: 1;
+        color: var(--component-title-color);
+        z-index: 100;
+    }
+    .sliding-windows #toggle-sidebar-btn {
+        right: 287px;
+        top: 25px;
+    }
+
+    #toggle-sidebar-btn:hover {
+        color: var(--color-base-100);
+        background: var(--background-secondary);
+    }
+
+    #toggle-sidebar-btn:hover {
+        cursor: pointer;
+    }
+    .theme-dark #toggle-sidebar-btn {
+        top: 25px;
+    }
+
+    .site-body:has(.reader-view) #toggle-sidebar-btn {
+        color: var(--component-title-color);
+    }
+    .site-body:has(.reader-view) #toggle-sidebar-btn::before {
+        content: "Press r to switch view";
+        position: absolute;
+        right: 33px;
+        color: var(--text-faint);
+        font-size: var(--font-smaller);
+    }
+    .site-body:has(.reader-view) .published-container .markdown-rendered h1 {
+        margin-top: 0px;
+    }
+    .site-body:has(.reader-view) .markdown-preview-view {
+        font-size: calc(0.8rem + 0.30vw);
+    }
+
+    .site-body:has(.reader-view) #toggle-sidebar-btn {
+        top: 5px;
+        background: transparent;
+    }
+
+    .site-body:has(.reader-view) #toggle-sidebar-btn:hover {
+        background: none;
+    }
+
+    .sliding-windows .site-body:has(.reader-view) #toggle-sidebar-btn {
+        right: 5px;
+    }
+
+    .published-container.has-navigation:has(.reader-view) .site-header {
+        display: block;
+        position: fixed;
+        top: 0;
+	z-index: 10; 
+    }
+    .sliding-windows .site-body:has(.reader-view) .markdown-preview-view {
+        padding-top:40px;
+    }
+    .published-container.has-navigation:has(.reader-view) .site-header .site-header-text::after {
+        display: none;
+    }
+
+    .sliding-windows:has(.reader-view) .publish-renderer,
+    .sliding-windows:has(.reader-view) .render-container,
+    body:has(.reader-view) {
+        background-color: var(--background-reader);
+    }
+    .site-body:has(.reader-view) .render-container-inner {
+        margin: 0 auto;
+    }
+
+    body:not(.sliding-windows):has(.reader-view) .is-readable-line-width.has-outline.has-navigation .publish-renderer > .markdown-preview-view > .markdown-preview-sizer {
+        margin-right: inherit;
+    }
+    body:not(.sliding-windows):has(.reader-view) .publish-renderer > .markdown-preview-view > .markdown-preview-sizer {
+        margin: 0 auto;
+    }
+
+    .sliding-windows .publish-renderer:has(.reader-view)  {
+        position: sticky;
+        width: 800px;
+        flex: 0 0 800px;
+    }
+
+    .sliding-windows div.hover-popover.is-loaded .publish-renderer {
+        width: inherit!important;
+        flex:inherit!important;
+    }
+
+   .sliding-windows .site-body:has(.reader-view) .site-body-center-column,
+    .sliding-windows .published-container.has-graph .site-body:has(.reader-view) .site-body-center-column {
+        padding-right: 0px;
+    } 
+    .site-body:has(.reader-view) .site-body-center-column {
+        padding-left: 0px;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+    }
+    .theme-dark .site-body:has(.reader-view) .site-body-center-column {
+        border-top: 1px solid var(--divider-color);
+    }
+
+    .site-body:has(.reader-view) .page-header,
+    .site-body:has(.reader-view) .mod-footer,
+    .site-body:has(.reader-view) .outline-view-outer,
+    .site-body:has(.reader-view) .graph-view-outer .published-section-header,
+    .site-body:has(.reader-view) .site-footer,
+    .site-body:has(.reader-view) .search-view-container,
+    .site-body:has(.reader-view) .nav-view-outer,
+    .site-body:has(.reader-view) .site-body-right-column,
+    .site-body:has(.reader-view) .site-body-left-column-site-name,
+    .site-body:has(.reader-view) .site-body-left-column-site-logo,
+    .site-body:has(.reader-view) .site-body-left-column {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #toggle-sidebar-btn {
+        display: none;
+    }
+    .site-body:has(.reader-view) .site-body-left-column {
+        display: flex!important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #toggle-sidebar-btn {
+        right: 10px;
+    }
+}

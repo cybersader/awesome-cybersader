@@ -22,4 +22,5 @@ date modified: Sunday, July 14th 2024, 1:59 pm
 
 # Reader View, Sidebar, Hamburger Button
 - [Reader view in Publish using cssClasses - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/reader-view-in-publish-using-cssclasses/84229)
+	- [marconoris/Obsidian-Publish-stuff at c3a42956080823577d38f920917d0cad0de7d1fc](https://github.com/marconoris/Obsidian-Publish-stuff/tree/c3a42956080823577d38f920917d0cad0de7d1fc?tab=readme-ov-file) 
 - 
