@@ -5,6 +5,10 @@
       "path": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
+      "basename": "Company Examples of Privacy Violation",
+      "path": "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md"
+    },
+    {
       "basename": "Customizing Obsidian Publish",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Password Sharing Regex",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Password Sharing Regex.md"
-    },
-    {
-      "basename": "TrueNAS Scale RAID Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
     }
   ],
   "omittedPaths": [],

@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "0daf0a28311fe7e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d88565e1387d2891",
             "type": "leaf",
             "state": {
@@ -152,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -318,8 +306,9 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "0daf0a28311fe7e5",
+  "active": "7aba871cbefcf3e6",
   "lastOpenFiles": [
+    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
     "JS/publish search hotkey.js",
     "JS/Reader view for Obsidian Publish",
