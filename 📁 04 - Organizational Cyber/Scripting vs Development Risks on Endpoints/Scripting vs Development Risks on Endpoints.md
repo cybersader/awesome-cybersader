@@ -3,10 +3,13 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, July 14th 2024, 7:19 pm
-date modified: Sunday, July 14th 2024, 7:19 pm
+date modified: Sunday, July 14th 2024, 9:25 pm
 ---
 
+[Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md) 
+
 # Executive Summary: Implementing a Local Development and Analytics Environment
+
 - **Purpose Difference**:
     
     - **Development & Analytics**: Focused on creating and analyzing code and data.

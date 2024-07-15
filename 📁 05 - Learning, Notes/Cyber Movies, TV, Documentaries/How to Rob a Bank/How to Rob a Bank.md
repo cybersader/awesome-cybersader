@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, July 14th 2024, 7:36 pm
-date modified: Sunday, July 14th 2024, 8:16 pm
+date modified: Sunday, July 14th 2024, 9:23 pm
 ---
 
 - Hollywood was one of the most professional and prolific solo bank robbers
