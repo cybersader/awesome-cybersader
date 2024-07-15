@@ -1,4 +1,13 @@
 
+- [🔴July 15's Top Cyber News NOW! - Ep 664
+](https://www.youtube.com/watch?v=5tUbjr7Wt68)
+    - Ransomhub Ransomware
+        - A trash IS program - don't evaluate TTPs. 
+        - Focus on protecting from the general threats - EDR, TTX, education, and MFA.
+    - PII lets you say "this data is that person."
+    - https://www.youtube.com/live/5tUbjr7Wt68?si=1pLJmAtWxmHvxLQD&t=810 - #cyberMeme
+    - 
+
 - [BHIS - Talkin' Bout [infosec] News 2024-07-08
 ](https://www.youtube.com/watch?v=tBRZNE3guR4)
     - Story # 1b: National Crime Agency leads international operation to degrade illegal versions of Cobalt Strike
