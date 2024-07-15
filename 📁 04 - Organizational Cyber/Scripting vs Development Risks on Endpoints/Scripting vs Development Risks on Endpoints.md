@@ -8,6 +8,15 @@ date modified: Sunday, July 14th 2024, 9:25 pm
 
 [Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md) 
 
+# Related Links
+- https://www.infosecinstitute.com/resources/management-compliance-auditing/top-10-common-misconceptions-application-whitelisting/
+- https://www.blackhillsinfosec.com/how-to-bypass-application-whitelisting-av/
+- https://www.reddit.com/r/Python/comments/zg4cku/friends_work_does_not_allow_developers_to_use/
+- https://security.stackexchange.com/questions/90659/security-concerns-with-user-python-scripts
+- https://security.stackexchange.com/questions/78676/python-security-hardening?noredirect=1&lq=1
+- https://security.stackexchange.com/questions/256697/would-it-be-useful-from-a-security-perspective-to-harden-an-interpreter-like-pyt?rq=1
+- 
+
 # Executive Summary: Implementing a Local Development and Analytics Environment
 
 - **Purpose Difference**:
