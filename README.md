@@ -8,6 +8,8 @@ date modified: Sunday, April 28th 2024, 12:23 pm
 
 > THIS IS NEW as of March 2024! ⭐⭐⭐⭐⭐
 
+> Up-to-date content @ https://github.com/cybersader/awesome-cybersader
+
 For now this is my "digital garden", "second brain", and fortress of the cybersader.
 # 🔗Links
 - Resume & Portfolio - https://ben.cybersader.com/
