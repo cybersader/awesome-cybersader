@@ -162,6 +162,12 @@ A team wiki system encourages collaboration and innovation.
 - [Canarytokens](https://canarytokens.org/generate) 
 	- Enterprise platform - [Thinkst Canary](https://canary.tools/#why)
 - [grad-school-projects/Honey Accounts in Windows AD at main · cybersader/grad-school-projects](https://github.com/cybersader/grad-school-projects/tree/main/Honey%20Accounts%20in%20Windows%20AD) - my grad school project with resources on setting up Honey Accounts in Windows AD
+
+# Bug Bounty, Offensive
+- https://jhaddix.gumroad.com/l/gtpkm
+- https://portswigger.net/web-security
+- https://www.youtube.com/playlist?list=PLWay6gx6Lv_Bdcb9-FQg7q7I3BqRD9lr9
+
 # Misc 
 - [RunaCapital/awesome-oss-alternatives: Awesome list of open-source startup alternatives to well-known SaaS products 🚀](https://github.com/RunaCapital/awesome-oss-alternatives) 
 - [sereneblue/awesome-oss: A list of open source projects with links to contribute or donate.](https://github.com/sereneblue/awesome-oss) 
