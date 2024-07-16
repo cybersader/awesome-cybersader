@@ -34,5 +34,3 @@ date modified: Sunday, July 14th 2024, 9:23 pm
 	- They hired a lady to get a job as the teller to get all the protocols and manuals
 
 - You have to have a bigger team for bigger heists.
-
-- 
