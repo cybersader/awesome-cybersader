@@ -3,12 +3,18 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Wednesday, July 3rd 2024, 9:23 pm
+date modified: Tuesday, July 16th 2024, 8:39 pm
 ---
 
-- [ ] Update anime list 🔽 ➕ 2024-04-26
+- [x] Update anime list 🔽 ➕ 2024-04-26 ✅ 2024-07-16
 - I've watched anime at https://www.wcopremium.tv/
+
+
+- Interested:
+	- Kaiju No. 8
+
 # Top Anime
+
 > [!tldr] All the anime I would recommend
 
 1. Dr. Stone

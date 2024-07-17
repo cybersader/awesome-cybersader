@@ -3,9 +3,10 @@ aliases:
 tags:
   - fraud
   - financialFraud
+  - banks
 publish: true
 date created: Tuesday, July 16th 2024, 7:47 pm
-date modified: Tuesday, July 16th 2024, 7:49 pm
+date modified: Tuesday, July 16th 2024, 8:33 pm
 ---
 
 # Ep 1: The Wagon Wheel
@@ -56,7 +57,7 @@ date modified: Tuesday, July 16th 2024, 7:49 pm
 	- "80 different businesses"
 	- 'Not cross selling...they are ranked low on our "trust" ladders'
 	- Banks have shareholders.  They want growth and execs want it for money.
-	-  "Oh you have a problem...we have a product for that."
+	- "Oh you have a problem...we have a product for that."
 	- "Why didn't you meet your goals today."
 	- Ludicrously dubious micro-management.
 	- If the bankers get the numbers, than everyone above them gets bonuses.  If they don't, they all get threatened.
