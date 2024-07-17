@@ -12,6 +12,7 @@ publish: true
 
 Subfolders:
 %% Begin Waypoint %%
+- **[[Dirty Money]]**
 - **[[How to Rob a Bank]]**
 - **[[Inside Job - 2008 Financial Crisis]]**
 - **[[Money Explained]]**

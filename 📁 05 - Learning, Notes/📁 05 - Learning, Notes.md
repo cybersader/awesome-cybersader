@@ -10,6 +10,7 @@ publish: true
 - **[[⬇️ Notes Drop]]**
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
+	- [[Active Defense & Cyber Deception]]
 	- [[Adversarial Emulation Extravaganza w Kent & Jordan]]
 	- [[DNS Deep Diving - Serena DiPenti]]
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**

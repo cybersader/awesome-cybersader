@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
                 "mode": "source",
                 "source": false
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md"
               }
             }
           },
@@ -260,6 +260,10 @@
   "active": "0995e0b83c63aecd",
   "lastOpenFiles": [
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank/How to Rob a Bank.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money",
+    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/Active Defense & Cyber Deception.md",
     "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
@@ -270,7 +274,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
-    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
@@ -291,10 +294,7 @@
     "publish.js",
     "publish.css",
     "v2_testing_publish.js",
-    "v2_testing_publish.css",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
-    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
