@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "c15cb3ecf46ee62d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8aec6325f9305948",
             "type": "leaf",
             "state": {
@@ -103,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+                "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md"
               }
             }
           },
@@ -270,8 +257,9 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "0995e0b83c63aecd",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank/How to Rob a Bank.md",
@@ -304,7 +292,6 @@
     "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md",
     "📁 04 - Organizational Cyber/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards.md",
     "📁 09 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md",
-    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "publish.js",
     "publish.css",
     "v2_testing_publish.js",
