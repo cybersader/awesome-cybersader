@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Thursday, July 18th 2024, 7:10 pm
+date modified: Thursday, July 18th 2024, 8:05 pm
 ---
 
 - [x] Update anime list 🔽 ➕ 2024-04-26 ✅ 2024-07-16
@@ -16,8 +16,8 @@ date modified: Thursday, July 18th 2024, 7:10 pm
 1. Dr. Stone
 2. Code Geass
 3. My Hero Academia
-4. Kaiju No. 8
-5. Demon Slayer
+4. Demon Slayer
+5. Kaiju No. 8
 6. Spice and Wolf (2024 remake)
 7. Steins;Gate
 8. Fullmetal Alchemist: Brotherhood
