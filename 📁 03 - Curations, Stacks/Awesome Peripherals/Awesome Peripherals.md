@@ -7,7 +7,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, July 20th 2024, 11:05 am
-date modified: Saturday, July 20th 2024, 11:06 am
+date modified: Saturday, July 20th 2024, 12:04 pm
 ---
 
 # Mouses
@@ -18,8 +18,23 @@ date modified: Saturday, July 20th 2024, 11:06 am
 - [Amazon.com: Logitech G PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse, 4K Polling, Lightweight, LIGHTFORCE Hybrid Switches, HERO 2 Sensor, 32,000 DPI, 5 Programmable Buttons, USB-C Charging, PC & Mac - Black : Electronics](https://www.amazon.com/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B09NBWL8J5/ref=sr_1_1?crid=3B9MG6CHEKBAT&dib=eyJ2IjoiMSJ9.ZE--5twwGc0KfFnGDELu_qj4iGzABfLAYfeUCysFSd9i0BVNK4TdHg6TPi8JsMreorYmTv1iIwo79vB3aTe1wyozD0Ad1VrFoqV1SIUfLHRfmmG0x--4VcTSgIDuhlB2kZexd-jK4gjHoITF4FOlVFZAZ7P1hzhQ5KkHBD58AziwTDrAJlAvpXnESlGhcgY8QlrItixJvMdroIcbLiakirrVqYZt29UYuTANjIW932I.fmmaMvVpgNTZEp0PWxSj_hNLST44-AhxfoCOhuP6xPE&dib_tag=se&keywords=gpx%2B2&qid=1712198372&s=videogames&sprefix=gpx%2B2%2Cvideogames%2C82&sr=1-1&th=1) - 140
 - [Amazon.com: Logitech G502 Lightspeed Wireless Gaming Mouse, Hero 25K Sensor, 25,600 DPI, RGB, Adjustable Weights, 11 Programmable Buttons, Long Battery Life, POWERPLAY-Compatible, PC/Mac - Black : Electronics](https://www.amazon.com/Logitech-Lightspeed-Wireless-Adjustable-Programmable/dp/B07QKC4WWD/ref=sr_1_20?crid=2KY4WMLHSIJNY&dib=eyJ2IjoiMSJ9.g5iYZtbEkCU2RaJdNrEszqGdM0iozexUEu4OSkjSooMJz7qYBTXYqFmPHXFakD5MKOQrqMUDgL527qY7rCFDA6NTjNlDqxzUKJX09C9jLamlYepVfwJTmK9J_eyFMJ9RAedtFBcYv-YRke1tZDdSCyjt2UCJ3eZwqpQcnW8zs4utxVkGLhh7ECeOXmYjiB8G.yKmd1yL9pRHuAQL5C6WNbEotpNxzPf4Yf1qjdv55FHI&dib_tag=se&keywords=lg%2Bgaming%2Bwireless&qid=1712199408&s=videogames&sprefix=lg%2Bgaming%2Bwireles%2Cvideogames%2C122&sr=1-20&th=1)
 
-# Ergonomic Keyboard
-- 
+# Ergonomic Keyboard Setups
+
+- Cheaper
+	- [Amazon.com: KINESIS Freestyle2 USB-C Ergonomic Keyboard w/ VIP3 Lifters for PC (9" Separation) (KB820PB-US) : Electronics](https://www.amazon.com/Kinesis-Freestyle2-Ergonomic-Keyboard-Separation/dp/B0089ZLENA)
+		- $134 - not hot swappable
+- Expensive, but good
+	- [ErgoDox EZ: An Incredible Mechanical Ergonomic Keyboard | ErgoDox EZ](https://ergodox-ez.com/) - ~$320 - probably the best it can get
+		- Hot swappable
+	- [The Best Ergonomic Keyboards From Kinesis](https://kinesis-ergo.com/explore-keyboards/)
+		- Not hot swappable
+		- $230 = ~\$180 + ~\$53 - Freestyle Pro Quiet with VIP3 Tenting Kit
+		- $380 - Advantage2 Quiet LF
+	- [Glove80 Keyboards - MoErgo](https://www.moergo.com/collections/glove80-keyboards) - cool, but a little too different
+	- [Dygma Raise ergonomic split keyboard](https://dygma.com/products/dygma-raise) - way too expensive for everything ~$500
+- Macro/Number Pads
+	- [Amazon.com: Kinesis USB Numeric Keypad, Cherry Low-Force Mechanical Switches (PC),Black : Electronics](https://www.amazon.com/Kinesis-Numeric-Low-Force-Mechanical-Switches/dp/B001IHWG2O)
+
 # Lists
 
 - [Staggered Keyboards - Keebfolio](https://keebfolio.netlify.app/en/staggered/)
@@ -69,6 +84,7 @@ My type:
     - [Boardsource - Store](https://boardsource.xyz/)
     - [Sinc Rev. 3 PCB Kit - Split Staggered 75%/TKL Keyboard – Keebio](https://keeb.io/products/sinc-split-staggered-75-keyboard)
     - [The Best Ergonomic Keyboards From Kinesis](https://kinesis-ergo.com/explore-keyboards/)
+    - [ErgoDox EZ: An Incredible Mechanical Ergonomic Keyboard | ErgoDox EZ](https://ergodox-ez.com/)
     - Corne
 
 - macro pads

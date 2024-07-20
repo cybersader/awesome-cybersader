@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Dashcams",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md"
+    },
+    {
+      "basename": "Awesome Headphones",
+      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Headphones/Awesome Headphones.md"
+    },
+    {
       "basename": "Awesome Peripherals",
       "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
+    },
+    {
+      "basename": "Home Server Power",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     },
     {
       "basename": "Dirty Money",
@@ -71,10 +83,6 @@
     {
       "basename": "Church Operations During Conflict",
       "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
-    },
-    {
-      "basename": "Home Server Power",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     },
     {
       "basename": "Home Lab, Home Server",
@@ -191,14 +199,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
     }
   ],
   "omittedPaths": [],

@@ -5,6 +5,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 %% Begin Waypoint %%
 - [[⬇️ Curation Dropzone]]
 - **[[⬇ Tech Dropzone]]**
+	- **[[Awesome Dashcams]]**
 	- **[[Custom Merch]]**
 	- **[[Daily Driver Stuff]]**
 	- **[[Data Entry Tools]]**
@@ -19,6 +20,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome Markdown]]**
 - **[[Awesome Office Organizing]]**
 - **[[Awesome Peripherals]]**
+	- **[[Awesome Headphones]]**
 - **[[Awesome SecOps Data Engineering]]**
 - **[[Awesome Splunk]]**
 - **[[Awesome Stream Deck Alternatives]]**
