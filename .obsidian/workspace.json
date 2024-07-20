@@ -102,9 +102,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8ebf4e4cdbe72faa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -270,7 +280,7 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "8ebf4e4cdbe72faa",
   "lastOpenFiles": [
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
