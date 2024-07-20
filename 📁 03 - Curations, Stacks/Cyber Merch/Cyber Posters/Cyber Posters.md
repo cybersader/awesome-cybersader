@@ -30,5 +30,6 @@ date modified: Thursday, June 20th 2024, 1:46 pm
 - Excel Shortcuts
 - CIA Triad
 
-# Getting custom posters
+# Custom Poster Printing
+- https://www.uprinting.com/poster-printing.html
 - 

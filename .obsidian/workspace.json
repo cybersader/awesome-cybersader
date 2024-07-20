@@ -102,19 +102,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8ebf4e4cdbe72faa",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -188,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+                "file": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
               }
             }
           },
@@ -280,7 +270,7 @@
       "cmdr:Open settings": false
     }
   },
-  "active": "8ebf4e4cdbe72faa",
+  "active": "78f94ca15005b1ef",
   "lastOpenFiles": [
     "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
     "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
