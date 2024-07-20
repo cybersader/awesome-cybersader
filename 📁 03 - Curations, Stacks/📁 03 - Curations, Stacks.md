@@ -18,6 +18,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - [[Awesome Hard Disk Drives]]
 - **[[Awesome Markdown]]**
 - **[[Awesome Office Organizing]]**
+- **[[Awesome Peripherals]]**
 - **[[Awesome SecOps Data Engineering]]**
 - **[[Awesome Splunk]]**
 - **[[Awesome Stream Deck Alternatives]]**

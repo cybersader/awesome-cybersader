@@ -124,5 +124,13 @@
       ],
       "key": "D"
     }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }

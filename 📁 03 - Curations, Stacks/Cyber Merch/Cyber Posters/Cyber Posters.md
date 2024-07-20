@@ -3,13 +3,14 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, April 7th 2024, 3:02 pm
-date modified: Thursday, June 20th 2024, 1:46 pm
+date modified: Saturday, July 20th 2024, 10:54 am
 ---
 
 - [Amazon.com: COMPUTER HARDWARE CHEAT SHEET POSTER detailed educational 24X36 : Office Products](https://www.amazon.com/dp/B00B8CGTMM/?coliid=I2NUWW7D2ZXDJ3&colid=7TNCPHDLWHYB&ref_=list_c_wl_lv_ov_lig_dp_it&th=1) 
 - 
 
 # Misc
+
 - https://bitwarden.com/password-strength/#Password-Strength-Testing-Tool
 - https://www.sans.org/media/score/504-incident-response-cycle.pdf
 - https://mattturck.com/landscape/mad2024.pdf
@@ -31,5 +32,9 @@ date modified: Thursday, June 20th 2024, 1:46 pm
 - CIA Triad
 
 # Custom Poster Printing
+
 - https://www.uprinting.com/poster-printing.html
+- https://www.48hourprint.com/large-format-poster-printing.html
+- https://posterninja.com/product/large-format-posters/
+- https://www.postermywall.com/
 - 

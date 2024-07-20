@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyber Posters",
-      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
+      "basename": "Awesome Peripherals",
+      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
+    },
+    {
+      "basename": "Dirty Money",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md"
     },
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
+      "basename": "Scripting vs Development Risks on Endpoints",
+      "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
+    },
+    {
+      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Backdoors & Breaches",
+      "path": "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
+    },
+    {
+      "basename": "Cyber Posters",
+      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
     },
     {
       "basename": "📁 03 - Curations, Stacks",
@@ -21,20 +45,12 @@
       "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
     },
     {
-      "basename": "Dirty Money",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md"
-    },
-    {
       "basename": "How to Rob a Bank",
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank/How to Rob a Bank.md"
     },
     {
       "basename": "Cybersader Wiki Features and Changes",
       "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
-      "basename": "Scripting vs Development Risks on Endpoints",
-      "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
     },
     {
       "basename": "Secure Cyber Environment",
@@ -55,10 +71,6 @@
     {
       "basename": "Church Operations During Conflict",
       "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
-    },
-    {
-      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
     },
     {
       "basename": "Home Server Power",
@@ -173,10 +185,6 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
     },
     {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
       "basename": "📁 01 - Projects",
       "path": "📁 01 - Projects/📁 01 - Projects.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇️ KnowEng Drop",
       "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
-      "basename": "Cybersecurity Culture Building",
-      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
-    },
-    {
-      "basename": "SecOps Stack & Resources",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
     }
   ],
   "omittedPaths": [],
