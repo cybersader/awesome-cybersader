@@ -2,7 +2,9 @@
 aliases:
   - Immich + Cloudflare Tunnels
   - Immich Proxy Limit
-tags: 
+tags:
+  - CloudflareTunnels
+  - cloudflare
 publish: true
 date created: Monday, June 24th 2024, 8:00 pm
 date modified: Wednesday, June 26th 2024, 7:23 pm

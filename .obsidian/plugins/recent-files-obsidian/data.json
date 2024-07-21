@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Awesome Peripherals",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
+      "basename": "Immich & Cloudflare Tunnels",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+    },
+    {
+      "basename": "Awesome Peripherals",
+      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
     },
     {
       "basename": "TrueNAS Scale Apps, Adding TrueCharts",
@@ -195,10 +199,6 @@
     {
       "basename": "Kubernetes Home Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
-    },
-    {
-      "basename": "📁 01 - Projects",
-      "path": "📁 01 - Projects/📁 01 - Projects.md"
     }
   ],
   "omittedPaths": [],
