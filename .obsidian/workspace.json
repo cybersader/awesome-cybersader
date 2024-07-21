@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d688167294effce4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6cd1a0fa6657fe8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "turning ol",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md"
+                "file": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
               }
             }
           },
@@ -198,19 +186,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d688167294effce4",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Headphones/Awesome Headphones.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
+    "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Headphones/Awesome Headphones.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams",
     "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Headphones",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
     "📁 03 - Curations, Stacks/Awesome Peripherals",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
@@ -230,7 +219,6 @@
     "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
     "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints",
     "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup",
     "📁 04 - Organizational Cyber/Container Security",
