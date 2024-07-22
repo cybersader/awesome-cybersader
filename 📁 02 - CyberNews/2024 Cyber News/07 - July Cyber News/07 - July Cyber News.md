@@ -1,4 +1,13 @@
 
+- [🔴July 22's Top Cyber News NOW! - Ep 669](https://www.youtube.com/watch?v=hojkZub3A5M)
+    - Crowdstrike Outage also hit O365 PCs
+        - They had to use CLIs or "attempt" the 20 reboots trick which rarely works
+    - Remcos RAT Phishing with Crowdstrike Incident
+        - Hackers are using the incident to get people to download the RAT
+    - Known Exploited Vulnerabilities
+        - Exploits that are being used right now
+        - Included Magento, VMware Vcenter, etc.
+
 - [🔴July 15's Top Cyber News NOW! - Ep 664
 ](https://www.youtube.com/watch?v=5tUbjr7Wt68)
     - Ransomhub Ransomware
