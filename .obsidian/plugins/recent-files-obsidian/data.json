@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Cloudflare Tunnels Token Refresh Issue",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md"
+    },
+    {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Monitoring and Logging",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md"
-    },
-    {
-      "basename": "Kubernetes Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Kubernetes Home Server/Kubernetes Home Server.md"
     }
   ],
   "omittedPaths": [],
