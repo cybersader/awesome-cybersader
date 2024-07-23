@@ -1,4 +1,9 @@
 
+-[BHIS - Talkin' Bout [infosec] News 2024-07-22](https://www.youtube.com/watch?v=252-y4UpLOI)
+    - Crowdstrike Outage
+        - Southwest was using older tech and is benefiting, but this focuses on the wrong problem.
+        
+
 - [🔴July 22's Top Cyber News NOW! - Ep 669](https://www.youtube.com/watch?v=hojkZub3A5M)
     - Crowdstrike Outage also hit O365 PCs
         - They had to use CLIs or "attempt" the 20 reboots trick which rarely works
