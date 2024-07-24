@@ -8,6 +8,7 @@ tags:
 publish: true
 date created: Wednesday, July 24th 2024, 6:59 pm
 date modified: Wednesday, July 24th 2024, 7:08 pm
+media_link: https://x.com/i/broadcasts/1LyGBgPvoDjJN
 ---
 
 https://x.com/i/broadcasts/1LyGBgPvoDjJN

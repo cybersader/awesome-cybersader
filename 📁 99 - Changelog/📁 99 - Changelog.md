@@ -1,5 +1,6 @@
-- 2024-07-24 at 19h10 · [[Dr. Peterson x Elon Musk]]
-- 2024-07-24 at 18h59 · [[📁 16 - Society, Culture]]
+- 2024-07-24 at 19h29 · [[Fr. Pine Interviews Matt Fradd]]
+- 2024-07-24 at 19h28 · [[📁 16 - Society, Culture]]
+- 2024-07-24 at 19h27 · [[Dr. Peterson x Elon Musk]]
 - 2024-07-24 at 18h58 · [[SSO vs Password Managers]]
 - 2024-07-24 at 18h49 · [[📁 04 - Organizational Cyber]]
 - 2024-07-24 at 18h49 · [[07 - July Cyber News]]
