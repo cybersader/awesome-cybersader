@@ -23,9 +23,10 @@ publish: true
     - Sherlock
     - haveibeenpwned
     - https://namechk.com/
-- Pentesting and Open Source Tools
+- Pentesting, Email Scanning, Open-Source
     - https://github.com/dafthack/MailSniper
     - https://github.com/AashiqRamachandran/app-catcher
+    - https://github.com/ag-michael/EmailScanner
 
 - Other tools to help quantify accounts and authentication
     - DLP tools
