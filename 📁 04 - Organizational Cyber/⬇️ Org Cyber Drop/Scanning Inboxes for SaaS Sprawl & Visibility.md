@@ -2,6 +2,7 @@
 aliases:
   - Parsing Inboxes for Accounts on Websites
   - Quantifying accounts and authentication weaknesses
+  - Software Account Inventory
 tags: personal-attack-surface
 publish: true
 ---
