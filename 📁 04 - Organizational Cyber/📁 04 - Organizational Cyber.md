@@ -8,6 +8,8 @@ date modified: Monday, May 27th 2024, 9:59 am
 ---
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Culture Drop]]**
+- **⬇️ Org Cyber Drop**
+	- [[Scanning Inboxes for SaaS Sprawl & Visibility]]
 - **[[AI Usage in Orgs]]**
 - **[[Container Security]]**
 	- **[[Secure Podman Setup]]**

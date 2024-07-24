@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Dr. Peterson x Elon Musk",
+      "path": "📁 16 - Society, Culture/⬇️ Society Drop/Dr. Peterson x Elon Musk/Dr. Peterson x Elon Musk.md"
+    },
+    {
+      "basename": "Awesome Peripherals",
+      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
+    },
+    {
       "basename": "SSO vs Password Managers",
       "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "Immich & Cloudflare Tunnels",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
-    },
-    {
-      "basename": "Awesome Peripherals",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
     },
     {
       "basename": "TrueNAS Scale Apps, Adding TrueCharts",
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
-    },
-    {
-      "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     }
   ],
   "omittedPaths": [],
