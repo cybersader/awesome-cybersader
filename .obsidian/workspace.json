@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 221.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md",
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md"
+                "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
               }
             }
           },
@@ -201,8 +201,9 @@
   },
   "active": "9206538c4ab3cdf8",
   "lastOpenFiles": [
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
     "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md",
@@ -232,7 +233,6 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank",
     "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md",
-    "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
     "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints",
     "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup",
     "📁 04 - Organizational Cyber/Container Security",

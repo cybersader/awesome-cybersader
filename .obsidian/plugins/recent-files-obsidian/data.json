@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SSO vs Password Managers",
+      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
+    },
+    {
       "basename": "Cloudflare Tunnels Token Refresh Issue",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "TrueNAS Monitoring and Logging",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Monitoring and Logging/TrueNAS Monitoring and Logging.md"
     }
   ],
   "omittedPaths": [],
