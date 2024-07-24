@@ -1,8 +1,10 @@
 
--[BHIS - Talkin' Bout [infosec] News 2024-07-22](https://www.youtube.com/watch?v=252-y4UpLOI)
+- [🔴 July 24's Top Cyber News NOW! - Ep 671](https://www.youtube.com/watch?v=ounD1m7hClU)
+    - Don't just stop using the tool at work. Decommision it.  
+
+- [BHIS - Talkin' Bout [infosec] News 2024-07-22](https://www.youtube.com/watch?v=252-y4UpLOI)
     - Crowdstrike Outage
         - Southwest was using older tech and is benefiting, but this focuses on the wrong problem.
-        
 
 - [🔴July 22's Top Cyber News NOW! - Ep 669](https://www.youtube.com/watch?v=hojkZub3A5M)
     - Crowdstrike Outage also hit O365 PCs
