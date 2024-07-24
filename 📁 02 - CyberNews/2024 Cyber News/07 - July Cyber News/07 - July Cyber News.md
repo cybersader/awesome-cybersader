@@ -5,6 +5,10 @@
 - [BHIS - Talkin' Bout [infosec] News 2024-07-22](https://www.youtube.com/watch?v=252-y4UpLOI)
     - Crowdstrike Outage
         - Southwest was using older tech and is benefiting, but this focuses on the wrong problem.
+    - Dog robot made by DHS to deactivate IoT booby traps before raids
+    - Law enforcement in EU and US are cracking down on ransomware groups more - or at least more pulicly
+        - 17 year olds with bad OPSEC going to prison for millions of dollars in wire fraud and crimes
+    
 
 - [🔴July 22's Top Cyber News NOW! - Ep 669](https://www.youtube.com/watch?v=hojkZub3A5M)
     - Crowdstrike Outage also hit O365 PCs
