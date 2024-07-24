@@ -2,9 +2,12 @@
 ---
 aliases:
   - Parsing Inboxes for Accounts on Websites
+  - Quantifying accounts and authentication weaknesses
 tags: personal-attack-surface
 publish: true
 ---
+
+![Types of Authentication Implementation and Use Cases - SSO vs Password Managers](/📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/SSO%20vs%20Password%20Managers.md)
 
 # Links & Tools
 - https://www.nudgesecurity.com/our-approach
@@ -21,7 +24,12 @@ publish: true
     - Sherlock
     - haveibeenpwned
     - https://namechk.com/
-    - 
+- Pentesting and Open Source Tools
+    - https://github.com/dafthack/MailSniper
+    - https://github.com/AashiqRamachandran/app-catcher
+
+- Other tools to help quantify accounts and authentication
+    - DLP tools
 
 # Using Email Search - Personal Usage
 - By searching for terms like “Welcome,” “Sign Up,” “Verify Your Account,” or “Subscription,” you can unearth emails from various services you’ve subscribed to over the years.
