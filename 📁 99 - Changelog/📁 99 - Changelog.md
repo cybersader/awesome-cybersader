@@ -1,4 +1,4 @@
-- 2024-07-26 at 15h20 · [[Windows Permissions & DevSecOps]]
+- 2024-07-26 at 19h20 · [[Windows Permissions & DevSecOps]]
 - 2024-07-26 at 15h20 · [[📁 05 - Learning, Notes]]
 - 2024-07-26 at 15h20 · [[⬇️ Notes Drop]]
 - 2024-07-25 at 21h10 · [[CI_CD Pipeline Security with Andrew Krug]]
