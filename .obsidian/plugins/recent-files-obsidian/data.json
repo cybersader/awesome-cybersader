@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Windows Permissions & DevSecOps",
+      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps/Windows Permissions & DevSecOps.md"
+    },
+    {
       "basename": "Fr. Pine Interviews Matt Fradd",
       "path": "📁 16 - Society, Culture/⬇️ Society Drop/Fr. Pine Interviews Matt Fradd/Fr. Pine Interviews Matt Fradd.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS K3S to Docker Compose",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
-    },
-    {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     }
   ],
   "omittedPaths": [],

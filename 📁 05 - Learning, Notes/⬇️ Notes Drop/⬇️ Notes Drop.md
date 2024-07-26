@@ -16,5 +16,6 @@ publish: true
 - **[[Rabbit OS & R1]]**
 - **[[Recover Files Old Windows Boot Drive]]**
 - [[SSO vs Password Managers]]
+- **[[Windows Permissions & DevSecOps]]**
 
 %% End Waypoint %%
