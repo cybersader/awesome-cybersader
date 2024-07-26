@@ -5,6 +5,7 @@ publish: true
 ---
 
 %% Begin Waypoint %%
+- [[CI_CD Pipeline Security with Andrew Krug]]
 - **[[COBRA Insurance Between Jobs]]**
 - **[[Game of Thrones & Cybersecurity]]**
 - [[Get an Epic Cyber Education for Free (almost) - Carrie Roberts]]
