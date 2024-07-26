@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "turning ol",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
