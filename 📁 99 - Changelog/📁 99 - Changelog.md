@@ -1,4 +1,4 @@
-- 2024-07-29 at 11h22 · [[Scripting vs Development Risks on Endpoints]]
+- 2024-07-29 at 11h27 · [[Scripting vs Development Risks on Endpoints]]
 - 2024-07-26 at 19h20 · [[Windows Permissions & DevSecOps]]
 - 2024-07-26 at 15h20 · [[📁 05 - Learning, Notes]]
 - 2024-07-26 at 15h20 · [[⬇️ Notes Drop]]

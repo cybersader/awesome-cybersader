@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, July 14th 2024, 7:19 pm
-date modified: Monday, July 29th 2024, 11:22 am
+date modified: Monday, July 29th 2024, 11:27 am
 ---
 
 [Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md) 
@@ -12,20 +12,21 @@ date modified: Monday, July 29th 2024, 11:22 am
 
 ## Admin for dev PCs? - opinions
 
-    - https://stackoverflow.com/questions/701214/should-developers-have-administrator-permissions-on-their-pc
+- https://stackoverflow.com/questions/701214/should-developers-have-administrator-permissions-on-their-pc
 
-    - https://www.reddit.com/r/sysadmin/comments/16z0oe3/do_developers_really_need_local_admin/
-        - When you need to boss around hardware, you need admin to access the hardware. - This is true with something like numpy - Python Setup & Development
-        - Yes, unless you have special tools to elevate apps that need it.  Beyond trust privilege access management can elevate apps by a combination of things such as file name, folder path, digital signature, or file hash in policy.  0 users in my org have local admin rights on workstations.
+- https://www.reddit.com/r/sysadmin/comments/16z0oe3/do_developers_really_need_local_admin/
+	- When you need to boss around hardware, you need admin to access the hardware. - This is true with something like numpy - Python Setup & Development
+	- Yes, unless you have special tools to elevate apps that need it.  Beyond trust privilege access management can elevate apps by a combination of things such as file name, folder path, digital signature, or file hash in policy.  0 users in my org have local admin rights on workstations.
             
+
 ## Using PAM to Develop without Local Admin?
 
-    -  https://www.beyondtrust.com/blog/entry/privilege-management-development-teams
-        - Application development tools like Visual Studio and XCode need administrative rights to compile the code.
-        - Third party add-ons and plugins for development tools require administrative rights to operate and perform specific functions like creating or using certificates.
-        - The installation or removal of software typically requires administrative rights on Windows or a Mac for testing an application.
-        - Any third-party extensions, drivers, or modifications to key system files, including the Windows registry requires administrative privileges
-Kernel extensions on MacOS and Accessibility Functions used as workarounds (for functions like right-click menus) need administrative rights to enable.
+- https://www.beyondtrust.com/blog/entry/privilege-management-development-teams
+	- Application development tools like Visual Studio and XCode need administrative rights to compile the code.
+	- Third party add-ons and plugins for development tools require administrative rights to operate and perform specific functions like creating or using certificates.
+	- The installation or removal of software typically requires administrative rights on Windows or a Mac for testing an application.
+	- Any third-party extensions, drivers, or modifications to key system files, including the Windows registry requires administrative privileges
+- Kernel extensions on MacOS and Accessibility Functions used as workarounds (for functions like right-click menus) need administrative rights to enable.
 
 ## What about Application Whitelisting?
 
