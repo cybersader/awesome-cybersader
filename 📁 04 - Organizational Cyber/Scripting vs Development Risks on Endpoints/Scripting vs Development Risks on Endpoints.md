@@ -3,12 +3,17 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, July 14th 2024, 7:19 pm
-date modified: Sunday, July 14th 2024, 9:25 pm
+date modified: Monday, July 29th 2024, 11:22 am
 ---
 
 [Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md) 
 
+# Does Development or Analytics Need Local Admin?
+
+- 
+
 # Related Links
+
 - https://www.infosecinstitute.com/resources/management-compliance-auditing/top-10-common-misconceptions-application-whitelisting/
 - https://www.blackhillsinfosec.com/how-to-bypass-application-whitelisting-av/
 - https://www.reddit.com/r/Python/comments/zg4cku/friends_work_does_not_allow_developers_to_use/
