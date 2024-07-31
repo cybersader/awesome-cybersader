@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
+                "file": "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
+                "file": "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
+                "file": "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
+                "file": "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md"
               }
             }
           },
@@ -188,6 +188,11 @@
   },
   "active": "6cd1a0fa6657fe8d",
   "lastOpenFiles": [
+    "📁 01 - Projects/Python Projects/Python Projects.md",
+    "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md",
+    "📁 01 - Projects/Python Projects/Jsonaut",
+    "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
+    "📁 01 - Projects/Python Projects",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps/Windows Permissions & DevSecOps.md",
@@ -216,14 +221,9 @@
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md",
     "📁 03 - Curations, Stacks/Awesome Peripherals",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
-    "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md",
-    "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md",
-    "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",

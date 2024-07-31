@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Jsonaut",
+      "path": "📁 01 - Projects/Python Projects/Jsonaut/Jsonaut.md"
+    },
+    {
+      "basename": "Python Projects",
+      "path": "📁 01 - Projects/Python Projects/Python Projects.md"
+    },
+    {
       "basename": "Scripting vs Development Risks on Endpoints",
       "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Learning",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Learning.md"
-    },
-    {
-      "basename": "Podman Environment",
-      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md"
-    },
-    {
-      "basename": "TrueNAS K3S to Docker Compose",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS K3S to Docker Compose/TrueNAS K3S to Docker Compose.md"
     }
   ],
   "omittedPaths": [],
