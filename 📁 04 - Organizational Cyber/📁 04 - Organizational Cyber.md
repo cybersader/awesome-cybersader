@@ -13,6 +13,7 @@ date modified: Monday, May 27th 2024, 9:59 am
 	- [[Scanning Inboxes for SaaS Sprawl & Visibility]]
 	- [[Web App Vuln Scanning with Nuclei]]
 - **[[AI Usage in Orgs]]**
+- **[[Authentication & Trust Models]]**
 - **[[Container Security]]**
 	- **[[Secure Podman Setup]]**
 - **[[Cyber Team Building]]**
