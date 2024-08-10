@@ -1,3 +1,10 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Friday, August 9th 2024, 6:08 pm
+date modified: Friday, August 9th 2024, 10:00 pm
+---
 
 # Search terms
 
@@ -16,103 +23,102 @@
 
 # Questions for a physical test, Potential Checklist
 
-    - Inventory, Versions, Vulnerabilities, More Vectors
-        - Router and switch inventory?
-        - Router exploitation review based on routers and versions?
-        - Would we know if something new got connected to a port in the server room?  What about somewhere else on branch or HQ networks?
-        - Inventory of all devices and ports into networks?
-        - Note devices in meeting rooms.
-    - Wireless Risks & Threat Modeling
-        - If an evil twin and deauth works, what does the attacker get? Evil twin attack risks?
-        - Wardriving and wi-fi planning
-        - RF survey of the buildings?
-        - Risks of wireless sniffing
-        - Wigle.net review.  Has anyone been looking at our wireless?
-    - Resilience, Denial of Service Risks
-        - Resilience to unplugging things?
-        - Critical machines that can't lose power?
-    - Networking , Topology, Network Access Control, Exploitable devices and segmentation
-        - Making sure network egress filtering and firewall don't allow shell from lobby or conference rooms
-        - Are printers segmented? 
-        - Would stopping traffic or stress testing these cause issues on critical systems? Is capturing packets on print jobs dangerous?  
-        - Where are the printers? 
-        - At any point, do we rely on VLANs for security?
-        - Review Network Access Control - L2, L3
-        - MAC spoofing risks with NAC?
-        - More layer 2 attack susceptibility?  ARP sniffing with Netdiscover, bettercap, and other tools?
-        - Network snooping risks, Packet Sniffing
-            - Risks of LAN tapping.  Plunder bug and lan star.
-        - Risks of Ethernet ports
-            - Is this port active? 
-            - Does it get an IP address on the LAN?
-            - What VLAN is the port on? 
-            - Is the port online?
-            - Can the port egress the firewall ?
-            - If the port is online, would stressing that segment hurt our operations?
-        - Hot Plug Attacks, Employee Device Access
-            - Device access
-                - Note access and risks around devices
-            - Are HID hot plug attacks an issue? Think about grabbing passwords or key logging.  Is there an easy way for someone to plug one in without being seen? 
-            - Risks of on-site implants.  Things like the HDMI screen crab.  Are the backs of computers covered -think USB ports and HDMI ports.  How easy is it to get to conference room TVs and their ports for HDMI USB etc?
-            - Our customers left alone in conference rooms where they could plug in implants and other devices like a screen crab? 
-        - LAN turtle and packet squirrel. A remote access in MITM an issue in conference rooms? What VLANs are these conference rooms on?
-        - Are USBs ever an issue? 
-        - Looking for multicast protocols
-        - Is passive sniffing on the server network risky or valuable for an attacker
-        - Topology review and perimeter review? Between sensitive or admin networks and regular networks? Make conclusions from other inventories
-        - Document the topology for each site concretely.  Link the physical and the network.  Use literal pictures if need be?
-        - Physical post exploitation vectors based on available recon in person?  In other words, what network risks can be realized with physical post exploitation that's possible? (really general conclusion would be made here)
-    - Environment Risks
-        - Site safety
-        - Broken things
-        - You should be able to clearly see entrances and exits from inside the building. Make sure there’s nothing blocking windows, such as displays, signage or landscaping.
-        - Doors that are way too hard to open?
-    - Wiring, Hardware
-        - Note wiring and locations of critical machines that cannot lose power?
-        - RAID systems in place?
-    - Server Room, Data Center
-        - Are your IT closets and storage areas well-organized?
-    - Data Exposure, Data Hygiene, Data Lifecycle, Shoulder Surfing, Customer/Member Interactions
-        - Places members/customers put sensitive information
-        - Shoulder surfing
-        - Unattended documents or post-its in conference rooms or offices 
-        - Records Retention & Deletion
-            - Dumpster diving and paper shredding? 
-        - Exposed Authentication?
-            - Worn down keypads
-            - Password post-its
-        - Is it easy to hear conversations in other rooms?
-    - Physical Recon Susceptibility
-        - Telescope to see if we can see anything from windows
-        - Easy spots for recon?
-    - Personal device usage
-        - Do employees use personal devices while on the job? Are they on? 
-        - Do employees use personal laptops ever? 
-        - Risks of personal devices with firmware?
-    - Shadow IT
-        - Would we know if something new got connected to a port in the server room?  What about somewhere else on branch or HQ networks?
-        - Do we detect when new switches or shadow IT is added?
-    - Sensitive Location Access Review, Work Orders 
-        - Who has access to the server room throughout the year?
-        - Process for verifying work orders
-        - Work orders/papers from last year
-        - Physical Employee Access Logging, Time Sheets
-            - Logging of access to server rooms or vaults?
-        - Do you have a way of maintaining visitor logs or records?
-    - Available policies, standards, awareness, PSAs, training
-        - Review physical-related policies and standards and if they are old and/or have been reviewed recently.
-        - Staff training related to physical security, tailgating, social engineering?
-    - Physical Security - doors, locks, surveillance, physical auth, social engineering (we maybe aren't doing this stuff)
-        - Are entry points, such as doors and windows, secure and in good working order?
-        - Are there any vulnerabilities, such as unsecured windows or doors, that could be exploited by potential intruders?
-        - Visibility Gaps, Surveillance
-            - Places to hide things 
-            - Are there any dark corners or unsecured areas where you do not have visibility? 
-            - Is all exterior lighting effective and in good working order?
-        - Keep interior lights on at night and when the building is empty to deter intruders. For improved efficiency and sustainability, install a lighting system that’s integrated with building management platforms and access control to automatically adjust based on occupancy, the weather, and business hours.
-        - Is everyone wearing name tags?
-        - Are badges visible?
-
+- Inventory, Versions, Vulnerabilities, More Vectors
+	- Router and switch inventory?
+	- Router exploitation review based on routers and versions?
+	- Would we know if something new got connected to a port in the server room?  What about somewhere else on branch or HQ networks?
+	- Inventory of all devices and ports into networks?
+	- Note devices in meeting rooms.
+- Wireless Risks & Threat Modeling
+	- If an evil twin and deauth works, what does the attacker get? Evil twin attack risks?
+	- Wardriving and wi-fi planning
+	- RF survey of the buildings?
+	- Risks of wireless sniffing
+	- Wigle.net review.  Has anyone been looking at our wireless?
+- Resilience, Denial of Service Risks
+	- Resilience to unplugging things?
+	- Critical machines that can't lose power?
+- Networking , Topology, Network Access Control, Exploitable devices and segmentation
+	- Making sure network egress filtering and firewall don't allow shell from lobby or conference rooms
+	- Are printers segmented? 
+	- Would stopping traffic or stress testing these cause issues on critical systems? Is capturing packets on print jobs dangerous?  
+	- Where are the printers? 
+	- At any point, do we rely on VLANs for security?
+	- Review Network Access Control - L2, L3
+	- MAC spoofing risks with NAC?
+	- More layer 2 attack susceptibility?  ARP sniffing with Netdiscover, bettercap, and other tools?
+	- Network snooping risks, Packet Sniffing
+		- Risks of LAN tapping.  Plunder bug and lan star.
+	- Risks of Ethernet ports
+		- Is this port active? 
+		- Does it get an IP address on the LAN?
+		- What VLAN is the port on? 
+		- Is the port online?
+		- Can the port egress the firewall ?
+		- If the port is online, would stressing that segment hurt our operations?
+	- Hot Plug Attacks, Employee Device Access
+		- Device access
+			- Note access and risks around devices
+		- Are HID hot plug attacks an issue? Think about grabbing passwords or key logging.  Is there an easy way for someone to plug one in without being seen? 
+		- Risks of on-site implants.  Things like the HDMI screen crab.  Are the backs of computers covered -think USB ports and HDMI ports.  How easy is it to get to conference room TVs and their ports for HDMI USB etc?
+		- Our customers left alone in conference rooms where they could plug in implants and other devices like a screen crab? 
+	- LAN turtle and packet squirrel. A remote access in MITM an issue in conference rooms? What VLANs are these conference rooms on?
+	- Are USBs ever an issue? 
+	- Looking for multicast protocols
+	- Is passive sniffing on the server network risky or valuable for an attacker
+	- Topology review and perimeter review? Between sensitive or admin networks and regular networks? Make conclusions from other inventories
+	- Document the topology for each site concretely.  Link the physical and the network.  Use literal pictures if need be?
+	- Physical post exploitation vectors based on available recon in person?  In other words, what network risks can be realized with physical post exploitation that's possible? (really general conclusion would be made here)
+- Environment Risks
+	- Site safety
+	- Broken things
+	- You should be able to clearly see entrances and exits from inside the building. Make sure there’s nothing blocking windows, such as displays, signage or landscaping.
+	- Doors that are way too hard to open?
+- Wiring, Hardware
+	- Note wiring and locations of critical machines that cannot lose power?
+	- RAID systems in place?
+- Server Room, Data Center
+	- Are your IT closets and storage areas well-organized?
+- Data Exposure, Data Hygiene, Data Lifecycle, Shoulder Surfing, Customer/Member Interactions
+	- Places members/customers put sensitive information
+	- Shoulder surfing
+	- Unattended documents or post-its in conference rooms or offices 
+	- Records Retention & Deletion
+		- Dumpster diving and paper shredding? 
+	- Exposed Authentication?
+		- Worn down keypads
+		- Password post-its
+	- Is it easy to hear conversations in other rooms?
+- Physical Recon Susceptibility
+	- Telescope to see if we can see anything from windows
+	- Easy spots for recon?
+- Personal device usage
+	- Do employees use personal devices while on the job? Are they on? 
+	- Do employees use personal laptops ever? 
+	- Risks of personal devices with firmware?
+- Shadow IT
+	- Would we know if something new got connected to a port in the server room?  What about somewhere else on branch or HQ networks?
+	- Do we detect when new switches or shadow IT is added?
+- Sensitive Location Access Review, Work Orders 
+	- Who has access to the server room throughout the year?
+	- Process for verifying work orders
+	- Work orders/papers from last year
+	- Physical Employee Access Logging, Time Sheets
+		- Logging of access to server rooms or vaults?
+	- Do you have a way of maintaining visitor logs or records?
+- Available policies, standards, awareness, PSAs, training
+	- Review physical-related policies and standards and if they are old and/or have been reviewed recently.
+	- Staff training related to physical security, tailgating, social engineering?
+- Physical Security - doors, locks, surveillance, physical auth, social engineering (we maybe aren't doing this stuff)
+	- Are entry points, such as doors and windows, secure and in good working order?
+	- Are there any vulnerabilities, such as unsecured windows or doors, that could be exploited by potential intruders?
+	- Visibility Gaps, Surveillance
+		- Places to hide things 
+		- Are there any dark corners or unsecured areas where you do not have visibility? 
+		- Is all exterior lighting effective and in good working order?
+	- Keep interior lights on at night and when the building is empty to deter intruders. For improved efficiency and sustainability, install a lighting system that’s integrated with building management platforms and access control to automatically adjust based on occupancy, the weather, and business hours.
+	- Is everyone wearing name tags?
+	- Are badges visible?
 
 # Links, DROPZONE
 

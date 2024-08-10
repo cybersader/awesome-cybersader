@@ -26,8 +26,7 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Org Data Governance]]**
 	- [[PI Types]]
 - **[[Organization Documentation & Wikis]]**
-- **Physical Security**
-	- [[Awesome Physical Security]]
+- **[[Physical Security]]**
 - **[[Scripting vs Development Risks on Endpoints]]**
 - **[[Secure Cyber Environment]]**
 - **[[Social Engineering]]**
