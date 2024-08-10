@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:35 am
-date modified: Saturday, August 10th 2024, 3:39 pm
+date modified: Saturday, August 10th 2024, 6:17 pm
 ---
 
 - [ ] Curate options for media hosting with Obsidian wiki in a way that's secure and works with Publish ➕ 2024-04-26
@@ -15,12 +15,23 @@ date modified: Saturday, August 10th 2024, 3:39 pm
 - media hosting CDN URLs
 - media image and video host like imgur or YouTube
 - video hosting
+- s3 URL media storage
+- cloudinary
+- 
 
 # Curated Options
 
 - YouTube + Imgur
 	- YouTube unlisted for video
 	- Imgur for images
+
+- Obsidian Plugins
+	- https://obsidian.md/plugins?search=cloudinary
+	- https://obsidian.md/plugins?search=s3
+	- https://obsidian.md/plugins?search=url
+	- https://obsidian.md/plugins?search=imgur
+	- https://obsidian.md/plugins?search=media
+	- 
 
 # Talks About Solutions
 

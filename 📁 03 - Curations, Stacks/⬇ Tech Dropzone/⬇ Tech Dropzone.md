@@ -3,10 +3,12 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Saturday, July 6th 2024, 2:07 pm
+date modified: Saturday, August 10th 2024, 6:23 pm
 ---
 
 # Software, Web
+
+- [Stashpad - Your streamlined Google Docs alternative](https://www.stashpad.com/)
 - Todo Apps
 	- Requirements: multi-platform, synced, shareable
 - [Analyst Builder](https://www.analystbuilder.com/)
@@ -31,6 +33,7 @@ sarcasm, math, and language.
 - https://www.nudgesecurity.com/
 
 # Hardware, Gadgets
+
 - Portable Video, Smart Glasses, Video Glasses
 	- Video Glasses
 		- [Security Camera Eyeglasses 1080P HD](https://knowyournanny.com/security-camera-eyeglasses-1080p-hd/?sku=KYN-SG-DVR&gad_source=1)

@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "94dbc07c2d1f0eef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -77,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 445.5
+    "width": 255.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -188,6 +200,9 @@
   },
   "active": "6cd1a0fa6657fe8d",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+    "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
     "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md",
@@ -220,9 +235,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
