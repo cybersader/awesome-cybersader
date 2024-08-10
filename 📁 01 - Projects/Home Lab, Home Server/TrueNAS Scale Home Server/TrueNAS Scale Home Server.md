@@ -32,7 +32,6 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Monitoring and Logging]]**
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
 - **[[TrueNAS Scale RAID Setup]]**
-
 - **[[Turning Old PC into NAS in 2024]]**
 
 %% End Waypoint %%
