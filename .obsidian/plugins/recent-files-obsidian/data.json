@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "🕸️ UNSTRUCTURED",
       "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards",
-      "path": "📁 04 - Organizational Cyber/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards/Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards.md"
     }
   ],
   "omittedPaths": [],
