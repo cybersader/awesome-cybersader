@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
     },
     {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
+    },
+    {
+      "basename": "⬇️ Misc Todos",
+      "path": "✅ Tasks/⬇️ Misc Todos.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
@@ -87,10 +95,6 @@
     {
       "basename": "Cloudflare Tunnels Token Refresh Issue",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "Immich & Cloudflare Tunnels",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 19 - Politics, Government",
       "path": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
     }
   ],
   "omittedPaths": [],
