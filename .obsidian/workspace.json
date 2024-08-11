@@ -126,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -215,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 613.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,9 +237,10 @@
   },
   "active": "480cf5b88e224239",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "🕸️ UNSTRUCTURED/Reporting Phishing.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "_FileOrganizer2000/Templates/meeting_note.md",
     "_FileOrganizer2000/Backups",
     "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
@@ -261,7 +262,6 @@
     "✅ Tasks/⬇️ Misc Todos.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc Things to Do.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
     "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
