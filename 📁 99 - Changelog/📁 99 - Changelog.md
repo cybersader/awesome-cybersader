@@ -1,3 +1,5 @@
+- 2024-08-10 at 22h08 · [[Ttx b&b]]
+- 2024-08-10 at 22h08 · [[00 DROPZONE]]
 - 2024-08-10 at 20h09 · [[TrueNAS Scale RAID Setup]]
 - 2024-08-10 at 20h08 · [[📁 01 - Projects]]
 - 2024-08-10 at 20h08 · [[TrueNAS Scale Home Server]]
@@ -70,7 +72,6 @@
 - 2024-07-11 at 18h27 · [[Awesome Password Security]]
 - 2024-07-07 at 21h43 · [[First sessions]]
 - 2024-07-07 at 19h34 · [[TrueNAS K3S to Docker Compose]]
-- 2024-07-06 at 21h49 · [[00 DROPZONE]]
 - 2024-07-06 at 21h29 · [[TrueNAS Cloud Backups]]
 - 2024-07-06 at 21h25 · [[Home Server Power]]
 - 2024-07-06 at 15h28 · [[TrueNAS mDNS]]
