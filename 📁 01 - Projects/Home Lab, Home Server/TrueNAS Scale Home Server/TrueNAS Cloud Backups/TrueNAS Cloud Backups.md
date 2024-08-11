@@ -2,7 +2,7 @@
 aliases: 
 publish: true
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Sunday, August 11th 2024, 1:56 pm
+date modified: Sunday, August 11th 2024, 3:44 pm
 tags:
   - NAS
   - TrueNAS
@@ -149,4 +149,8 @@ The gist:
 	- [I have resolved my issue. I unchecked the &quot;Take Snapshot&quot; option from the task.](https://www.truenas.com/community/threads/cloud-sync-task-to-b2-error.83879/)
 	- After hours and hours of troubleshooting, In order to get rid of that exact error I had to exclude my Desktop folder from the sync, everything sync'd successfully after that. I believe it has something to do with either the shortcuts, recycle bin, symlinks or file name length, I could be wrong.
 	- Some people seem to think it could be a filename length issue.
+
+- I turned off ALL of my apps and it FINALLY WORKED
+	- ![](_attachments/TrueNAS%20Cloud%20Backups/IMG-20240811154445416.png)
+
 - [ ] Solve cloud sync issues in TrueNAS Scale ➕ 2024-08-11

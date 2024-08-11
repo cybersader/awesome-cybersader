@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "bb8d3b7458f2a7ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1eab580ff5af323c",
             "type": "leaf",
             "state": {
@@ -38,18 +50,6 @@
               "type": "markdown",
               "state": {
                 "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb8d3b7458f2a7ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
               }
             }
           },
@@ -235,14 +235,17 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "1eab580ff5af323c",
+  "active": "bb8d3b7458f2a7ed",
   "lastOpenFiles": [
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync/Sync vs Copy with Cloud Sync.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240811154445416.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync/Sync vs Copy with Cloud Sync.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "CybersaderNotion/00 DROPZONE/Ttx b&b.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829979.png",
@@ -273,15 +276,11 @@
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps/Windows Permissions & DevSecOps.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/Fr. Pine Interviews Matt Fradd/Fr. Pine Interviews Matt Fradd.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps",
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/CI_CD Pipeline Security with Andrew Krug.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/Fr. Pine Interviews Matt Fradd",
-    "📁 16 - Society, Culture/⬇️ Society Drop/Dr. Peterson x Elon Musk",
-    "📁 04 - Organizational Cyber/⬇️ Org Cyber Drop",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-31.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-29.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-30.png"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-29.png"
   ]
 }
