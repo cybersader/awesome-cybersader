@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "File Organizer 2000",
+      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
+    },
+    {
       "basename": "Reporting Phishing",
       "path": "🕸️ UNSTRUCTURED/Reporting Phishing.md"
     },
     {
-      "basename": "Markdown Practices in Obsidian",
-      "path": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
-    },
-    {
       "basename": "Company Examples of Privacy Violation",
       "path": "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md"
+    },
+    {
+      "basename": "Markdown Practices in Obsidian",
+      "path": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
     },
     {
       "basename": "Turning Old PC into NAS in 2024",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 12 - Religion, Ontology, Philosophy",
       "path": "📁 12 - Religion, Ontology, Philosophy/📁 12 - Religion, Ontology, Philosophy.md"
-    },
-    {
-      "basename": "Secure Podman Setup",
-      "path": "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md"
     }
   ],
   "omittedPaths": [],

@@ -132,5 +132,13 @@
       ],
       "key": "S"
     }
+  ],
+  "fileorganizer2000:show-assistant": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
   ]
 }

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Reporting Phishing.md",
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file organize",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Reporting Phishing.md",
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Reporting Phishing.md",
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Reporting Phishing.md"
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
               }
             }
           },
@@ -203,7 +203,7 @@
             }
           },
           {
-            "id": "3dcdd78621e45757",
+            "id": "169c802d2a364c59",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -215,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 613.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,12 +235,14 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3dcdd78621e45757",
+  "active": "480cf5b88e224239",
   "lastOpenFiles": [
+    "🕸️ UNSTRUCTURED/Reporting Phishing.md",
+    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "_FileOrganizer2000/Templates/meeting_note.md",
     "_FileOrganizer2000/Backups",
     "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
-    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
@@ -275,8 +277,6 @@
     "📁 01 - Projects/Python Projects/Jsonaut",
     "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
     "📁 01 - Projects/Python Projects",
-    "📁 04 - Organizational Cyber/Secure Cyber Environment/Secure Cyber Environment.md",
-    "📁 04 - Organizational Cyber/Secure Cyber Environment/Securing Python on Workstations/Securing Python on Workstations.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
