@@ -31,7 +31,6 @@
   "dataview",
   "run",
   "obsidian-charts",
-  "fileorganizer2000",
   "tag-breakdown-generator",
   "editor-width-slider",
   "recent-files-obsidian",
@@ -42,5 +41,6 @@
   "obsidian-divide-and-conquer",
   "various-complements",
   "obsidian-git",
-  "omnisearch"
+  "omnisearch",
+  "fileorganizer2000"
 ]

@@ -1,12 +1,4 @@
-/*
-
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
-
-If your plugin does not need CSS, delete this file.
-
-*/
-
+/* General Styles */
 .assistant-container {
   padding: 1rem;
 }
@@ -14,8 +6,10 @@ If your plugin does not need CSS, delete this file.
 .assistant-placeholder {
   color: var(--text-muted);
   font-style: italic;
+  padding: 1rem;
 }
 
+/* Section Styles */
 .assistant-section {
   margin-bottom: 1.5rem;
 }
@@ -32,12 +26,14 @@ If your plugin does not need CSS, delete this file.
   margin-right: 0.5rem;
 }
 
+/* Active Note Styles */
 .active-note-title {
   font-size: 1.1rem;
   color: var(--text-accent);
   margin-bottom: 1rem;
 }
 
+/* Tags Styles */
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +55,7 @@ If your plugin does not need CSS, delete this file.
   font-weight: var(--nav-item-weight-hover);
 }
 
+/* Alias and Folder Styles */
 .alias-container,
 .folder-container {
   display: flex;
@@ -72,6 +69,7 @@ If your plugin does not need CSS, delete this file.
   color: var(--text-normal);
 }
 
+/* Button Styles */
 .add-alias-button,
 .move-note-button,
 .format-button,
@@ -79,8 +77,6 @@ If your plugin does not need CSS, delete this file.
 .load-similar-files-button {
   background: white;
   color: var(--text-normal);
-  /* border: 1px solid var(--background-modifier-border); */
-  /* border-radius: 0.25rem; */
   padding: 0.25rem 0.5rem;
   cursor: pointer;
 }
@@ -95,6 +91,7 @@ If your plugin does not need CSS, delete this file.
   color: white;
 }
 
+/* Files Container Styles */
 .files-container {
   display: flex;
   flex-direction: column;
@@ -110,10 +107,12 @@ If your plugin does not need CSS, delete this file.
   text-decoration: underline;
 }
 
+/* Settings Styles */
 .settings-cta-button {
   margin-bottom: var(--size-4-4);
 }
 
+/* Skeleton Loader Animation */
 .skeleton-loader {
   background-color: #e0e0e0;
   border-radius: 4px;
@@ -121,18 +120,12 @@ If your plugin does not need CSS, delete this file.
 }
 
 @keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
-/* Add the following CSS to your styles */
+/* Setting Tabs Styles */
 .setting-tabs {
   display: flex;
   flex-direction: column;
@@ -141,7 +134,7 @@ If your plugin does not need CSS, delete this file.
 .setting-tab-headers {
   display: flex;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .setting-tab-header {
@@ -149,8 +142,8 @@ If your plugin does not need CSS, delete this file.
   cursor: pointer;
   border: 1px solid transparent;
   border-bottom: none;
-  flex: 1; /* Make tabs take equal space */
-  text-align: center; /* Center the text */
+  flex: 1;
+  text-align: center;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -177,10 +170,443 @@ If your plugin does not need CSS, delete this file.
 .setting-tab-content.active {
   display: block;
 }
+
+/* Login Button Styles */
 .file-organizer-login-button {
   margin-bottom: 1rem;
 }
+
+/* Utility Classes */
 .small-text {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.notice.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Obsidian-specific styles */
+.theme-dark {
+  --ai-chat-background: var(--background-primary-alt);
+  --ai-chat-text: var(--text-normal);
+  --ai-chat-user-message: var(--background-secondary-alt);
+  --ai-chat-assistant-message: var(--background-secondary);
+}
+
+.theme-light {
+  --ai-chat-background: var(--background-primary);
+  --ai-chat-text: var(--text-normal);
+  --ai-chat-user-message: var(--background-secondary);
+  --ai-chat-assistant-message: var(--background-primary-alt);
+}
+
+/* AI Chat Sidebar Styles */
+.ai-chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
+  background: var(--ai-chat-background);
+  color: var(--ai-chat-text);
+}
+
+.chat-component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: min-content;
+}
+
+.chat-input-container {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.selected-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-input-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tiptap-wrapper {
+  flex-grow: 1;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.send-button {
+  flex-shrink: 0;
+}
+
+.chat-input-form button {
+  height: 2.37rem;
+  width: 2.85rem;
+  padding: 0.5rem;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.chat-input-form button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.new-conversation-button {
+  height: 2.37rem;
+  width: 2.85rem;
+  cursor: pointer;
+  box-shadow: none !important;
+
+}
+
+.new-conversation-button:hover {
+  background-color: transparent;
+}
+
+.new-conversation-button svg {
+  width: 1r.8em;
+  height: 1.8rem;
+  color: var(--text-normal);
+
+}
+
+.new-conversation-button:hover svg {
+  color: var(--text-accent);
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.message {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.message-content {
+  margin-left: 0.5rem;
+  position: relative;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.assistant-message,
+.user-message {
+  user-select: text;
+}
+
+.assistant-message {
+  background-color: var(--ai-chat-assistant-message);
+}
+
+/* Error Message Styles */
+.error-message {
+  padding: 10px;
+  margin: 0;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+/* Tiptap Editor Styles */
+.tiptap {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 8px;
+  min-height: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.tiptap:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+}
+
+.tiptap p {
+  margin: 0;
+}
+
+/* Miscellaneous */
+.retry-button {
+  margin-top: 0.5rem;
+}
+
+.mention {
+  background-color: var(--interactive-accent);
+  border-radius: 0.4rem;
+  box-decoration-break: clone;
+  color: var(--color-base-10);
+  padding: 0.2rem 0.3rem;
+}
+
+/* Dropdown menu */
+.fo2k-dropdown-menu {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  overflow: auto;
+  padding: 0.4rem;
+  position: relative;
+}
+
+.fo2k-dropdown-menu button {
+  /* Reset styles */
+  all: unset;
+  box-sizing: border-box;
+
+  /* Assign specified properties */
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  gap: 0.25rem;
+  text-align: left;
+  width: 100%;
+  color: var(--text-normal);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.fo2k-dropdown-menu button:hover,
+.fo2k-dropdown-menu button:hover.is-selected {
+  background-color: var(--background-modifier-hover);
+}
+
+.fo2k-dropdown-menu button.is-selected {
+  background-color: var(--background-secondary-alt);
+}
+
+/* Selected Files Styles */
+.selected-files {
+  font-size: 0.8rem;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  gap: 0.5rem;
+}
+
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--background-secondary-alt);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.sanitized-button {
+  box-shadow: none !important;
+  all: unset;
+  box-sizing: border-box;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+.remove-button {
+  box-shadow: none !important;
+  all: unset;
+  box-sizing: border-box;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.remove-button:hover {
+  color: var(--text-accent);
+}
+
+/* Spinner Styles */
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-muted);
+  border-top: 2px solid var(--text-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.refresh-icon-button {
+  background: none !important;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  box-shadow: none !important;
+}
+
+.refresh-icon-button:hover {
+  opacity: 0.7;
+}
+
+.spinning svg {
+  animation: spin 1s linear infinite;
+}
+
+.cancel-button {
+  margin-top: 0.5rem;
+}
+
+.selected-files-container {
+  margin-bottom: 1rem;
+}
+
+/* Context Container Styles */
+.context-container {
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.context-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-normal);
+}
+
+.context-info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.context-icon {
+  margin-right: 5px;
+}
+
+.selected-files-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selected-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.selected-file {
+  background-color: var(--background-secondary-alt);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+}
+
+.clear-all-button {
+  align-self: flex-end;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 2px 5px;
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-all-button:hover {
+  background-color: var(--interactive-hover);
+}
+
+
+.obsidian-renderer .icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.obsidian-renderer .clickable-icon-container {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: background-color 0.2s;
+}
+
+.obsidian-renderer .clickable-icon-container:hover {
+  background-color: var(--interactive-hover);
+}
+
+.obsidian-renderer .clickable-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 2px;
+}
+
+.obsidian-renderer .icon-action-text {
+  font-size: 12px;
+}
+
+.obsidian-renderer .active-file {
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-right: auto;
 }
