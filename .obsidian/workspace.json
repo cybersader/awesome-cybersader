@@ -6,6 +6,7 @@
       {
         "id": "d6f212ce9624570f",
         "type": "tabs",
+        "dimension": 57.07196029776674,
         "children": [
           {
             "id": "2817d4f25ed45c04",
@@ -16,12 +17,26 @@
                 "file": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "e9d8d5aaeb03c7f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "7ee9c8f8ecbdf9aa",
         "type": "tabs",
+        "dimension": 42.92803970223325,
         "children": [
           {
             "id": "94dbc07c2d1f0eef",
@@ -72,18 +87,6 @@
             }
           },
           {
-            "id": "635c82c4ffaacf55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1eab580ff5af323c",
             "type": "leaf",
             "state": {
@@ -107,8 +110,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +139,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "media hosting",
+                "query": "testing suggest",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -182,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
               }
             }
           },
@@ -243,7 +245,7 @@
             }
           },
           {
-            "id": "169c802d2a364c59",
+            "id": "aaaea5e4cf0c6b13",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -276,16 +278,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "bb8d3b7458f2a7ed",
+  "active": "aaaea5e4cf0c6b13",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
-    "Excalidraw",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
+    "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
+    "_FileOrganizer2000/Logs/2024-08-11.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
+    "Excalidraw",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
     "✅ Tasks/⬇️ Misc Todos.md",
@@ -294,7 +301,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "🕸️ UNSTRUCTURED/Reporting Phishing.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "_FileOrganizer2000/Templates/meeting_note.md",
@@ -315,9 +321,6 @@
     "🕸️ UNSTRUCTURED/⬇️ Misc Things to Do.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
     "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md",
-    "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md",
-    "📁 04 - Organizational Cyber/Physical Security/Physical Security.md",
     "📁 04 - Organizational Cyber/Physical Security",
     "📁 04 - Organizational Cyber/Authentication & Trust Models",
     "📁 01 - Projects/Python Projects/Jsonaut",

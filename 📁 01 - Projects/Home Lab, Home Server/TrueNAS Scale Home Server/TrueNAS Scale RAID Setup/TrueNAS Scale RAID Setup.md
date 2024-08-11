@@ -2,13 +2,24 @@
 aliases:
   - Adding Another Drive to TrueNAS Scale
   - Expanding a ZFS Pool in TrueNAS
-tags: 
+  - Setting Up RAID on TrueNAS Scale
+  - TrueNAS Scale RAID Configuration
+tags:
+  - "#nas"
+  - "#truenas"
+  - "#home"
+  - "#homelab"
+  - "#storage"
+  - "#nas"
+  - "#storage"
+  - "#nas"
 publish: true
 date created: Sunday, June 30th 2024, 6:05 pm
 date modified: Sunday, August 11th 2024, 4:47 pm
 ---
 
 I'm finally adding another drive to my home server.
+
 
 # Links
 
