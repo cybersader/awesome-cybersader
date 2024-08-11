@@ -5,7 +5,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, June 30th 2024, 6:05 pm
-date modified: Sunday, August 11th 2024, 1:48 pm
+date modified: Sunday, August 11th 2024, 4:47 pm
 ---
 
 I'm finally adding another drive to my home server.
@@ -42,7 +42,7 @@ I'm finally adding another drive to my home server.
 
 - Just to be clear, I'm not rich and therefore I had to slowly buy drives.  I started with 1 drive - hence RAID 0.  Now I have 2 drives which is why I'm moving to a mirrored setup for basic redundancy.
 
-- ![600](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134829707.png)
+- ![600](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735345.png)
 
 - Some people seem to think it's simple to upgrade from RAID 0 (1 drive without redundancy) to RAID 1 (mirrored mode)
 	- [Just delete the pool and recrate a new pool with RAID level you want. Export disconnect/delete....](https://www.truenas.com/community/threads/how-to-upgrade-the-raid.115473/)
@@ -59,13 +59,13 @@ I'm finally adding another drive to my home server.
 
 - It looks like the solution to this is called "extending" the pool
 	- Go to "Manage Devices."  Notice I have 1 x DISK - 1 wide
-		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134829779.png)
+		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735393.png)
 	- Drop into the VDEV
-		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134829850.png)
+		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735443.png)
 	- "Extend"
-		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134829902.png)
+		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735494.png)
 	- Pick the disk that you want to add on?
-		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134829979.png)
+		- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735554.png)
 
 - You may run into "mixed disk capacities" errors
 	- Links
@@ -80,23 +80,28 @@ I'm finally adding another drive to my home server.
 
 ## Extending 12 TB Hard Drive to "Mirror" (RAID 1)
 
-- 
+- Extending the almost 11 TB VDEV
+	- ![700](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735618.png)
+	- ![](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735669.png)
+- It was a success
+	- It takes awhile to fully "resilver"
+	- ![750](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735745.png)
 
 # Expanding an Existing Pool
 
 - TL;DR - you can't just add one drive to the pool...well actually you kind of can?
 
 - ZFS uses Data VDEVs
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830052.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735822.png)
 - VDEVs don't need same size
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830155.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735890.png)
 - VDEV does not need to be symmetrical size or drive count
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830228.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164735974.png)
 - Mirrors
 	- You can use this but it's expensive for storage
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830270.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164736072.png)
 - You can have many pools
 	- Datasets are not shared between pools
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830315.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164736173.png)
 - Losing a VDEV loses the
-	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811134830375.png)
+	- ![400](_attachments/TrueNAS%20Scale%20RAID%20Setup/IMG-20240811164736230.png)

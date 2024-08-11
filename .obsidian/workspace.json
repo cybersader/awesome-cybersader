@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
               }
             }
           },
@@ -215,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,10 +236,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "480cf5b88e224239",
+  "active": "72b92f435b6b46f8",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "🕸️ UNSTRUCTURED/Reporting Phishing.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "_FileOrganizer2000/Templates/meeting_note.md",
@@ -246,19 +252,17 @@
     "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240811154445416.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync/Sync vs Copy with Cloud Sync.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "CybersaderNotion/00 DROPZONE/Ttx b&b.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829979.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829902.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829850.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829779.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735554.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735494.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735443.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735393.png",
     "✅ Tasks/⬇️ Misc Todos.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc Things to Do.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
@@ -275,13 +279,9 @@
     "📁 04 - Organizational Cyber/⬇️ Org Cyber Drop/Cyber Small Business Edition.md",
     "📁 01 - Projects/Python Projects/Python Projects.md",
     "📁 01 - Projects/Python Projects/Jsonaut",
-    "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md",
     "📁 01 - Projects/Python Projects",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-31.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-29.png"
+    "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png"
   ]
 }
