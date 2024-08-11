@@ -2,7 +2,7 @@
 aliases: 
 publish: true
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Saturday, July 6th 2024, 9:29 pm
+date modified: Sunday, August 11th 2024, 1:56 pm
 tags:
   - NAS
   - TrueNAS
@@ -15,7 +15,9 @@ tags:
 
 
 > The big goal here is to have cheap and reliable cloud backups that are a last resort.
+
 # Links
+
 - [Data Backups |](https://www.truenas.com/docs/core/gettingstarted/databackups/)
 - [Backing Up TrueNAS |](https://www.truenas.com/docs/scale/23.10/gettingstarted/configure/setupbackupscale/)
 - [Using Configuration Backups |](https://www.truenas.com/docs/core/coretutorials/systemconfiguration/usingconfigurationbackups/)
@@ -31,7 +33,9 @@ tags:
 		- S3 is $0.023 per GB per month
 		- $0.09 per GB transferred out
 - [Advice Needed: Uploading 10TB to AWS Glacier Deep Archive from TrueNAS-SCALE-23.10.1 | TrueNAS Community](https://www.truenas.com/community/threads/advice-needed-uploading-10tb-to-aws-glacier-deep-archive-from-truenas-scale-23-10-1.115646/#:~:text=One%20of%20the%20suggestions%20was,and%20manage%2C%20no%20ingress%20costing.)
+
 # Storage Options - 12 TB Backup
+
 The gist:
 - AWS S3 Glacier Deep Archive - good option, but the restore and download costs can be at least $90 per TB ($1116 for 12 TB), but can be as cheap as $150 a year
 - Backblaze B2 - $864 per year for 12 TB, simple pricing, and only costs about $120 for restore and downloading the data
@@ -75,9 +79,13 @@ The gist:
 	- [Cloud Storage Pricing Comparison: Calculate Your Costs](https://www.backblaze.com/cloud-storage/pricing) 
 	- $6 * 12 TB * 12 months = $864
 	- Restore is around $120 or so for 12 TB
+
 # iX Storj Setup and Pricing
+
 - Make account here - [TrueNAS iX-Storj Cloud Storage: Secure Data Solutions](https://www.truenas.com/ix-storj/) 
+
 ## Pricing and Plan Options
+
 - iX-Storj Starter Package
 	- $150 for 5TB storage and egress bandwidth for one year
 - Pro Account
@@ -85,7 +93,9 @@ The gist:
 	- 25 GB Free
 - Free Trial 
 	- Free up to 25 GB storage and egress 
+
 ## iX-Storj Setup
+
 - [TrueNAS Integration with Storj for Secure Data Storage - Storj Docs](https://docs.storj.io/dcs/third-party-tools/ix-systems-truenas) 
 - https://docs.storj.io/dcs/third-party-tools/ix-systems-truenas#setting-up-storj
 - Steps:
@@ -100,7 +110,9 @@ The gist:
 		- use same passphrase as Storj account or use separate passphrase
 		- Save this into password manager
 		- In order to see the data uploaded to your bucket in the web console, you must unlock the bucket with the same encryption passphrase as the credentials.
+
 ## Connecting TrueNAS to iX-Storj 
+
 - Go into TrueNAS UI
 - Create a Cloud Credential / Backup Credentials
 - Use the creds from Storj
@@ -113,9 +125,13 @@ The gist:
 	- Folder (optional): path where data should be stored
 	- Directory/Files: folder in directory to push from
 		- Don't select mnt -- use one of the mounted datasets below it.  In my case, I'm using my `personal` dataset
+
 # Testing Recovery Process
+
 - TODO
+
 # Bad Digest Error
+
 [Scheduled Backups, Scheduled Downtime](../Scheduled%20Backups,%20Scheduled%20Downtime/Scheduled%20Backups,%20Scheduled%20Downtime.md) 
 
 > Attempt 3/3 failed with 3 errors and: BadDigest: The Content-Md5 you specified did not match what we received.
@@ -127,4 +143,10 @@ The gist:
 
 ><3>ERROR : Attempt 3/3 failed ... Failed to copy with 2 errors: last error was: Put "" can't copy - source file is being updated (mod time changed from ---- )
 
+## TrueNAS Scale Cloud Backup Failure Solution
 
+- rclone failed with exit code 3
+	- [I have resolved my issue. I unchecked the &quot;Take Snapshot&quot; option from the task.](https://www.truenas.com/community/threads/cloud-sync-task-to-b2-error.83879/)
+	- After hours and hours of troubleshooting, In order to get rid of that exact error I had to exclude my Desktop folder from the sync, everything sync'd successfully after that. I believe it has something to do with either the shortcuts, recycle bin, symlinks or file name length, I could be wrong.
+	- Some people seem to think it could be a filename length issue.
+- [ ] Solve cloud sync issues in TrueNAS Scale ➕ 2024-08-11

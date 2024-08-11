@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "8f566c4f5f81ed5b",
+            "id": "72b92f435b6b46f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -237,16 +237,19 @@
   },
   "active": "1eab580ff5af323c",
   "lastOpenFiles": [
-    "CybersaderNotion/00 DROPZONE/Ttx b&b.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240810200858274.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240810200858208.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240810200858162.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240810200858112.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync/Sync vs Copy with Cloud Sync.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+    "CybersaderNotion/00 DROPZONE/Ttx b&b.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829979.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829902.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829850.png",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811134829779.png",
     "✅ Tasks/⬇️ Misc Todos.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc Things to Do.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
@@ -271,12 +274,9 @@
     "📁 16 - Society, Culture/⬇️ Society Drop/Fr. Pine Interviews Matt Fradd/Fr. Pine Interviews Matt Fradd.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Windows Permissions & DevSecOps",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/CI_CD Pipeline Security with Andrew Krug.md",
-    "📁 16 - Society, Culture/⬇️ Society Drop/Dr. Peterson x Elon Musk/Dr. Peterson x Elon Musk.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/Fr. Pine Interviews Matt Fradd",
-    "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md",
     "📁 16 - Society, Culture/⬇️ Society Drop/Dr. Peterson x Elon Musk",
     "📁 04 - Organizational Cyber/⬇️ Org Cyber Drop",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-32.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Learning/Misc Conferences/Blue Team Summit 2023/__attachments/Blue Team Summit 2023/IMG-I Want the Log I Can't Have-2024063021-33.png",

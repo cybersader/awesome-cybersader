@@ -13,6 +13,10 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "Secure Podman Setup",
       "path": "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md"
-    },
-    {
-      "basename": "Container Security",
-      "path": "📁 04 - Organizational Cyber/Container Security/Container Security.md"
-    },
-    {
-      "basename": "📁 19 - Politics, Government",
-      "path": "📁 19 - Politics, Government/📁 19 - Politics, Government.md"
     }
   ],
   "omittedPaths": [],
