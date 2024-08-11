@@ -33,6 +33,9 @@ date modified: Saturday, August 10th 2024, 6:42 pm
 	- https://obsidian.md/plugins?search=media
 	- https://obsidian.md/plugins?search=attachment
 
+- Github stuff?
+	- 
+
 # Talks About Solutions
 
 - https://www.quora.com/What-are-some-effective-methods-for-hosting-media-files-on-a-website-such-as-images-videos-and-audios

@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Drawing 2024-08-11 17.25.32.excalidraw",
+      "path": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2024-08-11 17.25.32.excalidraw",
+      "path": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg"
+    },
+    {
+      "basename": "Syncing Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
     },
     {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Media Hosting in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
+    },
+    {
+      "basename": "⬇️ Misc Todos",
+      "path": "✅ Tasks/⬇️ Misc Todos.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
     {
       "basename": "File Organizer 2000",
@@ -33,20 +69,8 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "⬇️ Misc Todos",
-      "path": "✅ Tasks/⬇️ Misc Todos.md"
-    },
-    {
-      "basename": "Media Hosting in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
     },
     {
       "basename": "⬇️ New Tools",
@@ -169,36 +193,12 @@
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/How to Rob a Bank/How to Rob a Bank.md"
     },
     {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
       "basename": "📁 04 - Organizational Cyber",
       "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
-      "basename": "Church Operations During Conflict",
-      "path": "📁 12 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "📁 12 - Religion, Ontology, Philosophy",
-      "path": "📁 12 - Religion, Ontology, Philosophy/📁 12 - Religion, Ontology, Philosophy.md"
     }
   ],
   "omittedPaths": [],
