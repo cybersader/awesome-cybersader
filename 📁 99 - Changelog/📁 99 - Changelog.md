@@ -1,3 +1,4 @@
+- 2024-08-11 at 20h12 · [[Deepfakes]]
 - 2024-08-11 at 19h29 · [[2024-08-11]]
 - 2024-08-11 at 19h29 · [[⬇ INBOX, DROPZONE]]
 - 2024-08-11 at 19h22 · [[⬇️ Misc_Links]]
@@ -208,7 +209,6 @@
 - 2024-06-19 at 13h39 · [[Endpoint Hardening]]
 - 2024-06-17 at 21h32 · [[Phishtory and the Phuture of Phishing with Joseph]]
 - 2024-06-16 at 21h10 · [[DNS Deep Diving - Serena DiPenti]]
-- 2024-06-16 at 21h10 · [[Deepfakes]]
 - 2024-06-13 at 20h33 · [[Adversarial Emulation Extravaganza w Kent & Jordan]]
 - 2024-06-13 at 20h33 · [[Cyber Blogs]]
 - 2024-06-13 at 20h33 · [[US Privacy News]]

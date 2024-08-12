@@ -6,7 +6,7 @@
       {
         "id": "d6f212ce9624570f",
         "type": "tabs",
-        "dimension": 57.07196029776674,
+        "dimension": 36.633663366336634,
         "children": [
           {
             "id": "2817d4f25ed45c04",
@@ -17,26 +17,13 @@
                 "file": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md"
               }
             }
-          },
-          {
-            "id": "e9d8d5aaeb03c7f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "7ee9c8f8ecbdf9aa",
         "type": "tabs",
-        "dimension": 42.92803970223325,
+        "dimension": 63.366336633663366,
         "children": [
           {
             "id": "94dbc07c2d1f0eef",
@@ -245,7 +232,7 @@
             }
           },
           {
-            "id": "aaaea5e4cf0c6b13",
+            "id": "68e864573445740f",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -257,7 +244,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 326.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -278,19 +265,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "aaaea5e4cf0c6b13",
+  "active": "94dbc07c2d1f0eef",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
     "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
     "_FileOrganizer2000/Logs/2024-08-11.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
-    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "Excalidraw",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
@@ -320,7 +308,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735393.png",
     "🕸️ UNSTRUCTURED/⬇️ Misc Things to Do.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
-    "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
     "📁 04 - Organizational Cyber/Physical Security",
     "📁 04 - Organizational Cyber/Authentication & Trust Models",
     "📁 01 - Projects/Python Projects/Jsonaut",
