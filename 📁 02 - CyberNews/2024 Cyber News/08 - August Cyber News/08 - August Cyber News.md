@@ -1,0 +1,11 @@
+ - Story # 1: Proofpoint Email Routing Flaw Exploited to Send Millions of Spoofed Phishing Emails
+    - https://thehackernews.com/2024/07/proofpoint-email-routing-flaw-exploited.html
+    - Hackers figured out how to relay off of Proofpoint customers like Disney to their customers with phishing emails and fake login pages
+    - The emails were indistinguishable from emails from the actual Disney
+    - What can we learn? Make sure you're doing SPF and DKIM and that you have good configurations. 
+    - Is there a need from a DR perspective to be able to deal with SaaS-level attacks and vendor relationship issues (Crowdstrike, etc.)
+    - Internal audit department is not liked, but a good program focuses on one critical control or one piece.  Take the same approach with pentesting.  Build your governance program to be specific about controls and tech stacks.  
+    - SaaS providers could causes issues.  BCM & DR need to talk with 3rd party risk.  What if they go gown or get compromised?  Is it important or secure?  Is accounting for this a path to insanity?  Cloud services use other cloud services.  
+    - Buiness idea - hook into accounting records, tie into SaaS products, risk matrix that hooks into the news, etc.
+- https://techcrunch.com/2024/07/31/bumble-and-hinge-allowed-stalkers-to-pinpoint-users-locations-down-to-2-meters-researchers-say/
+    - Trilateration can be automated if apps show the "distance" to other users at all.  Create 3 accounts and trilaterate
