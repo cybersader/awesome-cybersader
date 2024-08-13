@@ -2,7 +2,7 @@
 aliases: 
 publish: true
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Sunday, August 11th 2024, 3:44 pm
+date modified: Monday, August 12th 2024, 10:04 pm
 tags:
   - NAS
   - TrueNAS
@@ -151,6 +151,13 @@ The gist:
 	- Some people seem to think it could be a filename length issue.
 
 - I turned off ALL of my apps and it FINALLY WORKED
-	- ![](_attachments/TrueNAS%20Cloud%20Backups/IMG-20240811154445416.png)
+	- ![](_attachments/TrueNAS%20Cloud%20Backups/IMG-20240812220429093.png)
+
+- Nevermind.  It broke again the next day, but this time due to a "symlink" issue? 
+	- Cloud Sync uses Rclone, so maybe this was an issue with that
+	- <5>NOTICE: ix-applications/k3s/data/current: Can't follow symlink without -L/--copy-links <6>INFO : ix-applications/app_migrations.json: Updated modification time in destination <5>NOTICE: ix-applications/k3s/server/agent-token: Can't follow symlink without -L/--copy-links <5>NOTICE: ix-applications/k3s/server/kine.sock: Can't transfer non file/directory <5>NOTICE: ix-applications/k3s/server/node-token: Can't follow symlink without -L/--copy-links <6>INFO : ix-applications/releases/immich/charts/4.0.10/app-readme.md: Copied (new) <6>INFO : ix-applications/releases/immich/charts/4.0.10/Chart.yaml: Copied (new) <6>INFO : ix-applications/releases/immich/charts/4.0.10/README.md: Copied (new) <6>INFO : Transferred: 3.005 KiB / 99.577 KiB, 3%, 0 B/s, ETA - ... 322075 more lines ... <3>ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "af184c75059b548b5849e021b2ccdaa4" vs "d57d466298215710ccba172fbf042747" <6>INFO : Transferred: 97.357 MiB / 97.357 MiB, 100%, 116.369 KiB/s, ETA 0s Errors: 1 (retrying may help) Checks: 2878355 / 2878355, 100% Transferred: 85 / 85, 100% Elapsed time: 3h55m19.8s Failed to copy: corrupted on transfer: md5 hash differ "af184c75059b548b5849e021b2ccdaa4" vs "d57d466298215710ccba172fbf042747"
+
+- Editing the Cloud Sync task to "follow symlinks" and see if that fixes it
+	- ![](_attachments/TrueNAS%20Cloud%20Backups/IMG-20240812220429056.png)
 
 - [ ] Solve cloud sync issues in TrueNAS Scale ➕ 2024-08-11
