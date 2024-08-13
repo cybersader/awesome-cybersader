@@ -97,7 +97,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
               }
             }
           },
@@ -265,19 +266,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "94dbc07c2d1f0eef",
+  "active": "bb8d3b7458f2a7ed",
   "lastOpenFiles": [
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
     "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
     "_FileOrganizer2000/Logs/2024-08-11.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
     "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "Excalidraw",
