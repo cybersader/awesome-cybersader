@@ -1,3 +1,8 @@
+ - https://www.youtube.com/watch?v=UVoOSUE68n4
+    - DEFCON and other conferences bring hackers with it
+    - Hotels started going into rooms without cause because they knew they were going to DEFCON
+    - This is considered an unnecessary invasion of privacy
+    - 
  - Story # 1: Proofpoint Email Routing Flaw Exploited to Send Millions of Spoofed Phishing Emails
     - https://thehackernews.com/2024/07/proofpoint-email-routing-flaw-exploited.html
     - Hackers figured out how to relay off of Proofpoint customers like Disney to their customers with phishing emails and fake login pages
