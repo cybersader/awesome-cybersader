@@ -6,6 +6,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - [[⬇️ Curation Dropzone]]
 - **[[⬇ Tech Dropzone]]**
 	- **[[Awesome Dashcams]]**
+	- **[[Awesome Hardware]]**
 	- **[[Custom Merch]]**
 	- **[[Daily Driver Stuff]]**
 	- **[[Data Entry Tools]]**

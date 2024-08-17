@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Hardware",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
+    },
+    {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Awesome AI",
       "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
-    },
-    {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
     }
   ],
   "omittedPaths": [],
