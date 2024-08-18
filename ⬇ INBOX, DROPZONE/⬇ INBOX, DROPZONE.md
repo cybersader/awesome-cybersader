@@ -19,9 +19,9 @@ publish: true
 - **[[From Other Wiki]]**
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
+- **[[Internet Usage & Ethics]]**
 - [[Lookalike Domain Defenses]]
 - [[Malware Sandboxing]]
-- **[[Moral IT Usage]]**
 - [[Public Threat Actor Reporting, Blacklists]]
 - [[Windows 11 UI Stuff]]
 - **[[Windows BCDR]]**
