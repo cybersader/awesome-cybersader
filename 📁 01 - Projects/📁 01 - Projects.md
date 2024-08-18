@@ -5,6 +5,8 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 
 %% Begin Waypoint %%
 - **[[⬇️ Project Drop]]**
+	- **[[Home Firewall]]**
+	- **[[Implementing a Forum Website]]**
 - **[[Backing Up Signal]]**
 - **[[Bitwarden Stuff]]**
 - **[[Bluetooth Removal Issue Fix Windows]]**
