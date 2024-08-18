@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7ee9c8f8ecbdf9aa",
+        "id": "c0aab1cbf229de4b",
         "type": "tabs",
         "children": [
           {
-            "id": "94dbc07c2d1f0eef",
+            "id": "0132127300ab823a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c934b33e2482b757",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,57 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "480cf5b88e224239",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "653f03e609008487",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1eab580ff5af323c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df888d9f1e91c04e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "desk",
+                "query": "ethic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -142,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
+                "file": "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
+                "file": "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md"
               }
             }
           },
@@ -236,14 +199,23 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "480cf5b88e224239",
+  "active": "0132127300ab823a",
   "lastOpenFiles": [
+    "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md",
+    "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md",
+    "⬇ INBOX, DROPZONE/Moral IT Usage",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
+    "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs/Home Routers & ISPs.md",
+    "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs",
+    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md",
     "📁 01 - Projects/⬇️ Project Drop/Home Firewall/Home Firewall.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website",
-    "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md",
     "📁 01 - Projects/⬇️ Project Drop/Home Firewall",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
     "📁 01 - Projects/⬇️ Project Drop",
@@ -253,15 +225,11 @@
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News/08 - August Cyber News.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
     "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
     "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
     "_FileOrganizer2000/Logs/2024-08-11.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
-    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "Excalidraw",
@@ -271,15 +239,10 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png",
-    "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
     "🕸️ UNSTRUCTURED/Reporting Phishing.md",
-    "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
-    "_FileOrganizer2000/Templates/meeting_note.md",
     "_FileOrganizer2000/Backups",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429093.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Sync vs Copy with Cloud Sync",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735554.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735494.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735443.png",

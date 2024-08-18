@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Moral IT Usage",
+      "path": "⬇ INBOX, DROPZONE/Moral IT Usage/Moral IT Usage.md"
+    },
+    {
+      "basename": "⬇️ Project Drop",
+      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Home Routers & ISPs",
+      "path": "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs/Home Routers & ISPs.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "TrueNAS Scale RAID Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
       "basename": "File Organizer 2000",
       "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
     },
@@ -21,10 +49,6 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
     {
-      "basename": "⬇️ Project Drop",
-      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
-    },
-    {
       "basename": "Awesome Hardware",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
     },
@@ -37,18 +61,6 @@
       "path": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md"
     },
     {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "TrueNAS Scale RAID Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
       "basename": "Deepfakes",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md"
     },
@@ -59,10 +71,6 @@
     {
       "basename": "⬇️ Misc_Links",
       "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
     },
     {
       "basename": "Syncing Obsidian",
@@ -191,14 +199,6 @@
     {
       "basename": "Dirty Money",
       "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Dirty Money/Dirty Money.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
     }
   ],
   "omittedPaths": [],
