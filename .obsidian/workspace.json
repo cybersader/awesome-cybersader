@@ -32,30 +32,6 @@
             }
           },
           {
-            "id": "bb8d3b7458f2a7ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e6b50661b86e585",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "653f03e609008487",
             "type": "leaf",
             "state": {
@@ -92,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md",
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md",
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
+                "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
               }
             }
           },
@@ -260,10 +236,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "1e6b50661b86e585",
+  "active": "480cf5b88e224239",
   "lastOpenFiles": [
-    "📁 01 - Projects/⬇️ Project Drop/Home Firewall/Home Firewall.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md",
+    "📁 01 - Projects/⬇️ Project Drop/Home Firewall/Home Firewall.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website",
     "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md",
@@ -273,7 +250,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News/08 - August Cyber News.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News",
