@@ -33,4 +33,4 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 
 # Children Internet Safety
 
-- 
+- .
