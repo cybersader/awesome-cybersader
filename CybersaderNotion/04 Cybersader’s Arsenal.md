@@ -35,7 +35,3 @@
 [Personal Privacy](04%20Cybersader%E2%80%99s%20Arsenal/Personal%20Privacy.md)
 
 [Cloud Security - Architecture, Virtualization, Containerization](04%20Cybersader%E2%80%99s%20Arsenal/Cloud%20Security%20-%20Architecture,%20Virtualization,%20Con%20ddd2597e36ad4d2d8be9975d836e418a.md)
-
-[CS-[moral-tech]](04%20Cybersader%E2%80%99s%20Arsenal/CS-%5Bmoral-tech%5D.md)
-
-[Cybersade-RANDOM](04%20Cybersader%E2%80%99s%20Arsenal/Cybersade-RANDOM.md)
