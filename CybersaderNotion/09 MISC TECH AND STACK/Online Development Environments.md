@@ -1,6 +1,6 @@
 # Online Development Environments
 
-| Online Environment | Type | Dependencies | Open Source | Free/Paid | Languages/Frameworks Included | Security | Cron Jobs & Automation | Webhooks & APIs |
+| **Online Environment** | **Type** | **Dependencies** | **Open Source** | **Free/Paid** | **Languages/Frameworks Included** | **Security** | **Cron Jobs & Automation** | **Webhooks & APIs** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | JSFiddle | Code Editor | CDNs | Open Source | Free/Paid | HTML, CSS, JS, Frameworks | Public URLs, Login Required for Private | No | No |
 | CodePen | Code Editor | CDNs | Open Source | Free/Paid | HTML, CSS, JS, Frameworks | Public URLs, Login Required for Private | No | Yes |
