@@ -86,4 +86,7 @@
         - Admin FAQs: Okta Personal for Workforce 
         - https://trello.com/b/jNgSt36m/okta-personal-roadmap
 
-## 
+# 1Password vs Bitwarden
+
+- https://community.bitwarden.com/t/review-of-why-i-chose-bitwarden-vs-1password-but-enhancements-please/30274
+- 
