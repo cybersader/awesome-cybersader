@@ -1,4 +1,10 @@
 
+# Self Hosting Costs
+
+- Self-hosted support requires an Enterprise license
+    - https://community.bitwarden.com/t/pricing-for-business-solutions-and-cost-of-self-hosting/58772/2
+- You can use self-hosted version like vaultwarden, but you could have drastic issue later on due to them not being officially through Bitwarden
+
 # Links
 - [How to Setup Self Hosted Bitwarden](https://www.youtube.com/watch?v=SSLGa0LjTrA)
 - https://bitwarden.com/help/install-on-premise-linux/
