@@ -1,3 +1,30 @@
+ 
+ - https://www.youtube.com/watch?v=1LSvZ19Hapw
+   - NationalPublicData.com Breach
+      - https://krebsonsecurity.com/2024/08/nationalpublicdata-com-hack-exposes-a-nations-data/
+      - Why does government use SSN?
+      - This is a database issue. The government stands that this shouldn't be used like a password. We don't have a national identity system.
+      - European countries have identity cards and your identity can still be stolen
+      - Not every American has a passport number
+      - The big problem is unique identifiers
+      - The answers is to lock down your credit. Consider locking your children's credit down too. 
+      - Go directly to the credit bureaus
+      - Check your credit report annually
+      - Don't use SSN for identity validation. 
+      - There has to be security questions that are hard to research.
+      - In-person validation and collateral to some degree.
+   - Ransomhub is using a new EDR killer tool as part of attack
+      - https://thehackernews.com/2024/08/ransomhub-group-deploys-new-edr-killing.html
+      - Classic bring your own driver vuln like with Grim Reaper or Redlock
+      - In the world of comoditized ransomware, this makes it easier to get aroud EDR for the less advanced attackers
+   - T-Mobile fined for 60 million because they have a bad record for getting breached
+      - https://www.engadget.com/big-tech/t-mobile-fined-60-million-for-failing-to-stop-data-breaches-170438570.html
+      - CFIUS fined them - this is because they aren't headquartered in the US
+      - T-Mobile stock ironically went up
+      - No headline risk for T-Mobile
+      - PR strategy is to get breached often #cyberMeme
+      - Where does the fine money go? - usually to the agency
+      - 
  - https://www.youtube.com/watch?v=UVoOSUE68n4
     - DEFCON and other conferences bring hackers with it
     - Hotels started going into rooms without cause because they knew they were going to DEFCON
