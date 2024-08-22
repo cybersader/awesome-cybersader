@@ -24,7 +24,18 @@
       - No headline risk for T-Mobile
       - PR strategy is to get breached often #cyberMeme
       - Where does the fine money go? - usually to the agency
-      - 
+   - Massive attack on AWS and DevSecOps
+      - Attackers look for every domain possible then look for ".env"
+      - These should not be in your web root
+      - In production, there should instead be a secrets server that is being pulled from
+      - You need to scan yourself with Nuclei and have secret scanning on git repos or you're doing it wrong
+      - Ideally, look before the push to the repo
+      - GuardDuty isn't too expensive for AWS
+      - Feed alerts into your SIEM if the engineer don't give you access
+      - Don't rely on URL entropy
+      - Infostealers steal URLs
+   - 6 ransomware gangs are behind over 50% of attacks in 2024
+      - Ransomware, like other industries and airlines, are consolidating - HR, customer service, talent acquisition, exploit development, faster cycles - they have the big 5
  - https://www.youtube.com/watch?v=UVoOSUE68n4
     - DEFCON and other conferences bring hackers with it
     - Hotels started going into rooms without cause because they knew they were going to DEFCON
