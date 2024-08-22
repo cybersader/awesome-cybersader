@@ -2,4 +2,4 @@
 
 # Book Curation
 
--
+- Rinsed: From Cartels to Crypto
