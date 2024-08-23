@@ -19,7 +19,6 @@ publish: true
 - **[[From Other Wiki]]**
 - [[Go Pro as a Webcam]]
 - **[[Governance, Mgmt]]**
-- **[[Internet Usage & Ethics]]**
 - [[Lookalike Domain Defenses]]
 - [[Malware Sandboxing]]
 - [[Public Threat Actor Reporting, Blacklists]]
