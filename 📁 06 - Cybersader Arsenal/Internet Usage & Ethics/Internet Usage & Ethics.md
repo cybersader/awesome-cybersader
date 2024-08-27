@@ -8,6 +8,7 @@ date modified: Sunday, August 18th 2024, 6:04 pm
 
 These are the platforms, tools, tips, settings, life hacks, and resources that I would recommend to keep your internet usage aligned with morality and Christian values.
 
+
 # Theology, Apologetics
 
 - [Magisterium AI](https://www.magisterium.com/) - Magisterium AI, your helpful guide to the teachings of the Catholic Church.

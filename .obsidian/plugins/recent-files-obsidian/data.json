@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "Internet Usage & Ethics",
-      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
@@ -11,6 +11,22 @@
     {
       "basename": "Home Networking Arsenal",
       "path": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+    },
+    {
+      "basename": "Internet Usage & Ethics",
+      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
+    },
+    {
+      "basename": "⬇️ Cyber News DROP",
+      "path": "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md"
+    },
+    {
+      "basename": "📁 06 - Cybersader Arsenal",
+      "path": "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md"
     },
     {
       "basename": "⬇️ Project Drop",
@@ -35,10 +51,6 @@
     {
       "basename": "File Organizer 2000",
       "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "Implementing a Forum Website",
@@ -187,18 +199,6 @@
     {
       "basename": "TrueNAS Scale Apps, Adding TrueCharts",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
-    },
-    {
-      "basename": "Awesome Dashcams",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Dashcams/Awesome Dashcams.md"
-    },
-    {
-      "basename": "Awesome Headphones",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Headphones/Awesome Headphones.md"
-    },
-    {
-      "basename": "Home Server Power",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Home Server Power/Home Server Power.md"
     }
   ],
   "omittedPaths": [],
