@@ -1,5 +1,23 @@
  
- - https://www.youtube.com/watch?v=1LSvZ19Hapw
+
+- https://www.youtube.com/watch?v=ZBfSoSVqE4M
+   - UDEV USB Persistence Method
+   - Pavel Durov
+      - Telegram and VK creator was arrested in France
+      - Got arrested for failing to comply with takedowns
+      - Headed in Dubai but incorporated in British Virgin Islands
+      - International law - how can he be arrested?
+      - TJ Max hacking Albert Gonzales - get rich or die trying
+         - They had warrants in multiple countries
+         - The US believes they have jurisdiction if cyber crime starts, passes, or end in US
+      - If someone is wanted in US, you can use extradition treaties to pull people over
+      - Yastrominsky was acquired while traveling through Turkey - they wanted him for banks there, but US wanted him too. He was arrested in Turkey and the US was cool with that.
+      - He was linked to tons of other crimes and that's why he was actually arrested
+   - Telegram
+      - It's not end to end encrypted. It must be managed centrally and yet criminals still use it
+      - What is the complacency of the platform when crime happens on them? How much responsibility should these platforms have? 
+ 
+- https://www.youtube.com/watch?v=1LSvZ19Hapw
    - NationalPublicData.com Breach
       - https://krebsonsecurity.com/2024/08/nationalpublicdata-com-hack-exposes-a-nations-data/
       - Why does government use SSN?
