@@ -1,7 +1,11 @@
  
 
 - https://www.youtube.com/watch?v=ZBfSoSVqE4M
+   - Most Linux exploitation is from misconfigurations or passwords and Windows and IAM is where you get the vulnerability exploitation
+   - 
    - UDEV USB Persistence Method
+      - UDEV activates when devices are plugged in or UDEV random on every boot
+      - This can be used for kernel-level persistence
    - Pavel Durov
       - Telegram and VK creator was arrested in France
       - Got arrested for failing to comply with takedowns
