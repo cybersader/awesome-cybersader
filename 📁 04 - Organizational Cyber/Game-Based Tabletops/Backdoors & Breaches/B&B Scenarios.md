@@ -1,4 +1,8 @@
 
+# Questions to Ask During Scenario
+
+- What tools could you use?
+- https://www.youtube.com/watch?v=dSFPY5Bdqkk
 
 # First Session
 ## Theorized Attack Setup

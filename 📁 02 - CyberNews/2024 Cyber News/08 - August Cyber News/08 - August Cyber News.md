@@ -1,6 +1,7 @@
  
 
 - https://www.youtube.com/watch?v=ZBfSoSVqE4M
+   - 
    - Most Linux exploitation is from misconfigurations or passwords and Windows and IAM is where you get the vulnerability exploitation
    - 
    - UDEV USB Persistence Method
