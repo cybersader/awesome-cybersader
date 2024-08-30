@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, August 30th 2024, 12:57 pm
-date modified: Friday, August 30th 2024, 2:32 pm
+date modified: Friday, August 30th 2024, 2:55 pm
 ---
 
 # Social Security Information
@@ -17,3 +17,18 @@ date modified: Friday, August 30th 2024, 2:32 pm
 
 - Videos
 	- [(40) SSN Hack - YouTube](https://www.youtube.com/shorts/qqMGBPEvlLU) 
+
+# Passwords Breach
+
+- .
+
+# Fraud
+
+- .
+
+# Hacked Home Computer
+
+- Cyber Deception
+- Anti-Virus
+- Backups
+

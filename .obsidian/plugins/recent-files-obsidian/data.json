@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "NIST & CIS Resources",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
+    },
+    {
+      "basename": "Frameworks, Standards",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
+    },
+    {
       "basename": "Handling Personal Security Breaches",
       "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
+    },
+    {
+      "basename": "📁 06 - Cybersader Arsenal",
+      "path": "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md"
     },
     {
       "basename": "Gaming Hacks & Cheats",
@@ -55,10 +67,6 @@
     {
       "basename": "⬇️ Cyber News DROP",
       "path": "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md"
-    },
-    {
-      "basename": "📁 06 - Cybersader Arsenal",
-      "path": "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md"
     },
     {
       "basename": "⬇️ Project Drop",
@@ -191,14 +199,6 @@
     {
       "basename": "Debate - Why Marriage is Good for Men",
       "path": "📁 16 - Society, Culture/Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men.md"
-    },
-    {
-      "basename": "Awesome Peripherals",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "SSO vs Password Managers",
-      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
     }
   ],
   "omittedPaths": [],

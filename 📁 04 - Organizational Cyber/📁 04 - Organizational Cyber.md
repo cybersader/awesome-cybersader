@@ -19,8 +19,7 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Cyber Team Building]]**
 - **[[Cybersecurity Culture Building]]**
 - **[[Endpoint Hardening]]**
-- **Frameworks, Standards**
-	- [[NIST & CIS Resources]]
+- **[[Frameworks, Standards]]**
 - **[[Game-Based Tabletops]]**
 - **[[Incident Response]]**
 - **[[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]**
