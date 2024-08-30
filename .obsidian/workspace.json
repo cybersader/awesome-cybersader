@@ -116,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -145,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "data governance",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -192,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md"
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
               }
             }
           },
@@ -286,17 +286,17 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "de608afc4d85faf3",
+  "active": "d961a41962a62fb6",
   "lastOpenFiles": [
+    "📁 01 - Projects/Podman Setup & Container Usage.md",
     "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
-    "📁 01 - Projects/Podman Setup & Container Usage.md",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830181448559.png",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830181448501.png",
+    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png",
+    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521498.png",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage",
     "📁 01 - Projects/_attachments",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830181448404.png",
+    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521450.png",
     "📁 01 - Projects/Pasted image 20240830174347.png",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md",

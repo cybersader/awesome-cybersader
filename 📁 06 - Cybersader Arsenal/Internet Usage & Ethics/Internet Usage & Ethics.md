@@ -28,6 +28,8 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 	- [An Exploratory Study Into the Negotiation of Cyber-Security Within the Family Home - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081791/)
 	- [Design and Implementation of Privacy and Security System in Social Media - ProQuest](https://www.proquest.com/openview/48ee136b20f3f6561e5ef86d842b1b45/1?pq-origsite=gscholar&cbl=886380)
 
+# Christian Internet Resources
+- 
 # RANDOM
 
 - [A Systematic Literature Review of the Types of Authentication Safety Practices among Internet Users](https://pdfs.semanticscholar.org/f173/32605654566b40e0bea1929bc611653de41c.pdf)
