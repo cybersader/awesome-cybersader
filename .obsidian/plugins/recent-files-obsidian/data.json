@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Handling Personal Security Breaches",
-      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
+      "basename": "Awesome Hardware",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "Handling Personal Security Breaches",
+      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
     },
     {
       "basename": "Awesome Physical Security",
@@ -71,10 +75,6 @@
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "Awesome Hardware",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
     },
     {
       "basename": "TrueNAS Cloud Backups",

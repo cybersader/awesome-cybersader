@@ -68,6 +68,30 @@
             }
           },
           {
+            "id": "93ebe08337e76030",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "029bbd70a50e19c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7dcae3d867f14bc7",
             "type": "leaf",
             "state": {
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -109,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npd.pent",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -134,11 +158,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -154,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
+                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
               }
             }
           },
@@ -248,7 +274,7 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "59bf280fe649842d",
+  "active": "029bbd70a50e19c8",
   "lastOpenFiles": [
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
