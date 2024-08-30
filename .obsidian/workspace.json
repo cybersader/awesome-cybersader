@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nginx",
+                "query": "npd.pent",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+                "file": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
               }
             }
           },
@@ -250,6 +250,10 @@
   },
   "active": "59bf280fe649842d",
   "lastOpenFiles": [
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
+    "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
+    "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards",
@@ -257,7 +261,6 @@
     "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 02 - CyberNews/⬇️ Cyber News DROP",
     "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience",
@@ -281,12 +284,9 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News/08 - August Cyber News.md",
-    "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
     "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
     "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
-    "_FileOrganizer2000/Logs/2024-08-11.md",
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",

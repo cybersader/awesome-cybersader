@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Handling Personal Security Breaches",
+      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
+    },
+    {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "Awesome Physical Security",
+      "path": "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md"
     },
     {
       "basename": "Personal Cyber Resilience",
@@ -133,10 +141,6 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
     {
-      "basename": "Awesome Physical Security",
-      "path": "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md"
-    },
-    {
       "basename": "Physical Security",
       "path": "📁 04 - Organizational Cyber/Physical Security/Physical Security.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Immich & Cloudflare Tunnels",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
-    },
-    {
-      "basename": "TrueNAS Scale Apps, Adding TrueCharts",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Apps, Adding TrueCharts/TrueNAS Scale Apps, Adding TrueCharts.md"
     }
   ],
   "omittedPaths": [],
