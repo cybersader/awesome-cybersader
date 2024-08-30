@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
+                "file": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,13 +158,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -180,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
+                "file": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
+                "file": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
+                "file": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md"
               }
             }
           },
@@ -276,6 +274,9 @@
   },
   "active": "029bbd70a50e19c8",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
+    "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md",
+    "📁 06 - Cybersader Arsenal/Email Aliasing",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
@@ -303,16 +304,13 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website",
     "📁 01 - Projects/⬇️ Project Drop/Home Firewall",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
     "📁 01 - Projects/⬇️ Project Drop",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "📁 02 - CyberNews/2024 Cyber News/08 - August Cyber News/08 - August Cyber News.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Deepfakes/Deepfakes.md",
     "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md",
-    "📦 VAULT SANDBOX TESTING/Testing Suggestions Overview.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
