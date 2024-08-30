@@ -17,7 +17,7 @@ tags:
   - data_mapping
 publish: true
 date created: Wednesday, May 22nd 2024, 8:07 pm
-date modified: Wednesday, June 19th 2024, 11:39 am
+date modified: Friday, August 30th 2024, 6:12 pm
 ---
 
 # THE GOAL: Customized Information-Gathering in an Organization
@@ -25,6 +25,7 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 >! [info] The goal is to create a system for doing customized internal questionnaires that build out a database table for initiatives like data governance or data mapping.
 
 ## Opinionated/Curated Tech Stack Options 
+
 - On-Prem (naive option)
 	- Network Share + Excel + Forms option in Excel (optional) 
 - On-Prem - Custom Tools
@@ -48,9 +49,11 @@ date modified: Wednesday, June 19th 2024, 11:39 am
     - Only works easily if you have something like Google Sheets
 
 # Search Queries
+
 - no code database ICQ data entry assessment survey feedback questionnaire
 
 # Curated Solution Stacks
+
 - On-Prem (naive option)
 	- Network Share + Excel + Forms option in Excel (optional) 
 - Cloud, Hybrid
@@ -63,6 +66,7 @@ date modified: Wednesday, June 19th 2024, 11:39 am
 # Misc Solutions by Target
 
 ## Business Data Management
+
 - Cloud, Expensive
   - SAP
 - Open-Source SAP Alternatives
@@ -124,6 +128,7 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - https://atlan.com/?ref=/
 
 ## Open-Source No Code Databases with Form Functionality, Open-Source Internal Tools Platforms
+
 - NocoDB
   - https://github.com/nocodb/nocodb
   - https://nocodb.com/
@@ -144,6 +149,7 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - 
 
 ## Employee Survey Tools
+
 - Cloud
   - https://workleap.com/get/employee-pulse-survey-tool/
   - https://eletive.com/lp/employeeengagementsurveys/
@@ -153,6 +159,7 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - 
 
 ## Audit and Internal Control, ICQs (Intnernal Control Questionnaire)
+
 - Cloud, Expensive
   - SAP Internal Audit
   - https://www.ideagen.com/solutions/audit-and-risk/internal-audit
@@ -168,15 +175,18 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
   - 
 
 ## Forms & Surveys
+
 - On-Prem
-  - https://formbricks.com/
+	- https://formbricks.com/
 - Cloud
-  - https://www.typeform.com/
-  - https://www.fillout.com/
-  - https://www.surveymonkey.com/
-  - https://tally.so/
+	- https://www.typeform.com/
+	- https://www.fillout.com/
+	- https://www.surveymonkey.com/
+	- https://tally.so/
+	- https://www.formaloo.com/
 
 # Misc
+
 - [Nocode tool for on-premises use : r/nocode](https://www.reddit.com/r/nocode/comments/vjnjay/nocode_tool_for_onpremises_use/)
 - [Pay for what you use, capped at $20/user/month](https://www.appsmith.com/pricing)
 - [Self Hosting | Appsmith](https://docs.appsmith.com/getting-started/setup#self-hosted)
@@ -194,6 +204,7 @@ https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/top-effectiv
 - [calipseo/formio - Docker Image | Docker Hub](https://hub.docker.com/r/calipseo/formio)
 
 ## Unified Data Entry Suite
+
 - **Google Forms**: Easy-to-create forms that can collect data and automatically populate Google Sheets.
 - **Typeform**: User-friendly forms and surveys that can integrate with various databases and applications.
 - **Microsoft Forms**: Part of Office 365, allows for data collection and integration with Excel and other Microsoft tools.
