@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Email Aliasing",
-      "path": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md"
+      "basename": "Handling Personal Security Breaches",
+      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
     },
     {
-      "basename": "Awesome Hardware",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
+      "basename": "Gaming Hacks & Cheats",
+      "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
-      "basename": "Handling Personal Security Breaches",
-      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Email Aliasing",
+      "path": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md"
+    },
+    {
+      "basename": "Awesome Hardware",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
     },
     {
       "basename": "Awesome Physical Security",
@@ -53,16 +69,8 @@
       "path": "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs/Home Routers & ISPs.md"
     },
     {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
       "basename": "File Organizer 2000",
@@ -107,10 +115,6 @@
     {
       "basename": "Drawing 2024-08-11 17.25.32.excalidraw",
       "path": "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg"
-    },
-    {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
     },
     {
       "basename": "Media Hosting in Obsidian",
@@ -195,10 +199,6 @@
     {
       "basename": "SSO vs Password Managers",
       "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
-    },
-    {
-      "basename": "Cloudflare Tunnels Token Refresh Issue",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Cloudflare Tunnels Token Refresh Issue/Cloudflare Tunnels Token Refresh Issue.md"
     }
   ],
   "omittedPaths": [],

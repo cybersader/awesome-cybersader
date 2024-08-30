@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, August 30th 2024, 12:57 pm
-date modified: Friday, August 30th 2024, 12:58 pm
+date modified: Friday, August 30th 2024, 2:32 pm
 ---
 
 # Social Security Information
@@ -14,3 +14,6 @@ date modified: Friday, August 30th 2024, 12:58 pm
 - [Place a Fraud Alert or Active Duty Alert | Equifax®](https://www.equifax.com/personal/credit-report-services/credit-fraud-alerts/)
 - [Experian - Fraud Alert](https://www.experian.com/ncaconline/fraudalert)
 - [3 Steps to Take if Your Social Security Number Has Been Stolen - Experian](https://www.experian.com/blogs/ask-experian/3-steps-to-take-if-your-social-security-number-has-been-stolen/)
+
+- Videos
+	- [(40) SSN Hack - YouTube](https://www.youtube.com/shorts/qqMGBPEvlLU) 
