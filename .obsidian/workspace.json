@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
+                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
+                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
+                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
               }
             }
           },
@@ -260,8 +260,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d961a41962a62fb6",
+  "active": "de608afc4d85faf3",
   "lastOpenFiles": [
+    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
@@ -281,7 +282,6 @@
     "📁 04 - Organizational Cyber/Frameworks, Standards",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
-    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md",
     "📁 02 - CyberNews/⬇️ Cyber News DROP",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience",

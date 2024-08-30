@@ -1,4 +1,4 @@
-- 2024-08-30 at 15h50 · [[NIST & CIS Resources]]
+- 2024-08-30 at 16h14 · [[NIST & CIS Resources]]
 - 2024-08-30 at 15h48 · [[App Tool Solution Discovery , Catalogues, Curation]]
 - 2024-08-30 at 14h55 · [[📁 04 - Organizational Cyber]]
 - 2024-08-30 at 14h55 · [[Frameworks, Standards]]
