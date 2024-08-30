@@ -1,12 +1,20 @@
 ---
 aliases: 
-tags: 
+tags:
+  - Auditing
+  - Compliance
+  - Hardening
+  - SCAP
+  - endpoint-hardening
+  - IARM
+  - risk-management
 publish: true
 date created: Wednesday, August 28th 2024, 7:51 pm
-date modified: Friday, August 30th 2024, 2:56 pm
+date modified: Friday, August 30th 2024, 3:49 pm
 ---
 
 [Game Based Tabletops](../Game-Based%20Tabletops/Game-Based%20Tabletops.md)
+[Endpoint Hardening](../Endpoint%20Hardening/Endpoint%20Hardening.md) 
 
 # NIST - Focus on Controls
 

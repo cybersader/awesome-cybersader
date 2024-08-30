@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "0dd99934f4a6e9aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0b04860c30999bbe",
             "type": "leaf",
             "state": {
@@ -74,6 +62,18 @@
               "type": "markdown",
               "state": {
                 "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d961a41962a62fb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
+                "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
               }
             }
           },
@@ -260,8 +260,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "de608afc4d85faf3",
+  "active": "d961a41962a62fb6",
   "lastOpenFiles": [
+    "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
+    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
     "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md",
@@ -276,7 +278,6 @@
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
     "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
@@ -298,7 +299,6 @@
     "📁 01 - Projects/⬇️ Project Drop",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
-    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.md",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
