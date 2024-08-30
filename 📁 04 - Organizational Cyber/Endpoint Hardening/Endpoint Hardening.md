@@ -3,10 +3,19 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, June 13th 2024, 8:33 pm
-date modified: Monday, June 17th 2024, 9:37 pm
+date modified: Friday, August 30th 2024, 4:33 pm
 ---
+[Frameworks, Standards](../Frameworks,%20Standards/Frameworks,%20Standards.md) 
+[NIST & CIS Resources](../Frameworks,%20Standards/NIST%20&%20CIS%20Resources.md) 
+# Audit Tools
+
+- https://cisofy.com/lynis/
+	- [CISOfy/lynis: Lynis - Security auditing tool for Linux, macOS, and UNIX-based systems. Assists with compliance testing (HIPAA/ISO27001/PCI DSS) and system hardening. Agentless, and installation optional.](https://github.com/CISOfy/lynis) 
+
 # Mapping Technical Configuration to NIST Controls
+
 ## Government Technical Standards Overview - The Technical Mapping Problem
+
 - Links:
     - https://medium.com/@cyber.stack/nist-vs-iso-vs-cis-vs-stig-a-comprehensive-guide-7de5c788be07
     - https://govcyberhub.com/2022/03/07/stigs-for-dummies/
@@ -21,16 +30,20 @@ date modified: Monday, June 17th 2024, 9:37 pm
     - Checklist Repository - https://ncp.nist.gov/repository
 
 ## RMF (Risk Management Framework)
+
 - https://csrc.nist.gov/Projects/risk-management/about-rmf
 - https://rmfdb.com/search
 - https://csrc.nist.gov/CSRC/media/Projects/risk-management/documents/04-Implement%20Step/NIST%20RMF%20Implement%20Step-FAQs.pdf
+
 ## What is SCAP (Security Content Automation Protocol)
+
 - https://csrc.nist.gov/projects/security-content-automation-protocol/
 - https://csrc.nist.gov/Projects/risk-management/about-rmf/implement-step/security-configuration-settings
 
 ## Mapping STIG to NIST
+
 - STIG Flow Down Chart
-    - ![How STIGs are Developed](_attachments/Endpoint%20Hardening/IMG-20240617213729171.png)
+    - ![How STIGs are Developed](_attachments/Endpoint%20Hardening/IMG-20240830163359293.png)
 
 https://public.cyber.mil/stigs/compilations/
 https://public.cyber.mil/stigs/cci/
@@ -43,6 +56,7 @@ https://public.cyber.mil/announcement/disa-releases-the-cci-list-revision-5/
 https://public.cyber.mil/stigs/downloads/
 
 #  Links
+
 - RMFDB?
     - https://rmfdb.com/search
 - DISA

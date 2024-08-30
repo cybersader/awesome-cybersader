@@ -11,7 +11,7 @@ tags:
   - risk-management
 publish: true
 date created: Wednesday, August 28th 2024, 7:51 pm
-date modified: Friday, August 30th 2024, 4:13 pm
+date modified: Friday, August 30th 2024, 4:53 pm
 ---
 
 [Game Based Tabletops](../Game-Based%20Tabletops/Game-Based%20Tabletops.md)
@@ -116,4 +116,28 @@ Misc
 	- [Using Open Source Auditing Tools as alternative to CIS Benchmarks](https://linux-audit.com/using-open-source-auditing-tools-as-alternative-for-cis-benchmarks/)
 	- [Lynis - Security auditing tool for Linux, macOS, and Unix-based systems - CISOfy](https://cisofy.com/lynis/) 
 	- [Open Source Audit Services - FossID](https://fossid.com/service/open-source-audit/)
-	- 
+
+- Open Source
+	- https://www.openrmf.io/
+		- https://github.com/Cingulara/openrmf-docs/releases
+	- https://community.chef.io/tools/chef-inspec
+	- https://www.open-scap.org
+		- https://www.open-scap.org/tools/
+
+- Enterprise
+	- Technical and geared towards cybersecurity engineers
+		- https://regscale.com/
+		- https://www.drtconfidence.com/
+	- Expensive and overhyped...maybe - except maybe Vanta
+		- https://www.vanta.com/ 
+		- https://www.auditboard.com/
+		- https://drata.com/
+		- https://www.diligent.com/solutions/internal-controls-management
+		- https://www.workiva.com/solutions/internal-audit-management
+		- [Strike Graph: Cybersecurity Compliance SaaS](https://www.strikegraph.com/)
+		- [ISMS.online, ISO 27001 Compliance Software &amp; Data Privacy SaaS](https://www.isms.online/)
+		- [Automated Security &amp; Compliance Software Built For Scale - Hyperproof](https://hyperproof.io/)
+		- [Compliance with confidence - Thoropass](https://thoropass.com/)
+		- [Automated Security Compliance Platform | Scytale](https://scytale.ai/)
+		- [Secureframe: Build trust. Unlock growth. | Secureframe](https://secureframe.com/)
+		- [Home - Sprinto - Continuous Security &amp; Compliance Platform - Sprinto](https://sprinto.com/)
