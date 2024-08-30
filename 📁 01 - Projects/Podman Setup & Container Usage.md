@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, August 30th 2024, 4:54 pm
-date modified: Friday, August 30th 2024, 5:07 pm
+date modified: Friday, August 30th 2024, 5:56 pm
 ---
 
 # Container Registries
@@ -17,4 +17,16 @@ date modified: Friday, August 30th 2024, 5:07 pm
 
 # Using Containers in Podman
 
-- .
+- [Containers | Podman Desktop](https://podman-desktop.io/docs/containers)
+
+
+- Instructions here - https://podman-desktop.io/docs/containers/images/pulling-an-image
+- From DockerHub
+	- ![](_attachments/Podman%20Setup%20&%20Container%20Usage/IMG-20240830175629162.png)
+- Add ":latest" to the end to always use the latest one
+- 
+
+# Containers to Try
+
+- [Self-Hosted Deployment | Form.io Documentation](https://help.form.io/deployments/deployment-guide)
+- 
