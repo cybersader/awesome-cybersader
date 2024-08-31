@@ -7643,14 +7643,14 @@ var require_lib = __commonJS({
       })
     });
     var optionalWhitespaceOrComment = parsimmon_umd_minExports.alt(parsimmon_umd_minExports.whitespace, QUERY_LANGUAGE.comment).many().map((arr) => arr.join(""));
-    var getAPI2 = (app) => {
+    var getAPI2 = (app2) => {
       var _a;
-      if (app)
-        return (_a = app.plugins.plugins.dataview) == null ? void 0 : _a.api;
+      if (app2)
+        return (_a = app2.plugins.plugins.dataview) == null ? void 0 : _a.api;
       else
         return window.DataviewAPI;
     };
-    var isPluginEnabled = (app) => app.plugins.enabledPlugins.has("dataview");
+    var isPluginEnabled = (app2) => app2.plugins.enabledPlugins.has("dataview");
     exports.DATE_SHORTHANDS = DATE_SHORTHANDS;
     exports.DURATION_TYPES = DURATION_TYPES;
     exports.EXPRESSION = EXPRESSION;
@@ -7668,10 +7668,385 @@ __export(main_exports, {
   default: () => BearingsPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian5 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 
 // src/dataservice.ts
+var import_obsidian3 = require("obsidian");
+
+// src/settings.ts
 var import_obsidian = require("obsidian");
+var DEFAULT_TITLE_FIELDS = [
+  "entry-title",
+  "title"
+];
+var DEFAULT_TITLE_PREFIX_FIELD = "title-prefix";
+var BEARINGS_DEFAULT_SETTINGS = {
+  schemaVersion: "0.0.0",
+  options: {
+    titleField: DEFAULT_TITLE_FIELDS,
+    titlePrefix: DEFAULT_TITLE_PREFIX_FIELD,
+    glyphField: ["glyphs", "entry-glyphs"],
+    autoexpansionDepthLimit: 2,
+    discoveryDepthLimitPrimary: 2,
+    discoveryDepthLimitSecondary: 2,
+    inactiveFileFocalNote: ""
+  },
+  relationshipDefinitions: {
+    "Parent": {
+      primaryRelationshipRole: "Parent",
+      primaryRelationshipPropertyName: "entry-parents",
+      complementaryRelationshipRole: "Child",
+      complementaryRelationshipPropertyName: "entry-children",
+      categories: ["superordinate"]
+    },
+    "Classifier": {
+      primaryRelationshipRole: "Classifier",
+      primaryRelationshipPropertyName: "entry-classifiers",
+      complementaryRelationshipRole: "Classification",
+      complementaryRelationshipPropertyName: "entry-classifications",
+      categories: ["superordinate"]
+    },
+    "Collection": {
+      primaryRelationshipRole: "Collection",
+      primaryRelationshipPropertyName: "entry-collections",
+      complementaryRelationshipPropertyName: "entry-items",
+      complementaryRelationshipRole: "Item",
+      categories: ["superordinate"]
+    },
+    "Author": {
+      primaryRelationshipRole: "Author",
+      primaryRelationshipPropertyName: "source-authors",
+      complementaryRelationshipRole: "Bibliography",
+      complementaryRelationshipPropertyName: "entry-bibliography",
+      categories: ["superordinate"]
+    },
+    "Reference": {
+      primaryRelationshipRole: "Reference",
+      primaryRelationshipPropertyName: "entry-bibliography",
+      categories: ["superordinate"]
+    },
+    "Next": {
+      primaryRelationshipRole: "Next",
+      primaryRelationshipPropertyName: "entry-next",
+      complementaryRelationshipRole: "Previous",
+      complementaryRelationshipPropertyName: "entry-previous",
+      categories: ["superordinate"]
+    },
+    "Collaborator": {
+      primaryRelationshipRole: "Collaborator",
+      primaryRelationshipPropertyName: "entry-collaborators",
+      complementaryRelationshipRole: "Collaboration",
+      complementaryRelationshipPropertyName: "entry-collaborations",
+      categories: ["superordinate"]
+    },
+    "Attachment": {
+      categories: ["superordinate"],
+      complementaryRelationshipRole: "Attachment",
+      complementaryRelationshipPropertyName: "entry-attachments"
+    },
+    "Topic": {
+      primaryRelationshipPropertyName: "entry-topics",
+      primaryRelationshipRole: "Topic",
+      complementaryRelationshipPropertyName: "entry-cases",
+      complementaryRelationshipRole: "Case",
+      categories: ["superordinate"]
+    },
+    "Referral": {
+      primaryRelationshipRole: "Referral",
+      primaryRelationshipPropertyName: "entry-referrals",
+      categories: ["symmetrical"]
+    }
+  }
+};
+var BearingsConfiguration = class {
+  constructor(settingsData) {
+    this.relationshipDefinitions = { ...settingsData.relationshipDefinitions };
+    this.options = { ...settingsData.options };
+  }
+  superordinateRelationshipDefinitions() {
+    return Object.values(this.relationshipDefinitions).filter((rdef) => {
+      var _a;
+      return (_a = rdef.categories) == null ? void 0 : _a.includes("superordinate");
+    });
+  }
+  symmetricalRelationshipDefinitions() {
+    return Object.values(this.relationshipDefinitions).filter((rdef) => {
+      var _a;
+      return (_a = rdef.categories) == null ? void 0 : _a.includes("symmetrical");
+    });
+  }
+  allPropertyNames() {
+    const propertyNames = /* @__PURE__ */ new Set();
+    Object.values(this.relationshipDefinitions).forEach((relDef) => {
+      if (relDef.primaryRelationshipPropertyName) {
+        propertyNames.add(relDef.primaryRelationshipPropertyName);
+      }
+      if (relDef.complementaryRelationshipPropertyName) {
+        propertyNames.add(relDef.complementaryRelationshipPropertyName);
+      }
+    });
+    return Array.from(propertyNames);
+  }
+  get titlePrefixField() {
+    var _a;
+    return ((_a = this.options) == null ? void 0 : _a.titlePrefixField) || DEFAULT_TITLE_PREFIX_FIELD;
+  }
+  get titleFields() {
+    var _a;
+    return ((_a = this.options) == null ? void 0 : _a.titleField) || DEFAULT_TITLE_FIELDS;
+  }
+};
+var BearingsSettingsTab = class extends import_obsidian.PluginSettingTab {
+  constructor(app2, plugin, pluginConfiguration, saveSettingsFn) {
+    super(app2, plugin);
+    this.plugin = plugin;
+    this.pluginConfiguration = pluginConfiguration;
+    this.saveSettingsFn = saveSettingsFn;
+    this.relationshipCategoryChoices = ["superordinate", "symmetrical"];
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    containerEl.createEl("h2", { text: "Settings" });
+    const optionsDiv = containerEl.createDiv();
+    new import_obsidian.Setting(optionsDiv).setName("Options").setHeading();
+    this.createOptionsSetting(optionsDiv, this.pluginConfiguration.options);
+    containerEl.createEl("hr", { cls: "bearings-settings-inline-section-start" });
+    const relationshipsManageDiv = containerEl.createDiv();
+    new import_obsidian.Setting(relationshipsManageDiv).setName("Manage relationship definitions").setHeading();
+    let manageRelationshipsControlContainer = containerEl.createEl("div", { cls: "bearings-settings-spanning-controls-container" });
+    const addDefinitionButton = manageRelationshipsControlContainer.createEl("button", { text: "New relationship definition", cls: "bearings-settings-spanning-control" });
+    addDefinitionButton.onclick = () => {
+      new AddRelationshipDefinitionModal(
+        this.app,
+        (definitionName, definition) => {
+          this.pluginConfiguration.relationshipDefinitions[definitionName] = definition;
+          this.saveSettingsFn().then(() => this.display());
+        },
+        this.relationshipCategoryChoices
+      ).open();
+    };
+    this.displayRelationshipDefinitions(null);
+    containerEl.createEl("hr", { cls: "bearings-settings-inline-section-start" });
+    const relationshipsResetDiv = containerEl.createDiv();
+    new import_obsidian.Setting(relationshipsResetDiv).setName("Reset relationship definitions").setHeading();
+    let resetRelationshipsControlContainer = containerEl.createEl("div", { cls: "bearings-settings-spanning-controls-container" });
+    const resetButton = resetRelationshipsControlContainer.createEl("button", { text: "Reset to default relationships", cls: "bearings-settings-spanningcontrol" });
+    resetButton.onclick = async () => {
+      Object.assign(this.pluginConfiguration.relationshipDefinitions, BEARINGS_DEFAULT_SETTINGS.relationshipDefinitions);
+      await this.saveSettingsFn();
+      this.display();
+      new import_obsidian.Notice("Settings reset to default.");
+    };
+  }
+  displayRelationshipDefinitions(category) {
+    const definitions = Object.entries(this.pluginConfiguration.relationshipDefinitions).filter(([_, definition]) => {
+      var _a;
+      return category === null || ((_a = definition.categories) == null ? void 0 : _a.includes(category));
+    }).sort((a, b) => a[0].localeCompare(b[0]));
+    if (definitions.length > 0) {
+      const { containerEl } = this;
+      definitions.forEach(([relationshipName, definition]) => {
+        this.containerEl.createEl("hr", { cls: "bearings-settings-inline-section-mid" });
+        const settingDiv = new import_obsidian.Setting(containerEl).setName(`Relationship: '${relationshipName}'`).setHeading();
+        this.createRelationshipDefinitionSetting(containerEl, relationshipName, definition);
+      });
+    }
+  }
+  processIntLimit(value) {
+    if (value === "") {
+      return 0;
+    }
+    if (value === "*") {
+      return null;
+    }
+    const parsedValue = parseInt(value.trim());
+    return isNaN(parsedValue) ? null : parsedValue;
+  }
+  displayIntLimit(value) {
+    return value === null ? "*" : value.toString();
+  }
+  createOptionsSetting(container, options) {
+    new import_obsidian.Setting(container).setName("Title fields").setDesc("Comma-separated list of property names that will be used as the display text of each note. Custom values not yet supported.").addText(
+      (text) => text.setValue((options.titleField || DEFAULT_TITLE_FIELDS).join(", ")).onChange(async (value) => {
+        options.titleField = (value ? value : DEFAULT_TITLE_FIELDS).toString().split(",").map((s) => s.trim());
+        await this.saveSettingsFn();
+      })
+    );
+    new import_obsidian.Setting(container).setName("Title prefix field").setDesc("Name of property name for title prefix").addText((text) => text.setValue(options.titlePrefix || "").onChange(async (value) => {
+      options.titlePrefix = value;
+      await this.saveSettingsFn();
+    }));
+    new import_obsidian.Setting(container).setName("Primary views subtree mapping depth limit").setDesc('Discovery (recursion) depth limit for primary views: how many levels of links to follow when mapping subtrees of the focal note. Set to "*" for no limit. Major determinant of performance in larger, more densely connected vaults.').addText((text) => {
+      var _a;
+      return text.setValue(this.displayIntLimit(((_a = options.discoveryDepthLimitPrimary) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
+        options.discoveryDepthLimitPrimary = this.processIntLimit(value);
+        await this.saveSettingsFn();
+      });
+    });
+    new import_obsidian.Setting(container).setName("Secondary views subtree mapping depth limit").setDesc('Discovery (recursion) depth limit for secondary views: how many levels of links to follow when mapping subtrees of the focal note. Set to "*" for no limit. Major determinant of performance in larger, more densely connected vaults.').addText((text) => {
+      var _a;
+      return text.setValue(this.displayIntLimit(((_a = options.discoveryDepthLimitSecondary) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
+        options.discoveryDepthLimitSecondary = this.processIntLimit(value);
+        await this.saveSettingsFn();
+      });
+    });
+    new import_obsidian.Setting(container).setName("Default view subtree node expansion limit").setDesc('This value restricts the depth of the subtree nodes that are open by default. Set to "*" to open to the full mapped or discovery limit. Less is more here for mental bandwidth reasons :) ').addText((text) => {
+      var _a;
+      return text.setValue(this.displayIntLimit(((_a = options.autoexpansionDepthLimit) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
+        options.autoexpansionDepthLimit = this.processIntLimit(value);
+        await this.saveSettingsFn();
+      });
+    });
+    new import_obsidian.Setting(container).setName("Default focal note path").setDesc('Path of note to assume as focal note if there is no active file. Provide the full absolute path from the root of the vault, e.g. "00-indexes/root-index.md".').addText((text) => text.setValue(options.inactiveFileFocalNote || "").onChange(async (value) => {
+      options.inactiveFileFocalNote = value;
+      await this.saveSettingsFn();
+    }));
+  }
+  createRelationshipDefinitionSetting(container, relationshipName, definition) {
+    new import_obsidian.Setting(container).setName("Primary relationship role").setDesc("A label for the role of a note with this relationship to the focal note.").addText((text) => text.setValue(definition.primaryRelationshipRole || "").setPlaceholder("E.g.: 'Parent', 'Classifier', 'Topic', 'Up', or 'Related").onChange(async (value) => {
+      definition.primaryRelationshipRole = value;
+      await this.saveSettingsFn();
+    }));
+    new import_obsidian.Setting(container).setName("Primary relationship property name").setDesc("The name of the property field listing notes with this relationship to the focal note. E.g. Notes with a 'Parent' relationship might be listed under the 'entry-parents' property.").addText((text) => text.setValue(definition.primaryRelationshipPropertyName || "").setPlaceholder("E.g.: `entry-parents`, `entry-classifiers`, `entry-topics`, `entry-up`, `entry-related`").onChange(async (value) => {
+      definition.primaryRelationshipPropertyName = value;
+      await this.saveSettingsFn();
+    }));
+    new import_obsidian.Setting(container).setName("Complementary relationship role").setDesc("A label for the role of a note with the inverse or reflection of this relationship to the focal note.").addText((text) => text.setValue(definition.complementaryRelationshipRole || "").setPlaceholder("E.g.: 'Child', 'Classification', 'Cases', 'Down', 'Related'").onChange(async (value) => {
+      definition.complementaryRelationshipRole = value;
+      await this.saveSettingsFn();
+    }));
+    new import_obsidian.Setting(container).setName("Complementary relationship property name").setDesc("In asymmetrical relationships, the name of the property field listing notes with the inverse or reflection of the primary relationship. E.g., if a 'Parent' relationship is established above with the 'entry-parents' property, here describe the inverse: 'entry-children' with the label of 'Child'. This field is ignored in symmetrical relationships.").addText((text) => text.setValue(definition.complementaryRelationshipPropertyName || "").setPlaceholder("E.g.: `entry-children`, `entry-classifications`, `entry-cases`, `entry-down`, `entry-related`").onChange(async (value) => {
+      definition.complementaryRelationshipPropertyName = value;
+      await this.saveSettingsFn();
+    }));
+    new import_obsidian.Setting(container).setName("Category").setDesc("Category for this relationship.").addDropdown((dropdown) => {
+      var _a;
+      const categories = ["superordinate", "symmetrical"];
+      categories.forEach((category) => {
+        dropdown.addOption(category, category);
+      });
+      dropdown.setValue(((_a = definition.categories) == null ? void 0 : _a[0]) || categories[0]).onChange(async (value) => {
+        definition.categories = [value];
+        await this.saveSettingsFn();
+      });
+    });
+    new import_obsidian.Setting(container).setName("\u26A0\uFE0F  DELETE \u26A0\uFE0F").setDesc("Delete this definition.").addButton(
+      (button) => button.setButtonText("Delete definition").onClick(async () => {
+        new ConfirmDeleteModal(this.app, async () => {
+          delete this.pluginConfiguration.relationshipDefinitions[relationshipName];
+          await this.saveSettingsFn();
+          this.display();
+        }).open();
+      })
+    );
+  }
+  displayDefinitions(definitions, heading) {
+    if (definitions.length > 0) {
+      const { containerEl } = this;
+      containerEl.createEl("h3", { text: heading });
+      definitions.forEach(([relationshipName, definition]) => {
+        this.containerEl.createEl("hr", { cls: "bearings-settings-inline-section-mid" });
+        const settingDiv = new import_obsidian.Setting(containerEl).setName(`Relationship: '${relationshipName}'`).setHeading();
+        this.createRelationshipDefinitionSetting(containerEl, relationshipName, definition);
+      });
+    }
+  }
+};
+var AddRelationshipDefinitionModal = class extends import_obsidian.Modal {
+  constructor(app2, onSubmit, relationshipCategoryChoices) {
+    super(app2);
+    this.onSubmit = onSubmit;
+    this.relationshipCategoryChoices = relationshipCategoryChoices;
+  }
+  onOpen() {
+    let definitionName = "";
+    let primaryRelationshipPropertyName = "";
+    let complementaryRelationshipPropertyName = "";
+    let primaryRelationshipRole = "";
+    let complementaryRelationshipRole = "";
+    let categories = [];
+    const { contentEl } = this;
+    contentEl.createEl("h3", { text: "Add new relationship definition" });
+    new import_obsidian.Setting(contentEl).setName("Relationship name").addText((text) => text.onChange((value) => definitionName = value));
+    new import_obsidian.Setting(contentEl).setName("Primary relationship label").addText((text) => text.onChange((value) => primaryRelationshipRole = value));
+    new import_obsidian.Setting(contentEl).setName("Primary relationship property name").addText((text) => text.onChange((value) => primaryRelationshipPropertyName = value));
+    new import_obsidian.Setting(contentEl).setName("Complementary relationship label").addText((text) => text.onChange((value) => complementaryRelationshipRole = value));
+    new import_obsidian.Setting(contentEl).setName("Complementary relationship property name").addText((text) => text.onChange((value) => complementaryRelationshipPropertyName = value));
+    new import_obsidian.Setting(contentEl).setName("Category").addDropdown((dropdown) => {
+      this.relationshipCategoryChoices.forEach((category) => {
+        dropdown.addOption(category, category);
+      });
+      dropdown.onChange((value) => {
+        categories = [value];
+      });
+    });
+    new import_obsidian.Setting(contentEl).addButton((button) => button.setButtonText("Add").setCta().onClick(() => {
+      if (!definitionName) {
+        new import_obsidian.Notice("Definition name is required.");
+        return;
+      }
+      this.onSubmit(definitionName, {
+        primaryRelationshipPropertyName,
+        complementaryRelationshipPropertyName,
+        primaryRelationshipRole,
+        complementaryRelationshipRole,
+        categories
+      });
+      this.close();
+    }));
+  }
+  onClose() {
+    this.contentEl.empty();
+  }
+};
+var ConfirmDeleteModal = class extends import_obsidian.Modal {
+  constructor(app2, onConfirm) {
+    super(app2);
+    this.onConfirm = onConfirm;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h2", { text: "Confirm Deletion" });
+    contentEl.createEl("p", { text: "Are you sure you want to delete this relationship definition?" });
+    const buttonContainer = contentEl.createDiv({ cls: "modal-button-container" });
+    const confirmButton = buttonContainer.createEl("button", { text: "Yes", cls: "modal-button-confirm" });
+    confirmButton.onclick = () => {
+      this.onConfirm();
+      this.close();
+    };
+    const cancelButton = buttonContainer.createEl("button", { text: "No", cls: "modal-button-cancel" });
+    cancelButton.onclick = () => {
+      this.close();
+    };
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+};
+
+// src/fileservice.ts
+var import_obsidian2 = require("obsidian");
+function getPathBaseName(value) {
+  var _a, _b;
+  return ((_b = (_a = value.trim().split("\\")) == null ? void 0 : _a.pop()) == null ? void 0 : _b.split("/").pop()) || value;
+}
+async function getUniquePath(app2, initialPath, extension = "md") {
+  let uniquePath = initialPath.replace(new RegExp(`\\.${extension}$`), "");
+  let index = 1;
+  const fileExists = (path) => {
+    const file = app2.vault.getAbstractFileByPath(`${path}.${extension}`);
+    return file != null;
+  };
+  while (fileExists(uniquePath)) {
+    uniquePath = `${initialPath}-${index}`;
+    index++;
+  }
+  return (0, import_obsidian2.normalizePath)(uniquePath);
+}
+
+// src/dataservice.ts
 var import_obsidian_dataview = __toESM(require_lib());
 
 // src/graph.ts
@@ -7788,10 +8163,64 @@ var TreeNode = _TreeNode;
 TreeNode._counter = 0;
 
 // src/dataservice.ts
-var getFileBaseName = (value) => {
-  var _a, _b;
-  return ((_b = (_a = value.split("\\")) == null ? void 0 : _a.pop()) == null ? void 0 : _b.split("/").pop()) || value;
-};
+function mapDataviewRecords(page) {
+  let result = {
+    file: page.file,
+    frontMatterCache: page
+  };
+  return result;
+}
+function getFrontMatter(app2, filePath, file) {
+  var _a;
+  if (filePath) {
+    let afile = app2.vault.getFileByPath((0, import_obsidian3.normalizePath)(filePath));
+    if (afile) {
+      file = afile;
+    } else {
+      return {};
+    }
+  }
+  if (!file) {
+    return {};
+  }
+  return ((_a = app2.metadataCache.getFileCache(file)) == null ? void 0 : _a.frontmatter) || {};
+}
+function getDisplayTitle(app2, configuration, filePath, file, isIncludePrefix = true, defaultTitle = "") {
+  const frontMatter = getFrontMatter(app2, filePath, file);
+  return getFrontMatterDisplayTitle(
+    configuration,
+    frontMatter,
+    isIncludePrefix,
+    defaultTitle
+  );
+}
+function getFrontMatterDisplayTitlePrefix(configuration, frontMatterCache) {
+  let titlePrefixKey = configuration.options["titlePrefix"] || DEFAULT_TITLE_PREFIX_FIELD;
+  if (titlePrefixKey && frontMatterCache && frontMatterCache[titlePrefixKey]) {
+    return String(frontMatterCache[titlePrefixKey]).trim();
+  }
+  return "";
+}
+function getFrontMatterDisplayTitle(configuration, frontMatterCache, isIncludePrefix = true, defaultTitle = "") {
+  let result = defaultTitle;
+  let propertyNames = configuration.options["titleField"] || DEFAULT_TITLE_FIELDS;
+  propertyNames.forEach((propertyName) => {
+    if (frontMatterCache && frontMatterCache[propertyName]) {
+      result = String(frontMatterCache[propertyName]);
+      return result;
+    }
+  });
+  if (isIncludePrefix) {
+    let titlePrefixKey = configuration.options["titlePrefix"] || DEFAULT_TITLE_PREFIX_FIELD;
+    if (titlePrefixKey && frontMatterCache && frontMatterCache[titlePrefixKey]) {
+      let value = String(frontMatterCache[titlePrefixKey]).trim();
+      if (value) {
+        result = `${value} ${result}`;
+      }
+    }
+  }
+  return result;
+}
 function Cacheable(...keyParams) {
   return function(target, propertyName, propertyDescriptor) {
     const method = propertyDescriptor.value;
@@ -7812,10 +8241,11 @@ function Cacheable(...keyParams) {
   };
 }
 var DataService = class {
-  constructor(app) {
+  constructor(app2, configuration) {
     this._vaultFileRecords = [];
     this._isDataviewUnavailableMessageSent = false;
-    this.app = app;
+    this.app = app2;
+    this.configuration = configuration;
     this.refresh();
   }
   get dataviewApi() {
@@ -7823,7 +8253,7 @@ var DataService = class {
       this._dataviewApi = (0, import_obsidian_dataview.getAPI)();
       if (!this._dataviewApi && !this._isDataviewUnavailableMessageSent) {
         let message = "Bearings: Unable to acquire Dataview API. is Dataview installed and enabled?";
-        new import_obsidian.Notice(message);
+        new import_obsidian3.Notice(message);
         console.log(message);
         this._isDataviewUnavailableMessageSent = true;
       }
@@ -7838,11 +8268,15 @@ var DataService = class {
   }
   readFileNodeDataRecords(filePath) {
     var _a;
-    return (_a = this.dataviewApi) == null ? void 0 : _a.page(filePath);
+    let page = ((_a = this.dataviewApi) == null ? void 0 : _a.page(filePath)) || null;
+    if (page === null) {
+      return null;
+    }
+    return mapDataviewRecords(page);
   }
   refresh() {
     var _a, _b;
-    this._vaultFileRecords = ((_b = (_a = this.dataviewApi) == null ? void 0 : _a.pages()) == null ? void 0 : _b.array()) || [];
+    this._vaultFileRecords = (((_b = (_a = this.dataviewApi) == null ? void 0 : _a.pages()) == null ? void 0 : _b.array()) || []).map(mapDataviewRecords);
     this._glyphFilePathNodeMap = /* @__PURE__ */ new Map();
     return this._vaultFileRecords;
   }
@@ -7891,7 +8325,7 @@ var DataService = class {
       filePathNodeMap
     );
   }
-  coordinateSubtrees(filePath, relationshipDefinitions, limitDepth = null, filePathNodeMap) {
+  coordinateSubtrees(filePath, relationshipDefinitions, secondaryRelationshipDefinitions, limitDepth = null, filePathNodeMap) {
     if (!filePathNodeMap) {
       filePathNodeMap = /* @__PURE__ */ new Map();
     }
@@ -7900,6 +8334,7 @@ var DataService = class {
     return startFileNode.coordinateSubtrees(
       "standard",
       relationshipDefinitions,
+      secondaryRelationshipDefinitions,
       limitDepth,
       filePathNodeMap
     );
@@ -7919,8 +8354,8 @@ var _FileNode = class {
     this._cache = {};
     this.filePath = filePath;
     this.dataService = dataService;
-    this.fileBaseName = getFileBaseName(filePath);
-    this.fileData = this.dataService.readFileNodeDataRecords(filePath) || {};
+    this.fileBaseName = getPathBaseName(filePath);
+    this.fileData = this.dataService.readFileNodeDataRecords(filePath);
     this.displayText = displayText;
   }
   createNewFileNavigationTreeNode() {
@@ -7951,7 +8386,8 @@ var _FileNode = class {
     });
   }
   readDesignatedPropertyPaths(propertyName, pathAliases) {
-    const propertyValue = this.fileData[propertyName] || "";
+    var _a, _b;
+    const propertyValue = ((_b = (_a = this.fileData) == null ? void 0 : _a.frontMatterCache) == null ? void 0 : _b[propertyName]) || "";
     if (!propertyValue) {
       return [];
     }
@@ -7972,10 +8408,10 @@ var _FileNode = class {
     return this.readInlinkedPropertyPathsFromVault(propertyName);
   }
   readInlinkedPropertyPathsFromVault(propertyName) {
-    let invertedRelationshipPropertyPaths = [];
+    let complementaryRelationshipPropertyPaths = [];
     let fileRecords = this.dataService.vaultFileRecords;
     fileRecords.forEach((fileNodeRecords) => {
-      const fileNodePropertyValues = fileNodeRecords == null ? void 0 : fileNodeRecords[propertyName];
+      const fileNodePropertyValues = fileNodeRecords == null ? void 0 : fileNodeRecords.frontMatterCache[propertyName];
       if (fileNodePropertyValues && Array.isArray(fileNodePropertyValues)) {
         fileNodePropertyValues.forEach((pagePropertyItem) => {
           var _a;
@@ -7983,13 +8419,13 @@ var _FileNode = class {
             let subscriberFilePath = (_a = fileNodeRecords.file) == null ? void 0 : _a.path;
             if (subscriberFilePath) {
               let displayText = "";
-              invertedRelationshipPropertyPaths.push(subscriberFilePath);
+              complementaryRelationshipPropertyPaths.push(subscriberFilePath);
             }
           }
         });
       }
     });
-    return invertedRelationshipPropertyPaths;
+    return complementaryRelationshipPropertyPaths;
   }
   _processPropertyLinkResults(key, newElements, linkedNotesystemPaths, relationshipData) {
     if (!newElements || newElements.length === 0) {
@@ -8000,20 +8436,21 @@ var _FileNode = class {
       linkedNotesystemPaths.push(filePath);
     });
   }
-  parsePropertyLinkedPaths(designatedRelationshipKey, inlinkedRelationshipKey, filePathNodeMap, pathAliases, isInvertLinkPolarity = false) {
+  parsePropertyLinkedPaths(primaryRelationshipKey, inlinkedRelationshipKey, filePathNodeMap, pathAliases, isInvertLinkPolarity = false) {
     let linkedNotesystemPaths = [];
-    if (designatedRelationshipKey) {
+    if (primaryRelationshipKey) {
       let outlinkedPaths = this.readDesignatedPropertyPaths(
-        designatedRelationshipKey,
+        primaryRelationshipKey,
         pathAliases
       );
       this._processPropertyLinkResults(
-        designatedRelationshipKey,
+        primaryRelationshipKey,
         outlinkedPaths,
         linkedNotesystemPaths,
         {
           // Are new elements inlinks to the current note;?
           // They are if they used an outlink to connect to the note
+          relationshipKey: primaryRelationshipKey,
           isInlink: isInvertLinkPolarity ? true : false
         }
         // isInvertLinkPolarity ? true : false, // are new elements inlinks?
@@ -8026,6 +8463,7 @@ var _FileNode = class {
         inlinkedPaths,
         linkedNotesystemPaths,
         {
+          relationshipKey: inlinkedRelationshipKey,
           isInlink: isInvertLinkPolarity ? false : true
           // are new elements inlinks?
         }
@@ -8044,12 +8482,12 @@ var _FileNode = class {
         return results;
       }
       relationshipDefinitions.forEach((relationshipDefinition) => {
-        let designatedRelationshipKey = relationshipDefinition.designatedPropertyName || "";
-        let invertedRelationshipKey = relationshipDefinition.invertedRelationshipPropertyName || "";
+        let primaryRelationshipKey = relationshipDefinition.primaryRelationshipPropertyName || "";
+        let complementaryRelationshipKey = relationshipDefinition.complementaryRelationshipPropertyName || "";
         let pathAliases = {};
         let linkedNotesystemPaths = this.parsePropertyLinkedPaths(
-          designatedRelationshipKey,
-          invertedRelationshipKey,
+          primaryRelationshipKey,
+          complementaryRelationshipKey,
           filePathNodeMap,
           pathAliases,
           false
@@ -8102,8 +8540,8 @@ var _FileNode = class {
       return subtreeRoot;
     }
     relationshipDefinitions.forEach((relationshipDefinition) => {
-      let invertedInvertedRelationshipKey = relationshipDefinition.invertedRelationshipPropertyName || "";
-      let invertedDesignatedRelationshipKey = relationshipDefinition.designatedPropertyName || "";
+      let invertedInvertedRelationshipKey = relationshipDefinition.complementaryRelationshipPropertyName || "";
+      let invertedDesignatedRelationshipKey = relationshipDefinition.primaryRelationshipPropertyName || "";
       let pathAliases = {};
       let linkedNotesystemPaths = this.parsePropertyLinkedPaths(
         invertedInvertedRelationshipKey,
@@ -8147,18 +8585,18 @@ var _FileNode = class {
     });
     return subtreeRoot;
   }
-  coordinateSubtrees(label, relationshipDefinitions, limitDepth = null, filePathNodeMap) {
+  coordinateSubtrees(label, relationshipDefinitions, secondaryRelationshipDefinitions, limitDepth = null, filePathNodeMap) {
     let subtreeRoot = this.createNewFileNavigationTreeNode();
     if (limitDepth != null && limitDepth < 0) {
       return subtreeRoot;
     }
     let coordinateFilePaths = {};
     relationshipDefinitions.forEach((relationshipDefinition) => {
-      let designatedRelationshipKey = relationshipDefinition.designatedPropertyName || "";
-      let inlinkedRelationshipKey = designatedRelationshipKey;
+      let primaryRelationshipKey = relationshipDefinition.primaryRelationshipPropertyName || "";
+      let inlinkedRelationshipKey = primaryRelationshipKey;
       let pathAliases = {};
       let linkedNotesystemPaths = this.parsePropertyLinkedPaths(
-        designatedRelationshipKey,
+        primaryRelationshipKey,
         inlinkedRelationshipKey,
         filePathNodeMap,
         pathAliases,
@@ -8168,14 +8606,27 @@ var _FileNode = class {
         if (propertyLinkedPath === this.filePath) {
           let linkedNoteSystemNode = this;
           filePathNodeMap.set(propertyLinkedPath, linkedNoteSystemNode);
-          let treeChildNode = linkedNoteSystemNode.coordinateSubtrees(
-            label,
-            relationshipDefinitions,
-            -1,
-            // will return terminal
-            filePathNodeMap
-          );
-          coordinateFilePaths[propertyLinkedPath] = subtreeRoot.addChildNode(treeChildNode);
+          if (false) {
+            let treeChildNode = linkedNoteSystemNode.coordinateSubtrees(
+              label,
+              relationshipDefinitions,
+              secondaryRelationshipDefinitions,
+              -1,
+              // will return terminal
+              filePathNodeMap
+            );
+            coordinateFilePaths[propertyLinkedPath] = subtreeRoot.addChildNode(treeChildNode);
+          }
+          if (true) {
+            let treeChildNode = linkedNoteSystemNode.subordinateSubtrees(
+              label,
+              secondaryRelationshipDefinitions,
+              -1,
+              // will return terminal
+              filePathNodeMap
+            );
+            coordinateFilePaths[propertyLinkedPath] = subtreeRoot.addChildNode(treeChildNode);
+          }
         } else if (coordinateFilePaths[propertyLinkedPath]) {
         } else {
           let recurseLimitDepth = limitDepth === null ? null : limitDepth - 1;
@@ -8186,13 +8637,15 @@ var _FileNode = class {
             recurseLimitDepth = -1;
           }
           filePathNodeMap.set(propertyLinkedPath, linkedNoteSystemNode);
-          let treeChildNode = linkedNoteSystemNode.coordinateSubtrees(
-            label,
-            relationshipDefinitions,
-            recurseLimitDepth,
-            filePathNodeMap
-          );
-          coordinateFilePaths[propertyLinkedPath] = subtreeRoot.addChildNode(treeChildNode);
+          if (true) {
+            let treeChildNode = linkedNoteSystemNode.subordinateSubtrees(
+              label,
+              secondaryRelationshipDefinitions,
+              recurseLimitDepth,
+              filePathNodeMap
+            );
+            coordinateFilePaths[propertyLinkedPath] = subtreeRoot.addChildNode(treeChildNode);
+          }
         }
       });
     });
@@ -8205,7 +8658,8 @@ var _FileNode = class {
     }
     this.dataService.glyphFilePathNodeMap.set(this.filePath, this);
     propertyNames.forEach((propertyKey) => {
-      (this.fileData[propertyKey] || []).forEach((fieldValue) => {
+      var _a, _b;
+      (((_b = (_a = this.fileData) == null ? void 0 : _a.frontMatterCache) == null ? void 0 : _b[propertyKey]) || []).forEach((fieldValue) => {
         if (fieldValue.path !== void 0) {
           let referencedGlyphPath = fieldValue.path;
           let recurseLimitDepth = limitDepth === null ? null : limitDepth - 1;
@@ -8225,7 +8679,8 @@ var _FileNode = class {
     return nodeGlyphs;
   }
   readPropertyStringList(key) {
-    const propertyValue = this.fileData[key] || "";
+    var _a, _b;
+    const propertyValue = ((_b = (_a = this.fileData) == null ? void 0 : _a.frontMatterCache) == null ? void 0 : _b[key]) || "";
     if (!propertyValue) {
       return [];
     }
@@ -8245,11 +8700,34 @@ var _FileNode = class {
     const inlinks = ((_c = (_b = (_a = this.fileData) == null ? void 0 : _a.file) == null ? void 0 : _b.inlinks) == null ? void 0 : _c.array()) || [];
     return inlinks.filter((link) => link.path && link.path != this.filePath).map((link) => this.createNew(link.path, link.display));
   }
+  get indexEntryPrefix() {
+    var _a;
+    return getFrontMatterDisplayTitlePrefix(
+      this.dataService.configuration,
+      (_a = this.fileData) == null ? void 0 : _a.frontMatterCache
+    ).trim();
+  }
   get indexEntryText() {
-    return this._memoize(
-      "indexEntry",
-      () => String(this.displayText || this.fileData["entry-title"] || this.fileData["title"] || this.fileBaseName || this.filePath || "(?)").trim()
-    );
+    var _a;
+    let isIncludePrefix = true;
+    let dt = (this.displayText || getFrontMatterDisplayTitle(
+      this.dataService.configuration,
+      (_a = this.fileData) == null ? void 0 : _a.frontMatterCache,
+      isIncludePrefix,
+      this.fileBaseName
+    )).trim();
+    return dt;
+  }
+  get indexEntryTextWithoutPrefix() {
+    var _a;
+    let isIncludePrefix = false;
+    let dt = (this.displayText || getFrontMatterDisplayTitle(
+      this.dataService.configuration,
+      (_a = this.fileData) == null ? void 0 : _a.frontMatterCache,
+      isIncludePrefix,
+      this.fileBaseName
+    )).trim();
+    return dt;
   }
   sort_key(other) {
     const a = this.indexEntryText || this.fileBaseName || "";
@@ -8272,247 +8750,751 @@ __decorateClass([
   Cacheable("propertyNames")
 ], FileNode.prototype, "readGlyphs", 1);
 
-// src/settings.ts
-var import_obsidian2 = require("obsidian");
-var TRAJECTORIES_DEFAULT_SETTINGS = {
-  options: {
-    // globalNamespacePrefix: "entry-", // string | null
-    titleField: ["title", "entry-title"],
-    glyphField: ["glyphs", "entry-glyphs"],
-    autoexpansionDepthLimit: 2,
-    // number | null
-    discoveryDepthLimitPrimary: 2,
-    // number | null
-    discoveryDepthLimitSecondary: 2,
-    // number | null
-    inactiveFileFocalNote: ""
-    // string
-  },
-  relationshipDefinitions: {
-    "Up": {
-      designatedPropertyName: "entry-up",
-      invertedRelationshipPropertyName: "entry-down",
-      categories: ["superordinate"]
-    },
-    "Parent": {
-      designatedPropertyName: "entry-parents",
-      invertedRelationshipPropertyName: "entry-children",
-      categories: ["superordinate"]
-    },
-    "Classifier": {
-      designatedPropertyName: "entry-classifiers",
-      invertedRelationshipPropertyName: "entry-classifications",
-      categories: ["superordinate"]
-    },
-    "Collection": {
-      designatedPropertyName: "entry-collections",
-      invertedRelationshipPropertyName: "entry-holdings",
-      categories: ["superordinate"]
-    },
-    "Author": {
-      designatedPropertyName: "source-authors",
-      invertedRelationshipPropertyName: "source-references",
-      categories: ["superordinate"]
-    },
-    "Collaborator": {
-      designatedPropertyName: "entry-collaborators",
-      invertedRelationshipPropertyName: "entry-collaborations",
-      categories: ["superordinate"]
-    },
-    "Reference (bibliographical)": {
-      designatedPropertyName: "entry-references",
-      categories: ["coordinate", "bibliographical"]
-    },
-    "Bibliography": {
-      designatedPropertyName: "entry-bibliography",
-      categories: ["coordinate", "bibliographical"]
-    },
-    "Association": {
-      designatedPropertyName: "entry-associations",
-      categories: ["coordinate"]
-    },
-    "Referral": {
-      designatedPropertyName: "entry-referrals",
-      categories: ["coordinate"]
-    },
-    "Attachment": {
-      designatedPropertyName: "entry-attachments",
-      categories: ["coordinate"]
+// src/menus.ts
+var import_obsidian8 = require("obsidian");
+
+// src/dataupdate.ts
+var import_obsidian4 = require("obsidian");
+async function copyYamlFrontmatterProperties(app2, sourcePath, destinationPath, includedListFields, includedStringFields) {
+  const sourceFile = app2.vault.getAbstractFileByPath(sourcePath);
+  const destinationFile = app2.vault.getAbstractFileByPath(destinationPath);
+  if (sourceFile && destinationFile) {
+    try {
+      let copiedFrontmatterLists = {};
+      let copiedFrontmatterStringValues = {};
+      await app2.fileManager.processFrontMatter(sourceFile, (sourceFrontmatter) => {
+        for (let key of includedListFields) {
+          if (sourceFrontmatter[key]) {
+            copiedFrontmatterLists[key] = sourceFrontmatter[key];
+          }
+        }
+        for (let key of includedStringFields) {
+          if (sourceFrontmatter[key]) {
+            copiedFrontmatterStringValues[key] = sourceFrontmatter[key];
+          }
+        }
+      });
+      Object.keys(copiedFrontmatterLists).forEach(async (key) => {
+        await appendFrontmatterLists(this.app, destinationFile, key, copiedFrontmatterLists[key], false);
+      });
+      await updateFrontmatterStrings(
+        this.app,
+        destinationFile,
+        copiedFrontmatterStringValues,
+        false
+      );
+      new import_obsidian4.Notice("Front matter updated.");
+    } catch (error) {
+      new import_obsidian4.Notice(`Failed to read front matter: ${error.message}`);
     }
   }
-};
-var BearingsConfiguration = class {
-  constructor(settingsData) {
-    this.relationshipDefinitions = { ...settingsData.relationshipDefinitions };
-    this.options = { ...settingsData.options };
-  }
-  superordinateRelationshipDefinitions() {
-    return Object.values(this.relationshipDefinitions).filter((rdef) => {
-      var _a;
-      return (_a = rdef.categories) == null ? void 0 : _a.some((category) => category === "superordinate");
-    });
-  }
-  coordinateRelationshipDefinitions() {
-    return Object.values(this.relationshipDefinitions).filter((rdef) => {
-      var _a;
-      return (_a = rdef.categories) == null ? void 0 : _a.some((category) => category === "coordinate");
-    });
-  }
-};
-var BearingsSettingsTab = class extends import_obsidian2.PluginSettingTab {
-  constructor(app, plugin, pluginConfiguration, saveSettingsFn) {
-    super(app, plugin);
-    this.plugin = plugin;
-    this.pluginConfiguration = pluginConfiguration;
-    this.saveSettingsFn = saveSettingsFn;
-  }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.createEl("h2", { text: "Settings" });
-    const optionsDiv = containerEl.createDiv();
-    new import_obsidian2.Setting(optionsDiv).setName("Options").setHeading();
-    this.createOptionsSetting(optionsDiv, this.pluginConfiguration.options);
-    new import_obsidian2.Setting(containerEl).setName("Relationship definitions").setHeading();
-    Object.entries(this.pluginConfiguration.relationshipDefinitions).sort((a, b) => a[0].localeCompare(b[0])).forEach(([relationshipName, definition]) => {
-      const settingDiv = new import_obsidian2.Setting(containerEl).setName(relationshipName).setHeading();
-      this.createRelationshipDefinitionSetting(containerEl, relationshipName, definition);
-    });
-    new import_obsidian2.Setting(containerEl).setName("Manage relationships").setHeading();
-    const addDefinitionButton = containerEl.createEl("button", { text: "New relationship definition" });
-    addDefinitionButton.onclick = () => {
-      new AddRelationshipDefinitionModal(this.app, (definitionName, definition) => {
-        this.pluginConfiguration.relationshipDefinitions[definitionName] = definition;
-        this.saveSettingsFn().then(() => this.display());
-      }).open();
-    };
-    const resetButton = containerEl.createEl("button", { text: "Reset to defaults" });
-    resetButton.onclick = async () => {
-      Object.assign(this.pluginConfiguration.relationshipDefinitions, TRAJECTORIES_DEFAULT_SETTINGS.relationshipDefinitions);
-      await this.saveSettingsFn();
-      this.display();
-      new import_obsidian2.Notice("Settings reset to default.");
-    };
-  }
-  processIntLimit(value) {
-    if (value && value === "") {
-      return 0;
+}
+async function updateFrontmatterStrings(app2, file, newFrontMatter, isAddUpdateNotice = true) {
+  await app2.fileManager.processFrontMatter(file, (frontmatter) => {
+    for (const key in newFrontMatter) {
+      frontmatter[key] = newFrontMatter[key];
     }
-    if (value === "*") {
-      return null;
+    if (isAddUpdateNotice) {
+      new import_obsidian4.Notice("Front matter updated.");
     }
-    const parsedValue = parseInt(value.trim());
-    if (isNaN(parsedValue)) {
-      return null;
+  }).catch((error) => {
+    new import_obsidian4.Notice(`Failed to update front matter: ${error.message}`);
+  });
+}
+async function appendFrontmatterLists(app2, file, propertyName, newItemValue, isAddUpdateNotice = true) {
+  await app2.fileManager.processFrontMatter(file, (frontmatter) => {
+    let currentValue = frontmatter[propertyName];
+    let newValue = [];
+    if (!currentValue) {
+    } else if (!Array.isArray(currentValue)) {
+      newValue.push(currentValue);
     } else {
-      return parsedValue;
+      newValue.push(...currentValue);
     }
-  }
-  displayIntLimit(value) {
-    return value === null ? "*" : value.toString();
-  }
-  createOptionsSetting(container, options) {
-    new import_obsidian2.Setting(container).setName("Title fields").setDesc("Comma-separated list of property names that will be used as the display text of each note. Custom values not yet supported.").addText(
-      (text) => {
-        var _a;
-        return text.setValue(((_a = options.titleField) == null ? void 0 : _a.join(",")) || "title, entry-title").setDisabled(true).onChange(async (value) => {
-          options.titleField = value ? value.toString().split(",").map((s) => s.trim()) : ["title", "entry-title"];
-          await this.saveSettingsFn();
-        });
-      }
+    if (!Array.isArray(newItemValue)) {
+      newValue.push(newItemValue);
+    } else {
+      newValue.push(...newItemValue);
+    }
+    frontmatter[propertyName] = [...new Set(newValue)];
+    if (isAddUpdateNotice) {
+      new import_obsidian4.Notice("Front matter updated.");
+    }
+  }).catch((error) => {
+    new import_obsidian4.Notice(`Failed to update front matter: ${error.message}`);
+  });
+}
+var UpdateDisplayTitleModal = class extends import_obsidian4.Modal {
+  constructor(app2, configuration, file, updateCallbackFn) {
+    var _a;
+    super(app2);
+    this.propertyFields = [];
+    const afile = typeof file === "string" ? app2.vault.getFileByPath(file) : file;
+    if (afile === null) {
+      new import_obsidian4.Notice("File not found.");
+      this.close();
+      return;
+    }
+    this.file = afile;
+    this.updateCallbackFn = updateCallbackFn;
+    this.loadProperties(
+      [
+        ((_a = configuration.options) == null ? void 0 : _a.titlePrefix) || DEFAULT_TITLE_PREFIX_FIELD,
+        ...configuration.titleFields
+      ]
     );
-    new import_obsidian2.Setting(container).setName("Primary views subtree mapping depth limit").setDesc('Discovery (recursion) depth limit for primary views: how many levels of links to follow when mapping subtrees of the focal note. Set to "*" for no limit. Major determinant of performance in larger, more densely connected vaults.').addText((text) => {
-      var _a;
-      return text.setValue(this.displayIntLimit(((_a = options.discoveryDepthLimitPrimary) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
-        options.discoveryDepthLimitPrimary = this.processIntLimit(value);
-        await this.saveSettingsFn();
-      });
-    });
-    new import_obsidian2.Setting(container).setName("Secondary views subtree mapping depth limit").setDesc('Discovery (recursion) depth limit for secondary views: how many levels of links to follow when mapping subtrees of the focal note. Set to "*" for no limit. Major determinant of performance in larger, more densely connected vaults.').addText((text) => {
-      var _a;
-      return text.setValue(this.displayIntLimit(((_a = options.discoveryDepthLimitSecondary) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
-        options.discoveryDepthLimitSecondary = this.processIntLimit(value);
-        await this.saveSettingsFn();
-      });
-    });
-    new import_obsidian2.Setting(container).setName("Default view subtree node expansion limit").setDesc('This value restricts the depth of the subtree nodes that are open by default. Set to "*" to open to the full mapped or discovery limit. Less is more here for mental bandwidth reasons :) ').addText((text) => {
-      var _a;
-      return text.setValue(this.displayIntLimit(((_a = options.autoexpansionDepthLimit) == null ? void 0 : _a.toString()) || "")).onChange(async (value) => {
-        options.autoexpansionDepthLimit = this.processIntLimit(value);
-        await this.saveSettingsFn();
-      });
-    });
-    new import_obsidian2.Setting(container).setName("Default focal note path").setDesc('Path of note to assume as focal note if there is no active file. Provide the full absolute path from the root of the vault, e.g. "00-indexes/root-index.md".').addText((text) => text.setValue(options.inactiveFileFocalNote || "").onChange(async (value) => {
-      options.inactiveFileFocalNote = value;
-      await this.saveSettingsFn();
-    }));
   }
-  createRelationshipDefinitionSetting(container, relationshipName, definition) {
-    new import_obsidian2.Setting(container).setName("Designation property name").setDesc("The property name that the focal note will use to define this relationship in terms of other notes to itself.").addText((text) => text.setValue(definition.designatedPropertyName || "").onChange(async (value) => {
-      definition.designatedPropertyName = value;
-      await this.saveSettingsFn();
-    }));
-    new import_obsidian2.Setting(container).setName("Inverted (inlinked) property name").setDesc("The property name that the focal note will use to define the inverse of this relationship in terms of other notes to itself.").addText((text) => text.setValue(definition.invertedRelationshipPropertyName || "").onChange(async (value) => {
-      definition.invertedRelationshipPropertyName = value;
-      await this.saveSettingsFn();
-    }));
-    new import_obsidian2.Setting(container).setName("Categories").setDesc("Categories for this relationship.").addText((text) => {
+  async loadProperties(propertyNames) {
+    const fileContents = await this.app.vault.read(this.file);
+    const _getFrontMatter = () => {
+      var _a, _b;
+      return ((_b = (_a = this.app.metadataCache) == null ? void 0 : _a.getFileCache(this.file)) == null ? void 0 : _b.frontmatter) || {};
+    };
+    let frontMatter = _getFrontMatter();
+    this.contentEl.createEl("h3", { text: "Edit display title fields", cls: "bearings-modal-data-entry-heading-title" });
+    this.contentEl.createEl("div", { text: "Focal file (will be updated)", cls: "bearings-modal-data-entry-item-label" });
+    this.contentEl.createEl("div", { text: this.file.path, cls: "bearings-modal-data-entry-fileinfo" });
+    propertyNames.forEach((propertyName) => {
       var _a;
-      return text.setValue(((_a = definition.categories) == null ? void 0 : _a.join(", ")) || "").onChange(async (value) => {
-        definition.categories = value.split(",").map((s) => s.trim());
-        await this.saveSettingsFn();
+      const modalContainer = this.contentEl.createDiv({ cls: "bearings-modal-data-entry-outer-container" });
+      modalContainer.createEl("label", { text: `Property: '${propertyName}'`, cls: "bearings-modal-data-entry-item-label" });
+      const fieldEntryContainer = modalContainer.createDiv({ cls: "bearings-modal-data-entry-item-container" });
+      const valueBox = fieldEntryContainer.createDiv({ cls: "bearings-modal-data-entry-value-box" });
+      const textArea = valueBox.createEl("textarea", {
+        cls: "bearings-modal-data-entry-text-area",
+        text: (_a = frontMatter == null ? void 0 : frontMatter[propertyName]) != null ? _a : ""
       });
+      const controlsContainer = fieldEntryContainer.createDiv({ cls: "bearings-modal-data-entry-item-controls-container" });
+      const restoreButton = controlsContainer.createEl("button", {
+        cls: "bearings-modal-data-entry-controls-button",
+        text: "\u21BA"
+      });
+      restoreButton.onclick = () => {
+        var _a2;
+        let frontMatter2 = _getFrontMatter();
+        textArea.value = (_a2 = frontMatter2 == null ? void 0 : frontMatter2[propertyName]) != null ? _a2 : "";
+      };
+      this.propertyFields.push({ propertyName, textArea, restoreButton });
     });
-    new import_obsidian2.Setting(container).addButton((button) => button.setButtonText("Remove").onClick(async () => {
-      delete this.pluginConfiguration.relationshipDefinitions[relationshipName];
-      await this.saveSettingsFn();
-      this.display();
-    }));
+    this.addFooterButtons();
+  }
+  addFooterButtons() {
+    const footer = this.contentEl.createDiv({ cls: "bearings-modal-footer" });
+    this.addCancelButton(footer);
+    const restoreAllButton = this.addFooterButton("Restore", "bearings-modal-footer-button", footer);
+    restoreAllButton.onclick = () => {
+      this.propertyFields.forEach((field) => {
+        field.textArea.value = field.textArea.dataset.initialValue || "";
+      });
+    };
+    const saveAllButton = this.addFooterButton("Save", "bearings-modal-footer-button", footer);
+    saveAllButton.onclick = async () => {
+      const newFrontMatter = this.propertyFields.reduce((acc, field) => ({
+        ...acc,
+        [field.propertyName]: field.textArea.value
+      }), {});
+      await this.updateFile(newFrontMatter);
+      await this.updateCallbackFn(this.file);
+    };
+  }
+  addCancelButton(footer) {
+    const cancelButton = this.addFooterButton("Cancel", "bearings-modal-footer-button", footer);
+    cancelButton.onclick = () => this.close();
+  }
+  addFooterButton(text, className, footer) {
+    const btn = footer.createEl("button", { text, cls: className });
+    return btn;
+  }
+  async updateFile(newFrontMatter) {
+    updateFrontmatterStrings(this.app, this.file, newFrontMatter);
+    this.close();
   }
 };
-var AddRelationshipDefinitionModal = class extends import_obsidian2.Modal {
-  constructor(app, onSubmit) {
-    super(app);
+
+// src/CreateRelationship.ts
+var import_obsidian7 = require("obsidian");
+
+// src/SelectFile.ts
+var import_obsidian5 = require("obsidian");
+var SelectFileModal = class extends import_obsidian5.SuggestModal {
+  constructor(app2, configuration, onUpdate, isRegExp = false, isWrapInWildcards = false) {
+    super(app2);
+    this.configuration = configuration;
+    this._allFiles = [];
+    this.onUpdate = onUpdate;
+    this.isRegExp = isRegExp;
+    this.isWrapInWildcards = isWrapInWildcards;
+  }
+  getSuggestions(query) {
+    let isRegExp = this.isRegExp;
+    if (query.startsWith("\\/")) {
+      isRegExp = true;
+      query = query.slice(2);
+    }
+    return this.loadFiles().filter((fileDisplayRecord) => {
+      const title = fileDisplayRecord.displayTitle.toLowerCase();
+      const path = fileDisplayRecord.path.toLowerCase();
+      if (this.isRegExp) {
+        let regExp;
+        if (this.isWrapInWildcards) {
+          regExp = new RegExp(`.*${query}.*`, "i");
+        } else {
+          regExp = new RegExp(query, "i");
+        }
+        return regExp.test(title) || regExp.test(path);
+      } else {
+        const queryTokens = query.toLowerCase().split(/\s+/);
+        return queryTokens.every((token) => title.includes(token) || path.includes(token));
+      }
+    });
+  }
+  renderSuggestion(fileDisplayRecord, el) {
+    el.createEl("div", { text: fileDisplayRecord.displayTitle });
+    el.createEl("small", { text: fileDisplayRecord.path });
+  }
+  onChooseSuggestion(fileDisplayRecord, evt) {
+    this.onUpdate(fileDisplayRecord.path);
+  }
+  loadFiles() {
+    return this.app.vault.getMarkdownFiles().map((file) => {
+      return {
+        path: file.path,
+        displayTitle: getDisplayTitle(
+          this.app,
+          this.configuration,
+          void 0,
+          file,
+          true,
+          file.path
+        )
+      };
+    }).sort((a, b) => a.displayTitle.localeCompare(b.displayTitle));
+  }
+  get allFiles() {
+    if (!this._allFiles) {
+      this._allFiles = this.loadFiles();
+    }
+    return this._allFiles;
+  }
+};
+
+// src/CreateFile.ts
+var import_obsidian6 = require("obsidian");
+var CreateFileModal = class extends import_obsidian6.Modal {
+  constructor(app2, configuration, onSubmit, initialValue = "") {
+    super(app2);
+    this.configuration = configuration;
     this.onSubmit = onSubmit;
+    this.initialValue = initialValue;
   }
   onOpen() {
-    let definitionName = "";
-    let designatedPropertyName = "";
-    let invertedRelationshipPropertyName = "";
-    let categories = "";
-    const { contentEl } = this;
-    contentEl.createEl("h3", { text: "Add new relationship definition" });
-    new import_obsidian2.Setting(contentEl).setName("Definition name").addText((text) => text.onChange((value) => definitionName = value));
-    new import_obsidian2.Setting(contentEl).setName("Outlinked property name").addText((text) => text.onChange((value) => designatedPropertyName = value));
-    new import_obsidian2.Setting(contentEl).setName("Inlinked property name").addText((text) => text.onChange((value) => invertedRelationshipPropertyName = value));
-    new import_obsidian2.Setting(contentEl).setName("Categories").addText((text) => text.onChange((value) => categories = value));
-    new import_obsidian2.Setting(contentEl).addButton((button) => button.setButtonText("Add").setCta().onClick(() => {
-      if (!definitionName) {
-        new import_obsidian2.Notice("Definition name is required.");
-        return;
+    const headerEl = this.contentEl.createEl("h3", { text: "Create new file", cls: "bearings-modal-data-entry-heading-title" });
+    const fieldEntryContainer = this.contentEl.createDiv({ cls: "bearings-modal-data-entry-item-container" });
+    const valueBox = fieldEntryContainer.createDiv({ cls: "bearings-modal-data-entry-value-box" });
+    const textArea = valueBox.createEl("textarea", {
+      cls: "bearings-modal-data-entry-text-area",
+      text: ""
+    });
+    textArea.value = this.initialValue;
+    textArea.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
       }
-      this.onSubmit(definitionName, {
-        designatedPropertyName,
-        invertedRelationshipPropertyName,
-        categories: categories.split(",").map((s) => s.trim())
+    });
+    this.addFooterButtons(textArea);
+    return textArea;
+  }
+  async postProcessFile(file, isOpen) {
+    const baseName = getPathBaseName(file.path).replace(/\.md$/, "");
+    let defaultTitleField = this.configuration.titleFields.at(-1) || "title";
+    await updateFrontmatterStrings(
+      this.app,
+      file,
+      {
+        [defaultTitleField]: baseName
+      },
+      false
+    );
+    await this.onSubmit(file.path);
+    if (isOpen) {
+      this.app.workspace.openLinkText(
+        file.path,
+        "",
+        "split",
+        { active: false }
+      );
+    }
+  }
+  async createFile(value, isOpen) {
+    let cleanedValue = value.trim();
+    const filepath = cleanedValue.replace(/\.md$/, "");
+    if (filepath) {
+      const fullFilePath = await getUniquePath(this.app, filepath) + ".md";
+      this.app.vault.create(fullFilePath, "").then((file) => this.postProcessFile(file, isOpen).then(() => {
+      })).catch((error) => {
+        new import_obsidian6.Notice(`Failed to create file: ${error}`);
       });
+    }
+  }
+  // addFooterButtons(textArea: TextComponent) {
+  addFooterButtons(textArea) {
+    const footer = this.contentEl.createDiv({ cls: "bearings-modal-footer" });
+    this.addCancelButton(footer);
+    const createButton = this.addFooterButton("Create", "bearings-modal-footer-button", footer);
+    createButton.onclick = () => {
+      this.createFile(textArea.value, true);
       this.close();
-    }));
+    };
+  }
+  addCancelButton(footer) {
+    const cancelButton = this.addFooterButton("Cancel", "bearings-modal-footer-button", footer);
+    cancelButton.onclick = () => this.close();
+  }
+  addFooterButton(text, className, footer) {
+    const btn = footer.createEl("button", { text, cls: className });
+    return btn;
   }
   onClose() {
-    this.contentEl.empty();
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+};
+
+// src/CreateRelationship.ts
+var PREV_LINK_PATHS = [];
+var PREV_FOCAL_FILE_PATHS = [];
+var PREV_RELATIONSHIPS = [];
+var CreateRelationshipModal = class extends import_obsidian7.Modal {
+  constructor(app2, configuration, focalFilePath, linkPath, updateCallbackFn, initialRelationshipKey = "") {
+    super(app2);
+    this.focalFilePath = focalFilePath;
+    this.linkPath = linkPath;
+    this.configuration = configuration;
+    this.updateCallbackFn = updateCallbackFn;
+    this.selectBox = document.createElement("select");
+    this.selectBox.addEventListener("change", () => this.selectionUpdate());
+    this.initialRelationshipKey = initialRelationshipKey;
+    if (!this.initialRelationshipKey && PREV_RELATIONSHIPS.length > 0) {
+      this.initialRelationshipKey = PREV_RELATIONSHIPS.at(-1) || this.initialRelationshipKey;
+    }
+    this.loadChoices();
+    this.loadProperties();
+  }
+  get currentSelection() {
+    return this.relationshipChoices[this.selectBox.value];
+  }
+  get focalFilePath() {
+    if (!this._focalFilePath && PREV_FOCAL_FILE_PATHS.length > 0) {
+      this._focalFilePath = PREV_FOCAL_FILE_PATHS.at(-1) || this._focalFilePath;
+    }
+    return this._focalFilePath;
+  }
+  set focalFilePath(value) {
+    if (value) {
+      PREV_FOCAL_FILE_PATHS.push(value);
+    }
+    if (PREV_FOCAL_FILE_PATHS.length > 10) {
+      PREV_FOCAL_FILE_PATHS = PREV_FOCAL_FILE_PATHS.slice(-10);
+    }
+    this._focalFilePath = value;
+    this._focalFilePathDisplayTitle = "";
+  }
+  get linkPath() {
+    if (!this._linkPath && PREV_LINK_PATHS.length > 0) {
+      this._linkPath = PREV_LINK_PATHS.at(-1) || this._linkPath;
+    }
+    return this._linkPath;
+  }
+  set linkPath(value) {
+    if (value) {
+      PREV_LINK_PATHS.push(value);
+    }
+    if (PREV_LINK_PATHS.length > 10) {
+      PREV_LINK_PATHS = PREV_LINK_PATHS.slice(-10);
+    }
+    this._linkPath = value;
+    this._linkPathDisplayTitle = "";
+  }
+  get focalFilePathDisplayTitle() {
+    if (!this._focalFilePathDisplayTitle) {
+      this._focalFilePathDisplayTitle = this.focalFilePath ? getDisplayTitle(app, this.configuration, this.focalFilePath, void 0, true, this.focalFilePath) : "";
+    }
+    return this._focalFilePathDisplayTitle;
+  }
+  get linkPathDisplayTitle() {
+    if (!this._linkPathDisplayTitle) {
+      this._linkPathDisplayTitle = this.linkPath ? getDisplayTitle(app, this.configuration, this.linkPath, void 0, true, this.linkPath) : "";
+    }
+    return this._linkPathDisplayTitle;
+  }
+  async selectionUpdate() {
+    let currentSelection = this.currentSelection;
+    if (!this.focalFilePath) {
+      this.saveButton.disabled = true;
+    } else if (!this.linkPath) {
+      this.saveButton.disabled = true;
+    } else if (this.focalFilePath === this.linkPath) {
+      this.saveButton.disabled = true;
+    } else {
+      this.saveButton.disabled = false;
+    }
+    let wrapIfNotEmpty = (s, verb) => {
+      if (s) {
+        return `: ${verb} as '${s}'`;
+      } else {
+        return "";
+      }
+    };
+    let formatDisplay = (fpath, ftitle) => {
+      let s = [];
+      if (!fpath) {
+        return "";
+      }
+      if (ftitle) {
+        return `[[${fpath}]]: '${ftitle}'`;
+      } else {
+        return `[[${fpath}]]`;
+      }
+    };
+    let focalFileDisplayText = formatDisplay(this.focalFilePath, this.focalFilePathDisplayTitle);
+    let linkDisplayText = formatDisplay(this.linkPath, this.linkPathDisplayTitle);
+    this.focalFilePathDisplayEl.setText(focalFileDisplayText);
+    this.linkPathDisplayEl.setText(linkDisplayText);
+    this.complementaryRelationshipRoleEl.setText(`Focal file source${wrapIfNotEmpty(currentSelection.complementaryRelationshipRole, "self-designated")}`);
+    this.complementaryRelationshipValueEl.setText(focalFileDisplayText);
+    this.primaryRelationshipRoleEl.setText(`Selected target${wrapIfNotEmpty(currentSelection.primaryRelationshipRole, "designated")}`);
+    this.primaryRelationshipValueEl.setText(linkDisplayText);
+  }
+  buildFileNodeViewBox(onUpdate, getCurrentValue) {
+    const fieldEntryContainer = this.contentEl.createDiv({ cls: "bearings-modal-data-entry-item-container" });
+    const valueBox = fieldEntryContainer.createDiv({ cls: "bearings-modal-data-entry-value-box" });
+    const textArea = valueBox.createEl("textarea", {
+      cls: "bearings-modal-data-entry-text-area",
+      text: ""
+    });
+    textArea.disabled = true;
+    const controlsContainer = fieldEntryContainer.createDiv({ cls: "bearings-modal-data-entry-item-controls-container" });
+    let findButton = new import_obsidian7.ButtonComponent(
+      controlsContainer.createEl("div", { cls: ["bearings-data-entry-control-cell"] })
+    );
+    findButton.setClass("bearings-control-button");
+    findButton.setTooltip("Find file");
+    findButton.setIcon("search");
+    findButton.onClick(() => {
+      const modal = new SelectFileModal(
+        this.app,
+        this.configuration,
+        onUpdate
+      );
+      modal.open();
+    });
+    let newButton = new import_obsidian7.ButtonComponent(
+      controlsContainer.createEl("div", { cls: ["bearings-data-entry-control-cell"] })
+    );
+    newButton.setClass("bearings-control-button");
+    newButton.setTooltip("New file");
+    newButton.setIcon("file-plus-2");
+    newButton.onClick(() => {
+      let initialValue = getCurrentValue().replace(/\.md$/, "") + "_related";
+      const modal = new CreateFileModal(
+        this.app,
+        this.configuration,
+        (newPath) => {
+          if (newPath) {
+            const titleModal = new UpdateDisplayTitleModal(
+              this.app,
+              this.configuration,
+              newPath,
+              async () => {
+                onUpdate(newPath);
+              }
+            );
+            titleModal.open();
+          }
+        },
+        initialValue
+      );
+      modal.open();
+    });
+    return textArea;
+  }
+  async loadProperties() {
+    this.headerEl = this.contentEl.createEl("h3", { text: "Create relationship link", cls: "bearings-modal-data-entry-heading-title" });
+    this.contentEl.createEl("div", { text: `The focal file source:`, cls: "bearings-modal-data-entry-item-label" });
+    this.focalFilePathDisplayEl = this.buildFileNodeViewBox(
+      (path) => {
+        this.focalFilePath = path;
+        this.selectionUpdate();
+      },
+      () => this.focalFilePath
+    );
+    let swapRow = this.contentEl.createEl("div", { cls: "bearings-data-entry-control-row" });
+    let swapButton = new import_obsidian7.ButtonComponent(
+      swapRow.createEl("div", { cls: ["bearings-settings-spanning-controls-container"] })
+    );
+    swapButton.setClass("bearings-settings-spanning-control");
+    swapButton.setTooltip("Swap focal and link paths");
+    swapButton.setIcon("arrow-up-down");
+    swapButton.onClick(() => {
+      let t = this.focalFilePath;
+      this.focalFilePath = this.linkPath;
+      this.linkPath = t;
+      this.selectionUpdate();
+    });
+    swapRow.createEl("div", { text: `will designate:`, cls: "bearings-modal-data-entry-item-label" });
+    this.linkPathDisplayEl = this.buildFileNodeViewBox(
+      (path) => {
+        this.linkPath = path;
+        this.selectionUpdate();
+      },
+      () => this.linkPath
+    );
+    this.contentEl.createEl("div", { text: `as:`, cls: "bearings-modal-data-entry-item-label" });
+    const selectContainer = this.contentEl.createDiv({ cls: "bearings-modal-data-entry-item-container" });
+    this.selectBox.className = "bearings-modal-data-entry-select-box";
+    Object.values(this.relationshipChoices).sort((a, b) => a.displayText.localeCompare(b.displayText)).forEach((choice) => {
+      const optionEl = this.selectBox.createEl("option", {
+        text: choice.displayText,
+        value: choice.key
+      });
+    });
+    if (this.initialRelationshipKey) {
+      this.selectBox.value = this.initialRelationshipKey;
+    }
+    selectContainer.appendChild(this.selectBox);
+    this.contentEl.createEl("br");
+    this.complementaryRelationshipRoleEl = this.contentEl.createEl("div", { text: "*", cls: "bearings-modal-data-entry-item-label" });
+    this.complementaryRelationshipValueEl = this.contentEl.createEl("div", { text: "*", cls: "bearings-modal-infobox bearings-modal-data-entry-item-fixed-value" });
+    this.primaryRelationshipRoleEl = this.contentEl.createEl("div", { text: "*", cls: "bearings-modal-data-entry-item-label" });
+    this.primaryRelationshipValueEl = this.contentEl.createEl("div", { text: "*", cls: "bearings-modal-infobox bearings-modal-data-entry-fixed-value" });
+    this.addFooterButtons();
+    await this.selectionUpdate();
+  }
+  loadChoices() {
+    this.relationshipChoices = {};
+    const createChoice = (propertyName, primaryRole, complementaryRole) => {
+      const roleDescription = primaryRole ? `'${primaryRole}' ` : "";
+      return `${roleDescription}(link under property: '${propertyName}')`;
+    };
+    for (const [key, relDef] of Object.entries(this.configuration.relationshipDefinitions)) {
+      const {
+        primaryRelationshipPropertyName,
+        primaryRelationshipRole = "",
+        complementaryRelationshipPropertyName,
+        complementaryRelationshipRole = ""
+      } = relDef;
+      if (primaryRelationshipPropertyName) {
+        const displayText = createChoice(primaryRelationshipPropertyName, primaryRelationshipRole, complementaryRelationshipRole);
+        this.relationshipChoices[displayText] = {
+          key: displayText,
+          primaryRelationshipRole,
+          complementaryRelationshipRole,
+          propertyName: primaryRelationshipPropertyName,
+          displayText
+        };
+      }
+      if (complementaryRelationshipPropertyName) {
+        const displayText = createChoice(complementaryRelationshipPropertyName, complementaryRelationshipRole, primaryRelationshipRole);
+        this.relationshipChoices[displayText] = {
+          key: displayText,
+          primaryRelationshipRole: complementaryRelationshipRole,
+          complementaryRelationshipRole: primaryRelationshipRole,
+          propertyName: complementaryRelationshipPropertyName,
+          displayText
+        };
+      }
+    }
+  }
+  async onUpdate(file, selectedProperty) {
+    await appendFrontmatterLists(
+      this.app,
+      file,
+      selectedProperty,
+      `[[${this.linkPath}]]`
+    );
+    await this.updateCallbackFn(file);
+  }
+  addFooterButtons() {
+    const footer = this.contentEl.createDiv({ cls: "bearings-modal-footer" });
+    this.addCancelButton(footer);
+    this.saveButton = this.addFooterButton("Save", "bearings-modal-footer-button", footer);
+    this.saveButton.onclick = async () => {
+      if (!this.focalFilePath || !this.linkPath) {
+        return;
+      }
+      const selectedProperty = this.currentSelection.propertyName;
+      const normalizedPath = (0, import_obsidian7.normalizePath)(this.focalFilePath);
+      const file = this.app.vault.getAbstractFileByPath(normalizedPath);
+      if (selectedProperty) {
+        PREV_RELATIONSHIPS.push(this.selectBox.value);
+      }
+      if (PREV_RELATIONSHIPS.length > 10) {
+        PREV_RELATIONSHIPS = PREV_RELATIONSHIPS.slice(-10);
+      }
+      if (file instanceof import_obsidian7.TFile) {
+        this.onUpdate(file, selectedProperty).then(() => {
+        }).catch(() => {
+        });
+        this.close();
+      } else {
+        new import_obsidian7.Notice("File not found or the path is not a valid file.");
+      }
+      this.close();
+    };
+  }
+  addCancelButton(footer) {
+    const cancelButton = this.addFooterButton("Cancel", "bearings-modal-footer-button", footer);
+    cancelButton.onclick = () => this.close();
+  }
+  addFooterButton(text, className, footer) {
+    const btn = footer.createEl("button", { text, cls: className });
+    return btn;
   }
 };
 
 // src/menus.ts
-var import_obsidian3 = require("obsidian");
-function buildLinkOpenMenu(menu, app, linkPath, includePreSeparator = true) {
+var createNewRelationshipFile = (app2, configuration, linkPath, updateCallbackFn, relationshipType) => {
+  const initialPath = linkPath ? `${linkPath.replace(/.md$/, "")}_related` : "NewRelationFile";
+  const createFileModal = new CreateFileModal(
+    app2,
+    configuration,
+    (newPath) => {
+      if (newPath) {
+        const titleModal = new UpdateDisplayTitleModal(
+          app2,
+          configuration,
+          newPath,
+          async () => {
+            const relModal = new CreateRelationshipModal(
+              app2,
+              configuration,
+              relationshipType === "to" ? newPath : linkPath || "",
+              relationshipType === "to" ? linkPath || "" : newPath,
+              async (file) => {
+                await updateCallbackFn(file);
+              }
+            );
+            relModal.open();
+          }
+        );
+        titleModal.open();
+      }
+    },
+    initialPath
+  );
+  createFileModal.open();
+};
+function buildLinkTargetEditMenu(app2, configuration, menu, linkPath, updateCallbackFn, includePreSeparator = true) {
+  var _a;
   if (includePreSeparator) {
     menu.addSeparator();
   }
   menu.addItem(
+    (item) => item.setTitle("Edit display title fields").setIcon("edit").onClick(() => {
+      const normalizedPath = (0, import_obsidian8.normalizePath)(linkPath);
+      const file = app2.vault.getAbstractFileByPath(normalizedPath);
+      if (file instanceof import_obsidian8.TFile) {
+        const modal = new UpdateDisplayTitleModal(
+          app2,
+          configuration,
+          file,
+          async (file2) => {
+            await updateCallbackFn(file2);
+          }
+        );
+        modal.open();
+      } else {
+        new import_obsidian8.Notice("File not found or the path is not a valid file.");
+      }
+    })
+  );
+  menu.addSeparator();
+  let activeFilePath = ((_a = app2.workspace.getActiveFile()) == null ? void 0 : _a.path) || "";
+  menu.addItem((item) => item.setTitle(`Create relationship to ...`).setIcon("git-pull-request").onClick(() => {
+    const modal = new CreateRelationshipModal(
+      app2,
+      configuration,
+      activeFilePath,
+      // activeFilePath === linkPath ? "" : linkPath,
+      linkPath,
+      async (file) => {
+        await updateCallbackFn(file);
+      }
+    );
+    modal.open();
+  }));
+  menu.addItem((item) => item.setTitle(`Create relationship from ...`).setIcon("git-pull-request-arrow").onClick(() => {
+    const modal = new CreateRelationshipModal(
+      app2,
+      configuration,
+      linkPath,
+      activeFilePath,
+      async (file) => {
+        await updateCallbackFn(file);
+      }
+    );
+    modal.open();
+  }));
+  menu.addItem((item) => item.setTitle(`Create new note with relationship to ...`).setIcon("git-pull-request-create-arrow").onClick(() => {
+    createNewRelationshipFile(
+      app2,
+      configuration,
+      linkPath,
+      async (file) => {
+        await updateCallbackFn(file);
+      },
+      "to"
+    );
+  }));
+  menu.addItem((item) => item.setTitle(`Create new note with relationship from ...`).setIcon("git-pull-request-create").onClick(() => {
+    createNewRelationshipFile(
+      app2,
+      configuration,
+      linkPath,
+      async (file) => {
+        await updateCallbackFn(file);
+      },
+      "from"
+    );
+  }));
+  menu.addItem((item) => item.setTitle(`Create new note duplicating relationships from ...`).setIcon("git-fork").onClick(() => {
+    let initialPath = linkPath ? `${linkPath.replace(/.md$/, "")}_related` : "NewRelationFile";
+    const modal = new CreateFileModal(
+      app2,
+      configuration,
+      async (newPath) => {
+        if (newPath) {
+          await copyYamlFrontmatterProperties(
+            this.app,
+            linkPath,
+            newPath,
+            configuration.allPropertyNames(),
+            [configuration.titlePrefixField, ...configuration.titleFields]
+          );
+          const titleModal = new UpdateDisplayTitleModal(
+            app2,
+            configuration,
+            newPath,
+            updateCallbackFn
+          );
+          titleModal.open();
+        }
+      },
+      initialPath
+    );
+    modal.open();
+  }));
+}
+function buildLinkOpenMenu(menu, app2, linkPath, includePreSeparator = true) {
+  if (includePreSeparator) {
+    menu.addSeparator();
+  }
+  buildLinkOpenSubmenu(menu, app2, linkPath);
+}
+function buildLinkOpenSubmenu(menu, app2, linkPath) {
+  menu.addItem(
     (item) => item.setTitle("Open in new tab").setIcon("open").onClick(
-      () => app.workspace.openLinkText(
+      () => app2.workspace.openLinkText(
         linkPath,
         linkPath,
         "tab",
@@ -8522,7 +9504,7 @@ function buildLinkOpenMenu(menu, app, linkPath, includePreSeparator = true) {
   );
   menu.addItem(
     (item) => item.setTitle("Open in new tab (background)").setIcon("open").onClick(
-      () => app.workspace.openLinkText(
+      () => app2.workspace.openLinkText(
         linkPath,
         linkPath,
         "tab",
@@ -8532,12 +9514,12 @@ function buildLinkOpenMenu(menu, app, linkPath, includePreSeparator = true) {
   );
   menu.addItem(
     (item) => item.setTitle("Open in new split").setIcon("open").onClick(
-      () => app.workspace.openLinkText(linkPath, "", "split")
+      () => app2.workspace.openLinkText(linkPath, "", "split")
     )
   );
   menu.addItem(
     (item) => item.setTitle("Open in new split (background)").setIcon("open").onClick(
-      () => app.workspace.openLinkText(
+      () => app2.workspace.openLinkText(
         linkPath,
         linkPath,
         "split",
@@ -8547,13 +9529,20 @@ function buildLinkOpenMenu(menu, app, linkPath, includePreSeparator = true) {
   );
   menu.addItem(
     (item) => item.setTitle("Open in new window").setIcon("open").onClick(
-      () => app.workspace.openLinkText(linkPath, "", "window")
+      () => app2.workspace.openLinkText(linkPath, "", "window")
     )
   );
 }
 function buildLinkCopyMenu(menu, linkPath, includePreSeparator = true, includePostSeparator = false) {
-  const normalizedLinkPath = (0, import_obsidian3.normalizePath)(linkPath);
-  const internalPath = normalizedLinkPath.replace(/.md$/, "");
+  if (includePreSeparator) {
+    menu.addSeparator();
+  }
+  buildLinkCopySubmenu(menu, linkPath);
+  if (includePostSeparator) {
+    menu.addSeparator();
+  }
+}
+function buildLinkCopySubmenu(menu, linkPath) {
   const _appendToClipboard = async (value) => {
     try {
       const current = await navigator.clipboard.readText();
@@ -8573,9 +9562,8 @@ ${value}`);
       console.error("Failed to copy to clipboard: ", err);
     }
   };
-  if (includePreSeparator) {
-    menu.addSeparator();
-  }
+  const normalizedLinkPath = (0, import_obsidian8.normalizePath)(linkPath);
+  const internalPath = normalizedLinkPath.replace(/.md$/, "");
   menu.addItem(
     (item) => item.setTitle("Copy as internal link").setIcon("clipboard-copy").onClick(() => _copyToClipboard(`[[${internalPath}]]`))
   );
@@ -8588,22 +9576,16 @@ ${value}`);
   menu.addItem(
     (item) => item.setTitle("Append property item link to clipboard").setIcon("list-end").onClick(() => _appendToClipboard(`  - "[[${internalPath}]]"`))
   );
-  if (includePostSeparator) {
-    menu.addSeparator();
-  }
   menu.addItem(
     (item) => item.setTitle("Clear clipboard").setIcon("clipboard-x").onClick(_clearClipboard)
   );
   menu.addItem(
     (item) => item.setTitle("Copy relative path").setIcon("documents").onClick(() => _appendToClipboard(internalPath))
   );
-  if (includePostSeparator) {
-    menu.addSeparator();
-  }
 }
 
 // src/view.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 
 // src/InputNumber.ts
 var InputNumberComponent = class {
@@ -8681,7 +9663,7 @@ var DISPLAY_TEXT = "Bearings";
 var OUTLINKED_RELATIONSHIP_GLYPH = "\u21A4";
 var INLINKED_RELATIONSHIP_GLYPH = "\u21A6";
 var BILINKED_RELATIONSHIP_GLYPH = "\u21CC";
-var BearingsView = class extends import_obsidian4.ItemView {
+var BearingsView = class extends import_obsidian9.ItemView {
   constructor(leaf, plugin, configuration, dataService) {
     super(leaf);
     this.icon = "radar";
@@ -8721,17 +9703,16 @@ var BearingsView = class extends import_obsidian4.ItemView {
     return DISPLAY_TEXT;
   }
   async refresh() {
-    await this.dataService.refresh();
+    await this.render();
   }
   async onActiveLeafChange() {
-    this.render();
+    await this.render();
   }
   async onOpen() {
     this.app.workspace.on("active-leaf-change", this.onActiveLeafChange);
-    this.render();
+    await this.render();
   }
   async render() {
-    await this.refresh();
     if (!this.root || !this.navigationView) {
       if (this.root) {
         this.root.empty();
@@ -8741,30 +9722,36 @@ var BearingsView = class extends import_obsidian4.ItemView {
         this.plugin.app,
         this.configuration,
         this.dataService,
-        ""
-        // true,
+        "",
+        async () => {
+          await this.render();
+        },
+        true
       );
       this.navigationView = new NavigationView(
         navigationContext,
         this.root
       );
     }
-    this.navigationView.render(this.computeActiveFilePath());
+    let focalFilePath = this.computeActiveFilePath();
+    this.navigationView.render(focalFilePath);
   }
   async onClose() {
     this.app.workspace.off("active-leaf-change", this.onActiveLeafChange);
   }
 };
 var NavigationContext = class {
-  // isOpenFocalFile: boolean = false;
-  constructor(app, configuration, dataService, focalFilePath) {
-    this.app = app;
+  constructor(app2, configuration, dataService, focalFilePath, updateCallbackFn, isOpenFocalFile) {
+    this.isOpenFocalFile = false;
+    this.app = app2;
     this.configuration = configuration;
     this.dataService = dataService;
     this._focalFilePath = focalFilePath;
+    this.updateCallbackFn = updateCallbackFn;
+    this.isOpenFocalFile = isOpenFocalFile;
   }
 };
-var NavigationBase = class extends import_obsidian4.Component {
+var NavigationBase = class extends import_obsidian9.Component {
   constructor(navigationContext, root) {
     super();
     this._context = navigationContext;
@@ -8780,7 +9767,7 @@ var NavigationBase = class extends import_obsidian4.Component {
     return this.root;
   }
   renderMarkdown(text, element, sourcePath = "") {
-    import_obsidian4.MarkdownRenderer.render(
+    import_obsidian9.MarkdownRenderer.render(
       this._context.app,
       text,
       element,
@@ -8790,14 +9777,17 @@ var NavigationBase = class extends import_obsidian4.Component {
   }
 };
 var NavigationView = class extends NavigationBase {
-  constructor() {
-    super(...arguments);
-    this.isPinned = false;
+  constructor(navigationContext, root) {
+    super(
+      navigationContext,
+      root
+    );
     this.isClosed = true;
     this.isBypassFileChangeCheck = false;
     this.toggleOptionState = {};
   }
   async refresh(options = {}) {
+    await this._context.dataService.refresh();
     await this.render(this._context._focalFilePath, {
       ...options,
       isForced: true
@@ -8806,9 +9796,12 @@ var NavigationView = class extends NavigationBase {
   get isFixed() {
     return false;
   }
+  get isPinned() {
+    var _a;
+    return (_a = this.toggleOptionState["isPinned"]) != null ? _a : false;
+  }
   createToggleButton(key, controlRow, trueGlyph, falseGlyph, trueToolTip, falseToolTip, callbackAction, initialValue) {
-    let controlCell = controlRow.createEl("div", { cls: ["bearings-control-cell"] });
-    let button = new import_obsidian4.ButtonComponent(
+    let button = new import_obsidian9.ButtonComponent(
       controlRow.createEl("div", { cls: ["bearings-control-cell"] })
     );
     button.setClass("bearings-control-button");
@@ -8866,6 +9859,21 @@ var NavigationView = class extends NavigationBase {
     let mainSide = headerRight;
     let controlRow = controlsSide.createEl("div", { cls: ["bearings-control-row"] });
     if (!options.isCodeBlock) {
+      let findButton = new import_obsidian9.ButtonComponent(
+        controlRow.createEl("div", { cls: ["bearings-control-cell"] })
+      );
+      findButton.setClass("bearings-control-button");
+      findButton.setIcon("search");
+      findButton.setTooltip("Change the view focal note without changing the active note");
+      const findAction = () => {
+        const modal = new SelectFileModal(
+          this._context.app,
+          this._context.configuration,
+          (path) => this.render(path, options)
+        );
+        modal.open();
+      };
+      findButton.onClick(() => findAction());
       this.createToggleButton(
         "isPinned",
         controlRow,
@@ -8873,12 +9881,12 @@ var NavigationView = class extends NavigationBase {
         "circle-dot-dashed",
         // "radius",
         // "refresh-ccw-dot",
-        "Unpin the focal note",
-        "Pin the focal note",
+        "Unpin the focal note: it will track your active file",
+        "Pin the focal note: it will not change as you switch files",
         (value) => {
-          this.isPinned = value;
+          this.refresh(options);
         },
-        false
+        this.isPinned
       );
     } else {
       this.createToggleButton(
@@ -8900,7 +9908,7 @@ var NavigationView = class extends NavigationBase {
         true
       );
     }
-    let refreshButton = new import_obsidian4.ButtonComponent(
+    let refreshButton = new import_obsidian9.ButtonComponent(
       controlRow.createEl("div", { cls: ["bearings-control-cell"] })
     );
     refreshButton.setClass("bearings-control-button");
@@ -8910,9 +9918,13 @@ var NavigationView = class extends NavigationBase {
       this.refresh(options);
     };
     refreshButton.onClick(() => refreshAction());
-    let headerLabel = mainSide.createEl("div", {
-      cls: ["bearings-main-container-header-label"],
-      text: this._context.dataService.getFileNode(this._context._focalFilePath).indexEntryText
+    const fileNode = this._context.dataService.getFileNode(this._context._focalFilePath);
+    let headerLabelContainer = mainSide.createEl("div", {
+      cls: ["bearings-main-container-header-label-container"]
+    });
+    let headerLabel = headerLabelContainer.createEl("div", {
+      cls: ["bearings-main-container-header-label-title"],
+      text: fileNode.indexEntryText
     });
     let viewContainerBody = this.viewContainer.createEl("div", { cls: "bearings-main-container-body" });
     let ascenderViewFrame = new SuperordinateRelationshipsAscendersViewFrame(
@@ -8927,12 +9939,12 @@ var NavigationView = class extends NavigationBase {
       "Parallels"
     );
     parallelsViewFrame.render();
-    let coordinateViewFrame = new CoordinateRelationshipsViewFrame(
+    let symmetricalViewFrame = new CoordinateRelationshipsViewFrame(
       this._context,
       viewContainerBody.createEl("div", { cls: "bearings-viewframe-container" }),
-      "Referrals"
+      "Crosslinks"
     );
-    coordinateViewFrame.render();
+    symmetricalViewFrame.render();
     let backlinkedViewFrame = new BacklinkedRelationshipsViewFrame(
       this._context,
       viewContainerBody.createEl("div", { cls: "bearings-viewframe-container" }),
@@ -9023,12 +10035,12 @@ var NavigationViewFrame = class extends NavigationBase {
       },
       "Depth"
     );
-    let nodeCollapseAllButton = new import_obsidian4.ButtonComponent(getControlCell());
+    let nodeCollapseAllButton = new import_obsidian9.ButtonComponent(getControlCell());
     nodeCollapseAllButton.setClass("bearings-control-button");
     nodeCollapseAllButton.setIcon("chevrons-down-up");
     nodeCollapseAllButton.setTooltip("Collapse all nodes");
     nodeCollapseAllButton.onClick(() => nodeCollapseAllAction());
-    let nodeExpandAllButton = new import_obsidian4.ButtonComponent(getControlCell());
+    let nodeExpandAllButton = new import_obsidian9.ButtonComponent(getControlCell());
     nodeExpandAllButton.setClass("bearings-control-button");
     nodeExpandAllButton.setTooltip("Expand all nodes");
     nodeExpandAllButton.setIcon("chevrons-up-down");
@@ -9115,11 +10127,13 @@ var CoordinateRelationshipsViewFrame = class extends NavigationViewFrame {
   generateResults() {
     let subtreeRoot = this._context.dataService.coordinateSubtrees(
       this.focalFilePath,
-      this._context.configuration.coordinateRelationshipDefinitions(),
+      this._context.configuration.symmetricalRelationshipDefinitions(),
+      this._context.configuration.superordinateRelationshipDefinitions(),
       this.discoveryDepthLimit
     );
     return {
-      treeNodes: [subtreeRoot]
+      treeNodes: [...subtreeRoot.children],
+      parentFileNode: subtreeRoot.value
     };
   }
 };
@@ -9129,7 +10143,9 @@ var ParallelRelationshipsViewFrame = class extends NavigationViewFrame {
   }
   setLocalOptions(entryFrame, entryData) {
     entryFrame.options.isHighlightFocalFile = true;
-    entryFrame.options.isOpenFocalFile = false;
+    entryFrame.options.isOpenFocalFile = true;
+    entryFrame.options.isDefaultOpen = true;
+    entryFrame.options.isIgnoreDefaultOpenLimit = true;
   }
   generateResults() {
     let treeNodes = [];
@@ -9271,11 +10287,19 @@ var NavigationEntryFrame = class extends NavigationBase {
       relationships.push(...(_a = entryData == null ? void 0 : entryData.value) == null ? void 0 : _a.relationships[parentFileNode.filePath]);
     }
     if (relationships.length > 0) {
-      const invertedRelationships = relationships.filter((relationship) => relationship.isInlink);
+      let relationshipDesc = relationships.map((relationship) => {
+        if (relationship.isInlink) {
+          return `${relationship.relationshipKey}${INLINKED_RELATIONSHIP_GLYPH}`;
+        } else {
+          return `${OUTLINKED_RELATIONSHIP_GLYPH}${relationship.relationshipKey}`;
+        }
+      });
+      relationshipDesc = [...new Set(relationshipDesc)].sort();
+      const complementaryRelationships = relationships.filter((relationship) => relationship.isInlink);
       let relationshipPolarityGlyph = "";
-      if (invertedRelationships.length === 0) {
+      if (complementaryRelationships.length === 0) {
         relationshipPolarityGlyph = OUTLINKED_RELATIONSHIP_GLYPH;
-      } else if (invertedRelationships.length === relationships.length) {
+      } else if (complementaryRelationships.length === relationships.length) {
         relationshipPolarityGlyph = INLINKED_RELATIONSHIP_GLYPH;
       } else {
         relationshipPolarityGlyph = BILINKED_RELATIONSHIP_GLYPH;
@@ -9288,6 +10312,7 @@ var NavigationEntryFrame = class extends NavigationBase {
           cls: ["bearings-entry-node-connection-cell"]
         });
         relEl.innerText = relationshipPolarityGlyph;
+        relEl.setAttribute("title", relationshipDesc.join("; "));
       }
     }
     this.elements.entryNodeToggleContainer = this.elements.entryGutterLeftHead.createEl("div", {
@@ -9311,7 +10336,7 @@ var NavigationEntryFrame = class extends NavigationBase {
         }
       } else {
         this.elements.entryNodeToggleContainer.classList.add("bearings-node-leaf");
-        let terminal = "\u23FA";
+        let terminal = "\u2617";
         this.elements.entryNodeToggleContainer.setText(terminal);
       }
     };
@@ -9334,14 +10359,15 @@ var NavigationEntryFrame = class extends NavigationBase {
     });
     this.elements.entryHeadContent = this.elements.entryHead.createEl("div", { cls: "bearings-entry-head-content" });
     this.elements.entryHeadLinkContainer = this.elements.entryHeadContent.createEl("div", { cls: "bearings-entry-head-link-container" });
-    this.elements.entryGlyphRow = this.elements.entryHeadContent.createEl("div", { cls: "bearings-entry-head-icon-row" });
     this.renderEntryLink(
       this.elements.entryHeadLinkContainer,
       entryData
     );
     this.renderGlyphs(
-      this.elements.entryGlyphRow,
-      entryData
+      this.elements.entryHeadLinkContainer,
+      entryData,
+      ["bearings-entry-glyph-inline-container"],
+      ["bearings-entry-glyph-inline-cell"]
     );
     this.elements.entrySubcontent = this.elements.entryMain.createEl("div", {
       cls: ["bearings-entry-subcontent"]
@@ -9372,13 +10398,30 @@ var NavigationEntryFrame = class extends NavigationBase {
     setIndicator();
   }
   renderEntryLink(root, entryData) {
-    let linkContainer = root.createEl("a", { cls: "bearings-entry-head-link" });
     const linkPath = entryData.value.filePath;
-    let linkDisplayText = entryData.value.indexEntryText;
+    let linkContainer = root.createEl("a", { cls: ["bearing-entry-head-link", "bearings-entry-head-link-container"] });
+    let linkTitleContainer = linkContainer.createEl("div", { cls: ["bearing-entry-head-link", "bearings-entry-head-link-title-container"] });
+    let titlePrefix = entryData.value.indexEntryPrefix;
+    if (titlePrefix) {
+      let linkTitlePrefixContainer = linkTitleContainer.createEl("div", { cls: ["bearing-entry-head-link", "bearings-entry-head-link-title-prefix"] });
+      let prefixes = titlePrefix.split(/(?:\/|::)/);
+      prefixes.forEach((prefix, index) => {
+        prefix = prefix.trim();
+        this.renderMarkdown(
+          prefix,
+          linkTitlePrefixContainer
+        );
+        if (index < prefixes.length - 1) {
+          let bulletElement = linkTitlePrefixContainer.createEl("span", { cls: "bearings-title-prefix-infix-separator" });
+          bulletElement.setText("\u2981");
+        }
+      });
+      linkTitlePrefixContainer.classList.add("bearings-entry-head-link-has-title-prefix");
+    }
+    let linkTitleLabelContainer = linkTitleContainer.createEl("div", { cls: ["bearing-entry-head-link", "bearings-entry-head-link-title-text"] });
     this.renderMarkdown(
-      linkDisplayText,
-      linkContainer
-      // linkPath,
+      entryData.value.indexEntryTextWithoutPrefix,
+      linkTitleLabelContainer
     );
     linkContainer.addEventListener("mouseover", (event) => {
       this._context.app.workspace.trigger("hover-link", {
@@ -9390,27 +10433,36 @@ var NavigationEntryFrame = class extends NavigationBase {
       });
     });
     linkContainer.addEventListener("contextmenu", (event) => {
-      const menu = new import_obsidian4.Menu();
+      const menu = new import_obsidian9.Menu();
       buildLinkOpenMenu(menu, this._context.app, linkPath);
+      buildLinkTargetEditMenu(
+        this._context.app,
+        this._context.configuration,
+        menu,
+        linkPath,
+        // this._context._focalFilePath,
+        this._context.updateCallbackFn,
+        true
+      );
       buildLinkCopyMenu(menu, linkPath);
       menu.showAtMouseEvent(event);
     });
     linkContainer.addEventListener("click", (event) => {
       event.preventDefault();
-      const app = this._context.app;
+      const app2 = this._context.app;
       if (event.shiftKey || event.ctrlKey) {
-        app.workspace.openLinkText(linkPath, "", "tab");
+        app2.workspace.openLinkText(linkPath, "", "tab");
       } else if (event.altKey && event.ctrlKey) {
-        app.workspace.openLinkText(linkPath, "", "split");
+        app2.workspace.openLinkText(linkPath, "", "split");
       } else {
-        app.workspace.openLinkText(linkPath, "", false);
+        app2.workspace.openLinkText(linkPath, "", false);
       }
     });
   }
-  renderGlyphs(root, entryData) {
+  renderGlyphs(root, entryData, containerClassNames = [], cellClassNames = []) {
     var _a;
     this.elements.entryGlyphBox = root.createEl("div", {
-      cls: ["bearings-entry-glyph-bar-container"]
+      cls: containerClassNames
     });
     let nodeGlyphFields = ((_a = this._context.configuration.options) == null ? void 0 : _a.glyphField) || ["glyphs", "entry-glyphs"];
     let glyphs = Array.from(new Set(entryData.value.readGlyphs(nodeGlyphFields, null)));
@@ -9419,7 +10471,7 @@ var NavigationEntryFrame = class extends NavigationBase {
     }
     glyphs.forEach((glyphCode) => {
       const glyphCell = this.elements.entryGlyphBox.createEl("div", {
-        cls: ["bearings-entry-glyph-bar-cell"]
+        cls: cellClassNames
       });
       if (false) {
         const glyphName = glyphCode.slice(1, -1);
@@ -9431,48 +10483,55 @@ var NavigationEntryFrame = class extends NavigationBase {
 };
 
 // src/main.ts
-var BearingsPlugin = class extends import_obsidian5.Plugin {
+var BearingsPlugin = class extends import_obsidian10.Plugin {
   constructor() {
     super(...arguments);
     this.activeNavigators = [];
   }
   async onload() {
     await this.loadSettings();
-    this.dataService = new DataService(this.app);
+    this.dataService = new DataService(this.app, this.configuration);
+    this.refresh = this.refresh.bind(this);
+    this.codeBlockRefresh = this.codeBlockRefresh.bind(this);
     this.registerMarkdownCodeBlockProcessor(
       "bearings",
       (source, el, ctx) => {
-        var _a;
+        let sourcePath = ctx.sourcePath;
         let root = el;
-        this.dataService.refresh();
         let navigationContext = new NavigationContext(
           this.app,
           this.configuration,
           this.dataService,
-          ""
-          // true,
+          "",
+          async () => {
+            this.refresh();
+          },
+          true
         );
         let navigationView = new NavigationView(
           navigationContext,
           root
         );
-        let activeFilePath = ((_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path) || "";
-        navigationView.render(activeFilePath, {
-          isCodeBlock: true,
-          isForce: true
-        });
+        navigationView.render(
+          sourcePath,
+          {
+            isCodeBlock: true,
+            isForce: true
+          }
+        );
         this.activeNavigators.push(navigationView);
       }
     );
     this.addCommand({
       id: "refresh-bearings-code-blocks",
       name: "Navigation code blocks: refresh",
-      callback: () => {
-        this.activeNavigators.forEach((nav) => nav.refresh({
-          isCodeBlock: true,
-          isForce: true
-        }));
-      }
+      // callback: this.codeBlockRefresh,
+      callback: this.refresh
+    });
+    this.addCommand({
+      id: "create-bearings-relationship",
+      name: "Create relationship ...",
+      callback: () => this.addRelationship()
     });
     this.registerView(
       VIEW_TYPE,
@@ -9485,6 +10544,9 @@ var BearingsPlugin = class extends import_obsidian5.Plugin {
     );
     this.addRibbonIcon("radar", "Open the navigator", () => {
       this.activateView();
+    });
+    this.addRibbonIcon("git-branch-plus", "Create relationship", () => {
+      this.addRelationship();
     });
     this.addCommand({
       id: "open-bearings-navigator",
@@ -9506,6 +10568,15 @@ var BearingsPlugin = class extends import_obsidian5.Plugin {
     });
     this.registerEvent(
       this.app.workspace.on("file-menu", (menu, file) => {
+        buildLinkTargetEditMenu(
+          this.app,
+          this.configuration,
+          menu,
+          file.path,
+          async () => {
+          },
+          true
+        );
         buildLinkCopyMenu(menu, file.path);
       })
     );
@@ -9526,15 +10597,37 @@ var BearingsPlugin = class extends import_obsidian5.Plugin {
   }
   onunload() {
   }
+  addRelationship() {
+    var _a;
+    let activeFilePath = ((_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path) || "";
+    const modal = new CreateRelationshipModal(
+      this.app,
+      this.configuration,
+      activeFilePath,
+      "",
+      this.refresh
+    );
+    modal.open();
+  }
   async loadSettings() {
-    this.configuration = new BearingsConfiguration(Object.assign(
+    let rawSettings = Object.assign(
       {},
-      TRAJECTORIES_DEFAULT_SETTINGS,
+      BEARINGS_DEFAULT_SETTINGS,
       await this.loadData()
-    ));
+    );
+    this.configuration = new BearingsConfiguration(rawSettings);
   }
   async saveSettings() {
     await this.saveData(this.configuration);
+  }
+  async refresh() {
+    await this.codeBlockRefresh();
+  }
+  async codeBlockRefresh() {
+    await this.activeNavigators.forEach((nav) => nav.refresh({
+      isCodeBlock: true,
+      isForce: true
+    }));
   }
   async activateView() {
     const { workspace } = this.app;

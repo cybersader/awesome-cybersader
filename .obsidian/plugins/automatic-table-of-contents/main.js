@@ -22,8 +22,8 @@ const availableOptions = {
   style: {
     type: 'value',
     default: 'nestedList',
-    values: ['nestedList', 'inlineFirstLevel'],
-    comment: 'TOC style (nestedList|inlineFirstLevel)',
+    values: ['nestedList', 'nestedOrderedList', 'inlineFirstLevel'],
+    comment: 'TOC style (nestedList|nestedOrderedList|inlineFirstLevel)',
   },
   minLevel: {
     type: 'number',
@@ -127,6 +127,7 @@ class Renderer extends MarkdownRenderChild {
 function getMarkdownFromHeadings(headings, options) {
   const markdownHandlersByStyle = {
     nestedList: getMarkdownNestedListFromHeadings,
+    nestedOrderedList: getMarkdownNestedOrderedListFromHeadings,
     inlineFirstLevel: getMarkdownInlineFirstLevelFromHeadings,
   }
   let markdown = ''
@@ -139,6 +140,15 @@ function getMarkdownFromHeadings(headings, options) {
 }
 
 function getMarkdownNestedListFromHeadings(headings, options) {
+  return getMarkdownListFromHeadings(headings, false, options)
+}
+
+function getMarkdownNestedOrderedListFromHeadings(headings, options) {
+  return getMarkdownListFromHeadings(headings, true, options)
+}
+
+function getMarkdownListFromHeadings(headings, isOrdered, options) {
+  const prefix = isOrdered ? '1.' : '-'
   const lines = []
   const minLevel = options.minLevel > 0
     ? options.minLevel
@@ -146,14 +156,17 @@ function getMarkdownNestedListFromHeadings(headings, options) {
   headings.forEach((heading) => {
     if (heading.level < minLevel) return
     if (options.maxLevel > 0 && heading.level > options.maxLevel) return
-    lines.push(`${'\t'.repeat(heading.level - minLevel)}- ${getMarkdownHeading(heading, options)}`)
+    lines.push(`${'\t'.repeat(heading.level - minLevel)}${prefix} ${getMarkdownHeading(heading, options)}`)
   })
   return lines.length > 0 ? lines.join('\n') : null
 }
 
 function getMarkdownInlineFirstLevelFromHeadings(headings, options) {
+  const minLevel = options.minLevel > 0
+    ? options.minLevel
+    : Math.min(...headings.map((heading) => heading.level))
   const items = headings
-    .filter((heading) => heading.level === 1)
+    .filter((heading) => heading.level === minLevel)
     .map((heading) => {
       return getMarkdownHeading(heading, options)
     })

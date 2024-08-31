@@ -12,7 +12,7 @@
   "openInNewPane": false,
   "vimLikeNavigationShortcut": false,
   "ribbonIcon": true,
-  "showExcerpt": true,
+  "showExcerpt": false,
   "renderLineReturnInExcerpts": true,
   "showCreateButton": false,
   "highlight": true,

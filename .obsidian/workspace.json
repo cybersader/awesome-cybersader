@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2e986086f8db70ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0132127300ab823a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0b04860c30999bbe",
             "type": "leaf",
             "state": {
@@ -128,6 +104,37 @@
             }
           }
         ]
+      },
+      {
+        "id": "9af8980ce0923da2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0132127300ab823a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2529cf774554dcb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "✅ Tasks/⬇️ Misc Todos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
+                "file": "✅ Tasks/⬇️ Misc Todos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +225,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
+                "file": "✅ Tasks/⬇️ Misc Todos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +248,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
+                "file": "✅ Tasks/⬇️ Misc Todos.md"
               }
             }
           },
@@ -292,13 +299,19 @@
       "templater-obsidian:Templater": false,
       "fileorganizer2000:Fo2k Assistant View": false,
       "cmdr:Open settings": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "fileorganizer2000:Fo2k Chat": false,
+      "callout-manager:Insert Callout": false
     }
   },
-  "active": "2e986086f8db70ed",
+  "active": "2529cf774554dcb5",
   "lastOpenFiles": [
-    "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
+    "📁 07 - Business/Monetization & Funding/Monetization & Funding.md",
+    "✅ Tasks/⬇️ Misc Todos.md",
+    "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md",
+    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
+    "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
@@ -325,10 +338,6 @@
     "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
-    "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
     "📁 06 - Cybersader Arsenal/Email Aliasing",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
     "📁 04 - Organizational Cyber/Frameworks, Standards",

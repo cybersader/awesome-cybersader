@@ -35,6 +35,7 @@
   "matchThemeTrigger": false,
   "defaultMode": "normal",
   "defaultPenMode": "never",
+  "penModeDoubleTapEraser": true,
   "penModeCrosshairVisible": false,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
@@ -104,7 +105,7 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": true,
-  "previousRelease": "2.3.0",
+  "previousRelease": "2.4.0",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -426,6 +427,7 @@
   "numberOfCustomPens": 0,
   "pdfScale": 4,
   "pdfBorderBox": true,
+  "pdfFrame": false,
   "pdfGapSize": 20,
   "pdfGroupPages": false,
   "pdfLockAfterImport": true,
@@ -449,6 +451,7 @@
     "borderOpacity": 0,
     "filenameVisible": false
   },
+  "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
   "openAIAPIToken": "",
@@ -749,5 +752,26 @@
   "longPressMobile": 500,
   "isDebugMode": false,
   "rank": "Bronze",
+  "modifierKeyOverrides": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "k"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "showSplashscreen": true,
   "autosaveInterval": 15000
 }

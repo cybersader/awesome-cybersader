@@ -23,26 +23,30 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
 var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 var __export = (target, all) => {
-  __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
-var __reExport = (target, module2, desc) => {
-  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
-    for (let key of __getOwnPropNames(module2))
-      if (!__hasOwnProp.call(target, key) && key !== "default")
-        __defProp(target, key, { get: () => module2[key], enumerable: !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable });
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   }
-  return target;
+  return to;
 };
-var __toModule = (module2) => {
-  return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
-};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -64,9 +68,9 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/moment/moment.js
+// node_modules/.pnpm/moment@2.30.1/node_modules/moment/moment.js
 var require_moment = __commonJS({
-  "node_modules/moment/moment.js"(exports, module2) {
+  "node_modules/.pnpm/moment@2.30.1/node_modules/moment/moment.js"(exports, module2) {
     (function(global, factory) {
       typeof exports === "object" && typeof module2 !== "undefined" ? module2.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.moment = factory();
     })(exports, function() {
@@ -249,7 +253,7 @@ var require_moment = __commonJS({
         copyConfig(this, config);
         this._d = new Date(config._d != null ? config._d.getTime() : NaN);
         if (!this.isValid()) {
-          this._d = new Date(NaN);
+          this._d = /* @__PURE__ */ new Date(NaN);
         }
         if (updateInProgress === false) {
           updateInProgress = true;
@@ -288,7 +292,9 @@ var require_moment = __commonJS({
               }
               args.push(arg);
             }
-            warn(msg + "\nArguments: " + Array.prototype.slice.call(args).join("") + "\n" + new Error().stack);
+            warn(
+              msg + "\nArguments: " + Array.prototype.slice.call(args).join("") + "\n" + new Error().stack
+            );
             firstTime = false;
           }
           return fn.apply(this, arguments);
@@ -322,7 +328,9 @@ var require_moment = __commonJS({
           }
         }
         this._config = config;
-        this._dayOfMonthOrdinalParseLenient = new RegExp((this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source);
+        this._dayOfMonthOrdinalParseLenient = new RegExp(
+          (this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source
+        );
       }
       function mergeConfigs(parentConfig, childConfig) {
         var res = extend({}, parentConfig), prop;
@@ -399,7 +407,10 @@ var require_moment = __commonJS({
         }
         if (ordinal2) {
           formatTokenFunctions[ordinal2] = function() {
-            return this.localeData().ordinal(func.apply(this, arguments), token2);
+            return this.localeData().ordinal(
+              func.apply(this, arguments),
+              token2
+            );
           };
         }
       }
@@ -441,7 +452,10 @@ var require_moment = __commonJS({
         }
         localFormattingTokens.lastIndex = 0;
         while (i >= 0 && localFormattingTokens.test(format2)) {
-          format2 = format2.replace(localFormattingTokens, replaceLongDateFormatTokens);
+          format2 = format2.replace(
+            localFormattingTokens,
+            replaceLongDateFormatTokens
+          );
           localFormattingTokens.lastIndex = 0;
           i -= 1;
         }
@@ -611,9 +625,14 @@ var require_moment = __commonJS({
         return regexes[token2](config._strict, config._locale);
       }
       function unescapeFormat(s) {
-        return regexEscape(s.replace("\\", "").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g, function(matched, p1, p2, p3, p4) {
-          return p1 || p2 || p3 || p4;
-        }));
+        return regexEscape(
+          s.replace("\\", "").replace(
+            /\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,
+            function(matched, p1, p2, p3, p4) {
+              return p1 || p2 || p3 || p4;
+            }
+          )
+        );
       }
       function regexEscape(s) {
         return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
@@ -839,7 +858,9 @@ var require_moment = __commonJS({
           getParsingFlags(config).invalidMonth = input;
         }
       });
-      var defaultLocaleMonths = "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), defaultLocaleMonthsShort = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"), MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/, defaultMonthsShortRegex = matchWord, defaultMonthsRegex = matchWord;
+      var defaultLocaleMonths = "January_February_March_April_May_June_July_August_September_October_November_December".split(
+        "_"
+      ), defaultLocaleMonthsShort = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"), MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/, defaultMonthsShortRegex = matchWord, defaultMonthsRegex = matchWord;
       function localeMonths(m, format2) {
         if (!m) {
           return isArray(this._months) ? this._months : this._months["standalone"];
@@ -860,7 +881,10 @@ var require_moment = __commonJS({
           this._shortMonthsParse = [];
           for (i = 0; i < 12; ++i) {
             mom = createUTC([2e3, i]);
-            this._shortMonthsParse[i] = this.monthsShort(mom, "").toLocaleLowerCase();
+            this._shortMonthsParse[i] = this.monthsShort(
+              mom,
+              ""
+            ).toLocaleLowerCase();
             this._longMonthsParse[i] = this.months(mom, "").toLocaleLowerCase();
           }
         }
@@ -903,8 +927,14 @@ var require_moment = __commonJS({
         for (i = 0; i < 12; i++) {
           mom = createUTC([2e3, i]);
           if (strict && !this._longMonthsParse[i]) {
-            this._longMonthsParse[i] = new RegExp("^" + this.months(mom, "").replace(".", "") + "$", "i");
-            this._shortMonthsParse[i] = new RegExp("^" + this.monthsShort(mom, "").replace(".", "") + "$", "i");
+            this._longMonthsParse[i] = new RegExp(
+              "^" + this.months(mom, "").replace(".", "") + "$",
+              "i"
+            );
+            this._shortMonthsParse[i] = new RegExp(
+              "^" + this.monthsShort(mom, "").replace(".", "") + "$",
+              "i"
+            );
           }
           if (!strict && !this._monthsParse[i]) {
             regex = "^" + this.months(mom, "") + "|^" + this.monthsShort(mom, "");
@@ -1003,8 +1033,14 @@ var require_moment = __commonJS({
         mixedPieces.sort(cmpLenRev);
         this._monthsRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._monthsShortRegex = this._monthsRegex;
-        this._monthsStrictRegex = new RegExp("^(" + longPieces.join("|") + ")", "i");
-        this._monthsShortStrictRegex = new RegExp("^(" + shortPieces.join("|") + ")", "i");
+        this._monthsStrictRegex = new RegExp(
+          "^(" + longPieces.join("|") + ")",
+          "i"
+        );
+        this._monthsShortStrictRegex = new RegExp(
+          "^(" + shortPieces.join("|") + ")",
+          "i"
+        );
       }
       function createDate(y, m, d, h, M, s, ms) {
         var date;
@@ -1080,15 +1116,20 @@ var require_moment = __commonJS({
       addRegexToken("ww", match1to2, match2);
       addRegexToken("W", match1to2, match1to2NoLeadingZero);
       addRegexToken("WW", match1to2, match2);
-      addWeekParseToken(["w", "ww", "W", "WW"], function(input, week, config, token2) {
-        week[token2.substr(0, 1)] = toInt(input);
-      });
+      addWeekParseToken(
+        ["w", "ww", "W", "WW"],
+        function(input, week, config, token2) {
+          week[token2.substr(0, 1)] = toInt(input);
+        }
+      );
       function localeWeek(mom) {
         return weekOfYear(mom, this._week.dow, this._week.doy).week;
       }
       var defaultLocaleWeek = {
         dow: 0,
+        // Sunday is the first day of the week.
         doy: 6
+        // The week that contains Jan 6th is the first week of the year.
       };
       function localeFirstDayOfWeek() {
         return this._week.dow;
@@ -1180,8 +1221,14 @@ var require_moment = __commonJS({
           this._minWeekdaysParse = [];
           for (i = 0; i < 7; ++i) {
             mom = createUTC([2e3, 1]).day(i);
-            this._minWeekdaysParse[i] = this.weekdaysMin(mom, "").toLocaleLowerCase();
-            this._shortWeekdaysParse[i] = this.weekdaysShort(mom, "").toLocaleLowerCase();
+            this._minWeekdaysParse[i] = this.weekdaysMin(
+              mom,
+              ""
+            ).toLocaleLowerCase();
+            this._shortWeekdaysParse[i] = this.weekdaysShort(
+              mom,
+              ""
+            ).toLocaleLowerCase();
             this._weekdaysParse[i] = this.weekdays(mom, "").toLocaleLowerCase();
           }
         }
@@ -1247,9 +1294,18 @@ var require_moment = __commonJS({
         for (i = 0; i < 7; i++) {
           mom = createUTC([2e3, 1]).day(i);
           if (strict && !this._fullWeekdaysParse[i]) {
-            this._fullWeekdaysParse[i] = new RegExp("^" + this.weekdays(mom, "").replace(".", "\\.?") + "$", "i");
-            this._shortWeekdaysParse[i] = new RegExp("^" + this.weekdaysShort(mom, "").replace(".", "\\.?") + "$", "i");
-            this._minWeekdaysParse[i] = new RegExp("^" + this.weekdaysMin(mom, "").replace(".", "\\.?") + "$", "i");
+            this._fullWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdays(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
+            this._shortWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdaysShort(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
+            this._minWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdaysMin(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
           }
           if (!this._weekdaysParse[i]) {
             regex = "^" + this.weekdays(mom, "") + "|^" + this.weekdaysShort(mom, "") + "|^" + this.weekdaysMin(mom, "");
@@ -1371,9 +1427,18 @@ var require_moment = __commonJS({
         this._weekdaysRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._weekdaysShortRegex = this._weekdaysRegex;
         this._weekdaysMinRegex = this._weekdaysRegex;
-        this._weekdaysStrictRegex = new RegExp("^(" + longPieces.join("|") + ")", "i");
-        this._weekdaysShortStrictRegex = new RegExp("^(" + shortPieces.join("|") + ")", "i");
-        this._weekdaysMinStrictRegex = new RegExp("^(" + minPieces.join("|") + ")", "i");
+        this._weekdaysStrictRegex = new RegExp(
+          "^(" + longPieces.join("|") + ")",
+          "i"
+        );
+        this._weekdaysShortStrictRegex = new RegExp(
+          "^(" + shortPieces.join("|") + ")",
+          "i"
+        );
+        this._weekdaysMinStrictRegex = new RegExp(
+          "^(" + minPieces.join("|") + ")",
+          "i"
+        );
       }
       function hFormat() {
         return this.hours() % 12 || 12;
@@ -1398,7 +1463,11 @@ var require_moment = __commonJS({
       });
       function meridiem(token2, lowercase) {
         addFormatToken(token2, 0, 0, function() {
-          return this.localeData().meridiem(this.hours(), this.minutes(), lowercase);
+          return this.localeData().meridiem(
+            this.hours(),
+            this.minutes(),
+            lowercase
+          );
         });
       }
       meridiem("a", true);
@@ -1544,7 +1613,9 @@ var require_moment = __commonJS({
             globalLocale = data;
           } else {
             if (typeof console !== "undefined" && console.warn) {
-              console.warn("Locale " + key + " not found. Did you forget to load it?");
+              console.warn(
+                "Locale " + key + " not found. Did you forget to load it?"
+              );
             }
           }
         }
@@ -1555,7 +1626,10 @@ var require_moment = __commonJS({
           var locale3, parentConfig = baseConfig;
           config.abbr = name;
           if (locales[name] != null) {
-            deprecateSimple("defineLocaleOverride", "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.");
+            deprecateSimple(
+              "defineLocaleOverride",
+              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."
+            );
             parentConfig = locales[name]._config;
           } else if (config.parentLocale != null) {
             if (locales[config.parentLocale] != null) {
@@ -1767,7 +1841,11 @@ var require_moment = __commonJS({
       }
       function checkWeekday(weekdayStr, parsedInput, config) {
         if (weekdayStr) {
-          var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr), weekdayActual = new Date(parsedInput[0], parsedInput[1], parsedInput[2]).getDay();
+          var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr), weekdayActual = new Date(
+            parsedInput[0],
+            parsedInput[1],
+            parsedInput[2]
+          ).getDay();
           if (weekdayProvided !== weekdayActual) {
             getParsingFlags(config).weekdayMismatch = true;
             config._isValid = false;
@@ -1789,7 +1867,14 @@ var require_moment = __commonJS({
       function configFromRFC2822(config) {
         var match = rfc2822.exec(preprocessRFC2822(config._i)), parsedArray;
         if (match) {
-          parsedArray = extractFromRFC2822Strings(match[4], match[3], match[2], match[5], match[6], match[7]);
+          parsedArray = extractFromRFC2822Strings(
+            match[4],
+            match[3],
+            match[2],
+            match[5],
+            match[6],
+            match[7]
+          );
           if (!checkWeekday(match[1], parsedArray, config)) {
             return;
           }
@@ -1805,7 +1890,7 @@ var require_moment = __commonJS({
       function configFromString(config) {
         var matched = aspNetJsonRegex.exec(config._i);
         if (matched !== null) {
-          config._d = new Date(+matched[1]);
+          config._d = /* @__PURE__ */ new Date(+matched[1]);
           return;
         }
         configFromISO(config);
@@ -1826,9 +1911,12 @@ var require_moment = __commonJS({
           hooks.createFromInputFallback(config);
         }
       }
-      hooks.createFromInputFallback = deprecate("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", function(config) {
-        config._d = new Date(config._i + (config._useUTC ? " UTC" : ""));
-      });
+      hooks.createFromInputFallback = deprecate(
+        "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",
+        function(config) {
+          config._d = /* @__PURE__ */ new Date(config._i + (config._useUTC ? " UTC" : ""));
+        }
+      );
       function defaults(a, b, c) {
         if (a != null) {
           return a;
@@ -1877,7 +1965,10 @@ var require_moment = __commonJS({
           config._nextDay = true;
           config._a[HOUR] = 0;
         }
-        config._d = (config._useUTC ? createUTCDate : createDate).apply(null, input);
+        config._d = (config._useUTC ? createUTCDate : createDate).apply(
+          null,
+          input
+        );
         expectedWeekday = config._useUTC ? config._d.getUTCDay() : config._d.getDay();
         if (config._tzm != null) {
           config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
@@ -1895,7 +1986,11 @@ var require_moment = __commonJS({
         if (w.GG != null || w.W != null || w.E != null) {
           dow = 1;
           doy = 4;
-          weekYear = defaults(w.GG, config._a[YEAR], weekOfYear(createLocal(), 1, 4).year);
+          weekYear = defaults(
+            w.GG,
+            config._a[YEAR],
+            weekOfYear(createLocal(), 1, 4).year
+          );
           week = defaults(w.W, 1);
           weekday = defaults(w.E, 1);
           if (weekday < 1 || weekday > 7) {
@@ -1957,7 +2052,9 @@ var require_moment = __commonJS({
             if (skipped.length > 0) {
               getParsingFlags(config).unusedInput.push(skipped);
             }
-            string = string.slice(string.indexOf(parsedInput) + parsedInput.length);
+            string = string.slice(
+              string.indexOf(parsedInput) + parsedInput.length
+            );
             totalParsedInputLength += parsedInput.length;
           }
           if (formatTokenFunctions[token2]) {
@@ -1980,7 +2077,11 @@ var require_moment = __commonJS({
         }
         getParsingFlags(config).parsedDateParts = config._a.slice(0);
         getParsingFlags(config).meridiem = config._meridiem;
-        config._a[HOUR] = meridiemFixWrap(config._locale, config._a[HOUR], config._meridiem);
+        config._a[HOUR] = meridiemFixWrap(
+          config._locale,
+          config._a[HOUR],
+          config._meridiem
+        );
         era = getParsingFlags(config).era;
         if (era !== null) {
           config._a[YEAR] = config._locale.erasConvertYear(era, config._a[YEAR]);
@@ -2012,7 +2113,7 @@ var require_moment = __commonJS({
         var tempConfig, bestMoment, scoreToBeat, i, currentScore, validFormatFound, bestFormatIsValid = false, configfLen = config._f.length;
         if (configfLen === 0) {
           getParsingFlags(config).invalidFormat = true;
-          config._d = new Date(NaN);
+          config._d = /* @__PURE__ */ new Date(NaN);
           return;
         }
         for (i = 0; i < configfLen; i++) {
@@ -2052,9 +2153,12 @@ var require_moment = __commonJS({
           return;
         }
         var i = normalizeObjectUnits(config._i), dayOrDate = i.day === void 0 ? i.date : i.day;
-        config._a = map([i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond], function(obj) {
-          return obj && parseInt(obj, 10);
-        });
+        config._a = map(
+          [i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond],
+          function(obj) {
+            return obj && parseInt(obj, 10);
+          }
+        );
         configFromArray(config);
       }
       function createFromConfig(config) {
@@ -2135,21 +2239,27 @@ var require_moment = __commonJS({
       function createLocal(input, format2, locale3, strict) {
         return createLocalOrUTC(input, format2, locale3, strict, false);
       }
-      var prototypeMin = deprecate("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
-        var other = createLocal.apply(null, arguments);
-        if (this.isValid() && other.isValid()) {
-          return other < this ? this : other;
-        } else {
-          return createInvalid();
+      var prototypeMin = deprecate(
+        "moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/",
+        function() {
+          var other = createLocal.apply(null, arguments);
+          if (this.isValid() && other.isValid()) {
+            return other < this ? this : other;
+          } else {
+            return createInvalid();
+          }
         }
-      }), prototypeMax = deprecate("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
-        var other = createLocal.apply(null, arguments);
-        if (this.isValid() && other.isValid()) {
-          return other > this ? this : other;
-        } else {
-          return createInvalid();
+      ), prototypeMax = deprecate(
+        "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",
+        function() {
+          var other = createLocal.apply(null, arguments);
+          if (this.isValid() && other.isValid()) {
+            return other > this ? this : other;
+          } else {
+            return createInvalid();
+          }
         }
-      });
+      );
       function pickBy(fn, moments) {
         var res, i;
         if (moments.length === 1 && isArray(moments[0])) {
@@ -2175,7 +2285,7 @@ var require_moment = __commonJS({
         return pickBy("isAfter", args);
       }
       var now = function() {
-        return Date.now ? Date.now() : +new Date();
+        return Date.now ? Date.now() : +/* @__PURE__ */ new Date();
       };
       var ordering = [
         "year",
@@ -2216,7 +2326,9 @@ var require_moment = __commonJS({
       function Duration(duration) {
         var normalizedInput = normalizeObjectUnits(duration), years2 = normalizedInput.year || 0, quarters = normalizedInput.quarter || 0, months2 = normalizedInput.month || 0, weeks2 = normalizedInput.week || normalizedInput.isoWeek || 0, days2 = normalizedInput.day || 0, hours2 = normalizedInput.hour || 0, minutes2 = normalizedInput.minute || 0, seconds2 = normalizedInput.second || 0, milliseconds2 = normalizedInput.millisecond || 0;
         this._isValid = isDurationValid(normalizedInput);
-        this._milliseconds = +milliseconds2 + seconds2 * 1e3 + minutes2 * 6e4 + hours2 * 1e3 * 60 * 60;
+        this._milliseconds = +milliseconds2 + seconds2 * 1e3 + // 1000
+        minutes2 * 6e4 + // 1000 * 60
+        hours2 * 1e3 * 60 * 60;
         this._days = +days2 + weeks2 * 7;
         this._months = +months2 + quarters * 3 + years2 * 12;
         this._data = {};
@@ -2312,7 +2424,12 @@ var require_moment = __commonJS({
           }
           if (offset2 !== input) {
             if (!keepLocalTime || this._changeInProgress) {
-              addSubtract(this, createDuration(input - offset2, "m"), 1, false);
+              addSubtract(
+                this,
+                createDuration(input - offset2, "m"),
+                1,
+                false
+              );
             } else if (!this._changeInProgress) {
               this._changeInProgress = true;
               hooks.updateOffset(this, true);
@@ -2420,6 +2537,7 @@ var require_moment = __commonJS({
             m: toInt(match[MINUTE]) * sign2,
             s: toInt(match[SECOND]) * sign2,
             ms: toInt(absRound(match[MILLISECOND] * 1e3)) * sign2
+            // the millisecond decimal point is included in the match
           };
         } else if (match = isoRegex.exec(input)) {
           sign2 = match[1] === "-" ? -1 : 1;
@@ -2435,7 +2553,10 @@ var require_moment = __commonJS({
         } else if (duration == null) {
           duration = {};
         } else if (typeof duration === "object" && ("from" in duration || "to" in duration)) {
-          diffRes = momentsDifference(createLocal(duration.from), createLocal(duration.to));
+          diffRes = momentsDifference(
+            createLocal(duration.from),
+            createLocal(duration.to)
+          );
           duration = {};
           duration.ms = diffRes.milliseconds;
           duration.M = diffRes.months;
@@ -2483,7 +2604,10 @@ var require_moment = __commonJS({
         return function(val, period) {
           var dur, tmp;
           if (period !== null && !isNaN(+period)) {
-            deprecateSimple(name, "moment()." + name + "(period, number) is deprecated. Please use moment()." + name + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.");
+            deprecateSimple(
+              name,
+              "moment()." + name + "(period, number) is deprecated. Please use moment()." + name + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+            );
             tmp = val;
             val = period;
             period = tmp;
@@ -2594,7 +2718,9 @@ var require_moment = __commonJS({
           }
         }
         var now2 = time || createLocal(), sod = cloneWithOffset(now2, this).startOf("day"), format2 = hooks.calendarFormat(this, sod) || "sameElse", output = formats && (isFunction(formats[format2]) ? formats[format2].call(this, now2) : formats[format2]);
-        return this.format(output || this.localeData().calendar(format2, this, createLocal(now2)));
+        return this.format(
+          output || this.localeData().calendar(format2, this, createLocal(now2))
+        );
       }
       function clone() {
         return new Moment(this);
@@ -2716,7 +2842,10 @@ var require_moment = __commonJS({
         }
         var utc = keepOffset !== true, m = utc ? this.clone().utc() : this;
         if (m.year() < 0 || m.year() > 9999) {
-          return formatMoment(m, utc ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ");
+          return formatMoment(
+            m,
+            utc ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"
+          );
         }
         if (isFunction(Date.prototype.toISOString)) {
           if (utc) {
@@ -2725,7 +2854,10 @@ var require_moment = __commonJS({
             return new Date(this.valueOf() + this.utcOffset() * 60 * 1e3).toISOString().replace("Z", formatMoment(m, "Z"));
           }
         }
-        return formatMoment(m, utc ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ");
+        return formatMoment(
+          m,
+          utc ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ"
+        );
       }
       function inspect() {
         if (!this.isValid()) {
@@ -2781,13 +2913,16 @@ var require_moment = __commonJS({
           return this;
         }
       }
-      var lang = deprecate("moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.", function(key) {
-        if (key === void 0) {
-          return this.localeData();
-        } else {
-          return this.locale(key);
+      var lang = deprecate(
+        "moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",
+        function(key) {
+          if (key === void 0) {
+            return this.localeData();
+          } else {
+            return this.locale(key);
+          }
         }
-      });
+      );
       function localeData() {
         return this._locale;
       }
@@ -2821,16 +2956,28 @@ var require_moment = __commonJS({
             time = startOfDate(this.year(), 0, 1);
             break;
           case "quarter":
-            time = startOfDate(this.year(), this.month() - this.month() % 3, 1);
+            time = startOfDate(
+              this.year(),
+              this.month() - this.month() % 3,
+              1
+            );
             break;
           case "month":
             time = startOfDate(this.year(), this.month(), 1);
             break;
           case "week":
-            time = startOfDate(this.year(), this.month(), this.date() - this.weekday());
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - this.weekday()
+            );
             break;
           case "isoWeek":
-            time = startOfDate(this.year(), this.month(), this.date() - (this.isoWeekday() - 1));
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - (this.isoWeekday() - 1)
+            );
             break;
           case "day":
           case "date":
@@ -2838,7 +2985,10 @@ var require_moment = __commonJS({
             break;
           case "hour":
             time = this._d.valueOf();
-            time -= mod$1(time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE), MS_PER_HOUR);
+            time -= mod$1(
+              time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+              MS_PER_HOUR
+            );
             break;
           case "minute":
             time = this._d.valueOf();
@@ -2865,16 +3015,28 @@ var require_moment = __commonJS({
             time = startOfDate(this.year() + 1, 0, 1) - 1;
             break;
           case "quarter":
-            time = startOfDate(this.year(), this.month() - this.month() % 3 + 3, 1) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month() - this.month() % 3 + 3,
+              1
+            ) - 1;
             break;
           case "month":
             time = startOfDate(this.year(), this.month() + 1, 1) - 1;
             break;
           case "week":
-            time = startOfDate(this.year(), this.month(), this.date() - this.weekday() + 7) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - this.weekday() + 7
+            ) - 1;
             break;
           case "isoWeek":
-            time = startOfDate(this.year(), this.month(), this.date() - (this.isoWeekday() - 1) + 7) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - (this.isoWeekday() - 1) + 7
+            ) - 1;
             break;
           case "day":
           case "date":
@@ -2882,7 +3044,10 @@ var require_moment = __commonJS({
             break;
           case "hour":
             time = this._d.valueOf();
-            time += MS_PER_HOUR - mod$1(time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE), MS_PER_HOUR) - 1;
+            time += MS_PER_HOUR - mod$1(
+              time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+              MS_PER_HOUR
+            ) - 1;
             break;
           case "minute":
             time = this._d.valueOf();
@@ -2965,14 +3130,17 @@ var require_moment = __commonJS({
       addRegexToken("NNN", matchEraAbbr);
       addRegexToken("NNNN", matchEraName);
       addRegexToken("NNNNN", matchEraNarrow);
-      addParseToken(["N", "NN", "NNN", "NNNN", "NNNNN"], function(input, array, config, token2) {
-        var era = config._locale.erasParse(input, token2, config._strict);
-        if (era) {
-          getParsingFlags(config).era = era;
-        } else {
-          getParsingFlags(config).invalidEra = input;
+      addParseToken(
+        ["N", "NN", "NNN", "NNNN", "NNNNN"],
+        function(input, array, config, token2) {
+          var era = config._locale.erasParse(input, token2, config._strict);
+          if (era) {
+            getParsingFlags(config).era = era;
+          } else {
+            getParsingFlags(config).invalidEra = input;
+          }
         }
-      });
+      );
       addRegexToken("y", matchUnsigned);
       addRegexToken("yy", matchUnsigned);
       addRegexToken("yyy", matchUnsigned);
@@ -3147,7 +3315,10 @@ var require_moment = __commonJS({
         this._erasRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._erasNameRegex = new RegExp("^(" + namePieces.join("|") + ")", "i");
         this._erasAbbrRegex = new RegExp("^(" + abbrPieces.join("|") + ")", "i");
-        this._erasNarrowRegex = new RegExp("^(" + narrowPieces.join("|") + ")", "i");
+        this._erasNarrowRegex = new RegExp(
+          "^(" + narrowPieces.join("|") + ")",
+          "i"
+        );
       }
       addFormatToken(0, ["gg", 2], 0, function() {
         return this.weekYear() % 100;
@@ -3170,17 +3341,34 @@ var require_moment = __commonJS({
       addRegexToken("gggg", match1to4, match4);
       addRegexToken("GGGGG", match1to6, match6);
       addRegexToken("ggggg", match1to6, match6);
-      addWeekParseToken(["gggg", "ggggg", "GGGG", "GGGGG"], function(input, week, config, token2) {
-        week[token2.substr(0, 2)] = toInt(input);
-      });
+      addWeekParseToken(
+        ["gggg", "ggggg", "GGGG", "GGGGG"],
+        function(input, week, config, token2) {
+          week[token2.substr(0, 2)] = toInt(input);
+        }
+      );
       addWeekParseToken(["gg", "GG"], function(input, week, config, token2) {
         week[token2] = hooks.parseTwoDigitYear(input);
       });
       function getSetWeekYear(input) {
-        return getSetWeekYearHelper.call(this, input, this.week(), this.weekday() + this.localeData()._week.dow, this.localeData()._week.dow, this.localeData()._week.doy);
+        return getSetWeekYearHelper.call(
+          this,
+          input,
+          this.week(),
+          this.weekday() + this.localeData()._week.dow,
+          this.localeData()._week.dow,
+          this.localeData()._week.doy
+        );
       }
       function getSetISOWeekYear(input) {
-        return getSetWeekYearHelper.call(this, input, this.isoWeek(), this.isoWeekday(), 1, 4);
+        return getSetWeekYearHelper.call(
+          this,
+          input,
+          this.isoWeek(),
+          this.isoWeekday(),
+          1,
+          4
+        );
       }
       function getISOWeeksInYear() {
         return weeksInYear(this.year(), 1, 4);
@@ -3241,7 +3429,9 @@ var require_moment = __commonJS({
         config._dayOfYear = toInt(input);
       });
       function getSetDayOfYear(input) {
-        var dayOfYear = Math.round((this.clone().startOf("day") - this.clone().startOf("year")) / 864e5) + 1;
+        var dayOfYear = Math.round(
+          (this.clone().startOf("day") - this.clone().startOf("year")) / 864e5
+        ) + 1;
         return input == null ? dayOfYear : this.add(input - dayOfYear, "d");
       }
       addFormatToken("m", ["mm", 2], 0, "minute");
@@ -3383,11 +3573,26 @@ var require_moment = __commonJS({
       proto.isUTC = isUtc;
       proto.zoneAbbr = getZoneAbbr;
       proto.zoneName = getZoneName;
-      proto.dates = deprecate("dates accessor is deprecated. Use date instead.", getSetDayOfMonth);
-      proto.months = deprecate("months accessor is deprecated. Use month instead", getSetMonth);
-      proto.years = deprecate("years accessor is deprecated. Use year instead", getSetYear);
-      proto.zone = deprecate("moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/", getSetZone);
-      proto.isDSTShifted = deprecate("isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information", isDaylightSavingTimeShifted);
+      proto.dates = deprecate(
+        "dates accessor is deprecated. Use date instead.",
+        getSetDayOfMonth
+      );
+      proto.months = deprecate(
+        "months accessor is deprecated. Use month instead",
+        getSetMonth
+      );
+      proto.years = deprecate(
+        "years accessor is deprecated. Use year instead",
+        getSetYear
+      );
+      proto.zone = deprecate(
+        "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",
+        getSetZone
+      );
+      proto.isDSTShifted = deprecate(
+        "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
+        isDaylightSavingTimeShifted
+      );
       function createUnix(input) {
         return createLocal(input * 1e3);
       }
@@ -3515,8 +3720,14 @@ var require_moment = __commonJS({
           return number + output;
         }
       });
-      hooks.lang = deprecate("moment.lang is deprecated. Use moment.locale instead.", getSetGlobalLocale);
-      hooks.langData = deprecate("moment.langData is deprecated. Use moment.localeData instead.", getLocale);
+      hooks.lang = deprecate(
+        "moment.lang is deprecated. Use moment.locale instead.",
+        getSetGlobalLocale
+      );
+      hooks.langData = deprecate(
+        "moment.langData is deprecated. Use moment.localeData instead.",
+        getLocale
+      );
       var mathAbs = Math.abs;
       function abs() {
         var data = this._data;
@@ -3643,12 +3854,19 @@ var require_moment = __commonJS({
       }
       var round = Math.round, thresholds = {
         ss: 44,
+        // a few seconds to seconds
         s: 45,
+        // seconds to minute
         m: 45,
+        // minutes to hour
         h: 22,
+        // hours to day
         d: 26,
+        // days to month/week
         w: null,
+        // weeks to month
         M: 11
+        // months to year
       };
       function substituteTimeAgo(string, number, withoutSuffix, isFuture, locale3) {
         return locale3.relativeTime(number || 1, !!withoutSuffix, string, isFuture);
@@ -3770,7 +3988,10 @@ var require_moment = __commonJS({
       proto$2.toJSON = toISOString$1;
       proto$2.locale = locale2;
       proto$2.localeData = localeData;
-      proto$2.toIsoString = deprecate("toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)", toISOString$1);
+      proto$2.toIsoString = deprecate(
+        "toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",
+        toISOString$1
+      );
       proto$2.lang = lang;
       addFormatToken("X", 0, 0, "unix");
       addFormatToken("x", 0, 0, "valueOf");
@@ -3813,14 +4034,23 @@ var require_moment = __commonJS({
       hooks.prototype = proto;
       hooks.HTML5_FMT = {
         DATETIME_LOCAL: "YYYY-MM-DDTHH:mm",
+        // <input type="datetime-local" />
         DATETIME_LOCAL_SECONDS: "YYYY-MM-DDTHH:mm:ss",
+        // <input type="datetime-local" step="1" />
         DATETIME_LOCAL_MS: "YYYY-MM-DDTHH:mm:ss.SSS",
+        // <input type="datetime-local" step="0.001" />
         DATE: "YYYY-MM-DD",
+        // <input type="date" />
         TIME: "HH:mm",
+        // <input type="time" />
         TIME_SECONDS: "HH:mm:ss",
+        // <input type="time" step="1" />
         TIME_MS: "HH:mm:ss.SSS",
+        // <input type="time" step="0.001" />
         WEEK: "GGGG-[W]WW",
+        // <input type="week" />
         MONTH: "YYYY-MM"
+        // <input type="month" />
       };
       return hooks;
     });
@@ -3828,16 +4058,18 @@ var require_moment = __commonJS({
 });
 
 // src/index.ts
-__export(exports, {
+var src_exports = {};
+__export(src_exports, {
   default: () => FileCleanerPlugin
 });
-var import_obsidian4 = __toModule(require("obsidian"));
+module.exports = __toCommonJS(src_exports);
+var import_obsidian6 = require("obsidian");
 
 // src/settings.ts
-var import_obsidian2 = __toModule(require("obsidian"));
+var import_obsidian2 = require("obsidian");
 
 // src/i18n.ts
-var moment = __toModule(require_moment());
+var moment = __toESM(require_moment());
 
 // src/locales/en.ts
 var enUS = {
@@ -3872,9 +4104,18 @@ var enUS = {
         Description: "The folders below should be excluded from or included in the cleanup process."
       },
       Attachments: {
-        Label: "Attachment extensions",
-        Description: "Unused attachements which should be cleaned up, the `.*` wildcard can be used to select all extensions. Comma-separated.",
-        Placeholder: "Example:.jpg, .png, .pdf, .*"
+        Excluded: {
+          Label: "Excluded Attachment extensions",
+          Description: "List of extensions that should be ignored during cleanup, all other files are included, the `.*` wildcard can be used to select all extensions. Comma-separated.",
+          Placeholder: "Example:.jpg, .png, .pdf, .*"
+        },
+        Included: {
+          Label: "Included Attachment extensions",
+          Description: "List of extensions that should be included during cleanup, all other files are ignored, the `.*` wildcard can be used to select all extensions. Comma-separated.",
+          Placeholder: "Example:.jpg, .png, .pdf, .*"
+        },
+        Label: "Excluded / Included Extensions",
+        Description: "The attachment extensions below should be excluded from or included in the cleanup process."
       },
       IgnoredFrontmatter: {
         Label: "Ignored frontmatter",
@@ -3973,16 +4214,8 @@ function translate() {
   return LOCALES[systemLocale];
 }
 
-// src/enums.ts
-var Deletion;
-(function(Deletion2) {
-  Deletion2["SystemTrash"] = "system";
-  Deletion2["ObsidianTrash"] = "obsidian";
-  Deletion2["Permanent"] = "permanent";
-})(Deletion || (Deletion = {}));
-
-// src/helpers.ts
-var import_obsidian = __toModule(require("obsidian"));
+// src/modals.ts
+var import_obsidian = require("obsidian");
 var ConfirmationModal = class extends import_obsidian.Modal {
   constructor(app, title, content, onConfirm) {
     super(app);
@@ -4015,9 +4248,14 @@ function DeletionConfirmationModal({
   files: filesAndFolders,
   onConfirm
 }) {
-  const modal = new ConfirmationModal(app, translate().Modals.DeletionConfirmation.Title, createEl("p", {
-    text: translate().Modals.DeletionConfirmation.Text
-  }), onConfirm);
+  const modal = new ConfirmationModal(
+    app,
+    translate().Modals.DeletionConfirmation.Title,
+    createEl("p", {
+      text: translate().Modals.DeletionConfirmation.Text
+    }),
+    onConfirm
+  );
   const files = filesAndFolders.filter((file) => file instanceof import_obsidian.TFile);
   if (files.length > 0) {
     modal.content.createEl("p", {
@@ -4050,20 +4288,26 @@ function ResetSettingsModal({
   app,
   onConfirm
 }) {
-  const modal = new ConfirmationModal(app, translate().Modals.ResetSettings.Title, createEl("p", { text: translate().Modals.ResetSettings.Text }), onConfirm);
+  const modal = new ConfirmationModal(
+    app,
+    translate().Modals.ResetSettings.Title,
+    createEl("p", { text: translate().Modals.ResetSettings.Text }),
+    onConfirm
+  );
   modal.open();
 }
 
 // src/settings.ts
-var ExcludeInclude;
-(function(ExcludeInclude2) {
+var ExcludeInclude = ((ExcludeInclude2) => {
   ExcludeInclude2[ExcludeInclude2["Exclude"] = Number(false)] = "Exclude";
   ExcludeInclude2[ExcludeInclude2["Include"] = Number(true)] = "Include";
-})(ExcludeInclude || (ExcludeInclude = {}));
+  return ExcludeInclude2;
+})(ExcludeInclude || {});
 var DEFAULT_SETTINGS = {
-  deletionDestination: Deletion.SystemTrash,
+  deletionDestination: "system" /* SystemTrash */,
   excludeInclude: ExcludeInclude.Exclude,
   excludedFolders: [],
+  attachmentsExcludeInclude: ExcludeInclude.Include,
   attachmentExtensions: [],
   deletionConfirmation: true,
   runOnStartup: false,
@@ -4078,56 +4322,104 @@ var FileCleanerSettingTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     this.containerEl.empty();
-    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.CleanedFiles.Label).setDesc(translate().Settings.RegularOptions.CleanedFiles.Description).addDropdown((dropdown) => dropdown.addOption("system", translate().Settings.RegularOptions.CleanedFiles.Options.MoveToSystemTrash).addOption("obsidian", translate().Settings.RegularOptions.CleanedFiles.Options.MoveToObsidianTrash).addOption("permanent", translate().Settings.RegularOptions.CleanedFiles.Options.PermanentDelete).setValue(this.plugin.settings.deletionDestination).onChange((value) => {
-      switch (value) {
-        case Deletion.Permanent:
-          this.plugin.settings.deletionDestination = Deletion.Permanent;
-          break;
-        case Deletion.ObsidianTrash:
-          this.plugin.settings.deletionDestination = Deletion.ObsidianTrash;
-          break;
-        default:
-        case Deletion.SystemTrash:
-          this.plugin.settings.deletionDestination = Deletion.SystemTrash;
-          break;
-      }
-      this.plugin.saveSettings();
-    }));
+    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.CleanedFiles.Label).setDesc(translate().Settings.RegularOptions.CleanedFiles.Description).addDropdown(
+      (dropdown) => dropdown.addOption(
+        "system",
+        translate().Settings.RegularOptions.CleanedFiles.Options.MoveToSystemTrash
+      ).addOption(
+        "obsidian",
+        translate().Settings.RegularOptions.CleanedFiles.Options.MoveToObsidianTrash
+      ).addOption(
+        "permanent",
+        translate().Settings.RegularOptions.CleanedFiles.Options.PermanentDelete
+      ).setValue(this.plugin.settings.deletionDestination).onChange((value) => {
+        switch (value) {
+          case "permanent" /* Permanent */:
+            this.plugin.settings.deletionDestination = "permanent" /* Permanent */;
+            break;
+          case "obsidian" /* ObsidianTrash */:
+            this.plugin.settings.deletionDestination = "obsidian" /* ObsidianTrash */;
+            break;
+          default:
+          case "system" /* SystemTrash */:
+            this.plugin.settings.deletionDestination = "system" /* SystemTrash */;
+            break;
+        }
+        this.plugin.saveSettings();
+      })
+    );
     new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.FolderFiltering.Label).setDesc(translate().Settings.RegularOptions.FolderFiltering.Description).addToggle((toggle) => {
       toggle.setValue(Boolean(this.plugin.settings.excludeInclude));
       toggle.onChange((value) => {
         this.plugin.settings.excludeInclude = Number(value);
+        this.plugin.saveSettings();
         this.display();
       });
     });
-    new import_obsidian2.Setting(containerEl).setName(this.plugin.settings.excludeInclude ? translate().Settings.RegularOptions.FolderFiltering.Included.Label : translate().Settings.RegularOptions.FolderFiltering.Excluded.Label).setDesc(this.plugin.settings.excludeInclude ? translate().Settings.RegularOptions.FolderFiltering.Included.Description : translate().Settings.RegularOptions.FolderFiltering.Excluded.Description).addTextArea((text) => {
+    new import_obsidian2.Setting(containerEl).setName(
+      this.plugin.settings.excludeInclude ? translate().Settings.RegularOptions.FolderFiltering.Included.Label : translate().Settings.RegularOptions.FolderFiltering.Excluded.Label
+    ).setDesc(
+      this.plugin.settings.excludeInclude ? translate().Settings.RegularOptions.FolderFiltering.Included.Description : translate().Settings.RegularOptions.FolderFiltering.Excluded.Description
+    ).addTextArea((text) => {
       text.setValue(this.plugin.settings.excludedFolders.join("\n")).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.excludedFolders = value.split(/\n/).map((ext) => ext.trim()).filter((ext) => ext !== "");
         this.plugin.saveSettings();
       }));
-      text.setPlaceholder(translate().Settings.RegularOptions.FolderFiltering.Placeholder);
-      text.inputEl.rows = 8;
-      text.inputEl.cols = 30;
+      text.setPlaceholder(
+        translate().Settings.RegularOptions.FolderFiltering.Placeholder
+      );
+      text.inputEl.style.minWidth = "18rem";
+      text.inputEl.style.maxWidth = "18rem";
+      text.inputEl.style.minHeight = "8rem";
+      text.inputEl.style.maxHeight = "16rem";
     });
-    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.Attachments.Label).setDesc(translate().Settings.RegularOptions.Attachments.Description).addTextArea((text) => {
-      text.setValue(this.plugin.settings.attachmentExtensions.map((ext) => `.${ext}`).join(", ")).onChange((value) => __async(this, null, function* () {
+    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.Attachments.Label).setDesc(translate().Settings.RegularOptions.Attachments.Description).addToggle((toggle) => {
+      toggle.setValue(
+        Boolean(this.plugin.settings.attachmentsExcludeInclude)
+      );
+      toggle.onChange((value) => {
+        this.plugin.settings.attachmentsExcludeInclude = Number(value);
+        this.plugin.saveSettings();
+        this.display();
+      });
+    });
+    new import_obsidian2.Setting(containerEl).setName(
+      this.plugin.settings.attachmentsExcludeInclude ? translate().Settings.RegularOptions.Attachments.Included.Label : translate().Settings.RegularOptions.Attachments.Excluded.Label
+    ).setDesc(
+      this.plugin.settings.attachmentsExcludeInclude ? translate().Settings.RegularOptions.Attachments.Included.Description : translate().Settings.RegularOptions.Attachments.Excluded.Description
+    ).addTextArea((text) => {
+      text.setValue(
+        this.plugin.settings.attachmentExtensions.map((ext) => `.${ext}`).join(", ")
+      ).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.attachmentExtensions = value.split(",").map((ext) => ext.trim()).filter((ext) => ext.startsWith(".") && ext.length > 1).filter((ext) => ext !== "").map((ext) => ext.replace(/^\./, ""));
         this.plugin.saveSettings();
       }));
-      text.setPlaceholder(translate().Settings.RegularOptions.Attachments.Placeholder);
-      text.inputEl.rows = 3;
-      text.inputEl.cols = 30;
+      text.setPlaceholder(
+        this.plugin.settings.attachmentsExcludeInclude ? translate().Settings.RegularOptions.Attachments.Included.Placeholder : translate().Settings.RegularOptions.Attachments.Excluded.Placeholder
+      );
+      text.inputEl.style.minWidth = "18rem";
+      text.inputEl.style.maxWidth = "18rem";
+      text.inputEl.style.minHeight = "4rem";
+      text.inputEl.style.maxHeight = "8rem";
     });
-    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.IgnoredFrontmatter.Label).setDesc(translate().Settings.RegularOptions.IgnoredFrontmatter.Description).addTextArea((text) => {
+    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.IgnoredFrontmatter.Label).setDesc(
+      translate().Settings.RegularOptions.IgnoredFrontmatter.Description
+    ).addTextArea((text) => {
       text.setValue(this.plugin.settings.ignoredFrontmatter.join(", ")).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.ignoredFrontmatter = value.split(",").map((ext) => ext.trim()).filter((ext) => ext.length > 1 && ext !== "");
         this.plugin.saveSettings();
       }));
-      text.setPlaceholder(translate().Settings.RegularOptions.IgnoredFrontmatter.Placeholder);
-      text.inputEl.rows = 4;
-      text.inputEl.cols = 30;
+      text.setPlaceholder(
+        translate().Settings.RegularOptions.IgnoredFrontmatter.Placeholder
+      );
+      text.inputEl.style.minWidth = "18rem";
+      text.inputEl.style.maxWidth = "18rem";
+      text.inputEl.style.minHeight = "4rem";
+      text.inputEl.style.maxHeight = "12rem";
     });
-    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.PreviewDeletedFiles.Label).setDesc(translate().Settings.RegularOptions.PreviewDeletedFiles.Description).addToggle((toggle) => {
+    new import_obsidian2.Setting(containerEl).setName(translate().Settings.RegularOptions.PreviewDeletedFiles.Label).setDesc(
+      translate().Settings.RegularOptions.PreviewDeletedFiles.Description
+    ).addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.deletionConfirmation);
       toggle.onChange((value) => {
         this.plugin.settings.deletionConfirmation = value;
@@ -4169,17 +4461,20 @@ var FileCleanerSettingTab = class extends import_obsidian2.PluginSettingTab {
 };
 
 // src/util.ts
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian5 = require("obsidian");
+
+// src/helpers/helpers.ts
+var import_obsidian3 = require("obsidian");
 function removeFile(file, app, settings) {
   return __async(this, null, function* () {
     switch (settings.deletionDestination) {
-      case Deletion.Permanent:
-        yield app.vault.delete(file);
+      case "permanent" /* Permanent */:
+        yield app.vault.delete(file, true);
         break;
-      case Deletion.SystemTrash:
+      case "system" /* SystemTrash */:
         yield app.vault.trash(file, true);
         break;
-      case Deletion.ObsidianTrash:
+      case "obsidian" /* ObsidianTrash */:
         yield app.vault.trash(file, false);
         break;
     }
@@ -4198,130 +4493,242 @@ function removeFiles(files, app, settings) {
   });
 }
 function getInUseAttachments(app) {
-  return Object.entries(app.metadataCache.resolvedLinks).map(([parent, child]) => Object.keys(child)).filter((file) => file.length > 0).reduce((prev, cur) => [...prev, ...cur], []).filter((file) => !file.endsWith(".md"));
+  return Object.values(app.metadataCache.resolvedLinks).map((child) => Object.keys(child)).filter((file) => file.length > 0).reduce((prev, cur) => [...prev, ...cur], []).filter((file) => !file.endsWith(".md"));
 }
+function getFolders(app) {
+  return app.vault.getAllLoadedFiles().filter(
+    (node) => Object.prototype.hasOwnProperty.call(node, "children")
+  );
+}
+function getFilesInFolder(folder) {
+  return folder.children.filter(
+    (node) => !Object.prototype.hasOwnProperty.call(node, "children")
+  );
+}
+function getSubFoldersInFolder(folder) {
+  return folder.children.filter(
+    (node) => Object.prototype.hasOwnProperty.call(node, "children")
+  );
+}
+function getExtensions(settings) {
+  const extensions = [...settings.attachmentExtensions].filter(
+    (extension) => extension !== "*"
+  );
+  if (settings.attachmentExtensions.includes("*")) extensions.push(".*");
+  return RegExp(`^(${["md", ...extensions].join("|")})$`);
+}
+
+// src/helpers/markdown.ts
+function checkMarkdown(file, app, settings) {
+  return __async(this, null, function* () {
+    if (file.extension !== "md") return false;
+    if (file.stat.size === 0) return true;
+    const content = yield app.vault.cachedRead(file);
+    if (content.trim().length === 0) return true;
+    const fileCache = app.metadataCache.getFileCache(file);
+    if (fileCache.sections.length === 1 && fileCache.frontmatter) {
+      const frontmatterKeys = Object.keys(fileCache.frontmatter);
+      return frontmatterKeys.every(
+        (frontmatterKey) => settings.ignoredFrontmatter.contains(frontmatterKey)
+      );
+    }
+    return false;
+  });
+}
+
+// src/helpers/canvas.ts
+var import_obsidian4 = require("obsidian");
 function getCanvasCardAttachments(canvasNode) {
   const matches = canvasNode.text.matchAll(/[!]?\[\[(.*?)\]\]/g);
   const files = Array.from(matches).map((file) => {
-    if (file[0].startsWith("![["))
-      return file[1];
-    else
-      return `${file[1]}.md`;
+    if (file[0].startsWith("![[")) return file[1];
+    else return `${file[1]}.md`;
   });
   return files;
 }
 function getCanvasAttachments(app) {
   return __async(this, null, function* () {
-    const canvasAttachmentsInitial = yield Promise.all(app.vault.getFiles().filter((file) => file.extension == "canvas").map((file) => __async(this, null, function* () {
-      return yield app.vault.read(file).then((raw) => {
-        if (file.stat.size === 0)
-          return [];
-        try {
-          const data = JSON.parse(raw);
-          if (!data["nodes"])
-            return [];
-          const fileNodes = data["nodes"].filter((node) => node.type === "file" && !node.file.endsWith(".md")).map((node) => node.file).reduce((prev, cur) => [...prev, cur], []);
-          const cardNodes = data["nodes"].filter((node) => node.type === "text").map((node) => getCanvasCardAttachments(node)).reduce((prev, cur) => [...prev, ...cur], []);
-          return [...fileNodes, ...cardNodes];
-        } catch (error) {
-          new import_obsidian3.Notice(`Failed to parse canvas file: ${file.path}`);
-        }
-      });
-    })));
+    const canvasAttachmentsInitial = yield Promise.all(
+      app.vault.getFiles().filter((file) => file.extension == "canvas").map((file) => __async(this, null, function* () {
+        return yield app.vault.read(file).then(
+          // Iterate over found canvas files to fetch the nodes
+          (raw) => {
+            if (file.stat.size === 0) return [];
+            try {
+              const data = JSON.parse(raw);
+              if (!data["nodes"]) return [];
+              const fileNodes = data["nodes"].filter(
+                // Filter out non-markdown files
+                (node) => node.type === "file" && !node.file.endsWith(".md")
+              ).map((node) => node.file).reduce((prev, cur) => [...prev, cur], []);
+              const cardNodes = data["nodes"].filter((node) => node.type === "text").map((node) => getCanvasCardAttachments(node)).reduce((prev, cur) => [...prev, ...cur], []);
+              return [...fileNodes, ...cardNodes];
+            } catch (error) {
+              new import_obsidian4.Notice(`Failed to parse canvas file: ${file.path}`);
+            }
+          }
+        );
+      }))
+    );
     return canvasAttachmentsInitial.filter((f) => f.length > 0).reduce((prev, cur) => [...prev, ...cur], []);
   });
+}
+function checkCanvas(file, app) {
+  return __async(this, null, function* () {
+    if (file.extension !== "canvas") return false;
+    if (file.stat.size <= 28) return true;
+    const rawContent = yield app.vault.cachedRead(file);
+    const canvas = JSON.parse(rawContent);
+    if (canvas.nodes.length === 0 && canvas.edges.length === 0) return true;
+    return false;
+  });
+}
+
+// src/helpers/extras/admonition.ts
+function getAdmonitionAttachments(app) {
+  return __async(this, null, function* () {
+    console.group("Admonition");
+    const indexingStart = Date.now();
+    const attachments = [];
+    const admonitionCandidates = yield Promise.all(
+      app.vault.getFiles().filter((file) => file.extension == "md").map((file) => {
+        return { file, cache: app.metadataCache.getFileCache(file) };
+      }).filter((file) => file.cache.sections).filter(
+        (file) => file.cache.sections.filter((section) => section.type === "code").length > 0
+      )
+    );
+    console.log(
+      `Iterating over ${admonitionCandidates.length} files with codeblocks`
+    );
+    for (const { file, cache } of admonitionCandidates) {
+      const content = yield app.vault.cachedRead(file);
+      for (const section of cache.sections) {
+        const codeBlock = content.slice(
+          section.position.start.offset,
+          section.position.end.offset
+        );
+        if (!codeBlock.match(/^```ad-\w+/)) continue;
+        const matches = codeBlock.matchAll(
+          /!(\[.*?\]\((.+?)\)|\[\[(.+?)(\|.*?)?\]\])/g
+        );
+        Array.from(matches).forEach((match) => {
+          const attachmentPath = match[2] || match[3];
+          if (!attachments.contains(attachmentPath))
+            attachments.push(attachmentPath);
+        });
+      }
+    }
+    const duration = (Date.now() - indexingStart) / 1e3;
+    console.log(
+      `Found ${attachments.length} attachments in Admonition blocks in ${duration}ms.`
+    );
+    console.groupEnd();
+    return attachments;
+  });
+}
+
+// src/util.ts
+function checkFile(app, settings, file, extensions) {
+  return __async(this, null, function* () {
+    if (file.extension === "md") {
+      return yield checkMarkdown(file, app, settings);
+    } else if (file.extension === "canvas") {
+      return yield checkCanvas(file, app);
+    } else if (settings.attachmentsExcludeInclude === ExcludeInclude.Include) {
+      return file.extension.match(extensions);
+    } else if (settings.attachmentsExcludeInclude === ExcludeInclude.Exclude) {
+      return !file.extension.match(extensions);
+    }
+    return false;
+  });
+}
+function isFolderExcluded(folder, settings) {
+  return settings.excludedFolders.map((excludedFolder) => folder.path.match(RegExp(`^${excludedFolder}`))).filter((x) => x).length > 0;
+}
+function isFolderIncluded(folder, settings) {
+  return settings.excludedFolders.map((excludedFolder) => folder.path.match(RegExp(`^${excludedFolder}`))).filter((x) => x).length === 0;
 }
 function runCleanup(app, settings) {
   return __async(this, null, function* () {
     const indexingStart = Date.now();
-    console.log(`File Cleaner Redux: Starting cleanup`);
-    const excludedFoldersRegex = RegExp(`^${settings.excludedFolders.join("|")}`);
-    const extensions = [...settings.attachmentExtensions].filter((extension) => extension !== "*");
-    if (settings.attachmentExtensions.includes("*"))
-      extensions.push(".*");
-    const allowedExtensions = RegExp(`^(${["md", ...extensions].join("|")})$`);
-    const inUseAttachments = getInUseAttachments(app);
-    const canvasAttachments = yield getCanvasAttachments(app);
-    const allFilesAndFolders = app.vault.getAllLoadedFiles();
-    const allFolders = allFilesAndFolders.filter((node) => node.hasOwnProperty("children"));
-    const initialEmptyFolders = settings.removeFolders ? allFolders.filter((folder) => {
-      if (folder.isRoot())
-        return false;
-      return folder.children.length === 0;
-    }) : [];
-    const emptyFolders = [];
-    for (const folder of initialEmptyFolders) {
-      let parent = folder.parent;
-      emptyFolders.push(folder);
-      while (parent !== null && parent.children.length === 1) {
-        if (parent.parent === null)
-          break;
-        emptyFolders.push(parent);
-        parent = parent.parent;
+    console.group("File Cleaner Redux");
+    console.log(`Starting cleanup`);
+    const inUseAttachmentsInitial = getInUseAttachments(app);
+    inUseAttachmentsInitial.push(...yield getCanvasAttachments(app));
+    const plugins = app.plugins.plugins;
+    if (plugins.hasOwnProperty("obsidian-admonition"))
+      inUseAttachmentsInitial.push(...yield getAdmonitionAttachments(app));
+    const inUseAttachments = Array.from(new Set(inUseAttachmentsInitial));
+    const folders = getFolders(app).filter((folder) => folder.path !== "/").sort(
+      (a, b) => (
+        // Sort list of folders by amount of nested subfolders (deepest to shallowest)
+        b.path.localeCompare(a.path)
+      )
+    ).reverse();
+    folders.push(app.vault.getFolderByPath("/"));
+    const filesToRemove = [];
+    const foldersToRemove = [];
+    const extensions = getExtensions(settings);
+    for (const folder of folders) {
+      if (settings.excludeInclude === ExcludeInclude.Exclude && isFolderExcluded(folder, settings) || settings.excludeInclude === ExcludeInclude.Include && isFolderIncluded(folder, settings))
+        continue;
+      const files = getFilesInFolder(folder);
+      let childrenCount = files.length;
+      for (const file of files) {
+        if (inUseAttachments.includes(file.path)) continue;
+        if (yield checkFile(app, settings, file, extensions)) {
+          filesToRemove.push(file);
+          childrenCount -= 1;
+        }
+      }
+      if (childrenCount === 0 && !settings.excludedFolders.includes(folder.path) && !folder.isRoot() && settings.removeFolders) {
+        foldersToRemove.push(folder);
       }
     }
-    const allFiles = allFilesAndFolders.filter((node) => !node.hasOwnProperty("children"));
-    const files = allFiles.filter((file) => file.extension.match(allowedExtensions)).filter((file) => {
-      if (file.extension !== "md")
-        return true;
-      const fileCache = app.metadataCache.getFileCache(file);
-      const sections = fileCache.sections;
-      if (sections === void 0)
-        return true;
-      const fileFrontmatter = Object.keys(fileCache.frontmatter || {}).sort();
-      const settingsFrontmatter = settings.ignoredFrontmatter.sort();
-      if (settings.ignoredFrontmatter.length === 0)
-        return false;
-      if (sections.length === 1 && sections.at(0).type === "yaml") {
-        if (fileFrontmatter.toString() === settingsFrontmatter.toString())
-          return true;
-      }
-      return false;
-    }).filter((file) => !inUseAttachments.includes(file.path) && !canvasAttachments.includes(file.path) && file);
-    const filesAndFolders = [...files, ...emptyFolders].filter((file) => {
-      if (settings.excludedFolders.length === 0)
-        return file;
-      else {
-        return settings.excludeInclude === ExcludeInclude.Exclude ? !file.path.match(excludedFoldersRegex) : file.path.match(excludedFoldersRegex);
-      }
-    });
-    const indexingDuration = Date.now() - indexingStart;
-    console.log(`File Cleaner Redux: Finished indexing ${allFiles.length} files and ${allFolders.length} folders in ${indexingDuration}ms`);
-    console.debug("Folders:");
-    for (const folder of emptyFolders) {
-      console.debug(folder);
-    }
-    console.debug("Files:");
-    for (const file of files) {
-      console.debug(file);
-    }
-    const fileCountText = `${files.length} file(s)`;
-    const folderCountText = `${emptyFolders.length} folder(s)`;
-    console.log(`File Cleaner Redux: Found ${fileCountText} and ${folderCountText} to remove`);
-    if (filesAndFolders.length == 0) {
-      new import_obsidian3.Notice(translate().Notifications.NoFileToClean);
-      return;
-    }
-    if (!settings.deletionConfirmation)
-      removeFiles(filesAndFolders, app, settings);
-    else {
-      yield DeletionConfirmationModal({
-        files: filesAndFolders,
-        onConfirm: () => {
-          removeFiles(filesAndFolders, app, settings);
-        },
-        app
+    [...foldersToRemove].reverse().forEach((folder) => {
+      const subFolders = getSubFoldersInFolder(folder);
+      subFolders.forEach((subFolder) => {
+        if (!foldersToRemove.contains(subFolder)) foldersToRemove.remove(folder);
       });
+    });
+    const indexingDuration = (Date.now() - indexingStart) / 1e3;
+    console.log(`Finished indexing after ${indexingDuration}ms`);
+    console.log(
+      `Found ${filesToRemove.length} files and ${foldersToRemove.length} folders to clean up.`
+    );
+    const filesAndFolders = [...filesToRemove];
+    filesAndFolders.push(...foldersToRemove.reverse());
+    if (filesAndFolders.length === 0)
+      new import_obsidian5.Notice(translate().Notifications.NoFileToClean);
+    else {
+      if (!settings.deletionConfirmation)
+        yield removeFiles(filesAndFolders, app, settings);
+      else {
+        DeletionConfirmationModal({
+          app,
+          files: filesAndFolders,
+          onConfirm: () => __async(this, null, function* () {
+            yield removeFiles(filesAndFolders, app, settings);
+          })
+        });
+      }
+      console.group("Files:");
+      filesToRemove.forEach((item) => console.debug(item.path));
+      console.groupEnd();
+      console.group("Folders:");
+      foldersToRemove.forEach((item) => console.debug(item.path));
+      console.groupEnd();
     }
+    console.groupEnd();
   });
 }
 
 // src/index.ts
-var FileCleanerPlugin = class extends import_obsidian4.Plugin {
+var FileCleanerPlugin = class extends import_obsidian6.Plugin {
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
-      this.addRibbonIcon("trash", translate().Buttons.CleanFiles, (evt) => {
+      this.addRibbonIcon("trash", translate().Buttons.CleanFiles, () => {
         runCleanup(this.app, this.settings);
       });
       this.addCommand({
@@ -4333,8 +4740,7 @@ var FileCleanerPlugin = class extends import_obsidian4.Plugin {
       });
       this.addSettingTab(new FileCleanerSettingTab(this.app, this));
       setTimeout(() => {
-        if (this.settings.runOnStartup)
-          runCleanup(this.app, this.settings);
+        if (this.settings.runOnStartup) runCleanup(this.app, this.settings);
       }, 1e3);
     });
   }
@@ -4351,8 +4757,12 @@ var FileCleanerPlugin = class extends import_obsidian4.Plugin {
     });
   }
 };
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
-//! license : MIT
-//! moment.js
-//! momentjs.com
-//! version : 2.30.1
+/*! Bundled license information:
+
+moment/moment.js:
+  (*! moment.js *)
+  (*! version : 2.30.1 *)
+  (*! authors : Tim Wood, Iskren Chernev, Moment.js contributors *)
+  (*! license : MIT *)
+  (*! momentjs.com *)
+*/

@@ -150,5 +150,14 @@
       ],
       "key": "I"
     }
+  ],
+  "quick-explorer:browse-vault": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "S"
+    }
   ]
 }
