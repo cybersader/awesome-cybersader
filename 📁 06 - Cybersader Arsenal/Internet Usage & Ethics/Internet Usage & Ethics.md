@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, August 18th 2024, 4:36 pm
-date modified: Friday, August 30th 2024, 8:25 pm
+date modified: Saturday, August 31st 2024, 3:54 pm
 ---
 
 These are the platforms, tools, tips, settings, life hacks, and resources that I would recommend to keep your internet usage aligned with morality and Christian values.
@@ -13,6 +13,13 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - [Magisterium AI](https://www.magisterium.com/) - Magisterium AI, your helpful guide to the teachings of the Catholic Church.
 - 
 
+# Philsophy on Internet Usage
+
+- Teleology, ethics, morality, persuasive technology
+
+- [Catholics need an ethics for the digital age - U.S. Catholic](https://uscatholic.org/articles/201905/do-catholics-need-a-new-code-of-ethics-for-the-digital-age/)
+- [The Catholic Church and Internet Use: An Evolving Perspective from Pope John Paul II to Pope Benedict XVI](https://repository.library.georgetown.edu/handle/10822/558682)
+- 
 # Misc
 
 - Search terms:
@@ -139,6 +146,7 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 
 - Misc
 	- https://www.ourladyoflourdesdaytona.com/catholic-guide-to-the-internet/
+
 # RANDOM
 
 - [A Systematic Literature Review of the Types of Authentication Safety Practices among Internet Users](https://pdfs.semanticscholar.org/f173/32605654566b40e0bea1929bc611653de41c.pdf)
