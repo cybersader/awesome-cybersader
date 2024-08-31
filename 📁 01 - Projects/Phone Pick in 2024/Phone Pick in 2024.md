@@ -25,3 +25,4 @@ Options:
 2. Trade in S21 Ultra for S23 and get S24 Ultra
 
 - https://www.samsung.com/us/smartphones/galaxy-s24-ultra/buy/galaxy-s24-ultra-512gb-unlocked-sm-s928ulbfxaa/
+- 

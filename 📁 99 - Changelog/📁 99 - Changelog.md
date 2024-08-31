@@ -1,3 +1,4 @@
+- 2024-08-31 at 16h36 · [[Phone Pick in 2024]]
 - 2024-08-31 at 15h55 · [[Internet Usage & Ethics]]
 - 2024-08-31 at 13h26 · [[Awesome Anime]]
 - 2024-08-30 at 18h35 · [[📁 01 - Projects]]
@@ -203,7 +204,6 @@
 - 2024-06-19 at 20h06 · [[X1. Paper Outline with Refs]]
 - 2024-06-19 at 20h06 · [[SIEM, Visibility, and Event-Driven Architecture Curated Solutions]]
 - 2024-06-19 at 20h06 · [[Obsidian Delete Hanging]]
-- 2024-06-19 at 20h06 · [[Phone Pick in 2024]]
 - 2024-06-19 at 20h06 · [[Windows Backups Duplicati 2024]]
 - 2024-06-19 at 20h06 · [[Windows BCDR]]
 - 2024-06-19 at 20h06 · [[Wiki, KB, KMS]]

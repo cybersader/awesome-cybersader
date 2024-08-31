@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Phone Pick in 2024",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
+    },
+    {
+      "basename": "Providers, Phones, Plans",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md"
+    },
+    {
+      "basename": "Phone Strategy - Provider, Plans, Warranties",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md"
+    },
+    {
+      "basename": "Mint Mobile",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
+    },
+    {
       "basename": "Internet Usage & Ethics",
       "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
-    },
-    {
-      "basename": "TrueNAS Scale Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "Physical Security",
-      "path": "📁 04 - Organizational Cyber/Physical Security/Physical Security.md"
-    },
-    {
-      "basename": "Authentication & Trust Models",
-      "path": "📁 04 - Organizational Cyber/Authentication & Trust Models/Authentication & Trust Models.md"
     }
   ],
   "omittedPaths": [],
