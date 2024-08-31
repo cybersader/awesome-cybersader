@@ -20,7 +20,7 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 	- short form content defenses child internet safety
 	- internet safety ethics persuasive technology resources
 	- catholic children internet tools security privacy safety
-	- 
+	- catholic internet resources AND (online OR internet OR cyber OR safety)
 
 - [Common Sense Education](https://www.commonsense.org/education)
 - [Common Sense Media: Age-Based Media Reviews for Families](https://www.commonsensemedia.org/)
@@ -137,6 +137,8 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - https://couragerc.org/
 - [Home - staycatholic.com](https://staycatholic.com/)
 
+- Misc
+	- https://www.ourladyoflourdesdaytona.com/catholic-guide-to-the-internet/
 # RANDOM
 
 - [A Systematic Literature Review of the Types of Authentication Safety Practices among Internet Users](https://pdfs.semanticscholar.org/f173/32605654566b40e0bea1929bc611653de41c.pdf)
