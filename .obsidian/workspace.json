@@ -20,42 +20,6 @@
             }
           },
           {
-            "id": "c3b706be566fafd2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cbec9984d30241a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6e7adc2a2a77631",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0132127300ab823a",
             "type": "leaf",
             "state": {
@@ -221,8 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -334,10 +297,11 @@
   },
   "active": "2e986086f8db70ed",
   "lastOpenFiles": [
+    "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
+    "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 01 - Projects/Podman Setup & Container Usage.md",
@@ -367,7 +331,6 @@
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md",
     "📁 06 - Cybersader Arsenal/Email Aliasing",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
-    "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards",
     "📁 02 - CyberNews/⬇️ Cyber News DROP",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience",

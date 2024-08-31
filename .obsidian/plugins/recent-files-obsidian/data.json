@@ -5,6 +5,10 @@
       "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
     },
     {
+      "basename": "Phone Shopping 2024",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md"
+    },
+    {
       "basename": "Providers, Phones, Plans",
       "path": "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Markdown Practices in Obsidian",
       "path": "🕸️ UNSTRUCTURED/Markdown Practices in Obsidian.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     }
   ],
   "omittedPaths": [],
