@@ -6,7 +6,7 @@ tags:
   - Android
 publish: true
 date created: Thursday, April 25th 2024, 2:41 pm
-date modified: Saturday, August 31st 2024, 5:43 pm
+date modified: Saturday, August 31st 2024, 6:03 pm
 ---
 
 %% Begin Waypoint %%
@@ -37,6 +37,7 @@ Options:
 - Phone compatibility 
 	- https://www.mintmobile.com/byop/
 	- 
+
 # New Cellular Plan
 
 - Mint - https://www.mintmobile.com/family-phone-plans/#mfp
