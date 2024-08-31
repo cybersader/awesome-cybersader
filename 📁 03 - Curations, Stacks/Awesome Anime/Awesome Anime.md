@@ -3,11 +3,16 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Thursday, July 18th 2024, 8:05 pm
+date modified: Saturday, August 31st 2024, 1:26 pm
 ---
 
 - [x] Update anime list 🔽 ➕ 2024-04-26 ✅ 2024-07-16
 - I've watched anime at https://www.wcopremium.tv/
+
+- New Animes
+	- I Parry Everything
+		- Seems wholesome
+		- Any work can be noble work if it is done with a noble heart
 
 # Top Anime
 
