@@ -28,12 +28,37 @@ __export(main_exports, {
   renderMarkdown: () => renderMarkdown
 });
 module.exports = __toCommonJS(main_exports);
+var import_obsidian2 = require("obsidian");
+
+// src/settings.ts
 var import_obsidian = require("obsidian");
+var DEFAULT_SETTINGS = {
+  captionRegex: ""
+};
+var CaptionSettingTab = class extends import_obsidian.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    new import_obsidian.Setting(containerEl).setName("Advanced settings").setHeading();
+    new import_obsidian.Setting(containerEl).setName("Caption regex").setDesc("For advanced caption parsing, you can add a regex here. The first capturing group will be used as the image caption. This is useful in situations where you might have another plugin or theme adding text to the caption area which you want to strip out. The placeholder example would be used to exclude everything following a pipe character (if one exists).").addText((text) => text.setPlaceholder("^([^|]+)").setValue(this.plugin.settings.captionRegex).onChange(async (value) => {
+      this.plugin.settings.captionRegex = value;
+      await this.plugin.saveSettings();
+    }));
+  }
+};
+
+// src/main.ts
 var filenamePlaceholder = "%";
 var filenameExtensionPlaceholder = "%.%";
-var ImageCaptions = class extends import_obsidian.Plugin {
+var ImageCaptions = class extends import_obsidian2.Plugin {
   async onload() {
-    this.registerMarkdownPostProcessor(externalImageProcessor(this));
+    this.registerMarkdownPostProcessor(this.externalImageProcessor());
+    await this.loadSettings();
+    this.addSettingTab(new CaptionSettingTab(this.app, this));
     this.observer = new MutationObserver((mutations) => {
       mutations.forEach((rec) => {
         if (rec.type === "childList") {
@@ -41,7 +66,7 @@ var ImageCaptions = class extends import_obsidian.Plugin {
             var _a, _b;
             const img = imageEmbedContainer.querySelector("img");
             const width = imageEmbedContainer.getAttribute("width") || "";
-            const captionText = getCaptionText(imageEmbedContainer);
+            const captionText = this.getCaptionText(imageEmbedContainer);
             if (!img)
               return;
             const figure = imageEmbedContainer.querySelector("figure");
@@ -56,7 +81,7 @@ var ImageCaptions = class extends import_obsidian.Plugin {
               }
             } else {
               if (captionText && captionText !== imageEmbedContainer.getAttribute("src")) {
-                await insertFigureWithCaption(img, imageEmbedContainer, captionText, "", this);
+                await this.insertFigureWithCaption(img, imageEmbedContainer, captionText, "");
               }
             }
             if (width) {
@@ -68,61 +93,79 @@ var ImageCaptions = class extends import_obsidian.Plugin {
         }
       });
     });
-    this.observer.observe(document.body, { subtree: true, childList: true });
+    this.observer.observe(document.body, {
+      subtree: true,
+      childList: true
+    });
+  }
+  getCaptionText(img) {
+    let captionText = img.getAttribute("alt") || "";
+    const src = img.getAttribute("src") || "";
+    if (captionText === src) {
+      return "";
+    }
+    if (this.settings.captionRegex) {
+      try {
+        const match = captionText.match(new RegExp(this.settings.captionRegex));
+        if (match && match[1])
+          captionText = match[1];
+      } catch (e) {
+      }
+    }
+    if (captionText === filenamePlaceholder) {
+      const match = src.match(/[^\\/]+(?=\.\w+$)|[^\\/]+$/);
+      if (match == null ? void 0 : match[0]) {
+        captionText = match[0];
+      }
+    } else if (captionText === filenameExtensionPlaceholder) {
+      const match = src.match(/[^\\/]+$/);
+      if (match == null ? void 0 : match[0]) {
+        captionText = match[0];
+      }
+    } else if (captionText === "\\" + filenamePlaceholder) {
+      captionText = filenamePlaceholder;
+    }
+    captionText = captionText.replace(/<<(.*?)>>/g, (_, linktext) => {
+      return "[[" + linktext + "]]";
+    });
+    return captionText;
+  }
+  externalImageProcessor() {
+    return (el, ctx) => {
+      el.findAll("img:not(.emoji)").forEach(async (img) => {
+        const captionText = this.getCaptionText(img);
+        const parent = img.parentElement;
+        if (parent && (parent == null ? void 0 : parent.nodeName) !== "FIGURE" && captionText && captionText !== img.getAttribute("src")) {
+          await this.insertFigureWithCaption(img, parent, captionText, ctx.sourcePath);
+        }
+      });
+    };
+  }
+  async insertFigureWithCaption(imageEl, outerEl, captionText, sourcePath) {
+    var _a;
+    const figure = outerEl.createEl("figure");
+    figure.addClass("image-captions-figure");
+    figure.appendChild(imageEl);
+    const children = (_a = await renderMarkdown(captionText, sourcePath, this)) != null ? _a : [captionText];
+    figure.createEl("figcaption", {
+      cls: "image-captions-caption"
+    }).replaceChildren(...children);
+  }
+  async loadSettings() {
+    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+  }
+  async saveSettings() {
+    await this.saveData(this.settings);
   }
   onunload() {
     this.observer.disconnect();
   }
 };
-function getCaptionText(img) {
-  let captionText = img.getAttribute("alt") || "";
-  const src = img.getAttribute("src") || "";
-  if (captionText === src) {
-    captionText = "";
-  } else if (captionText === filenamePlaceholder) {
-    const match = src.match(/[^\\\/]+(?=\.\w+$)|[^\\\/]+$/);
-    if (match == null ? void 0 : match[0]) {
-      captionText = match[0];
-    }
-  } else if (captionText === filenameExtensionPlaceholder) {
-    const match = src.match(/[^\\\/]+$/);
-    if (match == null ? void 0 : match[0]) {
-      captionText = match[0];
-    }
-  } else if (captionText === "\\" + filenamePlaceholder) {
-    captionText = filenamePlaceholder;
-  }
-  captionText = captionText.replace(/<<(.*?)>>/g, (match, linktext) => {
-    return "[[" + linktext + "]]";
-  });
-  return captionText;
-}
-function externalImageProcessor(plugin) {
-  return (el, ctx) => {
-    el.findAll("img:not(.emoji)").forEach(async (img) => {
-      const captionText = getCaptionText(img);
-      const parent = img.parentElement;
-      if (parent && (parent == null ? void 0 : parent.nodeName) !== "FIGURE" && captionText && captionText !== img.getAttribute("src")) {
-        await insertFigureWithCaption(img, parent, captionText, ctx.sourcePath, plugin);
-      }
-    });
-  };
-}
-async function insertFigureWithCaption(imageEl, outerEl, captionText, sourcePath, plugin) {
-  var _a;
-  const figure = outerEl.createEl("figure");
-  figure.addClass("image-captions-figure");
-  figure.appendChild(imageEl);
-  const children = (_a = await renderMarkdown(captionText, sourcePath, plugin)) != null ? _a : [captionText];
-  figure.createEl("figcaption", {
-    cls: "image-captions-caption"
-  }).replaceChildren(...children);
-}
 async function renderMarkdown(markdown, sourcePath, component) {
   const el = createDiv();
-  await import_obsidian.MarkdownRenderer.renderMarkdown(markdown, el, sourcePath, component);
+  await import_obsidian2.MarkdownRenderer.renderMarkdown(markdown, el, sourcePath, component);
   for (const child of el.children) {
-    if (child.tagName == "P") {
+    if (child.tagName.toLowerCase() === "p") {
       return child.childNodes;
     }
   }

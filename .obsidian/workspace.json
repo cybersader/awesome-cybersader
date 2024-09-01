@@ -132,9 +132,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a3240792e3b9c502",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,7 +220,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✅ Tasks/⬇️ Misc Todos.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +237,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✅ Tasks/⬇️ Misc Todos.md",
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -248,7 +260,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✅ Tasks/⬇️ Misc Todos.md"
+                "file": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
               }
             }
           },
@@ -275,9 +287,17 @@
               "type": "fo2k.assistant.sidebar2",
               "state": {}
             }
+          },
+          {
+            "id": "6a3875e5a955448a",
+            "type": "leaf",
+            "state": {
+              "type": "ai-chat-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -304,10 +324,10 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "2529cf774554dcb5",
+  "active": "a3240792e3b9c502",
   "lastOpenFiles": [
-    "📁 07 - Business/Monetization & Funding/Monetization & Funding.md",
     "✅ Tasks/⬇️ Misc Todos.md",
+    "📁 07 - Business/Monetization & Funding/Monetization & Funding.md",
     "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",

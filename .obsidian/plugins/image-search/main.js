@@ -64,9 +64,34 @@ var QueryModal = class extends import_obsidian2.Modal {
     this.onSubmit = onSubmit;
   }
   onOpen() {
-    this.contentEl.createEl("h1", { text: "What do you want to search for?" });
-    new import_obsidian2.Setting(this.contentEl).setName("What are you looking for?").addText((text) => text.onChange((value) => this.result = value));
-    new import_obsidian2.Setting(this.contentEl).addButton((btn) => btn.setButtonText("Search").setCta().onClick(() => this.search()));
+    const form = this.contentEl.createEl("form");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      this.search();
+    });
+    const input = this.contentEl.createEl("input", {
+      attr: {
+        type: "text",
+        placeholder: "What are you looking for?"
+      },
+      cls: "setting-input input-style"
+    });
+    input.addEventListener("input", (event) => {
+      this.result = event.target.value;
+    });
+    form.appendChild(input);
+    const buttonContainer = this.contentEl.createEl("div", {
+      cls: "button-container-style"
+    });
+    const button = this.contentEl.createEl("button", {
+      attr: {
+        type: "submit"
+      },
+      cls: "mod-cta setting-btn button-style"
+    });
+    button.textContent = "Search Google Images";
+    buttonContainer.appendChild(button);
+    form.appendChild(buttonContainer);
     this.imageList = this.contentEl.createEl("ul", { cls: "responsive-gallery" });
   }
   async callApi(query) {

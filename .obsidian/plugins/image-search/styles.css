@@ -65,3 +65,19 @@ ul.responsive-gallery img {
         width: calc(100% / 4); /* 4 images per row */
     }
 }
+
+/* Additional styles for input and button alignment */
+.input-style {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.button-container-style {
+    text-align: center;
+    width: 100%;
+}
+
+.button-style {
+    margin: auto;
+}

@@ -1,7 +1,7 @@
 {
 	"id": "image-search",
 	"name": "Image Search",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"minAppVersion": "1.5.12",
 	"description": "Search and insert images using Google API",
 	"author": "Mohammad Razeghi",

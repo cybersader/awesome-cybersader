@@ -25058,6 +25058,8 @@ var AppProvider = ({ children, settingsParam, eventEmitter }) => {
   const [showSeekBackwards, setShowSeekBackwards] = (0, import_react.useState)(false);
   const [showPlay, setShowPlay] = (0, import_react.useState)(false);
   const [showPause, setShowPause] = (0, import_react.useState)(false);
+  const [showSpeed, setShowSpeed] = (0, import_react.useState)(false);
+  const [currentSpeed, setCurrentSpeed] = (0, import_react.useState)(1);
   (0, import_react.useEffect)(() => {
     eventEmitter.on(
       "settingsUpdated",
@@ -25065,14 +25067,20 @@ var AppProvider = ({ children, settingsParam, eventEmitter }) => {
     );
     let timestampDebounceTimer;
     let playPauseDebounceTimer;
-    const handleShowTimestamp = ({ type }) => {
+    let speedDebounceTimer;
+    const handleShowTimestamp = ({
+      type,
+      speed
+    }) => {
       clearTimeout(timestampDebounceTimer);
       clearTimeout(playPauseDebounceTimer);
+      clearTimeout(speedDebounceTimer);
       setShowSeekForward(false);
       setShowTimestamp(false);
       setShowSeekBackwards(false);
       setShowPause(false);
       setShowPause(false);
+      setShowSpeed(false);
       setTimeout(() => {
         setShowTimestamp(true);
         if (type === "seekForward") {
@@ -25087,8 +25095,11 @@ var AppProvider = ({ children, settingsParam, eventEmitter }) => {
         if (type === "pause") {
           setShowPause(true);
         }
+        if (type === "setSpeed") {
+          setCurrentSpeed(speed);
+          setShowSpeed(true);
+        }
         timestampDebounceTimer = window.setTimeout(() => {
-          console.log("debounced setting to false");
           setShowTimestamp(false);
           setShowSeekForward(false);
           setShowSeekBackwards(false);
@@ -25096,6 +25107,10 @@ var AppProvider = ({ children, settingsParam, eventEmitter }) => {
         playPauseDebounceTimer = window.setTimeout(() => {
           setShowPlay(false);
           setShowPause(false);
+        }, 500);
+        speedDebounceTimer = window.setTimeout(() => {
+          console.log("setting speed to false");
+          setShowSpeed(false);
         }, 500);
       }, 20);
     };
@@ -25114,7 +25129,9 @@ var AppProvider = ({ children, settingsParam, eventEmitter }) => {
         showSeekBackwards,
         showSeekForward,
         showPause,
-        showPlay
+        showPlay,
+        showSpeed,
+        currentSpeed
       }
     },
     children
@@ -26278,6 +26295,7 @@ var MediaFrame = ({ mediaLink, ytRef, initSeconds, autoplay }) => {
   const seekForwardRef = React6.useRef(null);
   const playRef = React6.useRef(null);
   const pauseRef = React6.useRef(null);
+  const speedRef = React6.useRef(null);
   return /* @__PURE__ */ React6.createElement("div", { className: "media-top-container" }, /* @__PURE__ */ React6.createElement("div", { className: "media-container" }, /* @__PURE__ */ React6.createElement(
     YouTube_default,
     {
@@ -26367,7 +26385,7 @@ var MediaFrame = ({ mediaLink, ytRef, initSeconds, autoplay }) => {
       mountOnEnter: true,
       unmountOnExit: true
     },
-    /* @__PURE__ */ React6.createElement("div", { ref: seekBackRef, className: "seek-backwards" }, /* @__PURE__ */ React6.createElement("div", { className: "round" }, /* @__PURE__ */ React6.createElement("div", { id: "cta" }, /* @__PURE__ */ React6.createElement("span", { className: "arrow bounceAlphaBack primera back " }), /* @__PURE__ */ React6.createElement("span", { className: "arrow bounceAlphaBack segunda back " }), /* @__PURE__ */ React6.createElement("div", { className: "text" }, (_a = context == null ? void 0 : context.settings) == null ? void 0 : _a.seekSeconds, "s"))))
+    /* @__PURE__ */ React6.createElement("div", { ref: seekBackRef, className: "seek-backwards" }, /* @__PURE__ */ React6.createElement("div", { className: "round" }, /* @__PURE__ */ React6.createElement("div", { id: "cta" }, /* @__PURE__ */ React6.createElement("span", { className: "mn-arrow bounceAlphaBack primera back " }), /* @__PURE__ */ React6.createElement("span", { className: "mn-arrow bounceAlphaBack segunda back " }), /* @__PURE__ */ React6.createElement("div", { className: "text" }, (_a = context == null ? void 0 : context.settings) == null ? void 0 : _a.seekSeconds, "s"))))
   ), /* @__PURE__ */ React6.createElement(
     CSSTransition_default,
     {
@@ -26378,7 +26396,18 @@ var MediaFrame = ({ mediaLink, ytRef, initSeconds, autoplay }) => {
       mountOnEnter: true,
       unmountOnExit: true
     },
-    /* @__PURE__ */ React6.createElement("div", { ref: seekForwardRef, className: "seek-forwards" }, /* @__PURE__ */ React6.createElement("div", { className: "round" }, /* @__PURE__ */ React6.createElement("div", { id: "cta" }, /* @__PURE__ */ React6.createElement("span", { className: "arrow bounceAlpha segunda next " }), /* @__PURE__ */ React6.createElement("span", { className: "arrow bounceAlpha primera next " }), /* @__PURE__ */ React6.createElement("div", { className: "text" }, (_b = context == null ? void 0 : context.settings) == null ? void 0 : _b.seekSeconds, "s"))))
+    /* @__PURE__ */ React6.createElement("div", { ref: seekForwardRef, className: "seek-forwards" }, /* @__PURE__ */ React6.createElement("div", { className: "round" }, /* @__PURE__ */ React6.createElement("div", { id: "cta" }, /* @__PURE__ */ React6.createElement("span", { className: "mn-arrow bounceAlpha segunda next " }), /* @__PURE__ */ React6.createElement("span", { className: "mn-arrow bounceAlpha primera next " }), /* @__PURE__ */ React6.createElement("div", { className: "text" }, (_b = context == null ? void 0 : context.settings) == null ? void 0 : _b.seekSeconds, "s"))))
+  ), /* @__PURE__ */ React6.createElement(
+    CSSTransition_default,
+    {
+      nodeRef: speedRef,
+      in: context == null ? void 0 : context.showSpeed,
+      timeout: 1e3,
+      classNames: "speed-icon",
+      mountOnEnter: true,
+      unmountOnExit: true
+    },
+    /* @__PURE__ */ React6.createElement("div", { ref: speedRef, className: "speed-icon" }, context == null ? void 0 : context.currentSpeed, "x")
   ), /* @__PURE__ */ React6.createElement(
     "div",
     {
@@ -26781,6 +26810,52 @@ var MediaNotesPlugin = class extends import_obsidian.Plugin {
           ".media-notes-container .youtube-iframe"
         );
         existingPlayer == null ? void 0 : existingPlayer.dispatchEvent(new Event("mousemove"));
+      }
+    });
+    this.addCommand({
+      id: "speed-up",
+      name: "Speed up",
+      editorCallback: async (editor, view) => {
+        var _a;
+        const player = this.getActiveViewYoutubePlayer(view);
+        if (!player || !player.ytRef)
+          return;
+        const internalPlayer = (_a = player.ytRef.current) == null ? void 0 : _a.getInternalPlayer();
+        if (!internalPlayer)
+          return;
+        const playbackRates = await internalPlayer.getAvailablePlaybackRates();
+        const currentRate = await internalPlayer.getPlaybackRate();
+        const currentRateIndex = playbackRates.indexOf(currentRate);
+        const nextRateIndex = currentRateIndex + 1 < playbackRates.length ? currentRateIndex + 1 : currentRateIndex;
+        const nextRate = playbackRates[nextRateIndex];
+        internalPlayer.setPlaybackRate(nextRate);
+        player.eventEmitter.emit("handleAction", {
+          type: "setSpeed",
+          speed: nextRate
+        });
+      }
+    });
+    this.addCommand({
+      id: "slow-down",
+      name: "Slow down",
+      editorCallback: async (editor, view) => {
+        var _a;
+        const player = this.getActiveViewYoutubePlayer(view);
+        if (!player || !player.ytRef)
+          return;
+        const internalPlayer = (_a = player.ytRef.current) == null ? void 0 : _a.getInternalPlayer();
+        if (!internalPlayer)
+          return;
+        const playbackRates = await internalPlayer.getAvailablePlaybackRates();
+        const currentRate = await internalPlayer.getPlaybackRate();
+        const currentRateIndex = playbackRates.indexOf(currentRate);
+        const nextRateIndex = currentRateIndex - 1 >= 0 ? currentRateIndex - 1 : 0;
+        const nextRate = playbackRates[nextRateIndex];
+        internalPlayer.setPlaybackRate(nextRate);
+        player.eventEmitter.emit("handleAction", {
+          type: "setSpeed",
+          speed: nextRate
+        });
       }
     });
     this.addSettingTab(new SettingsTab(this.app, this));

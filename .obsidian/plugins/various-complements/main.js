@@ -35,14 +35,11 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var __publicField = (obj, key, value) => {
-  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-  return value;
-};
+var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 
-// node_modules/prettify-pinyin/index.js
+// node_modules/.pnpm/prettify-pinyin@0.1.5/node_modules/prettify-pinyin/index.js
 var require_prettify_pinyin = __commonJS({
-  "node_modules/prettify-pinyin/index.js"(exports, module2) {
+  "node_modules/.pnpm/prettify-pinyin@0.1.5/node_modules/prettify-pinyin/index.js"(exports, module2) {
     var replacements = {
       "a": ["\u0101", "\xE1", "\u01CE", "\xE0"],
       "e": ["\u0113", "\xE9", "\u011B", "\xE8"],
@@ -87,9 +84,9 @@ var require_prettify_pinyin = __commonJS({
   }
 });
 
-// node_modules/chinese-tokenizer/src/trie.js
+// node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/trie.js
 var require_trie = __commonJS({
-  "node_modules/chinese-tokenizer/src/trie.js"(exports, module2) {
+  "node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/trie.js"(exports, module2) {
     var Trie = class {
       constructor() {
         this.content = {};
@@ -100,10 +97,8 @@ var require_trie = __commonJS({
         let obj = this.content;
         for (let char of chars) {
           if (obj[char] == null) {
-            if (create)
-              obj[char] = {};
-            else
-              return {};
+            if (create) obj[char] = {};
+            else return {};
           }
           obj = obj[char];
         }
@@ -115,12 +110,10 @@ var require_trie = __commonJS({
       }
       getPrefix(key) {
         let inner = (key2, obj = null) => {
-          if (obj == null)
-            obj = this.getKeyObject(key2);
+          if (obj == null) obj = this.getKeyObject(key2);
           let result = obj.values ? [...obj.values] : [];
           for (let char in obj) {
-            if (char === "values" || obj[char] == null)
-              continue;
+            if (char === "values" || obj[char] == null) continue;
             result.push(...inner(key2 + char, obj[char]));
           }
           return result;
@@ -129,10 +122,8 @@ var require_trie = __commonJS({
       }
       push(key, value) {
         let obj = this.getKeyObject(key, true);
-        if (obj.values == null)
-          obj.values = [];
-        if (!obj.values.includes(value))
-          obj.values.push(value);
+        if (obj.values == null) obj.values = [];
+        if (!obj.values.includes(value)) obj.values.push(value);
         return this;
       }
     };
@@ -140,15 +131,14 @@ var require_trie = __commonJS({
   }
 });
 
-// node_modules/chinese-tokenizer/src/cedict.js
+// node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/cedict.js
 var require_cedict = __commonJS({
-  "node_modules/chinese-tokenizer/src/cedict.js"(exports, module2) {
+  "node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/cedict.js"(exports, module2) {
     var { prettify } = require_prettify_pinyin();
     var Trie = require_trie();
     function parseLine(line) {
       let match = line.match(/^(\S+)\s(\S+)\s\[([^\]]+)\]\s\/(.+)\//);
-      if (match == null)
-        return;
+      if (match == null) return;
       let [, traditional, simplified, pinyin, english] = match;
       pinyin = pinyin.replace(/u:/g, "\xFC");
       let pinyinPretty = prettify(pinyin);
@@ -160,11 +150,9 @@ var require_cedict = __commonJS({
         this.traditionalTrie = new Trie();
         let lines = contents.split("\n");
         for (let line of lines) {
-          if (line.trim() === "" || line[0] === "#")
-            continue;
+          if (line.trim() === "" || line[0] === "#") continue;
           let entry = parseLine(line);
-          if (entry == null)
-            continue;
+          if (entry == null) continue;
           this.simplifiedTrie.push(entry.simplified, entry);
           this.traditionalTrie.push(entry.traditional, entry);
         }
@@ -180,9 +168,9 @@ var require_cedict = __commonJS({
   }
 });
 
-// node_modules/chinese-tokenizer/src/main.js
+// node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/main.js
 var require_main = __commonJS({
-  "node_modules/chinese-tokenizer/src/main.js"(exports) {
+  "node_modules/.pnpm/chinese-tokenizer@https+++codeload.github.com+tadashi-aikawa+chinese-tokenizer+tar.gz+32f7e49_l5rk3q5fzlp2cmpgb6cso4usmq/node_modules/chinese-tokenizer/src/main.js"(exports) {
     var Cedict = require_cedict();
     var chinesePunctuation = [
       "\xB7",
@@ -284,8 +272,7 @@ var require_main = __commonJS({
           }
           let end = i + 1;
           for (; end < text2.length; end++) {
-            if (text2[end].match(/\s/) != null || isChinese(text2[end]))
-              break;
+            if (text2[end].match(/\s/) != null || isChinese(text2[end])) break;
           }
           let word = text2.slice(i, end).join("");
           pushToken(word);
@@ -572,7 +559,7 @@ for (let i = 0; i < defaultDiacriticsRemovalMap.length; i++) {
 }
 var diacritics_map_default = diacriticsMap;
 
-// node_modules/emoji-regex/index.mjs
+// node_modules/.pnpm/emoji-regex@10.3.0/node_modules/emoji-regex/index.mjs
 var emoji_regex_default = () => {
   return /[#*0-9]\uFE0F?\u20E3|[\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23ED-\u23EF\u23F1\u23F2\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB\u25FC\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u265F\u2660\u2663\u2665\u2666\u2668\u267B\u267E\u267F\u2692\u2694-\u2697\u2699\u269B\u269C\u26A0\u26A7\u26AA\u26B0\u26B1\u26BD\u26BE\u26C4\u26C8\u26CF\u26D1\u26E9\u26F0-\u26F5\u26F7\u26F8\u26FA\u2702\u2708\u2709\u270F\u2712\u2714\u2716\u271D\u2721\u2733\u2734\u2744\u2747\u2757\u2763\u27A1\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B55\u3030\u303D\u3297\u3299]\uFE0F?|[\u261D\u270C\u270D](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?|[\u270A\u270B](?:\uD83C[\uDFFB-\uDFFF])?|[\u23E9-\u23EC\u23F0\u23F3\u25FD\u2693\u26A1\u26AB\u26C5\u26CE\u26D4\u26EA\u26FD\u2705\u2728\u274C\u274E\u2753-\u2755\u2795-\u2797\u27B0\u27BF\u2B50]|\u26D3\uFE0F?(?:\u200D\uD83D\uDCA5)?|\u26F9(?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|\u2764\uFE0F?(?:\u200D(?:\uD83D\uDD25|\uD83E\uDE79))?|\uD83C(?:[\uDC04\uDD70\uDD71\uDD7E\uDD7F\uDE02\uDE37\uDF21\uDF24-\uDF2C\uDF36\uDF7D\uDF96\uDF97\uDF99-\uDF9B\uDF9E\uDF9F\uDFCD\uDFCE\uDFD4-\uDFDF\uDFF5\uDFF7]\uFE0F?|[\uDF85\uDFC2\uDFC7](?:\uD83C[\uDFFB-\uDFFF])?|[\uDFC4\uDFCA](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDFCB\uDFCC](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDCCF\uDD8E\uDD91-\uDD9A\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF43\uDF45-\uDF4A\uDF4C-\uDF7C\uDF7E-\uDF84\uDF86-\uDF93\uDFA0-\uDFC1\uDFC5\uDFC6\uDFC8\uDFC9\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF8-\uDFFF]|\uDDE6\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF]|\uDDE7\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF]|\uDDE8\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF]|\uDDE9\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF]|\uDDEA\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA]|\uDDEB\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7]|\uDDEC\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE]|\uDDED\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA]|\uDDEE\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9]|\uDDEF\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5]|\uDDF0\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF]|\uDDF1\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE]|\uDDF2\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF]|\uDDF3\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF]|\uDDF4\uD83C\uDDF2|\uDDF5\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE]|\uDDF6\uD83C\uDDE6|\uDDF7\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC]|\uDDF8\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF]|\uDDF9\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF]|\uDDFA\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF]|\uDDFB\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA]|\uDDFC\uD83C[\uDDEB\uDDF8]|\uDDFD\uD83C\uDDF0|\uDDFE\uD83C[\uDDEA\uDDF9]|\uDDFF\uD83C[\uDDE6\uDDF2\uDDFC]|\uDF44(?:\u200D\uD83D\uDFEB)?|\uDF4B(?:\u200D\uD83D\uDFE9)?|\uDFC3(?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D(?:[\u2640\u2642]\uFE0F?(?:\u200D\u27A1\uFE0F?)?|\u27A1\uFE0F?))?|\uDFF3\uFE0F?(?:\u200D(?:\u26A7\uFE0F?|\uD83C\uDF08))?|\uDFF4(?:\u200D\u2620\uFE0F?|\uDB40\uDC67\uDB40\uDC62\uDB40(?:\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDC73\uDB40\uDC63\uDB40\uDC74|\uDC77\uDB40\uDC6C\uDB40\uDC73)\uDB40\uDC7F)?)|\uD83D(?:[\uDC3F\uDCFD\uDD49\uDD4A\uDD6F\uDD70\uDD73\uDD76-\uDD79\uDD87\uDD8A-\uDD8D\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA\uDECB\uDECD-\uDECF\uDEE0-\uDEE5\uDEE9\uDEF0\uDEF3]\uFE0F?|[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC6B-\uDC6D\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDC8F\uDC91\uDCAA\uDD7A\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC](?:\uD83C[\uDFFB-\uDFFF])?|[\uDC6E\uDC70\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4\uDEB5](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDD74\uDD90](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?|[\uDC00-\uDC07\uDC09-\uDC14\uDC16-\uDC25\uDC27-\uDC3A\uDC3C-\uDC3E\uDC40\uDC44\uDC45\uDC51-\uDC65\uDC6A\uDC79-\uDC7B\uDC7D-\uDC80\uDC84\uDC88-\uDC8E\uDC90\uDC92-\uDCA9\uDCAB-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDDA4\uDDFB-\uDE2D\uDE2F-\uDE34\uDE37-\uDE41\uDE43\uDE44\uDE48-\uDE4A\uDE80-\uDEA2\uDEA4-\uDEB3\uDEB7-\uDEBF\uDEC1-\uDEC5\uDED0-\uDED2\uDED5-\uDED7\uDEDC-\uDEDF\uDEEB\uDEEC\uDEF4-\uDEFC\uDFE0-\uDFEB\uDFF0]|\uDC08(?:\u200D\u2B1B)?|\uDC15(?:\u200D\uD83E\uDDBA)?|\uDC26(?:\u200D(?:\u2B1B|\uD83D\uDD25))?|\uDC3B(?:\u200D\u2744\uFE0F?)?|\uDC41\uFE0F?(?:\u200D\uD83D\uDDE8\uFE0F?)?|\uDC68(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D(?:[\uDC68\uDC69]\u200D\uD83D(?:\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?)|[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?)|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]))|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFC-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB\uDFFD-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB-\uDFFD\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB-\uDFFE])))?))?|\uDC69(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?[\uDC68\uDC69]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D(?:[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?|\uDC69\u200D\uD83D(?:\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?))|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]))|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFC-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB\uDFFD-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB-\uDFFD\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB-\uDFFE])))?))?|\uDC6F(?:\u200D[\u2640\u2642]\uFE0F?)?|\uDD75(?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|\uDE2E(?:\u200D\uD83D\uDCA8)?|\uDE35(?:\u200D\uD83D\uDCAB)?|\uDE36(?:\u200D\uD83C\uDF2B\uFE0F?)?|\uDE42(?:\u200D[\u2194\u2195]\uFE0F?)?|\uDEB6(?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D(?:[\u2640\u2642]\uFE0F?(?:\u200D\u27A1\uFE0F?)?|\u27A1\uFE0F?))?)|\uD83E(?:[\uDD0C\uDD0F\uDD18-\uDD1F\uDD30-\uDD34\uDD36\uDD77\uDDB5\uDDB6\uDDBB\uDDD2\uDDD3\uDDD5\uDEC3-\uDEC5\uDEF0\uDEF2-\uDEF8](?:\uD83C[\uDFFB-\uDFFF])?|[\uDD26\uDD35\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD\uDDCF\uDDD4\uDDD6-\uDDDD](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDDDE\uDDDF](?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDD0D\uDD0E\uDD10-\uDD17\uDD20-\uDD25\uDD27-\uDD2F\uDD3A\uDD3F-\uDD45\uDD47-\uDD76\uDD78-\uDDB4\uDDB7\uDDBA\uDDBC-\uDDCC\uDDD0\uDDE0-\uDDFF\uDE70-\uDE7C\uDE80-\uDE88\uDE90-\uDEBD\uDEBF-\uDEC2\uDECE-\uDEDB\uDEE0-\uDEE8]|\uDD3C(?:\u200D[\u2640\u2642]\uFE0F?|\uD83C[\uDFFB-\uDFFF])?|\uDDCE(?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D(?:[\u2640\u2642]\uFE0F?(?:\u200D\u27A1\uFE0F?)?|\u27A1\uFE0F?))?|\uDDD1(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1|\uDDD1\u200D\uD83E\uDDD2(?:\u200D\uD83E\uDDD2)?|\uDDD2(?:\u200D\uD83E\uDDD2)?))|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFC-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB\uDFFD-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB-\uDFFD\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB-\uDFFE]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF\uDDBC\uDDBD](?:\u200D\u27A1\uFE0F?)?|[\uDDB0-\uDDB3]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?))?|\uDEF1(?:\uD83C(?:\uDFFB(?:\u200D\uD83E\uDEF2\uD83C[\uDFFC-\uDFFF])?|\uDFFC(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB\uDFFD-\uDFFF])?|\uDFFD(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])?|\uDFFE(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB-\uDFFD\uDFFF])?|\uDFFF(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB-\uDFFE])?))?)/g;
 };
@@ -3204,6 +3191,7 @@ var CurrentFileWordProvider = class {
     this.words = [];
   }
   async refreshWords(option) {
+    var _a;
     this.clearWords();
     const editor = this.appHelper.getCurrentEditor();
     if (!editor) {
@@ -3216,6 +3204,9 @@ var CurrentFileWordProvider = class {
     const currentToken = this.tokenizer.tokenize(
       editor.getLine(editor.getCursor().line).slice(0, editor.getCursor().ch)
     ).last();
+    const excludePatterns = option.excludeWordPatterns.map(
+      (x) => new RegExp(`^${x}$`)
+    );
     const content = await this.app.vault.cachedRead(file);
     const tokens = this.tokenizer.tokenize(content).filter((x) => {
       if (x.length < option.minNumberOfCharacters) {
@@ -3225,7 +3216,7 @@ var CurrentFileWordProvider = class {
         return false;
       }
       return option.onlyEnglish ? allAlphabets(x) : true;
-    }).map((x) => startsSmallLetterOnlyFirst(x) ? x.toLowerCase() : x);
+    }).map((x) => startsSmallLetterOnlyFirst(x) ? x.toLowerCase() : x).filter((x) => !excludePatterns.some((rp) => x.match(rp)));
     this.words = uniq(tokens).filter((x) => x !== currentToken).map((x) => ({
       value: x,
       type: "currentFile",
@@ -3235,7 +3226,12 @@ var CurrentFileWordProvider = class {
         accentsDiacritics: option.makeSynonymAboutAccentsDiacritics
       })
     }));
-    this.wordsByFirstLetter = groupBy(this.words, (x) => x.value.charAt(0));
+    for (const word of this.words) {
+      pushWord(this.wordsByFirstLetter, word.value.charAt(0), word);
+      (_a = word.aliases) == null ? void 0 : _a.forEach(
+        (a) => pushWord(this.wordsByFirstLetter, a.charAt(0), word)
+      );
+    }
   }
   clearWords() {
     this.words = [];
@@ -3404,17 +3400,21 @@ var CurrentVaultWordProvider = class {
     this.words = [];
   }
   async refreshWords(option) {
+    var _a;
     this.clearWords();
     const currentDirname = this.appHelper.getCurrentDirname();
     const markdownFilePaths = this.app.vault.getMarkdownFiles().map((x) => x.path).filter((p) => this.includePrefixPatterns.every((x) => p.startsWith(x))).filter((p) => this.excludePrefixPatterns.every((x) => !p.startsWith(x))).filter(
       (p) => !this.onlyUnderCurrentDirectory || dirname(p) === currentDirname
+    );
+    const excludePatterns = option.excludeWordPatterns.map(
+      (x) => new RegExp(`^${x}$`)
     );
     let wordByValue = {};
     for (const path of markdownFilePaths) {
       const content = await this.app.vault.adapter.read(path);
       const tokens = this.tokenizer.tokenize(content).filter(
         (x) => x.length >= option.minNumberOfCharacters && !this.tokenizer.shouldIgnoreOnCurrent(x)
-      ).map((x) => startsSmallLetterOnlyFirst(x) ? x.toLowerCase() : x);
+      ).map((x) => startsSmallLetterOnlyFirst(x) ? x.toLowerCase() : x).filter((x) => !excludePatterns.some((rp) => x.match(rp)));
       for (const token of tokens) {
         wordByValue[token] = {
           value: token,
@@ -3429,7 +3429,12 @@ var CurrentVaultWordProvider = class {
       }
     }
     this.words = Object.values(wordByValue);
-    this.wordsByFirstLetter = groupBy(this.words, (x) => x.value.charAt(0));
+    for (const word of this.words) {
+      pushWord(this.wordsByFirstLetter, word.value.charAt(0), word);
+      (_a = word.aliases) == null ? void 0 : _a.forEach(
+        (a) => pushWord(this.wordsByFirstLetter, a.charAt(0), word)
+      );
+    }
   }
   clearWords() {
     this.words = [];
@@ -3896,13 +3901,16 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
     this.appHelper = new AppHelper(app2);
     this.statusBar = statusBar;
   }
-  triggerComplete() {
+  triggerComplete(opt) {
     const editor = this.appHelper.getCurrentEditor();
     const activeFile = this.app.workspace.getActiveFile();
     if (!editor || !activeFile) {
       return;
     }
     this.runManually = true;
+    if (opt == null ? void 0 : opt.fallbackLinkify) {
+      this.completionMode = this.completionMode === "prefix" ? "partial" : "new";
+    }
     this.trigger(editor, activeFile, true);
   }
   hideCompletion() {
@@ -3916,11 +3924,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
       this.settings.intelligentSuggestionPrioritization.historyFilePath || DEFAULT_HISTORIES_PATH
     );
     if (await this.appHelper.exists(historyPath)) {
-      this.settings.selectionHistoryTree = {};
       return this.appHelper.loadJson(historyPath);
-    }
-    if (Object.keys(this.settings.selectionHistoryTree).length > 0) {
-      return this.settings.selectionHistoryTree;
     }
     return {};
   }
@@ -3985,6 +3989,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
       ins.refreshCurrentVaultTokens();
       ins.app.metadataCache.offref(cacheResolvedRef);
     });
+    ins.completionMode = ins.matchStrategy.name;
     return ins;
   }
   predictableComplete() {
@@ -4095,10 +4100,24 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
         const start = performance.now();
         this.showDebugLog(() => `[context.query]: ${context.query}`);
         const parsedQuery = JSON.parse(context.query);
-        const words = parsedQuery.queries.filter(
+        const createNewLinkSuggestions = () => parsedQuery.queries.slice().reverse().filter((q) => q.word.length >= this.minNumberTriggered).map((q) => ({
+          value: q.word,
+          createdPath: "FIXME: ",
+          type: "internalLink",
+          phantom: true,
+          offset: q.offset
+        }));
+        if (parsedQuery.completionMode === "new") {
+          cb(createNewLinkSuggestions());
+          return;
+        }
+        const matchStrategy = MatchStrategy.fromName(
+          parsedQuery.completionMode
+        );
+        let words = parsedQuery.queries.filter(
           (x, i, xs) => parsedQuery.currentFrontMatter || this.settings.minNumberOfWordsTriggeredPhrase + i - 1 < xs.length && x.word.length >= this.minNumberTriggered && !x.word.endsWith(" ")
         ).map((q) => {
-          const handler = parsedQuery.currentFrontMatter && this.frontMatterComplementStrategy !== SpecificMatchStrategy.INHERIT ? this.frontMatterComplementStrategy.handler : this.matchStrategy.handler;
+          const handler = parsedQuery.currentFrontMatter && this.frontMatterComplementStrategy !== SpecificMatchStrategy.INHERIT ? this.frontMatterComplementStrategy.handler : matchStrategy.handler;
           return handler(
             this.indexedWords,
             q.word,
@@ -4112,6 +4131,13 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
             }
           ).map((word) => ({ ...word, offset: q.offset }));
         }).flat().sort((a, b) => Number(a.fuzzy) - Number(b.fuzzy));
+        if (this.completionMode != this.matchStrategy.name && this.completionMode === "partial") {
+          words = words.filter((x) => x.type === "internalLink");
+          if (words.length === 0) {
+            cb(createNewLinkSuggestions());
+            return;
+          }
+        }
         cb(
           uniqWith(words, suggestionUniqPredicate).slice(
             0,
@@ -4214,7 +4240,8 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
       onlyEnglish: this.settings.onlyComplementEnglishOnCurrentFileComplement,
       minNumberOfCharacters: this.currentFileMinNumberOfCharacters,
       makeSynonymAboutEmoji: this.settings.matchingWithoutEmoji,
-      makeSynonymAboutAccentsDiacritics: this.settings.treatAccentDiacriticsAsAlphabeticCharacters
+      makeSynonymAboutAccentsDiacritics: this.settings.treatAccentDiacriticsAsAlphabeticCharacters,
+      excludeWordPatterns: this.settings.excludeCurrentFileWordPatterns
     });
     this.statusBar.setCurrentFileIndexed(
       this.currentFileWordProvider.wordCount
@@ -4240,7 +4267,8 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
     await this.currentVaultWordProvider.refreshWords({
       minNumberOfCharacters: this.currentVaultMinNumberOfCharacters,
       makeSynonymAboutEmoji: this.settings.matchingWithoutEmoji,
-      makeSynonymAboutAccentsDiacritics: this.settings.treatAccentDiacriticsAsAlphabeticCharacters
+      makeSynonymAboutAccentsDiacritics: this.settings.treatAccentDiacriticsAsAlphabeticCharacters,
+      excludeWordPatterns: this.settings.excludeCurrentVaultWordPatterns
     });
     this.statusBar.setCurrentVaultIndexed(
       this.currentVaultWordProvider.wordCount
@@ -4390,6 +4418,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
     const onReturnNull = (message) => {
       showDebugLog(message);
       this.runManually = false;
+      this.completionMode = this.matchStrategy.name;
       this.close();
     };
     if (!this.settings.complementAutomatically && !this.isOpen && !this.runManually) {
@@ -4485,7 +4514,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
     );
     if (suppressedTokens.length === 0) {
       onReturnNull(
-        `Don't show suggestions because all tokens are ignored by token pattern: ${String.raw`^[\u3040-\u309F\u30A0-\u30FF]{1,2}$`}`
+        "Don't show suggestions because all tokens are ignored by token pattern"
       );
       return null;
     }
@@ -4503,6 +4532,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
       end: cursor,
       query: JSON.stringify({
         currentFrontMatter,
+        completionMode: this.completionMode,
         queries: suppressedTokens.map((x) => ({
           ...x,
           offset: x.offset - currentTokens[0].offset
@@ -4585,6 +4615,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
   }
   selectSuggestion(word) {
     var _a, _b;
+    this.completionMode = this.matchStrategy.name;
     let forceWithAlias = false;
     let context = this.context;
     if (!context) {
@@ -4607,7 +4638,7 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
         insertedText = `${insertedText}, `;
       }
     } else {
-      if (this.settings.insertAfterCompletion && !(word.type === "customDictionary" && word.ignoreSpaceAfterCompletion)) {
+      if (this.settings.insertSpaceAfterCompletion && !(word.type === "customDictionary" && word.ignoreSpaceAfterCompletion)) {
         insertedText = `${insertedText} `;
       }
     }
@@ -4738,15 +4769,15 @@ var DEFAULT_SETTINGS = {
   delayMilliSeconds: 0,
   disableSuggestionsDuringImeOn: false,
   disableSuggestionsInMathBlock: false,
-  insertAfterCompletion: true,
+  insertSpaceAfterCompletion: false,
   firstCharactersDisableSuggestions: ":/^",
   patternsToSuppressTrigger: ["^~~~.*", "^```.*"],
   phrasePatternsToSuppressTrigger: [],
   noAutoFocusUntilCycle: false,
   // appearance
-  showMatchStrategy: true,
-  showComplementAutomatically: true,
-  showIndexingStatus: true,
+  showMatchStrategy: false,
+  showComplementAutomatically: false,
+  showIndexingStatus: false,
   descriptionOnSuggestion: "Short",
   // key customization
   hotkeys: {
@@ -4772,12 +4803,14 @@ var DEFAULT_SETTINGS = {
   enableCurrentFileComplement: true,
   currentFileMinNumberOfCharacters: 0,
   onlyComplementEnglishOnCurrentFileComplement: false,
+  excludeCurrentFileWordPatterns: [],
   // current vault complement
   enableCurrentVaultComplement: false,
   currentVaultMinNumberOfCharacters: 0,
   includeCurrentVaultPathPrefixPatterns: "",
   excludeCurrentVaultPathPrefixPatterns: "",
   includeCurrentVaultOnlyFilesUnderCurrentDirectory: false,
+  excludeCurrentVaultWordPatterns: [],
   // custom dictionary complement
   enableCustomDictionaryComplement: false,
   customDictionaryPaths: `https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt`,
@@ -4799,7 +4832,7 @@ var DEFAULT_SETTINGS = {
   },
   frontMatterKeyForExclusionInternalLink: "",
   // front matter complement
-  enableFrontMatterComplement: true,
+  enableFrontMatterComplement: false,
   frontMatterComplementMatchStrategy: "inherit",
   insertCommaAfterFrontMatterCompletion: false,
   intelligentSuggestionPrioritization: {
@@ -4811,10 +4844,7 @@ var DEFAULT_SETTINGS = {
   // mobile
   disableOnMobile: false,
   // debug
-  showLogAboutPerformanceInConsole: false,
-  // others
-  // TODO: Want to remove in the future version
-  selectionHistoryTree: {}
+  showLogAboutPerformanceInConsole: false
 };
 var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingTab {
   constructor(app2, plugin) {
@@ -4998,7 +5028,7 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian7.Setting(containerEl).setName("Disable suggestions in the Math block.").setDesc("It doesn't support the inline Math block.").addToggle((tc) => {
+    new import_obsidian7.Setting(containerEl).setName("Disable suggestions in the Math block").setDesc("It doesn't support the inline Math block.").addToggle((tc) => {
       tc.setValue(
         this.plugin.settings.disableSuggestionsInMathBlock
       ).onChange(async (value) => {
@@ -5007,9 +5037,9 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
       });
     });
     new import_obsidian7.Setting(containerEl).setName("Insert space after completion").addToggle((tc) => {
-      tc.setValue(this.plugin.settings.insertAfterCompletion).onChange(
+      tc.setValue(this.plugin.settings.insertSpaceAfterCompletion).onChange(
         async (value) => {
-          this.plugin.settings.insertAfterCompletion = value;
+          this.plugin.settings.insertSpaceAfterCompletion = value;
           await this.plugin.saveSettings();
         }
       );
@@ -5179,6 +5209,18 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
           await this.plugin.saveSettings({ currentFile: true });
         });
       });
+      new import_obsidian7.Setting(containerEl).setName("Exclude word patterns for indexing").setDesc(
+        "Regexp patterns for words to be excluded from the suggestions, separated by line breaks."
+      ).addTextArea((tc) => {
+        const el = tc.setValue(
+          this.plugin.settings.excludeCurrentFileWordPatterns.join("\n")
+        ).onChange(async (value) => {
+          this.plugin.settings.excludeCurrentFileWordPatterns = smartLineBreakSplit(value);
+          await this.plugin.saveSettings();
+        });
+        el.inputEl.className = "various-complements__settings__text-area-path-dense";
+        return el;
+      });
     }
   }
   addCurrentVaultComplementSettings(containerEl) {
@@ -5229,6 +5271,18 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
           this.plugin.settings.includeCurrentVaultOnlyFilesUnderCurrentDirectory = value;
           await this.plugin.saveSettings();
         });
+      });
+      new import_obsidian7.Setting(containerEl).setName("Exclude word patterns for indexing").setDesc(
+        "Regexp patterns for words to be excluded from the suggestions, separated by line breaks."
+      ).addTextArea((tc) => {
+        const el = tc.setValue(
+          this.plugin.settings.excludeCurrentVaultWordPatterns.join("\n")
+        ).onChange(async (value) => {
+          this.plugin.settings.excludeCurrentVaultWordPatterns = smartLineBreakSplit(value);
+          await this.plugin.saveSettings();
+        });
+        el.inputEl.className = "various-complements__settings__text-area-path-dense";
+        return el;
       });
     }
   }
@@ -5675,12 +5729,11 @@ var ProviderStatusBar = class _ProviderStatusBar {
 // src/ui/CustomDictionaryWordAddModal.ts
 var import_obsidian8 = require("obsidian");
 
-// node_modules/svelte/src/runtime/internal/utils.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/utils.js
 function noop() {
 }
 function assign(tar, src) {
-  for (const k in src)
-    tar[k] = src[k];
+  for (const k in src) tar[k] = src[k];
   return (
     /** @type {T & S} */
     tar
@@ -5750,30 +5803,26 @@ function get_all_dirty_from_scope($$scope) {
 }
 function exclude_internal_props(props) {
   const result = {};
-  for (const k in props)
-    if (k[0] !== "$")
-      result[k] = props[k];
+  for (const k in props) if (k[0] !== "$") result[k] = props[k];
   return result;
 }
 function compute_rest_props(props, keys) {
   const rest = {};
   keys = new Set(keys);
-  for (const k in props)
-    if (!keys.has(k) && k[0] !== "$")
-      rest[k] = props[k];
+  for (const k in props) if (!keys.has(k) && k[0] !== "$") rest[k] = props[k];
   return rest;
 }
 function null_to_empty(value) {
   return value == null ? "" : value;
 }
 
-// node_modules/svelte/src/runtime/internal/globals.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/globals.js
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : (
   // @ts-ignore Node typings have this
   global
 );
 
-// node_modules/svelte/src/runtime/internal/ResizeObserverSingleton.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/ResizeObserverSingleton.js
 var ResizeObserverSingleton = class _ResizeObserverSingleton {
   /** @param {ResizeObserverOptions} options */
   constructor(options) {
@@ -5821,7 +5870,7 @@ var ResizeObserverSingleton = class _ResizeObserverSingleton {
 };
 ResizeObserverSingleton.entries = "WeakMap" in globals ? /* @__PURE__ */ new WeakMap() : void 0;
 
-// node_modules/svelte/src/runtime/internal/dom.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/dom.js
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -5842,8 +5891,7 @@ function append_styles(target, style_sheet_id, styles) {
   }
 }
 function get_root_for_style(node) {
-  if (!node)
-    return document;
+  if (!node) return document;
   const root = node.getRootNode ? node.getRootNode() : node.ownerDocument;
   if (root && /** @type {ShadowRoot} */
   root.host) {
@@ -5872,8 +5920,7 @@ function detach(node) {
 }
 function destroy_each(iterations, detaching) {
   for (let i = 0; i < iterations.length; i += 1) {
-    if (iterations[i])
-      iterations[i].d(detaching);
+    if (iterations[i]) iterations[i].d(detaching);
   }
 }
 function element(name) {
@@ -5893,10 +5940,8 @@ function listen(node, event, handler, options) {
   return () => node.removeEventListener(event, handler, options);
 }
 function attr(node, attribute, value) {
-  if (value == null)
-    node.removeAttribute(attribute);
-  else if (node.getAttribute(attribute) !== value)
-    node.setAttribute(attribute, value);
+  if (value == null) node.removeAttribute(attribute);
+  else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
 }
 function set_svg_attributes(node, attributes) {
   for (const key in attributes) {
@@ -5908,8 +5953,7 @@ function children(element2) {
 }
 function set_data(text2, data) {
   data = "" + data;
-  if (text2.data === data)
-    return;
+  if (text2.data === data) return;
   text2.data = /** @type {string} */
   data;
 }
@@ -5956,14 +6000,13 @@ function get_custom_elements_slots(element2) {
   return result;
 }
 
-// node_modules/svelte/src/runtime/internal/lifecycle.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/lifecycle.js
 var current_component;
 function set_current_component(component) {
   current_component = component;
 }
 function get_current_component() {
-  if (!current_component)
-    throw new Error("Function called outside component initialization");
+  if (!current_component) throw new Error("Function called outside component initialization");
   return current_component;
 }
 function onMount(fn) {
@@ -5989,7 +6032,7 @@ function createEventDispatcher() {
   };
 }
 
-// node_modules/svelte/src/runtime/internal/scheduler.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/scheduler.js
 var dirty_components = [];
 var binding_callbacks = [];
 var render_callbacks = [];
@@ -6028,8 +6071,7 @@ function flush() {
     set_current_component(null);
     dirty_components.length = 0;
     flushidx = 0;
-    while (binding_callbacks.length)
-      binding_callbacks.pop()();
+    while (binding_callbacks.length) binding_callbacks.pop()();
     for (let i = 0; i < render_callbacks.length; i += 1) {
       const callback = render_callbacks[i];
       if (!seen_callbacks.has(callback)) {
@@ -6064,7 +6106,7 @@ function flush_render_callbacks(fns) {
   render_callbacks = filtered;
 }
 
-// node_modules/svelte/src/runtime/internal/transitions.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/transitions.js
 var outroing = /* @__PURE__ */ new Set();
 var outros;
 function transition_in(block, local) {
@@ -6075,14 +6117,12 @@ function transition_in(block, local) {
 }
 function transition_out(block, local, detach2, callback) {
   if (block && block.o) {
-    if (outroing.has(block))
-      return;
+    if (outroing.has(block)) return;
     outroing.add(block);
     outros.c.push(() => {
       outroing.delete(block);
       if (callback) {
-        if (detach2)
-          block.d(1);
+        if (detach2) block.d(1);
         callback();
       }
     });
@@ -6092,12 +6132,12 @@ function transition_out(block, local, detach2, callback) {
   }
 }
 
-// node_modules/svelte/src/runtime/internal/each.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/each.js
 function ensure_array_like(array_like_or_iterator) {
   return (array_like_or_iterator == null ? void 0 : array_like_or_iterator.length) !== void 0 ? array_like_or_iterator : Array.from(array_like_or_iterator);
 }
 
-// node_modules/svelte/src/runtime/internal/spread.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/spread.js
 function get_spread_update(levels, updates) {
   const update2 = {};
   const to_null_out = {};
@@ -6108,8 +6148,7 @@ function get_spread_update(levels, updates) {
     const n = updates[i];
     if (n) {
       for (const key in o) {
-        if (!(key in n))
-          to_null_out[key] = 1;
+        if (!(key in n)) to_null_out[key] = 1;
       }
       for (const key in n) {
         if (!accounted_for[key]) {
@@ -6125,13 +6164,12 @@ function get_spread_update(levels, updates) {
     }
   }
   for (const key in to_null_out) {
-    if (!(key in update2))
-      update2[key] = void 0;
+    if (!(key in update2)) update2[key] = void 0;
   }
   return update2;
 }
 
-// node_modules/svelte/src/shared/boolean_attributes.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/shared/boolean_attributes.js
 var _boolean_attributes = (
   /** @type {const} */
   [
@@ -6164,7 +6202,7 @@ var _boolean_attributes = (
 );
 var boolean_attributes = /* @__PURE__ */ new Set([..._boolean_attributes]);
 
-// node_modules/svelte/src/runtime/internal/Component.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/Component.js
 function create_component(block) {
   block && block.c();
 }
@@ -6229,10 +6267,8 @@ function init(component, options, instance5, create_fragment5, not_equal, props,
   $$.ctx = instance5 ? instance5(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
-      if (!$$.skip_bound && $$.bound[i])
-        $$.bound[i](value);
-      if (ready)
-        make_dirty(component, i);
+      if (!$$.skip_bound && $$.bound[i]) $$.bound[i](value);
+      if (ready) make_dirty(component, i);
     }
     return ret;
   }) : [];
@@ -6249,8 +6285,7 @@ function init(component, options, instance5, create_fragment5, not_equal, props,
     } else {
       $$.fragment && $$.fragment.c();
     }
-    if (options.intro)
-      transition_in(component.$$.fragment);
+    if (options.intro) transition_in(component.$$.fragment);
     mount_component(component, options.target, options.anchor);
     end_hydrating();
     flush();
@@ -6402,8 +6437,7 @@ if (typeof HTMLElement === "function") {
     // and setting attributes through setAttribute etc, this is helpful
     attributeChangedCallback(attr2, _oldValue, newValue) {
       var _a;
-      if (this.$$r)
-        return;
+      if (this.$$r) return;
       attr2 = this.$$g_p(attr2);
       this.$$d[attr2] = get_custom_element_value(attr2, newValue, this.$$p_d, "toProp");
       (_a = this.$$c) == null ? void 0 : _a.$set({ [attr2]: this.$$d[attr2] });
@@ -6411,7 +6445,7 @@ if (typeof HTMLElement === "function") {
     disconnectedCallback() {
       this.$$cn = false;
       Promise.resolve().then(() => {
-        if (!this.$$cn) {
+        if (!this.$$cn && this.$$c) {
           this.$$c.$destroy();
           this.$$c = void 0;
         }
@@ -6494,8 +6528,7 @@ var SvelteComponent = class {
     callbacks.push(callback);
     return () => {
       const index = callbacks.indexOf(callback);
-      if (index !== -1)
-        callbacks.splice(index, 1);
+      if (index !== -1) callbacks.splice(index, 1);
     };
   }
   /**
@@ -6511,10 +6544,10 @@ var SvelteComponent = class {
   }
 };
 
-// node_modules/svelte/src/shared/version.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/shared/version.js
 var PUBLIC_VERSION = "4";
 
-// node_modules/svelte/src/runtime/internal/disclose-version/index.js
+// node_modules/.pnpm/svelte@4.2.18/node_modules/svelte/src/runtime/internal/disclose-version/index.js
 if (typeof window !== "undefined")
   (window.__svelte || (window.__svelte = { v: /* @__PURE__ */ new Set() })).v.add(PUBLIC_VERSION);
 
@@ -6538,8 +6571,7 @@ function create_fragment(ctx) {
   return {
     c() {
       button = element("button");
-      if (default_slot)
-        default_slot.c();
+      if (default_slot) default_slot.c();
       attr(
         button,
         "aria-label",
@@ -6612,8 +6644,7 @@ function create_fragment(ctx) {
       }
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(default_slot, local);
       current = true;
     },
@@ -6625,8 +6656,7 @@ function create_fragment(ctx) {
       if (detaching) {
         detach(button);
       }
-      if (default_slot)
-        default_slot.d(detaching);
+      if (default_slot) default_slot.d(detaching);
       mounted = false;
       dispose();
     }
@@ -6641,12 +6671,9 @@ function instance($$self, $$props, $$invalidate) {
     dispatcher("click");
   };
   $$self.$$set = ($$props2) => {
-    if ("popup" in $$props2)
-      $$invalidate(0, popup = $$props2.popup);
-    if ("disabled" in $$props2)
-      $$invalidate(1, disabled = $$props2.disabled);
-    if ("$$scope" in $$props2)
-      $$invalidate(3, $$scope = $$props2.$$scope);
+    if ("popup" in $$props2) $$invalidate(0, popup = $$props2.popup);
+    if ("disabled" in $$props2) $$invalidate(1, disabled = $$props2.disabled);
+    if ("$$scope" in $$props2) $$invalidate(3, $$scope = $$props2.$$scope);
   };
   return [popup, disabled, handleClick, $$scope, slots];
 }
@@ -6658,7 +6685,7 @@ var ObsidianButton = class extends SvelteComponent {
 };
 var ObsidianButton_default = ObsidianButton;
 
-// node_modules/svelte-lucide-icons/icons/File.svelte
+// node_modules/.pnpm/svelte-lucide-icons@0.6.0/node_modules/svelte-lucide-icons/icons/File.svelte
 function create_fragment2(ctx) {
   let svg;
   let path;
@@ -6701,8 +6728,7 @@ function create_fragment2(ctx) {
   return {
     c() {
       svg = svg_element("svg");
-      if (default_slot)
-        default_slot.c();
+      if (default_slot) default_slot.c();
       path = svg_element("path");
       polyline = svg_element("polyline");
       attr(path, "d", "M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z");
@@ -6766,8 +6792,7 @@ function create_fragment2(ctx) {
       ]));
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(default_slot, local);
       current = true;
     },
@@ -6779,8 +6804,7 @@ function create_fragment2(ctx) {
       if (detaching) {
         detach(svg);
       }
-      if (default_slot)
-        default_slot.d(detaching);
+      if (default_slot) default_slot.d(detaching);
     }
   };
 }
@@ -6792,10 +6816,8 @@ function instance2($$self, $$props, $$invalidate) {
   $$self.$$set = ($$new_props) => {
     $$props = assign(assign({}, $$props), exclude_internal_props($$new_props));
     $$invalidate(1, $$restProps = compute_rest_props($$props, omit_props_names));
-    if ("size" in $$new_props)
-      $$invalidate(0, size = $$new_props.size);
-    if ("$$scope" in $$new_props)
-      $$invalidate(2, $$scope = $$new_props.$$scope);
+    if ("size" in $$new_props) $$invalidate(0, size = $$new_props.size);
+    if ("$$scope" in $$new_props) $$invalidate(2, $$scope = $$new_props.$$scope);
   };
   return [size, $$restProps, $$scope, slots];
 }
@@ -6833,8 +6855,7 @@ function create_fragment3(ctx) {
     c() {
       div = element("div");
       button = element("button");
-      if (default_slot)
-        default_slot.c();
+      if (default_slot) default_slot.c();
       attr(
         button,
         "aria-label",
@@ -6915,8 +6936,7 @@ function create_fragment3(ctx) {
       }
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(default_slot, local);
       current = true;
     },
@@ -6928,8 +6948,7 @@ function create_fragment3(ctx) {
       if (detaching) {
         detach(div);
       }
-      if (default_slot)
-        default_slot.d(detaching);
+      if (default_slot) default_slot.d(detaching);
       mounted = false;
       dispose();
     }
@@ -6946,12 +6965,9 @@ function instance3($$self, $$props, $$invalidate) {
     }
   };
   $$self.$$set = ($$props2) => {
-    if ("popup" in $$props2)
-      $$invalidate(0, popup = $$props2.popup);
-    if ("disabled" in $$props2)
-      $$invalidate(1, disabled = $$props2.disabled);
-    if ("$$scope" in $$props2)
-      $$invalidate(3, $$scope = $$props2.$$scope);
+    if ("popup" in $$props2) $$invalidate(0, popup = $$props2.popup);
+    if ("disabled" in $$props2) $$invalidate(1, disabled = $$props2.disabled);
+    if ("$$scope" in $$props2) $$invalidate(3, $$scope = $$props2.$$scope);
   };
   return [popup, disabled, handleClick, $$scope, slots];
 }
@@ -6995,8 +7011,7 @@ function create_each_block(ctx) {
     p(ctx2, dirty) {
       if (dirty & /*dictionaries*/
       32 && t0_value !== (t0_value = /*dictionary*/
-      ctx2[26].path + ""))
-        set_data(t0, t0_value);
+      ctx2[26].path + "")) set_data(t0, t0_value);
       if (dirty & /*dictionaries*/
       32 && option_value_value !== (option_value_value = /*dictionary*/
       ctx2[26])) {
@@ -7024,8 +7039,7 @@ function create_default_slot_1(ctx) {
       current = true;
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(file.$$.fragment, local);
       current = true;
     },
@@ -7253,11 +7267,9 @@ function create_fragment4(ctx) {
       t7 = space();
       textarea0 = element("textarea");
       t8 = space();
-      if (if_block0)
-        if_block0.c();
+      if (if_block0) if_block0.c();
       t9 = space();
-      if (if_block1)
-        if_block1.c();
+      if (if_block1) if_block1.c();
       t10 = space();
       h32 = element("h3");
       h32.textContent = "Description";
@@ -7275,11 +7287,10 @@ function create_fragment4(ctx) {
       if (
         /*selectedDictionary*/
         ctx[2] === void 0
-      )
-        add_render_callback(() => (
-          /*select_change_handler*/
-          ctx[17].call(select2)
-        ));
+      ) add_render_callback(() => (
+        /*select_change_handler*/
+        ctx[17].call(select2)
+      ));
       set_style(div0, "display", "flex");
       set_style(div0, "gap", "10px");
       set_style(textarea0, "width", "100%");
@@ -7325,11 +7336,9 @@ function create_fragment4(ctx) {
       );
       ctx[20](textarea0);
       append(div2, t8);
-      if (if_block0)
-        if_block0.m(div2, null);
+      if (if_block0) if_block0.m(div2, null);
       append(div2, t9);
-      if (if_block1)
-        if_block1.m(div2, null);
+      if (if_block1) if_block1.m(div2, null);
       append(div2, t10);
       append(div2, h32);
       append(div2, t12);
@@ -7420,12 +7429,11 @@ function create_fragment4(ctx) {
       }
       obsidianiconbutton.$set(obsidianiconbutton_changes);
       if (!current || dirty & /*firstWordTitle*/
-      1024)
-        set_data(
-          t6,
-          /*firstWordTitle*/
-          ctx2[10]
-        );
+      1024) set_data(
+        t6,
+        /*firstWordTitle*/
+        ctx2[10]
+      );
       if (dirty & /*inputWord*/
       1) {
         set_input_value(
@@ -7483,9 +7491,8 @@ function create_fragment4(ctx) {
       }
       const obsidianbutton_changes = {};
       if (dirty & /*enableSubmit*/
-      4096)
-        obsidianbutton_changes.disabled = !/*enableSubmit*/
-        ctx2[12];
+      4096) obsidianbutton_changes.disabled = !/*enableSubmit*/
+      ctx2[12];
       if (dirty & /*$$scope*/
       536870912) {
         obsidianbutton_changes.$$scope = { dirty, ctx: ctx2 };
@@ -7493,8 +7500,7 @@ function create_fragment4(ctx) {
       obsidianbutton.$set(obsidianbutton_changes);
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(obsidianiconbutton.$$.fragment, local);
       transition_in(obsidianbutton.$$.fragment, local);
       current = true;
@@ -7511,10 +7517,8 @@ function create_fragment4(ctx) {
       destroy_each(each_blocks, detaching);
       destroy_component(obsidianiconbutton);
       ctx[20](null);
-      if (if_block0)
-        if_block0.d();
-      if (if_block1)
-        if_block1.d();
+      if (if_block0) if_block0.d();
+      if (if_block1) if_block1.d();
       destroy_component(obsidianbutton);
       mounted = false;
       run_all(dispose);
@@ -7593,42 +7597,29 @@ function instance4($$self, $$props, $$invalidate) {
     $$invalidate(8, aliasesStr);
   }
   $$self.$$set = ($$props2) => {
-    if ("dictionaries" in $$props2)
-      $$invalidate(5, dictionaries = $$props2.dictionaries);
-    if ("selectedDictionary" in $$props2)
-      $$invalidate(2, selectedDictionary = $$props2.selectedDictionary);
-    if ("inputWord" in $$props2)
-      $$invalidate(0, inputWord = $$props2.inputWord);
-    if ("useDisplayedWord" in $$props2)
-      $$invalidate(1, useDisplayedWord = $$props2.useDisplayedWord);
-    if ("displayedWord" in $$props2)
-      $$invalidate(3, displayedWord = $$props2.displayedWord);
-    if ("description" in $$props2)
-      $$invalidate(4, description = $$props2.description);
-    if ("aliases" in $$props2)
-      $$invalidate(14, aliases = $$props2.aliases);
-    if ("dividerForDisplay" in $$props2)
-      $$invalidate(15, dividerForDisplay = $$props2.dividerForDisplay);
-    if ("onSubmit" in $$props2)
-      $$invalidate(16, onSubmit = $$props2.onSubmit);
-    if ("onClickFileIcon" in $$props2)
-      $$invalidate(6, onClickFileIcon = $$props2.onClickFileIcon);
+    if ("dictionaries" in $$props2) $$invalidate(5, dictionaries = $$props2.dictionaries);
+    if ("selectedDictionary" in $$props2) $$invalidate(2, selectedDictionary = $$props2.selectedDictionary);
+    if ("inputWord" in $$props2) $$invalidate(0, inputWord = $$props2.inputWord);
+    if ("useDisplayedWord" in $$props2) $$invalidate(1, useDisplayedWord = $$props2.useDisplayedWord);
+    if ("displayedWord" in $$props2) $$invalidate(3, displayedWord = $$props2.displayedWord);
+    if ("description" in $$props2) $$invalidate(4, description = $$props2.description);
+    if ("aliases" in $$props2) $$invalidate(14, aliases = $$props2.aliases);
+    if ("dividerForDisplay" in $$props2) $$invalidate(15, dividerForDisplay = $$props2.dividerForDisplay);
+    if ("onSubmit" in $$props2) $$invalidate(16, onSubmit = $$props2.onSubmit);
+    if ("onClickFileIcon" in $$props2) $$invalidate(6, onClickFileIcon = $$props2.onClickFileIcon);
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*inputWord*/
     1) {
-      $:
-        $$invalidate(12, enableSubmit = inputWord.length > 0);
+      $: $$invalidate(12, enableSubmit = inputWord.length > 0);
     }
     if ($$self.$$.dirty & /*dividerForDisplay*/
     32768) {
-      $:
-        $$invalidate(11, enableDisplayedWord = Boolean(dividerForDisplay));
+      $: $$invalidate(11, enableDisplayedWord = Boolean(dividerForDisplay));
     }
     if ($$self.$$.dirty & /*useDisplayedWord*/
     2) {
-      $:
-        $$invalidate(10, firstWordTitle = useDisplayedWord ? "Inserted word" : "Word");
+      $: $$invalidate(10, firstWordTitle = useDisplayedWord ? "Inserted word" : "Word");
     }
     if ($$self.$$.dirty & /*useDisplayedWord, displayedWordRef*/
     130) {
@@ -7720,7 +7711,7 @@ var CustomDictionaryWordAddModal = class extends import_obsidian8.Modal {
   }
 };
 
-// node_modules/ts-deepmerge/esm/index.js
+// node_modules/.pnpm/ts-deepmerge@7.0.1/node_modules/ts-deepmerge/esm/index.js
 var isObject = (obj) => {
   if (typeof obj === "object" && obj !== null) {
     if (typeof Object.getPrototypeOf === "function") {
@@ -7858,6 +7849,13 @@ var VariousComponents = class extends import_obsidian9.Plugin {
       name: "Hide suggestions",
       callback: async () => {
         this.suggester.hideCompletion();
+      }
+    });
+    this.addCommand({
+      id: "fallback-linkify",
+      name: "Fallback linkify",
+      callback: async () => {
+        this.suggester.triggerComplete({ fallbackLinkify: true });
       }
     });
     this.addCommand({
