@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Saturday, August 31st 2024, 8:01 pm
+date modified: Saturday, August 31st 2024, 8:29 pm
 ---
 
 - [x] Update anime list 🔽 ➕ 2024-04-26 ✅ 2024-07-16
@@ -21,13 +21,13 @@ date modified: Saturday, August 31st 2024, 8:01 pm
 > [!tldr] All the anime I would recommend
 
 1. Dr. Stone
-2. Code Geass
-3. My Hero Academia
-4. Demon Slayer
-5. Kaiju No. 8
-6. Spice and Wolf (2024 remake)
-7. Steins;Gate
-8. Fullmetal Alchemist: Brotherhood
+2. My Hero Academia
+3. Demon Slayer
+4. Kaiju No. 8
+5. Spice and Wolf (2024 remake)
+6. Steins;Gate
+7. Fullmetal Alchemist: Brotherhood
+8. Code Geass
 9. So I'm a Spider, So What?
 10. One Punch Man
 11. Attack on Titan

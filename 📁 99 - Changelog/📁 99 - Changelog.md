@@ -1,5 +1,5 @@
-- 2024-08-31 at 20h01 · [[Awesome Anime]]
-- 2024-08-31 at 19h55 · [[⬇️ Misc Todos]]
+- 2024-08-31 at 20h31 · [[⬇️ Misc Todos]]
+- 2024-08-31 at 20h30 · [[Awesome Anime]]
 - 2024-08-31 at 19h41 · [[Cybersecurity Ontologies, Taxonomies, and Mental M]]
 - 2024-08-31 at 18h03 · [[Phone Pick in 2024]]
 - 2024-08-31 at 15h55 · [[Internet Usage & Ethics]]
