@@ -10,7 +10,6 @@
   "promptDelete": false,
   "showRibbon": true,
   "showUnsupportedFiles": true,
-  "userIgnoreFilters": [
-    "\"/excalidraw/\""
-  ]
+  "userIgnoreFilters": null,
+  "newFileLocation": "current"
 }

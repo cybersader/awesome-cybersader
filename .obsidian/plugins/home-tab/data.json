@@ -32,4 +32,11 @@
       "timestamp": 1725311810926
     }
   ],
-  "bookmarkedFileStore
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": false,
+  "showOmnisearchExcerpt": true
+}

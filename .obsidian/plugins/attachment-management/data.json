@@ -2,7 +2,7 @@
   "attachPath": {
     "attachmentRoot": "_attachments",
     "saveAttE": "nextToNote",
-    "attachmentPath": "${notename}",
+    "attachmentPath": "",
     "attachFormat": "IMG-${date}",
     "type": "GLOBAL",
     "extensionOverride": []

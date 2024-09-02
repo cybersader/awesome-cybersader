@@ -1,6 +1,6 @@
 {
-  "attachmentFolderPath": "./assets/${filename}",
-  "autoRenameFiles": false,
+  "attachmentFolderPath": "_attachments",
+  "autoRenameFiles": true,
   "autoRenameFolder": true,
   "convertImagesToJpeg": false,
   "convertImagesOnDragAndDrop": false,

@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Personal Cyber Resilience",
-      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
-    },
-    {
-      "basename": "Drawing 2024-09-02 17.02.33.excalidraw",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2024-09-02 17.02.33.excalidraw",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg"
-    },
-    {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Bluetooth Removal Issue Fix Windows",
+      "path": "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+    },
+    {
+      "basename": "Desktop Vs Mobile Obsidian",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Obsidian/Desktop Vs Mobile Obsidian.md"
+    },
+    {
+      "basename": "Find All Enabled Plugins From Obsidian Folder",
+      "path": "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
       "basename": "⬇️ Misc Todos",
@@ -179,10 +191,6 @@
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     }
   ],
   "omittedPaths": [],

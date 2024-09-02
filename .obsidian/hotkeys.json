@@ -159,5 +159,13 @@
       ],
       "key": "S"
     }
+  ],
+  "obsidian-excalidraw-plugin:frame-settings": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
   ]
 }

@@ -44,40 +44,6 @@
             }
           },
           {
-            "id": "af86814574bb23c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8362c11fddc492c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c64f72db79cb411a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md"
-              }
-            }
-          },
-          {
             "id": "c934b33e2482b757",
             "type": "leaf",
             "state": {
@@ -162,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -215,29 +181,12 @@
               "type": "recent-files",
               "state": {}
             }
-          },
-          {
-            "id": "8c71cd1076f69e31",
-            "type": "leaf",
-            "state": {
-              "type": "screen-garden-user-pane",
-              "state": {}
-            }
-          },
-          {
-            "id": "1a493be17ad0ff14",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-tab-tree",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 360.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -253,7 +202,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -276,7 +225,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
               }
             }
           },
@@ -310,7 +259,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -319,30 +268,6 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "5b1aca601e227119",
-            "type": "leaf",
-            "state": {
-              "type": "reminder-list",
-              "state": {}
-            }
-          },
-          {
-            "id": "4bf7ed2b9f9786f6",
-            "type": "leaf",
-            "state": {
-              "type": "graph-analysis",
-              "state": {}
-            }
-          },
-          {
-            "id": "5841fa8570563cb6",
-            "type": "leaf",
-            "state": {
-              "type": "screen-garden-document-pane",
-              "state": {}
             }
           },
           {
@@ -360,37 +285,14 @@
               "type": "smart-connections-chat-view",
               "state": {}
             }
-          },
-          {
-            "id": "4e1a34ac54499aab",
-            "type": "leaf",
-            "state": {
-              "type": "tasks_timeline_view",
-              "state": {}
-            }
-          },
-          {
-            "id": "02e9020cc4bf7581",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {}
-            }
-          },
-          {
-            "id": "fbac6b1bba4d2a09",
-            "type": "leaf",
-            "state": {
-              "type": "BC-tree",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -411,84 +313,55 @@
       "callout-manager:Insert Callout": false,
       "cmdr:Open settings": false,
       "cmdr:Hider: Toggle status bar": false,
-      "file-tree-generator:Generate file tree": false,
-      "obisidian-note-linker:Note Linker": false,
-      "obsidian-pending-notes:Pending Notes": false,
-      "ai-tagger:Generate tags!": false,
-      "bearings:Open the navigator": false,
-      "bearings:Create relationship": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
-      "copilot:Copilot Chat": false,
-      "custom-sort:Toggle custom sorting": false,
-      "file-cleaner-redux:Clean files": false,
-      "flashcards-obsidian:Generate flashcards": false,
-      "linkshelf:LinkStowr Sync": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "markdown-table-editor:Open Markdown Table Editor": false,
-      "media-extended:Open media": false,
-      "nested-daily-todos:Add incomplete todos to today's note": false,
-      "nostr-writer:See notes published to Nostr": false,
-      "nostr-writer:See your Nostr Bookmarks": false,
-      "nostr-writer:See your Nostr Highlights": false,
-      "nostr-writer:Publish this note to Nostr": false,
-      "privacy-glasses:Hide all": false,
-      "privacy-glasses:Reveal non-private": false,
-      "privacy-glasses:Reveal headlines only": false,
-      "privacy-glasses:Reveal all": false,
-      "quick-tagger:Add tag to current note": false,
-      "quick-tagger:Remove tag from current note": false,
-      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
-      "send-to-ghost:Publish Ghost": false,
-      "obsidian-tweet-to-markdown:Tweet to Markdown": false,
-      "remotely-save:Remotely Save": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fbac6b1bba4d2a09",
+  "active": "0b04860c30999bbe",
   "lastOpenFiles": [
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.51.25.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.51.25.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/Desktop Vs Mobile Vault Configs.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments/IMG-20240902183115533.png",
+    "_attachments",
+    "_attachments/Desktop Vs Mobile Vault Configs",
+    "_attachments/Desktop Vs Mobile Vault Configs/IMG-20240902183016436.png",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments/Desktop Vs Mobile Vault Configs",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments/Desktop Vs Mobile Vault Configs/IMG-20240902182653882.png",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments/Desktop Vs Mobile Vault Configs/IMG-20240902182502401.png",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets/DUMMY_FILE",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/assets/DUMMY_FILE",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/assets",
+    "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
+    "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
+    "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Obsidian/Desktop Vs Mobile Obsidian.md",
+    "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md",
+    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 17.02.10.excalidraw.md",
-    "Excalidraw/assets/Drawing 2024-09-02 17.02.10.excalidraw",
-    "Excalidraw/assets/Drawing 2024-09-02 16.31.13.excalidraw",
-    "Excalidraw/assets/Drawing 2024-09-02 14.40.24.excalidraw",
-    "Excalidraw/assets",
-    "Excalidraw",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.37.36.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.36.52.excalidraw.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion/assets/DUMMY_FILE",
-    "📁 01 - Projects/GitHub + Obsidian + Notion/assets",
-    "📁 01 - Projects/GitHub + Obsidian + Notion",
     "✅ Tasks/⬇️ Misc Todos.md",
     "📁 01 - Projects/Podman Setup & Container Usage.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden",
     "📁 01 - Projects/Pasted image 20240830174347.png",
     "📁 01 - Projects/📁 01 - Projects.md",
     "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 07 - Business/Monetization & Funding/Monetization & Funding.md",
     "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md",
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md",
     "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md",
-    "📁 01 - Projects/Phone Pick in 2024/Providers, Phones, Plans/Providers, Phones, Plans.md",
-    "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
-    "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
-    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
-    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
-    "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521498.png",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage",
-    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521450.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
-    "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png"
+    "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png"
   ]
 }
