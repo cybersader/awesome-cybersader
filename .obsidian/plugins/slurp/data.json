@@ -1,0 +1,107 @@
+{
+  "settingsVersion": 1,
+  "defaultPath": "Slurped Pages",
+  "fm": {
+    "includeEmpty": false,
+    "tags": {
+      "parse": true,
+      "prefix": "slurp",
+      "case": "iKebab-case"
+    },
+    "properties": {
+      "link": {
+        "id": "link",
+        "key": "link",
+        "idx": 0,
+        "enabled": true,
+        "custom": false
+      },
+      "byline": {
+        "id": "byline",
+        "key": "byline",
+        "idx": 1,
+        "enabled": true,
+        "custom": false
+      },
+      "siteName": {
+        "id": "siteName",
+        "key": "site",
+        "idx": 2,
+        "enabled": true,
+        "custom": false
+      },
+      "publishedTime": {
+        "id": "publishedTime",
+        "key": "date",
+        "idx": 3,
+        "format": "d|YYYY-MM-DDTHH:mm",
+        "enabled": true,
+        "custom": false
+      },
+      "modifiedTime": {
+        "id": "modifiedTime",
+        "key": "updated",
+        "idx": 4,
+        "format": "d|YYYY-MM-DDTHH:mm",
+        "enabled": true,
+        "custom": false
+      },
+      "type": {
+        "id": "type",
+        "key": "type",
+        "idx": 5,
+        "enabled": true,
+        "custom": false
+      },
+      "excerpt": {
+        "id": "excerpt",
+        "key": "excerpt",
+        "idx": 6,
+        "enabled": true,
+        "custom": false
+      },
+      "twitter": {
+        "id": "twitter",
+        "key": "twitter",
+        "idx": 7,
+        "format": "s|https://twitter.com/{s}",
+        "enabled": true,
+        "custom": false
+      },
+      "tags": {
+        "id": "tags",
+        "key": "tags",
+        "idx": 8,
+        "format": "S|{prefix}/{tag}",
+        "enabled": true,
+        "custom": false
+      },
+      "onion": {
+        "id": "onion",
+        "key": "onion",
+        "idx": 9,
+        "enabled": true,
+        "custom": false
+      },
+      "slurped": {
+        "id": "slurped",
+        "key": "slurped",
+        "idx": 10,
+        "format": "d|YYYY-MM-DDTHH:mm",
+        "enabled": true,
+        "custom": false
+      },
+      "title": {
+        "id": "title",
+        "key": "title",
+        "idx": 11,
+        "enabled": true,
+        "custom": false
+      }
+    }
+  },
+  "logs": {
+    "logPath": "_slurplogs",
+    "debug": false
+  }
+}

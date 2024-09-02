@@ -73,7 +73,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md"
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md"
               }
             }
           },
@@ -215,8 +215,25 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "8c71cd1076f69e31",
+            "type": "leaf",
+            "state": {
+              "type": "screen-garden-user-pane",
+              "state": {}
+            }
+          },
+          {
+            "id": "1a493be17ad0ff14",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -236,7 +253,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -259,7 +276,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md"
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
               }
             }
           },
@@ -268,14 +285,6 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "bee40236adcd78db",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
               "state": {}
             }
           },
@@ -301,7 +310,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -311,14 +320,77 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "5b1aca601e227119",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {}
+            }
+          },
+          {
+            "id": "4bf7ed2b9f9786f6",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {}
+            }
+          },
+          {
+            "id": "5841fa8570563cb6",
+            "type": "leaf",
+            "state": {
+              "type": "screen-garden-document-pane",
+              "state": {}
+            }
+          },
+          {
+            "id": "81e7493574523ab6",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "89c9b44c7e440977",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-chat-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "4e1a34ac54499aab",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {}
+            }
+          },
+          {
+            "id": "02e9020cc4bf7581",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "fbac6b1bba4d2a09",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 14
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -338,13 +410,51 @@
       "fileorganizer2000:Fo2k Chat": false,
       "callout-manager:Insert Callout": false,
       "cmdr:Open settings": false,
-      "cmdr:Hider: Toggle status bar": false
+      "cmdr:Hider: Toggle status bar": false,
+      "file-tree-generator:Generate file tree": false,
+      "obisidian-note-linker:Note Linker": false,
+      "obsidian-pending-notes:Pending Notes": false,
+      "ai-tagger:Generate tags!": false,
+      "bearings:Open the navigator": false,
+      "bearings:Create relationship": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false,
+      "copilot:Copilot Chat": false,
+      "custom-sort:Toggle custom sorting": false,
+      "file-cleaner-redux:Clean files": false,
+      "flashcards-obsidian:Generate flashcards": false,
+      "linkshelf:LinkStowr Sync": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "media-extended:Open media": false,
+      "nested-daily-todos:Add incomplete todos to today's note": false,
+      "nostr-writer:See notes published to Nostr": false,
+      "nostr-writer:See your Nostr Bookmarks": false,
+      "nostr-writer:See your Nostr Highlights": false,
+      "nostr-writer:Publish this note to Nostr": false,
+      "privacy-glasses:Hide all": false,
+      "privacy-glasses:Reveal non-private": false,
+      "privacy-glasses:Reveal headlines only": false,
+      "privacy-glasses:Reveal all": false,
+      "quick-tagger:Add tag to current note": false,
+      "quick-tagger:Remove tag from current note": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "send-to-ghost:Publish Ghost": false,
+      "obsidian-tweet-to-markdown:Tweet to Markdown": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "c64f72db79cb411a",
+  "active": "fbac6b1bba4d2a09",
   "lastOpenFiles": [
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-02 17.02.10.excalidraw.md",
+    "Excalidraw/assets/Drawing 2024-09-02 17.02.10.excalidraw",
+    "Excalidraw/assets/Drawing 2024-09-02 16.31.13.excalidraw",
+    "Excalidraw/assets/Drawing 2024-09-02 14.40.24.excalidraw",
+    "Excalidraw/assets",
+    "Excalidraw",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
@@ -376,17 +486,9 @@
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521498.png",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage",
-    "📁 01 - Projects/_attachments",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521450.png",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
-    "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md",
-    "📁 06 - Cybersader Arsenal/Email Aliasing",
-    "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
-    "📁 04 - Organizational Cyber/Frameworks, Standards",
-    "📁 02 - CyberNews/⬇️ Cyber News DROP",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png"
   ]
 }

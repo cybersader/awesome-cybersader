@@ -1,0 +1,35 @@
+{
+  "logoType": "default",
+  "logo": {
+    "lucideIcon": "",
+    "imagePath": "",
+    "imageLink": ""
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "Obsidian",
+  "customFont": "interfaceFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": false,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md",
+      "timestamp": 1725311813811
+    },
+    {
+      "filepath": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+      "timestamp": 1725311810926
+    }
+  ],
+  "bookmarkedFileStore

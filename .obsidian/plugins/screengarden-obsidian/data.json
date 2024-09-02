@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "token": null
+  },
+  "cachedUser": {
+    "id": null
+  },
+  "files": {
+    "pathsToDocumentIds": {},
+    "documentIdsToPaths": {}
+  }
+}

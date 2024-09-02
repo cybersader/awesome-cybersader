@@ -79,3 +79,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+
+
+
+# Ignore Smart Connections folder
+.smart-connections

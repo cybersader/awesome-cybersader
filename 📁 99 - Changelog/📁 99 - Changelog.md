@@ -1,7 +1,10 @@
-- 2024-09-02 at 16h51 · [[Drawing 2024-09-02 16.45.35.excalidraw]]
-- 2024-09-02 at 16h46 · [[📁 01 - Projects]]
-- 2024-09-02 at 16h31 · [[Drawing 2024-09-02 16.31.13.excalidraw]]
-- 2024-09-02 at 16h23 · [[Drawing 2024-09-02 14.40.24.excalidraw]]
+---
+created: Monday, Mar 18, 2024 12:05 PM
+updated: Monday, Sep 02, 2024 05:16 PM
+---
+- 2024-09-02 at 17h16 · [[Personal Cyber Resilience]]
+- 2024-09-02 at 17h07 · [[📁 01 - Projects]]
+- 2024-09-02 at 17h07 · [[Drawing 2024-09-02 17.02.33.excalidraw]]
 - 2024-09-02 at 14h39 · [[GitHub + Obsidian + Notion - Digital Garden]]
 - 2024-09-02 at 14h31 · [[Home Networking Arsenal]]
 - 2024-08-31 at 20h31 · [[⬇️ Misc Todos]]
@@ -27,7 +30,6 @@
 - 2024-08-30 at 13h32 · [[TrueNAS Scale - Nginx Proxy Setup]]
 - 2024-08-29 at 18h48 · [[08 - August Cyber News]]
 - 2024-08-29 at 18h48 · [[B&B Scenarios]]
-- 2024-08-28 at 19h51 · [[Personal Cyber Resilience]]
 - 2024-08-26 at 21h27 · [[⬇️ Cyber News DROP]]
 - 2024-08-26 at 21h27 · [[📁 02 - CyberNews]]
 - 2024-08-23 at 16h36 · [[Awesome Password Security]]
@@ -54,7 +56,6 @@
 - 2024-08-11 at 19h22 · [[⬇️ Misc_Links]]
 - 2024-08-11 at 19h21 · [[⬇ Tech Dropzone]]
 - 2024-08-11 at 19h20 · [[TrueNAS Scale RAID Setup]]
-- 2024-08-11 at 17h25 · [[Drawing 2024-08-11 17.25.32.excalidraw]]
 - 2024-08-11 at 17h15 · [[Syncing Obsidian]]
 - 2024-08-11 at 17h02 · [[Media Hosting in Obsidian]]
 - 2024-08-11 at 15h53 · [[meeting_note]]
