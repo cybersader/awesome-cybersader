@@ -68,6 +68,16 @@
             }
           },
           {
+            "id": "c64f72db79cb411a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md"
+              }
+            }
+          },
+          {
             "id": "c934b33e2482b757",
             "type": "leaf",
             "state": {
@@ -152,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -221,29 +231,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d3418674567f179c",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "e07989524fbd5065",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +259,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md"
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md"
               }
             }
           },
@@ -301,9 +294,26 @@
               "type": "ai-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "52fb30581e51e795",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -324,16 +334,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
       "fileorganizer2000:Fo2k Assistant View": false,
-      "cmdr:Open settings": false,
       "omnisearch:Omnisearch": false,
       "fileorganizer2000:Fo2k Chat": false,
-      "callout-manager:Insert Callout": false
+      "callout-manager:Insert Callout": false,
+      "cmdr:Open settings": false,
+      "cmdr:Hider: Toggle status bar": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "c64f72db79cb411a",
   "lastOpenFiles": [
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.md",
     "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.37.36.excalidraw.md",
@@ -367,8 +380,6 @@
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521450.png",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md",
-    "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md",
-    "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md",
     "📁 06 - Cybersader Arsenal/Email Aliasing",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
     "📁 04 - Organizational Cyber/Frameworks, Standards",
@@ -376,7 +387,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png"
   ]
 }

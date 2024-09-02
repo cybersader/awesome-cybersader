@@ -9,5 +9,8 @@
   "autoPairBrackets": false,
   "promptDelete": false,
   "showRibbon": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "userIgnoreFilters": [
+    "\"/excalidraw/\""
+  ]
 }

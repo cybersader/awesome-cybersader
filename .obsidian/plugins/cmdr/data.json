@@ -29,6 +29,12 @@
       "icon": "lucide-settings",
       "name": "Open settings",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-hider:toggle-hider-status",
+      "icon": "sidebar-close",
+      "name": "Hider: Toggle status bar",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

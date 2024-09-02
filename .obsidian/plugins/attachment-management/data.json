@@ -4,7 +4,8 @@
     "saveAttE": "nextToNote",
     "attachmentPath": "${notename}",
     "attachFormat": "IMG-${date}",
-    "type": "GLOBAL"
+    "type": "GLOBAL",
+    "extensionOverride": []
   },
   "dateFormat": "YYYYMMDDHHmmssSSS",
   "excludeExtensionPattern": "",

@@ -11,7 +11,7 @@
   "onceOffGPTVersionReset": false,
   "autosave": true,
   "autosaveIntervalDesktop": 15000,
-  "autosaveIntervalMobile": 10000,
+  "autosaveIntervalMobile": 30000,
   "drawingFilenamePrefix": "Drawing ",
   "drawingEmbedPrefixWithFilename": true,
   "drawingFilnameEmbedPostfix": " ",

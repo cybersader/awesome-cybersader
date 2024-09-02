@@ -1,4 +1,6 @@
-- 2024-09-02 at 16h25 · [[📁 01 - Projects]]
+- 2024-09-02 at 16h51 · [[Drawing 2024-09-02 16.45.35.excalidraw]]
+- 2024-09-02 at 16h46 · [[📁 01 - Projects]]
+- 2024-09-02 at 16h31 · [[Drawing 2024-09-02 16.31.13.excalidraw]]
 - 2024-09-02 at 16h23 · [[Drawing 2024-09-02 14.40.24.excalidraw]]
 - 2024-09-02 at 14h39 · [[GitHub + Obsidian + Notion - Digital Garden]]
 - 2024-09-02 at 14h31 · [[Home Networking Arsenal]]

@@ -227,7 +227,9 @@
       "enabled": false
     },
     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
-      "enabled": false
+      "enabled": false,
+      "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+      "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
       "enabled": false,
@@ -267,6 +269,13 @@
   "foldersToIgnore": [
     "CybersaderNotion",
     "📁 99 - Changelog"
+  ],
+  "filesToIgnore": [
+    {
+      "label": "Excalidraw",
+      "match": "/.excalidraw/",
+      "flags": "i"
+    }
   ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
