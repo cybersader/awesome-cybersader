@@ -1,6 +1,6 @@
-- 2024-09-02 at 16h00 · [[Drawing 2024-09-02 14.40.24.excalidraw]]
+- 2024-09-02 at 16h25 · [[📁 01 - Projects]]
+- 2024-09-02 at 16h23 · [[Drawing 2024-09-02 14.40.24.excalidraw]]
 - 2024-09-02 at 14h39 · [[GitHub + Obsidian + Notion - Digital Garden]]
-- 2024-09-02 at 14h38 · [[📁 01 - Projects]]
 - 2024-09-02 at 14h31 · [[Home Networking Arsenal]]
 - 2024-08-31 at 20h31 · [[⬇️ Misc Todos]]
 - 2024-08-31 at 20h30 · [[Awesome Anime]]

@@ -68,16 +68,6 @@
             }
           },
           {
-            "id": "e3eafa922c189a8b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md"
-              }
-            }
-          },
-          {
             "id": "c934b33e2482b757",
             "type": "leaf",
             "state": {
@@ -162,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
+                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
+                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -276,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md"
+                "file": "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md"
               }
             }
           },
@@ -340,11 +330,12 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "e3eafa922c189a8b",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "Excalidraw/Drawing 2024-09-02 16.31.13.excalidraw.md",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.37.36.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.36.52.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion/assets/DUMMY_FILE",
@@ -386,7 +377,6 @@
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735669.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429093.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735618.png"
   ]
 }
