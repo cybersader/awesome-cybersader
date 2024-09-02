@@ -3,8 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Thursday, April 25th 2024, 1:34 pm
+date modified: Monday, September 2nd 2024, 6:51 pm
 ---
+
+[GitHub + Obsidian + Notion - Digital Garden](../../📁%2001%20-%20Projects/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden.md)
 
 %% Begin Waypoint %%
 - **[[🐛 Known Base Bugs, Issues]]**
@@ -22,7 +24,9 @@ date modified: Thursday, April 25th 2024, 1:34 pm
 - **[[Obsidian Publish SEO]]**
 
 %% End Waypoint %%
+
 # My Vision
+
 The platform agnostic Obsidian as a CMS contributable, sync-able, customizable, collaborative, wiki
 
 The dream:

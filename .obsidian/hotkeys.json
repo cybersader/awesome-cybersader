@@ -167,5 +167,13 @@
       ],
       "key": "F"
     }
+  ],
+  "publish:view-changes": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
   ]
 }

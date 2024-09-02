@@ -35,6 +35,18 @@
       "icon": "sidebar-close",
       "name": "Hider: Toggle status bar",
       "mode": "any"
+    },
+    {
+      "id": "backlink:open",
+      "icon": "lucide-link",
+      "name": "Backlinks: Show backlinks",
+      "mode": "any"
+    },
+    {
+      "id": "outgoing-links:open",
+      "icon": "lucide-link",
+      "name": "Outgoing links: Show outgoing links",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Clothing",
+      "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
+    },
+    {
+      "basename": "⬇️ Misc Todos",
+      "path": "✅ Tasks/⬇️ Misc Todos.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Company Examples of Privacy Violation",
+      "path": "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md"
+    },
+    {
+      "basename": "Podman Setup & Container Usage",
+      "path": "📁 01 - Projects/Podman Setup & Container Usage.md"
+    },
+    {
+      "basename": "📄 Resume - Tools & Tech ⚒️",
+      "path": "📄 Resume - Tools & Tech ⚒️.md"
+    },
+    {
+      "basename": "📄 Resume - Training, Certifications, Conferences, Education",
+      "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
       "basename": "Bluetooth Removal Issue Fix Windows",
@@ -23,18 +59,6 @@
     {
       "basename": "Find All Enabled Plugins From Obsidian Folder",
       "path": "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md"
-    },
-    {
-      "basename": "Personal Cyber Resilience",
-      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
-    },
-    {
-      "basename": "⬇️ Misc Todos",
-      "path": "✅ Tasks/⬇️ Misc Todos.md"
-    },
-    {
-      "basename": "Podman Setup & Container Usage",
-      "path": "📁 01 - Projects/Podman Setup & Container Usage.md"
     },
     {
       "basename": "📁 01 - Projects",
@@ -141,10 +165,6 @@
       "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
     },
     {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
       "basename": "Email Aliasing",
       "path": "📁 06 - Cybersader Arsenal/Email Aliasing/Email Aliasing.md"
     },
@@ -155,10 +175,6 @@
     {
       "basename": "Awesome Physical Security",
       "path": "📁 04 - Organizational Cyber/Physical Security/Awesome Physical Security.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "⬇️ Cyber News DROP",
@@ -183,14 +199,6 @@
     {
       "basename": "Implementing a Forum Website",
       "path": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
-    },
-    {
-      "basename": "Home Firewall",
-      "path": "📁 01 - Projects/⬇️ Project Drop/Home Firewall/Home Firewall.md"
-    },
-    {
-      "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     }
   ],
   "omittedPaths": [],
