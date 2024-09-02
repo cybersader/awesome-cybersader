@@ -8,14 +8,72 @@
         "type": "tabs",
         "children": [
           {
+            "id": "0132127300ab823a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2529cf774554dcb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "✅ Tasks/⬇️ Misc Todos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0b04860c30999bbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "af86814574bb23c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8362c11fddc492c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3eafa922c189a8b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md"
               }
             }
           },
@@ -103,38 +161,8 @@
               }
             }
           }
-        ]
-      },
-      {
-        "id": "9af8980ce0923da2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0132127300ab823a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2529cf774554dcb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "✅ Tasks/⬇️ Misc Todos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -208,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
+                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +253,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
+                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -248,7 +276,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md"
+                "file": "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md"
               }
             }
           },
@@ -312,9 +340,22 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "0b04860c30999bbe",
+  "active": "e3eafa922c189a8b",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.37.36.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.36.52.excalidraw.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion/assets/DUMMY_FILE",
+    "📁 01 - Projects/GitHub + Obsidian + Notion/assets",
+    "📁 01 - Projects/GitHub + Obsidian + Notion",
     "✅ Tasks/⬇️ Misc Todos.md",
+    "📁 01 - Projects/Podman Setup & Container Usage.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden",
+    "📁 01 - Projects/Pasted image 20240830174347.png",
+    "📁 01 - Projects/📁 01 - Projects.md",
+    "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 07 - Business/Monetization & Funding/Monetization & Funding.md",
     "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md",
@@ -325,7 +366,6 @@
     "📁 01 - Projects/Phone Pick in 2024/Phone Strategy - Provider, Plans, Warranties/Phone Strategy - Provider, Plans, Warranties.md",
     "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
-    "📁 01 - Projects/Podman Setup & Container Usage.md",
     "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
@@ -334,26 +374,14 @@
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage",
     "📁 01 - Projects/_attachments",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521450.png",
-    "📁 01 - Projects/Pasted image 20240830174347.png",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md",
     "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md",
     "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
-    "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md",
-    "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md",
-    "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md",
-    "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 06 - Cybersader Arsenal/Email Aliasing",
     "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches",
     "📁 04 - Organizational Cyber/Frameworks, Standards",
     "📁 02 - CyberNews/⬇️ Cyber News DROP",
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience",
-    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics",
-    "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs",
-    "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/_attachments/TrueNAS Cloud Backups/IMG-20240812220429056.png",
     "Excalidraw/Drawing 2024-08-11 17.25.32.excalidraw.svg",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/_attachments/TrueNAS Scale RAID Setup/IMG-20240811164735745.png",
