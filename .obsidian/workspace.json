@@ -6,7 +6,6 @@
       {
         "id": "c0aab1cbf229de4b",
         "type": "tabs",
-        "dimension": 35.4639175257732,
         "children": [
           {
             "id": "0132127300ab823a",
@@ -27,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "341b5c70d0d77094",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,25 +116,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "37b010b39d65eefc",
-        "type": "tabs",
-        "dimension": 64.5360824742268,
-        "children": [
-          {
-            "id": "2529cf774554dcb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -177,7 +169,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -198,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -215,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
               }
             }
           },
@@ -292,11 +285,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2529cf774554dcb5",
+  "active": "0132127300ab823a",
   "lastOpenFiles": [
-    "✅ Tasks/⬇️ Misc Todos.md",
     "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "✅ Tasks/⬇️ Misc Todos.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",

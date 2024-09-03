@@ -3,29 +3,60 @@ aliases:
 tags: 
 publish: true
 date created: Monday, September 2nd 2024, 6:53 pm
-date modified: Monday, September 2nd 2024, 7:24 pm
+date modified: Monday, September 2nd 2024, 8:27 pm
 ---
 
-# Techwear 
+# Techwear & Gorpcore
 
 ## Websites & Companies List
 
-I'm avoiding the types of stuff that's 500+ a pop.  That's way too much money seriously.  That jacket should be bulletproof at that price.
+### Curated List
 
+gorpcore, affordability, like uniqlo, tactical, utility, and potentially flexible for things like parkour
+
+- https://www.686.com/collections/mens-pant
+- https://www.salomon.com/en-us/shop/men/clothing.htm
+- https://www.uniqlo.com/us/en/
+- https://www.rei.com/c/mens-clothing
+- https://www.decathlon.com/collections/mens-deals
+- https://www.mountainwarehouse.com/us/outdoor/clothing/padded-jackets/
+- https://www.outdoorresearch.com/collections/mens
+- https://wornwear.patagonia.com/collections/web-specials?refinementList%5Bmeta.trove-facets.patagoniaDepartment%5D%5B0%5D=Men%27s&refinementList%5Bmeta.trove-facets.color%5D%5B0%5D=Black
+- https://www.filson.com/outerwear/wool-jackets.html
+- https://us.carhartt-wip.com/collections/men-sale
+- https://www.511tactical.com/
+- https://www.muji.us/collections/mens
+- https://www.nike.com/w/mens-acg-93bsdznik1
+- https://www.adidas.com/us/terrex
+- https://www.techwear-x.com/collections/gorpcore-clothing
+
+### Big List
 
 |                                                                                                                                |
 | :----------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
-|                                                                                                                                |
+|                                                    https://us.nanamica.com/                                                    |
+|                                                       https://vertx.com/                                                       |
+|                                      https://www.salomon.com/en-us/shop/men/clothing.html                                      |
+|                                           https://www.686.com/collections/mens-pants                                           |
+|                                                        https://ccp.fm/                                                         |
+|                                          https://www.sattalivity.com/collections/all                                           |
+|                                      https://www.norseprojects.com/store/men/new-arrivals                                      |
+|                                                    https://nomennescio.fi/                                                     |
+|                                               https://www.peakperformance.com/gb                                               |
+|                                                 https://vargclothes.com/c/man                                                  |
+|                                                     https://sease.it/en-us                                                     |
+|                                                    https://us.herno.com/en/                                                    |
+|                                                 https://alphatauri.com/en-int/                                                 |
+|                                                    https://thinkseneca.com/                                                    |
+|                                         https://www.aeance.com/collections/men-styles                                          |
+|                                                   https://norwegianrain.com/                                                   |
+|                                           https://monobistudio.com/collections/pants                                           |
+|                                      https://www.urbantouch.co/collections/reindee-lusion                                      |
+|                                                    https://www.nike.com/acg                                                    |
+|                                                https://www.adidas.com/us/terrex                                                |
+|                                               https://www.4dimensionapparel.com/                                               |
+|                                                   https://www.konundrum.de/                                                    |
+|                                              https://houdinisportswear.com/en-us                                               |
 |                                                        https://hamc.us/                                                        |
 |                                        [https://www.aersf.com/](https://www.aersf.com/)                                        |
 |                                [https://www.aetherapparel.com/](https://www.aetherapparel.com/)                                |
@@ -201,6 +232,11 @@ I'm avoiding the types of stuff that's 500+ a pop.  That's way too much money se
 
 - [Techwear Belt - TECHWEAR STORM™](https://techwearstorm.com/collections/techwear-belt)
 
+### Boots
+
+- [Danner - Tachyon Black Gore-Tex](https://www.danner.com/tachyon-8-black-gtx.html)
+- 
+
 # Websites to Try for Cheap Techwear
 
 - https://www.grailed.com/
@@ -214,4 +250,4 @@ I'm avoiding the types of stuff that's 500+ a pop.  That's way too much money se
 - [INSPO for more minimalist/functional-leaning techwear? : r/TechWear](https://www.reddit.com/r/TechWear/comments/1f4gwkm/inspo_for_more_minimalistfunctionalleaning/)
 - [New to techwear w/ a limited budget, where should I start? : r/TechWear](https://www.reddit.com/r/TechWear/comments/16hrzbu/new_to_techwear_w_a_limited_budget_where_should_i/)
 - [I created a list of techwear brands that you can order by price, genre, gender and other topics : r/techwearclothing](https://www.reddit.com/r/techwearclothing/comments/k3scj7/i_created_a_list_of_techwear_brands_that_you_can/)
-- 
+- [gorpcore](https://www.reddit.com/r/gorpcore/)
