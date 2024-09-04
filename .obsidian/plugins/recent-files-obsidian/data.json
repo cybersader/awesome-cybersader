@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Personal Cyber Resilience",
-      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
-    },
-    {
       "basename": "Awesome Clothing",
       "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
     },
     {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Why You Should Ask Stupid Questions",
+      "path": "🕸️ UNSTRUCTURED/Why You Should Ask Stupid Questions.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
       "basename": "⬇️ Misc Todos",
@@ -195,10 +199,6 @@
     {
       "basename": "File Organizer 2000",
       "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
-    },
-    {
-      "basename": "Implementing a Forum Website",
-      "path": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
     }
   ],
   "omittedPaths": [],

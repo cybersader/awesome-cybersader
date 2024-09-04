@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0132127300ab823a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0b04860c30999bbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "26e78424d0db1540",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,8 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0132127300ab823a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,13 +182,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 222.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -191,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
               }
             }
           },
@@ -281,10 +292,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0132127300ab823a",
+  "active": "26e78424d0db1540",
   "lastOpenFiles": [
-    "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
+    "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+    "🕸️ UNSTRUCTURED/Why You Should Ask Stupid Questions.md",
+    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "✅ Tasks/⬇️ Misc Todos.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
@@ -292,7 +305,6 @@
     "📁 01 - Projects/Podman Setup & Container Usage.md",
     "📄 Resume - Tools & Tech ⚒️.md",
     "📄 Resume - Training, Certifications, Conferences, Education.md",
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.51.25.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.51.25.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/Desktop Vs Mobile Vault Configs.md",
@@ -327,7 +339,6 @@
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.36.52.excalidraw.md",
     "📁 01 - Projects/Pasted image 20240830174347.png",
     "📁 01 - Projects/📁 01 - Projects.md",
-    "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png"
   ]
 }

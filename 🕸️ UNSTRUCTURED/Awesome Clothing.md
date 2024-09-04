@@ -1,6 +1,7 @@
 ---
 aliases: 
-tags: 
+tags:
+  - opinionated
 publish: true
 date created: Monday, September 2nd 2024, 6:53 pm
 date modified: Monday, September 2nd 2024, 8:27 pm
