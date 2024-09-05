@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -214,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +232,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +255,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 99 - Changelog/📁 99 - Changelog.md"
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
               }
             }
           },
@@ -304,8 +305,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e871463ea9465ce7",
+  "active": "26e78424d0db1540",
   "lastOpenFiles": [
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "🕸️ UNSTRUCTURED/Why You Should Ask Stupid Questions.md",
@@ -350,7 +352,6 @@
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.37.36.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 14.36.52.excalidraw.md",
     "📁 01 - Projects/Pasted image 20240830174347.png",
-    "📁 01 - Projects/📁 01 - Projects.md",
     "📁 01 - Projects/_attachments/Podman Setup & Container Usage/IMG-20240830183521540.png"
   ]
 }
