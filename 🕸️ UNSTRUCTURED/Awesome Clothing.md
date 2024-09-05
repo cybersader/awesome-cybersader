@@ -4,8 +4,9 @@ tags:
   - opinionated
 publish: true
 date created: Monday, September 2nd 2024, 6:53 pm
-date modified: Monday, September 2nd 2024, 8:27 pm
+date modified: Tuesday, September 3rd 2024, 9:11 pm
 ---
+
 
 # Techwear & Gorpcore
 
