@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
       "basename": "Awesome Clothing",
       "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Scale RAID Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
-    },
-    {
-      "basename": "File Organizer 2000",
-      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/File Organizer 2000/File Organizer 2000.md"
     }
   ],
   "omittedPaths": [],
