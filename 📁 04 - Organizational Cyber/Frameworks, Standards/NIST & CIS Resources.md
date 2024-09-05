@@ -9,6 +9,7 @@ tags:
   - endpoint-hardening
   - IARM
   - risk-management
+  - RCSA
 publish: true
 date created: Wednesday, August 28th 2024, 7:51 pm
 date modified: Friday, August 30th 2024, 4:53 pm
@@ -62,7 +63,6 @@ FFIEC
 - https://www.ffiec.gov/press/pdf/FFIECCybersecurityResourceGuide2022ApprovedRev.pdf
 
 TTX 
-IR Tabletop Scenario Synthesis
 - https://www.fdic.gov/regulations/resources/director/technical/cyber/purpose.html
 
 Misc
@@ -104,7 +104,7 @@ Misc
 - https://public.cyber.mil/stigs/cci/
 - https://public.cyber.mil/stigs/downloads/
 - https://www.reddit.com/r/NISTControls/comments/gicdnr/stig_flow_down_chart/
-- https://www.google.com/search?q=DISA+STIG+CCI+Nist+800-53+revision+5&sca_esv=1994aae6371246d6&sca_upv=1&rlz=1C1GCEU_enUS1109US1110&ei=j6poZquAHsiKptQPupTx2Q8&ved=0ahUKEwjrg7CkqdSGAxVIhYkEHTpKPPsQ4dUDCBA&uact=5&oq=DISA+STIG+CCI+Nist+800-53+revision+5&gs_lp=Egxnd3Mtd2l6LXNlcnAiJERJU0EgU1RJRyBDQ0kgTmlzdCA4MDAtNTMgcmV2aXNpb24gNTIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYR0itHVC7BliaHHAAeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgeYAwCIBgGQBgiSBwExoAcA&sclient=gws-wiz-serp#ip=1
+- https://www.google.com/search?q=DISA+STIG+CCI+Nist+800-53+revision+5
 - https://public.cyber.mil/announcement/stig-srg-updates-for-nist-sp-800-53-rev-5-set-for-july-2/
 - https://www.reddit.com/r/NISTControls/comments/wg8bit/comprehensive_list_of_ccis/
 - https://public.cyber.mil/announcement/disa-releases-the-cci-list-revision-5/
