@@ -22,6 +22,8 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - [Catholics need an ethics for the digital age - U.S. Catholic](https://uscatholic.org/articles/201905/do-catholics-need-a-new-code-of-ethics-for-the-digital-age/)
 - [The Catholic Church and Internet Use: An Evolving Perspective from Pope John Paul II to Pope Benedict XVI](https://repository.library.georgetown.edu/handle/10822/558682)
 - [Microsoft Word - The teleological account of proportional surveillance v1.3](https://philarchive.org/archive/THOTTA-14)
+- [A Christian's Guide to Privacy and Technology (Part 1) - allthingsnew.tech](https://allthingsnew.tech/a-christians-guide-to-privacy-and-technology-part-1/)
+- 
 
 ## Privacy
 
