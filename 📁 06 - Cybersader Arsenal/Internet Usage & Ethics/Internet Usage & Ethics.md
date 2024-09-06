@@ -15,7 +15,7 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - [Magisterium AI](https://www.magisterium.com/) - Magisterium AI, your helpful guide to the teachings of the Catholic Church.
 - 
 
-# Philsophy on Internet Usage
+# Philosophy on Internet Usage
 
 - Teleology, ethics, morality, persuasive technology
 
