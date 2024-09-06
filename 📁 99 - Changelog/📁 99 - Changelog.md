@@ -1,4 +1,4 @@
-- 2024-09-05 at 20h28 · [[Internet Usage & Ethics]]
+- 2024-09-05 at 20h42 · [[Internet Usage & Ethics]]
 - 2024-09-05 at 20h26 · [[Personal Cyber Resilience]]
 - 2024-09-04 at 21h21 · [[NIST & CIS Resources]]
 - 2024-09-03 at 21h11 · [[Awesome Clothing]]
