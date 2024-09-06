@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, August 18th 2024, 4:36 pm
-date modified: Thursday, September 5th 2024, 8:12 pm
+date modified: Thursday, September 5th 2024, 9:15 pm
 ---
 
 [Personal Cyber Resilience](../Personal%20Cyber%20Resilience/Personal%20Cyber%20Resilience.md)
@@ -23,7 +23,10 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - [The Catholic Church and Internet Use: An Evolving Perspective from Pope John Paul II to Pope Benedict XVI](https://repository.library.georgetown.edu/handle/10822/558682)
 - [Microsoft Word - The teleological account of proportional surveillance v1.3](https://philarchive.org/archive/THOTTA-14)
 - [A Christian's Guide to Privacy and Technology (Part 1) - allthingsnew.tech](https://allthingsnew.tech/a-christians-guide-to-privacy-and-technology-part-1/)
-	- 
+- [Only Connect: Networked Christianity in the Digital Age | Harvard Divinity Bulletin](https://bulletin.hds.harvard.edu/only-connect-networked-christianity-in-the-digital-age/)
+- [Christian Faith and Technology - Lausanne Movement](https://lausanne.org/executive-summary/christian-faith-and-technology)
+- [Digital Privacy and the Christian: Why ‘Nothing to Hide’ Isn’t Your Best Answer - The Stream](https://stream.org/digital-privacy-and-the-christian-why-nothing-to-hide-isnt-your-best-answer/)
+- 
 
 ## Privacy
 
@@ -38,6 +41,8 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 	- internet safety ethics persuasive technology resources
 	- catholic children internet tools security privacy safety
 	- catholic internet resources AND (online OR internet OR cyber OR safety)
+	- (privacy OR security OR technology) AND teleology AND internet AND christian
+	- 
 
 - [Common Sense Education](https://www.commonsense.org/education)
 - [Common Sense Media: Age-Based Media Reviews for Families](https://www.commonsensemedia.org/)
