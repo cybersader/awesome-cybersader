@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Enterprise IAM",
+      "path": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
+    },
+    {
+      "basename": "📁 04 - Organizational Cyber",
+      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
+    },
+    {
       "basename": "Internet Usage & Ethics",
       "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇️ Project Drop",
       "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
-    },
-    {
-      "basename": "Home Routers & ISPs",
-      "path": "📁 01 - Projects/⬇️ Project Drop/Home Routers & ISPs/Home Routers & ISPs.md"
-    },
-    {
-      "basename": "TrueNAS Scale RAID Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale RAID Setup/TrueNAS Scale RAID Setup.md"
     }
   ],
   "omittedPaths": [],
