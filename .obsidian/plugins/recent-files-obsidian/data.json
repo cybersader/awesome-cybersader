@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+    },
+    {
       "basename": "Enterprise IAM",
       "path": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
     },
@@ -79,10 +83,6 @@
     {
       "basename": "Home Lab, Home Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "Bitwarden Stuff",
-      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
     },
     {
       "basename": "Desktop Vs Mobile Obsidian",
