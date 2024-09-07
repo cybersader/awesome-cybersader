@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Saturday, August 31st 2024, 8:29 pm
+date modified: Friday, September 6th 2024, 8:33 pm
 ---
 
 - [x] Update anime list 🔽 ➕ 2024-04-26 ✅ 2024-07-16
@@ -13,6 +13,7 @@ date modified: Saturday, August 31st 2024, 8:29 pm
 	- I Parry Everything (as of Ep1)
 		- Seems wholesome
 		- Any work can be noble work if it is done with a noble heart
+	- The Unwanted Undead Adventurer
 	- The Elusive Samurai
 		- Has a good rating and hopefully wholesome
 

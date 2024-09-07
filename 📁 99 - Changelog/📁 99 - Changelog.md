@@ -1,3 +1,4 @@
+- 2024-09-06 at 20h33 · [[Awesome Anime]]
 - 2024-09-06 at 09h53 · [[Enterprise IAM]]
 - 2024-09-06 at 09h50 · [[📁 04 - Organizational Cyber]]
 - 2024-09-06 at 07h55 · [[Internet Usage & Ethics]]
@@ -11,7 +12,6 @@
 - 2024-09-02 at 17h46 · [[Find All Enabled Plugins From Obsidian Folder]]
 - 2024-09-02 at 14h31 · [[Home Networking Arsenal]]
 - 2024-08-31 at 20h31 · [[⬇️ Misc Todos]]
-- 2024-08-31 at 20h30 · [[Awesome Anime]]
 - 2024-08-31 at 19h41 · [[Cybersecurity Ontologies, Taxonomies, and Mental M]]
 - 2024-08-31 at 18h03 · [[Phone Pick in 2024]]
 - 2024-08-30 at 18h35 · [[Podman Setup & Container Usage]]

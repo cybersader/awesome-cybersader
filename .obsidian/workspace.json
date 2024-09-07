@@ -174,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -282,8 +283,9 @@
   },
   "active": "d961a41962a62fb6",
   "lastOpenFiles": [
-    "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
+    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md",
+    "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 04 - Organizational Cyber/Enterprise IAM",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
@@ -323,7 +325,6 @@
     "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
-    "Excalidraw/Drawing 2024-09-02 17.02.10.excalidraw.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
     "📁 01 - Projects/Pasted image 20240830174347.png",
