@@ -1,3 +1,4 @@
+- 2024-09-07 at 19h43 · [[Awesome Clothing]]
 - 2024-09-07 at 19h14 · [[⬇️ Misc_Links]]
 - 2024-09-07 at 14h46 · [[Bitwarden Stuff]]
 - 2024-09-07 at 11h46 · [[Enterprise IAM]]
@@ -6,7 +7,6 @@
 - 2024-09-06 at 07h55 · [[Internet Usage & Ethics]]
 - 2024-09-05 at 20h26 · [[Personal Cyber Resilience]]
 - 2024-09-04 at 21h21 · [[NIST & CIS Resources]]
-- 2024-09-03 at 21h11 · [[Awesome Clothing]]
 - 2024-09-03 at 20h53 · [[Why You Should Ask Stupid Questions]]
 - 2024-09-02 at 18h51 · [[Contributable Obsidian Wiki]]
 - 2024-09-02 at 18h49 · [[GitHub + Obsidian + Notion - Digital Garden]]

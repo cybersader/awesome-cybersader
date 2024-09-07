@@ -31,7 +31,8 @@ gorpcore, affordability, like uniqlo, tactical, utility, and potentially flexibl
 - https://www.nike.com/w/mens-acg-93bsdznik1
 - https://www.adidas.com/us/terrex
 - https://www.techwear-x.com/collections/gorpcore-clothing
-
+- https://www.guerrilla-group.co/collections/dir-all
+- 
 ### Big List
 
 |                                                                                                                                |
