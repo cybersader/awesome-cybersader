@@ -5,6 +5,10 @@
       "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
     },
     {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
+    },
+    {
       "basename": "Enterprise IAM",
       "path": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Cyber News DROP",
       "path": "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md"
-    },
-    {
-      "basename": "⬇️ Project Drop",
-      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
     }
   ],
   "omittedPaths": [],
