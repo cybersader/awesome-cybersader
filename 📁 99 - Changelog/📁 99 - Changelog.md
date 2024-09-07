@@ -1,4 +1,4 @@
-- 2024-09-07 at 11h52 · [[Bitwarden Stuff]]
+- 2024-09-07 at 14h46 · [[Bitwarden Stuff]]
 - 2024-09-07 at 11h46 · [[Enterprise IAM]]
 - 2024-09-06 at 20h33 · [[Awesome Anime]]
 - 2024-09-06 at 09h50 · [[📁 04 - Organizational Cyber]]
