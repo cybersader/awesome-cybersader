@@ -1,4 +1,4 @@
-- 2024-09-07 at 23h00 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
+- 2024-09-07 at 23h27 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-07 at 22h50 · [[📁 06 - Cybersader Arsenal]]
 - 2024-09-07 at 22h04 · [[Xbox Controllers]]
 - 2024-09-07 at 21h51 · [[Awesome EDC]]

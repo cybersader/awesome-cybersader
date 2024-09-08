@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Saturday, September 7th 2024, 11:00 pm
+date modified: Saturday, September 7th 2024, 11:27 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -23,6 +23,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 # Software
 
 - Learn to use open source software where you can except when something needs managed or to essentially run on a computer somewhere else
+- Minimize the amount of applications you install
 
 # Cloud Backups
 
@@ -54,7 +55,8 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 # Anti-Virus, Anti-Malware, Endpoint 
 
-- Use 
+- Use the one that comes with the operating system (Defender for Microsoft)
+- If you're advanced, you could figure out how to use something like ClamAV
 
 # Media Storage
 
@@ -92,6 +94,10 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Authentication factor management
 	- Be smart about how you handle passwords and usernames
 	- Use Bitwarden or KeypassXC
+- Implement MFA in places where you would rather not have hackers accessing
+	- Put 2FA on your password manager - if you're putting all your eggs in a basket then you might as well fortify it.  2FA will defend against anything except a really advanced hacker 
+- Put added security on factors of auth 
+	- Add extra security to your mobile carrier or SIM card - speak with mobile carrier 
 
 # Media 
 
