@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Saturday, September 7th 2024, 11:27 pm
+date modified: Sunday, September 8th 2024, 7:35 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -24,6 +24,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - Learn to use open source software where you can except when something needs managed or to essentially run on a computer somewhere else
 - Minimize the amount of applications you install
+- Don't use Adobe - Use Affinity
 
 # Cloud Backups
 
@@ -124,3 +125,29 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - ConvenantEyes on every device
 - Family settings on devices with internet
 - Go for agent-based so roaming can work
+
+# Misc
+
+- Apologetics and debates
+- Turn off AutoRuns
+- SysInternals
+- System Monitor and HWINFO
+- Basic Apps that everyone should download
+	- Know when you're running out of space
+- Protect Wifi
+- Phone alternative
+- Ignore data broker deletion services
+- Home lab if you're IT
+- Backup power
+- Credit freeze
+- Doxxing resilience
+- Be careful with AI
+- Use a different browser
+- TOS and privacy notices
+- Digital archiving and digitizing
+- Fireproof storage
+- Manufacturers and locations
+- Children games
+- Children downloads
+- When there's eyes on it it gets exploited soon enough
+- Use Peakday or a trusted app for feminine
