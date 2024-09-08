@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "🕸️ UNSTRUCTURED/Xbox Controllers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae05785b27bb41d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -191,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "🕸️ UNSTRUCTURED/Xbox Controllers.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "🕸️ UNSTRUCTURED/Xbox Controllers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
+                "file": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
               }
             }
           },
@@ -283,6 +294,12 @@
   },
   "active": "341b5c70d0d77094",
   "lastOpenFiles": [
+    "📁 06 - Cybersader Arsenal/THE GUIDE/THE GUIDE.md",
+    "🕸️ UNSTRUCTURED/Xbox Controllers.md",
+    "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md",
+    "🕸️ UNSTRUCTURED/Sub-Based & Ad-Avoiding Media Platforms.md",
+    "📁 06 - Cybersader Arsenal/THE GUIDE",
+    "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
@@ -293,7 +310,6 @@
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 04 - Organizational Cyber/Enterprise IAM",
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-    "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
     "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
@@ -319,11 +335,6 @@
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets/DUMMY_FILE",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/assets/DUMMY_FILE",
-    "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md",
-    "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Obsidian/Desktop Vs Mobile Obsidian.md",
-    "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
