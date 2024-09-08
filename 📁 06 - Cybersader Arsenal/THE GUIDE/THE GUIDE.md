@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Saturday, September 7th 2024, 9:57 pm
+date modified: Saturday, September 7th 2024, 10:30 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -54,7 +54,11 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - . 
 
-# Addiction, Persuasive Technology
+# Persuasive Technology & Internet Resilience
 
-- .
-
+- Set timers on technology
+- Have a discipline, DAILY, that doesn't involve technology at all like working out or riding bikes or reading
+- Spiritual life and catechesis
+- ConvenantEyes on every device
+- Family settings on devices with internet
+- Go for agent-based so roaming can work
