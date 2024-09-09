@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Sunday, September 8th 2024, 7:35 pm
+date modified: Sunday, September 8th 2024, 9:55 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -151,3 +151,4 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Children downloads
 - When there's eyes on it it gets exploited soon enough
 - Use Peakday or a trusted app for feminine
+- 

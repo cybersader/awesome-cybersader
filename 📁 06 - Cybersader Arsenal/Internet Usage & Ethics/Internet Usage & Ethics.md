@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, August 18th 2024, 4:36 pm
-date modified: Thursday, September 5th 2024, 9:15 pm
+date modified: Sunday, September 8th 2024, 9:46 pm
 ---
 
 [Personal Cyber Resilience](../Personal%20Cyber%20Resilience/Personal%20Cyber%20Resilience.md)
@@ -18,6 +18,7 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 # Philosophy on Internet Usage
 
 - Teleology, ethics, morality, persuasive technology
+- (privacy OR security OR technology) AND internet AND christian
 
 - [Catholics need an ethics for the digital age - U.S. Catholic](https://uscatholic.org/articles/201905/do-catholics-need-a-new-code-of-ethics-for-the-digital-age/)
 - [The Catholic Church and Internet Use: An Evolving Perspective from Pope John Paul II to Pope Benedict XVI](https://repository.library.georgetown.edu/handle/10822/558682)
@@ -26,6 +27,9 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 - [Only Connect: Networked Christianity in the Digital Age | Harvard Divinity Bulletin](https://bulletin.hds.harvard.edu/only-connect-networked-christianity-in-the-digital-age/)
 - [Christian Faith and Technology - Lausanne Movement](https://lausanne.org/executive-summary/christian-faith-and-technology)
 - [Digital Privacy and the Christian: Why ‘Nothing to Hide’ Isn’t Your Best Answer - The Stream](https://stream.org/digital-privacy-and-the-christian-why-nothing-to-hide-isnt-your-best-answer/)
+- [How Do I Think Biblically About Internet Privacy? - Radical](https://radical.net/article/biblically-internet-privacy/)
+- [An Internet Policy for Christians in the Digital Age](https://www.hisinscriptions.com/his-inscriptions-blog-deborah-perkins/an-internet-policy-for-christians-in-the-digital-age)
+- [Is Protecting Privacy An Act Of Faith | Public Square Mag](https://publicsquaremag.org/politics-law/freedom/is-protecting-privacy-an-act-of-faith/)
 - 
 
 ## Privacy
@@ -173,4 +177,4 @@ These are the platforms, tools, tips, settings, life hacks, and resources that I
 # DNS Whitelists
 
 - https://community.brave.com/t/website-whitelist-for-young-children-parental-controls/321990/3
-- 
+- [Christian Internet Filters](https://www.covenanteyes.com/blog/christian-internet-filters/)
