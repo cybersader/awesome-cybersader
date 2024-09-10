@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Sunday, September 8th 2024, 9:55 pm
+date modified: Monday, September 9th 2024, 8:54 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -89,6 +89,11 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Use aliasing for the types of identity verification that these entities requires.  This is especially true for those entities which have interests not aligned to your own
 	- Modern examples of this:
 		- Email aliasing
+			- [Support plus addressing in email routing - Feedback / Feature Request Submitting & Feedback - Cloudflare Community](https://community.cloudflare.com/t/support-plus-addressing-in-email-routing/346812)
+			- [Gmail Plus Addressing: The Hidden Feature that Can Help You Get More Out of Your Inbox | NC State Extension](https://eit.ces.ncsu.edu/2023/02/gmail-plus-addressing-the-hidden-feature-that-can-help-you-get-more-out-of-your-inbox/)
+			- [What are the security reasons for disallowing the plus sign in email addresses? - Information Security Stack Exchange](https://security.stackexchange.com/questions/65244/what-are-the-security-reasons-for-disallowing-the-plus-sign-in-email-addresses)
+			- 
+		- Plus ("+") Addressing (not guaranteed to hide identity) - not all email providers implement it and some do "." addressing
 - Data minimization
 	- Minimizing data in forms
 	- Configuring settings to minimize data usage for the entity's interest - especially true in countries where laws make this easier (EU with GDPR)
@@ -150,5 +155,5 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Children games
 - Children downloads
 - When there's eyes on it it gets exploited soon enough
-- Use Peakday or a trusted app for feminine
+- Software alternatives
 - 

@@ -17,7 +17,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome Collaboration]]**
 - [[Awesome Cyber Resource Curations]]
 - **[[Awesome EDC]]**
-- [[Awesome Hard Disk Drives]]
+- [[Awesome Hard Disk Drives, NAS Hardware]]
 - **[[Awesome Markdown]]**
 - **[[Awesome Office Organizing]]**
 - **[[Awesome Peripherals]]**

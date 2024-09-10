@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Hard Disk Drives, NAS Hardware",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
+    },
+    {
+      "basename": "Cutting Stock Problem",
+      "path": "🕸️ UNSTRUCTURED/Cutting Stock Problem.md"
+    },
+    {
+      "basename": "Webcams",
+      "path": "📁 11 - Content Creation/Webcams/Webcams.md"
+    },
+    {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
     },
     {
       "basename": "Internet Usage & Ethics",
@@ -35,10 +55,6 @@
     {
       "basename": "Bitwarden Stuff",
       "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
     },
     {
       "basename": "Enterprise IAM",
@@ -75,10 +91,6 @@
     {
       "basename": "⬇️ Misc Todos",
       "path": "✅ Tasks/⬇️ Misc Todos.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
     },
     {
       "basename": "Company Examples of Privacy Violation",
@@ -187,18 +199,6 @@
     {
       "basename": "Gaming Hacks & Cheats",
       "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 09 - My Obsidian Stack/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
     }
   ],
   "omittedPaths": [],

@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, June 27th 2024, 7:17 pm
-date modified: Saturday, September 7th 2024, 7:14 pm
+date modified: Monday, September 9th 2024, 8:53 pm
 ---
 
 - https://www.darkreading.com/threat-intelligence/fog-ransomware-rolls-in-to-target-education-recreation-sectors
@@ -21,6 +21,7 @@ date modified: Saturday, September 7th 2024, 7:14 pm
 - https://krebsonsecurity.com/tools-for-a-safer-pc/
 - https://whiteintel.io/ - threat intel search - free?
 - [TechSoup – Technology for nonprofits, charities, and libraries](https://www.techsoup.org/)
+- https://daily.dev/
 - 
 
 # Obsidian Wiki Tools
