@@ -159,4 +159,5 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Children downloads
 - When there's eyes on it it gets exploited soon enough
 - Software alternatives
+- [Degoogle your life part 2 removed??? : r/LinusTechTips](https://www.reddit.com/r/LinusTechTips/comments/1f8be8l/degoogle_your_life_part_2_removed/)
 - 

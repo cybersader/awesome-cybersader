@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "DevSecOps",
+      "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+    },
+    {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
+    },
+    {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
     },
     {
       "basename": "Internet Usage & Ethics",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 06 - Cybersader Arsenal",
       "path": "📁 06 - Cybersader Arsenal/📁 06 - Cybersader Arsenal.md"
-    },
-    {
-      "basename": "Gaming Hacks & Cheats",
-      "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
     }
   ],
   "omittedPaths": [],

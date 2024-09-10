@@ -19,6 +19,7 @@ date modified: Monday, May 27th 2024, 9:59 am
 	- **[[Secure Podman Setup]]**
 - **[[Cyber Team Building]]**
 - **[[Cybersecurity Culture Building]]**
+- **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**
 - **[[Enterprise IAM]]**
 - **[[Frameworks, Standards]]**

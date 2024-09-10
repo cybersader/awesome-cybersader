@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
+                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
                 "mode": "source",
                 "source": false
               }
@@ -239,7 +239,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
+                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +256,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
+                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -279,7 +279,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
               }
             }
           },
@@ -331,12 +331,14 @@
   },
   "active": "8017056465f2e6aa",
   "lastOpenFiles": [
+    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
+    "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+    "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
+    "📁 04 - Organizational Cyber/DevSecOps",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "🕸️ UNSTRUCTURED/Cutting Stock Problem.md",
     "📁 11 - Content Creation/Webcams/Webcams.md",
-    "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "_attachments",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
@@ -359,7 +361,6 @@
     "✅ Tasks/⬇️ Misc Todos.md",
     "🕸️ UNSTRUCTURED/Company Examples of Privacy Violation.md",
     "📁 01 - Projects/Podman Setup & Container Usage.md",
-    "📄 Resume - Tools & Tech ⚒️.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.51.25.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments/IMG-20240902183115533.png",
@@ -371,7 +372,6 @@
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets/DUMMY_FILE",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs Obsidian/assets",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 17.02.33.excalidraw.svg",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Drawing 2024-09-02 16.45.35.excalidraw.svg",
     "Excalidraw/Drawing 2024-09-02 14.40.24.excalidraw.svg",
