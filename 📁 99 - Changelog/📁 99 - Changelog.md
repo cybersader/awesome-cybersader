@@ -1,7 +1,7 @@
+- 2024-09-09 at 22h05 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-09 at 21h51 · [[⬇️ Misc_Links]]
 - 2024-09-09 at 21h50 · [[DevSecOps]]
 - 2024-09-09 at 21h49 · [[📁 04 - Organizational Cyber]]
-- 2024-09-09 at 21h48 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-09 at 21h00 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-09-09 at 21h00 · [[Cutting Stock Problem]]
 - 2024-09-09 at 20h56 · [[📁 03 - Curations, Stacks]]

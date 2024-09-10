@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "218db58103368cbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "18d00bc82ca67a4c",
             "type": "leaf",
             "state": {
@@ -164,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -239,7 +251,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +268,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -279,7 +291,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
               }
             }
           },
@@ -329,10 +341,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8017056465f2e6aa",
+  "active": "218db58103368cbd",
   "lastOpenFiles": [
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
     "📁 04 - Organizational Cyber/DevSecOps",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",

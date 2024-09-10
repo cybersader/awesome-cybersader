@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Monday, September 9th 2024, 8:54 pm
+date modified: Monday, September 9th 2024, 10:05 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
