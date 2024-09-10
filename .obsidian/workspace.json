@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,7 +222,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -238,7 +239,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +256,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -278,7 +279,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
               }
             }
           },
@@ -328,11 +329,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "18d00bc82ca67a4c",
+  "active": "8017056465f2e6aa",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "🕸️ UNSTRUCTURED/Cutting Stock Problem.md",
     "📁 11 - Content Creation/Webcams/Webcams.md",
-    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",

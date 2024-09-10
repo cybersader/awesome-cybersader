@@ -1,7 +1,7 @@
+- 2024-09-09 at 21h21 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-09 at 21h00 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-09-09 at 21h00 · [[Cutting Stock Problem]]
 - 2024-09-09 at 20h56 · [[📁 03 - Curations, Stacks]]
-- 2024-09-09 at 20h56 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-09 at 20h53 · [[⬇️ Misc_Links]]
 - 2024-09-09 at 20h53 · [[GitHub + Obsidian + Notion - Digital Garden]]
 - 2024-09-08 at 21h46 · [[Internet Usage & Ethics]]

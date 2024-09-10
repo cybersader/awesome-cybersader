@@ -77,6 +77,9 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 # Politics 
 
 - Our voting system causes a devolvement into bipartisan groups - [(2) Why Democracy Is Mathematically Impossible - YouTube](https://www.youtube.com/watch?v=qf7ws2DF-zk) 
+	- [STAR Voting](https://www.starvoting.org/)
+	- [Why Democracy Is Mathematically Impossible - Veritasium [23:33] : r/mealtimevideos](https://www.reddit.com/r/mealtimevideos/comments/1f39eve/why_democracy_is_mathematically_impossible/) 
+	- "best social choice theory voting system"?
 - Stand on business/principles
 - Simple...strive for truth, but be pedagogical and patient - don't straw man but instead steel man
 
