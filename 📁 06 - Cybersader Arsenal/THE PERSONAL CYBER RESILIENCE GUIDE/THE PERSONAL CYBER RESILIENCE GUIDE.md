@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Tuesday, September 10th 2024, 10:15 pm
+date modified: Tuesday, September 10th 2024, 10:19 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -161,4 +161,10 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - When there's eyes on it it gets exploited soon enough
 - Software alternatives
 - [Degoogle your life part 2 removed??? : r/LinusTechTips](https://www.reddit.com/r/LinusTechTips/comments/1f8be8l/degoogle_your_life_part_2_removed/)
+- For headphones, chargers, and things with cables, make sure it's modular so you can replace wiring
+- Learn how to use a search engine effectively
+- Learn how to use AI to learn but not to generate or to be your "God"
+- Learn how to look for alternatives
+- If there's a lot of marketing/ads for it, then it's very possible that's where they put their money.  The solution/product is likely terrible.
+- If it's free, then you're the product
 - 
