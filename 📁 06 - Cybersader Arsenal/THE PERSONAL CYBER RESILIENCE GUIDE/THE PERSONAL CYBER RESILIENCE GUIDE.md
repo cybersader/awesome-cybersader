@@ -3,10 +3,16 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Tuesday, September 10th 2024, 10:20 pm
+date modified: Tuesday, September 10th 2024, 10:21 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
+
+> [!tldr] A principled and pragmatic guide to operating resiliently in cyberspace
+
+# DROPZONE - NEW IDEAS HERE
+
+- 
 
 # Machines, Hardware
 
