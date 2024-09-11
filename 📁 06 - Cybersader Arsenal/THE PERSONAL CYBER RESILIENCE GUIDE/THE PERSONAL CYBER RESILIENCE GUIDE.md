@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Monday, September 9th 2024, 10:05 pm
+date modified: Tuesday, September 10th 2024, 10:15 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -34,6 +34,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 # Messaging
 
 - Get on a platform like Signal that's more private
+- Avoid SMS where you can.  It's outdated.
 
 # Knowledge Management
 
