@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Tuesday, September 10th 2024, 10:19 pm
+date modified: Tuesday, September 10th 2024, 10:20 pm
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -167,4 +167,5 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Learn how to look for alternatives
 - If there's a lot of marketing/ads for it, then it's very possible that's where they put their money.  The solution/product is likely terrible.
 - If it's free, then you're the product
+- Things you shouldn't post: location, when you'll be gone, tickets, papers with lots of encoded information on them, badges, etc.
 - 

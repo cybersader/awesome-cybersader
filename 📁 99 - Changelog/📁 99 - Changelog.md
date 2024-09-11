@@ -1,4 +1,5 @@
-- 2024-09-10 at 22h19 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
+- 2024-09-10 at 22h20 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
+- 2024-09-10 at 22h19 · [[Drawing 2024-09-10 22.19.38.excalidraw]]
 - 2024-09-09 at 21h51 · [[⬇️ Misc_Links]]
 - 2024-09-09 at 21h50 · [[DevSecOps]]
 - 2024-09-09 at 21h49 · [[📁 04 - Organizational Cyber]]
