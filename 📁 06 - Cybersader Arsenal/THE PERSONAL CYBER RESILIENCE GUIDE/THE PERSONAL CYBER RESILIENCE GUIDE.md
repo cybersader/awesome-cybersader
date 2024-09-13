@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Tuesday, September 10th 2024, 10:21 pm
+date modified: Friday, September 13th 2024, 8:23 am
 ---
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
@@ -174,4 +174,8 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - If there's a lot of marketing/ads for it, then it's very possible that's where they put their money.  The solution/product is likely terrible.
 - If it's free, then you're the product
 - Things you shouldn't post: location, when you'll be gone, tickets, papers with lots of encoded information on them, badges, etc.
+- Lay out your apps on your home page in a way that's convenient and fast
+- Update your browser
+- Signature tool checks like virustotal
+- Email message header analyzers
 - 
