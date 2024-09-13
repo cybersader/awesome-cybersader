@@ -7,7 +7,7 @@ tags:
   - data_governance
 publish: true
 date created: Monday, June 24th 2024, 7:03 pm
-date modified: Friday, September 13th 2024, 4:15 pm
+date modified: Friday, September 13th 2024, 4:16 pm
 ---
 
 # Good Places to Start
@@ -19,6 +19,7 @@ date modified: Friday, September 13th 2024, 4:15 pm
 - Data Mapping in File Shares
 	- Python + Pandas + Plotly Treemaps
 	- Data classification (open source and free) - [SnaffCon/Snaffler: a tool for pentesters to help find ... - GitHub GitHub https://github.com › SnaffCon › Snaffler](https://github.com/SnaffCon/Snaffler)
+		- Use a paid tool to map and classify data access, permissions, staleness, duplicates, etc. 
 	- [Plotly | Treemap charts in Python](https://plotly.com/python/treemaps/)
 	- Use columns like User/Group, File/Folder Path, Sensitivity/Classification to build out the treemap
 - AD and Getting to RBAC (Role Based Access Control)
@@ -242,12 +243,12 @@ Quite a few arguments to garner support:
 	- Universal Groups (if you have Exchange on prem)
 	- Local Access to Resources
 
-![](_attachments/IMG-20240913161547652.png)
+![](_attachments/IMG-20240913161648870.png)
 
 "Don't put individual users in DACLs"
 
 - Group Policies Summary
-	- ![](_attachments/IMG-20240913161547710.png)
+	- ![](_attachments/IMG-20240913161648917.png)
 - LSD-OU
 	- User or computer
 	- Templates or Policy Preferences
@@ -257,7 +258,7 @@ Quite a few arguments to garner support:
 
 ## Lifecycle Management
 
-![](_attachments/IMG-20240913161547807.png)
+![](_attachments/IMG-20240913161649016.png)
 
 - OODA is well documented
 	- What is the infra and environment
