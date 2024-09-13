@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Org Data Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
@@ -79,10 +87,6 @@
     {
       "basename": "📁 04 - Organizational Cyber",
       "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     },
     {
       "basename": "Data Entry Tools",
@@ -195,10 +199,6 @@
     {
       "basename": "App Tool Solution Discovery , Catalogues, Curation",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md"
-    },
-    {
-      "basename": "Handling Personal Security Breaches",
-      "path": "📁 06 - Cybersader Arsenal/Handling Personal Security Breaches/Handling Personal Security Breaches.md"
     }
   ],
   "omittedPaths": [],
