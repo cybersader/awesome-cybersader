@@ -246,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -354,10 +355,10 @@
   },
   "active": "c91d657d45b1a98a",
   "lastOpenFiles": [
-    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913134541493.png",
-    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913134541390.png",
+    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913161547807.png",
+    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913161547710.png",
     "📁 04 - Organizational Cyber/Org Data Governance/_attachments",
-    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913134541343.png",
+    "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240913161547652.png",
     "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/IMG-20240913125715913.png",

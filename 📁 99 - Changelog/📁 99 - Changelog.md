@@ -1,5 +1,5 @@
-- 2024-09-13 at 13h45 · [[📁 04 - Organizational Cyber]]
-- 2024-09-13 at 13h45 · [[Org Data Governance]]
+- 2024-09-13 at 16h15 · [[📁 04 - Organizational Cyber]]
+- 2024-09-13 at 16h15 · [[Org Data Governance]]
 - 2024-09-13 at 12h57 · [[📁 03 - Curations, Stacks]]
 - 2024-09-13 at 12h57 · [[Cyber Memes]]
 - 2024-09-13 at 08h23 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]

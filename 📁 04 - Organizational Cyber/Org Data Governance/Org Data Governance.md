@@ -7,12 +7,28 @@ tags:
   - data_governance
 publish: true
 date created: Monday, June 24th 2024, 7:03 pm
-date modified: Friday, September 13th 2024, 1:45 pm
+date modified: Friday, September 13th 2024, 4:15 pm
 ---
 
 # Good Places to Start
 
 - [(4) Next Gen Strategies for Cleaning Up Previous Gen AD & SMB w/ Kent & Jordan #livestream #infosec - YouTube](https://www.youtube.com/watch?v=lud3T2mHiI4&t=3010s) 
+
+# Tools
+
+- Data Mapping in File Shares
+	- Python + Pandas + Plotly Treemaps
+	- Data classification (open source and free) - [SnaffCon/Snaffler: a tool for pentesters to help find ... - GitHub GitHub https://github.com › SnaffCon › Snaffler](https://github.com/SnaffCon/Snaffler)
+	- [Plotly | Treemap charts in Python](https://plotly.com/python/treemaps/)
+	- Use columns like User/Group, File/Folder Path, Sensitivity/Classification to build out the treemap
+- AD and Getting to RBAC (Role Based Access Control)
+	- [Home - PingCastle](https://www.pingcastle.com/)
+	- [BloodHoundAD/BloodHound: Six Degrees of Domain Admin](https://github.com/BloodHoundAD/BloodHound)
+	- [Bloodhound Reporting for Blue and Purple Teams - GitHub GitHub https://github.com › PlumHound › PlumHound](https://github.com/PlumHound/PlumHound)
+	- [Testimo is a PowerShell module for running health checks ... GitHub https://github.com › EvotecIT › Testimo](https://github.com/EvotecIT/Testimo)
+	- [EvotecIT/GPOZaurr: Group Policy Eater is a PowerShell ... GitHub https://github.com › EvotecIT › GPOZaurr](https://github.com/EvotecIT/GPOZaurr)
+	
+	- [ly4k/Certipy: Tool for Active Directory Certificate Services ... GitHub https://github.com › Certipy](https://github.com/ly4k/Certipy)
 
 # Cleaning Up SMB Shares and AD
 
@@ -226,12 +242,12 @@ Quite a few arguments to garner support:
 	- Universal Groups (if you have Exchange on prem)
 	- Local Access to Resources
 
-![](_attachments/IMG-20240913134541343.png)
+![](_attachments/IMG-20240913161547652.png)
 
 "Don't put individual users in DACLs"
 
 - Group Policies Summary
-	- ![](_attachments/IMG-20240913134541390.png)
+	- ![](_attachments/IMG-20240913161547710.png)
 - LSD-OU
 	- User or computer
 	- Templates or Policy Preferences
@@ -241,7 +257,7 @@ Quite a few arguments to garner support:
 
 ## Lifecycle Management
 
-![](_attachments/IMG-20240913134541493.png)
+![](_attachments/IMG-20240913161547807.png)
 
 - OODA is well documented
 	- What is the infra and environment
