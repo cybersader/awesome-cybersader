@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+      "basename": "Internet Usage & Ethics",
+      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
     {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+    },
+    {
+      "basename": "DevSecOps",
+      "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Awesome Hard Disk Drives, NAS Hardware",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
+    },
+    {
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "⬇️ New Tools",
+      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
     },
     {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
@@ -17,20 +41,20 @@
       "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
+      "basename": "Org Data Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
       "basename": "Drawing 2024-09-10 22.19.38.excalidraw",
       "path": "Excalidraw/Drawing 2024-09-10 22.19.38.excalidraw.md"
     },
     {
-      "basename": "DevSecOps",
-      "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
-    },
-    {
       "basename": "⬇️ Misc_Links",
       "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
-    },
-    {
-      "basename": "Awesome Hard Disk Drives, NAS Hardware",
-      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
     },
     {
       "basename": "Cutting Stock Problem",
@@ -45,20 +69,8 @@
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
     },
     {
-      "basename": "Internet Usage & Ethics",
-      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
-    },
-    {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
       "basename": "Xbox Controllers",
       "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
       "basename": "Sub-Based & Ad-Avoiding Media Platforms",
@@ -71,10 +83,6 @@
     {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "Bitwarden Stuff",
-      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
     },
     {
       "basename": "Enterprise IAM",
@@ -91,10 +99,6 @@
     {
       "basename": "Data Entry Tools",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Why You Should Ask Stupid Questions",
@@ -195,10 +199,6 @@
     {
       "basename": "Frameworks, Standards",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
-    },
-    {
-      "basename": "App Tool Solution Discovery , Catalogues, Curation",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation.md"
     }
   ],
   "omittedPaths": [],

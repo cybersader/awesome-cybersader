@@ -7,8 +7,10 @@ tags:
   - "#software"
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, August 11th 2024, 4:18 pm
+date modified: Saturday, September 14th 2024, 11:02 am
 ---
+
+[⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools.md)
 
 # Software, Web
 
