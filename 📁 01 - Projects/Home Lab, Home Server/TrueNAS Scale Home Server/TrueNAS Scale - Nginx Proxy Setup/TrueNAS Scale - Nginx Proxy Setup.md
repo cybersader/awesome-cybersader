@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 14th 2024, 7:04 pm
+date modified: Saturday, September 14th 2024, 7:48 pm
 ---
 
 
@@ -40,11 +40,11 @@ date modified: Saturday, September 14th 2024, 7:04 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240914190408882.png)
+- ![600](_attachments/IMG-20240914194900405.png)
 
-- ![600](_attachments/IMG-20240914190408915.png)
+- ![600](_attachments/IMG-20240914194900443.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240914190409011.png)
+	- ![500](_attachments/IMG-20240914194900518.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
 
@@ -52,7 +52,7 @@ First, make the datasets.
 
 - Still unsure of how this should look in TrueNAS
 - Nginx user and group config
-	- ![](_attachments/IMG-20240914190409108.png)
+	- ![](_attachments/IMG-20240914194900589.png)
 - Make sure the datasets are configured to the same User ID (likely "apps")
 
 ## Add Nginx App to TrueNAS
@@ -60,7 +60,7 @@ First, make the datasets.
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240914190409228.png)
+	- ![](_attachments/IMG-20240914194900791.png)
 
 ### Environment Variables
 
@@ -71,9 +71,12 @@ These are also required for Apps like Immich
 	- You have to put in the below environment variables for things to work:
 		- `S6_STAGE2_HOOK=sed -i $d /etc/s6-overlay/s6-rc.d/prepare/30-ownership.sh`
 
-## Set Up Nginx from UI
+## Set Up Nginx DNS + SSL, Router Firewall Rules
 
 - [Full Setup Instructions | Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
 	- Use default creds from instructions
-	- ![](_attachments/IMG-20240914190409319.png)
+	- ![](_attachments/IMG-20240914194900896.png)
+
+### Cloudflare / DNS Records Setup
+
 - 
