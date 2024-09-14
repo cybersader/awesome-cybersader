@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 14th 2024, 5:07 pm
+date modified: Saturday, September 14th 2024, 6:21 pm
 ---
 
 
@@ -30,20 +30,24 @@ date modified: Saturday, September 14th 2024, 5:07 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240914170713198.png)
+- ![600](_attachments/IMG-20240914182127226.png)
 
-- ![600](_attachments/IMG-20240914170713232.png)
+- ![600](_attachments/IMG-20240914182127277.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240914170713321.png)
+	- ![500](_attachments/IMG-20240914182127367.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
+
+## Setting Nginx App ACL/Permissions
+
+- Still unsure of how this should look in TrueNAS
 
 ## Add Nginx App to TrueNAS
 
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240914170713412.png)
+	- ![](_attachments/IMG-20240914182127481.png)
 
 ### Environment Variables - Required for Apps like Immich
 
