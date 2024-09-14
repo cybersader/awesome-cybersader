@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
       "basename": "Internet Usage & Ethics",
       "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Secure Podman Setup",
       "path": "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md"
-    },
-    {
-      "basename": "Endpoint Hardening",
-      "path": "📁 04 - Organizational Cyber/Endpoint Hardening/Endpoint Hardening.md"
-    },
-    {
-      "basename": "Frameworks, Standards",
-      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
     }
   ],
   "omittedPaths": [],
