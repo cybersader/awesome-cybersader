@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 14th 2024, 7:48 pm
+date modified: Saturday, September 14th 2024, 8:07 pm
 ---
 
 
@@ -40,11 +40,11 @@ date modified: Saturday, September 14th 2024, 7:48 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240914194900405.png)
+- ![600](_attachments/IMG-20240914200744861.png)
 
-- ![600](_attachments/IMG-20240914194900443.png)
+- ![600](_attachments/IMG-20240914200744902.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240914194900518.png)
+	- ![500](_attachments/IMG-20240914200744981.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
 
@@ -52,7 +52,7 @@ First, make the datasets.
 
 - Still unsure of how this should look in TrueNAS
 - Nginx user and group config
-	- ![](_attachments/IMG-20240914194900589.png)
+	- ![](_attachments/IMG-20240914200745064.png)
 - Make sure the datasets are configured to the same User ID (likely "apps")
 
 ## Add Nginx App to TrueNAS
@@ -60,7 +60,7 @@ First, make the datasets.
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240914194900791.png)
+	- ![](_attachments/IMG-20240914200745196.png)
 
 ### Environment Variables
 
@@ -75,8 +75,14 @@ These are also required for Apps like Immich
 
 - [Full Setup Instructions | Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
 	- Use default creds from instructions
-	- ![](_attachments/IMG-20240914194900896.png)
+	- ![](_attachments/IMG-20240914200745286.png)
 
 ### Cloudflare / DNS Records Setup
 
-- 
+- Follow the instructions:
+	- [HomeLab: Nginx-Proxy-Manager: Setup SSL Certificate with Domain Name in Cloudflare DNS | by Life-is-short--so--enjoy-it | Medium](https://medium.com/@life-is-short-so-enjoy-it/homelab-nginx-proxy-manager-setup-ssl-certificate-with-domain-name-in-cloudflare-dns-732af64ddc0b)
+
+This gives the self-hosted Nginx Proxy Manager an API token, so that it can dynamically change the DNS for Cloudflare and point to the home server network...at least it seems to be the case.
+
+To add "proxy hosts" that point to local services or TrueNAS Scale Apps - [How to Expose Services with the Nginx Proxy Manager | Linode Docs](https://www.linode.com/docs/guides/using-nginx-proxy-manager/#configuring-the-nginx-proxy-manager)
+
