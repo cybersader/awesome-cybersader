@@ -13,9 +13,17 @@ date modified: Sunday, June 23rd 2024, 2:16 pm
 - With Obsidian Plugins
 	- Malicious community plugins
 
+## Business Use and Secure Setup
+There's ways to disable or whitelist plugins pragmatically so we can use Obsidian in the organization.
+
+- https://forum.obsidian.md/t/security-of-the-plugins/7544/115?page=5
+- Firefox has similar risks - https://support.mozilla.org/en-US/kb/tips-assessing-safety-extension
+- https://forum.obsidian.md/t/prevent-plugins-and-auto-updates-in-corporate-network/73495
+
 ## Curated Obsidian Plugin Threats
 - [A place for Plugin's sensitive data? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/a-place-for-plugins-sensitive-data/18308)
 - [{{environment}} - Shell commands documentation - Obsidian Publish](https://publish.obsidian.md/shellcommands/Variables/%7B%7Benvironment%7D%7D)
+
 ## GitHub - Hiding Secrets
 Some plugins expose secrets in their respective plugin folder under `.obsidian`.  
 

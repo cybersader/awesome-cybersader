@@ -24,4 +24,4 @@ https://www.youtube.com/watch?v=nxw8Nvp7Pj8
     - Diagnostic data?..maybe
     - Hopefully not bad
     - Might be part of fallout from Snowflake
-    - Watch dark web fo
+    - Watch dark web for related vulns or talk related to your infra
