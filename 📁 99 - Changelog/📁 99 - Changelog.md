@@ -1,7 +1,7 @@
+- 2024-09-18 at 17h33 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-18 at 17h30 · [[2024 Cyber News]]
 - 2024-09-18 at 17h30 · [[Obsidian Vault Security]]
 - 2024-09-18 at 17h30 · [[Cyber Reports, Trends]]
-- 2024-09-16 at 21h29 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-14 at 20h25 · [[📁 01 - Projects]]
 - 2024-09-14 at 20h25 · [[TrueNAS Scale Home Server]]
 - 2024-09-14 at 20h25 · [[Home Lab, Home Server]]
