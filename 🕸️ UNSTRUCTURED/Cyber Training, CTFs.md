@@ -73,7 +73,7 @@ publish: true
 - 📁 04 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md
     - https://base.cybersader.com/%F0%9F%93%81+04+-+Organizational+Cyber/%E2%AC%87%EF%B8%8F+Cyber+Culture+Drop/Backdoors+%26+Breaches/Backdoors+%26+Breaches
 
-## GRC, Audits, Rick, IARM
+## GRC, Audits
 
 - RUN GRC: It's Like That and That's The Way It Is w/ Kelli & CJ
 - Merry Christmas, It’s the Ugly Sweater GRC Roundup w/ Kellli & CJ
