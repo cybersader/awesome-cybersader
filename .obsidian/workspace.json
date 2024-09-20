@@ -230,8 +230,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -252,7 +251,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +268,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -292,7 +291,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+                "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
               }
             }
           },
@@ -313,7 +312,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -342,8 +341,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d1a916c00d2be73c",
+  "active": "218db58103368cbd",
   "lastOpenFiles": [
+    "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
+    "🕸️ UNSTRUCTURED/Data Visualization, BI.md",
+    "🕸️ UNSTRUCTURED/Cyber Training, CTFs.md",
     "🕸️ UNSTRUCTURED/Cyber Reports, Trends.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914200109337.png",
@@ -358,7 +360,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
     "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
-    "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md",
@@ -385,8 +386,6 @@
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE",
     "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
-    "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md",
-    "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "📁 04 - Organizational Cyber/Enterprise IAM",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments",
     "_attachments/Desktop Vs Mobile Vault Configs"

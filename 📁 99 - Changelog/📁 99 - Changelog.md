@@ -1,7 +1,7 @@
+- 2024-09-20 at 08h39 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-20 at 08h38 · [[Cyber Training, CTFs]]
 - 2024-09-20 at 08h38 · [[Data Visualization, BI]]
 - 2024-09-20 at 08h38 · [[Cyber Community]]
-- 2024-09-18 at 17h33 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-09-18 at 17h30 · [[2024 Cyber News]]
 - 2024-09-18 at 17h30 · [[Obsidian Vault Security]]
 - 2024-09-18 at 17h30 · [[Cyber Reports, Trends]]
