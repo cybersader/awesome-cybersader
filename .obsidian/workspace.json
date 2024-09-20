@@ -10,7 +10,7 @@
           {
             "id": "c0aab1cbf229de4b",
             "type": "tabs",
-            "dimension": 45.195729537366546,
+            "dimension": 60.19590382902938,
             "children": [
               {
                 "id": "8017056465f2e6aa",
@@ -186,7 +186,7 @@
           {
             "id": "8bd77d880975b950",
             "type": "tabs",
-            "dimension": 54.804270462633454,
+            "dimension": 39.80409617097062,
             "children": [
               {
                 "id": "c91d657d45b1a98a",
@@ -194,7 +194,19 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                    "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "b0abf9c10c459852",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
                     "mode": "source",
                     "source": false
                   }
@@ -261,8 +273,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5,
-    "collapsed": true
+    "width": 234.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -278,7 +289,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +306,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
               }
             }
           },
@@ -370,8 +381,12 @@
   },
   "active": "c91d657d45b1a98a",
   "lastOpenFiles": [
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
+    "📁 10 - Community/Cyber Community/Cyber Community.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
     "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md",
     "📁 04 - Organizational Cyber/Cyber Talent Development/Cyber Talent Development.md",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs",
@@ -410,10 +425,7 @@
     "Excalidraw",
     "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 04 - Organizational Cyber/DevSecOps",
-    "🕸️ UNSTRUCTURED/Cutting Stock Problem.md",
-    "📁 11 - Content Creation/Webcams/Webcams.md",
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE",
-    "📁 04 - Organizational Cyber/Enterprise IAM",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Vault Configs/_attachments"
+    "📁 04 - Organizational Cyber/Enterprise IAM"
   ]
 }

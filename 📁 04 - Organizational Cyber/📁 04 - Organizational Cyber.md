@@ -19,6 +19,7 @@ publish: true
 - **[[Cyber Talent Development]]**
 - **[[Cyber Training, CTFs]]**
 - **[[Cybersecurity Culture Building]]**
+	- **[[Cybersecurity Awareness Resources]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**
 - **[[Enterprise IAM]]**

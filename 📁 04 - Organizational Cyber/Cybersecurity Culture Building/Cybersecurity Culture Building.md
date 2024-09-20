@@ -5,7 +5,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 20th 2024, 8:15 pm
-date modified: Friday, September 20th 2024, 2:23 pm
+date modified: Friday, September 20th 2024, 4:46 pm
 ---
 
  
@@ -14,10 +14,6 @@ date modified: Friday, September 20th 2024, 2:23 pm
 [Workforce Education](../Workforce%20Education/Workforce%20Education.md)
 
 Building a cybersecurity culture is incredibly difficult.  By it's nature, cybersecurity needs to account for malicious intent in all aspects of the organization. Granted, a pragmatic and prioritization approach should be taken.
-
-# DROPZONE RESOURCES 
-
-- 
 
 # Gamification, Learning Tools, Approaches, Misc
 

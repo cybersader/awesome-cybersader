@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, September 20th 2024, 1:59 pm
-date modified: Friday, September 20th 2024, 2:03 pm
+date modified: Friday, September 20th 2024, 4:51 pm
 ---
 
 
@@ -14,7 +14,7 @@ date modified: Friday, September 20th 2024, 2:03 pm
 
 # Best Cyber Resources/Companies
 
-    - gonna add more here
+- gonna add more here
 
 - BHIS
     - https://www.blackhillsinfosec.com/projects/
