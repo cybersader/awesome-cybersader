@@ -49,6 +49,18 @@
                 }
               },
               {
+                "id": "c38554ca5b88a5a6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "d04061fe1b4422fc",
                 "type": "leaf",
                 "state": {
@@ -181,7 +193,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           },
           {
             "id": "8bd77d880975b950",
@@ -381,9 +393,10 @@
   },
   "active": "c91d657d45b1a98a",
   "lastOpenFiles": [
-    "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
-    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+    "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
@@ -423,7 +436,6 @@
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments",
     "Excalidraw/Drawing 2024-09-10 22.19.38.excalidraw.md",
     "Excalidraw",
-    "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md",
     "📁 04 - Organizational Cyber/DevSecOps",
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE",
     "📁 04 - Organizational Cyber/Enterprise IAM"

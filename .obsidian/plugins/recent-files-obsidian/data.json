@@ -5,12 +5,16 @@
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
-      "basename": "Game of Thrones & Cybersecurity",
-      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md"
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "Cyber Training, CTFs",
       "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
+    },
+    {
+      "basename": "Game of Thrones & Cybersecurity",
+      "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md"
     },
     {
       "basename": "Cyber Community",
@@ -195,10 +199,6 @@
     {
       "basename": "Phone Pick in 2024",
       "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
-    },
-    {
-      "basename": "Phone Shopping 2024",
-      "path": "📁 01 - Projects/Phone Pick in 2024/Phone Shopping 2024.md"
     }
   ],
   "omittedPaths": [],

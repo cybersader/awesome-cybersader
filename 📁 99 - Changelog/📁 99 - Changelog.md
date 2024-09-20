@@ -1,4 +1,4 @@
-- 2024-09-20 at 17h01 · [[Cybersecurity Awareness Resources]]
+- 2024-09-20 at 17h25 · [[Cybersecurity Awareness Resources]]
 - 2024-09-20 at 16h51 · [[Cyber Training, CTFs]]
 - 2024-09-20 at 16h48 · [[Cyber Community]]
 - 2024-09-20 at 16h47 · [[📁 04 - Organizational Cyber]]
