@@ -1,4 +1,4 @@
-[Endpoint Hardening](Endpoint%20Hardening.md)
+[Endpoint Hardening](../📁%2004%20-%20Organizational%20Cyber/Endpoint%20Hardening/Endpoint%20Hardening.md)
 
 # Free Risk Recon and Consulting, Outsourced Vulnerability Scanning/Visibility
 - [DHS Cyber Hygiene Scans](https://www.cisa.gov/cyber-hygiene-services)

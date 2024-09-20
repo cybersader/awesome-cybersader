@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+      "basename": "Cyber Training, CTFs",
+      "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
+    },
+    {
+      "basename": "Cybersecurity Culture Building",
+      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+    },
+    {
+      "basename": "📁 04 - Organizational Cyber",
+      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
+    },
+    {
+      "basename": "Cyber Talent Development",
+      "path": "📁 04 - Organizational Cyber/Cyber Talent Development/Cyber Talent Development.md"
+    },
+    {
+      "basename": "Org Data Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "PI Types",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md"
     },
     {
       "basename": "DevSecOps",
       "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
@@ -47,10 +71,6 @@
     {
       "basename": "Personal Cyber Resilience",
       "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     },
     {
       "basename": "Cyber Memes",
@@ -99,10 +119,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "📁 04 - Organizational Cyber",
-      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
     },
     {
       "basename": "Data Entry Tools",
@@ -183,22 +199,6 @@
     {
       "basename": "Mint Mobile",
       "path": "📁 01 - Projects/Phone Pick in 2024/Mint Mobile/Mint Mobile.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "NIST & CIS Resources",
-      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
-    },
-    {
-      "basename": "Podman Environment",
-      "path": "📁 04 - Organizational Cyber/Secure Cyber Environment/Podman Environment/Podman Environment.md"
-    },
-    {
-      "basename": "Secure Podman Setup",
-      "path": "📁 04 - Organizational Cyber/Container Security/Secure Podman Setup/Secure Podman Setup.md"
     }
   ],
   "omittedPaths": [],

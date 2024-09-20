@@ -70,7 +70,7 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 	- Leaf
 		- Make the decision/solution, act on it, don't talk to me
 		- If there's a major exception, then you can escalate to me
-	- ![](IMG-20240526140346555.png)
+	- ![](_attachments/IMG-20240920140431653.png)
 ### When to Delegate
 - Opportunity to grow and develop team members
 - Task will recur in a similar form in the future
@@ -79,7 +79,7 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 ### Tool
 - Top half is boilerplate
 - Share with delegates.  Use company system, wiki, daily or weekly checkups, and project tracking to keep up.
-- ![](IMG-20240526140346659.png)
+- ![](_attachments/IMG-20240920140431757.png)
 ## Process for I do, we do, you do
 - I do. You watch. We talk. (OBS)
 - You do. I watch. We talk. (Screen share, Zoom)
@@ -130,8 +130,8 @@ Link - [(3) How to Accelerate Finding and Professionally Developing Talented Inf
 ## First Talk with HR
 - Need your help - review hiring criteria for open position
 - Use Common Cybersecurity Org Chart and Service Catalog - HR-Security Toolkit
-	- ![](IMG-20240526140346733.png)
-	- ![](IMG-20240526140346770.png)
+	- ![](_attachments/IMG-20240920140431917.png)
+	- ![](_attachments/IMG-20240920140432112.png)
 - Explain areas you tend to hire in the most - lots of turnover?
 - Tell them the criteria for job trying to fill - look for and make adjustments
 	- Most likely be less restrictive - ask for exceptions to hiring policy if need be

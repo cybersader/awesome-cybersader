@@ -243,12 +243,12 @@ Quite a few arguments to garner support:
 	- Universal Groups (if you have Exchange on prem)
 	- Local Access to Resources
 
-![](_attachments/IMG-20240913161648870.png)
+![](_attachments/IMG-20240920140128678.png)
 
 "Don't put individual users in DACLs"
 
 - Group Policies Summary
-	- ![](_attachments/IMG-20240913161648917.png)
+	- ![](_attachments/IMG-20240920140130345.png)
 - LSD-OU
 	- User or computer
 	- Templates or Policy Preferences
@@ -258,7 +258,7 @@ Quite a few arguments to garner support:
 
 ## Lifecycle Management
 
-![](_attachments/IMG-20240913161649016.png)
+![](_attachments/IMG-20240920140133106.png)
 
 - OODA is well documented
 	- What is the infra and environment

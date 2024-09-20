@@ -7,7 +7,7 @@ tags: personal-attack-surface
 publish: true
 ---
 
-[Types of Authentication Implementation and Use Cases - SSO vs Password Managers](/📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/SSO%20vs%20Password%20Managers.md)
+[Types of Authentication Implementation and Use Cases - SSO vs Password Managers](../../📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/SSO%20vs%20Password%20Managers.md)
 
 # Links & Tools
 - https://www.nudgesecurity.com/our-approach

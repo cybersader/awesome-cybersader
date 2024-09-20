@@ -7,7 +7,7 @@ date modified: Wednesday, June 19th 2024, 1:53 pm
 ---
 
 %% Begin Waypoint %%
-- [IR Tabletop Scenarios](IR%20Tabletop%20Scenarios.md)
+- [[IR Tabletop Scenarios]]
 
 %% End Waypoint %%
 

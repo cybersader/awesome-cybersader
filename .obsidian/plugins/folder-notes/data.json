@@ -1,7 +1,7 @@
 {
   "syncFolderName": true,
-  "ctrlKey": true,
-  "altKey": false,
+  "ctrlKey": false,
+  "altKey": true,
   "hideFolderNote": true,
   "templatePath": "",
   "autoCreate": false,

@@ -1,11 +1,10 @@
 ---
 aliases:
-  - Cyber Culture
-  - Enterprise Cyber
 tags: 
+  - CTF
+  - learning
+  - team-building
 publish: true
-date created: Monday, May 27th 2024, 9:57 am
-date modified: Monday, May 27th 2024, 9:59 am
 ---
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Culture Drop]]**
@@ -17,7 +16,8 @@ date modified: Monday, May 27th 2024, 9:59 am
 - **[[Authentication & Trust Models]]**
 - **[[Container Security]]**
 	- **[[Secure Podman Setup]]**
-- **[[Cyber Team Building]]**
+- **[[Cyber Talent Development]]**
+- **[[Cyber Training, CTFs]]**
 - **[[Cybersecurity Culture Building]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**

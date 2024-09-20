@@ -5,23 +5,31 @@ aliases:
 tags: 
 publish: true
 date created: Monday, May 20th 2024, 8:15 pm
-date modified: Wednesday, June 19th 2024, 10:29 pm
+date modified: Friday, September 20th 2024, 1:54 pm
 ---
 
  
-[BHIS - Sourcing Cyber](../../../📁%2004%20-%20Organizational%20Cyber/Cyber%20Team%20Building/BHIS%20-%20Sourcing%20Cyber/BHIS%20-%20Sourcing%20Cyber.md)
-[Cyber Team Building](../../../📁%2004%20-%20Organizational%20Cyber/Cyber%20Team%20Building/Cyber%20Team%20Building.md)
+[BHIS - Sourcing Cyber](../Cyber%20Talent%20Development/BHIS%20-%20Sourcing%20Cyber/BHIS%20-%20Sourcing%20Cyber.md)
+[Cyber Team Building](../Cyber%20Team%20Building/Cyber%20Team%20Building.md)
 [Workforce Education](../Workforce%20Education/Workforce%20Education.md)
 
 Building a cybersecurity culture is incredibly difficult.  By it's nature, cybersecurity needs to account for malicious intent in all aspects of the organization. Granted, a pragmatic and prioritization approach should be taken.
 
+# DROPZONE RESOURCES 
+
+- 
+
 # Gamification, Learning Tools, Approaches, Misc
+
 - [Highly Customizable Course Authoring | Employee Training | Storyline 360 | Articulate](https://www.articulate.com/360/storyline/)
 
 # Free Training, Resources
+
 - [GCA Cybersecurity Toolkit for Small Business | Sponsored by Mastercard](https://gcatoolkit.org/smallbusiness/) 
 - 
+
 # Incentivizing Training and Exercises
+
 - Rewards systems
 - Recognition in company newsletters
 - Special certificates
