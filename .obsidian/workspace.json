@@ -4,86 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "e964768d6b90cd50",
+        "id": "869ce3aa5475af3b",
         "type": "split",
         "children": [
           {
             "id": "c0aab1cbf229de4b",
             "type": "tabs",
-            "dimension": 60.19590382902938,
+            "dimension": 42.05756929637527,
             "children": [
-              {
-                "id": "8017056465f2e6aa",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "218db58103368cbd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "ab1496cad93a21cd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c38554ca5b88a5a6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "d04061fe1b4422fc",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "18d00bc82ca67a4c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
               {
                 "id": "57c28d469f693afb",
                 "type": "leaf",
@@ -97,36 +25,12 @@
                 }
               },
               {
-                "id": "805013d75066e90a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3eda59b7bf24289c",
+                "id": "4eda235d480fa9d5",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c934b33e2482b757",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
                     "mode": "source",
                     "source": false
                   }
@@ -145,42 +49,6 @@
                 }
               },
               {
-                "id": "a15ffbc969a7dd3a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "d961a41962a62fb6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "f2aade3f8af49497",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "0132127300ab823a",
                 "type": "leaf",
                 "state": {
@@ -193,12 +61,12 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           },
           {
-            "id": "8bd77d880975b950",
+            "id": "e8056b627e323aeb",
             "type": "tabs",
-            "dimension": 39.80409617097062,
+            "dimension": 57.94243070362474,
             "children": [
               {
                 "id": "c91d657d45b1a98a",
@@ -211,23 +79,11 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "b0abf9c10c459852",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
             ]
           }
         ],
-        "direction": "horizontal"
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -285,7 +141,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -393,11 +250,26 @@
   },
   "active": "c91d657d45b1a98a",
   "lastOpenFiles": [
-    "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
+    "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
+    "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md",
+    "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md",
+    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
+    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
+    "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
+    "CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations.md",
+    "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
+    "🕸️ UNSTRUCTURED/Xbox Controllers.md",
+    "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md",
+    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
@@ -407,11 +279,6 @@
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
     "_attachments",
     "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md",
-    "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md",
-    "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
-    "🕸️ UNSTRUCTURED/Data Visualization, BI.md",
-    "🕸️ UNSTRUCTURED/Cyber Reports, Trends.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914200109337.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914202540808.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914202540547.png",
@@ -421,19 +288,9 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914202540292.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240914202540247.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
-    "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md",
-    "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md",
-    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
-    "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md",
-    "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md",
-    "⬇ INBOX, DROPZONE/⬇️ New Tools.md",
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240920140133106.png",
     "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240920140130345.png",
     "📁 04 - Organizational Cyber/Org Data Governance/_attachments",
-    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments",
     "Excalidraw",
     "📁 04 - Organizational Cyber/DevSecOps",

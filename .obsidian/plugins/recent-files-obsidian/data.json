@@ -5,20 +5,80 @@
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
-      "basename": "Awesome Password Security",
-      "path": "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md"
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+    },
+    {
+      "basename": "Enterprise IAM",
+      "path": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
+    },
+    {
+      "basename": "Data Entry Tools",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
+    },
+    {
+      "basename": "Obsidian Vault Security",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Internet Usage & Ethics",
+      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
+    },
+    {
+      "basename": "Awesome Hard Disk Drives, NAS Hardware",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
+    },
+    {
+      "basename": "⬇️ New Tools",
+      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
     },
     {
       "basename": "Cyber Training, CTFs",
       "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
     },
     {
+      "basename": "Grad School Papers and Presentations",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations.md"
+    },
+    {
+      "basename": "DevSecOps",
+      "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
+    },
+    {
       "basename": "Game of Thrones & Cybersecurity",
       "path": "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md"
+    },
+    {
+      "basename": "Xbox Controllers",
+      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
+    },
+    {
+      "basename": "Awesome Password Security",
+      "path": "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "Cyber Community",
@@ -45,52 +105,20 @@
       "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md"
     },
     {
-      "basename": "DevSecOps",
-      "path": "📁 04 - Organizational Cyber/DevSecOps/DevSecOps.md"
-    },
-    {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
-      "basename": "Internet Usage & Ethics",
-      "path": "📁 06 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
-    },
-    {
-      "basename": "Bitwarden Stuff",
-      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
-    },
-    {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
     },
     {
-      "basename": "Awesome Hard Disk Drives, NAS Hardware",
-      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
-    },
-    {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
-    },
-    {
-      "basename": "Personal Cyber Resilience",
-      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
       "basename": "Cyber Memes",
@@ -113,14 +141,6 @@
       "path": "📁 11 - Content Creation/Webcams/Webcams.md"
     },
     {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "Xbox Controllers",
-      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
-    },
-    {
       "basename": "Sub-Based & Ad-Avoiding Media Platforms",
       "path": "🕸️ UNSTRUCTURED/Sub-Based & Ad-Avoiding Media Platforms.md"
     },
@@ -133,16 +153,8 @@
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
     {
-      "basename": "Enterprise IAM",
-      "path": "📁 04 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
-    },
-    {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "Data Entry Tools",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
     },
     {
       "basename": "Why You Should Ask Stupid Questions",
@@ -187,18 +199,6 @@
     {
       "basename": "📁 01 - Projects",
       "path": "📁 01 - Projects/📁 01 - Projects.md"
-    },
-    {
-      "basename": "Home Networking Arsenal",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md"
-    },
-    {
-      "basename": "Monetization & Funding",
-      "path": "📁 07 - Business/Monetization & Funding/Monetization & Funding.md"
-    },
-    {
-      "basename": "Cybersecurity Ontologies, Taxonomies, and Mental M",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md"
     }
   ],
   "omittedPaths": [],

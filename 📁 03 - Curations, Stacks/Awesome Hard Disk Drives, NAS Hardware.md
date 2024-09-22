@@ -5,7 +5,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, June 23rd 2024, 2:53 pm
-date modified: Monday, September 9th 2024, 9:00 pm
+date modified: Sunday, September 22nd 2024, 6:27 pm
 ---
 
 # Curations
@@ -24,3 +24,7 @@ Just a curated list of hard disk drives I'm using with my NAS.  Hoping to find a
 
 - [Node 304 — Fractal Design](https://www.fractal-design.com/products/cases/node/node-304/black/) 
 - [45HomeLab Store](https://store.45homelab.com/#enterprise-drives-hdds) 
+
+# Basic NAS Setups
+
+- [Amazon.com : synology](https://www.amazon.com/synology/s?k=synology) - these are what would be recommended for those unfamiliar with IT
