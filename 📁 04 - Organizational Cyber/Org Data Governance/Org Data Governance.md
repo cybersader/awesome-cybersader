@@ -21,6 +21,10 @@ date modified: Friday, September 13th 2024, 4:16 pm
 	- Data classification (open source and free) - [SnaffCon/Snaffler: a tool for pentesters to help find ... - GitHub GitHub https://github.com › SnaffCon › Snaffler](https://github.com/SnaffCon/Snaffler)
 		- Use a paid tool to map and classify data access, permissions, staleness, duplicates, etc. 
 	- [Plotly | Treemap charts in Python](https://plotly.com/python/treemaps/)
+	- https://plotly.github.io/plotly.py-docs/generated/plotly.graph_objects.Treemap.html
+	- https://plotly.com/python-api-reference/generated/plotly.express.treemap.html
+	- https://plotly.com/python/reference/treemap/#treemap-name
+	- 
 	- Use columns like User/Group, File/Folder Path, Sensitivity/Classification to build out the treemap
 - AD and Getting to RBAC (Role Based Access Control)
 	- [Home - PingCastle](https://www.pingcastle.com/)
