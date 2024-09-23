@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Framework Mapping",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "Frameworks, Standards",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
+    },
+    {
+      "basename": "Game-Based Tabletops",
+      "path": "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md"
+    },
+    {
+      "basename": "NIST & CIS Resources",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
+    },
+    {
       "basename": "Personal Cyber Resilience",
       "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Bluetooth Removal Issue Fix Windows",
       "path": "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "Desktop Vs Mobile Obsidian",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/Desktop Vs Mobile Obsidian/Desktop Vs Mobile Obsidian.md"
-    },
-    {
-      "basename": "Find All Enabled Plugins From Obsidian Folder",
-      "path": "🕸️ UNSTRUCTURED/Find All Enabled Plugins From Obsidian Folder.md"
-    },
-    {
-      "basename": "📁 01 - Projects",
-      "path": "📁 01 - Projects/📁 01 - Projects.md"
     }
   ],
   "omittedPaths": [],
