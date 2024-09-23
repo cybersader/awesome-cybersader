@@ -1,3 +1,4 @@
+- 2024-09-23 at 08h49 · [[Org Data Governance]]
 - 2024-09-22 at 18h29 · [[Personal Cyber Resilience]]
 - 2024-09-22 at 18h29 · [[Organization Documentation & Wikis]]
 - 2024-09-22 at 18h29 · [[Obsidian Vault Security]]
@@ -17,7 +18,6 @@
 - 2024-09-20 at 14h04 · [[BHIS - Sourcing Cyber]]
 - 2024-09-20 at 14h01 · [[Game-Based Tabletops]]
 - 2024-09-20 at 14h01 · [[Secure Cyber Environment]]
-- 2024-09-20 at 14h01 · [[Org Data Governance]]
 - 2024-09-20 at 14h01 · [[IR Summit 2024]]
 - 2024-09-20 at 14h01 · [[Awesome Cyber Resource Curations]]
 - 2024-09-20 at 14h01 · [[SSO vs Password Managers]]
