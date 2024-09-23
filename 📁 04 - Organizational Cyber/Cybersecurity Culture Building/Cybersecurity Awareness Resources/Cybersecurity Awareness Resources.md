@@ -13,7 +13,7 @@ date modified: Sunday, September 22nd 2024, 6:28 pm
 [Cyber Movies, TV, Documentaries](../../../📁%2005%20-%20Learning,%20Notes/Cyber%20Movies,%20TV,%20Documentaries/Cyber%20Movies,%20TV,%20Documentaries.md)
 [Awesome Hard Disk Drives, NAS Hardware](../../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Hard%20Disk%20Drives,%20NAS%20Hardware.md)
 [Internet Usage & Ethics](../../../📁%2006%20-%20Cybersader%20Arsenal/Internet%20Usage%20&%20Ethics/Internet%20Usage%20&%20Ethics.md)
-
+[THE PERSONAL CYBER RESILIENCE GUIDE](../../../📁%2006%20-%20Cybersader%20Arsenal/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE.md)
 # DROPZONE RESOURCES 
 
 - darknet diaries 
