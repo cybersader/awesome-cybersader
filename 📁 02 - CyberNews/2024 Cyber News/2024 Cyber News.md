@@ -24,4 +24,18 @@ https://www.youtube.com/watch?v=nxw8Nvp7Pj8
     - Diagnostic data?..maybe
     - Hopefully not bad
     - Might be part of fallout from Snowflake
-    - Watch dark web for related vulns or talk related to your infra
+    - Watch dark web for related vulns or talk related to your infrastructure
+
+## 9/24/2024
+
+- Pagers kinetic attack in Israel
+    - They were worried about being monitored, so they got pagers
+    - Pagers receive broadcasts, then you call the person back
+    - It doesn't have to be a payphone, burner, etc.
+    - Pagers are not better. You can secure cell phone comms.
+    - Cyber people are in the know, but the non-techy people are scared
+    - Pagers have reception and ease of use
+    - Messages come in like "hey trauma is coming in."
+    - Pager networks broadcast the messages
+    - Why are they used? - batteries last forever, separate device notifications
+- 
