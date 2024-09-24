@@ -38,4 +38,4 @@ https://www.youtube.com/watch?v=nxw8Nvp7Pj8
     - Messages come in like "hey trauma is coming in."
     - Pager networks broadcast the messages
     - Why are they used? - batteries last forever, separate device notifications
-- 
+- ....
