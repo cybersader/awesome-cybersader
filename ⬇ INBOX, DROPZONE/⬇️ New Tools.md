@@ -28,6 +28,7 @@ publish: true
 
 # Notetaking
 
+- https://getdrafts.com/
 - [Napkin | Where your ideas take shape, one thought at a time.](https://www.napkin.one/) 
 
 # Windows Tools
