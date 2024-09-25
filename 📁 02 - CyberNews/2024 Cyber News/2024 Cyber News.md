@@ -38,4 +38,19 @@ https://www.youtube.com/watch?v=nxw8Nvp7Pj8
     - Messages come in like "hey trauma is coming in."
     - Pager networks broadcast the messages
     - Why are they used? - batteries last forever, separate device notifications
-- ....
+- Fake CAPTCHA phishing
+    - Convinces user to paste payload to HTA file in their command prompt
+- Fake GitHub scanner phish
+    - Looks legit by using GitHub infra to send email
+- Companies are targeting people looking for jobs by requiring them to download software
+- LinkedIn caught making opt-out setting for training AI
+    - Companies do this anyway. At least they are saying that they are doing it and allowing you to turn it off
+- COPPA, child privacy, and ethics
+    - https://www.youtube.com/live/_sCeVWOOt9A?feature=shared&t=2689 
+    - We don't have AI or privacy regulation
+    - 3 states have AI and privacy governance laws - California, Illinois, and Maryland
+    - They are vacuuming up data and we don't know what they're doing with it
+    - FTC report - all the big media platforms are feeding children's and adult's data to AI models - despite COPPA being a thing
+    - COPPA fines can destroy a company - seemingly
+    - 9 companies listed
+    - They are concerned because it hurts our goals, creates an anti-competitive environment, creates wall gardens, and it doesn't protect consumers
