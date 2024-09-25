@@ -54,3 +54,4 @@ https://www.youtube.com/watch?v=nxw8Nvp7Pj8
     - COPPA fines can destroy a company - seemingly
     - 9 companies listed
     - They are concerned because it hurts our goals, creates an anti-competitive environment, creates wall gardens, and it doesn't protect consumers
+    - https://www.youtube.com/live/_sCeVWOOt9A?feature=shared&t=2938
