@@ -10,7 +10,7 @@
           {
             "id": "c0aab1cbf229de4b",
             "type": "tabs",
-            "dimension": 54.37915742793792,
+            "dimension": 71.63493105712409,
             "children": [
               {
                 "id": "5279c050e229f740",
@@ -88,16 +88,6 @@
                 "id": "00686ab99d0fec66",
                 "type": "leaf",
                 "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.excalidraw.svg"
-                  }
-                }
-              },
-              {
-                "id": "b5de526c24527dd9",
-                "type": "leaf",
-                "state": {
                   "type": "markdown",
                   "state": {
                     "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
@@ -107,12 +97,12 @@
                 }
               }
             ],
-            "currentTab": 7
+            "currentTab": 6
           },
           {
             "id": "e8056b627e323aeb",
             "type": "tabs",
-            "dimension": 45.62084257206208,
+            "dimension": 28.365068942875904,
             "children": [
               {
                 "id": "c91d657d45b1a98a",
@@ -125,21 +115,8 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "c7675e4a567a545d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "🕸️ UNSTRUCTURED/Copy Relative Path in Obsidian + Image Editing.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -196,8 +173,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -327,10 +303,14 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "c07d9fad4dc75148",
+  "active": "00686ab99d0fec66",
   "lastOpenFiles": [
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.excalidraw.svg",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.excalidraw.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
+    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+    "🕸️ UNSTRUCTURED/Copy Relative Path in Obsidian + Image Editing.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240928173940648.svg",
+    "🕸️ UNSTRUCTURED/Scalable Project Management.md",
     "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240928170014080.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240928170042656.png",
@@ -339,11 +319,8 @@
     "_attachments/file-20240928165821806.png",
     "_attachments",
     "_attachments/file-20240928165812332.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.excalidraw.md",
-    "🕸️ UNSTRUCTURED/Copy Relative Path in Obsidian + Image Editing.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.svg",
     "_attachments/file-20240928164754289.png",
-    "🕸️ UNSTRUCTURED/Scalable Project Management.md",
     "📦 VAULT SANDBOX TESTING/Templater Templates/Copy Full Path.md",
     "_attachments/file-20240928160705827.png",
     "_attachments/file-20240928160626639.png",
@@ -354,7 +331,6 @@
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
-    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",

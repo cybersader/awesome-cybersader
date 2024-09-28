@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 5:11 pm
+date modified: Saturday, September 28th 2024, 5:39 pm
 ---
 
 
@@ -40,11 +40,11 @@ date modified: Saturday, September 28th 2024, 5:11 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240928171135445.png)
+- ![600](_attachments/IMG-20240928173939917.png)
 
-- ![600](_attachments/IMG-20240928171135582.png)
+- ![600](_attachments/IMG-20240928173939951.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240928171135802.png)
+	- ![500](_attachments/IMG-20240928173940053.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
 
@@ -52,7 +52,7 @@ First, make the datasets.
 
 - Still unsure of how this should look in TrueNAS
 - Nginx user and group config
-	- ![](_attachments/IMG-20240928171136030.png)
+	- ![](_attachments/IMG-20240928173940158.png)
 - Make sure the datasets are configured to the same User ID (likely "apps")
 
 ## Add Nginx App to TrueNAS
@@ -60,7 +60,7 @@ First, make the datasets.
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240928171136266.png)
+	- ![](_attachments/IMG-20240928173940375.png)
 
 ### Environment Variables
 
@@ -75,9 +75,11 @@ These are also required for Apps like Immich
 
 - [Full Setup Instructions | Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
 	- Use default creds from instructions
-	- ![](_attachments/IMG-20240928171136472.png)
+	- ![](_attachments/IMG-20240928173940502.png)
 
 ### Cloudflare / DNS Records Setup
+
+![500](_attachments/IMG-20240928173940648.svg)
 
 - Follow the instructions:
 	- [HomeLab: Nginx-Proxy-Manager: Setup SSL Certificate with Domain Name in Cloudflare DNS | by Life-is-short--so--enjoy-it | Medium](https://medium.com/@life-is-short-so-enjoy-it/homelab-nginx-proxy-manager-setup-ssl-certificate-with-domain-name-in-cloudflare-dns-732af64ddc0b)
@@ -90,3 +92,12 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 
 - [HomeLab 4: Install and configure Nginx Proxy Manager with SSL Wildcard Certs | Claudiu's Blog](https://claudiu.psychlab.eu/post/homelab-4-install-and-configure-nginx-proxy-manager-with-ssl-wildcard-certs/)
 
+## DNS Records in Cloudflare - DNS Only or Proxied?
+
+- 
+
+## Do I Use HTTP or HTTPS in Nginx Proxy Manager?
+
+- Create "Proxy Hosts"
+- Use "http" unless you care about hiding traffic on the local network
+- 
