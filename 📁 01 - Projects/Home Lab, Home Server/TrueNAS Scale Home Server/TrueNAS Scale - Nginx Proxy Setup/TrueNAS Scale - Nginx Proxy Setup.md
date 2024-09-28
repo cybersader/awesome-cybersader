@@ -1,9 +1,16 @@
 ---
 aliases: 
-tags: 
+tags:
+  - cgnat
+  - CGNAT
+  - "#truenas"
+  - "#setup-guide"
+  - "#nginx-proxy"
+  - "#nginx"
+  - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 6:22 pm
+date modified: Saturday, September 28th 2024, 7:27 pm
 ---
 
 
@@ -11,9 +18,11 @@ date modified: Saturday, September 28th 2024, 6:22 pm
 
 # Links
 
-- [(10) Self Hosting on your Home Server - Cloudflare + Nginx Proxy Manager - Easy SSL Setup - YouTube](https://www.youtube.com/watch?v=GarMdDTAZJo)
+- [No more Cloudflare Tunnels for me... - RaidOwl - YouTube](https://www.youtube.com/watch?v=2fA6u9eahNw)
+- [Self Hosting on your Home Server - Cloudflare + Nginx Proxy Manager - Easy SSL Setup - YouTube](https://www.youtube.com/watch?v=GarMdDTAZJo)
 - [Nginx Proxy Manager Setup | TrueNAS Community](https://www.truenas.com/community/threads/nginx-proxy-manager-setup.116682/)
 - [Guide | Nginx Proxy Manager](https://nginxproxymanager.com/guide/)
+- [Secure Your Domain with NGINX Proxy Manager and Cloudflare (Including Uptime Kuma Demonstration) - YouTube](https://www.youtube.com/watch?v=rj7DZdWMK2k)
 
 ## Learning
 
@@ -100,9 +109,9 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 
 ## Do I Use HTTP or HTTPS in Nginx Proxy Manager?
 
-- Create "Proxy Hosts"
-- Use "http" unless you care about hiding traffic on the local network
-- .
+- When setting up "Proxy Hosts"
+- Use "http" unless you care about hiding traffic on the local network, then you'll need to do some TLS stuff
+- https://youtu.be/2fA6u9eahNw?si=uLVbPklc5ZYCap1m&t=399
 
 ## Whitelisting Only Cloudflare to Talk to Nginx (NPM)
 
