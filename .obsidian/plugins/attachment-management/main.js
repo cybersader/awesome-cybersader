@@ -717,7 +717,7 @@ var SettingTab = class extends import_obsidian3.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian3.Setting(containerEl).addButton((btn) => {
+    new import_obsidian3.Setting(containerEl).setName("Extension override").setDesc("Using the extension override if you want to autorename the attachment with a specific extension (e.g. pdf or zip).").addButton((btn) => {
       btn.setButtonText("Add extension overrides").onClick(async () => {
         if (this.plugin.settings.attachPath.extensionOverride === void 0) {
           this.plugin.settings.attachPath.extensionOverride = [];
@@ -736,7 +736,7 @@ var SettingTab = class extends import_obsidian3.PluginSettingTab {
     if (this.plugin.settings.attachPath.extensionOverride !== void 0) {
       this.plugin.settings.attachPath.extensionOverride.forEach((ext) => {
         new import_obsidian3.Setting(containerEl).setName("Extension").setDesc("Extension to override").setClass("override_extension_set").addText(
-          (text) => text.setPlaceholder("pdf").setValue(ext.extension).onChange(async (value) => {
+          (text) => text.setPlaceholder("pdf|docx?").setValue(ext.extension).onChange(async (value) => {
             ext.extension = value;
           })
         ).addButton((btn) => {

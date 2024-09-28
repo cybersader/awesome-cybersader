@@ -5,18 +5,10 @@
     "attachmentPath": "",
     "attachFormat": "IMG-${date}",
     "type": "GLOBAL",
-    "extensionOverride": [
-      {
-        "extension": "excalidraw.svg",
-        "attachmentRoot": "_attachments",
-        "saveAttE": "nextToNote",
-        "attachmentPath": "",
-        "attachFormat": "IMG-${date}"
-      }
-    ]
+    "extensionOverride": []
   },
   "dateFormat": "YYYYMMDDHHmmssSSS",
-  "excludeExtensionPattern": "",
+  "excludeExtensionPattern": "excalidraw.svg",
   "autoRenameAttachment": true,
   "excludedPaths": "CybersaderNotion",
   "excludePathsArray": [
@@ -24,6 +16,30 @@
   ],
   "excludeSubpaths": true,
   "originalNameStorage": [],
-  "overridePath": {},
+  "overridePath": {
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md": {
+      "attachmentRoot": "_attachments",
+      "saveAttE": "nextToNote",
+      "attachmentPath": "",
+      "attachFormat": "IMG-${date}",
+      "type": "FILE",
+      "extensionOverride": [
+        {
+          "extension": "excalidraw.svg",
+          "attachmentRoot": "_attachments",
+          "saveAttE": "nextToNote",
+          "attachmentPath": "",
+          "attachFormat": "IMG-${date}"
+        },
+        {
+          "extension": "svg",
+          "saveAttE": "nextToNote",
+          "attachmentRoot": "_attachments",
+          "attachmentPath": "",
+          "attachFormat": "IMG-${date}"
+        }
+      ]
+    }
+  },
   "disableNotification": false
 }
