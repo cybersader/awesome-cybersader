@@ -5,6 +5,10 @@
       "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
+      "basename": "Apologetics - Defending the Faith",
+      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Apologetics - Defending the Faith.md"
+    },
+    {
       "basename": "Personal Cyber Resilience",
       "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Podman Setup & Container Usage",
       "path": "📁 01 - Projects/Podman Setup & Container Usage.md"
-    },
-    {
-      "basename": "📄 Resume - Tools & Tech ⚒️",
-      "path": "📄 Resume - Tools & Tech ⚒️.md"
     }
   ],
   "omittedPaths": [],

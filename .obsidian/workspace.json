@@ -124,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cyber training",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -259,10 +259,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0132127300ab823a",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
+    "CybersaderNotion/04 Cybersader’s Arsenal/Apologetics - Defending the Faith.md",
     "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
+    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "🕸️ UNSTRUCTURED/Scalable Project Management.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
@@ -287,7 +288,6 @@
     "📁 05 - Learning, Notes/⬇️ Notes Drop/Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity.md",
     "🕸️ UNSTRUCTURED/Xbox Controllers.md",
     "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md",
-    "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs",
     "_attachments",
