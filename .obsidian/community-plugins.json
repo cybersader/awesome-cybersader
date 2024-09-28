@@ -37,5 +37,8 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "table-editor-obsidian",
-  "floating-toc"
+  "floating-toc",
+  "copy-url-in-preview",
+  "obsidian-markdown-formatting-assistant-plugin",
+  "enhanced-image"
 ]

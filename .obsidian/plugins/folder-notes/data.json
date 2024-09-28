@@ -6,7 +6,21 @@
   "templatePath": "",
   "autoCreate": false,
   "enableCollapsing": false,
-  "excludeFolders": [],
+  "excludeFolders": [
+    {
+      "type": "folder",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup",
+      "subFolders": true,
+      "disableSync": true,
+      "disableAutoCreate": true,
+      "disableFolderNote": false,
+      "enableCollapsing": false,
+      "position": 0,
+      "excludeFromFolderOverview": false,
+      "string": "",
+      "hideInSettings": false
+    }
+  ],
   "whitelistFolders": [],
   "showDeleteConfirmation": true,
   "underlineFolder": true,
@@ -41,14 +55,14 @@
     "showFolderNotes": false,
     "disableCollapseIcon": true
   },
-  "useSubmenus": true,
+  "useSubmenus": false,
   "syncMove": true,
   "frontMatterTitle": {
     "enabled": true,
     "explorer": true,
     "path": true
   },
-  "settingsTab": "general",
+  "settingsTab": "exclude_folders",
   "supportedFileTypes": [
     "md",
     "canvas"

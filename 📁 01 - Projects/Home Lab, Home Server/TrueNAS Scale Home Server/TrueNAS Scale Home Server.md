@@ -31,6 +31,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 
 - **[[TrueNAS Monitoring and Logging]]**
 - **[[TrueNAS Scale - Nginx Proxy Setup]]**
+	- [[Drawing 2024-09-28 15.55.32.excalidraw]]
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
 - **[[TrueNAS Scale RAID Setup]]**
 - **[[Turning Old PC into NAS in 2024]]**

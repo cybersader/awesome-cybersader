@@ -1,0 +1,11 @@
+{
+	"id": "enhanced-image",
+	"name": "Enhanced Image",
+	"version": "0.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "Enhance the experience of image seamlessly. For example, operations for image in context menu, command palette.",
+	"author": "situ2001",
+	"authorUrl": "https://situ2001.com",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

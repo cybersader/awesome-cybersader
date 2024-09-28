@@ -47,6 +47,12 @@
       "icon": "lucide-link",
       "name": "Outgoing links: Show outgoing links",
       "mode": "any"
+    },
+    {
+      "id": "file-explorer:reveal-active-file",
+      "icon": "lucide-navigation",
+      "name": "Files: Reveal current file in navigation",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

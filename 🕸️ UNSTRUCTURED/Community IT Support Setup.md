@@ -28,3 +28,6 @@ date modified: Saturday, September 28th 2024, 3:14 pm
 - [Papercups | Open Source Alternative to Intercom, Zendesk](https://www.opensourcealternative.to/project/Papercups)
 - [chaskiq | Open Source Alternative to Intercom](https://www.opensourcealternative.to/project/chaskiq)
 - [UVDesk | Open Source Alternative to Zendesk](https://www.opensourcealternative.to/project/UVDesk)
+- [Peppermint | Open Source Alternative to Zendesk](https://www.opensourcealternative.to/project/Peppermint)
+- [Gitea | Open Source Alternative to GitHub, BitBucket, Upsource](https://www.opensourcealternative.to/project/Gitea)
+- 
