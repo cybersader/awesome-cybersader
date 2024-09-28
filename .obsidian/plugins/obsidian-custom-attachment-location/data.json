@@ -1,5 +1,5 @@
 {
-  "attachmentFolderPath": "_attachments",
+  "attachmentFolderPath": "./_attachments",
   "autoRenameFiles": true,
   "autoRenameFolder": true,
   "convertImagesToJpeg": false,

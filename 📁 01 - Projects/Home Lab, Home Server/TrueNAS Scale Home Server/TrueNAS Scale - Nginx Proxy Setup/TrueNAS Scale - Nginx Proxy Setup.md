@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 4:38 pm
+date modified: Saturday, September 28th 2024, 5:11 pm
 ---
 
 
@@ -40,11 +40,11 @@ date modified: Saturday, September 28th 2024, 4:38 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240928163806442.png)
+- ![600](_attachments/IMG-20240928171135445.png)
 
-- ![600](_attachments/IMG-20240928163806494.png)
+- ![600](_attachments/IMG-20240928171135582.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240928163806619.png)
+	- ![500](_attachments/IMG-20240928171135802.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
 
@@ -52,7 +52,7 @@ First, make the datasets.
 
 - Still unsure of how this should look in TrueNAS
 - Nginx user and group config
-	- ![](_attachments/IMG-20240928163806808.png)
+	- ![](_attachments/IMG-20240928171136030.png)
 - Make sure the datasets are configured to the same User ID (likely "apps")
 
 ## Add Nginx App to TrueNAS
@@ -60,7 +60,7 @@ First, make the datasets.
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240928163806926.png)
+	- ![](_attachments/IMG-20240928171136266.png)
 
 ### Environment Variables
 
@@ -75,7 +75,7 @@ These are also required for Apps like Immich
 
 - [Full Setup Instructions | Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
 	- Use default creds from instructions
-	- ![](_attachments/IMG-20240928163807059.png)
+	- ![](_attachments/IMG-20240928171136472.png)
 
 ### Cloudflare / DNS Records Setup
 

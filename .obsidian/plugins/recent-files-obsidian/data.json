@@ -5,8 +5,16 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
-      "basename": "Drawing 2024-09-28 15.55.32",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.svg"
+      "basename": "Drawing 2024-09-28 15.55.32.excalidraw",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 15.55.32.excalidraw.svg"
+    },
+    {
+      "basename": "Debugging Obsidian Plugins",
+      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Drawing 2024-09-28 15.55.32.excalidraw",
@@ -19,10 +27,6 @@
     {
       "basename": "Scalable Project Management",
       "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Copy Full Path",
@@ -191,14 +195,6 @@
     {
       "basename": "Awesome Clothing",
       "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     }
   ],
   "omittedPaths": [],
