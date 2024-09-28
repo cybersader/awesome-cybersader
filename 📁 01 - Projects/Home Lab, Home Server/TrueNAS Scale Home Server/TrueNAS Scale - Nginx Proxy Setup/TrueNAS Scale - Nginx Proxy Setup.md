@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 7:27 pm
+date modified: Saturday, September 28th 2024, 7:45 pm
 ---
 
 
@@ -18,11 +18,14 @@ date modified: Saturday, September 28th 2024, 7:27 pm
 
 # Links
 
+Most of these quite recent
+
 - [No more Cloudflare Tunnels for me... - RaidOwl - YouTube](https://www.youtube.com/watch?v=2fA6u9eahNw)
 - [Self Hosting on your Home Server - Cloudflare + Nginx Proxy Manager - Easy SSL Setup - YouTube](https://www.youtube.com/watch?v=GarMdDTAZJo)
 - [Nginx Proxy Manager Setup | TrueNAS Community](https://www.truenas.com/community/threads/nginx-proxy-manager-setup.116682/)
 - [Guide | Nginx Proxy Manager](https://nginxproxymanager.com/guide/)
 - [Secure Your Domain with NGINX Proxy Manager and Cloudflare (Including Uptime Kuma Demonstration) - YouTube](https://www.youtube.com/watch?v=rj7DZdWMK2k)
+- [Nginx Proxy Manager Tutorial - Easy SSL Certificates - YouTube](https://www.youtube.com/watch?v=JNFQOJP5VY0)
 
 ## Learning
 

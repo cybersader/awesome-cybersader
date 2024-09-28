@@ -1,4 +1,4 @@
-- 2024-09-28 at 19h27 · [[TrueNAS Scale - Nginx Proxy Setup]]
+- 2024-09-28 at 19h45 · [[TrueNAS Scale - Nginx Proxy Setup]]
 - 2024-09-28 at 19h07 · [[📁 01 - Projects]]
 - 2024-09-28 at 19h07 · [[TrueNAS Scale Home Server]]
 - 2024-09-28 at 19h07 · [[Home Lab, Home Server]]
