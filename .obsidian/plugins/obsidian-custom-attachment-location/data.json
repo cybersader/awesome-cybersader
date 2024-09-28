@@ -6,7 +6,7 @@
   "convertImagesOnDragAndDrop": false,
   "duplicateNameSeparator": " ",
   "jpegQuality": "1.0",
-  "keepEmptyAttachmentFolders": false,
+  "keepEmptyAttachmentFolders": true,
   "pastedFileName": "file-${date:YYYYMMDDHHmmssSSS}",
   "renameOnlyImages": true,
   "renamePastedFilesWithKnownNames": false,

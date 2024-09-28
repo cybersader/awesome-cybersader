@@ -37,21 +37,31 @@
 .tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .tag {
-  background: var(--background-secondary);
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.9rem;
-  color: var(--text-normal);
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tag.existing-tag {
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.tag.new-tag {
+  background: transparent;
+  border: 1px dashed var(--text-muted);
+  color: var(--text-muted);
 }
 
 .tag:hover {
-  color: white;
   background: var(--interactive-accent);
+  color: white;
   font-weight: var(--nav-item-weight-hover);
 }
 
@@ -705,11 +715,12 @@
 }
 
 /* Dropdown Menu */
-.dropdown-menu {
+.templates-dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1000;
+  box-shadow: none;
   display: none;
   min-width: 160px;
   padding: 0;
@@ -725,7 +736,7 @@
 }
 
 /* Show dropdown when open */
-.dropdown-menu.show {
+.templates-dropdown-menu.show {
   display: block;
 }
 
@@ -770,6 +781,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: none;
 }
 
 /* Arrow icon */
@@ -779,7 +791,7 @@
 }
 
 /* Dropdown Menu */
-.dropdown-menu {
+.templates-dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -799,7 +811,7 @@
 }
 
 /* Show dropdown when open */
-.dropdown-menu.show {
+.templates-dropdown-menu.show {
   display: block;
 }
 
@@ -821,10 +833,12 @@
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+  boxShadow: "none"
 }
 .apply-template-button:hover {
-  background-color: var(--interactive-accent-hover);
-  color: var(--text-on-accent);
+  /* background-color: var(--interactive-accent-hover); */
+  /* color: var(--text-on-accent); */
+  boxShadow: "none"
 } 
 
 .apply-template-button:disabled {
@@ -854,7 +868,7 @@
 
 
 /* Dropdown Menu */
-.dropdown-menu {
+.templates-dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -874,7 +888,7 @@
 }
 
 /* Show dropdown when open */
-.dropdown-menu.show {
+.templates-dropdown-menu.show {
   display: block;
 }
 
@@ -884,7 +898,7 @@
 }
 
 /* Dropdown Items */
-.dropdown-menu .dropdown-item {
+.templates-dropdown-menu .dropdown-item {
   display: block;
   width: 100%;
   padding: 0.4rem 0.8rem;
@@ -900,8 +914,8 @@
   font-size: 0.9rem;
 }
 
-.dropdown-menu .dropdown-item:hover,
-.dropdown-menu .dropdown-item:focus {
+.templates-dropdown-menu .dropdown-item:hover,
+.templates-dropdown-menu .dropdown-item:focus {
   color: var(--text-normal);
   text-decoration: none;
   background-color: var(--background-modifier-hover);
@@ -919,4 +933,120 @@
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+}
+
+.tag.existing-tag {
+  background: var(--background-secondary);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-normal);
+  cursor: pointer;
+}
+
+.tag.new-tag {
+  /* background: var(--background-primary-alt); */
+  border: 1px dashed var(--text-muted);
+  color: var(--text-muted);
+}
+
+.tag.new-tag::before {
+  /* content: '+'; */
+  margin-right: 0.25rem;
+  color: var(--text-accent);
+}
+.tag {
+
+  margin-right: 0.25rem;
+
+
+}
+.tag:hover {
+  color: white;
+  background: var(--interactive-accent);
+  font-weight: var(--nav-item-weight-hover);
+  /* border: none; */
+}
+/* Title Suggestion Styles */
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start; /* Left align the items */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.title-suggestion {
+  box-shadow: none !important;
+  background: var(--background-secondary) !important;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  width: max-content;
+  font-size: 0.9rem;
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border: none;
+  text-align: left;
+}
+
+.title-suggestion:hover {
+  background-color: var(--interactive-accent) !important;
+  color: white;
+  font-weight: var(--nav-item-weight-hover);
+}
+
+
+
+.error-container {
+  color: var(--text-error);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Folder Suggestion Styles */
+.folder-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start; /* Left align the items */
+  align-items: flex-start; /* Align items to the top */}
+
+.folder-suggestion {
+  box-shadow: none !important;
+  background: var(--background-secondary) !important;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.folder-suggestion:hover {
+  background-color: var(--interactive-accent) !important;
+  color: white;
+  font-weight: var(--nav-item-weight-hover);
+}
+
+.folder-suggestion.new-folder {
+  background: transparent;
+  border: 1px dashed var(--text-muted);
+  color: var(--text-muted);
+}
+
+.folder-suggestion:last-child:hover {
+  color: white;
+  background: var(--interactive-accent);
+  font-weight: var(--nav-item-weight-hover);
+} */
+
+/* You can remove these styles if they're no longer needed */
+.folder {
+  font-size: 1rem;
+  color: var(--text-normal);
+}
+
+.move-note-button {
+  display: none;
 }

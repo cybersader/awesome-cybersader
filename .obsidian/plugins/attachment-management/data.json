@@ -5,7 +5,15 @@
     "attachmentPath": "",
     "attachFormat": "IMG-${date}",
     "type": "GLOBAL",
-    "extensionOverride": []
+    "extensionOverride": [
+      {
+        "extension": "excalidraw.svg",
+        "attachmentRoot": "_attachments",
+        "saveAttE": "nextToNote",
+        "attachmentPath": "",
+        "attachFormat": "IMG-${date}"
+      }
+    ]
   },
   "dateFormat": "YYYYMMDDHHmmssSSS",
   "excludeExtensionPattern": "",

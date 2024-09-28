@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 5:39 pm
+date modified: Saturday, September 28th 2024, 6:22 pm
 ---
 
 
@@ -40,11 +40,10 @@ date modified: Saturday, September 28th 2024, 5:39 pm
 
 First, make the datasets.
 
-- ![600](_attachments/IMG-20240928173939917.png)
+- ![600](_attachments/IMG-20240928182245473.png)
 
-- ![600](_attachments/IMG-20240928173939951.png)
+- ![600](_attachments/IMG-20240928182245567.png)
 - We have to add 2 datasets for each storage components of the Nginx Proxy Manager app
-	- ![500](_attachments/IMG-20240928173940053.png)
 - Dataset configs 
 	- Set the appropriate names for each like "Nginx_Data" and "Nginx_Cert_Data" or whatever you want
 
@@ -52,7 +51,6 @@ First, make the datasets.
 
 - Still unsure of how this should look in TrueNAS
 - Nginx user and group config
-	- ![](_attachments/IMG-20240928173940158.png)
 - Make sure the datasets are configured to the same User ID (likely "apps")
 
 ## Add Nginx App to TrueNAS
@@ -60,7 +58,7 @@ First, make the datasets.
 - Apps > Discover Apps > Networking > Nginx Proxy Manager
 - "Install"
 - Storage configuration
-	- ![](_attachments/IMG-20240928173940375.png)
+	- ![](_attachments/IMG-20240928182245700.png)
 
 ### Environment Variables
 
@@ -75,11 +73,11 @@ These are also required for Apps like Immich
 
 - [Full Setup Instructions | Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
 	- Use default creds from instructions
-	- ![](_attachments/IMG-20240928173940502.png)
+	- ![](_attachments/IMG-20240928182245869.png)
 
 ### Cloudflare / DNS Records Setup
 
-![500](_attachments/IMG-20240928173940648.svg)
+
 
 - Follow the instructions:
 	- [HomeLab: Nginx-Proxy-Manager: Setup SSL Certificate with Domain Name in Cloudflare DNS | by Life-is-short--so--enjoy-it | Medium](https://medium.com/@life-is-short-so-enjoy-it/homelab-nginx-proxy-manager-setup-ssl-certificate-with-domain-name-in-cloudflare-dns-732af64ddc0b)
@@ -96,8 +94,29 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 
 - 
 
+## Solving HTTP 522 Errors - "Connection timed out"
+
+- [Community Tip - Fixing Error 522: Connection timed out - Tutorial - Cloudflare Community](https://community.cloudflare.com/t/community-tip-fixing-error-522-connection-timed-out/42325)
+
 ## Do I Use HTTP or HTTPS in Nginx Proxy Manager?
 
 - Create "Proxy Hosts"
 - Use "http" unless you care about hiding traffic on the local network
-- 
+- .
+
+## Whitelisting Only Cloudflare to Talk to Nginx (NPM)
+
+- [How to use the real_ip_header in Nginx Proxy Manager, whilst using still using access lists for Cloudflare? : r/selfhosted](https://www.reddit.com/r/selfhosted/comments/zp2vsf/how_to_use_the_real_ip_header_in_nginx_proxy/)
+- .
+
+# Home Router NAT Rules
+
+- For ATT BGW routers
+	- Go to Firewall > NAT/Gaming
+	- Custom Services
+	- Make a service name
+		- https_proxy or something similar
+		- Global port range should match the Nginx proxy manager port when you click "Web portal" in Truenas
+		- The host port should be 443 for HTTPS
+		- What this means is that 443 (a request from a browser @ the immich.example.com domain will actually forward to the Nginx Proxy Manager server automatically with the request
+		- 
