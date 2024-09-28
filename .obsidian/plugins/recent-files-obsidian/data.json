@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
       "basename": "Framework Mapping",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "NIST & CIS Resources",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
-    },
-    {
-      "basename": "Personal Cyber Resilience",
-      "path": "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
     },
     {
       "basename": "Cybersecurity Awareness Resources",
@@ -195,10 +199,6 @@
     {
       "basename": "📄 Resume - Training, Certifications, Conferences, Education",
       "path": "📄 Resume - Training, Certifications, Conferences, Education.md"
-    },
-    {
-      "basename": "Bluetooth Removal Issue Fix Windows",
-      "path": "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
     }
   ],
   "omittedPaths": [],
