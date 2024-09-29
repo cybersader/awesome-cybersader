@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 7:45 pm
+date modified: Saturday, September 28th 2024, 8:08 pm
 ---
 
 
@@ -121,7 +121,14 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 - [How to use the real_ip_header in Nginx Proxy Manager, whilst using still using access lists for Cloudflare? : r/selfhosted](https://www.reddit.com/r/selfhosted/comments/zp2vsf/how_to_use_the_real_ip_header_in_nginx_proxy/)
 - .
 
+# SSL Certificate Setup in Nginx Proxy Manager w/Cloudflare API Token
+
+- [HOWTO: Add a wildcard certificate in Nginx Proxy Manager using Cloudflare. : r/unRAID](https://www.reddit.com/r/unRAID/comments/kniuok/howto_add_a_wildcard_certificate_in_nginx_proxy/)
+- Still getting HTTP Error code 526 - failed SSL certificate
+
 # Home Router NAT Rules
+
+![800](_attachments/file-20240928200804900.png)
 
 - For ATT BGW routers
 	- Go to Firewall > NAT/Gaming
