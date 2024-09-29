@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 4:43 pm
+date modified: Sunday, September 29th 2024, 5:22 pm
 ---
 
 
@@ -147,4 +147,12 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 	- I've tried 
 		- 1) the "DNS challenge" method where the certs are automatically renewed via the Cloudflare API
 		- 2) Installing a custom cert from the "Origin Server" screen in cloudflare and putting it into Nginx UI as ".pem" files
-	- 
+- Tried looking at nginx logs
+	- ![](_attachments/file-20240929171053880.png)
+- Checked "date" and found it using PDT time
+	- Assuming this is not an issue even though it supposedly can be with some certs - doubt it for this case
+- Bypassing using DNS only didn't help either in Cloudflare for the A record
+- NPM settings are all correct for SSL and domains
+- Testing ports on router from outside
+	- ![400](_attachments/file-20240929172222474.png)
+- 
