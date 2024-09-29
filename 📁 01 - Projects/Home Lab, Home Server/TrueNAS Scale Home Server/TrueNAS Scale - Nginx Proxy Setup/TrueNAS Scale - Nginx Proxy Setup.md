@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 4:32 pm
+date modified: Sunday, September 29th 2024, 4:43 pm
 ---
 
 
@@ -26,6 +26,7 @@ Most of these quite recent
 - [Guide | Nginx Proxy Manager](https://nginxproxymanager.com/guide/)
 - [Secure Your Domain with NGINX Proxy Manager and Cloudflare (Including Uptime Kuma Demonstration) - YouTube](https://www.youtube.com/watch?v=rj7DZdWMK2k)
 - [Nginx Proxy Manager Tutorial - Easy SSL Certificates - YouTube](https://www.youtube.com/watch?v=JNFQOJP5VY0)
+- [Wildcard Certificate in Nginx Proxy Manager Using Cloudflare | PengWin Tech](https://pengwin.ca/posts/npm-cloudflare/)
 
 ## Learning
 
