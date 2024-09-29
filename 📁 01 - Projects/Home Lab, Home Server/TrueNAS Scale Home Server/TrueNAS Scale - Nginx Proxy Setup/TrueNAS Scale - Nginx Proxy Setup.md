@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Saturday, September 28th 2024, 8:08 pm
+date modified: Sunday, September 29th 2024, 2:30 pm
 ---
 
 
@@ -138,4 +138,6 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 		- Global port range should match the Nginx proxy manager port when you click "Web portal" in Truenas
 		- The host port should be 443 for HTTPS
 		- What this means is that 443 (a request from a browser @ the immich.example.com domain will actually forward to the Nginx Proxy Manager server automatically with the request
-		- 
+- Still getting errors
+	- HTTP 526
+	- ![600](_attachments/file-20240929143050170.png)
