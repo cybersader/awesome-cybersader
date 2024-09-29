@@ -10,7 +10,7 @@ tags:
   - "#cloudflare"
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 2:30 pm
+date modified: Sunday, September 29th 2024, 4:32 pm
 ---
 
 
@@ -20,7 +20,7 @@ date modified: Sunday, September 29th 2024, 2:30 pm
 
 Most of these quite recent
 
-- [No more Cloudflare Tunnels for me... - RaidOwl - YouTube](https://www.youtube.com/watch?v=2fA6u9eahNw)
+- [No more Cloudflare Tunnels for me... - RaidOwl - YouTube](https://www.youtube.com/watch?v=2fA6u9eahNw) - accounts for being behind consumer-grade NAT (CGNAT) where you can't port forward. 
 - [Self Hosting on your Home Server - Cloudflare + Nginx Proxy Manager - Easy SSL Setup - YouTube](https://www.youtube.com/watch?v=GarMdDTAZJo)
 - [Nginx Proxy Manager Setup | TrueNAS Community](https://www.truenas.com/community/threads/nginx-proxy-manager-setup.116682/)
 - [Guide | Nginx Proxy Manager](https://nginxproxymanager.com/guide/)
@@ -141,3 +141,9 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 - Still getting errors
 	- HTTP 526
 	- ![600](_attachments/file-20240929143050170.png)
+	- "nginx wildcard certificate cloudflare dns challenge"
+		- [Wildcard Certificate in Nginx Proxy Manager Using Cloudflare | PengWin Tech](https://pengwin.ca/posts/npm-cloudflare/) 
+	- I've tried 
+		- 1) the "DNS challenge" method where the certs are automatically renewed via the Cloudflare API
+		- 2) Installing a custom cert from the "Origin Server" screen in cloudflare and putting it into Nginx UI as ".pem" files
+	- 
