@@ -155,4 +155,7 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 - NPM settings are all correct for SSL and domains
 - Testing ports on router from outside
 	- ![400](_attachments/file-20240929172222474.png)
+- Outdated browsers? ... nope
+	- [General SSL errors | Cloudflare SSL/TLS docs](https://developers.cloudflare.com/ssl/troubleshooting/general-ssl-errors/) 
+	- [Server Name Indication | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/sni) - table with supported browser for "SNI"
 - 
