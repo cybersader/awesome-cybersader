@@ -8,9 +8,11 @@ tags:
   - "#nginx-proxy"
   - "#nginx"
   - "#cloudflare"
+  - SSL
+  - TLS
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 5:22 pm
+date modified: Sunday, September 29th 2024, 6:43 pm
 ---
 
 
@@ -139,6 +141,9 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 		- Global port range should match the Nginx proxy manager port when you click "Web portal" in Truenas
 		- The host port should be 443 for HTTPS
 		- What this means is that 443 (a request from a browser @ the immich.example.com domain will actually forward to the Nginx Proxy Manager server automatically with the request
+
+# SSL Certificate Issues
+
 - Still getting errors
 	- HTTP 526
 	- ![600](_attachments/file-20240929143050170.png)
@@ -158,4 +163,12 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 - Outdated browsers? ... nope
 	- [General SSL errors | Cloudflare SSL/TLS docs](https://developers.cloudflare.com/ssl/troubleshooting/general-ssl-errors/) 
 	- [Server Name Indication | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/sni) - table with supported browser for "SNI"
+- More Cloudflare troubleshooting
+	- ![](_attachments/file-20240929181729417.png)
+- Pausing Cloudflare proxying (DNS only) and testing
+	- ![](_attachments/file-20240929182400166.png)
+	- ssl shopper
+		- ![](_attachments/file-20240929182917441.png)
+	- Oh...so this is the issue
+- Okay. This is weird. When turning everything to DNS only and using SSL checker online, I can see that the issue is the SSL certificate. I used the DNS challenge so I thought everything should be okay. The common name somehow said localhost and SANs localhost with iXsystems as the organization since I'm using TrueNAS. This must be a self-signed certificate from using port 443 with TrueNAS scale. This is where I'm confused since Nginx proxy uses a specific port on my local network, but everything online acts like it automatically is contacted via port 443 into my network. It could be that I need to map 443 to the actual port for it on TrueNAS Scale. It's hard to tell. Understanding how to see the SSL despite proxying it with Cloudflare could also be helpful by hitting my public IP with the 443 port.
 - 
