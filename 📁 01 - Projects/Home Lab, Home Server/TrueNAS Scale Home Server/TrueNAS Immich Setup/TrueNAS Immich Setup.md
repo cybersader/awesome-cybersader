@@ -2,7 +2,7 @@
 aliases: 
 publish: true
 date created: Saturday, March 30th 2024, 11:40 am
-date modified: Sunday, September 29th 2024, 8:36 pm
+date modified: Sunday, September 29th 2024, 11:00 pm
 tags:
   - TrueNAS
   - NAS
@@ -94,3 +94,28 @@ The installation process of the immich app should handle the below configuration
 
 - Setup Nginx in TrueNAS - [TrueNAS Scale - Nginx Proxy Setup](../TrueNAS%20Scale%20-%20Nginx%20Proxy%20Setup/TrueNAS%20Scale%20-%20Nginx%20Proxy%20Setup.md)
 - Immich config to handle large file uploads - [Reverse Proxy | Immich](https://immich.app/docs/administration/reverse-proxy/) 
+
+My current Nginx Proxy Manager config (lots commented out - don't seem to work):
+
+```json
+#server_name $server;
+
+# allow large file uploads
+client_max_body_size 50000M;
+
+# Set headers
+#proxy_set_header Host            $server;
+#proxy_set_header X-Real-IP         $remote_addr;
+proxy_set_header X-Forwarded-Proto $forward_scheme;
+
+# enable websockets: http://nginx.org/en/docs/http/websocket.html
+#proxy_http_version 1.1;
+#proxy_set_header   Upgrade    $http_upgrade;
+#proxy_set_header   Connection "upgrade";
+#proxy_redirect     off;
+
+# set timeouts
+proxy_read_timeout 600s;
+proxy_send_timeout 600s;
+send_timeout 600s;
+```

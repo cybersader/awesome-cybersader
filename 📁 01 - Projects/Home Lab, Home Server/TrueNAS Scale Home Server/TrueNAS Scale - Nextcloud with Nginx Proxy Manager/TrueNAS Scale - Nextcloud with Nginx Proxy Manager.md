@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, September 29th 2024, 8:43 pm
-date modified: Sunday, September 29th 2024, 9:06 pm
+date modified: Sunday, September 29th 2024, 11:03 pm
 ---
 
 [TrueNAS Scale - Nginx Proxy Setup](../TrueNAS%20Scale%20-%20Nginx%20Proxy%20Setup/TrueNAS%20Scale%20-%20Nginx%20Proxy%20Setup.md)
@@ -35,4 +35,6 @@ Solution explained in depth - [Setting the Nextcloud host](https://forums.truena
 You have to set the host to your `subdomain.domain.com` and check the "Use different port for URL rewrites" box.
 
 ![600](_attachments/file-20240929212202497.png)
+
+AND set OVERWRITECLIURL 
 
