@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+      "basename": "Cybersecurity Awareness Resources",
+      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
       "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "TrueNAS Immich Setup",
@@ -47,10 +51,6 @@
     {
       "basename": "Debugging Obsidian Plugins",
       "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
-    },
-    {
-      "basename": "Cybersecurity Awareness Resources",
-      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
       "basename": "Copy Relative Path in Obsidian + Image Editing",

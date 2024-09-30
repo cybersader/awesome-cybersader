@@ -1,3 +1,4 @@
+- 2024-09-30 at 11h11 · [[Cybersecurity Awareness Resources]]
 - 2024-09-30 at 10h10 · [[Cyber Movies, TV, Documentaries]]
 - 2024-09-29 at 23h03 · [[TrueNAS Scale - Nextcloud with Nginx Proxy Manager]]
 - 2024-09-29 at 23h00 · [[TrueNAS Immich Setup]]
@@ -21,7 +22,6 @@
 - 2024-09-23 at 11h51 · [[Frameworks, Standards]]
 - 2024-09-23 at 11h50 · [[NIST & CIS Resources]]
 - 2024-09-23 at 09h38 · [[Personal Cyber Resilience]]
-- 2024-09-23 at 09h38 · [[Cybersecurity Awareness Resources]]
 - 2024-09-23 at 08h49 · [[Org Data Governance]]
 - 2024-09-22 at 18h29 · [[Obsidian Vault Security]]
 - 2024-09-22 at 18h27 · [[Awesome Hard Disk Drives, NAS Hardware]]

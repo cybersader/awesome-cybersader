@@ -1,6 +1,13 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#infosec"
+  - "#privacy"
+  - "#cybercrime"
+  - "#resources"
+  - "#awareness"
+  - "#cybersecurity"
 publish: true
 date created: Friday, September 20th 2024, 4:47 pm
 date modified: Sunday, September 22nd 2024, 6:28 pm
