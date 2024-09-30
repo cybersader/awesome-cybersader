@@ -3,7 +3,7 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Sunday, July 7th 2024, 9:02 pm
+date modified: Monday, September 30th 2024, 10:10 am
 publish: true
 ---
 
@@ -23,16 +23,23 @@ Subfolders:
 - **[[Zero Days]]**
 
 %% End Waypoint %%
+
 # Curated Cyber Movie Lists
+
 - [The Complete List Of Hacker And Cyber Security Movies | by Priya Reddy | Lotus Fruit | Medium](https://medium.com/lotus-fruit/the-complete-list-of-hacker-and-cyber-security-movies-7313d11358c9)
 - [The Complete List of Hacker And Cybersecurity Movies](https://cybersecurityventures.com/movies-about-cybersecurity-and-hacking/)
+
 # Hacking, Cybercrime, Internet, Cyberwar
+
 ## Nonfiction
+
 - Mr. Robot
 - The Score
 - [WarGames](WarGames/WarGames.md) 
 - Hackers
+
 ## Documentaries
+
 - Cyber Crime: Netflix Series
 - Hackers in Wonderland
 - Revolution OS
@@ -52,10 +59,15 @@ Subfolders:
 - [(1) The Largest Teen Hacking Group In The World - Documentary - YouTube](https://www.youtube.com/watch?v=AWhLA3vBJS8)
 - [The World’s First Cyber Weapon Attack on a Nuclear Plant | Cyberwar - YouTube](https://www.youtube.com/watch?v=dobTyPKccMA)
 - [(1) The Million-Dollar Hacker - YouTube](https://www.youtube.com/watch?v=icyTUMjlvMg)
+
 # Scams, Phishing
+
 ## Entertainment > Education
+
 - [The Beekeeper](The%20Beekeeper.md) - super over the top with the violence and phishing - so much so that it's satirical
-# Movies with "Hacking"
+
+# Movies and Shows with "Hacking"
+
 - Jurassic Park
 - The Net
 - Masterminds
@@ -66,8 +78,13 @@ Subfolders:
 - Antitrust
 - Swordfish
 - The Matrix
+- Prison Break
+- Better Call Saul
+
 # Financial Sector and Cyber
+
 ## Fraud, Theft, White Collar Crime, Hacking, Banks and Credit Unions
+
 > I was looking for some movies to gear up for my next cybersecurity job with a credit union.  Although these movies may not be realistic, they can inspire me in a number of ways to branch out and have a high-level risk aware view and mindset
 
 - [Money Explained](Money%20Explained/Money%20Explained.md) - great breakdown of some scams/schemes and the credit card industry.
@@ -137,7 +154,9 @@ Subfolders:
 - Billion Dollar Heist
 - Easy Money: the biggest fraud in US history
 - [The Power of the Fed (full documentary) | FRONTLINE - YouTube](https://www.youtube.com/watch?v=9RbL8lTsITY) 
+
 ### Economy, Workplace, Finance, Business
+
 - <u>Related Anime?</u>
 	- Battle Programmer Shirase
 	- Serial Experiments Lain
@@ -154,5 +173,7 @@ Subfolders:
 	- The Dungeon of Black Company (bad work conditions)
 	- The Money of Soul and Possibility Control Uses Money as Power
 	- Maoyu Establishes a Blooming Economy From Scratch
+
 ## Misc News Stories and Investigative Reports
+
 - .
