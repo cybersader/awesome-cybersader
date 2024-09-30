@@ -6,8 +6,8 @@ date modified: Sunday, September 29th 2024, 11:00 pm
 tags:
   - TrueNAS
   - NAS
-  - OpenSourceSoftware
-  - HomeLab
+  - home/lab
+  - opensourcesoftware
 ---
 
 # Links

@@ -1,6 +1,11 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#cybersecurity"
+  - "#privacy"
+  - "#cyber-resilience"
+  - "#guide"
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
 date modified: Friday, September 20th 2024, 8:39 am

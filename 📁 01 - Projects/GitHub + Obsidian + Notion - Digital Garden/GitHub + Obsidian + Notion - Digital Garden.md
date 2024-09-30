@@ -1,6 +1,12 @@
 ---
 aliases: 
-tags: 
+tags:
+  - "#digital-garden"
+  - "#github"
+  - "#obsidian"
+  - knowledge_management
+  - wiki_structure
+  - wiki_organization
 publish: true
 date created: Monday, September 2nd 2024, 2:32 pm
 date modified: Monday, September 9th 2024, 8:53 pm

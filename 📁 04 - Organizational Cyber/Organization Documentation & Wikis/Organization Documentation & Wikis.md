@@ -4,6 +4,12 @@ aliases:
   - Corporate Cyber Documentation
 tags:
   - knowledge_management
+  - "#documentation"
+  - "#wiki_organization"
+  - "#cybersecurity"
+  - "#knowledge_management"
+  - "#obsidian"
+  - "#organization-documentation"
 publish: true
 date created: Thursday, July 11th 2024, 6:27 pm
 date modified: Sunday, September 22nd 2024, 6:29 pm

@@ -1,6 +1,11 @@
 ---
-aliases: 
-tags: 
+aliases:
+  - Microsoft Ecosystem for Scalable Project Management
+tags:
+  - "#opensourcesoftware"
+  - "#wiki_organization"
+  - "#project-management"
+  - "#tech-stack"
 publish: true
 date created: Friday, September 27th 2024, 8:33 pm
 date modified: Friday, September 27th 2024, 8:39 pm

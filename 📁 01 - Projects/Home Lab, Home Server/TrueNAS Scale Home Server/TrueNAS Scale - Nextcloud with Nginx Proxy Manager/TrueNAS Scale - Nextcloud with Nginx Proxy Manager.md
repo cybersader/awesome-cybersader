@@ -1,6 +1,11 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#nginx-proxy"
+  - "#truenas-scale"
+  - "#nextcloud"
+  - "#truenas"
 publish: true
 date created: Sunday, September 29th 2024, 8:43 pm
 date modified: Sunday, September 29th 2024, 11:03 pm

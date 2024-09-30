@@ -5,28 +5,16 @@
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "Personal Cyber Resilience Arsenal",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
-    },
-    {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "TrueNAS Immich Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
     },
     {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
@@ -35,6 +23,38 @@
     {
       "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
+    },
+    {
+      "basename": "Debugging Obsidian Plugins",
+      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience Arsenal",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "IMG-20240928182245869",
@@ -57,20 +77,8 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/IMG-20240928182245473.png"
     },
     {
-      "basename": "Debugging Obsidian Plugins",
-      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
-    },
-    {
       "basename": "Copy Relative Path in Obsidian + Image Editing",
       "path": "🕸️ UNSTRUCTURED/Copy Relative Path in Obsidian + Image Editing.md"
-    },
-    {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Copy Full Path",
@@ -99,14 +107,6 @@
     {
       "basename": "NIST & CIS Resources",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
     {
       "basename": "Bitwarden Stuff",
