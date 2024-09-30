@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
+      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
+    },
+    {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "TrueNAS Immich Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
+    },
+    {
+      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
     },
     {
       "basename": "IMG-20240928182245869",
@@ -173,10 +185,6 @@
       "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
     },
@@ -191,10 +199,6 @@
     {
       "basename": "⬇️ Misc_Links",
       "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
-    },
-    {
-      "basename": "Cutting Stock Problem",
-      "path": "🕸️ UNSTRUCTURED/Cutting Stock Problem.md"
     }
   ],
   "omittedPaths": [],

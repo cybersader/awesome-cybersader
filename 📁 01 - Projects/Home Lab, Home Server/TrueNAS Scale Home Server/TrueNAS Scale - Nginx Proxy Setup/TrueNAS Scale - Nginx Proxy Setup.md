@@ -12,11 +12,14 @@ tags:
   - TLS
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 6:43 pm
+date modified: Sunday, September 29th 2024, 8:37 pm
 ---
 
 
 - [ ] Implement Nginx reverse proxy ➕ 2024-08-18
+
+[TrueNAS Immich Setup](../TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)
+[Immich & Cloudflare Tunnels](../Immich%20&%20Cloudflare%20Tunnels/Immich%20&%20Cloudflare%20Tunnels.md)
 
 # Links
 
@@ -131,16 +134,17 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 
 # Home Router NAT Rules
 
-![800](_attachments/file-20240928200804900.png)
+![800](_attachments/file-20240929201859379.png)
 
 - For ATT BGW routers
 	- Go to Firewall > NAT/Gaming
 	- Custom Services
 	- Make a service name
 		- https_proxy or something similar
-		- Global port range should match the Nginx proxy manager port when you click "Web portal" in Truenas
-		- The host port should be 443 for HTTPS
+		- Host port should match the Nginx proxy manager port when you click "Web portal" in Truenas
+		- The global port range should just be 443 for HTTPS
 		- What this means is that 443 (a request from a browser @ the immich.example.com domain will actually forward to the Nginx Proxy Manager server automatically with the request
+		- Fast forward to the end of "SSL Certificate Issues" to see how I originally messed up.
 
 # SSL Certificate Issues
 
@@ -166,9 +170,24 @@ Use this article to initially get things going - [Ultimate Home Lab – Dynamic 
 - More Cloudflare troubleshooting
 	- ![](_attachments/file-20240929181729417.png)
 - Pausing Cloudflare proxying (DNS only) and testing
+	- [Pause Cloudflare | Cloudflare Fundamentals docs](https://developers.cloudflare.com/fundamentals/setup/manage-domains/pause-cloudflare/)
+	- [Error 526 Invalid SSL certificate (running nginx) - Website, Application, Performance / Security - Cloudflare Community](https://community.cloudflare.com/t/error-526-invalid-ssl-certificate-running-nginx/255486)
+	- 
 	- ![](_attachments/file-20240929182400166.png)
 	- ssl shopper
 		- ![](_attachments/file-20240929182917441.png)
 	- Oh...so this is the issue
 - Okay. This is weird. When turning everything to DNS only and using SSL checker online, I can see that the issue is the SSL certificate. I used the DNS challenge so I thought everything should be okay. The common name somehow said localhost and SANs localhost with iXsystems as the organization since I'm using TrueNAS. This must be a self-signed certificate from using port 443 with TrueNAS scale. This is where I'm confused since Nginx proxy uses a specific port on my local network, but everything online acts like it automatically is contacted via port 443 into my network. It could be that I need to map 443 to the actual port for it on TrueNAS Scale. It's hard to tell. Understanding how to see the SSL despite proxying it with Cloudflare could also be helpful by hitting my public IP with the 443 port.
-- 
+- Looked at nginx configuration in TrueNAS Scale
+	- ![](_attachments/file-20240929200355351.png)
+	- Turns out HTTPS Port is 30022, so that means my firewall/ISP router needs to map to that port from 443 instead
+	- Changed home router configuration
+	- Found the solution...I'm an idiot.  Go back in time and tell my parents not to have me.  
+		- ![](_attachments/file-20240929201449073.gif)
+	- ![](_attachments/file-20240929201846556.png)
+
+# Misc
+
+## Testing SSL Security
+
+- https://www.ssllabs.com/ssltest/analyze.html?d=example.com

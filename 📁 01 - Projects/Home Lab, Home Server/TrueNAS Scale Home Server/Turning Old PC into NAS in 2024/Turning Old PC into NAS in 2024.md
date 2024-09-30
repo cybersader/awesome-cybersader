@@ -509,7 +509,7 @@ https://www.truenas.com/docs/scale/gettingstarted/configure/uiconfigurationscale
 	- 
 - Go to Apps in TrueNAS Scale
 - Go to Nextcloud 
-- Scroll down to `Advanced DNS Settings`
+- Scroll down to `Advanced DNS Settings` (now just environment variables in Nextcloud configuration)
 - Tried to use the environment variables in TrueNAS, but hasn't been shown to work with tests from URL
 	- Modify the Nextcloud environment variables in the TrueNAS Scale GUI under the Nextcloud app in the Nextcloud configuration section
 		- OVERWRITECLIURL - nextcloud.example.com

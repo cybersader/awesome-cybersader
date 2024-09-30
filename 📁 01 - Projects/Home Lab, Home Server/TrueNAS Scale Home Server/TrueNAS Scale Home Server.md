@@ -30,6 +30,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS mDNS]]**
 
 - **[[TrueNAS Monitoring and Logging]]**
+- **[[TrueNAS Scale - Nextcloud with Nginx Proxy Manager]]**
 - **[[TrueNAS Scale - Nginx Proxy Setup]]**
 	- [[Drawing 2024-09-28 18.39.28.excalidraw]]
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
