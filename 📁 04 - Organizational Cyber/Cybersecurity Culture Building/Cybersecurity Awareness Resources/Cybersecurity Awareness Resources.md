@@ -10,7 +10,7 @@ tags:
   - "#cybersecurity"
 publish: true
 date created: Friday, September 20th 2024, 4:47 pm
-date modified: Monday, September 30th 2024, 12:34 pm
+date modified: Monday, September 30th 2024, 12:57 pm
 ---
 
 [Personal Cyber Resilience Arsenal](../../../CybersaderNotion/03%20Awesome-Cyber/Personal%20Cyber%20Resilience%20Arsenal.md)
@@ -38,7 +38,7 @@ date modified: Monday, September 30th 2024, 12:34 pm
 - History
 	- [The Rise of Hacker Culture - YouTube](https://www.youtube.com/watch?v=19DNAf5Z4QA) - curse word or two
 	- [The Origins of Hacker Culture - YouTube](https://www.youtube.com/watch?v=zBE9_kTFIro) - curse word or two
-- Darknet Diaries (explicit language)
+- Darknet Diaries (some explicit language)
 	- [The Bank Robber Lurking Inside Your Web Browser🎙Darknet Diaries Ep. 111: ZeuS - YouTube](https://www.youtube.com/watch?v=5NeTt2pAzkc)
 	- [They Almost Stole $1 Billion, If Not For a Typo🎙Darknet Diaries Ep. 72: Bangladesh Bank Heist - YouTube](https://www.youtube.com/watch?v=ttohYNSCkik)
 	- [The Most Epic Xbox Hacker Story You'll Ever Hear🎙Darknet Diaries Ep: 45 Xbox Underground (Part 1) - YouTube](https://www.youtube.com/watch?v=yStl8VdK3fc)
@@ -68,6 +68,7 @@ date modified: Monday, September 30th 2024, 12:34 pm
 	- [NPD Breach Check - Pentester.com](https://npd.pentester.com/)
 	- [Go St*lk Yourself: Privacy Through OSINT w/ Mishaal Khan | 1-Hour - YouTube](https://www.youtube.com/watch?v=tJEGBmQjh-8)
 	- [Using OSINT to find his apartment! - YouTube](https://www.youtube.com/watch?v=_NyqxC6skA4) 
+	- [don't mess with geoguessr pros - YouTube](https://www.youtube.com/shorts/rtmfjeuzBoQ) - you can find where photos were taken with some practice
 - General
 	- Securing Home Network
 		- [Secure Your Home Network - 9 EASY STEPS! - YouTube](https://www.youtube.com/watch?v=jMkqmPqJqEU)

@@ -1,5 +1,5 @@
+- 2024-09-30 at 13h10 · [[Cybersecurity Awareness Resources]]
 - 2024-09-30 at 12h38 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
-- 2024-09-30 at 12h37 · [[Cybersecurity Awareness Resources]]
 - 2024-09-30 at 10h10 · [[Cyber Movies, TV, Documentaries]]
 - 2024-09-29 at 23h03 · [[TrueNAS Scale - Nextcloud with Nginx Proxy Manager]]
 - 2024-09-29 at 23h00 · [[TrueNAS Immich Setup]]
