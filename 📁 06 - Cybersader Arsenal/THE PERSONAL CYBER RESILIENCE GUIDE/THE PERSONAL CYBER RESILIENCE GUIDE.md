@@ -15,7 +15,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 # DROPZONE - NEW IDEAS HERE
 
-- 
+- [Operation Privacy](https://www.operationprivacy.com/) 
 
 # Machines, Hardware
 

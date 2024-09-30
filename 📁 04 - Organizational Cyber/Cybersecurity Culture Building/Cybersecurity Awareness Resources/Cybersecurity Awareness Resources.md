@@ -10,7 +10,7 @@ tags:
   - "#cybersecurity"
 publish: true
 date created: Friday, September 20th 2024, 4:47 pm
-date modified: Sunday, September 22nd 2024, 6:28 pm
+date modified: Monday, September 30th 2024, 12:34 pm
 ---
 
 [Personal Cyber Resilience Arsenal](../../../CybersaderNotion/03%20Awesome-Cyber/Personal%20Cyber%20Resilience%20Arsenal.md)
@@ -21,6 +21,7 @@ date modified: Sunday, September 22nd 2024, 6:28 pm
 [Awesome Hard Disk Drives, NAS Hardware](../../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Hard%20Disk%20Drives,%20NAS%20Hardware.md)
 [Internet Usage & Ethics](../../../📁%2006%20-%20Cybersader%20Arsenal/Internet%20Usage%20&%20Ethics/Internet%20Usage%20&%20Ethics.md)
 [THE PERSONAL CYBER RESILIENCE GUIDE](../../../📁%2006%20-%20Cybersader%20Arsenal/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE.md)
+
 # DROPZONE RESOURCES 
 
 - darknet diaries 
@@ -35,8 +36,8 @@ date modified: Sunday, September 22nd 2024, 6:28 pm
 ## DROPZONE Videos
 
 - History
-	- [The Rise of Hacker Culture - YouTube](https://www.youtube.com/watch?v=19DNAf5Z4QA)
-	- [The Origins of Hacker Culture - YouTube](https://www.youtube.com/watch?v=zBE9_kTFIro)
+	- [The Rise of Hacker Culture - YouTube](https://www.youtube.com/watch?v=19DNAf5Z4QA) - curse word or two
+	- [The Origins of Hacker Culture - YouTube](https://www.youtube.com/watch?v=zBE9_kTFIro) - curse word or two
 - Darknet Diaries (explicit language)
 	- [The Bank Robber Lurking Inside Your Web Browser🎙Darknet Diaries Ep. 111: ZeuS - YouTube](https://www.youtube.com/watch?v=5NeTt2pAzkc)
 	- [They Almost Stole $1 Billion, If Not For a Typo🎙Darknet Diaries Ep. 72: Bangladesh Bank Heist - YouTube](https://www.youtube.com/watch?v=ttohYNSCkik)
@@ -45,7 +46,7 @@ date modified: Sunday, September 22nd 2024, 6:28 pm
 	- [Who Would Hack the Largest U.S. Bank, But Not Steal a Penny?🎙Darknet Diaries Ep. 76: Knaves Out - YouTube](https://www.youtube.com/watch?v=0y33cHRHFYk)
 	- [Jeremy from Marketing – Darknet Diaries](https://darknetdiaries.com/episode/36/)
 		- [Comic Book: Darknet Diaries - Episode 36 "Jeremy In Marketing" – Spearphish General Store](https://spearphish-general-store.myshopify.com/products/comic-book-darknet-diaries-jeremy-in-marketing)
-	- Related to Fraud
+	- Related to Fraud (some profanity)
 		- [Magecart – Darknet Diaries](https://darknetdiaries.com/episode/52/)
 		- [Voulnet – Darknet Diaries](https://darknetdiaries.com/episode/120/)
 		- [The Carder – Darknet Diaries](https://darknetdiaries.com/episode/32/)
@@ -64,7 +65,7 @@ date modified: Sunday, September 22nd 2024, 6:28 pm
 	- [The Hack That Made China a Superpower: Operation Shady Rat - YouTube](https://www.youtube.com/watch?v=y27B-sKIUHA)
 - OSINT, Personal Attack Surface
 	- [Have I Been Pwned: Check if your email has been compromised in a data breach](https://haveibeenpwned.com/) 
-	- [NPD Breach Check - Pentester.com](https://npd.pentester.com/) 
+	- [NPD Breach Check - Pentester.com](https://npd.pentester.com/)
 	- [Go St*lk Yourself: Privacy Through OSINT w/ Mishaal Khan | 1-Hour - YouTube](https://www.youtube.com/watch?v=tJEGBmQjh-8)
 	- [Using OSINT to find his apartment! - YouTube](https://www.youtube.com/watch?v=_NyqxC6skA4) 
 - General

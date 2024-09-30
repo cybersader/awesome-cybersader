@@ -5,6 +5,14 @@
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience Arsenal",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md"
+    },
+    {
       "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
     },
@@ -181,10 +189,6 @@
       "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links.md"
     }
   ],
   "omittedPaths": [],
