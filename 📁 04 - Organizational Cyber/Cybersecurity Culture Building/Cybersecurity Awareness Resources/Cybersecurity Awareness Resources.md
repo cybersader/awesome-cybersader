@@ -31,7 +31,8 @@ date modified: Monday, September 30th 2024, 12:57 pm
 - What is your child asking for
 - Use a personal password manager now - Bitwarden if you're not IT, 1Password if you're willing to put down some money, and KeyPassXC if you're a really advanced user
 - change phone settings where you can
-- 
+- https://www.blackhillsinfosec.com/
+	- https://www.blackhillsinfosec.com/prompt-zine/
 
 ## DROPZONE Videos
 
