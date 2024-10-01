@@ -96,7 +96,8 @@ date modified: Friday, September 20th 2024, 4:51 pm
 # CTFs, Cyber Ranges, Technical Training
 
 - https://overthewire.org/wargames/ - Linux stuff
-- https://metactf.com/
+- https://www.blackhillsinfosec.com/services/cyber-range/B
+    - https://metactf.com/
 - Threat Modeling, Pentesting
     - TryHackMe
     - Hackthebox
