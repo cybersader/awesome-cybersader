@@ -14,6 +14,25 @@ date modified: Friday, March 22nd 2024, 10:32 am
 
 %% End Landmark %%
 
+# October
+
+## 10/1/2024
+
+- Passwords and requirements
+    - PCI went from 7 to 14, but NIST still only requires 8 -- ugh
+    - They are on the right track with 15 characters and only caring about length, but didn't qualify the 8 character requirement to only be a thing for orgs that need it
+- CUPS RCE vuln in Linux
+    - Not technically installed on many machines by default
+    - Let's assumee billions of machines use this
+    - You also need CUPS browse-d?
+    - CUPS browse-d also someone to register a new printer without authentication
+    - Chain this to printer definition
+    - You can put a file onto the computer when you register a printer and that can execute a command.  You have to randomly print to the fake evil printer though.  The user has to be coerced.
+    - On Debian CUPs doesn't run as root anyone
+    - It's a nothing burger
+    - There's 75k people with it on Shodan
+- 
+
 # September
 
 ## 9/17/2024
