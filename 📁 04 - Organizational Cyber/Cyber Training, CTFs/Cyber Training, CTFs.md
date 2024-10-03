@@ -90,6 +90,12 @@ date modified: Friday, September 20th 2024, 4:51 pm
 - https://www.youtube.com/@BlackHillsInformationSecurity/streams 
 - https://www.youtube.com/@SimplyCyber/streams 
 
+# DIY Cyber Range
+
+- [DOAZLab Azure Purple Teaming Environment and Labs](../../📁%2098%20-%20ARCHIVE/GradSchoolProjects/Honey%20Accounts%20in%20Windows%20AD/Tech%20Stack,%20Architecture,%20Tools.md)
+    - https://www.doazlab.com/
+    - Content - https://github.com/AppliedPurpleTeaming/AppliedPurpleTeaming
+
 # CTFs, Cyber Ranges, Technical Training
 
 - Other collab environments
