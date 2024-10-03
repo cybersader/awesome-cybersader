@@ -18,6 +18,7 @@ date modified: Sunday, April 28th 2024, 10:40 pm
 
 # Blurring
 - browser blurring personal information extension
+- based on regex? - that would be very useful
 - https://www.blurweb.app/
 - https://divbyzero.com/tools/blur-extension/
 - https://www.reddit.com/r/SideProject/comments/19645vw/i_made_a_chrome_extension_that_lets_blur_your/
