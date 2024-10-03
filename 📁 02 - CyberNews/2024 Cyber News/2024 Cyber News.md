@@ -21,6 +21,10 @@ date modified: Friday, March 22nd 2024, 10:32 am
 - Passwords and requirements
     - PCI went from 7 to 14, but NIST still only requires 8 -- ugh
     - They are on the right track with 15 characters and only caring about length, but didn't qualify the 8 character requirement to only be a thing for orgs that need it
+    - Nothing about dictionary words - lol because it can't be defined easily - but just because it's not easy doesn't mean they shouldn't
+    - We can have short and bad words under NIST - case closed - needs refactored
+    - https://youtu.be/sluhtC6o7m4?feature=shared&t=2823
+    - Teen Vogue had better password guidance than NIST
 - CUPS RCE vuln in Linux
     - Not technically installed on many machines by default
     - Let's assumee billions of machines use this
