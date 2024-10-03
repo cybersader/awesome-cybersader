@@ -52,7 +52,7 @@ date modified: Friday, September 20th 2024, 4:51 pm
 #### Cyber Deception (Ben's Fave Topic)
 
 - [An Invitation to "Active Defense & Cyber Deception" w/ John Strand - 5 minutes](https://www.linkedin.com/posts/antisyphon-training_an-invitation-to-defense-activity-7043959108894355456-Bqyo?trk=public_profile_like_view)
-    - Active Defense & Cyber Deception - Day 1 | 2024-05-13 | with John Strand
+    - [Active Defense & Cyber Deception - Day 1 | 2024-05-13 | with John Strand](https://www.youtube.com/watch?v=R-imWPT1HWo)
     
 
 ### SOC, InfoSec
@@ -92,13 +92,15 @@ date modified: Friday, September 20th 2024, 4:51 pm
 
 # CTFs, Cyber Ranges, Technical Training
 
+- Other collab environments
+    - [RangeForce](https://rangeforce.com/)
 - https://overthewire.org/wargames/ - Linux stuff
 - https://www.blackhillsinfosec.com/services/cyber-range/
 - https://www.antisyphontraining.com/cyber-range/
 - https://metactf.com/
 - Threat Modeling, Pentesting
-    - TryHackMe
-    - Hackthebox
+    - [TryHackMe](https://tryhackme.com/)
+    - [Hackthebox](https://www.hackthebox.com/)
         - https://resources.hackthebox.com/finance
 - https://roadmap.sh/cyber-security - learn connected concepts - no signup - in browser
 - [PortSwigger](https://portswigger.net/) - web security academy
