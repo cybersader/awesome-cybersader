@@ -22,6 +22,7 @@ publish: true
 - [[Lookalike Domain Defenses]]
 - [[Malware Sandboxing]]
 - [[Public Threat Actor Reporting, Blacklists]]
+- [[Video Ideas]]
 - [[Windows 11 UI Stuff]]
 - **[[Windows BCDR]]**
 

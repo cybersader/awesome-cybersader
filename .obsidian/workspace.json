@@ -229,7 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -326,7 +326,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -356,6 +357,7 @@
   },
   "active": "c91d657d45b1a98a",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/Video Ideas.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md",
@@ -395,7 +397,6 @@
     "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources.md",
-    "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments",
