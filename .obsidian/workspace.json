@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "72202e8fbd43af50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "fc6b7cbd2e71a7b9",
             "type": "leaf",
             "state": {
@@ -171,7 +183,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,7 +258,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,7 +275,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -285,7 +298,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
+                "file": "📁 01 - Projects/Podman Setup & Container Usage.md"
               }
             }
           },
@@ -355,10 +368,11 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "c91d657d45b1a98a",
+  "active": "72202e8fbd43af50",
   "lastOpenFiles": [
-    "📁 99 - Changelog/📁 99 - Changelog.md",
+    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
+    "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Video Ideas.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md",
@@ -395,7 +409,6 @@
     "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
-    "📁 04 - Organizational Cyber/Game-Based Tabletops/Game-Based Tabletops.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs",

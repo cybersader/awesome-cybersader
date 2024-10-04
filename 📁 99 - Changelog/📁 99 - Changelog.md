@@ -1,3 +1,4 @@
+- 2024-10-04 at 08h37 · [[2. Application Setup - Containers, Postgres]]
 - 2024-10-04 at 08h26 · [[⬇ INBOX, DROPZONE]]
 - 2024-10-04 at 08h26 · [[Screen Recording, Streaming Stack]]
 - 2024-10-04 at 08h26 · [[Cyber Training, CTFs]]
@@ -481,7 +482,6 @@
 - 2024-04-25 at 13h39 · [[6. Recon Implementation]]
 - 2024-04-25 at 13h39 · [[4. Exposition & Networking]]
 - 2024-04-25 at 13h39 · [[3. Networking Refresher]]
-- 2024-04-25 at 13h39 · [[2. Application Setup - Containers, Postgres]]
 - 2024-04-25 at 13h39 · [[5. Insecure Exposition]]
 - 2024-04-25 at 13h39 · [[10. Other Network Defenses]]
 - 2024-04-25 at 13h39 · [[Related Lists & Curations]]

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Podman Setup & Container Usage",
+      "path": "📁 01 - Projects/Podman Setup & Container Usage.md"
+    },
+    {
+      "basename": "2. Application Setup - Containers, Postgres",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md"
+    },
+    {
       "basename": "Cybersecurity Awareness Resources",
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "PI Types",
       "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md"
-    },
-    {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     }
   ],
   "omittedPaths": [],
