@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "iX-Storj Overcharging or Overusing Storage",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
+    },
+    {
+      "basename": "Scheduled Backups, Scheduled Downtime",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
+    },
+    {
       "basename": "NocoDB",
       "path": "📁 01 - Projects/NocoDB/NocoDB.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
-    },
-    {
-      "basename": "📁 04 - Organizational Cyber",
-      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
-    },
-    {
-      "basename": "Cyber Talent Development",
-      "path": "📁 04 - Organizational Cyber/Cyber Talent Development/Cyber Talent Development.md"
     }
   ],
   "omittedPaths": [],
