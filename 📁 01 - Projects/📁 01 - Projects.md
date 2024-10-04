@@ -18,8 +18,9 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Interview with a Data Analyst]]**
 - **[[Mothers Day Website]]**
 
+- **[[NocoDB/NocoDB]]**
 - **[[Phone Pick in 2024]]**
-- [[Podman Setup & Container Usage]]
+- **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
 	- **[[Jsonaut]]**
 - **[[Vehicle Selection in 2020s]]**

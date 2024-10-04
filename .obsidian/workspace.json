@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "file": "📁 01 - Projects/Podman Setup & Container Usage/Podman Setup & Container Usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0134f28fa254fcf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/NocoDB/NocoDB.md",
                 "mode": "source",
                 "source": false
               }
@@ -184,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -242,7 +254,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 249.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -258,7 +270,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "file": "📁 01 - Projects/NocoDB/NocoDB.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -275,7 +287,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md",
+                "file": "📁 01 - Projects/NocoDB/NocoDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -298,7 +310,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/Podman Setup & Container Usage.md"
+                "file": "📁 01 - Projects/NocoDB/NocoDB.md"
               }
             }
           },
@@ -368,8 +380,15 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "72202e8fbd43af50",
+  "active": "a0134f28fa254fcf",
   "lastOpenFiles": [
+    "📁 01 - Projects/Podman Setup & Container Usage/Podman Setup & Container Usage.md",
+    "📁 01 - Projects/NocoDB/NocoDB.md",
+    "📁 01 - Projects/NocoDB",
+    "📁 01 - Projects/Podman Setup & Container Usage/_attachments/Podman Setup & Container Usage",
+    "📁 01 - Projects/Podman Setup & Container Usage/_attachments",
+    "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
+    "📁 01 - Projects/Podman Setup & Container Usage",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
@@ -406,15 +425,8 @@
     "_attachments",
     "📦 VAULT SANDBOX TESTING/Templater Templates/Copy Full Path.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Apologetics - Defending the Faith.md",
-    "📁 06 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping",
     "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources",
-    "📁 04 - Organizational Cyber/Cyber Training, CTFs",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments",
-    "📁 04 - Organizational Cyber/Org Data Governance/_attachments",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments",
-    "Excalidraw"
+    "📁 04 - Organizational Cyber/Cyber Training, CTFs"
   ]
 }

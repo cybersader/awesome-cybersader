@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "NocoDB",
+      "path": "📁 01 - Projects/NocoDB/NocoDB.md"
+    },
+    {
       "basename": "Podman Setup & Container Usage",
-      "path": "📁 01 - Projects/Podman Setup & Container Usage.md"
+      "path": "📁 01 - Projects/Podman Setup & Container Usage/Podman Setup & Container Usage.md"
+    },
+    {
+      "basename": "Vehicle Selection in 2020s",
+      "path": "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md"
     },
     {
       "basename": "2. Application Setup - Containers, Postgres",
@@ -191,14 +199,6 @@
     {
       "basename": "Cyber Talent Development",
       "path": "📁 04 - Organizational Cyber/Cyber Talent Development/Cyber Talent Development.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "PI Types",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types.md"
     }
   ],
   "omittedPaths": [],
