@@ -3,28 +3,49 @@ aliases:
 tags: 
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Tuesday, May 14th 2024, 6:35 pm
+date modified: Friday, October 4th 2024, 8:58 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
 - [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
+
+# DROPZONE
+
+- [https://www.meilisearch.com/pricing](https://www.meilisearch.com/pricing)
+- Obsidian + PG
+	- obsidian dataview postgres
+	- [https://forum.obsidian.md/t/relation-map-plugin/18407](https://forum.obsidian.md/t/relation-map-plugin/18407)
+	- [https://nat-arslan.github.io/posts/Obsidian-PostgreSQL-Python/](https://nat-arslan.github.io/posts/Obsidian-PostgreSQL-Python/)
+	- [https://forum.obsidian.md/t/toying-with-relational-databases-using-dataview/17433](https://forum.obsidian.md/t/toying-with-relational-databases-using-dataview/17433)
+	- [https://github.com/clouedoc/postgresql-obsidian](https://github.com/clouedoc/postgresql-obsidian)
+	- [https://publish.obsidian.md/kaas-published/2-Areas/Lists/PostgreSQL+Tools+List](https://publish.obsidian.md/kaas-published/2-Areas/Lists/PostgreSQL+Tools+List)
+
 # Research tools that integrate with Obsidian
+
 - [HomePage | Pkmer.net](https://pkmer.net/en/) 
+
 # Plugins & Tools
+
 - obsidian://show-plugin?id=note-refactor-obsidian
 - [Is Waypoint plugin still used by people for MOC (Map of Content) or is it abandoned? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/17o995c/is_waypoint_plugin_still_used_by_people_for_moc/) 
 - [Thino | PKMer.net](https://thino.pkmer.net/en/)
 - [LinkStowr — Save links to Obsidian](https://linkstowr.com/) 
+
 # Contribution Ideas
+
 - Have a contribution workflow website that hooks into Obsidian like screen.garden kind of does.  
 - Have a contributors file or page that tracks all contributors -- makes the contributor tracking platform agnostic
+
 # Misc
+
 - [Easy Way to Generate/Copy Wiki Internal Link to Current Note? - Help - Obsidian Forum](https://forum.obsidian.md/t/easy-way-to-generate-copy-wiki-internal-link-to-current-note/56699)
 - obsidian://show-plugin?id=copy-publish-url
 - Better changelog plugin or fork of it
 	- [https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14](https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14 "https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14")
+
 # Misc Ideas
+
 - AI-based note enricher 
 	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
 	- Enrich notes with text at bottom to help with finding with search
@@ -37,9 +58,13 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
 	- Timeline plugin like this?
 - Auto headings and bullets?
+
 # Misc Visuals Plugins
+
 - [https://github.com/joethei/obsidian-tagcloud](https://github.com/joethei/obsidian-tagcloud) - Show a cloud of your tags/words/links in a note
+
 # Misc Plugins
+
 - Big plugins
     - [https://github.com/IdreesInc/Waypoint](https://github.com/IdreesInc/Waypoint) - TOC/MOC generator???
 - YAML, tags, and variables
@@ -76,12 +101,14 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
     - [https://github.com/SkepticMystic/breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)
 
 ## Link Format Conversion - shortest, absolute, relative
+
 - [ozntel/obsidian-link-converter: Obsidian Plugin to scan all your links in your vault and convert them to your desired format.](https://github.com/ozntel/obsidian-link-converter)
 - [agathauy/wikilinks-to-mdlinks-obsidian: An Obsidian md plugin which allows for the conversion of individually selected wikilinks to markdown links, and vice versa.](https://github.com/agathauy/wikilinks-to-mdlinks-obsidian)
 - [dy-sh/obsidian-consistent-attachments-and-links: Obsidian plugin. Move note with attachments.](https://github.com/dy-sh/obsidian-consistent-attachments-and-links)
 - [val3344/obsidian-update-relative-links](https://github.com/val3344/obsidian-update-relative-links)
 
 # Personal Cyber KB
+
 - Cybersecurity related
     - News
         - [https://obsidian.md/plugins?id=obsidian-hackernews](https://obsidian.md/plugins?id=obsidian-hackernews)
@@ -270,7 +297,9 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Misc Cool
     - Transcription
         - [https://obsidian.md/plugins?id=obsidian-transcription](https://obsidian.md/plugins?id=obsidian-transcription)
+
 # Obsidian Plugin Search Terms
+
 - [https://obsidian.md/plugins?search=YAML](https://obsidian.md/plugins?search=YAML)
 - [https://obsidian.md/plugins?search=variable](https://obsidian.md/plugins?search=variable)
 - [https://obsidian.md/plugins?search=frontmatter](https://obsidian.md/plugins?search=frontmatter)
