@@ -3,13 +3,19 @@ aliases:
 tags: 
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Monday, September 23rd 2024, 12:19 pm
+date modified: Friday, October 4th 2024, 9:12 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
 [NIST & CIS Resources](../NIST%20&%20CIS%20Resources.md)
+[Frameworks, Standards](../Frameworks,%20Standards.md)
+
+# DROPZONE
+
+- Make mapping that shows how to map with each framework as the core or a pivoting point
 
 # Database Schema Files?
+
 - Maybe we could define database schema files to keep track of this too?
 - 
 

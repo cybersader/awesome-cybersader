@@ -1,3 +1,4 @@
+- 2024-10-04 at 21h12 · [[Framework Mapping]]
 - 2024-10-04 at 20h58 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-10-04 at 19h37 · [[iX-Storj Overcharging or Overusing Storage]]
 - 2024-10-04 at 19h37 · [[📁 01 - Projects]]
@@ -8,7 +9,6 @@
 - 2024-10-04 at 08h26 · [[⬇ INBOX, DROPZONE]]
 - 2024-10-04 at 08h26 · [[Screen Recording, Streaming Stack]]
 - 2024-10-04 at 08h26 · [[Cyber Training, CTFs]]
-- 2024-10-04 at 08h26 · [[Framework Mapping]]
 - 2024-10-04 at 08h26 · [[Cyber Posters]]
 - 2024-10-04 at 08h26 · [[Video Ideas]]
 - 2024-10-04 at 08h26 · [[2024 Cyber News]]
