@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "Persona Creation",
+      "path": "📁 11 - Content Creation/Persona Creation/Persona Creation.md"
+    },
+    {
+      "basename": "Cyber Merch",
+      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
+    },
+    {
       "basename": "Framework Mapping",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
+      "basename": "Debugging Obsidian Plugins",
+      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
+    },
+    {
+      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
+    },
+    {
+      "basename": "TrueNAS Immich Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
     },
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
@@ -25,10 +73,6 @@
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
-      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
-    },
-    {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
     },
@@ -47,42 +91,6 @@
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
-      "basename": "TrueNAS Immich Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Debugging Obsidian Plugins",
-      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "Personal Cyber Resilience Arsenal",
@@ -191,14 +199,6 @@
     {
       "basename": "Xbox Controllers",
       "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
-    },
-    {
-      "basename": "Awesome Password Security",
-      "path": "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md"
-    },
-    {
-      "basename": "Cyber Community",
-      "path": "📁 10 - Community/Cyber Community/Cyber Community.md"
     }
   ],
   "omittedPaths": [],

@@ -15,6 +15,7 @@ date modified: Thursday, April 25th 2024, 5:55 pm
 - [[Content Analytics & Recon]]
 - **[[Content Curation]]**
 - **[[Mic Setup Audio 2024]]**
+- **[[Persona Creation]]**
 - **[[Screen Recording, Streaming Stack]]**
 - **[[Sync Video and Audio]]**
 - **[[Webcams]]**
