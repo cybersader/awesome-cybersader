@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "611a489a2f8c22da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "acc235c2aec05f6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "fc6b7cbd2e71a7b9",
             "type": "leaf",
             "state": {
@@ -114,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -143,7 +167,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "clothing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -168,7 +192,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -188,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +230,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +253,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md"
+                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
               }
             }
           },
@@ -306,10 +331,11 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "cd3c078b2ad2f6a5",
+  "active": "acc235c2aec05f6b",
   "lastOpenFiles": [
-    "🕸️ UNSTRUCTURED/Data Centers.md",
+    "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
+    "🕸️ UNSTRUCTURED/Data Centers.md",
     "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
     "🕸️ UNSTRUCTURED/_attachments/file-20241006152824100.png",
     "🕸️ UNSTRUCTURED/_attachments",
@@ -346,7 +372,6 @@
     "📁 01 - Projects/Podman Setup & Container Usage",
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
-    "⬇ INBOX, DROPZONE/Video Ideas.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png",

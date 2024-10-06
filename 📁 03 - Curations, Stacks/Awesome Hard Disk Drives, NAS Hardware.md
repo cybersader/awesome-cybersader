@@ -5,12 +5,17 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, June 23rd 2024, 2:53 pm
-date modified: Sunday, September 22nd 2024, 6:27 pm
+date modified: Sunday, October 6th 2024, 4:08 pm
 ---
 
 # Curations
 
 - [Hardware recommendations (read this first) | TrueNAS Community](https://www.truenas.com/community/threads/hardware-recommendations-read-this-first.23069/)
+- 
+
+# Mini PCs
+
+- [AOOSTAR WTR PRO 4 Bay 90T Storage INTEL N100 Nas Mini PC – AOOSTAR Mini PC](https://aoostar.com/products/aoostar-n9e-intel-n100-mini-pc4c-4t-up-to-3-4ghz-with-w11-home-8-16gb-ddr4-3200mhz-ram-256-512gb-m-2-2280-nvme-ssd)
 - 
 
 # HDDs

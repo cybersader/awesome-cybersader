@@ -1,3 +1,4 @@
+- 2024-10-06 at 16h08 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-10-06 at 15h52 · [[Whey Protein Recipes]]
 - 2024-10-06 at 15h51 · [[Data Centers]]
 - 2024-10-06 at 15h45 · [[Decorating with Conference Stickers]]
@@ -40,7 +41,6 @@
 - 2024-09-23 at 09h38 · [[Personal Cyber Resilience]]
 - 2024-09-23 at 08h49 · [[Org Data Governance]]
 - 2024-09-22 at 18h29 · [[Obsidian Vault Security]]
-- 2024-09-22 at 18h27 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-09-22 at 18h20 · [[Grad School Papers and Presentations]]
 - 2024-09-22 at 18h15 · [[DevSecOps]]
 - 2024-09-22 at 18h14 · [[Game of Thrones & Cybersecurity]]
