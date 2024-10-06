@@ -13,7 +13,8 @@ date modified: Sunday, October 6th 2024, 3:28 pm
 - large float frame
 - [Make a Collage of Your Conference Stickers – About Things | A Hans Scharler Blog](https://nothans.com/make-a-collage-of-your-conference-stickers)
 - collage chaos
-- ![](_attachments/file-20241006152824100.png)
+	- ![](_attachments/file-20241006152824100.png)
+- modular sticker storage sheets reusable
 
 # Notes
 

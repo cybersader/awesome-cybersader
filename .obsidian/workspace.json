@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
+                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
                 "mode": "source",
                 "source": false
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
+                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
+                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md"
+                "file": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md"
               }
             }
           },
@@ -308,10 +308,12 @@
   },
   "active": "cd3c078b2ad2f6a5",
   "lastOpenFiles": [
+    "🕸️ UNSTRUCTURED/Data Centers.md",
+    "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
+    "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
     "🕸️ UNSTRUCTURED/_attachments/file-20241006152824100.png",
     "🕸️ UNSTRUCTURED/_attachments",
     "📁 11 - Content Creation/Persona Creation/Persona Creation.md",
-    "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md",
     "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md",
     "📁 11 - Content Creation/Persona Creation",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
@@ -345,14 +347,12 @@
     "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md",
     "📁 99 - Changelog/📁 99 - Changelog.md",
     "⬇ INBOX, DROPZONE/Video Ideas.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx & Nextcloud/_attachments/file-20240929204611341.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240929201859379.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240929201846556.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240929201859379.png"
   ]
 }
