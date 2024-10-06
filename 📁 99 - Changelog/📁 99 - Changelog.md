@@ -1,3 +1,4 @@
+- 2024-10-06 at 15h28 · [[Decorating with Conference Stickers]]
 - 2024-10-06 at 15h13 · [[Persona Creation]]
 - 2024-10-06 at 15h11 · [[📁 11 - Content Creation]]
 - 2024-10-05 at 21h51 · [[Framework Mapping]]
