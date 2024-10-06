@@ -12,7 +12,7 @@ date modified: Friday, October 4th 2024, 9:12 pm
 
 # DROPZONE
 
-- Make mapping that shows how to map with each framework as the core or a pivoting point
+- [ ] Make mapping that shows how to map with each framework as the core or a pivoting point 🔼 ➕ 2024-10-05
 
 # Database Schema Files?
 

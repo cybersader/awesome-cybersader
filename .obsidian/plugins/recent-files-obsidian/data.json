@@ -13,10 +13,6 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
     },
     {
-      "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
       "basename": "NocoDB",
       "path": "📁 01 - Projects/NocoDB/NocoDB.md"
     },
@@ -25,16 +21,24 @@
       "path": "📁 01 - Projects/Podman Setup & Container Usage/Podman Setup & Container Usage.md"
     },
     {
+      "basename": "Cybersecurity Awareness Resources",
+      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
+    },
+    {
+      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
+    },
+    {
+      "basename": "Scheduled Backups, Scheduled Downtime",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
+    },
+    {
       "basename": "Vehicle Selection in 2020s",
       "path": "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md"
     },
     {
       "basename": "2. Application Setup - Containers, Postgres",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md"
-    },
-    {
-      "basename": "Cybersecurity Awareness Resources",
-      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
     },
     {
       "basename": "📁 99 - Changelog",
@@ -55,10 +59,6 @@
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
     },
     {
       "basename": "Debugging Obsidian Plugins",
