@@ -1,3 +1,4 @@
+- 2024-10-06 at 17h52 · [[Planning Deadwood 2024 WWHF Trip]]
 - 2024-10-06 at 16h08 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-10-06 at 15h52 · [[Whey Protein Recipes]]
 - 2024-10-06 at 15h51 · [[Data Centers]]
@@ -454,7 +455,6 @@
 - 2024-04-25 at 21h24 · [[Minimum Viable Appsec]]
 - 2024-04-25 at 21h24 · [[Golden Ticket to the Cloud]]
 - 2024-04-25 at 21h24 · [[I failed an AI job interview]]
-- 2024-04-25 at 17h55 · [[Planning Deadwood 2024 WWHF Trip]]
 - 2024-04-25 at 17h44 · [[Obsidian Publish Analytics]]
 - 2024-04-25 at 17h17 · [[The Beekeeper]]
 - 2024-04-25 at 17h11 · [[Obsidian Issues & Feature Requests]]

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Planning Deadwood 2024 WWHF Trip",
+      "path": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
       "basename": "Awesome Clothing",
       "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
     },
@@ -53,10 +65,6 @@
       "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
     {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
-    },
-    {
       "basename": "Debugging Obsidian Plugins",
       "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
     },
@@ -107,10 +115,6 @@
     {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "Personal Cyber Resilience Arsenal",
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ New Tools",
       "path": "⬇ INBOX, DROPZONE/⬇️ New Tools.md"
-    },
-    {
-      "basename": "Cyber Training, CTFs",
-      "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
     }
   ],
   "omittedPaths": [],

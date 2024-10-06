@@ -44,18 +44,6 @@
             }
           },
           {
-            "id": "acc235c2aec05f6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fc6b7cbd2e71a7b9",
             "type": "leaf",
             "state": {
@@ -116,12 +104,12 @@
             }
           },
           {
-            "id": "2dd7fff7e809f8d6",
+            "id": "63ca2e46248b7676",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +126,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -167,7 +155,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "clothing",
+                "query": "deadwood",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -213,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md",
+                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
+                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
               }
             }
           },
@@ -331,8 +319,11 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "acc235c2aec05f6b",
+  "active": "63ca2e46248b7676",
   "lastOpenFiles": [
+    "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
+    "🕸️ UNSTRUCTURED/Awesome Clothing.md",
     "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md",
     "🕸️ UNSTRUCTURED/Whey Protein Recipes.md",
     "🕸️ UNSTRUCTURED/Data Centers.md",
@@ -348,7 +339,6 @@
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md",
     "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
-    "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
     "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md",
@@ -370,8 +360,6 @@
     "📁 01 - Projects/Podman Setup & Container Usage/_attachments",
     "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "📁 01 - Projects/Podman Setup & Container Usage",
-    "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md",
-    "📁 99 - Changelog/📁 99 - Changelog.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png",
