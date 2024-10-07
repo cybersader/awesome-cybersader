@@ -9,7 +9,7 @@ tags:
   - risk-assessment
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Monday, October 7th 2024, 4:02 pm
+date modified: Monday, October 7th 2024, 4:24 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
@@ -52,11 +52,13 @@ date modified: Monday, October 7th 2024, 4:02 pm
 - The CRI community profile is essentially an implementation example or template that maps the frameworks together and provides a process for RCSA
 - The `CRI Profile v2.0 Structure` sheet is probably the best one to help with mapping
 
-### Adding a Control Catalog: NIST 800-53
+### Adding a Control Catalog: NIST 800-53 <-> CSF 2.0
+
+- Reference Tool for CSF 2.0
+	- https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters
 
 - [SP 800-53 Rev. 5, Security and Privacy Controls for Information Systems and Organizations | CSRC](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
 - [SP 800-53A Rev. 5, Assessing Security and Privacy Controls in Information Systems and Organizations | CSRC](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) 
-- 
 
 ### Curate Security Controls
 
