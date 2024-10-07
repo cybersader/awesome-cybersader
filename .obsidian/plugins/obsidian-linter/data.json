@@ -281,8 +281,8 @@
   "logLevel": "ERROR",
   "lintCommands": [
     {
-      "id": "attachment-management:attachment-management-rearrange-active-links",
-      "name": "Attachment Management: Rearrange linked attachments"
+      "id": null,
+      "name": ""
     },
     {
       "id": "",
