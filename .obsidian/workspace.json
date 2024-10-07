@@ -274,14 +274,6 @@
             }
           },
           {
-            "id": "6fe4bb8fe996c2f7",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {}
-            }
-          },
-          {
             "id": "e44d8f26ec7d9437",
             "type": "leaf",
             "state": {
@@ -290,10 +282,18 @@
             }
           },
           {
-            "id": "ae8a156802ea440b",
+            "id": "d7c87fd3d1050512",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
+              "state": {}
+            }
+          },
+          {
+            "id": "c5a7a570368330c8",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
               "state": {}
             }
           }
@@ -331,7 +331,7 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "4f4df098b7f83a45",
+  "active": "c5a7a570368330c8",
   "lastOpenFiles": [
     "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
     "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
