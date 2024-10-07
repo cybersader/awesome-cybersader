@@ -2,7 +2,11 @@
 aliases:
   - Awesome NAS Hardware
   - Awesome HDD
-tags: 
+tags:
+  - 
+  - "#storage"
+  - "#nas"
+  - "#hardware"
 publish: true
 date created: Sunday, June 23rd 2024, 2:53 pm
 date modified: Sunday, October 6th 2024, 4:08 pm

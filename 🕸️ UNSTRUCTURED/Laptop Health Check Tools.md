@@ -1,6 +1,9 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#software"
+  - "#windows"
 publish: true
 date created: Sunday, October 6th 2024, 8:00 pm
 date modified: Sunday, October 6th 2024, 8:01 pm

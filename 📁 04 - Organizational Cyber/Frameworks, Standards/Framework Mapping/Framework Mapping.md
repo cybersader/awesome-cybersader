@@ -1,6 +1,8 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#data-integration"
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
 date modified: Friday, October 4th 2024, 9:12 pm
