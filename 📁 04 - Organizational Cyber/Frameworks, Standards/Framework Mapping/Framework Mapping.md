@@ -1,5 +1,6 @@
 ---
-aliases: 
+aliases:
+  - Key Control Catalog
 tags:
   - "#data-integration"
   - "#data_mapping"
@@ -8,7 +9,7 @@ tags:
   - risk-assessment
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Monday, October 7th 2024, 3:08 pm
+date modified: Monday, October 7th 2024, 4:02 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
@@ -18,6 +19,10 @@ date modified: Monday, October 7th 2024, 3:08 pm
 # DROPZONE
 
 - [ ] Make mapping that shows how to map with each framework as the core or a pivoting point 🔼 ➕ 2024-10-05
+
+# Discussions/Opinions Online?
+
+- 
 
 # Database Schema Files?
 
@@ -46,7 +51,42 @@ date modified: Monday, October 7th 2024, 3:08 pm
 
 - The CRI community profile is essentially an implementation example or template that maps the frameworks together and provides a process for RCSA
 - The `CRI Profile v2.0 Structure` sheet is probably the best one to help with mapping
+
+### Adding a Control Catalog: NIST 800-53
+
+- [SP 800-53 Rev. 5, Security and Privacy Controls for Information Systems and Organizations | CSRC](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
+- [SP 800-53A Rev. 5, Assessing Security and Privacy Controls in Information Systems and Organizations | CSRC](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) 
 - 
+
+### Curate Security Controls
+
+- List out all of the security controls along with some personal fields/columns/attributes that you want to be attached to them
+
+### Simplifying and Automating the Mapping Process - Relational Database
+
+- There's some options here:
+	- Postgres + NocoDB + Excel OR Libre Calc
+	- PowerQuery + Excel - not the best idea probably
+	- LibreOffice Base + LibreOffice Calc
+- A potential solution
+	- Map all of the frameworks together with a schema
+	- Load in the mapping tables from CRI 2.0, CSF, etc.
+	- Make a adjudication table that says which combinations need manual adjudication
+	- Have a manual adjudication table that records which individual mappings have been adjudicated
+		- Use a form if need be to handle these
+	- Have an ultimate mapping table that rolls up mapping components of frameworks as they are related
+	- Using something like NocoDB may allow for auto-fill and easier scalability of the process and systems
+
+### Automate the Mapping with Crosswalks/Dimensions (snowflake approach)/Mapping Files
+
+- .
+
+### Integrating with Documentation, Wikis, etc.
+
+- The documentation platform should be able to schedule email alerts on a cadence and features like that
+- It's preferred to use a markdown and plaintext based platform. 
+- Hook up your documentation platform so that they can be related to your database in some way.
+- Hook up your notes and wiki, so that tasks, notes, meetings, and more can also be related to framework mapping components
 
 # Curated Tech Stacks
 

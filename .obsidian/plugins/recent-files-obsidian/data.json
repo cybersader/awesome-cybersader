@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "NIST & CIS Resources",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
+    },
+    {
       "basename": "Framework Mapping",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
     {
-      "basename": "Excel Alternative",
-      "path": "🕸️ UNSTRUCTURED/Excel Alternative.md"
+      "basename": "📁 04 - Organizational Cyber",
+      "path": "📁 04 - Organizational Cyber/📁 04 - Organizational Cyber.md"
     },
     {
       "basename": "Frameworks, Ontologies",
       "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Ontologies/Frameworks, Ontologies.md"
     },
     {
-      "basename": "NIST & CIS Resources",
-      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
+      "basename": "Excel Alternative",
+      "path": "🕸️ UNSTRUCTURED/Excel Alternative.md"
     },
     {
       "basename": "iX-Storj Overcharging or Overusing Storage",
@@ -195,10 +199,6 @@
     {
       "basename": "Data Entry Tools",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
-    },
-    {
-      "basename": "Obsidian Vault Security",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
     }
   ],
   "omittedPaths": [],
