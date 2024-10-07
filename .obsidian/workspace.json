@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -180,8 +180,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -201,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
+                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md"
               }
             }
           },
@@ -321,6 +320,8 @@
   },
   "active": "63ca2e46248b7676",
   "lastOpenFiles": [
+    "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
+    "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
     "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "🕸️ UNSTRUCTURED/Awesome Clothing.md",
@@ -353,12 +354,10 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193617289.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193551033.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage",
     "📁 01 - Projects/NocoDB",
     "📁 01 - Projects/Podman Setup & Container Usage/_attachments/Podman Setup & Container Usage",
     "📁 01 - Projects/Podman Setup & Container Usage/_attachments",
-    "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md",
     "📁 01 - Projects/Podman Setup & Container Usage",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
