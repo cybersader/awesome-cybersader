@@ -116,6 +116,18 @@
             }
           },
           {
+            "id": "4f4df098b7f83a45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ef119d660898b13f",
             "type": "leaf",
             "state": {
@@ -126,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -184,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -200,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +230,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +253,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
               }
             }
           },
@@ -318,10 +331,10 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "63ca2e46248b7676",
+  "active": "4f4df098b7f83a45",
   "lastOpenFiles": [
-    "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
     "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md",
+    "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md",
     "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md",
     "🕸️ UNSTRUCTURED/Awesome Clothing.md",
