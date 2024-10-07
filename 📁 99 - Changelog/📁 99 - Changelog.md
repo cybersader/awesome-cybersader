@@ -1,4 +1,4 @@
-- 2024-10-07 at 14h07 · [[Framework Mapping]]
+- 2024-10-07 at 14h44 · [[Framework Mapping]]
 - 2024-10-07 at 13h53 · [[Frameworks, Ontologies]]
 - 2024-10-07 at 13h49 · [[NIST & CIS Resources]]
 - 2024-10-07 at 13h49 · [[Frameworks, Standards]]
