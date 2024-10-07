@@ -6,7 +6,7 @@ date created: Thursday, June 13th 2024, 8:33 pm
 date modified: Friday, August 30th 2024, 4:33 pm
 ---
 [Frameworks, Standards](../Frameworks,%20Standards/Frameworks,%20Standards.md) 
-[NIST & CIS Resources](../Frameworks,%20Standards/NIST%20&%20CIS%20Resources.md) 
+[NIST & CIS Resources](../Frameworks,%20Standards/NIST%20&%20CIS%20Resources/NIST%20&%20CIS%20Resources.md) 
 # Audit Tools
 
 - https://cisofy.com/lynis/

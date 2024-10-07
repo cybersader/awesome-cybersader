@@ -17,6 +17,7 @@ https://www.nist.gov/quick-start-guides
 - Mapping to other frameworks, informative references
 	- Informative References 
 		- https://www.nist.gov/informative-references
+		- [National Online Informative References Program | CSRC](https://csrc.nist.gov/projects/olir/informative-reference-catalog#/)
 		- help inform how an organization may achieve the Core’s outcomes. Given the diversity of use cases this page allows the user to choose how to best consume Informative References.
 	- Crosswalks
 		- https://www.nist.gov/privacy-framework/resource-repository/browse/crosswalks
@@ -28,6 +29,7 @@ https://www.nist.gov/quick-start-guides
 		- https://csrc.nist.gov/Projects/risk-management/sp800-53-controls - SP 800-53 Controls and SP 800-53B Control Baselines
 		- https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/overlay-repository - control overlays
 		- https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/downloads - SP 800-53 Downloads
+		- [National Online Informative References Program | CSRC](https://csrc.nist.gov/Projects/olir/validation-tool)
 	- Community Profiles
 		- https://www.nccoe.nist.gov/framework-resource-center 
 		- https://cyberriskinstitute.org/the-profile/

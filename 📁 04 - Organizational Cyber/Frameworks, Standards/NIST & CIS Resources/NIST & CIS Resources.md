@@ -15,9 +15,9 @@ date created: Wednesday, August 28th 2024, 7:51 pm
 date modified: Friday, August 30th 2024, 4:53 pm
 ---
 
-[Game Based Tabletops](../Game-Based%20Tabletops/Game-Based%20Tabletops.md)
-[Endpoint Hardening](../Endpoint%20Hardening/Endpoint%20Hardening.md)
-[Data Entry Tools](../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
+[Game Based Tabletops](../../Game-Based%20Tabletops/Game-Based%20Tabletops.md)
+[Endpoint Hardening](../../Endpoint%20Hardening/Endpoint%20Hardening.md)
+[Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
 
 # NIST - Focus on Controls
 

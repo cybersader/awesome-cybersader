@@ -6,11 +6,11 @@ tags:
   - "#data_mapping"
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Friday, October 4th 2024, 9:12 pm
+date modified: Monday, October 7th 2024, 2:06 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
-[NIST & CIS Resources](../NIST%20&%20CIS%20Resources.md)
+[NIST & CIS Resources](../NIST%20&%20CIS%20Resources/NIST%20&%20CIS%20Resources.md)
 [Frameworks, Standards](../Frameworks,%20Standards.md)
 
 # DROPZONE
@@ -20,6 +20,23 @@ date modified: Friday, October 4th 2024, 9:12 pm
 # Database Schema Files?
 
 - Maybe we could define database schema files to keep track of this too?
+- 
+
+# Implementation Attempt #1 - Libre Office
+
+## Framework Downloads for Mapping
+
+- Initial Mapping - CSF 2.0
+	- CSF Core - https://csrc.nist.gov/extensions/nudp/services/json/csf/download?olirids=all 
+		- A taxonomy of high-level cybersecurity outcomes that can help any organization manage its cybersecurity risks.
+- CRI Profile
+	- https://cyberriskinstitute.org/the-profile/
+
+## Trying it in Libre Calc
+
+- Turns out "LibreBase" is sort of like MS Access and/or PowerQuery
+- LibreBase requires a JRE (Java runtime environment) to work
+	- https://www.java.com/en/download/manual.jsp
 - 
 
 # Curated Tech Stacks

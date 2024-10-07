@@ -10,7 +10,7 @@ date modified: Monday, October 7th 2024, 1:23 pm
 
 %% Begin Waypoint %%
 - **[[Framework Mapping]]**
-- **[[Frameworks, Ontologies/Frameworks, Ontologies]]**
-- [[NIST & CIS Resources]]
+- **[[Frameworks, Ontologies]]**
+- **[[NIST & CIS Resources/NIST & CIS Resources]]**
 
 %% End Waypoint %%
