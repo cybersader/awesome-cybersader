@@ -214,7 +214,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -350,10 +351,10 @@
   },
   "active": "ce7aab53e0a597bd",
   "lastOpenFiles": [
-    "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Ontologies/Frameworks, Ontologies.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
-    "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md",
     "🕸️ UNSTRUCTURED/Excel Alternative.md",
+    "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md",
+    "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Ontologies/Frameworks, Ontologies.md",
+    "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md",
     "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md",

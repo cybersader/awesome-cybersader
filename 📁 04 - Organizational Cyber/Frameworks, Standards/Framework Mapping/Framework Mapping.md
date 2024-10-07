@@ -1,12 +1,14 @@
 ---
 aliases: 
 tags:
-  - 
   - "#data-integration"
   - "#data_mapping"
+  - RCSA
+  - risk-management
+  - risk-assessment
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Monday, October 7th 2024, 2:44 pm
+date modified: Monday, October 7th 2024, 3:08 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
@@ -32,10 +34,6 @@ date modified: Monday, October 7th 2024, 2:44 pm
 - CRI Profile
 	- https://cyberriskinstitute.org/the-profile/
 
-## Potentially Useful Libre Office Extensions
-
-- [LibrePythonista » Libreoffice Extensions](https://extensions.libreoffice.org/en/extensions/show/99231)
-- [Pandas for LibreOffice » Libreoffice Extensions](https://extensions.libreoffice.org/en/extensions/show/41998)
 ## Trying it in Libre Calc
 
 - Turns out "LibreBase" is sort of like MS Access and/or PowerQuery
@@ -43,7 +41,13 @@ date modified: Monday, October 7th 2024, 2:44 pm
 	- https://www.java.com/en/download/manual.jsp
 - Had to fill down on blanks since this wasn't a "tabular" format - specifically for the CSF Core sheet
 	- [How to fill in empty cells with value above - LibreOffice Calc Tutorial - YouTube](https://www.youtube.com/watch?v=AeVBH0ClCoA)
+
+### Getting Data Out of CRI Community Profile
+
+- The CRI community profile is essentially an implementation example or template that maps the frameworks together and provides a process for RCSA
+- The `CRI Profile v2.0 Structure` sheet is probably the best one to help with mapping
 - 
+
 # Curated Tech Stacks
 
 ## 1. OneNote + Sharepoint Excel or CSV
