@@ -5,16 +5,24 @@
       "path": "🕸️ UNSTRUCTURED/Obsidian Git Setup.md"
     },
     {
+      "basename": "Laptop Health Check Tools",
+      "path": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
       "basename": "conflict-files-obsidian-git",
       "path": "conflict-files-obsidian-git.md"
     },
     {
       "basename": "Planning Deadwood 2024 WWHF Trip",
       "path": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Turning Old PC into NAS in 2024",
@@ -119,10 +127,6 @@
     {
       "basename": "2. Application Setup - Containers, Postgres",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
     {
       "basename": "Personal Cyber Resilience Arsenal",
