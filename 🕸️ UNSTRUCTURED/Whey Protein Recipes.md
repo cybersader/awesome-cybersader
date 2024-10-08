@@ -1,6 +1,8 @@
 ---
 aliases: 
-tags: 
+tags:
+  - 
+  - "#nutrition"
 publish: true
 date created: Sunday, October 6th 2024, 3:49 pm
 date modified: Sunday, October 6th 2024, 3:50 pm

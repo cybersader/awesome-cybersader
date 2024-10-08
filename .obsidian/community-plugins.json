@@ -40,5 +40,6 @@
   "templater-obsidian",
   "obsidian-timestamper",
   "various-complements",
-  "ytranscript"
+  "ytranscript",
+  "obsidian-regex-replace"
 ]
