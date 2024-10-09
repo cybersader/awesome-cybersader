@@ -6,7 +6,7 @@ date created: Wednesday, October 9th 2024, 4:29 pm
 date modified: Wednesday, October 9th 2024, 6:19 pm
 ---
 
-# 2024-10-09
+# 2024-10-08
 
 ## The Airport Transportation Fiasco of 2024 - Only my problem really
 
