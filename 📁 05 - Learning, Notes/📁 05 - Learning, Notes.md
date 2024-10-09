@@ -18,6 +18,7 @@ publish: true
 	- **[[IR Summit 2024]]**
 
 	- [[Phishtory and the Phuture of Phishing with Joseph]]
+	- **[[WWHF 2024 - Deadwood]]**
 - **[[Cyber Classes]]**
 	- **[[Linux Forensics]]**
 		- **[[Exercises]]**

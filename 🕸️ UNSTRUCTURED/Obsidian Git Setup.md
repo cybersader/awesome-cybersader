@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, October 8th 2024, 9:54 am
-date modified: Tuesday, October 8th 2024, 10:29 am
+date modified: Tuesday, October 8th 2024, 5:47 pm
 ---
 
 # Links
@@ -19,4 +19,4 @@ date modified: Tuesday, October 8th 2024, 10:29 am
 # The Ideal Setup
 
 - Ideally, I would be able to say something like ignore changes to certain folder paths like plugins or to handle them a certain way
-- 
+- Another big issue is having the same vault opened on multiple devices at once.  Usually one of the plugins that automatically updates the plugin data or the or adds something in the actual markdown content causes immediate conflict issues
