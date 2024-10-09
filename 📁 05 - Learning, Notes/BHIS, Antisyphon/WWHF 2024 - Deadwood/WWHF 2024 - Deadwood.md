@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 9th 2024, 4:29 pm
-date modified: Wednesday, October 9th 2024, 6:17 pm
+date modified: Wednesday, October 9th 2024, 6:19 pm
 ---
 
 # 2024-10-09
@@ -23,6 +23,9 @@ Here was my plan.  Try for ridesharing and if that doesn't work then simply get 
 4) I assumed I would have good enough internet
 
 Here's how it all went downhill and how it played out.  Everything in the Uber and Lyft apps worked when I made the information.  However, due to using an alias email that forwards to my real one, I got flagged and had to verify my identity with a lengthy process.  Okay I got that working.  Now I just had to get an Uber.  I got two biters, and then they cancelled on me each after about 5 minutes passed.  It was already 10:40 or so.  I tried the Lyft app, but then when I went to get a driver, it failed.  Turns out my cards were locked up and I hadn't set a vacation time range for when and where I would be - rookie mistake.  I tried then for Venmo as a pay source, but then that app wanted me to verify my identity and the internet was bad which wasn't helping.  Next, I tried Paypal and it finally worked.  It took 15 minutes to get someone to bite again up to that point and what was \$110 was now about \$200.  I turned to go to the rentals, knowing that it was about the same price, but they had closed in the past 5 minutes I was looking at my phone.  I was locked in.  All I could do was pray someone would be there, and luckily someone showed up.  I walked outside to get ready even though they were 9 minutes away.  I was alone and it was so silent that I could hear my driver in the distance for about 5 minutes before they had arrived.  Lesson learned...lesson learned. 😆
+
+Solution to all of this - **buy a rental car before you leave your hometown**
+- that is - if you are in a situation where the airport city is not busy, you have little experience ride sharing, or you're just wondering if transportation will work...especially late at night
 
 # 2024-10-09
 
