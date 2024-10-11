@@ -1,0 +1,112 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Friday, October 11th 2024, 12:01 pm
+date modified: Friday, October 11th 2024, 12:46 pm
+---
+
+- Tony Sager - Center for Internet Security
+- used to work at the NSA
+
+- Given a job for "COMMSEC"
+- We used to have one enemy - the Soviet Union
+- Polygraph - my results were so amazing they had me come back again
+- Computer Security Design Division
+- 3rd assignment in Vulnerability Analyst for Defense
+- He loves a hopeless challenge
+- Finding flaws is a great job
+- Cybersecurity has had many names
+- He worked in a nuclear lab - "zero defect" environment - no room for mistakes
+- Everything was the first time
+	- How do we emulate adversaries
+	- How do we pentest
+	- How to defend against people with lots of resources and persistence
+- Common element - vulnerabilities
+- 3 parts to his cyber journey:
+	- 1) finding flaws
+	- 2) management - see failure at worldwide scale
+		- 800 people attack and defense
+		- attack engines - seeing how countries hit each other - it's always happening - complex and dynamic
+	- 3) what are we doing wrong
+		- same problems with every pentest
+		- basic flaws in all of the software decades after they were known
+		- government could not solve this
+		- government can't tell us what to do to fix it
+- A look inside NSA defensive mission
+	- Systems and Network Attack Center (SNAC)
+		- 35 people
+		- his boss's philosophy - 50 hacker kids could solve this - be careful what you wish for
+			- create a new professional discipline
+			- understand flaws so that we can manage the risk
+	- Eligible Receiver 97
+		- Plan and exercise over an over again
+		- IT focused Red Team was used
+		- This was a wakeup call executives that exploitation of IT systems could bring the US military to its knees
+	- NSA Security Guides (2001)
+		- How to configure stuff for the DoD
+	- The NSA didn't think anyone working there would one day be doing talks - it happened with media and they wanted to be somewhat transparent
+	- Cyber Defense eXercise (2001)
+	- The whole Westpoint team showed up at Blackhat
+	- Vulnerability Analysis and Operations Group  (VAO)
+- What's the role of government in cyber
+	- They have to bring content
+	- "Let's give them powerpoints and PDFs so they'll fix everything" - it's not good enough to scare people into action - hard lesson
+	- Inspire them with cleverness
+	- We don't have people become health experts to manage their health risks.
+	- They collected and analyzed without showing people how to fix it
+	- Other people won't become wizards
+- How "bad" is it?
+	- weakness
+	- flaw
+	- vulnerability
+	- exploit
+	- attack
+- Going from vuln to mock attack is non-trivial
+- How much should I care?
+	- Devices
+	- Designs
+	- Architectures
+	- Infrastructure
+	- Operations
+- The NSA
+	- never say anything, no such agency, not seen anywhere
+	- Signals Intelligence (SIGINT)
+		- heavy dose of intelligence - understanding other bad people and their intentions, friends, and enemies
+	- Cybersecurity (from COMSEC, INFOSEC, Information Assurance, .....)
+- SIGINT had way more people and resources than Information Assurance (defenders)
+- Defense wins games, Offense wins budgets
+- Offense + Defense
+	- Cross-training
+		- everybody started getting cross-training after 9/11
+	- What about NIST, DISA, etc.? 
+		- Nation will not pay what it takes to build a better defensive machine, so it won't help if you go there
+	- Linkage to the ecosystem (industry, policy-makers, academia)
+	- Highly complex infrastructure
+	- Lots of brain power
+	- The sobering lesson - the NSA had too much control though
+		- There had to be checks and balances and distribution
+- It's not about fixing that one network but learning about one network so you can know maybe how others work
+- Why did the DoD system look that way in the first place?
+	- Security sampling
+	- Sample the environment.  Draw conclusions about the underlying population.  
+- We have to give those with power these conclusions so that something large-scale can be done
+- Everybody cheats in intelligence
+	- They know your laws so they can work around them
+- FREE STUFF
+	- NSA/DoD
+	- CSIS
+	- SANS Top 20
+	- CCS/CIS
+	- CIS Controls
+- Lessons
+	- Knowing vulns doesn't fix them
+	- Fix it so that you don't rediscover it
+	- Bad Guy doesn't do magic
+	- Cybersecurity translates to Management (not threat sharing)
+		- Threat feeds can't be utilized by most people - our economy is mostly small businesses
+	- Business make economic and social decisions
+		- We are the doctors of information systems
+	- Cybersecurity is like the Groundhog Day movie
+	- We feed the bigger machine that will take action for reducing risk
+	- 
