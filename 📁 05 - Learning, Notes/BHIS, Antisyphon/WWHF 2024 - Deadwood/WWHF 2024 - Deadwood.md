@@ -7,6 +7,7 @@ date modified: Wednesday, October 9th 2024, 6:19 pm
 ---
 
 %% Begin Waypoint %%
+- **[[Demystifying Deep Fakes]]**
 - **[[Tackling the AI Spin Cycle]]**
 
 %% End Waypoint %%
