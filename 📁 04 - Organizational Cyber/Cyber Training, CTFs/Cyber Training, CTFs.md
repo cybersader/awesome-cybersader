@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, September 20th 2024, 1:59 pm
-date modified: Friday, September 20th 2024, 4:51 pm
+date modified: Saturday, October 12th 2024, 5:24 pm
 ---
 
 
@@ -97,6 +97,9 @@ date modified: Friday, September 20th 2024, 4:51 pm
     - Content - https://github.com/AppliedPurpleTeaming/AppliedPurpleTeaming
 
 # CTFs, Cyber Ranges, Technical Training
+
+- 2024 CTFs
+	- [Cybersecurity Awereness | Huntress](https://www.huntress.com/cybersecurity-education/cybersecurity-awareness)
 
 - Other collab environments
     - [RangeForce](https://rangeforce.com/)

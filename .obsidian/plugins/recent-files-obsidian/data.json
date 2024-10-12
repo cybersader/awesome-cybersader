@@ -1,8 +1,68 @@
 {
   "recentFiles": [
     {
-      "basename": "2025 Goals",
-      "path": "🕸️ UNSTRUCTURED/2025 Goals.md"
+      "basename": "Cyber Training, CTFs",
+      "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
+    },
+    {
+      "basename": "Awesome CTF Resources",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
+      "basename": "AI Ethics & Morality",
+      "path": "🕸️ UNSTRUCTURED/AI Ethics & Morality/AI Ethics & Morality.md"
+    },
+    {
+      "basename": "Presentation Tools & Tech",
+      "path": "📁 11 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
+    },
+    {
+      "basename": "Backups Tech",
+      "path": "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md"
+    },
+    {
+      "basename": "Cybersecurity Culture Building",
+      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "Cyber Community",
+      "path": "📁 10 - Community/Cyber Community/Cyber Community.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "2025 Cybersecurity Goals",
+      "path": "🕸️ UNSTRUCTURED/2025 Cybersecurity Goals.md"
     },
     {
       "basename": "Cultivating Growth and Connection",
@@ -61,10 +121,6 @@
       "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Medieval Mindset in Cybersecurity/The Medieval Mindset in Cybersecurity.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
       "basename": "NSA - Never Say Anything",
       "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/NSA - Never Say Anything/NSA - Never Say Anything.md"
     },
@@ -91,10 +147,6 @@
     {
       "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Laptop Health Check Tools",
@@ -141,64 +193,12 @@
       "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
     },
     {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
       "basename": "Debugging Obsidian Plugins",
       "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
-    },
-    {
-      "basename": "TrueNAS Immich Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "iX-Storj Overcharging or Overusing Storage",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
-    },
-    {
-      "basename": "NocoDB",
-      "path": "📁 01 - Projects/NocoDB/NocoDB.md"
-    },
-    {
-      "basename": "Podman Setup & Container Usage",
-      "path": "📁 01 - Projects/Podman Setup & Container Usage/Podman Setup & Container Usage.md"
-    },
-    {
-      "basename": "Cybersecurity Awareness Resources",
-      "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Awareness Resources/Cybersecurity Awareness Resources.md"
-    },
-    {
-      "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "Vehicle Selection in 2020s",
-      "path": "📁 01 - Projects/Vehicle Selection in 2020s/Vehicle Selection in 2020s.md"
-    },
-    {
-      "basename": "2. Application Setup - Containers, Postgres",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Secure Database Exposition/Project Workspace/2. Application Setup - Containers, Postgres.md"
     }
   ],
   "omittedPaths": [],

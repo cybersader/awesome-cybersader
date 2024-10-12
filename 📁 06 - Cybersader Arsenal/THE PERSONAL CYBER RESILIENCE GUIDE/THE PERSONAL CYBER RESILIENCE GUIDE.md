@@ -8,7 +8,7 @@ tags:
   - "#guide"
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Friday, September 20th 2024, 8:39 am
+date modified: Saturday, October 12th 2024, 4:57 pm
 ---
 
  
@@ -125,7 +125,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 # Media 
 
-- Use "unbiased" sources? - yeah...that's a dilemma
+- Use "unbiased" sources? - yeah...that's a dilemma.  Just seek out the truth honestly and try to see things from other perspectives the best you can.  It's no productive to go fight some ghosts.
 - Avoid "free" websites or minimize data and maximize privacy on them to demotivate unethical/immoral means to monetization
 - Use [Sub-Based & Ad-Avoiding Media Platforms](../../🕸️%20UNSTRUCTURED/Sub-Based%20&%20Ad-Avoiding%20Media%20Platforms.md)
 
