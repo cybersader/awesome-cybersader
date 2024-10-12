@@ -3,8 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, October 12th 2024, 11:20 am
-date modified: Saturday, October 12th 2024, 11:20 am
+date modified: Saturday, October 12th 2024, 11:26 am
 ---
+
+[Org Data Governance](../../../../📁%2004%20-%20Organizational%20Cyber/Org%20Data%20Governance/Org%20Data%20Governance.md)
 
 - EPS - AD and service desks
 - Service desk is overburdened with these requests
