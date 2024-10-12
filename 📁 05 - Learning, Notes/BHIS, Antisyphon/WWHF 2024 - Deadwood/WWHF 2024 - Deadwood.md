@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 9th 2024, 4:29 pm
-date modified: Wednesday, October 9th 2024, 6:19 pm
+date modified: Saturday, October 12th 2024, 11:24 am
 ---
 
 %% Begin Waypoint %%
@@ -24,6 +24,7 @@ date modified: Wednesday, October 9th 2024, 6:19 pm
 - **[[When I grow up I wanna be a script kiddie]]**
 
 %% End Waypoint %%
+
 # 2024-10-08
 
 ## The Airport Transportation Fiasco of 2024 - Only my problem really
@@ -45,6 +46,7 @@ Here's how it all went downhill and how it played out.  Everything in the Uber a
 Solution to all of this - **buy a rental car before you leave your hometown**
 - that is - if you are in a situation where the airport city is not busy, you have little experience ride sharing, or you're just wondering if transportation will work...especially late at night
 
-# 2024-10-09
+# For Leaving the Conference
 
-- 
+- The shuttles back to the airport were awesome
+- I just got there about 30 minutes early.  They came on time, so it's good just to be there about 10 minutes early next time since it's cold outside
