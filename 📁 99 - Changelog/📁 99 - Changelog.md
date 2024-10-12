@@ -1,3 +1,4 @@
+- 2024-10-12 at 11h39 · [[📁 12 - Religion, Ontology, Philosophy]]
 - 2024-10-12 at 11h27 · [[All On Red]]
 - 2024-10-12 at 11h26 · [[AD job functions - one group for least privilege]]
 - 2024-10-12 at 11h26 · [[Org Data Governance]]
@@ -72,7 +73,6 @@
 - 2024-10-06 at 19h39 · [[Obsidian Delete Hanging]]
 - 2024-10-06 at 19h39 · [[📁 13 - Journal, Diary]]
 - 2024-10-06 at 19h39 · [[⬇️ Journal Drop]]
-- 2024-10-06 at 19h39 · [[📁 12 - Religion, Ontology, Philosophy]]
 - 2024-10-06 at 19h39 · [[⬇️ Ontological Drop]]
 - 2024-10-06 at 19h39 · [[Pints with Aquinas - JP]]
 - 2024-10-06 at 19h39 · [[Jesus and the Eucharist - Augustine Institute]]
