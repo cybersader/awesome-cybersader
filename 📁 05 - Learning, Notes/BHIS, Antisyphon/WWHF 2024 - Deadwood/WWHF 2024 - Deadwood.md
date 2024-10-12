@@ -7,9 +7,21 @@ date modified: Wednesday, October 9th 2024, 6:19 pm
 ---
 
 %% Begin Waypoint %%
+- **[[AD job functions - one group for least privilege]]**
+- **[[All On Red]]**
+- **[[Cultivating Growth and Connection]]**
 - **[[Demystifying Deep Fakes]]**
+- **[[Golden Age of Cybersecurity Knowledge and Collaboration]]**
+- **[[Hack the boardroom]]**
 - **[[NSA - Never Say Anything]]**
+- **[[Red for Blue - offense for defense]]**
+- **[[Risk AIssessment Framework]]**
 - **[[Tackling the AI Spin Cycle]]**
+- **[[Talkin Bout New Live 2024 WWHF/Talkin Bout New Live 2024 WWHF]]**
+- **[[The Hackening]]**
+- **[[The Medieval Mindset in Cybersecurity]]**
+- **[[Victims Being Used for C2]]**
+- **[[When I grow up I wanna be a script kiddie]]**
 
 %% End Waypoint %%
 # 2024-10-08
