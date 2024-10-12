@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 date created: Friday, April 5th 2024, 3:54 pm
-date modified: Saturday, October 12th 2024, 6:23 pm
+date modified: Saturday, October 12th 2024, 6:26 pm
 publish: true
 ---
 
@@ -11,6 +11,8 @@ publish: true
 - Why IT sucks at documentation
 - The philosophy of why cyber isn't entry level, but...can be?
 	- Parts of cyber can be entry level when looking at it from the high-level perspective of knowing what attackers like to do, being able to help small businesses, or the philosophical part of simply accounting for those with the will of exploiting your IT systems
+- My 2024 Personal Cyber Resilience Tech Stack
+- 
 
 # My Interest
 
