@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
+                "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 200
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
+                "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
+                "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+                "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
               }
             }
           },
@@ -226,9 +226,12 @@
   },
   "active": "865bcb938f3e1ed1",
   "lastOpenFiles": [
+    "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
+    "📁 11 - Content Creation/📁 11 - Content Creation.md",
+    "📁 11 - Content Creation/Persona Creation/Persona Creation.md",
+    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
     "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md",
-    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "🕸️ UNSTRUCTURED/AI Ethics & Morality/AI Ethics & Morality.md",
     "📁 11 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md",
@@ -255,10 +258,7 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration/Golden Age of Cybersecurity Knowledge and Collaboration.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Hackening/The Hackening.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Hack the boardroom/Hack the boardroom.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Hackening",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense/Red for Blue - offense for defense.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Hack the boardroom",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/When I grow up I wanna be a script kiddie",

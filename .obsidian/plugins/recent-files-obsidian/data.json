@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
+    },
+    {
+      "basename": "⬇️ Content Creation Stack Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
+    },
+    {
+      "basename": "📁 11 - Content Creation",
+      "path": "📁 11 - Content Creation/📁 11 - Content Creation.md"
+    },
+    {
+      "basename": "Persona Creation",
+      "path": "📁 11 - Content Creation/Persona Creation/Persona Creation.md"
+    },
+    {
       "basename": "Organization Documentation & Wikis",
       "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Decorating with Conference Stickers",
       "path": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md"
-    },
-    {
-      "basename": "Persona Creation",
-      "path": "📁 11 - Content Creation/Persona Creation/Persona Creation.md"
-    },
-    {
-      "basename": "Cyber Merch",
-      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Merch.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Debugging Obsidian Plugins",
-      "path": "🕸️ UNSTRUCTURED/Debugging Obsidian Plugins.md"
     }
   ],
   "omittedPaths": [],
