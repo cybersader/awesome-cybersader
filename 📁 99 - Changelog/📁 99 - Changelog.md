@@ -1,3 +1,4 @@
+- 2024-10-12 at 12h00 · [[2025 Goals]]
 - 2024-10-12 at 11h39 · [[📁 12 - Religion, Ontology, Philosophy]]
 - 2024-10-12 at 11h27 · [[All On Red]]
 - 2024-10-12 at 11h26 · [[AD job functions - one group for least privilege]]
