@@ -9,7 +9,7 @@ tags:
   - wiki_organization
 publish: true
 date created: Monday, September 2nd 2024, 2:32 pm
-date modified: Monday, September 9th 2024, 8:53 pm
+date modified: Sunday, October 13th 2024, 2:11 pm
 ---
 
 [Contributable Obsidian Wiki](../../📁%2009%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
