@@ -9,7 +9,7 @@ tags:
   - wiki_organization
 publish: true
 date created: Monday, September 2nd 2024, 2:32 pm
-date modified: Monday, October 14th 2024, 1:07 pm
+date modified: Monday, October 14th 2024, 1:38 pm
 ---
 
 [Contributable Obsidian Wiki](../../📁%2009%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
@@ -37,10 +37,10 @@ Link to repo - https://github.com/cybersader/notion-to-obsidian-github-sync
 7. Obtain your Notion space-id and token as described [in this Medium post](https://medium.com/@arturburtsev/automated-notion-backups-f6af4edc298d). Store it in the `NOTION_SPACE_ID` and `NOTION_TOKEN` secret.
 	1. I will explain how to do it in Google Chrome:
 	- Open [http://notion.so/](http://notion.so/), go to “Settings & Members” → “Settings”
-	- Open [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) by pressing Command+Option+J (Mac) or Control+Shift+J (Windows, Linux, Chrome OS)
+	- Open [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) by pressing Command+Option+J (Mac) or Control+Shift+i (Windows, Linux, Chrome OS)
 	- Go to the Network tab, as shown on a screenshot below
 	- Enable “XHR” filter (1), clear console (2), start the export (3), select “enqueueTask” (4)
-	- ![](https://miro.medium.com/v2/resize:fit:700/1*wVlpHE4R3LrDQxlJdhEgtg.png)
+	- ![](_attachments/file-20241014133255265.png)
 	- In the opened “Headers” tab you would need to scroll down until you see “cookie:” and a lot of text, in this text you need to identify a part, which looks like(5):
 	- `<span id="b7dd" data-selectable-paragraph="">token_v2=xxx;</span>`
 	- Where xxx is a very long sequence of letters and digits and can span multiple lines. Copy everything between “token\_v2=” and “;” and save it somewhere. Label it NOTION\_TOKEN\_V2, we will need it later.
@@ -57,3 +57,6 @@ Save the value inside quotes, label it NOTION\_SPACE\_ID.
 - [Request limits](https://developers.notion.com/reference/request-limits)
 - 2024 Issue with API V3
 
+## Fixing the Code
+
+- 
