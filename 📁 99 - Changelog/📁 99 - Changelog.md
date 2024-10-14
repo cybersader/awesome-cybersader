@@ -1,4 +1,4 @@
-- 2024-10-14 at 13h38 · [[GitHub + Obsidian + Notion - Digital Garden]]
+- 2024-10-14 at 17h54 · [[GitHub + Obsidian + Notion - Digital Garden]]
 - 2024-10-14 at 13h32 · [[📁 01 - Projects]]
 - 2024-10-13 at 13h57 · [[AI Ethics & Morality]]
 - 2024-10-13 at 13h57 · [[Obsidian Git Setup]]
