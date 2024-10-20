@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 date created: Tuesday, April 2nd 2024, 9:09 pm
-date modified: Friday, September 13th 2024, 12:57 pm
+date modified: Sunday, October 20th 2024, 4:33 pm
 publish: true
 ---
 
@@ -15,3 +15,8 @@ publish: true
 # Images
 
 - ![](_attachments/IMG-20240913125715913.png)
+- ![](_attachments/file-20241020163229343.png)
+- ![](_attachments/file-20241020163244044.png)
+- ![](_attachments/file-20241020163318828.png)
+- ![](_attachments/file-20241020163335217.png)
+- 

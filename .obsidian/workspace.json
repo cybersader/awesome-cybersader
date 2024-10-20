@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ae6b3f06f7158d02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -73,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "notion",
+                "query": "meme",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -98,7 +110,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -118,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
+                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
               }
             }
           },
@@ -236,10 +249,14 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "7bcaf10403c73f5e",
+  "active": "ae6b3f06f7158d02",
   "lastOpenFiles": [
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020163335217.png",
+    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020163318828.png",
+    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020163244044.png",
+    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020163229343.png",
     "🕸️ UNSTRUCTURED/Documenting Activity.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments/file-20241014133255265.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments/file-20241014132948829.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
@@ -269,7 +286,6 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/All On Red/All On Red.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege/AD job functions - one group for least privilege.md",
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Talkin Bout New Live 2024 WWHF",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege",
@@ -280,9 +296,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193720283.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193700003.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193617289.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193551033.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193551033.png"
   ]
 }
