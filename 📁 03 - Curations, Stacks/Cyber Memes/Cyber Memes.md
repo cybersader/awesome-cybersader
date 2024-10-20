@@ -32,4 +32,8 @@ publish: true
 - ![](_attachments/file-20241020165549319.png)
 - ![](_attachments/file-20241020165624410.png)
 - ![](_attachments/file-20241020165649906.png)
+- ![](_attachments/file-20241020171808988.png)
+- ![](_attachments/file-20241020171820192.png)
+- ![](_attachments/file-20241020171840053.png)
+- ![](_attachments/file-20241020171902130.png)
 - 
