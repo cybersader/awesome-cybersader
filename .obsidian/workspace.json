@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+                "file": "🕸️ UNSTRUCTURED/Documenting Activity.md"
               }
             }
           },
@@ -238,6 +238,8 @@
   },
   "active": "7bcaf10403c73f5e",
   "lastOpenFiles": [
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "🕸️ UNSTRUCTURED/Documenting Activity.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments/file-20241014133255265.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments/file-20241014132948829.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
@@ -258,7 +260,6 @@
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "🕸️ UNSTRUCTURED/Scalable Project Management.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
     "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
@@ -282,7 +283,6 @@
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/_attachments/file-20241004193551033.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929212202497.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929210403531.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx & Nextcloud/_attachments/file-20240929204611341.png"
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/_attachments/file-20240929204715103.png"
   ]
 }

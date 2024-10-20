@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Documenting Activity",
+      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Data Centers",
       "path": "🕸️ UNSTRUCTURED/Data Centers.md"
-    },
-    {
-      "basename": "Decorating with Conference Stickers",
-      "path": "🕸️ UNSTRUCTURED/Decorating with Conference Stickers.md"
     }
   ],
   "omittedPaths": [],
