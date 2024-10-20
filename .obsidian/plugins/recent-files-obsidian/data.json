@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Media Hosting in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
+    },
+    {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
-      "basename": "Awesome Clothing",
-      "path": "🕸️ UNSTRUCTURED/Awesome Clothing.md"
     }
   ],
   "omittedPaths": [],

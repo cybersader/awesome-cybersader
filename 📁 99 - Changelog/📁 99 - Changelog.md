@@ -1,3 +1,4 @@
+- 2024-10-20 at 18h42 · [[Media Hosting in Obsidian]]
 - 2024-10-20 at 17h35 · [[Cyber Memes]]
 - 2024-10-20 at 17h35 · [[📁 03 - Curations, Stacks]]
 - 2024-10-20 at 16h10 · [[Documenting Activity]]
@@ -144,7 +145,6 @@
 - 2024-08-11 at 19h29 · [[2024-08-11]]
 - 2024-08-11 at 19h20 · [[TrueNAS Scale RAID Setup]]
 - 2024-08-11 at 17h15 · [[Syncing Obsidian]]
-- 2024-08-11 at 17h02 · [[Media Hosting in Obsidian]]
 - 2024-08-11 at 15h53 · [[meeting_note]]
 - 2024-08-11 at 13h50 · [[Scheduled Backups, Scheduled Downtime]]
 - 2024-08-10 at 22h08 · [[Ttx b&b]]

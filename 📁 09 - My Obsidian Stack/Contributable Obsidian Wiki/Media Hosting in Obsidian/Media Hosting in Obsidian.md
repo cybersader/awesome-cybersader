@@ -25,13 +25,15 @@ date modified: Saturday, August 10th 2024, 6:42 pm
 	- YouTube unlisted for video
 	- Imgur for images
 
-- Obsidian Plugins
+- Obsidian Plugins Searches
 	- https://obsidian.md/plugins?search=cloudinary
 	- https://obsidian.md/plugins?search=s3
 	- https://obsidian.md/plugins?search=url
 	- https://obsidian.md/plugins?search=imgur
 	- https://obsidian.md/plugins?search=media
 	- https://obsidian.md/plugins?search=attachment
+- Specific Obsidian Plugins
+	- 
 
 - Github stuff?
 	- 

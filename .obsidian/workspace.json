@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "012503ad6395a3b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "meme",
+                "query": "imgur",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -110,8 +122,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -131,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
               }
             }
           },
@@ -249,8 +260,9 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "ae6b3f06f7158d02",
+  "active": "f4d7db1d352742d7",
   "lastOpenFiles": [
+    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173344242.png",
@@ -261,7 +273,6 @@
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165649906.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165624410.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165549319.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165536522.png",
     "🕸️ UNSTRUCTURED/Documenting Activity.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
