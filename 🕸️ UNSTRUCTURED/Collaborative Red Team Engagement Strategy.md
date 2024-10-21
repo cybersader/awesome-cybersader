@@ -1,9 +1,15 @@
 ---
-aliases: 
-tags: 
+aliases:
+  - Purple Team Engagement Strategy
+tags:
+  - "#infosec"
+  - "#risk-management"
+  - red-team
+  - pentesting
+  - purple-team
 publish: true
 date created: Monday, October 21st 2024, 5:41 pm
-date modified: Monday, October 21st 2024, 5:53 pm
+date modified: Monday, October 21st 2024, 6:02 pm
 ---
 
 # Solving the Access Problem in Collaborative Pentest Engagements | Enable Pentester Accounts Without Alerting IT
