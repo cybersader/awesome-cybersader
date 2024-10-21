@@ -1,3 +1,4 @@
+- 2024-10-21 at 17h53 · [[Collaborative Red Team Engagement Strategy]]
 - 2024-10-20 at 19h36 · [[Media Hosting in Obsidian]]
 - 2024-10-20 at 17h35 · [[Cyber Memes]]
 - 2024-10-20 at 17h35 · [[📁 03 - Curations, Stacks]]

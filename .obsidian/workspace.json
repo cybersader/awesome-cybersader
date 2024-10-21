@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
+                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
               }
             }
           },
@@ -260,8 +260,10 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "f4d7db1d352742d7",
+  "active": "012503ad6395a3b3",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+    "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
     "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
@@ -300,8 +302,6 @@
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Cultivating Growth and Connection/Cultivating Growth and Connection.md",
     "📁 12 - Religion, Ontology, Philosophy/Untitled",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/All On Red/All On Red.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege/AD job functions - one group for least privilege.md",
-    "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Talkin Bout New Live 2024 WWHF",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege",

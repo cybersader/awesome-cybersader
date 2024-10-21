@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Collaborative Red Team Engagement Strategy",
+      "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
+    },
+    {
       "basename": "Media Hosting in Obsidian",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Planning Deadwood 2024 WWHF Trip",
       "path": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     }
   ],
   "omittedPaths": [],
