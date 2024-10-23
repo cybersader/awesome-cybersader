@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Lock Windows For Background Processes",
+      "path": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md"
+    },
+    {
+      "basename": "🕸️ Things I Learned Today",
+      "path": "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md"
+    },
+    {
       "basename": "Collaborative Red Team Engagement Strategy",
       "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
+    },
+    {
+      "basename": "📁 10 - Community",
+      "path": "📁 10 - Community/📁 10 - Community.md"
+    },
+    {
+      "basename": "📁 08 - Personal",
+      "path": "📁 08 - Personal/📁 08 - Personal.md"
     },
     {
       "basename": "Media Hosting in Obsidian",
@@ -183,22 +199,6 @@
     {
       "basename": "Laptop Health Check Tools",
       "path": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md"
-    },
-    {
-      "basename": "Obsidian Git Setup",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Git Setup.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "conflict-files-obsidian-git",
-      "path": "conflict-files-obsidian-git.md"
-    },
-    {
-      "basename": "Planning Deadwood 2024 WWHF Trip",
-      "path": "📁 10 - Community/Planning Deadwood 2024 WWHF Trip/Planning Deadwood 2024 WWHF Trip.md"
     }
   ],
   "omittedPaths": [],

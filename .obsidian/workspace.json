@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
+                "file": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
+                "file": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
+                "file": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
+                "file": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md"
               }
             }
           },
@@ -219,7 +219,7 @@
             }
           },
           {
-            "id": "ae8a156802ea440b",
+            "id": "819a01d2df616e18",
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
@@ -262,8 +262,13 @@
   },
   "active": "012503ad6395a3b3",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
+    "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md",
+    "🕸️ Things I Learned Today/Lock Windows For Background Processes.md",
+    "🕸️ Things I Learned Today",
     "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md",
+    "📁 10 - Community/📁 10 - Community.md",
+    "📁 08 - Personal/📁 08 - Personal.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
     "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
@@ -297,16 +302,11 @@
     "🕸️ UNSTRUCTURED/Community IT Support Setup.md",
     "🕸️ UNSTRUCTURED/Scalable Project Management.md",
     "📁 10 - Community/Cyber Community/Cyber Community.md",
-    "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md",
-    "🕸️ UNSTRUCTURED/2025 Cybersecurity Goals.md",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Cultivating Growth and Connection/Cultivating Growth and Connection.md",
     "📁 12 - Religion, Ontology, Philosophy/Untitled",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/All On Red/All On Red.md",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Talkin Bout New Live 2024 WWHF",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Hackening",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Hack the boardroom",
-    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense"
+    "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Hack the boardroom"
   ]
 }

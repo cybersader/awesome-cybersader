@@ -9,8 +9,13 @@ tags:
   - purple-team
 publish: true
 date created: Monday, October 21st 2024, 5:41 pm
-date modified: Monday, October 21st 2024, 6:02 pm
+date modified: Tuesday, October 22nd 2024, 7:49 pm
 ---
+
+# Should Collaborative Red Teams Ever Be Secretive to the IS Team?
+
+- I'm honestly not sure yet
+- [ ] Should Collaborative Red Teams Ever Be Secretive to the IS Team? 🔽 ➕ 2024-10-22
 
 # Solving the Access Problem in Collaborative Pentest Engagements | Enable Pentester Accounts Without Alerting IT
 
