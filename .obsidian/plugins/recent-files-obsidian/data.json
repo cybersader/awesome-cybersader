@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Fixing Toilets",
+      "path": "📁 20 - Home DIY/Fixing Toilets.md"
+    },
+    {
+      "basename": "Dealing with Asbestos",
+      "path": "📁 20 - Home DIY/Dealing with Asbestos.md"
+    },
+    {
+      "basename": "📁 20 - Home DIY",
+      "path": "📁 20 - Home DIY/📁 20 - Home DIY.md"
+    },
+    {
       "basename": "Lock Windows For Background Processes",
       "path": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Whey Protein Recipes",
       "path": "🕸️ UNSTRUCTURED/Whey Protein Recipes.md"
-    },
-    {
-      "basename": "Awesome Hard Disk Drives, NAS Hardware",
-      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
-    },
-    {
-      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
-    },
-    {
-      "basename": "Laptop Health Check Tools",
-      "path": "🕸️ UNSTRUCTURED/Laptop Health Check Tools.md"
     }
   ],
   "omittedPaths": [],

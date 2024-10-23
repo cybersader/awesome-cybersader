@@ -23,13 +23,13 @@ date modified: Tuesday, April 30th 2024, 10:35 am
 - Attempt #1
 	- Paste into Terminal > `Run as Administrator` > `del /F /Q %APPDATA%\Microsoft\Windows\Recent\*`
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations\*`
-		- ![](IMG-20240430103554922.png)
-		- ![](IMG-20240430103554956.png)
-		- ![](IMG-20240430103554995.png)
+		- ![](_attachments/IMG-20240430103554922.png)
+		- ![](_attachments/IMG-20240430103554956.png)
+		- ![](_attachments/IMG-20240430103554995.png)
 		- ProcessExplorer64 from [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) 
-			- ![](IMG-20240430103555042.png)
-			- ![](IMG-20240430103555106.png)
-			- ![](IMG-20240430103555159.png)
+			- ![](_attachments/IMG-20240430103555042.png)
+			- ![](_attachments/IMG-20240430103555106.png)
+			- ![](_attachments/IMG-20240430103555159.png)
 	- `del /F /Q %APPDATA%\Microsoft\Windows\Recent\CustomDestinations\*`
 - Seems to have worked so far
-	- ![](IMG-20240430103555186.png)
+	- ![](_attachments/IMG-20240430103555186.png)
