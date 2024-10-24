@@ -16,7 +16,9 @@
                 "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "GitHub + Obsidian + Notion - Digital Garden"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "⬇️ Cyber Content Ideas"
             }
           },
           {
@@ -40,7 +44,9 @@
                 "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Documenting Activity"
             }
           },
           {
@@ -52,7 +58,9 @@
                 "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Cyber Memes"
             }
           },
           {
@@ -64,11 +72,25 @@
                 "file": "📁 20 - Home DIY/Flooring.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Flooring"
+            }
+          },
+          {
+            "id": "4ce88cca3579e658",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -88,7 +110,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -103,7 +127,9 @@
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -111,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -119,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -142,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 20 - Home DIY/Flooring.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +180,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for GitHub + Obsidian + Notion - Digital Garden"
             }
           },
           {
@@ -159,10 +191,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 20 - Home DIY/Flooring.md",
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from GitHub + Obsidian + Notion - Digital Garden"
             }
           },
           {
@@ -173,7 +207,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -182,8 +218,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 20 - Home DIY/Flooring.md"
-              }
+                "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of GitHub + Obsidian + Notion - Digital Garden"
             }
           },
           {
@@ -191,7 +229,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -199,7 +239,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -207,7 +249,9 @@
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
-              "state": {}
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
             }
           },
           {
@@ -215,7 +259,9 @@
             "type": "leaf",
             "state": {
               "type": "ai-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "bot",
+              "title": "Fo2k Chat"
             }
           },
           {
@@ -223,7 +269,9 @@
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
-              "state": {}
+              "state": {},
+              "icon": "sparkle",
+              "title": "Fo2k Assistant"
             }
           }
         ],
@@ -260,7 +308,7 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "012503ad6395a3b3",
+  "active": "4ce88cca3579e658",
   "lastOpenFiles": [
     "📁 20 - Home DIY/Fixing Toilets.md",
     "📁 20 - Home DIY/Flooring.md",
