@@ -10,7 +10,7 @@ tags:
   - library-science
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, October 26th 2024, 5:26 pm
+date modified: Saturday, October 26th 2024, 5:52 pm
 ---
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
@@ -21,13 +21,18 @@ date modified: Saturday, October 26th 2024, 5:26 pm
 - https://hyperbolic.cloud/Knowledge/Knowledge+Management/Obsidian+Techniques
 - https://forum.obsidian.md/t/difficulties-in-developing-a-udc-or-ddc-classifier/78072
 
+- [Building a Second Brain: The Illustrated Notes](https://maggieappleton.com/basb)
+
+- [Obsidian Resources - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/obsidian-resources/81835
+- [An opinionated reflection on using folders, links, tags, and properties - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/an-opinionated-reflection-on-using-folders-links-tags-and-properties/78548) 
+
 - [CUT(ter) AWAY THE CHAOS OF YOUR VAULT WITH THIS ONE (two three four five six) SIMPLE METHOD(s) - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/cut-ter-away-the-chaos-of-your-vault-with-this-one-two-three-four-five-six-simple-method-s/33700) 
 	- [A system to organise your life • Johnny.Decimal](https://johnnydecimal.com/) 
 	- 
 
 - LYT obsidian - ideaverse?
 	- [Linking Your Thinking Workshop](https://www.linkingyourthinking.com/workshop) 
-	- 
+	- [Ideaverse for Obsidian](https://start.linkingyourthinking.com/ideaverse-for-obsidian) 
 
 - https://fortelabs.com/
 - [LIBRARIANSHIP STUDIES & INFORMATION TECHNOLOGY](https://www.librarianshipstudies.com/)
@@ -46,6 +51,8 @@ date modified: Saturday, October 26th 2024, 5:26 pm
 - Set the path in the linked-data-vocabularies tool
 - Then, query it by doing 'Ctrl + P' > LCSH > type in category
 - Apparently, the Breadcrumbs plugin can help facilitate use of this plugin as well
+- Not generating JSON files:
+	- ["Linked data helper" plugin by kometenstaub - Bug graveyard - Obsidian Forum](https://forum.obsidian.md/t/linked-data-helper-plugin-by-kometenstaub/28875) - probably hasn't been working for awhile now
 
 - **==id.loc.gov API - one related to "Linked Data" and Subject Headings==**
 	- Description:

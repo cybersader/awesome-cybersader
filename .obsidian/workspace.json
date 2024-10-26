@@ -259,7 +259,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -417,13 +418,13 @@
   },
   "active": "565ae413d4b96af2",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
+    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "Unconfirmed 290457.crdownload",
     "New folder",
     "names.madsrdf.jsonld/names.madsrdf.jsonld",
     "names.madsrdf.jsonld",
     "names.madsrdf.jsonld.gz",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
@@ -461,7 +462,6 @@
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
     "🕸️ UNSTRUCTURED/AI Ethics & Morality",
-    "📁 11 - Content Creation/Presentation Tools & Tech",
-    "📁 12 - Religion, Ontology, Philosophy/Untitled"
+    "📁 11 - Content Creation/Presentation Tools & Tech"
   ]
 }
