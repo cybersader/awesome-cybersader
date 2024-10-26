@@ -10,14 +10,30 @@ tags:
   - library-science
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, October 26th 2024, 3:41 pm
+date modified: Saturday, October 26th 2024, 5:26 pm
 ---
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
-# Links
+# Links Relating To Obsidian Vaults
 
 - https://forum.obsidian.md/t/cataloging-classification-information-science-pkms-and-you/10071
+- https://hyperbolic.cloud/Knowledge/Knowledge+Management/Obsidian+Techniques
+- https://forum.obsidian.md/t/difficulties-in-developing-a-udc-or-ddc-classifier/78072
+
+- [CUT(ter) AWAY THE CHAOS OF YOUR VAULT WITH THIS ONE (two three four five six) SIMPLE METHOD(s) - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/cut-ter-away-the-chaos-of-your-vault-with-this-one-two-three-four-five-six-simple-method-s/33700) 
+	- [A system to organise your life • Johnny.Decimal](https://johnnydecimal.com/) 
+	- 
+
+- LYT obsidian - ideaverse?
+	- [Linking Your Thinking Workshop](https://www.linkingyourthinking.com/workshop) 
+	- 
+
+- https://fortelabs.com/
+- [LIBRARIANSHIP STUDIES & INFORMATION TECHNOLOGY](https://www.librarianshipstudies.com/)
+	- [Controlled Vocabulary](https://www.librarianshipstudies.com/2020/03/controlled-vocabulary.html)
+	- [Library of Congress Subject Headings (LCSH)](https://www.librarianshipstudies.com/2018/01/library-of-congress-subject-headings-lcsh.html)
+	- [Linked data: The future of library cataloging (by OCLC)](https://www.librarianshipstudies.com/2024/06/linked-data-future-of-library.html)
 
 # Wiki Organization Methodologies, Taxonomies, Structures
 
@@ -26,6 +42,35 @@ date modified: Saturday, October 26th 2024, 3:41 pm
 - https://obsidian.md/plugins?search=congress
 - https://github.com/kometenstaub/linked-data-vocabularies
 	- Used library of congress taxonomy/folksonomy
+- Had to download the MADS/RDF JSONLD file from - https://id.loc.gov/download/
+- Set the path in the linked-data-vocabularies tool
+- Then, query it by doing 'Ctrl + P' > LCSH > type in category
+- Apparently, the Breadcrumbs plugin can help facilitate use of this plugin as well
+
+- **==id.loc.gov API - one related to "Linked Data" and Subject Headings==**
+	- Description:
+		- Each controlled vocabulary list has a resolvable URI, as does each data value within it. Ontologies for several major data element sets are also available. URIs accessible at id.loc.gov link to bibliographic descriptions and controlled vocabularies and the values within them. This data service does not provide access to the physical or electronic holdings of the Library.
+	- Links:
+		- [Additional APIs and Data Services | APIs for LoC.gov | Library of Congress](https://www.loc.gov/apis/additional-apis/)
+		- [Linked Data Service | Additional APIs and Data Services | APIs for LoC.gov | Library of Congress](https://www.loc.gov/apis/additional-apis/linked-data-service/)
+		- [Library of Congress Subject Headings - LC Linked Data Service: Authorities and Vocabularies | Library of Congress](https://id.loc.gov/authorities/subjects.html)
+		- [Data for Exploration | Library of Congress](https://data.labs.loc.gov/apis/) - shows all of the APIs, including the Linked Data Service one that is applicable here
+		- [Working Within Limits | JSON/YAML for LoC.gov | APIs for LoC.gov | Library of Congress](https://www.loc.gov/apis/json-and-yaml/working-within-limits/#rate-limits) - rate limiting for the API
+		- [Integrating Wikidata at the Library of Congress | The Signal](https://blogs.loc.gov/thesignal/2019/05/integrating-wikidata-at-the-library-of-congress/)
+		- 
+	- ==**Using the "Linked Data Service" API for Subject Headings**==
+		- [Technical Center - Downloads - LC Linked Data Service: Authorities and Vocabularies | Library of Congress](https://id.loc.gov/techcenter/) 
+		- [Technical Center - Searching - LC Linked Data Service: Authorities and Vocabularies | Library of Congress](https://id.loc.gov/techcenter/searching.html) 
+		- [ ] Extend or design an obsidian plugin that accomplishes using the LoC subject headings without needing to download it - utilize the id.loc.gov API ➕ 2024-10-26
+		
+- Related, but not the desired API - LoC.gov API
+	- [JSON/YAML for LoC.gov | APIs for LoC.gov | Library of Congress](https://www.loc.gov/apis/json-and-yaml/) - not for the "linked data" and (subsequently) the subject headings data though
+	- Github link - [LibraryOfCongress/data-exploration: Tutorials for working with Library of Congress collections data](https://github.com/LibraryOfCongress/data-exploration) 
+		- [Tutorials for Data Exploration — Tutorials for Data Exploration | GitHub.io](https://libraryofcongress.github.io/data-exploration/intro.html)
+
+# Classification Systems
+
+- [Universal Decimal Classification - Wikipedia](https://en.wikipedia.org/wiki/Universal_Decimal_Classification) 
 - 
 
 # Links

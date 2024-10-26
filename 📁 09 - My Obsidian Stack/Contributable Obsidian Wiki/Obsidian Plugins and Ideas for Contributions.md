@@ -16,6 +16,9 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 
 - https://obsidian-plugin-stats.ganesshkumar.com/
 - https://obsidianpluginstats.substack.com/
+- https://www.reddit.com/r/ObsidianMD/comments/10ilt1j/obsidian_plugin_statistics_website/
+	- https://nevernotmove.github.io/obsidian-stats
+	- https://github.com/nevernotmove/obsidian-stats
 - 
 
 # DROPZONE

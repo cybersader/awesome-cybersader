@@ -1,6 +1,8 @@
 # --- Obsidian --- #
 .trash/
 .obsidian/plugins/fileorganizer2000/data.json
+# ignore library of congress taxonomy subject heading names from linked-data-vocabularies plugin
+*madsrdf.jsonld*
 
 # --- VSCode --- #
 .vscode/*
@@ -78,10 +80,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-
-
-
 
 # Ignore Smart Connections folder
 .smart-connections
