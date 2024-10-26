@@ -1,3 +1,5 @@
+- 2024-10-26 at 16h07 · [[Linked Data Vocabulary - Testing]]
+- 2024-10-26 at 16h05 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-10-26 at 15h41 · [[Knowledge Organization]]
 - 2024-10-26 at 15h40 · [[⬇️ KnowEng Drop]]
 - 2024-10-26 at 15h09 · [[Building a Knowledgebase]]
@@ -75,7 +77,6 @@
 - 2024-10-06 at 15h45 · [[Decorating with Conference Stickers]]
 - 2024-10-06 at 15h13 · [[Persona Creation]]
 - 2024-10-05 at 21h50 · [[Cybersecurity Awareness Resources]]
-- 2024-10-04 at 20h58 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-10-04 at 19h37 · [[TrueNAS Scale Home Server]]
 - 2024-10-04 at 19h37 · [[Home Lab, Home Server]]
 - 2024-10-04 at 09h18 · [[NocoDB]]

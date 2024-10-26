@@ -3,12 +3,20 @@ aliases:
 tags: 
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Friday, October 4th 2024, 8:58 pm
+date modified: Saturday, October 26th 2024, 4:00 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
+
+
 - [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
+
+# Obsidian Plugin Sources
+
+- https://obsidian-plugin-stats.ganesshkumar.com/
+- https://obsidianpluginstats.substack.com/
+- 
 
 # DROPZONE
 

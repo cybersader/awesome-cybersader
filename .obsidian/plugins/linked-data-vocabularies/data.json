@@ -1,0 +1,17 @@
+{
+  "inputFolder": "",
+  "elementLimit": "100",
+  "broaderKey": "broader",
+  "narrowerKey": "narrower",
+  "relatedKey": "related",
+  "headingKey": "heading",
+  "altLabel": "altLabel",
+  "uriKey": "uri",
+  "lccKey": "lcc",
+  "broaderMax": "3",
+  "narrowerMax": "3",
+  "relatedMax": "3",
+  "lcSensitivity": "-10000",
+  "loadLcsh": true,
+  "enableWikilinks": false
+}
