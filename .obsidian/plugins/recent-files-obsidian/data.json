@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
+      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
+    },
+    {
+      "basename": "Building a Knowledgebase",
+      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md"
+    },
+    {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
       "basename": "Obsidian Dictionary and Grammar",
       "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
     },
@@ -27,10 +43,6 @@
     {
       "basename": "meeting_note",
       "path": "_FileOrganizer2000/Templates/meeting_note.md"
-    },
-    {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     },
     {
       "basename": "OL Threat Detection Landscape & Gaps",
@@ -187,18 +199,6 @@
     {
       "basename": "📁 17 - Knowledge Engineering",
       "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
-    },
-    {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
     }
   ],
   "omittedPaths": [],

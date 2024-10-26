@@ -7,14 +7,22 @@ tags:
   - taxonomies
   - taxonomy
   - wiki_structure
+  - library-science
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Thursday, June 20th 2024, 3:48 pm
+date modified: Saturday, October 26th 2024, 3:11 pm
 ---
+
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
+
 # Wiki Organization Methodologies, Taxonomies, Structures
-- 
+
+- https://obsidian.md/plugins?search=congress
+- https://github.com/kometenstaub/linked-data-vocabularies
+	- Used library of congress taxonomy/folksonomy
+
 # Links
+
 2024-06-20
 - [latch system wiki obsidian - Google Search](https://www.google.com/search?q=latch+system+wiki+obsidian&sca_upv=1)
 - [The Ultimate Folder System: A quixotic journey to ACE - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/the-ultimate-folder-system-a-quixotic-journey-to-ace/63483)
