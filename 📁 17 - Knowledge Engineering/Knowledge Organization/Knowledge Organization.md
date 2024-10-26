@@ -10,16 +10,23 @@ tags:
   - library-science
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, October 26th 2024, 3:11 pm
+date modified: Saturday, October 26th 2024, 3:41 pm
 ---
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
+# Links
+
+- https://forum.obsidian.md/t/cataloging-classification-information-science-pkms-and-you/10071
+
 # Wiki Organization Methodologies, Taxonomies, Structures
+
+## Organizing Using the Library of Congress Subject Headings
 
 - https://obsidian.md/plugins?search=congress
 - https://github.com/kometenstaub/linked-data-vocabularies
 	- Used library of congress taxonomy/folksonomy
+- 
 
 # Links
 

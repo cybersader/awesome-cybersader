@@ -9,6 +9,14 @@
       "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
     },
     {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
       "basename": "Building a Knowledgebase",
       "path": "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md"
     },
@@ -177,10 +185,6 @@
       "path": "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md"
     },
     {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
       "basename": "AI Ethics & Morality",
       "path": "🕸️ UNSTRUCTURED/AI Ethics & Morality/AI Ethics & Morality.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Cybersecurity Culture Building",
       "path": "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md"
-    },
-    {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
     }
   ],
   "omittedPaths": [],
