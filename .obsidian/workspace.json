@@ -126,7 +126,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -282,7 +283,7 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "ae6b3f06f7158d02",
+  "active": "c07d9fad4dc75148",
   "lastOpenFiles": [
     "📁 20 - Home DIY/Flooring.md",
     "📁 20 - Home DIY/Fixing Toilets.md",
