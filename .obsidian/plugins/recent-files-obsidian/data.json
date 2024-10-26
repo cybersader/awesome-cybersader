@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Run",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+    },
+    {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Presentation Tools & Tech",
       "path": "📁 11 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
-    },
-    {
-      "basename": "Backups Tech",
-      "path": "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md"
     }
   ],
   "omittedPaths": [],

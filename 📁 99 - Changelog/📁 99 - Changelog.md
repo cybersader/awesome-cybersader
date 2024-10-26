@@ -1,3 +1,4 @@
+- 2024-10-26 at 17h54 · [[Obsidian Run]]
 - 2024-10-26 at 17h52 · [[Knowledge Organization]]
 - 2024-10-26 at 17h51 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-10-26 at 16h07 · [[Linked Data Vocabulary - Testing]]
@@ -378,7 +379,6 @@
 - 2024-04-26 at 15h22 · [[Folder Notes & Publish]]
 - 2024-04-26 at 15h20 · [[Autocompletion]]
 - 2024-04-26 at 15h16 · [[Astro with Content Layer]]
-- 2024-04-26 at 13h41 · [[Obsidian Run]]
 - 2024-04-26 at 13h40 · [[Auto Publish For Obsidian Publish]]
 - 2024-04-26 at 13h19 · [[Inside Job - 2008 Financial Crisis]]
 - 2024-04-26 at 13h17 · [[Money Explained]]

@@ -76,9 +76,23 @@
               "icon": "lucide-file",
               "title": "Knowledge Organization"
             }
+          },
+          {
+            "id": "a0f5b90f83f96766",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Run"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "c9d570a7abffbe91",
@@ -416,10 +430,10 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "565ae413d4b96af2",
+  "active": "a0f5b90f83f96766",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "Unconfirmed 290457.crdownload",
     "New folder",
     "names.madsrdf.jsonld/names.madsrdf.jsonld",
