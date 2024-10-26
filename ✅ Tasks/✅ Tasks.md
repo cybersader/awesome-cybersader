@@ -11,7 +11,7 @@ tags:
   - DO-TODO
 publish: true
 date created: Thursday, April 25th 2024, 3:59 pm
-date modified: Saturday, October 26th 2024, 2:17 pm
+date modified: Saturday, October 26th 2024, 2:53 pm
 ---
 
 # Task Options
@@ -29,6 +29,7 @@ date modified: Saturday, October 26th 2024, 2:17 pm
 not done
 show urgency
 sort by urgency
+path does not include _FileOrganizer2000
 ```
 
 # COMPLETED ✅

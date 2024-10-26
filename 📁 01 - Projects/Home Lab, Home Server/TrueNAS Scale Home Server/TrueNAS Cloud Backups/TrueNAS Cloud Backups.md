@@ -2,7 +2,7 @@
 aliases: 
 publish: true
 date created: Sunday, March 31st 2024, 12:27 pm
-date modified: Monday, August 12th 2024, 10:04 pm
+date modified: Saturday, October 26th 2024, 2:56 pm
 tags:
   - NAS
   - TrueNAS
@@ -160,4 +160,5 @@ The gist:
 - Editing the Cloud Sync task to "follow symlinks" and see if that fixes it
 	- ![](_attachments/TrueNAS%20Cloud%20Backups/IMG-20240812220429056.png)
 
-- [ ] Solve cloud sync issues in TrueNAS Scale ➕ 2024-08-11
+- [x] Solve cloud sync issues in TrueNAS Scale ➕ 2024-08-11 ✅ 2024-10-26
+- The issue was that iX-Systems doesn't work with Storj well until the Electric Eel 24.10 release of TrueNAS Scale - [iX-Storj Overcharging or Overusing Storage](../iX-Storj%20Overcharging%20or%20Overusing%20Storage/iX-Storj%20Overcharging%20or%20Overusing%20Storage.md)

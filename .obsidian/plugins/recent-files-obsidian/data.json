@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Dictionary and Grammar",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
+    },
+    {
+      "basename": "✅ Tasks",
+      "path": "✅ Tasks/✅ Tasks.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
+      "basename": "Temporary Files Filling Up Drive",
+      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "meeting_note",
+      "path": "_FileOrganizer2000/Templates/meeting_note.md"
+    },
+    {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     },
@@ -53,20 +81,12 @@
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.md"
     },
     {
-      "basename": "✅ Tasks",
-      "path": "✅ Tasks/✅ Tasks.md"
-    },
-    {
       "basename": "iX-Storj Overcharging or Overusing Storage",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
     },
     {
       "basename": "Scheduled Backups, Scheduled Downtime",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     },
     {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
@@ -179,26 +199,6 @@
     {
       "basename": "Scalable Project Management",
       "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Cyber Community",
-      "path": "📁 10 - Community/Cyber Community/Cyber Community.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "2025 Cybersecurity Goals",
-      "path": "🕸️ UNSTRUCTURED/2025 Cybersecurity Goals.md"
-    },
-    {
-      "basename": "Cultivating Growth and Connection",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Cultivating Growth and Connection/Cultivating Growth and Connection.md"
-    },
-    {
-      "basename": "All On Red",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/All On Red/All On Red.md"
     }
   ],
   "omittedPaths": [],
