@@ -22,6 +22,34 @@
             }
           },
           {
+            "id": "ae6b3f06f7158d02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cyber Memes"
+            }
+          },
+          {
+            "id": "fbb402528227be8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OL Threat Detection Landscape & Gaps"
+            }
+          },
+          {
             "id": "865bcb938f3e1ed1",
             "type": "leaf",
             "state": {
@@ -48,23 +76,9 @@
               "icon": "lucide-file",
               "title": "Documenting Activity"
             }
-          },
-          {
-            "id": "ae6b3f06f7158d02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cyber Memes"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,12 +140,11 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 375.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -283,8 +296,28 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "c07d9fad4dc75148",
+  "active": "fbb402528227be8c",
   "lastOpenFiles": [
+    "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-5.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-4.png",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.md",
+    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.svg",
+    "✅ Tasks/✅ Tasks.md",
+    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
+    "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 20 - Home DIY/Flooring.md",
     "📁 20 - Home DIY/Fixing Toilets.md",
     "📁 20 - Home DIY/Dealing with Asbestos.md",
@@ -297,35 +330,14 @@
     "📁 10 - Community/📁 10 - Community.md",
     "📁 08 - Personal/📁 08 - Personal.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md",
-    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173344242.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020171902130.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020171840053.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020171820192.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020171808988.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165649906.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165624410.png",
-    "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020165549319.png",
     "🕸️ UNSTRUCTURED/Documenting Activity.md",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
-    "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
     "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md",
     "📁 11 - Content Creation/📁 11 - Content Creation.md",
-    "📁 11 - Content Creation/Persona Creation/Persona Creation.md",
-    "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md",
-    "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md",
-    "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md",
-    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
-    "🕸️ UNSTRUCTURED/AI Ethics & Morality/AI Ethics & Morality.md",
-    "📁 11 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md",
     "🕸️ UNSTRUCTURED/AI Ethics & Morality",
-    "📁 03 - Curations, Stacks/Backups Tech/Backups Tech.md",
     "📁 11 - Content Creation/Presentation Tools & Tech",
-    "📁 04 - Organizational Cyber/Cybersecurity Culture Building/Cybersecurity Culture Building.md",
-    "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📁 12 - Religion, Ontology, Philosophy/Untitled",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Talkin Bout New Live 2024 WWHF",
     "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration",

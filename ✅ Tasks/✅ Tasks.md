@@ -11,28 +11,34 @@ tags:
   - DO-TODO
 publish: true
 date created: Thursday, April 25th 2024, 3:59 pm
-date modified: Saturday, April 27th 2024, 8:48 pm
+date modified: Saturday, October 26th 2024, 2:17 pm
 ---
 
 # Task Options
+
 > [!info] 2 options - Dataview Queries or Tasks Queries
 
 - Dataview example
 	dataview
 	TASK
 	SORT urgency DESC
+
 # Task List 
+
 ```tasks
 not done
 show urgency
 sort by urgency
 ```
+
 # COMPLETED ✅
+
 ```tasks
 done
 ```
 
 # Task Plugins, Queries
+
 - [Dataview - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Other+Plugins/Dataview) 
 - [About Queries - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Queries/About+Queries)
 - [Dataview - Obsidian Publish - Obsidian TTRPG Tutorials](https://obsidianttrpgtutorials.com/Obsidian+TTRPG+Tutorials/Plugin+Tutorials/Dataview/Dataview+-+Obsidian+Publish) 

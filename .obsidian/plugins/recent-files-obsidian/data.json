@@ -1,8 +1,80 @@
 {
   "recentFiles": [
     {
+      "basename": "OL Threat Detection Landscape & Gaps",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md"
+    },
+    {
+      "basename": "From Other Wiki",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
+    },
+    {
+      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png"
+    },
+    {
+      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png"
+    },
+    {
+      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png"
+    },
+    {
+      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5.png"
+    },
+    {
+      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png"
+    },
+    {
+      "basename": "IMG-OL Threat Detection Landscape & Gaps-2024063021-5",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-5.png"
+    },
+    {
+      "basename": "IMG-OL Threat Detection Landscape & Gaps-2024063021-4",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-4.png"
+    },
+    {
+      "basename": "SecOps Stack & Resources",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
+    },
+    {
+      "basename": "oCISO Wiki",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md"
+    },
+    {
+      "basename": "Mitre St&CK Architecture by Ben",
+      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.md"
+    },
+    {
+      "basename": "✅ Tasks",
+      "path": "✅ Tasks/✅ Tasks.md"
+    },
+    {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
+      "basename": "iX-Storj Overcharging or Overusing Storage",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
+    },
+    {
+      "basename": "Scheduled Backups, Scheduled Downtime",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     },
     {
       "basename": "Flooring",
@@ -47,14 +119,6 @@
     {
       "basename": "Documenting Activity",
       "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     },
     {
       "basename": "⬇️ Content Creation Stack Ideas",
@@ -135,70 +199,6 @@
     {
       "basename": "All On Red",
       "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/All On Red/All On Red.md"
-    },
-    {
-      "basename": "AD job functions - one group for least privilege",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/AD job functions - one group for least privilege/AD job functions - one group for least privilege.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "WWHF 2024 - Deadwood",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md"
-    },
-    {
-      "basename": "Talkin Bout New Live 2024 WWHF",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Talkin Bout New Live 2024 WWHF/Talkin Bout New Live 2024 WWHF.md"
-    },
-    {
-      "basename": "Golden Age of Cybersecurity Knowledge and Collaboration",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Golden Age of Cybersecurity Knowledge and Collaboration/Golden Age of Cybersecurity Knowledge and Collaboration.md"
-    },
-    {
-      "basename": "The Hackening",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Hackening/The Hackening.md"
-    },
-    {
-      "basename": "Hack the boardroom",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Hack the boardroom/Hack the boardroom.md"
-    },
-    {
-      "basename": "Red for Blue - offense for defense",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense/Red for Blue - offense for defense.md"
-    },
-    {
-      "basename": "When I grow up I wanna be a script kiddie",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/When I grow up I wanna be a script kiddie/When I grow up I wanna be a script kiddie.md"
-    },
-    {
-      "basename": "Risk AIssessment Framework",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Risk AIssessment Framework/Risk AIssessment Framework.md"
-    },
-    {
-      "basename": "Victims Being Used for C2",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Victims Being Used for C2/Victims Being Used for C2.md"
-    },
-    {
-      "basename": "The Medieval Mindset in Cybersecurity",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/The Medieval Mindset in Cybersecurity/The Medieval Mindset in Cybersecurity.md"
-    },
-    {
-      "basename": "NSA - Never Say Anything",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/NSA - Never Say Anything/NSA - Never Say Anything.md"
-    },
-    {
-      "basename": "Demystifying Deep Fakes",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Demystifying Deep Fakes/Demystifying Deep Fakes.md"
-    },
-    {
-      "basename": "Tackling the AI Spin Cycle",
-      "path": "📁 05 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Tackling the AI Spin Cycle/Tackling the AI Spin Cycle.md"
-    },
-    {
-      "basename": "Framework Mapping",
-      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     }
   ],
   "omittedPaths": [],

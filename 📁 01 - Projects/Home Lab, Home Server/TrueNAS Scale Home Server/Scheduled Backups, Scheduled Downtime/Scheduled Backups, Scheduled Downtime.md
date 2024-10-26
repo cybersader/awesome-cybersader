@@ -12,10 +12,13 @@ tags:
   - home/server/power_saving
 publish: true
 date created: Sunday, June 16th 2024, 9:19 pm
-date modified: Sunday, August 11th 2024, 1:50 pm
+date modified: Saturday, October 26th 2024, 1:56 pm
 ---
 
+[iX-Storj Overcharging or Overusing Storage](../iX-Storj%20Overcharging%20or%20Overusing%20Storage/iX-Storj%20Overcharging%20or%20Overusing%20Storage.md) - **solution to most issues actually relates to this issue**
 [Home Server Power](../Home%20Server%20Power/Home%20Server%20Power.md) 
+
+> [!tldr] Most of the information, I found out, was really due to TrueNAS Scale not having a good backup solution for iX-Storj until the later 24.10 version
 
 # Links
 

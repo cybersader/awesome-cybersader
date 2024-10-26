@@ -1,17 +1,30 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Sunday, June 30th 2024, 9:50 pm
+date modified: Saturday, October 26th 2024, 2:21 pm
+---
 Trying to figure out gaps in detection.
-# Tech Stack
-![](__attachments/Detection%20Engineering/IMG-OL%20Threat%20Detection%20Landscape%20&%20Gaps-2024063021.png)
+
 # Detection Gap Analysis
+
 ## DeTT&CT Overview & Methods
+
 ![](__attachments/Detection%20Engineering/IMG-OL%20Threat%20Detection%20Landscape%20&%20Gaps-2024063021-4.png)
+
 ## Detailed Gap Analysis Process
+
 ### Gather Data Sources
 
 #### Obtain Tech Stack and All Types of Security Events/Logs
+
 - Gather sensors/logs and security tech stack
 
 - Initially, the team gathers examples, files, configs, and other general knowledge or information about all the systems used for threat detections.  
+
 #### Use Dettectinator and DETT&CT Editor to Initialize ATT&CK YAML
+
 - Notice there is no standard for these data sources.  This is all subjective. 
 	- Use Mitre Attack
 - This information can then be put into a DeTT&CT YAML via both...
@@ -22,6 +35,7 @@ Trying to figure out gaps in detection.
 ### Score Data Utility, Visibility, and Map Detections to Mitre
 
 #### Decide on YAML File Approach
+
 - Start with
 	- mapping and scoring detections
 	- OR
@@ -31,13 +45,16 @@ Trying to figure out gaps in detection.
 	- data_source_administration_Windows-workstations.yaml
 
 #### Prioritize on Techniques Based on Additional Intel
+
 - Utilize intel for prioritization
 	- The organization can use various threat intel sources to find APTs that apply to their company or vertical
 	- Use commands to find which data sources in ATT&CK cover the most techniques or ones you care about
 		- https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#which-data-source-are-covering-the-most-techniques 
+
 #### Scoring - Data Sources by Data Quality and Utility
 
 #### Scoring - Visibility per ATT&CK Technique
+
 - based on data source x data quality
 
 https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-visibility
@@ -48,20 +65,27 @@ https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-visi
 		- You do have a certain level of visibility on a technique. But this is based on a data source currently not mentioned within MITRE ATT&CK for that particular technique.
 
 	- Visibility scores are rated from 0 to 4. You can find the explanation of the scores here: [visibility scores](https://github.com/rabobank-cdc/DeTTECT/wiki/Visibility-scoring). Use the score that fits best. It is possible to have multiple scores per technique that apply to different systems using the [`applicable_to`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#visibility-object) property. (Please note that within the same technique, a system can only be part of one `applicable_to` key-value pair). In addition, you can keep track of changes in the scores by having multiple [`score` objects](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#score-object) within a [`score_logbook`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#visibility-object)
+
 #### Look at Visibility Coverage
+
 - https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#visibility-coverage
 
 #### Score detection and determine detection coverage - per technique
+
 - https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-detection-and-determine-your-detection-coverage 
 	- Determine your detection score per technique in the [technique administration YAML file](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2). This is a manual exercise. Detection scores are rated from -1 to 5. The explanation of the scores can be found here: [detection scores](https://github.com/rabobank-cdc/DeTTECT/wiki/Detection-scoring). Use the score that fits best. It is possible to have multiple scores per technique that apply to different systems using the [`applicable_to`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#detection-object) property. (Please note that within the same technique, a system can only be part of one `applicable_to` key-value pair). In addition, you can keep track of changes in the scores by having multiple [`score` objects](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#score-object) within a [`score_logbook`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#detection-object)
 
 	- A next step can be to generate an [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/#comment_underline=false&metadata_underline=false) layer file based on your scores you have [determined](https://github.com/rabobank-cdc/DeTTECT/wiki/Detection-coverage) per technique in the [YAML administration file](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2). The detection scores in the YAML file are also used to colour the techniques in the layer file.
+
 ### Analyze Detection Gaps
+
 - Summarize detection gaps from the ATT&CK Navigator
 	- use overlays and combinations of layers
 
 ## Tech Stack - Data Source, Sensor, Platform, and Collection Layer Curation (Coverage for Techniques per Tool)
+
 ### Tech
+
 - Sysmon
 	- Use a sysmon config file with dettectinator to approximate coverage
 - SentinelOne
@@ -88,7 +112,9 @@ https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-visi
 	- 
 - VMware NSX
 	- 
+
 ### Dettectinator
+
 Currently for detections, we have plugins for the following tools:
 
 - Microsoft Sentinel: Analytics Rules (API)
@@ -111,8 +137,11 @@ For data sources, you can use the following plugins:
 - Sentinel Window Security Auditing: event logging (based on OSSEM and EventID's found in your logging)
 - CSV: any csv with ATT&CK data sources and products (file)
 - Excel: any Excel file with ATT&CK data sources and products (file)
+
 ## Detailed Gap Analysis Implementation
+
 ### Large-Scale Approach
+
 - Gather tech stack 
 - Use DeTT&CT Editor and dettectinator to fill in current coverage from tools we are already using
 	- Use dettectinator, to make plugins and use them to ingest detection content and configs to automatically make DeTTECT YAML files
@@ -130,12 +159,15 @@ For data sources, you can use the following plugins:
 		- Sysmon config + dettectinator
 			- generate coverage map from sysmon config file
 	- Choose event IDs to use with sysmon or other sensors
+
 ### Security Tech Stack, Dettectinator
+
 > Gather Security Data Sources & Static Sensor Content
 
 #### Curate Tech Stack and Security Events/Logs/Sensors
 
 ##### Tech Stack
+
 - Sysmon
 - SentinelOne
 - Abnormal
@@ -155,7 +187,9 @@ For data sources, you can use the following plugins:
 	- Azure
 	- AWS
 	- GCP
+
 ##### Generate YAMLs for DETT&CT with Dettectinator - Only for certain detection content (e.g. Sysmon)
+
 - Only a sysmon config is applicable here
 - Find a sysmon config as an example for what you will use
 	- https://github.com/blackhillsinfosec/EventLogging/blob/master/DEFCON3/sysmon/sysmonconfig.xml - defcon 3 sysmonconfig from BHIS
@@ -174,6 +208,7 @@ For data sources, you can use the following plugins:
 			- ![](__attachments/Detection%20Engineering/IMG-OL%20Threat%20Detection%20Landscape%20&%20Gaps-2024063021-5.png)
 	- Run command
 		- `(.venv) C:\Users\Benjamin.Rader\Documents\Tools\dettectinator>python dettectinator\dettectinator.py -c examples\config.json -s "C:\Users\Benjamin.Rader\Documents\Tools\cti"`
+
 #### Sysmon Config Coverage - Use Dettectinator and DETT&CT Editor to Initialize ATT&CK YAML and Navigator Layer - Dettectinator Compatible Detection Content Only
 
 - This information can then be put into a DeTT&CT YAML via both...
@@ -193,18 +228,24 @@ For data sources, you can use the following plugins:
 	- 
 
 #### Curate Existing MITRE ATT&CK heatmaps for ATT&CK Navigator
+
 ##### Misc Heatmaps
+
 - [https://github.com/center-for-threat-informed-defense/sensor-mappings-to-attack](https://github.com/center-for-threat-informed-defense/sensor-mappings-to-attack)
 	- https://github.com/center-for-threat-informed-defense/sensor-mappings-to-attack/tree/main/mappings/layers/enterprise
 - [https://github.com/center-for-threat-informed-defense/attack_to_cve](https://github.com/center-for-threat-informed-defense/attack_to_cve)
 - [https://github.com/center-for-threat-informed-defense/security-stack-mappings](https://github.com/center-for-threat-informed-defense/security-stack-mappings)
+
 ##### Mitre Engenuity ATT&CK Evals
+
 - Rapid7 and SentinelOne
 	- https://attackevals.mitre-engenuity.org/results/enterprise?vendor=rapid7&vendor=sentinelone&evaluation=wizard-spider-sandworm&scenario=1
 	- 
 - Outdated Attack Evals Booklet
 	- [https://attackevalscdnendpoint.azureedge.net/publicsiteimages/Using-Results-to-Evaluate-Endpoint-Detection-Products_Booklet.pdf](https://attackevalscdnendpoint.azureedge.net/publicsiteimages/Using-Results-to-Evaluate-Endpoint-Detection-Products_Booklet.pdf)
+
 ##### By Security Tech
+
 - Atomic Red Team
 	- [ATT&CK Coverage - Explore Atomic Red Team](https://atomicredteam.io/coverage/) 
 - Sysmon
@@ -248,10 +289,13 @@ For data sources, you can use the following plugins:
 		- https://github.com/center-for-threat-informed-defense/security-stack-mappings/blob/main/mappings/AWS/layers
 	- GCP
 		- https://github.com/center-for-threat-informed-defense/security-stack-mappings/blob/main/mappings/GCP/layers
+
 ### Score Detections and Visibility of Sensors with DeTTECT GUI
+
 > Evaluate Sensor Content, Score Data Utility, Visibility, and Map Detections to Mitre
 
 #### Decide on DeTT&CT YAML File Approach
+
 - Start with
 	- data sources and data quality
 	- OR
@@ -260,10 +304,13 @@ For data sources, you can use the following plugins:
 - Single YAML file approach for DeTT&CT Editor to ATT&CK Navigator with techniques and data sources
 	- technique_administration_Windows-workstations.yaml
 	- data_source_administration_Windows-workstations.yaml
+
 #### Curate and Evaluate Data Sources into DeTTECT YAML with GUI
+
 > Use existing Mitre ATT&CK heatmaps, communicate with SMEs , map product/sensor/security tools to data sources that they provide intel and detection on.
 
 ##### SentinelOne Data Sources
+
 - Creating a tool in jsonaut to parse Mitre evals into DeTTECT YAML files
 	- https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-data-sources 
 	- https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques
@@ -277,7 +324,9 @@ For data sources, you can use the following plugins:
 		- Issue with keys that have null values or empty arrays (not showing up)
 	- Thirdly, 
 		- Map the flattened data back into a new YAML for DeTTECT by using a schema
+
 ###### CSV to YAML Mapper for JSONAUT
+
 - csv_to_yaml_mapper pseudocode
 	- Open csv file as pandas dataframe
 	- Process the schema to get data about structure so that the dataframe and CSV data can be restructured
@@ -520,6 +569,7 @@ schema example:
 ```
 
 #### Evaluate Sensors Using DeTT&CT
+
 >Prioritize on Techniques and Data Sources Based on Additional Intel
 
 - Intel and Mitre Stats
@@ -542,6 +592,7 @@ schema example:
 #### Scoring - Data Sources by Data Quality and Utility
 
 #### Scoring - Visibility per ATT&CK Technique
+
 - based on data source x data quality
 
 https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-visibility
@@ -552,20 +603,27 @@ https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-visi
 		- You do have a certain level of visibility on a technique. But this is based on a data source currently not mentioned within MITRE ATT&CK for that particular technique.
 
 	- Visibility scores are rated from 0 to 4. You can find the explanation of the scores here: [visibility scores](https://github.com/rabobank-cdc/DeTTECT/wiki/Visibility-scoring). Use the score that fits best. It is possible to have multiple scores per technique that apply to different systems using the [`applicable_to`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#visibility-object) property. (Please note that within the same technique, a system can only be part of one `applicable_to` key-value pair). In addition, you can keep track of changes in the scores by having multiple [`score` objects](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#score-object) within a [`score_logbook`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#visibility-object)
+
 #### Look at Visibility Coverage
+
 - https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#visibility-coverage
 
 #### Score detection and determine detection coverage - per technique
+
 - https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#score-detection-and-determine-your-detection-coverage 
 	- Determine your detection score per technique in the [technique administration YAML file](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2). This is a manual exercise. Detection scores are rated from -1 to 5. The explanation of the scores can be found here: [detection scores](https://github.com/rabobank-cdc/DeTTECT/wiki/Detection-scoring). Use the score that fits best. It is possible to have multiple scores per technique that apply to different systems using the [`applicable_to`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#detection-object) property. (Please note that within the same technique, a system can only be part of one `applicable_to` key-value pair). In addition, you can keep track of changes in the scores by having multiple [`score` objects](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#score-object) within a [`score_logbook`](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2#detection-object)
 
 	- A next step can be to generate an [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/#comment_underline=false&metadata_underline=false) layer file based on your scores you have [determined](https://github.com/rabobank-cdc/DeTTECT/wiki/Detection-coverage) per technique in the [YAML administration file](https://github.com/rabobank-cdc/DeTTECT/wiki/YAML-administration-techniques_v1_2). The detection scores in the YAML file are also used to colour the techniques in the layer file.
+
 ### Analyze Detection Gaps
+
 - Summarize detection gaps from the ATT&CK Navigator:
 	- 
 - Advanced searching and filtering based on detection location / collection layer / log source
 	- 
+
 ## Links
+
 - [DeTT&CT Editor](https://rabobank-cdc.github.io/dettect-editor/#/home) 
 - [How to use the framework · rabobank-cdc/DeTTECT Wiki](https://github.com/rabobank-cdc/DeTTECT/wiki/How-to-use-the-framework#which-data-source-are-covering-the-most-techniques) 
 - [rabobank-cdc/DeTTECT: Detect Tactics, Techniques & Combat Threats](https://github.com/rabobank-cdc/DeTTECT) 
