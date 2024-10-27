@@ -7,6 +7,7 @@ date modified: Saturday, October 26th 2024, 10:03 pm
 ---
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+[Obsidian Run Testing](../../📦%20VAULT%20SANDBOX%20TESTING/Obsidian%20Run%20Testing.md)
 
 >[!info] Awesome plugin from Yomaru Hananoshika
 
@@ -14,6 +15,10 @@ This plugin is an abstraction that can be used to generate markdown potentially 
 
 - [ ] Figure out how to get run to work on schedule or when linting ➕ 2024-04-26
 
+# Turning Plugins into Markdown For Obsidian Publish
+
+- Install the plugin "Obsidian Run" and the plugin "Custom Save"
+- 
 # Running Dataview Queries to Generate Markdown for Obsidian Publish
 
 - [Clarifying Question: Does this support DQL? · Issue #21 · HananoshikaYomaru/obsidian-run](https://github.com/HananoshikaYomaru/obsidian-run/issues/21) 
