@@ -33,7 +33,6 @@
   "note-refactor-obsidian",
   "omnisearch",
   "obsidian-plugin-groups",
-  "quickadd",
   "recent-files-obsidian",
   "size-history",
   "obsidian-tasks-plugin",
@@ -41,5 +40,6 @@
   "obsidian-timestamper",
   "various-complements",
   "ytranscript",
-  "obsidian-regex-replace"
+  "obsidian-regex-replace",
+  "custom-save"
 ]

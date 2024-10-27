@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, April 25th 2024, 9:32 pm
-date modified: Saturday, October 26th 2024, 10:03 pm
+date modified: Saturday, October 26th 2024, 10:50 pm
 ---
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
@@ -18,7 +18,11 @@ This plugin is an abstraction that can be used to generate markdown potentially 
 # Turning Plugins into Markdown For Obsidian Publish
 
 - Install the plugin "Obsidian Run" and the plugin "Custom Save"
+- Activate both plugins
+- To make sure it doesn't break other plugins, I instead set the "Save file" back to Ctrl + S and changed Custom Save to use Ctrl + Alt + S
+- You only need \%\% run start 3+4 \%\%
 - 
+
 # Running Dataview Queries to Generate Markdown for Obsidian Publish
 
 - [Clarifying Question: Does this support DQL? · Issue #21 · HananoshikaYomaru/obsidian-run](https://github.com/HananoshikaYomaru/obsidian-run/issues/21) 

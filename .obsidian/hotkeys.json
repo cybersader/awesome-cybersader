@@ -196,6 +196,15 @@
   "obsidian-excalidraw-plugin:save": [
     {
       "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:save-file": [
+    {
+      "modifiers": [
         "Mod"
       ],
       "key": "S"
