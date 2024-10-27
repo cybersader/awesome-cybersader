@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Run",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
+      "basename": "Obsidian Run",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+    },
+    {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "CPEs for Future CISSP",
+      "path": "🕸️ UNSTRUCTURED/CPEs for Future CISSP.md"
     },
     {
       "basename": "📁 17 - Knowledge Engineering",
@@ -187,18 +199,6 @@
     {
       "basename": "Cyber Training, CTFs",
       "path": "📁 04 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
-    },
-    {
-      "basename": "Awesome CTF Resources",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md"
-    },
-    {
-      "basename": "AI Ethics & Morality",
-      "path": "🕸️ UNSTRUCTURED/AI Ethics & Morality/AI Ethics & Morality.md"
-    },
-    {
-      "basename": "Presentation Tools & Tech",
-      "path": "📁 11 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
     }
   ],
   "omittedPaths": [],

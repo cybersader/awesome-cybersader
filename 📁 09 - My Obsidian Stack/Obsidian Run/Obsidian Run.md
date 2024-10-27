@@ -15,5 +15,14 @@ This plugin is an abstraction that can be used to generate markdown potentially 
 # Running Dataview Queries to Generate Markdown for Obsidian Publish
 
 - [Clarifying Question: Does this support DQL? · Issue #21 · HananoshikaYomaru/obsidian-run](https://github.com/HananoshikaYomaru/obsidian-run/issues/21) 
-- 
+
+# Example: For Tasks Query 
+
+Is there a way to use "Run" to generate markdown from a "Tasks" query like dataview or no? If you have a workaround to generate markdown or HTML from this, I'm all ears.
+
+---
+Dev:
+
+1. Currently no, I didn't implement a tasks helper. I only implement `dv` helper. you can auto generate Dataview to markdown like this
+
 

@@ -3,12 +3,13 @@ aliases:
 tags:
   - Curations
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Monday, September 30th 2024, 10:10 am
+date modified: Saturday, October 26th 2024, 9:41 pm
 publish: true
 ---
 
 [Financial Sector & Cyber](../Financial%20Sector%20&%20Cyber/Financial%20Sector%20&%20Cyber.md) 
 [📁 03 - Curations, Stacks](../../📁%2003%20-%20Curations,%20Stacks/📁%2003%20-%20Curations,%20Stacks.md) 
+[Awesome Anime](../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Anime/Awesome%20Anime.md)
 
 Subfolders:
 %% Begin Waypoint %%
@@ -30,6 +31,8 @@ Subfolders:
 - [The Complete List of Hacker And Cybersecurity Movies](https://cybersecurityventures.com/movies-about-cybersecurity-and-hacking/)
 
 # Hacking, Cybercrime, Internet, Cyberwar
+
+- The Trillion Game - [Awesome Anime](../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Anime/Awesome%20Anime.md)
 
 ## Nonfiction
 

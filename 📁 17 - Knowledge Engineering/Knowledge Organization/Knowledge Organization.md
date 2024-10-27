@@ -10,7 +10,7 @@ tags:
   - library-science
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, October 26th 2024, 5:52 pm
+date modified: Saturday, October 26th 2024, 9:36 pm
 ---
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
@@ -54,7 +54,7 @@ date modified: Saturday, October 26th 2024, 5:52 pm
 - Not generating JSON files:
 	- ["Linked data helper" plugin by kometenstaub - Bug graveyard - Obsidian Forum](https://forum.obsidian.md/t/linked-data-helper-plugin-by-kometenstaub/28875) - probably hasn't been working for awhile now
 
-- **==id.loc.gov API - one related to "Linked Data" and Subject Headings==**
+- **==id.loc.gov API - related to "Linked Data" and Subject Headings==**
 	- Description:
 		- Each controlled vocabulary list has a resolvable URI, as does each data value within it. Ontologies for several major data element sets are also available. URIs accessible at id.loc.gov link to bibliographic descriptions and controlled vocabularies and the values within them. This data service does not provide access to the physical or electronic holdings of the Library.
 	- Links:
