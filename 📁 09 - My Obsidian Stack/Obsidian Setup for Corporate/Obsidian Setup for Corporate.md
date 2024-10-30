@@ -38,7 +38,7 @@ date modified: Wednesday, October 30th 2024, 4:40 pm
 - Live Sync Options
 	- Obsidian Sync
 
-## Syncing Workspaces Between Devices
+## Syncing Workspaces Between Devices 
 
 - Links:
 	- [Obsidian Git - tips on how to use it for reliable sync? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/18dt1ok/obsidian_git_tips_on_how_to_use_it_for_reliable/)

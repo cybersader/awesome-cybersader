@@ -1,4 +1,4 @@
-- 2024-10-30 at 16h40 · [[Obsidian Setup for Corporate]]
+- 2024-10-30 at 19h28 · [[Obsidian Setup for Corporate]]
 - 2024-10-30 at 16h13 · [[Useful Obsidian Dataview Metadata]]
 - 2024-10-30 at 15h59 · [[Syncthing for Obsidian Notes]]
 - 2024-10-30 at 15h57 · [[Obsidian Git Setup]]
