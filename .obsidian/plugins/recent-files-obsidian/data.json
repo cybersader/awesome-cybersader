@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Run Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Syncing Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
+      "basename": "📁 09 - My Obsidian Stack",
+      "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
     },
     {
       "basename": "Obsidian Run",
       "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+    },
+    {
+      "basename": "Obsidian Run Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
     },
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
@@ -39,10 +63,6 @@
     {
       "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
       "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
     },
     {
       "basename": "Building a Knowledgebase",
@@ -179,22 +199,6 @@
     {
       "basename": "Media Hosting in Obsidian",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
-    },
-    {
-      "basename": "Documenting Activity",
-      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
-    },
-    {
-      "basename": "⬇️ Content Creation Stack Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
-    },
-    {
-      "basename": "📁 11 - Content Creation",
-      "path": "📁 11 - Content Creation/📁 11 - Content Creation.md"
-    },
-    {
-      "basename": "Persona Creation",
-      "path": "📁 11 - Content Creation/Persona Creation/Persona Creation.md"
     }
   ],
   "omittedPaths": [],

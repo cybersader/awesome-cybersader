@@ -23,6 +23,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**
+- **[[Obsidian Setup for Corporate]]**
 - **[[Obsidian to Ghost]]**
 - **[[Obsidian Vault Security]]**
 - **[[Syncing Obsidian]]**

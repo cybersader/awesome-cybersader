@@ -73,14 +73,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
+                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "90f0a51775a980a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "c9d570a7abffbe91",
@@ -193,9 +205,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b4927174e08b4bd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25e6bae5500ac0f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -249,8 +285,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -270,7 +305,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
+                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +322,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
+                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -310,7 +345,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
+                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
               }
             }
           },
@@ -388,8 +423,15 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "bb2f3b44d68b3432",
+  "active": "90f0a51775a980a3",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+    "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
+    "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
+    "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate",
     "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
     "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
@@ -407,7 +449,6 @@
     "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
     "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
-    "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md",
     "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
@@ -416,8 +457,6 @@
     "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
     "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
     "_FileOrganizer2000/Templates/meeting_note.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png",
@@ -425,16 +464,12 @@
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-5.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-4.png",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md",
-    "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.svg",
     "📁 20 - Home DIY",
     "🕸️ Things I Learned Today",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
     "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
-    "🕸️ UNSTRUCTURED/AI Ethics & Morality",
-    "📁 11 - Content Creation/Presentation Tools & Tech"
+    "🕸️ UNSTRUCTURED/AI Ethics & Morality"
   ]
 }
