@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+      "basename": "Handling Obsidian Git Conflicts",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md"
     },
     {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Syncing Obsidian",
       "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+      "basename": "Obsidian Dictionary and Grammar",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Useful Obsidian Dataview Metadata",
+      "path": "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md"
+    },
+    {
+      "basename": "🐛 Known Base Bugs, Issues",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
+    },
+    {
+      "basename": "Syncthing for Obsidian Notes",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
+    },
+    {
+      "basename": "Obsidian Git Setup",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Git Setup.md"
     },
     {
       "basename": "⬇️ KnowEng Drop",
@@ -35,10 +63,6 @@
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -71,10 +95,6 @@
     {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-    },
-    {
-      "basename": "Obsidian Dictionary and Grammar",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
     },
     {
       "basename": "✅ Tasks",
@@ -179,26 +199,6 @@
     {
       "basename": "Lock Windows For Background Processes",
       "path": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md"
-    },
-    {
-      "basename": "🕸️ Things I Learned Today",
-      "path": "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md"
-    },
-    {
-      "basename": "Collaborative Red Team Engagement Strategy",
-      "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
-    },
-    {
-      "basename": "📁 10 - Community",
-      "path": "📁 10 - Community/📁 10 - Community.md"
-    },
-    {
-      "basename": "📁 08 - Personal",
-      "path": "📁 08 - Personal/📁 08 - Personal.md"
-    },
-    {
-      "basename": "Media Hosting in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
     }
   ],
   "omittedPaths": [],

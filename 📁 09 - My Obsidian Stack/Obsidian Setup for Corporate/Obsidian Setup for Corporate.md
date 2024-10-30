@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Wednesday, October 30th 2024, 8:13 am
+date modified: Wednesday, October 30th 2024, 4:25 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -37,6 +37,44 @@ date modified: Wednesday, October 30th 2024, 8:13 am
 	- Obsidian Git
 - Live Sync Options
 	- Obsidian Sync
+
+## Syncing Workspaces Between Devices
+
+- Links:
+	- [Obsidian Git - tips on how to use it for reliable sync? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/18dt1ok/obsidian_git_tips_on_how_to_use_it_for_reliable/)
+	- [You can also have separate folders synced across devices by using GIT sparse-checkout approach. On each device you can set what folders it will sync with main repository. Thus, you can keep work related notes updated in your main vault and on your work compputer without sharing personal notes on your work machine. Same approach can be used on smartphones, if you can get GIT working on that device. I sync my phone in my selfhosted cloud solution with Obsidian app.](https://forum.obsidian.md/t/yet-another-obsidian-git-tutorial-desktop-pc-ipad-sync/67531)
+	- [Creating a Partial Clone of a Git Repo - Tyler Mercer](https://tylermercer.net/posts/software/partial-clone-git-repo/)
+	- [Handling Obsidian on multiple devices? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/1ca9758/handling_obsidian_on_multiple_devices/)
+	- 
+- Files to not sync
+	- Generally, don't sync the workspace and other `.obsidian` folders or files.  You'll get conflicts usually as you try sync at the same time while Obsidian updates those files as they change
+- 
+
+## Working On Two Devices at the Same Time?
+
+- 
+
+## Avoiding and Handling Git Conflicts
+
+- [Handling Obsidian Git Conflicts](../Contributable%20Obsidian%20Wiki/Handling%20Obsidian%20Git%20Conflicts/Handling%20Obsidian%20Git%20Conflicts.md)
+- [🐛 Known Base Bugs, Issues](../Contributable%20Obsidian%20Wiki/🐛%20Known%20Base%20Bugs,%20Issues/🐛%20Known%20Base%20Bugs,%20Issues.md)
+- [Obsidian Git Setup](../../🕸️%20UNSTRUCTURED/Obsidian%20Git%20Setup.md)
+- [Syncthing Incompatible with Git](../Syncing%20Obsidian/Syncthing%20Incompatible%20with%20Git/Syncthing%20Incompatible%20with%20Git.md)
+
+### Solutions to Git Conflict Issues
+
+#### 1) Add some folders and files to gitignore
+
+Add a `.gitignore` file with the following lines:
+
+```
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json
+.obsidian/workspace
+.obsidian/plugins/home-tab/data.json
+# Maybe the below one too
+*data.json
+```
 
 # IAM and User Management?
 

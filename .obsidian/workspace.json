@@ -16,7 +16,9 @@
                 "file": "✅ Tasks/✅ Tasks.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "✅ Tasks"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "GitHub + Obsidian + Notion - Digital Garden"
             }
           },
           {
@@ -40,7 +44,9 @@
                 "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "⬇️ Cyber Content Ideas"
             }
           },
           {
@@ -52,7 +58,9 @@
                 "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Documenting Activity"
             }
           },
           {
@@ -64,19 +72,9 @@
                 "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "e9e3a29a67c2ecf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Knowledge Organization"
             }
           },
           {
@@ -88,7 +86,23 @@
                 "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Vaults with Cybersecurity"
+            }
+          },
+          {
+            "id": "45f3780ccf48714e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Setup for Corporate"
             }
           }
         ],
@@ -107,7 +121,9 @@
                 "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Dictionary and Grammar"
             }
           },
           {
@@ -119,7 +135,9 @@
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Plugins and Ideas for Contributions"
             }
           },
           {
@@ -131,7 +149,9 @@
                 "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Cyber Memes"
             }
           },
           {
@@ -143,7 +163,9 @@
                 "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Auto - Tagging, Linking, Dropzones & Organizers"
             }
           },
           {
@@ -155,7 +177,9 @@
                 "file": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Linked Data Vocabulary - Testing"
             }
           },
           {
@@ -167,7 +191,9 @@
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Plugins and Ideas for Contributions"
             }
           },
           {
@@ -179,7 +205,9 @@
                 "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Run Testing"
             }
           },
           {
@@ -191,7 +219,9 @@
                 "file": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "📁 17 - Knowledge Engineering"
             }
           },
           {
@@ -203,7 +233,9 @@
                 "file": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "⬇️ KnowEng Drop"
             }
           },
           {
@@ -215,7 +247,9 @@
                 "file": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Syncing Obsidian"
             }
           },
           {
@@ -227,11 +261,27 @@
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Collaboration in Obsidian"
+            }
+          },
+          {
+            "id": "c206d50a0fd0384e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Handling Obsidian Git Conflicts"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -251,7 +301,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -266,7 +318,9 @@
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -274,7 +328,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -282,7 +338,9 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -305,7 +363,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -313,7 +371,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Handling Obsidian Git Conflicts"
             }
           },
           {
@@ -322,10 +382,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Handling Obsidian Git Conflicts"
             }
           },
           {
@@ -336,7 +398,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -345,8 +409,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
-              }
+                "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Handling Obsidian Git Conflicts"
             }
           },
           {
@@ -354,7 +420,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -362,7 +430,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -370,7 +440,9 @@
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
-              "state": {}
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
             }
           },
           {
@@ -378,7 +450,9 @@
             "type": "leaf",
             "state": {
               "type": "ai-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "bot",
+              "title": "Fo2k Chat"
             }
           },
           {
@@ -386,7 +460,9 @@
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
-              "state": {}
+              "state": {},
+              "icon": "sparkle",
+              "title": "Fo2k Assistant"
             }
           }
         ],
@@ -423,12 +499,19 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "90f0a51775a980a3",
+  "active": "c206d50a0fd0384e",
   "lastOpenFiles": [
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
+    "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
     "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md",
-    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
+    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
+    "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md",
+    "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md",
+    "🕸️ UNSTRUCTURED/Obsidian Git Setup.md",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
     "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate",
@@ -437,7 +520,6 @@
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
     "🕸️ UNSTRUCTURED/test.md",
     "📦 VAULT SANDBOX TESTING/Test.md",
-    "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
     "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md",
     "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md",
     "🕸️ UNSTRUCTURED/CPEs for Future CISSP.md",
@@ -451,12 +533,6 @@
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md",
     "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
-    "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
-    "✅ Tasks/✅ Tasks.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md",
-    "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md",
-    "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md",
-    "_FileOrganizer2000/Templates/meeting_note.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png",
