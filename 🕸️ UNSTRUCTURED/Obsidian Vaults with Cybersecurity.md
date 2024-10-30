@@ -7,6 +7,6 @@ date modified: Wednesday, October 30th 2024, 8:22 am
 ---
 
 - Google search
-	- site:publish.obsidian.md AND cybersecurity
+	- site:publish.obsidian.md AND cybersecurityj
 
 - [00 Home MOC - addielamarr - Obsidian Publish](https://publish.obsidian.md/addielamarr/00+Home+MOC)
