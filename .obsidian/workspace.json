@@ -16,9 +16,7 @@
                 "file": "✅ Tasks/✅ Tasks.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "✅ Tasks"
+              }
             }
           },
           {
@@ -30,9 +28,7 @@
                 "file": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GitHub + Obsidian + Notion - Digital Garden"
+              }
             }
           },
           {
@@ -44,9 +40,7 @@
                 "file": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "⬇️ Cyber Content Ideas"
+              }
             }
           },
           {
@@ -58,9 +52,7 @@
                 "file": "🕸️ UNSTRUCTURED/Documenting Activity.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Documenting Activity"
+              }
             }
           },
           {
@@ -72,9 +64,7 @@
                 "file": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Knowledge Organization"
+              }
             }
           },
           {
@@ -86,9 +76,7 @@
                 "file": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Run"
+              }
             }
           }
         ],
@@ -107,9 +95,7 @@
                 "file": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Dictionary and Grammar"
+              }
             }
           },
           {
@@ -121,9 +107,7 @@
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Plugins and Ideas for Contributions"
+              }
             }
           },
           {
@@ -135,9 +119,7 @@
                 "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cyber Memes"
+              }
             }
           },
           {
@@ -149,9 +131,7 @@
                 "file": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Auto - Tagging, Linking, Dropzones & Organizers"
+              }
             }
           },
           {
@@ -163,9 +143,7 @@
                 "file": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linked Data Vocabulary - Testing"
+              }
             }
           },
           {
@@ -177,9 +155,7 @@
                 "file": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Plugins and Ideas for Contributions"
+              }
             }
           },
           {
@@ -191,9 +167,7 @@
                 "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Run Testing"
+              }
             }
           },
           {
@@ -205,9 +179,7 @@
                 "file": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📁 17 - Knowledge Engineering"
+              }
             }
           },
           {
@@ -219,9 +191,7 @@
                 "file": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "⬇️ KnowEng Drop"
+              }
             }
           }
         ],
@@ -245,9 +215,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              }
             }
           },
           {
@@ -262,9 +230,7 @@
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
+              }
             }
           },
           {
@@ -272,9 +238,7 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "state": {}
             }
           },
           {
@@ -282,9 +246,7 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "state": {}
             }
           }
         ],
@@ -308,7 +270,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,9 +278,7 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Cyber Memes"
+              }
             }
           },
           {
@@ -327,12 +287,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
+                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Cyber Memes"
+              }
             }
           },
           {
@@ -343,9 +301,7 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+              }
             }
           },
           {
@@ -354,10 +310,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Cyber Memes"
+                "file": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
+              }
             }
           },
           {
@@ -365,9 +319,7 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "state": {}
             }
           },
           {
@@ -375,9 +327,7 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "state": {}
             }
           },
           {
@@ -385,9 +335,7 @@
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
+              "state": {}
             }
           },
           {
@@ -395,9 +343,7 @@
             "type": "leaf",
             "state": {
               "type": "ai-chat-view",
-              "state": {},
-              "icon": "bot",
-              "title": "Fo2k Chat"
+              "state": {}
             }
           },
           {
@@ -405,9 +351,7 @@
             "type": "leaf",
             "state": {
               "type": "fo2k.assistant.sidebar2",
-              "state": {},
-              "icon": "sparkle",
-              "title": "Fo2k Assistant"
+              "state": {}
             }
           }
         ],
