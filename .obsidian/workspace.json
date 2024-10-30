@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian Setup for Corporate"
+              "title": "TrueNAS Electric Eel 24.10 Update"
             }
           }
         ],
@@ -347,7 +347,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 248.5
   },
   "right": {
     "id": "a7fa059126b0f6a7",
@@ -363,7 +363,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -373,7 +373,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Obsidian Setup for Corporate"
+              "title": "Backlinks for TrueNAS Electric Eel 24.10 Update"
             }
           },
           {
@@ -382,12 +382,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Obsidian Setup for Corporate"
+              "title": "Outgoing links from TrueNAS Electric Eel 24.10 Update"
             }
           },
           {
@@ -409,10 +409,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+                "file": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Obsidian Setup for Corporate"
+              "title": "Outline of TrueNAS Electric Eel 24.10 Update"
             }
           },
           {
@@ -501,8 +501,10 @@
   },
   "active": "45f3780ccf48714e",
   "lastOpenFiles": [
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
+    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update",
+    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
     "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md",
@@ -532,7 +534,6 @@
     "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md",
     "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md",
     "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md",
-    "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png",
@@ -545,7 +546,6 @@
     "🕸️ Things I Learned Today",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173517990.png",
     "📁 03 - Curations, Stacks/Cyber Memes/_attachments/file-20241020173353275.png",
-    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments",
-    "🕸️ UNSTRUCTURED/AI Ethics & Morality"
+    "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/_attachments"
   ]
 }
