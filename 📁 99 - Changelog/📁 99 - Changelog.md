@@ -1,4 +1,4 @@
-- 2024-10-30 at 20h19 · [[TrueNAS Electric Eel 24.10 Update]]
+- 2024-10-30 at 22h24 · [[TrueNAS Electric Eel 24.10 Update]]
 - 2024-10-30 at 19h45 · [[📁 01 - Projects]]
 - 2024-10-30 at 19h45 · [[TrueNAS Scale Home Server]]
 - 2024-10-30 at 19h45 · [[Home Lab, Home Server]]

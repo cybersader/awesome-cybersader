@@ -3,12 +3,16 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Wednesday, October 30th 2024, 8:19 pm
+date modified: Wednesday, October 30th 2024, 10:24 pm
 ---
 
 # Links
 
 - [Updating SCALE | TrueNAS Documentation Hub](https://www.truenas.com/docs/scale/scaletutorials/systemsettings/updatescale/)
+
+# App Issues
+
+- Nextcloud Data didn't come over quite right.  Might need to move some datasets around
 
 # Big Features for New Version
 
