@@ -481,6 +481,12 @@
       },
       "zoottelkeeper-obsidian-plugin": {
         "startupType": "disabled"
+      },
+      "obsidian-version-history-diff": {
+        "startupType": "disabled"
+      },
+      "workspaces-plus": {
+        "startupType": "disabled"
       }
     }
   }

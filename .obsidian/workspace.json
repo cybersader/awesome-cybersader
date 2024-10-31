@@ -343,7 +343,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -499,7 +500,7 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "45f3780ccf48714e",
+  "active": "c07d9fad4dc75148",
   "lastOpenFiles": [
     "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
