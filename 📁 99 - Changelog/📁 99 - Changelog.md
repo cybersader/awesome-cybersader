@@ -1,3 +1,4 @@
+- 2024-11-01 at 19h40 · [[Xbox Controllers]]
 - 2024-11-01 at 18h08 · [[Using Treemaps To Simplify Data WorkSpace Governance]]
 - 2024-10-31 at 14h37 · [[📁 04 - Organizational Cyber]]
 - 2024-10-31 at 14h37 · [[Org Data Governance]]
@@ -117,7 +118,6 @@
 - 2024-09-22 at 18h20 · [[Grad School Papers and Presentations]]
 - 2024-09-22 at 18h15 · [[DevSecOps]]
 - 2024-09-22 at 18h14 · [[Game of Thrones & Cybersecurity]]
-- 2024-09-22 at 17h24 · [[Xbox Controllers]]
 - 2024-09-20 at 17h45 · [[Awesome Password Security]]
 - 2024-09-20 at 16h47 · [[Cybersecurity Culture Building]]
 - 2024-09-20 at 14h04 · [[Cyber Talent Development]]
