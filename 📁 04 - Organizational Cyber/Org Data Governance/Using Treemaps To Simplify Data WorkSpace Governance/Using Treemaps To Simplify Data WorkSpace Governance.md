@@ -84,7 +84,7 @@ Using the output from PowerShell or one of these tools, you’ll have a structur
 
 * * *
 
-**You:**
+**You:**  
 
 With AD or the Graph API (im not sure which ones I can use since we're on prem), can I get the data points of File Server, Access Path, User/Group, and Permission source data such as inheritance and context for it?
 

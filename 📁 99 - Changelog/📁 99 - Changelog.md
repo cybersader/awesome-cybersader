@@ -1,4 +1,4 @@
-- 2024-10-31 at 14h41 · [[Using Treemaps To Simplify Data WorkSpace Governance]]
+- 2024-11-01 at 18h08 · [[Using Treemaps To Simplify Data WorkSpace Governance]]
 - 2024-10-31 at 14h37 · [[📁 04 - Organizational Cyber]]
 - 2024-10-31 at 14h37 · [[Org Data Governance]]
 - 2024-10-30 at 22h24 · [[TrueNAS Electric Eel 24.10 Update]]
