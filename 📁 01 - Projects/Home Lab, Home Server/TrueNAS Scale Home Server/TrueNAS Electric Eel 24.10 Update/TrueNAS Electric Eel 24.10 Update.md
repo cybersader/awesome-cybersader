@@ -1,9 +1,11 @@
 ---
-aliases: 
+aliases:
+  - TrueNAS Scale 24.10 Nextcloud Fix
+  - Moving Around Data in Datasets - TrueNAS
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Friday, November 1st 2024, 8:24 pm
+date modified: Friday, November 1st 2024, 9:19 pm
 ---
 
 # Links
