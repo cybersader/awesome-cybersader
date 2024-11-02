@@ -1,4 +1,4 @@
-- 2024-11-02 at 12h55 · [[Decorating with Conference Stickers]]
+- 2024-11-02 at 13h45 · [[Decorating with Conference Stickers]]
 - 2024-11-02 at 12h30 · [[Wall Decor]]
 - 2024-11-02 at 12h30 · [[Corkboard]]
 - 2024-11-02 at 12h25 · [[Poster Hanging]]

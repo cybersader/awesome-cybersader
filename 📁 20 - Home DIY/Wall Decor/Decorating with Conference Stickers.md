@@ -4,12 +4,14 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, October 6th 2024, 3:26 pm
-date modified: Saturday, November 2nd 2024, 12:55 pm
+date modified: Saturday, November 2nd 2024, 1:38 pm
 ---
 
 [📁 20 - Home DIY](../📁%2020%20-%20Home%20DIY.md)
 
 # Frame Options
+
+Ideal - custom large acrylic magnetic floating frame
 
 - Large plexiglass or acrylic floating frame
 - Borderless, See-Through
@@ -23,7 +25,6 @@ date modified: Saturday, November 2nd 2024, 12:55 pm
 
 # Ideas
 
-- shadow box frame
 - large float frame
 - [Make a Collage of Your Conference Stickers – About Things | A Hans Scharler Blog](https://nothans.com/make-a-collage-of-your-conference-stickers)
 - collage chaos
