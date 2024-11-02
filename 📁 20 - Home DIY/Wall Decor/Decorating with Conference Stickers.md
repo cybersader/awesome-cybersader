@@ -4,8 +4,22 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, October 6th 2024, 3:26 pm
-date modified: Sunday, October 6th 2024, 3:28 pm
+date modified: Saturday, November 2nd 2024, 12:55 pm
 ---
+
+[📁 20 - Home DIY](../📁%2020%20-%20Home%20DIY.md)
+
+# Frame Options
+
+- Large plexiglass or acrylic floating frame
+- Borderless, See-Through
+	- Floating frames are borderless
+	- Class Clip Frames (Frameless Frames)
+	- Acrylic Sandwich Frames
+- Poster Frames
+- Lightbox Frames
+- Transparent Wall-Mounted Panels
+- Go to Michaels or Hobby Lobby and get help with a more custom frame
 
 # Ideas
 
