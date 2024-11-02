@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 20 - Home DIY/Wall Decor/Poster Hanging.md",
+                "file": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md",
                 "mode": "source",
                 "source": false
               },
@@ -106,45 +106,17 @@
             }
           },
           {
-            "id": "c87a8bb445002e4b",
+            "id": "1b8e2277b571056d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📁 20 - Home DIY/Wall Decor/Office Corkboard.md",
+                "file": "📁 20 - Home DIY/Wall Decor/Corkboards & Felt Panels/Corkboards & Felt Panels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Office Corkboard"
-            }
-          },
-          {
-            "id": "d3291fee93e7f8db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Using Treemaps To Simplify Data WorkSpace Governance"
-            }
-          },
-          {
-            "id": "7910b47b763340ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🕸️ UNSTRUCTURED/Xbox Controllers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Xbox Controllers"
+              "title": "Corkboards & Felt Panels"
             }
           }
         ],
@@ -354,7 +326,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#todo-projects",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -541,26 +513,32 @@
       "cmdr:Files: Reveal current file in navigation": false
     }
   },
-  "active": "c87a8bb445002e4b",
+  "active": "1b8e2277b571056d",
   "lastOpenFiles": [
-    "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers.md",
-    "📁 20 - Home DIY/Wall Decor/Office Corkboard.md",
-    "📁 20 - Home DIY/Wall Decor/Corkboard.md",
-    "📁 20 - Home DIY/Wall Decor/_attachments/file-20241006152824100.png",
+    "📁 20 - Home DIY/Wall Decor/Panels and Overlays/Panels and Overlays.md",
+    "📁 20 - Home DIY/Wall Decor/Corkboards & Felt Panels/Corkboards & Felt Panels.md",
+    "📁 20 - Home DIY/Wall Decor/Corkboards & Felt Panels/Corkboards & Felt Panels.md",
+    "📁 20 - Home DIY/Wall Decor/Panels and Overlays",
+    "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md",
+    "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/Decorating with Conference Stickers.md",
+    "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md",
+    "🕸️ UNSTRUCTURED/Xbox Controllers.md",
+    "📁 20 - Home DIY/Wall Decor/Wall Attachment Methods/Wall Attachment Methods.md",
+    "📁 20 - Home DIY/Wall Decor/Wall Attachment Methods",
+    "📁 20 - Home DIY/Wall Decor/Poster Hanging",
+    "📁 20 - Home DIY/Wall Decor/Corkboards & Felt Panels",
+    "📁 20 - Home DIY/Wall Decor/Corkboards & Felt Panels",
+    "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/_attachments",
+    "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers",
+    "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/_attachments/file-20241006152824100.png",
     "📁 20 - Home DIY/Wall Decor/_attachments",
     "📁 20 - Home DIY/Wall Decor/Wall Decor.md",
     "📁 20 - Home DIY/Wall Decor",
-    "📁 20 - Home DIY/Wall Decor/Poster Hanging.md",
-    "📁 20 - Home DIY/Wall Decor/Wall Attachment Methods.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/_attachments/file-20241101202317427.png",
     "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/_attachments",
-    "🕸️ UNSTRUCTURED/Xbox Controllers.md",
-    "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md",
     "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md",
-    "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance",
     "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md",
-    "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md",
     "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md",
     "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md",
@@ -573,14 +551,8 @@
     "🕸️ UNSTRUCTURED/Obsidian Git Setup.md",
     "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md",
     "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md",
-    "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate",
     "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md",
     "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md",
-    "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md",
-    "Unconfirmed 290457.crdownload",
-    "New folder",
-    "names.madsrdf.jsonld/names.madsrdf.jsonld",
-    "names.madsrdf.jsonld",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png",
     "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png",

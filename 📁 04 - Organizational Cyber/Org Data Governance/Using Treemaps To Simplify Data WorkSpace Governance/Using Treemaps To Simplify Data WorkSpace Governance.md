@@ -4,11 +4,13 @@ tags:
   - presentation
 publish: true
 date created: Thursday, October 31st 2024, 2:37 pm
-date modified: Thursday, October 31st 2024, 2:41 pm
+date modified: Saturday, November 2nd 2024, 5:48 pm
 ---
 
 [📁 04 - Organizational Cyber](../../📁%2004%20-%20Organizational%20Cyber.md)
 [Org Data Governance](../Org%20Data%20Governance.md)
+
+- [ ] Design tool for treemapping with data governance initiatives #projects/cyber ⏫ ➕ 2024-11-02
 
 # Links
 

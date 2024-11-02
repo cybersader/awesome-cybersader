@@ -4,10 +4,10 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, October 6th 2024, 3:26 pm
-date modified: Saturday, November 2nd 2024, 1:38 pm
+date modified: Saturday, November 2nd 2024, 5:49 pm
 ---
 
-[📁 20 - Home DIY](../📁%2020%20-%20Home%20DIY.md)
+[📁 20 - Home DIY](../../📁%2020%20-%20Home%20DIY.md)
 
 # Frame Options
 
@@ -22,6 +22,10 @@ Ideal - custom large acrylic magnetic floating frame
 - Lightbox Frames
 - Transparent Wall-Mounted Panels
 - Go to Michaels or Hobby Lobby and get help with a more custom frame
+
+# Making a Custom Modular Sandwich Sheet with Frame
+
+- [ ] Make a custom modular sandwich frame with tracks that can accompany multiple layers over time ➕ 2024-11-02 #projects/home-diy
 
 # Ideas
 

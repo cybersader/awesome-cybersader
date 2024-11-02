@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, November 2nd 2024, 12:03 pm
-date modified: Saturday, November 2nd 2024, 12:21 pm
+date modified: Saturday, November 2nd 2024, 5:50 pm
 ---
 
 # Adhesive & Magnetic Methods
@@ -37,4 +37,4 @@ date modified: Saturday, November 2nd 2024, 12:21 pm
 
 - 3M CLAW hangers
 - Drywall anchors for shelving
-- 
+- Use the studs in multiple places for crazy heavy loads

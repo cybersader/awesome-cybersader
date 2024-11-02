@@ -3,12 +3,14 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, September 7th 2024, 10:02 pm
-date modified: Friday, November 1st 2024, 7:40 pm
+date modified: Saturday, November 2nd 2024, 5:47 pm
 ---
+
+- [ ] Figure out the most cost effective option for Xbox controllers long-term ➕ 2024-11-02
 
 # Defeating Stick Drift
 
-No cap.  I have 6 controllers from the past 2 or 3 years.  These monopolized monsters are made to not last.  You have to be licensed by Microsoft too so there's that issue.
+No cap.  I have had 6 separate controllers in the past 2 or 3 years.  These monopolized monsters are made to not last.  You have to be licensed by Microsoft too so there's that issue.
 
 - https://www.gamesir.hk/collections/all
 - [8BitDo Ultimate Controller with Charging Dock（Bluetooth） | 8BitDo](https://www.8bitdo.com/ultimate-bluetooth-controller/)
