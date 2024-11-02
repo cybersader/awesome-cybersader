@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Wednesday, October 30th 2024, 10:24 pm
+date modified: Friday, November 1st 2024, 8:24 pm
 ---
 
 # Links
@@ -12,7 +12,19 @@ date modified: Wednesday, October 30th 2024, 10:24 pm
 
 # App Issues
 
-- Nextcloud Data didn't come over quite right.  Might need to move some datasets around
+## Fixing Nextcloud
+
+Nextcloud Data didn't come over quite right.  Had to move some data in the Nextcloud datasets around and change settings
+
+- The errors from looking at container logs in Truenas:
+	- Your data directory is invalid.
+	- Ensure there is a file called ".ncdata" in the root of the data directory. It should have the content: "# Nextcloud data directory"
+
+- Nextcloud configuration notice about related "data" folder:
+	- ![](_attachments/file-20241101202317427.png)
+
+- We have to move "data", point "Nextcloud User Data" to use the newly moved data, then uncheck the box
+	- 
 
 # Big Features for New Version
 
