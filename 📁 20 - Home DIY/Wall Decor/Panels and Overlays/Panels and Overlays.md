@@ -6,7 +6,7 @@ date created: Saturday, November 2nd 2024, 6:08 pm
 date modified: Saturday, November 2nd 2024, 6:09 pm
 ---
 
-[Corkboards & Felt Panels](../Corkboards%20&%20Felt%20Panels/Corkboards%20&%20Felt%20Panels.md)
+[Bulletin Board Panels](../Bulletin%20Board%20Panels/Bulletin%20Board%20Panels.md)
 
 # Acoustic
 

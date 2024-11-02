@@ -42,5 +42,6 @@
   "ytranscript",
   "obsidian-regex-replace",
   "custom-save",
-  "lazy-plugins"
+  "lazy-plugins",
+  "workspaces-plus"
 ]
