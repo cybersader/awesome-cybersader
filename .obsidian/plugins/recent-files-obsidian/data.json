@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Documenting Activity",
+      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+    },
+    {
+      "basename": "Epoxy Casting",
+      "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
+    },
+    {
       "basename": "Poster Hanging",
       "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
     },
@@ -11,10 +27,6 @@
     {
       "basename": "Soundproofing",
       "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
     },
     {
       "basename": "📁 18 - Self-Hosting",
@@ -59,10 +71,6 @@
     {
       "basename": "Org Data Governance",
       "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Handling Obsidian Git Conflicts",
@@ -191,14 +199,6 @@
     {
       "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png"
     }
   ],
   "omittedPaths": [],
