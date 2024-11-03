@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Wednesday, October 30th 2024, 4:40 pm
+date modified: Sunday, November 3rd 2024, 4:40 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -73,7 +73,7 @@ date modified: Wednesday, October 30th 2024, 4:40 pm
 - Disable on this device
 - Shouldn't there be a setting to ask if you want to commit/push?
 
-### Solutions to Git Conflict Issues
+### Solutions to Git Conflict Issues with 'Obsidian Git" plugin
 
 #### 1) Add some folders and files to gitignore
 
@@ -84,9 +84,17 @@ Add a `.gitignore` file with the following lines:
 .obsidian/workspace.json
 .obsidian/workspace
 .obsidian/plugins/home-tab/data.json
-# Maybe the below one too
-*data.json
 ```
+
+To ensure that Git ignores certain files or folders without having to manually remove them from tracking, you can set up a pre-commit hook. This hook will automatically check if any files in `.gitignore` are still tracked and will remove them from tracking if they are. Here's how you can set it up:
+
+- [Gitignore Folder Tracking Removal](📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md#3%20Untrack%20All%20Files%20Listed%20in%20gitignore)
+
+#### 2) Use Lazy Loading pl?
+
+**For data.json plugin settings files that need to be synced but cause issues**.
+
+You can try the Lazy load plugin to load the setting long after the vault opens so that Obsidian Git can do its job before breaking with the plugin loading.  
 
 # IAM and User Management?
 

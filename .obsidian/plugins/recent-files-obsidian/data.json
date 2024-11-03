@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Gitignore Folder Tracking Removal",
+      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Documenting Activity",
       "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
+      "basename": "Handling Obsidian Git Conflicts",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md"
+    },
+    {
+      "basename": "Git",
+      "path": "📁 21 - Development/Git/Git.md"
+    },
+    {
+      "basename": "📁 21 - Development",
+      "path": "📁 21 - Development/📁 21 - Development.md"
     },
     {
       "basename": "Obsidian Vaults with Cybersecurity",
@@ -71,10 +87,6 @@
     {
       "basename": "Org Data Governance",
       "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Handling Obsidian Git Conflicts",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md"
     },
     {
       "basename": "Collaboration in Obsidian",
@@ -187,18 +199,6 @@
     {
       "basename": "From Other Wiki",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png"
     }
   ],
   "omittedPaths": [],

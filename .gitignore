@@ -11,8 +11,6 @@
 .obsidian/workspace.json
 .obsidian/workspace
 .obsidian/plugins/home-tab/data.json
-# Maybe the below one too
-*data.json
 
 # --- VSCode --- #
 .vscode/*
