@@ -3,8 +3,13 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, November 2nd 2024, 12:03 pm
-date modified: Saturday, November 2nd 2024, 5:50 pm
+date modified: Sunday, November 3rd 2024, 2:57 pm
 ---
+
+# Protecting Posters
+
+- Apply clear tape or contact paper to the back of the poster on a large square
+	- Maybe use contact paper for this as it will cover more area and works better for this
 
 # Adhesive & Magnetic Methods
 
