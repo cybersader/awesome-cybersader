@@ -5,12 +5,20 @@
       "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
     },
     {
-      "basename": "Panels and Overlays",
-      "path": "📁 20 - Home DIY/Wall Decor/Panels and Overlays/Panels and Overlays.md"
-    },
-    {
       "basename": "Soundproofing",
       "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+    },
+    {
+      "basename": "📁 18 - Self-Hosting",
+      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
+    },
+    {
+      "basename": "Panels and Overlays",
+      "path": "📁 20 - Home DIY/Wall Decor/Panels and Overlays/Panels and Overlays.md"
     },
     {
       "basename": "Coin Displays",
@@ -71,10 +79,6 @@
     {
       "basename": "Obsidian Dictionary and Grammar",
       "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
     },
     {
       "basename": "Knowledge Organization",
@@ -195,10 +199,6 @@
     {
       "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png"
-    },
-    {
-      "basename": "IMG-OL Threat Detection Landscape & Gaps-2024063021-5",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-5.png"
     }
   ],
   "omittedPaths": [],
