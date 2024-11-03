@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Sunday, November 3rd 2024, 4:40 pm
+date modified: Sunday, November 3rd 2024, 4:52 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -89,6 +89,8 @@ Add a `.gitignore` file with the following lines:
 To ensure that Git ignores certain files or folders without having to manually remove them from tracking, you can set up a pre-commit hook. This hook will automatically check if any files in `.gitignore` are still tracked and will remove them from tracking if they are. Here's how you can set it up:
 
 - [Gitignore Folder Tracking Removal](📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md#3%20Untrack%20All%20Files%20Listed%20in%20gitignore)
+
+Once you've ran the commands from above to stop tracking the files in `.gitignore`, then it should work smoothly on other devices when pulling and syncing as well.
 
 #### 2) Use Lazy Loading pl?
 
