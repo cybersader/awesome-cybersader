@@ -1,5 +1,5 @@
 {
-  "useCache": false,
+  "useCache": true,
   "hideExcluded": false,
   "downrankedFoldersFilters": [],
   "ignoreDiacritics": true,

@@ -487,6 +487,15 @@
       },
       "workspaces-plus": {
         "startupType": "disabled"
+      },
+      "obsidian-carry-forward": {
+        "startupType": "disabled"
+      },
+      "enhanced-copy": {
+        "startupType": "disabled"
+      },
+      "khoj": {
+        "startupType": "disabled"
       }
     }
   }
