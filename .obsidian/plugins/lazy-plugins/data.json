@@ -493,6 +493,9 @@
       },
       "enhanced-copy": {
         "startupType": "disabled"
+      },
+      "khoj": {
+        "startupType": "disabled"
       }
     }
   }

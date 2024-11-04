@@ -10,9 +10,9 @@ date modified: Sunday, November 3rd 2024, 10:07 pm
 
 
 %% Begin Waypoint %%
-- **[[⬇️ Society Drop/⬇️ Society Drop]]**
-	- **[[⬇️ Society Drop/Dr. Peterson x Elon Musk/Dr. Peterson x Elon Musk]]**
-	- **[[⬇️ Society Drop/Fr. Pine Interviews Matt Fradd/Fr. Pine Interviews Matt Fradd]]**
-- **[[Debate - Why Marriage is Good for Men/Debate - Why Marriage is Good for Men]]**
+- **[[⬇️ Society Drop]]**
+	- **[[Dr. Peterson x Elon Musk]]**
+	- **[[Fr. Pine Interviews Matt Fradd]]**
+- **[[Debate - Why Marriage is Good for Men]]**
 
 %% End Waypoint %%
