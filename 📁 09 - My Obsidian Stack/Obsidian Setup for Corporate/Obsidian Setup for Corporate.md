@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 3:11 pm
+date modified: Monday, November 4th 2024, 5:00 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -15,7 +15,149 @@ date modified: Monday, November 4th 2024, 3:11 pm
 
 # High-Level Tech Stack & Guide
 
+Here's the high-level questions/steps to implementing Obsidian:
 
+## Tech Stack Options - Corporate Obsidian Use:
+
+> [!info] The goal is to have something that's convenient, resilient, and secure.
+
+### Syncing - options for syncing vaults up across devices and people
+
+- Hosted Vault on a Network Share + Obsidian Sync + Manually Set Obsidian Sync Password + Authenticator App MFA
+- Hosted Vault on a Network Share + OneDrive
+- Hosted Vault on a Network Share + Google Drive
+- (Asynchronous - technical users and developers) Obsidian Git + Corporate Git Repository (likely GitHub)
+
+### Live Collaboration - options for collaborating live if need be
+
+- Peerdraft
+
+### Backups, Version Control - backing up files and versioning vaults
+
+[Backups - The 3,2,1 Rule](../../🕸️%20UNSTRUCTURED/Backups%20-%20The%203,2,1%20Rule.md)
+
+- Obsidian Git + Git Repository (being in the same place as the vault does not make this resilient)
+- Obsidian Sync - comes with it's own version control that is stored in their Digital Ocean-based cloud
+- Network Share + Other Backup Solution
+
+### Securing and Distributing Obsidian Community Plugins & Vault Template
+
+- Sharing Space (e.g. OneDrive, Network Share) + Least Privilege to Admins + Help Desk or IT Team Workflow
+
+### Network & Endpoint Security
+
+- Firewall + Rules for Obsidian Application + Application Whitelisting (limit only to users that want to use it)
+
+## Corporate Use Components
+
+### 1) Pricing - Obsidian is really cheap
+
+- Example costs:
+	- 10 users - $500 per year for corporate license
+- Corporate license per user
+	- $50 per year
+	- $4.20 per month
+	- $20k for 400 users once a year
+- Obsidian Sync
+	- Standard
+		- $4 per month per user
+		- $48 per year per user
+		- Features:
+			- 1 synced vault
+			- 1 GB total storage
+			- 5 MB maximum file size
+			- 1 month version history
+	- Pro
+		- $8 per month per user
+		- $96 per year per user
+		- Features:
+			- 10 synced vaults
+			- 10 GB total storage
+			- 200 MB maximum file size
+			- 12 month version history
+			- Upgradable to 100 GB storage
+- Obsidian Publish
+	- $8 per month per website
+	- $48 per year per website
+	- not a lot of reasons to use Obsidian Publish [till they add security features](https://forum.obsidian.md/t/obsidian-publish-authentication-for-corporate-use-single-sign-on/19255)
+
+### 2) Sync Method
+
+> [!note] Soon enough, Obsidian will develop or integrate methods for SSO and that should make parts of this a lot easier.
+
+- For a small number of technical users
+	- Hosted Vault on a Network Share (or local) + Obsidian Sync + Manually Set Obsidian Sync Password + Authenticator App MFA
+	- Hosted Vault on a Network Share (or local) + OneDrive
+	- Hosted Vault on a Network Share (or local) + Google Drive
+	- (Asynchronous - technical users and developers) Obsidian Git + Corporate Git Repository (likely GitHub)
+
+- For a small number of non-technical users
+	- Hosted Vault on a Network Share (or local) + Obsidian Sync + Manually Set Obsidian Sync Password + Authenticator App MFA
+
+- For a large number of technical users
+	- Hosted Vault on a Network Share (or local) + OneDrive
+	- Hosted Vault on a Network Share (or local) + Google Drive
+	- (Asynchronous - technical users and developers) Obsidian Git + Corporate Git Repository (likely GitHub)
+
+- For a large number of non-technical users
+	- Hosted Vault on a Network Share (or local) + OneDrive
+	- Hosted Vault on a Network Share (or local) + Google Drive
+
+### 3) Live Collaboration - do you need it?
+
+- Is Obsidian Sync good enough?
+	- Obsidian Sync is the best bet for low-overhead implementation and near-live syncing
+
+- Can you use peer-to-peer protocols on your network? (you should threat model this probably)
+	- Yes
+		- Do you have time to implement something technical?
+			- Yes
+				- [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md) - more solutions here for peer-to-peer
+			- No
+				- Obsidian Sync might be your only option
+				- Look at tools other than Obsidian
+	- No
+		- Do you have time to test?
+			- Yes
+				- [Peerdraft – Collaboration for Obsidian – Sync, Share, and Edit anywhere](https://www.peerdraft.app/) 
+					- [peerdraft.app/documentation/explanations/what-is-the-difference-between-persistent-and-fleeting](https://www.peerdraft.app/documentation/explanations/what-is-the-difference-between-persistent-and-fleeting)
+					- May or may not work - do some testing with their free tier
+			- No
+				- Maybe stick with Obsidian Sync for near-live syncing
+
+- Do you want this behind a corporate VPN, SSO, or administered MFA?
+	- Yes
+		- Network Share that requires Corporate VPN + [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+		- Local vault + OneDrive OR Google Drive + [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+	- No
+		- [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+
+### 4) Securing Plugins and Hosting an Example Vault - Distribution
+
+- Securing Plugins and Hosting an Example Vault
+    - set up a local repo as an admin
+    - put it on a network share or place people can grab it but not modify
+    - set up application whitelisting on non admin machines to block any GitHub related DNS calls from the obsidian app
+    - let users download the vault, but they can't then download plugins unless being added by you
+    - open the admin vault to check for security updates on plugins
+    - keep plugins down to what's necessary 
+- How to guide for those using the template vault
+
+### 5) Make a Tutorial 
+
+- Make a video guide with sharex OR obs and losslesscut
+
+### 6) Workflow and Hotkeys Guide
+
+- need this
+
+### 7) Initial Community Plugins
+
+- List these out
+
+### 8) Network Security
+
+- Take a whitelist approach to connections but follow below docs and notes
 
 # Misc Links
 

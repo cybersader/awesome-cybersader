@@ -5,6 +5,18 @@
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Handling Obsidian Git Conflicts & Issues",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
+    },
+    {
+      "basename": "Backups - The 3,2,1 Rule",
+      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
+    },
+    {
       "basename": "Endpoint Firewall",
       "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
     },
@@ -35,10 +47,6 @@
     {
       "basename": "Wellness, Fitness",
       "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
-    },
-    {
-      "basename": "Handling Obsidian Git Conflicts & Issues",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -137,10 +145,6 @@
       "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Wall Decor",
       "path": "📁 20 - Home DIY/Wall Decor/Wall Decor.md"
-    },
-    {
-      "basename": "TrueNAS Electric Eel 24.10 Update",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     }
   ],
   "omittedPaths": [],
