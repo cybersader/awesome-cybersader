@@ -12,7 +12,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
 - **[[Awesome Obsidian Wiki Examples]]**
-- [[Breaking Vault Changes]]
+- **[[Breaking Vault Changes]]**
 - **[[Contributable Obsidian Wiki]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Dataview]]**
@@ -20,6 +20,9 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Dictionary and Grammar]]**
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
+	- **[[Handling Obsidian Git Conflicts & Issues]]**
+	- **[[Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions]]**
+	- **[[Obsidian Git Setup]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 - **[[Obsidian Run]]**

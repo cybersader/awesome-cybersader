@@ -3,13 +3,14 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, April 10th 2024, 8:27 pm
-date modified: Sunday, November 3rd 2024, 9:00 pm
+date modified: Monday, November 4th 2024, 9:03 am
 ---
 
 [Gitignore Folder Tracking Removal](../../../📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md)
 [Obsidian Setup for Corporate](../../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
+[Obsidian Git Setup](../Obsidian%20Git%20Setup/Obsidian%20Git%20Setup.md)
 
-# Feature Requests for Obsidian Git
+# Feature Requests & Problems for Obsidian Git
 
 - Related
 	- [[Feature]: newest file feature · Issue #740 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/740)
@@ -22,7 +23,7 @@ date modified: Sunday, November 3rd 2024, 9:00 pm
 		- workspace.json is constantly updated by whatever windows are up
 		- You go onto a different device and go to sync with the "remote" repo or the one actually in GitHub
 		- The problem is that `workspace.json` changes fast even as the merge is happening
-- Conflicts that occur after fixing the issue with [Gitignore Folder Tracking Removal](📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md#3%20Untrack%20All%20Files%20Listed%20in%20gitignore)
+- Conflicts that occur after fixing the issue with [Gitignore Folder Tracking Removal](../../../📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md#3%20Untrack%20All%20Files%20Listed%20in%20gitignore)
 	- When you attempted to sync your repository on your other laptop and encountered conflicts, it's because Git detected discrepancies between your local files and the changes from the remote repository. Let's break down why this happened and how you can resolve it efficiently.
 
 ## The Feature Request
@@ -36,6 +37,9 @@ date modified: Sunday, November 3rd 2024, 9:00 pm
 **Problem Statement:**
 
 When working with Obsidian across multiple devices, users often encounter synchronization conflicts after updating the `.gitignore` file or untracking files on one device. These conflicts arise because the untracked or ignored files are still tracked on other devices, leading to merge conflicts during pull operations. Resolving these conflicts manually can be time-consuming and requires Git command-line knowledge, which may not be ideal for all users.
+
+**Previous Related Feature Requests:**
+- [[Feature]: Force pull / reset --hard HEAD · Issue #702 · Vinzent03/obsidian-git](https://github.com/Vinzent03/obsidian-git/issues/702) - good, but not ideal.
 
 **Proposed Solution:**
 

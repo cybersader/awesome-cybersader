@@ -1,12 +1,104 @@
 {
   "recentFiles": [
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+      "basename": "Handling Obsidian Git Conflicts & Issues",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
+    },
+    {
+      "basename": "Obsidian Git Features & Solutions",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Obsidian Git",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
+    },
+    {
+      "basename": "Obsidian Git Setup",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Setup/Obsidian Git Setup.md"
+    },
+    {
+      "basename": "Breaking Vault Changes",
+      "path": "📁 09 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md"
+    },
+    {
+      "basename": "Syncing Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
+    },
+    {
+      "basename": "Gitignore Folder Tracking Removal",
+      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
+    },
+    {
+      "basename": "Git",
+      "path": "📁 21 - Development/Git/Git.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Obsidian Dictionary and Grammar",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
+      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
+      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
+    },
+    {
+      "basename": "Linked Data Vocabulary - Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md"
+    },
+    {
+      "basename": "Obsidian Run",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+    },
+    {
+      "basename": "Obsidian Run Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
+    },
+    {
+      "basename": "Documenting Activity",
+      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+    },
+    {
+      "basename": "Epoxy Casting",
+      "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "📁 09 - My Obsidian Stack",
@@ -21,28 +113,8 @@
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
     {
-      "basename": "Gitignore Folder Tracking Removal",
-      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
-    },
-    {
-      "basename": "Documenting Activity",
-      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
-    },
-    {
-      "basename": "Git",
-      "path": "📁 21 - Development/Git/Git.md"
-    },
-    {
       "basename": "📁 21 - Development",
       "path": "📁 21 - Development/📁 21 - Development.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
-    },
-    {
-      "basename": "Epoxy Casting",
-      "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
     },
     {
       "basename": "Poster Hanging",
@@ -101,18 +173,6 @@
       "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     },
     {
-      "basename": "Syncing Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
-    },
-    {
-      "basename": "Obsidian Dictionary and Grammar",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
       "basename": "Useful Obsidian Dataview Metadata",
       "path": "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md"
     },
@@ -123,26 +183,6 @@
     {
       "basename": "Syncthing for Obsidian Notes",
       "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
-    },
-    {
-      "basename": "Obsidian Git Setup",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Git Setup.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
-      "basename": "Obsidian Run",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
-    },
-    {
-      "basename": "Obsidian Run Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -157,44 +197,8 @@
       "path": "🕸️ UNSTRUCTURED/CPEs for Future CISSP.md"
     },
     {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Linked Data Vocabulary - Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
       "basename": "Building a Knowledgebase",
       "path": "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md"
-    },
-    {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-    },
-    {
-      "basename": "✅ Tasks",
-      "path": "✅ Tasks/✅ Tasks.md"
-    },
-    {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
-    },
-    {
-      "basename": "Temporary Files Filling Up Drive",
-      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md"
-    },
-    {
-      "basename": "meeting_note",
-      "path": "_FileOrganizer2000/Templates/meeting_note.md"
-    },
-    {
-      "basename": "OL Threat Detection Landscape & Gaps",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md"
     }
   ],
   "omittedPaths": [],

@@ -61,9 +61,9 @@ date modified: Sunday, November 3rd 2024, 7:49 pm
 
 ## Avoiding and Handling Git Conflicts
 
-- [Handling Obsidian Git Conflicts & Issues](../Contributable%20Obsidian%20Wiki/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues.md)
+- [Handling Obsidian Git Conflicts & Issues](../Obsidian%20Git/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues.md)
 - [🐛 Known Base Bugs, Issues](../Contributable%20Obsidian%20Wiki/🐛%20Known%20Base%20Bugs,%20Issues/🐛%20Known%20Base%20Bugs,%20Issues.md)
-- [Obsidian Git Setup](../../🕸️%20UNSTRUCTURED/Obsidian%20Git%20Setup.md)
+- [Obsidian Git Setup](../Obsidian%20Git/Obsidian%20Git%20Setup/Obsidian%20Git%20Setup.md)
 - [Syncthing Incompatible with Git](../Syncing%20Obsidian/Syncthing%20Incompatible%20with%20Git/Syncthing%20Incompatible%20with%20Git.md)
 
 ### Obsidian Git Options

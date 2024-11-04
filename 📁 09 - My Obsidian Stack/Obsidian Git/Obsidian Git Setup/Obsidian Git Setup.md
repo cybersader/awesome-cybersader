@@ -3,8 +3,10 @@ aliases:
 tags: 
 publish: true
 date created: Tuesday, October 8th 2024, 9:54 am
-date modified: Tuesday, October 8th 2024, 5:47 pm
+date modified: Monday, November 4th 2024, 8:55 am
 ---
+
+[Handling Obsidian Git Conflicts & Issues](../Handling%20Obsidian%20Git%20Conflicts%20&%20Issues/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues.md)
 
 # Links
 
