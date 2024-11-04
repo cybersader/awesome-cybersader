@@ -1,4 +1,4 @@
-- 2024-11-04 at 17h00 · [[Obsidian Setup for Corporate]]
+- 2024-11-04 at 17h02 · [[Obsidian Setup for Corporate]]
 - 2024-11-04 at 16h55 · [[Collaboration in Obsidian]]
 - 2024-11-04 at 16h33 · [[Drawing 2024-11-04 16.33.18.excalidraw]]
 - 2024-11-04 at 16h19 · [[Backups - The 3,2,1 Rule]]
