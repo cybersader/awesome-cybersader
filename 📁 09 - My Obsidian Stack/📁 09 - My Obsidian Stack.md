@@ -21,7 +21,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
 	- **[[Handling Obsidian Git Conflicts & Issues]]**
-	- **[[Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions]]**
+	- **[[Obsidian Git Features & Solutions]]**
 	- **[[Obsidian Git Setup]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**

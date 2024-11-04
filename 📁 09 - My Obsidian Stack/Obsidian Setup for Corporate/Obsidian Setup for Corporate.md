@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 1:48 pm
+date modified: Monday, November 4th 2024, 1:56 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -22,9 +22,11 @@ date modified: Monday, November 4th 2024, 1:48 pm
 - [Collaborate on a shared vault - Obsidian Help](https://help.obsidian.md/Obsidian+Sync/Collaborate+on+a+shared+vault)
 - [Obsidian Publish: Support individual user authentication and management (subscriber-only access) - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-support-individual-user-authentication-and-management-subscriber-only-access/27854/2)
 - [Access control in Obsidian : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15sp8sw/access_control_in_obsidian/)
+- [Obsidian at Work - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-at-work/18504)
+- [Can't use Obsidian at work. Any suggested workarounds? - Basement - Obsidian Forum](https://forum.obsidian.md/t/cant-use-obsidian-at-work-any-suggested-workarounds/4451/3)
 - 
 
-# Syncing & Collaborationrr
+# Syncing & Collaboration
 
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 [Syncing Obsidian](../Syncing%20Obsidian/Syncing%20Obsidian.md)
@@ -132,6 +134,7 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 
 - Make sure other hotkeys aren't taking the place of developer console
 - Go to settings, then "Ctrl + Shift + i" should always work
+- Doesn't work - they're only internal connections
 
 ## Firewall Rules for Obsidian
 
@@ -141,9 +144,24 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - [Security and privacy - Obsidian Help](https://help.obsidian.md/Obsidian+Sync/Security+and+privacy#Managing+access+to+Obsidian+Sync+on+your+network)
 - [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
 - [Network and access - Connections and Firewall](https://help.obsidian.md/Teams/Security+considerations+for+teams#Network+and+access)
+- [How did Obsidian update when blocked by firewall? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-did-obsidian-update-when-blocked-by-firewall/69320)
+- [A setting to entirely restrict internet access by the app - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/a-setting-to-entirely-restrict-internet-access-by-the-app/35117/6)
+- [Network Connections (Network Traffic) - Meta - Obsidian Forum](https://forum.obsidian.md/t/network-connections-network-traffic/12294)
+
+### Investigating Obsidian Connections
+- Tools:
+	- Portmaster
+	- TCPView
+	- Wireshark
+- TCP View
+	- While looking through community plugins in Obsidian
+		- ![](_attachments/file-20241104141213148.png)
+- Portmaster
+	- While looking through community plugins in Obsidian
+		- ![](_attachments/file-20241104141458183.png)
 - 
 
-## Obsidian Plugin Security
+## Obsidian Plugin and Sync Security
 
 - [Obsidian Vault Security](../Obsidian%20Vault%20Security/Obsidian%20Vault%20Security.md)
 - [Plugin security - Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Plugin+security)
@@ -160,6 +178,10 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 
 - Related links:
 	- [Securing Obsidian - Boxes and Walls](https://ohm.one/securing-obsidian-boxes-and-walls/)
+	- [Special build excluding sync and community plugins - Feature archive - Obsidian Forum](https://forum.obsidian.md/t/special-build-excluding-sync-and-community-plugins/62963)
+	- [Prevent plugins and auto-updates in corporate network - Help - Obsidian Forum](https://forum.obsidian.md/t/prevent-plugins-and-auto-updates-in-corporate-network/73495)
+	- [Trying obsidian in a corporate environment - Help - Obsidian Forum](https://forum.obsidian.md/t/trying-obsidian-in-a-corporate-environment/68816)
+	- 
 	- [Obsidian Sync being blocked by firewall - Help - Obsidian Forum](https://forum.obsidian.md/t/obsidian-sync-being-blocked-by-firewall/69622)
 	- [How can I check if the community plugin is safe? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-can-i-check-if-the-community-plugin-is-safe/15258)
 	- [Security of the plugins - Meta - Obsidian Forum](https://forum.obsidian.md/t/security-of-the-plugins/7544/51)
@@ -167,7 +189,6 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 	- [How do I whitelist a dynamically changing application sync server IP? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-do-i-whitelist-a-dynamically-changing-application-sync-server-ip/66967)
 	- [Per-plugin connections in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/11xd1r9/perplugin_connections_in_obsidian/)
 	- [Third-party plugins leverage the Obsidian API](https://help.obsidian.md/Teams/Deploy+Obsidian+across+your+team#Plugins)
-	- 
 
 ## Application Firewalls
 
@@ -181,6 +202,10 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 	- [Obsidian Help | GitHub-sourced connections](https://help.obsidian.md/Teams/Security+considerations+for+teams#GitHub-sourced+connections)
 	- [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
 - 
+
+## The Ideal Plugin Security - Our Own Plugin Repo
+
+- We could audit the code for a plugin then put it in our own repo, whitelist that repo URL in the firewall, and have it internally, then point Obsidian to that URL for updates.
 
 # Plugins
 
