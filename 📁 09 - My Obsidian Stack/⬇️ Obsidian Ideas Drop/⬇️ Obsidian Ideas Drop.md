@@ -4,8 +4,10 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, November 3rd 2024, 10:11 pm
+date modified: Sunday, November 3rd 2024, 10:14 pm
 ---
+
+- [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
 
 # Ideas
 
