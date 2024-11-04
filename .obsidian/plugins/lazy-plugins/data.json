@@ -390,7 +390,7 @@
         "startupType": "disabled"
       },
       "size-history": {
-        "startupType": "instant"
+        "startupType": "long"
       },
       "slurp": {
         "startupType": "disabled"

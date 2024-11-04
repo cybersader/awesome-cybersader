@@ -17,7 +17,7 @@ date modified: Monday, September 2nd 2024, 6:51 pm
 - **[[Customizing Obsidian Publish]]**
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
-- **[[Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues]]**
+- **[[Handling Obsidian Git Conflicts & Issues]]**
 - **[[Media Hosting in Obsidian]]**
 - [[Obsidian Plugins and Ideas for Contributions]]
 - **[[Obsidian Publish Analytics]]**
