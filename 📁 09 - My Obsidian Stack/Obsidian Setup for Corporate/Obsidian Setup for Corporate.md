@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 1:56 pm
+date modified: Monday, November 4th 2024, 2:57 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -149,6 +149,7 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - [Network Connections (Network Traffic) - Meta - Obsidian Forum](https://forum.obsidian.md/t/network-connections-network-traffic/12294)
 
 ### Investigating Obsidian Connections
+
 - Tools:
 	- Portmaster
 	- TCPView
@@ -159,7 +160,212 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - Portmaster
 	- While looking through community plugins in Obsidian
 		- ![](_attachments/file-20241104141458183.png)
-- 
+- Wireshark
+	- Showed DNS over HTTPS then TLS traffic...makes sense
+	- You would need TLS decryption to be able to see what's going on
+
+## Blocking Individual Plugins? - NOT POSSIBLE (2024)
+
+#### Why You Need a Firewall or Proxy with SSL/TLS Decryption / DPI (Deep Packet Inspection)
+
+- Potential tools to test with at home?:
+	- [Squid for Windows](https://squid.diladele.com/)
+
+Obsidian generates network traffic in several ways:
+
+1. **Updates and Plugin Checks**: Periodically checking for updates and fetching plugin deprecations from GitHub.
+2. **Account and License Management**: Accessing Obsidian's servers (`api.obsidian.md`).
+3. **Obsidian Sync and Publish**: Connecting to various `obsidian.md` subdomains.
+4. **Third-Party Plugins and Themes**: Downloading and enabling plugins, which may generate their own network traffic.
+5. **DNS Over HTTPS (DoH)**: Potentially using DoH for DNS queries.
+
+Obsidian uses HTTPS (port 443) for its network connections, which encrypts the HTTP payload—including URLs, paths, and parameters—making it challenging for firewalls to inspect and block specific paths. Additionally, if Obsidian uses DNS over HTTPS, traditional DNS filtering becomes ineffective because DNS queries are encrypted and sent over HTTPS.
+
+---
+
+Challenges with Blocking Specific Paths:
+
+1. **Encrypted Traffic**: HTTPS encryption prevents standard firewalls from inspecting HTTP headers and URLs without SSL/TLS decryption.
+2. **DNS Over HTTPS**: DoH encrypts DNS queries, bypassing traditional DNS filtering mechanisms.
+3. **Dynamic IP Addresses**: Blocking IP addresses is unreliable because services like GitHub and Obsidian use CDNs and dynamic IPs.
+
+---
+
+##### **Possible Solutions**
+
+###### **1. Use a Firewall with SSL/TLS Decryption and DPI**
+
+**Requirements**:
+
+- A firewall capable of SSL/TLS decryption and Deep Packet Inspection (DPI).
+- Deployment of a trusted root certificate to all client devices.
+- Compliance with legal and organizational policies regarding SSL interception.
+
+**How It Works**:
+
+- The firewall intercepts HTTPS traffic, decrypts it using the trusted certificate, and inspects the contents.
+- You can configure rules to block specific domains, URLs, paths, or parameters.
+- Example firewalls: **Palo Alto Networks**, **Cisco Firepower**, **Fortinet**, **Check Point**.
+
+**Considerations**:
+
+- **Privacy Concerns**: Intercepting SSL/TLS traffic can raise privacy and legal issues.
+- **Complexity**: Setting up SSL decryption is complex and requires careful management of certificates.
+- **Performance**: SSL decryption can impact network performance due to the overhead of encryption and decryption processes.
+
+###### **2. Implement a Web Proxy with Filtering Capabilities**
+
+**Options**:
+
+- **Squid Proxy with SSL Bump**: An open-source solution that can intercept and filter HTTPS traffic.
+- **Commercial Proxies**: Tools like **Blue Coat ProxySG**, **Zscaler**, or **Forcepoint** offer advanced filtering.
+
+**How It Works**:
+
+- The proxy acts as an intermediary between client devices and the internet.
+- SSL Bump allows the proxy to decrypt HTTPS traffic for inspection.
+- You can define granular rules to block specific URLs or paths.
+
+**Considerations**:
+
+- **Certificate Management**: Clients must trust the proxy's SSL certificate.
+- **Deployment**: Requires configuring network settings to route traffic through the proxy.
+- **Maintenance**: Ongoing management to update rules and certificates.
+
+###### **3. Use Endpoint Security Solutions**
+
+**Options**:
+
+- **Endpoint Firewall Software**: Solutions like **Windows Defender Firewall with Advanced Security** or third-party software that supports application-level filtering.
+- **Application Control Policies**: Implement policies that restrict network access for specific applications or processes.
+
+**How It Works**:
+
+- Control outbound network connections at the application level.
+- Block Obsidian from making network requests to specific domains or IPs.
+- May require creating custom rules based on executable files or process names.
+
+**Limitations**:
+
+- **Granularity**: Might not be able to block specific paths or URLs within allowed domains.
+- **User Experience**: Overly restrictive rules could impair Obsidian's functionality.
+
+###### **4. Modify Local DNS Resolution**
+
+**Approach**:
+
+- **Hosts File Modification**: Map unwanted domains to `127.0.0.1` in the hosts file.
+- **Internal DNS Server**: Use an internal DNS server to control domain resolution.
+
+**Challenges**:
+
+- **Ineffective Against DoH**: If Obsidian uses DNS over HTTPS, it bypasses the local DNS resolution.
+- **Maintenance**: Keeping the list of domains up to date can be cumbersome.
+
+###### **5. Configure Obsidian Settings**
+
+**Options**:
+
+- **Disable Automatic Updates**: Turn off updates in Obsidian's settings to prevent update checks.
+- **Restrict Plugin Installation**: Avoid installing third-party plugins or disable them.
+
+**How It Helps**:
+
+- Reduces the amount of network traffic generated by Obsidian.
+- Limits connections to GitHub and other external services.
+
+**Limitations**:
+
+- **User Compliance**: Requires users to adhere to configuration policies.
+- **Partial Solution**: Doesn't prevent all network connections, especially if users can change settings.
+
+###### **6. Use a Local Proxy for Testing and Control**
+
+**Tools**:
+
+- **Burp Suite**
+- **Charles Proxy**
+- **Fiddler**
+
+**How It Works**:
+
+- Install the proxy on individual devices.
+- Configure the device to route traffic through the proxy.
+- Decrypt HTTPS traffic by installing the proxy's certificate.
+- Set up rules to block or modify specific paths or parameters.
+
+**Best For**:
+
+- **Testing Environments**: Useful for debugging and understanding the application's network behavior.
+- **Small Scale**: Not practical for large organizations or multiple devices.
+
+---
+
+##### **Addressing DNS Over HTTPS (DoH) Complications**
+
+**Why DoH Complicates Firewalling**:
+
+- **Bypasses Traditional DNS Filtering**: DoH sends DNS queries over HTTPS to DoH servers, encrypting the queries and responses.
+- **Makes Domain Blocking Harder**: Since DNS queries are encrypted, the firewall can't see which domains are being resolved.
+
+**Potential Solutions**:
+
+1. **Block DoH Traffic**:
+    
+    - Identify and block known DoH servers at the firewall.
+    - Configure the firewall to prevent traffic to standard DoH ports (e.g., 443) for specific IPs.
+2. **Enforce Internal DNS Policies**:
+    
+    - Use Group Policy (for Windows environments) to enforce DNS settings on client devices.
+    - Disable DoH in browsers and applications if possible.
+3. **Implement Network-Wide DoH**:
+    
+    - Redirect DNS queries to a local DoH server that you control.
+    - Allows you to enforce DNS filtering policies even with DoH.
+
+**Limitations**:
+
+- **Application Behavior**: Some applications might hardcode DoH servers or ignore system DNS settings.
+- **Encryption Bypass**: Blocking DoH might cause applications to fall back to traditional DNS, but this isn't guaranteed.
+
+--- 
+
+##### **Recommended Approach**
+
+Given the complexities and the potential need for granular control, here's a step-by-step approach:
+
+1. **Assess Organizational Policies and Resources**:
+    
+    - Determine if SSL/TLS decryption is permissible under your organization's policies.
+    - Evaluate the resources available for implementing advanced firewall or proxy solutions.
+2. **Pilot a Proxy Solution**:
+    
+    - Set up a proxy like **Squid** with SSL Bump in a test environment.
+    - Configure it to decrypt HTTPS traffic and block specific paths.
+    - Test Obsidian's behavior when accessing plugins and updates.
+3. **Evaluate Endpoint Solutions**:
+    
+    - Explore endpoint firewall settings to block or restrict Obsidian's network access.
+    - Consider application whitelisting or blacklisting as necessary.
+4. **Communicate with Users**:
+    
+    - Inform users about the network restrictions and how they might affect Obsidian's functionality.
+    - Provide guidance on acceptable use and configuration.
+5. **Monitor and Iterate**:
+    
+    - Continuously monitor network traffic to ensure that the restrictions are effective.
+    - Adjust rules and policies based on observed behavior and user feedback.
+
+##### **Summary**
+
+Blocking specific paths or URL parameters used by Obsidian, especially over HTTPS and with potential DNS over HTTPS usage, is challenging but achievable with the right tools and configurations:
+
+- **SSL/TLS Decryption with DPI Firewalls**: Allows inspection and blocking of specific paths but requires careful implementation.
+- **Advanced Proxy Servers**: Provide granular control over network traffic with SSL decryption.
+- **Endpoint Controls**: Offer application-level restrictions but may lack the granularity for path-based blocking.
+- **DNS Considerations**: Addressing DoH requires additional steps to ensure DNS filtering is effective.
+
+By combining these approaches and tailoring them to your organization's needs and policies, you can effectively manage and control the network traffic generated by Obsidian.
 
 ## Obsidian Plugin and Sync Security
 
@@ -195,13 +401,19 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - [Securing Obsidian - Boxes and Walls](https://ohm.one/securing-obsidian-boxes-and-walls/)
 	- [Safing Portmaster - Easy Privacy](https://safing.io/) - firewall they recommended
 
-## Whitelisting Per-Plugin with Firewall
+## Whitelisting Per Community Plugin 
+
+### Whitelisting with a Company Plugins Folder
+
+- The only way to manually whitelist plugins is to block plugins with firewall rules, then manually update the folders for users with a company folder to store current plugins.  
+- This admittedly brings about other risks (e.g. needing to keep plugins updated somehow, having users manually move plugin folders, etc.) 
+
+### Whitelisting Per-Plugin with Firewall? (NOT POSSIBLE 2024)
 
 - Related links:
 	- [Per-plugin connections in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/11xd1r9/perplugin_connections_in_obsidian/)
 	- [Obsidian Help | GitHub-sourced connections](https://help.obsidian.md/Teams/Security+considerations+for+teams#GitHub-sourced+connections)
 	- [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
-- 
 
 ## The Ideal Plugin Security - Our Own Plugin Repo
 
