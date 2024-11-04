@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, November 3rd 2024, 10:14 pm
+date modified: Monday, November 4th 2024, 7:57 am
 ---
 
 - [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
@@ -18,6 +18,7 @@ date modified: Sunday, November 3rd 2024, 10:14 pm
 - Linting for filenames and folders to make sure that they work on Windows (No ":" and other characters)
 - [ ] Plugin or pull request to current plugin to clean youtube and amazon links of cookie and reference code stuff ➕ 2024-11-03 
 - [ ] Add saving current workspace layout to custom save ⏫ ➕ 2024-11-03
+- [ ] Smarter changelog plugin ⏫ ➕ 2024-11-04
 
 # Obsidian in the Web?
 
