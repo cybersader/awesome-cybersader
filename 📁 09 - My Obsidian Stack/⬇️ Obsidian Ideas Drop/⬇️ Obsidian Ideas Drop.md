@@ -4,8 +4,10 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, July 14th 2024, 7:26 pm
+date modified: Sunday, November 3rd 2024, 10:14 pm
 ---
+
+- [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
 
 # Ideas
 
@@ -14,6 +16,8 @@ date modified: Sunday, July 14th 2024, 7:26 pm
 - Obsidian GitHub action for running code like a vault would
 - StackEdit with GitHub as alternative to Github.dev?
 - Linting for filenames and folders to make sure that they work on Windows (No ":" and other characters)
+- [ ] Plugin or pull request to current plugin to clean youtube and amazon links of cookie and reference code stuff ➕ 2024-11-03 
+- [ ] Add saving current workspace layout to custom save ⏫ ➕ 2024-11-03
 
 # Obsidian in the Web?
 

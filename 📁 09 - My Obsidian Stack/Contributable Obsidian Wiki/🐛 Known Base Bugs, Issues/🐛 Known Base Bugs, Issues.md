@@ -7,7 +7,6 @@ publish: true
 ---
 
 - Brackets in file name (from Notion) (CS-\[moral-tech\])
-
 # Design Issues
 
 - Publish page content width is narrow

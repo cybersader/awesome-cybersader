@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Sunday, November 3rd 2024, 4:52 pm
+date modified: Sunday, November 3rd 2024, 7:49 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -61,7 +61,7 @@ date modified: Sunday, November 3rd 2024, 4:52 pm
 
 ## Avoiding and Handling Git Conflicts
 
-- [Handling Obsidian Git Conflicts](../Contributable%20Obsidian%20Wiki/Handling%20Obsidian%20Git%20Conflicts/Handling%20Obsidian%20Git%20Conflicts.md)
+- [Handling Obsidian Git Conflicts & Issues](../Contributable%20Obsidian%20Wiki/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues/Handling%20Obsidian%20Git%20Conflicts%20&%20Issues.md)
 - [🐛 Known Base Bugs, Issues](../Contributable%20Obsidian%20Wiki/🐛%20Known%20Base%20Bugs,%20Issues/🐛%20Known%20Base%20Bugs,%20Issues.md)
 - [Obsidian Git Setup](../../🕸️%20UNSTRUCTURED/Obsidian%20Git%20Setup.md)
 - [Syncthing Incompatible with Git](../Syncing%20Obsidian/Syncthing%20Incompatible%20with%20Git/Syncthing%20Incompatible%20with%20Git.md)
