@@ -3,10 +3,11 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, April 10th 2024, 8:27 pm
-date modified: Sunday, November 3rd 2024, 8:58 pm
+date modified: Sunday, November 3rd 2024, 9:00 pm
 ---
 
 [Gitignore Folder Tracking Removal](../../../📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md)
+[Obsidian Setup for Corporate](../../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 
 # Feature Requests for Obsidian Git
 
