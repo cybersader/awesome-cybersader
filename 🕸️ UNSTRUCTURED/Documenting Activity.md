@@ -8,6 +8,7 @@ date modified: Sunday, October 20th 2024, 4:10 pm
 
 [Organization Documentation & Wikis](../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
 [Wiki, KB, KMS](../📁%2003%20-%20Curations,%20Stacks/Wiki,%20KB,%20KMS/Wiki,%20KB,%20KMS.md)
+[Obsidian Setup for Corporate](../📁%2009%20-%20My%20Obsidian%20Stack/Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 
 How to Document Activity:
 
