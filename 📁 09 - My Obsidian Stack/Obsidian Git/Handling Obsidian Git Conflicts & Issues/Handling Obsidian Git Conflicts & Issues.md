@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, April 10th 2024, 8:27 pm
-date modified: Monday, November 4th 2024, 9:03 am
+date modified: Monday, November 4th 2024, 11:00 am
 ---
 
 [Gitignore Folder Tracking Removal](../../../📁%2021%20-%20Development/Git/Gitignore%20Folder%20Tracking%20Removal/Gitignore%20Folder%20Tracking%20Removal.md)
@@ -16,7 +16,6 @@ date modified: Monday, November 4th 2024, 9:03 am
 	- [[Feature]: newest file feature · Issue #740 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/740)
 	- [[feature] Make auto commit a per device setting · Issue #789 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/789)
 	- 
-
 - Conflicts often happen with the workspace.json file
 	- You can see how to fix it @ [Obsidian Setup for Corporate](../../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 	- Here's the issue:
@@ -32,119 +31,164 @@ date modified: Monday, November 4th 2024, 9:03 am
 - **"Feature Request: Bulk Untracking of Ignored Files and Conflict Handling Commands"**
 - **"Improve Multi-Device Sync: Untrack Ignored Files and Resolve Conflicts Efficiently"**
 
-### **Feature Request Description:**
+### **Feature Request Content:**
 
 **Problem Statement:**
 
-When working with Obsidian across multiple devices, users often encounter synchronization conflicts after updating the `.gitignore` file or untracking files on one device. These conflicts arise because the untracked or ignored files are still tracked on other devices, leading to merge conflicts during pull operations. Resolving these conflicts manually can be time-consuming and requires Git command-line knowledge, which may not be ideal for all users.
+When using Obsidian with the Git plugin across multiple devices, I often run into synchronization conflicts. These aren't just from changing the `.gitignore` file—which I know isn't super common—but also from things like plugin data changing in the background or editing notes on different devices around the same time. It's a hassle because these conflicts can interrupt my workflow, and resolving them usually means I have to open up a terminal and run complex Git commands (e.g. hard reset, theirs flag, ours flag when merging), which isn't ideal.
 
-**Previous Related Feature Requests:**
-- [[Feature]: Force pull / reset --hard HEAD · Issue #702 · Vinzent03/obsidian-git](https://github.com/Vinzent03/obsidian-git/issues/702) - good, but not ideal.
+I think a lot of these conflicts could be handled more smoothly if the plugin offered some built-in options to resolve them, like favoring "ours" (local) or "theirs" (remote) during merges, or providing ways to untrack files that are causing issues. It would be great if the plugin could help manage these situations without requiring users to dive into Git's command line, especially for those of us who aren't Git experts.
+
+I'm sure some of the conflict handling tools for Git out there have other perspectives on solving this as well.
+
+***
+
+**Related Issues and Obsidian Git docs:**
+- [Files in .gitignore aren't ignored](https://publish.obsidian.md/git-doc/Common+issues#Files+in+%60.gitignore%60+aren)
+- [Is there a way to `git pull --force` from the mobile app? · Vinzent03/obsidian-git · Discussion #616](https://github.com/Vinzent03/obsidian-git/discussions/616)
+- [Should I `.gitignore` the `workspace.json` file? · Vinzent03/obsidian-git · Discussion #709](https://github.com/Vinzent03/obsidian-git/discussions/709)
+- [Is it possible to pull with ours/theirs flags? · Vinzent03/obsidian-git · Discussion #514](https://github.com/Vinzent03/obsidian-git/discussions/514) 
+
+* * *
 
 **Proposed Solution:**
 
-Introduce new commands and settings in the Obsidian Git plugin to streamline conflict resolution and synchronization across multiple devices. These features aim to automate the untracking of ignored files, provide options for bulk conflict handling, and integrate "ours" and "theirs" merge strategies within the Obsidian interface.
+The main goal is to improve multi-device support by adding conflict handling options or a workflow UI or modal directly within the Obsidian Git plugin. This way, users wouldn't need to open a terminal to resolve conflicts—they could do it all from within Obsidian.  The goal would be not to clutter the settings, so some of this could be under the Advanced section.  I understand the Obsidian Git functions may work different in the background, so all of the implementations are just to show how it looks when doing them in a CLI.
 
-**Proposed Features:**
+Here are some ideas for features and settings that could help:
 
-1. Multi-Device Conflict Resolution / Multi-Device Compatibility
-	- In general, there could be a section in the settings for Obsidian Git or even more specifically under the Advanced section.
-	- The point of these settings would be to make it easier to use Obsidian Git across multiple devices for asynchronous work.
-2. **Command or Setting: `Git: Untrack Ignored Files`**
-    - **Description:** Untracks all files currently tracked by Git that match patterns in the `.gitignore` file, preventing future conflicts when syncing across devices.
+1. **Flexible Conflict Resolution Settings:**
+    - Add a section in the plugin settings (maybe under "Advanced") dedicated to multi-device usage. This section could offer options for how the plugin handles conflicts when syncing between devices.
+    - This could be a dropdown in the settings like "Multi-Device" or "Conflict Handling" or whatever is best for the UI
+2. **Command: `Git: Untrack Ignored Files`**
+    - **Description:** A command that untracks all files currently tracked by Git that match patterns in the `.gitignore` file. This helps prevent conflicts when syncing changes across devices, especially if the `.gitignore` has been updated on one device but not yet applied on others. This would emulate the same behavior talked about in the docs -  [Files in .gitignore aren't ignored](https://publish.obsidian.md/git-doc/Common+issues#Files+in+%60.gitignore%60+aren).
     - **Implementation:**
-        - Execute the equivalent of:
-            
-            ```bash
-            git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
-            ```
-            
-        - Present the user with a confirmation dialog listing the files to be untracked.
-        - Include warnings about the impact of untracking files.
-        - This could potentially be in the form of a setting under the 
-3. **Command: `Git: Resolve Conflicts by Untracking Ignored Files`**
-    - **Description:** During a merge conflict, this command identifies files causing conflicts that are also listed in `.gitignore` and offers to untrack them in bulk.
+        - The plugin could execute a command like:
+            `git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached`
+		- I understand Obsidian Git may work in a specific way to get `git` working in the background, but this is the type of command that would be implemented.  Since the exact command might differ across operating systems, the plugin should handle this internally, ensuring compatibility with Windows, macOS, and Linux.
+        - Present the user with a confirmation dialog listing the files to be untracked, along with warnings about the impact.
+        - Optionally, provide settings to choose whether to:
+            - Automate this process during pulls.
+            - Do it manually via the command palette.
+            - Untrack files in bulk or one at a time.
+3. **Feature: Automatic Detection and Resolution of Conflicts Due to Ignored Files**
+    - **Description:** When the plugin detects conflicts caused by files that are now ignored (perhaps because the `.gitignore` changed on another device), it could prompt the user with options to resolve the conflict.
     - **Implementation:**
-        - Detect conflicting files matching `.gitignore` patterns.
-        - Prompt the user: "The following tracked files are now ignored and causing conflicts. Would you like to untrack them?"
-        - Untrack selected files upon confirmation.
-4. **Command: `Git: Use "Ours" Merge Strategy`**
-    - **Description:** Resolves merge conflicts by favoring the local version of files.
+        - The plugin notices when a pull results in conflicts with ignored files.
+        - A modal pops up, saying something like:
+            "We noticed that some tracked files are now in your `.gitignore` and are causing conflicts. Would you like to untrack these files to resolve the conflicts?"
+        - Options in the modal could include:
+            - **Bulk Untrack Ignored Files:** Untracks all the conflicting files at once.
+            - **Review Files:** Allows the user to see the list of files and choose which ones to untrack.
+            - **Edit `.gitignore`:** Opens the `.gitignore` file for editing, in case the user wants to adjust it.
+            - Provide a brief explanation or bullet points about each option to help the user decide.
+4. **Commands for Merge Strategies with Inclusion/Exclusion Options:**
+    - **`Git: Use "Ours" Merge Strategy`**
+        - **Description:** Resolves merge conflicts by favoring your local version of files (the "ours" strategy).
+        - **Implementation:**
+            - Execute something like:
+                `git merge --strategy-option ours`
+            - Before running, the plugin could offer options to:
+                - Apply to all conflicts.
+                - Apply only to specific files or folders (with inclusion/exclusion paths), which is helpful if you only want to favor local changes for certain plugins or directories.  This could be implemented with a `+` button under Advanced Obsidian Git settings where you give the paths to them.
+            - Provide a confirmation dialog explaining what will happen if need be.
+    - **`Git: Use "Theirs" Merge Strategy`**
+        - **Description:** Resolves merge conflicts by favoring the remote version of files (the "theirs" strategy).
+        - **Implementation:**
+            - Execute something like:
+                `git merge --strategy-option theirs`
+            - Similar to the "ours" command, offer options to include or exclude certain files or folders.  This could be implemented with a `+` button under Advanced Obsidian Git settings where you give the paths to them.
+            - Provide a confirmation dialog explaining what will happen if need be.
+5. **Command: `Git: Hard Reset to Remote Branch`**
+    - **Description:** Resets your local branch to match the remote branch exactly, discarding all local changes—even those that aren't in conflict. This is different from the "ours/theirs" strategies because it replaces your entire local state with the remote state, not just resolving conflicts.
     - **Implementation:**
-        - Execute:
-            
-            ```bash
-            git merge --strategy-option ours
-            ```
-            
-        - Apply to the current merge conflict.
-        - Provide a confirmation dialog explaining the impact.
-5. **Command: `Git: Use "Theirs" Merge Strategy with Conflicts`**
-    - **Description:** Resolves merge conflicts by favoring the remote version of files.  
+        - Execute something like:
+            `git fetch origin git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)`
+        - Before running, show a strong warning that this will discard all local changes, including any uncommitted work.
+        - Require the user to confirm before proceeding.
+6. **Conflict Resolution Modal with Advanced Options:**
+    - **Description:** When conflicts occur, the plugin could present a modal dialog that provides various options for resolving them, similar to tools like GitHub Desktop.
     - **Implementation:**
-        - Execute:
-            
-            ```bash
-            git merge --strategy-option theirs
-            ```
-            
-        - Apply to the current merge conflict.
-        - Provide a confirmation dialog explaining the impact.
-6. **Command: `Git: Hard Reset to Remote Branch`**
-    - **Description:** Resets the local branch to match the remote branch, discarding local uncommitted changes. Useful when you want to synchronize your local repository with the remote state.
+        - The modal could include:
+            - **List of Conflicting Files:** Shows which files are in conflict.
+            - **Options to Resolve Each Conflict:**
+                - **Use Local Version ("Ours")**
+                - **Use Remote Version ("Theirs")**
+                - **Manual Merge:** Open the file to manually resolve conflicts.
+            - **Bulk Actions:**
+                - Apply "ours" or "theirs" strategy to all conflicts.
+                - Exclude or include certain files or folders in the bulk action.
+            - **Advanced Settings:**
+                - Allow users to set default behaviors for future conflicts.
+                - Option to enable advanced conflict handling features.
+7. **Settings for Conflict Handling Behavior:**
+    - **Description:** Provide settings where users can configure how the plugin should handle conflicts by default.
     - **Implementation:**
-        - Execute:
-            
-            ```bash
-            git fetch origin
-            git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
-            ```
-            
-        - Include a strong warning about the loss of uncommitted local changes.
-        - Require user confirmation before proceeding.
-7. **Setting: `Enable Advanced Conflict Resolution Commands`**
-    - **Description:** An option in the plugin settings to show or hide advanced, potentially destructive commands (like hard reset or cleaning untracked files).
+        - Options could include:
+            - **Automatically Untrack Ignored Files:** Enable or disable automatic untracking of ignored files during pulls.
+            - **Default Merge Strategy:** Set a default preference for "ours" or "theirs" when conflicts occur.
+            - **Exclusions/Inclusions:** Specify files or folders to always exclude or include when applying bulk conflict resolutions.
+            - **Enable Advanced Conflict Handling:** A setting to show or hide advanced options and commands, preventing accidental use by less experienced users.
+8. **Platform Compatibility Considerations:**
+    - **Description:** Ensure that any command implementations are compatible across different operating systems (Windows, macOS, Linux) and their respective command-line interfaces.
     - **Implementation:**
-        - Default to disabled to prevent accidental misuse.
-        - When enabled, the advanced commands become available in the command palette.
-8. **Feature: Conflict Resolution Prompt During Pull**
-    - **Description:** When a pull operation results in conflicts, the plugin can detect the type of conflicts and suggest appropriate commands to resolve them.
-    - **Implementation:**
-        - If conflicts are due to untracked ignored files, prompt to run `Git: Resolve Conflicts by Untracking Ignored Files`.
-        - If appropriate, offer options to use "ours" or "theirs" strategies.
-        - Provide clear explanations of each option's impact.
+        - Use platform-agnostic methods within the plugin when executing Git commands.
+        - For commands that differ between OS's, the plugin should detect the OS and run the appropriate version.
+        - For example, the command to untrack ignored files might differ:
+            - On Unix-based systems:
+                `git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached`
+            - On Windows Command Prompt:
+                `for /F %f in ('git ls-files -ci --exclude-standard') do git rm --cached "%f"`
+            - The plugin would handle these differences internally.
 
-**Pragmatic Reasons for Implementation:**
+---
 
-- **Improves User Experience:** Simplifies conflict resolution for users who may not be comfortable using the command line, making Obsidian more accessible.
-- **Enhances Multi-Device Synchronization:** Facilitates smoother workflow for users who use Obsidian on multiple devices.
+**Why This Would Help:**
+- **Improves Multi-Device Support:** By providing tools to handle conflicts that commonly occur when working across multiple devices, the plugin would make it much easier to keep notes in sync.
+- **User-Friendly:** Users wouldn't need to open a terminal or know complex Git commands to resolve conflicts—they could do it all within Obsidian.
+- **Flexible and Customizable:** Advanced users could configure settings to suit their workflow, while less experienced users could rely on sensible defaults and helpful prompts.
 
-**Considerations and Safeguards:**
+---
+**Additional Considerations:**
 
-- **User Confirmation and Warnings:**
-    - Commands that can lead to data loss (e.g., hard reset) should include clear warnings and require explicit user confirmation.
-- **Non-Destructive Defaults:**
-    - Default settings should favor non-destructive actions, with advanced options available for experienced users.
+- **Safety Measures:**
+    - Any command that could lead to data loss (like hard reset) should have clear warnings and require confirmation.
+    - The plugin should provide explanations of what each option does, so users can make informed decisions.
+- **Conflict Detection:**
+    - The plugin should be able to detect when conflicts are likely to occur (e.g., after a pull that fails due to conflicts) and proactively offer solutions.
+- **Mobile Support:**
+    - Recognizing that Git setup on mobile devices can be tricky, any improvements that could make syncing on mobile smoother would be appreciated. If implementing these features on mobile isn't feasible due to platform limitations, perhaps provide guidance or alternatives.
+- **Plugin Data Conflicts:**
+    - Since plugins can change data in the background and cause conflicts, perhaps provide specific options for handling conflicts in the `.obsidian/plugins` directory. For example, always favoring local plugin data or providing an option to exclude certain plugins from synchronization.
 
-* * *
-
-**Summary:**
-
-This feature request proposes the addition of several commands and settings to the Obsidian Git plugin that would help users handle synchronization conflicts, especially when working across multiple devices. By integrating commands for untracking ignored files, offering merge strategies, and providing conflict resolution prompts, the plugin can greatly enhance its utility and user friendliness.
-
-* * *
-
-**Example Usage in Obsidian:**
+---
+**Example Usage:**
 
 - **Untracking Ignored Files:**
-    - Press `Ctrl + P` and select `Git: Untrack Ignored Files`.
-    - Confirm the list of files to untrack when prompted.
+    - Press `Ctrl + P`, type `Git: Untrack Ignored Files`, and select the command.
+    - A dialog appears showing the files that will be untracked, with options to proceed or cancel.
 - **Resolving Conflicts During Pull:**
-    - When a pull results in conflicts, a prompt appears:
-        - "Conflicts detected due to untracked ignored files. Would you like to untrack these files to resolve the conflicts?"
-    - Choose to untrack files or select a merge strategy (`Ours` or `Theirs`).
+    - After attempting to pull and encountering conflicts, a modal pops up:
+        - "Conflicts detected. How would you like to resolve them?"
+        - Options:
+            - **Use Local Changes ("Ours")**
+            - **Use Remote Changes ("Theirs")**
+            - **Untrack Ignored Files Causing Conflicts**
+            - **Manual Resolution**
+            - **Hard Reset to Remote** (with warnings)
+- **Setting Default Conflict Handling Behavior:**
+    - Go to Obsidian Git plugin settings.
+    - Under a new "Multi-Device Sync" section, configure:
+        - **Default Conflict Resolution Strategy:** Choose between "Ask Every Time," "Use Ours," "Use Theirs," or "Manual."
+        - **Automatically Untrack Ignored Files:** Enable or disable.
+        - **Exclude/Include Paths:** Specify any files or folders to exclude from automatic conflict resolution.
 
-* * *
+---
+**Final Thoughts:**
+
+I believe these features would make a significant difference for users who rely on Obsidian across multiple devices. By integrating conflict resolution tools directly into the plugin, it would simplify the merging process and reduce the friction caused by conflicts—especially for those of us who aren't Git wizards.
+
+Let me know if this makes sense or if there's anything I can clarify!
 
 # Git Merging and Conflicts
 

@@ -1,6 +1,6 @@
 {
-  "findText": "((?:○ )|(?:§ ))",
-  "replaceText": "- ",
+  "findText": "(\\n)([\\t ]*\\n)",
+  "replaceText": "$1",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": false,

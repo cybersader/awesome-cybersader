@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Endpoint Firewall",
+      "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
       "basename": "Handling Obsidian Git Conflicts & Issues",
       "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     },
     {
-      "basename": "Obsidian Git Features & Solutions",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions.md"
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+      "basename": "Obsidian Regex Find & Replace",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Regex Find & Replace.md"
+    },
+    {
+      "basename": "Obsidian Git Features & Solutions",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions.md"
     },
     {
       "basename": "Obsidian Git",
@@ -95,10 +107,6 @@
     {
       "basename": "Epoxy Casting",
       "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "📁 09 - My Obsidian Stack",
@@ -191,14 +199,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "CPEs for Future CISSP",
-      "path": "🕸️ UNSTRUCTURED/CPEs for Future CISSP.md"
-    },
-    {
-      "basename": "Building a Knowledgebase",
-      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md"
     }
   ],
   "omittedPaths": [],
