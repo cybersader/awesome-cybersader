@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 2:57 pm
+date modified: Monday, November 4th 2024, 3:11 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -12,6 +12,10 @@ date modified: Monday, November 4th 2024, 2:57 pm
 
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
+
+# High-Level Tech Stack & Guide
+
+
 
 # Misc Links
 
@@ -403,9 +407,18 @@ By combining these approaches and tailoring them to your organization's needs an
 
 ## Whitelisting Per Community Plugin 
 
-### Whitelisting with a Company Plugins Folder
+### Plugin Whitelisting Workaround with a Company Plugins Folder
 
 - The only way to manually whitelist plugins is to block plugins with firewall rules, then manually update the folders for users with a company folder to store current plugins.  
+
+- Blocking community plugins with firewall
+	- Block both of the related domains from being **outbound** connections for Obsidian
+		- `github.com`
+		- `raw.githubusercontent.com`
+	- Use whatever application firewall
+		- At home, I use Portmaster - [Endpoint Firewall](../../🕸️%20UNSTRUCTURED/Endpoint%20Firewall/Endpoint%20Firewall.md)
+		- ![](_attachments/file-20241104150951058.png)
+
 - This admittedly brings about other risks (e.g. needing to keep plugins updated somehow, having users manually move plugin folders, etc.) 
 
 ### Whitelisting Per-Plugin with Firewall? (NOT POSSIBLE 2024)

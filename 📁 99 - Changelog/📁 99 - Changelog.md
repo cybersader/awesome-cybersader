@@ -1,6 +1,6 @@
-- 2024-11-04 at 14h57 · [[Obsidian Setup for Corporate]]
+- 2024-11-04 at 15h11 · [[Obsidian Setup for Corporate]]
+- 2024-11-04 at 15h09 · [[📁 09 - My Obsidian Stack]]
 - 2024-11-04 at 14h54 · [[Endpoint Firewall]]
-- 2024-11-04 at 14h14 · [[📁 09 - My Obsidian Stack]]
 - 2024-11-04 at 13h20 · [[Organization Documentation & Wikis]]
 - 2024-11-04 at 12h14 · [[Diet, Nutrition]]
 - 2024-11-04 at 12h13 · [[📁 08 - Personal]]
