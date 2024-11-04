@@ -1,20 +1,124 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Gitignore Folder Tracking Removal",
+      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
+    },
+    {
+      "basename": "Handling Obsidian Git Conflicts",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Handling Obsidian Git Conflicts/Handling Obsidian Git Conflicts.md"
+    },
+    {
+      "basename": "Documenting Activity",
+      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
+      "basename": "Git",
+      "path": "📁 21 - Development/Git/Git.md"
+    },
+    {
+      "basename": "📁 21 - Development",
+      "path": "📁 21 - Development/📁 21 - Development.md"
+    },
+    {
       "basename": "Obsidian Vaults with Cybersecurity",
       "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
     },
     {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+      "basename": "Epoxy Casting",
+      "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
+    },
+    {
+      "basename": "Poster Hanging",
+      "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
+    },
+    {
+      "basename": "Bulletin Board Panels",
+      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
+    },
+    {
+      "basename": "Soundproofing",
+      "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
+    },
+    {
+      "basename": "📁 18 - Self-Hosting",
+      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
+    },
+    {
+      "basename": "Panels and Overlays",
+      "path": "📁 20 - Home DIY/Wall Decor/Panels and Overlays/Panels and Overlays.md"
+    },
+    {
+      "basename": "Coin Displays",
+      "path": "📁 20 - Home DIY/Coin Displays/Coin Displays.md"
+    },
+    {
+      "basename": "Decorating with Conference Stickers",
+      "path": "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/Decorating with Conference Stickers.md"
+    },
+    {
+      "basename": "Using Treemaps To Simplify Data WorkSpace Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md"
+    },
+    {
+      "basename": "Xbox Controllers",
+      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
+    },
+    {
+      "basename": "Wall Attachment Methods",
+      "path": "📁 20 - Home DIY/Wall Decor/Wall Attachment Methods/Wall Attachment Methods.md"
+    },
+    {
+      "basename": "file-20241006152824100",
+      "path": "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/_attachments/file-20241006152824100.png"
+    },
+    {
+      "basename": "Wall Decor",
+      "path": "📁 20 - Home DIY/Wall Decor/Wall Decor.md"
+    },
+    {
+      "basename": "TrueNAS Electric Eel 24.10 Update",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
+    },
+    {
+      "basename": "Org Data Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Syncing Obsidian",
       "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+      "basename": "Obsidian Dictionary and Grammar",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Useful Obsidian Dataview Metadata",
+      "path": "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md"
+    },
+    {
+      "basename": "🐛 Known Base Bugs, Issues",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
+    },
+    {
+      "basename": "Syncthing for Obsidian Notes",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
+    },
+    {
+      "basename": "Obsidian Git Setup",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Git Setup.md"
     },
     {
       "basename": "⬇️ KnowEng Drop",
@@ -35,10 +139,6 @@
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -73,10 +173,6 @@
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     },
     {
-      "basename": "Obsidian Dictionary and Grammar",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
-    },
-    {
       "basename": "✅ Tasks",
       "path": "✅ Tasks/✅ Tasks.md"
     },
@@ -103,102 +199,6 @@
     {
       "basename": "From Other Wiki",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/From Other Wiki.md"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-2.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-3.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-4.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-5.png"
-    },
-    {
-      "basename": "IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-Detection Gap Analysis Using DeTT&CT-2024063021-6.png"
-    },
-    {
-      "basename": "IMG-OL Threat Detection Landscape & Gaps-2024063021-5",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-5.png"
-    },
-    {
-      "basename": "IMG-OL Threat Detection Landscape & Gaps-2024063021-4",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/__attachments/Detection Engineering/IMG-OL Threat Detection Landscape & Gaps-2024063021-4.png"
-    },
-    {
-      "basename": "SecOps Stack & Resources",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
-    },
-    {
-      "basename": "oCISO Wiki",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/oCISO Wiki.md"
-    },
-    {
-      "basename": "Mitre St&CK Architecture by Ben",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/Mitre St&CK Architecture by Ben.md"
-    },
-    {
-      "basename": "iX-Storj Overcharging or Overusing Storage",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
-    },
-    {
-      "basename": "Scheduled Backups, Scheduled Downtime",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Scheduled Backups, Scheduled Downtime/Scheduled Backups, Scheduled Downtime.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
-    },
-    {
-      "basename": "Flooring",
-      "path": "📁 20 - Home DIY/Flooring.md"
-    },
-    {
-      "basename": "Fixing Toilets",
-      "path": "📁 20 - Home DIY/Fixing Toilets.md"
-    },
-    {
-      "basename": "Dealing with Asbestos",
-      "path": "📁 20 - Home DIY/Dealing with Asbestos.md"
-    },
-    {
-      "basename": "📁 20 - Home DIY",
-      "path": "📁 20 - Home DIY/📁 20 - Home DIY.md"
-    },
-    {
-      "basename": "Lock Windows For Background Processes",
-      "path": "🕸️ Things I Learned Today/Lock Windows For Background Processes.md"
-    },
-    {
-      "basename": "🕸️ Things I Learned Today",
-      "path": "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md"
-    },
-    {
-      "basename": "Collaborative Red Team Engagement Strategy",
-      "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
-    },
-    {
-      "basename": "📁 10 - Community",
-      "path": "📁 10 - Community/📁 10 - Community.md"
-    },
-    {
-      "basename": "📁 08 - Personal",
-      "path": "📁 08 - Personal/📁 08 - Personal.md"
-    },
-    {
-      "basename": "Media Hosting in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Media Hosting in Obsidian/Media Hosting in Obsidian.md"
     }
   ],
   "omittedPaths": [],

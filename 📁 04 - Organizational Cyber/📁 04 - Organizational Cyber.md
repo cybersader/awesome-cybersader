@@ -30,6 +30,7 @@ publish: true
 	- [[Indiana Cyber Regulation, Laws]]
 - **[[Org Data Governance]]**
 	- [[PI Types]]
+	- **[[Using Treemaps To Simplify Data WorkSpace Governance]]**
 - **[[Organization Documentation & Wikis]]**
 - **[[Physical Security]]**
 - **[[Scripting vs Development Risks on Endpoints]]**

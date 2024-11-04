@@ -25,6 +25,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[Scheduled Backups, Scheduled Downtime]]**
 - **[[TrueNAS Cloud Backups]]**
 	- **[[Cheapest Archive Storage]]**
+- **[[TrueNAS Electric Eel 24.10 Update]]**
 - **[[TrueNAS Immich Setup]]**
 
 - **[[TrueNAS K3S to Docker Compose]]**

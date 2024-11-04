@@ -4,6 +4,14 @@
 # ignore library of congress taxonomy subject heading names from linked-data-vocabularies plugin
 *madsrdf.jsonld*
 
+# For Git usage
+# - check out my wiki page on Corporate Obsidian
+# - the workspace and data have to be ignored for Obsidian Git to work properly
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json
+.obsidian/workspace
+.obsidian/plugins/home-tab/data.json
+
 # --- VSCode --- #
 .vscode/*
 !.vscode/settings.json

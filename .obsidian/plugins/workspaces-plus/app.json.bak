@@ -1,0 +1,15 @@
+{
+  "propertiesInDocument": "visible",
+  "livePreview": true,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./",
+  "autoPairMarkdown": false,
+  "autoPairBrackets": false,
+  "promptDelete": false,
+  "showRibbon": true,
+  "showUnsupportedFiles": true,
+  "userIgnoreFilters": null,
+  "newFileLocation": "current"
+}
