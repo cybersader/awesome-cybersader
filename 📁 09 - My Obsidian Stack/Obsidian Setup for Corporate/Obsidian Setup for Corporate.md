@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 1:03 pm
+date modified: Monday, November 4th 2024, 1:25 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -33,10 +33,16 @@ date modified: Monday, November 4th 2024, 1:03 pm
 - You may be thinking, why not just use git with "[Obsidian Git](../Obsidian%20Git/Obsidian%20Git.md)"?  Yes...that will work most of the time, unless you have plugins that add data right when you open pages or the vault.  Constantly having conflicts and git errors is a chore.
 	- [ ] Solve the constant Obsidian Git error issues 🔺 ➕ 2024-10-30
 
+- Related links:
+	- [Syncing for teams - Obsidian Help](https://help.obsidian.md/Teams/Syncing+for+teams)
+	- [Sync your notes across devices - Obsidian Help](https://help.obsidian.md/Getting+started/Sync+your+notes+across+devices)
+	- 
+
 - Asynchronous Options:
 	- Obsidian Git
 - Live Sync Options
 	- Obsidian Sync
+		- 
 
 ## Syncing Workspaces Between Devices 
 
@@ -102,17 +108,32 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 
 - obsidian sharing collaboration user control active directory
 
+## SSO and MFA
+
+- Related links:
+	- [Account security](https://help.obsidian.md/Teams/Security+considerations+for+teams#Account+security)
+
 # Version Control
 
 - Obsidian Git
+
+# AI Risks?
+
+- Related links:
+	- [AI and Your Obsidian Vault — Practical Advice to Protect Your Privacy | by TfTHacker | Obsidian Observer | Medium](https://medium.com/obsidian-observer/ai-and-your-obsidian-vault-practical-advice-to-protect-your-privacy-27a75d28965a)
+	- 
 
 # Network and Plugin Risk Reduction
 
 ## Firewall Rules for Obsidian
 
+[Endpoint Firewall](../../🕸️%20UNSTRUCTURED/Endpoint%20Firewall/Endpoint%20Firewall.md)
+
 - [Security considerations for teams - Obsidian Help](https://help.obsidian.md/Teams/Security+considerations+for+teams)
 - [Security and privacy - Obsidian Help](https://help.obsidian.md/Obsidian+Sync/Security+and+privacy#Managing+access+to+Obsidian+Sync+on+your+network)
 - [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
+- [Network and access - Connections and Firewall](https://help.obsidian.md/Teams/Security+considerations+for+teams#Network+and+access)
+- 
 
 ## Obsidian Plugin Security
 
@@ -136,6 +157,8 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 	- [Security of the plugins - Meta - Obsidian Forum](https://forum.obsidian.md/t/security-of-the-plugins/7544/51)
 	- [Is Obsidian And The Plugins Secure To Use At Work - Help - Obsidian Forum](https://forum.obsidian.md/t/is-obsidian-and-the-plugins-secure-to-use-at-work/52164)
 	- [How do I whitelist a dynamically changing application sync server IP? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-do-i-whitelist-a-dynamically-changing-application-sync-server-ip/66967)
+	- [Per-plugin connections in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/11xd1r9/perplugin_connections_in_obsidian/)
+	- [Third-party plugins leverage the Obsidian API](https://help.obsidian.md/Teams/Deploy+Obsidian+across+your+team#Plugins)
 	- 
 
 ## Application Firewalls
@@ -143,8 +166,11 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - [Securing Obsidian - Boxes and Walls](https://ohm.one/securing-obsidian-boxes-and-walls/)
 	- [Safing Portmaster - Easy Privacy](https://safing.io/) - firewall they recommended
 
-## Whitelisting Plugins with Firewall
+## Whitelisting Per-Plugin with Firewall
 
+- Related links:
+	- [Per-plugin connections in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/11xd1r9/perplugin_connections_in_obsidian/)
+	- [Obsidian Help | GitHub-sourced connections](https://help.obsidian.md/Teams/Security+considerations+for+teams#GitHub-sourced+connections)
 - 
 
 # Plugins

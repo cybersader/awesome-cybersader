@@ -9660,9 +9660,9 @@ var InputNumberComponent = class {
 // src/view.ts
 var VIEW_TYPE = "bearings-navigator-view";
 var DISPLAY_TEXT = "Bearings";
-var OUTLINKED_RELATIONSHIP_GLYPH = "\u21A4";
-var INLINKED_RELATIONSHIP_GLYPH = "\u21A6";
-var BILINKED_RELATIONSHIP_GLYPH = "\u21CC";
+var OUTLINKED_RELATIONSHIP_GLYPH = "\u{1F850}";
+var INLINKED_RELATIONSHIP_GLYPH = "\u{1F852}";
+var BILINKED_RELATIONSHIP_GLYPH = "\u{1F858}";
 var BearingsView = class extends import_obsidian9.ItemView {
   constructor(leaf, plugin, configuration, dataService) {
     super(leaf);
@@ -10286,34 +10286,32 @@ var NavigationEntryFrame = class extends NavigationBase {
     } else if (parentFileNode) {
       relationships.push(...(_a = entryData == null ? void 0 : entryData.value) == null ? void 0 : _a.relationships[parentFileNode.filePath]);
     }
-    if (relationships.length > 0) {
-      let relationshipDesc = relationships.map((relationship) => {
-        if (relationship.isInlink) {
-          return `${relationship.relationshipKey}${INLINKED_RELATIONSHIP_GLYPH}`;
-        } else {
-          return `${OUTLINKED_RELATIONSHIP_GLYPH}${relationship.relationshipKey}`;
-        }
-      });
-      relationshipDesc = [...new Set(relationshipDesc)].sort();
-      const complementaryRelationships = relationships.filter((relationship) => relationship.isInlink);
-      let relationshipPolarityGlyph = "";
-      if (complementaryRelationships.length === 0) {
-        relationshipPolarityGlyph = OUTLINKED_RELATIONSHIP_GLYPH;
-      } else if (complementaryRelationships.length === relationships.length) {
-        relationshipPolarityGlyph = INLINKED_RELATIONSHIP_GLYPH;
+    let relationshipDesc = relationships.map((relationship) => {
+      if (relationship.isInlink) {
+        return `${relationship.relationshipKey}${INLINKED_RELATIONSHIP_GLYPH}`;
       } else {
-        relationshipPolarityGlyph = BILINKED_RELATIONSHIP_GLYPH;
+        return `${OUTLINKED_RELATIONSHIP_GLYPH}${relationship.relationshipKey}`;
       }
-      if (relationshipPolarityGlyph) {
-        this.elements.relationshipsContainer = this.elements.entryGutterLeftHead.createEl("div", {
-          cls: ["bearings-entry-node-connection-container"]
-        });
-        let relEl = this.elements.relationshipsContainer.createEl("div", {
-          cls: ["bearings-entry-node-connection-cell"]
-        });
-        relEl.innerText = relationshipPolarityGlyph;
-        relEl.setAttribute("title", relationshipDesc.join("; "));
-      }
+    });
+    relationshipDesc = [...new Set(relationshipDesc)].sort();
+    const complementaryRelationships = relationships.filter((relationship) => relationship.isInlink);
+    let relationshipPolarityGlyph = "";
+    if (complementaryRelationships.length === 0) {
+      relationshipPolarityGlyph = OUTLINKED_RELATIONSHIP_GLYPH;
+    } else if (complementaryRelationships.length === relationships.length) {
+      relationshipPolarityGlyph = INLINKED_RELATIONSHIP_GLYPH;
+    } else {
+      relationshipPolarityGlyph = BILINKED_RELATIONSHIP_GLYPH;
+    }
+    if (relationshipPolarityGlyph) {
+      this.elements.relationshipsContainer = this.elements.entryGutterLeftHead.createEl("div", {
+        cls: ["bearings-entry-node-connection-container"]
+      });
+      let relEl = this.elements.relationshipsContainer.createEl("div", {
+        cls: ["bearings-entry-node-connection-cell"]
+      });
+      relEl.innerText = relationshipPolarityGlyph;
+      relEl.setAttribute("title", relationshipDesc.join("; "));
     }
     this.elements.entryNodeToggleContainer = this.elements.entryGutterLeftHead.createEl("div", {
       cls: ["bearings-entry-node-toggle-container"]
@@ -10336,7 +10334,7 @@ var NavigationEntryFrame = class extends NavigationBase {
         }
       } else {
         this.elements.entryNodeToggleContainer.classList.add("bearings-node-leaf");
-        let terminal = "\u2617";
+        let terminal = "\u{1F837}";
         this.elements.entryNodeToggleContainer.setText(terminal);
       }
     };
@@ -10649,3 +10647,5 @@ var BearingsPlugin = class extends import_obsidian10.Plugin {
     }
   }
 };
+
+/* nosourcemap */
