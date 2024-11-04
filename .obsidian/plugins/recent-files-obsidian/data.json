@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Vault Security",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Endpoint Firewall",
       "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Diet, Nutrition",
+      "path": "📁 08 - Personal/Wellness, Fitness/Diet, Nutrition/Diet, Nutrition.md"
+    },
+    {
+      "basename": "Wellness, Fitness",
+      "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
     },
     {
       "basename": "Handling Obsidian Git Conflicts & Issues",
@@ -83,10 +99,6 @@
     {
       "basename": "Obsidian Run Testing",
       "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
     },
     {
       "basename": "⬇️ Cyber Content Ideas",
@@ -187,18 +199,6 @@
     {
       "basename": "🐛 Known Base Bugs, Issues",
       "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
-    },
-    {
-      "basename": "Syncthing for Obsidian Notes",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
-    },
-    {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     }
   ],
   "omittedPaths": [],

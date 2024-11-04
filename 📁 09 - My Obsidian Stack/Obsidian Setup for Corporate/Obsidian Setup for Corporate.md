@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 11:25 am
+date modified: Monday, November 4th 2024, 12:15 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -118,6 +118,10 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - Whitelist certain URLs from the Obsidian plugin repo so that the vault can install the plugin data from that particular whitelisted repo path
 - Do this for each whitelisted and approved plugin
 - Have a process for this approval through help desk and/or InfoSec teams
+
+## Whitelisting Plugins with Firewall
+
+- 
 
 # Plugins
 

@@ -9,14 +9,15 @@ date modified: Tuesday, October 22nd 2024, 7:50 pm
 ---
 
 %% Begin Waypoint %%
-- **[⬇️ Personal Drop](⬇️%20Personal%20Drop.md)**
-- **[Daily Routine](Daily%20Routine.md)**
-- **[Games from Childhood](Games%20from%20Childhood.md)**
-- **[Hobbies List](Hobbies%20List.md)**
-- **[Jumping & Diving Spots](Jumping%20&%20Diving%20Spots.md)**
-- **[Nuclear Disaster Recovery](Nuclear%20Disaster%20Recovery.md)**
-- **[Wellness, Fitness](Wellness,%20Fitness.md)**
-	- **[ADHD and Stimulants](ADHD%20and%20Stimulants.md)**
-	- **[Stimulants and Insurance](Stimulants%20and%20Insurance.md)**
+- **[[⬇️ Personal Drop]]**
+- **[[Daily Routine]]**
+- **[[Games from Childhood]]**
+- **[[Hobbies List]]**
+- **[[Jumping & Diving Spots]]**
+- **[[Nuclear Disaster Recovery]]**
+- **[[Wellness, Fitness]]**
+	- **[[ADHD and Stimulants]]**
+	- **[[Diet, Nutrition]]**
+	- **[[Stimulants and Insurance]]**
 
 %% End Waypoint %%
