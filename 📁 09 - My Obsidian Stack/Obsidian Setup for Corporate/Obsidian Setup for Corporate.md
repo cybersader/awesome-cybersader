@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 1:25 pm
+date modified: Monday, November 4th 2024, 1:48 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -24,7 +24,7 @@ date modified: Monday, November 4th 2024, 1:25 pm
 - [Access control in Obsidian : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15sp8sw/access_control_in_obsidian/)
 - 
 
-# Syncing & Collaboration
+# Syncing & Collaborationrr
 
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 [Syncing Obsidian](../Syncing%20Obsidian/Syncing%20Obsidian.md)
@@ -125,6 +125,14 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 
 # Network and Plugin Risk Reduction
 
+## Looking at Obsidian Developer Console for Network Connections?
+
+- Related links:
+	- [How to access the console? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-to-access-the-console/16703/9) - Try "Ctrl + Shift + i"
+
+- Make sure other hotkeys aren't taking the place of developer console
+- Go to settings, then "Ctrl + Shift + i" should always work
+
 ## Firewall Rules for Obsidian
 
 [Endpoint Firewall](../../🕸️%20UNSTRUCTURED/Endpoint%20Firewall/Endpoint%20Firewall.md)
@@ -171,6 +179,7 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - Related links:
 	- [Per-plugin connections in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/11xd1r9/perplugin_connections_in_obsidian/)
 	- [Obsidian Help | GitHub-sourced connections](https://help.obsidian.md/Teams/Security+considerations+for+teams#GitHub-sourced+connections)
+	- [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
 - 
 
 # Plugins

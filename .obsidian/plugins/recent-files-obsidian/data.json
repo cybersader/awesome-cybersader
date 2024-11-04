@@ -5,12 +5,12 @@
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
       "basename": "Endpoint Firewall",
       "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
     {
       "basename": "Scripting vs Development Risks on Endpoints",

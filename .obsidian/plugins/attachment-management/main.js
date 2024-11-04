@@ -1452,7 +1452,7 @@ var ArrangeHandler = class {
       }
       const { setting } = getOverrideSetting(this.settings, innerFile);
       if (attachments[obNote].size == 0) {
-        break;
+        continue;
       }
       const md = getMetadata(obNote);
       const attachPath = md.getAttachmentPath(setting, this.settings.dateFormat);
@@ -2074,3 +2074,5 @@ var AttachmentManagementPlugin = class extends import_obsidian11.Plugin {
     this.createdQueue = [];
   }
 };
+
+/* nosourcemap */

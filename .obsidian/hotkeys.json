@@ -81,15 +81,6 @@
     }
   ],
   "obsidian-excalidraw-plugin:toggle-lock": [],
-  "media-notes:insert-media-timestamp": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "I"
-    }
-  ],
   "media-notes:toggle-play-pause": [
     {
       "modifiers": [
@@ -208,6 +199,15 @@
         "Mod"
       ],
       "key": "S"
+    }
+  ],
+  "media-notes:insert-media-timestamp": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
     }
   ]
 }
