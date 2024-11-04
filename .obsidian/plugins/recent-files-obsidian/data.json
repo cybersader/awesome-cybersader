@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Vault Security",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
-    },
-    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Endpoint Firewall",
       "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
+      "basename": "Scripting vs Development Risks on Endpoints",
+      "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "Obsidian Vault Security",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
     },
     {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
@@ -191,14 +199,6 @@
     {
       "basename": "Org Data Governance",
       "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Useful Obsidian Dataview Metadata",
-      "path": "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md"
-    },
-    {
-      "basename": "🐛 Known Base Bugs, Issues",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
     }
   ],
   "omittedPaths": [],

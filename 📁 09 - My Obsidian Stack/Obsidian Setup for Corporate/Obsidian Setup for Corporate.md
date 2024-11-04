@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 12:15 pm
+date modified: Monday, November 4th 2024, 1:03 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2004%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -106,9 +106,19 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 
 - Obsidian Git
 
-# Obsidian Plugin Security
+# Network and Plugin Risk Reduction
+
+## Firewall Rules for Obsidian
+
+- [Security considerations for teams - Obsidian Help](https://help.obsidian.md/Teams/Security+considerations+for+teams)
+- [Security and privacy - Obsidian Help](https://help.obsidian.md/Obsidian+Sync/Security+and+privacy#Managing+access+to+Obsidian+Sync+on+your+network)
+- [What domains does Obsidian use? - Help - Obsidian Forum](https://forum.obsidian.md/t/what-domains-does-obsidian-use/75800)
+
+## Obsidian Plugin Security
 
 - [Obsidian Vault Security](../Obsidian%20Vault%20Security/Obsidian%20Vault%20Security.md)
+- [Plugin security - Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Plugin+security)
+- 
 - Firewall should already have a whitelist approach and general network security controls
 - Endpoints should have application whitelisting implemented
 - Whitelist the Obsidian application to run
@@ -118,6 +128,20 @@ You can try the Lazy load plugin to load the setting long after the vault opens 
 - Whitelist certain URLs from the Obsidian plugin repo so that the vault can install the plugin data from that particular whitelisted repo path
 - Do this for each whitelisted and approved plugin
 - Have a process for this approval through help desk and/or InfoSec teams
+
+- Related links:
+	- [Securing Obsidian - Boxes and Walls](https://ohm.one/securing-obsidian-boxes-and-walls/)
+	- [Obsidian Sync being blocked by firewall - Help - Obsidian Forum](https://forum.obsidian.md/t/obsidian-sync-being-blocked-by-firewall/69622)
+	- [How can I check if the community plugin is safe? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-can-i-check-if-the-community-plugin-is-safe/15258)
+	- [Security of the plugins - Meta - Obsidian Forum](https://forum.obsidian.md/t/security-of-the-plugins/7544/51)
+	- [Is Obsidian And The Plugins Secure To Use At Work - Help - Obsidian Forum](https://forum.obsidian.md/t/is-obsidian-and-the-plugins-secure-to-use-at-work/52164)
+	- [How do I whitelist a dynamically changing application sync server IP? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-do-i-whitelist-a-dynamically-changing-application-sync-server-ip/66967)
+	- 
+
+## Application Firewalls
+
+- [Securing Obsidian - Boxes and Walls](https://ohm.one/securing-obsidian-boxes-and-walls/)
+	- [Safing Portmaster - Easy Privacy](https://safing.io/) - firewall they recommended
 
 ## Whitelisting Plugins with Firewall
 
