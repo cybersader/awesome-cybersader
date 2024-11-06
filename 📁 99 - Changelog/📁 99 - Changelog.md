@@ -1,3 +1,5 @@
+- 2024-11-06 at 08h31 · [[Home Server Power]]
+- 2024-11-06 at 08h31 · [[Core Cyber Issue - Lack of Contextual Knowledge]]
 - 2024-11-06 at 08h13 · [[PowerShell for InfoSec]]
 - 2024-11-06 at 08h12 · [[Cybersecurity Certifications]]
 - 2024-11-06 at 08h00 · [[📁 05 - Learning, Notes]]
@@ -293,7 +295,6 @@
 - 2024-10-06 at 19h39 · [[Misc TrueNAS]]
 - 2024-10-06 at 19h39 · [[Immich vs Photoprism]]
 - 2024-10-06 at 19h39 · [[Immich & Cloudflare Tunnels]]
-- 2024-10-06 at 19h39 · [[Home Server Power]]
 - 2024-10-06 at 19h39 · [[Dataset Available Space]]
 - 2024-10-06 at 19h39 · [[Custom Local Domain]]
 - 2024-10-06 at 19h39 · [[Cloudflare Tunnels Token Refresh Issue]]
