@@ -2,11 +2,13 @@
 aliases: 
 tags: 
 date created: Wednesday, April 10th 2024, 8:46 pm
-date modified: Wednesday, October 30th 2024, 3:56 pm
+date modified: Wednesday, November 6th 2024, 9:52 am
 publish: true
 ---
 
 - Brackets in file name (from Notion) (CS-\[moral-tech\])
+- [ ] Solution for needing to escape things in Obsidian - more control over it ➕ 2024-11-06
+
 # Design Issues
 
 - Publish page content width is narrow
