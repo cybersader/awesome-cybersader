@@ -1,6 +1,6 @@
+- 2024-11-06 at 11h53 · [[Windows Desktop Provisioning]]
 - 2024-11-06 at 11h51 · [[PowerShell for InfoSec]]
 - 2024-11-06 at 11h50 · [[Cyber Education]]
-- 2024-11-06 at 11h42 · [[Windows Desktop Environment and App Setup Tools - Provisioning Workstations]]
 - 2024-11-06 at 09h52 · [[🐛 Known Base Bugs, Issues]]
 - 2024-11-06 at 09h52 · [[Obsidian Issues & Feature Requests]]
 - 2024-11-06 at 09h34 · [[Teaching Engagement Hacks]]

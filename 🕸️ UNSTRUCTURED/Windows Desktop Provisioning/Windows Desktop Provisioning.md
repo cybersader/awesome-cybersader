@@ -1,9 +1,10 @@
 ---
-aliases: 
+aliases:
+  - Windows Desktop Environment and App Setup Tools - Provisioning Workstations
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Wednesday, November 6th 2024, 11:41 am
+date modified: Wednesday, November 6th 2024, 11:53 am
 ---
 
 # Tools, Resources
