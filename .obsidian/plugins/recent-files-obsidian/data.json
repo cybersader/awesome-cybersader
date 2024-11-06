@@ -5,16 +5,24 @@
       "path": "📁 05 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
     },
     {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Cyber Education",
-      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
+      "basename": "Malware Sandboxing",
+      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "⬇️ Hacking Ideas",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Hacking Ideas/⬇️ Hacking Ideas.md"
+    },
+    {
+      "basename": "Cyber Education",
+      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
@@ -191,14 +199,6 @@
     {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
-    },
-    {
-      "basename": "Temporary Files Filling Up Drive",
-      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Temporary Files Filling Up Drive/Temporary Files Filling Up Drive.md"
-    },
-    {
-      "basename": "meeting_note",
-      "path": "_FileOrganizer2000/Templates/meeting_note.md"
     }
   ],
   "omittedPaths": [],

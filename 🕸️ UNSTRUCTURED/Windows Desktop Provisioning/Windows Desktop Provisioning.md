@@ -4,8 +4,10 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Wednesday, November 6th 2024, 11:53 am
+date modified: Wednesday, November 6th 2024, 1:22 pm
 ---
+
+- [ ] Make my own provisioning workflow for home users - security, scripting (powershell), Python, apps, etc. ➕ 2024-11-06
 
 # Tools, Resources
 
@@ -13,6 +15,11 @@ date modified: Wednesday, November 6th 2024, 11:53 am
 - [The Ultimate Windows Utility - Chris Titus Tech](https://christitus.com/windows-tool/)
 - [Is there a free app like ninite that I can customize? : r/msp](https://www.reddit.com/r/msp/comments/tc7ruz/is_there_a_free_app_like_ninite_that_i_can/?rdt=37358)
 - [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui) 
+
+## Misc Links
+
+- [Bulk enrollment for Windows devices - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-bulk-enroll)
+- [Provisioning packages overview | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
 
 # The Problems
 
