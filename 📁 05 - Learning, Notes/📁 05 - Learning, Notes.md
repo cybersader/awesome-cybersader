@@ -26,6 +26,7 @@ publish: true
 		- **[[Linux Intro]]**
 		- **[[Live Linux Triage]]**
 		- **[[UAC Tool]]**
+	- **[[PowerShell for InfoSec]]**
 - **[[Cyber Movies, TV, Documentaries]]**
 - **[[Financial Sector & Cyber]]**
 
