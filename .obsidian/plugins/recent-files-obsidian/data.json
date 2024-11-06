@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "PowerShell for InfoSec",
+      "path": "📁 05 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
+    },
+    {
+      "basename": "Cyber Education",
+      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
+    },
+    {
+      "basename": "Windows Desktop Environment and App Setup Tools - Provisioning Workstations",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Environment and App Setup Tools - Provisioning Workstations/Windows Desktop Environment and App Setup Tools - Provisioning Workstations.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
@@ -187,10 +199,6 @@
     {
       "basename": "meeting_note",
       "path": "_FileOrganizer2000/Templates/meeting_note.md"
-    },
-    {
-      "basename": "OL Threat Detection Landscape & Gaps",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/Detection Engineering/OL Threat Detection Landscape & Gaps.md"
     }
   ],
   "omittedPaths": [],
