@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Cyber Resource Curations",
+      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
+    },
+    {
       "basename": "PowerShell for InfoSec",
       "path": "📁 05 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Cyber Memes",
       "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-    },
-    {
-      "basename": "TrueNAS Cloud Backups",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
     }
   ],
   "omittedPaths": [],

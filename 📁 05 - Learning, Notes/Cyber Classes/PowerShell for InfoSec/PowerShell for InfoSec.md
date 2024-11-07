@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 11:50 am
+date modified: Thursday, November 7th 2024, 1:04 pm
 ---
 
 - IEUser: Passw0rd!
@@ -581,7 +581,41 @@ I want to know if tools work against hackers.  Do these tools and emulation plat
 - Human readable text files
 - Some attacks involved modifying MOF files
 
+# PowerShell without PowerShell.exe
 
+- PowerShell.exe is a Front End
+	- Simply a Front End to System.Management.Automation DLL: 
+		- .Net
+		- COM
+		- Windows Management Instrumentation (WMI) 
+		- Common Information Model (CIM)
+		- XML 
+		- Active Directory
+- PSwoPS.exe
+
+## Installing PowerShell
+
+- You can use `winget install --id Microsoft.Powershell`
+
+## PWSH Logging
+
+- Use Windows PowerShell Policy Settings
+- Non-Windows:
+	- Linux: syslog
+	- macOS: os_log
+- look for `$PSHOME/powershell.config.json`
+
+## Switching Versions in VS Code
+
+- use Ctrl+P and powershell version to switch between Core (older) and regular
+
+## Remoting Between Operating Systems
+
+| Local Computer | Remote Computer | Prereqs                                                                                                        |
+| -------------- | --------------- | -------------------------------------------------------------------------------------------------------------- |
+| Windows        | Windows         | 1) Remote must have PowerShell Remoting enabled                                                                |
+| Windows        | Linux, macOS    | 1) Local must have PowerShell Core installed<br>2) Remote must be configured for PowerShell Remoting over SSH  |
+| Linux, macOS   | Windows         | 1) Local must have PowerShell Core installed <br>2) Remote must be configured for PowerShell Remoting over SSH |
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
 
@@ -625,4 +659,4 @@ Maybe we want to systematically go through utilities or interfaces like PowerShe
 - [janikvonrotz/awesome-powershell: A curated list of delightful PowerShell modules and resources](https://github.com/janikvonrotz/awesome-powershell)
 - Lee Holmes - "the PowerShell guy"
 - PowerShell Gallery
-- 
+- Lee Holmes table
