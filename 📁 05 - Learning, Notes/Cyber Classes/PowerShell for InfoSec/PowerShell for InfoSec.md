@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 11:27 am
+date modified: Thursday, November 7th 2024, 11:50 am
 ---
 
 - IEUser: Passw0rd!
@@ -549,6 +549,39 @@ I want to know if tools work against hackers.  Do these tools and emulation plat
 ## Automating JEA on the Domain?
 
 - Use ps1 scripts for JEA to go out and set up files for role capabilities and session configuration
+
+## Session Endpoint Logging
+
+- Local:
+	- Get-Credential
+	- Enter-PSSession
+- Remote:
+	- Session Configuration File
+	- Role Capabilities File
+	- Get-Comamnd
+	- Get-Service
+
+## Console Session Configuration
+
+- Force SP to connect to local JEA endpoint
+- Example usage:
+	- Jumpbox
+	- Kiosk
+- Registry setting
+
+## Desired State Configuration (DSC)
+
+- This is dying out / deprecated
+- Define end goal with JSON
+- Push/Pull deployment options
+
+## Managed Object Format (MOF) Files
+
+- Let's you describe Common Information Model (CIM) classes
+- Human readable text files
+- Some attacks involved modifying MOF files
+
+
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
 
