@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 10:12 am
+date modified: Thursday, November 7th 2024, 11:27 am
 ---
 
 - IEUser: Passw0rd!
@@ -446,13 +446,109 @@ I want to know if tools work against hackers.  Do these tools and emulation plat
 - Do most EDR vendors use these interfaces or make their own - just watching system calls and ignore PS application activity?
 	- They have to register/talk to the AMSI interface pretty much across the board
 - Legitimate reason to turn off AMSI?
-	- 
+	- No not really, but the values have to be stored somewhere in the system and that's why it can be turned off
 
 # AMSI (AntiMalware Scan Interface)
 
 - Any Antimalware or EDR vendor can use it
 - File and stream scanning
 - Lots of the AMSI bypass techniques exist because PowerShell can "look inside itself."
+
+# PowerShell Language Modes
+
+- FullLanguage
+- ConstrainedLanguageMode
+	- Limit Permitted Type
+- RestrictedLanguageMode
+	- No script blocks
+- NoLanguage
+
+- JEA - just enough administration - start with no language and slowly give more
+
+## The wrong way to setup CLM (ConstrainedLanguageMode)
+
+- Set up with the environment variable `__PSLockDownPolicy Environment Variable`
+- `[Environment]::SetEnvironmentVariable(‘__PSLockdownPolicy‘, ‘4’, ‘Machine‘)`
+
+## CLM (ConstrainedLanguageMode) Bypass
+
+- Use a script with “System32” somewhere in the file path
+
+## The right way to set CLM (ConstrainedLanguageMode)
+
+- Windows Defender Application Control (WDAC) (Windows 10 build 1903+)
+- AppLocker (Windows 7+)
+
+## What works under CLM (ConstrainedLanguageMode)?
+
+- All of the above tools except `Get-Information`
+
+# Credentials and Remoting
+
+- DPAPI Protects SecureStrings
+- Cmdlets that support Credentials:
+	- There's 70+ commands that take the SecureString type of hidden password
+- You can get the password still from `$cred.GetNetworkCredential.password`
+- If you have a script that needs credentials to run, then store them on disk in an encrypted format.  
+	- `(Get-Credential).Password | ConvertFrom-SecureString | Out-File cred.txt`
+	- You need the private key to decrypt cred.txt.  This is the best way to use creds with a script so you don't have to type in the password.
+	- Rehydrating the cred.txt file:
+		- `$secureString = Get-Content cred.txt | ConvertTo-SecureString`
+
+## PowerShell Remoting
+
+- Execute code on a remote machine using WinRM
+- Always encrypted
+- Enabled default on Windows servers
+	- Trusted or domain network
+	- Local Area Network
+- Work cross-platform
+	- Remoting over SSH for Linux/macOS
+- Ports 5985 (HTTP) and 5986 (HTTPS)
+- Connections allowed from:
+	- Administrators Group
+	- Remote Management Users
+- Lots of commands that take PSSession objects
+	- `Get-Command -ParameterType PSSession`
+
+- `Enter-PSSession`
+	- You pass credentials either manually or leaving out the credential parameter to use the same one as the current PowerShell session
+
+- Remote mgmt w/o PS Remoting:
+	- SOAP or RPC based Cmdlets
+	- if you're in an environment with WMI, then you can just use related WMI cmdlets
+	- Limited functionality but they have high performance
+
+- `Invoke-Command` 
+	- Specifying a session is better than using just a computer name
+	- If you give it a session, then you can get a lot more information from the terminal
+
+# JEA (Just Enough Administration)
+
+[Securing Python on Workstations](../../../📁%2004%20-%20Organizational%20Cyber/Secure%20Cyber%20Environment/Securing%20Python%20on%20Workstations/Securing%20Python%20on%20Workstations.md)
+[Scripting vs Development Risks on Endpoints](../../../📁%2004%20-%20Organizational%20Cyber/Scripting%20vs%20Development%20Risks%20on%20Endpoints/Scripting%20vs%20Development%20Risks%20on%20Endpoints.md)
+
+- How do we allow people to administer systems and do their jobs without being full admins
+- PS v5+
+- Reduce # of admins
+- Limit what a user can do
+- PS Remoting must be enabled
+
+## Role Capabilities First (psrc)
+
+- Defines cmdlets, functions, providers and external programs
+- psrc - "powershell role capabilities"
+- PSRC extension on the file
+- Name must match name of the role
+
+## Session Configuration File (pssc)
+
+- Limits connecting user to role defined during registration
+- Register the endpoint with `New-PsSessionConfiguration`
+
+## Automating JEA on the Domain?
+
+- Use ps1 scripts for JEA to go out and set up files for role capabilities and session configuration
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
 
@@ -464,6 +560,7 @@ Maybe we want to systematically go through utilities or interfaces like PowerShe
 - [redcanaryco/atomic-red-team: Small and highly portable detection tests based on MITRE's ATT&CK.](https://github.com/redcanaryco/atomic-red-team) 
 	- Great tool for testing out detections from PowerShell
 	- Essentially unit tests you can go and run to see if you're logging enough or detecting the attacks
+- [VECTR | Collaborate. Benchmark. Improve.](https://vectr.io/)
 
 # Questions
 
@@ -486,6 +583,9 @@ Maybe we want to systematically go through utilities or interfaces like PowerShe
 - How do we figure out who can have/needs PowerShell in the org?  Do we have UEBA (user behavior analytics) - alerting on users trying to run PS who never do?
 - Why aren't we trying out AtomicRedTeam
 - Why don't teams hire at least one internal pentester that can internally "purple team?"
+- Look at how to implement JEA in PowerShell at work
+- Look at how admins do remote administration
+- 
 
 # Resources
 

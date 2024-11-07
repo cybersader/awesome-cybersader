@@ -1,4 +1,4 @@
-- 2024-11-07 at 10h12 · [[PowerShell for InfoSec]]
+- 2024-11-07 at 11h27 · [[PowerShell for InfoSec]]
 - 2024-11-07 at 10h11 · [[📁 09 - My Obsidian Stack]]
 - 2024-11-07 at 08h51 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-11-06 at 14h55 · [[Malware Sandboxing]]

@@ -37,9 +37,9 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-timestamper",
-  "various-complements",
   "ytranscript",
   "obsidian-regex-replace",
   "custom-save",
-  "lazy-plugins"
+  "lazy-plugins",
+  "various-complements"
 ]

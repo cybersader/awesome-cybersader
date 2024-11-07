@@ -7,7 +7,7 @@
   "matchingWithoutEmoji": true,
   "treatAccentDiacriticsAsAlphabeticCharacters": true,
   "treatUnderscoreAsPartOfWord": false,
-  "maxNumberOfSuggestions": 4,
+  "maxNumberOfSuggestions": 5,
   "maxNumberOfWordsAsPhrase": 3,
   "minNumberOfCharactersTriggered": 0,
   "minNumberOfWordsTriggeredPhrase": 1,
@@ -99,7 +99,7 @@
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
   },
-  "disableOnMobile": false,
+  "disableOnMobile": true,
   "showLogAboutPerformanceInConsole": false,
   "insertAfterCompletion": true,
   "selectionHistoryTree": {}
