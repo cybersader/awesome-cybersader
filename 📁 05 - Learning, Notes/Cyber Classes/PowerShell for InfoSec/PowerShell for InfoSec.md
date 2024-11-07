@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 8:01 am
+date modified: Thursday, November 7th 2024, 9:08 am
 ---
 
 - IEUser: Passw0rd!
@@ -353,6 +353,78 @@ $EtwProvider.SetValue($null, $EventProvider);
 
 # Popular PS Attack Tools
 
+- 10 tools:
+	- Mimikatz
+	- NinjaCopy
+	- Inveigh
+	- Get-Keystrokes
+	- Get-GPPPassword 
+	- PowerUp
+	- PowerView
+	- BloodHound
+	- Get-Information
+	- AMSI Bypass
+
+## Mimikatz
+
+- Dumps credentials from the LSASS process memory
+- Gentle Kiwi figured out how to pull the credentials out of Microsoft's data structures in memory
+- Microsoft changed to not have passwords in cleartext in memory, but you still see the hashes
+- The problem is that Windows accepts hashes for auth - "Pass the Hash" attack
+
+## NinjaCopy
+
+- Allows hackers to copy files that are protected by the OS from being copied
+- allows you to copy something like the "SAM" or "Security" hive database from `system32/config`
+	- You can even remote with the tool to the DC to get the `NTDS.dit` file
+
+## Inveigh
+
+- Insecure multicast protocols - LLMNR/NBNS, DNS/mDNS, DHCP, ICMP, Proxy Auth
+- Inveigh takes advantage of how insecure multicast protocols work
+- Attackers have to gather the challenge and response NTLMv2-SSP hashes to crack offline
+
+## Get-Keystrokes
+
+- Grabs keystrokes...simple enough
+
+## GetGPPPassword
+
+- Grabs passwords from Group Policy preference files 
+- Stored in `sysvol`
+- MS released a change saying people shouldn't be setting passwords in their password files
+
+## PowerUp
+
+- Privilege Escalation checks
+- Checks for things like:
+	- Service enumeration abuse
+	- DLL hijacking
+	- Registry checks
+
+## PowerView
+
+- AD Recon information gatherer
+	- Domain users and computers
+	- Network Shares
+	- Domain trust
+- Network share recon
+- They often find files in IT folders that have scripts with passwords in it
+
+## BloodHound
+
+- AD enumerator and mapper.
+- Maps out AD landscape, permissions, and user structures
+- LDAP enumeration
+
+## Get-Information 
+
+- Gathers random juicy information from the target
+- Really benign information
+
+## AMSI Bypass
+
+- AMSI is our last defense against something like a "download cradle"
 - 
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
@@ -372,6 +444,9 @@ Maybe we want to systematically go through utilities or interfaces like PowerShe
 - What object types are there?  Are there custom ones with parameters? Does PS store anything about the objects in the background
 - Does EDR or SIEM look for editing of these history files?  
 	- Looking for editing of "HistorySaveStyle" and other parameters can be interesting behavior to look for
+- Onboarding PS tools onto victim machines?
+	- Do you have to obfuscate attack tools before using them or do the developers provide a common workflow with their tools?
+	- 
 
 # Action Items
 

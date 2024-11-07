@@ -1,6 +1,6 @@
-- 2024-11-07 at 08h01 · [[PowerShell for InfoSec]]
+- 2024-11-07 at 09h08 · [[PowerShell for InfoSec]]
+- 2024-11-07 at 08h51 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-11-06 at 14h55 · [[Malware Sandboxing]]
-- 2024-11-06 at 13h42 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-11-06 at 13h22 · [[Windows Desktop Provisioning]]
 - 2024-11-06 at 12h59 · [[⬇️ Hacking Ideas]]
 - 2024-11-06 at 11h50 · [[Cyber Education]]
