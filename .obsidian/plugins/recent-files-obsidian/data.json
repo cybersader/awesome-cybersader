@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
+      "basename": "⬇️ Self-Hosting DROP",
+      "path": "📁 18 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
+    },
+    {
+      "basename": "SIEM Framework",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md"
+    },
+    {
+      "basename": "Cyber Education",
+      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
     },
     {
       "basename": "PowerShell for InfoSec",
       "path": "📁 05 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
+    },
+    {
+      "basename": "📁 18 - Self-Hosting",
+      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "Resumable & Chunked File Uploading",
+      "path": "📁 21 - Development/Resumable & Chunked File Uploading/Resumable & Chunked File Uploading.md"
+    },
+    {
+      "basename": "Cyber Blogs",
+      "path": "📁 03 - Curations, Stacks/Cyber Blogs.md"
+    },
+    {
+      "basename": "📁 03 - Curations, Stacks",
+      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
+    },
+    {
+      "basename": "Awesome Cyber Resource Curations",
+      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
@@ -29,16 +65,8 @@
       "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
       "basename": "⬇️ Hacking Ideas",
       "path": "🕸️ UNSTRUCTURED/⬇️ Hacking Ideas/⬇️ Hacking Ideas.md"
-    },
-    {
-      "basename": "Cyber Education",
-      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
     },
     {
       "basename": "Collaboration in Obsidian",
@@ -83,10 +111,6 @@
     {
       "basename": "Soundproofing",
       "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
-    },
-    {
-      "basename": "📁 18 - Self-Hosting",
-      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
     },
     {
       "basename": "Panels and Overlays",
@@ -175,30 +199,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "CPEs for Future CISSP",
-      "path": "🕸️ UNSTRUCTURED/CPEs for Future CISSP.md"
-    },
-    {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Linked Data Vocabulary - Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "Building a Knowledgebase",
-      "path": "CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md"
-    },
-    {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
     }
   ],
   "omittedPaths": [],

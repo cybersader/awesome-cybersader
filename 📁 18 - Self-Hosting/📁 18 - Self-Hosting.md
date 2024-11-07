@@ -15,3 +15,4 @@ date modified: Sunday, November 3rd 2024, 10:03 pm
 # DROPZONE
 
 - [selfh.st - Self-hosted content and software](https://selfh.st/)
+- [StackShare - Tech Stack Intelligence](https://stackshare.io/)

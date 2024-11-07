@@ -1,0 +1,11 @@
+{
+	"id": "entity-linker",
+	"name": "Entity Linker",
+	"version": "1.1.0",
+	"minAppVersion": "1.6.3",
+	"description": "Link research terms to standard entities",
+	"author": "Ankush-Chander",
+	"authorUrl": "https://github.com/Ankush-Chander",
+	"fundingUrl": "https://buymeacoffee.com/ankushwatce",
+	"isDesktopOnly": false
+}

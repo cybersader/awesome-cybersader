@@ -7,13 +7,14 @@ tags:
   - "#software"
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Saturday, September 14th 2024, 11:02 am
+date modified: Thursday, November 7th 2024, 1:21 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [StackShare - Tech Stack Intelligence](https://stackshare.io/)
 - [screenpipe](https://screenpi.pe/)
 	- [louis030195/screen-pipe: Library to build personalized AI powered by what you've seen, said, or heard. Works with Ollama. Alternative to Rewind.ai. Open. Secure. You own your data. Rust.](https://github.com/louis030195/screen-pipe)
 - [Stashpad - Your streamlined Google Docs alternative](https://www.stashpad.com/)

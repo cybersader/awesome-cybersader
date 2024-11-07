@@ -595,6 +595,7 @@ I want to know if tools work against hackers.  Do these tools and emulation plat
 
 ## Installing PowerShell
 
+- [Installing PowerShell on Windows - PowerShell | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4)
 - You can use `winget install --id Microsoft.Powershell`
 
 ## PWSH Logging
