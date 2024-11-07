@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 9:08 am
+date modified: Thursday, November 7th 2024, 10:12 am
 ---
 
 - IEUser: Passw0rd!
@@ -425,7 +425,34 @@ $EtwProvider.SetValue($null, $EventProvider);
 ## AMSI Bypass
 
 - AMSI is our last defense against something like a "download cradle"
-- 
+- Easy for red teamers to do this on engagements
+	- Since bypass techniques are a cat-and-mouse game, they will typically test on their machine with the same versions before trying on target machines
+
+# Obfuscation - Weaponization & Delivery - Pentesters vs Hackers
+
+I want to know if tools work against hackers.  Do these tools and emulation platforms like Atomic Red Team account for evasion and obfuscation tactics during the weaponization and delivery phases?  Does the time constraint for pentesters make it hard to realistically emulate these attacks or do they tend to be more noisy?  This would account for tooling that's signature-based as well - where they would fail with a bit of obfuscation and stealth/evasion.  Pentesters are pressed for time, so sometimes you'll have to be noisy.
+
+- How does this differ between pentesters and script kiddie hackers in terms of noise and workflow?
+- How to test this with a purple teaming approach with ART (Atomic Red Team) and other tools to test your detection tools
+- Obfuscation with download cradles?
+	- As long, as you get around AMSI you're pretty much good since it's only in memory (in that session)
+	- Chrome or proxy or firewall sometimes blocks things because of the URL, so they may have to deliver it from a different location and play around with the delivery mechanism/source
+- EDRs tend to be a big crutch on this topic of attacks
+- Pentesting is easier to be systematic with - also purple teaming or emulation engagements - red teaming is supposed to be realistic, so usually they need longer time windows and are working against the blue teamers
+
+# AMSI, Logging, and Security Vendors
+
+- A big question - is this the only place security vendors can grab information about PowerShell from?
+- Do most EDR vendors use these interfaces or make their own - just watching system calls and ignore PS application activity?
+	- They have to register/talk to the AMSI interface pretty much across the board
+- Legitimate reason to turn off AMSI?
+	- 
+
+# AMSI (AntiMalware Scan Interface)
+
+- Any Antimalware or EDR vendor can use it
+- File and stream scanning
+- Lots of the AMSI bypass techniques exist because PowerShell can "look inside itself."
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
 
