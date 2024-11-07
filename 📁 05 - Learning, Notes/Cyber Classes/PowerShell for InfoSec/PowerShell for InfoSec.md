@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Wednesday, November 6th 2024, 2:45 pm
+date modified: Thursday, November 7th 2024, 8:01 am
 ---
 
 - IEUser: Passw0rd!
@@ -350,6 +350,10 @@ $EtwProvider.SetValue($null, $EventProvider);
 - Deploy Windows Defender Application Control policies to allow pre-approved administrative tasks to use the full capability of the PowerShell language, while limiting interactive and unapproved use to a limited subset of the PowerShell language.
 - Deploy Windows 10 or later to give your antivirus provider full access to all content (including content generated or de-obfuscated at runtime) processed by Windows Scripting Hosts including PowerShell.
 - Increase Log sizes (Mandiant recommends 1GB+)
+
+# Popular PS Attack Tools
+
+- 
 
 # Tools for Emulation or Purple Teaming with PowerShell - Assessing PS Risks
 
