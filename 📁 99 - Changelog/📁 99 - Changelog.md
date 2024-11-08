@@ -1,3 +1,4 @@
+- 2024-11-07 at 21h15 · [[Jumping & Diving Spots]]
 - 2024-11-07 at 20h50 · [[Obsidian Git]]
 - 2024-11-07 at 20h47 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-11-07 at 19h59 · [[⬇️ Content Creation Stack Ideas]]
@@ -307,7 +308,6 @@
 - 2024-06-26 at 19h12 · [[Awesome Collaboration]]
 - 2024-06-24 at 19h03 · [[AI Usage in Orgs]]
 - 2024-06-23 at 22h04 · [[Template_1]]
-- 2024-06-23 at 17h07 · [[Jumping & Diving Spots]]
 - 2024-06-23 at 16h37 · [[📦 VAULT SANDBOX TESTING]]
 - 2024-06-23 at 16h35 · [[Obsidian File Recovery]]
 - 2024-06-23 at 15h11 · [[Cyber Merch]]

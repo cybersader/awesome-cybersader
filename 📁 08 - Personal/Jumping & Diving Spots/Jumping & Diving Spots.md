@@ -4,10 +4,11 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Sunday, June 23rd 2024, 5:07 pm
+date modified: Thursday, November 7th 2024, 9:15 pm
 ---
 
 # Indiana Spots
+
 - Allows backflips (last time I was there) (fronts, backs, twists)
 	- [Meridian Park Family Aquatic Center - Shelbyville Parks Department](https://www.shelbyparks.com/parks/meridian-street-aquatic-facilitty/) 
 	- Tight fulcrum usually (low numbers, can't do big tricks)
@@ -41,10 +42,15 @@ date modified: Sunday, June 23rd 2024, 5:07 pm
 		- The Rooftop Quarry is located in Bloomington, Indiana. The top peak in the quarry is referred to as “The Rooftop” and is around 65 feet in height. This cliff diving quarry was featured in the film Breaking Away which came out in 1979.
 
 # Ohio
+
 - Quarry park
+
 # Kentucky, Tennessee 
+
 - Compression Falls?
+
 # Out of Indiana - U.S.
+
 - Ohio
 	- Slip'n'fly
 		- Wish they still did this - discontinued after the Rona - there's one near Tijuana
@@ -61,3 +67,15 @@ date modified: Sunday, June 23rd 2024, 5:07 pm
 	- Spitting Caves - must be super athletic, would only do in summer if you value your life
 - California
 	- Rainbow Pools - sketch, but it's aight
+- Texas
+	- Lake Travis
+	- Lake Whitney
+	- McKinney Falls State Park
+	- Jacobs Well
+	- Inks Lake State Park
+	- Tonkawa Falls City Park
+	- Possum Kingdom Lake
+	- Pedernales Falls State Park
+	- Pace Bend Park
+	- Krause Springs
+	- 
