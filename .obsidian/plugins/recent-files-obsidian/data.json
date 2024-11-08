@@ -1,96 +1,144 @@
 {
   "recentFiles": [
     {
-      "basename": "⬇️ Self-Hosting DROP",
-      "path": "📁 18 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     },
     {
-      "basename": "SIEM Framework",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/SIEM Framework.md"
+      "basename": "📁 11 - Content Creation",
+      "path": "📁 11 - Content Creation/📁 11 - Content Creation.md"
     },
     {
-      "basename": "Cyber Education",
-      "path": "🕸️ UNSTRUCTURED/Cyber Education/Cyber Education.md"
-    },
-    {
-      "basename": "PowerShell for InfoSec",
-      "path": "📁 05 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
-    },
-    {
-      "basename": "📁 18 - Self-Hosting",
-      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Resumable & Chunked File Uploading",
-      "path": "📁 21 - Development/Resumable & Chunked File Uploading/Resumable & Chunked File Uploading.md"
-    },
-    {
-      "basename": "Cyber Blogs",
-      "path": "📁 03 - Curations, Stacks/Cyber Blogs.md"
-    },
-    {
-      "basename": "📁 03 - Curations, Stacks",
-      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
-    },
-    {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
+      "basename": "⬇️ Content Creation Stack Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Malware Sandboxing",
-      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
-      "basename": "✅ Tasks",
-      "path": "✅ Tasks/✅ Tasks.md"
+      "basename": "Handling Obsidian Git Conflicts & Issues",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     },
     {
-      "basename": "📁 09 - My Obsidian Stack",
-      "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
+      "basename": "Backups - The 3,2,1 Rule",
+      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
+    },
+    {
+      "basename": "Endpoint Firewall",
+      "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 04 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "Scripting vs Development Risks on Endpoints",
+      "path": "📁 04 - Organizational Cyber/Scripting vs Development Risks on Endpoints/Scripting vs Development Risks on Endpoints.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "Obsidian Vault Security",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Diet, Nutrition",
+      "path": "📁 08 - Personal/Wellness, Fitness/Diet, Nutrition/Diet, Nutrition.md"
+    },
+    {
+      "basename": "Wellness, Fitness",
+      "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
-      "basename": "⬇️ Hacking Ideas",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Hacking Ideas/⬇️ Hacking Ideas.md"
+      "basename": "Obsidian Regex Find & Replace",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Regex Find & Replace.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+      "basename": "Obsidian Git Features & Solutions",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions.md"
     },
     {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+      "basename": "Obsidian Git",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
+    },
+    {
+      "basename": "Obsidian Git Setup",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Setup/Obsidian Git Setup.md"
+    },
+    {
+      "basename": "Breaking Vault Changes",
+      "path": "📁 09 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md"
+    },
+    {
+      "basename": "Syncing Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
     },
     {
       "basename": "Gitignore Folder Tracking Removal",
       "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
     },
     {
-      "basename": "Documenting Activity",
-      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
-    },
-    {
       "basename": "Git",
       "path": "📁 21 - Development/Git/Git.md"
     },
     {
-      "basename": "📁 21 - Development",
-      "path": "📁 21 - Development/📁 21 - Development.md"
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Obsidian Dictionary and Grammar",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Cyber Memes",
+      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
+    },
+    {
+      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
+      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
+    },
+    {
+      "basename": "Linked Data Vocabulary - Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md"
+    },
+    {
+      "basename": "Obsidian Run",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
+    },
+    {
+      "basename": "Obsidian Run Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
+    },
+    {
+      "basename": "Documenting Activity",
+      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Obsidian Vaults with Cybersecurity",
@@ -99,6 +147,18 @@
     {
       "basename": "Epoxy Casting",
       "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
+    },
+    {
+      "basename": "📁 09 - My Obsidian Stack",
+      "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
+      "basename": "📁 21 - Development",
+      "path": "📁 21 - Development/📁 21 - Development.md"
     },
     {
       "basename": "Poster Hanging",
@@ -111,6 +171,10 @@
     {
       "basename": "Soundproofing",
       "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
+    },
+    {
+      "basename": "📁 18 - Self-Hosting",
+      "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
     },
     {
       "basename": "Panels and Overlays",
@@ -135,70 +199,6 @@
     {
       "basename": "Wall Attachment Methods",
       "path": "📁 20 - Home DIY/Wall Decor/Wall Attachment Methods/Wall Attachment Methods.md"
-    },
-    {
-      "basename": "file-20241006152824100",
-      "path": "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/_attachments/file-20241006152824100.png"
-    },
-    {
-      "basename": "Wall Decor",
-      "path": "📁 20 - Home DIY/Wall Decor/Wall Decor.md"
-    },
-    {
-      "basename": "TrueNAS Electric Eel 24.10 Update",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Syncing Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
-    },
-    {
-      "basename": "Obsidian Dictionary and Grammar",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Useful Obsidian Dataview Metadata",
-      "path": "🕸️ UNSTRUCTURED/Useful Obsidian Dataview Metadata.md"
-    },
-    {
-      "basename": "🐛 Known Base Bugs, Issues",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
-    },
-    {
-      "basename": "Syncthing for Obsidian Notes",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncthing for Obsidian Notes/Syncthing for Obsidian Notes.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
-      "basename": "Obsidian Run",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
-    },
-    {
-      "basename": "Obsidian Run Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Cyber Movies, TV, Documentaries",
-      "path": "📁 05 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     }
   ],
   "omittedPaths": [],
