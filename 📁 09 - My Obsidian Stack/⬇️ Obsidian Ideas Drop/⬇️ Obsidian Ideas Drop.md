@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Thursday, November 7th 2024, 8:51 am
+date modified: Thursday, November 7th 2024, 8:47 pm
 ---
 
 - [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
@@ -21,6 +21,11 @@ date modified: Thursday, November 7th 2024, 8:51 am
 - [ ] Plugin or pull request to current plugin to clean youtube and amazon links of cookie and reference code stuff ➕ 2024-11-03 
 - [ ] Add saving current workspace layout to custom save ⏫ ➕ 2024-11-03
 - [ ] Smarter changelog plugin ⏫ ➕ 2024-11-04
+
+# Workflow Examples
+
+- [My Project Management Workflow; An In-Depth Explanation - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/my-project-management-workflow-an-in-depth-explanation/82508)
+- 
 
 # Obsidian in the Web?
 
