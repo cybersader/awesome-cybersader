@@ -1,4 +1,4 @@
-- 2024-11-09 at 17h09 · [[Jumping & Diving Spots]]
+- 2024-11-09 at 17h20 · [[Jumping & Diving Spots]]
 - 2024-11-09 at 15h14 · [[US Climbing Gyms]]
 - 2024-11-09 at 15h04 · [[📁 32 - Climbing]]
 - 2024-11-09 at 15h03 · [[📁 31 - Education, Pedagogy]]

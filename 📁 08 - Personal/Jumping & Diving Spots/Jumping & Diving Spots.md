@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 5:09 pm
+date modified: Saturday, November 9th 2024, 5:20 pm
 ---
 
 # Kansas
@@ -19,7 +19,8 @@ date modified: Saturday, November 9th 2024, 5:09 pm
 
 - Misc links
 	- [Here’s where to find a public swimming pool near you](https://graphics.stltoday.com/maps/pools/)
-	- 
+	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
+
 - If you can get permission from a coach (doesn't seem to be available to the public):
 	- [Mizzou Aquatic Center - Facilities - University of Missouri Athletics](https://mutigers.com/facilities/mizzou-aquatic-center/12)
 	- [JOHN BURROUGHS SCHOOL - Landmark Aquatic](https://landmarkaquatic.com/portfolio/john-burroughs-school/)
@@ -27,15 +28,13 @@ date modified: Saturday, November 9th 2024, 5:09 pm
 	- [Simon Recreation Center (Swimming & Diving) - Facilities - Saint Louis University](https://slubillikens.com/facilities/simon-recreation-center-swimming-diving-/11)
 	- 
 - INDOOR - General aquatic centers & pools (seem to be open to public diving boards)
-	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
-	- [BOLIVAR AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/bolivar-aquatic-center/)
-	- [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
-	- [Indoor Aquatics | Belton Parks, MO - Official Website](https://www.beltonparks.org/134/Indoor-Aquatics)
-	- [Aquatic Facilities | the City of Liberty Official Website!](https://www.libertymissouri.gov/1989/Swimming-Pools) 
 	- [Aquatics | St Peters, MO - Rec-Plex](https://www.stpetersmo.net/478/Aquatics) 
 	- [Blue Surf Bay Waterpark | City of Blue Springs, MO - Official Website](https://www.bluespringsgov.com/2458/Blue-Surf-Bay-Waterpark)
 	- [Indoor Pool / Florissant, Missouri](https://www.florissantmo.com/topic/subtopic.php?topicid=29&structureid=20)
-	- 
+	- - [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
+	- [Indoor Aquatics | Belton Parks, MO - Official Website](https://www.beltonparks.org/134/Indoor-Aquatics)
+	- [Aquatic Facilities | the City of Liberty Official Website!](https://www.libertymissouri.gov/1989/Swimming-Pools) 
+	- [BOLIVAR AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/bolivar-aquatic-center/)
 - OUTDOOR - General aquatic centers & indoor waterparks
 	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
 	- [AGNES NOLTING AQUATIC COMPLEX - Landmark Aquatic](https://landmarkaquatic.com/portfolio/agnes-nolting-aquatic-complex/)
