@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 3:49 pm
+date modified: Saturday, November 9th 2024, 4:31 pm
 ---
 
 # Indoor
@@ -13,11 +13,33 @@ date modified: Saturday, November 9th 2024, 3:49 pm
 
 - If you can get permission from a coach:
 	- [Mizzou Aquatic Center - Facilities - University of Missouri Athletics](https://mutigers.com/facilities/mizzou-aquatic-center/12)
+	- [JOHN BURROUGHS SCHOOL - Landmark Aquatic](https://landmarkaquatic.com/portfolio/john-burroughs-school/)
+	- [KIRKWOOD HIGH SCHOOL - Landmark Aquatic](https://landmarkaquatic.com/portfolio/kirkwood-high-school/)
+	- 
 - General aquatic centers
 	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
+	- [BOLIVAR AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/bolivar-aquatic-center/)
+	- [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
+	- [Indoor Aquatics | Belton Parks, MO - Official Website](https://www.beltonparks.org/134/Indoor-Aquatics)
 	- 
 
 # Outdoor/Summer
+
+## Missouri
+
+- General aquatic centers
+	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
+	- [AGNES NOLTING AQUATIC COMPLEX - Landmark Aquatic](https://landmarkaquatic.com/portfolio/agnes-nolting-aquatic-complex/)
+	- [MARSHFIELD AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/marshfield-aquatic-center/)
+	- [LEMAY AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/lemay-aquatic-center/)
+	- [NORTH COUNTY REC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/north-county-rec-center/)
+	- [LIONS PARK AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/lions-park-aquatic-center/)
+	- [SUMMIT WAVES - Landmark Aquatic](https://landmarkaquatic.com/portfolio/summit-waves/)
+	- [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
+	- [MISSION FAMILY AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/mission-family-aquatic-center/)
+	- [NORTH POINTE AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/north-pointe-aquatic-center/)
+	- [CRESTWOOD AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/crestwood-aquatic-center/)
+	- 
 
 ## Indiana Spots
 
