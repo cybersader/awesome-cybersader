@@ -4,30 +4,39 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 4:31 pm
+date modified: Saturday, November 9th 2024, 5:09 pm
 ---
 
-# Indoor
+# Kansas
 
-## Missouri
+- [Guide to Kansas City Public Pools](https://kansascitymomcollective.com/guide-to-kansas-city-public-pools/)
+- [Indoor Pools, Water Parks in Kansas City](https://kansascitymomcollective.com/indoor-pools-water-parks-in-kansas-city/)
+- [The Ultimate Guide to Water Fun in Kansas City - IN Kansas City Magazine](https://www.inkansascity.com/home-design/neighborhoods/the-ultimate-guide-to-water-fun-in-kansas-city)
+- [Black Bob Bay | City of Olathe](https://www.olatheks.gov/government/parks-recreation/recreation/pools/black-bob-bay)
+- 
 
-- If you can get permission from a coach:
+# Missouri
+
+- Misc links
+	- [Here’s where to find a public swimming pool near you](https://graphics.stltoday.com/maps/pools/)
+	- 
+- If you can get permission from a coach (doesn't seem to be available to the public):
 	- [Mizzou Aquatic Center - Facilities - University of Missouri Athletics](https://mutigers.com/facilities/mizzou-aquatic-center/12)
 	- [JOHN BURROUGHS SCHOOL - Landmark Aquatic](https://landmarkaquatic.com/portfolio/john-burroughs-school/)
 	- [KIRKWOOD HIGH SCHOOL - Landmark Aquatic](https://landmarkaquatic.com/portfolio/kirkwood-high-school/)
+	- [Simon Recreation Center (Swimming & Diving) - Facilities - Saint Louis University](https://slubillikens.com/facilities/simon-recreation-center-swimming-diving-/11)
 	- 
-- General aquatic centers
+- INDOOR - General aquatic centers & pools (seem to be open to public diving boards)
 	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
 	- [BOLIVAR AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/bolivar-aquatic-center/)
 	- [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
 	- [Indoor Aquatics | Belton Parks, MO - Official Website](https://www.beltonparks.org/134/Indoor-Aquatics)
+	- [Aquatic Facilities | the City of Liberty Official Website!](https://www.libertymissouri.gov/1989/Swimming-Pools) 
+	- [Aquatics | St Peters, MO - Rec-Plex](https://www.stpetersmo.net/478/Aquatics) 
+	- [Blue Surf Bay Waterpark | City of Blue Springs, MO - Official Website](https://www.bluespringsgov.com/2458/Blue-Surf-Bay-Waterpark)
+	- [Indoor Pool / Florissant, Missouri](https://www.florissantmo.com/topic/subtopic.php?topicid=29&structureid=20)
 	- 
-
-# Outdoor/Summer
-
-## Missouri
-
-- General aquatic centers
+- OUTDOOR - General aquatic centers & indoor waterparks
 	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
 	- [AGNES NOLTING AQUATIC COMPLEX - Landmark Aquatic](https://landmarkaquatic.com/portfolio/agnes-nolting-aquatic-complex/)
 	- [MARSHFIELD AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/marshfield-aquatic-center/)
@@ -39,9 +48,13 @@ date modified: Saturday, November 9th 2024, 4:31 pm
 	- [MISSION FAMILY AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/mission-family-aquatic-center/)
 	- [NORTH POINTE AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/north-pointe-aquatic-center/)
 	- [CRESTWOOD AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/crestwood-aquatic-center/)
+	- [Aquatics - Indoor and Outdoor Pools, Swim Lessons, More - The J KC - Jewish Community Center](https://www.thejkc.org/aquatics-at-the-j/) 
+	- [Pavilion at Lemay Aquatic Center - Fun 4 STL Kids](https://fun4stlkids.com/Fun-Around-Town/Swimming-Pools/Pavilion-at-Lemay-Aquatic-Center/View-details)
+	- [Kennedy Recreation Complex Pool - St. Louis County Website](https://stlouiscountymo.gov/st-louis-county-departments/parks/places/kennedy-recreation-complex/kennedy-recreation-complex-pool/) - outdoor?
+	- [Aquatic Center | Facilities | City Of Kirkwood, MO](https://www.kirkwoodparksandrec.org/Home/Components/FacilityDirectory/FacilityDirectory/36/445)
 	- 
 
-## Indiana Spots
+# Indiana Spots
 
 - Allows backflips (last time I was there) (fronts, backs, twists)
 	- [Meridian Park Family Aquatic Center - Shelbyville Parks Department](https://www.shelbyparks.com/parks/meridian-street-aquatic-facilitty/) 
@@ -75,15 +88,15 @@ date modified: Saturday, November 9th 2024, 4:31 pm
 		- The Big L is a quarry located in Bedford, Indiana. It is a popular location for jumping as the cliffs are very high.
 		- The Rooftop Quarry is located in Bloomington, Indiana. The top peak in the quarry is referred to as “The Rooftop” and is around 65 feet in height. This cliff diving quarry was featured in the film Breaking Away which came out in 1979.
 
-## Ohio
+# Ohio
 
 - Quarry park
 
-## Kentucky, Tennessee 
+# Kentucky, Tennessee 
 
 - Compression Falls?
 
-## Out of Indiana - U.S.
+# Out of Indiana - U.S.
 
 - Ohio
 	- Slip'n'fly
