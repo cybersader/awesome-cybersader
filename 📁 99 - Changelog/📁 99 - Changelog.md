@@ -1,3 +1,4 @@
+- 2024-11-09 at 10h27 · [[README]]
 - 2024-11-08 at 22h46 · [[📁 31 - Education, Pedagogy]]
 - 2024-11-07 at 21h15 · [[Jumping & Diving Spots]]
 - 2024-11-07 at 20h50 · [[Obsidian Git]]
@@ -246,7 +247,6 @@
 - 2024-07-20 at 10h39 · [[Active Defense & Cyber Deception]]
 - 2024-07-16 at 22h12 · [[Dirty Money]]
 - 2024-07-15 at 21h39 · [[How to Rob a Bank]]
-- 2024-07-15 at 19h50 · [[README]]
 - 2024-07-14 at 21h24 · [[Securing Python on Workstations]]
 - 2024-07-14 at 19h31 · [[Church Operations During Conflict]]
 - 2024-07-14 at 19h26 · [[Markdown Practices in Obsidian]]

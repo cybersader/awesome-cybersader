@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
       "basename": "📁 31 - Education, Pedagogy",
       "path": "📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Handling Obsidian Git Conflicts & Issues",
@@ -195,10 +199,6 @@
     {
       "basename": "Decorating with Conference Stickers",
       "path": "📁 20 - Home DIY/Wall Decor/Decorating with Conference Stickers/Decorating with Conference Stickers.md"
-    },
-    {
-      "basename": "Using Treemaps To Simplify Data WorkSpace Governance",
-      "path": "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md"
     }
   ],
   "omittedPaths": [],
