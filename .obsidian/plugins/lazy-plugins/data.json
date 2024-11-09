@@ -499,6 +499,12 @@
       },
       "obsidian-advanced-uri": {
         "startupType": "disabled"
+      },
+      "entity-linker": {
+        "startupType": "disabled"
+      },
+      "personal-os": {
+        "startupType": "disabled"
       }
     }
   }
