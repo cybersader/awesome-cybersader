@@ -4,10 +4,22 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Thursday, November 7th 2024, 9:15 pm
+date modified: Saturday, November 9th 2024, 3:49 pm
 ---
 
-# Indiana Spots
+# Indoor
+
+## Missouri
+
+- If you can get permission from a coach:
+	- [Mizzou Aquatic Center - Facilities - University of Missouri Athletics](https://mutigers.com/facilities/mizzou-aquatic-center/12)
+- General aquatic centers
+	- [Our Projects - Landmark Aquatic](https://landmarkaquatic.com/our-projects/)
+	- 
+
+# Outdoor/Summer
+
+## Indiana Spots
 
 - Allows backflips (last time I was there) (fronts, backs, twists)
 	- [Meridian Park Family Aquatic Center - Shelbyville Parks Department](https://www.shelbyparks.com/parks/meridian-street-aquatic-facilitty/) 
@@ -41,15 +53,15 @@ date modified: Thursday, November 7th 2024, 9:15 pm
 		- The Big L is a quarry located in Bedford, Indiana. It is a popular location for jumping as the cliffs are very high.
 		- The Rooftop Quarry is located in Bloomington, Indiana. The top peak in the quarry is referred to as “The Rooftop” and is around 65 feet in height. This cliff diving quarry was featured in the film Breaking Away which came out in 1979.
 
-# Ohio
+## Ohio
 
 - Quarry park
 
-# Kentucky, Tennessee 
+## Kentucky, Tennessee 
 
 - Compression Falls?
 
-# Out of Indiana - U.S.
+## Out of Indiana - U.S.
 
 - Ohio
 	- Slip'n'fly
