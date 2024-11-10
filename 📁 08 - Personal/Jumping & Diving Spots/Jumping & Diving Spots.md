@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 5:20 pm
+date modified: Saturday, November 9th 2024, 8:49 pm
 ---
 
 # Kansas
@@ -13,7 +13,6 @@ date modified: Saturday, November 9th 2024, 5:20 pm
 - [Indoor Pools, Water Parks in Kansas City](https://kansascitymomcollective.com/indoor-pools-water-parks-in-kansas-city/)
 - [The Ultimate Guide to Water Fun in Kansas City - IN Kansas City Magazine](https://www.inkansascity.com/home-design/neighborhoods/the-ultimate-guide-to-water-fun-in-kansas-city)
 - [Black Bob Bay | City of Olathe](https://www.olatheks.gov/government/parks-recreation/recreation/pools/black-bob-bay)
-- 
 
 # Missouri
 

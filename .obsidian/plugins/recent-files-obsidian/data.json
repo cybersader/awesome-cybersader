@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Jumping & Diving Spots",
-      "path": "📁 08 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
+      "basename": "Obsidian Git",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
+    },
+    {
+      "basename": "Bulletin Board Panels",
+      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
+    },
+    {
+      "basename": "Wall Decor",
+      "path": "📁 20 - Home DIY/Wall Decor/Wall Decor.md"
+    },
+    {
+      "basename": "Poster Hanging",
+      "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "US Climbing Gyms",
       "path": "📁 32 - Climbing/US Climbing Gyms/US Climbing Gyms.md"
+    },
+    {
+      "basename": "Jumping & Diving Spots",
+      "path": "📁 08 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
     },
     {
       "basename": "📁 31 - Education, Pedagogy",
@@ -21,16 +41,8 @@
       "path": "README.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "📁 17 - Knowledge Engineering",
       "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Obsidian Git",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -181,24 +193,12 @@
       "path": "📁 21 - Development/📁 21 - Development.md"
     },
     {
-      "basename": "Poster Hanging",
-      "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
-    },
-    {
-      "basename": "Bulletin Board Panels",
-      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
-    },
-    {
       "basename": "Soundproofing",
       "path": "📁 20 - Home DIY/Soundproofing/Soundproofing.md"
     },
     {
       "basename": "📁 18 - Self-Hosting",
       "path": "📁 18 - Self-Hosting/📁 18 - Self-Hosting.md"
-    },
-    {
-      "basename": "Panels and Overlays",
-      "path": "📁 20 - Home DIY/Wall Decor/Panels and Overlays/Panels and Overlays.md"
     }
   ],
   "omittedPaths": [],
