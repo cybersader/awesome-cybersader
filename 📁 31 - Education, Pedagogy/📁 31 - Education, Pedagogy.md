@@ -7,7 +7,7 @@ date modified: Friday, November 8th 2024, 10:46 pm
 ---
 
 %% Begin Waypoint %%
-
+- **[[Equal Outcomes Education is Folly]]**
 
 %% End Waypoint %%
 

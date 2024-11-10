@@ -1,6 +1,126 @@
 {
   "recentFiles": [
     {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "⬇️ Org Cyber Drop",
+      "path": "📁 04 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
+    },
+    {
+      "basename": "Who to Warn About Pentests",
+      "path": "📁 04 - Organizational Cyber/Org Pentesting/Who to Warn About Pentests/Who to Warn About Pentests.md"
+    },
+    {
+      "basename": "Org Pentesting",
+      "path": "📁 04 - Organizational Cyber/Org Pentesting/Org Pentesting.md"
+    },
+    {
+      "basename": "Diet, Nutrition",
+      "path": "📁 23 - Wellness, Fitness/Diet, Nutrition/Diet, Nutrition.md"
+    },
+    {
+      "basename": "Fitness and Diet Tech Stack",
+      "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
+    },
+    {
+      "basename": "📁 23 - Wellness, Fitness",
+      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
+    },
+    {
+      "basename": "Frameworks, Standards",
+      "path": "📁 04 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
+    },
+    {
+      "basename": "Org Data Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "IR Tabletop Scenarios",
+      "path": "📁 04 - Organizational Cyber/Incident Response/IR Tabletop Scenarios/IR Tabletop Scenarios.md"
+    },
+    {
+      "basename": "Using Treemaps To Simplify Data WorkSpace Governance",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md"
+    },
+    {
+      "basename": "IMG-20240920140128678",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240920140128678.png"
+    },
+    {
+      "basename": "PI Types",
+      "path": "📁 04 - Organizational Cyber/Org Data Governance/PI Types/PI Types.md"
+    },
+    {
+      "basename": "Handling Web Links",
+      "path": "📁 06 - Cybersader Arsenal/Handling Web Links/Handling Web Links.md"
+    },
+    {
+      "basename": "Internet Safety for Children",
+      "path": "📁 06 - Cybersader Arsenal/Internet Safety for Children/Internet Safety for Children.md"
+    },
+    {
+      "basename": "⬇️ Ontological Drop",
+      "path": "📁 12 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
+    },
+    {
+      "basename": "Home Network Defenses",
+      "path": "📁 06 - Cybersader Arsenal/Home Network Defenses/Home Network Defenses.md"
+    },
+    {
+      "basename": "Virtual Credit Cards",
+      "path": "📁 06 - Cybersader Arsenal/Virtual Credit Cards/Virtual Credit Cards.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 06 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Phones",
+      "path": "🕸️ UNSTRUCTURED/Personal Devices/Phones/Phones.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "📁 18 - Information Science, Ontology Traversal",
+      "path": "📁 18 - Information Science, Ontology Traversal/📁 18 - Information Science, Ontology Traversal.md"
+    },
+    {
+      "basename": "Social Choice Theory",
+      "path": "📁 16 - Society, Culture, Politics, Government/Social Choice Theory/Social Choice Theory.md"
+    },
+    {
+      "basename": "Societal Moral Progression",
+      "path": "📁 16 - Society, Culture, Politics, Government/Societal Moral Progression/Societal Moral Progression.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Personal Devices",
+      "path": "🕸️ UNSTRUCTURED/Personal Devices/Personal Devices.md"
+    },
+    {
+      "basename": "Equal Outcomes Education is Folly",
+      "path": "📁 31 - Education, Pedagogy/Equal Outcomes Education is Folly/Equal Outcomes Education is Folly.md"
+    },
+    {
+      "basename": "Social Interactions",
+      "path": "📁 16 - Society, Culture, Politics, Government/Social Interactions/Social Interactions.md"
+    },
+    {
       "basename": "📁 31 - Education, Pedagogy",
       "path": "📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md"
     },
@@ -37,10 +157,6 @@
       "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "US Climbing Gyms",
       "path": "📁 32 - Climbing/US Climbing Gyms/US Climbing Gyms.md"
     },
@@ -53,28 +169,12 @@
       "path": "README.md"
     },
     {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 09 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 11 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
-    },
-    {
       "basename": "📁 11 - Content Creation",
       "path": "📁 11 - Content Creation/📁 11 - Content Creation.md"
     },
     {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Handling Obsidian Git Conflicts & Issues",
@@ -99,106 +199,6 @@
     {
       "basename": "Scalable Project Management",
       "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Obsidian Vault Security",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Vault Security/Obsidian Vault Security.md"
-    },
-    {
-      "basename": "GitHub + Obsidian + Notion - Digital Garden",
-      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "Diet, Nutrition",
-      "path": "📁 08 - Personal/Wellness, Fitness/Diet, Nutrition/Diet, Nutrition.md"
-    },
-    {
-      "basename": "Wellness, Fitness",
-      "path": "📁 08 - Personal/Wellness, Fitness/Wellness, Fitness.md"
-    },
-    {
-      "basename": "Obsidian Regex Find & Replace",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Regex Find & Replace.md"
-    },
-    {
-      "basename": "Obsidian Git Features & Solutions",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Features & Solutions/Obsidian Git Features & Solutions.md"
-    },
-    {
-      "basename": "Obsidian Git Setup",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Obsidian Git Setup/Obsidian Git Setup.md"
-    },
-    {
-      "basename": "Breaking Vault Changes",
-      "path": "📁 09 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md"
-    },
-    {
-      "basename": "Syncing Obsidian",
-      "path": "📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
-    },
-    {
-      "basename": "Gitignore Folder Tracking Removal",
-      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
-    },
-    {
-      "basename": "Git",
-      "path": "📁 21 - Development/Git/Git.md"
-    },
-    {
-      "basename": "⬇️ KnowEng Drop",
-      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
-    },
-    {
-      "basename": "Obsidian Dictionary and Grammar",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Dictionary and Grammar/Obsidian Dictionary and Grammar.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 09 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Cyber Memes",
-      "path": "📁 03 - Curations, Stacks/Cyber Memes/Cyber Memes.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 09 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "Linked Data Vocabulary - Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Linked Data Vocabulary - Testing.md"
-    },
-    {
-      "basename": "Obsidian Run",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Run/Obsidian Run.md"
-    },
-    {
-      "basename": "Obsidian Run Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Obsidian Run Testing.md"
-    },
-    {
-      "basename": "Documenting Activity",
-      "path": "🕸️ UNSTRUCTURED/Documenting Activity.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
-    },
-    {
-      "basename": "Epoxy Casting",
-      "path": "📁 20 - Home DIY/Epoxy Casting/Epoxy Casting.md"
-    },
-    {
-      "basename": "📁 09 - My Obsidian Stack",
-      "path": "📁 09 - My Obsidian Stack/📁 09 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     }
   ],
   "omittedPaths": [],

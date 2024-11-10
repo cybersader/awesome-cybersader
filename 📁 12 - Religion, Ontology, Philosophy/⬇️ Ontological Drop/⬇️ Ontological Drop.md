@@ -7,7 +7,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, April 27th 2024, 8:56 pm
-date modified: Sunday, November 3rd 2024, 9:38 pm
+date modified: Sunday, November 10th 2024, 2:22 pm
 ---
 
 - What is religion? - the way we live and teachings - all in relation to reality?

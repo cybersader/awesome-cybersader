@@ -8,7 +8,7 @@ publish: true
 ---
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Culture Drop]]**
-- **⬇️ Org Cyber Drop**
+- **[[⬇️ Org Cyber Drop]]**
 	- [[Cyber Small Business Edition]]
 	- [[Scanning Inboxes for SaaS Sprawl & Visibility]]
 	- [[Web App Vuln Scanning with Nuclei]]
@@ -29,8 +29,10 @@ publish: true
 - **[[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]**
 	- [[Indiana Cyber Regulation, Laws]]
 - **[[Org Data Governance]]**
-	- [[PI Types]]
+	- **[[PI Types]]**
 	- **[[Using Treemaps To Simplify Data WorkSpace Governance]]**
+- **[[Org Pentesting]]**
+	- **[[Who to Warn About Pentests]]**
 - **[[Organization Documentation & Wikis]]**
 - **[[Physical Security]]**
 - **[[Scripting vs Development Risks on Endpoints]]**

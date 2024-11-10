@@ -15,9 +15,5 @@ date modified: Tuesday, October 22nd 2024, 7:50 pm
 - **[[Hobbies List]]**
 - **[[Jumping & Diving Spots]]**
 - **[[Nuclear Disaster Recovery]]**
-- **[[Wellness, Fitness]]**
-	- **[[ADHD and Stimulants]]**
-	- **[[Diet, Nutrition]]**
-	- **[[Stimulants and Insurance]]**
 
 %% End Waypoint %%

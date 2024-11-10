@@ -6,12 +6,14 @@ aliases:
 tags: 
 publish: true
 date created: Thursday, June 20th 2024, 2:09 pm
-date modified: Thursday, June 20th 2024, 3:51 pm
+date modified: Sunday, November 10th 2024, 2:12 pm
 ---
 
+[📁 18 - Information Science, Ontology Traversal](../📁%2018%20-%20Information%20Science,%20Ontology%20Traversal/📁%2018%20-%20Information%20Science,%20Ontology%20Traversal.md)
+
 %% Begin Waypoint %%
-- **[[⬇️ KnowEng Drop]]**
-- **[[Knowledge Organization]]**
+- **[[⬇️ KnowEng Drop/⬇️ KnowEng Drop]]**
+- **[[Knowledge Organization/Knowledge Organization]]**
 
 %% End Waypoint %%
 
@@ -21,9 +23,11 @@ Linked:
 > [!tldr] The term that encompasses the science of knowledge, information retrieval, and ontology traversal is **"Knowledge Engineering"**. This interdisciplinary field involves the development of systems that can understand, model, and manage knowledge, facilitating information retrieval and effective navigation through complex ontologies. Knowledge engineering combines principles from computer science, artificial intelligence, information science, and cognitive science to create frameworks and tools for capturing, organizing, and utilizing knowledge in various domains for the purpose of knowledge work.
 
 # Knowledge Graph Sources
+
 - [Center on Knowledge Graphs](https://usc-isi-i2.github.io/home/)
 
 # MISC
+
 Knowledge Procurement (learning and information retrieval) is a difficult topic that is at the core of how we learn, communicate, gather knowledge. It includes things like epistemology, curation steps, representing knowledge in various formats in engineered workflows.
 
 Put simply though, just ways get knowledge:
@@ -54,7 +58,11 @@ Put simply though, just ways get knowledge:
     - IEEE
     - other academic journals
 - Social Networks
+
 # Books
+
 - FInd some books on the subject of gathering knowledge and learning
+
 # Semantic Knowledge & Ontology Traversal
+
 - [https://en.unionpedia.org/](https://en.unionpedia.org/)

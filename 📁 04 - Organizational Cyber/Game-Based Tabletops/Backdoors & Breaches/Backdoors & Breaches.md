@@ -13,7 +13,7 @@ date modified: Wednesday, June 19th 2024, 1:52 pm
 ---
 
 # Scenario Brainstorm
-- [IR Tabletop Scenarios](../../Incident%20Response/IR%20Tabletop%20Scenarios.md) 
+- [IR Tabletop Scenarios](../../Incident%20Response/IR%20Tabletop%20Scenarios/IR%20Tabletop%20Scenarios.md) 
 # Resources
 - [Backdoors & Breaches - Black Hills Information Security](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/)
 	- Game mat image files

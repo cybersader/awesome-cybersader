@@ -14,5 +14,8 @@ date modified: Sunday, November 3rd 2024, 10:07 pm
 	- **[[Dr. Peterson x Elon Musk]]**
 	- **[[Fr. Pine Interviews Matt Fradd]]**
 - **[[Debate - Why Marriage is Good for Men]]**
+- **[[Social Choice Theory]]**
+- **[[Social Interactions]]**
+- **[[Societal Moral Progression]]**
 
 %% End Waypoint %%

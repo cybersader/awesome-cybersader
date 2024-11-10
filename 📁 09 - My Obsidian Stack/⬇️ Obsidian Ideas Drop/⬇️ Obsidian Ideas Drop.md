@@ -4,12 +4,13 @@ aliases:
 tags: 
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Thursday, November 7th 2024, 8:47 pm
+date modified: Sunday, November 10th 2024, 2:04 pm
 ---
 
 - [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
 - [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
+- [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
 
 # Ideas
 
