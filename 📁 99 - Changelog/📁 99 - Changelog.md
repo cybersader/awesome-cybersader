@@ -1,3 +1,4 @@
+- 2024-11-10 at 12h37 · [[📁 07 - Business]]
 - 2024-11-09 at 21h45 · [[Jumping & Diving Spots]]
 - 2024-11-09 at 21h24 · [[Bulletin Board Panels]]
 - 2024-11-09 at 21h10 · [[Poster Hanging]]
@@ -42,7 +43,6 @@
 - 2024-11-04 at 08h48 · [[Documenting Activity]]
 - 2024-11-04 at 08h48 · [[Obsidian Vaults with Cybersecurity]]
 - 2024-11-04 at 07h43 · [[📁 16 - Society, Culture, Politics, Government]]
-- 2024-11-04 at 07h43 · [[📁 07 - Business]]
 - 2024-11-04 at 07h43 · [[002 -]]
 - 2024-11-04 at 07h43 · [[001 - Lock Windows For Background Processes]]
 - 2024-11-04 at 07h43 · [[📁 22 - Science, Space, Energy]]
