@@ -5,8 +5,15 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, November 2nd 2024, 3:37 pm
-date modified: Sunday, November 3rd 2024, 2:38 pm
+date modified: Saturday, November 9th 2024, 9:09 pm
 ---
+
+[Poster Hanging](../Poster%20Hanging/Poster%20Hanging.md)
+
+# Securing Things to Bulletin Board
+
+- For two sides things that you want to protect, use pins that have weak magnets or clips to secure things
+- 
 
 # Attaching Foams to Walls
 
