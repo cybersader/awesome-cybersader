@@ -4,7 +4,7 @@ aliases:
 tags: 
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 8:49 pm
+date modified: Saturday, November 9th 2024, 9:45 pm
 ---
 
 # Kansas
@@ -30,7 +30,7 @@ date modified: Saturday, November 9th 2024, 8:49 pm
 	- [Aquatics | St Peters, MO - Rec-Plex](https://www.stpetersmo.net/478/Aquatics) 
 	- [Blue Surf Bay Waterpark | City of Blue Springs, MO - Official Website](https://www.bluespringsgov.com/2458/Blue-Surf-Bay-Waterpark)
 	- [Indoor Pool / Florissant, Missouri](https://www.florissantmo.com/topic/subtopic.php?topicid=29&structureid=20)
-	- - [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
+	- [THE J – CHESTERFIELD - Landmark Aquatic](https://landmarkaquatic.com/portfolio/the-j-chesterfield/)
 	- [Indoor Aquatics | Belton Parks, MO - Official Website](https://www.beltonparks.org/134/Indoor-Aquatics)
 	- [Aquatic Facilities | the City of Liberty Official Website!](https://www.libertymissouri.gov/1989/Swimming-Pools) 
 	- [BOLIVAR AQUATIC CENTER - Landmark Aquatic](https://landmarkaquatic.com/portfolio/bolivar-aquatic-center/)
