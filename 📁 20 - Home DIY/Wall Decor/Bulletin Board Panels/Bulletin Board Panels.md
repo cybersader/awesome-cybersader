@@ -34,7 +34,8 @@ date modified: Saturday, November 9th 2024, 9:09 pm
 	- [FabricTack Panels | NetWell](https://www.controlnoise.com/product/fabrictack-panels/)
 
 - High quality, flame retardant, acoustic, bulletin, less than 1in. thick
-	- [Our Pinboard Felt Right Design Gallery](https://feltright.com/pages/design-gallery)
+	- [Our Pinboard Felt Right Design Gallery](https://feltright.com/pages/design-gallery) - 3/8 in thick (standard push pin length)
+		- [FAQ at Felt Right in Draper, UT](https://feltright.com/pages/faq)
 		- [Design Your Felt Tile In My Studio | Felt Right](https://feltright.com/pages/customer-design?customer_design_id=12271)
 		- [Cross Ebony](https://feltright.com/products/ebony-cross)
 		- [Weave Cast](https://feltright.com/products/cast-parallel-weave)
