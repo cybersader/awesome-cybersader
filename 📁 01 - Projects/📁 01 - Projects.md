@@ -16,7 +16,6 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Home Lab, Home Server]]**
 - **[[Home Network Wars]]**
 - **[[Interview with a Data Analyst]]**
-- **Kubernetes Home Server**
 - **[[Mothers Day Website]]**
 
 - **[[NocoDB]]**
@@ -24,11 +23,6 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
 	- **[[Jsonaut]]**
-- **TrueNAS Scale Home Server**
-	- **Immich & Cloudflare Tunnels**
-	- **Scheduled Backups**
-	- **TrueNAS Scale Apps, Adding TrueCharts**
-	- **TrueNAS Scale RAID Setup**
 - **[[Vehicle Selection in 2020s]]**
 
 %% End Waypoint %%
