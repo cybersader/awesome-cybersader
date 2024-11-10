@@ -10,6 +10,8 @@ date modified: Saturday, April 27th 2024, 8:54 pm
 	- [[Pints with Aquinas - JP]]
 - **[[Church Operations During Conflict]]**
 - **[[Jesus and the Eucharist - Augustine Institute]]**
-- **[[Parenthood Discernment & Prep]]**
+- **[[Marriage]]**
+- **[[Parenthood]]**
+	- **[[Parenthood Discernment and Prep]]**
 
 %% End Waypoint %%
