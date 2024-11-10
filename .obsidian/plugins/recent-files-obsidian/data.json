@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Custom Docker Apps in TrueNAS",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
+    },
+    {
       "basename": "TrueNAS Electric Eel 24.10 Update",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 11 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
-    },
-    {
-      "basename": "Handling Obsidian Git Conflicts & Issues",
-      "path": "📁 09 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     }
   ],
   "omittedPaths": [],
