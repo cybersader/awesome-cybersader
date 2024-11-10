@@ -1,3 +1,5 @@
+- 2024-11-10 at 12h51 · [[Parenthood Discernment & Prep]]
+- 2024-11-10 at 12h51 · [[📁 12 - Religion, Ontology, Philosophy]]
 - 2024-11-10 at 12h37 · [[📁 07 - Business]]
 - 2024-11-09 at 21h45 · [[Jumping & Diving Spots]]
 - 2024-11-09 at 21h24 · [[Bulletin Board Panels]]
@@ -255,7 +257,6 @@
 - 2024-07-14 at 19h17 · [[Reporting Phishing]]
 - 2024-07-14 at 19h12 · [[Secure Podman Setup]]
 - 2024-07-14 at 19h11 · [[Container Security]]
-- 2024-07-14 at 18h02 · [[📁 12 - Religion, Ontology, Philosophy]]
 - 2024-07-14 at 16h28 · [[🕸️ UNSTRUCTURED]]
 - 2024-07-14 at 16h28 · [[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]
 - 2024-07-14 at 15h58 · [[Awesome Obsidian Wiki Examples]]
