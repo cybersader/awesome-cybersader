@@ -19,7 +19,7 @@ publish: true
 
 # Daily Drivers
 
-- [Rabbit OS & R1](../📁%2005%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/Rabbit%20OS%20&%20R1/Rabbit%20OS%20&%20R1.md) 
+- [Rabbit OS & R1](../📁%2006%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/Rabbit%20OS%20&%20R1/Rabbit%20OS%20&%20R1.md) 
 
 # Cyber
 

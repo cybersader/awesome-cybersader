@@ -50,7 +50,7 @@ date modified: Wednesday, June 26th 2024, 7:53 pm
 	- You don't need an actual stream deck to use it. Companion both comes with a builtin stream deck emulator, a webpage for touch screens and the ability to trigger buttons via OSC, TCP, UDP, HTTP, WebSocket and ArtNet. It does the same job, just without the buttons.
 # Other
 - [Supercharge your Live Stream | Streamer.bot](https://streamer.bot/)
-- [Awesome Streaming](../../📁%2011%20-%20Content%20Creation/Awesome%20Streaming/Awesome%20Streaming.md) 
+- [Awesome Streaming](../../📁%2012%20-%20Content%20Creation/Awesome%20Streaming/Awesome%20Streaming.md) 
 # Research & Links
 ## Links
 - [Open source StreamDeck alternative - DEV Community](https://dev.to/josuigoa/open-source-streamdeck-alternative-1gf3)

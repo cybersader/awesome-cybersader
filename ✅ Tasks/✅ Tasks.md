@@ -46,4 +46,4 @@ done
 - [Using Dataview on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/) 
 - [Creating a Today View in Obsidian - Obsidian Rocks](https://obsidian.rocks/creating-a-today-view-in-obsidian/) 
 - [Creating Dynamic Graphs in Obsidian - Obsidian Rocks](https://obsidian.rocks/creating-dynamic-graphs-in-obsidian/) 
-- [Obsidian Run](../📁%2009%20-%20My%20Obsidian%20Stack/Obsidian%20Run/Obsidian%20Run.md) - run dataview queries and generate markdown for Obsidian Publish
+- [Obsidian Run](../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Run/Obsidian%20Run.md) - run dataview queries and generate markdown for Obsidian Publish
