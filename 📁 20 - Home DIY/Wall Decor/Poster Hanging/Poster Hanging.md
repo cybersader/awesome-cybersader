@@ -18,7 +18,7 @@ date modified: Saturday, November 9th 2024, 9:09 pm
 
 - The Best - doesn't damage poster, reusable, allows you to still roll up posters
 	- Washi tape
-	- Mounting tape
+	- Mounting tape 
 	- 3M poster strips
 	- 3M Command Adjustables Poster Strips
 - Picture hanging tips
