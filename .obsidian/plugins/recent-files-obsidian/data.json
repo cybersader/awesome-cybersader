@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "Internet Access",
+      "path": "📁 07 - Cybersader Arsenal/Internet Access/Internet Access.md"
+    },
+    {
+      "basename": "Obsidian Git",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
+    },
+    {
+      "basename": "Language & Politics",
+      "path": "📁 16 - Society, Culture, Politics, Government/Language & Politics/Language & Politics.md"
+    },
+    {
+      "basename": "📁 13 - Religion, Ontology, Philosophy",
+      "path": "📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md"
+    },
+    {
+      "basename": "📁 16 - Society, Culture, Politics, Government",
+      "path": "📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md"
+    },
+    {
+      "basename": "Pints with Aquinas - JP",
+      "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/Pints with Aquinas - JP/Pints with Aquinas - JP.md"
+    },
+    {
+      "basename": "Social Choice Theory",
+      "path": "📁 16 - Society, Culture, Politics, Government/Social Choice Theory/Social Choice Theory.md"
+    },
+    {
+      "basename": "IR Tabletop AI Prompts",
+      "path": "📁 05 - Organizational Cyber/Incident Response/IR Tabletop AI Prompts/IR Tabletop AI Prompts.md"
+    },
+    {
+      "basename": "Backdoors & Breaches",
+      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
+    },
+    {
+      "basename": "IR Tabletop Scenarios",
+      "path": "📁 05 - Organizational Cyber/Incident Response/IR Tabletop Scenarios/IR Tabletop Scenarios.md"
+    },
+    {
+      "basename": "⬇️ Org Cyber Drop",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
+    },
+    {
       "basename": "Fixing Broken Ceramic",
       "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
     },
@@ -9,16 +53,8 @@
       "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
-      "basename": "⬇️ Org Cyber Drop",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
-    },
-    {
       "basename": "Personal Devices",
       "path": "🕸️ UNSTRUCTURED/Personal Devices/Personal Devices.md"
-    },
-    {
-      "basename": "Obsidian Git",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
     },
     {
       "basename": "Bulletin Board Panels",
@@ -31,10 +67,6 @@
     {
       "basename": "Plex Media Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
-    },
-    {
-      "basename": "Internet Access",
-      "path": "📁 07 - Cybersader Arsenal/Internet Access/Internet Access.md"
     },
     {
       "basename": "📁 15 - Finance, Economy",
@@ -105,10 +137,6 @@
       "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     },
     {
-      "basename": "IR Tabletop Scenarios",
-      "path": "📁 05 - Organizational Cyber/Incident Response/IR Tabletop Scenarios/IR Tabletop Scenarios.md"
-    },
-    {
       "basename": "Using Treemaps To Simplify Data WorkSpace Governance",
       "path": "📁 05 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md"
     },
@@ -161,10 +189,6 @@
       "path": "📁 18 - Information Science, Ontology Traversal/📁 18 - Information Science, Ontology Traversal.md"
     },
     {
-      "basename": "Social Choice Theory",
-      "path": "📁 16 - Society, Culture, Politics, Government/Social Choice Theory/Social Choice Theory.md"
-    },
-    {
       "basename": "Societal Moral Progression",
       "path": "📁 16 - Society, Culture, Politics, Government/Societal Moral Progression/Societal Moral Progression.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "Equal Outcomes Education is Folly",
       "path": "📁 31 - Education, Pedagogy/Equal Outcomes Education is Folly/Equal Outcomes Education is Folly.md"
-    },
-    {
-      "basename": "Social Interactions",
-      "path": "📁 16 - Society, Culture, Politics, Government/Social Interactions/Social Interactions.md"
-    },
-    {
-      "basename": "📁 31 - Education, Pedagogy",
-      "path": "📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md"
-    },
-    {
-      "basename": "Parenthood Discernment and Prep",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Parenthood/Parenthood Discernment and Prep/Parenthood Discernment and Prep.md"
-    },
-    {
-      "basename": "Parenthood",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Parenthood/Parenthood.md"
-    },
-    {
-      "basename": "Marriage",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Marriage/Marriage.md"
-    },
-    {
-      "basename": "Jumping & Diving Spots",
-      "path": "📁 09 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
     }
   ],
   "omittedPaths": [],
