@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Fixing Broken Ceramic",
+      "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "⬇️ Org Cyber Drop",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
+    },
+    {
+      "basename": "Personal Devices",
+      "path": "🕸️ UNSTRUCTURED/Personal Devices/Personal Devices.md"
+    },
+    {
+      "basename": "Obsidian Git",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
+    },
+    {
+      "basename": "Bulletin Board Panels",
+      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
+    },
+    {
       "basename": "Poster Hanging",
       "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
+    },
+    {
+      "basename": "Plex Media Server",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
     },
     {
       "basename": "Internet Access",
@@ -33,24 +61,12 @@
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     },
     {
-      "basename": "Plex Media Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
-    },
-    {
       "basename": "Collaboration in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
-      "basename": "Personal Devices",
-      "path": "🕸️ UNSTRUCTURED/Personal Devices/Personal Devices.md"
-    },
-    {
       "basename": "Smart Phones",
       "path": "🕸️ UNSTRUCTURED/Personal Devices/Smart Phones/Smart Phones.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "DNS Proxies & FIltering",
@@ -59,10 +75,6 @@
     {
       "basename": "DevSecOps",
       "path": "📁 05 - Organizational Cyber/DevSecOps/DevSecOps.md"
-    },
-    {
-      "basename": "⬇️ Org Cyber Drop",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
     },
     {
       "basename": "Who to Warn About Pentests",
@@ -187,18 +199,6 @@
     {
       "basename": "Jumping & Diving Spots",
       "path": "📁 09 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
-    },
-    {
-      "basename": "Bulletin Board Panels",
-      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
-    },
-    {
-      "basename": "Wall Decor",
-      "path": "📁 20 - Home DIY/Wall Decor/Wall Decor.md"
-    },
-    {
-      "basename": "Obsidian Git",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
     }
   ],
   "omittedPaths": [],
