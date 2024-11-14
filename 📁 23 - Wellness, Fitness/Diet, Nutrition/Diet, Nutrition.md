@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, November 4th 2024, 12:13 pm
-date modified: Sunday, November 10th 2024, 2:32 pm
+date modified: Wednesday, November 13th 2024, 10:04 pm
 ---
 
 # App Solutions
@@ -14,3 +14,4 @@ date modified: Sunday, November 10th 2024, 2:32 pm
 	- This works too but too much work for me to track everything
 
 I like Macro Factor because it uses trends and statistical math to make things practical when it comes to the bandwidth of information you have to enter into the app.  It also helps you have a longer outlook on things by looking at trends rather than the now.
+
