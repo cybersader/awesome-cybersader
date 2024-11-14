@@ -53,6 +53,12 @@
       "icon": "lucide-navigation",
       "name": "Files: Reveal current file in navigation",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push",
+      "icon": "refresh-cw",
+      "name": "Git: Commit-and-sync",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
