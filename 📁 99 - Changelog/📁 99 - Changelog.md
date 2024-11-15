@@ -1,3 +1,4 @@
+- 2024-11-14 at 21h14 · [[⬇️ Ontological Drop]]
 - 2024-11-13 at 22h17 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-11-13 at 22h16 · [[Obsidian Plugins and 3rd Party Tools]]
 - 2024-11-13 at 22h13 · [[⬇️ Cyber Culture Drop]]
@@ -79,7 +80,6 @@
 - 2024-11-10 at 14h26 · [[PI Types]]
 - 2024-11-10 at 14h25 · [[Handling Web Links]]
 - 2024-11-10 at 14h24 · [[Internet Safety for Children]]
-- 2024-11-10 at 14h22 · [[⬇️ Ontological Drop]]
 - 2024-11-10 at 14h20 · [[Home Network Defenses]]
 - 2024-11-10 at 14h18 · [[Virtual Credit Cards]]
 - 2024-11-10 at 14h15 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
