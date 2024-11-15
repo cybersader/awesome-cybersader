@@ -13,8 +13,7 @@ publish: true
 - **[[Arc Browser on Windows]]**
 - **[[Awesome Password Security]]**
 	- [[Self-Hosted Bitwarden]]
-- **BCDR, DFIR**
-	- [[Awesome DFIR]]
+- **[[BCDR, DFIR]]**
 - [[Company Security Strategy from Zero]]
 - **[[From Other Wiki]]**
 - [[Go Pro as a Webcam]]

@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Misc Web Dev",
+      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
+    },
+    {
+      "basename": "⬇️ Self-Hosting DROP",
+      "path": "📁 19 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
+    },
+    {
+      "basename": "OSINT",
+      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
+    },
+    {
+      "basename": "BCDR, DFIR",
+      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/BCDR, DFIR.md"
+    },
+    {
+      "basename": "Awesome DFIR",
+      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/Awesome DFIR/Awesome DFIR.md"
+    },
+    {
+      "basename": "Tech Stacks from Tech Content Creators",
+      "path": "🕸️ UNSTRUCTURED/Tech Stacks from Tech Content Creators/Tech Stacks from Tech Content Creators.md"
+    },
+    {
+      "basename": "Awesome Peripherals",
+      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
+    },
+    {
+      "basename": "Malware Sandboxing",
+      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
+    },
+    {
+      "basename": "Email Security",
+      "path": "🕸️ UNSTRUCTURED/Email Security/Email Security.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
+    },
+    {
       "basename": "⬇️ Cyber Content Ideas",
       "path": "📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     },
@@ -155,50 +199,6 @@
     {
       "basename": "DevSecOps",
       "path": "📁 05 - Organizational Cyber/DevSecOps/DevSecOps.md"
-    },
-    {
-      "basename": "Who to Warn About Pentests",
-      "path": "📁 05 - Organizational Cyber/Org Pentesting/Who to Warn About Pentests/Who to Warn About Pentests.md"
-    },
-    {
-      "basename": "Org Pentesting",
-      "path": "📁 05 - Organizational Cyber/Org Pentesting/Org Pentesting.md"
-    },
-    {
-      "basename": "Fitness and Diet Tech Stack",
-      "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
-    },
-    {
-      "basename": "📁 23 - Wellness, Fitness",
-      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
-    },
-    {
-      "basename": "Frameworks, Standards",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Using Treemaps To Simplify Data WorkSpace Governance",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Using Treemaps To Simplify Data WorkSpace Governance/Using Treemaps To Simplify Data WorkSpace Governance.md"
-    },
-    {
-      "basename": "IMG-20240920140128678",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/_attachments/IMG-20240920140128678.png"
-    },
-    {
-      "basename": "PI Types",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/PI Types/PI Types.md"
-    },
-    {
-      "basename": "Handling Web Links",
-      "path": "📁 07 - Cybersader Arsenal/Handling Web Links/Handling Web Links.md"
-    },
-    {
-      "basename": "Internet Safety for Children",
-      "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/Internet Safety for Children.md"
     }
   ],
   "omittedPaths": [],
