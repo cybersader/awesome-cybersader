@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Malware Sandboxing",
+      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
+    },
+    {
+      "basename": "Photo Filtering, Color, LUTs",
+      "path": "🕸️ UNSTRUCTURED/Photo Filtering, Color, LUTs/Photo Filtering, Color, LUTs.md"
+    },
+    {
+      "basename": "BCDR, DFIR",
+      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/BCDR, DFIR.md"
+    },
+    {
+      "basename": "Spyware",
+      "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
+    },
+    {
+      "basename": "OSINT",
+      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
+    },
+    {
+      "basename": "Media File Management",
+      "path": "🕸️ UNSTRUCTURED/Media File Management/Media File Management.md"
+    },
+    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
@@ -13,14 +37,6 @@
       "path": "📁 19 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
     },
     {
-      "basename": "OSINT",
-      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
-    },
-    {
-      "basename": "BCDR, DFIR",
-      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/BCDR, DFIR.md"
-    },
-    {
       "basename": "Awesome DFIR",
       "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/Awesome DFIR/Awesome DFIR.md"
     },
@@ -31,10 +47,6 @@
     {
       "basename": "Awesome Peripherals",
       "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "Malware Sandboxing",
-      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
     },
     {
       "basename": "Email Security",
@@ -187,18 +199,6 @@
     {
       "basename": "Collaboration in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
-      "basename": "Smart Phones",
-      "path": "🕸️ UNSTRUCTURED/Personal Devices/Smart Phones/Smart Phones.md"
-    },
-    {
-      "basename": "DNS Proxies & FIltering",
-      "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
-    },
-    {
-      "basename": "DevSecOps",
-      "path": "📁 05 - Organizational Cyber/DevSecOps/DevSecOps.md"
     }
   ],
   "omittedPaths": [],
