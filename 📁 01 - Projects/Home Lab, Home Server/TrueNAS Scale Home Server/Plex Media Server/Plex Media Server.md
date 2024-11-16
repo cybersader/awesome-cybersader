@@ -8,7 +8,7 @@ date modified: Sunday, November 10th 2024, 5:43 pm
 
 # Links
 
-- [(3 Ways to Start Your Own Plex Server - YouTube](https://www.youtube.com/watch?v=XKDSld-CrHU)
+- [3 Ways to Start Your Own Plex Server - YouTube](https://www.youtube.com/watch?v=XKDSld-CrHU)
 
 # Compatible Devices for Plex Clients
 

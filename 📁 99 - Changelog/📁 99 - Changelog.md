@@ -1,3 +1,4 @@
+- 2024-11-16 at 18h36 · [[Plex Media Server]]
 - 2024-11-16 at 18h18 · [[Hotel Hacker]]
 - 2024-11-15 at 18h12 · [[Photo Filtering, Color, LUTs]]
 - 2024-11-15 at 18h11 · [[Spyware]]
@@ -85,7 +86,6 @@
 - 2024-11-10 at 18h09 · [[TrueNAS Scale Home Server]]
 - 2024-11-10 at 18h09 · [[Home Lab, Home Server]]
 - 2024-11-10 at 17h52 · [[TrueNAS Electric Eel 24.10 Update]]
-- 2024-11-10 at 17h43 · [[Plex Media Server]]
 - 2024-11-10 at 16h31 · [[Personal Devices]]
 - 2024-11-10 at 16h27 · [[DNS Proxies & FIltering]]
 - 2024-11-10 at 16h26 · [[DevSecOps]]
