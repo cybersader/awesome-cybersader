@@ -1,3 +1,4 @@
+- 2024-11-16 at 18h18 · [[Hotel Hacker]]
 - 2024-11-15 at 18h12 · [[Photo Filtering, Color, LUTs]]
 - 2024-11-15 at 18h11 · [[Spyware]]
 - 2024-11-15 at 18h10 · [[OSINT]]
