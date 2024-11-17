@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Smart Home",
+      "path": "📁 07 - Cybersader Arsenal/Smart Home/Smart Home.md"
+    },
+    {
+      "basename": "Dumb Phones",
+      "path": "📁 07 - Cybersader Arsenal/Dumb Phones/Dumb Phones.md"
+    },
+    {
       "basename": "WAN",
       "path": "🕸️ UNSTRUCTURED/Networking/WAN/WAN.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Cool Malware",
-      "path": "🕸️ UNSTRUCTURED/Cool Malware/Cool Malware.md"
-    },
-    {
-      "basename": "⬇️ Ontological Drop",
-      "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
     }
   ],
   "omittedPaths": [],
