@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "📁 04 - Cyber & Digital Trust",
+      "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
+      "basename": "Personal Privacy Identity & Authentication",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
+    },
+    {
+      "basename": "Basics of GRC",
+      "path": "📁 06 - Learning, Notes/⬇️ Notes Drop/Basics of GRC/Basics of GRC.md"
+    },
+    {
       "basename": "Personal Email",
       "path": "📁 07 - Cybersader Arsenal/Personal Email/Personal Email.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Backdoors & Breaches",
       "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
-    },
-    {
-      "basename": "IR Tabletop Scenarios",
-      "path": "📁 05 - Organizational Cyber/Incident Response/IR Tabletop Scenarios/IR Tabletop Scenarios.md"
-    },
-    {
-      "basename": "⬇️ Org Cyber Drop",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
-    },
-    {
-      "basename": "Fixing Broken Ceramic",
-      "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     }
   ],
   "omittedPaths": [],

@@ -5,17 +5,18 @@ publish: true
 ---
 
 %% Begin Waypoint %%
+- **[[Basics of GRC]]**
 - [[CI_CD Pipeline Security with Andrew Krug]]
-- **[[COBRA Insurance Between Jobs/COBRA Insurance Between Jobs]]**
-- **[[Game of Thrones & Cybersecurity/Game of Thrones & Cybersecurity]]**
+- **[[COBRA Insurance Between Jobs]]**
+- **[[Game of Thrones & Cybersecurity]]**
 - [[Get an Epic Cyber Education for Free (almost) - Carrie Roberts]]
 - [[How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website.]]
 - [[IDs, Verification, and MFA]]
-- **[[ISP Shenanigans/ISP Shenanigans]]**
-- **[[MailFail - Who's Spoofing Your Email and How/MailFail - Who's Spoofing Your Email and How]]**
-- **[[Rabbit OS & R1/Rabbit OS & R1]]**
-- **[[Recover Files Old Windows Boot Drive/Recover Files Old Windows Boot Drive]]**
+- **[[ISP Shenanigans]]**
+- **[[MailFail - Who's Spoofing Your Email and How]]**
+- **[[Rabbit OS & R1]]**
+- **[[Recover Files Old Windows Boot Drive]]**
 - [[SSO vs Password Managers]]
-- **[[Windows Permissions & DevSecOps/Windows Permissions & DevSecOps]]**
+- **[[Windows Permissions & DevSecOps]]**
 
 %% End Waypoint %%

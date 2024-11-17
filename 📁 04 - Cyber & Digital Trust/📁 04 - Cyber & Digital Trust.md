@@ -2,15 +2,21 @@
 aliases:
   - Cyber & Game Theory
   - Identity & Interest Interaction Science
-tags: 
+tags:
+  - philosophy
 publish: true
 date created: Sunday, November 10th 2024, 9:08 pm
-date modified: Sunday, November 10th 2024, 9:12 pm
+date modified: Saturday, November 16th 2024, 10:37 pm
 ---
 
 # DROP
 
 - [The real story behind Sam Altman's $240,000,000 Orb - YouTube](https://www.youtube.com/watch?v=5f84zpHZ13I)
+- [CyberEthics: Toward a Comprehensive Philosophy of Cybersecurity | by Giorgi Vachnadze | Medium](https://giorgivachnadze.medium.com/cyberethics-toward-a-comprehensive-philosophy-of-cybersecurity-513562247d8f)
+- [What "Security" Means in the Information Society (Track VI) | Kelly Shortridge](https://kellyshortridge.com/blog/posts/what-security-means-in-the-information-society-part-6/)
+- [On the meaning of the Latin “Securitas” in Seneca | by Castalian Stream | Seneca and spiritual direction (philosophy as a way of life) | Medium](https://medium.com/seneca-and-spiritual-direction-philosophy-as-a-way/on-the-meaning-of-the-latin-securitas-in-seneca-8dd3c354a94b)
+- [cyber- | Etymology of cyber- by etymonline](https://www.etymonline.com/word/cyber-)
+- [A Brief Semantic History of Securitas | Security: Politics, Humanity, and the Philology of Care | Princeton Scholarship Online | Oxford Academic](https://academic.oup.com/princeton-scholarship-online/book/23996/chapter-abstract/185359245?redirectedFrom=fulltext)
 
 # Identities & Interests - The Game Theory of Cyberspace
 
