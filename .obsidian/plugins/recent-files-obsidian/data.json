@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Personal Email",
+      "path": "📁 07 - Cybersader Arsenal/Personal Email/Personal Email.md"
+    },
+    {
+      "basename": "Email Security",
+      "path": "🕸️ UNSTRUCTURED/Email Security/Email Security.md"
+    },
+    {
+      "basename": "Databases",
+      "path": "🕸️ UNSTRUCTURED/Databases/Databases.md"
+    },
+    {
+      "basename": "Hosted Storage",
+      "path": "🕸️ UNSTRUCTURED/Hosted Storage/Hosted Storage.md"
+    },
+    {
+      "basename": "Media File Management",
+      "path": "🕸️ UNSTRUCTURED/Media File Management/Media File Management.md"
+    },
+    {
+      "basename": "RDP Client",
+      "path": "🕸️ UNSTRUCTURED/RDP Client/RDP Client.md"
+    },
+    {
       "basename": "Browsers",
       "path": "🕸️ UNSTRUCTURED/Browsers/Browsers.md"
     },
@@ -53,10 +77,6 @@
       "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
     },
     {
-      "basename": "Media File Management",
-      "path": "🕸️ UNSTRUCTURED/Media File Management/Media File Management.md"
-    },
-    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
@@ -79,10 +99,6 @@
     {
       "basename": "Awesome Peripherals",
       "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "Email Security",
-      "path": "🕸️ UNSTRUCTURED/Email Security/Email Security.md"
     },
     {
       "basename": "🕸️ UNSTRUCTURED",
@@ -183,22 +199,6 @@
     {
       "basename": "Windows Desktop Provisioning",
       "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Personal Devices",
-      "path": "🕸️ UNSTRUCTURED/Personal Devices/Personal Devices.md"
-    },
-    {
-      "basename": "Bulletin Board Panels",
-      "path": "📁 20 - Home DIY/Wall Decor/Bulletin Board Panels/Bulletin Board Panels.md"
-    },
-    {
-      "basename": "Poster Hanging",
-      "path": "📁 20 - Home DIY/Wall Decor/Poster Hanging/Poster Hanging.md"
-    },
-    {
-      "basename": "📁 15 - Finance, Economy",
-      "path": "📁 15 - Finance, Economy/📁 15 - Finance, Economy.md"
     }
   ],
   "omittedPaths": [],

@@ -7,7 +7,6 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 ---
 %% Begin Waypoint %%
 - **[[DNS Proxies & FIltering]]**
-- **[[Email Aliasing]]**
 - **[[Handling Personal Security Breaches]]**
 - **[[Handling Web Links]]**
 - **[[Home Network Defenses]]**
@@ -15,6 +14,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Internet Safety for Children]]**
 - **[[Internet Usage & Ethics]]**
 - **[[Personal Cyber Resilience]]**
+- **[[Personal Email]]**
 - **[[THE PERSONAL CYBER RESILIENCE GUIDE]]**
 - **[[Virtual Credit Cards]]**
 
