@@ -20,3 +20,4 @@ date modified: Saturday, November 16th 2024, 7:04 pm
     - [LibreWolf](https://librewolf.net/)
         - Firefox without bloat
     - [Arc from The Browser Company](https://arc.net/)
+ 
