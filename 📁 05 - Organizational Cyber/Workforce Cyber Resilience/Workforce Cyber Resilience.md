@@ -1,10 +1,11 @@
 ---
 aliases:
   - Organizational Cyber Pedagogy
+  - Workforce Education
 tags: 
 publish: true
 date created: Friday, June 14th 2024, 5:00 pm
-date modified: Friday, June 14th 2024, 5:04 pm
+date modified: Sunday, November 17th 2024, 5:03 pm
 ---
 
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)

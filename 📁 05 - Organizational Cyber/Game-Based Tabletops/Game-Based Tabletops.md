@@ -11,7 +11,7 @@ date modified: Wednesday, June 19th 2024, 1:54 pm
 
 %% Begin Waypoint %%
 - **[[Backdoors & Breaches]]**
-	- [[B&B Scenarios]]
+	- **[[B&B Scenarios]]**
 	- **Backdoors & Breaches Data**
 
 - **[[HackBack]]**

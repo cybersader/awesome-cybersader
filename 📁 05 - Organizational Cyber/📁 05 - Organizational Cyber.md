@@ -38,6 +38,7 @@ publish: true
 - **[[Scripting vs Development Risks on Endpoints]]**
 - **[[Secure Cyber Environment]]**
 - **[[Social Engineering]]**
-- **[[Workforce Education]]**
+- **[[Workforce Cyber Resilience]]**
+	- **[[Workforce Cyber Training Curriculum]]**
 
 %% End Waypoint %%
