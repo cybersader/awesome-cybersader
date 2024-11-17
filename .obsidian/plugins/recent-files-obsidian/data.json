@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Browsers",
+      "path": "🕸️ UNSTRUCTURED/Browsers/Browsers.md"
+    },
+    {
+      "basename": "Food & Cooking",
+      "path": "📁 23 - Wellness, Fitness/Food & Cooking/Food & Cooking.md"
+    },
+    {
+      "basename": "📁 23 - Wellness, Fitness",
+      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
+    },
+    {
+      "basename": "Todo List Apps",
+      "path": "🕸️ UNSTRUCTURED/Todo List Apps/Todo List Apps.md"
+    },
+    {
       "basename": "Plex Media Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "📁 04 - Cyber & Digital Trust",
       "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
-    },
-    {
-      "basename": "📁 14 - Journal, Diary",
-      "path": "📁 14 - Journal, Diary/📁 14 - Journal, Diary.md"
-    },
-    {
-      "basename": "📁 41 - Logs",
-      "path": "📁 41 - Logs/📁 41 - Logs.md"
-    },
-    {
-      "basename": "Custom Docker Apps in TrueNAS",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
-    },
-    {
-      "basename": "TrueNAS Electric Eel 24.10 Update",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     }
   ],
   "omittedPaths": [],
