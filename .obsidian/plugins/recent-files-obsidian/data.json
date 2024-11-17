@@ -5,12 +5,32 @@
       "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
     },
     {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+      "basename": "Databases",
+      "path": "🕸️ UNSTRUCTURED/Databases/Databases.md"
+    },
+    {
+      "basename": "Meetup & Event Alternatives",
+      "path": "📁 03 - Curations, Stacks/Meetup & Event Alternatives/Meetup & Event Alternatives.md"
+    },
+    {
+      "basename": "Subnetting",
+      "path": "🕸️ UNSTRUCTURED/Networking/Subnetting/Subnetting.md"
+    },
+    {
+      "basename": "Networking",
+      "path": "🕸️ UNSTRUCTURED/Networking/Networking.md"
     },
     {
       "basename": "Personal Privacy Identity & Authentication",
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
+    },
+    {
+      "basename": "Persuasive Technology Defenses",
+      "path": "📁 07 - Cybersader Arsenal/Persuasive Technology Defenses/Persuasive Technology Defenses.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     },
     {
       "basename": "Basics of GRC",
@@ -23,10 +43,6 @@
     {
       "basename": "Email Security",
       "path": "🕸️ UNSTRUCTURED/Email Security/Email Security.md"
-    },
-    {
-      "basename": "Databases",
-      "path": "🕸️ UNSTRUCTURED/Databases/Databases.md"
     },
     {
       "basename": "Hosted Storage",
@@ -183,22 +199,6 @@
     {
       "basename": "📁 16 - Society, Culture, Politics, Government",
       "path": "📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md"
-    },
-    {
-      "basename": "Pints with Aquinas - JP",
-      "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/Pints with Aquinas - JP/Pints with Aquinas - JP.md"
-    },
-    {
-      "basename": "Social Choice Theory",
-      "path": "📁 16 - Society, Culture, Politics, Government/Social Choice Theory/Social Choice Theory.md"
-    },
-    {
-      "basename": "IR Tabletop AI Prompts",
-      "path": "📁 05 - Organizational Cyber/Incident Response/IR Tabletop AI Prompts/IR Tabletop AI Prompts.md"
-    },
-    {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
     }
   ],
   "omittedPaths": [],

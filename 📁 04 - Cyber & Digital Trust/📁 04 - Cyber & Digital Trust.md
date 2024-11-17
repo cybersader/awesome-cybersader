@@ -2,6 +2,7 @@
 aliases:
   - Cyber & Game Theory
   - Identity & Interest Interaction Science
+  - Cyber & Philosophy
 tags:
   - philosophy
 publish: true

@@ -16,6 +16,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Personal Cyber Resilience]]**
 - **[[Personal Email]]**
 - **[[Personal Privacy Identity & Authentication]]**
+- **[[Persuasive Technology Defenses]]**
 - **[[THE PERSONAL CYBER RESILIENCE GUIDE]]**
 - **[[Virtual Credit Cards]]**
 

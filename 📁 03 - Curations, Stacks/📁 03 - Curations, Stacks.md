@@ -35,6 +35,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Cyber Merch]]**
 - **[[Cyber Youtube]]**
 - **[[Diagrams]]**
+- **[[Meetup & Event Alternatives]]**
 - **[[Physical Storage]]**
 - **[[Resume & CV Builders]]**
 - **[[Website to Cure Boredom]]**
