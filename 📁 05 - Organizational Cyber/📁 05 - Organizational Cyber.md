@@ -20,14 +20,17 @@ publish: true
 - **[[Cyber Training, CTFs]]**
 - **[[Cybersecurity Culture Building]]**
 	- **[[Cybersecurity Awareness Resources]]**
+- **[[Detection Engineering]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**
 - **[[Enterprise IAM]]**
 - **[[Frameworks, Standards]]**
 - **[[Game-Based Tabletops]]**
 - **[[Incident Response]]**
+- **[[Log Management, Event-Driven Architectures]]**
 - **[[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]**
 	- [[Indiana Cyber Regulation, Laws]]
+- **[[Networking]]**
 - **[[Org Data Governance]]**
 	- **[[PI Types]]**
 	- **[[Using Treemaps To Simplify Data WorkSpace Governance]]**
