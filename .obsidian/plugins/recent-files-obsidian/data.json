@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Memex",
+      "path": "📦 VAULT SANDBOX TESTING/Memex/Memex.md"
+    },
+    {
       "basename": "Browser Extensions",
       "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "📁 23 - Wellness, Fitness",
       "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
-    },
-    {
-      "basename": "Todo List Apps",
-      "path": "🕸️ UNSTRUCTURED/Todo List Apps/Todo List Apps.md"
-    },
-    {
-      "basename": "Plex Media Server",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
     }
   ],
   "omittedPaths": [],

@@ -1,3 +1,4 @@
+- 2024-11-17 at 22h19 · [[Memex]]
 - 2024-11-17 at 21h56 · [[Browser Extensions]]
 - 2024-11-17 at 21h52 · [[📁 05 - Organizational Cyber]]
 - 2024-11-17 at 21h52 · [[Networking]]
