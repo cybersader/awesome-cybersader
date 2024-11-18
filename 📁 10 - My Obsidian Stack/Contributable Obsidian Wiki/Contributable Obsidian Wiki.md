@@ -18,7 +18,7 @@ date modified: Monday, September 2nd 2024, 6:51 pm
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
 - **[[Media Hosting in Obsidian]]**
-- [[Obsidian Plugins and Ideas for Contributions]]
+- **[[Obsidian Plugins and Ideas for Contributions]]**
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**
 

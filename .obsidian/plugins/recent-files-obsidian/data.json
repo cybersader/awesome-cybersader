@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Browser Extensions",
+      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
+    },
+    {
+      "basename": "Network Scanning & Mapping Tools",
+      "path": "📁 05 - Organizational Cyber/Networking/Network Scanning & Mapping Tools/Network Scanning & Mapping Tools.md"
+    },
+    {
+      "basename": "Networking",
+      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
+    },
+    {
+      "basename": "Awesome Tech Stacks from Teams",
+      "path": "📁 03 - Curations, Stacks/Awesome Tech Stacks from Teams/Awesome Tech Stacks from Teams.md"
+    },
+    {
+      "basename": "VPNs",
+      "path": "📁 07 - Cybersader Arsenal/VPNs/VPNs.md"
+    },
+    {
+      "basename": "Awesome REST Clients",
+      "path": "📁 03 - Curations, Stacks/Awesome REST Clients/Awesome REST Clients.md"
+    },
+    {
+      "basename": "Awesome NMAP",
+      "path": "📁 03 - Curations, Stacks/Awesome NMAP/Awesome NMAP.md"
+    },
+    {
+      "basename": "Development Environments",
+      "path": "📁 21 - Development/Development Environments/Development Environments.md"
+    },
+    {
+      "basename": "📁 21 - Development",
+      "path": "📁 21 - Development/📁 21 - Development.md"
+    },
+    {
+      "basename": "Windows Home IT Admin",
+      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
+    },
+    {
+      "basename": "Contribution System",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contribution System/Contribution System.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
+    },
+    {
+      "basename": "Smart Home",
+      "path": "📁 07 - Cybersader Arsenal/Smart Home/Smart Home.md"
+    },
+    {
       "basename": "📁 33 - Gaming",
       "path": "📁 33 - Gaming/📁 33 - Gaming.md"
     },
@@ -17,20 +73,12 @@
       "path": "📁 05 - Organizational Cyber/Detection Engineering/Detection Engineering.md"
     },
     {
-      "basename": "Networking",
-      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
-    },
-    {
       "basename": "Packet & Traffic Application Analysis",
       "path": "📁 05 - Organizational Cyber/Networking/Packet & Traffic Application Analysis/Packet & Traffic Application Analysis.md"
     },
     {
       "basename": "WPA 2 Stuff",
       "path": "📁 05 - Organizational Cyber/Networking/WPA 2 Stuff/WPA 2 Stuff.md"
-    },
-    {
-      "basename": "Smart Home",
-      "path": "📁 07 - Cybersader Arsenal/Smart Home/Smart Home.md"
     },
     {
       "basename": "Dumb Phones",
@@ -151,54 +199,6 @@
     {
       "basename": "Plex Media Server",
       "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
-    },
-    {
-      "basename": "Hotel Hacker",
-      "path": "🕸️ UNSTRUCTURED/Hotel Hacker/Hotel Hacker.md"
-    },
-    {
-      "basename": "Malware Sandboxing",
-      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing.md"
-    },
-    {
-      "basename": "Photo Filtering, Color, LUTs",
-      "path": "🕸️ UNSTRUCTURED/Photo Filtering, Color, LUTs/Photo Filtering, Color, LUTs.md"
-    },
-    {
-      "basename": "Spyware",
-      "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
-    },
-    {
-      "basename": "OSINT",
-      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "⬇️ Self-Hosting DROP",
-      "path": "📁 19 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
-    },
-    {
-      "basename": "Tech Stacks from Tech Content Creators",
-      "path": "🕸️ UNSTRUCTURED/Tech Stacks from Tech Content Creators/Tech Stacks from Tech Content Creators.md"
-    },
-    {
-      "basename": "Awesome Peripherals",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "The Four T's of Stewardship",
-      "path": "🕸️ UNSTRUCTURED/The Four T's of Stewardship/The Four T's of Stewardship.md"
-    },
-    {
-      "basename": "AI & Security by Obscurity",
-      "path": "🕸️ UNSTRUCTURED/AI & Security by Obscurity/AI & Security by Obscurity.md"
     }
   ],
   "omittedPaths": [],
