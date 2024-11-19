@@ -13,6 +13,9 @@ publish: true
 
 # Misc
 
+- https://github.com/leaningtech/webvm
+	- https://webvm.io/
+
 - [Cursor](https://www.cursor.com/) 
 	- [(5) Cursor Is Beating VS Code (...by forking it) - YouTube](https://www.youtube.com/watch?v=e2vct-TQquw)
 	- 
