@@ -16,3 +16,24 @@
 - https://fleetdm.com/
 - https://github.com/Correia-jpv/fucking-awesome-incident-response?tab=readme-ov-file#all-in-one-tools
 - 
+
+- Out-of-band (OOB)
+    - https://www.reddit.com/r/networking/comments/1df1f1s/out_of_band_management_recommendations/
+    - https://www.google.com/search?q=awesome+out+of+band
+    - https://mattermost.com/blog/out-of-band-communication-training/
+    - https://element.io/pricing
+    - https://element.io/solutions/out-of-band-communications
+    - https://www.shadowhq.io/what-is-out-of-band-crisis-management/#:~:text=Out%2Dof%2DBand%20Crisis%20Management%20is%20invaluable%20in%20various%20scenarios,the%20integrity%20of%20their%20strategies.
+    - https://www.google.com/search?q=emergency+software+employee+OOB+out+of+band+incident+response+communication
+    - https://mattermost.com/pricing/
+    - https://www.capterra.com/sem-compare/emergency-notification-software/
+    - https://www.everbridge.com/products/mass-notification-and-incident-communications/
+    - OOB IR comms solutions apps platform
+    - https://element.io/blog/what-is-out-of-band-communications/
+    - https://trustedsec.com/blog/to-oob-or-not-to-oob-why-out-of-band-communications-are-essential-for-incident-response
+    - https://www.marsh.com/en/services/cyber-risk/insights/the-role-of-out-of-band-communications-in-cyber-incident-response.html
+    - https://mattermost.com/blog/when-to-use-out-of-band-communications/
+    - incident response out of band communication
+    - https://www.reddit.com/r/cybersecurity/comments/10pd95b/incident_response_out_of_band_communication/
+    - good IR side-channel communication off-channel out of band signal
+    - 
