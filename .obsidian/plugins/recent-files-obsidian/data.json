@@ -5,6 +5,30 @@
       "path": "📦 VAULT SANDBOX TESTING/Memex/Memex.md"
     },
     {
+      "basename": "⬇️ IR DROP",
+      "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
+    },
+    {
+      "basename": "Windows Home IT Admin",
+      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Link Curation Tools",
+      "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "📁 99 - Changelog",
+      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
+    },
+    {
       "basename": "Browser Extensions",
       "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
     },
@@ -41,16 +65,8 @@
       "path": "📁 21 - Development/📁 21 - Development.md"
     },
     {
-      "basename": "Windows Home IT Admin",
-      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
-    },
-    {
       "basename": "Contribution System",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contribution System/Contribution System.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
@@ -133,10 +149,6 @@
       "path": "🕸️ UNSTRUCTURED/Hosted Storage/Hosted Storage.md"
     },
     {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
       "basename": "📁 04 - Cyber & Digital Trust",
       "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
     },
@@ -185,16 +197,8 @@
       "path": "🕸️ UNSTRUCTURED/Browsers/Browsers.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "Food & Cooking",
       "path": "📁 23 - Wellness, Fitness/Food & Cooking/Food & Cooking.md"
-    },
-    {
-      "basename": "📁 23 - Wellness, Fitness",
-      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
     }
   ],
   "omittedPaths": [],

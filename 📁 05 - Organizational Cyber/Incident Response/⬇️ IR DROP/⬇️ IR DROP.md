@@ -15,7 +15,6 @@
 - https://github.com/zdhenard42/SOC-Multitool
 - https://fleetdm.com/
 - https://github.com/Correia-jpv/fucking-awesome-incident-response?tab=readme-ov-file#all-in-one-tools
-- 
 
 - Out-of-band (OOB)
     - https://www.reddit.com/r/networking/comments/1df1f1s/out_of_band_management_recommendations/

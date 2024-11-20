@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Sunday, November 17th 2024, 9:43 pm
-date modified: Sunday, November 17th 2024, 9:44 pm
+date modified: Tuesday, November 19th 2024, 7:21 pm
 ---
 
 - [ ] Improve Home IT admin page ➕ 2024-11-17
@@ -25,6 +25,8 @@ date modified: Sunday, November 17th 2024, 9:44 pm
     - USB boot
     - Add boot addition
     - Use mini windows tool
+- GPUZ
+	- [GPU-Z Downloads | TechPowerUp](https://www.techpowerup.com/download/gpu-z/) 
 
 # Image Design, GPO, REGEDITING
 

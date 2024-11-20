@@ -3,7 +3,7 @@ aliases:
 tags: 
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Saturday, October 26th 2024, 10:45 pm
+date modified: Tuesday, November 19th 2024, 7:10 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -57,6 +57,8 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 
 # Misc Ideas
 
+- Plugin to automatically remove tokens and clean URLs
+- Plugin to fetch titles and fix highlighted links
 - AI-based note enricher 
 	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
 	- Enrich notes with text at bottom to help with finding with search
