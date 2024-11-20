@@ -7,6 +7,7 @@ date modified: Wednesday, June 19th 2024, 1:53 pm
 ---
 
 %% Begin Waypoint %%
+- **[[⬇️ IR DROP]]**
 - **[[IR Tabletop AI Prompts]]**
 - **[[IR Tabletop Scenarios]]**
 
