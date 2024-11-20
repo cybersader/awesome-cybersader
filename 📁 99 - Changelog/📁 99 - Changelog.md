@@ -1,3 +1,4 @@
+- 2024-11-20 at 16h20 · [[Obsidian Vaults with Cybersecurity]]
 - 2024-11-20 at 16h00 · [[Microsoft Graph API in Obsidian]]
 - 2024-11-20 at 16h00 · [[📁 10 - My Obsidian Stack]]
 - 2024-11-20 at 16h00 · [[⬇️ Obsidian Ideas Drop]]
@@ -184,7 +185,6 @@
 - 2024-11-04 at 10h47 · [[Obsidian Regex Find & Replace]]
 - 2024-11-04 at 09h07 · [[Obsidian Git Features & Solutions]]
 - 2024-11-04 at 08h57 · [[Obsidian Git Setup]]
-- 2024-11-04 at 08h48 · [[Obsidian Vaults with Cybersecurity]]
 - 2024-11-04 at 07h43 · [[001 - Lock Windows For Background Processes]]
 - 2024-11-04 at 07h43 · [[📁 22 - Science, Space, Energy]]
 - 2024-11-04 at 07h43 · [[⬇️ Society Drop]]
