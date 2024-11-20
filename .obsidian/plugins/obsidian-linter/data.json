@@ -4,7 +4,7 @@
       "enabled": true
     },
     "dedupe-yaml-array-values": {
-      "enabled": false,
+      "enabled": true,
       "dedupe-alias-key": true,
       "dedupe-tag-key": true,
       "dedupe-array-keys": true,
@@ -64,7 +64,7 @@
       "date-modified": true,
       "date-modified-key": "date modified",
       "format": "dddd, MMMM Do YYYY, h:mm a",
-      "date-created-source-of-truth": "frontmatter",
+      "date-created-source-of-truth": "file system",
       "date-modified-source-of-truth": "file system",
       "convert-to-utc": false,
       "update-on-file-contents-updated": "never"
@@ -301,12 +301,6 @@
   ],
   "customRegexes": [
     {
-      "label": "No spaces after bullet point",
-      "find": "(^\\s*- )( {1,8})",
-      "replace": "$1",
-      "flags": "gm"
-    },
-    {
       "label": "Get rid of ASCII bullets",
       "find": "(- )(• )",
       "replace": "$1",
@@ -321,6 +315,12 @@
     {
       "label": "Get rid of ASCII bullets 3",
       "find": "(- )(o )",
+      "replace": "$1",
+      "flags": "gm"
+    },
+    {
+      "label": "No spaces after bullet point",
+      "find": "(^\\s*- )( {1,8})",
       "replace": "$1",
       "flags": "gm"
     }

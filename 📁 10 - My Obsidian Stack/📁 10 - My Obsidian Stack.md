@@ -14,6 +14,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Awesome Obsidian Wiki Examples]]**
 - **[[Breaking Vault Changes]]**
 - **[[Contributable Obsidian Wiki]]**
+- **[[Cursor and Frontmatter Issues]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Dataview]]**
 - **[[File Order]]**

@@ -1,3 +1,10 @@
+---
+aliases: 
+tags: 
+publish: true
+date created: Tuesday, November 19th 2024, 7:06 pm
+date modified: Wednesday, November 20th 2024, 3:26 pm
+---
 
 
 - [SIEM, Visibility, and Event-Driven Architecture Curated Solutions - Cybersader Wiki](https://base.cybersader.com/%F0%9F%93%81+98+-+ARCHIVE/GradSchoolProjects/SIEM+Framework/Solution+%26+Architecture+Curation/SIEM%2C+Visibility%2C+and+Event-Driven+Architecture+Curated+Solutions#Security-Focused+Analytics+Platforms+(SIEM%2C+SIRP))
@@ -16,7 +23,7 @@
 - [Fleet | Open-source device management for everyone](https://fleetdm.com/)
 - [GitHub - Correia-jpv/fucking-awesome-incident-response: A curated list of tools for incident response. With repository stars⭐ and forks🍴](https://github.com/Correia-jpv/fucking-awesome-incident-response?tab=readme-ov-file#all-in-one-tools)
 
-- Out-of-band (OOB)
+- Out-of-band (OOB), Emergency Communications
     - [Out of Band Management Recommendations : r/networking](https://www.reddit.com/r/networking/comments/1df1f1s/out_of_band_management_recommendations/)
     - [awesome out of band - Google Search](https://www.google.com/search?q=awesome+out+of+band)
     - [How to train your team to use out-of-band communication systems](https://mattermost.com/blog/out-of-band-communication-training/)
