@@ -41,5 +41,7 @@
   "ytranscript",
   "obsidian-regex-replace",
   "custom-save",
-  "lazy-plugins"
+  "lazy-plugins",
+  "obsidian-auto-link-title",
+  "obsidian-advanced-uri"
 ]

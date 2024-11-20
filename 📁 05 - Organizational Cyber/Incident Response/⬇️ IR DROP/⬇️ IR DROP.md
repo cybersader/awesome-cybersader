@@ -1,38 +1,38 @@
 
 
-- https://base.cybersader.com/%F0%9F%93%81+98+-+ARCHIVE/GradSchoolProjects/SIEM+Framework/Solution+%26+Architecture+Curation/SIEM%2C+Visibility%2C+and+Event-Driven+Architecture+Curated+Solutions#Security-Focused+Analytics+Platforms+(SIEM%2C+SIRP)
+- [SIEM, Visibility, and Event-Driven Architecture Curated Solutions - Cybersader Wiki](https://base.cybersader.com/%F0%9F%93%81+98+-+ARCHIVE/GradSchoolProjects/SIEM+Framework/Solution+%26+Architecture+Curation/SIEM%2C+Visibility%2C+and+Event-Driven+Architecture+Curated+Solutions#Security-Focused+Analytics+Platforms+(SIEM%2C+SIRP))
 - Case management, IR, incident management, SIRP platforms
-    - https://github.com/SecurityBrewery/catalyst
-    - https://arnaudloos.com/2019/open-source-sirp-overview/
-    - https://strangebee.com/thehive/
-    - https://github.com/dfir-iris/iris-web
-    - https://github.com/V1D1AN/S1EM
-    - https://github.com/Velocidex/velociraptor
-    - https://github.com/TheHive-Project/cortex
-    - https://github.com/TheHive-Project/TheHive
-- https://github.com/counteractive/incident-response-plan-template/tree/master/playbooks
-- https://shuffler.io/
-- https://github.com/zdhenard42/SOC-Multitool
-- https://fleetdm.com/
-- https://github.com/Correia-jpv/fucking-awesome-incident-response?tab=readme-ov-file#all-in-one-tools
+    - [GitHub - SecurityBrewery/catalyst: ⚡️ Catalyst is a self-hosted, open source incident response platform and ticket system that helps to automate alert handling and incident response processes](https://github.com/SecurityBrewery/catalyst)
+    - [Open Source SIRP with Elasticsearch and TheHive - Overview | Arnaud Loos](https://arnaudloos.com/2019/open-source-sirp-overview/)
+    - [TheHive](https://strangebee.com/thehive/)
+    - [GitHub - dfir-iris/iris-web: Collaborative Incident Response platform](https://github.com/dfir-iris/iris-web)
+    - [GitHub - V1D1AN/S1EM: This project is a SIEM with SIRP and Threat Intel, all in one.](https://github.com/V1D1AN/S1EM)
+    - [GitHub - Velocidex/velociraptor: Digging Deeper....](https://github.com/Velocidex/velociraptor)
+    - [GitHub - TheHive-Project/Cortex: Cortex: a Powerful Observable Analysis and Active Response Engine](https://github.com/TheHive-Project/cortex)
+    - [GitHub - TheHive-Project/TheHive: TheHive: a Scalable, Open Source and Free Security Incident Response Platform](https://github.com/TheHive-Project/TheHive)
+- [incident-response-plan-template/playbooks at master · counteractive/incident-response-plan-template · GitHub](https://github.com/counteractive/incident-response-plan-template/tree/master/playbooks)
+- [Shuffle Automation - An Open Source SOAR solution](https://shuffler.io/)
+- [GitHub - zdhenard42/SOC-Multitool: A powerful and user-friendly browser extension that streamlines investigations for security professionals.](https://github.com/zdhenard42/SOC-Multitool)
+- [Fleet | Open-source device management for everyone](https://fleetdm.com/)
+- [GitHub - Correia-jpv/fucking-awesome-incident-response: A curated list of tools for incident response. With repository stars⭐ and forks🍴](https://github.com/Correia-jpv/fucking-awesome-incident-response?tab=readme-ov-file#all-in-one-tools)
 
 - Out-of-band (OOB)
-    - https://www.reddit.com/r/networking/comments/1df1f1s/out_of_band_management_recommendations/
-    - https://www.google.com/search?q=awesome+out+of+band
-    - https://mattermost.com/blog/out-of-band-communication-training/
-    - https://element.io/pricing
-    - https://element.io/solutions/out-of-band-communications
-    - https://www.shadowhq.io/what-is-out-of-band-crisis-management/#:~:text=Out%2Dof%2DBand%20Crisis%20Management%20is%20invaluable%20in%20various%20scenarios,the%20integrity%20of%20their%20strategies.
-    - https://www.google.com/search?q=emergency+software+employee+OOB+out+of+band+incident+response+communication
-    - https://mattermost.com/pricing/
-    - https://www.capterra.com/sem-compare/emergency-notification-software/
-    - https://www.everbridge.com/products/mass-notification-and-incident-communications/
+    - [Out of Band Management Recommendations : r/networking](https://www.reddit.com/r/networking/comments/1df1f1s/out_of_band_management_recommendations/)
+    - [awesome out of band - Google Search](https://www.google.com/search?q=awesome+out+of+band)
+    - [How to train your team to use out-of-band communication systems](https://mattermost.com/blog/out-of-band-communication-training/)
+    - [Element plans and pricing](https://element.io/pricing)
+    - [Element | Out of Band communications | Secure](https://element.io/solutions/out-of-band-communications)
+    - [What is Out-of-Band Crisis Management | ShadowHQ Insights](https://www.shadowhq.io/what-is-out-of-band-crisis-management/#:~:text=Out%2Dof%2DBand%20Crisis%20Management%20is%20invaluable%20in%20various%20scenarios,the%20integrity%20of%20their%20strategies.)
+    - [emergency software employee OOB out of band incident response communication - Google Search](https://www.google.com/search?q=emergency+software+employee+OOB+out+of+band+incident+response+communication)
+    - [Pricing | Mattermost](https://mattermost.com/pricing/)
+    - [Emergency Notification Software - Review Leading Systems](https://www.capterra.com/sem-compare/emergency-notification-software/)
+    - [Mass Notification System - Everbridge](https://www.everbridge.com/products/mass-notification-and-incident-communications/)
     - OOB IR comms solutions apps platform
-    - https://element.io/blog/what-is-out-of-band-communications/
-    - https://trustedsec.com/blog/to-oob-or-not-to-oob-why-out-of-band-communications-are-essential-for-incident-response
-    - https://www.marsh.com/en/services/cyber-risk/insights/the-role-of-out-of-band-communications-in-cyber-incident-response.html
-    - https://mattermost.com/blog/when-to-use-out-of-band-communications/
+    - [What is Out of Band communications?](https://element.io/blog/what-is-out-of-band-communications/)
+    - [TrustedSec | To OOB, or Not to OOB?: Why Out-of-Band Communications…](https://trustedsec.com/blog/to-oob-or-not-to-oob-why-out-of-band-communications-are-essential-for-incident-response)
+    - [Emphasizing preparedness: The role of out-of-band communications in cyber incident response | Marsh](https://www.marsh.com/en/services/cyber-risk/insights/the-role-of-out-of-band-communications-in-cyber-incident-response.html)
+    - [When should you use out-of-band communications? - Mattermost](https://mattermost.com/blog/when-to-use-out-of-band-communications/)
     - incident response out of band communication
-    - https://www.reddit.com/r/cybersecurity/comments/10pd95b/incident_response_out_of_band_communication/
+    - [Incident Response - Out of band communication : r/cybersecurity](https://www.reddit.com/r/cybersecurity/comments/10pd95b/incident_response_out_of_band_communication/)
     - good IR side-channel communication off-channel out of band signal
     - 
