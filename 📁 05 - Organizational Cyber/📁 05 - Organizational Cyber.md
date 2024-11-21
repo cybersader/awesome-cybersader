@@ -38,6 +38,7 @@ publish: true
 	- **[[Who to Warn About Pentests]]**
 - **[[Organization Documentation & Wikis]]**
 - **[[Physical Security]]**
+- **[[Remote Desktop Gateways]]**
 - **[[Scripting vs Development Risks on Endpoints]]**
 - **[[Secure Cyber Environment]]**
 - **[[Social Engineering]]**

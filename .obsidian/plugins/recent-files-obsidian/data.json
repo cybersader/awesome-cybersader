@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Remote Desktop Gateways",
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
+    },
+    {
       "basename": "Kasm Workspaces",
-      "path": "🕸️ UNSTRUCTURED/Kasm Workspaces/Kasm Workspaces.md"
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
     },
     {
       "basename": "Apache Guacamole",
-      "path": "🕸️ UNSTRUCTURED/Apache Guacamole/Apache Guacamole.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Apache Guacamole/Apache Guacamole.md"
     },
     {
       "basename": "Endpoint Firewall",
@@ -195,10 +199,6 @@
     {
       "basename": "Workforce Cyber Training Curriculum",
       "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Training Curriculum/Workforce Cyber Training Curriculum.md"
-    },
-    {
-      "basename": "Workforce Cyber Resilience",
-      "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Resilience.md"
     }
   ],
   "omittedPaths": [],

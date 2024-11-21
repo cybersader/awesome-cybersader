@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Wednesday, November 20th 2024, 10:00 pm
+date modified: Wednesday, November 20th 2024, 10:26 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2005%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -183,14 +183,11 @@ Here's the high-level questions/steps to implementing Obsidian:
 	- Networking
 	- Security
 
-There's only one option that seems like it could scale and that's [Kasm Workspaces](../../🕸️%20UNSTRUCTURED/Kasm%20Workspaces/Kasm%20Workspaces.md)
+There's only one option that seems like it could scale and that's [Kasm Workspaces](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Kasm%20Workspaces/Kasm%20Workspaces.md) but the general solution are [Remote Desktop Gateways](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Remote%20Desktop%20Gateways.md)
 
-## Kasm Workspaces for Obsidian | Browser-Based
+## Kasm Workspaces for Obsidian | Browser-Based Obsidian
 
-- Implement Kasm Workspaces in the browser
-
-
-
+- [ ] Implement Kasm Workspaces in the browser with Obsidian and custom images ➕ 2024-11-20
 # Syncing & Collaboration
 
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
