@@ -1,3 +1,4 @@
+- 2024-11-20 at 22h40 · [[Why Use Obsidian Sync]]
 - 2024-11-20 at 22h29 · [[Remote Desktop Gateways]]
 - 2024-11-20 at 22h28 · [[📁 05 - Organizational Cyber]]
 - 2024-11-20 at 22h28 · [[Obsidian Setup for Corporate]]

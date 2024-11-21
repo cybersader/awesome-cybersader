@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Why Use Obsidian Sync",
+      "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "BCDR, DFIR",
       "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/BCDR, DFIR.md"
-    },
-    {
-      "basename": "Workforce Cyber Training Curriculum",
-      "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Training Curriculum/Workforce Cyber Training Curriculum.md"
     }
   ],
   "omittedPaths": [],
