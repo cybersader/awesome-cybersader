@@ -19,7 +19,7 @@ Question:
 Answer:
 > [!quote] My set up is similar and yes, I get the delay. The video chain lags audio quite a bit. It actually made me stop using OBS for Teams. I don't think the virtual camera has a "virtual microphone" channel to tune the delay into Zoom or Teams.
 
-- When using [Go Pro as a Webcam](../../⬇%20INBOX,%20DROPZONE/Go%20Pro%20as%20a%20Webcam.md), there is some latency with these video.  To line them up, the audio has to be delayed.
+- When using [Go Pro as a Webcam](../../⬇%20INBOX,%20DROPZONE/Go%20Pro%20as%20a%20Webcam/Go%20Pro%20as%20a%20Webcam.md), there is some latency with these video.  To line them up, the audio has to be delayed.
 
 # Fix for Zoom
 - Use [VOICEMEETER](https://voicemeeter.com/) 

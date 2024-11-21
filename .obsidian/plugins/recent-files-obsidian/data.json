@@ -1,12 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Kasm Workspaces",
+      "path": "🕸️ UNSTRUCTURED/Kasm Workspaces/Kasm Workspaces.md"
+    },
+    {
+      "basename": "Endpoint Firewall",
+      "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
+    },
+    {
+      "basename": "Windows 11 UI Stuff",
+      "path": "⬇ INBOX, DROPZONE/Windows 11 UI Stuff/Windows 11 UI Stuff.md"
+    },
+    {
+      "basename": "Video Ideas",
+      "path": "⬇ INBOX, DROPZONE/Video Ideas/Video Ideas.md"
+    },
+    {
+      "basename": "Public Threat Actor Reporting, Blacklists",
+      "path": "⬇ INBOX, DROPZONE/Public Threat Actor Reporting, Blacklists/Public Threat Actor Reporting, Blacklists.md"
+    },
+    {
+      "basename": "Malware Sandboxing",
+      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing/Malware Sandboxing.md"
+    },
+    {
+      "basename": "Lookalike Domain Defenses",
+      "path": "⬇ INBOX, DROPZONE/Lookalike Domain Defenses/Lookalike Domain Defenses.md"
+    },
+    {
+      "basename": "Go Pro as a Webcam",
+      "path": "⬇ INBOX, DROPZONE/Go Pro as a Webcam/Go Pro as a Webcam.md"
+    },
+    {
+      "basename": "Company Security Strategy from Zero",
+      "path": "⬇ INBOX, DROPZONE/Company Security Strategy from Zero/Company Security Strategy from Zero.md"
+    },
+    {
+      "basename": "⬇️ New Tools",
+      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
     },
     {
       "basename": "RSS",
       "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
+    },
+    {
+      "basename": "09 MISC TECH AND STACK",
+      "path": "CybersaderNotion/09 MISC TECH AND STACK.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
     },
     {
       "basename": "Collaboration in Obsidian",
@@ -151,54 +199,6 @@
     {
       "basename": "B&B Scenarios",
       "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/B&B Scenarios/B&B Scenarios.md"
-    },
-    {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
-    },
-    {
-      "basename": "Misc Web Dev",
-      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
-    },
-    {
-      "basename": "002 - Sharing Audio",
-      "path": "🕸️ Things I Learned Today/002 - Sharing Audio.md"
-    },
-    {
-      "basename": "Hosted Storage",
-      "path": "🕸️ UNSTRUCTURED/Hosted Storage/Hosted Storage.md"
-    },
-    {
-      "basename": "📁 04 - Cyber & Digital Trust",
-      "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
-    },
-    {
-      "basename": "Databases",
-      "path": "🕸️ UNSTRUCTURED/Databases/Databases.md"
-    },
-    {
-      "basename": "Meetup & Event Alternatives",
-      "path": "📁 03 - Curations, Stacks/Meetup & Event Alternatives/Meetup & Event Alternatives.md"
-    },
-    {
-      "basename": "Subnetting",
-      "path": "📁 05 - Organizational Cyber/Networking/Subnetting/Subnetting.md"
-    },
-    {
-      "basename": "Personal Privacy Identity & Authentication",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
-    },
-    {
-      "basename": "Persuasive Technology Defenses",
-      "path": "📁 07 - Cybersader Arsenal/Persuasive Technology Defenses/Persuasive Technology Defenses.md"
-    },
-    {
-      "basename": "Basics of GRC",
-      "path": "📁 06 - Learning, Notes/⬇️ Notes Drop/Basics of GRC/Basics of GRC.md"
     }
   ],
   "omittedPaths": [],

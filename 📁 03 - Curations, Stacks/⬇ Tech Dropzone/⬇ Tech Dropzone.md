@@ -10,7 +10,7 @@ date created: Tuesday, April 9th 2024, 9:01 pm
 date modified: Friday, November 15th 2024, 5:55 pm
 ---
 
-[⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools.md)
+[⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 

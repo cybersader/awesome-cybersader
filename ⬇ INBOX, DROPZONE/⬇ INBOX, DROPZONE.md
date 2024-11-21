@@ -9,20 +9,20 @@ publish: true
 ---
 
 %% Begin Waypoint %%
-- [[⬇️ New Tools]]
+- **[[⬇️ New Tools]]**
 - **[[Arc Browser on Windows]]**
 - **[[Awesome Password Security]]**
 	- [[Self-Hosted Bitwarden]]
 - **[[BCDR, DFIR]]**
-- [[Company Security Strategy from Zero]]
+- **[[Company Security Strategy from Zero]]**
 - **[[From Other Wiki]]**
-- [[Go Pro as a Webcam]]
+- **[[Go Pro as a Webcam]]**
 - **[[Governance, Mgmt]]**
-- [[Lookalike Domain Defenses]]
-- [[Malware Sandboxing]]
-- [[Public Threat Actor Reporting, Blacklists]]
-- [[Video Ideas]]
-- [[Windows 11 UI Stuff]]
+- **[[Lookalike Domain Defenses]]**
+- **[[Malware Sandboxing]]**
+- **[[Public Threat Actor Reporting, Blacklists]]**
+- **[[Video Ideas]]**
+- **[[Windows 11 UI Stuff]]**
 - **[[Windows BCDR]]**
 
 %% End Waypoint %%
