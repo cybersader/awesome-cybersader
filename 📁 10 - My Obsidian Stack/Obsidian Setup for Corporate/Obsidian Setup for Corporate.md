@@ -13,6 +13,17 @@ date modified: Wednesday, November 20th 2024, 10:26 pm
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
 
+# DROP
+
+- Application whitelisting for Kasm and running locally while limiting plugins
+- Approach to security and segmentation with processes
+- Think about secure dev environments
+- How does all this fit together with system calls?
+- In-memory vs filesystem malware risks
+- VNC and latency issues
+- Why Notion has a loading symbol a lot
+- The conflict resolution issue
+
 # High-Level Tech Stack & Guide
 
 Here's the high-level questions/steps to implementing Obsidian:

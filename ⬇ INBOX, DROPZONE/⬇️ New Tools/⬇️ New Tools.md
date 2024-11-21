@@ -13,6 +13,7 @@ publish: true
 
 # Misc
 
+- https://github.com/twentyhq/twenty - Open source alternative to Salesforce
 - https://github.com/leaningtech/webvm
 	- https://webvm.io/
 
