@@ -505,6 +505,18 @@
       },
       "personal-os": {
         "startupType": "disabled"
+      },
+      "obsidian-custom-frames": {
+        "startupType": "disabled"
+      },
+      "open-gate": {
+        "startupType": "disabled"
+      },
+      "search-on-internet": {
+        "startupType": "disabled"
+      },
+      "settings-search": {
+        "startupType": "instant"
       }
     }
   }

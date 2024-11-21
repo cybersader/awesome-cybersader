@@ -5,6 +5,18 @@
       "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
     },
     {
+      "basename": "Networking",
+      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
+    },
+    {
+      "basename": "📁 05 - Organizational Cyber",
+      "path": "📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md"
+    },
+    {
+      "basename": "⬇ INBOX, DROPZONE",
+      "path": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
@@ -121,10 +133,6 @@
       "path": "📁 05 - Organizational Cyber/Networking/Network Scanning & Mapping Tools/Network Scanning & Mapping Tools.md"
     },
     {
-      "basename": "Networking",
-      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
-    },
-    {
       "basename": "Awesome Tech Stacks from Teams",
       "path": "📁 03 - Curations, Stacks/Awesome Tech Stacks from Teams/Awesome Tech Stacks from Teams.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "WAN",
       "path": "📁 05 - Organizational Cyber/Networking/WAN/WAN.md"
-    },
-    {
-      "basename": "Awesome DFIR",
-      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/Awesome DFIR/Awesome DFIR.md"
-    },
-    {
-      "basename": "BCDR, DFIR",
-      "path": "⬇ INBOX, DROPZONE/BCDR, DFIR/BCDR, DFIR.md"
     }
   ],
   "omittedPaths": [],
