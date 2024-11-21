@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
       "basename": "Kasm Workspaces",
       "path": "🕸️ UNSTRUCTURED/Kasm Workspaces/Kasm Workspaces.md"
+    },
+    {
+      "basename": "Apache Guacamole",
+      "path": "🕸️ UNSTRUCTURED/Apache Guacamole/Apache Guacamole.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Endpoint Firewall",
@@ -195,10 +199,6 @@
     {
       "basename": "Workforce Cyber Resilience",
       "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Resilience.md"
-    },
-    {
-      "basename": "B&B Scenarios",
-      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/B&B Scenarios/B&B Scenarios.md"
     }
   ],
   "omittedPaths": [],

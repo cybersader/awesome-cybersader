@@ -1,9 +1,9 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 4th 2024, 5:02 pm
+date modified: Wednesday, November 20th 2024, 10:00 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2005%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -103,6 +103,9 @@ Here's the high-level questions/steps to implementing Obsidian:
 	- Hosted Vault on a Network Share (or local) + OneDrive
 	- Hosted Vault on a Network Share (or local) + Google Drive
 
+- For an advanced, scalable, super-secure setup
+	- Kasm Workspace Server + Clients + Obsidian Sync OR OneDrive OR Google Drive
+
 ### 3) Live Collaboration - do you need it?
 
 - Is Obsidian Sync good enough?
@@ -170,7 +173,23 @@ Here's the high-level questions/steps to implementing Obsidian:
 - [Access control in Obsidian : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15sp8sw/access_control_in_obsidian/)
 - [Obsidian at Work - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-at-work/18504)
 - [Can't use Obsidian at work. Any suggested workarounds? - Basement - Obsidian Forum](https://forum.obsidian.md/t/cant-use-obsidian-at-work-any-suggested-workarounds/4451/3)
-- 
+
+# Web/Brower-Based Obsidian
+
+- All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
+	- Syncing
+	- User Management
+	- Community Plugin Management
+	- Networking
+	- Security
+
+There's only one option that seems like it could scale and that's [Kasm Workspaces](../../🕸️%20UNSTRUCTURED/Kasm%20Workspaces/Kasm%20Workspaces.md)
+
+## Kasm Workspaces for Obsidian | Browser-Based
+
+- Implement Kasm Workspaces in the browser
+
+
 
 # Syncing & Collaboration
 
