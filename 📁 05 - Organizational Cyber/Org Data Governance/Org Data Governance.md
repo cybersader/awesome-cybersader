@@ -1,14 +1,17 @@
 ---
-aliases: 
-tags:
-  - IAM
-  - identity
-  - governance
-  - data_governance
+aliases: []
+tags: [IAM, identity, governance, data_governance]
 publish: true
 date created: Monday, June 24th 2024, 7:03 pm
-date modified: Friday, September 13th 2024, 4:16 pm
+date modified: Friday, November 22nd 2024, 3:53 pm
 ---
+
+%% Begin Waypoint %%
+- **[[DACLs in AD]]**
+- **[[PI Types]]**
+- **[[Using Treemaps To Simplify Data WorkSpace Governance]]**
+
+%% End Waypoint %%
 
 # Good Places to Start
 

@@ -34,10 +34,9 @@ publish: true
 	- [[Indiana Cyber Regulation, Laws]]
 - **[[Networking]]**
 - **[[Org Data Governance]]**
-	- **[[PI Types]]**
-	- **[[Using Treemaps To Simplify Data WorkSpace Governance]]**
 - **[[Org Pentesting]]**
 	- **[[Who to Warn About Pentests]]**
+- **[[Org PKI, Certificate Services]]**
 - **[[Organization Documentation & Wikis]]**
 - **[[Out-of-Band Communications]]**
 - **[[Physical Security]]**

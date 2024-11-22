@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Active Directory",
+      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
+    },
+    {
+      "basename": "Out-of-Band Communications",
+      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
+    },
+    {
+      "basename": "Remote Desktop Gateways",
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
+    },
+    {
+      "basename": "🐛 Known Base Bugs, Issues",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "📁 19 - Self-Hosting",
+      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
+    },
+    {
+      "basename": "Org PKI, Certificate Services",
+      "path": "📁 05 - Organizational Cyber/Org PKI, Certificate Services/Org PKI, Certificate Services.md"
+    },
+    {
+      "basename": "Org Data Governance",
+      "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
+    },
+    {
+      "basename": "DACLs in AD",
+      "path": "📁 05 - Organizational Cyber/Org Data Governance/DACLs in AD/DACLs in AD.md"
+    },
+    {
       "basename": "Identity Provider",
       "path": "📁 05 - Organizational Cyber/Identity Provider/Identity Provider.md"
     },
@@ -25,18 +61,6 @@
       "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
     },
     {
-      "basename": "Active Directory",
-      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
-    },
-    {
-      "basename": "📁 19 - Self-Hosting",
-      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "DNS Proxies & FIltering",
       "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
     },
@@ -57,16 +81,8 @@
       "path": "📁 07 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
     {
-      "basename": "Out-of-Band Communications",
-      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
-    },
-    {
       "basename": "⬇️ IR DROP",
       "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
-    },
-    {
-      "basename": "🐛 Known Base Bugs, Issues",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
     },
     {
       "basename": "Obsidian Issues & Feature Requests",
@@ -87,10 +103,6 @@
     {
       "basename": "📁 13 - Religion, Ontology, Philosophy",
       "path": "📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md"
-    },
-    {
-      "basename": "Remote Desktop Gateways",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
     },
     {
       "basename": "Why Use Obsidian Sync",
@@ -187,18 +199,6 @@
     {
       "basename": "Windows Home IT Admin",
       "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
-    },
-    {
-      "basename": "Link Curation Tools",
-      "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "📁 99 - Changelog",
-      "path": "📁 99 - Changelog/📁 99 - Changelog.md"
     }
   ],
   "omittedPaths": [],
