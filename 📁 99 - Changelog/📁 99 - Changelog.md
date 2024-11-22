@@ -1,3 +1,4 @@
+- 2024-11-21 at 19h35 · [[⬇️ Ontological Drop]]
 - 2024-11-21 at 18h59 · [[Obsidian Setup for Corporate]]
 - 2024-11-21 at 18h59 · [[⬇️ New Tools]]
 - 2024-11-20 at 22h40 · [[Why Use Obsidian Sync]]
@@ -87,7 +88,6 @@
 - 2024-11-14 at 21h28 · [[Voice Typing]]
 - 2024-11-14 at 21h26 · [[Phones, Secure, Pentest]]
 - 2024-11-14 at 21h23 · [[Cool Malware]]
-- 2024-11-14 at 21h14 · [[⬇️ Ontological Drop]]
 - 2024-11-13 at 22h16 · [[Obsidian Plugins and 3rd Party Tools]]
 - 2024-11-13 at 22h13 · [[⬇️ Cyber Culture Drop]]
 - 2024-11-13 at 22h05 · [[Diet, Nutrition]]
