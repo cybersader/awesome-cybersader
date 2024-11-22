@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "DNS Proxies & FIltering",
+      "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
       "basename": "Out-of-Band Communications",
       "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     },
@@ -117,10 +125,6 @@
       "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "Microsoft Graph API in Obsidian",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "GitHub + Obsidian + Notion - Digital Garden",
       "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
-    },
-    {
-      "basename": "Smart Home",
-      "path": "📁 07 - Cybersader Arsenal/Smart Home/Smart Home.md"
     }
   ],
   "omittedPaths": [],

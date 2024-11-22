@@ -12,7 +12,6 @@ date modified: Monday, November 4th 2024, 4:55 pm
 - https://forum.obsidian.md/t/obsidian-sync-live-team-collaborative-editing/6058/10
 	- https://docs.pears.com/
 		- One way to implement this is that the participants control their vault, a directory synchronized in P2P. Technically it can use a protocol such as https://pears.com/, perhaps using Beaker. Then one can ‘mount’ several directories (vaults) of people you want to follow. And then use obsidian on top to see in real-time any change that happens.
-
 # Live Collab/Sync
 
 - [screen.garden](https://screen.garden/) 
