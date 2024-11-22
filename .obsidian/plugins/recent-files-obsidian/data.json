@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Out-of-Band Communications",
+      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
+    },
+    {
+      "basename": "⬇️ IR DROP",
+      "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
+    },
+    {
+      "basename": "Active Directory",
+      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
+    },
+    {
+      "basename": "🐛 Known Base Bugs, Issues",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
+    },
+    {
+      "basename": "Obsidian Issues & Feature Requests",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md"
+    },
+    {
+      "basename": "Obsidian Plugin List",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugin List/Obsidian Plugin List.md"
+    },
+    {
+      "basename": "Obsidian Plugins and 3rd Party Tools",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
+    },
+    {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
     },
@@ -109,10 +137,6 @@
       "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
     {
-      "basename": "⬇️ IR DROP",
-      "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
-    },
-    {
       "basename": "Memex",
       "path": "📦 VAULT SANDBOX TESTING/Memex/Memex.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "Smart Home",
       "path": "📁 07 - Cybersader Arsenal/Smart Home/Smart Home.md"
-    },
-    {
-      "basename": "📁 33 - Gaming",
-      "path": "📁 33 - Gaming/📁 33 - Gaming.md"
-    },
-    {
-      "basename": "Awesome Markdown",
-      "path": "📁 03 - Curations, Stacks/Awesome Markdown/Awesome Markdown.md"
-    },
-    {
-      "basename": "Log Management, Event-Driven Architectures",
-      "path": "📁 05 - Organizational Cyber/Log Management, Event-Driven Architectures/Log Management, Event-Driven Architectures.md"
-    },
-    {
-      "basename": "Detection Engineering",
-      "path": "📁 05 - Organizational Cyber/Detection Engineering/Detection Engineering.md"
-    },
-    {
-      "basename": "Packet & Traffic Application Analysis",
-      "path": "📁 05 - Organizational Cyber/Networking/Packet & Traffic Application Analysis/Packet & Traffic Application Analysis.md"
-    },
-    {
-      "basename": "WPA 2 Stuff",
-      "path": "📁 05 - Organizational Cyber/Networking/WPA 2 Stuff/WPA 2 Stuff.md"
     }
   ],
   "omittedPaths": [],

@@ -1,13 +1,14 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 date created: Wednesday, April 10th 2024, 8:46 pm
-date modified: Wednesday, November 6th 2024, 9:52 am
+date modified: Thursday, November 21st 2024, 7:53 pm
 publish: true
 ---
 
 - Brackets in file name (from Notion) (CS-\[moral-tech\])
 - [ ] Solution for needing to escape things in Obsidian - more control over it ➕ 2024-11-06
+- obsidian publish redoing everything getting submitted again
 
 # Design Issues
 

@@ -12,6 +12,7 @@ publish: true
 	- [[Cyber Small Business Edition]]
 	- [[Scanning Inboxes for SaaS Sprawl & Visibility]]
 	- [[Web App Vuln Scanning with Nuclei]]
+- **[[Active Directory]]**
 - **[[AI Usage in Orgs]]**
 - **[[Authentication & Trust Models]]**
 - **[[Container Security]]**
@@ -37,6 +38,7 @@ publish: true
 - **[[Org Pentesting]]**
 	- **[[Who to Warn About Pentests]]**
 - **[[Organization Documentation & Wikis]]**
+- **[[Out-of-Band Communications]]**
 - **[[Physical Security]]**
 - **[[Remote Desktop Gateways]]**
 - **[[Scripting vs Development Risks on Endpoints]]**
