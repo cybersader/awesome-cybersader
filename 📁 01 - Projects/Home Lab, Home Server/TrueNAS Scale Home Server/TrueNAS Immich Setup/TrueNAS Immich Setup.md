@@ -1,13 +1,9 @@
 ---
-aliases: 
+aliases: []
 publish: true
 date created: Saturday, March 30th 2024, 11:40 am
-date modified: Sunday, September 29th 2024, 11:00 pm
-tags:
-  - TrueNAS
-  - NAS
-  - home/lab
-  - opensourcesoftware
+date modified: Friday, November 22nd 2024, 2:38 pm
+tags: [TrueNAS, NAS, home/lab, opensourcesoftware]
 ---
 
 # Links
@@ -119,3 +115,16 @@ proxy_read_timeout 600s;
 proxy_send_timeout 600s;
 send_timeout 600s;
 ```
+
+# Cloudflare DNS 100MB Limit | Requires "DNS only" Setting
+
+- I thought changing to NPM (Nginx Proxy Manager) would fix all my issues with videos above 100MB uploading since I wasn't using Cloudflare Tunnels.  It turns out this is still an issue if you use proxied Cloudflare DNS.
+	- [Can't upload videos longer then 1min or larger then 100+MB · immich-app/immich · Discussion #13573](https://github.com/immich-app/immich/discussions/13573)
+	- https://github.com/immich-app/immich/discussions/13573#discussioncomment-10980736
+
+- This exposes your home IP - no way around it till Immich fixes it to use chunking
+	- ![](_attachments/file-20241122143811479.png)
+
+## The Privacy Issue | "DNS only" exposes public IP
+
+- Use `nslookup <subdomain.domain.com>` to test

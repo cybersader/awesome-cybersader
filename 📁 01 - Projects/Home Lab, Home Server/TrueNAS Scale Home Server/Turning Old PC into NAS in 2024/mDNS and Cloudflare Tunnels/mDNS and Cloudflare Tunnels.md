@@ -1,14 +1,19 @@
 ---
+aliases: 
+tags: 
+publish: true
 date created: Friday, March 29th 2024, 12:43 pm
-date modified: Friday, March 29th 2024, 12:55 pm
+date modified: Friday, November 22nd 2024, 2:33 pm
 ---
 
 # Links
+
 - ["Bad Gateway" when creating Cloudflare tunnel using mDNS name - Feedback / Feature Request Submitting & Feedback - Cloudflare Community](https://community.cloudflare.com/t/bad-gateway-when-creating-cloudflare-tunnel-using-mdns-name/453511)
 - [Easy Tunnels + Private Network + Warp macOS: No routing - Zero Trust / Cloudflare Tunnel - Cloudflare Community](https://community.cloudflare.com/t/easy-tunnels-private-network-warp-macos-no-routing/385877)
 - [Private networks · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/) 
 - [Connect private networks · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/cloudflared/) 
 - [Private DNS · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/cloudflared/private-dns/) 
+
 # mDNS and Cloudflare Tunnels Issue
 
 Person: 
@@ -31,7 +36,9 @@ Person:
 
 ChatGPT: 
 - Understanding how your browser resolves `truenas.local` involves delving into the mDNS (Multicast DNS) protocol and where it operates in your network. mDNS is part of the Zeroconf (Zero Configuration Networking) suite, which allows devices on the same local network to discover each other and establish communication using human-readable names without the need for a central DNS server. Here's a step-by-step explanation, including a textual diagram to illustrate the process:
+
 ### How mDNS Works 
+
 1. **mDNS Support:**  For `truenas.local` to be resolved, both the source (e.g., your computer) and the target (e.g., your TrueNAS SCALE system) must support mDNS. Most modern operating systems, including Windows (after installing the Bonjour service), macOS, Linux, and various IoT devices, support mDNS. 
 2. **Query Broadcast:**  When you type `truenas.local` into your browser, if the operating system supports mDNS, it recognizes `.local` as a special domain. Instead of querying a standard DNS server, it broadcasts an mDNS query over the local network (LAN) on a special multicast IP address (224.0.0.251 for IPv4 or ff02::fb for IPv6) and a specific port (5353).
 
@@ -53,7 +60,6 @@ ChatGPT:
 [Your Browser] --HTTP/S request--> [TrueNAS SCALE at 192.168.1.96]
 ```
 
-
 ### Textual Network Diagram
 
 ```scss
@@ -68,8 +74,8 @@ ChatGPT:
 [Browser] ---> [Connects to TrueNAS SCALE using 192.168.1.96]
 ```
 
-
 ### Considerations 
+
 - **Browser and OS Support:**  Modern browsers delegate DNS resolution to the operating system's network stack. Therefore, if your OS supports mDNS (which most do, either natively or via additional software), then your browser will be able to resolve `.local` domains through mDNS. 
 - **mDNS Limitations:**  mDNS is designed to work within a single broadcast domain, typically a local network. It does not route across different networks or the internet. 
 - **Security and Performance:**  While mDNS is convenient for local network discovery, it's worth being mindful of security and performance considerations, especially in larger networks or environments with many IoT devices.

@@ -5,6 +5,18 @@
       "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
     },
     {
+      "basename": "TrueNAS Immich Setup",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
+    },
+    {
+      "basename": "mDNS and Cloudflare Tunnels",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md"
+    },
+    {
+      "basename": "Immich & Cloudflare Tunnels",
+      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+    },
+    {
       "basename": "Internet Usage & Ethics",
       "path": "📁 07 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Awesome NMAP",
       "path": "📁 03 - Curations, Stacks/Awesome NMAP/Awesome NMAP.md"
-    },
-    {
-      "basename": "Development Environments",
-      "path": "📁 21 - Development/Development Environments/Development Environments.md"
-    },
-    {
-      "basename": "📁 21 - Development",
-      "path": "📁 21 - Development/📁 21 - Development.md"
-    },
-    {
-      "basename": "Contribution System",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contribution System/Contribution System.md"
     }
   ],
   "omittedPaths": [],
