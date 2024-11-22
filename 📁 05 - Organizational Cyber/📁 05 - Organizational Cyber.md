@@ -9,9 +9,9 @@ publish: true
 %% Begin Waypoint %%
 - **[[⬇️ Cyber Culture Drop]]**
 - **[[⬇️ Org Cyber Drop]]**
-	- [[Cyber Small Business Edition]]
-	- [[Scanning Inboxes for SaaS Sprawl & Visibility]]
-	- [[Web App Vuln Scanning with Nuclei]]
+	- **[[Cyber Small Business Edition]]**
+	- **[[Scanning Inboxes for SaaS Sprawl & Visibility]]**
+	- **[[Web App Vuln Scanning with Nuclei]]**
 - **[[Active Directory]]**
 - **[[AI Usage in Orgs]]**
 - **[[Authentication & Trust Models]]**
@@ -27,6 +27,7 @@ publish: true
 - **[[Enterprise IAM]]**
 - **[[Frameworks, Standards]]**
 - **[[Game-Based Tabletops]]**
+- **[[Identity Provider]]**
 - **[[Incident Response]]**
 - **[[Log Management, Event-Driven Architectures]]**
 - **[[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]**

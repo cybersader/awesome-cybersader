@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Identity Provider",
+      "path": "📁 05 - Organizational Cyber/Identity Provider/Identity Provider.md"
+    },
+    {
+      "basename": "⬇️ Org Cyber Drop",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
+    },
+    {
+      "basename": "Web App Vuln Scanning with Nuclei",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Web App Vuln Scanning with Nuclei/Web App Vuln Scanning with Nuclei.md"
+    },
+    {
+      "basename": "Scanning Inboxes for SaaS Sprawl & Visibility",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Scanning Inboxes for SaaS Sprawl & Visibility/Scanning Inboxes for SaaS Sprawl & Visibility.md"
+    },
+    {
+      "basename": "Cyber Small Business Edition",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Cyber Small Business Edition/Cyber Small Business Edition.md"
+    },
+    {
+      "basename": "Networking",
+      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
+    },
+    {
+      "basename": "Active Directory",
+      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
+    },
+    {
+      "basename": "📁 19 - Self-Hosting",
+      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
       "basename": "DNS Proxies & FIltering",
       "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
     },
@@ -21,20 +57,12 @@
       "path": "📁 07 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "Out-of-Band Communications",
       "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     },
     {
       "basename": "⬇️ IR DROP",
       "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
-    },
-    {
-      "basename": "Active Directory",
-      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
     },
     {
       "basename": "🐛 Known Base Bugs, Issues",
@@ -67,10 +95,6 @@
     {
       "basename": "Why Use Obsidian Sync",
       "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
-    },
-    {
-      "basename": "Networking",
-      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
     },
     {
       "basename": "📁 05 - Organizational Cyber",
@@ -175,30 +199,6 @@
     {
       "basename": "📁 99 - Changelog",
       "path": "📁 99 - Changelog/📁 99 - Changelog.md"
-    },
-    {
-      "basename": "Browser Extensions",
-      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
-    },
-    {
-      "basename": "Network Scanning & Mapping Tools",
-      "path": "📁 05 - Organizational Cyber/Networking/Network Scanning & Mapping Tools/Network Scanning & Mapping Tools.md"
-    },
-    {
-      "basename": "Awesome Tech Stacks from Teams",
-      "path": "📁 03 - Curations, Stacks/Awesome Tech Stacks from Teams/Awesome Tech Stacks from Teams.md"
-    },
-    {
-      "basename": "VPNs",
-      "path": "📁 07 - Cybersader Arsenal/VPNs/VPNs.md"
-    },
-    {
-      "basename": "Awesome REST Clients",
-      "path": "📁 03 - Curations, Stacks/Awesome REST Clients/Awesome REST Clients.md"
-    },
-    {
-      "basename": "Awesome NMAP",
-      "path": "📁 03 - Curations, Stacks/Awesome NMAP/Awesome NMAP.md"
     }
   ],
   "omittedPaths": [],
