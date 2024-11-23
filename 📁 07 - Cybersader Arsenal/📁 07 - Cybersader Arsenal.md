@@ -10,7 +10,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Dumb Phones]]**
 - **[[Handling Personal Security Breaches]]**
 - **[[Handling Web Links]]**
-- **[[Home Network Defenses]]**
+- **[[Home Network]]**
 - **[[Internet Access]]**
 - **[[Internet Safety for Children]]**
 - **[[Internet Usage & Ethics]]**

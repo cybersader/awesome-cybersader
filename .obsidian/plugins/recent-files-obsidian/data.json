@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Loopback NAT",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Loopback NAT/Loopback NAT.md"
+    },
+    {
+      "basename": "Home Network Defenses",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Fixing Broken Ceramic",
+      "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
+    },
+    {
       "basename": "Flooring",
       "path": "📁 20 - Home DIY/Flooring/Flooring.md"
     },
@@ -31,10 +51,6 @@
     {
       "basename": "🐛 Known Base Bugs, Issues",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "📁 19 - Self-Hosting",
@@ -183,22 +199,6 @@
     {
       "basename": "RSS",
       "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
-    },
-    {
-      "basename": "09 MISC TECH AND STACK",
-      "path": "CybersaderNotion/09 MISC TECH AND STACK.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity.md"
-    },
-    {
-      "basename": "Microsoft Graph API in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     }
   ],
   "omittedPaths": [],
