@@ -1,14 +1,9 @@
 ---
-aliases: 
-tags:
-  - 
-  - "#cybersecurity"
-  - "#privacy"
-  - "#cyber-resilience"
-  - "#guide"
+aliases: []
+tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Sunday, November 10th 2024, 2:15 pm
+date modified: Saturday, November 23rd 2024, 5:24 pm
 ---
 
  
@@ -17,6 +12,8 @@ date modified: Sunday, November 10th 2024, 2:15 pm
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 > [!tldr] A principled and pragmatic guide to operating resiliently in cyberspace
+
+> [!info] This is my opionated tech stack or cyber arsenal which can be leveraged by the average person or the seasoned cyber practitioner. Once there is a contribution workflow, then I will open this up for contributions.
 
 # DROPZONE - NEW IDEAS HERE
 
@@ -69,6 +66,56 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Duplicati to a NAS with your PC folders and stuff
 - Just make sure to back your stuff up
 
+# Personal Backups
+
+- .
+
+# Updates & Periodic Resets
+
+## Periodic Hard Resets
+
+### Resetting Windows Computers
+
+- [Recovery options in Windows - Microsoft Support](https://support.microsoft.com/en-us/windows/recovery-options-in-windows-31ce2444-7de3-818c-d626-e3b5a3024da5)
+
+# Identity & Credential Management
+
+## Multi-Factor/Two-Factor Authentication
+
+- .
+
+## Password Managers
+
+- .
+
+## Email Aliasing & Temp Emails
+
+- .
+
+# Personal Incident Response
+
+- .
+
+# Personal OSINT
+
+- .
+
+# Surveillance Self Defense
+
+- [https://ssd.eff.org/](https://ssd.eff.org/)
+
+# Account Segmentation
+
+- .
+
+# Bank Account Security
+
+- .
+
+# Research & Problem Domain Traversal | Ontology Traversal
+
+- .
+
 # Anti-Virus, Anti-Malware, Endpoint 
 
 - Use the one that comes with the operating system (Defender for Microsoft)
@@ -84,6 +131,93 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Firewalla
 - DNS filtering
 - Avoid Google DNS
+
+## Router Security ( from Michael Horowitz )
+
+- [Defensive Computing Checklist](https://defensivecomputingchecklist.com/#tikytoky)
+- [Router Security](https://routersecurity.org/)
+- [Michael Horowitz - Personal Web Site](https://www.michaelhorowitz.com/)
+
+## Home Network Hardware
+
+- .
+
+## Home Network Monitoring
+
+- .
+
+### Choosing the Right Hardware & Buying Strategy
+
+- .
+
+#### Start with ISP
+
+- .
+
+#### Goals - Quality, Security, Ease of Use
+
+- .
+
+### Approaches to Network Monitoring
+
+- .
+
+#### Switch Port Analyzer (SPAN) Port / Mirrored Ports and Port Mirroring
+
+- .
+
+#### ARP Spoofing / ARP Cache Poisoning
+
+- .
+
+#### Network Taps / Network Tapping
+
+- .
+
+#### Wi-Fi Sniffing / Wireless Adapter
+
+- .
+
+### Firewall Types
+
+- .
+
+#### Consumer Plug’n’Play Firewalls
+
+- .
+
+#### Plug’n’Play ARP Spoof
+
+- .
+
+#### Manual ARP Spoof
+
+- .
+
+#### Network Taps / Network Tapping
+
+- .
+
+#### Advanced Consumer Options
+
+- .
+
+#### Prosumer Options
+
+ - .
+
+#### Enterprise Options
+
+ - .
+
+## Network Topology & Segmentation (Network Layout)
+
+- .
+
+## Misc
+
+- [The Best Solution to Monitor your Home Network Traffic for Free (2019)](https://lazyadmin.nl/home-network/free-home-network-monitoring-software/)
+- [Network Monitoring Tools](https://www.slac.stanford.edu/xorg/nmtf/nmtf-tools.html) - Regularly updated extensive list from Stanford University
 
 # Media
 
@@ -140,6 +274,20 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - Buy house under an LLC
 
+# Personal Data Privacy
+
+- .
+
+# Knowledge Management
+
+## Types of KMSs (Knowledge Management Systems)
+
+- .
+
+## Knowledge Graph Systems
+
+- .
+
 # Persuasive Technology & Internet Resilience
 
 - Set timers on technology
@@ -148,6 +296,32 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - ConvenantEyes on every device
 - Family settings on devices with internet
 - Go for agent-based so roaming can work
+- [Center for Humane Technology](https://www.humanetech.com/)
+- [Maven](https://www.heymaven.com/)
+- [Frontpage -- Terms of Service; Didn't Read](https://tosdr.org/)
+- [Browse Licenses - TLDRLegal](https://www.tldrlegal.com/browse)
+- [Home - Cyber Safety Cop](https://cybersafetycop.com/)
+
+# Personal Threat Intelligence
+
+- .
+
+# Browsers
+
+- Arc
+- Zen
+- Brave
+- Firefox - hardened
+
+# Search Engines
+
+- .
+
+# VPNs
+
+- Don't use a VPN unless you're on the road on wifi (such as in a hotel) or need to get around a geo-block
+	- ProtonVPN
+	- Mullvad
 
 # Misc
 
@@ -165,7 +339,6 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Credit freeze
 - Doxxing resilience
 - Be careful with AI
-- Use a different browser
 - TOS and privacy notices
 - Digital archiving and digitizing
 - Fireproof storage

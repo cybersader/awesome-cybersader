@@ -9,11 +9,12 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 %% Begin Waypoint %%
 - **[[Home Firewall]]**
 - **[[Home Network Defenses]]**
+- **[[Home Network Hardware]]**
 - **[[Home Routers & ISPs]]**
 - **[[NAT & Self-Hosting]]**
+- **[[Repurpose Old Router - DNS, Firewall]]**
 
 %% End Waypoint %%
 
 # Related
 
-- 

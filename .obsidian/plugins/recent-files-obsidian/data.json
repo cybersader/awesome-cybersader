@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+      "basename": "Mounting Power Strips",
+      "path": "📁 20 - Home DIY/Mounting Power Strips/Mounting Power Strips.md"
+    },
+    {
+      "basename": "Repurpose Old Router - DNS, Firewall",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "Home Routers & ISPs",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
     },
     {
-      "basename": "Home Network Defenses",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "📁 19 - Self-Hosting",
+      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     },
     {
       "basename": "Home Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
+    },
+    {
+      "basename": "Home Network Hardware",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
+    },
+    {
+      "basename": "Home Network Defenses",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
     },
     {
       "basename": "NAT & Self-Hosting",
@@ -65,10 +93,6 @@
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
     },
     {
-      "basename": "📁 19 - Self-Hosting",
-      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
-    },
-    {
       "basename": "Org PKI, Certificate Services",
       "path": "📁 05 - Organizational Cyber/Org PKI, Certificate Services/Org PKI, Certificate Services.md"
     },
@@ -110,15 +134,15 @@
     },
     {
       "basename": "TrueNAS Immich Setup",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
     },
     {
       "basename": "mDNS and Cloudflare Tunnels",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md"
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md"
     },
     {
       "basename": "Immich & Cloudflare Tunnels",
-      "path": "📁 01 - Projects/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
     },
     {
       "basename": "Internet Usage & Ethics",
@@ -175,30 +199,6 @@
     {
       "basename": "Endpoint Firewall",
       "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
-    },
-    {
-      "basename": "Windows 11 UI Stuff",
-      "path": "⬇ INBOX, DROPZONE/Windows 11 UI Stuff/Windows 11 UI Stuff.md"
-    },
-    {
-      "basename": "Video Ideas",
-      "path": "⬇ INBOX, DROPZONE/Video Ideas/Video Ideas.md"
-    },
-    {
-      "basename": "Public Threat Actor Reporting, Blacklists",
-      "path": "⬇ INBOX, DROPZONE/Public Threat Actor Reporting, Blacklists/Public Threat Actor Reporting, Blacklists.md"
-    },
-    {
-      "basename": "Malware Sandboxing",
-      "path": "⬇ INBOX, DROPZONE/Malware Sandboxing/Malware Sandboxing.md"
-    },
-    {
-      "basename": "Lookalike Domain Defenses",
-      "path": "⬇ INBOX, DROPZONE/Lookalike Domain Defenses/Lookalike Domain Defenses.md"
-    },
-    {
-      "basename": "Go Pro as a Webcam",
-      "path": "⬇ INBOX, DROPZONE/Go Pro as a Webcam/Go Pro as a Webcam.md"
     }
   ],
   "omittedPaths": [],

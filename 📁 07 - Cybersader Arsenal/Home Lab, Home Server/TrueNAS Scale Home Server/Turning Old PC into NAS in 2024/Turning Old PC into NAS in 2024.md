@@ -20,11 +20,11 @@ tags:
 ---
 
 %% Begin Waypoint %%
-- **[[ATA Security]]**
-- **[[Filesystems and Partition Schemes]]**
-- **[[mDNS and Cloudflare Tunnels]]**
-- **[[RAID vs AHCI]]**
-- **[[Software RAID vs Hardware RAID - TrueNAS Scale]]**
+- **[[ATA Security/ATA Security]]**
+- **[[Filesystems and Partition Schemes/Filesystems and Partition Schemes]]**
+- **[[mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels]]**
+- **[[RAID vs AHCI/RAID vs AHCI]]**
+- **[[Software RAID vs Hardware RAID - TrueNAS Scale/Software RAID vs Hardware RAID - TrueNAS Scale]]**
 
 %% End Waypoint %%
 

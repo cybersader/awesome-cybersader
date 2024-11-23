@@ -11,7 +11,6 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Bluetooth Removal Issue Fix Windows]]**
 
 - **[[GitHub + Obsidian + Notion - Digital Garden]]**
-- **[[Home Lab, Home Server]]**
 - **[[Home Network Wars]]**
 - **[[Interview with a Data Analyst]]**
 - **[[Mothers Day Website]]**
