@@ -1,15 +1,20 @@
 ---
-aliases: []
-tags: []
+aliases:
+  - Loopback NAT
+  - Hairpin NAT
+tags: 
 publish: true
 date created: Saturday, November 23rd 2024, 2:57 pm
-date modified: Saturday, November 23rd 2024, 2:57 pm
+date modified: Saturday, November 23rd 2024, 3:19 pm
 ---
 
 
-**ChatGPT:**
 
-**Understanding Why Local Access Fails and How ISP Routers Limit Solutions**
+[Home Routers & ISPs](../Home%20Routers%20&%20ISPs/Home%20Routers%20&%20ISPs.md)
+[ISP Shenanigans](../../../📁%2006%20-%20Learning,%20Notes/⬇️%20Notes%20Drop/ISP%20Shenanigans/ISP%20Shenanigans.md)
+[📁 19 - Self-Hosting](../../../📁%2019%20-%20Self-Hosting/📁%2019%20-%20Self-Hosting.md)
+
+# Why Local Access Fails but External Works with Self-Hosted Services | ISP Routers
 
 * * *
 

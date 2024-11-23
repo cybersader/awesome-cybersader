@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Loopback NAT",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Loopback NAT/Loopback NAT.md"
+      "basename": "Home Firewall",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
     },
     {
-      "basename": "Home Network Defenses",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
+      "basename": "NAT & Self-Hosting",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Home Network",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+      "basename": "Home Routers & ISPs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+    },
+    {
+      "basename": "⬇️ Project Drop",
+      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
+    },
+    {
+      "basename": "Home Network Defenses",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
     },
     {
       "basename": "Fixing Broken Ceramic",
@@ -187,18 +199,6 @@
     {
       "basename": "Go Pro as a Webcam",
       "path": "⬇ INBOX, DROPZONE/Go Pro as a Webcam/Go Pro as a Webcam.md"
-    },
-    {
-      "basename": "Company Security Strategy from Zero",
-      "path": "⬇ INBOX, DROPZONE/Company Security Strategy from Zero/Company Security Strategy from Zero.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
-    },
-    {
-      "basename": "RSS",
-      "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
     }
   ],
   "omittedPaths": [],
