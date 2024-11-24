@@ -1,24 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
       "basename": "Bridging New Home Router",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
+    },
+    {
+      "basename": "Home Routers & ISPs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
     },
     {
       "basename": "NAT & Self-Hosting",
       "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     },
     {
+      "basename": "Using a New Router with TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Unifi Hardware",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Unifi Hardware/Unifi Hardware.md"
+    },
+    {
       "basename": "Home Network",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     },
     {
-      "basename": "Home Routers & ISPs",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "Personal Privacy Identity & Authentication",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "Accessing Home Router",
@@ -45,10 +65,6 @@
       "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
@@ -63,10 +79,6 @@
     {
       "basename": "Home Network Defenses",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "⬇️ Project Drop",
@@ -187,18 +199,6 @@
     {
       "basename": "📁 13 - Religion, Ontology, Philosophy",
       "path": "📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md"
-    },
-    {
-      "basename": "Why Use Obsidian Sync",
-      "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
-    },
-    {
-      "basename": "📁 05 - Organizational Cyber",
-      "path": "📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md"
-    },
-    {
-      "basename": "⬇ INBOX, DROPZONE",
-      "path": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
     }
   ],
   "omittedPaths": [],

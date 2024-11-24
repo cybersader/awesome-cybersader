@@ -16,10 +16,11 @@ Trying to Get [NAT Loopback](../NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md
 - Links
 	- [What is NAT loopback and which NETGEAR routers support NAT loopback? - NETGEAR Support](https://kb.netgear.com/000049578/What-is-NAT-loopback-and-which-NETGEAR-routers-support-NAT-loopback)
 	- [Netgear R7960P support? - For Developers - OpenWrt Forum](https://forum.openwrt.org/t/netgear-r7960p-support/181891)
-	- 
-
-- Original subnets
-	- 
+	- [Nighthawk X6S R7960P | AC3600 Tri Band WiFi Router | NETGEAR Support](https://www.netgear.com/support/product/r7960p/#gettingstarted_commontopics)
+	- [How do I install my NETGEAR router using the router web interface? - NETGEAR Support](https://kb.netgear.com/22697/How-do-I-install-my-NETGEAR-router-using-the-router-web-interface)
+	- [How do I fix problems caused by my NETGEAR Orbi or Nighthawk router connected to an ISP gateway? - NETGEAR Support](https://kb.netgear.com/30187/How-do-I-fix-problems-caused-by-my-NETGEAR-Orbi-or-Nighthawk-router-connected-to-an-ISP-gateway)
+	- [I keep getting 404 - file or directory not found a... - NETGEAR Communities](https://community.netgear.com/t5/WiFi-Range-Extenders-Nighthawk/I-keep-getting-404-file-or-directory-not-found-at-last-hurdle/td-p/1076895)
+	- [Solved: Weird 404 error during set up - NETGEAR Communities](https://community.netgear.com/t5/WiFi-Range-Extenders-Nighthawk/Weird-404-error-during-set-up/td-p/1186054)
 	- 
 
 # Bridging Your ISP Router to Your Own: A Guide
@@ -356,3 +357,29 @@ When setting up IP Passthrough on your ISP router, selecting the appropriate pas
 ## **Conclusion**
 
 Choosing the right IP Passthrough mode is essential for a smooth and efficient home network setup. By understanding the differences between DHCPS-Dynamic, DHCPS-Fixed, and Manual modes, you can make an informed decision that suits your networking needs.
+
+# Does Bridging Require Duplicating Port Forwarding Rules?
+
+**You:**
+
+If I'm doing IP passthrough on my ATT router to my new router, do I have to have duplicated port forwarding rules?
+
+* * *
+
+**ChatGPT:**
+
+When configuring IP Passthrough on your AT&T router to a new router, you generally do **not** need to duplicate port forwarding rules on both devices. Here's how it works:
+
+* **IP Passthrough Mode**: This setting allows your AT&T gateway to assign its public IP address to a single device on your local network—in this case, your new router. Once enabled, the AT&T gateway forwards all unsolicited inbound traffic directly to your new router, effectively bypassing its own firewall and NAT functions. [AT&T](https://www.att.com/support/smallbusiness/article/smb-internet/KM1188700?utm_source=chatgpt.com)
+    
+* **Port Forwarding Configuration**: With IP Passthrough active, your new router receives the public IP address and handles all routing and firewall duties. Therefore, you should set up any necessary port forwarding rules exclusively on your new router. There's no need to configure these rules on the AT&T gateway, as it's no longer managing the traffic.
+    
+
+**Important Considerations**:
+
+* **Single Device Limitation**: IP Passthrough allows only one device to receive the public IP address. Ensure your new router is the designated device for this mode. [AT&T](https://www.att.com/support/smallbusiness/article/smb-internet/KM1188700?utm_source=chatgpt.com)
+    
+* **Security Implications**: Enabling IP Passthrough disables the AT&T gateway's firewall for the designated device. It's crucial to configure appropriate security measures on your new router to protect your network.
+    
+
+By setting up port forwarding solely on your new router, you streamline network management and reduce potential configuration conflicts.

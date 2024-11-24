@@ -16,6 +16,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[Home Routers & ISPs]]**
 - **[[NAT & Self-Hosting]]**
 - **[[Repurpose Old Router - DNS, Firewall]]**
+- **[[Unifi Hardware]]**
 
 %% End Waypoint %%
 
