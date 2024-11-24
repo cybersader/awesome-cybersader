@@ -1,7 +1,8 @@
 ---
 aliases:
-  - Loopback NAT
+  - NAT Loopback
   - Hairpin NAT
+  - NAT Hairpinning
 tags: 
 publish: true
 date created: Saturday, November 23rd 2024, 2:57 pm

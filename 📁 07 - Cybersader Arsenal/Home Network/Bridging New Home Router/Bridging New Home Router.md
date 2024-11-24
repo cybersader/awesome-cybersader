@@ -3,16 +3,18 @@ aliases: [Router IP Passthrough, Using New Home Router with ISP Modem]
 tags: []
 publish: true
 date created: Saturday, November 23rd 2024, 6:08 pm
-date modified: Saturday, November 23rd 2024, 9:40 pm
+date modified: Sunday, November 24th 2024, 2:55 pm
 ---
 
-# ATT BGW Issues
+# Netgear Nighthawk Router Issues 
+
+Trying to Get [NAT Loopback](../NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md) Working for Self-Hosted Services (Servers)
 
 - Essentially you have to go to Home Network > IP Allocation.  Then, look for the IP address that the ATT router gave to the new router
 - Use this in your browser instead
 
 - Original subnets
-	- ![](_attachments/file-20241123214056316.png)
+	- 
 	- 
 
 # Bridging Your ISP Router to Your Own: A Guide
