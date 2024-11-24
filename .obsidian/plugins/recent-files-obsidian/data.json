@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "NAT & Self-Hosting",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "Bridging New Home Router",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
+    },
+    {
+      "basename": "NAT & Self-Hosting",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     },
     {
       "basename": "Home Network",
@@ -195,10 +199,6 @@
     {
       "basename": "⬇ INBOX, DROPZONE",
       "path": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     }
   ],
   "omittedPaths": [],

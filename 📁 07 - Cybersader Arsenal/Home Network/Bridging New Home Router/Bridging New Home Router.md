@@ -13,6 +13,11 @@ Trying to Get [NAT Loopback](../NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md
 - Essentially you have to go to Home Network > IP Allocation.  Then, look for the IP address that the ATT router gave to the new router
 - Use this in your browser instead
 
+- Links
+	- [What is NAT loopback and which NETGEAR routers support NAT loopback? - NETGEAR Support](https://kb.netgear.com/000049578/What-is-NAT-loopback-and-which-NETGEAR-routers-support-NAT-loopback)
+	- [Netgear R7960P support? - For Developers - OpenWrt Forum](https://forum.openwrt.org/t/netgear-r7960p-support/181891)
+	- 
+
 - Original subnets
 	- 
 	- 
