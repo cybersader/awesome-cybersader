@@ -3,13 +3,17 @@ aliases: [Router IP Passthrough, Using New Home Router with ISP Modem]
 tags: []
 publish: true
 date created: Saturday, November 23rd 2024, 6:08 pm
-date modified: Saturday, November 23rd 2024, 8:24 pm
+date modified: Saturday, November 23rd 2024, 9:40 pm
 ---
 
 # ATT BGW Issues
 
 - Essentially you have to go to Home Network > IP Allocation.  Then, look for the IP address that the ATT router gave to the new router
 - Use this in your browser instead
+
+- Original subnets
+	- ![](_attachments/file-20241123214056316.png)
+	- 
 
 # Bridging Your ISP Router to Your Own: A Guide
 
