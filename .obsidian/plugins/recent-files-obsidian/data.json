@@ -1,20 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Mounting Power Strips",
-      "path": "📁 20 - Home DIY/Mounting Power Strips/Mounting Power Strips.md"
+      "basename": "Bridging New Home Router",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "Home Routers & ISPs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+    },
+    {
+      "basename": "Accessing Home Router",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Accessing Home Router/Accessing Home Router.md"
+    },
+    {
+      "basename": "NAT & Self-Hosting",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     },
     {
       "basename": "Repurpose Old Router - DNS, Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+      "basename": "Ethernet Cables",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
     },
     {
-      "basename": "Home Routers & ISPs",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+      "basename": "Home Network Hardware",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
+    },
+    {
+      "basename": "Mounting Power Strips",
+      "path": "📁 20 - Home DIY/Mounting Power Strips/Mounting Power Strips.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "Home Lab, Home Server",
@@ -29,24 +53,12 @@
       "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
     },
     {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
-    },
-    {
       "basename": "Home Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
     },
     {
-      "basename": "Home Network Hardware",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
-    },
-    {
       "basename": "Home Network Defenses",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
-    },
-    {
-      "basename": "NAT & Self-Hosting",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     },
     {
       "basename": "Collaboration in Obsidian",
@@ -187,18 +199,6 @@
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "Kasm Workspaces",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
-    },
-    {
-      "basename": "Apache Guacamole",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Apache Guacamole/Apache Guacamole.md"
-    },
-    {
-      "basename": "Endpoint Firewall",
-      "path": "🕸️ UNSTRUCTURED/Endpoint Firewall/Endpoint Firewall.md"
     }
   ],
   "omittedPaths": [],
