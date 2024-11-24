@@ -1,12 +1,15 @@
 ---
-aliases:
-  - Router IP Passthrough
-  - Using New Home Router with ISP Modem
-tags: 
+aliases: [Router IP Passthrough, Using New Home Router with ISP Modem]
+tags: []
 publish: true
 date created: Saturday, November 23rd 2024, 6:08 pm
-date modified: Saturday, November 23rd 2024, 6:15 pm
+date modified: Saturday, November 23rd 2024, 8:24 pm
 ---
+
+# ATT BGW Issues
+
+- Essentially you have to go to Home Network > IP Allocation.  Then, look for the IP address that the ATT router gave to the new router
+- Use this in your browser instead
 
 # Bridging Your ISP Router to Your Own: A Guide
 
@@ -224,27 +227,27 @@ When setting up IP Passthrough on your ISP router, selecting the appropriate pas
 
 ### **How It Works**
 
-* **Dynamic Assignment**: The ISP router assigns the public IP to the first device that requests it via DHCP.
-* **Flexibility**: Useful when devices connecting to the network may change frequently.
+- **Dynamic Assignment**: The ISP router assigns the public IP to the first device that requests it via DHCP.
+- **Flexibility**: Useful when devices connecting to the network may change frequently.
 
 ### **Considerations**
 
-* **Potential IP Misassignment**: If multiple devices boot simultaneously, the public IP might go to the wrong device.
-* **Less Control**: Not ideal if you need the public IP consistently assigned to a specific router.
+- **Potential IP Misassignment**: If multiple devices boot simultaneously, the public IP might go to the wrong device.
+- **Less Control**: Not ideal if you need the public IP consistently assigned to a specific router.
 
 ### **When to Use**
 
-* In environments where the main device can vary.
-* When you prefer automatic IP assignment without specifying a device.
+- In environments where the main device can vary.
+- When you prefer automatic IP assignment without specifying a device.
 
 ### **Configuration Steps**
 
 1. **Access ISP Router Settings**:
-    * Navigate to the **IP Passthrough** or **NAT/Gaming** section.
+    - Navigate to the **IP Passthrough** or **NAT/Gaming** section.
 2. **Enable IP Passthrough**:
-    * Set **Passthrough Mode** to **"DHCPS-Dynamic"**.
+    - Set **Passthrough Mode** to **"DHCPS-Dynamic"**.
 3. **Save and Reboot**:
-    * Apply changes and restart the ISP router.
+    - Apply changes and restart the ISP router.
 
 * * *
 
@@ -252,30 +255,30 @@ When setting up IP Passthrough on your ISP router, selecting the appropriate pas
 
 ### **How It Works**
 
-* **Fixed Assignment**: Assigns the public IP to a specific device based on its MAC address.
-* **Consistency**: Ensures the same device (e.g., your new router) always receives the public IP.
+- **Fixed Assignment**: Assigns the public IP to a specific device based on its MAC address.
+- **Consistency**: Ensures the same device (e.g., your new router) always receives the public IP.
 
 ### **Considerations**
 
-* **Device Specific**: If you replace your router, you'll need to update the MAC address in the settings.
-* **Preferred Method**: Provides stability and avoids IP conflicts.
+- **Device Specific**: If you replace your router, you'll need to update the MAC address in the settings.
+- **Preferred Method**: Provides stability and avoids IP conflicts.
 
 ### **When to Use**
 
-* When you want your new router to consistently receive the public IP.
-* In setups where network stability is paramount.
+- When you want your new router to consistently receive the public IP.
+- In setups where network stability is paramount.
 
 ### **Configuration Steps**
 
 1. **Access ISP Router Settings**:
-    * Go to the **IP Passthrough** section.
+    - Go to the **IP Passthrough** section.
 2. **Enable IP Passthrough**:
-    * Set **Passthrough Mode** to **"DHCPS-Fixed"**.
+    - Set **Passthrough Mode** to **"DHCPS-Fixed"**.
 3. **Specify Device**:
-    * Enter your new router's WAN **MAC Address**.
-    * Alternatively, select it from the list of connected devices.
+    - Enter your new router's WAN **MAC Address**.
+    - Alternatively, select it from the list of connected devices.
 4. **Save and Reboot**:
-    * Apply changes and restart both routers.
+    - Apply changes and restart both routers.
 
 * * *
 
@@ -283,31 +286,31 @@ When setting up IP Passthrough on your ISP router, selecting the appropriate pas
 
 ### **How It Works**
 
-* **Manual Configuration**: You manually set the public IP address on your new router.
-* **Direct Control**: Bypasses DHCP, giving you full control over IP settings.
+- **Manual Configuration**: You manually set the public IP address on your new router.
+- **Direct Control**: Bypasses DHCP, giving you full control over IP settings.
 
 ### **Considerations**
 
-* **Complex Setup**: Requires entering IP address, subnet mask, gateway, and DNS manually.
-* **Static IP Required**: Usually used when your ISP provides a static public IP address.
+- **Complex Setup**: Requires entering IP address, subnet mask, gateway, and DNS manually.
+- **Static IP Required**: Usually used when your ISP provides a static public IP address.
 
 ### **When to Use**
 
-* If your ISP has given you a static IP.
-* For advanced network configurations requiring specific IP settings.
+- If your ISP has given you a static IP.
+- For advanced network configurations requiring specific IP settings.
 
 ### **Configuration Steps**
 
 1. **Access New Router Settings**:
-    * Go to the **WAN** or **Internet** settings section.
+    - Go to the **WAN** or **Internet** settings section.
 2. **Set Connection Type**:
-    * Choose **"Static IP"** or **"Manual Configuration"**.
+    - Choose **"Static IP"** or **"Manual Configuration"**.
 3. **Enter IP Information**:
-    * Input the public IP address, subnet mask, gateway, and DNS servers provided by your ISP.
+    - Input the public IP address, subnet mask, gateway, and DNS servers provided by your ISP.
 4. **Disable DHCP on ISP Router (if necessary)**:
-    * Turn off DHCP services to prevent IP conflicts.
+    - Turn off DHCP services to prevent IP conflicts.
 5. **Save and Reboot**:
-    * Apply changes and restart both routers.
+    - Apply changes and restart both routers.
 
 * * *
 
@@ -324,18 +327,18 @@ When setting up IP Passthrough on your ISP router, selecting the appropriate pas
 
 ## **Additional Considerations**
 
-* **MAC Address Changes**: Ensure you update the MAC address in settings if you replace your router.
-* **Device Boot Order**: In DHCPS-Dynamic mode, start your main router first to increase the chance it receives the public IP.
-* **ISP Limitations**: Some ISPs may restrict certain modes or require additional configuration—consult your ISP if unsure.
+- **MAC Address Changes**: Ensure you update the MAC address in settings if you replace your router.
+- **Device Boot Order**: In DHCPS-Dynamic mode, start your main router first to increase the chance it receives the public IP.
+- **ISP Limitations**: Some ISPs may restrict certain modes or require additional configuration—consult your ISP if unsure.
 
 * * *
 
 ## **Pro Tips**
 
-* **Prefer DHCPS-Fixed for Stability**: It offers a balance between ease of setup and consistent IP assignment.
-* **Backup Configurations**: Save your router settings after configuration for easy recovery.
-* **Firmware Updates**: Keep both routers updated to ensure compatibility and security.
-* **Disable Unused Services**: Turn off Wi-Fi and DHCP on the ISP router to minimize interference and conflicts.
+- **Prefer DHCPS-Fixed for Stability**: It offers a balance between ease of setup and consistent IP assignment.
+- **Backup Configurations**: Save your router settings after configuration for easy recovery.
+- **Firmware Updates**: Keep both routers updated to ensure compatibility and security.
+- **Disable Unused Services**: Turn off Wi-Fi and DHCP on the ISP router to minimize interference and conflicts.
 
 * * *
 
