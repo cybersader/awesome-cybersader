@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Sunday, November 24th 2024, 5:03 pm
-date modified: Sunday, November 24th 2024, 5:12 pm
+date modified: Sunday, November 24th 2024, 5:23 pm
 ---
 
 Long story short, I "bridged" with "IP passthrough" from my ATT router/modem to a replacement router to get [NAT Loopback](../../../Home%20Network/NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md) to work and because the new one used 10.0 addresses instead of 192.168 addresses, all the apps broke.
@@ -28,3 +28,8 @@ Related links:
 
 - In TrueNAS Scale, change your Network > Global Configuration > Nameservers and Default Route settings to reflect the new gateway server (the new router)
 - Then, restart TrueNAS Scale 
+
+## Fixing Reverse Proxies
+
+- You'll have to remap to the internal services
+- Look in TrueNAS at each app and click "Web UI" after clicking on the app, redirect to the browser, and grab the address with the port.  Put these into something like Nginx Proxy Manager.

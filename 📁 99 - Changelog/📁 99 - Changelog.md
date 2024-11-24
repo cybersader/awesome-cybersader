@@ -1,6 +1,6 @@
+- 2024-11-24 at 17h23 · [[Using a New Router with TrueNAS]]
 - 2024-11-24 at 17h16 · [[Bridging New Home Router]]
 - 2024-11-24 at 17h15 · [[Home Routers & ISPs]]
-- 2024-11-24 at 17h12 · [[Using a New Router with TrueNAS]]
 - 2024-11-24 at 17h03 · [[📁 07 - Cybersader Arsenal]]
 - 2024-11-24 at 17h03 · [[TrueNAS Scale Home Server]]
 - 2024-11-24 at 17h03 · [[Home Lab, Home Server]]
