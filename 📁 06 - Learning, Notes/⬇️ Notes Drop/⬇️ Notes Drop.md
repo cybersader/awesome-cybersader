@@ -12,7 +12,7 @@ publish: true
 - [[Get an Epic Cyber Education for Free (almost) - Carrie Roberts]]
 - [[How to Find Out What Suspicious Connections Your Computer Makes When Going to a Website.]]
 - [[IDs, Verification, and MFA]]
-- **[[ISP Shenanigans]]**
+- **ISP Shenanigans**
 - **[[MailFail - Who's Spoofing Your Email and How]]**
 - **[[Rabbit OS & R1]]**
 - **[[Recover Files Old Windows Boot Drive]]**

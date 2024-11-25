@@ -15,6 +15,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[Home Network Defenses]]**
 - **[[Home Network Hardware]]**
 - **[[Home Routers & ISPs]]**
+- **[[ISP Shenanigans]]**
 - **[[NAT & Self-Hosting]]**
 - **[[Repurpose Old Router - DNS, Firewall]]**
 - **[[Unifi Hardware]]**
