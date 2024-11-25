@@ -21,12 +21,15 @@ Trying to Get [NAT Loopback](../NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md
 	- [How do I fix problems caused by my NETGEAR Orbi or Nighthawk router connected to an ISP gateway? - NETGEAR Support](https://kb.netgear.com/30187/How-do-I-fix-problems-caused-by-my-NETGEAR-Orbi-or-Nighthawk-router-connected-to-an-ISP-gateway)
 	- [I keep getting 404 - file or directory not found a... - NETGEAR Communities](https://community.netgear.com/t5/WiFi-Range-Extenders-Nighthawk/I-keep-getting-404-file-or-directory-not-found-at-last-hurdle/td-p/1076895)
 	- [Solved: Weird 404 error during set up - NETGEAR Communities](https://community.netgear.com/t5/WiFi-Range-Extenders-Nighthawk/Weird-404-error-during-set-up/td-p/1186054)
+	- [Netgear: how to change to router mode from bridge mode ? : r/HomeNetworking](https://www.reddit.com/r/HomeNetworking/comments/86plbw/netgear_how_to_change_to_router_mode_from_bridge/)
+	- [What is double NAT and why is it bad? - NETGEAR Support](https://kb.netgear.com/30186/What-is-double-NAT-and-why-is-it-bad)
+	- [Issues with pfSense and ATT Fiber IP Passthrough - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/issues-with-pfsense-and-att-fiber-ip-passthrough/20534/2)
 
 # ATT IP Passthrough Issues
 
 - Related Links
 	- [BGW Keeps assigning private IP in passthrough : r/ATTFiber](https://www.reddit.com/r/ATTFiber/comments/1dfizix/bgw_keeps_assigning_private_ip_in_passthrough/) 
-	- 
+	- [Issues with pfSense and ATT Fiber IP Passthrough - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/issues-with-pfsense-and-att-fiber-ip-passthrough/20534/2)
 
 # Bridging Your ISP Router to Your Own: A Guide
 

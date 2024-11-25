@@ -1,36 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Using a New Router with TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
-    },
-    {
-      "basename": "Bridging New Home Router",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
-    },
-    {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Home Routers & ISPs",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
-    },
-    {
-      "basename": "NAT & Self-Hosting",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     },
     {
       "basename": "Collaboration in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
-      "basename": "Unifi Hardware",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Unifi Hardware/Unifi Hardware.md"
+      "basename": "Using a New Router with TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
+    },
+    {
+      "basename": "Home Routers & ISPs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+    },
+    {
+      "basename": "Repurpose Old Router - DNS, Firewall",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
+    },
+    {
+      "basename": "Bridging New Home Router",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
     },
     {
       "basename": "Home Network",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "Home Firewall",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
+    },
+    {
+      "basename": "Home DNS",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home DNS/Home DNS.md"
+    },
+    {
+      "basename": "Out-of-Band Communications",
+      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
+    },
+    {
+      "basename": "NAT & Self-Hosting",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
+    },
+    {
+      "basename": "Unifi Hardware",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Unifi Hardware/Unifi Hardware.md"
     },
     {
       "basename": "Home Lab, Home Server",
@@ -43,10 +59,6 @@
     {
       "basename": "Accessing Home Router",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Accessing Home Router/Accessing Home Router.md"
-    },
-    {
-      "basename": "Repurpose Old Router - DNS, Firewall",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
     },
     {
       "basename": "Ethernet Cables",
@@ -71,10 +83,6 @@
     {
       "basename": "📁 19 - Self-Hosting",
       "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
-    },
-    {
-      "basename": "Home Firewall",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
     },
     {
       "basename": "Home Network Defenses",
@@ -107,10 +115,6 @@
     {
       "basename": "Active Directory",
       "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
-    },
-    {
-      "basename": "Out-of-Band Communications",
-      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     },
     {
       "basename": "Remote Desktop Gateways",
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
-    },
-    {
-      "basename": "📁 13 - Religion, Ontology, Philosophy",
-      "path": "📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md"
     }
   ],
   "omittedPaths": [],

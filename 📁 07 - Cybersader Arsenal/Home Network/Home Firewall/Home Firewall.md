@@ -16,4 +16,6 @@ date modified: Saturday, November 23rd 2024, 5:09 pm
 # Firewall Hardware
 
 - [Netgate](https://www.netgate.com/) 
+- [alternative to netgate... is there one? : r/PFSENSE](https://www.reddit.com/r/PFSENSE/comments/miet59/alternative_to_netgate_is_there_one/)
+- [pfSense Plus How to buy](https://www.netgate.com/pfsense-plus-software/how-to-buy#appliances) 
 - 

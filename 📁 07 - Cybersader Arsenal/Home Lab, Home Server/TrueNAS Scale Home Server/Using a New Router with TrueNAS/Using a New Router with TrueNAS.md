@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Sunday, November 24th 2024, 5:03 pm
-date modified: Sunday, November 24th 2024, 6:55 pm
+date modified: Monday, November 25th 2024, 7:49 am
 ---
 
 Long story short, I "bridged" with "IP passthrough" from my ATT router/modem to a replacement router to get [NAT Loopback](../../../Home%20Network/NAT%20&%20Self-Hosting/NAT%20&%20Self-Hosting.md) to work and because the new one used 10.0 addresses instead of 192.168 addresses, all the apps broke.
@@ -25,8 +25,9 @@ Related links:
 - [Changed my network, how to access now? | TrueNAS Community](https://www.truenas.com/community/threads/changed-my-network-how-to-access-now.105285/)
 
 Things I messed up while trying to fix Netgear router:
+- [Bridging New Home Router](../../../Home%20Network/Bridging%20New%20Home%20Router/Bridging%20New%20Home%20Router.md)
 - [Netgear: how to change to router mode from bridge mode ? : r/HomeNetworking](https://www.reddit.com/r/HomeNetworking/comments/86plbw/netgear_how_to_change_to_router_mode_from_bridge/)
-- 
+- [Im stuck in bridge mode and can't access genie - NETGEAR Communities](https://community.netgear.com/t5/Nighthawk-Wi-Fi-5-AC-Routers/Im-stuck-in-bridge-mode-and-can-t-access-genie/td-p/2026204)
 
 # The Solution - Easy
 

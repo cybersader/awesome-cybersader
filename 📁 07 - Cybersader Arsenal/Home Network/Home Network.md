@@ -10,6 +10,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[Accessing Home Router]]**
 - **[[Bridging New Home Router]]**
 - **[[Ethernet Cables]]**
+- **[[Home DNS]]**
 - **[[Home Firewall]]**
 - **[[Home Network Defenses]]**
 - **[[Home Network Hardware]]**
