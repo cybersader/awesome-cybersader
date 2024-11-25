@@ -42,5 +42,6 @@
   "obsidian-regex-replace",
   "custom-save",
   "lazy-plugins",
-  "settings-search"
+  "settings-search",
+  "obsidian-auto-link-title"
 ]

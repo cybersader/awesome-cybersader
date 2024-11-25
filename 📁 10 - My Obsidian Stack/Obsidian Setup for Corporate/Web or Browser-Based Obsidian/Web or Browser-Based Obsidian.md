@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, November 25th 2024, 3:27 pm
+date modified: Monday, November 25th 2024, 4:35 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -22,10 +22,45 @@ There's only one option that seems like it could scale and that's [Kasm Workspac
 
 - [ ] Implement Kasm Workspaces in the browser with Obsidian and custom images ➕ 2024-11-20
 
-### Kasm Workspaces in TrueNAS Scale | Docker Kasm with Obsidian
+### Kasm Workspaces - Requires VM | Docker Kasm with Obsidian
 
-- Apps > Discover > Custom App
-- 
+#### Can you set up Kasm inside a Docker container?
+
+Long story short, you can with DiD (Docker in Docker) but just don't...
+
+- [You might want to take a look at the linuxserver project that bundles Kasm into a single container. It leverages Docker in Docker (DinD). The recommended way to run Kasm is on standalone machines/VMs, but the DinD solution should be close to what you are looking for.](https://www.reddit.com/r/kasmweb/comments/wz3amp/can_you_add_kasm_workspace_to_an_existing_docker/)
+- [Kasm Docs - Kasm Workspaces can be installed on a Virtual Machine or directly on bare metal. We do not recommend running Kasm in LXC or WSL/WSL2.](https://kasmweb.com/docs/latest/install/system_requirements.html "System Requirements — Kasm 1.16.1 documentation")
+
+#### Kasm in a VM in TrueNAS Scale?
+
+So...obsidian inside of Kasm inside of an Ubuntu Linux VM inside of TrueNAS Scale.
+
+- [Running VMs in TrueNAS Scale - Should you run this instead of Proxmox? - YouTube](https://www.youtube.com/watch?v=hpPXOSC5GmU)
+
+> [!tldr] TL;DR - TrueNAS VMs are not that great and I should just get a small server box and start running Proxmox separately
+
+#### Kasm in a VM in VMware Workstation Player
+
+- Install guides
+	- [Single Server Installation — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/install/single_server_install.html)
+	- [(2) Kasm Workspaces - Installation - YouTube](https://www.youtube.com/watch?v=BYJ0M04cD18)
+	- [Kasm Workspaces - Ep. 1 - Installing Kasm Workspaces - YouTube](https://www.youtube.com/watch?v=QHdU4HnseDw)
+
+Steps:
+- Download VMware Workstation Player
+- Download a VM image - [supported VM image operating systems](https://kasmweb.com/docs/latest/install/system_requirements.html "System Requirements — Kasm 1.16.1 documentation")
+	- [Get Ubuntu | Download | Ubuntu](https://ubuntu.com/download) 
+- Add the VM to VMware Workstation Player by adding a new virtual machine (in workstation player) and selecting the ".iso" file you downloaded
+	- Make sure it has enough resources - [Minimum Resource Requirements](https://kasmweb.com/docs/latest/install/system_requirements.html "System Requirements — Kasm 1.16.1 documentation")
+- Setup Kasm and Linux
+	- Once Linux server is running (just click through all the stuff for Linux till you're at the login
+	- Login
+	- Copy and Paste aren't enabled in Community edition for VMware Workstation Player 
+
+- How does the networking work in a VM on my desktop?
+	- Linux server showed...
+		- DHCPv4 - 192.168.159.130/24
+	- 
 
 ## Obsidian in a Container
 

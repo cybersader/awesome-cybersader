@@ -1,4 +1,4 @@
-- 2024-11-25 at 15h32 · [[Web or Browser-Based Obsidian]]
+- 2024-11-25 at 16h49 · [[Web or Browser-Based Obsidian]]
 - 2024-11-25 at 15h15 · [[Kasm Workspaces]]
 - 2024-11-25 at 15h03 · [[Remote Desktop Gateways]]
 - 2024-11-25 at 14h56 · [[📁 10 - My Obsidian Stack]]
