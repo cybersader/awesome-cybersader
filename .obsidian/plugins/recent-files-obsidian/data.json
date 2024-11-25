@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Bluesky Social",
+      "path": "🕸️ UNSTRUCTURED/Bluesky Social/Bluesky Social.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Obsidian Plugin List",
       "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugin List/Obsidian Plugin List.md"
-    },
-    {
-      "basename": "Obsidian Plugins and 3rd Party Tools",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
-    },
-    {
-      "basename": "⬇️ Ontological Drop",
-      "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
     }
   ],
   "omittedPaths": [],

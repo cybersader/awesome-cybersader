@@ -1,3 +1,5 @@
+- 2024-11-25 at 12h06 · [[Bluesky Social]]
+- 2024-11-25 at 12h05 · [[Obsidian Setup for Corporate]]
 - 2024-11-25 at 08h06 · [[TrueNAS Scale - Nginx Proxy Setup]]
 - 2024-11-25 at 07h56 · [[Bridging New Home Router]]
 - 2024-11-25 at 07h55 · [[Home Routers & ISPs]]
@@ -47,7 +49,6 @@
 - 2024-11-21 at 19h52 · [[Obsidian Plugin List]]
 - 2024-11-21 at 19h52 · [[📁 10 - My Obsidian Stack]]
 - 2024-11-21 at 19h35 · [[⬇️ Ontological Drop]]
-- 2024-11-21 at 18h59 · [[Obsidian Setup for Corporate]]
 - 2024-11-21 at 18h59 · [[⬇️ New Tools]]
 - 2024-11-20 at 22h40 · [[Why Use Obsidian Sync]]
 - 2024-11-20 at 22h24 · [[Apache Guacamole]]
