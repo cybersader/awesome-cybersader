@@ -1,16 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Kasm Workspaces",
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
+    },
+    {
+      "basename": "Web or Browser-Based Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
+    },
+    {
+      "basename": "Remote Desktop Gateways",
+      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
+    },
+    {
+      "basename": "Personal Authentication Approach",
+      "path": "📁 07 - Cybersader Arsenal/Personal Authentication Approach/Personal Authentication Approach.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Out-of-Band Communications",
+      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
       "basename": "Personal Privacy & Identity Handling",
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     },
     {
       "basename": "ISP Shenanigans",
       "path": "📁 07 - Cybersader Arsenal/Home Network/ISP Shenanigans/ISP Shenanigans.md"
-    },
-    {
-      "basename": "Personal Authentication Approach",
-      "path": "📁 07 - Cybersader Arsenal/Personal Authentication Approach/Personal Authentication Approach.md"
     },
     {
       "basename": "Home Routers & ISPs",
@@ -41,18 +69,6 @@
       "path": "🕸️ UNSTRUCTURED/Bluesky Social/Bluesky Social.md"
     },
     {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
       "basename": "Using a New Router with TrueNAS",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
     },
@@ -75,10 +91,6 @@
     {
       "basename": "Home DNS",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home DNS/Home DNS.md"
-    },
-    {
-      "basename": "Out-of-Band Communications",
-      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     },
     {
       "basename": "NAT & Self-Hosting",
@@ -153,10 +165,6 @@
       "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
     },
     {
-      "basename": "Remote Desktop Gateways",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
-    },
-    {
       "basename": "🐛 Known Base Bugs, Issues",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Cyber Small Business Edition",
       "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Cyber Small Business Edition/Cyber Small Business Edition.md"
-    },
-    {
-      "basename": "Networking",
-      "path": "📁 05 - Organizational Cyber/Networking/Networking.md"
-    },
-    {
-      "basename": "DNS Proxies & FIltering",
-      "path": "📁 07 - Cybersader Arsenal/DNS Proxies & FIltering/DNS Proxies & FIltering.md"
     }
   ],
   "omittedPaths": [],

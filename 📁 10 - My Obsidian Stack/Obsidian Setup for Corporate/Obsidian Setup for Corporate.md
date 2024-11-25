@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Wednesday, November 20th 2024, 10:26 pm
+date modified: Monday, November 25th 2024, 2:52 pm
 ---
 
 [Organization Documentation & Wikis](../../📁%2005%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -13,6 +13,12 @@ date modified: Wednesday, November 20th 2024, 10:26 pm
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
 
+# Sub-Topics
+
+%% Begin Waypoint %%
+- **[[Web or Browser-Based Obsidian]]**
+
+%% End Waypoint %%
 # DROP
 
 - Application whitelisting for Kasm and running locally while limiting plugins
@@ -185,20 +191,6 @@ Here's the high-level questions/steps to implementing Obsidian:
 - [Obsidian at Work - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-at-work/18504)
 - [Can't use Obsidian at work. Any suggested workarounds? - Basement - Obsidian Forum](https://forum.obsidian.md/t/cant-use-obsidian-at-work-any-suggested-workarounds/4451/3)
 
-# Web/Brower-Based Obsidian
-
-- All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
-	- Syncing
-	- User Management
-	- Community Plugin Management
-	- Networking
-	- Security
-
-There's only one option that seems like it could scale and that's [Kasm Workspaces](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Kasm%20Workspaces/Kasm%20Workspaces.md) but the general solution are [Remote Desktop Gateways](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Remote%20Desktop%20Gateways.md)
-
-## Kasm Workspaces for Obsidian | Browser-Based Obsidian
-
-- [ ] Implement Kasm Workspaces in the browser with Obsidian and custom images ➕ 2024-11-20
 # Syncing & Collaboration
 
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)

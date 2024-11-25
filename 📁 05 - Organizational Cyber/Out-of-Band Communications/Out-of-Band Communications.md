@@ -3,7 +3,7 @@ aliases: [Emergency Communications]
 tags: []
 publish: true
 date created: Thursday, November 21st 2024, 7:56 pm
-date modified: Thursday, November 21st 2024, 7:58 pm
+date modified: Monday, November 25th 2024, 2:50 pm
 ---
 
 # DROP
@@ -33,4 +33,11 @@ date modified: Thursday, November 21st 2024, 7:58 pm
 
 # Setting Up Signal for OOB Comms
 
-- 
+- Have someone who anticipates being there the longest start the group message on Signal
+- For accounts, make a username and share that or share your numbers to get everyone into the group
+- For "group settings" for the chat:
+	- Disappearing message: Off
+	- Sounds and notifications: 
+		- Use custom notifications
+		- Set it to something alarming if the messaging will strictly be for incident
+		- Else: just use any normal notification tone
