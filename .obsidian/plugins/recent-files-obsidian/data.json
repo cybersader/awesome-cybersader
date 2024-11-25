@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Personal Privacy Identity & Authentication",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
+      "basename": "Personal Authentication Approach",
+      "path": "📁 07 - Cybersader Arsenal/Personal Authentication Approach/Personal Authentication Approach.md"
+    },
+    {
+      "basename": "Awesome Password Security",
+      "path": "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md"
+    },
+    {
+      "basename": "Personal Cyber Resilience",
+      "path": "📁 07 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md"
+    },
+    {
+      "basename": "Personal Privacy & Identity Handling",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
+    },
+    {
+      "basename": "Authentication & Trust Models",
+      "path": "📁 05 - Organizational Cyber/Authentication & Trust Models/Authentication & Trust Models.md"
+    },
+    {
+      "basename": "📁 05 - Organizational Cyber",
+      "path": "📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md"
     },
     {
       "basename": "Personal Info Breach Response",
@@ -179,26 +199,6 @@
     {
       "basename": "TrueNAS Immich Setup",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
-    },
-    {
-      "basename": "mDNS and Cloudflare Tunnels",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/mDNS and Cloudflare Tunnels/mDNS and Cloudflare Tunnels.md"
-    },
-    {
-      "basename": "Immich & Cloudflare Tunnels",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Immich & Cloudflare Tunnels/Immich & Cloudflare Tunnels.md"
-    },
-    {
-      "basename": "Internet Usage & Ethics",
-      "path": "📁 07 - Cybersader Arsenal/Internet Usage & Ethics/Internet Usage & Ethics.md"
-    },
-    {
-      "basename": "⬇️ IR DROP",
-      "path": "📁 05 - Organizational Cyber/Incident Response/⬇️ IR DROP/⬇️ IR DROP.md"
-    },
-    {
-      "basename": "Obsidian Issues & Feature Requests",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md"
     }
   ],
   "omittedPaths": [],

@@ -6,7 +6,7 @@ date created: Friday, August 9th 2024, 12:22 pm
 date modified: Friday, August 9th 2024, 12:22 pm
 ---
 
-There are a few things to think about when it comes to passwordless and really authentication factors with proving once identity.  
+There are a few things to think about when it comes to passwordless and really authentication factors with proving ones identity.  
 
 We have convenience, whether that factor is safe in transit to the point of verification, and how they are stored along with the things that are needed to verify them, and how the responsible parties use these for verification.  For instance websites have to enable passkeys or passwords. 
   

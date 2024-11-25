@@ -14,10 +14,11 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Internet Access]]**
 - **[[Internet Safety for Children]]**
 - **[[Internet Usage & Ethics]]**
+- **[[Personal Authentication Approach]]**
 - **[[Personal Cyber Resilience]]**
 - **[[Personal Email]]**
 - **[[Personal Info Breach Response]]**
-- **[[Personal Privacy Identity & Authentication]]**
+- **[[Personal Privacy & Identity Handling]]**
 - **[[Persuasive Technology Defenses]]**
 - **[[Smart Home]]**
 - **[[THE PERSONAL CYBER RESILIENCE GUIDE]]**

@@ -66,25 +66,22 @@
 - https://www.makeuseof.com/chrome-copy-url-all-tabs/
 
 ## Okta Personal - Okta Personal for Workforce (password manager)
-    - If you have WIC (workforce identity cloud), then it seems to be free
-    - It's a work in progress
-- 
-    - Pros:
-        - Free with current Okta offering?
-        - "will" allow users to take some logins with them conditionally?
-    - Cons:
-        - No Okta Personal sign in with passkeys
-        - Okta Personal for Workforce not "generally available"
-        - No MFA for browser plugin version
-        - Lack of features and governance
-        - Users have to create a personal account
-        
-    - Licenses/Price:
-        - Completely free
-- 
-    - Links:
-        - Admin FAQs: Okta Personal for Workforce 
-        - https://trello.com/b/jNgSt36m/okta-personal-roadmap
+- If you have WIC (workforce identity cloud), then it seems to be free
+- It's a work in progress
+- Pros:
+	- Free with current Okta offering?
+	- "will" allow users to take some logins with them conditionally?
+- Cons:
+	- No Okta Personal sign in with passkeys
+	- Okta Personal for Workforce not "generally available"
+	- No MFA for browser plugin version
+	- Lack of features and governance
+	- Users have to create a personal account
+- Licenses/Price:
+	- Completely free
+- Links:
+	- Admin FAQs: Okta Personal for Workforce 
+	- https://trello.com/b/jNgSt36m/okta-personal-roadmap
 
 # 1Password vs Bitwarden
 
