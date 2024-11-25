@@ -33,7 +33,7 @@ Long story short, you can with DiD (Docker in Docker) but just don't...
 
 #### Kasm in a VM in TrueNAS Scale?
 
-So...obsidian inside of Kasm inside of an Ubuntu Linux VM inside of TrueNAS Scale.
+So...obsidian inside of Kasm inside of an Ubuntu Linux VM inside of TrueNAS Scale?
 
 - [Running VMs in TrueNAS Scale - Should you run this instead of Proxmox? - YouTube](https://www.youtube.com/watch?v=hpPXOSC5GmU)
 
