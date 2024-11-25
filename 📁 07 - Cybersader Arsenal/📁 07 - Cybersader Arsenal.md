@@ -8,7 +8,6 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 %% Begin Waypoint %%
 - **[[DNS Proxies & FIltering]]**
 - **[[Dumb Phones]]**
-- **[[Handling Personal Security Breaches]]**
 - **[[Handling Web Links]]**
 - **[[Home Lab, Home Server]]**
 - **[[Home Network]]**
@@ -17,6 +16,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Internet Usage & Ethics]]**
 - **[[Personal Cyber Resilience]]**
 - **[[Personal Email]]**
+- **[[Personal Info Breach Response]]**
 - **[[Personal Privacy Identity & Authentication]]**
 - **[[Persuasive Technology Defenses]]**
 - **[[Smart Home]]**

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Personal Privacy Identity & Authentication",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
+    },
+    {
+      "basename": "Personal Info Breach Response",
+      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
+    },
+    {
       "basename": "Bluesky Social",
       "path": "🕸️ UNSTRUCTURED/Bluesky Social/Bluesky Social.md"
     },
@@ -59,10 +67,6 @@
     {
       "basename": "Home Lab, Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "Personal Privacy Identity & Authentication",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Identity & Authentication/Personal Privacy Identity & Authentication.md"
     },
     {
       "basename": "Accessing Home Router",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Issues & Feature Requests",
       "path": "📁 10 - My Obsidian Stack/Obsidian Issues & Feature Requests/Obsidian Issues & Feature Requests.md"
-    },
-    {
-      "basename": "Obsidian Plugin List",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugin List/Obsidian Plugin List.md"
     }
   ],
   "omittedPaths": [],
