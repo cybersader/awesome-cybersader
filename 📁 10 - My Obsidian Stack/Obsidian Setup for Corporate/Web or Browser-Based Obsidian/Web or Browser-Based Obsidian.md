@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, November 25th 2024, 3:02 pm
+date modified: Monday, November 25th 2024, 3:27 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -21,6 +21,11 @@ There's only one option that seems like it could scale and that's [Kasm Workspac
 ## Kasm Workspaces for Obsidian | Browser-Based Obsidian
 
 - [ ] Implement Kasm Workspaces in the browser with Obsidian and custom images ➕ 2024-11-20
+
+### Kasm Workspaces in TrueNAS Scale | Docker Kasm with Obsidian
+
+- Apps > Discover > Custom App
+- 
 
 ## Obsidian in a Container
 
