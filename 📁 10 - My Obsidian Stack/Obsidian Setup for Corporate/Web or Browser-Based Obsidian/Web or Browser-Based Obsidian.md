@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, November 25th 2024, 9:03 pm
+date modified: Monday, November 25th 2024, 9:30 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -74,15 +74,28 @@ Steps:
 
 #### Problems with using Kasm for Obsidian
 
+- [ ] Solve problems to make Obsidian work for a corporate setting using Kasm ➕ 2024-11-25
+
 There's some problems that have to get solved in order for this to work for a corporate setting.
 
 **Problems to solve for Kasm-based Obsidian:**
 - Employees would have to learn to accept the interface - might be possible if the argument is that it's secure
 - Provisioning and user management
-- How are community plugins managed?
-	- Employees need to be able to upload files, yet, that allows them to change the ".plugins" folder - adds risk of malicious community plugins
-- Persistence of sessions
-- 
+- Authentication
+	- [LDAP Authentication — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/ldap.html)
+	- [SAML 2.0 Authentication — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/saml_authentication.html)
+	- [OpenID Authentication — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/oidc.html)
+	- [Two Factor Authentication — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/two_factor.html)
+- Syncing, storage, Kasm workspace session persistence
+	- [Persistent Data — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/persistent_data.html)
+	- [Rclone Common Configurations — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/storage_providers/custom.html)
+		- Includes SMB
+	- [File Mappings — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/file_mappings.html)
+	- How are community plugins managed?
+		- Employees need to be able to upload files, yet, that allows them to change the ".plugins" folder - adds risk of malicious community plugins
+		- [Storage Mappings — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/storage_mappings.html)
+- Implementation in corporate infrastructure
+	- [VM Provider Configs — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/compute/vm_providers.html)
 
 ## Obsidian in a Container
 

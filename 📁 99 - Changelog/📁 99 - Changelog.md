@@ -1,4 +1,4 @@
-- 2024-11-25 at 21h03 · [[Web or Browser-Based Obsidian]]
+- 2024-11-25 at 21h30 · [[Web or Browser-Based Obsidian]]
 - 2024-11-25 at 20h58 · [[📁 10 - My Obsidian Stack]]
 - 2024-11-25 at 20h58 · [[Obsidian Setup for Corporate]]
 - 2024-11-25 at 15h15 · [[Kasm Workspaces]]
