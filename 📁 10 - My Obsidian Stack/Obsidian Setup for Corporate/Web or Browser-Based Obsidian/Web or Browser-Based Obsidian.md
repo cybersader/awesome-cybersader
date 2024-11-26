@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, November 25th 2024, 4:35 pm
+date modified: Monday, November 25th 2024, 9:03 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -60,7 +60,29 @@ Steps:
 - How does the networking work in a VM on my desktop?
 	- Linux server showed...
 		- DHCPv4 - 192.168.159.130/24
-	- 
+	- I accessed it by going to 192.168.159.131 in my browser
+
+- Errors that can show up
+	- ![](_attachments/file-20241125205530054.png)
+
+- Opening up Obsidian as a user
+	- ![](_attachments/file-20241125205612549.png)
+	- ![](_attachments/file-20241125205629502.png)
+	- ![](_attachments/file-20241125205653516.png)
+	- ![](_attachments/file-20241125205735915.png)
+	- ![](_attachments/file-20241125205855054.png)
+
+#### Problems with using Kasm for Obsidian
+
+There's some problems that have to get solved in order for this to work for a corporate setting.
+
+**Problems to solve for Kasm-based Obsidian:**
+- Employees would have to learn to accept the interface - might be possible if the argument is that it's secure
+- Provisioning and user management
+- How are community plugins managed?
+	- Employees need to be able to upload files, yet, that allows them to change the ".plugins" folder - adds risk of malicious community plugins
+- Persistence of sessions
+- 
 
 ## Obsidian in a Container
 
