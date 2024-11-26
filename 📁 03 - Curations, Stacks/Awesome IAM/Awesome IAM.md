@@ -52,6 +52,11 @@ An authenticator implemented with a PIN or other protections is useless if stole
 # Okta & Passwordless in a Windows Environment - most orgs
 
 - https://help.okta.com/en-us/content/topics/directory/configuring_agentless_sso.htm
+
+- https://www.reddit.com/r/okta/comments/1ba3ser/okta_verify_fastpass/
+- https://github.com/CCob/okta-terrify
+- 
+
 - Doing Passwordless with Okta
     - Requires Okta Verify on Desktop to interface with Windows Hello and Windows under-the-hood
     - Requies Okta Fast Pass to interface Okta Verify with those services you're authenticating to in Okta 
