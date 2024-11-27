@@ -1,3 +1,4 @@
+- 2024-11-26 at 22h38 · [[Awesome EDC]]
 - 2024-11-26 at 20h11 · [[📁 03 - Curations, Stacks]]
 - 2024-11-26 at 20h11 · [[Awesome IAM]]
 - 2024-11-25 at 21h30 · [[Web or Browser-Based Obsidian]]
@@ -336,7 +337,6 @@
 - 2024-09-09 at 21h51 · [[⬇️ Misc_Links]]
 - 2024-09-09 at 21h00 · [[Cutting Stock Problem]]
 - 2024-09-08 at 21h46 · [[Internet Usage & Ethics]]
-- 2024-09-07 at 21h51 · [[Awesome EDC]]
 - 2024-09-07 at 21h36 · [[Sub-Based & Ad-Avoiding Media Platforms]]
 - 2024-09-07 at 21h08 · [[Awesome Clothing]]
 - 2024-09-07 at 14h46 · [[Bitwarden Stuff]]
