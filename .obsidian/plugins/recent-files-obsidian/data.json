@@ -5,6 +5,14 @@
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
+      "basename": "AR Glasses",
+      "path": "🕸️ UNSTRUCTURED/AR Glasses/AR Glasses.md"
+    },
+    {
+      "basename": "Spyware",
+      "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇️ Org Cyber Drop",
       "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/⬇️ Org Cyber Drop.md"
-    },
-    {
-      "basename": "Web App Vuln Scanning with Nuclei",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Web App Vuln Scanning with Nuclei/Web App Vuln Scanning with Nuclei.md"
-    },
-    {
-      "basename": "Scanning Inboxes for SaaS Sprawl & Visibility",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Cyber Drop/Scanning Inboxes for SaaS Sprawl & Visibility/Scanning Inboxes for SaaS Sprawl & Visibility.md"
     }
   ],
   "omittedPaths": [],
