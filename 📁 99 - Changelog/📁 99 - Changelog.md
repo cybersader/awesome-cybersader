@@ -1,3 +1,4 @@
+- 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]
 - 2024-11-28 at 10h44 · [[AR Glasses]]
 - 2024-11-28 at 10h37 · [[⬇️ IR DROP]]
 - 2024-11-26 at 22h38 · [[Awesome EDC]]
@@ -35,7 +36,6 @@
 - 2024-11-23 at 17h33 · [[Mounting Power Strips]]
 - 2024-11-23 at 17h24 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-11-23 at 17h11 · [[Hosted Storage]]
-- 2024-11-23 at 17h11 · [[Turning Old PC into NAS in 2024]]
 - 2024-11-23 at 17h11 · [[Backing Up Signal]]
 - 2024-11-23 at 17h11 · [[Misc TrueNAS]]
 - 2024-11-23 at 17h11 · [[📁 19 - Self-Hosting]]

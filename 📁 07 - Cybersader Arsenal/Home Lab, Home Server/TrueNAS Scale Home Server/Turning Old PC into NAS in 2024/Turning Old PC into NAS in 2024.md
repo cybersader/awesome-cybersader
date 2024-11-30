@@ -1,22 +1,11 @@
 ---
-aliases: 
+aliases: []
 publish: true
 created: Thursday, Mar 21, 2024 07:04 PM
 updated: Thursday, Mar 21, 2024 08:17 PM
 date created: Thursday, March 21st 2024, 7:04 pm
-date modified: Sunday, July 21st 2024, 4:20 pm
-tags:
-  - TrueNAS
-  - NAS
-  - HomeLab
-  - Storage
-  - Hardware
-  - BIOS
-  - UEFI
-  - Filesystem
-  - DNS
-  - CloudflareTunnels
-  - RemoteAccess
+date modified: Friday, November 29th 2024, 9:04 pm
+tags: [TrueNAS, NAS, HomeLab, Storage, Hardware, BIOS, UEFI, Filesystem, DNS, CloudflareTunnels, RemoteAccess]
 ---
 
 %% Begin Waypoint %%
