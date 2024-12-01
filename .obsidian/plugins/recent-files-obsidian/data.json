@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Self-Hosted Ghost",
+      "path": "🕸️ UNSTRUCTURED/Self-Hosted Ghost/Self-Hosted Ghost.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
+    },
+    {
       "basename": "Kasm Workspaces",
       "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Org Data Governance",
       "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "DACLs in AD",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/DACLs in AD/DACLs in AD.md"
-    },
-    {
-      "basename": "Identity Provider",
-      "path": "📁 05 - Organizational Cyber/Identity Provider/Identity Provider.md"
     }
   ],
   "omittedPaths": [],
