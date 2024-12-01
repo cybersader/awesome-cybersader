@@ -45,6 +45,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Markdown Practices in Obsidian]]
 - **[[Media File Management]]**
 - **[[Misc Web Dev]]**
+- **[[Obsidian as a CMS]]**
 - [[Obsidian Regex Find & Replace]]
 - [[Obsidian Vaults with Cybersecurity]]
 - **[[OSINT]]**

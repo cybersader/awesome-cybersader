@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian as a CMS",
+      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
       "basename": "Ghost Blogs",
       "path": "🕸️ UNSTRUCTURED/Ghost Blogs/Ghost Blogs.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "🐛 Known Base Bugs, Issues",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
-    },
-    {
-      "basename": "Org PKI, Certificate Services",
-      "path": "📁 05 - Organizational Cyber/Org PKI, Certificate Services/Org PKI, Certificate Services.md"
     }
   ],
   "omittedPaths": [],

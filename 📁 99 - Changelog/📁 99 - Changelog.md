@@ -1,5 +1,6 @@
-- 2024-12-01 at 16h47 · [[Ghost Blogs]]
-- 2024-12-01 at 16h43 · [[🕸️ UNSTRUCTURED]]
+- 2024-12-01 at 17h02 · [[Obsidian as a CMS]]
+- 2024-12-01 at 17h02 · [[🕸️ UNSTRUCTURED]]
+- 2024-12-01 at 17h02 · [[Ghost Blogs]]
 - 2024-12-01 at 16h42 · [[Favorite Fonts]]
 - 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]
 - 2024-11-28 at 10h44 · [[AR Glasses]]

@@ -9,7 +9,6 @@ date modified: Sunday, December 1st 2024, 3:23 pm
 - [A Masochist's Guide to Self-Hosting Ghost](https://www.amarjanica.com/a-masochists-guide-to-self-hosting-ghost/)
 - [How to Change a Ghost Theme Font Using Google Fonts](https://aspirethemes.com/blog/google-font-ghost-theme)
 - [Adding styles with code injection](https://ghost.org/help/code-injection-styles/#:~:text=Code%20injection%20in%20Ghost%20allows,Injection%20area%20of%20Ghost%20admin.)
-- 
 - [Ghost Resources — Stories & Ideas About Indie Publishing](https://ghost.org/resources/)
 
 - Themes/Templates
