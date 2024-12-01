@@ -23,7 +23,6 @@
   "obsidian-dictionary-plugin",
   "editor-width-slider",
   "floating-toc",
-  "folder-notes",
   "obsidian-git",
   "obsidian-linter",
   "obsidian-markdown-formatting-assistant-plugin",
@@ -43,5 +42,6 @@
   "custom-save",
   "lazy-plugins",
   "settings-search",
-  "obsidian-hider"
+  "obsidian-hider",
+  "folder-notes"
 ]

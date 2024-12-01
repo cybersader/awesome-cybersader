@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Self-Hosted Ghost",
-      "path": "🕸️ UNSTRUCTURED/Self-Hosted Ghost/Self-Hosted Ghost.md"
+      "basename": "Ghost Blogs",
+      "path": "🕸️ UNSTRUCTURED/Ghost Blogs/Ghost Blogs.md"
+    },
+    {
+      "basename": "Favorite Fonts",
+      "path": "🕸️ UNSTRUCTURED/Favorite Fonts/Favorite Fonts.md"
     },
     {
       "basename": "🕸️ UNSTRUCTURED",
@@ -195,10 +199,6 @@
     {
       "basename": "Org PKI, Certificate Services",
       "path": "📁 05 - Organizational Cyber/Org PKI, Certificate Services/Org PKI, Certificate Services.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     }
   ],
   "omittedPaths": [],

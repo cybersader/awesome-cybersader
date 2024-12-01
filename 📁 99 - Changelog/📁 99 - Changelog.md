@@ -1,5 +1,6 @@
-- 2024-12-01 at 15h23 · [[Self-Hosted Ghost]]
-- 2024-12-01 at 15h23 · [[🕸️ UNSTRUCTURED]]
+- 2024-12-01 at 16h47 · [[Ghost Blogs]]
+- 2024-12-01 at 16h43 · [[🕸️ UNSTRUCTURED]]
+- 2024-12-01 at 16h42 · [[Favorite Fonts]]
 - 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]
 - 2024-11-28 at 10h44 · [[AR Glasses]]
 - 2024-11-28 at 10h37 · [[⬇️ IR DROP]]

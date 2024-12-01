@@ -35,8 +35,10 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Email Security]]**
 - **[[Endpoint Firewall]]**
 - [[Excel Alternative]]
+- **[[Favorite Fonts]]**
 - [[Find All Enabled Plugins From Obsidian Folder]]
 - [[Gaming Hacks & Cheats]]
+- **[[Ghost Blogs]]**
 - **[[Hosted Storage]]**
 - **[[Hotel Hacker]]**
 - [[Laptop Health Check Tools]]
@@ -54,7 +56,6 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Reporting Phishing]]
 - **[[RSS]]**
 - [[Scalable Project Management]]
-- **[[Self-Hosted Ghost]]**
 - **[[Spyware]]**
 - [[Sub-Based & Ad-Avoiding Media Platforms]]
 - **[[Teaching Engagement Hacks]]**
