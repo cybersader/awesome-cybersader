@@ -517,6 +517,75 @@
       },
       "settings-search": {
         "startupType": "instant"
+      },
+      "advanced-copy": {
+        "startupType": "disabled"
+      },
+      "automatic-renumbering": {
+        "startupType": "disabled"
+      },
+      "bottom-to-top": {
+        "startupType": "disabled"
+      },
+      "obsidian-cloudinary-uploader": {
+        "startupType": "disabled"
+      },
+      "daily-summary": {
+        "startupType": "disabled"
+      },
+      "emo-uploader": {
+        "startupType": "disabled"
+      },
+      "fast-image-upload": {
+        "startupType": "disabled"
+      },
+      "obsidian-image-auto-upload-plugin": {
+        "startupType": "disabled"
+      },
+      "image-uploader-for-note": {
+        "startupType": "disabled"
+      },
+      "images-to-gist": {
+        "startupType": "disabled"
+      },
+      "imgbb-uploader": {
+        "startupType": "disabled"
+      },
+      "obsidian-imgur-plugin": {
+        "startupType": "disabled"
+      },
+      "llm-workspace": {
+        "startupType": "disabled"
+      },
+      "markdown-timeline": {
+        "startupType": "disabled"
+      },
+      "number-headings-obsidian": {
+        "startupType": "disabled"
+      },
+      "post-webhook": {
+        "startupType": "disabled"
+      },
+      "s3agle": {
+        "startupType": "disabled"
+      },
+      "task-director": {
+        "startupType": "disabled"
+      },
+      "textgrams": {
+        "startupType": "disabled"
+      },
+      "obsidian-timeline": {
+        "startupType": "disabled"
+      },
+      "timelines-revamped": {
+        "startupType": "disabled"
+      },
+      "wrangle-todos": {
+        "startupType": "disabled"
+      },
+      "obsidian-webhooks": {
+        "startupType": "disabled"
       }
     }
   }
