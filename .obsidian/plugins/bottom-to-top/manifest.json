@@ -1,0 +1,11 @@
+{
+	"id": "bottom-to-top",
+	"name": "Bottom to Top",
+	"version": "1.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "Reverses direction of text.",
+	"author": "Henry Gustafson",
+	"authorUrl": "https://fiverr.com/hen31415",
+	"fundingUrl": "https://www.buymeacoffee.com/lizardheart",
+	"isDesktopOnly": false
+}

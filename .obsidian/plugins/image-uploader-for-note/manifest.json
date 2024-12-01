@@ -1,0 +1,10 @@
+{
+	"id": "image-uploader-for-note",
+	"name": "Image Uploader For Note",
+	"version": "1.0.2",
+	"minAppVersion": "0.15.0",
+	"description": "Upload images in a note, and remove the images from the vault if they're exclusively used within that note.",
+	"author": "Yunfi",
+	"authorUrl": "https://yfi.moe",
+	"isDesktopOnly": false
+}

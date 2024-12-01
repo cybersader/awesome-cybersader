@@ -58,6 +58,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 # Misc Ideas
 
 - Plugin to automatically remove tokens and clean URLs
+- Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
 - Plugin to fetch titles and fix highlighted links
 - AI-based note enricher 
 	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings

@@ -1,0 +1,12 @@
+{
+	"id": "task-director",
+	"name": "Task Director",
+	"version": "0.0.2",
+	"minAppVersion": "1.5.0",
+	"description": "Manage and change tasks targeting a specific page",
+	"author": "cybertramp",
+	"authorUrl": "https://cybertramp.net",
+	"helpUrl": "https://github.com/cybertramp/obsidian-task-director",
+	"fundingUrl": "https://www.buymeacoffee.com/cybertramp",
+	"isDesktopOnly": false
+}

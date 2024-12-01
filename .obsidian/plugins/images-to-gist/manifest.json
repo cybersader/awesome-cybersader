@@ -1,0 +1,11 @@
+{
+  "id": "images-to-gist",
+  "name": "Images to Gist",
+  "version": "1.3.0",
+  "minAppVersion": "0.13.19",
+  "description": "Upload images to your GitHub secret Gists. Also, resize uploaded images on the fly.",
+  "author": "Inder Singh",
+  "authorUrl": "https://github.com/singh-inder",
+  "fundingUrl": "https://buymeacoffee.com/_inder1",
+  "isDesktopOnly": false
+}

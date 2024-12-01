@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
       "basename": "Obsidian as a CMS",
       "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Active Directory",
       "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
-    },
-    {
-      "basename": "🐛 Known Base Bugs, Issues",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
     }
   ],
   "omittedPaths": [],
