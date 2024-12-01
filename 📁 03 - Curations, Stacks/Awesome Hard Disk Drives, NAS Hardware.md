@@ -15,6 +15,7 @@ date modified: Sunday, October 6th 2024, 4:08 pm
 # Curations
 
 - [Hardware recommendations (read this first) | TrueNAS Community](https://www.truenas.com/community/threads/hardware-recommendations-read-this-first.23069/)
+- [Best 2-Bay NAS of the Year 2024 – NAS Compares](https://nascompares.com/guide/best-2-bay-nas-of-the-year-2024/)
 - 
 
 # Mini PCs

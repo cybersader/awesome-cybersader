@@ -1,3 +1,4 @@
+- 2024-12-01 at 17h38 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-12-01 at 17h25 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-01 at 17h19 · [[Obsidian as a CMS]]
 - 2024-12-01 at 17h02 · [[🕸️ UNSTRUCTURED]]
@@ -314,7 +315,6 @@
 - 2024-10-07 at 13h53 · [[Frameworks, Ontologies]]
 - 2024-10-07 at 13h49 · [[Endpoint Hardening]]
 - 2024-10-07 at 11h20 · [[Whey Protein Recipes]]
-- 2024-10-07 at 11h20 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-10-07 at 11h19 · [[Laptop Health Check Tools]]
 - 2024-10-06 at 17h52 · [[Planning Deadwood 2024 WWHF Trip]]
 - 2024-10-06 at 15h51 · [[Data Centers]]

@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
       "basename": "Obsidian as a CMS",
       "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
+      "basename": "Awesome Hard Disk Drives, NAS Hardware",
+      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
       "basename": "Ghost Blogs",
@@ -195,10 +199,6 @@
     {
       "basename": "Hot Tubs",
       "path": "📁 20 - Home DIY/Hot Tubs/Hot Tubs.md"
-    },
-    {
-      "basename": "Active Directory",
-      "path": "📁 05 - Organizational Cyber/Active Directory/Active Directory.md"
     }
   ],
   "omittedPaths": [],
