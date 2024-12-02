@@ -1,3 +1,4 @@
+- 2024-12-02 at 08h05 · [[Windows Desktop Provisioning]]
 - 2024-12-01 at 21h28 · [[Personal Storage]]
 - 2024-12-01 at 21h24 · [[📁 07 - Cybersader Arsenal]]
 - 2024-12-01 at 21h24 · [[Home Lab, Home Server]]
@@ -156,7 +157,6 @@
 - 2024-11-12 at 22h07 · [[📁 13 - Religion, Ontology, Philosophy]]
 - 2024-11-12 at 22h02 · [[IR Tabletop AI Prompts]]
 - 2024-11-12 at 21h52 · [[Fixing Broken Ceramic]]
-- 2024-11-12 at 19h16 · [[Windows Desktop Provisioning]]
 - 2024-11-10 at 22h12 · [[Poster Hanging]]
 - 2024-11-10 at 21h28 · [[Internet Access]]
 - 2024-11-10 at 21h18 · [[📁 15 - Finance, Economy]]

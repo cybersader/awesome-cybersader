@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Personal Storage",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
+      "basename": "Personal Storage",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
     },
     {
       "basename": "OpSec Tierlist",
@@ -69,10 +81,6 @@
       "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
     },
     {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
       "basename": "AR Glasses",
       "path": "🕸️ UNSTRUCTURED/AR Glasses/AR Glasses.md"
     },
@@ -95,10 +103,6 @@
     {
       "basename": "Personal Authentication Approach",
       "path": "📁 07 - Cybersader Arsenal/Personal Authentication Approach/Personal Authentication Approach.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Out-of-Band Communications",
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "📁 19 - Self-Hosting",
-      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
     }
   ],
   "omittedPaths": [],
