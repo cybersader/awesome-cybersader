@@ -1,3 +1,4 @@
+- 2024-12-02 at 09h58 · [[Awesome EDC]]
 - 2024-12-02 at 09h45 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-12-02 at 08h05 · [[Windows Desktop Provisioning]]
 - 2024-12-01 at 21h28 · [[Personal Storage]]
@@ -5,7 +6,6 @@
 - 2024-12-01 at 21h24 · [[Home Lab, Home Server]]
 - 2024-12-01 at 20h27 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-01 at 19h29 · [[OpSec Tierlist]]
-- 2024-12-01 at 19h18 · [[Awesome EDC]]
 - 2024-12-01 at 18h40 · [[Favorite Fonts]]
 - 2024-12-01 at 18h40 · [[Obsidian Knowledge Management Workflows]]
 - 2024-12-01 at 18h34 · [[📁 10 - My Obsidian Stack]]
