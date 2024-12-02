@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Gitignore Folder Tracking Removal",
+      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
+    },
+    {
+      "basename": "Handling Obsidian Git Conflicts & Issues",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
+    },
+    {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Home Network Defenses",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
-    },
-    {
-      "basename": "⬇️ Project Drop",
-      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
-    },
-    {
-      "basename": "Fixing Broken Ceramic",
-      "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
     }
   ],
   "omittedPaths": [],
