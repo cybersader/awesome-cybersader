@@ -1,9 +1,9 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Tuesday, November 19th 2024, 7:10 pm
+date modified: Sunday, December 1st 2024, 8:27 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -31,6 +31,8 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 	- [https://forum.obsidian.md/t/toying-with-relational-databases-using-dataview/17433](https://forum.obsidian.md/t/toying-with-relational-databases-using-dataview/17433)
 	- [https://github.com/clouedoc/postgresql-obsidian](https://github.com/clouedoc/postgresql-obsidian)
 	- [https://publish.obsidian.md/kaas-published/2-Areas/Lists/PostgreSQL+Tools+List](https://publish.obsidian.md/kaas-published/2-Areas/Lists/PostgreSQL+Tools+List)
+
+- [Datacore | Datacore](https://blacksmithgu.github.io/datacore/) - in progress dataview upgrade
 
 # Research tools that integrate with Obsidian
 

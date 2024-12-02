@@ -1,3 +1,4 @@
+- 2024-12-01 at 20h27 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-01 at 19h29 · [[OpSec Tierlist]]
 - 2024-12-01 at 19h18 · [[Awesome EDC]]
 - 2024-12-01 at 18h41 · [[📁 07 - Cybersader Arsenal]]
@@ -7,7 +8,6 @@
 - 2024-12-01 at 18h27 · [[Obsidian as a CMS]]
 - 2024-12-01 at 18h26 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-01 at 17h38 · [[Awesome Hard Disk Drives, NAS Hardware]]
-- 2024-12-01 at 17h25 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-01 at 17h02 · [[Ghost Blogs]]
 - 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]
 - 2024-11-28 at 10h44 · [[AR Glasses]]
