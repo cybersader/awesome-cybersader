@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Projects Plugin Testing",
+      "path": "📦 VAULT SANDBOX TESTING/Projects Plugin Testing/Projects Plugin Testing.md"
+    },
+    {
+      "basename": "Test Note",
+      "path": "📦 VAULT SANDBOX TESTING/Projects Plugin Testing/Test Note.md"
+    },
+    {
+      "basename": "📦 VAULT SANDBOX TESTING",
+      "path": "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md"
+    },
+    {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Ethernet Cables",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
-    },
-    {
-      "basename": "Home Network Hardware",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
-    },
-    {
-      "basename": "Mounting Power Strips",
-      "path": "📁 20 - Home DIY/Mounting Power Strips/Mounting Power Strips.md"
-    },
-    {
-      "basename": "TrueNAS Scale Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     }
   ],
   "omittedPaths": [],
