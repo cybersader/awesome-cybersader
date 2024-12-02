@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
       "basename": "OpSec Tierlist",
       "path": "📁 07 - Cybersader Arsenal/OpSec Tierlist/OpSec Tierlist.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
       "basename": "Personal Privacy & Identity Handling",
@@ -175,10 +179,6 @@
     {
       "basename": "Mounting Power Strips",
       "path": "📁 20 - Home DIY/Mounting Power Strips/Mounting Power Strips.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "TrueNAS Scale Home Server",

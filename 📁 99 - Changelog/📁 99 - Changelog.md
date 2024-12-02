@@ -1,5 +1,5 @@
+- 2024-12-01 at 19h29 · [[OpSec Tierlist]]
 - 2024-12-01 at 19h18 · [[Awesome EDC]]
-- 2024-12-01 at 19h13 · [[OpSec Tierlist]]
 - 2024-12-01 at 18h41 · [[📁 07 - Cybersader Arsenal]]
 - 2024-12-01 at 18h40 · [[Favorite Fonts]]
 - 2024-12-01 at 18h40 · [[Obsidian Knowledge Management Workflows]]
