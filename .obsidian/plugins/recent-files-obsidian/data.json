@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "OpSec Tierlist",
+      "path": "📁 07 - Cybersader Arsenal/OpSec Tierlist/OpSec Tierlist.md"
+    },
+    {
+      "basename": "Personal Privacy & Identity Handling",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
+    },
+    {
+      "basename": "Favorite Fonts",
+      "path": "🕸️ UNSTRUCTURED/Favorite Fonts/Favorite Fonts.md"
+    },
+    {
+      "basename": "Obsidian Knowledge Management Workflows",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+    },
+    {
       "basename": "Obsidian as a CMS",
       "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
     },
@@ -15,10 +39,6 @@
     {
       "basename": "Ghost Blogs",
       "path": "🕸️ UNSTRUCTURED/Ghost Blogs/Ghost Blogs.md"
-    },
-    {
-      "basename": "Favorite Fonts",
-      "path": "🕸️ UNSTRUCTURED/Favorite Fonts/Favorite Fonts.md"
     },
     {
       "basename": "🕸️ UNSTRUCTURED",
@@ -71,10 +91,6 @@
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Personal Privacy & Identity Handling",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     },
     {
       "basename": "ISP Shenanigans",
@@ -183,18 +199,6 @@
     {
       "basename": "Fixing Broken Ceramic",
       "path": "📁 20 - Home DIY/Fixing Broken Ceramic/Fixing Broken Ceramic.md"
-    },
-    {
-      "basename": "Flooring",
-      "path": "📁 20 - Home DIY/Flooring/Flooring.md"
-    },
-    {
-      "basename": "Fixing Toilets",
-      "path": "📁 20 - Home DIY/Fixing Toilets/Fixing Toilets.md"
-    },
-    {
-      "basename": "Dealing with Asbestos",
-      "path": "📁 20 - Home DIY/Dealing with Asbestos/Dealing with Asbestos.md"
     }
   ],
   "omittedPaths": [],
