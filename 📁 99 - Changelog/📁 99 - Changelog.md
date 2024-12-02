@@ -1,3 +1,4 @@
+- 2024-12-02 at 18h40 · [[Web or Browser-Based Obsidian]]
 - 2024-12-02 at 16h36 · [[Awesome Obsidian Wiki Examples]]
 - 2024-12-02 at 16h21 · [[🐛 Known Base Bugs, Issues]]
 - 2024-12-02 at 16h18 · [[MY TECH STACK]]
@@ -25,7 +26,6 @@
 - 2024-11-28 at 10h37 · [[⬇️ IR DROP]]
 - 2024-11-26 at 20h11 · [[📁 03 - Curations, Stacks]]
 - 2024-11-26 at 20h11 · [[Awesome IAM]]
-- 2024-11-25 at 21h30 · [[Web or Browser-Based Obsidian]]
 - 2024-11-25 at 15h15 · [[Kasm Workspaces]]
 - 2024-11-25 at 15h03 · [[Remote Desktop Gateways]]
 - 2024-11-25 at 14h51 · [[Personal Authentication Approach]]

@@ -1,9 +1,10 @@
 ---
+permalink: obsidian-in-browser
 aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, November 25th 2024, 9:30 pm
+date modified: Monday, December 2nd 2024, 6:40 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
