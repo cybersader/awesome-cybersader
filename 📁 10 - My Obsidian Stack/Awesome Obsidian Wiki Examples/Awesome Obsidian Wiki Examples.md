@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Monday, December 2nd 2024, 4:23 pm
+date modified: Monday, December 2nd 2024, 4:36 pm
 ---
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
@@ -31,7 +31,6 @@ date modified: Monday, December 2nd 2024, 4:23 pm
 - [About - The Integral Guide to Well-Being](https://integralguide.com/About) 
 - https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0
 - https://notes.philoserf.com/Home
-- 
 
 # Misc JS and CSS
 
