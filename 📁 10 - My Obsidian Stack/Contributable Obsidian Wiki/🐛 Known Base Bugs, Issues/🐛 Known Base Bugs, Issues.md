@@ -1,8 +1,9 @@
 ---
+permalink:
 aliases: []
 tags: []
 date created: Wednesday, April 10th 2024, 8:46 pm
-date modified: Thursday, November 21st 2024, 7:53 pm
+date modified: Monday, December 2nd 2024, 4:21 pm
 publish: true
 ---
 
@@ -17,3 +18,7 @@ publish: true
 # Obsidian Git Issues
 
 - Conflicts quickly arise when using Obsidian Git between two devices seemingly due to the date modified field with the Linter plugin, the change of the data or workspace data in the ".obsidian" folder, and other components
+
+# Windows Issues
+
+- [Maximum Path Length Limitation - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell)

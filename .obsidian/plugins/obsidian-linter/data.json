@@ -32,7 +32,7 @@
     },
     "insert-yaml-attributes": {
       "enabled": true,
-      "text-to-insert": "aliases: \ntags: \npublish: true"
+      "text-to-insert": "aliases: \ntags: \npublish: true\npermalink:"
     },
     "move-tags-to-yaml": {
       "enabled": false,

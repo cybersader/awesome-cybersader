@@ -3,7 +3,8 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Monday, November 25th 2024, 2:52 pm
+date modified: Monday, December 2nd 2024, 4:05 pm
+permalink: corporate-obsidian
 ---
 
 [Organization Documentation & Wikis](../../📁%2005%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
@@ -19,6 +20,7 @@ date modified: Monday, November 25th 2024, 2:52 pm
 - **[[Web or Browser-Based Obsidian]]**
 
 %% End Waypoint %%
+
 # DROP
 
 - Application whitelisting for Kasm and running locally while limiting plugins

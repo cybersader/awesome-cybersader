@@ -3,7 +3,7 @@
   "publishPath": "https://base.cybersader.com/",
   "enableContext": true,
   "enableOpenUrl": true,
-  "enableGithub": false,
-  "remoteUrl": "",
+  "enableGithub": true,
+  "remoteUrl": "https://github.com/cybersader/awesome-cybersader/",
   "branch": "main"
 }

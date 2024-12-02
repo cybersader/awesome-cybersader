@@ -10,6 +10,8 @@
   "promptDelete": false,
   "showRibbon": true,
   "showUnsupportedFiles": true,
-  "userIgnoreFilters": null,
+  "userIgnoreFilters": [
+    "📁 99 - Changelog/"
+  ],
   "newFileLocation": "current"
 }

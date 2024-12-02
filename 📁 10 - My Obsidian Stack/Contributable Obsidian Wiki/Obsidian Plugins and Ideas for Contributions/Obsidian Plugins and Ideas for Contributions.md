@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Sunday, December 1st 2024, 8:27 pm
+date modified: Monday, December 2nd 2024, 4:00 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -60,6 +60,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 # Misc Ideas
 
 - Plugin to automatically remove tokens and clean URLs
+- Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
 - Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
 - Plugin to fetch titles and fix highlighted links
 - AI-based note enricher 
