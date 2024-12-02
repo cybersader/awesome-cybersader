@@ -3,7 +3,7 @@ aliases: []
 tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Sunday, December 1st 2024, 9:23 pm
+date modified: Monday, December 2nd 2024, 9:45 am
 ---
 
  
@@ -19,6 +19,10 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 # DROPZONE - NEW IDEAS HERE
 
 - [Operation Privacy](https://www.operationprivacy.com/) 
+
+# Privacy & Security Workflow Examples
+
+- Axis: budget, technical skill (+time)
 
 # Machines, Hardware
 
@@ -47,10 +51,17 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - Get on a platform like Signal that's more private
 - Avoid SMS where you can.  It's outdated.
+- E2EE messengers
+	- Signal
+	- Session
+	- Simplex
+	- Threema
+	- 
 
 # Knowledge Management
 
 - Use a combination of Notion, Obsidian, and a versioned storage repository as a SSOT
+- I really don't trust Notion - so use Obsidian instead please 
 
 # Mobile Security
 
@@ -81,6 +92,11 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 # Identity & Credential Management
 
+## General Aliasing
+
+- DuckDuckGo aliases
+- Cloaked
+
 ## Multi-Factor/Two-Factor Authentication
 
 - .
@@ -89,9 +105,17 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - .
 
+## Email Clients and Providers
+
+- Proton Mail
+- Tuta Mail
+- 
+
 ## Email Aliasing & Temp Emails
 
-- .
+- SimpleLogin
+- Addy 
+- DuckDuckGo aliasing
 
 # Personal Incident Response
 
@@ -122,6 +146,10 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Use the one that comes with the operating system (Defender for Microsoft)
 - If you're advanced, you could figure out how to use something like ClamAV
 
+# Virtual Payment - Aliases
+
+- 
+
 # Media Storage
 
 - Get a home NAS
@@ -132,6 +160,17 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - Firewalla
 - DNS filtering
 - Avoid Google DNS
+- Hosted examples:
+	- Mullvad DNS
+	- ControlD
+	- NextDNS
+	- 
+
+## DNS (on clients and home router)
+
+- DNS providers get insights into web traffic
+- You can trust the VPN's DNS or use your own at home
+- 
 
 ## Router Security ( from Michael Horowitz )
 
@@ -320,12 +359,25 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 # VPNs
 
+- The only way this helps with privacy at all is with the correlation of your public IP address, but it's surely not worth the risk and giving that data to VPN providers
 - Don't use a VPN unless you're on the road on wifi (such as in a hotel) or need to get around a geo-block
 	- ProtonVPN
 	- Mullvad
+- Volunteer trusted VPNs that are slow
+	- Calyx
+	- Riseup
+- Tor relays are good but for only the technical people
+- Proton VPN has a good free plan
+- Orbot - repurposed VPN slot on mobile devices to help use Tor system-wide 
+- Windscribe VPN (not sure about the trust here) - limited on bandwidth
+- IVPN - good too but more expensive than others like Mullvad - not sure I trust this one either though
+- Mullvad is open source and trusted - 5 per month 
+- Apple private relay - 1 dollar a month - VPN in Safari only - only for people who use Safari and need to access sites or travel a lot or want it when they do
+- 
 
 # Misc
 
+- Learn provisioning
 - Apologetics and debates
 - Turn off AutoRuns
 - SysInternals
