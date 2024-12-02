@@ -1,4 +1,4 @@
-- 2024-12-02 at 11h05 · [[Awesome EDC]]
+- 2024-12-02 at 15h17 · [[Awesome EDC]]
 - 2024-12-02 at 09h45 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-12-02 at 08h05 · [[Windows Desktop Provisioning]]
 - 2024-12-01 at 21h28 · [[Personal Storage]]
