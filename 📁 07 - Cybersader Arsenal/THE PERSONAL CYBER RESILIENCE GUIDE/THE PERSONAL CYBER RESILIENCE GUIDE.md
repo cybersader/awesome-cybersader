@@ -3,11 +3,12 @@ aliases: []
 tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Saturday, November 23rd 2024, 5:24 pm
+date modified: Sunday, December 1st 2024, 9:23 pm
 ---
 
  
 [Personal Cyber Resilience Arsenal](../../CybersaderNotion/03%20Awesome-Cyber/Personal%20Cyber%20Resilience%20Arsenal.md)
+[OpSec Tierlist](../OpSec%20Tierlist/OpSec%20Tierlist.md)
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 

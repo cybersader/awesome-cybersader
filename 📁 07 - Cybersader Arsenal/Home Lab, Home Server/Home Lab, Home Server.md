@@ -8,6 +8,7 @@ date modified: Saturday, July 6th 2024, 3:29 pm
 
 %% Begin Waypoint %%
 - **[[Kubernetes Home Server]]**
+- **[[Personal Storage]]**
 - **[[TrueNAS Scale Home Server]]**
 
 %% End Waypoint %%

@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Personal Storage",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
+    },
+    {
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "OpSec Tierlist",
+      "path": "📁 07 - Cybersader Arsenal/OpSec Tierlist/OpSec Tierlist.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
       "basename": "Gitignore Folder Tracking Removal",
       "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
     },
@@ -9,24 +29,8 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     },
     {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
       "basename": "Obsidian Knowledge Management Workflows",
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
-    },
-    {
-      "basename": "OpSec Tierlist",
-      "path": "📁 07 - Cybersader Arsenal/OpSec Tierlist/OpSec Tierlist.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
       "basename": "Personal Privacy & Identity Handling",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 19 - Self-Hosting",
       "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
-    },
-    {
-      "basename": "Home Network Defenses",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Defenses/Home Network Defenses.md"
     }
   ],
   "omittedPaths": [],
