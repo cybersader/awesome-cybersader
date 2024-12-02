@@ -3,8 +3,12 @@ aliases: [Awesome Backpacks, Awesome Every Day Carry, Awesome Everyday Carry, Aw
 tags: [Bags, EDC, Utils]
 publish: true
 date created: Tuesday, June 18th 2024, 8:39 pm
-date modified: Tuesday, November 26th 2024, 10:38 pm
+date modified: Monday, December 2nd 2024, 11:05 am
 ---
+
+# Cards
+
+- [KeySmart - The Best Compact Key Holder](https://www.getkeysmart.com/)
 
 # Awesome Quick Release Attachments (Keychains, Clips)
 
@@ -23,8 +27,8 @@ date modified: Tuesday, November 26th 2024, 10:38 pm
 - [Amazon.com: TISUR Quick Release Keychain,Titanium EDC Pull Apart Key Chain,Detachable Carabiner Keychain with 2pcs Titanium Key Rings : Sports & Outdoors](https://www.amazon.com/TISUR-Keychain-Titanium-Detachable-Carabiner/dp/B0C3CHGJX9/ref=sr_1_21&keywords=quick%2Brelease%2Bclip%2Bclimbing%2Btitanium%2Bswivel&qid=1732678393&sprefix=quick%2Brelease%2Bclip%2Bclimbing%2Btitanium%2Bswivel%2Caps%2C91)
 
 - [Yubico x Keyport - Pivot 2.0 and ParaPull Carry Bundle](https://www.yubico.com/product/yubico-keyport-pivot-parapull-carry-bundle/)
-- [Best Key Organizer, Key Holder & Keychain Multi-Tool | Keyport](https://www.mykeyport.com/)
-- 
+- [Keyport | Best Key Organizer, Key Holder & Keychain Multi-Tool](https://www.mykeyport.com/)
+- [KeySmart - The Best Compact Key Holder](https://www.getkeysmart.com/)
 
 # Awesome Bags
 
