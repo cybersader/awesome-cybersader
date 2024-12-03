@@ -1,10 +1,15 @@
 ---
+permalink:
 aliases: []
 tags: []
 publish: true
 date created: Sunday, December 1st 2024, 5:02 pm
-date modified: Sunday, December 1st 2024, 5:02 pm
+date modified: Monday, December 2nd 2024, 7:55 pm
 ---
+
+[Ghost Blogs](../Ghost%20Blogs/Ghost%20Blogs.md)
+[Contributable Obsidian Wiki](../../📁%2010%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
+
 
 - [Static Site Generators - Top Open Source SSGs | Jamstack](https://jamstack.org/generators/ "Static Site Generators - Top Open Source SSGs | Jamstack")
 - [Headless CMS - Top Content Management Systems | Jamstack](https://jamstack.org/headless-cms/ "Headless CMS - Top Content Management Systems | Jamstack")
@@ -15,4 +20,4 @@ date modified: Sunday, December 1st 2024, 5:02 pm
 - [addozhang/obsidian-image-upload-toolkit: An obsidian plugin for uploading local images embedded in markdown to remote store and export markdown for publishing to static site.](https://github.com/addozhang/obsidian-image-upload-toolkit "addozhang/obsidian-image-upload-toolkit: An obsidian plugin for uploading local images embedded in markdown to remote store and export markdown for publishing to static site.")
 - [Obsidian Plugin: Micro.publish - Publish notes to Micro.blog.](https://obsidian-plugin-stats.vercel.app/plugins/microblog-publish-plugin)
 - [My complete Obsidian workflow to manage my life : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15j3mb9/my_complete_obsidian_workflow_to_manage_my_life/)
-- 
+- [Bear Blog](https://bearblog.dev/)

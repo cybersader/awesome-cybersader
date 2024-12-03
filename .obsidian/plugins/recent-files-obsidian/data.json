@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Obsidian as a CMS",
+      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "Personal Storage",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
       "basename": "Web or Browser-Based Obsidian",
@@ -51,10 +55,6 @@
     {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "Obsidian as a CMS",
-      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
     },
     {
       "basename": "Windows Desktop Provisioning",
