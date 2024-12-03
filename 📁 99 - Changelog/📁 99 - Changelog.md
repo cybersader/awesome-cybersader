@@ -1,3 +1,4 @@
+- 2024-12-02 at 21h05 · [[Windows Desktop Provisioning]]
 - 2024-12-02 at 20h30 · [[📁 33 - Gaming]]
 - 2024-12-02 at 19h56 · [[Obsidian as a CMS]]
 - 2024-12-02 at 19h54 · [[Awesome Obsidian Wiki Examples]]
@@ -12,7 +13,6 @@
 - 2024-12-02 at 15h44 · [[Projects Plugin Testing]]
 - 2024-12-02 at 15h44 · [[Test Note]]
 - 2024-12-02 at 15h17 · [[Awesome EDC]]
-- 2024-12-02 at 08h05 · [[Windows Desktop Provisioning]]
 - 2024-12-01 at 21h28 · [[Personal Storage]]
 - 2024-12-01 at 21h24 · [[Home Lab, Home Server]]
 - 2024-12-01 at 19h29 · [[OpSec Tierlist]]
