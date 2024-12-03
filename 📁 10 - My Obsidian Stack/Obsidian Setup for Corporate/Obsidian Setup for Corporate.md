@@ -31,6 +31,7 @@ permalink: corporate-obsidian
 - VNC and latency issues
 - Why Notion has a loading symbol a lot
 - The conflict resolution issue
+- https://forum.obsidian.md/t/soc-2-iso-27001-certification/50037
 
 # High-Level Tech Stack & Guide
 
