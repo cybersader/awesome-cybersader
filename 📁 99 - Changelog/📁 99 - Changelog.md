@@ -1,3 +1,4 @@
+- 2024-12-02 at 20h30 · [[📁 33 - Gaming]]
 - 2024-12-02 at 19h56 · [[Obsidian as a CMS]]
 - 2024-12-02 at 19h54 · [[Awesome Obsidian Wiki Examples]]
 - 2024-12-02 at 19h12 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
@@ -110,7 +111,6 @@
 - 2024-11-17 at 21h39 · [[Contribution System]]
 - 2024-11-17 at 21h39 · [[Contributable Obsidian Wiki]]
 - 2024-11-17 at 21h39 · [[Obsidian Run]]
-- 2024-11-17 at 21h37 · [[📁 33 - Gaming]]
 - 2024-11-17 at 18h13 · [[Awesome Markdown]]
 - 2024-11-17 at 18h04 · [[Detection Engineering]]
 - 2024-11-17 at 18h03 · [[Log Management, Event-Driven Architectures]]

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "📁 33 - Gaming",
+      "path": "📁 33 - Gaming/📁 33 - Gaming.md"
+    },
+    {
       "basename": "Awesome Obsidian Wiki Examples",
       "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Home DNS",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home DNS/Home DNS.md"
-    },
-    {
-      "basename": "NAT & Self-Hosting",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/NAT & Self-Hosting/NAT & Self-Hosting.md"
     }
   ],
   "omittedPaths": [],
