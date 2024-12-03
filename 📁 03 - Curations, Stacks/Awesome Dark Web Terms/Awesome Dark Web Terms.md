@@ -1,0 +1,35 @@
+
+- Persys
+    - Personal information: stolen social security, DOB, addresses, and other sensitive information
+- Stims
+    - Stimulant drugs such as cocaine, meth, adderall (addy), etc.
+- Checks
+- CC 
+    - Credit cards
+- rat
+- sim
+- shell
+- cred
+- combo
+- m2m
+- stealer
+- crypto
+- vuln
+- exploit
+- access
+- skim
+- ATIM
+- valid
+- swipe
+- drop
+- cheese
+- gwop
+- takeover
+- BIN
+- IIN
+- head cut
+- hash
+- gate OR gateway
+- logs
+- bank drops
+- cyber insurance
