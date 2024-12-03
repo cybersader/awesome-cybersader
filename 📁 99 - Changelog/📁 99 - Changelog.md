@@ -1,3 +1,4 @@
+- 2024-12-02 at 19h12 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-12-02 at 18h40 · [[Web or Browser-Based Obsidian]]
 - 2024-12-02 at 16h36 · [[Awesome Obsidian Wiki Examples]]
 - 2024-12-02 at 16h21 · [[🐛 Known Base Bugs, Issues]]
@@ -9,7 +10,6 @@
 - 2024-12-02 at 15h44 · [[Projects Plugin Testing]]
 - 2024-12-02 at 15h44 · [[Test Note]]
 - 2024-12-02 at 15h17 · [[Awesome EDC]]
-- 2024-12-02 at 09h45 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-12-02 at 08h05 · [[Windows Desktop Provisioning]]
 - 2024-12-01 at 21h28 · [[Personal Storage]]
 - 2024-12-01 at 21h24 · [[Home Lab, Home Server]]

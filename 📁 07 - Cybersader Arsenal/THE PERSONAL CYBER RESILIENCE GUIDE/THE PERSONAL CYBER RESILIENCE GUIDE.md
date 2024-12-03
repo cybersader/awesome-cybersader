@@ -1,14 +1,17 @@
 ---
+permalink:
 aliases: []
 tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Monday, December 2nd 2024, 9:45 am
+date modified: Monday, December 2nd 2024, 7:12 pm
 ---
 
  
 [Personal Cyber Resilience Arsenal](../../CybersaderNotion/03%20Awesome-Cyber/Personal%20Cyber%20Resilience%20Arsenal.md)
 [OpSec Tierlist](../OpSec%20Tierlist/OpSec%20Tierlist.md)
+[Personal Storage](../Home%20Lab,%20Home%20Server/Personal%20Storage/Personal%20Storage.md)
+[MY TECH STACK](../MY%20TECH%20STACK/MY%20TECH%20STACK.md)
 
 TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
