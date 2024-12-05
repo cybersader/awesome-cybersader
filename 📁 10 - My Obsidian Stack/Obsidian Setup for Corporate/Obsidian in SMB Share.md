@@ -1,0 +1,14 @@
+
+- https://forum.obsidian.md/t/obsidian-sync-live-team-collaborative-editing/6058/31
+- https://codemirror.net/examples/collab/
+- https://forum.obsidian.md/t/relay-multiplayer-plugin-for-obsidian-collaborative-editing-and-folder-sharing/87170
+- https://obsidian.md/plugins?search=system%203
+- https://github.com/no-instructions/relay
+- https://system3.md/security
+- https://www.peerdraft.app/
+- https://help.obsidian.md/Obsidian+Sync/Collaborate+on+a+shared+vault
+- https://help.obsidian.md/Obsidian+Sync/Version+history
+- https://www.reddit.com/r/ObsidianMD/comments/14pbjbt/seeing_edit_history_of_a_note/
+- https://forum.obsidian.md/t/edit-history-in-obsidian/43581
+- https://forum.obsidian.md/t/version-history-show-changes/85751
+- 
