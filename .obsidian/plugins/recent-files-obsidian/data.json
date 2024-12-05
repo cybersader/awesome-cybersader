@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "MY TECH STACK",
+      "path": "📁 07 - Cybersader Arsenal/MY TECH STACK/MY TECH STACK.md"
     },
     {
       "basename": "Awesome Obsidian Wiki Examples",
       "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "📁 33 - Gaming",
@@ -27,10 +35,6 @@
     {
       "basename": "Web or Browser-Based Obsidian",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
-    },
-    {
-      "basename": "MY TECH STACK",
-      "path": "📁 07 - Cybersader Arsenal/MY TECH STACK/MY TECH STACK.md"
     },
     {
       "basename": "🐛 Known Base Bugs, Issues",
@@ -195,10 +199,6 @@
     {
       "basename": "Home Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
-    },
-    {
-      "basename": "Home DNS",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home DNS/Home DNS.md"
     }
   ],
   "omittedPaths": [],
