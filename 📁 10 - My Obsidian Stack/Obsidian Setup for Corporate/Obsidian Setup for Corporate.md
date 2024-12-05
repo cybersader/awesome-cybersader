@@ -17,6 +17,8 @@ permalink: corporate-obsidian
 # Sub-Topics
 
 %% Begin Waypoint %%
+- [[Obsidian in SMB Share]]
+- [[OneNote vs Obsidian]]
 - **[[Web or Browser-Based Obsidian]]**
 
 %% End Waypoint %%
