@@ -4,12 +4,12 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Thursday, December 5th 2024, 8:30 pm
+date modified: Friday, December 6th 2024, 4:57 pm
 ---
 
 # IPv6 Tunneling and NAT
 
--
+- Your parts may jump around a lot.  If you're having party issues, go to Network settings > Advanced and look at alternate port selection.  Make sure that port is open (NAT / firewall rules in your router panel).  Getting to this panel requires you be on your home network, then connect to the likely IP address on the back on your router by typing that IP in your browser to get to the admin panel.
 
 # Don't Buy a Netgear
 
