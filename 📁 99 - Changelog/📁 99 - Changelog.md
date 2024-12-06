@@ -1,3 +1,5 @@
+- 2024-12-05 at 20h18 · [[Xbox Home Networking]]
+- 2024-12-05 at 20h18 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-04 at 20h43 · [[📁 03 - Curations, Stacks]]
 - 2024-12-04 at 20h43 · [[📁 10 - My Obsidian Stack]]
 - 2024-12-04 at 20h43 · [[Obsidian Setup for Corporate]]
@@ -24,7 +26,6 @@
 - 2024-12-01 at 19h29 · [[OpSec Tierlist]]
 - 2024-12-01 at 18h40 · [[Favorite Fonts]]
 - 2024-12-01 at 18h40 · [[Obsidian Knowledge Management Workflows]]
-- 2024-12-01 at 18h26 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-01 at 17h38 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-12-01 at 17h02 · [[Ghost Blogs]]
 - 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]

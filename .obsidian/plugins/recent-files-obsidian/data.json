@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Xbox Home Networking",
+      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Home Network",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
-    },
-    {
-      "basename": "Home Firewall",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Firewall/Home Firewall.md"
     }
   ],
   "omittedPaths": [],

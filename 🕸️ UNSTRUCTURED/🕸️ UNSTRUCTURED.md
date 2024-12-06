@@ -70,5 +70,6 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Why You Should Ask Stupid Questions]]
 - **[[Windows Desktop Provisioning]]**
 - [[Xbox Controllers]]
+- **[[Xbox Home Networking]]**
 
 %% End Waypoint %%
