@@ -601,6 +601,24 @@
       },
       "obsidian-release-timeline": {
         "startupType": "disabled"
+      },
+      "dbfolder": {
+        "startupType": "disabled"
+      },
+      "obsidian-enhancing-export": {
+        "startupType": "disabled"
+      },
+      "obsidian-pandoc": {
+        "startupType": "disabled"
+      },
+      "pdf-plus": {
+        "startupType": "disabled"
+      },
+      "share-to-notionnext": {
+        "startupType": "disabled"
+      },
+      "obsidian-tressel": {
+        "startupType": "disabled"
       }
     }
   }
