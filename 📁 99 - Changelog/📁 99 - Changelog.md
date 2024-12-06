@@ -1,4 +1,4 @@
-- 2024-12-05 at 20h18 · [[Xbox Home Networking]]
+- 2024-12-05 at 20h30 · [[Xbox Home Networking]]
 - 2024-12-05 at 20h18 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-04 at 20h43 · [[📁 03 - Curations, Stacks]]
 - 2024-12-04 at 20h43 · [[📁 10 - My Obsidian Stack]]
