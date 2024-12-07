@@ -53,7 +53,9 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 		- `/usr/sbin/zfs` - you have to use this since the commands aren't defined in "PATH"
 			- [PATH to ZFS utilities broken in TrueNAS SCALE? | TrueNAS Community](https://www.truenas.com/community/threads/path-to-zfs-utilities-broken-in-truenas-scale.110898/)
 
-- 
+- Starting from square one - 12/7/2024
+	- [Nextcloud | TrueNAS Documentation Hub](https://www.truenas.com/docs/truenasapps/stableapps/installnextcloudmedia/#application-name-settings)
+	- 
 
 # Big Features for New Version
 
