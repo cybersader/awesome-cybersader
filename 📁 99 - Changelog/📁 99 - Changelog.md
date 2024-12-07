@@ -1,5 +1,6 @@
+- 2024-12-06 at 21h45 · [[Unifi Home Networking]]
+- 2024-12-06 at 21h45 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-06 at 16h57 · [[Xbox Home Networking]]
-- 2024-12-05 at 20h18 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-04 at 20h43 · [[📁 03 - Curations, Stacks]]
 - 2024-12-04 at 20h43 · [[📁 10 - My Obsidian Stack]]
 - 2024-12-04 at 20h43 · [[Obsidian Setup for Corporate]]

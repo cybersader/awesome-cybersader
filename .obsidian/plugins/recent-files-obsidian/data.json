@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Unifi Home Networking",
+      "path": "🕸️ UNSTRUCTURED/Unifi Home Networking/Unifi Home Networking.md"
+    },
+    {
       "basename": "MY TECH STACK",
       "path": "📁 07 - Cybersader Arsenal/MY TECH STACK/MY TECH STACK.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Bridging New Home Router",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
-    },
-    {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     }
   ],
   "omittedPaths": [],
