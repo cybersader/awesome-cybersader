@@ -52,7 +52,8 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- Using ZFS commands to look at things:
 		- `/usr/sbin/zfs` - you have to use this since the commands aren't defined in "PATH"
 			- [PATH to ZFS utilities broken in TrueNAS SCALE? | TrueNAS Community](https://www.truenas.com/community/threads/path-to-zfs-utilities-broken-in-truenas-scale.110898/)
-		- 
+
+- 
 
 # Big Features for New Version
 

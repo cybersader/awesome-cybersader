@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Electric Eel 24.10 Update",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
+    },
+    {
       "basename": "Unifi Home Networks",
       "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Repurpose Old Router - DNS, Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
-    },
-    {
-      "basename": "Bridging New Home Router",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
     }
   ],
   "omittedPaths": [],

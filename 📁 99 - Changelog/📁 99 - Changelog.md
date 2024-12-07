@@ -1,3 +1,4 @@
+- 2024-12-07 at 17h15 · [[TrueNAS Electric Eel 24.10 Update]]
 - 2024-12-07 at 15h49 · [[Unifi Home Networks]]
 - 2024-12-07 at 13h00 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-06 at 16h57 · [[Xbox Home Networking]]
@@ -208,7 +209,6 @@
 - 2024-11-10 at 21h07 · [[⬇️ Journal Drop]]
 - 2024-11-10 at 21h06 · [[📁 41 - Logs]]
 - 2024-11-10 at 18h09 · [[Custom Docker Apps in TrueNAS]]
-- 2024-11-10 at 17h52 · [[TrueNAS Electric Eel 24.10 Update]]
 - 2024-11-10 at 16h31 · [[Personal Devices]]
 - 2024-11-10 at 16h26 · [[DevSecOps]]
 - 2024-11-10 at 14h35 · [[⬇️ Org Cyber Drop]]
