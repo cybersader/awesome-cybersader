@@ -55,7 +55,7 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 
 - Starting from square one - 12/7/2024
 	- [Nextcloud | TrueNAS Documentation Hub](https://www.truenas.com/docs/truenasapps/stableapps/installnextcloudmedia/#application-name-settings)
-	- 
+	- Used cp to copy files
 
 # Big Features for New Version
 
