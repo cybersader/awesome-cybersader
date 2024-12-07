@@ -63,7 +63,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Tech Stacks from Tech Content Creators]]**
 - **[[The Four T's of Stewardship]]**
 - **[[Todo List Apps]]**
-- **[[Unifi Home Networking]]**
+- **[[Unifi Home Networks]]**
 - [[Useful Obsidian Dataview Metadata]]
 - **[[Voice Typing]]**
 - [[Whey Protein Recipes]]
