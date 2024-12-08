@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Tmux",
+      "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
+    },
+    {
       "basename": "TrueNAS Electric Eel 24.10 Update",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "Unifi Home Networks",
       "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
-    },
-    {
-      "basename": "Tmux",
-      "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
     },
     {
       "basename": "Turning Old PC into NAS in 2024",
