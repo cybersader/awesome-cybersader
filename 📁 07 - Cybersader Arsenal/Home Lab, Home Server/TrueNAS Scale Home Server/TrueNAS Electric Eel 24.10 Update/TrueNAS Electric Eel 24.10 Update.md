@@ -1,11 +1,10 @@
 ---
-aliases:
-  - TrueNAS Scale 24.10 Nextcloud Fix
-  - Moving Around Data in Datasets - TrueNAS
-tags: 
+permalink:
+aliases: [TrueNAS Scale 24.10 Nextcloud Fix, Moving Around Data in Datasets - TrueNAS]
+tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Sunday, November 10th 2024, 5:32 pm
+date modified: Sunday, December 8th 2024, 2:17 pm
 ---
 
 # Links
@@ -60,7 +59,12 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- Use tmux when doing long commands in the GUI terminal/shell
 
 - STARTING OVER
+	- [Nextcloud | TrueNAS Documentation Hub](https://www.truenas.com/docs/truenasapps/stableapps/installnextcloudmedia/#application-name-settings)
 	- This is too much, so instead, I'm using rsync -r to move all of my files into my network share and just recreate the Nextcloud app from scratch.  
+	- Made new datasets based on docs
+	- Went into the Nextcloud app configuration and reconfigured the "Host Path Configuration" for the 3 different datasets (html, postgres_data, data)
+	- For the postgres-related dataset with host path, I checked the "Automatic Permissions" option
+	- 
 
 # Big Features for New Version
 
