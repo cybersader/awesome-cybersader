@@ -58,7 +58,9 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- Used cp to copy files
 	- Made one big nextcloud dataset with generic and www-data and netdata full permissions, then made html, data, and postgres_data child datasets with the Apps preset
 	- Use tmux when doing long commands in the GUI terminal/shell
-	- 
+
+- STARTING OVER
+	- This is too much, so instead, I'm using rsync -r to move all of my files into my network share and just recreate the Nextcloud app from scratch.  
 
 # Big Features for New Version
 
