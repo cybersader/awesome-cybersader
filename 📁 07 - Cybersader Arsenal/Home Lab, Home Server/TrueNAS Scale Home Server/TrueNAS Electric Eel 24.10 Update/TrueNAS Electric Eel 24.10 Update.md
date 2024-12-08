@@ -4,7 +4,7 @@ aliases: [TrueNAS Scale 24.10 Nextcloud Fix, Moving Around Data in Datasets - Tr
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Sunday, December 8th 2024, 3:40 pm
+date modified: Sunday, December 8th 2024, 3:52 pm
 ---
 
 # Links
@@ -86,6 +86,12 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 
 - Can't access - getting 302 redirect errors in logs
 	- I set the host to the local address like 10.0.0.6:9001 (or default 30047) and it worked, but not with my FQDN with the External Port set to 443 with host set to subdomain.domain.tld
+
+- The real issue - Nginx Proxy + Nextcloud
+	- [Reverse proxy — Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html)
+	- [Cloudflare Tunnel | TrueNAS Documentation Hub](https://www.truenas.com/docs/truenasapps/appsecurity/cloudflaretunnel/)
+	- [TrueNAS Scale - Nextcloud with Nginx Proxy Manager](../TrueNAS%20Scale%20-%20Nextcloud%20with%20Nginx%20Proxy%20Manager/TrueNAS%20Scale%20-%20Nextcloud%20with%20Nginx%20Proxy%20Manager.md)
+	- You have to set OVERWRITEHOST and OVERWRITECLIURL 
 	- 
 
 # Big Features for New Version
