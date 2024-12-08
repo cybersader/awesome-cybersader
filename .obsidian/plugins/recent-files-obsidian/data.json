@@ -5,16 +5,24 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     },
     {
+      "basename": "Customizing Obsidian Publish",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Unifi Home Networks",
+      "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
+    },
+    {
       "basename": "Tmux",
       "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
     },
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
-      "basename": "Unifi Home Networks",
-      "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
     },
     {
       "basename": "MY TECH STACK",
@@ -27,10 +35,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
       "basename": "Windows Desktop Provisioning",
@@ -59,10 +63,6 @@
     {
       "basename": "🐛 Known Base Bugs, Issues",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/🐛 Known Base Bugs, Issues/🐛 Known Base Bugs, Issues.md"
-    },
-    {
-      "basename": "Customizing Obsidian Publish",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",

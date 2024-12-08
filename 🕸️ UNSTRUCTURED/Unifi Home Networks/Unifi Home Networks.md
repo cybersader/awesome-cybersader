@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Friday, December 6th 2024, 9:45 pm
-date modified: Saturday, December 7th 2024, 3:49 pm
+date modified: Saturday, December 7th 2024, 9:13 pm
 ---
 
 # Consumer Grade Network Hardware (from Unifi)
@@ -19,6 +19,8 @@ date modified: Saturday, December 7th 2024, 3:49 pm
 	- [Switch Flex Mini - Ubiquiti Store United States](https://store.ui.com/us/en/category/all-switching/products/usw-flex-mini) - $30
 
 # Good Home User Combinations
+
+- [(8) The Unifi "Short Stack" - An entry level to Unifi Network - YouTube](https://www.youtube.com/watch?v=_Q3EIKnJY6w)
 
 If you have an old WiFi router:
 - [UniFi Express](https://store.ui.com/us/en/category/cloud-gateways-wifi-integrated/products/ux) + [Switch Flex Mini](https://store.ui.com/us/en/category/all-switching/products/usw-flex-mini) + old WiFi router in access point mode - $180 total
