@@ -64,7 +64,25 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- Made new datasets based on docs
 	- Went into the Nextcloud app configuration and reconfigured the "Host Path Configuration" for the 3 different datasets (html, postgres_data, data)
 	- For the postgres-related dataset with host path, I checked the "Automatic Permissions" option
-	- 
+
+- Settings I'm using
+	- Host - my subdomain.domain.root website
+	- APT packages
+		- ffmpeg
+		- smbclient
+	- PHP Upload Limit - 200GB
+	- Max Exec Time - 3600
+	- PHP Mem Limit - 2048
+	- Op Cache Mem - 128
+	- WebUI Port - 9001
+	- Certificate - truenas_default
+	- Nginx
+		- Proxy Timeout - 600 
+	- Use different URL for rewrites - yes
+		- External Port - 443
+	- DEPRECATED (Old Storage Structure) - unchecked
+	- Not using "Enable ACL" on Host Path Configuration for any of the storage components with the datasets
+	- Automatic Permissions - checked
 
 # Big Features for New Version
 

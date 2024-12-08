@@ -5,6 +5,22 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
     },
     {
+      "basename": "Turning Old PC into NAS in 2024",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
+    },
+    {
       "basename": "Tmux",
       "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
     },
@@ -19,10 +35,6 @@
     {
       "basename": "Unifi Home Networks",
       "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     },
     {
       "basename": "MY TECH STACK",
@@ -161,10 +173,6 @@
       "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     },
     {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
       "basename": "ISP Shenanigans",
       "path": "📁 07 - Cybersader Arsenal/Home Network/ISP Shenanigans/ISP Shenanigans.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Personal Info Breach Response",
       "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
-    },
-    {
-      "basename": "Bluesky Social",
-      "path": "🕸️ UNSTRUCTURED/Bluesky Social/Bluesky Social.md"
-    },
-    {
-      "basename": "Using a New Router with TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
     }
   ],
   "omittedPaths": [],
