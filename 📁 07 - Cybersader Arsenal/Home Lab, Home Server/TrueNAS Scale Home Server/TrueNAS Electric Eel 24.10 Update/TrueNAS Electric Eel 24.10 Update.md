@@ -4,7 +4,7 @@ aliases: [TrueNAS Scale 24.10 Nextcloud Fix, Moving Around Data in Datasets - Tr
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Sunday, December 8th 2024, 2:17 pm
+date modified: Sunday, December 8th 2024, 3:40 pm
 ---
 
 # Links
@@ -83,6 +83,10 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- DEPRECATED (Old Storage Structure) - unchecked
 	- Not using "Enable ACL" on Host Path Configuration for any of the storage components with the datasets
 	- Automatic Permissions - checked
+
+- Can't access - getting 302 redirect errors in logs
+	- I set the host to the local address like 10.0.0.6:9001 (or default 30047) and it worked, but not with my FQDN with the External Port set to 443 with host set to subdomain.domain.tld
+	- 
 
 # Big Features for New Version
 
