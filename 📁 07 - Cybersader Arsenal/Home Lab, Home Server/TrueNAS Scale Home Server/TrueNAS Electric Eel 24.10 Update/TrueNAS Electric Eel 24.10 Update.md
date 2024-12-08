@@ -4,7 +4,7 @@ aliases: [TrueNAS Scale 24.10 Nextcloud Fix, Moving Around Data in Datasets - Tr
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:45 pm
-date modified: Sunday, December 8th 2024, 3:52 pm
+date modified: Sunday, December 8th 2024, 4:44 pm
 ---
 
 # Links
@@ -92,7 +92,7 @@ Nextcloud Data didn't come over quite right.  Had to move some data in the Nextc
 	- [Cloudflare Tunnel | TrueNAS Documentation Hub](https://www.truenas.com/docs/truenasapps/appsecurity/cloudflaretunnel/)
 	- [TrueNAS Scale - Nextcloud with Nginx Proxy Manager](../TrueNAS%20Scale%20-%20Nextcloud%20with%20Nginx%20Proxy%20Manager/TrueNAS%20Scale%20-%20Nextcloud%20with%20Nginx%20Proxy%20Manager.md)
 	- You have to set OVERWRITEHOST and OVERWRITECLIURL 
-	- 
+	- I give up.  It's not working and you'll find about 20 posts of the same sorts of issues since the EE (electric eel) migration in the TrueNAS Scale Forum
 
 # Big Features for New Version
 
