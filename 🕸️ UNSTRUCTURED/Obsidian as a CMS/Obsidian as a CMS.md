@@ -21,3 +21,5 @@ date modified: Monday, December 2nd 2024, 7:55 pm
 - [Obsidian Plugin: Micro.publish - Publish notes to Micro.blog.](https://obsidian-plugin-stats.vercel.app/plugins/microblog-publish-plugin)
 - [My complete Obsidian workflow to manage my life : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15j3mb9/my_complete_obsidian_workflow_to_manage_my_life/)
 - [Bear Blog](https://bearblog.dev/)
+- [Digital Garden - Publish Obsidian Notes For Free](https://dg-docs.ole.dev/)
+- 

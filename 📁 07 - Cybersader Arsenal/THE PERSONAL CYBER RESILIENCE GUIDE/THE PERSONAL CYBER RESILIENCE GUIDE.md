@@ -4,7 +4,7 @@ aliases: []
 tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Monday, December 2nd 2024, 7:12 pm
+date modified: Sunday, December 8th 2024, 6:33 pm
 ---
 
  
@@ -19,9 +19,11 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 > [!info] This is my opionated tech stack or cyber arsenal which can be leveraged by the average person or the seasoned cyber practitioner. Once there is a contribution workflow, then I will open this up for contributions.
 
-# DROPZONE - NEW IDEAS HERE
+# DROPZONE
 
 - [Operation Privacy](https://www.operationprivacy.com/) 
+- [Resources | Techlore - Digital Rights for All](https://www.techlore.tech/resources#webhosting-vps)
+- 
 
 # Privacy & Security Workflow Examples
 

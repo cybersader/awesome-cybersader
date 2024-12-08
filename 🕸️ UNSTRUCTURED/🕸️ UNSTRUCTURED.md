@@ -8,6 +8,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 %% Begin Waypoint %%
 - **[[⬇️ Hacking Ideas]]**
 - [[⬇️ Misc_Links]]
+- **[[⬇️ Obsidian Integrations]]**
 - [[2025 Cybersecurity Goals]]
 - **[[AI & Security by Obscurity]]**
 - **[[AI Ethics & Morality]]**
@@ -17,6 +18,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Bluesky Social]]**
 - **[[Browsers]]**
 - [[Collaborative Red Team Engagement Strategy]]
+- **[[Comment Systems]]**
 - [[Community IT Support Setup]]
 - [[Company Examples of Privacy Violation]]
 - **[[Cool Malware]]**
@@ -48,6 +50,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Obsidian as a CMS]]**
 - [[Obsidian Regex Find & Replace]]
 - [[Obsidian Vaults with Cybersecurity]]
+- **[[Obsidian-Related Bloggers]]**
 - **[[OSINT]]**
 - **[[Personal Devices]]**
 	- **[[Smart Phones]]**
