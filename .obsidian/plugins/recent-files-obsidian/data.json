@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Browser Extensions",
+      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Obsidian Knowledge Management Workflows",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
+    },
+    {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
@@ -31,10 +47,6 @@
     {
       "basename": "Awesome Hardware",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
       "basename": "Obsidian & N8n",
@@ -145,10 +157,6 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     },
     {
-      "basename": "Obsidian Knowledge Management Workflows",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
-    },
-    {
       "basename": "Personal Privacy & Identity Handling",
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Remote Desktop Gateways",
       "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
-    },
-    {
-      "basename": "Personal Authentication Approach",
-      "path": "📁 07 - Cybersader Arsenal/Personal Authentication Approach/Personal Authentication Approach.md"
-    },
-    {
-      "basename": "Out-of-Band Communications",
-      "path": "📁 05 - Organizational Cyber/Out-of-Band Communications/Out-of-Band Communications.md"
     }
   ],
   "omittedPaths": [],

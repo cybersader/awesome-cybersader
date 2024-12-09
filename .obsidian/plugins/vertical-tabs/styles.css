@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+/* src/styles.scss */
+body.vt-show-active-tabs:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs > .workspace-tab-header-container .workspace-tab-header:not(.is-active) {
+  display: none;
+}
+body.vt-show-active-tabs:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs > .workspace-tab-header-container .workspace-tab-header.is-active {
+  max-width: unset;
+  width: unset;
+}
+body:not(.vt-zen-mode) .workspace-split.mod-root .workspace-tabs.is-hidden {
+  display: none;
+}
+body:not(.vt-zen-mode) .workspace-split.mod-root .workspace-split {
+  display: none;
+}
+body:not(.vt-zen-mode) .workspace-split.mod-root .workspace-split:has(.workspace-tabs:not(.is-hidden)) {
+  display: flex;
+}
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs:not(.mod-active),
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs:not(.vt-mod-active) {
+  display: none;
+  flex-basis: unset;
+}
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs.mod-active,
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs.vt-mod-active {
+  display: flex;
+  flex-basis: 100%;
+}
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-split:has(.workspace-tabs.mod-active),
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-split:has(.workspace-tabs.vt-mod-active) {
+  flex-basis: 100%;
+}
+body.vt-zen-mode:not(.is-popout-window) .workspace-split.mod-root .workspace-tabs > .workspace-tab-header-container .workspace-tab-header.is-active {
+  max-width: unset;
+  width: unset;
+}
+body.vt-zen-mode {
+  --tab-stacked-pane-width: 100%;
+}
+body.vt-zen-mode .obsidian-vertical-tabs-container .tree-item.is-group .clickable-icon.action-button.action-eye-off {
+  display: none;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab.is-highlighted .tree-item-self {
+  background-color: var(--background-modifier-active-hover);
+}
+.obsidian-vertical-tabs-container .tree-item.is-group input {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  width: 100%;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab-slot .tree-item-self {
+  cursor: pointer;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab-slot .tree-item-self:not(:hover) {
+  height: 6px;
+  padding: 0;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab-slot .tree-item-self:not(:hover) * {
+  display: none;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab-slot .tree-item-self:hover {
+  height: unset;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab-slot .tree-item-self:hover * {
+  display: initial;
+}
+.obsidian-vertical-tabs-container .is-group-slot {
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: 10px;
+}
+.obsidian-vertical-tabs-container .is-group-slot .tree-item-self {
+  color: var(--text-faint);
+  cursor: pointer;
+}
+.obsidian-vertical-tabs-container .is-group-slot .tree-item-icon svg {
+  --icon-size: var(--icon-s) !important;
+  color: var(--text-faint) !important;
+}
+.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.vt-mod-top-left-space .workspace-tab-header-container {
+  padding-left: calc(var(--size-4-2) + var(--frame-left-space));
+}
+.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.vt-mod-top-right-space .workspace-tab-header-container {
+  padding-right: calc(var(--size-4-2) + var(--frame-right-space));
+}
+.is-hidden-frameless:not(.is-fullscreen):not(.mod-macos) .workspace-tabs.vt-mod-top-left-space .workspace-tab-header-container:before {
+  -webkit-app-region: no-drag;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: var(--frame-left-space);
+}
+.is-hidden-frameless:not(.is-fullscreen):not(.mod-macos) .workspace-tabs.vt-mod-top-right-space .workspace-tab-header-container:after {
+  -webkit-app-region: no-drag;
+  content: "";
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: var(--frame-right-space);
+}
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.vt-mod-top-right-space .workspace-tab-header-container {
+  padding-right: 38px;
+}
+.obsidian-vertical-tabs-container .tree-item::before {
+  content: "\200b";
+  height: 4px;
+  width: 100%;
+  display: block;
+  margin-top: -4px;
+  color: transparent;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+  top: 1px;
+}
+.obsidian-vertical-tabs-container.is-dragging-group .tree-item.is-group.vt-is-being-dragged-over::before,
+.obsidian-vertical-tabs-container.is-dragging-group .tree-item.is-group:has(.vt-is-being-dragged-over)::before {
+  background: var(--interactive-accent);
+}
+.obsidian-vertical-tabs-container:not(.is-dragging-group) .tree-item.is-tab.vt-is-being-dragged-over::before {
+  background: var(--interactive-accent);
+}
+.obsidian-vertical-tabs-container:not(.is-dragging-group) .tree-item.is-group.vt-is-being-dragged-over .is-tab-slot::before {
+  background: var(--interactive-accent);
+}
+.obsidian-vertical-tabs-container .tree-item.is-group.is-single-group > .tree-item-self {
+  display: none;
+}
+.obsidian-vertical-tabs-container .tree-item.is-group.is-single-group > .tree-item-children {
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+  border-inline-start: none;
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom {
+  --vt-tab-zoom-factor: 1;
+  --vt-scaled-file-line-width: calc( var(--file-line-width) / var(--vt-tab-zoom-factor) );
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content {
+  zoom: var(--vt-tab-zoom-factor);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view .browser-content,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view .browser-content,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .browser-content,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace .browser-content,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .markdown-source-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .markdown-preview-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .release-notes-view,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .document-replace,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .browser-content {
+  zoom: 1;
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .cm-gap {
+  display: none;
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .embedded-backlinks,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-sizer {
+  min-height: unset !important;
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+  max-width: var(--vt-scaled-file-line-width);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: var(--vt-scaled-file-line-width);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .release-notes-view .is-readable-line-width {
+  max-width: var(--vt-scaled-file-line-width);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .document-replace {
+  max-width: var(--vt-scaled-file-line-width);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .reader-mode-content.is-readable-line-width .markdown-preview-sizer {
+  max-width: var(--vt-scaled-file-line-width);
+}
+body.vt-enable-tab-zoom .workspace-leaf.vt-apply-tab-zoom .browser-content .error-notice {
+  max-width: var(--vt-scaled-file-line-width);
+}
+.vertical-tabs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+.obsidian-vertical-tabs-container {
+  font-size: var(--font-ui-small);
+  padding: var(--size-4-3) var(--size-4-3) var(--size-4-8);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.obsidian-vertical-tabs-container .tree-item-self {
+  align-items: stretch;
+}
+.obsidian-vertical-tabs-container .is-tab {
+  margin-left: 0.5em;
+}
+.obsidian-vertical-tabs-container > div {
+  width: 100%;
+}
+.obsidian-vertical-tabs-container .tree-item .action-button {
+  padding: var(--size-2-1);
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab .action-button {
+  visibility: hidden;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab:hover .action-button {
+  visibility: visible;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab.is-pinned .action-pin {
+  visibility: visible;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab.is-pinned .action-x {
+  color: var(--text-faint);
+  opacity: 0.5;
+}
+.obsidian-vertical-tabs-container .tree-item.is-group.is-collapsed .tree-item-children {
+  display: none;
+}
+.obsidian-vertical-tabs-container .tree-item-icon svg.svg-icon.right-triangle {
+  stroke-width: 2px;
+  width: 10px;
+  height: 10px;
+  transition: transform 100ms ease-in-out;
+}
+.obsidian-vertical-tabs-container .tree-item.is-tab .tree-item-icon svg {
+  width: var(--icon-xs);
+  height: var(--icon-xs);
+}
+.obsidian-vertical-tabs-container .tree-item.is-group.is-collapsed .tree-item-icon svg {
+  transform: rotate(calc(var(--direction) * -1 * 90deg));
+}
+body.vt-hide-sidebars .obsidian-vertical-tabs-container .tree-item.is-group.is-sidebar {
+  display: none;
+}
+body.vt-exclude-self .obsidian-vertical-tabs-container .tree-item.is-tab[data-type=vertical-tabs] {
+  display: none;
+}
+.workspace-tab-header[data-type=vertical-tabs] {
+  display: flex !important;
+}
+.obsidian-vertical-tabs-container .tree-item .clickable-icon[data-action=drag-handle] {
+  visibility: visible !important;
+  color: var(--text-faint);
+}
+.obsidian-vertical-tabs-container .tree-item:not(.is-slot) .clickable-icon[data-action=drag-handle] svg {
+  height: var(--icon-xs);
+  width: var(--icon-xs);
+}
+.obsidian-vertical-tabs-container .tree-item.is-slot .clickable-icon[data-action=drag-handle] {
+  display: none;
+}
+.obsidian-vertical-tabs-container .tree-item .drag-handle {
+  touch-action: none;
+}
+.vertical-tabs .nav-header .nav-buttons-container .clickable-icon[data-action=always-open-in-new-tab],
+.vertical-tabs .nav-header .nav-buttons-container .clickable-icon[data-action=deduplicate-tabs] {
+  display: none;
+}

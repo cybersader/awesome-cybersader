@@ -1,3 +1,4 @@
+- 2024-12-09 at 18h21 · [[Obsidian Knowledge Management Workflows]]
 - 2024-12-08 at 21h29 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-08 at 21h15 · [[Obsidian Setup for Corporate]]
 - 2024-12-08 at 18h33 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
@@ -36,7 +37,6 @@
 - 2024-12-01 at 21h28 · [[Personal Storage]]
 - 2024-12-01 at 19h29 · [[OpSec Tierlist]]
 - 2024-12-01 at 18h40 · [[Favorite Fonts]]
-- 2024-12-01 at 18h40 · [[Obsidian Knowledge Management Workflows]]
 - 2024-12-01 at 17h38 · [[Awesome Hard Disk Drives, NAS Hardware]]
 - 2024-12-01 at 17h02 · [[Ghost Blogs]]
 - 2024-11-29 at 21h04 · [[Turning Old PC into NAS in 2024]]
