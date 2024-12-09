@@ -1,3 +1,4 @@
+- 2024-12-08 at 21h29 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-08 at 21h15 · [[Obsidian Setup for Corporate]]
 - 2024-12-08 at 18h33 · [[THE PERSONAL CYBER RESILIENCE GUIDE]]
 - 2024-12-08 at 18h32 · [[Home Network Hardware]]
@@ -29,7 +30,6 @@
 - 2024-12-02 at 18h40 · [[Web or Browser-Based Obsidian]]
 - 2024-12-02 at 16h21 · [[🐛 Known Base Bugs, Issues]]
 - 2024-12-02 at 16h07 · [[Customizing Obsidian Publish]]
-- 2024-12-02 at 16h00 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-02 at 15h44 · [[Projects Plugin Testing]]
 - 2024-12-02 at 15h44 · [[Test Note]]
 - 2024-12-02 at 15h17 · [[Awesome EDC]]

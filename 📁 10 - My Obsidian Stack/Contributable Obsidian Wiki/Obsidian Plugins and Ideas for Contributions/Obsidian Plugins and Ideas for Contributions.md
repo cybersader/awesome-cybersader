@@ -1,9 +1,10 @@
 ---
+permalink:
 aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, December 2nd 2024, 4:00 pm
+date modified: Sunday, December 8th 2024, 9:29 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -75,6 +76,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
 	- Timeline plugin like this?
 - Auto headings and bullets?
+- Plugin to automatically put bullet point when clicking directly below a bullet list
 
 # Misc Visuals Plugins
 
