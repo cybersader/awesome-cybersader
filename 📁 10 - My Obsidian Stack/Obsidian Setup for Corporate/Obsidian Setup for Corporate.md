@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Sunday, December 8th 2024, 6:29 pm
+date modified: Sunday, December 8th 2024, 9:15 pm
 permalink: corporate-obsidian
 ---
 
@@ -11,6 +11,7 @@ permalink: corporate-obsidian
 [Obsidian Vault Security](../Obsidian%20Vault%20Security/Obsidian%20Vault%20Security.md)
 [Scalable Project Management](../../🕸️%20UNSTRUCTURED/Scalable%20Project%20Management.md)
 [Exports in Obsidian](../Exports%20in%20Obsidian/Exports%20in%20Obsidian.md)
+[Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
 

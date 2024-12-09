@@ -1,0 +1,16 @@
+.cm-ySelectionInfo {
+  font-size: 1em !important;
+  opacity: 0.6 !important;
+}
+
+.cm-ySelectionInfo:hover {
+  opacity: 1 !important;
+}
+
+.pd-explorer-shared:before {
+  content: "↖ ";
+  color: #000;
+  background: #0ea5e9;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}

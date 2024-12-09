@@ -1,36 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "Home Network Hardware",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
-    },
-    {
-      "basename": "Awesome Hardware",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
-    },
-    {
-      "basename": "Obsidian as a CMS",
-      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+      "basename": "Exports in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Exports in Obsidian/Exports in Obsidian.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Obsidian & N8n",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & N8n/Obsidian & N8n.md"
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
-      "basename": "Exports in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Exports in Obsidian/Exports in Obsidian.md"
+      "basename": "Obsidian as a CMS",
+      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
+      "basename": "Home Network Hardware",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Awesome Hardware",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Obsidian & N8n",
+      "path": "📁 10 - My Obsidian Stack/Obsidian & N8n/Obsidian & N8n.md"
     },
     {
       "basename": "Obsidian-Related Bloggers",
@@ -127,10 +131,6 @@
     {
       "basename": "Awesome EDC",
       "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "OpSec Tierlist",
