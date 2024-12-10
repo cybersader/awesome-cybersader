@@ -14,6 +14,24 @@ date modified: Friday, March 22nd 2024, 10:32 am
 
 %% End Landmark %%
 
+# December
+- https://www.youtube.com/live/uKUy9ZdXGuc?si=5lPI43-8n7LeVae1&t=731
+- 06:28 - Story # 1: FBI Warns iPhone And Android Users—Stop - https://www.forbes.com/sites/zakdoffman/2024/12/06/fbi-warns-iphone-and-android-users-stop-sending-texts/
+- What do we tell people as the cyber pros?
+    - Make encryption attractive again
+    - Get people on Signal
+    - SMS/texting is connected to the HUGE telecomm breach by China
+    - Stop sending texts
+    - You know it's bad when the government tells you to start using encrypted chat that even they can't snoop on
+    - They got access to the systems the government was using with telecomm tapping.  This is bad.
+    - We are in a worldwide cyberwar, and it's escalating.
+    - Management at CISA is leaving because of politics and this is what the cyberwarring enemies want - Jen Easterly left
+    - If you want people to adopt the apps, then respond quicker on Signal but not SMS
+- Secure by Design
+    - It only happens if we open up visibility on devices, apps, and make it legal
+        - We need to be able to legally test APIs, open by design, etc.
+    - 
+
 # October
 
 ## 10/1/2024
