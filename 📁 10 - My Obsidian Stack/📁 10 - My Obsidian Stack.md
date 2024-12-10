@@ -20,6 +20,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Exports in Obsidian]]**
 - **[[File Order]]**
 - **[[Obsidian & N8n]]**
+- **[[Obsidian as a CMS]]**
 - **[[Obsidian Dictionary and Grammar]]**
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
@@ -28,12 +29,16 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 	- **[[Obsidian Git Setup]]**
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Knowledge Management Workflows]]**
+	- **[[Inputs, Capture]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
+	- [[⬇️ Obsidian Integrations]]
 	- **[[Obsidian Plugin List]]**
+- [[Obsidian Regex Find & Replace]]
 - **[[Obsidian Run]]**
 - **[[Obsidian Setup for Corporate]]**
 - **[[Obsidian to Ghost]]**
 - **[[Obsidian Vault Security]]**
+- **[[Obsidian-Related Bloggers]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
 	- **[[Syncthing Incompatible with Git]]**

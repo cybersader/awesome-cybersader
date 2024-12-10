@@ -1,48 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+      "basename": "Obsidian Knowledge Management Workflows",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
+    },
+    {
+      "basename": "Obsidian Regex Find & Replace",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Regex Find & Replace.md"
+    },
+    {
+      "basename": "Obsidian-Related Bloggers",
+      "path": "📁 10 - My Obsidian Stack/Obsidian-Related Bloggers/Obsidian-Related Bloggers.md"
+    },
+    {
+      "basename": "Obsidian as a CMS",
+      "path": "📁 10 - My Obsidian Stack/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
+      "basename": "🕸️ UNSTRUCTURED",
+      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
+    },
+    {
+      "basename": "OSINT",
+      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
+    },
+    {
+      "basename": "Obsidian Vaults with Cybersecurity",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity/Obsidian Vaults with Cybersecurity.md"
     },
     {
       "basename": "Browser Extensions",
       "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
     },
     {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
-      "basename": "Obsidian Knowledge Management Workflows",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
+      "basename": "⬇️ Obsidian Integrations",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/⬇️ Obsidian Integrations.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "Exports in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Exports in Obsidian/Exports in Obsidian.md"
     },
     {
-      "basename": "Obsidian as a CMS",
-      "path": "🕸️ UNSTRUCTURED/Obsidian as a CMS/Obsidian as a CMS.md"
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Awesome Clothing",
+      "path": "🕸️ UNSTRUCTURED/Awesome Clothing/Awesome Clothing.md"
+    },
+    {
+      "basename": "2025 Cybersecurity Goals",
+      "path": "🕸️ UNSTRUCTURED/2025 Cybersecurity Goals/2025 Cybersecurity Goals.md"
+    },
+    {
+      "basename": "⬇️ Misc_Links",
+      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links/⬇️ Misc_Links.md"
+    },
+    {
+      "basename": "Collaborative Red Team Engagement Strategy",
+      "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
+    },
+    {
+      "basename": "Xbox Controllers",
+      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
+    },
+    {
+      "basename": "Inputs, Capture",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Home Network Hardware",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
     },
     {
       "basename": "Awesome Hardware",
@@ -51,18 +103,6 @@
     {
       "basename": "Obsidian & N8n",
       "path": "📁 10 - My Obsidian Stack/Obsidian & N8n/Obsidian & N8n.md"
-    },
-    {
-      "basename": "Obsidian-Related Bloggers",
-      "path": "🕸️ UNSTRUCTURED/Obsidian-Related Bloggers/Obsidian-Related Bloggers.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Integrations",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Obsidian Integrations/⬇️ Obsidian Integrations.md"
     },
     {
       "basename": "Comment Systems",
@@ -159,46 +199,6 @@
     {
       "basename": "Personal Privacy & Identity Handling",
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
-    },
-    {
-      "basename": "Favorite Fonts",
-      "path": "🕸️ UNSTRUCTURED/Favorite Fonts/Favorite Fonts.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "Awesome Hard Disk Drives, NAS Hardware",
-      "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
-    },
-    {
-      "basename": "Ghost Blogs",
-      "path": "🕸️ UNSTRUCTURED/Ghost Blogs/Ghost Blogs.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "Kasm Workspaces",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Kasm Workspaces/Kasm Workspaces.md"
-    },
-    {
-      "basename": "AR Glasses",
-      "path": "🕸️ UNSTRUCTURED/AR Glasses/AR Glasses.md"
-    },
-    {
-      "basename": "Spyware",
-      "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
-    },
-    {
-      "basename": "Remote Desktop Gateways",
-      "path": "📁 05 - Organizational Cyber/Remote Desktop Gateways/Remote Desktop Gateways.md"
     }
   ],
   "omittedPaths": [],

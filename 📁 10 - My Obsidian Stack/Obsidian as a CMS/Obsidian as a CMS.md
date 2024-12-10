@@ -7,8 +7,8 @@ date created: Sunday, December 1st 2024, 5:02 pm
 date modified: Monday, December 2nd 2024, 7:55 pm
 ---
 
-[Ghost Blogs](../Ghost%20Blogs/Ghost%20Blogs.md)
-[Contributable Obsidian Wiki](../../📁%2010%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
+[Ghost Blogs](../🕸️%20UNSTRUCTURED/Ghost%20Blogs/Ghost%20Blogs.md)
+[Contributable Obsidian Wiki](../Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
 
 
 - [Static Site Generators - Top Open Source SSGs | Jamstack](https://jamstack.org/generators/ "Static Site Generators - Top Open Source SSGs | Jamstack")

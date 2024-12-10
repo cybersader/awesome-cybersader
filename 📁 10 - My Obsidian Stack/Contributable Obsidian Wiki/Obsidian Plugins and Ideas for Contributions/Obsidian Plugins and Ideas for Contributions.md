@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Sunday, December 8th 2024, 9:29 pm
+date modified: Monday, December 9th 2024, 6:52 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -60,6 +60,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 
 # Misc Ideas
 
+- Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin to automatically remove tokens and clean URLs
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
 - Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat

@@ -1,6 +1,8 @@
 ---
 aliases: []
-tags: []
+tags:
+  - "#infosec"
+  - "#cybersecurity"
 publish: true
 date created: Wednesday, October 30th 2024, 8:19 am
 date modified: Wednesday, November 20th 2024, 4:20 pm

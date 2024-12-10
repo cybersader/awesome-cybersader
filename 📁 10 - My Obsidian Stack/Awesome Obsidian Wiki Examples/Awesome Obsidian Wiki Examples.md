@@ -9,7 +9,7 @@ date modified: Monday, December 2nd 2024, 7:54 pm
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
 [Folder Notes & Publish](../Contributable%20Obsidian%20Wiki/Folder%20Notes%20&%20Publish/Folder%20Notes%20&%20Publish.md)
-[Obsidian as a CMS](../../🕸️%20UNSTRUCTURED/Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
+[Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
 # Is this Obsidian Publish?
 
@@ -32,7 +32,7 @@ date modified: Monday, December 2nd 2024, 7:54 pm
 - [About - The Integral Guide to Well-Being](https://integralguide.com/About) 
 - https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0
 - https://notes.philoserf.com/Home
-
+- https://plugins.javalent.com/home#Practical+plugins
 # Misc JS and CSS
 
 - https://gist.github.com/elkadre

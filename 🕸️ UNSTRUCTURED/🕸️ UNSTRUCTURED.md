@@ -7,13 +7,13 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 ---
 %% Begin Waypoint %%
 - **[[⬇️ Hacking Ideas]]**
-- [[⬇️ Misc_Links]]
-- **[[⬇️ Obsidian Integrations]]**
-- [[2025 Cybersecurity Goals]]
+- **[[⬇️ Misc_Links]]**
+- **⬇️ Obsidian Integrations**
+- **[[2025 Cybersecurity Goals]]**
 - **[[AI & Security by Obscurity]]**
 - **[[AI Ethics & Morality]]**
 - **[[AR Glasses]]**
-- [[Awesome Clothing]]
+- **[[Awesome Clothing]]**
 - [[Backups - The 3,2,1 Rule]]
 - **[[Bluesky Social]]**
 - **[[Browsers]]**
@@ -47,10 +47,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Markdown Practices in Obsidian]]
 - **[[Media File Management]]**
 - **[[Misc Web Dev]]**
-- **[[Obsidian as a CMS]]**
-- [[Obsidian Regex Find & Replace]]
-- [[Obsidian Vaults with Cybersecurity]]
-- **[[Obsidian-Related Bloggers]]**
+- **[[Obsidian Vaults with Cybersecurity]]**
 - **[[OSINT]]**
 - **[[Personal Devices]]**
 	- **[[Smart Phones]]**

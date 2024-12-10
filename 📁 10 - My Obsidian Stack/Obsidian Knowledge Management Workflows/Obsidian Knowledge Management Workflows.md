@@ -1,9 +1,10 @@
 ---
+permalink:
 aliases: []
 tags: []
 publish: true
 date created: Sunday, December 1st 2024, 6:34 pm
-date modified: Sunday, December 1st 2024, 6:40 pm
+date modified: Monday, December 9th 2024, 6:47 pm
 ---
 
 [Browser Extensions](../../📁%2003%20-%20Curations,%20Stacks/Browser%20Extensions/Browser%20Extensions.md)
@@ -11,14 +12,9 @@ date modified: Sunday, December 1st 2024, 6:40 pm
 [⬇ Tech Dropzone](../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/⬇%20Tech%20Dropzone.md)
 [Knowledge Organization](../../📁%2017%20-%20Knowledge%20Engineering/Knowledge%20Organization/Knowledge%20Organization.md)
 
-# Inputs, Capture
+# Knowledge Management Components
 
-- [Memex](../../📦%20VAULT%20SANDBOX%20TESTING/Memex/Memex.md)
-- ChatGPT
-- QuickAdd
-- Web Clippings
-- Browser Pasting
-- Daily Notes
+[Inputs, Capture](Inputs,%20Capture/Inputs,%20Capture.md)
 
 # Organization
 

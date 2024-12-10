@@ -1,17 +1,13 @@
 ---
-aliases:
-  - Obsidian Vault Structure
-tags:
-  - knowledge_management
-  - wiki_organization
-  - taxonomies
-  - taxonomy
-  - wiki_structure
-  - library-science
+permalink:
+aliases: [Obsidian Vault Structure]
+tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, October 26th 2024, 9:36 pm
+date modified: Monday, December 9th 2024, 6:54 pm
 ---
+
+[Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
