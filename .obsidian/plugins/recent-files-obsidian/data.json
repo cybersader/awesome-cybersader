@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Scalable Obsidian Backend",
+      "path": "🕸️ UNSTRUCTURED/Scalable Obsidian Backend/Scalable Obsidian Backend.md"
+    },
+    {
       "basename": "Obsidian Knowledge Management Workflows",
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Handling Obsidian Git Conflicts & Issues",
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
-    },
-    {
-      "basename": "Personal Privacy & Identity Handling",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     }
   ],
   "omittedPaths": [],
