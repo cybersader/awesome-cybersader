@@ -619,6 +619,75 @@
       },
       "obsidian-tressel": {
         "startupType": "disabled"
+      },
+      "obsidian-annotator": {
+        "startupType": "disabled"
+      },
+      "better-export-pdf": {
+        "startupType": "disabled"
+      },
+      "callout-toggles": {
+        "startupType": "disabled"
+      },
+      "dangerzone-writing-plugin": {
+        "startupType": "disabled"
+      },
+      "dashboard-navigator": {
+        "startupType": "disabled"
+      },
+      "docxer": {
+        "startupType": "disabled"
+      },
+      "file-tree-alternative": {
+        "startupType": "disabled"
+      },
+      "homepage": {
+        "startupType": "disabled"
+      },
+      "obsidian-hover-editor": {
+        "startupType": "disabled"
+      },
+      "oz-image-plugin": {
+        "startupType": "disabled"
+      },
+      "obsidian-local-images-plus": {
+        "startupType": "disabled"
+      },
+      "make-md": {
+        "startupType": "disabled"
+      },
+      "metadata-hider": {
+        "startupType": "disabled"
+      },
+      "obsidian-outliner": {
+        "startupType": "disabled"
+      },
+      "peerdraft": {
+        "startupType": "disabled"
+      },
+      "podnotes": {
+        "startupType": "disabled"
+      },
+      "obsidian-quiet-outline": {
+        "startupType": "disabled"
+      },
+      "readwise-official": {
+        "startupType": "disabled"
+      },
+      "obsidian-livesync": {
+        "startupType": "disabled"
+      },
+      "sets": {
+        "startupType": "disabled"
+      },
+      "vertical-tabs": {
+        "startupType": "disabled"
+      },
+      "virtual-linker": {
+        "startupType": "disabled"
+      },
+      "webpage-html-export": {
+        "startupType": "disabled"
       }
     }
   }
