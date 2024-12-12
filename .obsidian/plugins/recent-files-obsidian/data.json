@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Templater",
+      "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "📁 19 - Self-Hosting",
+      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
+    },
+    {
+      "basename": "📁 14 - Journal, Diary",
+      "path": "📁 14 - Journal, Diary/📁 14 - Journal, Diary.md"
+    },
+    {
       "basename": "Exports in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Exports in Obsidian/Exports in Obsidian.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "📦 VAULT SANDBOX TESTING",
       "path": "📦 VAULT SANDBOX TESTING/📦 VAULT SANDBOX TESTING.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
-    },
-    {
-      "basename": "OpSec Tierlist",
-      "path": "📁 07 - Cybersader Arsenal/OpSec Tierlist/OpSec Tierlist.md"
-    },
-    {
-      "basename": "Gitignore Folder Tracking Removal",
-      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
-    },
-    {
-      "basename": "Handling Obsidian Git Conflicts & Issues",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
     }
   ],
   "omittedPaths": [],
