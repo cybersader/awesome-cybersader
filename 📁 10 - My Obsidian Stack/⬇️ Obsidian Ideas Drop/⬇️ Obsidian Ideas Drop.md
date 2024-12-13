@@ -1,10 +1,10 @@
 ---
-aliases:
-  - Obsidian Wiki Drop
-tags: 
+permalink:
+aliases: [Obsidian Wiki Drop]
+tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Wednesday, November 13th 2024, 10:17 pm
+date modified: Friday, December 13th 2024, 9:54 am
 ---
 
 %% Begin Waypoint %%
@@ -19,7 +19,27 @@ date modified: Wednesday, November 13th 2024, 10:17 pm
 
 # Custom Plugins
 
+[Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+
 - Hallow or Ascension plugin
+- Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
+- Plugin to automatically remove tokens and clean URLs
+- Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
+- Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
+- Plugin to fetch titles and fix highlighted links
+- AI-based note enricher 
+	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
+	- Enrich notes with text at bottom to help with finding with search
+	- Kind of inspired by my old "rexplorer" idea
+- Modify refactor plugin to have 
+	- option for copying md to README.md for github applicability
+	- Ability to add sub folders or pages from within note like Notion
+- Youtube links
+	- [Embed YouTube Videos in Notes & Link Timestamps to Embedded Video - Feature archive - Obsidian Forum](https://forum.obsidian.md/t/embed-youtube-videos-in-notes-link-timestamps-to-embedded-video/36779/4) 
+- Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
+	- Timeline plugin like this?
+- Auto headings and bullets?
+- Plugin to automatically put bullet point when clicking directly below a bullet list
 
 # Ideas
 

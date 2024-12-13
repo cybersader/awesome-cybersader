@@ -58,27 +58,6 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 - Better changelog plugin or fork of it
 	- [https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14](https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14 "https://github.com/badrbouslikhin/obsidian-vault-changelog/issues/14")
 
-# Misc Ideas
-
-- Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
-- Plugin to automatically remove tokens and clean URLs
-- Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
-- Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
-- Plugin to fetch titles and fix highlighted links
-- AI-based note enricher 
-	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
-	- Enrich notes with text at bottom to help with finding with search
-	- Kind of inspired by my old "rexplorer" idea
-- Modify refactor plugin to have 
-	- option for copying md to README.md for github applicability
-	- Ability to add sub folders or pages from within note like Notion
-- Youtube links
-	- [Embed YouTube Videos in Notes & Link Timestamps to Embedded Video - Feature archive - Obsidian Forum](https://forum.obsidian.md/t/embed-youtube-videos-in-notes-link-timestamps-to-embedded-video/36779/4) 
-- Look for plugins that generate ascii, markdown, HTML with styles, and plaintext
-	- Timeline plugin like this?
-- Auto headings and bullets?
-- Plugin to automatically put bullet point when clicking directly below a bullet list
-
 # Misc Visuals Plugins
 
 - [https://github.com/joethei/obsidian-tagcloud](https://github.com/joethei/obsidian-tagcloud) - Show a cloud of your tags/words/links in a note
