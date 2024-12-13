@@ -209,5 +209,13 @@
       ],
       "key": "I"
     }
+  ],
+  "obsidian-trim-whitespace:trim-whitespace-selection": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "W"
+    }
   ]
 }

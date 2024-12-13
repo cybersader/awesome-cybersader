@@ -5,20 +5,40 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
     {
-      "basename": "Misc Web Dev",
-      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Templater",
+      "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
-      "basename": "LibreOffice",
-      "path": "🕸️ UNSTRUCTURED/LibreOffice.md"
+      "basename": "Scalable Obsidian Backend",
+      "path": "🕸️ UNSTRUCTURED/Scalable Obsidian Backend/Scalable Obsidian Backend.md"
     },
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+      "basename": "Misc Web Dev",
+      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
+    },
+    {
+      "basename": "LibreOffice",
+      "path": "🕸️ UNSTRUCTURED/LibreOffice.md"
     },
     {
       "basename": "⬇️ Ontological Drop",
@@ -31,10 +51,6 @@
     {
       "basename": "Awesome Peripherals",
       "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
     },
     {
       "basename": "📁 20 - Home DIY",
@@ -51,10 +67,6 @@
     {
       "basename": "📁 14 - Journal, Diary",
       "path": "📁 14 - Journal, Diary/📁 14 - Journal, Diary.md"
-    },
-    {
-      "basename": "Scalable Obsidian Backend",
-      "path": "🕸️ UNSTRUCTURED/Scalable Obsidian Backend/Scalable Obsidian Backend.md"
     },
     {
       "basename": "Obsidian Knowledge Management Workflows",
@@ -93,16 +105,8 @@
       "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity/Obsidian Vaults with Cybersecurity.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
       "basename": "⬇️ Obsidian Integrations",
       "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/⬇️ Obsidian Integrations.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Windows Desktop Provisioning",
@@ -135,10 +139,6 @@
     {
       "basename": "Awesome Obsidian Wiki Examples",
       "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
       "basename": "Home Network Hardware",

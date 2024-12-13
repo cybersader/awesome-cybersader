@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 13th 2024, 10:14 am
+date modified: Friday, December 13th 2024, 4:20 pm
 ---
 
 %% Begin Waypoint %%
@@ -26,6 +26,10 @@ date modified: Friday, December 13th 2024, 10:14 am
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 
+- Whitespace cleaning on pasting with hotkeys
+	- [zlovatt/obsidian-trim-whitespace: Trims unnecessary whitespace from your Obsidian documents.](https://github.com/zlovatt/obsidian-trim-whitespace)
+	- Trim blank spaces please
+- Plugin to save and use regex transformations on selections or on page and bind to a hotkey
 - Hallow or Ascension plugin
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin to automatically remove tokens and clean URLs

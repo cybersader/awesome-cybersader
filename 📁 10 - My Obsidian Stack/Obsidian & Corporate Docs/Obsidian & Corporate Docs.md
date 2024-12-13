@@ -2,9 +2,9 @@
 aliases: [Obsidian DOCX Exports, Obsidian Export Templates, Obsidian & Formal Documentation, Exports in Obsidian, Obsidian & Formal Docs]
 tags: []
 publish: true
-permalink: 
+permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 2:47 pm
+date modified: Friday, December 13th 2024, 4:54 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -24,12 +24,12 @@ date modified: Friday, December 13th 2024, 2:47 pm
 - [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534 "Customising PDF formatting - Help - Obsidian Forum")
 - [Word Templates – Quarto](https://quarto.org/docs/output-formats/ms-word-templates.html)
 - https://pandoc.org/chunkedhtml-demo/6-templates.html
-- 
+- [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
 
 # Comments, Revisions, Review
 
 - [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
-- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup) 
+- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup)
 - [MrGVSV/obsidian-better-comment-toggle](https://github.com/MrGVSV/obsidian-better-comment-toggle)
 - [BumbrT/obsidian-reading-comments: Reading comments, for consuming books or large articles in markdown with https://obsidian.md/.](https://github.com/BumbrT/obsidian-reading-comments)
 - [ryanjamurphy/review-obsidian: Add the current note to a future daily note to remember to review it.](https://github.com/ryanjamurphy/review-obsidian)
@@ -37,27 +37,93 @@ date modified: Friday, December 13th 2024, 2:47 pm
 - [Note Comments Panel - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/note-comments-panel/11913)
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
-- 
+-
 
 # Word & LibreOffice Styles - Downloads
 
 - [Business-related design templates | Microsoft Create](https://create.microsoft.com/en-us/templates/business)
 - [Quarterly Business Review Template (Download)](https://www.business-in-a-box.com/template/quarterly-business-review-D13525/)
 - [Word template business - Etsy](https://www.etsy.com/search?q=word+template+business&ref=search_bar&dd_referrer=https%3A%2F%2Fwww.etsy.com%2Fmarket%2Fword_template_executive_summary)
-- [Work and Employment Templates](https://www.libreofficetemplates.net/category/work) 
+- [Work and Employment Templates](https://www.libreofficetemplates.net/category/work)
 - [Extensions » Libreoffice Extensions](https://extensions.libreoffice.org/en/extensions?Tags%5B%5D=53)
 - 
 
-# Obsidian Pandoc
+# Obsidian Pandoc, Pandoc Python Filters
 
 - [Help using `--reference-doc` · jgm/pandoc · Discussion #9763](https://github.com/jgm/pandoc/discussions/9763)
 - [Integrating Microsoft Office documents - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/integrating-microsoft-office-documents/32055/46)
 - [Using Pandoc to keep your workflow inside Obsidian - Community talk by @SkepticMystic - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/using-pandoc-to-keep-your-workflow-inside-obsidian-community-talk-by-skepticmystic/19193/22)
 - [Struggling with docx bullet lists from Markdown : r/pandoc](https://www.reddit.com/r/pandoc/comments/18ciq3j/struggling_with_docx_bullet_lists_from_markdown/?rdt=45831) - styles that pandoc supports
 - [Custom bullet symbols in reference docx are ignored · Issue #4321 · jgm/pandoc](https://github.com/jgm/pandoc/issues/4321)
+- [jgm/pandocfilters: A python module for writing pandoc filters, with a collection of examples](https://github.com/jgm/pandocfilters)
+- [Panflute: pandoc filters made simple — panflute 2.1.4 documentation](https://panflute.readthedocs.io/en/latest/#)
+- [Pandoc Markdown to Docx with Cover Page and TOC in separated pages - Stack Overflow](https://stackoverflow.com/questions/52890081/pandoc-markdown-to-docx-with-cover-page-and-toc-in-separated-pages/52893101#52893101)
+- [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
+- [Using Markdown Variables](https://blog.mdconvrt.com/using-markdown-variables/)
+- [Pandoc Markdown](https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html#metadata_blocks)
+- [pdf - Can Pandoc use variables from Metadata.yaml in imported Markdown files? - Stack Overflow](https://stackoverflow.com/questions/38539304/can-pandoc-use-variables-from-metadata-yaml-in-imported-markdown-files)
+- [jgm/pandoc-templates: Templates for pandoc, tagged to release](https://github.com/jgm/pandoc-templates)
+	- [pandoc-templates/default.openxml at master · jgm/pandoc-templates](https://github.com/jgm/pandoc-templates/blob/master/default.openxml)
 - 
 
-# Pandoc - Reference Docs, Templates
+## Automating Obsidian Markdown to Other Formats with Styles and Layouts w/Pandoc
 
-- [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates) 
+### Markdown to Docx
+
+[Pandoc Markdown to Docx with Cover Page and TOC in separated pages - Stack Overflow](https://stackoverflow.com/questions/52890081/pandoc-markdown-to-docx-with-cover-page-and-toc-in-separated-pages/52893101#52893101)
+[Customize or create new styles - Microsoft Support](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563#manual)
+[How do I add custom formatting to docx files generated in Pandoc? - Stack Overflow](https://stackoverflow.com/questions/70513062/how-do-i-add-custom-formatting-to-docx-files-generated-in-pandoc)
+
+High-Level Components & Prep Workflow:
+- Reference doc from Pandoc
+	- Edit in Word or LibreOffice to customize style of components (headers, body, etc.)
+- Templating
+	- Design Templates in Jinja format
+	- .
+- Pandoc filter - python
+	- Code custom filters
+	- Python docx
+	- Pandoc filters in Python
+	- Adds logo images
+- Logos and Images
+- YAML
+	- Prep with YAML templates and Metadata Menu
+- Templater
+	- .
+
+Workflow:
+- Export with command in Obsidian
+
+### 1) Automating Paragraph Styles, Headers, etc.
+
+Pandoc uses a reference document when creating docx files. It is possible to create a custom reference doc and to modify the TOCHeader style.
+
+Creating a custom reference doc requires the following steps:
+
+1. Create a new docx based on pandoc's default reference file:
+
+```
+pandoc --print-default-data-file reference.docx > custom-reference.docx
+```
+
+2. Open `custom-reference.docx` and modify the styles in it to your liking.
+
+3. Pass the result via the `--reference-doc` option each time when invoking pandoc.
+
+```
+pandoc --reference-doc=custom-reference.docx …
+```
+    
+Alternatively, rename the file to `reference.docx` and place it in pandoc's data directory, so it is chosen as default.
+
+```
+pandoc --reference-doc=custom-reference.docx
+```
+
+## Markdown to PDF
+
+- 
+
+## Markdown to Latex
+
 - 

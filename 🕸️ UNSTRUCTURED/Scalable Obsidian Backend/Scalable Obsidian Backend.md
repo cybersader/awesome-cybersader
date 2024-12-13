@@ -1,6 +1,10 @@
 ---
-aliases: [Distributed Obsidian Filesystem, Futuristic Obsidian Architecture, Scalable Obsidian Storage]
-tags: []
+aliases:
+  - Distributed Obsidian Filesystem
+  - Futuristic Obsidian Architecture
+  - Scalable Obsidian Storage
+  - Nested Git Repos
+tags: 
 publish: true
 permalink: 
 date created: Tuesday, December 10th 2024, 9:28 pm
@@ -14,6 +18,9 @@ date modified: Tuesday, December 10th 2024, 9:35 pm
 - Composable Git repos
 - Superepos
 
+- [Nested Git repositories? - Stack Overflow](https://stackoverflow.com/questions/1871282/nested-git-repositories)
+- [Why are nested repos a bad idea? · Issue #272 · swcarpentry/git-novice](https://github.com/swcarpentry/git-novice/issues/272)
+- [using nested git repositories](https://git-annex.branchable.com/tips/using_nested_git_repositories/)
 # Chat
 
 **You:**

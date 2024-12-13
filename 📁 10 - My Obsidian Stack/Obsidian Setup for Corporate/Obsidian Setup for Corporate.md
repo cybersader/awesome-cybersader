@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Sunday, December 8th 2024, 9:15 pm
+date modified: Friday, December 13th 2024, 3:25 pm
 permalink: corporate-obsidian
 ---
 
@@ -12,6 +12,8 @@ permalink: corporate-obsidian
 [Scalable Project Management](../../🕸️%20UNSTRUCTURED/Scalable%20Project%20Management.md)
 [Exports in Obsidian](../Exports%20in%20Obsidian/Exports%20in%20Obsidian.md)
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+[Obsidian & Corporate Docs](../Obsidian%20&%20Corporate%20Docs/Obsidian%20&%20Corporate%20Docs.md)
+[Templater](../Templater/Templater.md)
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
 
@@ -609,10 +611,7 @@ By combining these approaches and tailoring them to your organization's needs an
 
 ## Project Management
 
-- Tasks
-- Project Management
-- Changelog page
-- Dataview
+- [cybersader/obsidian-secops-vault-example](https://github.com/cybersader/obsidian-secops-vault-example) 
 
 ## General Vault Layout
 
