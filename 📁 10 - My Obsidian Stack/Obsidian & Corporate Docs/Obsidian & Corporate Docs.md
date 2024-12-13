@@ -120,6 +120,9 @@ Alternatively, rename the file to `reference.docx` and place it in pandoc's da
 pandoc --reference-doc=custom-reference.docx
 ```
 
+- Pandoc templates
+	- [Pandoc Templates · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki/Pandoc-Templates)
+	- 
 ## Markdown to PDF
 
 - 
