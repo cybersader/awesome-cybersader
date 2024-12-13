@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 13th 2024, 9:54 am
+date modified: Friday, December 13th 2024, 10:14 am
 ---
 
 %% Begin Waypoint %%
@@ -16,6 +16,11 @@ date modified: Friday, December 13th 2024, 9:54 am
 - [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
 - [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
+
+# Plugins to look at 
+
+- [Latticework: Unifying annotation and freeform text editing for augmented sensemaking](https://www.matthewsiu.com/Latticework)
+- 
 
 # Custom Plugins
 

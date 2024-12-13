@@ -1,4 +1,4 @@
-- 2024-12-13 at 09h54 · [[⬇️ Obsidian Ideas Drop]]
+- 2024-12-13 at 10h14 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-12-13 at 09h53 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-12 at 21h21 · [[Awesome Peripherals]]
 - 2024-12-12 at 21h16 · [[Exports in Obsidian]]
