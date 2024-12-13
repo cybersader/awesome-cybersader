@@ -36,7 +36,6 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Documenting Activity]]
 - **[[Email Security]]**
 - **[[Endpoint Firewall]]**
-- [[Excel Alternative]]
 - **[[Favorite Fonts]]**
 - [[Find All Enabled Plugins From Obsidian Folder]]
 - [[Gaming Hacks & Cheats]]
@@ -44,6 +43,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Hosted Storage]]**
 - **[[Hotel Hacker]]**
 - [[Laptop Health Check Tools]]
+- [[LibreOffice]]
 - [[Markdown Practices in Obsidian]]
 - **[[Media File Management]]**
 - **[[Misc Web Dev]]**

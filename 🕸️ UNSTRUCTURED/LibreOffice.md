@@ -1,6 +1,6 @@
 ---
 aliases:
-  - LibreOffice
+  - Excel Alternative
 tags: 
 publish: true
 date created: Monday, October 7th 2024, 1:34 pm

@@ -4,11 +4,11 @@ tags: []
 publish: true
 permalink: 
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 2:15 pm
+date modified: Friday, December 13th 2024, 2:47 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
-[Excel Alternative](../../🕸️%20UNSTRUCTURED/Excel%20Alternative.md)
+[LibreOffice](../../🕸️%20UNSTRUCTURED/LibreOffice.md)
 
 - [Custom word template with Pandoc pluugin - Help - Obsidian Forum](https://forum.obsidian.md/t/custom-word-template-with-pandoc-pluugin/41685 "Custom word template with Pandoc pluugin - Help - Obsidian Forum")
 - [Exporting to Microsoft Word : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/14jgr1p/exporting_to_microsoft_word/?rdt=54622 "Exporting to Microsoft Word : r/ObsidianMD")
@@ -53,6 +53,8 @@ date modified: Friday, December 13th 2024, 2:15 pm
 - [Help using `--reference-doc` · jgm/pandoc · Discussion #9763](https://github.com/jgm/pandoc/discussions/9763)
 - [Integrating Microsoft Office documents - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/integrating-microsoft-office-documents/32055/46)
 - [Using Pandoc to keep your workflow inside Obsidian - Community talk by @SkepticMystic - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/using-pandoc-to-keep-your-workflow-inside-obsidian-community-talk-by-skepticmystic/19193/22)
+- [Struggling with docx bullet lists from Markdown : r/pandoc](https://www.reddit.com/r/pandoc/comments/18ciq3j/struggling_with_docx_bullet_lists_from_markdown/?rdt=45831) - styles that pandoc supports
+- [Custom bullet symbols in reference docx are ignored · Issue #4321 · jgm/pandoc](https://github.com/jgm/pandoc/issues/4321)
 - 
 
 # Pandoc - Reference Docs, Templates

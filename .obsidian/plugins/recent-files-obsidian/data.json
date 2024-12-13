@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Excel Alternative",
-      "path": "🕸️ UNSTRUCTURED/Excel Alternative.md"
-    },
-    {
       "basename": "Obsidian & Corporate Docs",
       "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
     {
+      "basename": "Misc Web Dev",
+      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
+    },
+    {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "LibreOffice",
+      "path": "🕸️ UNSTRUCTURED/LibreOffice.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -195,10 +199,6 @@
     {
       "basename": "Xbox Home Networking",
       "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     }
   ],
   "omittedPaths": [],
