@@ -1,13 +1,10 @@
 ---
-aliases:
-  - Awesome Keyboards
-  - Awesome Mouses
-  - Awesome MnK
-  - Awesome Mech
-tags: 
+permalink:
+aliases: [Awesome Keyboards, Awesome Mouses, Awesome MnK, Awesome Mech]
+tags: []
 publish: true
 date created: Saturday, July 20th 2024, 11:05 am
-date modified: Saturday, July 20th 2024, 12:04 pm
+date modified: Thursday, December 12th 2024, 9:21 pm
 ---
 
 # Mouses
@@ -24,6 +21,7 @@ date modified: Saturday, July 20th 2024, 12:04 pm
 	- [Amazon.com: KINESIS Freestyle2 USB-C Ergonomic Keyboard w/ VIP3 Lifters for PC (9" Separation) (KB820PB-US) : Electronics](https://www.amazon.com/Kinesis-Freestyle2-Ergonomic-Keyboard-Separation/dp/B0089ZLENA)
 		- $134 - not hot swappable
 - Expensive, but good
+	- [Voyager | zsa.io](https://www.zsa.io/voyager/buy)
 	- [ErgoDox EZ: An Incredible Mechanical Ergonomic Keyboard | ErgoDox EZ](https://ergodox-ez.com/) - ~$320 - probably the best it can get
 		- Hot swappable
 	- [The Best Ergonomic Keyboards From Kinesis](https://kinesis-ergo.com/explore-keyboards/)

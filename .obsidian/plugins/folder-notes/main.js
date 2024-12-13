@@ -1902,8 +1902,9 @@ var Suggest = class {
   }
 };
 var TextInputSuggest = class {
-  constructor(inputEl) {
+  constructor(inputEl, plugin) {
     this.inputEl = inputEl;
+    this.plugin = plugin;
     this.scope = new import_obsidian4.Scope();
     this.suggestEl = createDiv("suggestion-container");
     const suggestion = this.suggestEl.createDiv("suggestion");
@@ -1931,7 +1932,7 @@ var TextInputSuggest = class {
     }
   }
   open(container, inputEl) {
-    app.keymap.pushScope(this.scope);
+    this.plugin.app.keymap.pushScope(this.scope);
     container.appendChild(this.suggestEl);
     this.popper = createPopper(inputEl, this.suggestEl, {
       placement: "bottom-start",
@@ -1954,7 +1955,7 @@ var TextInputSuggest = class {
     });
   }
   close() {
-    app.keymap.popScope(this.scope);
+    this.plugin.app.keymap.popScope(this.scope);
     this.suggest.setSuggestions([]);
     if (this.popper)
       this.popper.destroy();
@@ -1965,9 +1966,8 @@ var TextInputSuggest = class {
 // src/suggesters/FolderSuggester.ts
 var FolderSuggest = class extends TextInputSuggest {
   constructor(inputEl, plugin, folder) {
-    super(inputEl);
+    super(inputEl, plugin);
     this.inputEl = inputEl;
-    this.plugin = plugin;
     this.folder = folder;
   }
   get_error_msg(mode) {
@@ -2448,12 +2448,42 @@ function loadFileClasses(forceReload = false, plugin) {
     }
   });
 }
+function applyCSSClassesToFolder(folderPath, plugin) {
+  const folder = plugin.app.vault.getAbstractFileByPath(folderPath);
+  if (!folder || !(folder instanceof import_obsidian11.TFolder)) {
+    return;
+  }
+  const excludedFolder = getExcludedFolder(plugin, folder.path);
+  if (excludedFolder == null ? void 0 : excludedFolder.disableFolderNote) {
+    return;
+  }
+  const folderNote = getFolderNote(plugin, folder.path);
+  if (!folderNote) {
+    return;
+  }
+  addCSSClassesToBothFolderAndNote(folderNote, folder, plugin);
+}
+function addCSSClassesToBothFolderAndNote(file, folder, plugin) {
+  addCSSClassToFolderNote(file);
+  addCSSClassesToFolder(folder, plugin);
+}
+function addCSSClassesToFolder(folder, plugin) {
+  addCSSClassToTitleEL(folder.path, "has-folder-note");
+  if (plugin.isEmptyFolderNoteFolder(folder)) {
+    addCSSClassToTitleEL(folder.path, "only-has-folder-note");
+  } else {
+    removeCSSClassFromEL(folder.path, "only-has-folder-note");
+  }
+}
+function addCSSClassToFolderNote(file) {
+  addCSSClassToTitleEL(file.path, "is-folder-note");
+}
 async function addCSSClassToTitleEL(path, cssClass, waitForCreate = false, count = 0) {
   const fileExplorerItem = getEl(path);
   if (!fileExplorerItem) {
     if (waitForCreate && count < 5) {
       await new Promise((r) => setTimeout(r, 500));
-      this.addCSSClassToTitleEL(path, cssClass, waitForCreate, count + 1);
+      addCSSClassToTitleEL(path, cssClass, waitForCreate, count + 1);
       return;
     }
     return;
@@ -2669,7 +2699,6 @@ async function deleteFolderNote(plugin, file, displayModal) {
       await plugin.app.vault.trash(file, true);
       break;
     case "obsidianTrash":
-      console.log("obsidianTrash");
       await plugin.app.vault.trash(file, false);
       break;
     case "delete":
@@ -3007,9 +3036,8 @@ var ConfirmationModal = class extends import_obsidian15.Modal {
 var import_obsidian16 = require("obsidian");
 var TemplateSuggest = class extends TextInputSuggest {
   constructor(inputEl, plugin) {
-    super(inputEl);
+    super(inputEl, plugin);
     this.inputEl = inputEl;
-    this.plugin = plugin;
   }
   get_error_msg(mode) {
     switch (mode) {
@@ -5071,10 +5099,13 @@ async function addObserver(plugin) {
     mutations.forEach((rec) => {
       if (rec.type === "childList") {
         rec.target.querySelectorAll("div.nav-folder-title-content").forEach((element) => {
+          var _a;
           if (element.onclick)
             return;
           if (import_obsidian27.Platform.isMobile && plugin.settings.disableOpenFolderNoteOnClick)
             return;
+          const folderPath = ((_a = element.parentElement) == null ? void 0 : _a.getAttribute("data-path")) || "";
+          const apply = applyCSSClassesToFolder(folderPath, plugin);
           element.addEventListener("auxclick", (event) => {
             if (event.button == 1) {
               handleFolderClick(event, plugin);
@@ -5082,15 +5113,15 @@ async function addObserver(plugin) {
           }, { capture: true });
           element.onclick = (event) => handleFolderClick(event, plugin);
           plugin.registerDomEvent(element, "pointerover", (event) => {
-            var _a, _b;
+            var _a2, _b;
             plugin.hoveredElement = element;
             plugin.mouseEvent = event;
             if (!import_obsidian27.Keymap.isModEvent(event))
               return;
             if (!(event.target instanceof HTMLElement))
               return;
-            const folderPath = ((_b = (_a = event == null ? void 0 : event.target) == null ? void 0 : _a.parentElement) == null ? void 0 : _b.getAttribute("data-path")) || "";
-            const folderNote = getFolderNote(plugin, folderPath);
+            const folderPath2 = ((_b = (_a2 = event == null ? void 0 : event.target) == null ? void 0 : _a2.parentElement) == null ? void 0 : _b.getAttribute("data-path")) || "";
+            const folderNote = getFolderNote(plugin, folderPath2);
             if (!folderNote)
               return;
             plugin.app.workspace.trigger("hover-link", {
@@ -5627,6 +5658,9 @@ var FolderNotesPlugin = class extends import_obsidian33.Plugin {
     if (this.settings.hideCollapsingIcon) {
       document.body.classList.add("fn-hide-collapse-icon");
     }
+    if ((0, import_obsidian33.requireApiVersion)("1.7.2")) {
+      document.body.classList.add("version-1-7-2");
+    }
     new Commands(this.app, this).registerCommands();
     this.app.workspace.onLayoutReady(() => {
       if (this.settings.frontMatterTitle.enabled) {
@@ -5665,11 +5699,6 @@ var FolderNotesPlugin = class extends import_obsidian33.Plugin {
       });
       this.hoverLinkTriggered = true;
     });
-    this.registerEvent(this.app.workspace.on("layout-change", () => {
-      var _a;
-      loadFileClasses(void 0, this);
-      (_a = this.tabManager) == null ? void 0 : _a.updateTabs();
-    }));
     this.registerEvent(this.app.vault.on("create", (file) => {
       handleCreate(file, this);
     }));
@@ -5707,8 +5736,20 @@ var FolderNotesPlugin = class extends import_obsidian33.Plugin {
     });
     if (this.app.workspace.layoutReady) {
       loadFileClasses(void 0, this);
+      this.registerEvent(this.app.workspace.on("layout-change", () => {
+        var _a;
+        loadFileClasses(void 0, this);
+        (_a = this.tabManager) == null ? void 0 : _a.updateTabs();
+      }));
     } else {
-      this.app.workspace.onLayoutReady(async () => loadFileClasses(void 0, this));
+      this.app.workspace.onLayoutReady(async () => {
+        loadFileClasses(void 0, this);
+        this.registerEvent(this.app.workspace.on("layout-change", () => {
+          var _a;
+          loadFileClasses(void 0, this);
+          (_a = this.tabManager) == null ? void 0 : _a.updateTabs();
+        }));
+      });
     }
   }
   handleOverviewBlock(source, el, ctx) {
@@ -5863,3 +5904,5 @@ var FolderNotesPlugin = class extends import_obsidian33.Plugin {
     }
   }
 };
+
+/* nosourcemap */

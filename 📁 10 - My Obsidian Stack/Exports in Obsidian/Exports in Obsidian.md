@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Sunday, December 8th 2024, 6:28 pm
+date modified: Thursday, December 12th 2024, 9:16 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -21,3 +21,7 @@ date modified: Sunday, December 8th 2024, 6:28 pm
 - [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/ "Exporting Templates to PDF : r/ObsidianMD")
 - [Customizing PDF export per note - Share &amp; showcase - Obsidian Forum](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
 - [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534 "Customising PDF formatting - Help - Obsidian Forum")
+
+# Pandoc - Reference Docs
+
+- 
