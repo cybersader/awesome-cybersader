@@ -1,5 +1,21 @@
 {
-  "groups": [],
+  "groups": [
+    {
+      "loadAtStartup": false,
+      "disableOnStartup": false,
+      "delay": 2,
+      "id": "pgcorporatedocs",
+      "name": "Corporate Docs",
+      "plugins": [
+        {
+          "id": "edit-history",
+          "name": "Edit History"
+        }
+      ],
+      "groupIds": [],
+      "generateCommands": false
+    }
+  ],
   "generateCommands": true,
   "showNoticeOnGroupLoad": "none",
   "devLogs": false,

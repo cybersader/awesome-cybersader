@@ -17,8 +17,8 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Cursor and Frontmatter Issues]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Dataview]]**
-- **[[Exports in Obsidian]]**
 - **[[File Order]]**
+- **[[Obsidian & Corporate Docs]]**
 - **[[Obsidian & N8n]]**
 - **[[Obsidian as a CMS]]**
 - **[[Obsidian Dictionary and Grammar]]**

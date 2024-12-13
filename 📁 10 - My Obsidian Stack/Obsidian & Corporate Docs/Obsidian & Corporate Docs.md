@@ -1,10 +1,10 @@
 ---
-aliases: [Obsidian DOCX Exports, Obsidian Export Templates]
+aliases: [Obsidian DOCX Exports, Obsidian Export Templates, Obsidian & Formal Documentation, Exports in Obsidian, Obsidian & Formal Docs]
 tags: []
 publish: true
 permalink: 
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Thursday, December 12th 2024, 9:16 pm
+date modified: Friday, December 13th 2024, 12:30 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -21,6 +21,19 @@ date modified: Thursday, December 12th 2024, 9:16 pm
 - [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/ "Exporting Templates to PDF : r/ObsidianMD")
 - [Customizing PDF export per note - Share &amp; showcase - Obsidian Forum](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
 - [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534 "Customising PDF formatting - Help - Obsidian Forum")
+
+# Comments, Revisions
+
+- [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
+- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup) 
+- 
+
+# Word & LibreOffice Styles - Downloads
+
+- [Business-related design templates | Microsoft Create](https://create.microsoft.com/en-us/templates/business)
+- [Quarterly Business Review Template (Download)](https://www.business-in-a-box.com/template/quarterly-business-review-D13525/)
+- [Word template business - Etsy](https://www.etsy.com/search?q=word+template+business&ref=search_bar&dd_referrer=https%3A%2F%2Fwww.etsy.com%2Fmarket%2Fword_template_executive_summary)
+- 
 
 # Pandoc - Reference Docs
 
