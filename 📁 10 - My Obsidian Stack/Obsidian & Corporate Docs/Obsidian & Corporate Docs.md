@@ -4,19 +4,15 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 4:54 pm
+date modified: Friday, December 13th 2024, 5:43 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 [LibreOffice](../../🕸️%20UNSTRUCTURED/LibreOffice.md)
 
-- [Custom word template with Pandoc pluugin - Help - Obsidian Forum](https://forum.obsidian.md/t/custom-word-template-with-pandoc-pluugin/41685 "Custom word template with Pandoc pluugin - Help - Obsidian Forum")
-- [Exporting to Microsoft Word : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/14jgr1p/exporting_to_microsoft_word/?rdt=54622 "Exporting to Microsoft Word : r/ObsidianMD")
 - [Pandoc - Pandoc User’s Guide](https://pandoc.org/MANUAL.html "Pandoc - Pandoc User’s Guide")
-- [Word Templates – Quarto](https://quarto.org/docs/output-formats/ms-word-templates.html "Word Templates – Quarto")
 - [Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum](https://forum.obsidian.md/t/any-alternative-for-exporting-the-data-instead-of-pandoc/48817 "Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum")
-- [Marked 2 - Smarter tools for smarter writers](https://marked2app.com/ "Marked 2 - Smarter tools for smarter writers")
-- [Writage - Markdown plugin for Microsoft Word](https://www.writage.com/ "Writage - Markdown plugin for Microsoft Word")
+
 - [How to convert .md files (with images) to word document (.docx with images as output) : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/m7tgy2/how_to_convert_md_files_with_images_to_word/ "How to convert .md files (with images) to word document (.docx with images as output) : r/ObsidianMD")
 - [obsidian export templates styles pdf - Google Search](https://www.google.com/search?q=obsidian+export+templates+styles+pdf&oq=obsidian+export+templates+styles+pdf&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIHCAIQIRifBTIHCAMQIRifBTIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRifBdIBCDY2NTZqMGo3qAIUsAIB&sourceid=chrome-mobile&ie=UTF-8 "obsidian export templates styles pdf - Google Search")
 - [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/ "Exporting Templates to PDF : r/ObsidianMD")
@@ -25,6 +21,13 @@ date modified: Friday, December 13th 2024, 4:54 pm
 - [Word Templates – Quarto](https://quarto.org/docs/output-formats/ms-word-templates.html)
 - https://pandoc.org/chunkedhtml-demo/6-templates.html
 - [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
+
+# WTF is Pandoc - the purpose
+
+> [!tldr] Pandoc, in the case of Obsidian, allows us to write everything in Markdown along with YAML frontmatter (properties at the top of page) and be able to convert to pdf, Latex, and Docx formats with our templates
+
+- [Latex confusion with Pandoc and Templates : r/LaTeX](https://www.reddit.com/r/LaTeX/comments/l9iz7e/latex_confusion_with_pandoc_and_templates/)
+- 
 
 # Comments, Revisions, Review
 
@@ -37,16 +40,22 @@ date modified: Friday, December 13th 2024, 4:54 pm
 - [Note Comments Panel - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/note-comments-panel/11913)
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
--
+- 
 
-# Word & LibreOffice Styles - Downloads
+# Template & Style Downloads
+
+## Word & LibreOffice Styles - Downloads
 
 - [Business-related design templates | Microsoft Create](https://create.microsoft.com/en-us/templates/business)
 - [Quarterly Business Review Template (Download)](https://www.business-in-a-box.com/template/quarterly-business-review-D13525/)
 - [Word template business - Etsy](https://www.etsy.com/search?q=word+template+business&ref=search_bar&dd_referrer=https%3A%2F%2Fwww.etsy.com%2Fmarket%2Fword_template_executive_summary)
 - [Work and Employment Templates](https://www.libreofficetemplates.net/category/work)
 - [Extensions » Libreoffice Extensions](https://extensions.libreoffice.org/en/extensions?Tags%5B%5D=53)
-- 
+
+## Pandoc Templates & Latex
+
+- [Wandmalfarbe/pandoc-latex-template: A pandoc LaTeX template to convert markdown files to PDF or LaTeX.](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- [pandoc-goodies/templates/html5/github/GitHub.html5 at master · tajmone/pandoc-goodies](https://github.com/tajmone/pandoc-goodies/blob/master/templates/html5/github/GitHub.html5)
 
 # Obsidian Pandoc, Pandoc Python Filters
 
@@ -122,11 +131,18 @@ pandoc --reference-doc=custom-reference.docx
 
 - Pandoc templates
 	- [Pandoc Templates · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki/Pandoc-Templates)
+	- https://pandoc.org/chunkedhtml-demo/6-templates.html
 	- 
+
 ## Markdown to PDF
 
 - 
 
 ## Markdown to Latex
 
-- 
+- .
+
+# Alternative Markdown <-> Word Software
+
+- [Marked 2 - Smarter tools for smarter writers](https://marked2app.com/ "Marked 2 - Smarter tools for smarter writers")
+- [Writage - Markdown plugin for Microsoft Word](https://www.writage.com/ "Writage - Markdown plugin for Microsoft Word")
