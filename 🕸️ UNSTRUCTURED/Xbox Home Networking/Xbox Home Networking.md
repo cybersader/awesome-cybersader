@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Saturday, December 14th 2024, 3:52 pm
+date modified: Saturday, December 14th 2024, 6:25 pm
 ---
 
 # IPv6 Tunneling and NAT
@@ -15,6 +15,7 @@ date modified: Saturday, December 14th 2024, 3:52 pm
 
 - [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
 - [Tweaking4All.com - pfSense 2.x - How to fix Strict NAT for XBox One](https://www.tweaking4all.com/network-internet/pfsense-strict-nat-xbox-one/)
+- [pfSense and Multiple Xbox Ones: Open NAT Guide - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/pfsense-and-multiple-xbox-ones-open-nat-guide/2409)
 - 
 
 - Port 88 (UDP)
