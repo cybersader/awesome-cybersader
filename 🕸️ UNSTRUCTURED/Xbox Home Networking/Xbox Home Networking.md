@@ -16,6 +16,7 @@ date modified: Saturday, December 14th 2024, 6:25 pm
 - [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
 - [Tweaking4All.com - pfSense 2.x - How to fix Strict NAT for XBox One](https://www.tweaking4all.com/network-internet/pfsense-strict-nat-xbox-one/)
 - [pfSense and Multiple Xbox Ones: Open NAT Guide - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/pfsense-and-multiple-xbox-ones-open-nat-guide/2409)
+- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game/78)
 - 
 
 - Port 88 (UDP)
