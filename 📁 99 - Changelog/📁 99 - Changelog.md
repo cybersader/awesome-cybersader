@@ -1,3 +1,4 @@
+- 2024-12-14 at 13h36 · [[⬇️ Ontological Drop]]
 - 2024-12-13 at 22h20 · [[Obsidian & Corporate Docs]]
 - 2024-12-13 at 17h16 · [[Templater]]
 - 2024-12-13 at 16h20 · [[⬇️ Obsidian Ideas Drop]]
@@ -6,7 +7,6 @@
 - 2024-12-13 at 14h47 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-13 at 14h46 · [[🕸️ UNSTRUCTURED]]
 - 2024-12-13 at 14h46 · [[LibreOffice]]
-- 2024-12-13 at 14h08 · [[⬇️ Ontological Drop]]
 - 2024-12-13 at 12h29 · [[📁 10 - My Obsidian Stack]]
 - 2024-12-12 at 21h21 · [[Awesome Peripherals]]
 - 2024-12-10 at 20h34 · [[2024 Cyber News]]

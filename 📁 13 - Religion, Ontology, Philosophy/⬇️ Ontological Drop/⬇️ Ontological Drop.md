@@ -1,9 +1,10 @@
 ---
+permalink:
 aliases: [Religion Drop, Christianity Drop, Catholicism Drop, Apologetics Drop]
 tags: []
 publish: true
 date created: Saturday, April 27th 2024, 8:56 pm
-date modified: Thursday, November 21st 2024, 7:34 pm
+date modified: Saturday, December 14th 2024, 1:36 pm
 ---
 
 - What is religion? - the way we live and teachings - all in relation to reality?
@@ -16,4 +17,4 @@ date modified: Thursday, November 21st 2024, 7:34 pm
 - Angels vs man when it comes to choosing God in and out of time - one movements vs many movements vs none (God)
 	- [Divine Hide and Seek: Is There Truly a Hider, Are We Truly Seeking? - YouTube](https://www.youtube.com/watch?v=8k9A7d2Wnjk)
 - [Jimmy Akin](https://jimmyakin.com/)
-- 
+- [Jimmy Akin's Mysterious World - StarQuest Media](https://sqpn.com/podcasts/jimmy-akins-mysterious-world/) 
