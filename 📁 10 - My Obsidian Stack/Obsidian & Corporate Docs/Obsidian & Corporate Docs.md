@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 5:43 pm
+date modified: Friday, December 13th 2024, 7:54 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -13,14 +13,13 @@ date modified: Friday, December 13th 2024, 5:43 pm
 - [Pandoc - Pandoc User’s Guide](https://pandoc.org/MANUAL.html "Pandoc - Pandoc User’s Guide")
 - [Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum](https://forum.obsidian.md/t/any-alternative-for-exporting-the-data-instead-of-pandoc/48817 "Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum")
 
-- [How to convert .md files (with images) to word document (.docx with images as output) : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/m7tgy2/how_to_convert_md_files_with_images_to_word/ "How to convert .md files (with images) to word document (.docx with images as output) : r/ObsidianMD")
-- [obsidian export templates styles pdf - Google Search](https://www.google.com/search?q=obsidian+export+templates+styles+pdf&oq=obsidian+export+templates+styles+pdf&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIHCAIQIRifBTIHCAMQIRifBTIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRifBdIBCDY2NTZqMGo3qAIUsAIB&sourceid=chrome-mobile&ie=UTF-8 "obsidian export templates styles pdf - Google Search")
-- [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/ "Exporting Templates to PDF : r/ObsidianMD")
-- [Customizing PDF export per note - Share &amp; showcase - Obsidian Forum](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
-- [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534 "Customising PDF formatting - Help - Obsidian Forum")
-- [Word Templates – Quarto](https://quarto.org/docs/output-formats/ms-word-templates.html)
-- https://pandoc.org/chunkedhtml-demo/6-templates.html
 - [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
+
+# Using the Style/CSS in Obsidian?
+
+- [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/)
+- [I was recently looking for how to make a standard pdf style without changing my whole obsidian theme or using external stuff. So, I wrote a css snippet that affects how things look in the editor and therefore affects how the pdf export looks.](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
+- [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534)
 
 # WTF is Pandoc - the purpose
 
@@ -73,7 +72,7 @@ date modified: Friday, December 13th 2024, 5:43 pm
 - [pdf - Can Pandoc use variables from Metadata.yaml in imported Markdown files? - Stack Overflow](https://stackoverflow.com/questions/38539304/can-pandoc-use-variables-from-metadata-yaml-in-imported-markdown-files)
 - [jgm/pandoc-templates: Templates for pandoc, tagged to release](https://github.com/jgm/pandoc-templates)
 	- [pandoc-templates/default.openxml at master · jgm/pandoc-templates](https://github.com/jgm/pandoc-templates/blob/master/default.openxml)
-- 
+- [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
 
 ## Automating Obsidian Markdown to Other Formats with Styles and Layouts w/Pandoc
 
@@ -82,8 +81,10 @@ date modified: Friday, December 13th 2024, 5:43 pm
 [Pandoc Markdown to Docx with Cover Page and TOC in separated pages - Stack Overflow](https://stackoverflow.com/questions/52890081/pandoc-markdown-to-docx-with-cover-page-and-toc-in-separated-pages/52893101#52893101)
 [Customize or create new styles - Microsoft Support](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563#manual)
 [How do I add custom formatting to docx files generated in Pandoc? - Stack Overflow](https://stackoverflow.com/questions/70513062/how-do-i-add-custom-formatting-to-docx-files-generated-in-pandoc)
+- https://pandoc.org/chunkedhtml-demo/6-templates.html
 
-High-Level Components & Prep Workflow:
+<u>High-Level Components & Prep Workflow:</u>
+
 - Reference doc from Pandoc
 	- Edit in Word or LibreOffice to customize style of components (headers, body, etc.)
 - Templating
@@ -100,9 +101,12 @@ High-Level Components & Prep Workflow:
 - Templater
 	- .
 
-Workflow:
-- Export with command in Obsidian
+<u>Workflow:</u>
 
+- Export with command in Obsidian
+- 
+
+---
 ### 1) Automating Paragraph Styles, Headers, etc.
 
 Pandoc uses a reference document when creating docx files. It is possible to create a custom reference doc and to modify the TOCHeader style.
