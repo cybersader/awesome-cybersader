@@ -166,7 +166,17 @@ pandoc --reference-doc=custom-reference.docx
 - [Generate Custom PDFs with Pandoc, Panrun, and The Eisvogel LaTex Template - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/generate-custom-pdfs-with-pandoc-panrun-and-the-eisvogel-latex-template/22237)
 	- Panrun is a tool that allows you to set arguments for pandoc in the yaml frontmatter of the markdown document, so you don’t have to remember all of the arguments you must pass.
 	- 
-- 
+- [To sum up what pandoc does](https://emmanuelbosquet.com/2022/awesome_pdf_with_eisvogel/ "How to make awesome PDFs with markdown using Eisvogel - Emmanuel Bosquet")
+	- When you type `pandoc README.md -o README.pdf`, pandoc does those things:
+		1. Convert the markdown markup to LaTeX markup
+		2. Summon a default template to create LaTeX-specific statements like `\documentClass`
+		3. Merge everything in a neat `.tex` document
+		4. Invoke a PDF engine necromant, to raise the `.tex` file from the dead realm of text onto the battlefield of our paper-dominated world.
+	- I have told you what I have learned. And for a while, what I have done was this:
+		1. Write in markdown
+		2. Store the default pandoc template within a `template.tex` file
+		3. Edit `template.tex` to attain desired margins, fonts, etc (difficult)
+		4. Do everything detailed above, in a bash script, plus the pandoc option: `--template=templatex.tex`
 
 ## Markdown to Latex
 

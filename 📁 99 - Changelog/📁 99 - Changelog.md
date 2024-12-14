@@ -1,4 +1,4 @@
-- 2024-12-13 at 21h33 · [[Obsidian & Corporate Docs]]
+- 2024-12-13 at 21h50 · [[Obsidian & Corporate Docs]]
 - 2024-12-13 at 17h16 · [[Templater]]
 - 2024-12-13 at 16h20 · [[⬇️ Obsidian Ideas Drop]]
 - 2024-12-13 at 15h25 · [[Obsidian Setup for Corporate]]
