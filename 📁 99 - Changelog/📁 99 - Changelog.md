@@ -1,3 +1,4 @@
+- 2024-12-14 at 15h56 · [[Xbox Home Networking]]
 - 2024-12-14 at 14h07 · [[Cable Management]]
 - 2024-12-14 at 13h55 · [[📁 07 - Cybersader Arsenal]]
 - 2024-12-14 at 13h55 · [[Home Network]]
@@ -34,7 +35,6 @@
 - 2024-12-07 at 21h13 · [[Unifi Home Networks]]
 - 2024-12-07 at 19h31 · [[TrueNAS Scale Home Server]]
 - 2024-12-07 at 19h31 · [[Home Lab, Home Server]]
-- 2024-12-06 at 16h57 · [[Xbox Home Networking]]
 - 2024-12-04 at 20h43 · [[📁 03 - Curations, Stacks]]
 - 2024-12-04 at 20h43 · [[Obsidian in SMB Share]]
 - 2024-12-04 at 20h43 · [[OneNote vs Obsidian]]

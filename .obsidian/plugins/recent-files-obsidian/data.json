@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Xbox Home Networking",
+      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
+    },
+    {
       "basename": "Cable Management",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "Tmux",
-      "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
     }
   ],
   "omittedPaths": [],

@@ -4,12 +4,26 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Friday, December 6th 2024, 4:57 pm
+date modified: Saturday, December 14th 2024, 3:52 pm
 ---
 
 # IPv6 Tunneling and NAT
 
 - Your parts may jump around a lot.  If you're having party issues, go to Network settings > Advanced and look at alternate port selection.  Make sure that port is open (NAT / firewall rules in your router panel).  Getting to this panel requires you be on your home network, then connect to the likely IP address on the back on your router by typing that IP in your browser to get to the admin panel.
+
+# Ports to Open on NAT/Firewall to Xbox
+
+- [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
+- [Tweaking4All.com - pfSense 2.x - How to fix Strict NAT for XBox One](https://www.tweaking4all.com/network-internet/pfsense-strict-nat-xbox-one/)
+- 
+
+- Port 88 (UDP)
+- Port 3074 (UDP and TCP)
+- Port 53 (UDP and TCP)
+- Port 80 (TCP)
+- Port 500 (UDP)
+- Port 3544 (UDP)
+- Port 4500 (UDP)
 
 # Don't Buy a Netgear
 
