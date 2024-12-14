@@ -163,6 +163,8 @@ pandoc --reference-doc=custom-reference.docx
 - For `pdf` output, customize the `default.latex` template (or the `default.context` template, if you use `-t context`, or the `default.ms` template, if you use `-t ms`, or the `default.html` template, if you use `-t html`).
 	- https://pandoc.org/chunkedhtml-demo/6-templates.html
 - [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
+- [Generate Custom PDFs with Pandoc, Panrun, and The Eisvogel LaTex Template - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/generate-custom-pdfs-with-pandoc-panrun-and-the-eisvogel-latex-template/22237)
+
 - 
 
 ## Markdown to Latex
