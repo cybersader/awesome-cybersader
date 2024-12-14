@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 8:28 pm
+date modified: Friday, December 13th 2024, 10:20 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -73,6 +73,10 @@ date modified: Friday, December 13th 2024, 8:28 pm
 - [Wandmalfarbe/pandoc-latex-template: A pandoc LaTeX template to convert markdown files to PDF or LaTeX.](https://github.com/Wandmalfarbe/pandoc-latex-template)
 - [pandoc-goodies/templates/html5/github/GitHub.html5 at master · tajmone/pandoc-goodies](https://github.com/tajmone/pandoc-goodies/blob/master/templates/html5/github/GitHub.html5)
 - [Templates - Journals, CVs, Presentations, Reports and More - Overleaf, Online LaTeX Editor](https://www.overleaf.com/latex/templates)
+- [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
+- Default template from Pandoc - [jgm/pandoc-templates: Templates for pandoc, tagged to release](https://github.com/jgm/pandoc-templates/tree/master)
+- [oehrlis/pandoc_template: Pandoc Template for creating Trivadis CI like documentation.](https://github.com/oehrlis/pandoc_template/tree/master)
+- [Pandoc templates are great - aliquote.org](https://aliquote.org/post/new-pandoc-template/) 
 - 
 
 # Obsidian Pandoc, Pandoc Python Filters
@@ -157,12 +161,14 @@ pandoc --reference-doc=custom-reference.docx
 - Pandoc templates
 	- [Pandoc Templates · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki/Pandoc-Templates)
 	- https://pandoc.org/chunkedhtml-demo/6-templates.html
+	- [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
 
 ## Markdown to PDF
 
 - For `pdf` output, customize the `default.latex` template (or the `default.context` template, if you use `-t context`, or the `default.ms` template, if you use `-t ms`, or the `default.html` template, if you use `-t html`).
 	- https://pandoc.org/chunkedhtml-demo/6-templates.html
 - [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
+
 - [Generate Custom PDFs with Pandoc, Panrun, and The Eisvogel LaTex Template - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/generate-custom-pdfs-with-pandoc-panrun-and-the-eisvogel-latex-template/22237)
 	- Panrun is a tool that allows you to set arguments for pandoc in the yaml frontmatter of the markdown document, so you don’t have to remember all of the arguments you must pass.
 	- 
@@ -177,6 +183,13 @@ pandoc --reference-doc=custom-reference.docx
 		2. Store the default pandoc template within a `template.tex` file
 		3. Edit `template.tex` to attain desired margins, fonts, etc (difficult)
 		4. Do everything detailed above, in a bash script, plus the pandoc option: `--template=templatex.tex`
+
+- [Pandoc templates are great - aliquote.org](https://aliquote.org/post/new-pandoc-template/)
+	-  Rather than writing a separate YAML header, I put the header directly into the Markdown file.
+
+- Using YAML frontmatter
+	- [Metadata blocks](https://pandoc.org/chunkedhtml-demo/8.10-metadata-blocks.html#extension-yaml_metadata_block)
+	- 
 
 ## Markdown to Latex
 
