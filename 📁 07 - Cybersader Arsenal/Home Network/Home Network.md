@@ -9,6 +9,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 %% Begin Waypoint %%
 - **[[Accessing Home Router]]**
 - **[[Bridging New Home Router]]**
+- **[[Cable Management]]**
 - **[[Ethernet Cables]]**
 - **[[Home DNS]]**
 - **[[Home Firewall]]**

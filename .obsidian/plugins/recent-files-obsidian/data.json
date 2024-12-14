@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Cable Management",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "Ethernet Cables",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
@@ -187,18 +199,6 @@
     {
       "basename": "Tmux",
       "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
-    },
-    {
-      "basename": "Unifi Home Networks",
-      "path": "🕸️ UNSTRUCTURED/Unifi Home Networks/Unifi Home Networks.md"
-    },
-    {
-      "basename": "MY TECH STACK",
-      "path": "📁 07 - Cybersader Arsenal/MY TECH STACK/MY TECH STACK.md"
-    },
-    {
-      "basename": "Xbox Home Networking",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
     }
   ],
   "omittedPaths": [],
