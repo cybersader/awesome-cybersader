@@ -4,18 +4,33 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 7:54 pm
+date modified: Friday, December 13th 2024, 8:28 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 [LibreOffice](../../🕸️%20UNSTRUCTURED/LibreOffice.md)
+
 
 - [Pandoc - Pandoc User’s Guide](https://pandoc.org/MANUAL.html "Pandoc - Pandoc User’s Guide")
 - [Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum](https://forum.obsidian.md/t/any-alternative-for-exporting-the-data-instead-of-pandoc/48817 "Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum")
 
 - [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
 
-# Using the Style/CSS in Obsidian?
+# TL;DR - Obsidian Document Export Workflows
+
+## Obsidian + CSS/Styling -> PDF
+
+- .
+
+## Markdown  -> Pandoc -> Word (docx)
+
+- 
+
+## Markdown -> Pandoc -> Latex -> PDF
+
+- .
+
+# No Plugins - Using the Style/CSS in Obsidian
 
 - [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/)
 - [I was recently looking for how to make a standard pdf style without changing my whole obsidian theme or using external stuff. So, I wrote a css snippet that affects how things look in the editor and therefore affects how the pdf export looks.](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
@@ -53,8 +68,12 @@ date modified: Friday, December 13th 2024, 7:54 pm
 
 ## Pandoc Templates & Latex
 
+- https://pandoc.org/chunkedhtml-demo/6-templates.html
+
 - [Wandmalfarbe/pandoc-latex-template: A pandoc LaTeX template to convert markdown files to PDF or LaTeX.](https://github.com/Wandmalfarbe/pandoc-latex-template)
 - [pandoc-goodies/templates/html5/github/GitHub.html5 at master · tajmone/pandoc-goodies](https://github.com/tajmone/pandoc-goodies/blob/master/templates/html5/github/GitHub.html5)
+- [Templates - Journals, CVs, Presentations, Reports and More - Overleaf, Online LaTeX Editor](https://www.overleaf.com/latex/templates)
+- 
 
 # Obsidian Pandoc, Pandoc Python Filters
 
@@ -73,6 +92,7 @@ date modified: Friday, December 13th 2024, 7:54 pm
 - [jgm/pandoc-templates: Templates for pandoc, tagged to release](https://github.com/jgm/pandoc-templates)
 	- [pandoc-templates/default.openxml at master · jgm/pandoc-templates](https://github.com/jgm/pandoc-templates/blob/master/default.openxml)
 - [Home · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki)
+- https://pandoc.org/chunkedhtml-demo/6-templates.html
 
 ## Automating Obsidian Markdown to Other Formats with Styles and Layouts w/Pandoc
 
@@ -107,6 +127,7 @@ date modified: Friday, December 13th 2024, 7:54 pm
 - 
 
 ---
+
 ### 1) Automating Paragraph Styles, Headers, etc.
 
 Pandoc uses a reference document when creating docx files. It is possible to create a custom reference doc and to modify the TOCHeader style.
@@ -136,10 +157,12 @@ pandoc --reference-doc=custom-reference.docx
 - Pandoc templates
 	- [Pandoc Templates · OliverBalfour/obsidian-pandoc Wiki](https://github.com/OliverBalfour/obsidian-pandoc/wiki/Pandoc-Templates)
 	- https://pandoc.org/chunkedhtml-demo/6-templates.html
-	- 
 
 ## Markdown to PDF
 
+- For `pdf` output, customize the `default.latex` template (or the `default.context` template, if you use `-t context`, or the `default.ms` template, if you use `-t ms`, or the `default.html` template, if you use `-t html`).
+	- https://pandoc.org/chunkedhtml-demo/6-templates.html
+- [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
 - 
 
 ## Markdown to Latex
