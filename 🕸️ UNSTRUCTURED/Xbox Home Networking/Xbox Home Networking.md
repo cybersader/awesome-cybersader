@@ -102,6 +102,25 @@ What can get it working:
 
 ## Setting Up VLANs
 
+```
+I'm a bit confused on what to configure in each dashboard. I'm trying to set up...potentially a physically separated type system at layer 2 or at least understand how to do it. The netgate 2100 comes with the marvel switch.
+
+- Interfaces > Switch > VLANs
+- Interfaces > VLANs (I have the below ones)
+- mvneta0 (wan) 10 DMZ
+- mvneta0 (wan) 30 HOME_LAB
+- mvneta0 (wan) 20 INTERNAL
+- Interfaces > Interface Assignments
+
+WAN - mvneta0 (90:ec:77:91:13:56)
+LAN - mvneta1 (90:ec:77:91:13:57)
+OPT1 - VLAN 10 on mvneta0 - wan (DMZ)
+OPT2 - VLAN 20 on mvneta0 - wan (INTERNAL)
+OPT3 - VLAN 30 on mvneta0 - wan (HOME_LAB)
+
+I'm trying to understand how to break up the physical ports on the netgate switch and use that in combination (or not in combination) with VLANs
+```
+
 - [(13) Basic Setup and Configuring pfsense Firewall Rules For Home - YouTube](https://www.youtube.com/watch?v=bjr0rm93uVA)
 
 - [VLAN Configuration | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/vlan/configuration.html#web-interface-vlan-configuration)
@@ -113,8 +132,19 @@ What can get it working:
 	- "Optional" interface
 
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
-	- 
 
+- Access Ports (untagged) vs Trunk Ports (tagged VLANs)
+	- .
+
+Interfaces > Switch > VLANs:
+
+| VLAN group | Port | Members | Description         |
+| ---------- | ---- | ------- | ------------------- |
+| 1          | 1    | 2,3,4,5 | Default System VLAN |
+| 2          | 2    | 1,3,4,5 | Default System VLAN |
+| 3          | 3    | 1,2,4,5 | Default System VLAN |
+| 4          | 4    | 1,2,3,5 | Default System VLAN |
+| 5          | 5    | 1,2,3,4 | Default System VLAN |
 # Don't Buy a Netgear
 
 - The amount of issues I've had thus far after adding a Netgear to [Router IP Passthrough](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20Network/Bridging%20New%20Home%20Router/Bridging%20New%20Home%20Router.md) with my ATT router is frustrating.  I wish it did Bridged, but here we are.  If I could afford a nice Pfsense or Unifi, then I would do it.
