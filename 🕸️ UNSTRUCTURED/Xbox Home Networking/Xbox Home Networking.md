@@ -145,6 +145,9 @@ Interfaces > Switch > VLANs:
 | 3          | 3    | 1,2,4,5 | Default System VLAN |
 | 4          | 4    | 1,2,3,5 | Default System VLAN |
 | 5          | 5    | 1,2,3,4 | Default System VLAN |
+
+- 802.1q VLAN mode - guessing this is what implements the tagging of VLANs
+	- 
 # Don't Buy a Netgear
 
 - The amount of issues I've had thus far after adding a Netgear to [Router IP Passthrough](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20Network/Bridging%20New%20Home%20Router/Bridging%20New%20Home%20Router.md) with my ATT router is frustrating.  I wish it did Bridged, but here we are.  If I could afford a nice Pfsense or Unifi, then I would do it.
