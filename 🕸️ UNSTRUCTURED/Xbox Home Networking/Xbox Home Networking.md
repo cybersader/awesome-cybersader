@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Saturday, December 14th 2024, 7:47 pm
+date modified: Saturday, December 14th 2024, 8:16 pm
 ---
 
 # IPv6 Tunneling and NAT
@@ -95,6 +95,13 @@ I'm trying to be able to join parties and play games with Xbox Live on my Xbox. 
 9) Other Ideas
 
 - Would IPv6 ever have anything to do with any of this?  My NAT rules are IPv4
+
+## Setting Up VLANs
+
+- [(13) Basic Setup and Configuring pfsense Firewall Rules For Home - YouTube](https://www.youtube.com/watch?v=bjr0rm93uVA)
+
+- [VLAN Configuration | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/vlan/configuration.html#web-interface-vlan-configuration)
+	- 
 
 # Don't Buy a Netgear
 
