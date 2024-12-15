@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 13th 2024, 4:20 pm
+date modified: Sunday, December 15th 2024, 11:44 am
 ---
 
 %% Begin Waypoint %%
@@ -49,6 +49,7 @@ date modified: Friday, December 13th 2024, 4:20 pm
 	- Timeline plugin like this?
 - Auto headings and bullets?
 - Plugin to automatically put bullet point when clicking directly below a bullet list
+- Plugin to use regex replacements with pasting
 
 # Ideas
 

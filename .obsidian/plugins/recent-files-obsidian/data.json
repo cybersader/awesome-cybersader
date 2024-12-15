@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Setting Up VLANs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Setting Up VLANs/Setting Up VLANs.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
       "basename": "Xbox Home Networking",
       "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
+    },
+    {
+      "basename": "file-20241205201805625",
+      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/_attachments/file-20241205201805625.png"
     },
     {
       "basename": "Cable Management",
@@ -15,10 +27,6 @@
     {
       "basename": "Ethernet Cables",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "⬇️ Ontological Drop",
@@ -191,14 +199,6 @@
     {
       "basename": "Turning Old PC into NAS in 2024",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
-    },
-    {
-      "basename": "TrueNAS Scale Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     }
   ],
   "omittedPaths": [],

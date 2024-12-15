@@ -19,6 +19,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[ISP Shenanigans]]**
 - **[[NAT & Self-Hosting]]**
 - **[[Repurpose Old Router - DNS, Firewall]]**
+- **[[Setting Up VLANs]]**
 - **[[Unifi Hardware]]**
 
 %% End Waypoint %%
