@@ -40,6 +40,7 @@ I'm trying to understand how to break up the physical ports on the netgate switc
 - [Setting up VLANs in pfSense - YouTube](https://www.youtube.com/watch?v=rHE6MCL4Gz8&list=WL&index=8 "Setting up VLANs in pfSense - YouTube")
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 - [(1) SG-1100 VLAN Switch Configuration - YouTube | Lawrence Tech](https://www.youtube.com/watch?v=Bp_B79-WLlU)
+- [(13) Easy VLAN Configuration in PFSense with DHCP, Firewall, and Switch Examples - YouTube](https://www.youtube.com/watch?v=NihE2u3zBlw)
 
 - What is OPT?
 	- [Configuring an OPT interface as an additional WAN | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/opt-wan.html)
@@ -48,9 +49,9 @@ I'm trying to understand how to break up the physical ports on the netgate switc
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 
 - Access Ports (untagged) vs Trunk Ports (tagged VLANs)
-	- Access Port:
+	- Access Port (untagged):
 		- Adds a VLAN tag to inbound untagged traffic
-	- Trunk Port:
+	- Trunk Port (tagged VLANs):
 		- Allows tagged traffic containing specified VLAN IDs
 
 Interfaces > Switch > VLANs:
@@ -69,4 +70,6 @@ Interfaces > Switch > VLANs:
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 	- Enable 802.1q
 	- [Switch Overview | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/switch-overview.html#q-vlan-mode)
-- 
+- [(13) Easy VLAN Configuration in PFSense with DHCP, Firewall, and Switch Examples - YouTube](https://www.youtube.com/watch?v=NihE2u3zBlw)
+	- Port 0 not showing on Interfaces > Switch > Ports
+	- 
