@@ -41,6 +41,7 @@ I'm trying to understand how to break up the physical ports on the netgate switc
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 - [(1) SG-1100 VLAN Switch Configuration - YouTube | Lawrence Tech](https://www.youtube.com/watch?v=Bp_B79-WLlU)
 - [(13) Easy VLAN Configuration in PFSense with DHCP, Firewall, and Switch Examples - YouTube](https://www.youtube.com/watch?v=NihE2u3zBlw)
+- [(13) How To Setup VLANs With pfsense & UniFi 2023 - YouTube](https://www.youtube.com/watch?v=WMyz7SVlrgc&t=178s)
 
 - What is OPT?
 	- [Configuring an OPT interface as an additional WAN | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/opt-wan.html)
