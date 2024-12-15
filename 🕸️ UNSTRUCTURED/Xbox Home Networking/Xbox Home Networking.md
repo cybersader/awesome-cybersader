@@ -105,6 +105,14 @@ What can get it working:
 - [(13) Basic Setup and Configuring pfsense Firewall Rules For Home - YouTube](https://www.youtube.com/watch?v=bjr0rm93uVA)
 
 - [VLAN Configuration | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/vlan/configuration.html#web-interface-vlan-configuration)
+- [VLANs with the Netgate 2100 - My experience : r/PFSENSE](https://www.reddit.com/r/PFSENSE/comments/u1qkkf/vlans_with_the_netgate_2100_my_experience/)
+	- [Netgate 2100 VLAN Configuration | Linux & Cybersecurity in South Australia with AGIX](https://agix.com.au/netgate-2100-vlan-configuration/)
+
+- What is OPT?
+	- [Configuring an OPT interface as an additional WAN | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/opt-wan.html)
+	- "Optional" interface
+
+- [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 	- 
 
 # Don't Buy a Netgear
