@@ -16,6 +16,8 @@ date modified: Sunday, December 15th 2024, 3:24 pm
 		- by MAC address - not nearly as secure but great for convenience factor.  It's not as easy to set up though.
 
 - VLAN-Aware devices (access points, switches, routers) vs. NOT VLAN-Aware networking (whether real appliances or virtual)
+	- You can have a default (untagged) VLAN for devices that do not present VLAN tags. On a trunk (tagged) port, one VLAN is typically designated as “native” or untagged. Traffic without VLAN tags on that port is associated with this native VLAN, effectively acting as a fallback network for non-VLAN-aware devices.
+	- When you configure a port to carry multiple VLANs (a trunk), you usually have one VLAN that is untagged—often called the **native VLAN**. On enterprise switches, this is a common concept. The native VLAN serves as the "default" network for any traffic arriving on that port without a VLAN tag. On Netgate appliances, you achieve a similar configuration by assigning a VLAN ID as the PVID (Port VLAN ID) and making it the untagged VLAN on that port.
 	- 
 
 # PfSense
