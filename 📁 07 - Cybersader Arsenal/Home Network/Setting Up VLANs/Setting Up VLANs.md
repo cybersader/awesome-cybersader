@@ -1,11 +1,22 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Sunday, December 15th 2024, 11:40 am
-date modified: Sunday, December 15th 2024, 11:43 am
+date modified: Sunday, December 15th 2024, 3:24 pm
 ---
+
+# TL;DR - Handling VLANs
+
+- 3 ways to put your devices (clients/PCs/phones) into different VLANs
+	- For ethernet - by the port they are plugged into on the switch
+	- For Wi-Fi - 
+		- by SSID (Main wifi vs. Guest wifi) with separate SSIDs whether on the same or different access points.  Users are essentially broken up by knowing the right wifi password.  The wireless access point has to allow this to tag different SSIDs with different VLAN tags (specifies which VLAN the traffic is logically/virtually on).
+		- by MAC address - not nearly as secure but great for convenience factor.  It's not as easy to set up though.
+
+- VLAN-Aware devices (access points, switches, routers) vs. NOT VLAN-Aware networking (whether real appliances or virtual)
+	- 
 
 # PfSense
 
@@ -73,4 +84,3 @@ Interfaces > Switch > VLANs:
 	- [Switch Overview | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/switch-overview.html#q-vlan-mode)
 - [(13) Easy VLAN Configuration in PFSense with DHCP, Firewall, and Switch Examples - YouTube](https://www.youtube.com/watch?v=NihE2u3zBlw)
 	- Port 0 not showing on Interfaces > Switch > Ports
-	- 
