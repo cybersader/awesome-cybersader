@@ -35,6 +35,9 @@ date modified: Saturday, December 14th 2024, 6:53 pm
 	- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game)
 	- 
 
+- IGMP being blocked?
+	- ![](_attachments/file-20241214191242944.png)
+- 
 # Don't Buy a Netgear
 
 - The amount of issues I've had thus far after adding a Netgear to [Router IP Passthrough](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20Network/Bridging%20New%20Home%20Router/Bridging%20New%20Home%20Router.md) with my ATT router is frustrating.  I wish it did Bridged, but here we are.  If I could afford a nice Pfsense or Unifi, then I would do it.
