@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 15th 2024, 11:40 am
-date modified: Sunday, December 15th 2024, 5:02 pm
+date modified: Sunday, December 15th 2024, 5:26 pm
 ---
 
 > [!info] Why VLANs?
@@ -89,3 +89,12 @@ Interfaces > Switch > VLANs:
 	- [Switch Overview | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/switch-overview.html#q-vlan-mode)
 - [(13) Easy VLAN Configuration in PFSense with DHCP, Firewall, and Switch Examples - YouTube](https://www.youtube.com/watch?v=NihE2u3zBlw)
 	- Port 0 not showing on Interfaces > Switch > Ports
+
+- The approach
+	- Interfaces > Switch > VLANs
+		- (managed netgear switch 2100)
+		- 
+## MAC Based VLANs and RADIUS on Pfsense
+
+- [Assign mac addresses to specific vLANs : r/PFSENSE](https://www.reddit.com/r/PFSENSE/comments/szj5g4/assign_mac_addresses_to_specific_vlans/)
+- [(13) How To Configure FreeRadius on pfsense and static assign IP addresses to VPN users - YouTube](https://www.youtube.com/watch?v=jEK-O3U3gdg)s
