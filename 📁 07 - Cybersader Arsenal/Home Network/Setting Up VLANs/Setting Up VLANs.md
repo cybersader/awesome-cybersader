@@ -38,6 +38,8 @@ I'm trying to understand how to break up the physical ports on the netgate switc
 - [How to structure networks with VLANs - YouTube](https://www.youtube.com/watch?v=lhrlrvVZnII&list=WL&index=6 "How to structure networks with VLANs - YouTube")
 - [What is a VLAN??? - How to setup VLANs in your Home Network and WHY YOU NEED THEM - YouTube](https://www.youtube.com/watch?v=XdqP14NclZ0&list=WL&index=7 "What is a VLAN??? - How to setup VLANs in your Home Network and WHY YOU NEED THEM - YouTube")
 - [Setting up VLANs in pfSense - YouTube](https://www.youtube.com/watch?v=rHE6MCL4Gz8&list=WL&index=8 "Setting up VLANs in pfSense - YouTube")
+- [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
+- [(1) SG-1100 VLAN Switch Configuration - YouTube | Lawrence Tech](https://www.youtube.com/watch?v=Bp_B79-WLlU)
 
 - What is OPT?
 	- [Configuring an OPT interface as an additional WAN | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/opt-wan.html)
@@ -46,7 +48,10 @@ I'm trying to understand how to break up the physical ports on the netgate switc
 - [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
 
 - Access Ports (untagged) vs Trunk Ports (tagged VLANs)
-	- .
+	- Access Port:
+		- Adds a VLAN tag to inbound untagged traffic
+	- Trunk Port:
+		- Allows tagged traffic containing specified VLAN IDs
 
 Interfaces > Switch > VLANs:
 
@@ -60,4 +65,8 @@ Interfaces > Switch > VLANs:
 
 - 802.1q VLAN mode - guessing this is what implements the tagging of VLANs
 	- 802.1Q, also known as Dot1q, is a networking standard that defines how to create virtual local area networks (VLANs) on an Ethernet network. It's the most common method for VLAN tagging and is used by many vendors.
-	- 
+
+- [Configuring the Switch Ports | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/configuring-the-switch-ports.html)
+	- Enable 802.1q
+	- [Switch Overview | Netgate Documentation](https://docs.netgate.com/pfsense/en/latest/solutions/netgate-2100/switch-overview.html#q-vlan-mode)
+- 
