@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Saturday, December 14th 2024, 8:16 pm
+date modified: Saturday, December 14th 2024, 9:18 pm
 ---
 
 # IPv6 Tunneling and NAT
@@ -47,6 +47,10 @@ I'm trying to be able to join parties and play games with Xbox Live on my Xbox. 
 - [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game/78)
 	- Couldn't try this because it seems like an old path - I'm new to Pfsense
 - [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
+What can get it working:
+- Turning on UPnP with "Default Deny" turned off
+	- This is really insecure though and I need to figure out how to limit the access
+
 1) Firewall > NAT > Port Forward
 
 - Interface: WAN, Protocol: UDP/TCP (duplicates rule like this), Source Addr: *, Source Ports: *, Dest Addr: WAN address, Dest Ports: Xbox_ports (from included link)
@@ -92,7 +96,7 @@ I'm trying to be able to join parties and play games with Xbox Live on my Xbox. 
 - I'm using the BGW320 (pretty sure that's the model) from ATT
 - I have it set up with IP Passthrough with all the firewall settings turned off.  I haven't had issues with this part.  However, this could be playing into something else that I'm not aware of.
 
-9) Other Ideas
+8) Other Ideas
 
 - Would IPv6 ever have anything to do with any of this?  My NAT rules are IPv4
 
