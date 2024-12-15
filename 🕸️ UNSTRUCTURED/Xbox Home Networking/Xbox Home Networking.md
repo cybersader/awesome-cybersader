@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Saturday, December 14th 2024, 6:25 pm
+date modified: Saturday, December 14th 2024, 6:53 pm
 ---
 
 # IPv6 Tunneling and NAT
@@ -14,9 +14,7 @@ date modified: Saturday, December 14th 2024, 6:25 pm
 # Ports to Open on NAT/Firewall to Xbox
 
 - [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
-- [Tweaking4All.com - pfSense 2.x - How to fix Strict NAT for XBox One](https://www.tweaking4all.com/network-internet/pfsense-strict-nat-xbox-one/)
-- [pfSense and Multiple Xbox Ones: Open NAT Guide - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/pfsense-and-multiple-xbox-ones-open-nat-guide/2409)
-- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game/78)
+
 - 
 
 - Port 88 (UDP)
@@ -26,6 +24,16 @@ date modified: Saturday, December 14th 2024, 6:25 pm
 - Port 500 (UDP)
 - Port 3544 (UDP)
 - Port 4500 (UDP)
+
+# Using PFSense
+
+- [Tweaking4All.com - pfSense 2.x - How to fix Strict NAT for XBox One](https://www.tweaking4all.com/network-internet/pfsense-strict-nat-xbox-one/)
+- [pfSense and Multiple Xbox Ones: Open NAT Guide - Networking & Firewalls - Lawrence Systems Forums](https://forums.lawrencesystems.com/t/pfsense-and-multiple-xbox-ones-open-nat-guide/2409)
+- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game/78)
+- Using system packages
+	- [System Patches Package | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/development/system-patches.html)
+	- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game)
+	- 
 
 # Don't Buy a Netgear
 
