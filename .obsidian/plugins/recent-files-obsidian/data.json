@@ -5,6 +5,26 @@
       "path": "📁 07 - Cybersader Arsenal/Home Network/Setting Up VLANs/Setting Up VLANs.md"
     },
     {
+      "basename": "Using a New Router with TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
+    },
+    {
+      "basename": "Repurpose Old Router - DNS, Firewall",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
+    },
+    {
+      "basename": "Home Routers & ISPs",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
+    },
+    {
+      "basename": "Bridging New Home Router",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
@@ -19,10 +39,6 @@
     {
       "basename": "Cable Management",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
-    },
-    {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     },
     {
       "basename": "Ethernet Cables",
@@ -183,22 +199,6 @@
     {
       "basename": "Projects Plugin Testing",
       "path": "📦 VAULT SANDBOX TESTING/Projects Plugin Testing/Projects Plugin Testing.md"
-    },
-    {
-      "basename": "Customizing Obsidian Publish",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
-    },
-    {
-      "basename": "TrueNAS Electric Eel 24.10 Update",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nextcloud with Nginx Proxy Manager",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nextcloud with Nginx Proxy Manager/TrueNAS Scale - Nextcloud with Nginx Proxy Manager.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     }
   ],
   "omittedPaths": [],
