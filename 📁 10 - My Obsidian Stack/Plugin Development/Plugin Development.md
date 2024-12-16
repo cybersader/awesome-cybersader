@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Monday, December 16th 2024, 8:37 am
-date modified: Monday, December 16th 2024, 2:32 pm
+date modified: Monday, December 16th 2024, 3:18 pm
 ---
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
@@ -21,6 +21,8 @@ Prerequisites:
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
 
 ## 1) Download Sample Plugin OR Existing Plugin
+
+### 1.a) Sample Plugin
 
 The sample plugin you'll use in this tutorial is available in a [GitHub repository](https://github.com/obsidianmd/obsidian-sample-plugin).
 
@@ -42,6 +44,13 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposit
 > The repository for the sample plugin is a GitHub template repository, which means you can create your own repository from the sample plugin. To learn how, refer to [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
 > 
 > Remember to use the URL of your own repository when cloning the sample plugin.
+
+### 2.a) Existing Plugin w/Bun
+
+- `cd` into the vault
+- `code .` - to open in VS Code
+- `bun install` to install all of the dependencies
+- 
 
 ## 2) Bun and Obsidian Typings
 
