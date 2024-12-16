@@ -1,3 +1,4 @@
+- 2024-12-16 at 16h35 · [[Obsidian & Corporate Docs]]
 - 2024-12-16 at 15h53 · [[Plugin Development]]
 - 2024-12-16 at 13h12 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-16 at 12h50 · [[OneNote vs Obsidian]]
@@ -12,7 +13,6 @@
 - 2024-12-16 at 11h17 · [[PowerShell for InfoSec]]
 - 2024-12-16 at 11h15 · [[Cyber Community]]
 - 2024-12-16 at 11h10 · [[Adversary Emulation]]
-- 2024-12-16 at 10h10 · [[Obsidian & Corporate Docs]]
 - 2024-12-16 at 08h37 · [[📁 10 - My Obsidian Stack]]
 - 2024-12-15 at 20h44 · [[Obsidian as a CMS]]
 - 2024-12-15 at 20h44 · [[✒️ Obsidian Tech Stack Diagram]]

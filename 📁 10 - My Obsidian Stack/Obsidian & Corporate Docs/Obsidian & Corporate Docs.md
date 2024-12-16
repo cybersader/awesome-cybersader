@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Monday, December 16th 2024, 8:53 am
+date modified: Monday, December 16th 2024, 4:35 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -63,6 +63,7 @@ date modified: Monday, December 16th 2024, 8:53 am
 	- [CriticMarkup](https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html)
 	- [[Proposal] Extensions to the Critic Markup standard · Issue #50 · CriticMarkup/CriticMarkup-toolkit](https://github.com/CriticMarkup/CriticMarkup-toolkit/issues/50)
 	- [Suggestion Mode for Obsidian like Google Docs/Word for editing notes - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/suggestion-mode-for-obsidian-like-google-docs-word-for-editing-notes/50255)
+	- [Margin notes - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/margin-notes/73375)
 
 - Using an actual VCS (version control system) like Git?
 	- Difficult option
