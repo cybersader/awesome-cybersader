@@ -45,7 +45,7 @@ date modified: Sunday, December 15th 2024, 10:24 pm
 - [Latex confusion with Pandoc and Templates : r/LaTeX](https://www.reddit.com/r/LaTeX/comments/l9iz7e/latex_confusion_with_pandoc_and_templates/)
 - 
 
-# Comments, Revisions, Review, Track Changes, Suggestions
+# Comments, Revisions, Review, Track Changes, Suggestions, Version
 
 - [MrGVSV/obsidian-better-comment-toggle](https://github.com/MrGVSV/obsidian-better-comment-toggle)
 - [BumbrT/obsidian-reading-comments: Reading comments, for consuming books or large articles in markdown with https://obsidian.md/.](https://github.com/BumbrT/obsidian-reading-comments)
@@ -54,6 +54,7 @@ date modified: Sunday, December 15th 2024, 10:24 pm
 - [Note Comments Panel - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/note-comments-panel/11913)
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
+- [How do you track changes in a text in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/10cf3bg/how_do_you_track_changes_in_a_text_in_obsidian/)
 - 
 
 - Alternative to MS Word's "Track Changes" w/comments and suggestions:
