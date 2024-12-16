@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
     {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+      "basename": "Obsidian Plugin List",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugin List/Obsidian Plugin List.md"
     },
     {
       "basename": "OneNote vs Obsidian",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 14 - Journal, Diary",
       "path": "📁 14 - Journal, Diary/📁 14 - Journal, Diary.md"
-    },
-    {
-      "basename": "Obsidian Knowledge Management Workflows",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
     }
   ],
   "omittedPaths": [],
