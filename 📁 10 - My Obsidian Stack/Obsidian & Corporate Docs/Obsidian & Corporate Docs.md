@@ -61,6 +61,7 @@ date modified: Sunday, December 15th 2024, 10:24 pm
 	- [Track changes in Word - Microsoft Support](https://support.microsoft.com/en-us/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a)
 	- [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
 	- [CriticMarkup](https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html)
+	- [[Proposal] Extensions to the Critic Markup standard · Issue #50 · CriticMarkup/CriticMarkup-toolkit](https://github.com/CriticMarkup/CriticMarkup-toolkit/issues/50)
 	- [Suggestion Mode for Obsidian like Google Docs/Word for editing notes - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/suggestion-mode-for-obsidian-like-google-docs-word-for-editing-notes/50255)
 
 - Using an actual VCS (version control system) like Git?
