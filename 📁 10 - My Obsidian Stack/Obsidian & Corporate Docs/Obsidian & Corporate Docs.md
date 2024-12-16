@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Sunday, December 15th 2024, 10:24 pm
+date modified: Monday, December 16th 2024, 8:53 am
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -214,3 +214,8 @@ pandoc --reference-doc=custom-reference.docx
 
 - [Marked 2 - Smarter tools for smarter writers](https://marked2app.com/ "Marked 2 - Smarter tools for smarter writers")
 - [Writage - Markdown plugin for Microsoft Word](https://www.writage.com/ "Writage - Markdown plugin for Microsoft Word")
+
+# Office -> Markdown
+
+- [microsoft/markitdown: Python tool for converting files and office documents to Markdown.](https://github.com/microsoft/markitdown)
+- 

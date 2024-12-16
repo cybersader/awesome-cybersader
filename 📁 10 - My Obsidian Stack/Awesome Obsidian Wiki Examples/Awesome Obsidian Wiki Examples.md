@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Sunday, December 15th 2024, 8:14 pm
+date modified: Monday, December 16th 2024, 8:47 am
 ---
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
@@ -26,6 +26,8 @@ date modified: Sunday, December 15th 2024, 8:14 pm
 
 # Examples
 
+- [publish homepage - chromatically - Obsidian Publish](https://publish.obsidian.md/chromatically/publish+homepage "publish homepage - chromatically - Obsidian Publish")
+- [Witaj w cyfrowym ogrodzie - Arkadiusz Lenkiewicz](https://arkadiuszlenkiewicz.pl/Witaj+w+cyfrowym+ogrodzie "Witaj w cyfrowym ogrodzie - Arkadiusz Lenkiewicz")
 - [The Threshold](https://hermitage.utsob.me/)
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [Callout - Cards - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Callouts/Callout+-+Cards)

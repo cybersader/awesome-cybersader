@@ -41,6 +41,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian to Ghost]]**
 - **[[Obsidian Vault Security]]**
 - **[[Obsidian-Related Bloggers]]**
+- **[[Plugin Development]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
 	- **[[Syncthing Incompatible with Git]]**
