@@ -1,6 +1,6 @@
 {
   "autoCollectAttachments": false,
-  "changeNoteBacklinksAlt": false,
+  "changeNoteBacklinksAlt": true,
   "consistencyReportFile": "consistency-report.md",
   "deleteAttachmentsWithNote": true,
   "deleteEmptyFolders": true,

@@ -1,11 +1,10 @@
 ---
-aliases:
-  - Cyber Events
-  - Local Cyber Events
-tags: 
+permalink:
+aliases: [Cyber Events, Local Cyber Events]
+tags: []
 publish: true
 date created: Saturday, May 25th 2024, 2:48 pm
-date modified: Saturday, October 12th 2024, 5:02 pm
+date modified: Monday, December 16th 2024, 11:15 am
 ---
 
 [Planning Deadwood 2024 WWHF Trip](../Planning%20Deadwood%202024%20WWHF%20Trip/Planning%20Deadwood%202024%20WWHF%20Trip.md)
@@ -19,11 +18,10 @@ date modified: Saturday, October 12th 2024, 5:02 pm
 
 - [2024 - Wild West Hackin' Fest](https://wildwesthackinfest.com/)
 - [Bsides Bloomington 2024](https://www.accelevents.com/e/bsidesbloomington)
-	- [BSides Bloomington 2023, Fri, Oct 13th, 2023 @ 5:00 AM, agenda Accelevents](https://www.accelevents.com/e/bsidesbloomington#agenda)
-- [June 10 2024 - Incident Response Summit – Antisyphon Training](https://www.antisyphontraining.com/event/incident-response-summit/)
 
 # Periodic Meetups
 
+- [IndyHackers - Events and Jobs for Tech Folks in Indianapolis](https://www.indyhackers.org/)
 - [www.issa.org](https://www.issa.org/) 
 
 ## Quarterly

@@ -13,6 +13,7 @@ publish: true
 	- **[[Scanning Inboxes for SaaS Sprawl & Visibility]]**
 	- **[[Web App Vuln Scanning with Nuclei]]**
 - **[[Active Directory]]**
+- **[[Adversary Emulation]]**
 - **[[AI Usage in Orgs]]**
 - **[[Authentication & Trust Models]]**
 - **[[Container Security]]**
@@ -41,7 +42,7 @@ publish: true
 - **[[Out-of-Band Communications]]**
 - **[[Physical Security]]**
 - **[[Remote Desktop Gateways]]**
-- **[[Scripting vs Development Risks on Endpoints]]**
+- **[[Scripting Security]]**
 - **[[Secure Cyber Environment]]**
 - **[[Social Engineering]]**
 - **[[Workforce Cyber Resilience]]**

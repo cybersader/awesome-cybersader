@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 8:00 am
-date modified: Thursday, November 7th 2024, 1:04 pm
+date modified: Monday, December 16th 2024, 11:17 am
 ---
 
 - IEUser: Passw0rd!
@@ -526,7 +527,7 @@ I want to know if tools work against hackers.  Do these tools and emulation plat
 # JEA (Just Enough Administration)
 
 [Securing Python on Workstations](../../../📁%2005%20-%20Organizational%20Cyber/Secure%20Cyber%20Environment/Securing%20Python%20on%20Workstations/Securing%20Python%20on%20Workstations.md)
-[Scripting vs Development Risks on Endpoints](../../../📁%2004%20-%20Organizational%20Cyber/Scripting%20vs%20Development%20Risks%20on%20Endpoints/Scripting%20vs%20Development%20Risks%20on%20Endpoints.md)
+[Scripting Security](../../../📁%2005%20-%20Organizational%20Cyber/Scripting%20Security/Scripting%20Security.md)
 
 - How do we allow people to administer systems and do their jobs without being full admins
 - PS v5+

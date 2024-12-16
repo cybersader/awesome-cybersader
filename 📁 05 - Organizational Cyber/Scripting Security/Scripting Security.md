@@ -1,12 +1,19 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: [Scripting vs Development Risks on Endpoints]
+tags: []
 publish: true
 date created: Sunday, July 14th 2024, 7:19 pm
-date modified: Monday, July 29th 2024, 11:27 am
+date modified: Monday, December 16th 2024, 11:18 am
 ---
 
-[Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md) 
+[Secure Cyber Environment](../Secure%20Cyber%20Environment/Secure%20Cyber%20Environment.md)
+[PowerShell for InfoSec](../../📁%2006%20-%20Learning,%20Notes/Cyber%20Classes/PowerShell%20for%20InfoSec/PowerShell%20for%20InfoSec.md)
+
+# DROP
+
+- [markdomansky/WebJEA: WebJEA - Secure Self Service Web Forms from PowerShell Scripts](https://github.com/markdomansky/WebJEA "markdomansky/WebJEA: WebJEA - Secure Self Service Web Forms from PowerShell Scripts")
+- [PowerShell: Implementing Just-Enough-Administration (JEA), Step-by-Step – SID-500.COM](https://sid-500.com/2018/02/11/powershell-implementing-just-enough-administration-jea-step-by-step/ "PowerShell: Implementing Just-Enough-Administration (JEA), Step-by-Step – SID-500.COM")
 
 # Does Development or Analytics Need Local Admin?
 

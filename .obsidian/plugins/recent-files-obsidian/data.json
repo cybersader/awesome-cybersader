@@ -1,12 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian & Corporate Docs",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
+      "basename": "Why Use Obsidian Sync",
+      "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
+    },
+    {
+      "basename": "Social Engineering",
+      "path": "📁 05 - Organizational Cyber/Social Engineering/Social Engineering.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Backups - The 3,2,1 Rule",
+      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
+    },
+    {
+      "basename": "Windows Backups Duplicati 2024",
+      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
+    },
+    {
+      "basename": "Gaming Hacks & Cheats",
+      "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
+    },
+    {
+      "basename": "Scripting Security",
+      "path": "📁 05 - Organizational Cyber/Scripting Security/Scripting Security.md"
     },
     {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "PowerShell for InfoSec",
+      "path": "📁 06 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
+    },
+    {
+      "basename": "Cyber Community",
+      "path": "📁 11 - Community/Cyber Community/Cyber Community.md"
+    },
+    {
+      "basename": "Adversary Emulation",
+      "path": "📁 05 - Organizational Cyber/Adversary Emulation/Adversary Emulation.md"
+    },
+    {
+      "basename": "Org Pentesting",
+      "path": "📁 05 - Organizational Cyber/Org Pentesting/Org Pentesting.md"
+    },
+    {
+      "basename": "✒️ Obsidian Tech Stack Diagram",
+      "path": "📁 10 - My Obsidian Stack/✒️ Obsidian Tech Stack Diagram/✒️ Obsidian Tech Stack Diagram.md"
+    },
+    {
+      "basename": "OneNote vs Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/OneNote vs Obsidian.md"
+    },
+    {
+      "basename": "Obsidian & Corporate Docs",
+      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
     {
       "basename": "Awesome Obsidian Wiki Examples",
@@ -23,14 +75,6 @@
     {
       "basename": "📁 10 - My Obsidian Stack",
       "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "✒️ Obsidian Tech Stack Diagram",
-      "path": "📁 10 - My Obsidian Stack/✒️ Obsidian Tech Stack Diagram/✒️ Obsidian Tech Stack Diagram.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Pasted Image 20241215200947_114",
@@ -155,50 +199,6 @@
     {
       "basename": "OSINT",
       "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
-    },
-    {
-      "basename": "Obsidian Vaults with Cybersecurity",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Vaults with Cybersecurity/Obsidian Vaults with Cybersecurity.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Integrations",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/⬇️ Obsidian Integrations.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Awesome Clothing",
-      "path": "🕸️ UNSTRUCTURED/Awesome Clothing/Awesome Clothing.md"
-    },
-    {
-      "basename": "2025 Cybersecurity Goals",
-      "path": "🕸️ UNSTRUCTURED/2025 Cybersecurity Goals/2025 Cybersecurity Goals.md"
-    },
-    {
-      "basename": "⬇️ Misc_Links",
-      "path": "🕸️ UNSTRUCTURED/⬇️ Misc_Links/⬇️ Misc_Links.md"
-    },
-    {
-      "basename": "Collaborative Red Team Engagement Strategy",
-      "path": "🕸️ UNSTRUCTURED/Collaborative Red Team Engagement Strategy.md"
-    },
-    {
-      "basename": "Xbox Controllers",
-      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Home Network Hardware",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Home Network Hardware.md"
-    },
-    {
-      "basename": "Awesome Hardware",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Awesome Hardware/Awesome Hardware.md"
     }
   ],
   "omittedPaths": [],
