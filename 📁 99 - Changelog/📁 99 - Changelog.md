@@ -1,4 +1,4 @@
-- 2024-12-16 at 15h18 · [[Plugin Development]]
+- 2024-12-16 at 15h53 · [[Plugin Development]]
 - 2024-12-16 at 13h12 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-16 at 12h50 · [[OneNote vs Obsidian]]
 - 2024-12-16 at 12h50 · [[Inputs, Capture]]

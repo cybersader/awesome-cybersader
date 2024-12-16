@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Monday, December 16th 2024, 8:37 am
-date modified: Monday, December 16th 2024, 3:18 pm
+date modified: Monday, December 16th 2024, 3:51 pm
 ---
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
@@ -12,6 +12,14 @@ date modified: Monday, December 16th 2024, 3:18 pm
 
 - [How to get started with developing a custom Plugin? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-to-get-started-with-developing-a-custom-plugin/8157/3)
 - [Leaving the Comfort Zone Behind: The Journey to Developing a Plugin for Obsidian.md - DEV Community](https://dev.to/dariocasciato/leaving-the-comfort-zone-behind-the-journey-to-developing-a-plugin-for-obsidianmd-53hi)
+
+# Monetization
+
+- [Is it possible to build paid obsidian plugins? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/1ao558b/is_it_possible_to_build_paid_obsidian_plugins/)
+	- You can ask for donations and/or setup a priority queue via ko-fi or opencollective
+	- [Open Collective - Make your community sustainable. Collect and spend money transparently.](https://opencollective.com/pricing)
+	- [Ko-fi | Everything you need to earn & grow](https://ko-fi.com/features)
+- 
 
 # PLUGIN DEVELOPMENT WORKFLOW
 
