@@ -1,4 +1,4 @@
-- 2024-12-15 at 22h03 · [[Obsidian & Corporate Docs]]
+- 2024-12-15 at 22h24 · [[Obsidian & Corporate Docs]]
 - 2024-12-15 at 20h44 · [[Obsidian as a CMS]]
 - 2024-12-15 at 20h44 · [[📁 10 - My Obsidian Stack]]
 - 2024-12-15 at 20h44 · [[✒️ Obsidian Tech Stack Diagram]]

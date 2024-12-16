@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Sunday, December 15th 2024, 8:00 pm
+date modified: Sunday, December 15th 2024, 10:24 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -47,10 +47,6 @@ date modified: Sunday, December 15th 2024, 8:00 pm
 
 # Comments, Revisions, Review, Track Changes, Suggestions
 
-- [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
-	- [CriticMarkup](https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html)
-	- 
-- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup)
 - [MrGVSV/obsidian-better-comment-toggle](https://github.com/MrGVSV/obsidian-better-comment-toggle)
 - [BumbrT/obsidian-reading-comments: Reading comments, for consuming books or large articles in markdown with https://obsidian.md/.](https://github.com/BumbrT/obsidian-reading-comments)
 - [ryanjamurphy/review-obsidian: Add the current note to a future daily note to remember to review it.](https://github.com/ryanjamurphy/review-obsidian)
@@ -58,9 +54,14 @@ date modified: Sunday, December 15th 2024, 8:00 pm
 - [Note Comments Panel - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/note-comments-panel/11913)
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
-- [Suggestion Mode for Obsidian like Google Docs/Word for editing notes - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/suggestion-mode-for-obsidian-like-google-docs-word-for-editing-notes/50255)
-- [Track changes in Word - Microsoft Support](https://support.microsoft.com/en-us/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a)
 - 
+
+- Alternative to MS Word's "Track Changes" w/comments and suggestions:
+	- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup) - hasn't been maintained for a bit.  If corporate use becomes more popular this could become an essential.
+	- [Track changes in Word - Microsoft Support](https://support.microsoft.com/en-us/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a)
+	- [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
+	- [CriticMarkup](https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html)
+	- [Suggestion Mode for Obsidian like Google Docs/Word for editing notes - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/suggestion-mode-for-obsidian-like-google-docs-word-for-editing-notes/50255)
 
 - Using an actual VCS (version control system) like Git?
 	- Difficult option
