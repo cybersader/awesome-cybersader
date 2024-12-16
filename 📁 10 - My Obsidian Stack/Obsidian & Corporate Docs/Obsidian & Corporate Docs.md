@@ -45,9 +45,11 @@ date modified: Sunday, December 15th 2024, 8:00 pm
 - [Latex confusion with Pandoc and Templates : r/LaTeX](https://www.reddit.com/r/LaTeX/comments/l9iz7e/latex_confusion_with_pandoc_and_templates/)
 - 
 
-# Comments, Revisions, Review
+# Comments, Revisions, Review, Track Changes, Suggestions
 
 - [New Plugin: Commentator - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-commentator/66013)
+	- [CriticMarkup](https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html)
+	- 
 - [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup)
 - [MrGVSV/obsidian-better-comment-toggle](https://github.com/MrGVSV/obsidian-better-comment-toggle)
 - [BumbrT/obsidian-reading-comments: Reading comments, for consuming books or large articles in markdown with https://obsidian.md/.](https://github.com/BumbrT/obsidian-reading-comments)
@@ -56,7 +58,15 @@ date modified: Sunday, December 15th 2024, 8:00 pm
 - [Note Comments Panel - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/note-comments-panel/11913)
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
+- [Suggestion Mode for Obsidian like Google Docs/Word for editing notes - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/suggestion-mode-for-obsidian-like-google-docs-word-for-editing-notes/50255)
+- [Track changes in Word - Microsoft Support](https://support.microsoft.com/en-us/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a)
 - 
+
+- Using an actual VCS (version control system) like Git?
+	- Difficult option
+	- [Diffuse | Diffuse is a graphical tool for comparing and merging text files. It can retrieve files for comparison from Bazaar, CVS, Darcs, Git, Mercurial, Monotone, RCS, Subversion, and SVK repositories.](https://mightycreak.github.io/diffuse/)
+	- [kometenstaub/obsidian-version-history-diff: Get a diff view of your Obsidian Sync, File Recovery and Git version history](https://github.com/kometenstaub/obsidian-version-history-diff)
+	- 
 
 # Template & Style Downloads
 
