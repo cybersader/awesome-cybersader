@@ -1,4 +1,4 @@
-- 2024-12-16 at 08h53 · [[Obsidian & Corporate Docs]]
+- 2024-12-16 at 10h10 · [[Obsidian & Corporate Docs]]
 - 2024-12-16 at 08h47 · [[Awesome Obsidian Wiki Examples]]
 - 2024-12-16 at 08h37 · [[Plugin Development]]
 - 2024-12-16 at 08h37 · [[📁 10 - My Obsidian Stack]]

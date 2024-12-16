@@ -10,7 +10,6 @@ date modified: Monday, December 16th 2024, 8:53 am
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 [LibreOffice](../../🕸️%20UNSTRUCTURED/LibreOffice.md)
 
-
 - [Pandoc - Pandoc User’s Guide](https://pandoc.org/MANUAL.html "Pandoc - Pandoc User’s Guide")
 - [Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum](https://forum.obsidian.md/t/any-alternative-for-exporting-the-data-instead-of-pandoc/48817 "Any Alternative for exporting the data - instead of pandoc? - Help - Obsidian Forum")
 
@@ -24,13 +23,13 @@ date modified: Monday, December 16th 2024, 8:53 am
 
 ## Markdown  -> Pandoc -> Word (docx)
 
-- 
+-
 
 ## Markdown -> Pandoc -> Latex -> PDF
 
 - [Wandmalfarbe/pandoc-latex-template: A pandoc LaTeX template to convert markdown files to PDF or LaTeX.](https://github.com/Wandmalfarbe/pandoc-latex-template)
 - [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
-- 
+-
 
 # No Plugins - Using the Style/CSS in Obsidian
 
@@ -43,7 +42,7 @@ date modified: Monday, December 16th 2024, 8:53 am
 > [!tldr] Pandoc, in the case of Obsidian, allows us to write everything in Markdown along with YAML frontmatter (properties at the top of page) and be able to convert to pdf, Latex, and Docx formats with our templates
 
 - [Latex confusion with Pandoc and Templates : r/LaTeX](https://www.reddit.com/r/LaTeX/comments/l9iz7e/latex_confusion_with_pandoc_and_templates/)
-- 
+-
 
 # Comments, Revisions, Review, Track Changes, Suggestions, Version
 
@@ -55,7 +54,7 @@ date modified: Monday, December 16th 2024, 8:53 am
 - [New plugin: Obsidian Reading Comments - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/new-plugin-obsidian-reading-comments/53352)
 - [`%%` Comments in Reading Mode - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/comments-in-reading-mode/55613)
 - [How do you track changes in a text in Obsidian? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/10cf3bg/how_do_you_track_changes_in_a_text_in_obsidian/)
-- 
+-
 
 - Alternative to MS Word's "Track Changes" w/comments and suggestions:
 	- [Fevol/obsidian-criticmarkup: Annotate notes with comments and suggestions using CriticMarkup in Obsidian](https://github.com/Fevol/obsidian-criticmarkup) - hasn't been maintained for a bit.  If corporate use becomes more popular this could become an essential.
@@ -69,7 +68,7 @@ date modified: Monday, December 16th 2024, 8:53 am
 	- Difficult option
 	- [Diffuse | Diffuse is a graphical tool for comparing and merging text files. It can retrieve files for comparison from Bazaar, CVS, Darcs, Git, Mercurial, Monotone, RCS, Subversion, and SVK repositories.](https://mightycreak.github.io/diffuse/)
 	- [kometenstaub/obsidian-version-history-diff: Get a diff view of your Obsidian Sync, File Recovery and Git version history](https://github.com/kometenstaub/obsidian-version-history-diff)
-	- 
+	-
 
 # Template & Style Downloads
 
@@ -91,8 +90,8 @@ date modified: Monday, December 16th 2024, 8:53 am
 - [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
 - Default template from Pandoc - [jgm/pandoc-templates: Templates for pandoc, tagged to release](https://github.com/jgm/pandoc-templates/tree/master)
 - [oehrlis/pandoc_template: Pandoc Template for creating Trivadis CI like documentation.](https://github.com/oehrlis/pandoc_template/tree/master)
-- [Pandoc templates are great - aliquote.org](https://aliquote.org/post/new-pandoc-template/) 
-- 
+- [Pandoc templates are great - aliquote.org](https://aliquote.org/post/new-pandoc-template/)
+-
 
 # Obsidian Pandoc, Pandoc Python Filters
 
@@ -143,7 +142,7 @@ date modified: Monday, December 16th 2024, 8:53 am
 <u>Workflow:</u>
 
 - Export with command in Obsidian
-- 
+-
 
 ---
 
@@ -166,7 +165,7 @@ pandoc --print-default-data-file reference.docx > custom-reference.docx
 ```
 pandoc --reference-doc=custom-reference.docx …
 ```
-    
+
 Alternatively, rename the file to `reference.docx` and place it in pandoc's data directory, so it is chosen as default.
 
 ```
@@ -186,7 +185,7 @@ pandoc --reference-doc=custom-reference.docx
 
 - [Generate Custom PDFs with Pandoc, Panrun, and The Eisvogel LaTex Template - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/generate-custom-pdfs-with-pandoc-panrun-and-the-eisvogel-latex-template/22237)
 	- Panrun is a tool that allows you to set arguments for pandoc in the yaml frontmatter of the markdown document, so you don’t have to remember all of the arguments you must pass.
-	- 
+	-
 - [To sum up what pandoc does](https://emmanuelbosquet.com/2022/awesome_pdf_with_eisvogel/ "How to make awesome PDFs with markdown using Eisvogel - Emmanuel Bosquet")
 	- When you type `pandoc README.md -o README.pdf`, pandoc does those things:
 		1. Convert the markdown markup to LaTeX markup
@@ -204,7 +203,6 @@ pandoc --reference-doc=custom-reference.docx
 
 - Using YAML frontmatter
 	- [Metadata blocks](https://pandoc.org/chunkedhtml-demo/8.10-metadata-blocks.html#extension-yaml_metadata_block)
-	- 
 
 ## Markdown to Latex
 
@@ -218,4 +216,4 @@ pandoc --reference-doc=custom-reference.docx
 # Office -> Markdown
 
 - [microsoft/markitdown: Python tool for converting files and office documents to Markdown.](https://github.com/microsoft/markitdown)
-- 
+-
