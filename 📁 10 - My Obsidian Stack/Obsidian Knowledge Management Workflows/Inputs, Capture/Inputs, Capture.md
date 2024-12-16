@@ -11,8 +11,10 @@ date modified: Monday, December 9th 2024, 6:54 pm
 - ChatGPT
 - QuickAdd
 - Web Clippings
+	- [Introduction to Obsidian Web Clipper - Obsidian Help](https://help.obsidian.md/web-clipper)
 - Browser Pasting
 - Daily Notes
+- 
 
 # DROP
 

@@ -26,6 +26,7 @@ date modified: Monday, December 16th 2024, 8:47 am
 
 # Examples
 
+- [🔮 Worldbuilding with Obsidian](https://tjtrewin.com/worldbuilding-with-obsidian/)
 - [publish homepage - chromatically - Obsidian Publish](https://publish.obsidian.md/chromatically/publish+homepage "publish homepage - chromatically - Obsidian Publish")
 - [Witaj w cyfrowym ogrodzie - Arkadiusz Lenkiewicz](https://arkadiuszlenkiewicz.pl/Witaj+w+cyfrowym+ogrodzie "Witaj w cyfrowym ogrodzie - Arkadiusz Lenkiewicz")
 - [The Threshold](https://hermitage.utsob.me/)

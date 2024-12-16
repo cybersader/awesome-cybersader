@@ -4,12 +4,13 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Friday, December 13th 2024, 2:47 pm
+date modified: Monday, December 16th 2024, 12:53 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
 [Obsidian Run](../Obsidian%20Run/Obsidian%20Run.md)
+[Plugin Development](../../Plugin%20Development/Plugin%20Development.md)
 
 - [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
 
