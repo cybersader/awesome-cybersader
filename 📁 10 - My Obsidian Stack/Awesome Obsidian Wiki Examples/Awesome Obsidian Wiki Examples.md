@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Monday, December 2nd 2024, 7:54 pm
+date modified: Sunday, December 15th 2024, 8:14 pm
 ---
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
@@ -20,6 +20,7 @@ date modified: Monday, December 2nd 2024, 7:54 pm
 - [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - [00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
     - [obsidian-community/obsidian-hub: Resource hub for Obsidian resources.](https://github.com/obsidian-community/obsidian-hub)
+- [Welcome to the WIKI - Excalidraw](https://excalidraw-obsidian.online/WIKI/Welcome+to+the+WIKI)
 - [Index - Data Engineering Wiki](https://dataengineering.wiki/Index)
     - [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
 
@@ -33,6 +34,7 @@ date modified: Monday, December 2nd 2024, 7:54 pm
 - https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0
 - https://notes.philoserf.com/Home
 - https://plugins.javalent.com/home#Practical+plugins
+
 # Misc JS and CSS
 
 - https://gist.github.com/elkadre

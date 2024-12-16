@@ -10,6 +10,9 @@ date modified: Monday, December 2nd 2024, 7:55 pm
 [Ghost Blogs](../🕸️%20UNSTRUCTURED/Ghost%20Blogs/Ghost%20Blogs.md)
 [Contributable Obsidian Wiki](../Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
 
+- Contributions, Authoring Environments
+	- [prose/prose: A Content Editor for GitHub.](https://github.com/prose/prose) 
+	- 
 
 - [Static Site Generators - Top Open Source SSGs | Jamstack](https://jamstack.org/generators/ "Static Site Generators - Top Open Source SSGs | Jamstack")
 - [Headless CMS - Top Content Management Systems | Jamstack](https://jamstack.org/headless-cms/ "Headless CMS - Top Content Management Systems | Jamstack")

@@ -6,6 +6,8 @@ date created: Thursday, April 25th 2024, 4:12 pm
 date modified: Thursday, April 25th 2024, 4:12 pm
 ---
 %% Begin Landmark %%
+- **[[✒️ Obsidian Tech Stack Diagram]]**
+
 - **[[⬇️ Obsidian Ideas Drop]]**
 - **[[Attachment Management]]**
 - **[[Auto - Tagging, Linking, Dropzones & Organizers]]**

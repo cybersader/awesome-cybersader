@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, December 8th 2024, 6:28 pm
-date modified: Friday, December 13th 2024, 10:20 pm
+date modified: Sunday, December 15th 2024, 8:00 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
@@ -28,7 +28,9 @@ date modified: Friday, December 13th 2024, 10:20 pm
 
 ## Markdown -> Pandoc -> Latex -> PDF
 
-- .
+- [Wandmalfarbe/pandoc-latex-template: A pandoc LaTeX template to convert markdown files to PDF or LaTeX.](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- [kjhealy/pandoc-templates: Some templates for Pandoc.](https://github.com/kjhealy/pandoc-templates)
+- 
 
 # No Plugins - Using the Style/CSS in Obsidian
 
