@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Spyware",
+      "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
+    },
+    {
+      "basename": "Backups - The 3,2,1 Rule",
+      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
+    },
+    {
+      "basename": "RSS",
+      "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
+    },
+    {
+      "basename": "Hosted Storage",
+      "path": "🕸️ UNSTRUCTURED/Hosted Storage/Hosted Storage.md"
+    },
+    {
+      "basename": "Xbox Home Networking",
+      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
       "basename": "Why Use Obsidian Sync",
       "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
     },
@@ -13,10 +41,6 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Backups - The 3,2,1 Rule",
-      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
-    },
-    {
       "basename": "Windows Backups Duplicati 2024",
       "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
     },
@@ -27,10 +51,6 @@
     {
       "basename": "Scripting Security",
       "path": "📁 05 - Organizational Cyber/Scripting Security/Scripting Security.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
     {
       "basename": "PowerShell for InfoSec",
@@ -91,10 +111,6 @@
     {
       "basename": "Cable Management",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
-    },
-    {
-      "basename": "Xbox Home Networking",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
     },
     {
       "basename": "Setting Up VLANs",
@@ -183,22 +199,6 @@
     {
       "basename": "Browser Extensions",
       "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
-    },
-    {
-      "basename": "Inputs, Capture",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
-    },
-    {
-      "basename": "Obsidian-Related Bloggers",
-      "path": "📁 10 - My Obsidian Stack/Obsidian-Related Bloggers/Obsidian-Related Bloggers.md"
-    },
-    {
-      "basename": "🕸️ UNSTRUCTURED",
-      "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "OSINT",
-      "path": "🕸️ UNSTRUCTURED/OSINT/OSINT.md"
     }
   ],
   "omittedPaths": [],
