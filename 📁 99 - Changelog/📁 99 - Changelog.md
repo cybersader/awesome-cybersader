@@ -1,3 +1,4 @@
+- 2024-12-16 at 22h02 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-16 at 21h47 · [[Obsidian Setup for Corporate]]
 - 2024-12-16 at 21h46 · [[Project Management]]
 - 2024-12-16 at 21h45 · [[📁 10 - My Obsidian Stack]]
@@ -7,7 +8,6 @@
 - 2024-12-16 at 19h40 · [[Home Network]]
 - 2024-12-16 at 16h35 · [[Obsidian & Corporate Docs]]
 - 2024-12-16 at 15h53 · [[Plugin Development]]
-- 2024-12-16 at 13h12 · [[Obsidian Plugins and Ideas for Contributions]]
 - 2024-12-16 at 12h50 · [[OneNote vs Obsidian]]
 - 2024-12-16 at 12h50 · [[Inputs, Capture]]
 - 2024-12-16 at 12h45 · [[Awesome Obsidian Wiki Examples]]

@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, December 16th 2024, 12:53 pm
+date modified: Monday, December 16th 2024, 10:02 pm
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -25,6 +25,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 
 # DROPZONE
 
+- [Query All The Things](https://sytone.dev/obsidian-queryallthethings/)
 - [https://www.meilisearch.com/pricing](https://www.meilisearch.com/pricing)
 - Obsidian + PG
 	- obsidian dataview postgres
