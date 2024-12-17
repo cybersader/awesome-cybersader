@@ -48332,7 +48332,7 @@
       }
     },
     {
-      "type": "fountain",
+      "type": "marker",
       "freedrawOnly": false,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -48343,7 +48343,7 @@
         "highlighter": false,
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "outlineWidth": 0,
         "options": {
           "smoothing": 0.2,
           "thinning": 0.6,
@@ -48549,7 +48549,7 @@
       }
     }
   ],
-  "numberOfCustomPens": 0,
+  "numberOfCustomPens": 4,
   "pdfScale": 4,
   "pdfBorderBox": true,
   "pdfFrame": false,
