@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Project Management",
+      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "Obsidian & Corporate Docs",
+      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "ATA Security",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/ATA Security/ATA Security.md"
+    },
+    {
       "basename": "✒️Home Lab v0.0.01",
       "path": "📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/✒️Home Lab v0.0.01.md"
     },
@@ -13,10 +41,6 @@
       "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
     },
     {
-      "basename": "Obsidian & Corporate Docs",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
-    },
-    {
       "basename": "Netgear is Not Good",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Netgear is Not Good/Netgear is Not Good.md"
     },
@@ -25,16 +49,8 @@
       "path": "📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/Pasted Image 20241216184619_841.png"
     },
     {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
       "basename": "OneNote vs Obsidian",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/OneNote vs Obsidian.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
       "basename": "Obsidian Plugin List",
@@ -83,10 +99,6 @@
     {
       "basename": "Social Engineering",
       "path": "📁 05 - Organizational Cyber/Social Engineering/Social Engineering.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
       "basename": "Windows Backups Duplicati 2024",
@@ -187,18 +199,6 @@
     {
       "basename": "Collaboration in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
-    },
-    {
-      "basename": "Scalable Obsidian Backend",
-      "path": "🕸️ UNSTRUCTURED/Scalable Obsidian Backend/Scalable Obsidian Backend.md"
-    },
-    {
-      "basename": "Misc Web Dev",
-      "path": "🕸️ UNSTRUCTURED/Misc Web Dev/Misc Web Dev.md"
-    },
-    {
-      "basename": "LibreOffice",
-      "path": "🕸️ UNSTRUCTURED/LibreOffice.md"
     }
   ],
   "omittedPaths": [],

@@ -3,7 +3,7 @@ aliases: []
 tags: []
 publish: true
 date created: Wednesday, October 30th 2024, 7:49 am
-date modified: Friday, December 13th 2024, 3:25 pm
+date modified: Monday, December 16th 2024, 9:47 pm
 permalink: corporate-obsidian
 ---
 
@@ -14,6 +14,7 @@ permalink: corporate-obsidian
 [Collaboration in Obsidian](../Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 [Obsidian & Corporate Docs](../Obsidian%20&%20Corporate%20Docs/Obsidian%20&%20Corporate%20Docs.md)
 [Templater](../Templater/Templater.md)
+[Project Management](../Project%20Management/Project%20Management.md)
 
 - [ ] Create guide for Obsidian corporate use 🔺 ➕ 2024-10-30
 
