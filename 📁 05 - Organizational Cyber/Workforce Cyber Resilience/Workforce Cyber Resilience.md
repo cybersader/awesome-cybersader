@@ -10,6 +10,8 @@ date modified: Sunday, November 17th 2024, 5:03 pm
 
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 
+- https://www.staysafeonline.org/resources/online-safety-and-privacy#toolkits
+
  - Hands-on learning
 	 - Scenarios, Tabletops
 	 - Around the world
