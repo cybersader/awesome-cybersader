@@ -31,12 +31,33 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 - Relationships between MD pages - links and graphs
     - How do graph DBs represent information about relationships between 2 nodes?
-    - 
+    - Links
+        - https://forum.obsidian.md/t/add-support-for-link-types/6994/27?page=2
+        - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
+        - https://volodymyrpavlyshyn.medium.com/how-to-make-personal-knowledge-graph-in-obsidian-a6dcd9cd0502
+        - https://forum.obsidian.md/t/graph-link-types/74710
+        - https://forum.obsidian.md/t/graph-link-types/74710/29 - with positional and keyword parameters per edge
+        - https://forum.obsidian.md/t/graph-query-language-api/1542/5
+        - https://forum.obsidian.md/t/juggl-out-now-1-0-1-a-completely-interactive-stylable-and-expandable-graph-view-plugin/9625
+        - https://medium.com/@apappascs/aggregation-in-cypher-collect-list-comprehension-and-map-projections-4c011a6a6ce3
+        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
+        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
+        - https://forum.obsidian.md/t/how-to-best-discern-between-different-types-of-links/8906/8
+        - https://juggl.io/
+    - At nodes --
+        - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
+        - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
+    - Allow for inline connections to other note pages using some crazy inline format
+
+- Connection/edge templates for graph system
+    - Store them per node (note page).  Templates can be defined globally per type of note page based on a tag in YAML frontmatter, or you can have value choices for key_value pairs in the edges, global templates
+
+- Include frameworks out-of-the-box with support from the framework makers
 
 - Merging/searching/exporting a path in the graph/structure?
     - We could flatten with particular key:value choices down to a certain layer
     - Use cypher queries with the notes?
-    - 
+    - Somehow would need to use graph-based connections, potentially index them (SUPER HARD), and allow for building two-way synced tables (or not) 
 
 - How does OSCAL fit in?
     - OSCAL to YAML frontmatter?
@@ -45,4 +66,3 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - Use some template format or system?
     - Definition files?
     - OSCAL?
-    
