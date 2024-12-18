@@ -14,6 +14,8 @@ date modified: Sunday, November 17th 2024, 5:03 pm
 
 - Data Privacy Week/Day
 	- Week/Day (Jan. 27 - 31, Jan. 28)
+	- https://www.staysafeonline.org/data-privacy-week
+	- https://www.onetrust.com/blog/data-privacy-day/
 	- Ideas:
 		- Privacy-related quiz
 		- Hand out decorated cookies
