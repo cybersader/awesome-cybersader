@@ -688,6 +688,39 @@
       },
       "webpage-html-export": {
         "startupType": "disabled"
+      },
+      "arcana": {
+        "startupType": "disabled"
+      },
+      "easy-bake": {
+        "startupType": "disabled"
+      },
+      "edit-history": {
+        "startupType": "disabled"
+      },
+      "qatt": {
+        "startupType": "disabled"
+      },
+      "reading-comments": {
+        "startupType": "disabled"
+      },
+      "rich-foot": {
+        "startupType": "disabled"
+      },
+      "show-whitespace-cm6": {
+        "startupType": "disabled"
+      },
+      "smart-rename": {
+        "startupType": "disabled"
+      },
+      "obsidian-style-settings": {
+        "startupType": "disabled"
+      },
+      "obsidian-tracker": {
+        "startupType": "disabled"
+      },
+      "obsidian-trim-whitespace": {
+        "startupType": "instant"
       }
     }
   }
