@@ -26,6 +26,11 @@ date modified: Monday, October 7th 2024, 4:24 pm
 - OSCAL and OLIR
     - https://csrc.nist.gov/csrc/media/Presentations/2022/oscal/images-media/Iorga%20OSCAL-What_is_and_Who_needs_it%203.10.22.1145am.pdf
     - https://pages.nist.gov/OSCAL/resources/concepts/layer/
+    - https://www.easydynamics.com/oscal/
+    - https://viewer.oscal.io/
+    - https://www.drtconfidence.com/
+    - https://regscale.com/blog/regscale-support-cyber-risk-institute-profile/
+    - 
 
 # Discussions/Opinions Online?
 

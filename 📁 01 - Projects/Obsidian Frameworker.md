@@ -11,6 +11,48 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - https://cyberriskinstitute.org/the-profile/
 
 # Useful Obsidian Plugins
+
+## Core
+
+(WIP)
+
+- Breadcrumbs V4
+    - https://publish.obsidian.md/breadcrumbs-docs/Home
+- Juggl
+- Excalibrain
+
+## Misc
+
+- Omnisearch
+- Templater
+- Waypoint
+- Various complements
+- Univer
+- Timestamper
+- Tasks
+- Reminder
+- Projects
+- Metdata Menu
+- Make-md
+- Metaedit
+- Multi-properties
+- Folder Notes
+- Dataview
+- Commentator
+- Breadcrumbs?
+- Commander?
+- Custom-Save?
+- Dataview publisher or serializer
+- Frontmatter links
+- Consistent attachments and links
+- Custom attachment location
+- Tag-Wrangler
+- Linter
+- Workspaces plus
+- Juggle
+- Pane Relief
+- Hover editor
+- Supercharged links
 - 
 
 # DROPZONE, WORKSPACE
@@ -49,6 +91,10 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
         - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
     - Allow for inline connections to other note pages using some crazy inline format
 
+- Weak vs strong links?
+    - No schema vs using a "valid" schema - think JSON schema but something with YAML or something else
+    - 
+
 - Enable schemas like OSCAL to be implemented out-of-the-box
     - OSCAL is a set of formats expressed in XML, JSON, and YAML. These formats provide machine-readable representations of control catalogs, control baselines, system security plans, and assessment plans and results.
 
@@ -70,6 +116,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 - How does OSCAL fit in?
     - OSCAL to YAML frontmatter?
+    - 
 
 - Storing, importing, and exporting templates for these framework setups?
     - Use some template format or system?
