@@ -49,8 +49,17 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
         - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
     - Allow for inline connections to other note pages using some crazy inline format
 
+- Enable schemas like OSCAL to be implemented out-of-the-box
+    - OSCAL is a set of formats expressed in XML, JSON, and YAML. These formats provide machine-readable representations of control catalogs, control baselines, system security plans, and assessment plans and results.
+
 - Connection/edge templates for graph system
     - Store them per node (note page).  Templates can be defined globally per type of note page based on a tag in YAML frontmatter, or you can have value choices for key_value pairs in the edges, global templates
+
+- Is there a way to reference a line somewhere else such as a "form" notepage to act as an input for something else in Obsidian?
+    - We need a way to implement specific assessments or conditionals that choose how a specific node's connections are affected and so on
+
+- One of the hardest parts of using the frameworker tool with evidence gathering
+    - Internal links can be consistently updated, but external file links, OneDrive, and others cannot.  This requires 2-way conflict handling
 
 - Include frameworks out-of-the-box with support from the framework makers
 

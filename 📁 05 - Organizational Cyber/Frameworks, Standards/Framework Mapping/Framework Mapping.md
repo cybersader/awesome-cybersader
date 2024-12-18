@@ -20,6 +20,12 @@ date modified: Monday, October 7th 2024, 4:24 pm
 
 - [ ] Make mapping that shows how to map with each framework as the core or a pivoting point 🔼 ➕ 2024-10-05
 
+- Mapping to ERM - https://csrc.nist.gov/pubs/ir/8286/final
+    - https://www.nist.gov/system/files/documents/2022/05/03/04-25-2022%20-%20Cyber%20Risk%20Institute.pdf
+    - https://csrc.nist.gov/projects/olir/faqs
+- OSCAL and OLIR
+    - https://csrc.nist.gov/csrc/media/Presentations/2022/oscal/images-media/Iorga%20OSCAL-What_is_and_Who_needs_it%203.10.22.1145am.pdf
+
 # Discussions/Opinions Online?
 
 - 
