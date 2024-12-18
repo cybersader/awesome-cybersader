@@ -25,6 +25,7 @@ date modified: Monday, October 7th 2024, 4:24 pm
     - https://csrc.nist.gov/projects/olir/faqs
 - OSCAL and OLIR
     - https://csrc.nist.gov/csrc/media/Presentations/2022/oscal/images-media/Iorga%20OSCAL-What_is_and_Who_needs_it%203.10.22.1145am.pdf
+    - https://pages.nist.gov/OSCAL/resources/concepts/layer/
 
 # Discussions/Opinions Online?
 
