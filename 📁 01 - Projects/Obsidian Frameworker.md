@@ -20,6 +20,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - https://publish.obsidian.md/breadcrumbs-docs/Home
 - Juggl
 - Excalibrain
+- Graph link types
 
 ## Misc
 
