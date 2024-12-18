@@ -12,6 +12,13 @@ date modified: Sunday, November 17th 2024, 5:03 pm
 
 - https://www.staysafeonline.org/resources/online-safety-and-privacy#toolkits
 
+- Data Privacy Week/Day
+	- Week/Day (Jan. 27 - 31, Jan. 28)
+	- Ideas:
+		- Privacy-related quiz
+		- Hand out decorated cookies
+		- Quick little brochure with privacy tips on it
+
  - Hands-on learning
 	 - Scenarios, Tabletops
 	 - Around the world
