@@ -79,6 +79,35 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 # DROPZONE, WORKSPACE
 
+- Building from framework, policy, and any structured data
+    - Tools for building structured folders to be used with Frameworker
+
+- Utilizing AI and search
+    - We can use AI while in our normal knowledge spaces to find the framework/structured data links or even use AI to help us find those links
+
+- the MINIMUM using dataview
+    - First we refer to things we the inline or YAML frontmaterr dataview markdown or wikilinks
+    - At the framework page, and at the top, we use Templater and some way to put in automatic databiew queries to query for incoming connections from evidence files along with what they are "covered", "accounts", "reduces risk for", etc 
+
+- I might be able to use a minimal combination of Metdata Menu and Supercharged links
+    - I would essentially make template for the framework side assuming it's only one way.  If I need to make a connection then it would have to be done in the YAML frontmatter of the evidence-containing file.  Then, I refer to some block ID for the highlighted evidence in that file.  Holy crap this is a janky workaround as I'll get out, but it may be doable with the existing plugins unlike the other workarounds.  
+
+- Activate edge/linkage/link/graph relationship "template"/schema/structure/hierarchy or properties based on one of:
+    - Tags
+    - Folder structure (strict ontology) of the receiving or sending note
+    - Some tag or value in the syntax of the link
+    - Results from something else like dataview
+- Do ontologies/taxonomies/frameworks have to be separte at the root-level?  Can they be intertwined so long as the connection templates are activated based on tags instead of folder structure or something else?
+
+- Another syntax idea
+    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
+    - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
+        - 
+
+- Okay I've got an incredibly complex project but the solution by its nature could be simple.  Essentially, I need to emulate, in an Obsidian vault, graph-DB-like connections with structured data for those connections.  Here's an example.  I have a structured workspace wiki that i want to be able to, on the fly, map to a structured framework.  Here's the issue.  There could be a piece of evidence in the workspace wiki that i want to map as a ___ (whatever) to the framework along with structured data for that linkage/connection/edge.  I need a way to do that.  The issue is that I'm attaching structured information for that edge to an unstructured file which makes it harder to search and likely to interact with other complex syntactical things on that Obsidian note page.  The idea could be to have an intermediate hash-mapped or something rather note page between links and the structure or template of that intermediary is defined by some simple structure when the link is instantiated.
+
+- Your essentially mapping a structured workspace (one ontology) to another structured framework (another ontology)
+
 - https://forum.obsidian.md/t/a-proposal-for-rendering-block-embeds-inline/27093/84
 
 - Many to many
@@ -97,6 +126,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/173
     - You could embed a hashmap or ID in each edge/link between notes, then have a massive hashmapped store of the properties or data about that edge/link
         - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
+    - Template filename could be a hashmap stored in a file like `.edges_data` or something similar
 
 - Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
     - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
