@@ -66,8 +66,18 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 - Workaround by embedding a bunch in a hashmap or "supertags"
     - https://tana.inc/docs/supertags
-    - https://forum.obsidian.md/t/add-support-for-link-types/6994/172?u=cybersader
-    - https://forum.obsidian.md/t/add-support-for-link-types/6994/173?u=cybersader
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/172
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/173
+    - You could embed a hashmap or ID in each edge/link between notes, then have a massive hashmapped store of the properties or data about that edge/link
+        - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
+
+- Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
+    - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/32
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/30
+
+- Forum posts about what links can have
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/187
 
 - Scalability problems
     - Inline graph links with properties can have massive performance issues.  Since notes are unstructured, every note has to be processed in its entirety.  So, indexing of some kind has to take place to store the mappings. This means that this graph-based approach in graph-based in functionality but not so much behind the scenes as it's emulated by a table.  This has caveats when the space scales to a large enough size

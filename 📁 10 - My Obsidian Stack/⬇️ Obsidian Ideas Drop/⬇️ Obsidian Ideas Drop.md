@@ -18,6 +18,12 @@ date modified: Sunday, December 15th 2024, 11:44 am
 - [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
 
 - https://dentropy.github.io/1f1f914c-8e6e-48b7-9068-bc7b290b6b64/
+- Per device obsidian customizing
+	- obsidian per device
+	- https://forum.obsidian.md/t/separate-settings-for-multiple-mobile-devices/20607
+	- https://www.reddit.com/r/ObsidianMD/comments/zwvn1v/method_for_separating_settings_between_desktop/
+	- https://forum.obsidian.md/t/how-to-have-different-themes-on-seperate-devices/73334
+	- 
 
 # Plugins to look at 
 
