@@ -23,12 +23,31 @@ date modified: Sunday, December 15th 2024, 11:44 am
 	- https://forum.obsidian.md/t/separate-settings-for-multiple-mobile-devices/20607
 	- https://www.reddit.com/r/ObsidianMD/comments/zwvn1v/method_for_separating_settings_between_desktop/
 	- https://forum.obsidian.md/t/how-to-have-different-themes-on-seperate-devices/73334
+- Per client
+	- ovveride config folder - stored locally so network shares and things like that don't matter
 	- 
+
+- Live sync in part of note, but then use something like Git or Syncthing in other parts
+	- Atomic and granular power over syncing and collaboration
 
 # Plugins to look at 
 
 - [Latticework: Unifying annotation and freeform text editing for augmented sensemaking](https://www.matthewsiu.com/Latticework)
-- 
+- Semantic Canvas
+- Telegrpah Publish
+- Folders to Graph
+- Tags Routes
+- Graph Banner
+- InfraNodus
+- Textgrams
+- Symlink Creator (symlinks in general)
+- Immich
+- Abbrlink
+- Link Formatter
+- Link Range
+- Tabout
+- Grappling Hook
+- Hover Editor
 
 # Custom Plugins
 

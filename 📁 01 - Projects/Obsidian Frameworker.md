@@ -18,12 +18,16 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 - Breadcrumbs V4
     - https://publish.obsidian.md/breadcrumbs-docs/Home
+    - Use edge fields and fields groups for drawing links to framework-related or separate structure notes
+        - https://publish.obsidian.md/breadcrumbs-docs/Field+Groups
+    - Would the framework structure be represented as a "field group?" I'm assuming not.
+    - 
 - Juggl
 - Excalibrain
 - Graph link types
 
 ## Misc
-
+- Metadata Frame
 - https://github.com/tth05/obsidian-completr
 - Omnisearch
 - Templater
@@ -34,7 +38,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Tasks
 - Reminder
 - Projects
-- Metdata Menu
+- Metadata Menu
 - Make-md
 - Metaedit
 - Multi-properties
@@ -64,7 +68,14 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - https://forum.obsidian.md/t/a-proposal-for-rendering-block-embeds-inline/27093/84
 - 
 
+- How to keep links future-proofed if framework changes?
+
+- Tables to edit links in bulk from queried place?
+
+- The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
+
 - Workaround by embedding a bunch in a hashmap or "supertags"
+    - Use intermediary notes for storing data somehow?
     - https://tana.inc/docs/supertags
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/172
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/173
