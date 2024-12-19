@@ -16,6 +16,7 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[Mothers Day Website]]**
 
 - **[[NocoDB]]**
+- [[Obsidian Frameworker]]
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
