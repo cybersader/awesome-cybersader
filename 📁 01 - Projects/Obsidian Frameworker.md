@@ -133,6 +133,8 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 - Custom dataview regex processor to process inline structured data?
 
+- Accounting for how images are handled and aggregated/queried once linked
+
 - Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
     - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/32
