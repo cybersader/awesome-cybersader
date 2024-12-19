@@ -11,6 +11,14 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - https://cyberriskinstitute.org/the-profile/
 
 # Useful Obsidian Plugins
+- Terms
+    - Inline
+    - Semantic
+    - Graph
+    - Edge
+    - Typed Links
+    - Labeled Links
+    - Properties
 
 ## Core
 
@@ -21,10 +29,17 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - Use edge fields and fields groups for drawing links to framework-related or separate structure notes
         - https://publish.obsidian.md/breadcrumbs-docs/Field+Groups
     - Would the framework structure be represented as a "field group?" I'm assuming not.
-    - 
+    - Field groups are nothing special. Just to help in the "View" to select multiple fields at once.
+    - No way to have structured information attached to edges.  You have to define individual key:value pairs for each edge.
 - Juggl
+    - The only thing I now need is a decent export/import of the juggling graph or a powerful query/reasoning tool to query over the juggl graph. https://forum.obsidian.md/t/add-support-for-link-types/6994/154
+    - 
 - Excalibrain
+    - A lot like Juggle or Breadcrumbs - visually mostly
 - Graph link types
+    - Merely turns dataview inline tags with links into edges on graph view
+- Semantic Canvas
+- 
 
 ## Misc
 - Metadata Frame
@@ -45,7 +60,6 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Folder Notes
 - Dataview
 - Commentator
-- Breadcrumbs?
 - Commander?
 - Custom-Save?
 - Dataview publisher or serializer
@@ -55,18 +69,20 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Tag-Wrangler
 - Linter
 - Workspaces plus
-- Juggl
-    - The only thing I now need is a decent export/import of the juggling graph or a powerful query/reasoning tool to query over the juggl graph. https://forum.obsidian.md/t/add-support-for-link-types/6994/154
-    - 
 - Pane Relief
 - Hover editor
 - Supercharged links
+- https://github.com/dsarman/better-inline-fields
+- Meta Bind
+- Supercharged Links
 - 
 
 # DROPZONE, WORKSPACE
 
 - https://forum.obsidian.md/t/a-proposal-for-rendering-block-embeds-inline/27093/84
-- 
+
+- Many to many
+    - We should be able to, from one instantiation, define many links that an edge with data/properties goes to, or one link that many data or properties goes to (might be problematic, but would essentially be akin to multiple JSON objects)
 
 - How to keep links future-proofed if framework changes?
 
@@ -86,6 +102,8 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/32
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/30
+    - https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/
+    - 
 
 - Forum posts about what links can have
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/187

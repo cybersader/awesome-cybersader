@@ -29,12 +29,13 @@ date modified: Sunday, December 15th 2024, 11:44 am
 
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
+- Wikilink vs Markdown Link Use Cases
 
 # Plugins to look at 
 
 - [Latticework: Unifying annotation and freeform text editing for augmented sensemaking](https://www.matthewsiu.com/Latticework)
 - Semantic Canvas
-- Telegrpah Publish
+- Telegraph Publish
 - Folders to Graph
 - Tags Routes
 - Graph Banner
@@ -48,6 +49,28 @@ date modified: Sunday, December 15th 2024, 11:44 am
 - Tabout
 - Grappling Hook
 - Hover Editor
+- Ordered List Style
+- Copy Block Link
+- Links
+- Link Favicons
+- Note Linker
+- Better File Link
+- Link Converter
+- Influx
+- Topic Linking
+- Wikilink to MDLinks
+- Link Exploder
+- Backlink Cache
+- Update Relative Links
+- At People
+- Auto Embed
+- GitHub Link
+- Import Attachments++
+- External Links
+- Canvas Explorer
+- Block Link Plus
+- Alias Picker
+- 
 
 # Custom Plugins
 
