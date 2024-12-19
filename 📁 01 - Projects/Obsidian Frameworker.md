@@ -24,6 +24,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 ## Misc
 
+- https://github.com/tth05/obsidian-completr
 - Omnisearch
 - Templater
 - Waypoint
@@ -50,13 +51,27 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Tag-Wrangler
 - Linter
 - Workspaces plus
-- Juggle
+- Juggl
+    - The only thing I now need is a decent export/import of the juggling graph or a powerful query/reasoning tool to query over the juggl graph. https://forum.obsidian.md/t/add-support-for-link-types/6994/154
+    - 
 - Pane Relief
 - Hover editor
 - Supercharged links
 - 
 
 # DROPZONE, WORKSPACE
+
+- https://forum.obsidian.md/t/a-proposal-for-rendering-block-embeds-inline/27093/84
+- 
+
+- Workaround by embedding a bunch in a hashmap or "supertags"
+    - https://tana.inc/docs/supertags
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/172?u=cybersader
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/173?u=cybersader
+
+- Scalability problems
+    - Inline graph links with properties can have massive performance issues.  Since notes are unstructured, every note has to be processed in its entirety.  So, indexing of some kind has to take place to store the mappings. This means that this graph-based approach in graph-based in functionality but not so much behind the scenes as it's emulated by a table.  This has caveats when the space scales to a large enough size
+    - 
 
 - What's the system fundamentally doing?
     - We are taking strict taxonomies/hierarchies and representing them in a way that can be easily interfaced and machine-readable
@@ -87,6 +102,8 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
         - https://forum.obsidian.md/t/paths-for-notes-connection/6888
         - https://forum.obsidian.md/t/how-to-best-discern-between-different-types-of-links/8906/8
         - https://juggl.io/
+        - https://github.com/memgraph/odin
+            - https://memgraph.com/blog/addobsidian-note-taking-with-odin
     - At nodes --
         - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
         - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks

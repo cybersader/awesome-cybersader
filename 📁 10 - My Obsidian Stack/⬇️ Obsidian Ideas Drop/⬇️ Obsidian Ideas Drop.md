@@ -17,6 +17,8 @@ date modified: Sunday, December 15th 2024, 11:44 am
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
 - [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
 
+- https://dentropy.github.io/1f1f914c-8e6e-48b7-9068-bc7b290b6b64/
+
 # Plugins to look at 
 
 - [Latticework: Unifying annotation and freeform text editing for augmented sensemaking](https://www.matthewsiu.com/Latticework)
