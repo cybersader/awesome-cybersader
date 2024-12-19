@@ -128,6 +128,8 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
         - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
     - Template filename could be a hashmap stored in a file like `.edges_data` or something similar
 
+- Custom dataview regex processor to process inline structured data?
+
 - Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
     - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/32

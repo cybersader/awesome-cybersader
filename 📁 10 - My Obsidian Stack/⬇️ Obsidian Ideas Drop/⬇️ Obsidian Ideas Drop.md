@@ -25,7 +25,7 @@ date modified: Sunday, December 15th 2024, 11:44 am
 	- https://forum.obsidian.md/t/how-to-have-different-themes-on-seperate-devices/73334
 - Per client
 	- ovveride config folder - stored locally so network shares and things like that don't matter
-	- 
+- Define users somehow with a Templater user script?  This may be possible
 
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
