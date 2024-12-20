@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 3:03 pm
+date modified: Friday, December 20th 2024, 3:43 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -120,21 +120,66 @@ The issue is that I essentially want to store data about a relationship between 
 - I could make links that store the nested data with some format to point to a particular kind of general relationship between files like `framework_here.evidence.review`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]
 - Then the dataviewjs query could look for all incoming files that include tags with `framework_here` in it and parse the structure of tags to create a flattened table or something similar since it's dataview.
 
-# DROPZONE, WORKSPACE
+## Linking Workspace
 
-- The file/folder order for the framework data in Obsidian is also an issue that needs to be accounted for
+- Relationships between MD pages - links and graphs
+    - How do graph DBs represent information about relationships between 2 nodes?
+    - Links
+        - https://forum.obsidian.md/t/add-support-for-link-types/6994/27?page=2
+        - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
+        - https://volodymyrpavlyshyn.medium.com/how-to-make-personal-knowledge-graph-in-obsidian-a6dcd9cd0502
+        - https://forum.obsidian.md/t/graph-link-types/74710
+        - https://forum.obsidian.md/t/graph-link-types/74710/29 - with positional and keyword parameters per edge
+        - https://forum.obsidian.md/t/graph-query-language-api/1542/5
+        - https://forum.obsidian.md/t/juggl-out-now-1-0-1-a-completely-interactive-stylable-and-expandable-graph-view-plugin/9625
+        - https://medium.com/@apappascs/aggregation-in-cypher-collect-list-comprehension-and-map-projections-4c011a6a6ce3
+        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
+        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
+        - https://forum.obsidian.md/t/how-to-best-discern-between-different-types-of-links/8906/8
+        - https://juggl.io/
+        - https://github.com/memgraph/odin
+            - https://memgraph.com/blog/addobsidian-note-taking-with-odin
+		- [Block metadata - extension of block-id syntax - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/block-metadata-extension-of-block-id-syntax/8306)
+    - At nodes --
+        - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
+        - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
+    - Allow for inline connections to other note pages using some crazy inline format
+
+- Weak vs strong links?
+    - No schema vs using a "valid" schema - think JSON schema but something with YAML or something else
+    - 
+
+- Okay I've got an incredibly complex project but the solution by its nature could be simple.  Essentially, I need to emulate, in an Obsidian vault, graph-DB-like connections with structured data for those connections.  Here's an example.  I have a structured workspace wiki that i want to be able to, on the fly, map to a structured framework.  Here's the issue.  There could be a piece of evidence in the workspace wiki that i want to map as a ___ (whatever) to the framework along with structured data for that linkage/connection/edge.  I need a way to do that.  The issue is that I'm attaching structured information for that edge to an unstructured file which makes it harder to search and likely to interact with other complex syntactical things on that Obsidian note page.  The idea could be to have an intermediate hash-mapped or something rather note page between links and the structure or template of that intermediary is defined by some simple structure when the link is instantiated.
+- Your essentially mapping a structured workspace (one ontology) to another structured framework (another ontology)
+
+- The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
+
+- Custom dataview regex processor to process inline structured data?
+- Another syntax idea
+    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
+    - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
+        -
+# Ingesting a Framework (Structured Data -> Folders + Files)
 
 - Building from framework, policy, and any structured data
     - Tools for building structured folders to be used with Frameworker
+
+# Querying Connections/Edges/Links
+
+- The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
+
+# DROPZONE, WORKSPACE
+
+- The file/folder order for the framework data in Obsidian is also an issue that needs to be accounted for
 
 - Utilizing AI and search
     - We can use AI while in our normal knowledge spaces to find the framework/structured data links or even use AI to help us find those links
 
 - the MINIMUM using dataview
     - First we refer to things we the inline or YAML frontmaterr dataview markdown or wikilinks
-    - At the framework page, and at the top, we use Templater and some way to put in automatic databiew queries to query for incoming connections from evidence files along with what they are "covered", "accounts", "reduces risk for", etc 
+    - At the framework page, and at the top, we use Templater and some way to put in automatic dataview queries to query for incoming connections from evidence files along with what they are "covered", "accounts", "reduces risk for", etc 
 
-- I might be able to use a minimal combination of Metdata Menu and Supercharged links
+- I might be able to use a minimal combination of Metadata Menu and Supercharged links
     - I would essentially make template for the framework side assuming it's only one way.  If I need to make a connection then it would have to be done in the YAML frontmatter of the evidence-containing file.  Then, I refer to some block ID for the highlighted evidence in that file.  Holy crap this is a janky workaround as I'll get out, but it may be doable with the existing plugins unlike the other workarounds.  
 
 - Activate edge/linkage/link/graph relationship "template"/schema/structure/hierarchy or properties based on one of:
@@ -144,15 +189,6 @@ The issue is that I essentially want to store data about a relationship between 
     - Results from something else like dataview
 - Do ontologies/taxonomies/frameworks have to be separte at the root-level?  Can they be intertwined so long as the connection templates are activated based on tags instead of folder structure or something else?
 
-- Another syntax idea
-    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
-    - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
-        - 
-
-- Okay I've got an incredibly complex project but the solution by its nature could be simple.  Essentially, I need to emulate, in an Obsidian vault, graph-DB-like connections with structured data for those connections.  Here's an example.  I have a structured workspace wiki that i want to be able to, on the fly, map to a structured framework.  Here's the issue.  There could be a piece of evidence in the workspace wiki that i want to map as a ___ (whatever) to the framework along with structured data for that linkage/connection/edge.  I need a way to do that.  The issue is that I'm attaching structured information for that edge to an unstructured file which makes it harder to search and likely to interact with other complex syntactical things on that Obsidian note page.  The idea could be to have an intermediate hash-mapped or something rather note page between links and the structure or template of that intermediary is defined by some simple structure when the link is instantiated.
-
-- Your essentially mapping a structured workspace (one ontology) to another structured framework (another ontology)
-
 - https://forum.obsidian.md/t/a-proposal-for-rendering-block-embeds-inline/27093/84
 
 - Many to many
@@ -161,8 +197,7 @@ The issue is that I essentially want to store data about a relationship between 
 - How to keep links future-proofed if framework changes?
 
 - Tables to edit links in bulk from queried place?
-
-- The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
+	- Editable dataviewjs queries?
 
 - Workaround by embedding a bunch in a hashmap or "supertags"
     - Use intermediary notes for storing data somehow?
@@ -175,8 +210,6 @@ The issue is that I essentially want to store data about a relationship between 
 
 - System for also linking to the source material for the framework such as a pdf by using some sort of syntax with URLs or something of the like
     - You could even have a process that auto-edits the PDF and marks pages as you link to certain content processed from the page during the source material (framework PDF) to the vault structure for the framework.
-
-- Custom dataview regex processor to process inline structured data?
 
 - Accounting for how images are handled and aggregated/queried once linked
 
@@ -207,32 +240,6 @@ The issue is that I essentially want to store data about a relationship between 
             - EXAMPLE: this page shows evidence of compensating control for this other reference framework page
     - Using the "graph"
         - We have to tell it how to pull the data out (below)
-
-- Relationships between MD pages - links and graphs
-    - How do graph DBs represent information about relationships between 2 nodes?
-    - Links
-        - https://forum.obsidian.md/t/add-support-for-link-types/6994/27?page=2
-        - https://forum.obsidian.md/t/add-support-for-link-types/6994/186
-        - https://volodymyrpavlyshyn.medium.com/how-to-make-personal-knowledge-graph-in-obsidian-a6dcd9cd0502
-        - https://forum.obsidian.md/t/graph-link-types/74710
-        - https://forum.obsidian.md/t/graph-link-types/74710/29 - with positional and keyword parameters per edge
-        - https://forum.obsidian.md/t/graph-query-language-api/1542/5
-        - https://forum.obsidian.md/t/juggl-out-now-1-0-1-a-completely-interactive-stylable-and-expandable-graph-view-plugin/9625
-        - https://medium.com/@apappascs/aggregation-in-cypher-collect-list-comprehension-and-map-projections-4c011a6a6ce3
-        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
-        - https://forum.obsidian.md/t/paths-for-notes-connection/6888
-        - https://forum.obsidian.md/t/how-to-best-discern-between-different-types-of-links/8906/8
-        - https://juggl.io/
-        - https://github.com/memgraph/odin
-            - https://memgraph.com/blog/addobsidian-note-taking-with-odin
-    - At nodes --
-        - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
-        - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
-    - Allow for inline connections to other note pages using some crazy inline format
-
-- Weak vs strong links?
-    - No schema vs using a "valid" schema - think JSON schema but something with YAML or something else
-    - 
 
 - Enable schemas like OSCAL to be implemented out-of-the-box
     - OSCAL is a set of formats expressed in XML, JSON, and YAML. These formats provide machine-readable representations of control catalogs, control baselines, system security plans, and assessment plans and results.
