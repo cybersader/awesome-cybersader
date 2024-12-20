@@ -139,7 +139,6 @@ The issue is that I essentially want to store data about a relationship between 
         - https://juggl.io/
         - https://github.com/memgraph/odin
             - https://memgraph.com/blog/addobsidian-note-taking-with-odin
-		- [Block metadata - extension of block-id syntax - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/block-metadata-extension-of-block-id-syntax/8306)
     - At nodes --
         - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
         - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
@@ -148,6 +147,10 @@ The issue is that I essentially want to store data about a relationship between 
 - Weak vs strong links?
     - No schema vs using a "valid" schema - think JSON schema but something with YAML or something else
     - 
+
+- Related - storing in block metadata?
+	- [Block metadata - extension of block-id syntax - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/block-metadata-extension-of-block-id-syntax/8306)
+	- 
 
 - Okay I've got an incredibly complex project but the solution by its nature could be simple.  Essentially, I need to emulate, in an Obsidian vault, graph-DB-like connections with structured data for those connections.  Here's an example.  I have a structured workspace wiki that i want to be able to, on the fly, map to a structured framework.  Here's the issue.  There could be a piece of evidence in the workspace wiki that i want to map as a ___ (whatever) to the framework along with structured data for that linkage/connection/edge.  I need a way to do that.  The issue is that I'm attaching structured information for that edge to an unstructured file which makes it harder to search and likely to interact with other complex syntactical things on that Obsidian note page.  The idea could be to have an intermediate hash-mapped or something rather note page between links and the structure or template of that intermediary is defined by some simple structure when the link is instantiated.
 - Your essentially mapping a structured workspace (one ontology) to another structured framework (another ontology)
