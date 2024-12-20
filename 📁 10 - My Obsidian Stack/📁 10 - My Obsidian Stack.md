@@ -24,6 +24,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian & N8n]]**
 - **[[Obsidian as a CMS]]**
 - **[[Obsidian Dictionary and Grammar]]**
+- **[[Obsidian File Names]]**
 - **[[Obsidian File Recovery]]**
 - **[[Obsidian Git]]**
 	- **[[Handling Obsidian Git Conflicts & Issues]]**

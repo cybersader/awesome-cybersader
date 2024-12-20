@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Monday, December 2nd 2024, 6:40 pm
+date modified: Friday, December 20th 2024, 9:07 am
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -19,20 +19,25 @@ There's only one option that seems like it could scale and that's [Kasm Workspac
 - [Apache Guacamole](../../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Apache%20Guacamole/Apache%20Guacamole.md)
 - [Kasm Workspaces](../../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Kasm%20Workspaces/Kasm%20Workspaces.md)
 
-## Kasm Workspaces for Obsidian | Browser-Based Obsidian
+# DROPZONE
+
+- [sytone/obsidian-remote: Run Obsidian.md in a browser via a docker container.](https://github.com/sytone/obsidian-remote)
+- [https://code.visualstudio.com/docs/editor/vscode-web#\_extensions](https://code.visualstudio.com/docs/editor/vscode-web#_extensions) - an example of why Obsidian doesn't have a browser version
+
+# Kasm Workspaces for Obsidian | Browser-Based Obsidian
 
 - [ ] Implement Kasm Workspaces in the browser with Obsidian and custom images ➕ 2024-11-20
 
-### Kasm Workspaces - Requires VM | Docker Kasm with Obsidian
+## Kasm Workspaces - Requires VM | Docker Kasm with Obsidian
 
-#### Can you set up Kasm inside a Docker container?
+### Can you set up Kasm inside a Docker container?
 
 Long story short, you can with DiD (Docker in Docker) but just don't...
 
 - [You might want to take a look at the linuxserver project that bundles Kasm into a single container. It leverages Docker in Docker (DinD). The recommended way to run Kasm is on standalone machines/VMs, but the DinD solution should be close to what you are looking for.](https://www.reddit.com/r/kasmweb/comments/wz3amp/can_you_add_kasm_workspace_to_an_existing_docker/)
 - [Kasm Docs - Kasm Workspaces can be installed on a Virtual Machine or directly on bare metal. We do not recommend running Kasm in LXC or WSL/WSL2.](https://kasmweb.com/docs/latest/install/system_requirements.html "System Requirements — Kasm 1.16.1 documentation")
 
-#### Kasm in a VM in TrueNAS Scale?
+### Kasm in a VM in TrueNAS Scale?
 
 So...obsidian inside of Kasm inside of an Ubuntu Linux VM inside of TrueNAS Scale?
 
@@ -40,7 +45,7 @@ So...obsidian inside of Kasm inside of an Ubuntu Linux VM inside of TrueNAS Scal
 
 > [!tldr] TL;DR - TrueNAS VMs are not that great and I should just get a small server box and start running Proxmox separately
 
-#### Kasm in a VM in VMware Workstation Player
+### Kasm in a VM in VMware Workstation Player
 
 - Install guides
 	- [Single Server Installation — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/install/single_server_install.html)
@@ -73,7 +78,7 @@ Steps:
 	- ![](_attachments/file-20241125205735915.png)
 	- ![](_attachments/file-20241125205855054.png)
 
-#### Problems with using Kasm for Obsidian
+### Problems with using Kasm for Obsidian
 
 - [ ] Solve problems to make Obsidian work for a corporate setting using Kasm ➕ 2024-11-25
 
@@ -98,7 +103,7 @@ There's some problems that have to get solved in order for this to work for a co
 - Implementation in corporate infrastructure
 	- [VM Provider Configs — Kasm 1.16.1 documentation](https://kasmweb.com/docs/latest/guide/compute/vm_providers.html)
 
-## Obsidian in a Container
+# Obsidian in a Container
 
 - Forums, discussions
 	- [Has anyone here tried to virtualize Obsidian in docker container? : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/s13lp5/has_anyone_here_tried_to_virtualize_obsidian_in/)

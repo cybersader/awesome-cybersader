@@ -1,3 +1,11 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Wednesday, December 18th 2024, 8:13 pm
+date modified: Friday, December 20th 2024, 9:04 am
+---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
 
@@ -11,6 +19,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
     - https://cyberriskinstitute.org/the-profile/
 
 # Useful Obsidian Plugins
+
 - Terms
     - Inline
     - Semantic
@@ -42,6 +51,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - 
 
 ## Misc
+
 - Metadata Frame
 - https://github.com/tth05/obsidian-completr
 - Omnisearch

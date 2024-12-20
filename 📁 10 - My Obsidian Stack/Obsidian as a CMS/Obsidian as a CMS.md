@@ -12,7 +12,6 @@ date modified: Monday, December 2nd 2024, 7:55 pm
 
 - Contributions, Authoring Environments
 	- [prose/prose: A Content Editor for GitHub.](https://github.com/prose/prose) 
-	- 
 
 - [Static Site Generators - Top Open Source SSGs | Jamstack](https://jamstack.org/generators/ "Static Site Generators - Top Open Source SSGs | Jamstack")
 - [Headless CMS - Top Content Management Systems | Jamstack](https://jamstack.org/headless-cms/ "Headless CMS - Top Content Management Systems | Jamstack")

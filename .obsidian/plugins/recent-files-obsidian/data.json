@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian File Names",
+      "path": "📁 10 - My Obsidian Stack/Obsidian File Names/Obsidian File Names.md"
+    },
+    {
+      "basename": "Unicode",
+      "path": "🕸️ UNSTRUCTURED/Unicode/Unicode.md"
+    },
+    {
+      "basename": "Emojis",
+      "path": "🕸️ UNSTRUCTURED/Unicode/Emojis/Emojis.md"
+    },
+    {
+      "basename": "Web or Browser-Based Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker.md"
+    },
+    {
       "basename": "Obsidian as a CMS",
       "path": "📁 10 - My Obsidian Stack/Obsidian as a CMS/Obsidian as a CMS.md"
     },
@@ -179,29 +199,11 @@
     {
       "basename": "Repurpose Old Router - DNS, Firewall",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
-    },
-    {
-      "basename": "Home Routers & ISPs",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Routers & ISPs/Home Routers & ISPs.md"
-    },
-    {
-      "basename": "Bridging New Home Router",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
-    },
-    {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
-    },
-    {
-      "basename": "file-20241205201805625",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/_attachments/file-20241205201805625.png"
-    },
-    {
-      "basename": "Ethernet Cables",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
     }
   ],
   "omittedPaths": [],
+  "omittedTags": [],
+  "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"
 }
