@@ -2,15 +2,43 @@
   "recentFiles": [
     {
       "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker.md"
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
-      "basename": "File Order",
-      "path": "📁 10 - My Obsidian Stack/File Order/File Order.md"
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+    },
+    {
+      "basename": "NocoDB",
+      "path": "📁 01 - Projects/NocoDB/NocoDB.md"
+    },
+    {
+      "basename": "Pasted Image 20241220141144_549",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Pasted Image 20241220141144_549.png"
+    },
+    {
+      "basename": "Pasted Image 20241220141057_813",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Pasted Image 20241220141057_813.png"
+    },
+    {
+      "basename": "Mothers Day Website",
+      "path": "📁 01 - Projects/Mothers Day Website/Mothers Day Website.md"
+    },
+    {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.svg"
+    },
+    {
+      "basename": "Image Handling",
+      "path": "📁 10 - My Obsidian Stack/Image Handling/Image Handling.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "File Order",
+      "path": "📁 10 - My Obsidian Stack/File Order/File Order.md"
     },
     {
       "basename": "Obsidian File Names",
@@ -171,34 +199,6 @@
     {
       "basename": "Adversary Emulation",
       "path": "📁 05 - Organizational Cyber/Adversary Emulation/Adversary Emulation.md"
-    },
-    {
-      "basename": "Org Pentesting",
-      "path": "📁 05 - Organizational Cyber/Org Pentesting/Org Pentesting.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "Pasted Image 20241215200947_114",
-      "path": "📁 10 - My Obsidian Stack/✒️ Obsidian Tech Stack Diagram/Pasted Image 20241215200947_114.png"
-    },
-    {
-      "basename": "Obsidian Regex Find & Replace",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Regex Find & Replace.md"
-    },
-    {
-      "basename": "Cable Management",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
-    },
-    {
-      "basename": "Setting Up VLANs",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Setting Up VLANs/Setting Up VLANs.md"
-    },
-    {
-      "basename": "Using a New Router with TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
     }
   ],
   "omittedPaths": [],

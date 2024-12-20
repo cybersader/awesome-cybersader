@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 20th 2024, 12:52 pm
+date modified: Friday, December 20th 2024, 1:20 pm
 ---
 
 %% Begin Waypoint %%
@@ -104,7 +104,7 @@ date modified: Friday, December 20th 2024, 12:52 pm
 - Plugin to automatically put bullet point when clicking directly below a bullet list
 - Plugin to use regex replacements with pasting
 - Plugin that does certain syntax to show page and heading when pasting link to page and heading
-- 
+- Normalized content change glow added to graph to show recently active areas of the graph.  This could use git repo information with commits - would take a lot to render
 
 # Ideas
 

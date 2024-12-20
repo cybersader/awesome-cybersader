@@ -20,6 +20,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Dataview]]**
 - **[[File Order]]**
+- **[[Image Handling]]**
 - **[[Obsidian & Corporate Docs]]**
 - **[[Obsidian & N8n]]**
 - **[[Obsidian as a CMS]]**

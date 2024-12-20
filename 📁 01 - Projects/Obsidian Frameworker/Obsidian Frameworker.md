@@ -4,14 +4,18 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 1:09 pm
+date modified: Friday, December 20th 2024, 2:19 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
 
-[Frameworks & Standards](../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Standards.md)
-[Framework Mapping](../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Framework%20Mapping/Framework%20Mapping.md)
-[My Obsidian Stack](../📁%2010%20-%20My%20Obsidian%20Stack/📁%2010%20-%20My%20Obsidian%20Stack.md)
+[Frameworks & Standards](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Standards.md)
+[Framework Mapping](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Framework%20Mapping/Framework%20Mapping.md)
+[My Obsidian Stack](../../📁%2010%20-%20My%20Obsidian%20Stack/📁%2010%20-%20My%20Obsidian%20Stack.md)
+
+# System Design
+
+ ![](frameworker_diagram.svg)
 
 # Data Structures, Taxonomies, Approach
 
