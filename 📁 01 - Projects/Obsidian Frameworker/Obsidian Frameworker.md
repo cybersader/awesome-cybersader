@@ -125,6 +125,16 @@ The issue is that I essentially want to store data about a relationship between 
 
 ## Linking Workspace
 
+- My ideal linking format for linking different ontologies/data systems/taxonomies/hierarchies in Obsidian
+	- Use the same inline dataview syntax with JSON like below
+	- Examples:
+		- `(beginning of line)framework:: [link_text](link){key:value,key_array:[],key_object:{}}`
+		- `(beginning of line)framework:: [link_text](link){key:value,key_array:[],key_object:{}}`
+	- Custom dataview regex processor to process inline structured data?
+	- Another syntax idea
+	    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
+	    - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
+
 - Relationships between MD pages - links and graphs
     - How do graph DBs represent information about relationships between 2 nodes?
     - Links
@@ -142,10 +152,23 @@ The issue is that I essentially want to store data about a relationship between 
         - https://juggl.io/
         - https://github.com/memgraph/odin
             - https://memgraph.com/blog/addobsidian-note-taking-with-odin
+		- [Add support for link types - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/add-support-for-link-types/6994/32)
+		- [Consistent attribute syntax - Extensions - CommonMark Discussion](https://talk.commonmark.org/t/consistent-attribute-syntax/272/137)
+		- [How are links between notes stored in Obsidian - Basement - Obsidian Forum](https://forum.obsidian.md/t/how-are-links-between-notes-stored-in-obsidian/20078/8)
+		- 
     - At nodes --
         - Use queries - for generating editable, versionable tables, require dates for changes or just serialize it on nodes in the form of some table that can be edited.  This might be hard
         - At edges - use templates for the to/from set of available key value pairs.  Templates could be in the YAML frontmatter or stored in some other format inline within the note using code blocks
     - Allow for inline connections to other note pages using some crazy inline format
+
+- Format for RDF from W3C
+	- [Serialization formats for linked data | RDF | Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework#Serialization_formats "Resource Description Framework - Wikipedia")
+	- 
+
+- Format that works with other markdown (GFM / GitHub Flavored Markdown)
+	- https://forum.obsidian.md/t/add-support-for-link-types/6994/32?u=cybersader
+		- Aspen is cool but probably not for these use cases
+	- 
 
 - Weak vs strong links?
     - No schema vs using a "valid" schema - think JSON schema but something with YAML or something else
@@ -159,11 +182,6 @@ The issue is that I essentially want to store data about a relationship between 
 - Your essentially mapping a structured workspace (one ontology) to another structured framework (another ontology)
 
 - The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
-
-- Custom dataview regex processor to process inline structured data?
-- Another syntax idea
-    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
-    - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
 
 - Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
     - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
