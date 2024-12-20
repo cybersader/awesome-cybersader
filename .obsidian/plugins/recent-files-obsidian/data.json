@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker.md"
+    },
+    {
       "basename": "Obsidian File Names",
       "path": "📁 10 - My Obsidian Stack/Obsidian File Names/Obsidian File Names.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "Web or Browser-Based Obsidian",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker.md"
     },
     {
       "basename": "Obsidian as a CMS",
@@ -195,10 +195,6 @@
     {
       "basename": "Using a New Router with TrueNAS",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using a New Router with TrueNAS/Using a New Router with TrueNAS.md"
-    },
-    {
-      "basename": "Repurpose Old Router - DNS, Firewall",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Repurpose Old Router - DNS, Firewall/Repurpose Old Router - DNS, Firewall.md"
     }
   ],
   "omittedPaths": [],
