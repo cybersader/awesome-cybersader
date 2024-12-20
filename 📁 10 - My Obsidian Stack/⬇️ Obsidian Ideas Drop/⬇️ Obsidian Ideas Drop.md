@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 20th 2024, 1:20 pm
+date modified: Friday, December 20th 2024, 2:49 pm
 ---
 
 %% Begin Waypoint %%
@@ -25,7 +25,6 @@ date modified: Friday, December 20th 2024, 1:20 pm
 	- https://forum.obsidian.md/t/how-to-have-different-themes-on-seperate-devices/73334
 - Per client
 	- ovveride config folder - stored locally so network shares and things like that don't matter
-- Define users somehow with a Templater user script?  This may be possible
 
 - https://obsidian.rocks/editing-dataview-tables-with-the-metadata-menu-plugin/
 
@@ -33,6 +32,11 @@ date modified: Friday, December 20th 2024, 1:20 pm
 	- Atomic and granular power over syncing and collaboration
 - Wikilink vs Markdown Link Use Cases
 - [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
+
+# Users in Obsidian
+
+- [Supercharged Links showcase - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/supercharged-links-showcase/18219)
+- Define users somehow with a Templater user script?  This may be possible
 
 # Plugins to look at 
 

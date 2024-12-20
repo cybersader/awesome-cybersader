@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 2:19 pm
+date modified: Friday, December 20th 2024, 3:03 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -52,7 +52,10 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Graph link types
     - Merely turns dataview inline tags with links into edges on graph view
 - Semantic Canvas
-- 
+- Supercharged Links
+	- Add CSS to links based on the YAML of the target note of the link
+- Dataview
+	- Query incoming links and show (link, tag) combinations of them?
 
 ## Misc
 
@@ -91,6 +94,31 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Supercharged Links
 - Custom File Order
 - 
+
+# Linking, Graph Edges
+
+> [!important] The purpose?
+> Encode metadata about an edge/relationship/link to another note in the vault.  This could be structured or unstructured data even.
+
+The issue is that I essentially want to store data about a relationship between two files and there's no advanced link syntax to store something like JSON in a link/edge.
+
+- Options:
+	1. **Intermediate edge metadata file** - use intermediate file that's indexed to store structured data about the edge
+	2. **Structured data for graph link syntax** - develop syntax to store structured data at link instantiation
+	3. **Take advantage of inline Dataview tag name** - structure data in inline tags with link to framework/structured data component as the value.  Find all of the files, use regex to find all cases of incoming files with regex match
+
+## 1) Intermediate Edge Metadata Files
+
+- .
+
+## 2) Structured Data in Link Syntax
+
+- .
+
+## 3) Dataview Inline Tag Key Workaround
+
+- I could make links that store the nested data with some format to point to a particular kind of general relationship between files like `framework_here.evidence.review`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]
+- Then the dataviewjs query could look for all incoming files that include tags with `framework_here` in it and parse the structure of tags to create a flattened table or something similar since it's dataview.
 
 # DROPZONE, WORKSPACE
 
