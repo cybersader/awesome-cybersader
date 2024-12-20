@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+    },
+    {
       "basename": "frameworker_diagram",
       "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
@@ -195,10 +199,6 @@
     {
       "basename": "Cyber Community",
       "path": "📁 11 - Community/Cyber Community/Cyber Community.md"
-    },
-    {
-      "basename": "Adversary Emulation",
-      "path": "📁 05 - Organizational Cyber/Adversary Emulation/Adversary Emulation.md"
     }
   ],
   "omittedPaths": [],

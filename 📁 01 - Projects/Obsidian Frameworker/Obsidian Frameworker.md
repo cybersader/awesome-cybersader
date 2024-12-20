@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 3:43 pm
+date modified: Friday, December 20th 2024, 4:19 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -109,7 +109,10 @@ The issue is that I essentially want to store data about a relationship between 
 
 ## 1) Intermediate Edge Metadata Files
 
-- .
+- We could define connection/mappings files under a folder like `.edges_framework_here` or `.mappings_framework_here` that show the schema for metadata with the connections
+- When a link is made, then it could generate an `edge/graph_link/linking` file prefilled with the structure via a Template or something else.  
+- A hashmapped file should then be stored under the related framework or a `.edges` folder or whatever the user defines to store unstructured metadata for connection to other files.
+- Querying these would be difficult because we would have to be able to query "2nd-degree" connections in which files are two hops from each other (2 hops because, now, there's an intermediate metadata file in the middle.
 
 ## 2) Structured Data in Link Syntax
 
@@ -161,7 +164,14 @@ The issue is that I essentially want to store data about a relationship between 
 - Another syntax idea
     - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
     - BUT WHAT DECIDES THE TEMPLATE? WHAT IS KEY_NAME FOR?
-        -
+
+- Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
+    - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/32
+    - https://forum.obsidian.md/t/add-support-for-link-types/6994/30
+    - https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/
+    - 
+
 # Ingesting a Framework (Structured Data -> Folders + Files)
 
 - Building from framework, policy, and any structured data
@@ -202,9 +212,8 @@ The issue is that I essentially want to store data about a relationship between 
 - Tables to edit links in bulk from queried place?
 	- Editable dataviewjs queries?
 
-- Workaround by embedding a bunch in a hashmap or "supertags"
+- Workaround by embedding intermediate pages in the links to  a hashmap or "supertags"
     - Use intermediary notes for storing data somehow?
-    - https://tana.inc/docs/supertags
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/172
     - https://forum.obsidian.md/t/add-support-for-link-types/6994/173
     - You could embed a hashmap or ID in each edge/link between notes, then have a massive hashmapped store of the properties or data about that edge/link
@@ -215,16 +224,6 @@ The issue is that I essentially want to store data about a relationship between 
     - You could even have a process that auto-edits the PDF and marks pages as you link to certain content processed from the page during the source material (framework PDF) to the vault structure for the framework.
 
 - Accounting for how images are handled and aggregated/queried once linked
-
-- Different link syntaxes (nested/hierarchical vs key:value data in edge/link)
-    - Overriding the use of "#" for headers in links (not the best idea) - https://forum.obsidian.md/t/add-support-for-link-types/6994/195
-    - https://forum.obsidian.md/t/add-support-for-link-types/6994/32
-    - https://forum.obsidian.md/t/add-support-for-link-types/6994/30
-    - https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/
-    - 
-
-- Forum posts about what links can have
-    - https://forum.obsidian.md/t/add-support-for-link-types/6994/187
 
 - Scalability problems
     - Inline graph links with properties can have massive performance issues.  Since notes are unstructured, every note has to be processed in its entirety.  So, indexing of some kind has to take place to store the mappings. This means that this graph-based approach in graph-based in functionality but not so much behind the scenes as it's emulated by a table.  This has caveats when the space scales to a large enough size

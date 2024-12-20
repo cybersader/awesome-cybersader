@@ -32,7 +32,8 @@ date modified: Friday, December 20th 2024, 2:49 pm
 	- Atomic and granular power over syncing and collaboration
 - Wikilink vs Markdown Link Use Cases
 - [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
-
+- https://argdown.org/
+- 
 # Users in Obsidian
 
 - [Supercharged Links showcase - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/supercharged-links-showcase/18219)
