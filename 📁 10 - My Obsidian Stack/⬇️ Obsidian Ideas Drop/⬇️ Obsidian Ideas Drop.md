@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 20th 2024, 8:39 am
+date modified: Friday, December 20th 2024, 12:52 pm
 ---
 
 %% Begin Waypoint %%
@@ -32,6 +32,7 @@ date modified: Friday, December 20th 2024, 8:39 am
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
 - Wikilink vs Markdown Link Use Cases
+- [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
 
 # Plugins to look at 
 
@@ -103,6 +104,7 @@ date modified: Friday, December 20th 2024, 8:39 am
 - Plugin to automatically put bullet point when clicking directly below a bullet list
 - Plugin to use regex replacements with pasting
 - Plugin that does certain syntax to show page and heading when pasting link to page and heading
+- 
 
 # Ideas
 
