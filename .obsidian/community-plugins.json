@@ -14,7 +14,6 @@
   "run",
   "tag-breakdown-generator",
   "obsidian-underline",
-  "obsidian-vault-changelog",
   "waypoint",
   "dataview",
   "table-editor-obsidian",
@@ -43,5 +42,6 @@
   "settings-search",
   "folder-notes",
   "obsidian-trim-whitespace",
-  "editor-width-slider"
+  "editor-width-slider",
+  "obsidian-copy-block-link"
 ]

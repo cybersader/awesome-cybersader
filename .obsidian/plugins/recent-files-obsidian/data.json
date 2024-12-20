@@ -5,6 +5,14 @@
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
     {
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
+    },
+    {
+      "basename": "Daily Driver Stuff",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
+    },
+    {
       "basename": "Project Management",
       "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
     },
@@ -187,18 +195,6 @@
     {
       "basename": "Ethernet Cables",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Ethernet Cables/Ethernet Cables.md"
-    },
-    {
-      "basename": "⬇️ Ontological Drop",
-      "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
-    },
-    {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Collaboration in Obsidian/Collaboration in Obsidian.md"
     }
   ],
   "omittedPaths": [],

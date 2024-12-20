@@ -1,16 +1,24 @@
 ---
+permalink:
 aliases: [Awesome Backpacks, Awesome Every Day Carry, Awesome Everyday Carry, Awesome Utils, Awesome Bags]
 tags: [Bags, EDC, Utils]
 publish: true
 date created: Tuesday, June 18th 2024, 8:39 pm
-date modified: Monday, December 2nd 2024, 11:05 am
+date modified: Thursday, December 19th 2024, 8:11 pm
 ---
+
+[Daily Driver Stuff](../⬇%20Tech%20Dropzone/Daily%20Driver%20Stuff/Daily%20Driver%20Stuff.md)
 
 # Cards
 
 - [KeySmart - The Best Compact Key Holder](https://www.getkeysmart.com/)
 
-# Awesome Quick Release Attachments (Keychains, Clips)
+# Carabiners, Clips
+
+- [S-Biners and Carabiners](https://niteize.com/hardware/s-biners-carabiners)
+- 
+
+# Awesome Quick Release Attachments (Keychains, Clips), Key Organizer (Slider)
 
 - Terms
 	- fidlock
@@ -29,6 +37,9 @@ date modified: Monday, December 2nd 2024, 11:05 am
 - [Yubico x Keyport - Pivot 2.0 and ParaPull Carry Bundle](https://www.yubico.com/product/yubico-keyport-pivot-parapull-carry-bundle/)
 - [Keyport | Best Key Organizer, Key Holder & Keychain Multi-Tool](https://www.mykeyport.com/)
 - [KeySmart - The Best Compact Key Holder](https://www.getkeysmart.com/)
+- [Jibbon Key Organiser](https://www.jibbonkey.com/)
+- [Clever Organisation for Better Living – Orbitkey](https://www.orbitkey.com/)
+- 
 
 # Awesome Bags
 
