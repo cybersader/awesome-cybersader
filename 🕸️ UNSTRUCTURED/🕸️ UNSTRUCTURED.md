@@ -46,6 +46,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[LibreOffice]]
 - [[Markdown Practices in Obsidian]]
 - **[[Media File Management]]**
+- **[[Metals]]**
 - **[[Misc Web Dev]]**
 - **[[Obsidian Vaults with Cybersecurity]]**
 - **[[OSINT]]**

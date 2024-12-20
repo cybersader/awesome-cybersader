@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, December 15th 2024, 11:44 am
+date modified: Friday, December 20th 2024, 8:39 am
 ---
 
 %% Begin Waypoint %%
@@ -102,6 +102,7 @@ date modified: Sunday, December 15th 2024, 11:44 am
 - Auto headings and bullets?
 - Plugin to automatically put bullet point when clicking directly below a bullet list
 - Plugin to use regex replacements with pasting
+- Plugin that does certain syntax to show page and heading when pasting link to page and heading
 
 # Ideas
 

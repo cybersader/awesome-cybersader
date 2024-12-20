@@ -4,10 +4,17 @@ aliases: [Awesome Backpacks, Awesome Every Day Carry, Awesome Everyday Carry, Aw
 tags: [Bags, EDC, Utils]
 publish: true
 date created: Tuesday, June 18th 2024, 8:39 pm
-date modified: Thursday, December 19th 2024, 8:11 pm
+date modified: Friday, December 20th 2024, 8:42 am
 ---
 
 [Daily Driver Stuff](../⬇%20Tech%20Dropzone/Daily%20Driver%20Stuff/Daily%20Driver%20Stuff.md)
+
+# DROPZONE
+
+- [Gear | HiConsumption](https://hiconsumption.com/category/gear/)
+	- [Tested: The Best Keychain Carabiners for EDC | HiConsumption](https://hiconsumption.com/gear/best-keychain-carabiners/)
+	- [Tested: 12 Best EDC Keychains & Keyrings | HiConsumption](https://hiconsumption.com/gear/best-edc-keychains/)
+- 
 
 # Cards
 
@@ -15,8 +22,19 @@ date modified: Thursday, December 19th 2024, 8:11 pm
 
 # Carabiners, Clips
 
-- [S-Biners and Carabiners](https://niteize.com/hardware/s-biners-carabiners)
+- [S-Biners and Carabiners | NiteIze](https://niteize.com/hardware/s-biners-carabiners)
 - 
+
+# Key Rings
+
+- [Amazon.com: Orbitkey Ring v2- Black](https://www.amazon.com/Orbitkey-Ring-v2-Black/dp/B0BHCCS7QM)
+
+[Metals > Magnetism & Metals](🕸️%20UNSTRUCTURED/Metals/Metals.md#Magnetism%20Metals)
+
+- Non-Metal (helps with magnets)
+	- titanium wire key rings
+	- [Titanium Key Rings (5-pack)](https://glowrhino.com/collections/accessories/products/titanium-key-rings "Titanium Pry Bars | Pry Bar | EDC Pry Bar | Bottle Opener | Pry Tool – Glow Rhino")
+	- 
 
 # Awesome Quick Release Attachments (Keychains, Clips), Key Organizer (Slider)
 
