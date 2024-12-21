@@ -5,16 +5,28 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Hosting",
+      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
+    },
+    {
+      "basename": "Microsoft Outlook",
+      "path": "🕸️ UNSTRUCTURED/Microsoft Outlook/Microsoft Outlook.md"
+    },
+    {
       "basename": "frameworker_diagram",
       "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
     },
     {
-      "basename": "Bitwarden Stuff",
-      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
+      "basename": "Liability Chains",
+      "path": "🕸️ UNSTRUCTURED/Liability Chains/Liability Chains.md"
     },
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+      "basename": "Bitwarden Stuff",
+      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
     },
     {
       "basename": "Obsidian Setup for Corporate",
@@ -187,18 +199,6 @@
     {
       "basename": "Gaming Hacks & Cheats",
       "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
-    },
-    {
-      "basename": "Scripting Security",
-      "path": "📁 05 - Organizational Cyber/Scripting Security/Scripting Security.md"
-    },
-    {
-      "basename": "PowerShell for InfoSec",
-      "path": "📁 06 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
-    },
-    {
-      "basename": "Cyber Community",
-      "path": "📁 11 - Community/Cyber Community/Cyber Community.md"
     }
   ],
   "omittedPaths": [],

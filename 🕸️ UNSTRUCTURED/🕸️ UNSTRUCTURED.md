@@ -43,10 +43,12 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Hosted Storage]]**
 - **[[Hotel Hacker]]**
 - [[Laptop Health Check Tools]]
+- **[[Liability Chains]]**
 - [[LibreOffice]]
 - [[Markdown Practices in Obsidian]]
 - **[[Media File Management]]**
 - **[[Metals]]**
+- **[[Microsoft Outlook]]**
 - **[[Misc Web Dev]]**
 - **[[Obsidian Vaults with Cybersecurity]]**
 - **[[OSINT]]**

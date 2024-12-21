@@ -26,6 +26,8 @@ date modified: Friday, December 20th 2024, 2:49 pm
 - Per client
 	- ovveride config folder - stored locally so network shares and things like that don't matter
 
+- [Track Watch Later List From YouTube : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/yp2hfs/track_watch_later_list_from_youtube/)
+
 - https://obsidian.rocks/editing-dataview-tables-with-the-metadata-menu-plugin/
 
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
