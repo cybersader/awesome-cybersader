@@ -1,10 +1,10 @@
 ---
 aliases: []
-tags: []
+tags: [risk-management, GRC]
 publish: true
-permalink:
+permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 4:19 pm
+date modified: Friday, December 20th 2024, 9:51 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -114,6 +114,7 @@ The issue is that I essentially want to store data about a relationship between 
 - A hashmapped file should then be stored under the related framework or a `.edges` folder or whatever the user defines to store unstructured metadata for connection to other files.
 - Querying these would be difficult because we would have to be able to query "2nd-degree" connections in which files are two hops from each other (2 hops because, now, there's an intermediate metadata file in the middle.
 - This one would work on other platforms too like with GitHub Flavored Markdown because all you have ultimately are linking between pages without the custom metadata syntax
+
 ## 2) Structured Data in Link Syntax
 
 - .
@@ -203,6 +204,7 @@ The issue is that I essentially want to store data about a relationship between 
 - [Using DataviewJS inside Templater - Help - Obsidian Forum](https://forum.obsidian.md/t/using-dataviewjs-inside-templater/67664)
 
 - 
+
 # DROPZONE, WORKSPACE
 
 - The file/folder order for the framework data in Obsidian is also an issue that needs to be accounted for
@@ -292,3 +294,8 @@ The issue is that I essentially want to store data about a relationship between 
     - Use some template format or system?
     - Definition files?
     - OSCAL?
+
+# Using a Tag Structure Instead?
+
+- We could also process some framework into the same structure, but then store it as a metadata format and be able to link directly into the framework with tags.
+- Using YAML frontmatter would be a completely different way of doing it, but it could be another way of managing framework mapping with risk management
