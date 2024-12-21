@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Saturday, November 9th 2024, 3:02 pm
-date modified: Saturday, November 9th 2024, 3:04 pm
+date modified: Saturday, December 21st 2024, 1:10 pm
 ---
 
 %% Begin Waypoint %%

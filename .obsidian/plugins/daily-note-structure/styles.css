@@ -1,0 +1,126 @@
+/* obsidian daily note structure plugin */
+/* settings tab bar is the div containing the tabs */
+.dly-nt-strct-settings-tab-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+/* settings tab is the div containing the tabs name and its part of the tab bar */
+.dly-nt-strct-settings-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--size-4-2);
+  padding: 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-top-left-radius: var(--input-radius);
+  border-top-right-radius: var(--input-radius);
+}
+
+/* settings tab name, is the div containing the name of a tab */
+.dly-nt-strct-settings-tab-name {
+  font-weight: bold;
+}
+
+/* styling for setting tabs (containing the tabs name) which have been selected (usually only one) */
+.dly-nt-strct-settings-active-tab {
+  background-color: var(--color-accent);
+  color: var(--text-on-accent);
+  border: 1px solid var(--color-accent);
+  border-top-left-radius: var(--input-radius);
+  border-top-right-radius: var(--input-radius);
+}
+
+/* settings page is the div which holds the tabs content (settings, help text etc.)*/
+.dly-nt-strct-settings-page {
+  border-style: solid none none none;
+  border-width: 2px;
+  border-color: var(--color-accent);
+  margin-top:   0px;
+  padding-top:  10px;
+}
+
+/* Settings dialog - 'general' settings*/
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-name {
+  font-size: 1.5em;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .description {
+  font-size: 1.25em;
+  margin-bottom: 2px;
+}
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .description.small {
+  font-size: 1.1em;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration {
+  font-size: 1em;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .body {
+  margin-left: 10px;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .keyword {
+  color: #c574dd;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .classname {
+  color: #e5c06a;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .codeblock {
+  color: #ffd71b;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .operator {
+  color: #43b6c2;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .string {
+  color: #8ac379;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .type {
+  color: #3aa9c2;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .key {
+  color: #abb2bf;
+}
+
+.setting-item.dly-nt-strct-settings-text 
+.setting-item-info .setting-item-description .declaration .token {
+  color: #abb2bf;
+}
+
+/* Settings dialog - 'structure' settings*/
+
+.setting-item.dly-nt-strct-settings-structure .setting-item-info {
+  display: none;
+}
+
+.setting-item.dly-nt-strct-settings-structure textarea {
+  display: block;
+  width: 100%;
+}
+
+.setting-item.dly-nt-strct-settings-structure.error textarea {
+  color: red;
+}

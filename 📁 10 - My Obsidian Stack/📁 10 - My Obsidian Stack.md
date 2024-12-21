@@ -9,6 +9,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[✒️ Obsidian Tech Stack Diagram]]**
 
 - **[[⬇️ Obsidian Ideas Drop]]**
+- **[[⬇️ Obsidian Integrations]]**
 - **[[Attachment Management]]**
 - **[[Auto - Tagging, Linking, Dropzones & Organizers]]**
 	- **[[File Organizer 2000]]**
@@ -50,6 +51,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**
 	- **[[Syncthing Incompatible with Git]]**
+- **[[Task Prioritization]]**
 - **[[Templater]]**
 - **[[Test Vault Workflow]]**
 

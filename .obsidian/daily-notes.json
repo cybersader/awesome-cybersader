@@ -1,5 +1,6 @@
 {
-  "folder": "",
+  "folder": "🕸️ Things I Learned Today",
   "autorun": true,
-  "format": ""
+  "format": "YYYY/MM/YYYY-MM-DD-dddd/YYYY-MM-DD-dddd",
+  "template": ""
 }

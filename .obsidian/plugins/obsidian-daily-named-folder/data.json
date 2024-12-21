@@ -1,6 +1,6 @@
 {
-  "format": "YYYY/MM-MMMM/YYYY-MM-DD-dddd",
-  "description": true,
+  "format": "YYYY/MM/YYYY-MM-DD-dddd",
+  "description": false,
   "root": "🕸️ Things I Learned Today",
   "template": ""
 }

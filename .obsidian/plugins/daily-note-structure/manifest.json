@@ -1,0 +1,10 @@
+{
+	"id": "daily-note-structure",
+	"name": "Daily Note Structure",
+	"version": "1.1.0",
+	"minAppVersion": "1.6.3",
+	"description": "One-Click create a structure for and including your daily notes.",
+	"author": "Dirk Brenckmann",
+	"authorUrl": "https://slashlib.org",
+	"isDesktopOnly": false
+}

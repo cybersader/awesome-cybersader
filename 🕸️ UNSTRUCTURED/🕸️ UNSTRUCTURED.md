@@ -8,7 +8,6 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 %% Begin Waypoint %%
 - **[[⬇️ Hacking Ideas]]**
 - **[[⬇️ Misc_Links]]**
-- **⬇️ Obsidian Integrations**
 - **[[2025 Cybersecurity Goals]]**
 - **[[AI & Security by Obscurity]]**
 - **[[AI Ethics & Morality]]**
@@ -56,6 +55,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 	- **[[Smart Phones]]**
 - **[[Phones, Secure, Pentest]]**
 - **[[Photo Filtering, Color, LUTs]]**
+- **[[Prioritization Formulas]]**
 - **[[RDP Client]]**
 - [[Reporting Phishing]]
 - **[[RSS]]**
