@@ -21,7 +21,6 @@
   "callout-manager",
   "obsidian-dictionary-plugin",
   "floating-toc",
-  "obsidian-git",
   "obsidian-linter",
   "obsidian-markdown-formatting-assistant-plugin",
   "md-image-caption",
@@ -43,5 +42,6 @@
   "folder-notes",
   "obsidian-trim-whitespace",
   "editor-width-slider",
-  "obsidian-vault-changelog"
+  "obsidian-vault-changelog",
+  "obsidian-git"
 ]

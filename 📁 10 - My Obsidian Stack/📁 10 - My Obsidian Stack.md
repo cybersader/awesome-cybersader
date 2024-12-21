@@ -27,6 +27,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Dictionary and Grammar]]**
 - **[[Obsidian File Names]]**
 - **[[Obsidian File Recovery]]**
+- **[[Obsidian File Sorting]]**
 - **[[Obsidian Git]]**
 	- **[[Handling Obsidian Git Conflicts & Issues]]**
 	- **[[Obsidian Git Features & Solutions]]**

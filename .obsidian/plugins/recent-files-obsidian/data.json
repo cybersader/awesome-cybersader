@@ -5,12 +5,28 @@
       "path": "🕸️ Things I Learned Today/2024-12-21.md"
     },
     {
+      "basename": "Git Repo Networks",
+      "path": "📁 01 - Projects/Git Repo Networks/Git Repo Networks.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
     {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "Obsidian File Sorting",
+      "path": "📁 10 - My Obsidian Stack/Obsidian File Sorting/Obsidian File Sorting.md"
+    },
+    {
+      "basename": "001 -",
+      "path": "🕸️ Things I Learned Today/001 -.md"
+    },
+    {
+      "basename": "002 - Sharing Audio",
+      "path": "🕸️ Things I Learned Today/002 - Sharing Audio.md"
     },
     {
       "basename": "Dataview",
@@ -183,22 +199,6 @@
     {
       "basename": "Backups - The 3,2,1 Rule",
       "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
-    },
-    {
-      "basename": "RSS",
-      "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
-    },
-    {
-      "basename": "Hosted Storage",
-      "path": "🕸️ UNSTRUCTURED/Hosted Storage/Hosted Storage.md"
-    },
-    {
-      "basename": "Xbox Home Networking",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     }
   ],
   "omittedPaths": [],
