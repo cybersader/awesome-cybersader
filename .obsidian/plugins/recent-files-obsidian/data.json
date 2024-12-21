@@ -5,6 +5,14 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
+      "basename": "Phone Pick in 2024",
+      "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
+    },
+    {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "Microsoft Outlook",
       "path": "🕸️ UNSTRUCTURED/Microsoft Outlook/Microsoft Outlook.md"
-    },
-    {
-      "basename": "frameworker_diagram",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
     },
     {
       "basename": "Liability Chains",
@@ -195,10 +199,6 @@
     {
       "basename": "Windows Backups Duplicati 2024",
       "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
-    },
-    {
-      "basename": "Gaming Hacks & Cheats",
-      "path": "🕸️ UNSTRUCTURED/Gaming Hacks & Cheats.md"
     }
   ],
   "omittedPaths": [],
