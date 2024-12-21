@@ -5,6 +5,10 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
+      "basename": "Dataview",
+      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
+    },
+    {
       "basename": "Phone Pick in 2024",
       "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Social Engineering",
       "path": "📁 05 - Organizational Cyber/Social Engineering/Social Engineering.md"
-    },
-    {
-      "basename": "Windows Backups Duplicati 2024",
-      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows Backups Duplicati 2024/Windows Backups Duplicati 2024.md"
     }
   ],
   "omittedPaths": [],

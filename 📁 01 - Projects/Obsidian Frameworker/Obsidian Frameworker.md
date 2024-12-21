@@ -113,7 +113,7 @@ The issue is that I essentially want to store data about a relationship between 
 - When a link is made, then it could generate an `edge/graph_link/linking` file prefilled with the structure via a Template or something else.  
 - A hashmapped file should then be stored under the related framework or a `.edges` folder or whatever the user defines to store unstructured metadata for connection to other files.
 - Querying these would be difficult because we would have to be able to query "2nd-degree" connections in which files are two hops from each other (2 hops because, now, there's an intermediate metadata file in the middle.
-
+- This one would work on other platforms too like with GitHub Flavored Markdown because all you have ultimately are linking between pages without the custom metadata syntax
 ## 2) Structured Data in Link Syntax
 
 - .
@@ -122,14 +122,15 @@ The issue is that I essentially want to store data about a relationship between 
 
 - I could make links that store the nested data with some format to point to a particular kind of general relationship between files like `framework_here.evidence.review`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]`.  Then there could be something like `framework_here.link.sufficient_for :: (file)[relative_path_to_file]
 - Then the dataviewjs query could look for all incoming files that include tags with `framework_here` in it and parse the structure of tags to create a flattened table or something similar since it's dataview.
+- 
 
 ## Linking Workspace
 
 - My ideal linking format for linking different ontologies/data systems/taxonomies/hierarchies in Obsidian
 	- Use the same inline dataview syntax with JSON like below
 	- Examples:
-		- `(beginning of line)framework:: [link_text](link){key:value,key_array:[],key_object:{}}`
-		- `(beginning of line)framework:: [link_text](link){key:value,key_array:[],key_object:{}}`
+		- `(beginning of line)framework:: [link_text](link in MD or Wikilink style){key:value,key_array:[],key_object:{}}`
+		- `(beginning of line)framework:: [link_text](link in MD or Wikilink style){key:value,key_array:[],key_object:{}}`
 	- Custom dataview regex processor to process inline structured data?
 	- Another syntax idea
 	    - [key_name :: {positional_value_1, positional_value_2, key_1:value, key_2:value}]
@@ -199,6 +200,9 @@ The issue is that I essentially want to store data about a relationship between 
 
 - The nested data for edges/links can be flattened out even if it's a nested data structure - JSON -> tables
 
+- [Using DataviewJS inside Templater - Help - Obsidian Forum](https://forum.obsidian.md/t/using-dataviewjs-inside-templater/67664)
+
+- 
 # DROPZONE, WORKSPACE
 
 - The file/folder order for the framework data in Obsidian is also an issue that needs to be accounted for
@@ -206,8 +210,8 @@ The issue is that I essentially want to store data about a relationship between 
 - Utilizing AI and search
     - We can use AI while in our normal knowledge spaces to find the framework/structured data links or even use AI to help us find those links
 
-- the MINIMUM using dataview
-    - First we refer to things we the inline or YAML frontmaterr dataview markdown or wikilinks
+- The MINIMUM using dataview
+    - First we refer to things we the inline or YAML frontmater dataview markdown or wikilinks
     - At the framework page, and at the top, we use Templater and some way to put in automatic dataview queries to query for incoming connections from evidence files along with what they are "covered", "accounts", "reduces risk for", etc 
 
 - I might be able to use a minimal combination of Metadata Menu and Supercharged links
