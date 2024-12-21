@@ -18,6 +18,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Contributable Obsidian Wiki]]**
 - **[[Cursor and Frontmatter Issues]]**
 - **[[Cybersader Wiki Features and Changes]]**
+- **[[Daily Notes Workflow]]**
 - **[[Dataview]]**
 - **[[File Order]]**
 - **[[Image Handling]]**

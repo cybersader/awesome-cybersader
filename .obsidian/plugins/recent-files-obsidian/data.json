@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "2024-12-21",
-      "path": "🕸️ Things I Learned Today/2024-12-21.md"
+      "basename": "🕸️ Things I Learned Today",
+      "path": "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md"
+    },
+    {
+      "basename": "2024-10-22",
+      "path": "🕸️ Things I Learned Today/2024-10-22.md"
+    },
+    {
+      "basename": "2024-11-4",
+      "path": "🕸️ Things I Learned Today/2024-11-4.md"
+    },
+    {
+      "basename": "Daily Notes Workflow",
+      "path": "📁 10 - My Obsidian Stack/Daily Notes Workflow/Daily Notes Workflow.md"
     },
     {
       "basename": "Git Repo Networks",
@@ -19,14 +31,6 @@
     {
       "basename": "Obsidian File Sorting",
       "path": "📁 10 - My Obsidian Stack/Obsidian File Sorting/Obsidian File Sorting.md"
-    },
-    {
-      "basename": "001 -",
-      "path": "🕸️ Things I Learned Today/001 -.md"
-    },
-    {
-      "basename": "002 - Sharing Audio",
-      "path": "🕸️ Things I Learned Today/002 - Sharing Audio.md"
     },
     {
       "basename": "Dataview",
@@ -195,10 +199,6 @@
     {
       "basename": "Spyware",
       "path": "🕸️ UNSTRUCTURED/Spyware/Spyware.md"
-    },
-    {
-      "basename": "Backups - The 3,2,1 Rule",
-      "path": "🕸️ UNSTRUCTURED/Backups - The 3,2,1 Rule.md"
     }
   ],
   "omittedPaths": [],

@@ -43,5 +43,6 @@
   "obsidian-trim-whitespace",
   "editor-width-slider",
   "obsidian-vault-changelog",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-daily-named-folder"
 ]
