@@ -721,6 +721,9 @@
       },
       "obsidian-trim-whitespace": {
         "startupType": "instant"
+      },
+      "obsidian-argdown-plugin": {
+        "startupType": "disabled"
       }
     }
   }

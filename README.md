@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, December 2nd 2024, 10:28 pm
+date modified: Saturday, December 21st 2024, 10:36 am
 ---
 
 > Up-to-date content @ https://github.com/cybersader/awesome-cybersader
@@ -31,6 +31,13 @@ My public and contributable base/wiki for cybersecurity, cyber resilience, and c
 
 - https://cal.com/cybersader
 
-# 😁 Share a Testimonial, Recommend Me
+# ❤️‍🔥 Support Me or Say Thanks
+
+If you enjoy my work or find value from it, then you can support me below by sharing your thoughts or a small gift.
 
 - [Share your thoughts! - Write something](https://senja.io/p/cybersader/r/5RzvRy)
+
+
+
+
+<a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" /></a>

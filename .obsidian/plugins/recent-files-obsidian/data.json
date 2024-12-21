@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-12-21",
+      "path": "🕸️ Things I Learned Today/2024-12-21.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Windows Desktop Provisioning",
       "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Why Use Obsidian Sync",
-      "path": "🕸️ UNSTRUCTURED/Why Use Obsidian Sync/Why Use Obsidian Sync.md"
-    },
-    {
-      "basename": "Social Engineering",
-      "path": "📁 05 - Organizational Cyber/Social Engineering/Social Engineering.md"
     }
   ],
   "omittedPaths": [],
