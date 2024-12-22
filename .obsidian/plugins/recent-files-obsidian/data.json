@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "📁 32 - Climbing",
-      "path": "📁 32 - Climbing/📁 32 - Climbing.md"
+      "basename": "Inputs, Capture",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "2024-12-21-Saturday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-21-Saturday/2024-12-21-Saturday.md"
+    },
+    {
+      "basename": "Awesome Password Security",
+      "path": "⬇ INBOX, DROPZONE/Awesome Password Security/Awesome Password Security.md"
+    },
+    {
+      "basename": "Windows Lock vs Sleep Screen",
+      "path": "🕸️ UNSTRUCTURED/Windows Lock vs Sleep Screen.md"
+    },
+    {
+      "basename": "Audio to Multiple Headphones",
+      "path": "🕸️ UNSTRUCTURED/Audio to Multiple Headphones.md"
     },
     {
       "basename": "frameworker_diagram",
       "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+    },
+    {
+      "basename": "📁 32 - Climbing",
+      "path": "📁 32 - Climbing/📁 32 - Climbing.md"
     },
     {
       "basename": "⬇️ Obsidian Integrations",
@@ -15,10 +39,6 @@
     {
       "basename": "📁 33 - Diving",
       "path": "📁 33 - Diving/📁 33 - Diving.md"
-    },
-    {
-      "basename": "2024-12-21-Saturday",
-      "path": "🕸️ Things I Learned Today/2024/12/2024-12-21-Saturday/2024-12-21-Saturday.md"
     },
     {
       "basename": "Task Prioritization",
@@ -41,24 +61,12 @@
       "path": "README.md"
     },
     {
-      "basename": "🕸️ Things I Learned Today",
-      "path": "🕸️ Things I Learned Today/🕸️ Things I Learned Today.md"
-    },
-    {
-      "basename": "2024-10-22",
-      "path": "🕸️ Things I Learned Today/2024-10-22.md"
-    },
-    {
-      "basename": "2024-11-4",
-      "path": "🕸️ Things I Learned Today/2024-11-4.md"
+      "basename": "🕸️ Daily Notes",
+      "path": "🕸️ Daily Notes/🕸️ Daily Notes.md"
     },
     {
       "basename": "Git Repo Networks",
       "path": "📁 01 - Projects/Git Repo Networks/Git Repo Networks.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
       "basename": "Obsidian File Sorting",
@@ -191,14 +199,6 @@
     {
       "basename": "Awesome Hard Disk Drives, NAS Hardware",
       "path": "📁 03 - Curations, Stacks/Awesome Hard Disk Drives, NAS Hardware.md"
-    },
-    {
-      "basename": "Netgear is Not Good",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network Hardware/Netgear is Not Good/Netgear is Not Good.md"
-    },
-    {
-      "basename": "Pasted Image 20241216184619_841",
-      "path": "📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/Pasted Image 20241216184619_841.png"
     }
   ],
   "omittedPaths": [],

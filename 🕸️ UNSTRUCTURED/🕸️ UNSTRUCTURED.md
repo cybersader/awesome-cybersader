@@ -12,6 +12,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[AI & Security by Obscurity]]**
 - **[[AI Ethics & Morality]]**
 - **[[AR Glasses]]**
+- [[Audio to Multiple Headphones]]
 - **[[Awesome Clothing]]**
 - [[Backups - The 3,2,1 Rule]]
 - **[[Bluesky Social]]**
@@ -77,6 +78,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Why Use Obsidian Sync]]**
 - [[Why You Should Ask Stupid Questions]]
 - **[[Windows Desktop Provisioning]]**
+- [[Windows Lock vs Sleep Screen]]
 - [[Xbox Controllers]]
 - **[[Xbox Home Networking]]**
 

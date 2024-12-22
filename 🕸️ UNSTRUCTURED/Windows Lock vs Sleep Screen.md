@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Windows Lock vs Sleep Screen
   - Lock Windows For Background Processes
 tags:
   - "#windows"
