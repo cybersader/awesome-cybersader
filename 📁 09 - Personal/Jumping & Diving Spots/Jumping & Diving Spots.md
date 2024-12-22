@@ -1,10 +1,10 @@
 ---
-aliases:
-  - Cliff Jumping Spots
-tags: 
+permalink:
+aliases: [Cliff Jumping Spots]
+tags: []
 publish: true
 date created: Saturday, May 25th 2024, 1:42 pm
-date modified: Saturday, November 9th 2024, 9:45 pm
+date modified: Sunday, December 22nd 2024, 2:26 pm
 ---
 
 # Kansas
@@ -99,6 +99,7 @@ date modified: Saturday, November 9th 2024, 9:45 pm
 - Ohio
 	- Slip'n'fly
 		- Wish they still did this - discontinued after the Rona - there's one near Tijuana
+		- [SlipnFly Clip](https://www.facebook.com/reel/1122476205650179)
 - Tennessee 
 	- Great spot - survey your jumps before doing them though - [The Sinks in the Smoky Mountains - Review w/ Photos](https://smokymountains.com/park/things-to-do/the-sinks) 
 	- Fort Dickerson - Augusta Quarry
