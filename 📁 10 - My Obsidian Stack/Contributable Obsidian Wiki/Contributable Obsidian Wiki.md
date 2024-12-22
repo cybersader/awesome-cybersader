@@ -11,13 +11,14 @@ date modified: Sunday, December 22nd 2024, 3:18 pm
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
 %% Begin Waypoint %%
+- **[[✒️ Cyberbase Architecture]]**
+
 - **[[🐛 Known Base Bugs, Issues]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
 - **[[Collaboration in Obsidian]]**
 - **[[Contribution System]]**
 - **[[Customizing Obsidian Publish]]**
-- **[[Cyberbase Architecture]]**
 - **[[Decap CMS]]**
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
@@ -33,6 +34,7 @@ date modified: Sunday, December 22nd 2024, 3:18 pm
 
 - [The Contentstack Composable Management Platform](https://www.contentstack.com/composable-dxp)
 - [Composable DXP explained | Kontent.ai](https://kontent.ai/specials/what-is-composable-dxp/) 
+- [Write Like a Pro with Astro and Obsidian](https://www.hungrimind.com/articles/obsidian-with-astro)
 - 
 
 # My Vision
