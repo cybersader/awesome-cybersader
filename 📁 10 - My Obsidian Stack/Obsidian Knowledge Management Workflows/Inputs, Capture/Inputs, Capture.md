@@ -18,11 +18,17 @@ date modified: Saturday, December 21st 2024, 9:34 pm
 
 # Sync Between Mobile & Desktop? (Browsers)
 
-- [What's the point of tab groups? : r/brave_browser](https://www.reddit.com/r/brave_browser/comments/1970km9/whats_the_point_of_tab_groups/#:~:text=There%20is%20a%20flag%20where,group%20you%20can%20click%20on.)
+- Brave Browser
 	- Go to `brave://flags/#tab-groups-save`
 	- `brave://flags/` has a bunch of cool settings you can set
 	- Seems like you maybe have to set it on both browsers
-- Google Chrome does it
+	- In Android -
+		- ![200](_attachments/file-20241221220441758.png)
+	- Accessing them is easy in desktop
+		- ![](_attachments/file-20241221220645051.png)
+- In Firefox?
+	- 
+- Google Chrome does it now too (but Google is spyware)
 	- [Google Chrome to make tabs more manageable across devices - The Hindu](https://www.thehindu.com/sci-tech/technology/google-chrome-to-make-tabs-more-manageable-across-devices/article68632998.ece#:~:text=Tab%20Groups%20will%20be%20automatically,user%20interface%20for%20Android%20devices.)
 	- [Google Chrome now syncs your tab groups between Android and desktop](https://www.androidpolice.com/google-chrome-tab-groups-sync-android-desktop/)
 - 
