@@ -88,6 +88,7 @@ My type:
 - macro pads
     
     - [Megalodon Triple Knob Macro Pad](https://www.keebmonkey.com/products/megalodon-triple-knob-macro-pad)
+    - [pikatea.com/collections/macropads](https://www.pikatea.com/collections/macropads)
     - [Keychron Q0 QMK Custom Number Pad](https://www.keychron.com/products/keychron-q0-qmk-custom-number-pad)
     - [Macropad - Etsy](https://www.etsy.com/market/macropad)
     - [Amazon.com: Periloot Caravel Mechanical Gaming Keypad - Ergonomic 'WASD' Design - Cherry MX Browns/Clears - Customizable Keymap (Black (Red WASD)) : Video Games](https://www.amazon.com/Periloot-Caravel-Mechanical-Gaming-Keypad/dp/B086XJTT5H/ref=sr_1_29?crid=1CVLWUYH3UPA0&keywords=macropad%2Bhot%2Bswap&qid=1692412933&sprefix=macropad%2Bhot%2Bswap%2Caps%2C98&sr=8-29&th=1)
