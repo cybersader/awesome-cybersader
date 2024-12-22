@@ -28,6 +28,14 @@ date modified: Saturday, July 20th 2024, 10:54 am
 - https://www.secretservice.gov/sites/default/files/reports/2020-12/Preparing%20for%20a%20Cyber%20Incident%20-%20An%20Introductory%20Guide%20v%201.1.pdf
 - https://engage.mitre.org/tools/?topic=playbook
 
+- [Submarine Cable Map](https://www.submarinecablemap.com/ "Submarine Cable Map")
+- [securityzines.com/posts/](https://securityzines.com/posts/ "securityzines.com/posts/")
+- [5 Vetted Discord Cyber Communities You Should Join!](https://www.simplycyber.io/post/5-vetted-discord-cyber-communities-you-should-join "5 Vetted Discord Cyber Communities You Should Join!")
+- [Cyber Security Posters | SANS Institute](https://www.sans.org/posters/ "Cyber Security Posters | SANS Institute")
+- [Hunt Evil | SANS Poster](https://www.sans.org/posters/hunt-evil/ "Hunt Evil | SANS Poster")
+- [Cyber Security Posters | SANS Institute](https://www.sans.org/posters/?per-page=100 "Cyber Security Posters | SANS Institute")
+- [Windows Forensic Analysis | SANS Poster](https://www.sans.org/posters/windows-forensic-analysis/ "Windows Forensic Analysis | SANS Poster")
+
 - Excel Shortcuts
 - CIA Triad
 
