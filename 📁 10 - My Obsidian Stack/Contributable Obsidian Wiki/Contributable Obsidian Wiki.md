@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Sunday, December 22nd 2024, 2:24 pm
+date modified: Sunday, December 22nd 2024, 3:18 pm
 ---
 
 [GitHub + Obsidian + Notion - Digital Garden](../../📁%2001%20-%20Projects/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden.md)
@@ -28,6 +28,12 @@ date modified: Sunday, December 22nd 2024, 2:24 pm
 - **[[TinaCMS]]**
 
 %% End Waypoint %%
+
+# DROPZONE
+
+- [The Contentstack Composable Management Platform](https://www.contentstack.com/composable-dxp)
+- [Composable DXP explained | Kontent.ai](https://kontent.ai/specials/what-is-composable-dxp/) 
+- 
 
 # My Vision
 

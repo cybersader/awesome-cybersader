@@ -38,6 +38,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Endpoint Firewall]]**
 - **[[Favorite Fonts]]**
 - [[Find All Enabled Plugins From Obsidian Folder]]
+- **[[Finding Archived Content]]**
 - [[Gaming Hacks & Cheats]]
 - **[[Ghost Blogs]]**
 - **[[Hosted Storage]]**

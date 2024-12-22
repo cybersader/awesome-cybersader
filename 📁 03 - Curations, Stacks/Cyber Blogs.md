@@ -10,3 +10,5 @@ date modified: Thursday, November 7th 2024, 1:14 pm
 
 - https://pwning.tech/
 - [Lee Holmes | Precision Computing](https://www.leeholmes.com/)
+- [RedTeamRecipe](https://blog.redteamguides.com/)
+- 
