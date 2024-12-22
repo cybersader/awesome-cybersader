@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 3:40 pm
-date modified: Monday, December 9th 2024, 6:55 pm
+date modified: Sunday, December 22nd 2024, 1:21 pm
 ---
 
 [📁 10 - My Obsidian Stack](../../📁%2010%20-%20My%20Obsidian%20Stack/📁%2010%20-%20My%20Obsidian%20Stack.md)
@@ -20,7 +20,5 @@ date modified: Monday, December 9th 2024, 6:55 pm
 - Copy URL to clipboard - copying selected text as a link
 - Copy Title and URL as Markdown Style - quickly copy pretty links to pages
 - Shodan
-
-# Ones I'm Looking Into
-
-- [Memex](https://memex.garden/)
+- Memex
+- Obsidian Web Clipper

@@ -4,8 +4,10 @@ tags: []
 publish: true
 permalink:
 date created: Monday, December 9th 2024, 6:46 pm
-date modified: Saturday, December 21st 2024, 9:34 pm
+date modified: Sunday, December 22nd 2024, 1:26 pm
 ---
+
+[Browser Extensions](../../../📁%2003%20-%20Curations,%20Stacks/Browser%20Extensions/Browser%20Extensions.md)
 
 - [Memex](../../📦%20VAULT%20SANDBOX%20TESTING/Memex/Memex.md)
 - ChatGPT
@@ -24,6 +26,10 @@ date modified: Saturday, December 21st 2024, 9:34 pm
 	- Seems like you maybe have to set it on both browsers
 	- Turn on the Android Tab Group Sync (BUT NOTHING ON DESKTOP)
 		- Turning on any of the weird plugins on desktop seems to have issues
+	- TROUBESHOOTING BROKEN TAB GROUPS
+		- If necessary, you can delete the sync account and resync everything by starting on the phone, then sharing the sync codes to your desktop version
+		- This may break your tab groups, but you won't lose your tabs.
+		- 
 	- In Android -
 		- ![200](_attachments/file-20241221220441758.png)
 	- Accessing them is easy in desktop

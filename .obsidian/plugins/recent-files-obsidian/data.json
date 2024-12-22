@@ -5,6 +5,10 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
     },
     {
+      "basename": "Browser Extensions",
+      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
+    },
+    {
       "basename": "⬇️ Internet & Children",
       "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Daily Driver Stuff",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
     }
   ],
   "omittedPaths": [],
