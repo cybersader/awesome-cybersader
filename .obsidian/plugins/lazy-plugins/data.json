@@ -724,6 +724,15 @@
       },
       "obsidian-argdown-plugin": {
         "startupType": "disabled"
+      },
+      "obsidian-daily-named-folder": {
+        "startupType": "disabled"
+      },
+      "daily-note-structure": {
+        "startupType": "disabled"
+      },
+      "daily-notes-editor": {
+        "startupType": "disabled"
       }
     }
   }
