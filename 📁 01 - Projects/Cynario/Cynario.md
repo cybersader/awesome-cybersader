@@ -1,16 +1,26 @@
 ---
-aliases: []
-tags: []
+aliases:
+  - Cynar.io
+tags: 
 publish: true
-permalink:
+permalink: 
 date created: Sunday, December 22nd 2024, 5:03 pm
-date modified: Sunday, December 22nd 2024, 5:05 pm
+date modified: Sunday, December 22nd 2024, 5:30 pm
 ---
 
 [Workforce Cyber Resilience](../../📁%2005%20-%20Organizational%20Cyber/Workforce%20Cyber%20Resilience/Workforce%20Cyber%20Resilience.md)
 [Cybersecurity Culture Building](../../📁%2005%20-%20Organizational%20Cyber/Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 [Cyber Training, CTFs](../../📁%2005%20-%20Organizational%20Cyber/Cyber%20Training,%20CTFs/Cyber%20Training,%20CTFs.md)
 [Game-Based Tabletops](../../📁%2005%20-%20Organizational%20Cyber/Game-Based%20Tabletops/Game-Based%20Tabletops.md)
+
+# Implementations
+
+## 1) Using Obsidian with Markdown Pages + Links
+
+- Create a plugin in Obsidian to be used with Obsidian Publish
+- Create graphs of scenarios with links to events
+- Markdown is easy, so it's really easy to setup
+- Would be easiest if you could create the scenario from graph view (likely just some other plugins)
 
 # DROPZONE
 

@@ -39,9 +39,10 @@
   "custom-save",
   "lazy-plugins",
   "settings-search",
-  "folder-notes",
   "obsidian-trim-whitespace",
   "editor-width-slider",
   "obsidian-git",
-  "obsidian-hider"
+  "obsidian-hider",
+  "backlink-cache",
+  "folder-notes"
 ]

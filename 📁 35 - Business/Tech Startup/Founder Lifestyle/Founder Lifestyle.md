@@ -1,10 +1,14 @@
 ---
+aliases: 
+tags: 
+permalink:
 date created: Monday, April 15th 2024, 3:22 pm
-date modified: Monday, April 15th 2024, 3:30 pm
+date modified: Sunday, December 22nd 2024, 5:25 pm
 publish: true
 ---
 
 # Founder Lifestyle Notes
+
 - [(8) Most Important Lifestyle Habits Of Successful Founders - YouTube](https://www.youtube.com/watch?v=0IShllkCHtY&list=WL&index=2)
 - Plan for Failure
 	- Infrastructure in place for failure

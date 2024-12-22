@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 20th 2024, 2:49 pm
+date modified: Sunday, December 22nd 2024, 5:36 pm
 ---
 
 %% Begin Waypoint %%
@@ -36,6 +36,7 @@ date modified: Friday, December 20th 2024, 2:49 pm
 - [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
 - https://argdown.org/
 - 
+
 # Users in Obsidian
 
 - [Supercharged Links showcase - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/supercharged-links-showcase/18219)

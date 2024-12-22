@@ -25,7 +25,9 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Personal Email]]**
 - **[[Personal Info Breach Response]]**
 - **[[Personal Privacy & Identity Handling]]**
+- **[[Personal Privacy Tools]]**
 - **[[Persuasive Technology Defenses]]**
+- **[[Secure File Sharing]]**
 - **[[Smart Home]]**
 - **[[THE PERSONAL CYBER RESILIENCE GUIDE]]**
 - **[[Virtual Credit Cards]]**

@@ -1,21 +1,26 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Wednesday, June 19th 2024, 4:49 pm
-date modified: Wednesday, June 19th 2024, 7:53 pm
+date modified: Sunday, December 22nd 2024, 5:25 pm
 ---
 
 # Open Source Projects
+
 The goal is to have the ability to show costs for the solution to the users and have them conditionally make up for the costs via one time payments, subscription models, etc.  I've always wondered why there isn't a solution that can transparently and dynamically take the needs of the organization, communicate them to the user, and give them the ability to pay in the ways that they want to.  Lastly, such a solution also needs to operate in a way that doesn't incur costs for the organization facilitating such a system.
 
 - [Open Collective - Make your community sustainable. Collect and spend money transparently.](https://opencollective.com/pricing)
 
 ## Sort of
+
 - [Home — Patreon](https://www.patreon.com/)
 
 # Notes - Looking for Dynamic Subscription Options
+
 ## Common Options
+
 For a solution that allows users to transparently see costs and contribute via one-time payments or subscriptions, there are several platforms and methods that might suit your needs:
 
 1. **Open Collective**:
@@ -53,6 +58,7 @@ If you choose to go the self-hosted route, you can utilize plugins and services 
 Would you like more detailed information on any specific platform or solution?
 
 ## Dynamic Payments
+
 The kind of dynamic, usage-based payment platform you’re looking for is not common, but there are a few services and approaches that come close. These platforms allow for flexible, conditional charging based on user activity or specific triggers. Here are a few potential solutions and approaches:
 
 1. **Usage-Based Billing Platforms**:
@@ -75,6 +81,7 @@ The kind of dynamic, usage-based payment platform you’re looking for is not co
         - **Documentation**: [Recurly](https://recurly.com/)
 
 ### Example Use Case
+
 If you want a system where users set a spending limit and are only charged when they use the service up to that limit, you could use Stripe with a custom backend. Here’s a high-level approach:
 
 1. **User Registration**: Users sign up and set their spending limit.
@@ -83,6 +90,7 @@ If you want a system where users set a spending limit and are only charged when 
 4. **Dynamic Charging**: Use Stripe’s API to dynamically charge users based on their usage.
 
 ### Implementation Steps
+
 1. **Set Up Stripe**:
     
     - Create a Stripe account and set up your API keys.
@@ -107,11 +115,13 @@ This custom solution would give you the flexibility to charge users dynamically 
 Would you like more detailed guidance on implementing any of these solutions?
 
 ## The Ideal Solution
+
 > [!quote] What is a tech stack that could do what I'm talking about. I'm talking about integrating with the costs (e.g. infrastructure, running, and labor hours) via something like the banks or another API, setting up users, allowing them to define dynamic ranges, and then being transparent with costs and progress covering them
 
 To build a dynamic, usage-based billing platform that integrates costs (e.g., infrastructure, running, labor hours) and allows users to define dynamic ranges while maintaining transparency, you can use the following tech stack:
 
 ### Frontend
+
 - **Framework**: React.js or Vue.js
 - **UI Library**: Material-UI or Vuetify
 - **State Management**: Redux (for React) or Vuex (for Vue.js)
@@ -119,6 +129,7 @@ To build a dynamic, usage-based billing platform that integrates costs (e.g., in
 - **Charts and Graphs**: Chart.js or D3.js
 
 ### Backend
+
 - **Framework**: Node.js with Express.js or Python with Django/Flask
 - **Database**: PostgreSQL or MongoDB
 - **ORM**: Sequelize (for Node.js) or SQLAlchemy (for Python)
@@ -126,21 +137,25 @@ To build a dynamic, usage-based billing platform that integrates costs (e.g., in
 - **Authentication**: JWT (JSON Web Tokens) or OAuth2
 
 ### Infrastructure
+
 - **Cloud Provider**: AWS, Google Cloud, or Azure
 - **Containerization**: Docker
 - **Orchestration**: Kubernetes or Docker Swarm
 - **CI/CD**: Jenkins, GitHub Actions, or GitLab CI
 
 ### Monitoring and Logging
+
 - **Monitoring**: Prometheus with Grafana
 - **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana) or Fluentd with Graylog
 
 ### Cost Integration and Transparency
+
 - **Cost Management**: AWS Cost Explorer API, Google Cloud Billing API, or Azure Cost Management API
 - **Dynamic Billing Logic**: Custom logic in the backend to calculate costs and charge users accordingly
 - **Notification System**: Twilio (for SMS), SendGrid (for emails), or Firebase Cloud Messaging (for in-app notifications)
 
 ### Example Architecture
+
 1. **Frontend**:
     
     - Build a user interface where users can register, set spending limits, and view usage and costs.
@@ -165,6 +180,7 @@ To build a dynamic, usage-based billing platform that integrates costs (e.g., in
     - Implement logging with ELK Stack or Fluentd and Graylog for effective troubleshooting.
 
 ### Detailed Steps
+
 1. **User Registration and Authentication**:
     
     - Implement user registration and login using Auth0 or Firebase Authentication.
