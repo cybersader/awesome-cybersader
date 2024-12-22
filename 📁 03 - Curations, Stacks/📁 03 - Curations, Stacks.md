@@ -18,7 +18,6 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - [[Awesome Cyber Resource Curations]]
 - **[[Awesome Dark Web Terms]]**
 - **[[Awesome EDC]]**
-- [[Awesome Hard Disk Drives, NAS Hardware]]
 - **[[Awesome IAM]]**
 - **[[Awesome Markdown]]**
 - **[[Awesome NMAP]]**
@@ -28,6 +27,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome REST Clients]]**
 - **[[Awesome SecOps Data Engineering]]**
 - **[[Awesome Splunk]]**
+- [[Awesome Storage Hardware]]
 - **[[Awesome Stream Deck Alternatives]]**
 - **[[Awesome Tech Stacks from Teams]]**
 - **[[Awesome Threat Intelligence]]**

@@ -1,15 +1,10 @@
 ---
-aliases:
-  - Awesome NAS Hardware
-  - Awesome HDD
-tags:
-  - 
-  - "#storage"
-  - "#nas"
-  - "#hardware"
+permalink:
+aliases: [Awesome NAS Hardware, Awesome HDD, Awesome Hard Disk Drives]
+tags: ["#storage", "#nas", "#hardware"]
 publish: true
 date created: Sunday, June 23rd 2024, 2:53 pm
-date modified: Sunday, October 6th 2024, 4:08 pm
+date modified: Saturday, December 21st 2024, 10:37 pm
 ---
 
 # Curations
@@ -21,7 +16,11 @@ date modified: Sunday, October 6th 2024, 4:08 pm
 # Mini PCs
 
 - [AOOSTAR WTR PRO 4 Bay 90T Storage INTEL N100 Nas Mini PC – AOOSTAR Mini PC](https://aoostar.com/products/aoostar-n9e-intel-n100-mini-pc4c-4t-up-to-3-4ghz-with-w11-home-8-16gb-ddr4-3200mhz-ram-256-512gb-m-2-2280-nvme-ssd)
-- 
+
+# Tape Drives?
+
+- [tape drives for storage ultrium - Google Search](https://www.google.com/search?q=tape+drives+for+storage+ultrium&sca_esv=57f9460924032889&sca_upv=1&ei=DKPkZtLIJqbep84PzdDK8QY&oq=tape+drives+for+storage+ultrium&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIh90YXBlIGRyaXZlcyBmb3Igc3RvcmFnZSB1bHRyaXVtMgUQIRigATIFECEYoAEyBRAhGKABSIwXUPkJWJsVcAF4AZABAJgB1gGgAfgIqgEFMC42LjK4AQPIAQD4AQGYAgmgAr8JwgIKEAAYsAMY1gQYR8ICBhAAGBYYHsICCBAAGBYYHhgPwgIKEAAYFhgKGB4YD8ICCxAAGIAEGIYDGIoFwgIFECEYqwLCAgcQIRigARgKmAMAiAYBkAYIkgcFMS42LjKgB5Ui&sclient=mobile-gws-wiz-serp "tape drives for storage ultrium - Google Search")
+- [At what point should I invest in tape storage? : r/homelab](https://www.reddit.com/r/homelab/comments/14xlu12/at_what_point_should_i_invest_in_tape_storage/ "At what point should I invest in tape storage? : r/homelab")
 
 # HDDs
 
