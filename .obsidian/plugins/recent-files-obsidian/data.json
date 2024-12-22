@@ -1,8 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "📁 01 - Projects/Untitled/Untitled.md"
+      "basename": "2024-12-22-Sunday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-22-Sunday/2024-12-22-Sunday.md"
+    },
+    {
+      "basename": "⬇️ Internet & Children",
+      "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
+    },
+    {
+      "basename": "⬇️ Cybersade DROPZONE",
+      "path": "📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md"
+    },
+    {
+      "basename": "📁 07 - Cybersader Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
+    },
+    {
+      "basename": "Obsidian Delete Hanging",
+      "path": "📁 41 - Logs/Obsidian Delete Hanging/Obsidian Delete Hanging.md"
+    },
+    {
+      "basename": "📁 41 - Logs",
+      "path": "📁 41 - Logs/📁 41 - Logs.md"
+    },
+    {
+      "basename": "Pasted image 20240429235225",
+      "path": "📁 41 - Logs/Obsidian Delete Hanging/_attachments/Pasted image 20240429235225.png"
+    },
+    {
+      "basename": "📁 08 - Business",
+      "path": "📁 08 - Business/📁 08 - Business.md"
+    },
+    {
+      "basename": "Polling Tools",
+      "path": "📁 03 - Curations, Stacks/Polling Tools/Polling Tools.md"
+    },
+    {
+      "basename": "Personal Info Breach Response",
+      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
+    },
+    {
+      "basename": "Plex Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
+    },
+    {
+      "basename": "Cynario",
+      "path": "📁 01 - Projects/Cynario/Cynario.md"
     },
     {
       "basename": "📁 33 - Diving",
@@ -23,10 +67,6 @@
     {
       "basename": "Investments",
       "path": "📁 15 - Finance, Economy/Investments/Investments.md"
-    },
-    {
-      "basename": "⬇️ Internet & Children",
-      "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
     },
     {
       "basename": "Finding Archived Content",
@@ -71,10 +111,6 @@
     {
       "basename": "Cyberbase Architecture",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Cyberbase Architecture/Cyberbase Architecture.md"
-    },
-    {
-      "basename": "2024-12-22-Sunday",
-      "path": "🕸️ Daily Notes/2024/12/2024-12-22-Sunday/2024-12-22-Sunday.md"
     },
     {
       "basename": "2024-12-21-Saturday",
@@ -163,42 +199,6 @@
     {
       "basename": "Phone Pick in 2024",
       "path": "📁 01 - Projects/Phone Pick in 2024/Phone Pick in 2024.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Hosting",
-      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
-    },
-    {
-      "basename": "Microsoft Outlook",
-      "path": "🕸️ UNSTRUCTURED/Microsoft Outlook/Microsoft Outlook.md"
-    },
-    {
-      "basename": "Liability Chains",
-      "path": "🕸️ UNSTRUCTURED/Liability Chains/Liability Chains.md"
-    },
-    {
-      "basename": "Bitwarden Stuff",
-      "path": "📁 01 - Projects/Bitwarden Stuff/Bitwarden Stuff.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "Obsidian as a CMS",
-      "path": "📁 10 - My Obsidian Stack/Obsidian as a CMS/Obsidian as a CMS.md"
-    },
-    {
-      "basename": "NocoDB",
-      "path": "📁 01 - Projects/NocoDB/NocoDB.md"
-    },
-    {
-      "basename": "Pasted Image 20241220141144_549",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Pasted Image 20241220141144_549.png"
     }
   ],
   "omittedPaths": [],

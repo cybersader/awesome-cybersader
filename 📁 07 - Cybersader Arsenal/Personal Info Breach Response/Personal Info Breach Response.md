@@ -1,10 +1,10 @@
 ---
-aliases:
-  - Handling Personal Security Breaches
-tags: 
+permalink:
+aliases: [Handling Personal Security Breaches, Fraud Response, Personal Financial Fraud]
+tags: []
 publish: true
 date created: Friday, August 30th 2024, 12:57 pm
-date modified: Friday, August 30th 2024, 2:55 pm
+date modified: Sunday, December 22nd 2024, 5:09 pm
 ---
 
 # Social Security Information
@@ -25,7 +25,8 @@ date modified: Friday, August 30th 2024, 2:55 pm
 
 # Fraud
 
-- .
+- [Criminal Division | Report Fraud](https://www.justice.gov/criminal/criminal-fraud/report-fraud "Criminal Division | Report Fraud")
+- [Lost or Stolen Credit, ATM, and Debit Cards | Consumer Advice](https://consumer.ftc.gov/articles/lost-or-stolen-credit-atm-and-debit-cards "Lost or Stolen Credit, ATM, and Debit Cards | Consumer Advice")
 
 # Hacked Home Computer
 

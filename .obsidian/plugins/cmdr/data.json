@@ -61,12 +61,6 @@
       "mode": "any"
     },
     {
-      "id": "obsidian-daily-named-folder:open-daily-folder",
-      "icon": "lucide-folder-clock",
-      "name": "Daily Named Folder: Open today's daily folder note",
-      "mode": "any"
-    },
-    {
       "id": "daily-notes",
       "icon": "lucide-calendar-days",
       "name": "Daily notes: Open today's daily note",

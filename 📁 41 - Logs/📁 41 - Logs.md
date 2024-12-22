@@ -1,4 +1,4 @@
 %% Begin Waypoint %%
-- [[Obsidian Delete Hanging]]
+- **[[Obsidian Delete Hanging]]**
 
 %% End Waypoint %%
