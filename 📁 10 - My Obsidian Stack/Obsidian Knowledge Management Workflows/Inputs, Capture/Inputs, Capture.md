@@ -22,6 +22,8 @@ date modified: Saturday, December 21st 2024, 9:34 pm
 	- Go to `brave://flags/#tab-groups-save`
 	- `brave://flags/` has a bunch of cool settings you can set
 	- Seems like you maybe have to set it on both browsers
+	- Turn on the Android Tab Group Sync (BUT NOTHING ON DESKTOP)
+		- Turning on any of the weird plugins on desktop seems to have issues
 	- In Android -
 		- ![200](_attachments/file-20241221220441758.png)
 	- Accessing them is easy in desktop
