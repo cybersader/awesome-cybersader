@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 18th 2024, 9:29 pm
-date modified: Sunday, December 22nd 2024, 3:18 pm
+date modified: Sunday, December 22nd 2024, 10:22 pm
 ---
 
 [GitHub + Obsidian + Notion - Digital Garden](../../📁%2001%20-%20Projects/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden.md)
@@ -37,6 +37,12 @@ date modified: Sunday, December 22nd 2024, 3:18 pm
 - [Write Like a Pro with Astro and Obsidian](https://www.hungrimind.com/articles/obsidian-with-astro)
 - [mundimark/awesome-markdown-editors: A collection of awesome markdown editors & (pre)viewers for Linux, Apple OS X, Microsoft Windows, the World Wide Web & more](https://github.com/mundimark/awesome-markdown-editors)
 - 
+
+# Tech Stack?
+
+[✒️ Cyberbase Architecture](✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.md)
+
+![](✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.svg)
 
 # My Vision
 
