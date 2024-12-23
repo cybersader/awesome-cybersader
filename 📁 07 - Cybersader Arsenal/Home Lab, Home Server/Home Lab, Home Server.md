@@ -10,7 +10,7 @@ date modified: Monday, December 23rd 2024, 8:43 am
 %% Begin Waypoint %%
 - **[[Kubernetes Home Server]]**
 - **[[Personal Storage]]**
-- **[[PfSense DNS Rebinding]]**
+- **[[PfSense with Local Services]]**
 - **[[TrueNAS Scale Home Server]]**
 
 %% End Waypoint %%

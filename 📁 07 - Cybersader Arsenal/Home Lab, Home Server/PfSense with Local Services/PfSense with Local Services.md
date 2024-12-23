@@ -1,11 +1,14 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Monday, December 23rd 2024, 8:44 am
-date modified: Monday, December 23rd 2024, 8:56 am
+date modified: Monday, December 23rd 2024, 9:37 am
 ---
+
+# DNS Rebinding Issues
+
 Attempting to access my servers with the FQDN gives me the below error from pfSense
 
 ![](_attachments/file-20241223085655232.png)
@@ -15,6 +18,10 @@ I would think NAT reflection should fix this.  Luckily there are some settings i
 The below settings can be found in pfSense at `System > Advanced > Admin Access`
 
 ![](_attachments/file-20241223085658267.png)
+
+# HTTP Referer Issues
+
+- 
 
 # More Information
 
