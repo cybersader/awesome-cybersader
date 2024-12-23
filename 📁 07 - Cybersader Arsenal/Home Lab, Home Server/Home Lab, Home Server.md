@@ -11,6 +11,8 @@ date modified: Monday, December 23rd 2024, 8:43 am
 - **[[Kubernetes Home Server]]**
 - **[[Personal Storage]]**
 - **[[PfSense with Local Services]]**
+	- **[[pfsense_with_local_services]]**
+
 - **[[TrueNAS Scale Home Server]]**
 
 %% End Waypoint %%

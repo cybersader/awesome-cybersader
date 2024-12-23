@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "PfSense DNS Rebinding",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense DNS Rebinding/PfSense DNS Rebinding.md"
+      "basename": "PfSense with Local Services",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/PfSense with Local Services.md"
+    },
+    {
+      "basename": "Personal Storage",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
+    },
+    {
+      "basename": "pfsense_with_local_services",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/pfsense_with_local_services.md"
+    },
+    {
+      "basename": "✒️ Cyberbase Architecture",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+    },
+    {
+      "basename": "file-20240928190713124",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240928190713124.png"
+    },
+    {
+      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
     },
     {
       "basename": "TrueNAS Scale - Nginx Proxy Setup",
@@ -19,10 +39,6 @@
     {
       "basename": "Home Network",
       "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
-    },
-    {
-      "basename": "✒️ Cyberbase Architecture",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
     },
     {
       "basename": "TinaCMS",
@@ -183,14 +199,6 @@
     {
       "basename": "📁 41 - Logs",
       "path": "📁 41 - Logs/📁 41 - Logs.md"
-    },
-    {
-      "basename": "Pasted image 20240429235225",
-      "path": "📁 41 - Logs/Obsidian Delete Hanging/_attachments/Pasted image 20240429235225.png"
-    },
-    {
-      "basename": "Personal Info Breach Response",
-      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
     }
   ],
   "omittedPaths": [],

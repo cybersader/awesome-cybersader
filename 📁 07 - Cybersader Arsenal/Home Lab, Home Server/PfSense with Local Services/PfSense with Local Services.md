@@ -1,11 +1,18 @@
 ---
-aliases: []
-tags: []
+aliases: 
+tags:
+  - home/server
+  - home/lab
+  - home/networking
 publish: true
-permalink:
+permalink: 
 date created: Monday, December 23rd 2024, 8:44 am
-date modified: Monday, December 23rd 2024, 9:37 am
+date modified: Monday, December 23rd 2024, 10:05 am
 ---
+
+# Home Network Setup
+
+ ![](pfsense_with_local_services/pfsense_with_local_services.svg)
 
 # DNS Rebinding Issues
 
@@ -19,7 +26,7 @@ The below settings can be found in pfSense at `System > Advanced > Admin Access`
 
 ![](_attachments/file-20241223085658267.png)
 
-# HTTP Referer Issues
+# HTTP Referrer Issues
 
 - 
 
