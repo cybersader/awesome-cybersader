@@ -102,7 +102,7 @@ Lots of good stuff
 ## Embedded Files
 8ccd06df76672b423084234af383e9687a4da984: [[Pasted Image 20241216184334_767.png]]
 
-615316f9959963347aa25133b768c10f9799850e: [[Pasted Image 20241216184619_841.png]]
+615316f9959963347aa25133b768c10f9799850e: [[../Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/_attachments/Pasted Image 20241216184619_841.png]]
 
 69be4b23d104a83a3aa4e441d82f16960e894958: [[Pasted Image 20241216185304_363.png]]
 

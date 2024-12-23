@@ -37,7 +37,7 @@ cb331274422cb6bee792d0f5b3b14bb06d8a3253: [[Pasted Image 20241222182851_566.png]
 
 69be4b23d104a83a3aa4e441d82f16960e894958: [[../../../📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/Pasted Image 20241216185304_363.png]]
 
-615316f9959963347aa25133b768c10f9799850e: [[../../../📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/Pasted Image 20241216184619_841.png]]
+615316f9959963347aa25133b768c10f9799850e: [[../../../📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/_attachments/Pasted Image 20241216184619_841.png]]
 
 234eb161bead1746439cbc4960e3fc4a65af5993: [[../../../📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/Pasted Image 20241216200717_910.png]]
 
