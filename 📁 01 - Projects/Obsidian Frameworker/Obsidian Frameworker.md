@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 3:54 pm
+date modified: Monday, December 23rd 2024, 4:19 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -115,13 +115,20 @@ The issue is that I essentially want to store data about a relationship between 
 
 ## Current Implementation
 
+### High-Level Methods
+
+1. Per link to a node in the framework data structure
+	- 
+2. With framework data structure
+	- 
+
 ### For Linking to Framework (with Internal Links)
 
 - Use dot notation with inline dataview tags
 - Use JSON after inline dataview tags
 - Define same connections in YAML frontmatter
 
-### For Linking to Framework (with Tags Only)
+### For Linking to Framework (with Tags)
 
 - Framework is ingested/consumed into a tagging structure
 - Parts of framework can be referenced within tags like below:
@@ -129,6 +136,15 @@ The issue is that I essentially want to store data about a relationship between 
 framework:
 	leaf_note (standard):
 		reviewer: "Person_1"	
+
+### Linking Metadata Value Priority
+
+Explicit tags/links will be prioritized in the below order:
+- Inline tag with link with included metadata (JSON, etc.)
+- Inline tag w/dot notation to framework key with included value (in curly brackets, etc.)
+- Inline tag w/dot notation down to framework node (with tag value being an actual value for that node)
+- YAML frontmatter to framework keys with values in key value pairs
+- YAML frontmatter down to framework node (with tag value being an actual value for that node)
 
 ### For Querying Links/Edges
 
