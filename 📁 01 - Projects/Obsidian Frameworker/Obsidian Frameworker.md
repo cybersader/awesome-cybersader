@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 5:14 pm
+date modified: Monday, December 23rd 2024, 5:31 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -227,53 +227,9 @@ Use dataview JS at either:
 ## Linking Workspace
 
 Regex format for links:
-```
-(?:\[|\()?                    # Optional opening square bracket or parenthesis
-(?<dotKey>framework_here(?:\.\w+)*)  # Match 'framework_here' with optional dot notation layers
-::\s*                         # Match the double colon separator
-(?:                           # Group for link matching
-    \[\[                     # Wikilink-style link
-        (?<wikilink>[^|\]]+)  # Capture wikilink target
-    \]\]
-  |                          # OR
-    \[(?<mdText>[^\]]+?)\]\((?<mdLink>[^)]+?)\) # Markdown-style link ([text](link))
-  |                          # OR
-    (?<plainLink>[^\s]+)      # Inline plain text link
-)?                            # End link group, optional
-\s*                           # Optional whitespace
-(?:                           # Group for metadata
-    (?<json>\{.*?\})          # JSON metadata
-  |                          # OR
-    \[(?<squareMeta>.*?)\]    # Metadata in square brackets
-  |                          # OR
-    "(?<quotedMeta>.*?)"      # Metadata in quotes
-)?                            # End metadata group, optional
-(?:\]|\))?                    # Optional closing square bracket or parenthesis
-```
 
 ```js
-const regex = /(?:\[|\()?                    # Optional opening square bracket or parenthesis
-(?<dotKey>framework_here(?:\.\w+)*)         # Match 'framework_here' with optional dot notation layers
-::\s*                                       # Match the double colon separator
-(?:                                         # Group for link matching
-    \[\[                                   # Wikilink-style link
-        (?<wikilink>[^|\]]+)               # Capture wikilink target
-    \]\]
-  |                                        # OR
-    \[(?<mdText>[^\]]+?)\]\((?<mdLink>[^)]+?)\) # Markdown-style link ([text](link))
-  |                                        # OR
-    (?<plainLink>[^\s]+)                   # Inline plain text link
-)?                                          # End link group, optional
-\s*                                         # Optional whitespace
-(?:                                         # Group for metadata
-    (?<json>\{.*?\})                       # JSON metadata
-  |                                        # OR
-    \[(?<squareMeta>.*?)\]                 # Metadata in square brackets
-  |                                        # OR
-    "(?<quotedMeta>.*?)"                   # Metadata in quotes
-)?                                          # End metadata group, optional
-(?:\]|\))?                                  # Optional closing square bracket or parenthesis
-/gx; // Flags: g (global), x (multiline/comment)
+^(?:\[|\()?(?<dotKey>framework_here(?:\.\w+)*)::\s*(?:\[\[(?<wikilink>[^|\]]+)\]\]|\[(?<mdText>[^\]]+?)\]\((?<mdLink>[^)]+?)\)|(?<plainLink>[^"\[\]\(\)\s{}]+))?\s*(?:(?<json>\{[^}]*\})|"(?<quotedValue>[^"]+)")?(?=\]|\)|$)
 ```
 
 - In order to have easier autofill, there needs to be a tag structure also based on the framework
