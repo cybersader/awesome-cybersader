@@ -143,11 +143,13 @@ framework:
 ### Linking Metadata Value Priority
 
 Explicit tags/links will be prioritized in the below order:
-- Inline tag with link with included metadata (JSON, etc.)
-- Inline tag w/dot notation to framework key with included value (in curly brackets, etc.)
-- Inline tag w/dot notation down to framework node (with tag value being an actual value for that node)
-- YAML frontmatter to framework keys with values in key value pairs
-- YAML frontmatter down to framework node (with tag value being an actual value for that node)
+1. Inline tag with link with included metadata (JSON, etc.)
+2. Inline tag w/dot notation to framework key with included value (in curly brackets, etc.)
+3. Inline tag w/dot notation down to framework node (with tag value being an actual value for that node)
+	-  (NOT DOING THIS YET - relates to representing framework as a tag structure)
+4. YAML frontmatter to framework keys with values in key value pairs
+5. YAML frontmatter down to framework node (with tag value being an actual value for that node)
+	- (NOT DOING BELOW - relates to representing framework as a tag structure)
 
 ### For Querying Links/Edges
 
