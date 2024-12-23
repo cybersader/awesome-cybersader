@@ -47,6 +47,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Vault Security]]**
 - **[[Obsidian-Related Bloggers]]**
 - **[[Plugin Development]]**
+- **[[Plugin Maintenance]]**
 - **[[Project Management]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**

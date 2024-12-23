@@ -33,7 +33,6 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-timestamper",
-  "various-complements",
   "ytranscript",
   "obsidian-regex-replace",
   "custom-save",
@@ -44,5 +43,6 @@
   "obsidian-git",
   "backlink-cache",
   "folder-notes",
-  "obsidian-vault-changelog"
+  "obsidian-hider",
+  "various-complements"
 ]

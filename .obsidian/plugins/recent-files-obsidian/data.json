@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "PfSense DNS Rebinding",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense DNS Rebinding/PfSense DNS Rebinding.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "✒️ Cyberbase Architecture",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+    },
+    {
+      "basename": "TinaCMS",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/TinaCMS/TinaCMS.md"
+    },
+    {
+      "basename": "Plugin Maintenance",
+      "path": "📁 10 - My Obsidian Stack/Plugin Maintenance/Plugin Maintenance.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "2024-12-22-Sunday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-22-Sunday/2024-12-22-Sunday.md"
+    },
+    {
       "basename": "2024-12-23-Monday",
       "path": "🕸️ Daily Notes/2024/12/2024-12-23-Monday/2024-12-23-Monday.md"
     },
     {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
-      "basename": "✒️ Cyberbase Architecture",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
     },
     {
       "basename": "Decap CMS",
@@ -31,10 +63,6 @@
     {
       "basename": "✒️ Cyberbase Architecture",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.svg"
-    },
-    {
-      "basename": "2024-12-22-Sunday",
-      "path": "🕸️ Daily Notes/2024/12/2024-12-22-Sunday/2024-12-22-Sunday.md"
     },
     {
       "basename": "Pasted Image 20241222181056_735",
@@ -79,10 +107,6 @@
     {
       "basename": "⬇️ Internet & Children",
       "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "Obsidian Frameworker",
@@ -163,42 +187,6 @@
     {
       "basename": "Personal Info Breach Response",
       "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
-    },
-    {
-      "basename": "Plex Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
-    },
-    {
-      "basename": "📁 33 - Diving",
-      "path": "📁 33 - Diving/📁 33 - Diving.md"
-    },
-    {
-      "basename": "Cyber Posters",
-      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
-    },
-    {
-      "basename": "Browser Extensions",
-      "path": "📁 03 - Curations, Stacks/Browser Extensions/Browser Extensions.md"
-    },
-    {
-      "basename": "Awesome Peripherals",
-      "path": "📁 03 - Curations, Stacks/Awesome Peripherals/Awesome Peripherals.md"
-    },
-    {
-      "basename": "Investments",
-      "path": "📁 15 - Finance, Economy/Investments/Investments.md"
-    },
-    {
-      "basename": "Finding Archived Content",
-      "path": "🕸️ UNSTRUCTURED/Finding Archived Content/Finding Archived Content.md"
-    },
-    {
-      "basename": "Cyber Blogs",
-      "path": "📁 03 - Curations, Stacks/Cyber Blogs.md"
-    },
-    {
-      "basename": "Ghost Blogs",
-      "path": "🕸️ UNSTRUCTURED/Ghost Blogs/Ghost Blogs.md"
     }
   ],
   "omittedPaths": [],
