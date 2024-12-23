@@ -35,6 +35,7 @@ date modified: Sunday, December 22nd 2024, 3:18 pm
 - [The Contentstack Composable Management Platform](https://www.contentstack.com/composable-dxp)
 - [Composable DXP explained | Kontent.ai](https://kontent.ai/specials/what-is-composable-dxp/) 
 - [Write Like a Pro with Astro and Obsidian](https://www.hungrimind.com/articles/obsidian-with-astro)
+- [mundimark/awesome-markdown-editors: A collection of awesome markdown editors & (pre)viewers for Linux, Apple OS X, Microsoft Windows, the World Wide Web & more](https://github.com/mundimark/awesome-markdown-editors)
 - 
 
 # My Vision

@@ -733,6 +733,12 @@
       },
       "daily-notes-editor": {
         "startupType": "disabled"
+      },
+      "backlink-cache": {
+        "startupType": "instant"
+      },
+      "geulo-youtube-liked-video": {
+        "startupType": "disabled"
       }
     }
   }

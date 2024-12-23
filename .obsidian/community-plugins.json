@@ -42,7 +42,7 @@
   "obsidian-trim-whitespace",
   "editor-width-slider",
   "obsidian-git",
-  "obsidian-hider",
   "backlink-cache",
-  "folder-notes"
+  "folder-notes",
+  "obsidian-vault-changelog"
 ]
