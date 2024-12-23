@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
-      "basename": "pfsense_with_local_services",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/pfsense_with_local_services.md"
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+    },
+    {
+      "basename": "✒️ Cyberbase Architecture",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+    },
+    {
+      "basename": "Home Network",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
     {
       "basename": "PfSense with Local Services",
@@ -17,8 +29,16 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Personal Storage/Personal Storage.md"
     },
     {
-      "basename": "✒️ Cyberbase Architecture",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+      "basename": "Home Lab Networking Reference",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab Networking Reference/Home Lab Networking Reference.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
+      "basename": "pfsense_with_local_services",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/pfsense_with_local_services.md"
     },
     {
       "basename": "file-20240928190713124",
@@ -31,14 +51,6 @@
     {
       "basename": "Home Lab, Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "TrueNAS Scale Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "Home Network",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Network.md"
     },
     {
       "basename": "TinaCMS",
@@ -129,10 +141,6 @@
       "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
     },
     {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
-    },
-    {
       "basename": "SecOps Stack & Resources",
       "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇️ Cybersade DROPZONE",
       "path": "📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md"
-    },
-    {
-      "basename": "📁 07 - Cybersader Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
-    },
-    {
-      "basename": "📁 41 - Logs",
-      "path": "📁 41 - Logs/📁 41 - Logs.md"
     }
   ],
   "omittedPaths": [],

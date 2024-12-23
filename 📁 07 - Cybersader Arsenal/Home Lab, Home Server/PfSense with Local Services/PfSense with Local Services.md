@@ -1,18 +1,17 @@
 ---
-aliases: 
-tags:
-  - home/server
-  - home/lab
-  - home/networking
+aliases: []
+tags: [home/server, home/lab, home/networking]
 publish: true
 permalink: 
 date created: Monday, December 23rd 2024, 8:44 am
-date modified: Monday, December 23rd 2024, 10:05 am
+date modified: Monday, December 23rd 2024, 12:49 pm
 ---
 
 # Home Network Setup
 
  ![](pfsense_with_local_services/pfsense_with_local_services.svg)
+
+![](../Home%20Lab%20Networking%20Reference/Home%20Lab%20Networking%20Reference.svg)
 
 # DNS Rebinding Issues
 

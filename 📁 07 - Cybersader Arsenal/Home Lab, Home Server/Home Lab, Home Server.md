@@ -8,6 +8,8 @@ date modified: Monday, December 23rd 2024, 8:43 am
 ---
 
 %% Begin Waypoint %%
+- **[[Home Lab Networking Reference]]**
+
 - **[[Kubernetes Home Server]]**
 - **[[Personal Storage]]**
 - **[[PfSense with Local Services]]**
