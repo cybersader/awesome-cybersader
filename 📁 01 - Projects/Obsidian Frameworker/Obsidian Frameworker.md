@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 4:19 pm
+date modified: Monday, December 23rd 2024, 4:32 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -118,9 +118,10 @@ The issue is that I essentially want to store data about a relationship between 
 ### High-Level Methods
 
 1. Per link to a node in the framework data structure
-	- 
-2. With framework data structure
-	- 
+	- Linking to a generated framework page
+2. With framework data structure as tags
+
+> [!failure] Won't implement the framework data structure method unless I need to since the whole point is to be able to search the framework, on the fly, and link to it
 
 ### For Linking to Framework (with Internal Links)
 
@@ -136,6 +137,8 @@ The issue is that I essentially want to store data about a relationship between 
 framework:
 	leaf_note (standard):
 		reviewer: "Person_1"	
+
+> [!failure] Won't implement the framework data structure method unless I need to since the whole point is to be able to search the framework, on the fly, and link to it
 
 ### Linking Metadata Value Priority
 
@@ -170,6 +173,7 @@ Use dataview JS at either:
 
 - Query all instances of tags and use the links of the files with those tags to build tables
 
+> [!failure] Won't implement the framework data structure method unless I need to since the whole point is to be able to search the framework, on the fly, and link to it
 ### Styling the JSON?
 
 - 
