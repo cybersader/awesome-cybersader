@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 4:32 pm
+date modified: Monday, December 23rd 2024, 4:59 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -146,7 +146,7 @@ Explicit tags/links will be prioritized in the below order:
 1. Inline tag with link with included metadata (JSON, etc.)
 2. Inline tag w/dot notation to framework key with included value (in curly brackets, etc.)
 3. Inline tag w/dot notation down to framework node (with tag value being an actual value for that node)
-	-  (NOT DOING THIS YET - relates to representing framework as a tag structure)
+	- (NOT DOING THIS YET - relates to representing framework as a tag structure)
 4. YAML frontmatter to framework keys with values in key value pairs
 5. YAML frontmatter down to framework node (with tag value being an actual value for that node)
 	- (NOT DOING BELOW - relates to representing framework as a tag structure)
@@ -176,6 +176,7 @@ Use dataview JS at either:
 - Query all instances of tags and use the links of the files with those tags to build tables
 
 > [!failure] Won't implement the framework data structure method unless I need to since the whole point is to be able to search the framework, on the fly, and link to it
+
 ### Styling the JSON?
 
 - 
@@ -199,6 +200,56 @@ Use dataview JS at either:
 - 
 
 ## Linking Workspace
+
+Regex format for links:
+```
+(?:\[|\()?                    # Optional opening square bracket or parenthesis
+(?<dotKey>framework_here(?:\.\w+)*)  # Match 'framework_here' with optional dot notation layers
+::\s*                         # Match the double colon separator
+(?:                           # Group for link matching
+    \[\[                     # Wikilink-style link
+        (?<wikilink>[^|\]]+)  # Capture wikilink target
+    \]\]
+  |                          # OR
+    \[(?<mdText>[^\]]+?)\]\((?<mdLink>[^)]+?)\) # Markdown-style link ([text](link))
+  |                          # OR
+    (?<plainLink>[^\s]+)      # Inline plain text link
+)?                            # End link group, optional
+\s*                           # Optional whitespace
+(?:                           # Group for metadata
+    (?<json>\{.*?\})          # JSON metadata
+  |                          # OR
+    \[(?<squareMeta>.*?)\]    # Metadata in square brackets
+  |                          # OR
+    "(?<quotedMeta>.*?)"      # Metadata in quotes
+)?                            # End metadata group, optional
+(?:\]|\))?                    # Optional closing square bracket or parenthesis
+```
+
+```js
+const regex = /(?:\[|\()?                    # Optional opening square bracket or parenthesis
+(?<dotKey>framework_here(?:\.\w+)*)         # Match 'framework_here' with optional dot notation layers
+::\s*                                       # Match the double colon separator
+(?:                                         # Group for link matching
+    \[\[                                   # Wikilink-style link
+        (?<wikilink>[^|\]]+)               # Capture wikilink target
+    \]\]
+  |                                        # OR
+    \[(?<mdText>[^\]]+?)\]\((?<mdLink>[^)]+?)\) # Markdown-style link ([text](link))
+  |                                        # OR
+    (?<plainLink>[^\s]+)                   # Inline plain text link
+)?                                          # End link group, optional
+\s*                                         # Optional whitespace
+(?:                                         # Group for metadata
+    (?<json>\{.*?\})                       # JSON metadata
+  |                                        # OR
+    \[(?<squareMeta>.*?)\]                 # Metadata in square brackets
+  |                                        # OR
+    "(?<quotedMeta>.*?)"                   # Metadata in quotes
+)?                                          # End metadata group, optional
+(?:\]|\))?                                  # Optional closing square bracket or parenthesis
+/gx; // Flags: g (global), x (multiline/comment)
+```
 
 - In order to have easier autofill, there needs to be a tag structure also based on the framework
 
