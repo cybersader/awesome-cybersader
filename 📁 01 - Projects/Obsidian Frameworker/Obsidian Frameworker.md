@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 3:03 pm
+date modified: Monday, December 23rd 2024, 3:54 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -153,6 +153,10 @@ Use dataview JS at either:
 ### Tags Only Method
 
 - Query all instances of tags and use the links of the files with those tags to build tables
+
+### Styling the JSON?
+
+- 
 
 ## 1) Intermediate Edge Metadata Files
 
