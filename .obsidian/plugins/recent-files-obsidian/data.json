@@ -5,12 +5,16 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
     },
     {
       "basename": "frameworker_diagram",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram.md"
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "✒️ Cyberbase Architecture",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Delete Hanging",
       "path": "📁 41 - Logs/Obsidian Delete Hanging/Obsidian Delete Hanging.md"
-    },
-    {
-      "basename": "⬇️ Cybersade DROPZONE",
-      "path": "📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md"
     }
   ],
   "omittedPaths": [],

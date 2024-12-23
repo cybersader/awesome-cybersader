@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 1:45 pm
+date modified: Monday, December 23rd 2024, 3:03 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -36,7 +36,6 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 ## Core
 
 (WIP)
-
 
 - Dataview
 	- Query incoming links and show (link, tag) combinations of them?
@@ -114,6 +113,47 @@ The issue is that I essentially want to store data about a relationship between 
 	2. **Structured data for graph link syntax** - develop syntax to store structured data at link instantiation
 	3. **Take advantage of inline Dataview tag name** - structure data in inline tags with link to framework/structured data component as the value.  Find all of the files, use regex to find all cases of incoming files with regex match
 
+## Current Implementation
+
+### For Linking to Framework (with Internal Links)
+
+- Use dot notation with inline dataview tags
+- Use JSON after inline dataview tags
+- Define same connections in YAML frontmatter
+
+### For Linking to Framework (with Tags Only)
+
+- Framework is ingested/consumed into a tagging structure
+- Parts of framework can be referenced within tags like below:
+
+framework:
+	leaf_note (standard):
+		reviewer: "Person_1"	
+
+### For Querying Links/Edges
+
+### Internal Link Method
+
+Use dataview JS at either:
+1. Higher-level folder/file of framework
+2. Leaf-level node/note of framework
+
+#### 1) Higher-Level Framework Folder Querying
+
+- Aggregate all links to folder and underlying folders
+- Aggregate tags and values for them by leafs
+- Make these editable? (HARD)
+
+#### 2) Leaf-level Framework Notes
+
+- Aggregate all links to folder and structure key:values into main object
+- Display as a table
+- Make these editable? (HARD)
+
+### Tags Only Method
+
+- Query all instances of tags and use the links of the files with those tags to build tables
+
 ## 1) Intermediate Edge Metadata Files
 
 - We could define connection/mappings files under a folder like `.edges_framework_here` or `.mappings_framework_here` that show the schema for metadata with the connections
@@ -133,6 +173,8 @@ The issue is that I essentially want to store data about a relationship between 
 - 
 
 ## Linking Workspace
+
+- In order to have easier autofill, there needs to be a tag structure also based on the framework
 
 - My ideal linking format for linking different ontologies/data systems/taxonomies/hierarchies in Obsidian
 	- Use the same inline dataview syntax with JSON like below
