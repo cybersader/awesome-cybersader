@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, December 22nd 2024, 5:36 pm
+date modified: Monday, December 23rd 2024, 6:44 pm
 ---
 
 %% Begin Waypoint %%
@@ -12,7 +12,6 @@ date modified: Sunday, December 22nd 2024, 5:36 pm
 
 %% End Waypoint %%
 
-- [ ] Fix issue with using Obsidian Publish between two devices and having to republish the whole vault everytime 🔺 ➕ 2024-11-03
 - [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
 - [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
@@ -36,7 +35,15 @@ date modified: Sunday, December 22nd 2024, 5:36 pm
 - [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
 - https://argdown.org/
 - [screenpipe | AI-Powered Process Mining & Screen Recording](https://screenpi.pe/)
-- 
+
+- Regex pipeline tool
+- Sync obsidian before opening app 
+- Graph analysis and SVG generator from HTML - could be done during build process
+- Family tree in Obsidian?
+- User plugin that uses per device set tag based on tag options or yaml page for database to notify users as a condition atop tasks
+- Show back and forth links
+- Plugin to fix internal file links
+- Sort by name and not folder vs file
 
 # Users in Obsidian
 
