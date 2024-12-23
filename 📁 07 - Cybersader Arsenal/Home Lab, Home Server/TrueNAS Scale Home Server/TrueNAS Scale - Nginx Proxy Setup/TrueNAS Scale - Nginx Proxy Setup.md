@@ -1,18 +1,10 @@
 ---
-aliases: 
-tags:
-  - cgnat
-  - CGNAT
-  - "#truenas"
-  - "#setup-guide"
-  - "#nginx-proxy"
-  - "#nginx"
-  - "#cloudflare"
-  - SSL
-  - TLS
+permalink:
+aliases: []
+tags: [cgnat, CGNAT, "#truenas", "#setup-guide", "#nginx-proxy", "#nginx", "#cloudflare", SSL, TLS]
 publish: true
 date created: Saturday, August 10th 2024, 7:07 pm
-date modified: Sunday, September 29th 2024, 8:37 pm
+date modified: Monday, December 23rd 2024, 11:58 am
 ---
 
 
@@ -20,6 +12,7 @@ date modified: Sunday, September 29th 2024, 8:37 pm
 
 [TrueNAS Immich Setup](../TrueNAS%20Immich%20Setup/TrueNAS%20Immich%20Setup.md)
 [Immich & Cloudflare Tunnels](../Immich%20&%20Cloudflare%20Tunnels/Immich%20&%20Cloudflare%20Tunnels.md)
+[PfSense with Local Services](../../PfSense%20with%20Local%20Services/PfSense%20with%20Local%20Services.md)
 
 # Links
 
@@ -51,6 +44,9 @@ Most of these quite recent
 	- [There is a dirty hack to fix this issue is using s6 hook](https://www.truenas.com/community/threads/nginx-proxy-manager-wont-deploy.113904/)
 	- [Nginx Proxy Manager won't deploy - Apps and Virtualization - TrueNAS Community Forums](https://forums.truenas.com/t/nginx-proxy-manager-wont-deploy/8076)
 		- the issue is that the startup probes are misconfigured, simply kubernetes waits for the app to start up and restarting it if it fails to start within a given amount of time combined with the startup scripts that take ownership of a directory very slowly… it leads to an endless restart during first run on most systems. the environment variable just skips the take-ownership script, blindly hoping that this reduces the time enough that it actually might start this time… the real solution is to just disable startup probes but the ix “official” apps don’t give you the option to do so, this is also a problem with Plex/Jellyfin or any app that does lengthy migrations too, they usually just get corrupted badly by a restart loop. the custom app button does give you most of the required options though… and can be used to side-step fundamentally broken charts like this one (which has had this issue for at least a year but since a lot in the past simply used truecharts, no one has cared till now)
+
+- S6_STAGE2_HOOK
+	- `sed -i $d /etc/s6-overlay/s6-rc.d/prepare/30-ownership.sh`
 
 ## Prepare TrueNAS Datasets for Nginx App
 
