@@ -35,6 +35,7 @@ date modified: Sunday, December 22nd 2024, 5:36 pm
 - Wikilink vs Markdown Link Use Cases
 - [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
 - https://argdown.org/
+- [screenpipe | AI-Powered Process Mining & Screen Recording](https://screenpi.pe/)
 - 
 
 # Users in Obsidian

@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Friday, December 20th 2024, 9:51 pm
+date modified: Monday, December 23rd 2024, 1:45 pm
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -37,6 +37,14 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 (WIP)
 
+
+- Dataview
+	- Query incoming links and show (link, tag) combinations of them?
+
+## Related
+
+> [!failure] The issue with the below plugins is that none of them can actually give the ability to attach data to relationships/edges/links between files
+
 - Breadcrumbs V4
     - https://publish.obsidian.md/breadcrumbs-docs/Home
     - Use edge fields and fields groups for drawing links to framework-related or separate structure notes
@@ -52,10 +60,9 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 - Graph link types
     - Merely turns dataview inline tags with links into edges on graph view
 - Semantic Canvas
+	- Just another way to display or create links in a graph view
 - Supercharged Links
 	- Add CSS to links based on the YAML of the target note of the link
-- Dataview
-	- Query incoming links and show (link, tag) combinations of them?
 
 ## Misc
 
