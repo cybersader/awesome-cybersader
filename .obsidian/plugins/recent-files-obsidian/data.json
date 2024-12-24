@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Plex Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
+      "basename": "TrueNAS Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Media Server/TrueNAS Media Server.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -47,10 +51,6 @@
     {
       "basename": "Home Lab Networking Reference",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab Networking Reference/Home Lab Networking Reference.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
     },
     {
       "basename": "pfsense_with_local_services",

@@ -91,7 +91,7 @@ These are also required for Apps like Immich
 
 ### Cloudflare / DNS Records Setup
 
-![](Drawing%202024-09-28%2018.39.28.excalidraw.svg)
+![](_attachments/Drawing%202024-09-28%2018.39.28.excalidraw.svg)
 
 - Follow the instructions:
 	- [HomeLab: Nginx-Proxy-Manager: Setup SSL Certificate with Domain Name in Cloudflare DNS | by Life-is-short--so--enjoy-it | Medium](https://medium.com/@life-is-short-so-enjoy-it/homelab-nginx-proxy-manager-setup-ssl-certificate-with-domain-name-in-cloudflare-dns-732af64ddc0b)
