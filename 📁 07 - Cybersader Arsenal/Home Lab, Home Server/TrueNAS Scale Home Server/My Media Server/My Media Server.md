@@ -20,6 +20,11 @@ date modified: Monday, December 23rd 2024, 6:48 pm
 - [Open source alternatives to Emby](https://www.opensourcealternative.to/alternativesto/emby "Open source alternatives to Emby")
 - [2 Open Source Alternatives to Plex](https://www.opensourcealternative.to/alternativesto/plex "2 Open Source Alternatives to Plex")
 
+# What About Jellyfin?
+
+> [!tldr] It's open source and has some privacy and advanced benefits, but it lacks the convenience and sharability that I need for the time being
+
+
 # Compatible Devices for Plex Clients
 
 - [Best Media Streaming Devices | Live streaming apps powered by Plex](https://www.plex.tv/apps-devices/#players) 
