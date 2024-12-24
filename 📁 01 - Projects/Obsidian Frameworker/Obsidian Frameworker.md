@@ -4,7 +4,7 @@ tags: [risk-management, GRC]
 publish: true
 permalink: 
 date created: Wednesday, December 18th 2024, 8:13 pm
-date modified: Monday, December 23rd 2024, 5:31 pm
+date modified: Tuesday, December 24th 2024, 11:49 am
 ---
 
 I'm trying to build a tool that can be used to map plaintext files in markdown to taxonomical frameworks with a variety of built-in features such as using YAML frontmatter on note pages, import process for CSV file mapping or tabular versions, 2 way sync with those files, workflows, and more.
@@ -313,6 +313,15 @@ Regex format for links:
 - 
 
 # DROPZONE, WORKSPACE
+
+// - Check YAML frontmatter for `framework_here` keys
+// - Merge / prioritize them with line-based metadata
+// - Provide advanced sorting/aggregation
+// - Convert the final data into your desired "graph" structure
+// - Use dv.markdownTable(...) for a pure-Markdown output
+// - Use nested loops if you want to group by 'dotKey'
+// - If performance is a concern with large vaults, consider partial matching 
+//   or caching results in local files, etc.
 
 - The file/folder order for the framework data in Obsidian is also an issue that needs to be accounted for
 
