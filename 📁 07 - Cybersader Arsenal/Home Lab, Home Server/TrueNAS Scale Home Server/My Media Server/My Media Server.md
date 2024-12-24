@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, December 23rd 2024, 9:38 pm
+date modified: Monday, December 23rd 2024, 9:59 pm
 ---
 
 # Links
@@ -38,6 +38,7 @@ date modified: Monday, December 23rd 2024, 9:38 pm
 - [Ravencentric/awesome-arr: A collection of *arrs and related stuff.](https://github.com/Ravencentric/awesome-arr)
 - [Radarr/Sonarr Settings - Kometa Wiki](https://metamanager.wiki/en/develop/files/arr/)
 - [DonMcD/ultimate-plex-stack: This comprehensive Plex stack configuration simplifies the setup for your media server, integrating Plex, Radarr, Sonarr, Prowlarr, and more for seamless movie and TV show streaming with enhanced management and automation features, including VPN support, subtitle management and much more!](https://github.com/DonMcD/ultimate-plex-stack)
+- [Overseerr](https://overseerr.dev/)
 - 
 
 # Plex vs Jellyfin
