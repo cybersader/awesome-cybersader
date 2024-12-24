@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, December 23rd 2024, 9:59 pm
+date modified: Tuesday, December 24th 2024, 12:21 pm
 ---
 
 # Links
@@ -25,6 +25,7 @@ date modified: Monday, December 23rd 2024, 9:59 pm
 - [The ULTIMATE Budget Jellyfin Server - YouTube](https://www.youtube.com/watch?v=WCDmHljsinY)
 - [Time to UNSUBSCRIBE from Disney+, Netflix, etc! - YouTube](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 - [Better than Disney+: Jellyfin on my NAS - YouTube](https://www.youtube.com/watch?v=4VkY1vTpCJY)
+- [Piracy Doesn’t Pay - YouTube](https://www.youtube.com/watch?v=SPWiCm5tT7Y)
 
 # Plex Addons
 
