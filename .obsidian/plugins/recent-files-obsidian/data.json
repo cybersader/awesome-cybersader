@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "2024-12-24-Tuesday",
-      "path": "🕸️ Daily Notes/2024/12/2024-12-24-Tuesday/2024-12-24-Tuesday.md"
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
     },
     {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
+    },
+    {
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "2024-12-24-Tuesday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-24-Tuesday/2024-12-24-Tuesday.md"
     },
     {
       "basename": "Memex",
@@ -39,14 +51,6 @@
     {
       "basename": "Plugin Maintenance",
       "path": "📁 10 - My Obsidian Stack/Plugin Maintenance/Plugin Maintenance.md"
-    },
-    {
-      "basename": "frameworker_linking",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
-    },
-    {
-      "basename": "frameworker_diagram",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
     },
     {
       "basename": "✒️ Cyberbase Architecture",
@@ -195,10 +199,6 @@
     {
       "basename": "Founder Lifestyle",
       "path": "📁 35 - Business/Tech Startup/Founder Lifestyle/Founder Lifestyle.md"
-    },
-    {
-      "basename": "Monetization & Funding",
-      "path": "📁 35 - Business/Monetization & Funding/Monetization & Funding.md"
     }
   ],
   "omittedPaths": [],

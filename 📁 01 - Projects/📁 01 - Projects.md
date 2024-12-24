@@ -19,7 +19,11 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 
 - **[[NocoDB]]**
 - **[[Obsidian Frameworker]]**
-	- [[Obsidian Frameworker/frameworker_diagram/frameworker_diagram]]
+	- **[[About Frameworker]]**
+	- **[[frameworker_diagram]]**
+
+	- **[[frameworker_linking]]**
+
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
