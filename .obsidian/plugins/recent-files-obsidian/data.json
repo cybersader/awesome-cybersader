@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Plex Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Plex Media Server/Plex Media Server.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Local Marketing",
       "path": "📁 35 - Business/Local Marketing/Local Marketing.md"
-    },
-    {
-      "basename": "Obsidian Delete Hanging",
-      "path": "📁 41 - Logs/Obsidian Delete Hanging/Obsidian Delete Hanging.md"
     }
   ],
   "omittedPaths": [],
