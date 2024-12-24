@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, December 23rd 2024, 9:14 pm
+date modified: Monday, December 23rd 2024, 9:38 pm
 ---
 
 # Links
@@ -25,6 +25,19 @@ date modified: Monday, December 23rd 2024, 9:14 pm
 - [The ULTIMATE Budget Jellyfin Server - YouTube](https://www.youtube.com/watch?v=WCDmHljsinY)
 - [Time to UNSUBSCRIBE from Disney+, Netflix, etc! - YouTube](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 - [Better than Disney+: Jellyfin on my NAS - YouTube](https://www.youtube.com/watch?v=4VkY1vTpCJY)
+
+# Plex Addons
+
+- [Plex and the *ARR stack |](https://sysblob.com/posts/plex/)
+- [Servarr | Servarr Wiki](https://wiki.servarr.com/)
+- [Prowlarr](https://prowlarr.com/)
+- [Must have Plex addons : r/PleX](https://www.reddit.com/r/PleX/comments/1bwfffx/must_have_plex_addons/)
+- [Streaming, Plex, and Arr's | RapidSeedbox — Help Desk](https://help.rapidseedbox.com/en/collections/615805-streaming-plex-and-arr-s)
+- [Plex | ARR Wiki](https://arr.passthebits.com/en/plex)
+- [The Ultimate Plex Software Stack - Arrs and More! : r/PleX](https://www.reddit.com/r/PleX/comments/1arzr1y/the_ultimate_plex_software_stack_arrs_and_more/)
+- [Ravencentric/awesome-arr: A collection of *arrs and related stuff.](https://github.com/Ravencentric/awesome-arr)
+- [Radarr/Sonarr Settings - Kometa Wiki](https://metamanager.wiki/en/develop/files/arr/)
+- [DonMcD/ultimate-plex-stack: This comprehensive Plex stack configuration simplifies the setup for your media server, integrating Plex, Radarr, Sonarr, Prowlarr, and more for seamless movie and TV show streaming with enhanced management and automation features, including VPN support, subtitle management and much more!](https://github.com/DonMcD/ultimate-plex-stack)
 - 
 
 # Plex vs Jellyfin
