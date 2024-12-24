@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, December 23rd 2024, 9:00 pm
+date modified: Monday, December 23rd 2024, 9:14 pm
 ---
 
 # Links
@@ -140,4 +140,4 @@ Click Install!
 # 4) Access Plex
 
 - Once deployed, go to the app and click the `Web UI` button to get redirect and attach it
-- 
+- If that doesn't work, you can add `/manage` to the end of the URL from the app settings for Plex in TrueNAS Apps
