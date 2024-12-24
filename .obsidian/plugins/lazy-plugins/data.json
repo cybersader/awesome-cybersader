@@ -739,6 +739,9 @@
       },
       "geulo-youtube-liked-video": {
         "startupType": "disabled"
+      },
+      "univer": {
+        "startupType": "disabled"
       }
     }
   }

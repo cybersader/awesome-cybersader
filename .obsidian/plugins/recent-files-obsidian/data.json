@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-12-24-Tuesday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-24-Tuesday/2024-12-24-Tuesday.md"
+    },
+    {
+      "basename": "My Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
       "basename": "TrueNAS Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Media Server/TrueNAS Media Server.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Tech Startup",
       "path": "📁 35 - Business/Tech Startup/Tech Startup.md"
-    },
-    {
-      "basename": "📁 35 - Business",
-      "path": "📁 35 - Business/📁 35 - Business.md"
-    },
-    {
-      "basename": "Local Marketing",
-      "path": "📁 35 - Business/Local Marketing/Local Marketing.md"
     }
   ],
   "omittedPaths": [],
