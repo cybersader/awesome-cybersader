@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Memex",
+      "path": "📦 VAULT SANDBOX TESTING/Memex/Memex.md"
+    },
+    {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Monetization & Funding",
       "path": "📁 35 - Business/Monetization & Funding/Monetization & Funding.md"
-    },
-    {
-      "basename": "Tech Startup",
-      "path": "📁 35 - Business/Tech Startup/Tech Startup.md"
     }
   ],
   "omittedPaths": [],
