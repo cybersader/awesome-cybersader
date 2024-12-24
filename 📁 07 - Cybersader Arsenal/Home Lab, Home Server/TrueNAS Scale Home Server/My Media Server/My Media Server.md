@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, December 23rd 2024, 8:07 pm
+date modified: Monday, December 23rd 2024, 9:00 pm
 ---
 
 # Links
@@ -131,3 +131,13 @@ While logged into your Plex account, go to the [Plex **Claim Code** web page]
 Next, either accept the default values shown or enter the IP addresses for local network connections (Ethernet or WiFi routers) you want in your Plex network. See [Setting Up Local Network](https://www.truenas.com/docs/truenasapps/stableapps/plexapp/#setting-up-local-network) below for more information.
 
 You can add devices and additional environment variables, but this is not required to deploy the app. For more information, see [Adding Devices](https://www.truenas.com/docs/truenasapps/stableapps/plexapp/#adding-devicess) below.
+
+> [!important]
+> The app does not require configuring advanced DNS options. Accept the default settings or click **Add** to the right of **DNS Options** to enter the option name and value.
+
+Click Install!
+
+# 4) Access Plex
+
+- Once deployed, go to the app and click the `Web UI` button to get redirect and attach it
+- 
