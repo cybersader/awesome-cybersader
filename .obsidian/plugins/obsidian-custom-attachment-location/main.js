@@ -74,14 +74,39 @@ var require_implementations = __commonJS({
     var implementations_exports = {};
     __export2(implementations_exports, {
       CustomArrayDictImpl: () => CustomArrayDictImpl,
+      FileExtension: () => FileExtension,
       InternalPluginName: () => InternalPluginName,
-      constructApp: () => constructApp,
-      constructInternalPlugin: () => constructInternalPlugin,
-      constructInternalPlugins: () => constructInternalPlugins,
-      constructTFile: () => constructTFile,
-      constructTFolder: () => constructTFolder,
+      ViewType: () => ViewType,
       createTFileInstance: () => createTFileInstance,
       createTFolderInstance: () => createTFolderInstance,
+      getAllPropertiesViewConstructor: () => getAllPropertiesViewConstructor,
+      getAppConstructor: () => getAppConstructor,
+      getAudioViewConstructor: () => getAudioViewConstructor,
+      getBacklinkViewConstructor: () => getBacklinkViewConstructor,
+      getBookmarksViewConstructor: () => getBookmarksViewConstructor,
+      getBrowserHistoryViewConstructor: () => getBrowserHistoryViewConstructor,
+      getBrowserViewConstructor: () => getBrowserViewConstructor,
+      getCanvasViewConstructor: () => getCanvasViewConstructor,
+      getEmptyViewConstructor: () => getEmptyViewConstructor,
+      getFileExplorerViewConstructor: () => getFileExplorerViewConstructor,
+      getFilePropertiesViewConstructor: () => getFilePropertiesViewConstructor,
+      getGraphViewConstructor: () => getGraphViewConstructor,
+      getImageViewConstructor: () => getImageViewConstructor,
+      getInternalPluginConstructor: () => getInternalPluginConstructor,
+      getInternalPluginsConstructor: () => getInternalPluginsConstructor,
+      getLocalGraphViewConstructor: () => getLocalGraphViewConstructor,
+      getMarkdownViewConstructor: () => getMarkdownViewConstructor,
+      getOutgoingLinkViewConstructor: () => getOutgoingLinkViewConstructor,
+      getOutlineViewConstructor: () => getOutlineViewConstructor,
+      getPdfViewConstructor: () => getPdfViewConstructor,
+      getReleaseNotesViewConstructor: () => getReleaseNotesViewConstructor,
+      getSearchViewConstructor: () => getSearchViewConstructor,
+      getSyncViewConstructor: () => getSyncViewConstructor,
+      getTFileConstructor: () => getTFileConstructor,
+      getTFolderConstructor: () => getTFolderConstructor,
+      getTagViewConstructor: () => getTagViewConstructor,
+      getVideoViewConstructor: () => getVideoViewConstructor,
+      getViewConstructorByViewType: () => getViewConstructorByViewType,
       isEmbedCache: () => isEmbedCache,
       isFrontmatterLinkCache: () => isFrontmatterLinkCache,
       isLinkCache: () => isLinkCache,
@@ -89,22 +114,36 @@ var require_implementations = __commonJS({
       parentFolderPath: () => parentFolderPath2
     });
     module2.exports = __toCommonJS2(implementations_exports);
+    var import_obsidian5 = require("obsidian");
+    function getTFolderConstructor() {
+      return import_obsidian5.TFolder;
+    }
     function parentFolderPath2(path) {
       return path.replace(/\/?[^\/]*$/, "") || "/";
     }
-    var import_obsidian5 = require("obsidian");
-    function constructTFolder(vault, path) {
-      return new import_obsidian5.TFolder(vault, path);
-    }
-    function createTFolderInstance(vault, path) {
-      let folder = vault.getFolderByPath(path);
+    function createTFolderInstance(app, path) {
+      let folder = app.vault.getFolderByPath(path);
       if (folder) {
         return folder;
       }
-      folder = constructTFolder(vault, path);
-      folder.parent = createTFolderInstance(vault, parentFolderPath2(path));
+      folder = new (getTFolderConstructor())(app.vault, path);
+      folder.parent = createTFolderInstance(app, parentFolderPath2(path));
       folder.deleted = true;
       return folder;
+    }
+    var import_obsidian22 = require("obsidian");
+    function getTFileConstructor() {
+      return import_obsidian22.TFile;
+    }
+    function createTFileInstance(app, path) {
+      let file = app.vault.getFileByPath(path);
+      if (file) {
+        return file;
+      }
+      file = new (getTFileConstructor())(app.vault, path);
+      file.parent = createTFolderInstance(app, parentFolderPath2(path));
+      file.deleted = true;
+      return file;
     }
     var CustomArrayDictImpl = class {
       data = /* @__PURE__ */ new Map();
@@ -151,63 +190,187 @@ var require_implementations = __commonJS({
         return ans;
       }
     };
+    var FileExtension = {
+      _3gp: "3gp",
+      avif: "avif",
+      bmp: "bmp",
+      canvas: "canvas",
+      flac: "flac",
+      gif: "gif",
+      jpeg: "jpeg",
+      jpg: "jpg",
+      m4a: "m4a",
+      md: "md",
+      mkv: "mkv",
+      mov: "mov",
+      mp3: "mp3",
+      mp4: "mp4",
+      oga: "oga",
+      ogg: "ogg",
+      ogv: "ogv",
+      opus: "opus",
+      pdf: "pdf",
+      png: "png",
+      svg: "svg",
+      wav: "wav",
+      webm: "webm",
+      webp: "webp"
+    };
     var InternalPluginName = {
+      /**
+       * Plugin name in UI: Audio recorder
+       */
       AudioRecorder: "audio-recorder",
+      /**
+       * Plugin name in UI: Backlinks
+       */
       Backlink: "backlink",
+      /**
+       * Plugin name in UI: Bookmarks
+       */
       Bookmarks: "bookmarks",
+      /**
+       * Plugin name in UI: Web viewer
+       */
+      Browser: "browser",
+      /**
+       * Plugin name in UI: Canvas
+       */
       Canvas: "canvas",
+      /**
+       * Plugin name in UI: Command palette
+       */
       CommandPalette: "command-palette",
+      /**
+       * Plugin name in UI: Daily notes
+       */
       DailyNotes: "daily-notes",
+      /**
+       * Plugin name in UI: (hidden)
+       */
       EditorStatus: "editor-status",
+      /**
+       * Plugin name in UI: Files
+       */
       FileExplorer: "file-explorer",
+      /**
+       * Plugin name in UI: File recovery
+       */
       FileRecovery: "file-recovery",
+      /**
+       * Plugin name in UI: Search
+       */
       GlobalSearch: "global-search",
+      /**
+       * Plugin name in UI: Graph view
+       */
       Graph: "graph",
+      /**
+       * Plugin name in UI: Format converter
+       */
       MarkdownImporter: "markdown-importer",
+      /**
+       * Plugin name in UI: Note composer
+       */
       NoteComposer: "note-composer",
+      /**
+       * Plugin name in UI: Outgoing links
+       */
       OutgoingLink: "outgoing-link",
+      /**
+       * Plugin name in UI: Outline
+       */
       Outline: "outline",
+      /**
+       * Plugin name in UI: Page preview
+       */
       PagePreview: "page-preview",
+      /**
+       * Plugin name in UI: Properties view
+       */
       Properties: "properties",
+      /**
+       * Plugin name in UI: Publish
+       */
       Publish: "publish",
+      /**
+       * Plugin name in UI: Random note
+       */
       RandomNote: "random-note",
+      /**
+       * Plugin name in UI: Slash commands
+       */
       SlashCommand: "slash-command",
+      /**
+       * Plugin name in UI: Slides
+       */
       Slides: "slides",
+      /**
+       * Plugin name in UI: Quick Switcher
+       */
       Switcher: "switcher",
+      /**
+       * Plugin name in UI: Sync
+       */
       Sync: "sync",
+      /**
+       * Plugin name in UI: Tags view
+       */
       TagPane: "tag-pane",
+      /**
+       * Plugin name in UI: Templates
+       */
       Templates: "templates",
+      /**
+       * Plugin name in UI: Word count
+       */
       WordCount: "word-count",
+      /**
+       * Plugin name in UI: Workspaces
+       */
       Workspaces: "workspaces",
+      /**
+       * Plugin name in UI: Unique note creator
+       */
       ZkPrefixer: "zk-prefixer"
     };
-    var import_obsidian22 = require("obsidian");
-    function constructTFile(vault, path) {
-      return new import_obsidian22.TFile(vault, path);
-    }
-    function createTFileInstance(vault, path) {
-      let file = vault.getFileByPath(path);
-      if (file) {
-        return file;
-      }
-      file = constructTFile(vault, path);
-      file.parent = createTFolderInstance(vault, parentFolderPath2(path));
-      file.deleted = true;
-      return file;
-    }
-    function constructInternalPlugins(app) {
-      return new app.internalPlugins.constructor(app);
-    }
-    function constructInternalPlugin(app, instance, internalPlugins) {
+    var ViewType = {
+      AllProperties: "all-properties",
+      Audio: "audio",
+      Backlink: InternalPluginName.Backlink,
+      Bookmarks: InternalPluginName.Bookmarks,
+      Browser: "browser",
+      BrowserHistory: "browser-history",
+      Canvas: InternalPluginName.Canvas,
+      Empty: "empty",
+      FileExplorer: InternalPluginName.FileExplorer,
+      FileProperties: "file-properties",
+      Graph: InternalPluginName.Graph,
+      Image: "image",
+      LocalGraph: "localgraph",
+      Markdown: "markdown",
+      OutgoingLink: InternalPluginName.OutgoingLink,
+      Outline: InternalPluginName.Outline,
+      Pdf: "pdf",
+      ReleaseNotes: "release-notes",
+      Search: "search",
+      Sync: "sync",
+      Tag: "tag",
+      Video: "video"
+    };
+    function getInternalPluginConstructor(app) {
       const anyPlugin = Object.values(app.internalPlugins.plugins)[0];
       if (!anyPlugin) {
         throw new Error("No internal plugin found");
       }
-      return new anyPlugin.constructor(app, instance, internalPlugins);
+      return anyPlugin.constructor;
+    }
+    function getInternalPluginsConstructor(app) {
+      return app.internalPlugins.constructor;
     }
     var import_obsidian32 = require("obsidian");
-    function constructApp(adapter, appId) {
-      return new import_obsidian32.App(adapter, appId);
+    function getAppConstructor() {
+      return import_obsidian32.App;
     }
     function isReferenceCache(reference) {
       return !!reference.position;
@@ -220,6 +383,85 @@ var require_implementations = __commonJS({
     }
     function isLinkCache(reference) {
       return isReferenceCache(reference) && reference.original[0] !== "!";
+    }
+    function getViewConstructorByViewType(app, viewType) {
+      const leaf = app.workspace.createLeafInTabGroup();
+      try {
+        const viewCreator = app.viewRegistry.getViewCreatorByType(viewType);
+        if (!viewCreator) {
+          throw new Error("View creator not found");
+        }
+        const view = viewCreator(leaf);
+        return view.constructor;
+      } finally {
+        leaf.detach();
+      }
+    }
+    function getOutlineViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Outline);
+    }
+    function getBrowserViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Browser);
+    }
+    function getReleaseNotesViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.ReleaseNotes);
+    }
+    function getPdfViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Pdf);
+    }
+    function getSyncViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Sync);
+    }
+    function getOutgoingLinkViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.OutgoingLink);
+    }
+    function getCanvasViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Canvas);
+    }
+    function getTagViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Tag);
+    }
+    function getAudioViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Audio);
+    }
+    function getLocalGraphViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.LocalGraph);
+    }
+    function getBacklinkViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Backlink);
+    }
+    function getFileExplorerViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.FileExplorer);
+    }
+    function getSearchViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Search);
+    }
+    function getVideoViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Video);
+    }
+    function getImageViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Image);
+    }
+    function getBrowserHistoryViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.BrowserHistory);
+    }
+    function getEmptyViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Empty);
+    }
+    function getGraphViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Graph);
+    }
+    function getFilePropertiesViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.FileProperties);
+    }
+    function getBookmarksViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Bookmarks);
+    }
+    function getMarkdownViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.Markdown);
+    }
+    function getAllPropertiesViewConstructor(app) {
+      return getViewConstructorByViewType(app, ViewType.AllProperties);
     }
   }
 });
@@ -936,11 +1178,20 @@ var require_RegExp = __commonJS({
     var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
     var RegExp_exports = {};
     __export2(RegExp_exports, {
-      escapeRegExp: () => escapeRegExp
+      escapeRegExp: () => escapeRegExp,
+      isValidRegExp: () => isValidRegExp
     });
     module2.exports = __toCommonJS2(RegExp_exports);
     function escapeRegExp(str) {
       return str.replaceAll(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+    function isValidRegExp(str) {
+      try {
+        new RegExp(str);
+        return true;
+      } catch {
+        return false;
+      }
     }
   }
 });
@@ -1281,11 +1532,18 @@ var require_FileSystem = __commonJS({
     var import_String2 = require_String();
     var MARKDOWN_FILE_EXTENSION = "md";
     var CANVAS_FILE_EXTENSION = "canvas";
-    function checkExtension(pathOrFile, extension2) {
-      if (pathOrFile === null) {
-        return false;
+    function checkExtension(app, pathOrFile, extension2) {
+      if (isFile(pathOrFile)) {
+        return pathOrFile.extension === extension2;
       }
-      return (0, import_Path6.extname)(getPath(pathOrFile)).toLowerCase().slice(1) === extension2.toLowerCase();
+      if (typeof pathOrFile === "string") {
+        const file = getFileOrNull(app, pathOrFile);
+        if (file) {
+          return file.extension === extension2;
+        }
+        return (0, import_Path6.extname)(pathOrFile).slice(1) === extension2;
+      }
+      return false;
     }
     function getAbstractFile(app, pathOrFile, isCaseInsensitive) {
       const file = getAbstractFileOrNull2(app, pathOrFile, isCaseInsensitive);
@@ -1301,17 +1559,21 @@ var require_FileSystem = __commonJS({
       if (isAbstractFile(pathOrFile)) {
         return pathOrFile;
       }
-      const path = getPath(pathOrFile);
-      if (isCaseInsensitive) {
-        return app.vault.getAbstractFileByPathInsensitive(path);
+      const file = getFileInternal(app, pathOrFile, isCaseInsensitive);
+      if (file) {
+        return file;
       }
-      return app.vault.getAbstractFileByPath(path);
+      const resolvedPath = getResolvedPath(pathOrFile);
+      if (resolvedPath === pathOrFile) {
+        return null;
+      }
+      return getFileInternal(app, resolvedPath, isCaseInsensitive);
     }
     function getFile(app, pathOrFile, shouldIncludeNonExisting, isCaseInsensitive) {
       let file = getFileOrNull(app, pathOrFile, isCaseInsensitive);
       if (!file) {
         if (shouldIncludeNonExisting) {
-          file = (0, import_implementations2.createTFileInstance)(app.vault, pathOrFile);
+          file = (0, import_implementations2.createTFileInstance)(app, pathOrFile);
         } else {
           throw new Error(`File not found: ${pathOrFile}`);
         }
@@ -1329,7 +1591,7 @@ var require_FileSystem = __commonJS({
       let folder = getFolderOrNull(app, pathOrFolder, isCaseInsensitive);
       if (!folder) {
         if (shouldIncludeNonExisting) {
-          folder = (0, import_implementations2.createTFolderInstance)(app.vault, pathOrFolder);
+          folder = (0, import_implementations2.createTFolderInstance)(app, pathOrFolder);
         } else {
           throw new Error(`Folder not found: ${pathOrFolder}`);
         }
@@ -1347,10 +1609,10 @@ var require_FileSystem = __commonJS({
       const folder = getFolder(app, pathOrFolder);
       let markdownFiles = [];
       if (!isRecursive) {
-        markdownFiles = folder.children.filter((file) => isMarkdownFile(file));
+        markdownFiles = folder.children.filter((file) => isMarkdownFile(app, file));
       } else {
         import_obsidian5.Vault.recurseChildren(folder, (abstractFile) => {
-          if (isMarkdownFile(abstractFile)) {
+          if (isMarkdownFile(app, abstractFile)) {
             markdownFiles.push(abstractFile);
           }
         });
@@ -1374,14 +1636,21 @@ var require_FileSystem = __commonJS({
       }
       return await app.vault.createFolder(path);
     }
-    function getPath(pathOrFile) {
-      return isAbstractFile(pathOrFile) ? pathOrFile.path : (0, import_obsidian5.normalizePath)((0, import_Path6.resolve)("/", pathOrFile));
+    function getPath(app, pathOrFile) {
+      if (isAbstractFile(pathOrFile)) {
+        return pathOrFile.path;
+      }
+      const file = getAbstractFileOrNull2(app, pathOrFile);
+      if (file) {
+        return file.path;
+      }
+      return getResolvedPath(pathOrFile);
     }
     function isAbstractFile(file) {
       return file instanceof import_obsidian5.TAbstractFile;
     }
-    function isCanvasFile2(pathOrFile) {
-      return checkExtension(pathOrFile, CANVAS_FILE_EXTENSION);
+    function isCanvasFile2(app, pathOrFile) {
+      return checkExtension(app, pathOrFile, CANVAS_FILE_EXTENSION);
     }
     function isFile(file) {
       return file instanceof import_obsidian5.TFile;
@@ -1389,17 +1658,26 @@ var require_FileSystem = __commonJS({
     function isFolder(file) {
       return file instanceof import_obsidian5.TFolder;
     }
-    function isMarkdownFile(pathOrFile) {
-      return checkExtension(pathOrFile, MARKDOWN_FILE_EXTENSION);
+    function isMarkdownFile(app, pathOrFile) {
+      return checkExtension(app, pathOrFile, MARKDOWN_FILE_EXTENSION);
     }
-    function isNote4(pathOrFile) {
-      return isMarkdownFile(pathOrFile) || isCanvasFile2(pathOrFile);
+    function isNote4(app, pathOrFile) {
+      return isMarkdownFile(app, pathOrFile) || isCanvasFile2(app, pathOrFile);
     }
-    function trimMarkdownExtension(file) {
-      if (!isMarkdownFile(file)) {
+    function trimMarkdownExtension(app, file) {
+      if (!isMarkdownFile(app, file)) {
         return file.path;
       }
       return (0, import_String2.trimEnd)(file.path, "." + MARKDOWN_FILE_EXTENSION);
+    }
+    function getFileInternal(app, path, isCaseInsensitive) {
+      if (isCaseInsensitive) {
+        return app.vault.getAbstractFileByPathInsensitive(path);
+      }
+      return app.vault.getAbstractFileByPath(path);
+    }
+    function getResolvedPath(path) {
+      return (0, import_obsidian5.normalizePath)((0, import_Path6.resolve)("/", path));
     }
   }
 });
@@ -1447,8 +1725,8 @@ var require_AttachmentPath = __commonJS({
     var import_String2 = require_String();
     var import_FileSystem4 = require_FileSystem();
     async function getAttachmentFilePath(app, attachmentPathOrFile, notePathOrFile) {
-      const attachmentPath = (0, import_FileSystem4.getPath)(attachmentPathOrFile);
-      const notePath = (0, import_FileSystem4.getPath)(notePathOrFile);
+      const attachmentPath = (0, import_FileSystem4.getPath)(app, attachmentPathOrFile);
+      const notePath = (0, import_FileSystem4.getPath)(app, notePathOrFile);
       const note = (0, import_FileSystem4.getFile)(app, notePath, true);
       const ext = (0, import_Path6.extname)(attachmentPath);
       const fileName = (0, import_Path6.basename)(attachmentPath, ext);
@@ -1554,60 +1832,6 @@ var require_Function = __commonJS({
   }
 });
 
-// node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettings.cjs
-var require_PluginSettings = __commonJS({
-  "node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettings.cjs"(exports2, module2) {
-    function __extractDefault(module22) {
-      return module22 && module22.__esModule && module22.default ? module22.default : module22;
-    }
-    (function patchRequireEsmDefault() {
-      const __require = require;
-      require = Object.assign((id) => {
-        const module22 = __require(id) ?? {};
-        return __extractDefault(module22);
-      }, __require);
-    })();
-    var __defProp2 = Object.defineProperty;
-    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
-    var __getOwnPropNames2 = Object.getOwnPropertyNames;
-    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
-    var __export2 = (target, all2) => {
-      for (var name in all2)
-        __defProp2(target, name, { get: all2[name], enumerable: true });
-    };
-    var __copyProps2 = (to, from, except, desc) => {
-      if (from && typeof from === "object" || typeof from === "function") {
-        for (let key of __getOwnPropNames2(from))
-          if (!__hasOwnProp2.call(to, key) && key !== except)
-            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
-      }
-      return to;
-    };
-    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
-    var PluginSettings_exports = {};
-    __export2(PluginSettings_exports, {
-      clonePluginSettings: () => clonePluginSettings,
-      loadPluginSettings: () => loadPluginSettings2
-    });
-    module2.exports = __toCommonJS2(PluginSettings_exports);
-    function clonePluginSettings(defaultPluginSettingsFactory, settings) {
-      return loadPluginSettings2(defaultPluginSettingsFactory, settings);
-    }
-    function loadPluginSettings2(defaultPluginSettingsFactory, data) {
-      const defaultPluginSettings = defaultPluginSettingsFactory();
-      if (data && typeof data === "object") {
-        const record = data;
-        for (const [key, value] of Object.entries(record)) {
-          if (key in defaultPluginSettings) {
-            defaultPluginSettings[key] = value;
-          }
-        }
-      }
-      return defaultPluginSettings;
-    }
-  }
-});
-
 // node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginBase.cjs
 var require_PluginBase = __commonJS({
   "node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginBase.cjs"(exports2, module2) {
@@ -1646,7 +1870,6 @@ var require_PluginBase = __commonJS({
     var import_obsidian5 = require("obsidian");
     var import_Error2 = require_Error();
     var import_Function = require_Function();
-    var import_PluginSettings2 = require_PluginSettings();
     var __process11 = globalThis["process"] ?? {
       "cwd": () => "/",
       "env": {},
@@ -1667,7 +1890,7 @@ var require_PluginBase = __commonJS({
        * @returns A copy of the plugin settings.
        */
       get settingsCopy() {
-        return (0, import_PluginSettings2.clonePluginSettings)(this.createDefaultPluginSettings.bind(this), this.settings);
+        return this.createPluginSettings(this.settings.toJSON());
       }
       /**
        * Gets the plugin settings.
@@ -1707,8 +1930,9 @@ var require_PluginBase = __commonJS({
        * @returns A promise that resolves when the settings are saved.
        */
       async saveSettings(newSettings) {
-        this._settings = (0, import_PluginSettings2.clonePluginSettings)(this.createDefaultPluginSettings.bind(this), newSettings);
-        await this.saveData(this.settings);
+        const json = newSettings.toJSON();
+        this._settings = this.createPluginSettings(json);
+        await this.saveData(json);
       }
       /**
        * Called when the layout is ready. This method can be overridden by subclasses to perform actions once
@@ -1729,15 +1953,6 @@ var require_PluginBase = __commonJS({
         (0, import_Function.noop)();
       }
       /**
-       * Parses the provided settings data and returns the parsed `PluginSettings`.
-       *
-       * @param data - The raw data to be parsed into `PluginSettings`.
-       * @returns A promise that resolves to `PluginSettings` or the settings directly.
-       */
-      parseSettings(data) {
-        return (0, import_PluginSettings2.loadPluginSettings)(this.createDefaultPluginSettings.bind(this), data);
-      }
-      /**
        * Displays a notice message to the user.
        *
        * @param message - The message to display.
@@ -1756,7 +1971,10 @@ ${message}`);
        */
       async loadSettings() {
         const data = await this.loadData();
-        this._settings = await this.parseSettings(data);
+        this._settings = this.createPluginSettings(data);
+        if (this._settings.shouldSaveAfterLoad()) {
+          await this.saveSettings(this._settings);
+        }
       }
     };
   }
@@ -1871,6 +2089,7 @@ var require_Object = __commonJS({
       getNestedPropertyValue: () => getNestedPropertyValue,
       getPrototypeOf: () => getPrototypeOf,
       nameof: () => nameof,
+      normalizeOptionalProperties: () => normalizeOptionalProperties,
       setNestedPropertyValue: () => setNestedPropertyValue,
       toJson: () => toJson2
     });
@@ -1927,6 +2146,9 @@ var require_Object = __commonJS({
     }
     function nameof(name) {
       return name;
+    }
+    function normalizeOptionalProperties(obj) {
+      return obj;
     }
     function setNestedPropertyValue(obj, path, value) {
       const error = new Error(`Property path ${path} not found`);
@@ -13280,6 +13502,47 @@ var require_Frontmatter = __commonJS({
   }
 });
 
+// node_modules/obsidian-dev-utils/dist/lib/Debug.cjs
+var require_Debug = __commonJS({
+  "node_modules/obsidian-dev-utils/dist/lib/Debug.cjs"(exports2, module2) {
+    function __extractDefault(module22) {
+      return module22 && module22.__esModule && module22.default ? module22.default : module22;
+    }
+    (function patchRequireEsmDefault() {
+      const __require = require;
+      require = Object.assign((id) => {
+        const module22 = __require(id) ?? {};
+        return __extractDefault(module22);
+      }, __require);
+    })();
+    var __defProp2 = Object.defineProperty;
+    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+    var __getOwnPropNames2 = Object.getOwnPropertyNames;
+    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+    var __export2 = (target, all2) => {
+      for (var name in all2)
+        __defProp2(target, name, { get: all2[name], enumerable: true });
+    };
+    var __copyProps2 = (to, from, except, desc) => {
+      if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames2(from))
+          if (!__hasOwnProp2.call(to, key) && key !== except)
+            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+      }
+      return to;
+    };
+    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
+    var Debug_exports = {};
+    __export2(Debug_exports, {
+      isDebug: () => isDebug
+    });
+    module2.exports = __toCommonJS2(Debug_exports);
+    function isDebug() {
+      return globalThis.DEBUG ?? false;
+    }
+  }
+});
+
 // node_modules/obsidian-dev-utils/dist/lib/Async.cjs
 var require_Async = __commonJS({
   "node_modules/obsidian-dev-utils/dist/lib/Async.cjs"(exports2, module2) {
@@ -13327,6 +13590,7 @@ var require_Async = __commonJS({
       toArray: () => toArray
     });
     module2.exports = __toCommonJS2(Async_exports);
+    var import_Debug = require_Debug();
     var import_Error2 = require_Error();
     async function addErrorHandler(asyncFn) {
       try {
@@ -13366,17 +13630,17 @@ var require_Async = __commonJS({
         shouldRetryOnError: false,
         timeoutInMilliseconds: 5e3
       };
-      const overriddenOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
-      await runWithTimeout(overriddenOptions.timeoutInMilliseconds, async () => {
+      const fullOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
+      await runWithTimeout(fullOptions.timeoutInMilliseconds, async () => {
         let attempt = 0;
         for (; ; ) {
-          overriddenOptions.abortSignal?.throwIfAborted();
+          fullOptions.abortSignal?.throwIfAborted();
           attempt++;
           let isSuccess;
           try {
             isSuccess = await fn();
           } catch (error) {
-            if (!overriddenOptions.shouldRetryOnError || error.__terminateRetry) {
+            if (!fullOptions.shouldRetryOnError || error.__terminateRetry) {
               throw error;
             }
             (0, import_Error2.printError)(error);
@@ -13388,30 +13652,43 @@ var require_Async = __commonJS({
             }
             return;
           }
-          console.debug(`Retry attempt ${attempt.toString()} completed unsuccessfully. Trying again in ${overriddenOptions.retryDelayInMilliseconds.toString()} milliseconds`, {
+          console.debug(`Retry attempt ${attempt.toString()} completed unsuccessfully. Trying again in ${fullOptions.retryDelayInMilliseconds.toString()} milliseconds`, {
             fn,
             stackTrace
           });
-          await sleep(overriddenOptions.retryDelayInMilliseconds);
+          await sleep(fullOptions.retryDelayInMilliseconds);
         }
       });
     }
     async function runWithTimeout(timeoutInMilliseconds, fn) {
-      let timedOut = false;
+      let isTimedOut = true;
       let result = null;
+      const startTime = performance.now();
       await Promise.race([run(), timeout2()]);
-      if (timedOut) {
-        console.error(`Timed out in ${timeoutInMilliseconds.toString()} milliseconds`, { fn });
+      if (isTimedOut) {
         throw new Error("Timed out");
       }
       return result;
       async function run() {
         result = await fn();
-        timedOut = false;
+        isTimedOut = false;
+        const duration = performance.now() - startTime;
+        console.debug(`Execution time: ${duration.toString()} milliseconds`, { fn });
       }
       async function timeout2() {
+        if (!isTimedOut) {
+          return;
+        }
         await sleep(timeoutInMilliseconds);
-        timedOut = true;
+        if (!isTimedOut) {
+          return;
+        }
+        const duration = performance.now() - startTime;
+        console.warn(`Timed out in ${duration.toString()} milliseconds`, { fn });
+        if ((0, import_Debug.isDebug)()) {
+          console.warn("The execution is not terminated because window.DEBUG is set");
+          await timeout2();
+        }
       }
     }
     async function sleep(milliseconds) {
@@ -13427,6 +13704,415 @@ var require_Async = __commonJS({
         arr.push(item);
       }
       return arr;
+    }
+  }
+});
+
+// node_modules/obsidian-dev-utils/dist/lib/obsidian/Vault.cjs
+var require_Vault = __commonJS({
+  "node_modules/obsidian-dev-utils/dist/lib/obsidian/Vault.cjs"(exports2, module2) {
+    function __extractDefault(module22) {
+      return module22 && module22.__esModule && module22.default ? module22.default : module22;
+    }
+    (function patchRequireEsmDefault() {
+      const __require = require;
+      require = Object.assign((id) => {
+        const module22 = __require(id) ?? {};
+        return __extractDefault(module22);
+      }, __require);
+    })();
+    var __defProp2 = Object.defineProperty;
+    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+    var __getOwnPropNames2 = Object.getOwnPropertyNames;
+    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+    var __export2 = (target, all2) => {
+      for (var name in all2)
+        __defProp2(target, name, { get: all2[name], enumerable: true });
+    };
+    var __copyProps2 = (to, from, except, desc) => {
+      if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames2(from))
+          if (!__hasOwnProp2.call(to, key) && key !== except)
+            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+      }
+      return to;
+    };
+    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
+    var Vault_exports = {};
+    __export2(Vault_exports, {
+      copySafe: () => copySafe2,
+      createFolderSafe: () => createFolderSafe2,
+      createTempFile: () => createTempFile,
+      createTempFolder: () => createTempFolder,
+      getAvailablePath: () => getAvailablePath,
+      getMarkdownFilesSorted: () => getMarkdownFilesSorted,
+      getNoteFilesSorted: () => getNoteFilesSorted,
+      getSafeRenamePath: () => getSafeRenamePath,
+      isEmptyFolder: () => isEmptyFolder,
+      listSafe: () => listSafe,
+      process: () => process3,
+      readSafe: () => readSafe,
+      renameSafe: () => renameSafe2
+    });
+    module2.exports = __toCommonJS2(Vault_exports);
+    var import_obsidian5 = require("obsidian");
+    var import_implementations2 = require_implementations();
+    var import_Async2 = require_Async();
+    var import_Function = require_Function();
+    var import_Path6 = require_Path();
+    var import_ValueProvider = require_ValueProvider();
+    var import_FileSystem4 = require_FileSystem();
+    var __process11 = globalThis["process"] ?? {
+      "cwd": () => "/",
+      "env": {},
+      "platform": "android"
+    };
+    async function copySafe2(app, oldPathOrFile, newPath) {
+      const file = (0, import_FileSystem4.getFile)(app, oldPathOrFile);
+      const newFolderPath = (0, import_implementations2.parentFolderPath)(newPath);
+      await createFolderSafe2(app, newFolderPath);
+      const newAvailablePath = getAvailablePath(app, newPath);
+      try {
+        await app.vault.copy(file, newAvailablePath);
+      } catch (e) {
+        if (!await app.vault.exists(newAvailablePath)) {
+          throw e;
+        }
+      }
+      return newAvailablePath;
+    }
+    async function createFolderSafe2(app, path) {
+      if (await app.vault.adapter.exists(path)) {
+        return false;
+      }
+      try {
+        await app.vault.createFolder(path);
+        return true;
+      } catch (e) {
+        if (!await app.vault.exists(path)) {
+          throw e;
+        }
+        return true;
+      }
+    }
+    async function createTempFile(app, path) {
+      let file = (0, import_FileSystem4.getFileOrNull)(app, path);
+      if (file) {
+        return import_Function.noopAsync;
+      }
+      const folderCleanup = await createTempFolder(app, (0, import_implementations2.parentFolderPath)(path));
+      try {
+        await app.vault.create(path, "");
+      } catch (e) {
+        if (!await app.vault.exists(path)) {
+          throw e;
+        }
+      }
+      file = (0, import_FileSystem4.getFile)(app, path);
+      return async () => {
+        if (!file.deleted) {
+          await app.fileManager.trashFile(file);
+        }
+        await folderCleanup();
+      };
+    }
+    async function createTempFolder(app, path) {
+      let folder = (0, import_FileSystem4.getFolderOrNull)(app, path);
+      if (folder) {
+        return import_Function.noopAsync;
+      }
+      const dirPath = (0, import_implementations2.parentFolderPath)(path);
+      await createTempFolder(app, dirPath);
+      const folderCleanup = await createTempFolder(app, (0, import_implementations2.parentFolderPath)(path));
+      await createFolderSafe2(app, path);
+      folder = (0, import_FileSystem4.getFolder)(app, path);
+      return async () => {
+        if (!folder.deleted) {
+          await app.fileManager.trashFile(folder);
+        }
+        await folderCleanup();
+      };
+    }
+    function getAvailablePath(app, path) {
+      const ext = (0, import_Path6.extname)(path);
+      return app.vault.getAvailablePath((0, import_Path6.join)((0, import_Path6.dirname)(path), (0, import_Path6.basename)(path, ext)), ext.slice(1));
+    }
+    function getMarkdownFilesSorted(app) {
+      return app.vault.getMarkdownFiles().sort((a, b) => a.path.localeCompare(b.path));
+    }
+    function getNoteFilesSorted(app) {
+      return app.vault.getAllLoadedFiles().filter((file) => (0, import_FileSystem4.isFile)(file) && (0, import_FileSystem4.isNote)(app, file)).sort((a, b) => a.path.localeCompare(b.path));
+    }
+    function getSafeRenamePath(app, oldPathOrFile, newPath) {
+      const oldPath = (0, import_FileSystem4.getPath)(app, oldPathOrFile);
+      if (app.vault.adapter.insensitive) {
+        let folderPath = (0, import_Path6.dirname)(newPath);
+        let nonExistingPath = (0, import_Path6.basename)(newPath);
+        let folder = null;
+        for (; ; ) {
+          folder = (0, import_FileSystem4.getFolderOrNull)(app, folderPath, true);
+          if (folder) {
+            break;
+          }
+          nonExistingPath = (0, import_Path6.join)((0, import_Path6.basename)(folderPath), nonExistingPath);
+          folderPath = (0, import_Path6.dirname)(folderPath);
+        }
+        newPath = (0, import_Path6.join)(folder.getParentPrefix(), nonExistingPath);
+      }
+      if (oldPath.toLowerCase() === newPath.toLowerCase()) {
+        return newPath;
+      }
+      return getAvailablePath(app, newPath);
+    }
+    async function isEmptyFolder(app, pathOrFolder) {
+      const listedFiles = await listSafe(app, (0, import_FileSystem4.getPath)(app, pathOrFolder));
+      return listedFiles.files.length === 0 && listedFiles.folders.length === 0;
+    }
+    async function listSafe(app, pathOrFolder) {
+      const path = (0, import_FileSystem4.getPath)(app, pathOrFolder);
+      const EMPTY = { files: [], folders: [] };
+      if ((await app.vault.adapter.stat(path))?.type !== "folder") {
+        return EMPTY;
+      }
+      try {
+        return await app.vault.adapter.list(path);
+      } catch (e) {
+        if (await app.vault.exists(path)) {
+          throw e;
+        }
+        return EMPTY;
+      }
+    }
+    async function process3(app, pathOrFile, newContentProvider, options = {}) {
+      const DEFAULT_RETRY_OPTIONS = {
+        shouldFailOnMissingFile: true
+      };
+      const fullOptions = { ...DEFAULT_RETRY_OPTIONS, ...options };
+      await (0, import_Async2.retryWithTimeout)(async () => {
+        const oldContent = await readSafe(app, pathOrFile);
+        if (!oldContent) {
+          return handleMissingFile();
+        }
+        const newContent = await (0, import_ValueProvider.resolveValue)(newContentProvider, oldContent);
+        if (newContent === null) {
+          return false;
+        }
+        let isSuccess = true;
+        const doesFileExist = await invokeFileActionSafe(app, pathOrFile, async (file) => {
+          await app.vault.process(file, (content3) => {
+            if (content3 !== oldContent) {
+              console.warn("Content has changed since it was read. Retrying...", {
+                actualContent: content3,
+                expectedContent: oldContent,
+                path: file.path
+              });
+              isSuccess = false;
+              return content3;
+            }
+            return newContent;
+          });
+        });
+        if (!doesFileExist) {
+          return handleMissingFile();
+        }
+        return isSuccess;
+        function handleMissingFile() {
+          if (fullOptions.shouldFailOnMissingFile) {
+            const path = (0, import_FileSystem4.getPath)(app, pathOrFile);
+            throw new Error(`File '${path}' not found`);
+          }
+          return true;
+        }
+      }, fullOptions);
+    }
+    async function readSafe(app, pathOrFile) {
+      let content3 = null;
+      await invokeFileActionSafe(app, pathOrFile, async (file) => {
+        content3 = await app.vault.read(file);
+      });
+      return content3;
+    }
+    async function renameSafe2(app, oldPathOrFile, newPath) {
+      const oldFile = (0, import_FileSystem4.getFile)(app, oldPathOrFile, false, true);
+      const newAvailablePath = getSafeRenamePath(app, oldPathOrFile, newPath);
+      if (oldFile.path.toLowerCase() === newAvailablePath.toLowerCase()) {
+        if (oldFile.path !== newPath) {
+          await app.vault.rename(oldFile, newAvailablePath);
+        }
+        return newAvailablePath;
+      }
+      const newFolderPath = (0, import_implementations2.parentFolderPath)(newAvailablePath);
+      await createFolderSafe2(app, newFolderPath);
+      try {
+        await app.vault.rename(oldFile, newAvailablePath);
+      } catch (e) {
+        if (!await app.vault.exists(newAvailablePath) || await app.vault.exists(oldFile.path)) {
+          throw e;
+        }
+      }
+      return newAvailablePath;
+    }
+    async function invokeFileActionSafe(app, pathOrFile, fileAction) {
+      const path = (0, import_FileSystem4.getPath)(app, pathOrFile);
+      const file = (0, import_FileSystem4.getFileOrNull)(app, path);
+      if (!file || file.deleted) {
+        return false;
+      }
+      try {
+        await fileAction(file);
+        return true;
+      } catch (e) {
+        const file2 = (0, import_FileSystem4.getFileOrNull)(app, path);
+        if (!file2 || file2.deleted) {
+          return false;
+        }
+        throw e;
+      }
+    }
+  }
+});
+
+// node_modules/obsidian-dev-utils/dist/lib/obsidian/FileChange.cjs
+var require_FileChange = __commonJS({
+  "node_modules/obsidian-dev-utils/dist/lib/obsidian/FileChange.cjs"(exports2, module2) {
+    function __extractDefault(module22) {
+      return module22 && module22.__esModule && module22.default ? module22.default : module22;
+    }
+    (function patchRequireEsmDefault() {
+      const __require = require;
+      require = Object.assign((id) => {
+        const module22 = __require(id) ?? {};
+        return __extractDefault(module22);
+      }, __require);
+    })();
+    var __defProp2 = Object.defineProperty;
+    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+    var __getOwnPropNames2 = Object.getOwnPropertyNames;
+    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+    var __export2 = (target, all2) => {
+      for (var name in all2)
+        __defProp2(target, name, { get: all2[name], enumerable: true });
+    };
+    var __copyProps2 = (to, from, except, desc) => {
+      if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames2(from))
+          if (!__hasOwnProp2.call(to, key) && key !== except)
+            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+      }
+      return to;
+    };
+    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
+    var FileChange_exports = {};
+    __export2(FileChange_exports, {
+      applyFileChanges: () => applyFileChanges2,
+      isContentChange: () => isContentChange,
+      isFrontmatterChange: () => isFrontmatterChange
+    });
+    module2.exports = __toCommonJS2(FileChange_exports);
+    var import_Object2 = require_Object();
+    var import_ValueProvider = require_ValueProvider();
+    var import_FileSystem4 = require_FileSystem();
+    var import_Frontmatter = require_Frontmatter();
+    var import_Vault3 = require_Vault();
+    var __process11 = globalThis["process"] ?? {
+      "cwd": () => "/",
+      "env": {},
+      "platform": "android"
+    };
+    async function applyFileChanges2(app, pathOrFile, changesProvider, processOptions = {}) {
+      await (0, import_Vault3.process)(app, pathOrFile, async (content3) => {
+        let changes = await (0, import_ValueProvider.resolveValue)(changesProvider);
+        const frontmatter = (0, import_FileSystem4.isCanvasFile)(app, pathOrFile) ? JSON.parse(content3) : (0, import_Frontmatter.parseFrontmatter)(content3);
+        for (const change of changes) {
+          if (isContentChange(change)) {
+            const actualContent = content3.slice(change.startIndex, change.endIndex);
+            if (actualContent !== change.oldContent) {
+              console.warn("Content mismatch", {
+                actualContent,
+                endIndex: change.endIndex,
+                expectedContent: change.oldContent,
+                path: (0, import_FileSystem4.getPath)(app, pathOrFile),
+                startIndex: change.startIndex
+              });
+              return null;
+            }
+          } else if (isFrontmatterChange(change)) {
+            const actualContent = (0, import_Object2.getNestedPropertyValue)(frontmatter, change.frontmatterKey);
+            if (actualContent !== change.oldContent) {
+              console.warn("Content mismatch", {
+                actualContent,
+                expectedContent: change.oldContent,
+                frontmatterKey: change.frontmatterKey,
+                path: (0, import_FileSystem4.getPath)(app, pathOrFile)
+              });
+              return null;
+            }
+          }
+        }
+        changes.sort((a, b) => {
+          if (isContentChange(a) && isContentChange(b)) {
+            return a.startIndex - b.startIndex;
+          }
+          if (isFrontmatterChange(a) && isFrontmatterChange(b)) {
+            return a.frontmatterKey.localeCompare(b.frontmatterKey);
+          }
+          return isContentChange(a) ? -1 : 1;
+        });
+        changes = changes.filter((change, index2) => {
+          if (change.oldContent === change.newContent) {
+            return false;
+          }
+          if (index2 === 0) {
+            return true;
+          }
+          return !(0, import_Object2.deepEqual)(change, changes[index2 - 1]);
+        });
+        for (let i = 1; i < changes.length; i++) {
+          const change = changes[i];
+          if (!change) {
+            continue;
+          }
+          const previousChange = changes[i - 1];
+          if (!previousChange) {
+            continue;
+          }
+          if (isContentChange(previousChange) && isContentChange(change) && previousChange.endIndex && change.startIndex && previousChange.endIndex > change.startIndex) {
+            console.warn("Overlapping changes", {
+              change,
+              previousChange
+            });
+            return null;
+          }
+        }
+        let newContent = "";
+        let lastIndex = 0;
+        let frontmatterChanged = false;
+        for (const change of changes) {
+          if (isContentChange(change)) {
+            newContent += content3.slice(lastIndex, change.startIndex);
+            newContent += change.newContent;
+            lastIndex = change.endIndex;
+          } else if (isFrontmatterChange(change)) {
+            (0, import_Object2.setNestedPropertyValue)(frontmatter, change.frontmatterKey, change.newContent);
+            frontmatterChanged = true;
+          }
+        }
+        if ((0, import_FileSystem4.isCanvasFile)(app, pathOrFile)) {
+          newContent = JSON.stringify(frontmatter, null, "	");
+        } else {
+          newContent += content3.slice(lastIndex);
+          if (frontmatterChanged) {
+            newContent = (0, import_Frontmatter.setFrontmatter)(newContent, frontmatter);
+          }
+        }
+        return newContent;
+      }, processOptions);
+    }
+    function isContentChange(fileChange) {
+      return fileChange.startIndex !== void 0;
+    }
+    function isFrontmatterChange(fileChange) {
+      return fileChange.frontmatterKey !== void 0;
     }
   }
 });
@@ -13549,6 +14235,7 @@ var require_MetadataCache = __commonJS({
     var import_FileSystem4 = require_FileSystem();
     var import_Frontmatter = require_Frontmatter();
     var import_Reference2 = require_Reference();
+    var import_Vault3 = require_Vault();
     var __process11 = globalThis["process"] ?? {
       "cwd": () => "/",
       "env": {},
@@ -13604,8 +14291,6 @@ var require_MetadataCache = __commonJS({
       if (safeOverload) {
         return safeOverload(pathOrFile);
       }
-      const DEFAULT_RETRY_OPTIONS = { timeoutInMilliseconds: 6e4 };
-      const overriddenOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
       let backlinks = null;
       await (0, import_Async2.retryWithTimeout)(async () => {
         const file = (0, import_FileSystem4.getFile)(app, pathOrFile);
@@ -13617,7 +14302,10 @@ var require_MetadataCache = __commonJS({
             return false;
           }
           await saveNote(app, note);
-          const content3 = await app.vault.read(note);
+          const content3 = await (0, import_Vault3.readSafe)(app, note);
+          if (!content3) {
+            return false;
+          }
           const frontmatter = (0, import_Frontmatter.parseFrontmatter)(content3);
           const links = backlinks.get(notePath);
           if (!links) {
@@ -13642,12 +14330,10 @@ var require_MetadataCache = __commonJS({
           }
         }
         return true;
-      }, overriddenOptions);
+      }, retryOptions);
       return backlinks;
     }
     async function getCacheSafe2(app, fileOrPath, retryOptions = {}) {
-      const DEFAULT_RETRY_OPTIONS = { timeoutInMilliseconds: 6e4 };
-      const overriddenOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
       let cache = null;
       await (0, import_Async2.retryWithTimeout)(async () => {
         const file = (0, import_FileSystem4.getFileOrNull)(app, fileOrPath);
@@ -13680,7 +14366,7 @@ var require_MetadataCache = __commonJS({
             return true;
           }
         }
-      }, overriddenOptions);
+      }, retryOptions);
       return cache;
     }
     async function getFrontmatterSafe(app, pathOrFile) {
@@ -13719,439 +14405,15 @@ var require_MetadataCache = __commonJS({
       }
     }
     async function saveNote(app, pathOrFile) {
-      if (!(0, import_FileSystem4.isMarkdownFile)(pathOrFile)) {
+      if (!(0, import_FileSystem4.isMarkdownFile)(app, pathOrFile)) {
         return;
       }
-      const path = (0, import_FileSystem4.getPath)(pathOrFile);
+      const path = (0, import_FileSystem4.getPath)(app, pathOrFile);
       for (const leaf of app.workspace.getLeavesOfType("markdown")) {
         if (leaf.view instanceof import_obsidian5.MarkdownView && leaf.view.file?.path === path) {
           await leaf.view.save();
         }
       }
-    }
-  }
-});
-
-// node_modules/obsidian-dev-utils/dist/lib/obsidian/Vault.cjs
-var require_Vault = __commonJS({
-  "node_modules/obsidian-dev-utils/dist/lib/obsidian/Vault.cjs"(exports2, module2) {
-    function __extractDefault(module22) {
-      return module22 && module22.__esModule && module22.default ? module22.default : module22;
-    }
-    (function patchRequireEsmDefault() {
-      const __require = require;
-      require = Object.assign((id) => {
-        const module22 = __require(id) ?? {};
-        return __extractDefault(module22);
-      }, __require);
-    })();
-    var __defProp2 = Object.defineProperty;
-    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
-    var __getOwnPropNames2 = Object.getOwnPropertyNames;
-    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
-    var __export2 = (target, all2) => {
-      for (var name in all2)
-        __defProp2(target, name, { get: all2[name], enumerable: true });
-    };
-    var __copyProps2 = (to, from, except, desc) => {
-      if (from && typeof from === "object" || typeof from === "function") {
-        for (let key of __getOwnPropNames2(from))
-          if (!__hasOwnProp2.call(to, key) && key !== except)
-            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
-      }
-      return to;
-    };
-    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
-    var Vault_exports = {};
-    __export2(Vault_exports, {
-      copySafe: () => copySafe2,
-      createFolderSafe: () => createFolderSafe2,
-      createTempFile: () => createTempFile,
-      createTempFolder: () => createTempFolder,
-      deleteEmptyFolderHierarchy: () => deleteEmptyFolderHierarchy2,
-      deleteSafe: () => deleteSafe,
-      getAvailablePath: () => getAvailablePath,
-      getMarkdownFilesSorted: () => getMarkdownFilesSorted,
-      getNoteFilesSorted: () => getNoteFilesSorted,
-      getSafeRenamePath: () => getSafeRenamePath,
-      isEmptyFolder: () => isEmptyFolder,
-      listSafe: () => listSafe,
-      process: () => process3,
-      renameSafe: () => renameSafe2
-    });
-    module2.exports = __toCommonJS2(Vault_exports);
-    var import_obsidian5 = require("obsidian");
-    var import_implementations2 = require_implementations();
-    var import_Async2 = require_Async();
-    var import_Error2 = require_Error();
-    var import_Function = require_Function();
-    var import_Path6 = require_Path();
-    var import_ValueProvider = require_ValueProvider();
-    var import_FileSystem4 = require_FileSystem();
-    var import_MetadataCache2 = require_MetadataCache();
-    var __process11 = globalThis["process"] ?? {
-      "cwd": () => "/",
-      "env": {},
-      "platform": "android"
-    };
-    async function copySafe2(app, oldPathOrFile, newPath) {
-      const file = (0, import_FileSystem4.getFile)(app, oldPathOrFile);
-      const newFolderPath = (0, import_implementations2.parentFolderPath)(newPath);
-      await createFolderSafe2(app, newFolderPath);
-      const newAvailablePath = getAvailablePath(app, newPath);
-      try {
-        await app.vault.copy(file, newAvailablePath);
-      } catch (e) {
-        if (!await app.vault.exists(newAvailablePath)) {
-          throw e;
-        }
-      }
-      return newAvailablePath;
-    }
-    async function createFolderSafe2(app, path) {
-      if (await app.vault.adapter.exists(path)) {
-        return false;
-      }
-      try {
-        await app.vault.createFolder(path);
-        return true;
-      } catch (e) {
-        if (!await app.vault.exists(path)) {
-          throw e;
-        }
-        return true;
-      }
-    }
-    async function createTempFile(app, path) {
-      let file = (0, import_FileSystem4.getFileOrNull)(app, path);
-      if (file) {
-        return import_Function.noopAsync;
-      }
-      const folderCleanup = await createTempFolder(app, (0, import_implementations2.parentFolderPath)(path));
-      try {
-        await app.vault.create(path, "");
-      } catch (e) {
-        if (!await app.vault.exists(path)) {
-          throw e;
-        }
-      }
-      file = (0, import_FileSystem4.getFile)(app, path);
-      return async () => {
-        if (!file.deleted) {
-          await app.fileManager.trashFile(file);
-        }
-        await folderCleanup();
-      };
-    }
-    async function createTempFolder(app, path) {
-      let folder = (0, import_FileSystem4.getFolderOrNull)(app, path);
-      if (folder) {
-        return import_Function.noopAsync;
-      }
-      const dirPath = (0, import_implementations2.parentFolderPath)(path);
-      await createTempFolder(app, dirPath);
-      const folderCleanup = await createTempFolder(app, (0, import_implementations2.parentFolderPath)(path));
-      await createFolderSafe2(app, path);
-      folder = (0, import_FileSystem4.getFolder)(app, path);
-      return async () => {
-        if (!folder.deleted) {
-          await app.fileManager.trashFile(folder);
-        }
-        await folderCleanup();
-      };
-    }
-    async function deleteEmptyFolderHierarchy2(app, pathOrFolder) {
-      let folder = (0, import_FileSystem4.getFolderOrNull)(app, pathOrFolder);
-      while (folder) {
-        if (!await isEmptyFolder(app, folder)) {
-          return;
-        }
-        const parent = folder.parent;
-        await deleteSafe(app, folder.path);
-        folder = parent;
-      }
-    }
-    async function deleteSafe(app, pathOrFile, deletedNotePath, shouldReportUsedAttachments, shouldDeleteEmptyFolders) {
-      const file = (0, import_FileSystem4.getAbstractFileOrNull)(app, pathOrFile);
-      if (!file) {
-        return false;
-      }
-      let canDelete = (0, import_FileSystem4.isFile)(file) || (shouldDeleteEmptyFolders ?? true);
-      if ((0, import_FileSystem4.isFile)(file)) {
-        const backlinks = await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, file);
-        if (deletedNotePath) {
-          backlinks.clear(deletedNotePath);
-        }
-        if (backlinks.count() !== 0) {
-          if (shouldReportUsedAttachments) {
-            new import_obsidian5.Notice(`Attachment ${file.path} is still used by other notes. It will not be deleted.`);
-          }
-          canDelete = false;
-        }
-      } else if ((0, import_FileSystem4.isFolder)(file)) {
-        const listedFiles = await listSafe(app, file);
-        for (const child of [...listedFiles.files, ...listedFiles.folders]) {
-          canDelete &&= await deleteSafe(app, child, deletedNotePath, shouldReportUsedAttachments);
-        }
-        canDelete &&= await isEmptyFolder(app, file);
-      }
-      if (canDelete) {
-        try {
-          await app.fileManager.trashFile(file);
-        } catch (e) {
-          if (await app.vault.exists(file.path)) {
-            (0, import_Error2.printError)(new Error(`Failed to delete ${file.path}`, { cause: e }));
-            canDelete = false;
-          }
-        }
-      }
-      return canDelete;
-    }
-    function getAvailablePath(app, path) {
-      const ext = (0, import_Path6.extname)(path);
-      return app.vault.getAvailablePath((0, import_Path6.join)((0, import_Path6.dirname)(path), (0, import_Path6.basename)(path, ext)), ext.slice(1));
-    }
-    function getMarkdownFilesSorted(app) {
-      return app.vault.getMarkdownFiles().sort((a, b) => a.path.localeCompare(b.path));
-    }
-    function getNoteFilesSorted(app) {
-      return app.vault.getAllLoadedFiles().filter((file) => (0, import_FileSystem4.isFile)(file) && (0, import_FileSystem4.isNote)(file)).sort((a, b) => a.path.localeCompare(b.path));
-    }
-    function getSafeRenamePath(app, oldPathOrFile, newPath) {
-      const oldPath = (0, import_FileSystem4.getPath)(oldPathOrFile);
-      if (app.vault.adapter.insensitive) {
-        let folderPath = (0, import_Path6.dirname)(newPath);
-        let nonExistingPath = (0, import_Path6.basename)(newPath);
-        let folder = null;
-        for (; ; ) {
-          folder = (0, import_FileSystem4.getFolderOrNull)(app, folderPath, true);
-          if (folder) {
-            break;
-          }
-          nonExistingPath = (0, import_Path6.join)((0, import_Path6.basename)(folderPath), nonExistingPath);
-          folderPath = (0, import_Path6.dirname)(folderPath);
-        }
-        newPath = (0, import_Path6.join)(folder.getParentPrefix(), nonExistingPath);
-      }
-      if (oldPath.toLowerCase() === newPath.toLowerCase()) {
-        return newPath;
-      }
-      return getAvailablePath(app, newPath);
-    }
-    async function isEmptyFolder(app, pathOrFolder) {
-      const listedFiles = await listSafe(app, (0, import_FileSystem4.getPath)(pathOrFolder));
-      return listedFiles.files.length === 0 && listedFiles.folders.length === 0;
-    }
-    async function listSafe(app, pathOrFolder) {
-      const path = (0, import_FileSystem4.getPath)(pathOrFolder);
-      const EMPTY = { files: [], folders: [] };
-      if ((await app.vault.adapter.stat(path))?.type !== "folder") {
-        return EMPTY;
-      }
-      try {
-        return await app.vault.adapter.list(path);
-      } catch (e) {
-        if (await app.vault.exists(path)) {
-          throw e;
-        }
-        return EMPTY;
-      }
-    }
-    async function process3(app, pathOrFile, newContentProvider, retryOptions = {}) {
-      const file = (0, import_FileSystem4.getFile)(app, pathOrFile);
-      const DEFAULT_RETRY_OPTIONS = { timeoutInMilliseconds: 6e4 };
-      const overriddenOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
-      await (0, import_Async2.retryWithTimeout)(async () => {
-        if (file.deleted) {
-          throw (0, import_Async2.marksAsTerminateRetry)(new Error(`File ${file.path} is deleted`));
-        }
-        const oldContent = await app.vault.read(file);
-        const newContent = await (0, import_ValueProvider.resolveValue)(newContentProvider, oldContent);
-        if (newContent === null) {
-          return false;
-        }
-        let success = true;
-        await app.vault.process(file, (content3) => {
-          if (content3 !== oldContent) {
-            console.warn("Content has changed since it was read. Retrying...", {
-              actualContent: content3,
-              expectedContent: oldContent,
-              path: file.path
-            });
-            success = false;
-            return content3;
-          }
-          return newContent;
-        });
-        return success;
-      }, overriddenOptions);
-    }
-    async function renameSafe2(app, oldPathOrFile, newPath) {
-      const oldFile = (0, import_FileSystem4.getFile)(app, oldPathOrFile, false, true);
-      const newAvailablePath = getSafeRenamePath(app, oldPathOrFile, newPath);
-      if (oldFile.path.toLowerCase() === newAvailablePath.toLowerCase()) {
-        if (oldFile.path !== newPath) {
-          await app.vault.rename(oldFile, newAvailablePath);
-        }
-        return newAvailablePath;
-      }
-      const newFolderPath = (0, import_implementations2.parentFolderPath)(newAvailablePath);
-      await createFolderSafe2(app, newFolderPath);
-      try {
-        await app.vault.rename(oldFile, newAvailablePath);
-      } catch (e) {
-        if (!await app.vault.exists(newAvailablePath) || await app.vault.exists(oldFile.path)) {
-          throw e;
-        }
-      }
-      return newAvailablePath;
-    }
-  }
-});
-
-// node_modules/obsidian-dev-utils/dist/lib/obsidian/FileChange.cjs
-var require_FileChange = __commonJS({
-  "node_modules/obsidian-dev-utils/dist/lib/obsidian/FileChange.cjs"(exports2, module2) {
-    function __extractDefault(module22) {
-      return module22 && module22.__esModule && module22.default ? module22.default : module22;
-    }
-    (function patchRequireEsmDefault() {
-      const __require = require;
-      require = Object.assign((id) => {
-        const module22 = __require(id) ?? {};
-        return __extractDefault(module22);
-      }, __require);
-    })();
-    var __defProp2 = Object.defineProperty;
-    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
-    var __getOwnPropNames2 = Object.getOwnPropertyNames;
-    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
-    var __export2 = (target, all2) => {
-      for (var name in all2)
-        __defProp2(target, name, { get: all2[name], enumerable: true });
-    };
-    var __copyProps2 = (to, from, except, desc) => {
-      if (from && typeof from === "object" || typeof from === "function") {
-        for (let key of __getOwnPropNames2(from))
-          if (!__hasOwnProp2.call(to, key) && key !== except)
-            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
-      }
-      return to;
-    };
-    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
-    var FileChange_exports = {};
-    __export2(FileChange_exports, {
-      applyFileChanges: () => applyFileChanges2,
-      isContentChange: () => isContentChange,
-      isFrontmatterChange: () => isFrontmatterChange
-    });
-    module2.exports = __toCommonJS2(FileChange_exports);
-    var import_Object2 = require_Object();
-    var import_ValueProvider = require_ValueProvider();
-    var import_FileSystem4 = require_FileSystem();
-    var import_Frontmatter = require_Frontmatter();
-    var import_Vault3 = require_Vault();
-    var __process11 = globalThis["process"] ?? {
-      "cwd": () => "/",
-      "env": {},
-      "platform": "android"
-    };
-    async function applyFileChanges2(app, pathOrFile, changesProvider, retryOptions = {}) {
-      const DEFAULT_RETRY_OPTIONS = { timeoutInMilliseconds: 6e4 };
-      const overriddenOptions = { ...DEFAULT_RETRY_OPTIONS, ...retryOptions };
-      await (0, import_Vault3.process)(app, pathOrFile, async (content3) => {
-        let changes = await (0, import_ValueProvider.resolveValue)(changesProvider);
-        const frontmatter = (0, import_FileSystem4.isCanvasFile)(pathOrFile) ? JSON.parse(content3) : (0, import_Frontmatter.parseFrontmatter)(content3);
-        for (const change of changes) {
-          if (isContentChange(change)) {
-            const actualContent = content3.slice(change.startIndex, change.endIndex);
-            if (actualContent !== change.oldContent) {
-              console.warn("Content mismatch", {
-                actualContent,
-                endIndex: change.endIndex,
-                expectedContent: change.oldContent,
-                path: (0, import_FileSystem4.getPath)(pathOrFile),
-                startIndex: change.startIndex
-              });
-              return null;
-            }
-          } else if (isFrontmatterChange(change)) {
-            const actualContent = (0, import_Object2.getNestedPropertyValue)(frontmatter, change.frontmatterKey);
-            if (actualContent !== change.oldContent) {
-              console.warn("Content mismatch", {
-                actualContent,
-                expectedContent: change.oldContent,
-                frontmatterKey: change.frontmatterKey,
-                path: (0, import_FileSystem4.getPath)(pathOrFile)
-              });
-              return null;
-            }
-          }
-        }
-        changes.sort((a, b) => {
-          if (isContentChange(a) && isContentChange(b)) {
-            return a.startIndex - b.startIndex;
-          }
-          if (isFrontmatterChange(a) && isFrontmatterChange(b)) {
-            return a.frontmatterKey.localeCompare(b.frontmatterKey);
-          }
-          return isContentChange(a) ? -1 : 1;
-        });
-        changes = changes.filter((change, index2) => {
-          if (change.oldContent === change.newContent) {
-            return false;
-          }
-          if (index2 === 0) {
-            return true;
-          }
-          return !(0, import_Object2.deepEqual)(change, changes[index2 - 1]);
-        });
-        for (let i = 1; i < changes.length; i++) {
-          const change = changes[i];
-          if (!change) {
-            continue;
-          }
-          const previousChange = changes[i - 1];
-          if (!previousChange) {
-            continue;
-          }
-          if (isContentChange(previousChange) && isContentChange(change) && previousChange.endIndex && change.startIndex && previousChange.endIndex > change.startIndex) {
-            console.warn("Overlapping changes", {
-              change,
-              previousChange
-            });
-            return null;
-          }
-        }
-        let newContent = "";
-        let lastIndex = 0;
-        let frontmatterChanged = false;
-        for (const change of changes) {
-          if (isContentChange(change)) {
-            newContent += content3.slice(lastIndex, change.startIndex);
-            newContent += change.newContent;
-            lastIndex = change.endIndex;
-          } else if (isFrontmatterChange(change)) {
-            (0, import_Object2.setNestedPropertyValue)(frontmatter, change.frontmatterKey, change.newContent);
-            frontmatterChanged = true;
-          }
-        }
-        if ((0, import_FileSystem4.isCanvasFile)(pathOrFile)) {
-          newContent = JSON.stringify(frontmatter, null, "	");
-        } else {
-          newContent += content3.slice(lastIndex);
-          if (frontmatterChanged) {
-            newContent = (0, import_Frontmatter.setFrontmatter)(newContent, frontmatter);
-          }
-        }
-        return newContent;
-      }, overriddenOptions);
-    }
-    function isContentChange(fileChange) {
-      return fileChange.startIndex !== void 0;
-    }
-    function isFrontmatterChange(fileChange) {
-      return fileChange.frontmatterKey !== void 0;
     }
   }
 });
@@ -14284,7 +14546,7 @@ var require_Link = __commonJS({
       if (!targetFile) {
         return options.link.original;
       }
-      return updateLink2({
+      return updateLink2((0, import_Object2.normalizeOptionalProperties)({
         app: options.app,
         link: options.link,
         newSourcePathOrFile: options.newSourcePathOrFile,
@@ -14292,10 +14554,10 @@ var require_Link = __commonJS({
         oldSourcePathOrFile: options.oldSourcePathOrFile,
         shouldForceMarkdownLinks: options.shouldForceMarkdownLinks,
         shouldUpdateFilenameAlias: options.shouldUpdateFilenameAlias
-      });
+      }));
     }
-    async function editBacklinks(app, pathOrFile, linkConverter, retryOptions = {}) {
-      const backlinks = await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, pathOrFile, retryOptions);
+    async function editBacklinks(app, pathOrFile, linkConverter, processOptions = {}) {
+      const backlinks = await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, pathOrFile, processOptions);
       for (const backlinkNotePath of backlinks.keys()) {
         const currentLinks = backlinks.get(backlinkNotePath) ?? [];
         const linkJsons = new Set(currentLinks.map((link2) => (0, import_Object2.toJson)(link2)));
@@ -14305,10 +14567,10 @@ var require_Link = __commonJS({
             return;
           }
           return linkConverter(link2);
-        }, retryOptions);
+        }, processOptions);
       }
     }
-    async function editLinks(app, pathOrFile, linkConverter, retryOptions = {}) {
+    async function editLinks(app, pathOrFile, linkConverter, processOptions = {}) {
       await (0, import_FileChange2.applyFileChanges)(app, pathOrFile, async () => {
         const cache = await (0, import_MetadataCache2.getCacheSafe)(app, pathOrFile);
         if (!cache) {
@@ -14323,11 +14585,11 @@ var require_Link = __commonJS({
           changes.push((0, import_Reference2.referenceToFileChange)(link2, newContent));
         }
         return changes;
-      }, retryOptions);
+      }, processOptions);
     }
     function extractLinkFile2(app, link2, sourcePathOrFile) {
       const { linkPath } = splitSubpath(link2.link);
-      return app.metadataCache.getFirstLinkpathDest(linkPath, (0, import_FileSystem4.getPath)(sourcePathOrFile));
+      return app.metadataCache.getFirstLinkpathDest(linkPath, (0, import_FileSystem4.getPath)(app, sourcePathOrFile));
     }
     function generateMarkdownLink(options) {
       const { app } = options;
@@ -14339,15 +14601,15 @@ var require_Link = __commonJS({
       options = { ...DEFAULT_OPTIONS, ...configurableDefaultOptions, ...options };
       const targetFile = (0, import_FileSystem4.getFile)(app, options.targetPathOrFile, options.isNonExistingFileAllowed);
       return (0, import_MetadataCache2.tempRegisterFileAndRun)(app, targetFile, () => {
-        const sourcePath = (0, import_FileSystem4.getPath)(options.sourcePathOrFile);
+        const sourcePath = (0, import_FileSystem4.getPath)(app, options.sourcePathOrFile);
         const subpath = options.subpath ?? "";
         let alias = options.alias ?? "";
-        const isEmbed = options.isEmbed ?? (options.originalLink ? testEmbed(options.originalLink) : void 0) ?? !(0, import_FileSystem4.isMarkdownFile)(targetFile);
+        const isEmbed = options.isEmbed ?? (options.originalLink ? testEmbed(options.originalLink) : void 0) ?? !(0, import_FileSystem4.isMarkdownFile)(app, targetFile);
         const isWikilink = options.isWikilink ?? (options.originalLink ? testWikilink(options.originalLink) : void 0) ?? (0, import_ObsidianSettings.shouldUseWikilinks)(app);
         const shouldForceRelativePath = options.shouldForceRelativePath ?? (0, import_ObsidianSettings.shouldUseRelativeLinks)(app);
         const shouldUseLeadingDot = options.shouldUseLeadingDot ?? (options.originalLink ? testLeadingDot(options.originalLink) : void 0) ?? false;
         const shouldUseAngleBrackets = options.shouldUseAngleBrackets ?? (options.originalLink ? testAngleBrackets(options.originalLink) : void 0) ?? false;
-        let linkText = targetFile.path === sourcePath && subpath ? subpath : shouldForceRelativePath ? (0, import_Path6.relative)((0, import_Path6.dirname)(sourcePath), isWikilink ? (0, import_FileSystem4.trimMarkdownExtension)(targetFile) : targetFile.path) + subpath : app.metadataCache.fileToLinktext(targetFile, sourcePath, isWikilink) + subpath;
+        let linkText = targetFile.path === sourcePath && subpath ? subpath : shouldForceRelativePath ? (0, import_Path6.relative)((0, import_Path6.dirname)(sourcePath), isWikilink ? (0, import_FileSystem4.trimMarkdownExtension)(app, targetFile) : targetFile.path) + subpath : app.metadataCache.fileToLinktext(targetFile, sourcePath, isWikilink) + subpath;
         if (shouldForceRelativePath && shouldUseLeadingDot && !linkText.startsWith(".") && !linkText.startsWith("#")) {
           linkText = "./" + linkText;
         }
@@ -14361,7 +14623,7 @@ var require_Link = __commonJS({
             });
           }
           if (!alias && (!isEmbed || !options.isEmptyEmbedAliasAllowed)) {
-            alias = !options.shouldIncludeAttachmentExtensionToEmbedAlias || (0, import_FileSystem4.isMarkdownFile)(targetFile) ? targetFile.basename : targetFile.name;
+            alias = !options.shouldIncludeAttachmentExtensionToEmbedAlias || (0, import_FileSystem4.isMarkdownFile)(app, targetFile) ? targetFile.basename : targetFile.name;
           }
           alias = alias.replace(SPECIAL_MARKDOWN_LINK_SYMBOLS_REGEX, "\\$&");
           return `${embedPrefix}[${alias}](${linkText})`;
@@ -14429,7 +14691,7 @@ var require_Link = __commonJS({
               }
             }
           }
-          return {
+          return (0, import_Object2.normalizeOptionalProperties)({
             alias: aliasNode?.value,
             hasAngleBrackets,
             isEmbed,
@@ -14437,16 +14699,16 @@ var require_Link = __commonJS({
             isWikilink: false,
             title: linkNode.title ?? void 0,
             url
-          };
+          });
         }
         case "wikiLink": {
           const wikiLinkNode = node2;
-          return {
+          return (0, import_Object2.normalizeOptionalProperties)({
             alias: str.includes(WIKILINK_DIVIDER) ? wikiLinkNode.data.alias : void 0,
             isEmbed,
             isWikilink: true,
             url: wikiLinkNode.value
-          };
+          });
         }
         default:
           return null;
@@ -14468,9 +14730,9 @@ var require_Link = __commonJS({
       if (!displayText) {
         return true;
       }
-      const targetFile = (0, import_FileSystem4.getFile)(app, targetPathOrFile);
-      const newSourcePath = (0, import_FileSystem4.getPath)(newSourcePathOrFile);
-      const oldSourcePath = (0, import_FileSystem4.getPath)(oldSourcePathOrFile ?? newSourcePathOrFile);
+      const targetFile = (0, import_FileSystem4.getFile)(app, targetPathOrFile, true);
+      const newSourcePath = (0, import_FileSystem4.getPath)(app, newSourcePathOrFile);
+      const oldSourcePath = (0, import_FileSystem4.getPath)(app, oldSourcePathOrFile ?? newSourcePathOrFile);
       const newSourceDir = (0, import_Path6.dirname)(newSourcePath);
       const oldSourceDir = (0, import_Path6.dirname)(oldSourcePath);
       const aliasesToReset = /* @__PURE__ */ new Set();
@@ -14478,7 +14740,7 @@ var require_Link = __commonJS({
         if (!pathOrFile) {
           continue;
         }
-        const path = (0, import_FileSystem4.getPath)(pathOrFile);
+        const path = (0, import_FileSystem4.getPath)(app, pathOrFile);
         aliasesToReset.add(path);
         aliasesToReset.add((0, import_Path6.basename)(path));
         aliasesToReset.add((0, import_Path6.relative)(newSourceDir, path));
@@ -14537,14 +14799,14 @@ var require_Link = __commonJS({
       if (!newTargetPathOrFile) {
         return link2.original;
       }
-      const targetFile = (0, import_FileSystem4.getFile)(app, newTargetPathOrFile);
-      const oldTargetPath = (0, import_FileSystem4.getPath)(oldTargetPathOrFile ?? newTargetPathOrFile);
+      const targetFile = (0, import_FileSystem4.getFile)(app, newTargetPathOrFile, true);
+      const oldTargetPath = (0, import_FileSystem4.getPath)(app, oldTargetPathOrFile ?? newTargetPathOrFile);
       const isWikilink = testWikilink(link2.original) && shouldForceMarkdownLinks !== true;
       const { subpath } = splitSubpath(link2.link);
-      if ((0, import_FileSystem4.isCanvasFile)(newSourcePathOrFile)) {
+      if ((0, import_FileSystem4.isCanvasFile)(app, newSourcePathOrFile)) {
         return targetFile.path + subpath;
       }
-      let alias = shouldResetAlias({
+      let alias = shouldResetAlias((0, import_Object2.normalizeOptionalProperties)({
         app,
         displayText: link2.displayText,
         isWikilink,
@@ -14552,7 +14814,7 @@ var require_Link = __commonJS({
         oldSourcePathOrFile,
         oldTargetPath,
         targetPathOrFile: targetFile
-      }) ? void 0 : link2.displayText;
+      })) ? void 0 : link2.displayText;
       if (shouldUpdateFilenameAlias ?? true) {
         if (alias?.toLowerCase() === (0, import_Path6.basename)(oldTargetPath, (0, import_Path6.extname)(oldTargetPath)).toLowerCase()) {
           alias = targetFile.basename;
@@ -14560,7 +14822,7 @@ var require_Link = __commonJS({
           alias = targetFile.name;
         }
       }
-      const newLink = generateMarkdownLink({
+      const newLink = generateMarkdownLink((0, import_Object2.normalizeOptionalProperties)({
         alias,
         app,
         isWikilink: shouldForceMarkdownLinks ? false : void 0,
@@ -14568,7 +14830,7 @@ var require_Link = __commonJS({
         sourcePathOrFile: newSourcePathOrFile,
         subpath,
         targetPathOrFile: targetFile
-      });
+      }));
       return newLink;
     }
     async function updateLinksInFile(options) {
@@ -14580,7 +14842,7 @@ var require_Link = __commonJS({
         shouldUpdateEmbedOnlyLinks,
         shouldUpdateFilenameAlias
       } = options;
-      if ((0, import_FileSystem4.isCanvasFile)(newSourcePathOrFile) && !app.internalPlugins.getEnabledPluginById("canvas")) {
+      if ((0, import_FileSystem4.isCanvasFile)(app, newSourcePathOrFile) && !app.internalPlugins.getEnabledPluginById("canvas")) {
         return;
       }
       await editLinks(app, newSourcePathOrFile, (link2) => {
@@ -14588,15 +14850,15 @@ var require_Link = __commonJS({
         if (shouldUpdateEmbedOnlyLinks !== void 0 && shouldUpdateEmbedOnlyLinks !== isEmbedLink) {
           return;
         }
-        return convertLink({
+        return convertLink((0, import_Object2.normalizeOptionalProperties)({
           app,
           link: link2,
           newSourcePathOrFile,
           oldSourcePathOrFile,
           shouldForceMarkdownLinks,
           shouldUpdateFilenameAlias
-        });
-      });
+        }));
+      }, options);
     }
   }
 });
@@ -14638,7 +14900,7 @@ var require_Logger = __commonJS({
     module2.exports = __toCommonJS2(Logger_exports);
     var import_Error2 = require_Error();
     async function invokeAsyncAndLog(title, fn, stackTrace) {
-      const timestampStart = Date.now();
+      const timestampStart = performance.now();
       if (stackTrace === void 0) {
         stackTrace = (0, import_Error2.getStackTrace)().split("\n").slice(1).join("\n");
       }
@@ -14649,18 +14911,18 @@ var require_Logger = __commonJS({
       });
       try {
         await fn();
-        const timestampEnd = Date.now();
+        const timestampEnd = performance.now();
         console.debug(`${title}:end`, {
           duration: timestampEnd - timestampStart,
           timestampEnd,
           timestampStart
         });
       } catch (error) {
-        const timestampEnd = Date.now();
+        const timestampEnd = performance.now();
         console.debug(`${title}:error`, {
           duration: timestampEnd - timestampStart,
           error,
-          timestampEnd: Date.now(),
+          timestampEnd,
           timestampStart
         });
         throw error;
@@ -14746,6 +15008,96 @@ var require_Queue = __commonJS({
   }
 });
 
+// node_modules/obsidian-dev-utils/dist/lib/obsidian/VaultEx.cjs
+var require_VaultEx = __commonJS({
+  "node_modules/obsidian-dev-utils/dist/lib/obsidian/VaultEx.cjs"(exports2, module2) {
+    function __extractDefault(module22) {
+      return module22 && module22.__esModule && module22.default ? module22.default : module22;
+    }
+    (function patchRequireEsmDefault() {
+      const __require = require;
+      require = Object.assign((id) => {
+        const module22 = __require(id) ?? {};
+        return __extractDefault(module22);
+      }, __require);
+    })();
+    var __defProp2 = Object.defineProperty;
+    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+    var __getOwnPropNames2 = Object.getOwnPropertyNames;
+    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+    var __export2 = (target, all2) => {
+      for (var name in all2)
+        __defProp2(target, name, { get: all2[name], enumerable: true });
+    };
+    var __copyProps2 = (to, from, except, desc) => {
+      if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames2(from))
+          if (!__hasOwnProp2.call(to, key) && key !== except)
+            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+      }
+      return to;
+    };
+    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
+    var VaultEx_exports = {};
+    __export2(VaultEx_exports, {
+      deleteEmptyFolderHierarchy: () => deleteEmptyFolderHierarchy2,
+      deleteSafe: () => deleteSafe
+    });
+    module2.exports = __toCommonJS2(VaultEx_exports);
+    var import_Error2 = require_Error();
+    var import_FileSystem4 = require_FileSystem();
+    var import_MetadataCache2 = require_MetadataCache();
+    var import_Vault3 = require_Vault();
+    async function deleteEmptyFolderHierarchy2(app, pathOrFolder) {
+      let folder = (0, import_FileSystem4.getFolderOrNull)(app, pathOrFolder);
+      while (folder) {
+        if (!await (0, import_Vault3.isEmptyFolder)(app, folder)) {
+          return;
+        }
+        const parent = folder.parent;
+        await deleteSafe(app, folder.path);
+        folder = parent;
+      }
+    }
+    async function deleteSafe(app, pathOrFile, deletedNotePath, shouldReportUsedAttachments, shouldDeleteEmptyFolders) {
+      const file = (0, import_FileSystem4.getAbstractFileOrNull)(app, pathOrFile);
+      if (!file) {
+        return false;
+      }
+      let canDelete = (0, import_FileSystem4.isFile)(file) || (shouldDeleteEmptyFolders ?? true);
+      if ((0, import_FileSystem4.isFile)(file)) {
+        const backlinks = await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, file);
+        if (deletedNotePath) {
+          backlinks.clear(deletedNotePath);
+        }
+        if (backlinks.count() !== 0) {
+          if (shouldReportUsedAttachments) {
+            new Notice(`Attachment ${file.path} is still used by other notes. It will not be deleted.`);
+          }
+          canDelete = false;
+        }
+      } else if ((0, import_FileSystem4.isFolder)(file)) {
+        const listedFiles = await (0, import_Vault3.listSafe)(app, file);
+        for (const child of [...listedFiles.files, ...listedFiles.folders]) {
+          canDelete &&= await deleteSafe(app, child, deletedNotePath, shouldReportUsedAttachments);
+        }
+        canDelete &&= await (0, import_Vault3.isEmptyFolder)(app, file);
+      }
+      if (canDelete) {
+        try {
+          await app.fileManager.trashFile(file);
+        } catch (e) {
+          if (await app.vault.exists(file.path)) {
+            (0, import_Error2.printError)(new Error(`Failed to delete ${file.path}`, { cause: e }));
+            canDelete = false;
+          }
+        }
+      }
+      return canDelete;
+    }
+  }
+});
+
 // node_modules/obsidian-dev-utils/dist/lib/obsidian/RenameDeleteHandler.cjs
 var require_RenameDeleteHandler = __commonJS({
   "node_modules/obsidian-dev-utils/dist/lib/obsidian/RenameDeleteHandler.cjs"(exports2, module2) {
@@ -14793,8 +15145,10 @@ var require_RenameDeleteHandler = __commonJS({
     var import_MetadataCache2 = require_MetadataCache();
     var import_Queue2 = require_Queue();
     var import_Vault3 = require_Vault();
+    var import_VaultEx2 = require_VaultEx();
     var deletedMetadataCacheMap = /* @__PURE__ */ new Map();
     var handledRenames = /* @__PURE__ */ new Set();
+    var interruptedRenamesMap = /* @__PURE__ */ new Map();
     function registerRenameDeleteHandlers2(plugin, settingsBuilder) {
       const renameDeleteHandlersMap = getRenameDeleteHandlersMap(plugin.app);
       const pluginId = plugin.manifest.id;
@@ -14807,34 +15161,23 @@ var require_RenameDeleteHandler = __commonJS({
       const app = plugin.app;
       plugin.registerEvent(
         app.vault.on("delete", (file) => {
-          if (!shouldInvokeHandler(app, pluginId)) {
-            return;
-          }
-          const path = file.path;
-          (0, import_Queue2.addToQueue)(app, () => handleDelete(app, path));
+          handleDeleteIfEnabled(plugin, file);
         })
       );
       plugin.registerEvent(
         app.vault.on("rename", (file, oldPath) => {
-          if (!shouldInvokeHandler(app, pluginId)) {
-            return;
-          }
-          if (!(0, import_FileSystem4.isFile)(file)) {
-            return;
-          }
-          const newPath = file.path;
-          handleRename(app, oldPath, newPath);
+          handleRenameIfEnabled(plugin, file, oldPath);
         })
       );
       plugin.registerEvent(
         app.metadataCache.on("deleted", (file, prevCache) => {
-          handleMetadataDeleted(app, file, prevCache);
+          handleMetadataDeletedIfEnabled(plugin, file, prevCache);
         })
       );
     }
-    async function fillRenameMap(app, oldPath, newPath, renameMap) {
+    async function fillRenameMap(app, oldPath, newPath, renameMap, oldPathLinks) {
       renameMap.set(oldPath, newPath);
-      if (!(0, import_FileSystem4.isNote)(oldPath)) {
+      if (!(0, import_FileSystem4.isNote)(app, oldPath)) {
         return;
       }
       const settings = getSettings(app);
@@ -14849,12 +15192,8 @@ var require_RenameDeleteHandler = __commonJS({
       }
       const oldAttachmentFiles = [];
       if (!await (0, import_AttachmentPath5.hasOwnAttachmentFolder)(app, oldPath)) {
-        const oldCache = await (0, import_MetadataCache2.getCacheSafe)(app, newPath);
-        if (!oldCache) {
-          return;
-        }
-        for (const oldLink of (0, import_MetadataCache2.getAllLinks)(oldCache)) {
-          const oldAttachmentFile = (0, import_Link2.extractLinkFile)(app, oldLink, oldPath);
+        for (const oldPathLink of oldPathLinks) {
+          const oldAttachmentFile = (0, import_Link2.extractLinkFile)(app, oldPathLink, oldPath);
           if (!oldAttachmentFile) {
             continue;
           }
@@ -14875,7 +15214,7 @@ var require_RenameDeleteHandler = __commonJS({
       const oldBasename = (0, import_Path6.basename)(oldPath, (0, import_Path6.extname)(oldPath));
       const newBasename = (0, import_Path6.basename)(newPath, (0, import_Path6.extname)(newPath));
       for (const oldAttachmentFile of oldAttachmentFiles) {
-        if ((0, import_FileSystem4.isNote)(oldAttachmentFile)) {
+        if ((0, import_FileSystem4.isNote)(app, oldAttachmentFile)) {
           continue;
         }
         const relativePath = (0, import_Path6.relative)(oldAttachmentFolderPath, oldAttachmentFile.path);
@@ -14905,19 +15244,28 @@ var require_RenameDeleteHandler = __commonJS({
       const settings = {};
       for (const settingsBuilder of settingsBuilders) {
         const newSettings = settingsBuilder();
-        for (const [key, value] of Object.entries(newSettings)) {
-          settings[key] ||= value;
-        }
+        settings.shouldDeleteConflictingAttachments ||= newSettings.shouldDeleteConflictingAttachments ?? false;
+        settings.shouldDeleteEmptyFolders ||= newSettings.shouldDeleteEmptyFolders ?? false;
+        settings.shouldDeleteOrphanAttachments ||= newSettings.shouldDeleteOrphanAttachments ?? false;
+        settings.shouldRenameAttachmentFiles ||= newSettings.shouldRenameAttachmentFiles ?? false;
+        settings.shouldRenameAttachmentFolder ||= newSettings.shouldRenameAttachmentFolder ?? false;
+        settings.shouldUpdateFilenameAliases ||= newSettings.shouldUpdateFilenameAliases ?? false;
+        settings.shouldUpdateLinks ||= newSettings.shouldUpdateLinks ?? false;
+        const isPathIgnored = settings.isPathIgnored;
+        settings.isPathIgnored = (path) => isPathIgnored?.(path) ?? newSettings.isPathIgnored?.(path) ?? false;
       }
       return settings;
     }
     async function handleDelete(app, path) {
       console.debug(`Handle Delete ${path}`);
-      if (!(0, import_FileSystem4.isNote)(path)) {
+      if (!(0, import_FileSystem4.isNote)(app, path)) {
         return;
       }
       const settings = getSettings(app);
       if (!settings.shouldDeleteOrphanAttachments) {
+        return;
+      }
+      if (settings.isPathIgnored?.(path)) {
         return;
       }
       const cache = deletedMetadataCacheMap.get(path);
@@ -14929,10 +15277,10 @@ var require_RenameDeleteHandler = __commonJS({
           if (!attachmentFile) {
             continue;
           }
-          if ((0, import_FileSystem4.isNote)(attachmentFile)) {
+          if ((0, import_FileSystem4.isNote)(app, attachmentFile)) {
             continue;
           }
-          await (0, import_Vault3.deleteSafe)(app, attachmentFile, path, settings.shouldDeleteEmptyFolders);
+          await (0, import_VaultEx2.deleteSafe)(app, attachmentFile, path, settings.shouldDeleteEmptyFolders);
         }
       }
       const attachmentFolderPath = await (0, import_AttachmentPath5.getAttachmentFolderPath)(app, path);
@@ -14943,16 +15291,33 @@ var require_RenameDeleteHandler = __commonJS({
       if (!await (0, import_AttachmentPath5.hasOwnAttachmentFolder)(app, path)) {
         return;
       }
-      await (0, import_Vault3.deleteSafe)(app, attachmentFolder, path, false, settings.shouldDeleteEmptyFolders);
+      await (0, import_VaultEx2.deleteSafe)(app, attachmentFolder, path, false, settings.shouldDeleteEmptyFolders);
+    }
+    function handleDeleteIfEnabled(plugin, file) {
+      const app = plugin.app;
+      if (!shouldInvokeHandler(plugin)) {
+        return;
+      }
+      const path = file.path;
+      (0, import_Queue2.addToQueue)(app, () => handleDelete(app, path));
     }
     function handleMetadataDeleted(app, file, prevCache) {
       const settings = getSettings(app);
+      if (settings.isPathIgnored?.(file.path)) {
+        return;
+      }
       if (!settings.shouldDeleteOrphanAttachments) {
         return;
       }
-      if ((0, import_FileSystem4.isMarkdownFile)(file) && prevCache) {
+      if ((0, import_FileSystem4.isMarkdownFile)(app, file) && prevCache) {
         deletedMetadataCacheMap.set(file.path, prevCache);
       }
+    }
+    function handleMetadataDeletedIfEnabled(plugin, file, prevCache) {
+      if (!shouldInvokeHandler(plugin)) {
+        return;
+      }
+      handleMetadataDeleted(plugin.app, file, prevCache);
     }
     function handleRename(app, oldPath, newPath) {
       const key = makeKey(oldPath, newPath);
@@ -14961,14 +15326,36 @@ var require_RenameDeleteHandler = __commonJS({
         handledRenames.delete(key);
         return;
       }
-      const backlinks = (0, import_MetadataCache2.getBacklinksForFileOrPath)(app, oldPath);
-      (0, import_Queue2.addToQueue)(app, () => handleRenameAsync(app, oldPath, newPath, backlinks));
+      const settings = getSettings(app);
+      if (settings.isPathIgnored?.(oldPath) || settings.isPathIgnored?.(newPath)) {
+        return;
+      }
+      const cache = app.metadataCache.getCache(oldPath) ?? app.metadataCache.getCache(newPath);
+      const oldPathLinks = cache ? (0, import_MetadataCache2.getAllLinks)(cache) : [];
+      const oldPathBacklinksMap = (0, import_MetadataCache2.getBacklinksForFileOrPath)(app, oldPath).data;
+      (0, import_Queue2.addToQueue)(app, () => handleRenameAsync(app, oldPath, newPath, oldPathBacklinksMap, oldPathLinks));
     }
-    async function handleRenameAsync(app, oldPath, newPath, backlinks) {
+    async function handleRenameAsync(app, oldPath, newPath, oldPathBacklinksMap, oldPathLinks, interruptedCombinedBacklinksMap) {
+      const interruptedRenames = interruptedRenamesMap.get(oldPath);
+      if (interruptedRenames) {
+        interruptedRenamesMap.delete(oldPath);
+        for (const interruptedRename of interruptedRenames) {
+          await handleRenameAsync(app, interruptedRename.oldPath, newPath, oldPathBacklinksMap, oldPathLinks, interruptedRename.combinedBacklinksMap);
+        }
+      }
+      const cache = app.metadataCache.getCache(oldPath) ?? app.metadataCache.getCache(newPath);
+      const oldPathLinks2 = cache ? (0, import_MetadataCache2.getAllLinks)(cache) : [];
+      const oldPathBacklinksMap2 = (0, import_MetadataCache2.getBacklinksForFileOrPath)(app, oldPath).data;
+      for (const link2 of oldPathLinks2) {
+        if (oldPathLinks.includes(link2)) {
+          continue;
+        }
+        oldPathLinks.push(link2);
+      }
       if (app.vault.adapter.insensitive && oldPath.toLowerCase() === newPath.toLowerCase()) {
         const tempPath = (0, import_Path6.join)((0, import_Path6.dirname)(newPath), "__temp__" + (0, import_Path6.basename)(newPath));
         await renameHandled(app, newPath, tempPath);
-        await handleRenameAsync(app, oldPath, tempPath, backlinks);
+        await handleRenameAsync(app, oldPath, tempPath, oldPathBacklinksMap, oldPathLinks);
         await app.vault.rename((0, import_FileSystem4.getFile)(app, tempPath), newPath);
         return;
       }
@@ -14977,15 +15364,16 @@ var require_RenameDeleteHandler = __commonJS({
       });
       try {
         const renameMap = /* @__PURE__ */ new Map();
-        await fillRenameMap(app, oldPath, newPath, renameMap);
-        const backlinksMap = /* @__PURE__ */ new Map();
-        initBacklinksMap(backlinks.data, renameMap, backlinksMap, oldPath);
+        await fillRenameMap(app, oldPath, newPath, renameMap, oldPathLinks);
+        const combinedBacklinksMap = /* @__PURE__ */ new Map();
+        initBacklinksMap(oldPathBacklinksMap, renameMap, combinedBacklinksMap, oldPath);
+        initBacklinksMap(oldPathBacklinksMap2, renameMap, combinedBacklinksMap, oldPath);
         for (const attachmentOldPath of renameMap.keys()) {
           if (attachmentOldPath === oldPath) {
             continue;
           }
-          const currentBacklinksMap = (await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, attachmentOldPath)).data;
-          initBacklinksMap(currentBacklinksMap, renameMap, backlinksMap, attachmentOldPath);
+          const attachmentOldPathBacklinksMap = (await (0, import_MetadataCache2.getBacklinksForFileSafe)(app, attachmentOldPath)).data;
+          initBacklinksMap(attachmentOldPathBacklinksMap, renameMap, combinedBacklinksMap, attachmentOldPath);
         }
         const parentFolders = /* @__PURE__ */ new Set();
         for (const [oldAttachmentPath, newAttachmentPath] of renameMap.entries()) {
@@ -14999,10 +15387,10 @@ var require_RenameDeleteHandler = __commonJS({
         const settings = getSettings(app);
         if (settings.shouldDeleteEmptyFolders) {
           for (const parentFolder of parentFolders) {
-            await (0, import_Vault3.deleteEmptyFolderHierarchy)(app, parentFolder);
+            await (0, import_VaultEx2.deleteEmptyFolderHierarchy)(app, parentFolder);
           }
         }
-        for (const [newBacklinkPath, linkJsonToPathMap] of backlinksMap.entries()) {
+        for (const [newBacklinkPath, linkJsonToPathMap] of Array.from(combinedBacklinksMap.entries()).concat(Array.from(interruptedCombinedBacklinksMap?.entries() ?? []))) {
           await (0, import_Link2.editLinks)(app, newBacklinkPath, (link2) => {
             const oldAttachmentPath = linkJsonToPathMap.get((0, import_Object2.toJson)(link2));
             if (!oldAttachmentPath) {
@@ -15012,22 +15400,36 @@ var require_RenameDeleteHandler = __commonJS({
             if (!newAttachmentPath) {
               return;
             }
-            return (0, import_Link2.updateLink)({
+            return (0, import_Link2.updateLink)((0, import_Object2.normalizeOptionalProperties)({
               app,
               link: link2,
               newSourcePathOrFile: newBacklinkPath,
               newTargetPathOrFile: newAttachmentPath,
               oldTargetPathOrFile: oldAttachmentPath,
               shouldUpdateFilenameAlias: settings.shouldUpdateFilenameAliases
-            });
+            }));
+          }, {
+            shouldFailOnMissingFile: false
           });
         }
-        if ((0, import_FileSystem4.isNote)(newPath)) {
-          await (0, import_Link2.updateLinksInFile)({
+        if ((0, import_FileSystem4.isNote)(app, newPath)) {
+          await (0, import_Link2.updateLinksInFile)((0, import_Object2.normalizeOptionalProperties)({
             app,
             newSourcePathOrFile: newPath,
             oldSourcePathOrFile: oldPath,
+            shouldFailOnMissingFile: false,
             shouldUpdateFilenameAlias: settings.shouldUpdateFilenameAliases
+          }));
+        }
+        if (!(0, import_FileSystem4.getFileOrNull)(app, newPath)) {
+          let interruptedRenames2 = interruptedRenamesMap.get(newPath);
+          if (!interruptedRenames2) {
+            interruptedRenames2 = [];
+            interruptedRenamesMap.set(newPath, interruptedRenames2);
+          }
+          interruptedRenames2.push({
+            combinedBacklinksMap,
+            oldPath
           });
         }
       } finally {
@@ -15040,11 +15442,21 @@ var require_RenameDeleteHandler = __commonJS({
         });
       }
     }
-    function initBacklinksMap(currentBacklinksMap, renameMap, backlinksMap, path) {
-      for (const [backlinkPath, links] of currentBacklinksMap.entries()) {
+    function handleRenameIfEnabled(plugin, file, oldPath) {
+      if (!shouldInvokeHandler(plugin)) {
+        return;
+      }
+      if (!(0, import_FileSystem4.isFile)(file)) {
+        return;
+      }
+      const newPath = file.path;
+      handleRename(plugin.app, oldPath, newPath);
+    }
+    function initBacklinksMap(singleBacklinksMap, renameMap, combinedBacklinksMap, path) {
+      for (const [backlinkPath, links] of singleBacklinksMap.entries()) {
         const newBacklinkPath = renameMap.get(backlinkPath) ?? backlinkPath;
-        const linkJsonToPathMap = backlinksMap.get(newBacklinkPath) ?? /* @__PURE__ */ new Map();
-        backlinksMap.set(newBacklinkPath, linkJsonToPathMap);
+        const linkJsonToPathMap = combinedBacklinksMap.get(newBacklinkPath) ?? /* @__PURE__ */ new Map();
+        combinedBacklinksMap.set(newBacklinkPath, linkJsonToPathMap);
         for (const link2 of links) {
           linkJsonToPathMap.set((0, import_Object2.toJson)(link2), path);
         }
@@ -15052,7 +15464,7 @@ var require_RenameDeleteHandler = __commonJS({
     }
     function logRegisteredHandlers(app) {
       const renameDeleteHandlersMap = getRenameDeleteHandlersMap(app);
-      console.debug(`Plugins with registered rename/delete handlers: ${Array.from(renameDeleteHandlersMap.keys()).join(", ")}`);
+      console.debug(`Plugins with registered rename/delete handlers: ${JSON.stringify(Array.from(renameDeleteHandlersMap.keys()))}`);
     }
     function makeKey(oldPath, newPath) {
       return `${oldPath} -> ${newPath}`;
@@ -15067,7 +15479,9 @@ var require_RenameDeleteHandler = __commonJS({
       newPath = await (0, import_Vault3.renameSafe)(app, oldPath, newPath);
       return newPath;
     }
-    function shouldInvokeHandler(app, pluginId) {
+    function shouldInvokeHandler(plugin) {
+      const app = plugin.app;
+      const pluginId = plugin.manifest.id;
       const renameDeleteHandlerPluginIds = getRenameDeleteHandlersMap(app);
       const mainPluginId = Array.from(renameDeleteHandlerPluginIds.keys())[0];
       if (mainPluginId !== pluginId) {
@@ -19399,6 +19813,87 @@ var require_Prompt = __commonJS({
   }
 });
 
+// node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettingsBase.cjs
+var require_PluginSettingsBase = __commonJS({
+  "node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettingsBase.cjs"(exports2, module2) {
+    function __extractDefault(module22) {
+      return module22 && module22.__esModule && module22.default ? module22.default : module22;
+    }
+    (function patchRequireEsmDefault() {
+      const __require = require;
+      require = Object.assign((id) => {
+        const module22 = __require(id) ?? {};
+        return __extractDefault(module22);
+      }, __require);
+    })();
+    var __defProp2 = Object.defineProperty;
+    var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+    var __getOwnPropNames2 = Object.getOwnPropertyNames;
+    var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+    var __export2 = (target, all2) => {
+      for (var name in all2)
+        __defProp2(target, name, { get: all2[name], enumerable: true });
+    };
+    var __copyProps2 = (to, from, except, desc) => {
+      if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames2(from))
+          if (!__hasOwnProp2.call(to, key) && key !== except)
+            __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+      }
+      return to;
+    };
+    var __toCommonJS2 = (mod) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod);
+    var PluginSettingsBase_exports = {};
+    __export2(PluginSettingsBase_exports, {
+      PluginSettingsBase: () => PluginSettingsBase2
+    });
+    module2.exports = __toCommonJS2(PluginSettingsBase_exports);
+    var PluginSettingsBase2 = class {
+      /**
+       * Initializes the settings from JSON data.
+       *
+       * @param data - The data to initialize the settings from.
+       */
+      init(data) {
+        if (data === void 0 || data === null) {
+          return;
+        }
+        if (typeof data !== "object" || Array.isArray(data)) {
+          const type = Array.isArray(data) ? "Array" : typeof data;
+          console.error(`Invalid data type. Expected Object, got: ${type}`);
+          return;
+        }
+        this.initFromRecord(data);
+      }
+      /**
+       * Determines if the settings should be saved after loading.
+       *
+       * @returns A boolean indicating whether the settings should be saved after loading.
+       */
+      shouldSaveAfterLoad() {
+        return false;
+      }
+      /**
+       * Converts the settings to a JSON object.
+       *
+       * @returns The settings as a JSON object.
+       */
+      toJSON() {
+        return Object.fromEntries(Object.entries(this));
+      }
+      initFromRecord(record) {
+        for (const [key, value] of Object.entries(record)) {
+          if (key in this) {
+            this[key] = value;
+          } else {
+            console.error(`Unknown property: ${key}`);
+          }
+        }
+      }
+    };
+  }
+});
+
 // node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettingsTabBase.cjs
 var require_PluginSettingsTabBase = __commonJS({
   "node_modules/obsidian-dev-utils/dist/lib/obsidian/Plugin/PluginSettingsTabBase.cjs"(exports2, module2) {
@@ -19743,6 +20238,7 @@ var import_Confirm = __toESM(require_Confirm(), 1);
 var import_Queue = __toESM(require_Queue(), 1);
 var import_Reference = __toESM(require_Reference(), 1);
 var import_Vault = __toESM(require_Vault(), 1);
+var import_VaultEx = __toESM(require_VaultEx(), 1);
 var import_Path3 = __toESM(require_Path(), 1);
 
 // src/AttachmentPath.ts
@@ -19867,7 +20363,7 @@ async function collectAttachments(plugin, note, oldPath, attachmentFilter) {
   attachmentFilter ??= () => true;
   const notice = new import_obsidian2.Notice(`Collecting attachments for ${note.path}`);
   const attachmentsMap = /* @__PURE__ */ new Map();
-  const isCanvas = (0, import_FileSystem.isCanvasFile)(note);
+  const isCanvas = (0, import_FileSystem.isCanvasFile)(app, note);
   await (0, import_FileChange.applyFileChanges)(app, note, async () => {
     const cache = await (0, import_MetadataCache.getCacheSafe)(app, note);
     if (!cache) {
@@ -19888,7 +20384,7 @@ async function collectAttachments(plugin, note, oldPath, attachmentFilter) {
         attachmentMoveResult.newAttachmentPath = await (0, import_Vault.copySafe)(app, attachmentMoveResult.oldAttachmentPath, attachmentMoveResult.newAttachmentPath);
       } else {
         attachmentMoveResult.newAttachmentPath = await (0, import_Vault.renameSafe)(app, attachmentMoveResult.oldAttachmentPath, attachmentMoveResult.newAttachmentPath);
-        await (0, import_Vault.deleteEmptyFolderHierarchy)(app, (0, import_Path3.dirname)(attachmentMoveResult.oldAttachmentPath));
+        await (0, import_VaultEx.deleteEmptyFolderHierarchy)(app, (0, import_Path3.dirname)(attachmentMoveResult.oldAttachmentPath));
       }
       attachmentsMap.set(attachmentMoveResult.oldAttachmentPath, attachmentMoveResult.newAttachmentPath);
       if (!isCanvas) {
@@ -19924,7 +20420,7 @@ async function collectAttachments(plugin, note, oldPath, attachmentFilter) {
 }
 function collectAttachmentsCurrentFolder(plugin, checking) {
   const note = plugin.app.workspace.getActiveFile();
-  if (!(0, import_FileSystem.isNote)(note)) {
+  if (!(0, import_FileSystem.isNote)(plugin.app, note)) {
     return false;
   }
   if (!checking) {
@@ -19934,7 +20430,7 @@ function collectAttachmentsCurrentFolder(plugin, checking) {
 }
 function collectAttachmentsCurrentNote(plugin, checking) {
   const note = plugin.app.workspace.getActiveFile();
-  if (!note || !(0, import_FileSystem.isNote)(note)) {
+  if (!note || !(0, import_FileSystem.isNote)(plugin.app, note)) {
     return false;
   }
   if (!checking) {
@@ -19965,7 +20461,7 @@ async function collectAttachmentsInFolder(plugin, folder) {
   console.debug(`Collect attachments in folder: ${folder.path}`);
   const files = [];
   import_obsidian2.Vault.recurseChildren(folder, (child) => {
-    if ((0, import_FileSystem.isNote)(child)) {
+    if ((0, import_FileSystem.isNote)(plugin.app, child)) {
       files.push(child);
     }
   });
@@ -19998,7 +20494,7 @@ async function prepareAttachmentToMove(plugin, link2, newNotePath, oldNotePath) 
   if (!oldAttachmentFile) {
     return null;
   }
-  if ((0, import_FileSystem.isNote)(oldAttachmentFile)) {
+  if ((0, import_FileSystem.isNote)(plugin.app, oldAttachmentFile)) {
     return null;
   }
   const oldAttachmentPath = oldAttachmentFile.path;
@@ -20025,8 +20521,8 @@ async function prepareAttachmentToMove(plugin, link2, newNotePath, oldNotePath) 
 }
 
 // src/CustomAttachmentLocationPluginSettings.ts
-var import_PluginSettings = __toESM(require_PluginSettings(), 1);
-var CustomAttachmentLocationPluginSettings = class _CustomAttachmentLocationPluginSettings {
+var import_PluginSettingsBase = __toESM(require_PluginSettingsBase(), 1);
+var CustomAttachmentLocationPluginSettings = class extends import_PluginSettingsBase.PluginSettingsBase {
   attachmentFolderPath = "./assets/${filename}";
   autoRenameFiles = false;
   autoRenameFolder = true;
@@ -20043,24 +20539,26 @@ var CustomAttachmentLocationPluginSettings = class _CustomAttachmentLocationPlug
   renamePastedFilesWithKnownNames = false;
   replaceWhitespace = false;
   toLowerCase = false;
-  static load(data) {
-    const legacySettings = (0, import_PluginSettings.loadPluginSettings)(() => new LegacySettings(), data);
-    let shouldSave = false;
-    if (legacySettings.dateTimeFormat || legacySettings.pastedImageFileName) {
-      const dateTimeFormat = legacySettings.dateTimeFormat || "YYYYMMDDHHmmssSSS";
-      legacySettings.attachmentFolderPath = addDateTimeFormat(legacySettings.attachmentFolderPath, dateTimeFormat);
-      legacySettings.pastedFileName = addDateTimeFormat(legacySettings.pastedFileName || legacySettings.pastedImageFileName || "file-${date}", dateTimeFormat);
-      legacySettings.dateTimeFormat = "";
-      legacySettings.pastedImageFileName = "";
-      shouldSave = true;
-    }
-    const settings = (0, import_PluginSettings.loadPluginSettings)(() => new _CustomAttachmentLocationPluginSettings(), legacySettings);
-    return { settings, shouldSave };
+  #shouldSave = false;
+  constructor(data) {
+    super();
+    this.init(data);
   }
-};
-var LegacySettings = class extends CustomAttachmentLocationPluginSettings {
-  dateTimeFormat = "";
-  pastedImageFileName = "";
+  shouldSaveAfterLoad() {
+    return this.#shouldSave;
+  }
+  initFromRecord(record) {
+    const legacySettings = record;
+    if (legacySettings.dateTimeFormat || legacySettings.pastedImageFileName) {
+      const dateTimeFormat = legacySettings.dateTimeFormat ?? "YYYYMMDDHHmmssSSS";
+      legacySettings.attachmentFolderPath = addDateTimeFormat(legacySettings.attachmentFolderPath ?? "", dateTimeFormat);
+      legacySettings.pastedFileName = addDateTimeFormat(legacySettings.pastedFileName ?? legacySettings.pastedImageFileName ?? "file-${date}", dateTimeFormat);
+      delete legacySettings.dateTimeFormat;
+      delete legacySettings.pastedImageFileName;
+      this.#shouldSave = true;
+    }
+    super.initFromRecord(legacySettings);
+  }
 };
 function addDateTimeFormat(str, dateTimeFormat) {
   return str.replaceAll("${date}", `\${date:${dateTimeFormat}}`);
@@ -20230,7 +20728,7 @@ var EventWrapper = class {
     }
     console.debug(`Handle ${targetType} ${this.eventType}`);
     const noteFile = this.plugin.app.workspace.getActiveFile();
-    if (!noteFile || !(0, import_FileSystem2.isNote)(noteFile)) {
+    if (!noteFile || !(0, import_FileSystem2.isNote)(this.plugin.app, noteFile)) {
       return;
     }
     const dataTransfer = this.getDataTransfer();
@@ -20398,8 +20896,8 @@ async function handlePasteAndDrop(plugin, event) {
 
 // src/CustomAttachmentLocationPlugin.ts
 var CustomAttachmentLocationPlugin = class extends import_PluginBase.PluginBase {
-  createDefaultPluginSettings() {
-    return new CustomAttachmentLocationPluginSettings();
+  createPluginSettings(data) {
+    return new CustomAttachmentLocationPluginSettings(data);
   }
   createPluginSettingsTab() {
     return new CustomAttachmentLocationPluginSettingsTab(this);
@@ -20452,13 +20950,6 @@ var CustomAttachmentLocationPlugin = class extends import_PluginBase.PluginBase 
     });
     this.registerEvent(this.app.workspace.on("file-menu", this.handleFileMenu.bind(this)));
   }
-  async parseSettings(data) {
-    const { settings, shouldSave } = CustomAttachmentLocationPluginSettings.load(data);
-    if (shouldSave) {
-      await this.saveSettings(settings);
-    }
-    return settings;
-  }
   getAvailablePath(filename, extension2) {
     let suffixNum = 0;
     for (; ; ) {
@@ -20471,7 +20962,7 @@ var CustomAttachmentLocationPlugin = class extends import_PluginBase.PluginBase 
   }
   async getAvailablePathForAttachments(filename, extension2, file, skipFolderCreation) {
     let attachmentPath;
-    if (!file || !(0, import_FileSystem3.isNote)(file)) {
+    if (!file || !(0, import_FileSystem3.isNote)(this.app, file)) {
       attachmentPath = await (0, import_AttachmentPath3.getAvailablePathForAttachments)(this.app, filename, extension2, file, true);
     } else {
       const attachmentFolderFullPath = await getAttachmentFolderFullPathForPath(this, file.path);
