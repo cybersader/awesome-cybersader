@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Sunday, December 1st 2024, 5:02 pm
-date modified: Monday, December 2nd 2024, 7:55 pm
+date modified: Friday, December 27th 2024, 5:32 pm
 ---
 
 [Ghost Blogs](../🕸️%20UNSTRUCTURED/Ghost%20Blogs/Ghost%20Blogs.md)
@@ -24,4 +24,8 @@ date modified: Monday, December 2nd 2024, 7:55 pm
 - [My complete Obsidian workflow to manage my life : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/15j3mb9/my_complete_obsidian_workflow_to_manage_my_life/)
 - [Bear Blog](https://bearblog.dev/)
 - [Digital Garden - Publish Obsidian Notes For Free](https://dg-docs.ole.dev/)
-- 
+
+# Ideas
+
+- Graph analysis and SVG generator from HTML - could be done during build process
+- Show back and forth links

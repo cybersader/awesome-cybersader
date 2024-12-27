@@ -37,10 +37,8 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 - Regex pipeline tool
 - Sync obsidian before opening app 
-- Graph analysis and SVG generator from HTML - could be done during build process
 - Family tree in Obsidian?
 - User plugin that uses per device set tag based on tag options or yaml page for database to notify users as a condition atop tasks
-- Show back and forth links
 - Sort by name and not folder vs file
 
 # Users in Obsidian
