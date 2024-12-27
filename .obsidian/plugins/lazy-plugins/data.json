@@ -742,6 +742,9 @@
       },
       "univer": {
         "startupType": "disabled"
+      },
+      "find-unlinked-files": {
+        "startupType": "disabled"
       }
     }
   }
