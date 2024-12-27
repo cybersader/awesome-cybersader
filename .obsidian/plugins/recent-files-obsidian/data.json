@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "📁 07 - Cybersader Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "📁 33 - Diving",
+      "path": "📁 33 - Diving/📁 33 - Diving.md"
+    },
+    {
       "basename": "2024-12-27-Friday",
       "path": "🕸️ Daily Notes/2024/12/2024-12-27-Friday/2024-12-27-Friday.md"
+    },
+    {
+      "basename": "✒️ Cyberbase Architecture",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+    },
+    {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
+    },
+    {
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
     },
     {
       "basename": "2024-12-26-Thursday",
@@ -49,18 +73,6 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
     },
     {
-      "basename": "frameworker_diagram",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
-    },
-    {
-      "basename": "frameworker_linking",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
       "basename": "Memex",
       "path": "📦 VAULT SANDBOX TESTING/Memex/Memex.md"
     },
@@ -83,10 +95,6 @@
     {
       "basename": "Plugin Maintenance",
       "path": "📁 10 - My Obsidian Stack/Plugin Maintenance/Plugin Maintenance.md"
-    },
-    {
-      "basename": "✒️ Cyberbase Architecture",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
     },
     {
       "basename": "Home Network",
@@ -191,14 +199,6 @@
     {
       "basename": "Pasted Image 20241222182851_566",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222182851_566.png"
-    },
-    {
-      "basename": "⬇️ Internet & Children",
-      "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
-    },
-    {
-      "basename": "SecOps Stack & Resources",
-      "path": "⬇ INBOX, DROPZONE/From Other Wiki/oCISO Wiki/SecOps Stack & Resources.md"
     }
   ],
   "omittedPaths": [],
