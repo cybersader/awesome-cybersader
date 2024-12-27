@@ -46,3 +46,5 @@ date modified: Sunday, December 22nd 2024, 1:26 pm
 - [Obsidian Vaults and Sub-vaults | by Rafael M. J. Figueiredo | Medium](https://medium.com/@rafaeljost/obsidian-vaults-and-sub-vaults-d4a917f40b2d)
 - iOS shortcut setups
 - Android shortcut setups?
+- [screenpipe | AI-Powered Process Mining & Screen Recording](https://screenpi.pe/)
+- 

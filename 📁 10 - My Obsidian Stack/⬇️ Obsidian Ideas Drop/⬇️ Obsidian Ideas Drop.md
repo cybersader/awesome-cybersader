@@ -31,14 +31,8 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
-- Wikilink vs Markdown Link Use Cases
-- https://argdown.org/
-- [screenpipe | AI-Powered Process Mining & Screen Recording](https://screenpi.pe/)
-
-- Regex pipeline tool
 - Sync obsidian before opening app 
 - Family tree in Obsidian?
-- User plugin that uses per device set tag based on tag options or yaml page for database to notify users as a condition atop tasks
 - Sort by name and not folder vs file
 
 # Users in Obsidian
@@ -91,14 +85,9 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 [Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 
-- Whitespace cleaning on pasting with hotkeys
-	- [zlovatt/obsidian-trim-whitespace: Trims unnecessary whitespace from your Obsidian documents.](https://github.com/zlovatt/obsidian-trim-whitespace)
-	- Trim blank spaces please
-- Plugin to save and use regex transformations on selections or on page and bind to a hotkey
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
 - Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
-- Plugin to fetch titles and fix highlighted links
 - Modify refactor plugin to have 
 	- option for copying md to README.md for github applicability
 	- Ability to add sub folders or pages from within note like Notion
@@ -108,7 +97,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 	- Timeline plugin like this?
 - Auto headings and bullets?
 - Plugin to automatically put bullet point when clicking directly below a bullet list
-- Plugin to use regex replacements with pasting
 - Plugin that does certain syntax to show page and heading when pasting link to page and heading
 - Normalized content change glow added to graph to show recently active areas of the graph.  This could use git repo information with commits - would take a lot to render
 

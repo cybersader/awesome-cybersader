@@ -5,8 +5,32 @@
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
+      "basename": "Linting & Formatting",
+      "path": "📁 10 - My Obsidian Stack/Linting & Formatting/Linting & Formatting.md"
+    },
+    {
+      "basename": "Inputs, Capture",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
+    },
+    {
+      "basename": "Obsidian Setup for Corporate",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
       "basename": "Obsidian as a CMS",
       "path": "📁 10 - My Obsidian Stack/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
+      "basename": "Arguments in Markdown",
+      "path": "📁 10 - My Obsidian Stack/Arguments in Markdown/Arguments in Markdown.md"
+    },
+    {
+      "basename": "Obsidian & Corporate Docs",
+      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
     {
       "basename": "Awesome Obsidian Wiki Examples",
@@ -153,10 +177,6 @@
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/TinaCMS/TinaCMS.md"
     },
     {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
       "basename": "Decap CMS",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Decap CMS/Decap CMS.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "Pasted Image 20241222181056_735",
       "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181056_735.png"
-    },
-    {
-      "basename": "Pasted Image 20241222181414_926",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181414_926.png"
-    },
-    {
-      "basename": "Pasted Image 20241222181342_075",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181342_075.png"
-    },
-    {
-      "basename": "Pasted Image 20241222181445_222",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181445_222.png"
-    },
-    {
-      "basename": "Pasted Image 20241222181642_405",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181642_405.png"
-    },
-    {
-      "basename": "Pasted Image 20241222181741_578",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/✒️ Cyberbase Architecture/Pasted Image 20241222181741_578.png"
     }
   ],
   "omittedPaths": [],
