@@ -37,7 +37,7 @@ date modified: Monday, December 16th 2024, 8:47 am
 - https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0
 - https://notes.philoserf.com/Home
 - https://plugins.javalent.com/home#Practical+plugins
-
+- https://www.are.na/marco-noris/obsidian-publish-websites
 # Misc JS and CSS
 
 - https://gist.github.com/elkadre

@@ -32,7 +32,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
 - Wikilink vs Markdown Link Use Cases
-- [A different paradigm: Obsidian as an interface for the file explorer - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-different-paradigm-obsidian-as-an-interface-for-the-file-explorer/37696/16)
 - https://argdown.org/
 - [screenpipe | AI-Powered Process Mining & Screen Recording](https://screenpi.pe/)
 
@@ -42,7 +41,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 - Family tree in Obsidian?
 - User plugin that uses per device set tag based on tag options or yaml page for database to notify users as a condition atop tasks
 - Show back and forth links
-- Plugin to fix internal file links
 - Sort by name and not folder vs file
 
 # Users in Obsidian
@@ -99,7 +97,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 	- [zlovatt/obsidian-trim-whitespace: Trims unnecessary whitespace from your Obsidian documents.](https://github.com/zlovatt/obsidian-trim-whitespace)
 	- Trim blank spaces please
 - Plugin to save and use regex transformations on selections or on page and bind to a hotkey
-- Hallow or Ascension plugin
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin to automatically remove tokens and clean URLs
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
@@ -154,7 +151,7 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 # Misc
 
-- [ ] BUG with deleting files taking a long time 🔺 ➕ 2024-04-29
+- [x] BUG with deleting files taking a long time 🔺 ➕ 2024-04-29 ✅ 2024-12-27
 - Have AI generate smart permalinks for pages
 	- [Permalinks - Publish and unpublish notes - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Publish+and+unpublish+notes#Permalinks)
 - Color gradient based on how recently visited a page/folder was
