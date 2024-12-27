@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Friday, December 20th 2024, 9:07 am
+date modified: Friday, December 27th 2024, 5:57 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -23,6 +23,11 @@ There's only one option that seems like it could scale and that's [Kasm Workspac
 
 - [sytone/obsidian-remote: Run Obsidian.md in a browser via a docker container.](https://github.com/sytone/obsidian-remote)
 - [https://code.visualstudio.com/docs/editor/vscode-web#\_extensions](https://code.visualstudio.com/docs/editor/vscode-web#_extensions) - an example of why Obsidian doesn't have a browser version
+- https://www.reddit.com/r/ObsidianMD/comments/10sj378/web_version_of_obsidian/
+- https://github.com/sytone/obsidian-remote
+- https://vscode.dev/
+- https://github.dev
+- https://neverinstall.com/
 
 # Kasm Workspaces for Obsidian | Browser-Based Obsidian
 

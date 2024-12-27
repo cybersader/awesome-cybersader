@@ -96,14 +96,9 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 	- Trim blank spaces please
 - Plugin to save and use regex transformations on selections or on page and bind to a hotkey
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
-- Plugin to automatically remove tokens and clean URLs
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
 - Plugin that uses AI to ask you about your day and smartly write and log about it for you in a daily note either through voice or text chat
 - Plugin to fetch titles and fix highlighted links
-- AI-based note enricher 
-	- adds bullet points in a code block at bottom of note with AI-generated summaries and takeaways in text along with ontologically distant or adjacent ideas and special terms like with embeddings to make it easier to find with search and embeddings
-	- Enrich notes with text at bottom to help with finding with search
-	- Kind of inspired by my old "rexplorer" idea
 - Modify refactor plugin to have 
 	- option for copying md to README.md for github applicability
 	- Ability to add sub folders or pages from within note like Notion
@@ -132,15 +127,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 - [My Project Management Workflow; An In-Depth Explanation - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/my-project-management-workflow-an-in-depth-explanation/82508)
 - 
-
-# Obsidian in the Web?
-
-- https://www.reddit.com/r/ObsidianMD/comments/10sj378/web_version_of_obsidian/
-- https://github.com/sytone/obsidian-remote
-- https://vscode.dev/
-- https://github.dev
-- https://neverinstall.com/
-
 # Obsidian Conflicts and Syncing on Network Share?
 
 - [📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md](/📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md)
