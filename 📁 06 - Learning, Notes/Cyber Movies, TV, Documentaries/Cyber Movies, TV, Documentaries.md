@@ -1,9 +1,9 @@
 ---
-aliases: 
-tags:
-  - Curations
+permalink:
+aliases: []
+tags: [Curations]
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Saturday, October 26th 2024, 9:41 pm
+date modified: Tuesday, December 31st 2024, 3:57 pm
 publish: true
 ---
 
@@ -83,6 +83,7 @@ Subfolders:
 - The Matrix
 - Prison Break
 - Better Call Saul
+- Blackhat
 
 # Financial Sector and Cyber
 
