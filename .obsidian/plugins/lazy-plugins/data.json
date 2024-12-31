@@ -745,6 +745,18 @@
       },
       "find-unlinked-files": {
         "startupType": "disabled"
+      },
+      "abbrlink": {
+        "startupType": "disabled"
+      },
+      "easy-typing-obsidian": {
+        "startupType": "disabled"
+      },
+      "excalibrain": {
+        "startupType": "disabled"
+      },
+      "paste-link": {
+        "startupType": "disabled"
       }
     }
   }

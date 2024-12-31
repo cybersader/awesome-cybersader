@@ -11,7 +11,6 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[⬇️ Obsidian Ideas Drop]]**
 - **[[⬇️ Obsidian Integrations]]**
 - **[[Arguments in Markdown]]**
-- **[[Attachment Management]]**
 - **[[Auto - Tagging, Linking, Dropzones & Organizers]]**
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**

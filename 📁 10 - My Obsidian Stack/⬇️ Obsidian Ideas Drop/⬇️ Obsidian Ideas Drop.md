@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Tuesday, December 24th 2024, 9:00 am
+date modified: Friday, December 27th 2024, 7:00 pm
 ---
 
 %% Begin Waypoint %%
@@ -14,7 +14,6 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 - [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
-- [ ] Short URLs for Obsidian Publish ➕ 2024-11-10
 
 - https://dentropy.github.io/1f1f914c-8e6e-48b7-9068-bc7b290b6b64/
 - Per device obsidian customizing
@@ -26,13 +25,10 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 	- ovveride config folder - stored locally so network shares and things like that don't matter
 
 - [Track Watch Later List From YouTube : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/yp2hfs/track_watch_later_list_from_youtube/)
-
 - https://obsidian.rocks/editing-dataview-tables-with-the-metadata-menu-plugin/
-
 - Live sync in part of note, but then use something like Git or Syncthing in other parts
 	- Atomic and granular power over syncing and collaboration
 - Sync obsidian before opening app 
-- Family tree in Obsidian?
 - Sort by name and not folder vs file
 
 # Users in Obsidian
@@ -106,6 +102,8 @@ date modified: Tuesday, December 24th 2024, 9:00 am
   - If this doesn't work then look at how other in-the-browser code editors are safe and if they could somehow be implemented
 - Obsidian GitHub action for running code like a vault would
 - StackEdit with GitHub as alternative to Github.dev?
+- Family tree in Obsidian?
+- 
 - Linting for filenames and folders to make sure that they work on Windows (No ":" and other characters)
 - [ ] Plugin or pull request to current plugin to clean youtube and amazon links of cookie and reference code stuff ➕ 2024-11-03 
 - [ ] Add saving current workspace layout to custom save ⏫ ➕ 2024-11-03
@@ -115,6 +113,7 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 
 - [My Project Management Workflow; An In-Depth Explanation - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/my-project-management-workflow-an-in-depth-explanation/82508)
 - 
+
 # Obsidian Conflicts and Syncing on Network Share?
 
 - [📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md](/📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md)
@@ -133,6 +132,4 @@ date modified: Tuesday, December 24th 2024, 9:00 am
 - [ ] Obsidian page templates when new pages are opened? ➕ 2024-04-26
 - [ ] Automatically go to image size with pasting an image to choose size immediately without having to click ➕ 2024-04-27
 - [ ] Reimplement last modified time check with Linter or another plugin (that actually works with Obsidian Publish) to use hashes of content to update even when hitting Ctrl S or linting 🔽 ➕ 2024-04-28
-- [ ] Auto folder note title name by selecting text to turn into folder note - [File Organizer 2000](../Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 🔽 ➕ 2024-04-28
-- [ ] Changelog page that can work like dataview or summarize your past work based on collection of pages (some query) - "Study was done this week on __" ➕ 2024-04-28
 - [ ] Obsidian Plugin that uses an LLM funnel or other LLM and AI technology to take recently added to pages (using content hashes?) and summarizes work done in a certain format along with layers of templates.  Then a "firehose" folder is generated with pages of summaries based on schedules ⏬ ➕ 2024-04-29
