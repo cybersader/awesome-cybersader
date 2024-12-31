@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Tuesday, December 31st 2024, 5:33 pm
+date modified: Tuesday, December 31st 2024, 6:23 pm
 ---
 
 %% Begin Waypoint %%
@@ -100,12 +100,22 @@ date modified: Tuesday, December 31st 2024, 5:33 pm
 
 - 
 
+## Movies, Documentaries
+
+- 
+
 ## Clips
 
 - 
 
 ## Related Pages
 
+- [Cyber Movies, TV, Documentaries](../../📁%2006%20-%20Learning,%20Notes/Cyber%20Movies,%20TV,%20Documentaries/Cyber%20Movies,%20TV,%20Documentaries.md)
+- [THE PERSONAL CYBER RESILIENCE GUIDE](../../📁%2007%20-%20Cybersader%20Arsenal/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE.md)
+- [Personal Cyber Resilience](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Cyber%20Resilience/Personal%20Cyber%20Resilience.md)
+- [How to Annoy Attackers so They Cry w John Strand 1](../../CybersaderNotion/05%20Notes%20-%20Classes,%20Presentations,%20Pods/How%20to%20Annoy%20Attackers%20so%20They%20Cry%20w%20John%20Strand%201.md)
+- [📁 02 - CyberNews](../../📁%2002%20-%20CyberNews/📁%2002%20-%20CyberNews.md)
+- [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 - 
 
 ## Resources
@@ -127,7 +137,7 @@ date modified: Tuesday, December 31st 2024, 5:33 pm
 
 - Like most IT people, I played video games as a kid.  No joke.  
 - The internet was exploding when I was a kid...it still kind of is
-- 
+- (QUOTE) With every great change comes its curses.  The internet came with many.
 
 ## Why people don't listen to people like me sometimes
 
