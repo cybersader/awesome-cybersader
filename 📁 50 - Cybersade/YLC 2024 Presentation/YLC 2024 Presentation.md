@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Tuesday, December 31st 2024, 5:08 pm
+date modified: Tuesday, December 31st 2024, 5:33 pm
 ---
 
 %% Begin Waypoint %%
@@ -142,6 +142,8 @@ date modified: Tuesday, December 31st 2024, 5:08 pm
 - Fraud
 - Scam calls all the time
 - I'm still standing…yeah yeah yeah
+- So many stunt hacks
+- Flipper Zero and TikTok hack culture...ugh
 
 ## Some of the news is actually bad though
 
