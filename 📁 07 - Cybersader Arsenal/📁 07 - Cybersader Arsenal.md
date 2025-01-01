@@ -11,6 +11,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[⬇️ Cybersade DROPZONE]]**
 - **[[DNS Proxies & FIltering]]**
 - **[[Dumb Phones]]**
+- **[[Extreme Privacy]]**
 - **[[Handling Web Links]]**
 - **[[Home Lab, Home Server]]**
 - **[[Home Network]]**

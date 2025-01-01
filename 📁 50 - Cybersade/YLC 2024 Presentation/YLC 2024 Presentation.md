@@ -147,6 +147,7 @@ date modified: Tuesday, December 31st 2024, 11:07 pm
 - [📁 02 - CyberNews](../../📁%2002%20-%20CyberNews/📁%2002%20-%20CyberNews.md)
 - [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 - [SecOps Stack & Resources](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/oCISO%20Wiki/SecOps%20Stack%20&%20Resources.md)
+- [Extreme Privacy](../../📁%2007%20-%20Cybersader%20Arsenal/Extreme%20Privacy/Extreme%20Privacy.md)
 - 
 
 ## Resources
