@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Tuesday, December 31st 2024, 6:23 pm
+date modified: Tuesday, December 31st 2024, 10:21 pm
 ---
 
 %% Begin Waypoint %%
@@ -98,14 +98,39 @@ date modified: Tuesday, December 31st 2024, 6:23 pm
 
 ## Quotes
 
-- 
+- With great power comes great responsibility - Spiderman
+- The same technology that connects us can also control us.
+- Innovations that empower us also have the potential to exploit us.
+- Great technologies come with significant ethical dilemmas.
+- The tools designed to enhance our lives can also undermine our autonomy.
+
+- If you’re not paying for the product, then you are the product” — Daniel Hövermann
+-  “There are only two industries that call their customers “users”: illegal drugs and software.” — Edward Tufte
+- “Nothing vast enters the life of mortals without a curse.” — Sophocles
+- “We curate our lives around this perceived sense of perfection because we get rewarded in these short term signals: hearts, likes, thumbs up and we conflate that with value and we conflate it with truth. And instead, what it is is fake brittle popularity that’s short term and that leaves you even more, and admit it, vacant and empty before you did it. Because that enforces you into a vicious cycle where you’re like what’s the next thing that I need to do now, because I need it back. Think about that compounded by two billion people and then think about how then people react to then to the perceptions of others.” — Chamath Palihapitiya, CEO of Social Capital
+-  “We’re training and conditioning a whole new generation of people that when we are uncomfortable or lonely or uncertain or afraid we have a digital pacifier for ourselves that is kind of atrophying our own ability to deal with that.” — Tristan Harris, former design ethicist at Google and co-founder of Centre for Humane Technologies
+- “We’ve created a world in which online connection has become primary. Especially for younger generations. And yet, in that world, anytime two people connect, the only way it’s financed is through a sneaky third person who’s paying to manipulate those two people. So we’ve created an entire global generation of people who were raised within a context with the very meaning of communication, the very meaning of culture, is manipulation.” — Jaron Lainer, computer scientist and virtual reality pioneer
+- “We’re the product. Our attention is the product being sold to advertisers.” - Justin Rosenstein, former engineer Facebook and Google, co-founder of Asana
+- “It's the gradual, slight, imperceptible change in your own behaviour and perception that is the product.” - Jaron Lainer, founding father of Virtual Reality Computer Scientist
+- “It's a marketplace that trades exclusively in human futures.” - Shoshana Zuboff, Harvard University professor
+- “If something is a tool, it genuinely is just sitting there, waiting patiently. If something is not a tool it's demanding things from you. It's seducing you, it’s manipulating you, it wants things from you. We've moved away from a tools based technology environment, to an addiction and manipulation used technology environment. Social media isn't a tool waiting to be used. It has its own goals, and it has its own means of pursuing them by using your psychology against you.” - Tristan Harris, former design ethicist at Google and co-founder of Centre for Humane Technologies
+- “I like to say that algorithms are opinions embedded in code. And that algorithms are not objective.    Algorithms are optimised to some definition of success. So if you can imagine, if a commercial enterprise builds an algorithm, to their definition of success, it’s a commercial interest. It’s usually profit.” - Cathy O’Neil, data scientist
+- “The platforms make it possible to spread manipulative narratives with phenomenal ease, and without very much money.” - Renée Diresta, research manager of Stanford Internet Observatory, former head of policy at Data for Democracy
+-  “When we were making the like button, our entire motivation was ‘can we spread positivity and love in the world?’ The idea that fast forward to today and teens would be getting depressed when they don’t have enough likes or it could be leading to political polarisation was nowhere on our radar.” - Justin Rosenstein, former engineer at Facebook and Google, co-founder of Asana
+- “Never accept a video recommended to you on YouTube. Always choose. That’s another way to fight.” - Jaron Lainer, founding father of Virtual Reality Computer Scientist
+- “Before you share, fact check. Consider the source. Do that extra Google. If it seems like it’s designed to push your emotional buttons, it probably is.” - Renée Diresta, research manager of Stanford Internet Observatory, former head of policy at Data for Democracy
+- “I've uninstalled a ton of apps from my phone that I felt were wasting my time. All the social media apps, all the news apps and I've turned off notifications on anything that was vibrating my leg with information that wasn’t timely and important to me right now. It’s for the same reason that I don’t keep cookies in my pocket.” - Justin Rosenstein, former engineer at Facebook and Google, co-fonder of Asana
 
 ## Movies, Documentaries
 
+- [The Social Dilemma](https://thesocialdilemma.com/) - Netflix
 - 
 
 ## Clips
 
+- Philosophical dilemmas
+	- Dr. Stone when they invent guns
+	- 
 - 
 
 ## Related Pages
@@ -228,6 +253,19 @@ We don't trust intentions so we use math…no cap
 # 7. Resources and Tools
 
 - 
+
+## Privacy Recommendations
+
+- Uninstall apps that waste your time.
+- Turn off all notifications that are not urgent.
+- Use a browser that doesn’t save your data, or remove extensions that give suggested recommendations.
+- Don’t accept recommended videos on YouTube. (Instead, pick your own.)
+- Fact check your sources before you share something on social media. (In particular, avoid content that strikes an emotional response.)
+- You vote with your clicks. Only click things you actually care about.
+- Read information from different points of view (including the ones you don’t’ agree with).
+- Remove all devices from the bedroom every night. 
+- Don’t allow your kid to get on social media until high school (better yet—until they are sixteen). 
+- Budget how much time your kids spend in front of screens.
 
 # 8. Discussion
 
