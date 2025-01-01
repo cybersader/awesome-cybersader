@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Tuesday, December 31st 2024, 10:21 pm
+date modified: Tuesday, December 31st 2024, 11:07 pm
 ---
 
 %% Begin Waypoint %%
@@ -126,6 +126,11 @@ date modified: Tuesday, December 31st 2024, 10:21 pm
 - [The Social Dilemma](https://thesocialdilemma.com/) - Netflix
 - 
 
+## YouTube Channels, Education
+
+- [Black Hills Information Security - YouTube](https://www.youtube.com/@BlackHillsInformationSecurity)
+- 
+
 ## Clips
 
 - Philosophical dilemmas
@@ -141,6 +146,7 @@ date modified: Tuesday, December 31st 2024, 10:21 pm
 - [How to Annoy Attackers so They Cry w John Strand 1](../../CybersaderNotion/05%20Notes%20-%20Classes,%20Presentations,%20Pods/How%20to%20Annoy%20Attackers%20so%20They%20Cry%20w%20John%20Strand%201.md)
 - [📁 02 - CyberNews](../../📁%2002%20-%20CyberNews/📁%2002%20-%20CyberNews.md)
 - [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
+- [SecOps Stack & Resources](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/oCISO%20Wiki/SecOps%20Stack%20&%20Resources.md)
 - 
 
 ## Resources
