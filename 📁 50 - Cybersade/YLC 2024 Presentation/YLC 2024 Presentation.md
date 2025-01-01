@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Wednesday, January 1st 2025, 11:30 am
+date modified: Wednesday, January 1st 2025, 4:52 pm
 ---
 
 %% Begin Waypoint %%
@@ -282,7 +282,8 @@ We don't trust intentions so we use math…no cap
 - Anti-Virus
 	- Bitdefender 
 	- WebRoot 
-	- 
+	- Out-of-box AV for MacOS or Windows is good enough
+
 ## Privacy Recommendations
 
 - Uninstall apps that waste your time.
