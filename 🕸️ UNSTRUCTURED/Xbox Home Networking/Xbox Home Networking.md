@@ -4,8 +4,12 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Saturday, December 14th 2024, 9:18 pm
+date modified: Wednesday, January 1st 2025, 11:21 am
 ---
+
+# Multicast, UPnP, IGMP
+
+- [Multicast is just Weird.... Doesn't even know who gets it? - YouTube](https://www.youtube.com/watch?v=kMxJ3Goo3gI&list=PLAo444udA0qx4if-wQOAa7RenWQA6cADw)
 
 # IPv6 Tunneling and NAT
 
@@ -101,6 +105,7 @@ What can get it working:
 - Would IPv6 ever have anything to do with any of this?  My NAT rules are IPv4
 
 [Setting Up VLANs](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20Network/Setting%20Up%20VLANs/Setting%20Up%20VLANs.md)
+
 # Don't Buy a Netgear
 
 - The amount of issues I've had thus far after adding a Netgear to [Router IP Passthrough](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20Network/Bridging%20New%20Home%20Router/Bridging%20New%20Home%20Router.md) with my ATT router is frustrating.  I wish it did Bridged, but here we are.  If I could afford a nice Pfsense or Unifi, then I would do it.

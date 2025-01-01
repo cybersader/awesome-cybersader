@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Tuesday, December 31st 2024, 11:07 pm
+date modified: Wednesday, January 1st 2025, 11:30 am
 ---
 
 %% Begin Waypoint %%
@@ -261,11 +261,36 @@ We don't trust intentions so we use math…no cap
 
 - 
 
+## General Recommendations
+
+- Have someone or yourself in your community/family/friend group who is the IT person.  Most families have an "IT dad" since it's a more popular career with men.  
+- If they do A LOT of marketing, they likely have other intentions.  I'm looking at you VPNs
+- 
+
+## Cybersecurity Recommendations
+
+- Download and use Signal.  Text/SMS simply has gone too far in its use.  
+- Use a password manager
+	- Bitwarden
+	- Proton Pass
+	- 1Password
+- Make better passwords.  You should only need to memorize the one for your password manager
+- Use cyber deception in places with sensitive data that hackers would love to get their hands on.  
+- Pay money to things you can trust and support and don't circumvent it.
+	- Don't download things illegally.  These are almost always filled with viruses
+
 ## Privacy Recommendations
 
 - Uninstall apps that waste your time.
 - Turn off all notifications that are not urgent.
 - Use a browser that doesn’t save your data, or remove extensions that give suggested recommendations.
+	- Use Firefox or Brave
+- Search engines
+	- SearX
+	- Brave Search
+	- Startpage
+	- Duckduckgo
+	- Google (with all of the privacy settings turned up to 10)
 - Don’t accept recommended videos on YouTube. (Instead, pick your own.)
 - Fact check your sources before you share something on social media. (In particular, avoid content that strikes an emotional response.)
 - You vote with your clicks. Only click things you actually care about.
@@ -273,6 +298,15 @@ We don't trust intentions so we use math…no cap
 - Remove all devices from the bedroom every night. 
 - Don’t allow your kid to get on social media until high school (better yet—until they are sixteen). 
 - Budget how much time your kids spend in front of screens.
+
+## What you don't need to do
+
+This is what the paranoid people do and it gives good security hygiene a bad rap.
+
+- Download TailsOS
+- Replace your iOS/Android with Graphene
+- Buy your house through a company to hide your identity
+- Be a skeptical, arrogant, conspiracy theorist.
 
 # 8. Discussion
 
