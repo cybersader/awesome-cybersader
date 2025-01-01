@@ -278,7 +278,11 @@ We don't trust intentions so we use math…no cap
 - Use cyber deception in places with sensitive data that hackers would love to get their hands on.  
 - Pay money to things you can trust and support and don't circumvent it.
 	- Don't download things illegally.  These are almost always filled with viruses
-
+- Delete your old accounts
+- Anti-Virus
+	- Bitdefender 
+	- WebRoot 
+	- 
 ## Privacy Recommendations
 
 - Uninstall apps that waste your time.
@@ -298,6 +302,8 @@ We don't trust intentions so we use math…no cap
 - Remove all devices from the bedroom every night. 
 - Don’t allow your kid to get on social media until high school (better yet—until they are sixteen). 
 - Budget how much time your kids spend in front of screens.
+- Use random usernames and not the same one everywhere
+- 
 
 ## What you don't need to do
 
