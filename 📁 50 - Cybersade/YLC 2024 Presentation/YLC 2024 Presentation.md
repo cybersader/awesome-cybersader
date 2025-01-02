@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Wednesday, January 1st 2025, 5:28 pm
+date modified: Thursday, January 2nd 2025, 2:02 pm
 ---
 
 %% Begin Waypoint %%
@@ -148,6 +148,16 @@ date modified: Wednesday, January 1st 2025, 5:28 pm
 - [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 - [SecOps Stack & Resources](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/oCISO%20Wiki/SecOps%20Stack%20&%20Resources.md)
 - [Extreme Privacy](../../📁%2007%20-%20Cybersader%20Arsenal/Extreme%20Privacy/Extreme%20Privacy.md)
+- [OpSec Tierlist](../../📁%2007%20-%20Cybersader%20Arsenal/OpSec%20Tierlist/OpSec%20Tierlist.md)
+- [Email Aliasing](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Email/Email%20Aliasing/Email%20Aliasing.md)
+- [Personal Email](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Email/Personal%20Email.md)
+- [Personal Info Breach Response](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Info%20Breach%20Response/Personal%20Info%20Breach%20Response.md)
+- [Personal Privacy & Identity Handling](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Privacy%20&%20Identity%20Handling/Personal%20Privacy%20&%20Identity%20Handling.md)
+- [Personal Privacy Tools](../../📁%2007%20-%20Cybersader%20Arsenal/Personal%20Privacy%20Tools/Personal%20Privacy%20Tools.md)
+- [Persuasive Technology Defenses](../../📁%2007%20-%20Cybersader%20Arsenal/Persuasive%20Technology%20Defenses/Persuasive%20Technology%20Defenses.md)
+- [Secure File Sharing](../../📁%2007%20-%20Cybersader%20Arsenal/Secure%20File%20Sharing/Secure%20File%20Sharing.md)
+- [VPNs](../../📁%2007%20-%20Cybersader%20Arsenal/VPNs/VPNs.md)
+- [Windows Home IT Admin](../../📁%2007%20-%20Cybersader%20Arsenal/Windows%20Home%20IT%20Admin/Windows%20Home%20IT%20Admin.md)
 - 
 
 ## Resources

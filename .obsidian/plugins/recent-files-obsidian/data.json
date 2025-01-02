@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "YLC 2024 Presentation",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "2024-12-31-Tuesday",
+      "path": "🕸️ Daily Notes/2024/12/2024-12-31-Tuesday/2024-12-31-Tuesday.md"
+    },
+    {
+      "basename": "Personal Email",
+      "path": "📁 07 - Cybersader Arsenal/Personal Email/Personal Email.md"
+    },
+    {
       "basename": "2025-01-02-Thursday",
       "path": "🕸️ Daily Notes/2025/01/2025-01-02-Thursday/2025-01-02-Thursday.md"
     },
     {
       "basename": "Excalidraw",
       "path": "📁 10 - My Obsidian Stack/Excalidraw/Excalidraw.md"
-    },
-    {
-      "basename": "YLC 2024 Presentation",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
     },
     {
       "basename": "✒️ Personal OpSec Tierlist",
@@ -31,10 +39,6 @@
     {
       "basename": "Cyber Movies, TV, Documentaries",
       "path": "📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
-    },
-    {
-      "basename": "2024-12-31-Tuesday",
-      "path": "🕸️ Daily Notes/2024/12/2024-12-31-Tuesday/2024-12-31-Tuesday.md"
     },
     {
       "basename": "Linting & Formatting",
@@ -195,10 +199,6 @@
     {
       "basename": "pfsense_with_local_services",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/PfSense with Local Services/pfsense_with_local_services/pfsense_with_local_services.md"
-    },
-    {
-      "basename": "file-20240928190713124",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/_attachments/file-20240928190713124.png"
     }
   ],
   "omittedPaths": [],
