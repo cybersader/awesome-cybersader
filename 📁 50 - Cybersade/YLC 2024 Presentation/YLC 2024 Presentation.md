@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Thursday, January 2nd 2025, 2:02 pm
+date modified: Thursday, January 2nd 2025, 6:24 pm
 ---
 
 %% Begin Waypoint %%
@@ -163,6 +163,35 @@ date modified: Thursday, January 2nd 2025, 2:02 pm
 ## Resources
 
 - 
+
+# 1. Storytime...but it's a whole anthology
+
+> [!quote] How I/we got here
+
+- Stories
+	- Getting Adobe software free
+	- People hacking in video games
+	- I sat next to a hacker in high-school - full blown nerd and everything
+	- How the engagement economy has killed 2 friends
+	- Relationship troubles because of dating and technology
+	- Drug markets on the internet
+	- Desensitization and television
+	- Laptops starting in high-school
+	- World of Warcraft and cybercriminals
+	- Roblox
+	- Movie pirates
+	- I got my home computer cooked
+	- Met one of my friends on Xbox
+	- Video editing
+	- How sports have changed
+	- Highschool technology is bad
+	- My grandpa called me and was about to give money to a scammer - that time I broke my hand
+
+- 
+
+---
+
+WORKSPACE BELOW
 
 # 1. Hook, Icebreaker
 
