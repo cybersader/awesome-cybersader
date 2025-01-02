@@ -757,6 +757,9 @@
       },
       "paste-link": {
         "startupType": "disabled"
+      },
+      "obsidian-icon-folder": {
+        "startupType": "instant"
       }
     }
   }
