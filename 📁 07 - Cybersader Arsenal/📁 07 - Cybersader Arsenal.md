@@ -6,7 +6,10 @@ date created: Thursday, June 20th 2024, 3:38 pm
 date modified: Thursday, June 20th 2024, 3:38 pm
 ---
 %% Begin Waypoint %%
+- **[[✒️ Personal OpSec Arsenal]]**
+
 - **[[✒️ Personal OpSec Tierlist]]**
+
 - **[[✒️Home Lab v0.0.01]]**
 
 - **[[⬇️ Cybersade DROPZONE]]**
