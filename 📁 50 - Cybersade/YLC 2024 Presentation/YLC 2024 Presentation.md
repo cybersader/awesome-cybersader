@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Wednesday, January 1st 2025, 4:52 pm
+date modified: Wednesday, January 1st 2025, 5:28 pm
 ---
 
 %% Begin Waypoint %%
@@ -267,6 +267,11 @@ We don't trust intentions so we use math…no cap
 - If they do A LOT of marketing, they likely have other intentions.  I'm looking at you VPNs
 - 
 
+## What About AI?
+
+- It's not about the AI model, but rather where they store the data
+- 
+
 ## Cybersecurity Recommendations
 
 - Download and use Signal.  Text/SMS simply has gone too far in its use.  
@@ -283,6 +288,10 @@ We don't trust intentions so we use math…no cap
 	- Bitdefender 
 	- WebRoot 
 	- Out-of-box AV for MacOS or Windows is good enough
+- Don't use a VPN (most of the time)
+	- Use Proton VPN or Mullvad if you do
+	- Anything you would actually need a VPN for you can use a Tor browser or use something more comprehensive
+	- I use Proton VPN when I get on guest Wi-Fi at hotels
 
 ## Privacy Recommendations
 
