@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Thursday, January 2nd 2025, 10:27 pm
+date modified: Friday, January 3rd 2025, 9:39 am
 ---
 
 %% Begin Waypoint %%
@@ -241,18 +241,17 @@ date modified: Thursday, January 2nd 2025, 10:27 pm
 	- 1. Why this matters
 	- 2. What you do
 
-# 2. The Different Levels
+# 2. The Different Levels of Responsibility
 
-- Cyberwar
-- IT infrastructure and system design
-- Technology use
-
+- Cyberwar - government
+- IT infrastructure and system design - businesses
+- Technology use - families, individuals
 
 
 
 ---
 
-WORKSPACE BELOW
+**WORKSPACE BELOW**
 
 # 1. Hook, Icebreaker
 
