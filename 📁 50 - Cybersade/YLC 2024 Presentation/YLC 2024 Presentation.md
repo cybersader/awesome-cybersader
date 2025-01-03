@@ -91,11 +91,6 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 
 # Resources
 
-## Presentation Tech
-
-- Mentimeter but somehow without pauses?
-- Maybe just for after or during discussion?
-
 ## Quotes
 
 - With great power comes great responsibility - Spiderman
@@ -209,6 +204,8 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 
 - Crowdstrike incident and people not being able to access hospitals
 	- I couldn't access gas at a gas station without cash
+		- [The Top 20 CrowdStrike Memes You Can Enjoy While You Fix Servers - LowEndBox](https://lowendbox.com/blog/the-top-20-crowdstrike-memes-you-can-enjoy-while-you-fix-servers/)
+	- 
 
 - Other stories
 	- Getting Adobe software free
@@ -228,7 +225,6 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 	- How sports have changed
 	- Highschool technology is bad
 	- My grandpa called me and was about to give money to a scammer - that time I broke my hand
-
 
 - Many industries look at how to harness certain powers
 	- "With great power comes great responsibility"
@@ -310,7 +306,7 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 - 
 - [US State Privacy Legislation Tracker](https://iapp.org/resources/article/us-state-privacy-legislation-tracker/)
 - [IGA | Senate Bill 5 - Consumer data protection](https://iga.in.gov/legislative/2023/bills/senate/5/details)
-- 
+- [Global AI Law and Policy Tracker](https://iapp.org/resources/article/global-ai-legislation-tracker/)
 
 # 6. The Cybersecurity Issue
 
