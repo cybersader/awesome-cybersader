@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 12:15 pm
+date modified: Friday, January 3rd 2025, 5:29 pm
 ---
 
 %% Begin Waypoint %%
@@ -93,7 +93,6 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 
 ## Quotes
 
-- With great power comes great responsibility - Spiderman
 - The same technology that connects us can also control us.
 - Innovations that empower us also have the potential to exploit us.
 - Great technologies come with significant ethical dilemmas.
@@ -229,6 +228,10 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 - Many industries look at how to harness certain powers
 	- "With great power comes great responsibility"
 	- We have to decide what the RIGHT thing to do is
+
+- Our lives are spent with technology, so we need to take it seriously
+	- [The time we spend on social media — DataReportal – Global Digital Insights](https://datareportal.com/reports/digital-2024-deep-dive-the-time-we-spend-on-social-media)
+	- 
 
 - Iron Giant 
 	- You don't have to be a gun

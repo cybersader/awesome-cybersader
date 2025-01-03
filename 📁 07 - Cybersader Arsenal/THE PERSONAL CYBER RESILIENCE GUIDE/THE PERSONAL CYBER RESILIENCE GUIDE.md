@@ -23,6 +23,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 
 - [Operation Privacy](https://www.operationprivacy.com/) 
 - [Resources | Techlore - Digital Rights for All](https://www.techlore.tech/resources#webhosting-vps)
+- [Tips to Take Control of Your Tech Use - Center for Humane Technology](https://www.humanetech.com/take-control)
 - 
 
 # Privacy & Security Workflow Examples
