@@ -190,7 +190,7 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 		- [The effect of smartphone usage at bedtime on sleep quality among Saudi non- medical staff at King Saud University Medical City - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6618184/)
 		- 
 	- ~1/3 of car crashes happen because of distractions with technology
-		- 
+		- [This Video Might Save 58 Lives Next Week - YouTube](https://www.youtube.com/watch?v=oTx-GSF3cts&list=PLAo444udA0qxfNyiQBGxLkMqfe_HWTq3e&rco=1)
 	- Even your nutrition options are greatly affected by technology
 	- All 3 of them are affected by data privacy even if only in an indirect way
 
