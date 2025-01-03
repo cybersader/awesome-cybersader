@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 9:56 am
+date modified: Friday, January 3rd 2025, 10:24 am
 ---
 
 %% Begin Waypoint %%
@@ -241,14 +241,22 @@ date modified: Friday, January 3rd 2025, 9:56 am
 	- 1. Why this matters
 	- 2. What you do
 
-# 2. The Different Levels of Responsibility
+# 3. The Different Levels of Responsibility
 
 - Cyberwar - government
 - IT infrastructure and system design - businesses
 - Data usage - businesses
 - Technology use and data exposure - families, individuals
 
-## 
+# 4. What is Cyber
+
+- .
+
+# 5. 
+
+- .
+
+
 
 ---
 
