@@ -184,6 +184,7 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 		- [The Influence of Social Media on Teen Use of E-Cigarettes | Psychology Today](https://www.psychologytoday.com/us/blog/connected/201903/the-influence-of-social-media-on-teen-use-of-e-cigarettes)
 		- [Most JUUL-related Instagram posts appeal to youth culture/lifestyles](https://truthinitiative.org/research-resources/emerging-tobacco-products/most-juul-related-instagram-posts-appeal-youth-culture)
 	- The #1 thing that affects sleep is using screens before bed
+		- [How I fixed my terrible sleep – Blueprint Bryan Johnson](https://blueprint.bryanjohnson.com/blogs/news/how-i-fixed-my-terrible-sleep)
 		- 
 	- ~1/3 of car crashes happen because of distractions with technology
 		- 
