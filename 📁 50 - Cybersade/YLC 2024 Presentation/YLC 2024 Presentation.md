@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 10:24 am
+date modified: Friday, January 3rd 2025, 11:26 am
 ---
 
 %% Begin Waypoint %%
@@ -241,22 +241,69 @@ date modified: Friday, January 3rd 2025, 10:24 am
 	- 1. Why this matters
 	- 2. What you do
 
-# 3. The Different Levels of Responsibility
+# 3. Why it Matters
+
+- How do we actually look at cyberspace?
+
+- 5 years ago, I was in Hawaii.  I was with the swim and dive team.  Hawaii is awesome, but some awesome things can come with there dangers.  I was swimming past the break point of the waves and it was winter season.  The waves don't look so bad from far away.  I was on a particular beach where the sand slopes up much faster.  Some of them nicknamed it breakneck beach in the winter.  The waves were around 15 feet tall when they crested on the shore.  We would swim past them and chill out before where they crest.  At one point, the lifeguard told us we had a big "set" coming in.  I was swimming in as fast as I could, but I wasn't too scared at the time.  I looked back and the wave was likely a good 20+ ft tall from top to the sand.  I was in the middle of it.  I relaxed and let the wave throw me around and that happened for about 20 seconds.  I got thrown around hard and tried to get my head out of the water knowing that the wave was over.  Unfortunately, I could only get my head out to barely see that another comparable wave was over me again.  This time I hit the sand and it hurt like crazy almost taking the wind out of me.  I got thrown around yet again.  Yet another wave, but this time I got a slight breath in.  I was under the water for well over a minute.  I saw a lifeguard waiting with his flotation device ready to run in a get me.  He told me that is was a gnarly 3 wave hold down.  
+
+- It's all fun and games till the waves bu9ild up to be too big and you don't take it seriously.
+
+- Cyberspace comes from a novel in the 80s.  It was a supposedly meaningless term made up by the author, but it had a word it came from.  Kybernan.
+- It means to steer or control.  So cyber really refers to the space of digital information.  Cyber can be thought of as an ocean or a landscape of information.  We can navigate it and it has no borders, factions, peoples, and many dangers.
+
+- Security comes from the idea of peace of mind.  From what is the question.  Cybersecurity is peace of mind in navigating the internet and it's technologies.  Privacy is freedom from intrusion in terms of being secluded.  So really data privacy is all about being able to leave out your data.  This is only an issue in the information age.
+
+- The broader picture here is actually a lot simpler and it applies at all times.  
+
+- You can see these as game theory.  We have entities or agents and those agents have interests or goals.  Some are even opposed to our own.  
+
+- In soccer, both sides have a goal, but they are naturally opposed or conflicting.  Getting one goes against the other.  
+
+- Here's the best definition then for cybersecurity and data privacy - give definitions 
+
+- We can see this play out at every scale.
+
+# 4. The Different Levels of Responsibility
 
 - Cyberwar - government
 - IT infrastructure and system design - businesses
 - Data usage - businesses
 - Technology use and data exposure - families, individuals
 
-# 4. What is Cyber
+- Government/nation state
+- Business/entity level
+- Families, individuals
+
+- Why should you care?  It depends on your interests.  The reason we have a constitution in the first place is because the majority isn't always right and we have to have something stronger as a foundation.  This foundation should have the interests of the people in mind.  In this case, life liberty and the pursuit of happiness (whatever that means).  
+
+- Hopefully, it's at some level of self actualization.
+
+- Ask yourself what your goals actually are.
+
+- This is called the alignment problem.  One great issue is that the constitution could not have accounted for the things we have today.
+
+- So what does everyone tell you to worry about: the news is desensitizing.  
+
+- As businesses, we build the large scale tools to reach our goals.
+
+- As a government, we cooperate with others or defend ourselves and our interests.
+
+- There's not much you can do about either of these.
+
+- North Korean government, Zeus spyware, etc.  all of that will only alienate you.
+
+- My job is the business level and we've got a lot to do there with our abstractions, but what can you do today?
+
+# 5. The Privacy Issue
 
 - .
 
-# 5. 
+# 6. The Cybersecurity Issue
 
 - .
 
-
+# 7. 
 
 ---
 
