@@ -8,7 +8,7 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 ---
 
 %% Begin Waypoint %%
-
+- [[Drawing 2025-01-03 15.58.52.excalidraw]]
 
 %% End Waypoint %%
 
@@ -307,7 +307,10 @@ date modified: Friday, January 3rd 2025, 12:15 pm
 
 # 5. The Privacy Issue
 
-- .
+- 
+- [US State Privacy Legislation Tracker](https://iapp.org/resources/article/us-state-privacy-legislation-tracker/)
+- [IGA | Senate Bill 5 - Consumer data protection](https://iga.in.gov/legislative/2023/bills/senate/5/details)
+- 
 
 # 6. The Cybersecurity Issue
 
