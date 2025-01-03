@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 11:26 am
+date modified: Friday, January 3rd 2025, 11:47 am
 ---
 
 %% Begin Waypoint %%
@@ -179,6 +179,10 @@ date modified: Friday, January 3rd 2025, 11:26 am
 
 - All of these are affected by technology
 	- Smoking is advertised and propagated through technology
+		- [Teens vulnerable to social-media promotion of vaping - Scope](https://scopeblog.stanford.edu/2020/02/19/teens-vulnerable-to-social-media-promotion-of-vaping/)
+		- [Congress is asking vape manufacturers if they used social media bots](https://www.engadget.com/2019-10-14-congress-vaping-social-media-bots.html)
+		- [The Influence of Social Media on Teen Use of E-Cigarettes | Psychology Today](https://www.psychologytoday.com/us/blog/connected/201903/the-influence-of-social-media-on-teen-use-of-e-cigarettes)
+		- [Most JUUL-related Instagram posts appeal to youth culture/lifestyles](https://truthinitiative.org/research-resources/emerging-tobacco-products/most-juul-related-instagram-posts-appeal-youth-culture)
 	- The #1 thing that affects sleep is technology and media
 	- ~1/3 of car crashes happen because of distractions with technology
 	- Even your nutrition options are greatly affected by technology
@@ -245,9 +249,9 @@ date modified: Friday, January 3rd 2025, 11:26 am
 
 - How do we actually look at cyberspace?
 
-- 5 years ago, I was in Hawaii.  I was with the swim and dive team.  Hawaii is awesome, but some awesome things can come with there dangers.  I was swimming past the break point of the waves and it was winter season.  The waves don't look so bad from far away.  I was on a particular beach where the sand slopes up much faster.  Some of them nicknamed it breakneck beach in the winter.  The waves were around 15 feet tall when they crested on the shore.  We would swim past them and chill out before where they crest.  At one point, the lifeguard told us we had a big "set" coming in.  I was swimming in as fast as I could, but I wasn't too scared at the time.  I looked back and the wave was likely a good 20+ ft tall from top to the sand.  I was in the middle of it.  I relaxed and let the wave throw me around and that happened for about 20 seconds.  I got thrown around hard and tried to get my head out of the water knowing that the wave was over.  Unfortunately, I could only get my head out to barely see that another comparable wave was over me again.  This time I hit the sand and it hurt like crazy almost taking the wind out of me.  I got thrown around yet again.  Yet another wave, but this time I got a slight breath in.  I was under the water for well over a minute.  I saw a lifeguard waiting with his flotation device ready to run in a get me.  He told me that is was a gnarly 3 wave hold down.  
+- 5 years ago, I was in Hawaii.  I was with the swim and dive team.  Hawaii is awesome, but some awesome things can come with there dangers.  I was swimming past the break point of the waves and it was winter season.  The waves don't look so bad from far away.  I was on a particular beach where the sand slopes up much faster.  Some of them nicknamed it breakneck beach in the winter.  The waves were around 15 feet tall when they crested on the shore.  We would swim past them and chill out before where they crest.  At one point, the lifeguard told us we had a big "set" coming in.  I was swimming in as fast as I could, but I wasn't too scared at the time.  I looked back and the wave was likely a good 20+ ft tall from top to the sand.  I was in the middle of it.  I relaxed and let the wave throw me around and that happened for about 15+ seconds.  I got thrown around hard and tried to get my head out of the water knowing that the wave was over.  Unfortunately, I could only get my head out to barely see that another comparable wave was over me again.  This time I hit the sand and it hurt like crazy almost taking the wind out of me.  I got thrown around yet again.  Yet another wave, but this time I got a slight breath in.  I was under the water for over a minute.  I saw a lifeguard waiting with his flotation device ready to run in a get me.  He told me that is was a wave hold down for 3 or 4 waves.  
 
-- It's all fun and games till the waves bu9ild up to be too big and you don't take it seriously.
+- It's all fun and games till the waves build up to be too big and you don't take it seriously.
 
 - Cyberspace comes from a novel in the 80s.  It was a supposedly meaningless term made up by the author, but it had a word it came from.  Kybernan.
 - It means to steer or control.  So cyber really refers to the space of digital information.  Cyber can be thought of as an ocean or a landscape of information.  We can navigate it and it has no borders, factions, peoples, and many dangers.
