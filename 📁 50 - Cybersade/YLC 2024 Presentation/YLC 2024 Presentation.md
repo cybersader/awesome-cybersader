@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 9:39 am
+date modified: Friday, January 3rd 2025, 9:56 am
 ---
 
 %% Begin Waypoint %%
@@ -245,7 +245,8 @@ date modified: Friday, January 3rd 2025, 9:39 am
 
 - Cyberwar - government
 - IT infrastructure and system design - businesses
-- Technology use - families, individuals
+- Data usage - businesses
+- Technology use and data exposure - families, individuals
 
 
 
