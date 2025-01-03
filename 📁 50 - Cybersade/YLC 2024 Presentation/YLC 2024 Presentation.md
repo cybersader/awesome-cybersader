@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Thursday, January 2nd 2025, 6:24 pm
+date modified: Thursday, January 2nd 2025, 10:16 pm
 ---
 
 %% Begin Waypoint %%
@@ -164,7 +164,9 @@ date modified: Thursday, January 2nd 2025, 6:24 pm
 
 - 
 
-# 1. Storytime...but it's a whole anthology
+# 1. Storytime
+
+- ...but it's a whole anthology
 
 > [!quote] How I/we got here
 
@@ -172,15 +174,33 @@ date modified: Thursday, January 2nd 2025, 6:24 pm
 	- There's 3 things you can do to immediately and drastically improve your longevity
 	- Can anyone guess those 3 things?
 		- Don't smoke
-		- Good sleep
+		- Sufficient and consistent sleep
 		- Minimize driving
-	- All 3 of them are affected by data privacy even if only in an indirect way
-	- In just my high school years, I had 2 friends who died in car crashes.  
-	- The first guy I skateboarded and played baseball with.  The person driving was distracted and didn't notice the stop sign and approaching vehicles
-	- The other one went nearly head-on into a telephone pole.  The person in that passenger seat was an x-girlfriend.
-- 
 
-- Stories
+- All of these are affected by technology
+	- Smoking is advertised and propagated through technology
+	- The #1 thing that affects sleep is technology and media
+	- ~1/3 of car crashes happen because of distractions with technology
+	- Even your nutrition options are greatly affected by technology
+	- All 3 of them are affected by data privacy even if only in an indirect way
+
+- High-school friends who died in car crashes
+	- In just my high school years, I had 2 friends who died in car crashes.  
+	- The first guy I skateboarded and played baseball with.  The person driving was distracted and didn't notice the stop sign and approaching vehicles.
+	- The other one went nearly head-on into a telephone pole.  The person in that passenger seat was a closer friend.
+
+- Who's to blame?
+	- Do you blame the people who couldn't use the technology correctly
+	- At what point do you start pointing your fingers at companies?  What about the government?
+
+- WWHF
+	- There's been tons of times just in my life that I've noticed the how the internet can be a wild west
+	- We see technology as this safe, rubber band-like thing that will bounce back or get back on the tracks when it starts to go off course.  That's not how it works though.
+
+- Crowdstrike incident and people not being able to access hospitals
+	- I couldn't access gas at a gas station without cash
+
+- Other stories
 	- Getting Adobe software free
 	- People hacking in video games
 	- I sat next to a hacker in high-school - full blown nerd and everything
@@ -199,7 +219,24 @@ date modified: Thursday, January 2nd 2025, 6:24 pm
 	- Highschool technology is bad
 	- My grandpa called me and was about to give money to a scammer - that time I broke my hand
 
-- 
+
+- Many industries look at how to harness certain powers
+	- "With great power comes great responsibility"
+	- We have to decide what the RIGHT thing to do is
+
+- Iron Giant 
+	- You don't have to be a gun
+
+- Talking about abstractions all the time is boring
+	- Show clips of annoying IT people
+	- Intellectual arrogance
+	- FUD
+
+- I've been exploring the internet for the past 20 years in IT for the past 5.
+
+- There are 2 focuses today:
+	- 1. Why this matters
+	- 2. What you do
 
 ---
 

@@ -11,6 +11,7 @@ date modified: Tuesday, December 31st 2024, 10:19 pm
 > How do we help in this new age of information?
 
 %% Begin Waypoint %%
+- **[[⬇️ Statistics]]**
 - **[[YLC 2024 Presentation]]**
 
 %% End Waypoint %%
