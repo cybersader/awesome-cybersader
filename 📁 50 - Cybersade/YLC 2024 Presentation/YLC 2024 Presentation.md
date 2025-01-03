@@ -168,6 +168,18 @@ date modified: Thursday, January 2nd 2025, 6:24 pm
 
 > [!quote] How I/we got here
 
+- On the phone while driving
+	- There's 3 things you can do to immediately and drastically improve your longevity
+	- Can anyone guess those 3 things?
+		- Don't smoke
+		- Good sleep
+		- Minimize driving
+	- All 3 of them are affected by data privacy even if only in an indirect way
+	- In just my high school years, I had 2 friends who died in car crashes.  
+	- The first guy I skateboarded and played baseball with.  The person driving was distracted and didn't notice the stop sign and approaching vehicles
+	- The other one went nearly head-on into a telephone pole.  The person in that passenger seat was an x-girlfriend.
+- 
+
 - Stories
 	- Getting Adobe software free
 	- People hacking in video games
