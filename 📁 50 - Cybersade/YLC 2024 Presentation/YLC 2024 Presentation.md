@@ -8,7 +8,10 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 ---
 
 %% Begin Waypoint %%
-- [[Drawing 2025-01-03 15.58.52.excalidraw]]
+- **[[Computer Abstractions]]**
+
+- **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
+
 
 %% End Waypoint %%
 
