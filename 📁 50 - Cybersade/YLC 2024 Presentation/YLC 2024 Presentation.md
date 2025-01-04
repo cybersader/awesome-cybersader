@@ -92,6 +92,8 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 
 - Iron Giant 
 	- You don't have to be a gun
+	- https://www.yarn.co/yarn-find?text=%3A%22The+Iron+Giant+%281999%29%22&p=25
+	- 
 
 - Talking about abstractions all the time is boring
 	- Show clips of annoying IT people
