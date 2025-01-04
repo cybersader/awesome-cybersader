@@ -89,7 +89,6 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 
 - Our lives are spent with technology, so we need to take it seriously
 	- [The time we spend on social media — DataReportal – Global Digital Insights](https://datareportal.com/reports/digital-2024-deep-dive-the-time-we-spend-on-social-media)
-	- 
 
 - Iron Giant 
 	- You don't have to be a gun
