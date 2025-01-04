@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Friday, January 3rd 2025, 5:29 pm
+date modified: Saturday, January 4th 2025, 10:10 am
 ---
 
 %% Begin Waypoint %%
@@ -273,6 +273,54 @@ date modified: Friday, January 3rd 2025, 5:29 pm
 
 - We can see this play out at every scale.
 
+# 4. Game Theory & Goals
+
+- Cyberwar - government
+- IT infrastructure and system design - businesses
+- Data usage - businesses
+- Technology use and data exposure - families, individuals
+
+- Government/nation state
+- Business/entity level
+- Families, individuals
+
+- Why should you care?  It depends on your interests.  The reason we have a constitution in the first place is because the majority isn't always right and we have to have something stronger as a foundation.  This foundation should have the interests of the people in mind.  In this case, life liberty and the pursuit of happiness (whatever that means).  
+
+- Hopefully, it's at some level of self actualization.
+
+- Ask yourself what your goals actually are.
+
+- This is called the alignment problem.  One great issue is that the constitution could not have accounted for the things we have today.
+
+- So what does everyone tell you to worry about: the news is desensitizing.  
+
+- As businesses, we build the large scale tools to reach our goals.
+
+- As a government, we cooperate with others or defend ourselves and our interests.
+
+- There's not much you can do about either of these.
+
+- North Korean government, Zeus spyware, etc.  all of that will only alienate you.
+
+- My job is the business level and we've got a lot to do there with our abstractions, but what can you do today?
+
+# 5. The Privacy Game
+
+- 
+- [US State Privacy Legislation Tracker](https://iapp.org/resources/article/us-state-privacy-legislation-tracker/)
+- [IGA | Senate Bill 5 - Consumer data protection](https://iga.in.gov/legislative/2023/bills/senate/5/details)
+- [Global AI Law and Policy Tracker](https://iapp.org/resources/article/global-ai-legislation-tracker/)
+
+# 6. The Cybersecurity Game
+
+- .
+
+# 7. How to Play
+
+---
+
+**WORKSPACE BELOW**
+
 # 4. The Different Levels of Responsibility
 
 - Cyberwar - government
@@ -317,9 +365,7 @@ date modified: Friday, January 3rd 2025, 5:29 pm
 
 # 7. 
 
----
-
-**WORKSPACE BELOW**
+OLDER IDEAS BELOW:
 
 # 1. Hook, Icebreaker
 
