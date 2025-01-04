@@ -522,5 +522,6 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
     - Who's college
 - I'm going to set a goal here
     - For every presentation slide, I need someone to comment or ask a question
+- [The Internet’s “Wild West” Era: A Love Letter to the early 00’s Internet. | by Alejandro Palacios | Medium](https://medium.com/@alejandropalacios_98575/the-internets-wild-west-era-a-love-letter-to-the-early-00-s-internet-3075722f79ae)
 - 
 
