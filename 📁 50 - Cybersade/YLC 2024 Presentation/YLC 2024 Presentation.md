@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Saturday, January 4th 2025, 10:38 am
+date modified: Saturday, January 4th 2025, 1:16 pm
 ---
 
 %% Begin Waypoint %%
@@ -257,6 +257,11 @@ date modified: Saturday, January 4th 2025, 10:38 am
 - 5 years ago, I was in Hawaii.  I was with the swim and dive team.  Hawaii is awesome, but some awesome things can come with there dangers.  I was swimming past the break point of the waves and it was winter season.  The waves don't look so bad from far away.  I was on a particular beach where the sand slopes up much faster.  Some of them nicknamed it breakneck beach in the winter.  The waves were around 15 feet tall when they crested on the shore.  We would swim past them and chill out before where they crest.  At one point, the lifeguard told us we had a big "set" coming in.  I was swimming in as fast as I could, but I wasn't too scared at the time.  I looked back and the wave was likely a good 20+ ft tall from top to the sand.  I was in the middle of it.  I relaxed and let the wave throw me around and that happened for about 15+ seconds.  I got thrown around hard and tried to get my head out of the water knowing that the wave was over.  Unfortunately, I could only get my head out to barely see that another comparable wave was over me again.  This time I hit the sand and it hurt like crazy almost taking the wind out of me.  I got thrown around yet again.  Yet another wave, but this time I got a slight breath in.  I was under the water for over a minute.  I saw a lifeguard waiting with his flotation device ready to run in a get me.  He told me that is was a wave hold down for 3 or 4 waves.  
 
 - It's all fun and games till the waves build up to be too big and you don't take it seriously.
+
+## Cyber Origin
+
+- [cybernetics | Etymology of cybernetics by etymonline](https://www.etymonline.com/word/cybernetics)
+- 
 
 - Cyberspace comes from a novel in the 80s.  It was a supposedly meaningless term made up by the author, but it had a word it came from.  Kybernan.
 - It means to steer or control.  So cyber really refers to the space of digital information.  Cyber can be thought of as an ocean or a landscape of information.  We can navigate it and it has no borders, factions, peoples, and many dangers.
@@ -542,5 +547,9 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 - Be a skeptical, arrogant, conspiracy theorist.
 
 # 8. Discussion
+
+- .
+
+# DROPZONE
 
 - 
