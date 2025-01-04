@@ -10,6 +10,8 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 %% Begin Waypoint %%
 - **[[Computer Abstractions]]**
 
+- **[[Cyber & Game Theory]]**
+
 - **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
 
 
@@ -129,6 +131,9 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 
 - It's all fun and games till the waves build up to be too big and you don't take it seriously.
 
+Technology is a means to ends  
+  
+>"The ends don't justify the means."
 ## Cyber Origin
 
 - [cybernetics | Etymology of cybernetics by etymonline](https://www.etymonline.com/word/cybernetics)
@@ -527,5 +532,6 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 - I'm going to set a goal here
     - For every presentation slide, I need someone to comment or ask a question
 - [The Internet’s “Wild West” Era: A Love Letter to the early 00’s Internet. | by Alejandro Palacios | Medium](https://medium.com/@alejandropalacios_98575/the-internets-wild-west-era-a-love-letter-to-the-early-00-s-internet-3075722f79ae)
+- [We Taught Sand to Think](https://www.cfreak.dev/we-taught-sand-to-think/)
 - 
 
