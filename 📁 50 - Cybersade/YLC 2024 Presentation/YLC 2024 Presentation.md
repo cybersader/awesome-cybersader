@@ -538,5 +538,7 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
     - For every presentation slide, I need someone to comment or ask a question
 - [The Internet’s “Wild West” Era: A Love Letter to the early 00’s Internet. | by Alejandro Palacios | Medium](https://medium.com/@alejandropalacios_98575/the-internets-wild-west-era-a-love-letter-to-the-early-00-s-internet-3075722f79ae)
 - [We Taught Sand to Think](https://www.cfreak.dev/we-taught-sand-to-think/)
+- [What’s in a Name? The Origin of Cyber](https://www.ciso.inc/blog-posts/origin-cyber/)
+- [Christian Principles in Cybersecurity | Geneva College](https://www.geneva.edu/blog/program-spotlight/the-value-of-christian-principles-in-cybersecurity-education)
 - 
 
