@@ -168,7 +168,7 @@ Technology is a means to ends
 - Business/entity level
 - Families, individuals
 
-- Why should you care?  It depends on your interests.  The reason we have a constitution in the first place is because the majority isn't always right and we have to have something stronger as a foundation.  This foundation should have the interests of the people in mind.  In this case, life liberty and the pursuit of happiness (whatever that means).  
+- Why should you care?  It depends on your interests.  
 
 - Hopefully, it's at some level of self actualization.
 
@@ -474,6 +474,7 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 -  “There are only two industries that call their customers “users”: illegal drugs and software.” — Edward Tufte
 - “Nothing vast enters the life of mortals without a curse.” — Sophocles
 - “We curate our lives around this perceived sense of perfection because we get rewarded in these short term signals: hearts, likes, thumbs up and we conflate that with value and we conflate it with truth. And instead, what it is is fake brittle popularity that’s short term and that leaves you even more, and admit it, vacant and empty before you did it. Because that enforces you into a vicious cycle where you’re like what’s the next thing that I need to do now, because I need it back. Think about that compounded by two billion people and then think about how then people react to then to the perceptions of others.” — Chamath Palihapitiya, CEO of Social Capital
+- 
 -  “We’re training and conditioning a whole new generation of people that when we are uncomfortable or lonely or uncertain or afraid we have a digital pacifier for ourselves that is kind of atrophying our own ability to deal with that.” — Tristan Harris, former design ethicist at Google and co-founder of Centre for Humane Technologies
 - “We’ve created a world in which online connection has become primary. Especially for younger generations. And yet, in that world, anytime two people connect, the only way it’s financed is through a sneaky third person who’s paying to manipulate those two people. So we’ve created an entire global generation of people who were raised within a context with the very meaning of communication, the very meaning of culture, is manipulation.” — Jaron Lainer, computer scientist and virtual reality pioneer
 - “We’re the product. Our attention is the product being sold to advertisers.” - Justin Rosenstein, former engineer Facebook and Google, co-founder of Asana
