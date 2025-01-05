@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Saturday, January 4th 2025, 2:51 pm
+date modified: Saturday, January 4th 2025, 7:00 pm
 ---
 
 %% Begin Waypoint %%
@@ -134,6 +134,7 @@ date modified: Saturday, January 4th 2025, 2:51 pm
 Technology is a means to ends  
   
 >"The ends don't justify the means."
+
 ## Cyber Origin
 
 - [cybernetics | Etymology of cybernetics by etymonline](https://www.etymonline.com/word/cybernetics)
@@ -184,6 +185,8 @@ Technology is a means to ends
 - North Korean government, Zeus spyware, etc.  all of that will only alienate you.
 
 - My job is the business level and we've got a lot to do there with our abstractions, but what can you do today?
+
+- [ELI5: What is Game Theory? : r/explainlikeimfive](https://www.reddit.com/r/explainlikeimfive/comments/1qnocp/eli5_what_is_game_theory/)
 
 # 5. The Privacy Game
 
