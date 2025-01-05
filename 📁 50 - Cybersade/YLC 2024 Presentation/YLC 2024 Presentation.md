@@ -107,6 +107,8 @@ date modified: Saturday, January 4th 2025, 7:00 pm
 	- How stuff is "coded" and designed in the background can be exploited by hackers, but that's the responsibility of the designers of those systems.
 	- Talking to you about how all of that is secured is boring. 
 	- Rather, I want to arm the masses so they can navigate all of this no matter what it is.
+	- https://youtu.be/r6tH55syq0o?si=e1mpBwLmJVN9x1Hs&t=42
+
 - How do you picture IT people?
     - IT arrogance word cloud
     - We all have our hobbies…emphasis on hobbies
