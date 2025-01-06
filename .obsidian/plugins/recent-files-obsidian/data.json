@@ -1,12 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "✒️ Personal OpSec Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
-    },
-    {
-      "basename": "Identity & Cybersecurity Basics",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Identity & Cybersecurity Basics.md"
+      "basename": "Password Manager Setup",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Password Manager Setup/Password Manager Setup.md"
     },
     {
       "basename": "Password Manager Choices",
@@ -15,6 +11,14 @@
     {
       "basename": "YLC 2024 Presentation",
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "✒️ Personal OpSec Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
+    },
+    {
+      "basename": "Identity & Cybersecurity Basics",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Identity & Cybersecurity Basics.md"
     },
     {
       "basename": "📁 04 - Cyber & Digital Trust",
@@ -195,10 +199,6 @@
     {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     }
   ],
   "omittedPaths": [],

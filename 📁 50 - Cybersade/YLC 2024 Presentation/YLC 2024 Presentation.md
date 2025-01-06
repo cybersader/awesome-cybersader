@@ -18,6 +18,8 @@ date modified: Monday, January 6th 2025, 12:45 pm
 
 - **[[Password Manager Choices]]**
 
+- **[[Password Manager Setup]]**
+
 
 %% End Waypoint %%
 
