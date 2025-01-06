@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Monday, January 6th 2025, 10:34 am
+date modified: Monday, January 6th 2025, 10:46 am
 ---
 
 %% Begin Waypoint %%
@@ -529,6 +529,7 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 - [Secure File Sharing](../../📁%2007%20-%20Cybersader%20Arsenal/Secure%20File%20Sharing/Secure%20File%20Sharing.md)
 - [VPNs](../../📁%2007%20-%20Cybersader%20Arsenal/VPNs/VPNs.md)
 - [Windows Home IT Admin](../../📁%2007%20-%20Cybersader%20Arsenal/Windows%20Home%20IT%20Admin/Windows%20Home%20IT%20Admin.md)
+- [📁 04 - Cyber & Digital Trust](../../📁%2004%20-%20Cyber%20&%20Digital%20Trust/📁%2004%20-%20Cyber%20&%20Digital%20Trust.md)
 
 # DROPZONE
 
