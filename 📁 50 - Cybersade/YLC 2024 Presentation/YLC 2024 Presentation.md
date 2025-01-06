@@ -14,6 +14,7 @@ date modified: Monday, January 6th 2025, 10:46 am
 
 - **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
 
+- **[[Identity & Cybersecurity Basics]]**
 
 %% End Waypoint %%
 
