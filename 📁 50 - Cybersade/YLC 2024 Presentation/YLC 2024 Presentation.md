@@ -564,5 +564,7 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 - [Christian Principles in Cybersecurity | Geneva College](https://www.geneva.edu/blog/program-spotlight/the-value-of-christian-principles-in-cybersecurity-education)
 - [cybernetics | Etymology of cybernetics by etymonline](https://www.etymonline.com/word/cybernetics)
 - [US Treasury says it was hacked by China in 'major incident'](https://www.bbc.com/news/articles/c3weye2j0e7o)
+- [More firms hit by China-linked Salt Typhoon US telecom hack surge](https://www.androidheadlines.com/2025/01/more-firms-hit-by-china-linked-salt-typhoon-us-telecom-hack-surge.html)
+- [US adds 9th telcom to list of companies hacked by Chinese-backed Salt Typhoon cyberespionage | Reuters](https://www.reuters.com/technology/cybersecurity/us-adds-9th-telcom-list-companies-hacked-by-chinese-backed-salt-typhoon-2024-12-27/)
 - 
 
