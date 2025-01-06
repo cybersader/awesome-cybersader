@@ -8,19 +8,19 @@ date modified: Monday, January 6th 2025, 12:45 pm
 ---
 
 %% Begin Waypoint %%
+- **[[Authenticator Apps 2024]]**
+
 - **[[Computer Abstractions]]**
 
 - **[[Cyber & Game Theory]]**
+
+- **[[Cyberwarfare News End of 2024]]**
 
 - **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
 
 - **[[Identity & Cybersecurity Basics]]**
 
-- **[[Password Manager Choices]]**
-
 - **[[Password Manager Setup]]**
-
-- **[[Stop Using SMS]]**
 
 
 %% End Waypoint %%
@@ -238,6 +238,12 @@ Technology is a means to ends
 - It all still relates to identity because that relates to interests and game theory
 - So we get good at building walls and checking the people that walk through them
 
+- [Treasury sanctions Chinese cyber firm behind mass attack on U.S. routers - The Washington Post](https://www.washingtonpost.com/national-security/2025/01/03/china-flax-typhoon-hacks-routers/)
+- [Why the FBI wants you to use end-to-end encrypted messaging](https://www.cnbc.com/2024/12/15/why-the-fbi-wants-you-to-use-end-to-end-encrypted-messaging.html)
+- [Government agencies urged to use encrypted messaging after Chinese Salt Typhoon hack | Computer Weekly](https://www.computerweekly.com/news/366616972/Government-agencies-urged-to-use-encrypted-messaging-after-Chinese-Salt-Typhoon-hack)
+- [What to know about string of US hacks blamed on China](https://www.bbc.com/news/articles/c86w2evj05do)
+- [US Treasury says Chinese hackers stole documents in 'major incident' | Reuters](https://www.reuters.com/technology/cybersecurity/us-treasurys-workstations-hacked-cyberattack-by-china-afp-reports-2024-12-30/)
+- 
 ## Factors of Authentication
 
 - Links
@@ -556,5 +562,7 @@ This is what the paranoid people do and it gives good security hygiene a bad rap
 - [We Taught Sand to Think](https://www.cfreak.dev/we-taught-sand-to-think/)
 - [What’s in a Name? The Origin of Cyber](https://www.ciso.inc/blog-posts/origin-cyber/)
 - [Christian Principles in Cybersecurity | Geneva College](https://www.geneva.edu/blog/program-spotlight/the-value-of-christian-principles-in-cybersecurity-education)
+- [cybernetics | Etymology of cybernetics by etymonline](https://www.etymonline.com/word/cybernetics)
+- [US Treasury says it was hacked by China in 'major incident'](https://www.bbc.com/news/articles/c3weye2j0e7o)
 - 
 
