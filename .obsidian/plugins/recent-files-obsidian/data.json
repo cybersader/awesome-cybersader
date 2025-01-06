@@ -5,6 +5,26 @@
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
     },
     {
+      "basename": "✒️ Personal OpSec Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
+    },
+    {
+      "basename": "heading",
+      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/heading.png"
+    },
+    {
+      "basename": "Computer Abstractions",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Computer Abstractions/Computer Abstractions.md"
+    },
+    {
+      "basename": "Cyber & Game Theory",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
+    },
+    {
+      "basename": "Drawing 2025-01-03 15.58.52.excalidraw",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Drawing 2025-01-03 15.58.52.excalidraw/Drawing 2025-01-03 15.58.52.excalidraw.md"
+    },
+    {
       "basename": "📁 50 - Cybersade",
       "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
     },
@@ -13,24 +33,8 @@
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Cultivating Growth and Connection/Cultivating Growth and Connection.md"
     },
     {
-      "basename": "Drawing 2025-01-03 15.58.52.excalidraw",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Drawing 2025-01-03 15.58.52.excalidraw/Drawing 2025-01-03 15.58.52.excalidraw.md"
-    },
-    {
-      "basename": "Cyber & Game Theory",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
-    },
-    {
-      "basename": "Computer Abstractions",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Computer Abstractions/Computer Abstractions.md"
-    },
-    {
       "basename": "✒️Home Lab v0.0.01",
       "path": "📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/✒️Home Lab v0.0.01.md"
-    },
-    {
-      "basename": "✒️ Personal OpSec Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
     },
     {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
@@ -195,10 +199,6 @@
     {
       "basename": "Linking to Frameworks",
       "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
     }
   ],
   "omittedPaths": [],
