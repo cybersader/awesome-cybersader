@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Monday, January 6th 2025, 10:46 am
+date modified: Monday, January 6th 2025, 12:45 pm
 ---
 
 %% Begin Waypoint %%
@@ -15,6 +15,8 @@ date modified: Monday, January 6th 2025, 10:46 am
 - **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
 
 - **[[Identity & Cybersecurity Basics]]**
+
+- **[[Password Manager Choices]]**
 
 
 %% End Waypoint %%
@@ -231,6 +233,12 @@ Technology is a means to ends
 - The proven parts of security are done with mostly math because you can prove it with a formula
 - It all still relates to identity because that relates to interests and game theory
 - So we get good at building walls and checking the people that walk through them
+
+## Factors of Authentication
+
+- Links
+	- [What You Have, What You Know, What You Are](https://blog.codinghorror.com/what-you-have-what-you-know-what-you-are/)
+	- 
 
 # 7. How to Play
 
