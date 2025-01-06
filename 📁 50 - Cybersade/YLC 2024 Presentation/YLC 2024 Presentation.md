@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Saturday, January 4th 2025, 7:00 pm
+date modified: Monday, January 6th 2025, 10:34 am
 ---
 
 %% Begin Waypoint %%
@@ -98,7 +98,7 @@ date modified: Saturday, January 4th 2025, 7:00 pm
 - Iron Giant 
 	- You don't have to be a gun
 	- https://www.yarn.co/yarn-find?text=%3A%22The+Iron+Giant+%281999%29%22&p=25
-	- 
+	- https://youtu.be/fu0scA8kqHQ?si=QUrCwpr4kz47cfYw&t=198
 
 - Talking about abstractions all the time is boring
 	- Show clips of annoying IT people
