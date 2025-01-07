@@ -18,7 +18,11 @@ date modified: Monday, January 6th 2025, 12:45 pm
 
 - **[[Drawing 2025-01-03 15.58.52.excalidraw]]**
 
+- **[[Email Aliasing]]**
+
 - **[[Identity & Cybersecurity Basics]]**
+
+- **[[Instagram & Email Aliases]]**
 
 - **[[Password Manager Setup]]**
 
