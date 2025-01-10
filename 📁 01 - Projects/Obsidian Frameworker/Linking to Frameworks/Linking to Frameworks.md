@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Tuesday, December 24th 2024, 11:50 am
-date modified: Tuesday, December 24th 2024, 2:10 pm
+date modified: Friday, January 10th 2025, 4:16 pm
 ---
 
 # Link Metadata (Graph Link Properties) 
@@ -218,15 +218,15 @@ The **dotKey** portion (`framework_here.something`) can be used to attach differ
 
 Below is a small matrix of possible combinations, with or without wrappers:
 
-| **Syntax**                                                                      | **Meaning**                                                                                                                                                                         | **Link Type**                                                                                                            | **Wrapper**        | **Metadata**                    |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------- |
-| `framework_here.reviewer:: "Person_1"`                                          | Set `reviewer` to `"Person_1"`.                                                                                                                                                     | Plain (no link).  Default type for other links on the page.                                                              | None (block style) | Quoted string                   |
-| `[framework_here.applies_to:: [ID 12](ID%2012.md)]`                             | The `applies_to` relationship references `ID 12`. Possibly hidden in preview.                                                                                                       | Markdown link.  Flag type.  Default type for other MATCHING links on the page (only to that PARTICULAR page/destination) | Square brackets    | No JSON, default = boolean true |
-| `(framework_here.applies_to:: [[ID 13]] {"sufficient": true, "control": true})` | The `applies_to` relationship references wiki-link `[[ID 13]]` with extra JSON data. Hidden/inline.                                                                                 | WikiLink + JSON.  Default type for other MATCHING links on the page (only to that PARTICUALR page/destination)           | Parentheses        | JSON object                     |
-| `framework_here.reviewed:: [[ID 12]]`                                           | `reviewed` relationship references page `ID 12`. Visible inline. This shows that the relationship has been reviewed.                                                                | WikiLink                                                                                                                 | None (block style) | No JSON, default = boolean true |
-| `[framework_here.approved:: True]`                                              | Any non-explicit links to the `framework_here` framework are given a default of `approved = True` (if not explicitly defined in another link to ANY destination page)               | Default type for other links on the page                                                                                 | Square brackets    | Boolean                         |
-| `(framework_here.score:: 9)`                                                    | Any non-explicit links to the `framework_here` framework (from this page) are given a default of `score = True` (if not explicitly defined in another link to ANY destination page) | Default type for other links on the page                                                                                 | Parentheses        | Number                          |
-| `[framework_here.score:: [[ID 13]] {9}]`                                        |                                                                                                                                                                                     | WikiLink.  Default type for other MATCHING links on the page (only to that PARTICUALR page/destination)                  | Parentheses        | Number                          |
+| **Syntax**                                                                      | **Meaning**                                                                                                                                                                         | **Link Type**                                                                                                            | **Wrapper**        | **Metadata**                    | Metadata Priority/Merging Level |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------- | ------------------------------- |
+| `framework_here.reviewer:: "Person_1"`                                          | Set `reviewer` to `"Person_1"`.                                                                                                                                                     | Plain (no link).  Default type for other links on the page.                                                              | None (block style) | Quoted string                   |                                 |
+| `[framework_here.applies_to:: [ID 12](ID%2012.md)]`                             | The `applies_to` relationship references `ID 12`. Possibly hidden in preview.                                                                                                       | Markdown link.  Flag type.  Default type for other MATCHING links on the page (only to that PARTICULAR page/destination) | Square brackets    | No JSON, default = boolean true |                                 |
+| `(framework_here.applies_to:: [[ID 13]] {"sufficient": true, "control": true})` | The `applies_to` relationship references wiki-link `[[ID 13]]` with extra JSON data. Hidden/inline.                                                                                 | WikiLink + JSON.  Default type for other MATCHING links on the page (only to that PARTICUALR page/destination)           | Parentheses        | JSON object                     |                                 |
+| `framework_here.reviewed:: [[ID 12]]`                                           | `reviewed` relationship references page `ID 12`. Visible inline. This shows that the relationship has been reviewed.                                                                | WikiLink                                                                                                                 | None (block style) | No JSON, default = boolean true |                                 |
+| `[framework_here.approved:: True]`                                              | Any non-explicit links to the `framework_here` framework are given a default of `approved = True` (if not explicitly defined in another link to ANY destination page)               | Default type for other links on the page                                                                                 | Square brackets    | Boolean                         |                                 |
+| `(framework_here.score:: 9)`                                                    | Any non-explicit links to the `framework_here` framework (from this page) are given a default of `score = True` (if not explicitly defined in another link to ANY destination page) | Default type for other links on the page                                                                                 | Parentheses        | Number                          |                                 |
+| `[framework_here.score:: [[ID 13]] {9}]`                                        |                                                                                                                                                                                     | WikiLink.  Default type for other MATCHING links on the page (only to that PARTICUALR page/destination)                  | Parentheses        | Number                          |                                 |
 
 * * *
 
@@ -234,6 +234,20 @@ Below is a small matrix of possible combinations, with or without wrappers:
 
 In your system, you may define a **priority** for how these inline tags (and their metadata) should be merged or interpreted, especially if multiple lines reference the same `dotKey`.
 
+(from highest importance to lowest)
+
+1. With link
+	1. Inline tag (leaf/lower/child - dot notation) + link + JSON 
+	2. Inline tag (root/higher/parent - dot notation) + link + JSON 
+	3. Inline tag (dot notation) + link + value or quoted value
+	4. Inline tag (dot notation) + link + implied flag/boolean (no value)
+2. Without link
+	1. Inline tag (leaf/lower/child - dot notation) + JSON 
+	2. Inline tag (root/higher/parent - dot notation) + JSON 
+	3. Inline tag (dot notation) + value or quoted value
+	4. Inline tag (dot notation) + implied flag/boolean (no value)
+
+Options to think about:
 1. **Inline tag with JSON**
 2. **Inline tag with simpler quoted value**
 3. **Fallback to a boolean or default**
