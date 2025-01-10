@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "Linking to Frameworks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
+    },
+    {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
+    },
+    {
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
+    },
+    {
+      "basename": "Framework Mapping",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "✒️ Personal OpSec Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
+    },
+    {
+      "basename": "Password Manager Setup",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Password Manager Setup/Password Manager Setup.md"
+    },
+    {
+      "basename": "📁 50 - Cybersade",
+      "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
+    },
+    {
+      "basename": "YLC 2024 Presentation",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "Email Aliasing",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Email Aliasing/Email Aliasing.md"
+    },
+    {
       "basename": "Instagram & Email Aliases",
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/Instagram & Email Aliases/Instagram & Email Aliases.md"
     },
@@ -25,28 +73,8 @@
       "path": "🕸️ Daily Notes/2025/01/2025-01-10-Friday/2025-01-10-Friday.md"
     },
     {
-      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
-      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "✒️ Personal OpSec Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
-    },
-    {
-      "basename": "Email Aliasing",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Email Aliasing/Email Aliasing.md"
-    },
-    {
-      "basename": "YLC 2024 Presentation",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
-    },
-    {
       "basename": "Cyberwarfare News End of 2024",
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyberwarfare News End of 2024/Cyberwarfare News End of 2024.md"
-    },
-    {
-      "basename": "Password Manager Setup",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Password Manager Setup/Password Manager Setup.md"
     },
     {
       "basename": "Identity & Cybersecurity Basics",
@@ -83,10 +111,6 @@
     {
       "basename": "Drawing 2025-01-03 15.58.52.excalidraw",
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/Drawing 2025-01-03 15.58.52.excalidraw/Drawing 2025-01-03 15.58.52.excalidraw.md"
-    },
-    {
-      "basename": "📁 50 - Cybersade",
-      "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
     },
     {
       "basename": "Cultivating Growth and Connection",
@@ -175,30 +199,6 @@
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Inputs, Capture",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "Obsidian as a CMS",
-      "path": "📁 10 - My Obsidian Stack/Obsidian as a CMS/Obsidian as a CMS.md"
-    },
-    {
-      "basename": "Arguments in Markdown",
-      "path": "📁 10 - My Obsidian Stack/Arguments in Markdown/Arguments in Markdown.md"
-    },
-    {
-      "basename": "Obsidian & Corporate Docs",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
-    },
-    {
-      "basename": "Web or Browser-Based Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
     }
   ],
   "omittedPaths": [],
