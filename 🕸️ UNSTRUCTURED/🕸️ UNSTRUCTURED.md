@@ -64,6 +64,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Scalable Obsidian Backend]]**
 - [[Scalable Project Management]]
 - **[[Spyware]]**
+- **[[SSD Data Recovery]]**
 - [[Sub-Based & Ad-Avoiding Media Platforms]]
 - **[[Teaching Engagement Hacks]]**
 - **[[Tech Stacks from Tech Content Creators]]**

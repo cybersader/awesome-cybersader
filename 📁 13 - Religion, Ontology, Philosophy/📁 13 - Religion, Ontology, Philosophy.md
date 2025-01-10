@@ -10,6 +10,7 @@ date modified: Tuesday, November 12th 2024, 10:06 pm
 
 %% Begin Waypoint %%
 - **[[⬇️ Ontological Drop]]**
+	- **[[Lex Orandi, Lex Credendi]]**
 	- **[[Pints with Aquinas - JP]]**
 - **[[Church Operations During Conflict]]**
 - **[[Jesus and the Eucharist - Augustine Institute]]**

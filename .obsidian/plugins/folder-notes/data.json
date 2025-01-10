@@ -4,7 +4,7 @@
   "altKey": false,
   "hideFolderNote": true,
   "templatePath": "",
-  "autoCreate": false,
+  "autoCreate": true,
   "enableCollapsing": false,
   "excludeFolders": [],
   "whitelistFolders": [],

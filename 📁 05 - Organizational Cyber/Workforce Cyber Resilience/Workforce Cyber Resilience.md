@@ -1,14 +1,14 @@
 ---
-aliases:
-  - Organizational Cyber Pedagogy
-  - Workforce Education
-tags: 
+permalink:
+aliases: [Organizational Cyber Pedagogy, Workforce Education]
+tags: []
 publish: true
 date created: Friday, June 14th 2024, 5:00 pm
-date modified: Sunday, November 17th 2024, 5:03 pm
+date modified: Friday, January 10th 2025, 1:29 pm
 ---
 
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
+[📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 
 - https://www.staysafeonline.org/resources/online-safety-and-privacy#toolkits
 
