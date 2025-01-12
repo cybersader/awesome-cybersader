@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Tuesday, December 24th 2024, 11:50 am
-date modified: Friday, January 10th 2025, 4:16 pm
+date modified: Sunday, January 12th 2025, 1:37 pm
 ---
 
 # Link Metadata (Graph Link Properties) 
@@ -233,6 +233,14 @@ Below is a small matrix of possible combinations, with or without wrappers:
 ## 6. Priority Structures & Query Logic
 
 In your system, you may define a **priority** for how these inline tags (and their metadata) should be merged or interpreted, especially if multiple lines reference the same `dotKey`.
+
+Here's how to think about how this relationship object building works:
+- The relationship object builder will start with the most granular key:value instantiations for that "framework" relationship object.
+- It will use the defined priority for graph-link classifications/types to determine how to build the relationship object
+- Two key components affect prioritization:
+	- The presence of an explicit link to the framework file
+	- The level in the relationship object at which that graph link is declared/instantiated (child, root, relationship object itself w/no dot notation)
+- This all assumes that the relationship object schema is the same for any relationship in that "framework"
 
 (from highest importance to lowest)
 
