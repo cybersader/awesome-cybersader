@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, January 12th 2025, 12:21 pm
-date modified: Sunday, January 12th 2025, 4:00 pm
+date modified: Sunday, January 12th 2025, 4:15 pm
 ---
 
 [2025-01-12-Sunday](../../🕸️%20Daily%20Notes/2025/01/2025-01-12-Sunday/2025-01-12-Sunday.md)
@@ -26,6 +26,10 @@ date modified: Sunday, January 12th 2025, 4:00 pm
 
 - [Why Does My Cat’s Poop Smell So Bad? | PrettyLitter](https://www.prettylitter.com/blog/why-does-my-cat-s-poop-smell-so-bad-7-causes-and-solutions)
 - 
+
+## Take them to the vet
+
+- If you don't take them to the vet, then all sorts of more complex issues can cause smells
 
 ## Spreading Resources
 
