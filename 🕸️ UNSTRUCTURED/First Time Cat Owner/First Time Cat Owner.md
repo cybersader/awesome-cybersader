@@ -29,6 +29,8 @@ date modified: Sunday, January 12th 2025, 4:15 pm
 
 ## Take them to the vet
 
+
+
 - If you don't take them to the vet, then all sorts of more complex issues can cause smells
 
 ## Spreading Resources
