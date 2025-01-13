@@ -245,15 +245,15 @@ Here's how to think about how this relationship object building works:
 (from highest importance to lowest)
 
 1. With link
-	1. Inline tag (leaf/lower/child - dot notation) + link + JSON 
-	2. Inline tag (root/higher/parent - dot notation) + link + JSON 
-	3. Inline tag (dot notation) + link + value or quoted value
-	4. Inline tag (dot notation) + link + implied flag/boolean (no value)
+	1. Inline tag (dot notation) + link + value or quoted value
+	2. Inline tag (dot notation) + link + implied flag/boolean (no value)
+	3. Inline tag (leaf/lower/child - dot notation) + link + JSON 
+	4. Inline tag (root/higher/parent - dot notation) + link + JSON 
 2. Without link
-	1. Inline tag (leaf/lower/child - dot notation) + JSON 
-	2. Inline tag (root/higher/parent - dot notation) + JSON 
-	3. Inline tag (dot notation) + value or quoted value
+	1. Inline tag (dot notation) + value or quoted value
 	4. Inline tag (dot notation) + implied flag/boolean (no value)
+	2. Inline tag (leaf/lower/child - dot notation) + JSON 
+	3. Inline tag (root/higher/parent - dot notation) + JSON 
 
 Options to think about:
 1. **Inline tag with JSON**
