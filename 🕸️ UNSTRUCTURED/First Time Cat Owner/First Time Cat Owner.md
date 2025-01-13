@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, January 12th 2025, 12:21 pm
-date modified: Monday, January 13th 2025, 12:12 pm
+date modified: Monday, January 13th 2025, 12:28 pm
 ---
 
 [2025-01-12-Sunday](../../🕸️%20Daily%20Notes/2025/01/2025-01-12-Sunday/2025-01-12-Sunday.md)
@@ -52,3 +52,13 @@ date modified: Monday, January 13th 2025, 12:12 pm
 - [Stopping my cat from jumping on shelves and on cabinets : r/Kitten](https://www.reddit.com/r/Kitten/comments/bdc6lh/stopping_my_cat_from_jumping_on_shelves_and_on/)
 - [Why Cats Jump & How to Control It | Hill's Pet](https://www.hillspet.com/cat-care/training/managing-your-cats-jumping?lightboxfired=true#)
 
+# Tags
+
+- **Fetching Ware**: Offers over 250 types of cat ID tags in various colors and shapes, including basic and designer tags with free engraving.
+- **Petco**: Provides personalized stainless steel cat ID tags in different shapes like bow tie and flower designs. They also offer free engraving.
+- **Pet Tags**: Specializes in a wide range of cat tags, with options for custom engraving. They offer free shipping within the UK.
+- **Quick Tag**: Features a variety of cat ID tags with unique designs, including funny and classic styles.
+- **PetIDTag**: Offers a large selection of custom engraved cat ID tags with a lifetime guarantee and free Australia-wide shipping.
+- **Etsy**: Provides a wide range of handmade and unique cat ID tags from various sellers. You can find tags with custom designs and laser engraving.
+- **GoTags**: Sells personalized cat collar tags with fast, free shipping.
+- **Peticular**: Offers a range of cat ID tags with free engraving on the My Family range.
