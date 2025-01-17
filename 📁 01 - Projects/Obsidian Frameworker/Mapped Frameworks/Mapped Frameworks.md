@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 17th 2025, 1:55 pm
-date modified: Friday, January 17th 2025, 2:43 pm
+date modified: Friday, January 17th 2025, 3:20 pm
 ---
 
 # NIST CSF 2.0 Community Profiles
@@ -183,3 +183,5 @@ Columns:
 - Relation
 - Defensive Technique
 - Technique
+
+
