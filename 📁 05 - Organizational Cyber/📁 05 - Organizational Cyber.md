@@ -28,6 +28,7 @@ publish: true
 - **[[Enterprise IAM]]**
 - **[[Frameworks, Standards]]**
 - **[[Game-Based Tabletops]]**
+- **[[Identity Governance]]**
 - **[[Identity Provider]]**
 - **[[Incident Response]]**
 - **[[Log Management, Event-Driven Architectures]]**

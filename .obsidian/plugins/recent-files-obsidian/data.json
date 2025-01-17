@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "📁 05 - Organizational Cyber/Untitled/Untitled.md"
+    },
+    {
+      "basename": "NIST & CIS Resources",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
+    },
+    {
+      "basename": "Frameworks, Standards",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md"
+    },
+    {
+      "basename": "Framework Mapping",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "Frameworks, Ontologies",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Frameworks, Ontologies/Frameworks, Ontologies.md"
+    },
+    {
       "basename": "2025-01-17-Friday",
       "path": "🕸️ Daily Notes/2025/01/2025-01-17-Friday/2025-01-17-Friday.md"
+    },
+    {
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
+    },
+    {
+      "basename": "frameworker_diagram",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
+    },
+    {
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
     },
     {
       "basename": "2025-01-12-Sunday",
@@ -17,24 +49,8 @@
       "path": "🕸️ UNSTRUCTURED/First Time Cat Owner/First Time Cat Owner.md"
     },
     {
-      "basename": "frameworker_diagram",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/frameworker_diagram.md"
-    },
-    {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
-    },
-    {
-      "basename": "frameworker_linking",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
-    },
-    {
-      "basename": "Framework Mapping",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
     {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
@@ -183,18 +199,6 @@
     {
       "basename": "Proton-logotype-purple-noborder",
       "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Tierlist/Proton-logotype-purple-noborder.png"
-    },
-    {
-      "basename": "2024-12-31-Tuesday",
-      "path": "🕸️ Daily Notes/2024/12/2024-12-31-Tuesday/2024-12-31-Tuesday.md"
-    },
-    {
-      "basename": "Personal Email",
-      "path": "📁 07 - Cybersader Arsenal/Personal Email/Personal Email.md"
-    },
-    {
-      "basename": "Excalidraw",
-      "path": "📁 10 - My Obsidian Stack/Excalidraw/Excalidraw.md"
     }
   ],
   "omittedPaths": [],
