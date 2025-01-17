@@ -25,6 +25,7 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 	- **[[frameworker_linking]]**
 
 	- **[[Linking to Frameworks]]**
+	- **[[Mapped Frameworks]]**
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**

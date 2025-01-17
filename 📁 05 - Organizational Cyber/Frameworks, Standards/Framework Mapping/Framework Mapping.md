@@ -1,15 +1,10 @@
 ---
-aliases:
-  - Key Control Catalog
-tags:
-  - "#data-integration"
-  - "#data_mapping"
-  - RCSA
-  - risk-management
-  - risk-assessment
+permalink:
+aliases: [Key Control Catalog]
+tags: ["#data-integration", "#data_mapping", RCSA, risk-management, risk-assessment]
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Monday, October 7th 2024, 4:24 pm
+date modified: Friday, January 17th 2025, 2:29 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
@@ -30,7 +25,9 @@ date modified: Monday, October 7th 2024, 4:24 pm
     - https://viewer.oscal.io/
     - https://www.drtconfidence.com/
     - https://regscale.com/blog/regscale-support-cyber-risk-institute-profile/
-    - 
+- Att&ck
+	- [External Mappings Home – Mappings Explorer](https://center-for-threat-informed-defense.github.io/mappings-explorer/external/)
+	- 
 
 # Discussions/Opinions Online?
 
