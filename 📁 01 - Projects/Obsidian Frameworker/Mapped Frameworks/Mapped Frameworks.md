@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 17th 2025, 1:55 pm
-date modified: Saturday, January 18th 2025, 5:25 pm
+date modified: Saturday, January 18th 2025, 5:52 pm
 ---
 
 # NIST CSF 2.0 Community Profiles
@@ -219,6 +219,16 @@ Sheets & Columns:
 
 - [rabobank-cdc/DeTTECT: Detect Tactics, Techniques & Combat Threats](https://github.com/rabobank-cdc/DeTTECT)
 - 
+
+# NIST CSF Crosswalks (more)
+
+- [GDPR Crosswalk by Enterprivacy Consulting Group | NIST](https://www.nist.gov/privacy-framework/resource-repository/browse/crosswalks/gdpr-crosswalk-enterprivacy-consulting-group)
+- [National Online Informative References Program | CSRC](https://csrc.nist.gov/projects/olir/informative-reference-catalog#/)
+- [CIS Critical Security Controls v8 Mapping to NIST CSF](https://www.cisecurity.org/insights/white-papers/cis-controls-v8-mapping-to-nist-csf)
+- 
+# CIS Controls
+
+- https://learn.cisecurity.org/cis-controls-download
 
 # Master Frameworks Reference
 
