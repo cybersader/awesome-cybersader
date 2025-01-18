@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 17th 2025, 1:55 pm
-date modified: Friday, January 17th 2025, 3:20 pm
+date modified: Saturday, January 18th 2025, 5:25 pm
 ---
 
 # NIST CSF 2.0 Community Profiles
@@ -184,13 +184,47 @@ Columns:
 - Defensive Technique
 - Technique
 
-# Master Frameworks Reference
+# Mitre ATT&CK
 
+- [ATT&CK Data & Tools | MITRE ATT&CK®](https://attack.mitre.org/resources/attack-data-and-tools/)
+
+Sheets & Columns:
+- techniques
+	- ID
+	- STIX ID
+	- name
+	- description
+	- url
+	- created
+	- last modified
+	- domain
+	- version
+	- tactics
+	- detection
+	- platforms
+	- data sources
+	- is sub-technique
+	- sub-technique of
+	- defenses bypassed
+	- supports remote
+	- system requirements
+	- impact type
+	- effective permissions
+- relationships
+	- source ID
+	- target ID
+	- mapping type
+
+# Mitre DETTECT
+
+- [rabobank-cdc/DeTTECT: Detect Tactics, Techniques & Combat Threats](https://github.com/rabobank-cdc/DeTTECT)
+- 
+
+# Master Frameworks Reference
 
 ## Framework: Cyber Risk Institute (CRI)
 
 **Data Source**: `./Frameworks/Final-CRI-Profile-v2.0-Public-CRI.xlsx`
-
 
 ### Sheet: CRI Profile v2.0 Structure
 
@@ -209,7 +243,6 @@ Columns:
 | FS References                         | `['EBA (2), ECB (3), FFIEC AIO (9), FFIEC CAT (2), MAS (1), NYDFS (1), OCC (1)', 'EBA (3), ECB (5), FFIEC AIO (1), JFSA (2), MAS (1), NYDFS (1), OCC (1)', 'EBA (2), ECB (4), FFIEC AIO (1), FFIEC CAT (2), JFSA (1), OCC (4)', 'EBA (2), ECB (3), FFIEC AIO (1), FFIEC CAT (3), JFSA (1), NYDFS (1), OCC (1)', 'EBA (2), ECB (3), FFIEC AIO (1), FFIEC CAT (1), NYDFS (1), OCC (1), SEC 2023 (4)']`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                  |       |
 |                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                  |       |
 
-
 ### Sheet: Diagnostic Statements by Tag
 
 | Column Name | Example Values | Mapped to (Other Table / Column) | Notes |
@@ -219,7 +252,6 @@ Columns:
 | Profile Subcategory | `['GOVERN / Roles, Responsibilities, and Authorities / Human Resource Practices', 'PROTECT / Identity Management, Authentication, and Access Control / Access Authorizations', 'IDENTIFY / Risk Assessment / Risk Response Determination', 'IDENTIFY / Risk Assessment / Change & Exception Management', 'PROTECT / Platform Security / Configuration Management']` |  |  |
 | Profile Id | `['GV.RR-04.02', 'PR.AA-05.02', 'PR.AA-05.03', 'PR.AA-05.04', 'ID.RA-06.06']` |  |  |
 | Outline Id | `['22.057', '74.17', '74.171', '74.172', '60.13']` |  |  |
-
 
 ### Sheet: NIST CSF v2 Mapping
 
@@ -236,7 +268,6 @@ Columns:
 | CRI Profile Level | `['GOVERN', 'GOVERN / Organizational Context', 'GOVERN / Organizational Context / Organizational Mission', 'GOVERN / Organizational Context / Stakeholder Risk Management Expectations', 'GOVERN / Organizational Context / Legal, Regulatory, & Contractual Requirements']` |  |  |
 | Profile Id | `['GV', 'GV.OC', 'GV.OC-01', 'GV.OC-02', 'GV.OC-03']` |  |  |
 
-
 ### Sheet: FFIEC CAT to Profile Mapping
 
 | Column Name | Example Values | Mapped to (Other Table / Column) | Notes |
@@ -248,7 +279,6 @@ Columns:
 | CRI Profile v2.0 Diagnostic Statement | `['GV.RR-01.01: The governing authority (e.g., the Board or one of its committees) oversees and holds senior management accountable for implementing the organization’s technology and cybersecurity risk management strategies and frameworks.', "GV.RR-01.03: The governing authority (e.g., the Board or one of its committees) regularly reviews, oversees, and holds senior management accountable for implementing the organization’s resilience strategy and program and for managing the organization's ongoing resilience risks.", 'GV.RM-05.01: The organization has a process for monitoring its technology, cybersecurity, and third-party risks, including escalating those risks that exceed risk appetite to management and identifying risks with the potential to impact multiple operating units.', 'GV.OV-01.02: The designated Cybersecurity Officer (e.g., CISO) periodically reports to the appropriate governing authority (e.g., the Board or one of its committees) or equivalent governing body on the status of cybersecurity within the organization.', 'GV.OV-03.02: Resilience program performance is measured and regularly reported to senior executives and the governing authority (e.g., the Board or one of its committees).']` |  |  |
 | Profile Id | `['GV.RR-01.01', 'GV.RR-01.03', 'GV.RM-05.01', 'GV.OV-01.02', 'GV.OV-03.02']` |  |  |
 | CRI Profile Subcategory | `['GOVERN / Roles, Responsibilities, and Authorities / Organizational Leadership Responsibility', 'GOVERN / Risk Management Strategy / Lines of Communication', 'GOVERN / Oversight / Risk Management Strategy Outcomes Review', 'GOVERN / Oversight / Risk Management Performance Measurement', 'GOVERN / Roles, Responsibilities, and Authorities / Resource Adequacy']` |  |  |
-
 
 ### Sheet: FFIEC AIO Mapping
 
@@ -265,7 +295,6 @@ Columns:
 | Profile Subcetegory | `['GOVERN / Organizational Context / Organizational Mission', 'GOVERN / Organizational Context / Stakeholder Risk Management Expectations', 'GOVERN / Organizational Context / Legal, Regulatory, & Contractual Requirements', 'GOVERN / Risk Management Strategy  / Technology Assimilation & Implementations', 'GOVERN / Supply Chain Risk Management / Third Party Roles & Responsibilities']` |  |  |
 | Profile Id | `['GV.OC-01.01', 'GV.OC-02.01', 'GV.OC-02.02', 'GV.OC-02.03', 'GV.OC-03.01']` |  |  |
 
-
 ### Sheet: FFIEC BCM Mapping
 
 | Column Name | Example Values | Mapped to (Other Table / Column) | Notes |
@@ -281,7 +310,6 @@ Columns:
 | Profile Subcategory | `['GOVERN / Risk Management Strategy  / Business Continuity & Resilience Risk Management', 'GOVERN / Roles, Responsibilities, and Authorities / Organizational Leadership Responsibility', 'GOVERN / Policies, Processes, and Procedures / Establishment of Policies & Procedures', 'IDENTIFY / Improvement / Plans Affecting Operations', 'PROTECT / Awareness and Training / Specialized Role Awareness & Training']` |  |  |
 | Profile Id | `['GV.RM-09.02', 'GV.RR-01.03', 'GV.PO-01.07', 'ID.IM-04.01', 'PR.AT-02.03']` |  |  |
 
-
 ### Sheet: CISA CPG 1.0.1 Mapping
 
 | Column Name | Example Values | Mapped to (Other Table / Column) | Notes |
@@ -292,7 +320,6 @@ Columns:
 | Performance Goal Outcome | `['Maintain a regularly updated inventory of all organizational assets with an IP address (including IPv6), including OT. This inventory is updated on a recurring basis, no less than monthly for both IT and OT.', 'A named role/position/title is identified as responsible and accountable for planning, resourcing, and execution of cybersecurity activities.  This role may undertake activities such as managing cybersecurity operations at the senior level, requesting and securing budget resources, or leading strategy development to inform future positioning.', 'A named role/position/title is identified as responsible and accountable for planning, resourcing, and execution of OT-specific cybersecurity activities. In some organizations, this may be the same position as identified in 1.B.', 'Organizations sponsor at least one "pizza party" or equivalent social gathering per year that is focused on strengthening working relationships between IT and OT security personnel and is not a working event (such as providing meals during an incident response).', "All known exploited vulnerabilities (listed in CISA's Known Exploited Vulnerabilities Catalog - https://www.cisa.gov/known-exploited-vulnerabilities-catalog) in internet-facing systems are patched or otherwise mitigated within a risk-informed span of time, prioritizing more critical assets first.    OT: For OT assets where patching is either not possible or may substantially compromise availability or safety, compensating controls are applied (e.g., segmentation, monitoring) and recorded. Sufficient controls should either make the asset inaccessible from the public internet or reduce the ability of threat actors to exploit the vulnerabilities in these assets."]` |  |  |
 | CRI Profile v2.0 Diagnostic Statement | `['ID.AM-01.01: The organization maintains a current and complete asset inventory of physical devices, hardware, and information systems.', 'ID.AM-02.01: The organization maintains a current and complete inventory of software platforms, business applications, and other software assets (e.g., virtual machines and virtual network devices).', 'ID.AM-08.02: The organization establishes policies, and employs methods to identify, assess, and manage technology solutions that are acquired, managed, or used outside of established, governed technology and cybersecurity processes (i.e., "Shadow IT").', 'GV.RR-01.04: The organization has designated a qualified Cybersecurity Officer (e.g., CISO) who is responsible and accountable for developing a cybersecurity strategy, overseeing and implementing its cybersecurity program, and enforcing its cybersecurity policy.', 'GV.RR-02.01: The roles, responsibilities, qualifications, and skill requirements for personnel (employees and third parties) that implement, manage, and oversee the technology, cybersecurity, and resilience programs are defined, aligned, coordinated, and holistically managed.']` |  |  |
 | CRI Profile Subcategory | `['IDENTIFY / Asset Management / Hardware Inventory', 'IDENTIFY / Asset Management / Software, Services, & Systems Inventory', 'IDENTIFY / Asset Management / Asset Life Cycle Management', 'GOVERN / Roles, Responsibilities, and Authorities / Organizational Leadership Responsibility', 'GOVERN / Roles, Responsibilities, and Authorities / Risk Management Roles & Responsibilities']` |  |  |
-
 
 ### Sheet: NIST Ransomware Profile
 
@@ -305,11 +332,9 @@ Columns:
 | CRI Profile v2.0 Diagnostic Statement | `['ID.AM-01.01: The organization maintains a current and complete asset inventory of physical devices, hardware, and information systems.', 'ID.AM-02.01: The organization maintains a current and complete inventory of software platforms, business applications, and other software assets (e.g., virtual machines and virtual network devices).', 'ID.AM-03.01: The organization maintains current maps of network resources, mobile resources, external connections, network-connected third parties, and network data flows.', 'ID.AM-07.01: The organization maintains a current inventory of the data being created, stored, or processed by its information assets and data flow diagrams depicting key internal and external data flows.', 'ID.AM-04.01: Hardware, software, and data assets maintained by or located at suppliers or other third parties are included in asset management inventories and lifecycle management processes as required for effective management and security.']` |  |  |
 | CRI Profile Subcategory | `['IDENTIFY / Asset Management / Hardware Inventory', 'IDENTIFY / Asset Management / Software, Services, & Systems Inventory', 'IDENTIFY / Asset Management / Network Communications & Data Flows', 'IDENTIFY / Asset Management / Data & Metadata Inventory', 'IDENTIFY / Asset Management / Supplier Services Inventory']` |  |  |
 
-
 ## Framework: NIST SP 800-53 Rev. 5 - Controls Catalog
 
 **Data Source**: `./Frameworks/sp800-53r5-control-catalog.xlsx`
-
 
 ### Sheet: SP 800-53 Revision 5
 
