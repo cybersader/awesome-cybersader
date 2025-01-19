@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 17th 2025, 1:55 pm
-date modified: Saturday, January 18th 2025, 5:52 pm
+date modified: Saturday, January 18th 2025, 9:06 pm
 ---
 
 # NIST CSF 2.0 Community Profiles
@@ -15,63 +15,41 @@ date modified: Saturday, January 18th 2025, 5:52 pm
 
 `Final-CRI-Profile-v2.0-Public-CRI.xlsx`
 
-Sheets & Columns:
+Sheets & Mapping Columns:
 - CRI Profile v2.0 Structure
 	- Profile Id
 	- Outline ID
-	- Level
-	- CRI Profile v2.0 Diagnostic Statement
-	- Tier-1
-	- Tier-2
-	- Tier-3
-	- Tier-4
 	- NIST CSF v2\n Mapping
 	- FS References
 - Diagnostic Statements by Tag
 	- CRI Profile Subject Tags
-	- CRI Profile ver. 2.0 Diagnostic Statement
-	- Profile Subcategory
 	- Profile Id
 	- Outline Id
+	- Profile Subcategory
 - NIST CSF v2 Mapping
 	- CSF Profile Id
-	- Level
-	- NIST CSF v2 Statement
 	- Rationale
 	- Relationship
-	- CRI Mapping Note
-	- CRI Profile Level
 	- Profile Id
 - FFIEC CAT to Profile Mapping
 	- CAT Domain / Factor / Component
-	- FFIEC CAT Statement
 	- CAT Level
 	- Mapping Type
-	- CRI Profile v2.0 Diagnostic Statement
 	- Profile Id
 - FFIEC AIO Mapping
-	- FFIEC AIO Objective Area
 	- Objective Id
-	- FFIEC AIO Objective Statement
 	- Rationale
 	- Relationship
-	- AS
-	- FCS
 	- Profile ID
 - FFIEC BCM Mapping
-	- FFIEC BCM Examination Objective
 	- FFIEC BCM Id
-	- FFIEC BCM Examination Procedure
 	- Rationale
 	- Relationship
-	- AS
-	- FCS
 	- Profile Id
 - CISA CPG 1.0.1 Mapping
-	- CSF Fucntion
+	- CSF Function
 	- CPG Id
-	- Performance Goal Practice
-	- Performance Goal Outcome
+	- CRI Profile Subcategory
 	- CRI Profile v2.0 Diagnostic Statement
 - NIST Ransomware Profile
 	- CSF Function
@@ -226,6 +204,7 @@ Sheets & Columns:
 - [National Online Informative References Program | CSRC](https://csrc.nist.gov/projects/olir/informative-reference-catalog#/)
 - [CIS Critical Security Controls v8 Mapping to NIST CSF](https://www.cisecurity.org/insights/white-papers/cis-controls-v8-mapping-to-nist-csf)
 - 
+
 # CIS Controls
 
 - https://learn.cisecurity.org/cis-controls-download
