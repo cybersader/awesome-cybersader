@@ -1,14 +1,19 @@
 ---
+aliases: 
+publish: true
+permalink:
 date created: Sunday, March 31st 2024, 10:30 pm
-date modified: Sunday, March 31st 2024, 11:21 pm
-tags:
-  - Backups
+date modified: Monday, January 20th 2025, 5:25 pm
+tags: [Backups]
 ---
 
 # BackBlaze
+
 - [The best ways to back up your largest files · Reproof](https://www.reproof.app/blog/s3-vs-backblaze-vs-google-cloud)
 - [AWS Glacier Pricing - How to Calculate the Real Cost | Arq Backup](https://www.arqbackup.com/aws-glacier-pricing.html)
+
 # Nothing Below $2 per TB per Month
+
 - [What's the cheapest cold archive cloud storage? Is it Azure at $2/TB/Month? : r/DataHoarder](https://www.reddit.com/r/DataHoarder/comments/a06b47/whats_the_cheapest_cold_archive_cloud_storage_is/)
 	- $50 per year per 8TB I think would be great if some service could do that.
 	- That's never going to happen, just run the numbers. a 3.5 drive might average what 15w in use? I haven't checked recently but people used to say 20-25w, so let's be conservative and say 15w.
@@ -17,7 +22,9 @@ tags:
 	- But wait, we still haven't paid for the servers themselves, the bandwidth, physical space, insurance, etc. The only things we got paid for so far are power, the drive itself at $26/year and you get to hope and pray it doesn't fail, and man power.
 	- ... Which brings me to
 	- $2/TB/Month is already cheap. If it's too expensive then you should look into getting your own NAS and managing your own hardware. The prices you want aren't happening anytime soon.
+
 # Some Popular Options
+
 For scenarios that involve low read and high write workloads, particularly for audit and archive purposes, selecting the right cloud-based object storage service is crucial. The ideal service for such needs often requires cost-effectiveness, reliability, scalability, and strong data durability. Here's a breakdown of some of the top services in this category, including a look at Storj in this context:
 
 1. **Amazon S3 Glacier and S3 Glacier Deep Archive**: Designed for long-term backup and archive, Amazon S3 Glacier is a popular choice. It offers very low costs for data storage and is designed for data that is infrequently accessed. The Glacier Deep Archive option provides even lower storage costs for data that is rarely accessed, making it suitable for archival purposes. Both offer high durability but have longer retrieval times compared to standard object storage options.
