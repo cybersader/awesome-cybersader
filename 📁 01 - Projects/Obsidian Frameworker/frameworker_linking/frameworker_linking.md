@@ -94,7 +94,7 @@ ZtdJy44D: [[link_to_framework_note_here]]
 V0kErQM6: [[link_to_framework_note_here]]
 
 ## Embedded Files
-b8738ce51af25d50ba094b20b230b77b6902648a: [[../Pasted Image 20241220140730_386.png]]
+b8738ce51af25d50ba094b20b230b77b6902648a: [[_attachments/Pasted Image 20241220140730_386.png]]
 
 %%
 ## Drawing

@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Webcams",
-      "path": "📁 12 - Content Creation/Webcams/Webcams.md"
-    },
-    {
       "basename": "2025-01-20-Monday",
       "path": "🕸️ Daily Notes/2025/01/2025-01-20-Monday/2025-01-20-Monday.md"
+    },
+    {
+      "basename": "Framework Mapping",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "_attachments",
+      "path": "📁 01 - Projects/Obsidian Frameworker/_attachments/_attachments.md"
+    },
+    {
+      "basename": "_attachments",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/_attachments/_attachments.md"
+    },
+    {
+      "basename": "_attachments",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_diagram/_attachments/_attachments.md"
+    },
+    {
+      "basename": "Webcams",
+      "path": "📁 12 - Content Creation/Webcams/Webcams.md"
     },
     {
       "basename": "2025-01-19-Sunday",
@@ -15,10 +31,6 @@
     {
       "basename": "Mapped Frameworks",
       "path": "📁 01 - Projects/Obsidian Frameworker/Mapped Frameworks/Mapped Frameworks.md"
-    },
-    {
-      "basename": "Framework Mapping",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
     {
       "basename": "Obsidian Frameworker",
@@ -187,18 +199,6 @@
     {
       "basename": "2024-12-27-Friday",
       "path": "🕸️ Daily Notes/2024/12/2024-12-27-Friday/2024-12-27-Friday.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
-    },
-    {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 10 - My Obsidian Stack/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
-      "basename": "Linting & Formatting",
-      "path": "📁 10 - My Obsidian Stack/Linting & Formatting/Linting & Formatting.md"
     }
   ],
   "omittedPaths": [],

@@ -85,7 +85,7 @@ aliases: frameworker-rm,
           frameworker-grc ^Kq2ZvxxC
 
 ## Embedded Files
-b8738ce51af25d50ba094b20b230b77b6902648a: [[../Pasted Image 20241220140730_386.png]]
+b8738ce51af25d50ba094b20b230b77b6902648a: [[../frameworker_linking/_attachments/Pasted Image 20241220140730_386.png]]
 
 1c5a9e5cd30d06160ae02570d426088e2d3df8ad: [[../Pasted Image 20241220141656_982.png]]
 

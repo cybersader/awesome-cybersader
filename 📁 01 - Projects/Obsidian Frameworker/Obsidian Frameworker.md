@@ -15,7 +15,7 @@ I'm trying to build a tool that can be used to map plaintext files in markdown t
 
 # System Design
 
- ![](frameworker_diagram.svg)
+ ![](_attachments/frameworker_diagram.svg)
 
 # Data Structures, Taxonomies, Approach
 
