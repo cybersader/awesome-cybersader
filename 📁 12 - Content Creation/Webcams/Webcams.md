@@ -1,15 +1,10 @@
 ---
-aliases: 
-tags:
-  - camera
-  - webcam
-  - photo
-  - video
-  - audio
-  - streaming
+permalink:
+aliases: []
+tags: [camera, webcam, photo, video, audio, streaming]
 publish: true
 date created: Sunday, April 28th 2024, 8:17 pm
-date modified: Sunday, April 28th 2024, 10:21 pm
+date modified: Monday, January 20th 2025, 9:46 am
 ---
 
 [📁 03 - Curations, Stacks](../../📁%2003%20-%20Curations,%20Stacks/📁%2003%20-%20Curations,%20Stacks.md)

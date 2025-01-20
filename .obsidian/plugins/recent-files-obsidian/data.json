@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Webcams",
+      "path": "📁 12 - Content Creation/Webcams/Webcams.md"
+    },
+    {
       "basename": "2025-01-20-Monday",
       "path": "🕸️ Daily Notes/2025/01/2025-01-20-Monday/2025-01-20-Monday.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Linting & Formatting",
       "path": "📁 10 - My Obsidian Stack/Linting & Formatting/Linting & Formatting.md"
-    },
-    {
-      "basename": "1200_angled",
-      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/1200_angled.png"
     }
   ],
   "omittedPaths": [],
