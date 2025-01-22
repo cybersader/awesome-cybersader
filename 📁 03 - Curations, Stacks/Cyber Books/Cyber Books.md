@@ -6,4 +6,5 @@ date modified: Tuesday, April 16th 2024, 3:20 pm
 - [Dark Wire: The Incredible True Story of the Largest Sting Operation Ever](https://www.hachettebookgroup.com/titles/joseph-cox/dark-wire/9781541702691/?lens=publicaffairs)
 - [Offensive Countermeasures: John Strand](https://www.amazon.com/Offensive-Countermeasures-John-Strand/dp/1974671690/ref=sr_1_4?s=books&ie=UTF8&qid=1503419447&sr=1-4&keywords=john+strand)
 - [97 Things Every Information Security Professional Should Know: Collective Wisdom from the Experts: 9781098101398: Computer Science Books @ Amazon.com](https://www.amazon.com/Things-Information-Security-Professional-Should/dp/1098101391)
+- The Coming Wave
 - 
