@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "2025-01-24-Friday",
       "path": "🕸️ Daily Notes/2025/01/2025-01-24-Friday/2025-01-24-Friday.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Identity Provider",
       "path": "📁 05 - Organizational Cyber/Identity Provider/Identity Provider.md"
-    },
-    {
-      "basename": "heading",
-      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/heading.png"
     }
   ],
   "omittedPaths": [],
