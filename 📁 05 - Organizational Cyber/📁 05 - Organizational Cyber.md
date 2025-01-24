@@ -22,6 +22,8 @@ publish: true
 - **[[Cyber Training, CTFs]]**
 - **[[Cybersecurity Culture Building]]**
 	- **[[Cybersecurity Awareness Resources]]**
+- **[[Data Privacy Week]]**
+	- **[[Data Privacy Week 2025]]**
 - **[[Detection Engineering]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**

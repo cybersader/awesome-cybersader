@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Data Privacy Week 2025",
+      "path": "📁 05 - Organizational Cyber/Data Privacy Week/Data Privacy Week 2025/Data Privacy Week 2025.md"
+    },
+    {
+      "basename": "Privacy_Responsibilities",
+      "path": "📁 05 - Organizational Cyber/Data Privacy Week/Data Privacy Week 2025/Privacy_Responsibilities/Privacy_Responsibilities.md"
+    },
+    {
+      "basename": "Data Privacy Week",
+      "path": "📁 05 - Organizational Cyber/Data Privacy Week/Data Privacy Week.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Authentication & Trust Models",
       "path": "📁 05 - Organizational Cyber/Authentication & Trust Models/Authentication & Trust Models.md"
-    },
-    {
-      "basename": "Authenticator Apps 2024",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Authenticator Apps 2024/Authenticator Apps 2024.md"
-    },
-    {
-      "basename": "SSO vs Password Managers",
-      "path": "📁 06 - Learning, Notes/⬇️ Notes Drop/SSO vs Password Managers.md"
-    },
-    {
-      "basename": "Identity Provider",
-      "path": "📁 05 - Organizational Cyber/Identity Provider/Identity Provider.md"
     }
   ],
   "omittedPaths": [],
