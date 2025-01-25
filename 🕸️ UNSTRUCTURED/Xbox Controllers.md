@@ -51,3 +51,4 @@ Exactly this! ^
 	1. [Amazon.com: MAYFLASH](https://www.amazon.com/stores/MAYFLASH/page/5D49EEEF-24A5-411F-93EA-B4C37B55598D)
 
 2&3 gives you the ability to instert 8bitdo’s 2.4ghz dongle, that came with your controller. Or you can insert a wired controller.
+
