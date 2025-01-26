@@ -1,19 +1,18 @@
 ---
-aliases: 
-tags:
-  - 
-  - "#opensourcesoftware"
-  - "#privacy"
-  - "#software"
+permalink:
+aliases: []
+tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Friday, November 15th 2024, 5:55 pm
+date modified: Saturday, January 25th 2025, 10:06 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [huly.io > Everything App for your teams](https://huly.io/)
+- [usemotion.com > The Only AI Project Manager That Predicts & Prevents Delays For Teams](https://www.usemotion.com/project-manager)
 - [StackShare - Tech Stack Intelligence](https://stackshare.io/)
 - [screenpipe](https://screenpi.pe/)
 	- [louis030195/screen-pipe: Library to build personalized AI powered by what you've seen, said, or heard. Works with Ollama. Alternative to Rewind.ai. Open. Secure. You own your data. Rust.](https://github.com/louis030195/screen-pipe)
