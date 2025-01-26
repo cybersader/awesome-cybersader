@@ -14,6 +14,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[AR Glasses]]**
 - [[Audio to Multiple Headphones]]
 - **[[Awesome Clothing]]**
+- **[[Awesome Web Design]]**
 - [[Backups - The 3,2,1 Rule]]
 - **[[Bluesky Social]]**
 - **[[Browsers]]**
