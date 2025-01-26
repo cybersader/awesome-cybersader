@@ -15,6 +15,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
 - **[[Awesome Obsidian Wiki Examples]]**
+- **[[Awesome WikiJS Examples]]**
 - **[[Breaking Vault Changes]]**
 - **[[Contributable Obsidian Wiki]]**
 - **[[Cursor and Frontmatter Issues]]**
