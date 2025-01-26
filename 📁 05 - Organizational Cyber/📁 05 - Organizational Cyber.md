@@ -24,6 +24,7 @@ publish: true
 	- **[[Cybersecurity Awareness Resources]]**
 - **[[Data Privacy Week]]**
 	- **[[Data Privacy Week 2025]]**
+		- **[[Privacy_Responsibilities]]**
 - **[[Detection Engineering]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**
