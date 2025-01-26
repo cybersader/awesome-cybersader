@@ -4,17 +4,25 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 24th 2025, 3:46 pm
-date modified: Friday, January 24th 2025, 4:24 pm
+date modified: Sunday, January 26th 2025, 3:21 pm
 ---
+
 %% Begin Landmark %%
 - **[[Privacy_Responsibilities]]**
 
 %% End Landmark %%
+
 # Data Privacy Week Content
 
 ## Data Privacy Week
 
 ### Day 1) Intranet Post
+
+#### D1) Content
+
+- 
+
+#### D1) Workspace
 
 Why the "I've got nothing to hide" argument doesn't fly anymore.
 Why Data Privacy matters.
