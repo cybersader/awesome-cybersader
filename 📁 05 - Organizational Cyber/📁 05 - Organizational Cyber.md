@@ -25,6 +25,7 @@ publish: true
 - **[[Data Privacy Week]]**
 	- **[[Data Privacy Week 2025]]**
 		- **[[Privacy_Responsibilities]]**
+	- **[[Data Privacy Week Day 1]]**
 - **[[Detection Engineering]]**
 - **[[DevSecOps]]**
 - **[[Endpoint Hardening]]**
