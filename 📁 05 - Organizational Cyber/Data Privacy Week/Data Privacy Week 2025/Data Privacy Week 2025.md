@@ -8,7 +8,8 @@ date modified: Monday, January 27th 2025, 11:46 am
 ---
 
 %% Begin Landmark %%
-- **[[Privacy_Responsibilities]]**
+- **[[Data Privacy Week 2025 Webinar]]**
+- **[[Data Privacy Week Day 1]]**
 
 %% End Landmark %%
 
