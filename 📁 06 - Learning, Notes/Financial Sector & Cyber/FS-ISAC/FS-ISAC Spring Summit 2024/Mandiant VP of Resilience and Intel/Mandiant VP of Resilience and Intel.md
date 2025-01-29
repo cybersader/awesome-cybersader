@@ -1,0 +1,70 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Wednesday, January 29th 2025, 3:47 pm
+date modified: Wednesday, January 29th 2025, 3:47 pm
+---
+- IR Leader but did malware analysis
+- Did pentesting and E-Discovery
+- Recent attacks and TTPs
+    - UNC 3786
+    - Sim swapping and self service password resets
+    - They have to use aliases on investigations because they are so aggressive
+    - They whistleblow and SWAT execs
+    - Don't use malware but remote services a lot
+    - They just steal stuff and don't do ransomware a lot
+    - North Korean IT workers - lots of spying
+    - They are just getting capitalist paychecks
+    - They used network KVMs and remote management software
+    - Mostly espionage
+    - They had a laptop farm with network KVMs
+- Ransomware overview
+    - Thousands of victims get posted on data leak sites
+    - They've seen 5 hours
+    - Median time of 6 days
+    - 48 hours encryption only
+    - They need access plus creds plus connectivity
+    - What is mandiants data sources - probably high profile customers
+- Access identification and hardening
+    - Exploitation and phishing
+    - Single factor auth on remote access is obviously bad
+    - Also single factor on email and third parties - TODO
+    - Exploits on externally exposed apps or devices
+    - Infostealers and commodity malware on home computers
+    - Personal password managers bad
+    - Sim swaps
+    - Social engineering via telephone - convincing people to register MFA device
+    - Sms based social engineering
+    - MFA fatigue works. - TODO
+    - Mobile authenticator app with context matching is good - TODO
+    - Passwordless and FIDO 2 is awesome
+    - Help desk - positively identify employees, live video and ID on video - TODO
+    - You can enroll people in new auth by reporting to a trusted location
+- Attacks surface
+    - Better vuln remediation process good
+    - Playbooks for segmentation of interconnected resources
+- Connectivity hardening
+    - Network and identity isolation
+    - Identity can be easier to do
+    - Do workstations need to talk to each other directly?  TODO
+    - Limit egress - for DCs then down the line TODO firewall
+    - Segments around crown jewels for IT and business
+- Credential hardening
+    - Use your throat intelligence
+    - Set smart password filtering
+    - Can DAs authenticate to workstations? Only to administer domains please.  TODO
+    - Separate dedicated accounts by tiering of privilege levels
+    - JIT for privacy ESC with things like code running
+    - Understand what constitutes privilege in your environment
+- TSI Hardening and protections
+    - They get access to run stuff on GPOs, VMware hypervisors, etc
+    - Edr doesn't run on bare metal
+    - Orgs put hypervisor creds on AD
+    - TODO
+    - Move towards unique Pam creds for each hypervisor preferably using JIT to allow checkout of creds
+- Q and A
+    - Is data governance on network shares important?
+    - How to structure them and relate them to identities
+    - How does JIT help though?
