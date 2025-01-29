@@ -15,6 +15,7 @@ publish: true
 	- [[Self-Hosted Bitwarden]]
 - **[[BCDR, DFIR]]**
 - **[[Company Security Strategy from Zero]]**
+- **[[Content Link Downloader]]**
 - **[[From Other Wiki]]**
 - **[[Go Pro as a Webcam]]**
 - **[[Governance, Mgmt]]**
