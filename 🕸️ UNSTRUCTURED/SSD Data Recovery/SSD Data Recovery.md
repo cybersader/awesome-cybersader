@@ -4,8 +4,18 @@ tags: []
 publish: true
 permalink:
 date created: Friday, January 10th 2025, 1:33 pm
-date modified: Friday, January 10th 2025, 1:36 pm
+date modified: Wednesday, January 29th 2025, 4:45 pm
 ---
+
+# If you need "micro-soldering", then you're paying a lot
+
+- [microsoldering services sss repair - Brave Search](https://search.brave.com/search?q=microsoldering+services+sss+repair&source=web&summary=1&conversation=445d08dbc9abfbdd0b52e3 "microsoldering services sss repair - Brave Search")
+- [Microsoldering Beginner’s Guide: It’s Easier Than You Think - iFixit](https://www.ifixit.com/News/98168/microsoldering-beginners-guide-its-easier-than-you-think "Microsoldering Beginner’s Guide: It’s Easier Than You Think - iFixit")
+- [Expert Micro Soldering Services for Computers, Phones and other electronics. -](https://www.rockitrepairs.com/micro-soldering-services-for-computers-phones-electronics/ "Expert Micro Soldering Services for Computers, Phones and other electronics. -")
+- [Is it worth it to learn microsoldering/board repair in 2020? : r/mobilerepair](https://www.reddit.com/r/mobilerepair/comments/irqywg/is_it_worth_it_to_learn_microsolderingboard/ "Is it worth it to learn microsoldering/board repair in 2020? : r/mobilerepair")
+- [Yes, We Really Fix That: Microsoldering Repairs - The Lab - Warsaw, IN](https://thelabrepair.com/blog/you-really-fix-that-some-of-our-wildest-repairs/ "Yes, We Really Fix That: Microsoldering Repairs - The Lab - Warsaw, IN")
+- [Electronic Device Solutions - The Lab - Warsaw, Indiana](https://thelabrepair.com/solutions/ "Electronic Device Solutions - The Lab - Warsaw, Indiana")
+- [FAQs | ElecTech Repairs](https://www.electechrepairs.com/faqs "FAQs | ElecTech Repairs")
 
 # Deleted Data?
 
