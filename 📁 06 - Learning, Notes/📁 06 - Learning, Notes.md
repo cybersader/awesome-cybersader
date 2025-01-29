@@ -10,14 +10,14 @@ publish: true
 - **[[⬇️ Notes Drop]]**
 - **[[Annual Reports and Cyber Stats]]**
 - **[[BHIS, Antisyphon]]**
-	- [[Active Defense & Cyber Deception]]
-	- [[Adversarial Emulation Extravaganza w Kent & Jordan]]
-	- [[DNS Deep Diving - Serena DiPenti]]
+	- **[[Active Defense & Cyber Deception]]**
+	- **[[Adversarial Emulation Extravaganza w Kent & Jordan]]**
+	- **[[DNS Deep Diving - Serena DiPenti]]**
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
 	- **[[IR Summit 2024]]**
 
-	- [[Phishtory and the Phuture of Phishing with Joseph]]
+	- **[[Phishtory and the Phuture of Phishing with Joseph]]**
 	- **[[WWHF 2024 - Deadwood]]**
 - **[[Cyber Classes]]**
 	- **[[Linux Forensics]]**

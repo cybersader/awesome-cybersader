@@ -1,3 +1,11 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Monday, June 17th 2024, 9:32 pm
+date modified: Wednesday, January 29th 2025, 3:53 pm
+---
 
 
 [Phishtory and the Phuture of Phishing with Joseph](https://www.youtube.com/watch?v=jkApCKWsiUI)
