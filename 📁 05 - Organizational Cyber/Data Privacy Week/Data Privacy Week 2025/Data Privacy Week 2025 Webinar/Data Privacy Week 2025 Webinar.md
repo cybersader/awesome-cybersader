@@ -4,10 +4,10 @@ tags: []
 publish: true
 permalink:
 date created: Tuesday, January 28th 2025, 8:55 pm
-date modified: Tuesday, January 28th 2025, 8:59 pm
+date modified: Tuesday, January 28th 2025, 9:21 pm
 ---
 
-# Presentation
+# Presentation / Keynote (15 min)
 
 - Define Data Privacy and the role it plays in today’s digital word
 	- 
@@ -20,7 +20,7 @@ date modified: Tuesday, January 28th 2025, 8:59 pm
 - Why it matters. Discuss growing risk (breaches, misuse)
 	- What you do to protect members affects privacy and security
 
-# Q&A
+# Pre-Submitted Q&A (20 min)
 
 ## Cookies
 
@@ -102,4 +102,13 @@ date modified: Tuesday, January 28th 2025, 8:59 pm
 	- We check up on the legislation and regulation that is coming into play.
 	- A great resource is the IAPP
 - Do I need to think about cookies different as a consumer versus when I am at work?
-	-
+	- .
+
+# Open-Floor Q&A (20 min)
+
+- Self-explanatory
+
+# Wrap-up & Takeaways
+
+- 3-5 actionable items for employees
+- Data Privacy resources
