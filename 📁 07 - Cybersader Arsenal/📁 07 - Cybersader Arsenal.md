@@ -31,6 +31,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Personal Info Breach Response]]**
 - **[[Personal Privacy & Identity Handling]]**
 - **[[Personal Privacy Tools]]**
+- [[PersonalPrivacyTips]]
 - **[[Persuasive Technology Defenses]]**
 - **[[Secure File Sharing]]**
 - **[[Smart Home]]**
