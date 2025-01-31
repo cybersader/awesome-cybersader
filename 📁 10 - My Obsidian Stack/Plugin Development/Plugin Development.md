@@ -7,7 +7,7 @@ date created: Monday, December 16th 2024, 8:37 am
 date modified: Monday, December 16th 2024, 3:51 pm
 ---
 
-[Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+[Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 [⬇️ Obsidian Ideas Drop](../⬇️%20Obsidian%20Ideas%20Drop/⬇️%20Obsidian%20Ideas%20Drop.md)
 
 - [How to get started with developing a custom Plugin? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-to-get-started-with-developing-a-custom-plugin/8157/3)

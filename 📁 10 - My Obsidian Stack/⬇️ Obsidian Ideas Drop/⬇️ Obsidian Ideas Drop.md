@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, December 27th 2024, 7:00 pm
+date modified: Friday, January 31st 2025, 5:01 pm
 ---
 
 %% Begin Waypoint %%
@@ -79,7 +79,7 @@ date modified: Friday, December 27th 2024, 7:00 pm
 
 # Custom Plugins
 
-[Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+[Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault
@@ -113,12 +113,6 @@ date modified: Friday, December 27th 2024, 7:00 pm
 
 - [My Project Management Workflow; An In-Depth Explanation - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/my-project-management-workflow-an-in-depth-explanation/82508)
 - 
-
-# Obsidian Conflicts and Syncing on Network Share?
-
-- [📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md](/📁 09 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md)
-
-- Somehow use a WebDav client and have the vault stored in cloud
 
 # Misc
 

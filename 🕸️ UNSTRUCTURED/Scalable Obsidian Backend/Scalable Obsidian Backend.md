@@ -11,7 +11,7 @@ date created: Tuesday, December 10th 2024, 9:28 pm
 date modified: Tuesday, December 10th 2024, 9:35 pm
 ---
 
-[Contributable Obsidian Wiki](../../📁%2010%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
+[Contributable Obsidian Wiki](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
 
 # DROP
 

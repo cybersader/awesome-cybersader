@@ -6,20 +6,14 @@ date created: Thursday, April 25th 2024, 4:12 pm
 date modified: Thursday, April 25th 2024, 4:12 pm
 ---
 %% Begin Landmark %%
-- **[[✒️ Obsidian Tech Stack Diagram]]**
-
 - **[[⬇️ Obsidian Ideas Drop]]**
 - **[[⬇️ Obsidian Integrations]]**
 - **[[Arguments in Markdown]]**
 - **[[Auto - Tagging, Linking, Dropzones & Organizers]]**
 	- **[[File Organizer 2000]]**
 - **[[Autocompletion]]**
-- **[[Awesome Obsidian Wiki Examples]]**
-- **[[Awesome WikiJS Examples]]**
 - **[[Breaking Vault Changes]]**
-- **[[Contributable Obsidian Wiki]]**
 - **[[Cursor and Frontmatter Issues]]**
-- **[[Cybersader Wiki Features and Changes]]**
 - **[[Daily Notes Workflow]]**
 - **[[Dataview]]**
 - **[[File Order]]**
@@ -27,7 +21,6 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Linting & Formatting]]**
 - **[[Obsidian & Corporate Docs]]**
 - **[[Obsidian & N8n]]**
-- **[[Obsidian as a CMS]]**
 - **[[Obsidian Dictionary and Grammar]]**
 - **[[Obsidian File Names]]**
 - **[[Obsidian File Recovery]]**
@@ -42,7 +35,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 	- [[⬇️ Obsidian Integrations]]
 	- **[[Obsidian Plugin List]]**
-- [[Obsidian Regex Find & Replace]]
+- **[[Obsidian Regex Find & Replace]]**
 - **[[Obsidian Run]]**
 - **[[Obsidian Setup for Corporate]]**
 - **[[Obsidian to Ghost]]**

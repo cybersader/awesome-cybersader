@@ -1,8 +1,9 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: [New Tech]
+tags: []
 date created: Monday, March 18th 2024, 1:59 pm
-date modified: Sunday, September 22nd 2024, 6:25 pm
+date modified: Friday, January 31st 2025, 4:57 pm
 created: Monday, Mar 18, 2024 01:59 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
 publish: true
@@ -38,4 +39,45 @@ publish: true
 # Windows Tools
 
 - [Raw Accel - Optimize Your Mouse Acceleration for Windows](https://rawaccel.net/)
-- 
+
+# Misc
+
+- Decentralized Social Media?
+    - Mastodon
+    - [Nostr, a simple protocol for decentralizing social media that has a chance of working](https://nostr.com/)
+- Futuristic Cloud Dev Environments
+    - [StackBlitz | Instant Dev Environments | Click. Code. Done.](https://stackblitz.com/)
+    - [Gitpod: Always ready to code.](https://www.gitpod.io/)
+    - [Glitch - Editor](https://glitch.com/)
+- JS Framework
+    - [Alpine.js](https://alpinejs.dev/) - minimal JS framework that doesn’t require external JS files. Compose JS behavior from within your HTML markup.
+- Learning Languages
+    - Duolingo - awesome gamified learning for languages. Uses GPT4 too.
+    - [Toucan - Learn a new language just by browsing the internet.](https://jointoucan.com/en/)
+- DAM - digital asset management
+    - [Dash.app](http://Dash.app) - [Dash, Digital Asset Management (DAM) for Growing Brands](https://dash.app/)
+
+## Misc misc
+
+- [Home | nivo](https://nivo.rocks/) - nivo provides a rich set of dataviz components, built on top of D3 and React.
+- [omg.lol - A lovable web page and email address, just for you](https://home.omg.lol/)
+
+## CSS Framework Stuff
+
+### Tailwind
+
+- [Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS](https://www.tailwindtoolbox.com/)
+- [aniftyco/awesome-tailwindcss: 😎 Awesome things related to Tailwind CSS](https://github.com/aniftyco/awesome-tailwindcss#starters--themes)
+
+## Portfolio
+
+- [Portfolio of Ariful Alam](https://arifszn.com/gitprofile/) - [https://github.com/arifszn/gitprofile](https://github.com/arifszn/gitprofile)
+
+# AI and GPT Stuff
+
+- [Future Tools - Find The Exact AI Tool For Your Needs](https://www.futuretools.io/)
+- [Futurepedia - The Largest AI Tools Directory | Home](https://www.futurepedia.io/)
+
+# Blogs
+
+- [zachleat.com](https://www.zachleat.com/)

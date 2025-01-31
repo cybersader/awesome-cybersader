@@ -6,7 +6,7 @@ date created: Thursday, April 25th 2024, 9:32 pm
 date modified: Saturday, October 26th 2024, 10:50 pm
 ---
 
-[Obsidian Plugins and Ideas for Contributions](../Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+[Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 [Obsidian Run Testing](../../📦%20VAULT%20SANDBOX%20TESTING/Obsidian%20Run%20Testing.md)
 
 >[!info] Awesome plugin from Yomaru Hananoshika

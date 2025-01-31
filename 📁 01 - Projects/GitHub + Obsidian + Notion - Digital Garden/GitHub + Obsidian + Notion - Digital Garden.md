@@ -12,7 +12,7 @@ date created: Monday, September 2nd 2024, 2:32 pm
 date modified: Monday, October 14th 2024, 1:38 pm
 ---
 
-[Contributable Obsidian Wiki](../../📁%2010%20-%20My%20Obsidian%20Stack/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
+[Contributable Obsidian Wiki](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Contributable%20Obsidian%20Wiki.md)
 
 # Desktop Vs Mobile Configs
 

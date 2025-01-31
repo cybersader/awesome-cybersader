@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Sunday, November 17th 2024, 9:49 pm
-date modified: Sunday, November 17th 2024, 9:49 pm
+date modified: Friday, January 31st 2025, 4:33 pm
 ---
 
 (+ data transformation)

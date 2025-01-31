@@ -1,11 +1,12 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Wednesday, June 26th 2024, 7:24 pm
-date modified: Wednesday, June 26th 2024, 7:24 pm
+date modified: Friday, January 31st 2025, 4:34 pm
 ---
-%% Begin Waypoint %%
+%% Begin Landmark %%
 - **[[⬇️ Hacking Ideas]]**
 - **[[⬇️ Misc_Links]]**
 - **[[2025 Cybersecurity Goals]]**
@@ -45,6 +46,7 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - **[[Ghost Blogs]]**
 - **[[Hosted Storage]]**
 - **[[Hotel Hacker]]**
+- **[[Intellectual Arrogance]]**
 - [[Laptop Health Check Tools]]
 - **[[Liability Chains]]**
 - [[LibreOffice]]
@@ -87,4 +89,4 @@ date modified: Wednesday, June 26th 2024, 7:24 pm
 - [[Xbox Controllers]]
 - **[[Xbox Home Networking]]**
 
-%% End Waypoint %%
+%% End Landmark %%

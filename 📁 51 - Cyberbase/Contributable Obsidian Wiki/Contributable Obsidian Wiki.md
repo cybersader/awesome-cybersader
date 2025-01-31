@@ -10,7 +10,7 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 [GitHub + Obsidian + Notion - Digital Garden](../../📁%2001%20-%20Projects/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden.md)
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
-%% Begin Waypoint %%
+%% Begin Landmark %%
 - **[[✒️ Cyberbase Architecture]]**
 
 - **[[🐛 Known Base Bugs, Issues]]**
@@ -28,7 +28,7 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 - **[[Obsidian Publish SEO]]**
 - **[[TinaCMS]]**
 
-%% End Waypoint %%
+%% End Landmark %%
 
 # DROPZONE
 

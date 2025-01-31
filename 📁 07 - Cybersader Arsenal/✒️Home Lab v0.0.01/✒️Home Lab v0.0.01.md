@@ -135,7 +135,7 @@ b32c2a1de12122522de2b7a2aa7f6ed707c65bf0: [[Pasted Image 20241216200655_340.png]
 
 234eb161bead1746439cbc4960e3fc4a65af5993: [[Pasted Image 20241216200717_910.png]]
 
-b8738ce51af25d50ba094b20b230b77b6902648a: [[../../📁 10 - My Obsidian Stack/✒️ Obsidian Tech Stack Diagram/Pasted Image 20241215200947_114.png]]
+b8738ce51af25d50ba094b20b230b77b6902648a: [[../../📁 51 - Cyberbase/✒️ Obsidian Tech Stack Diagram/Pasted Image 20241215200947_114.png]]
 
 75228b348d08c9190c710cd3d71d2d5a0b9621b1: [[Pasted Image 20241216200815_713.png]]
 

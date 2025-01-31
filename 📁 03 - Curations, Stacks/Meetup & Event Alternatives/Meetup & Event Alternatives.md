@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, November 16th 2024, 11:05 pm
-date modified: Friday, January 31st 2025, 3:32 pm
+date modified: Friday, January 31st 2025, 4:44 pm
 ---
 
 [Cyber Community](../../📁%2011%20-%20Community/Cyber%20Community/Cyber%20Community.md)
@@ -27,7 +27,6 @@ date modified: Friday, January 31st 2025, 3:32 pm
 - [Explore Events | Kommunity](https://kommunity.com/events)
 - [Online Booking System & Reservation Software | Bookwhen](https://bookwhen.com/)
 - [Far or Near - Social Networking Communities](https://www.farornear.com/)
-- [זירה חברתית לפעילויות, אטרקציות, סדנאות והרצאות בישראל - Funzing](https://il.funzing.com/home?utm_campaign=What-are-the-best-alternatives-to-Meetup&utm_medium=Link&utm_source=Quora)
 - [Discover Your True Local Community with Verlocal!](https://verlocal.com/)
 - [Peatix: Tools for Communities and Events | Peatix](https://peatix.com/?utm_campaign=meetup&utm_medium=referral&utm_source=quora.com)
 - [Sites like meetup — meetup alternative | by Lonare | Medium](https://lonare.medium.com/sites-like-meetup-meetup-alternative-e9bab8e078fc)
