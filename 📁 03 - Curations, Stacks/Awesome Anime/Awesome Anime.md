@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Saturday, October 26th 2024, 9:41 pm
+date modified: Friday, January 31st 2025, 3:21 pm
 ---
 
 [Cyber Movies, TV, Documentaries](../../📁%2006%20-%20Learning,%20Notes/Cyber%20Movies,%20TV,%20Documentaries/Cyber%20Movies,%20TV,%20Documentaries.md)
@@ -19,6 +20,7 @@ date modified: Saturday, October 26th 2024, 9:41 pm
 	- The Elusive Samurai
 		- Has a good rating and hopefully wholesome
 	- The Trillion Game - actually related to IT and hacking
+	- Solo Leveling - ehhh...has some vengeance type vibes - with great power comes great responsibility
 
 # Top Anime
 

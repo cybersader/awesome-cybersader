@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Tuesday, November 19th 2024, 7:14 pm
-date modified: Tuesday, November 19th 2024, 7:14 pm
+date modified: Friday, January 31st 2025, 3:32 pm
 ---
 
 # URL to Link Collection Curation

@@ -18,7 +18,7 @@ date modified: Monday, September 30th 2024, 12:57 pm
 [Cyber Training, CTFs](../../Cyber%20Training,%20CTFs/Cyber%20Training,%20CTFs.md)
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building.md)
 [Cyber Movies, TV, Documentaries](../../../📁%2005%20-%20Learning,%20Notes/Cyber%20Movies,%20TV,%20Documentaries/Cyber%20Movies,%20TV,%20Documentaries.md)
-[Awesome Storage Hardware](../../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Storage%20Hardware.md)
+[Awesome Storage Hardware](../../../📁%2003%20-%20Curations,%20Stacks/Awesome%20Storage%20Hardware/Awesome%20Storage%20Hardware.md)
 [Internet Usage & Ethics](../../../📁%2006%20-%20Cybersader%20Arsenal/Internet%20Usage%20&%20Ethics/Internet%20Usage%20&%20Ethics.md)
 [THE PERSONAL CYBER RESILIENCE GUIDE](../../../📁%2006%20-%20Cybersader%20Arsenal/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE/THE%20PERSONAL%20CYBER%20RESILIENCE%20GUIDE.md)
 

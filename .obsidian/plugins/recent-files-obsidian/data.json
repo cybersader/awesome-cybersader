@@ -1,16 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations.md"
+      "basename": "Polling Tools",
+      "path": "📁 03 - Curations, Stacks/Polling Tools/Polling Tools.md"
     },
     {
-      "basename": "2025-01-31-Friday",
-      "path": "🕸️ Daily Notes/2025/01/2025-01-31-Friday/2025-01-31-Friday.md"
+      "basename": "Presentation Tools & Tech",
+      "path": "📁 12 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
+    },
+    {
+      "basename": "Physical Storage",
+      "path": "📁 03 - Curations, Stacks/Physical Storage/Physical Storage.md"
+    },
+    {
+      "basename": "Meetup & Event Alternatives",
+      "path": "📁 03 - Curations, Stacks/Meetup & Event Alternatives/Meetup & Event Alternatives.md"
+    },
+    {
+      "basename": "Link Curation Tools",
+      "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
+    },
+    {
+      "basename": "Hosting",
+      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
+    },
+    {
+      "basename": "Diagrams",
+      "path": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md"
+    },
+    {
+      "basename": "Awesome Splunk",
+      "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
+    },
+    {
+      "basename": "Awesome SecOps Data Engineering",
+      "path": "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering/Awesome SecOps Data Engineering.md"
+    },
+    {
+      "basename": "Awesome AI",
+      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
+    },
+    {
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
+      "basename": "Cyber Blogs",
+      "path": "📁 03 - Curations, Stacks/Cyber Blogs/Cyber Blogs.md"
+    },
+    {
+      "basename": "Awesome Storage Hardware",
+      "path": "📁 03 - Curations, Stacks/Awesome Storage Hardware/Awesome Storage Hardware.md"
+    },
+    {
+      "basename": "Awesome Cyber Resource Curations",
+      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations/Awesome Cyber Resource Curations.md"
+    },
+    {
+      "basename": "⬇️ Curation Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇️ Curation Dropzone/⬇️ Curation Dropzone.md"
     },
     {
       "basename": "📁 50 - Cybersade",
       "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
+    },
+    {
+      "basename": "2025-01-31-Friday",
+      "path": "🕸️ Daily Notes/2025/01/2025-01-31-Friday/2025-01-31-Friday.md"
     },
     {
       "basename": "2025-01-29-Wednesday",
@@ -143,62 +199,6 @@
     {
       "basename": "Awesome WikiJS Examples",
       "path": "📁 10 - My Obsidian Stack/Awesome WikiJS Examples/Awesome WikiJS Examples.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 10 - My Obsidian Stack/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "Awesome Web Design",
-      "path": "🕸️ UNSTRUCTURED/Awesome Web Design/Awesome Web Design.md"
-    },
-    {
-      "basename": "Bluetooth Removal Issue Fix Windows",
-      "path": "📁 01 - Projects/Bluetooth Removal Issue Fix Windows/Bluetooth Removal Issue Fix Windows.md"
-    },
-    {
-      "basename": "Xbox Controllers",
-      "path": "🕸️ UNSTRUCTURED/Xbox Controllers.md"
-    },
-    {
-      "basename": "Cable Management",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Cable Management/Cable Management.md"
-    },
-    {
-      "basename": "2025-01-25-Saturday",
-      "path": "🕸️ Daily Notes/2025/01/2025-01-25-Saturday/2025-01-25-Saturday.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "2025-01-24-Friday",
-      "path": "🕸️ Daily Notes/2025/01/2025-01-24-Friday/2025-01-24-Friday.md"
-    },
-    {
-      "basename": "Framework Mapping",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
-    },
-    {
-      "basename": "✒️Home Lab v0.0.01",
-      "path": "📁 07 - Cybersader Arsenal/✒️Home Lab v0.0.01/✒️Home Lab v0.0.01.md"
-    },
-    {
-      "basename": "Cheapest Archive Storage",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/Cheapest Archive Storage/Cheapest Archive Storage.md"
-    },
-    {
-      "basename": "iX-Storj Overcharging or Overusing Storage",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/iX-Storj Overcharging or Overusing Storage/iX-Storj Overcharging or Overusing Storage.md"
-    },
-    {
-      "basename": "Home Networking Arsenal",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md"
     }
   ],
   "omittedPaths": [],

@@ -3,7 +3,7 @@ date created: Tuesday, April 9th 2024, 9:01 pm
 date modified: Tuesday, April 9th 2024, 9:01 pm
 ---
 %% Begin Waypoint %%
-- [[⬇️ Curation Dropzone]]
+- **[[⬇️ Curation Dropzone]]**
 - **[[⬇ Tech Dropzone]]**
 	- **[[Awesome Dashcams]]**
 	- **[[Awesome Hardware]]**
@@ -15,7 +15,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
 - **[[Awesome Collaboration]]**
-- [[Awesome Cyber Resource Curations]]
+- **[[Awesome Cyber Resource Curations]]**
 - **[[Awesome Dark Web Terms]]**
 - **[[Awesome EDC]]**
 - **[[Awesome IAM]]**
@@ -27,14 +27,14 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome REST Clients]]**
 - **[[Awesome SecOps Data Engineering]]**
 - **[[Awesome Splunk]]**
-- [[Awesome Storage Hardware]]
+- **[[Awesome Storage Hardware]]**
 - **[[Awesome Stream Deck Alternatives]]**
 - **[[Awesome Tech Stacks from Teams]]**
 - **[[Awesome Threat Intelligence]]**
 - **[[Backups Tech]]**
 - **[[Books]]**
 - **[[Browser Extensions]]**
-- [[Cyber Blogs]]
+- **[[Cyber Blogs]]**
 - **[[Cyber Books]]**
 - **[[Cyber Memes]]**
 - **[[Cyber Merch]]**

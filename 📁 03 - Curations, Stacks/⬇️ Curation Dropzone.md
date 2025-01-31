@@ -1,1 +1,0 @@
-- https://www.xelplus.com/resources/

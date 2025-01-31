@@ -1,10 +1,17 @@
 ---
+aliases: []
+tags: []
+publish: true
+permalink:
 date created: Monday, April 22nd 2024, 4:41 pm
-date modified: Monday, April 22nd 2024, 7:27 pm
+date modified: Friday, January 31st 2025, 3:32 pm
 ---
 
+[📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
+
 # Resilient File Cabinets
--  Features
+
+- Features
 	- Fireproof
 	- Crush resistant
 	- Aesthetics
