@@ -9318,7 +9318,7 @@ var _Todo = class {
     return `${this.prefix}${this.check}${this.suffix}${this.body}`;
   }
   isChecked() {
-    return this.check === "x";
+    return _Todo.checkedStatuses.some((status) => status === this.check);
   }
   setChecked(checked) {
     this.check = checked ? "x" : " ";
@@ -9331,7 +9331,8 @@ var _Todo = class {
   }
 };
 var Todo = _Todo;
-Todo.regexp = new RegExp("^(?<prefix>((> ?)*)?\\s*[\\-\\*] \\[)(?<check>.)(?<suffix>\\]\\s+)(?<body>.*)$");
+Todo.regexp = new RegExp("^(?<prefix>((> ?)*)?\\s*[\\-\\*][ ]+\\[)(?<check>.)(?<suffix>\\]\\s+)(?<body>.*)$");
+Todo.checkedStatuses = ["x", "-"];
 var MarkdownDocument = class {
   constructor(file, content) {
     this.file = file;
@@ -16781,7 +16782,12 @@ var ReminderListItemViewProxy = class {
     }
   }
   getViews() {
-    return this.workspace.getLeavesOfType(VIEW_TYPE_REMINDER_LIST).map((leaf) => leaf.view);
+    return this.workspace.getLeavesOfType(VIEW_TYPE_REMINDER_LIST).map((leaf) => {
+      if (leaf && leaf.view instanceof ReminderListItemView) {
+        return leaf.view;
+      }
+      return null;
+    }).filter((view) => view != null);
   }
   invalidate() {
     this.valid = false;
@@ -17149,3 +17155,5 @@ PERFORMANCE OF THIS SOFTWARE.
 //! moment.js
 //! momentjs.com
 //! version : 2.29.4
+
+/* nosourcemap */

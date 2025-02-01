@@ -11,9 +11,7 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
 %% Begin Landmark %%
-- **[[✒️ Cyberbase Architecture]]**
-
-- **[[🐛 Known Base Bugs, Issues]]**
+- **[[../✒️ Cyberbase Architecture/✒️ Cyberbase Architecture]]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
 - **[[Collaboration in Obsidian]]**
@@ -40,13 +38,7 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 
 # Tech Stack?
 
-[✒️ Cyberbase Architecture](✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.md)
-
-![](✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.svg)
-
-# My Vision
-
-The platform agnostic Obsidian as a CMS contributable, sync-able, customizable, collaborative, wiki
+[✒️ Cyberbase Architecture](../✒️%20C[✒️ Cyberbase Architecture](../✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.md)e/![](../✒️%20Cyberbase%20Architecture/✒️%20Cyberbase%20Architecture.svg)ic Obsidian as a CMS contributable, sync-able, customizable, collaborative, wiki
 
 The dream:
 - Edit page -> then it allows you to edit it as it appear right there

@@ -277,19 +277,24 @@ var RegExPatterns = class {
 RegExPatterns.Email = /([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)/;
 //static readonly AbsoluteUri = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/=]*)/;
 RegExPatterns.AbsoluteUri = /^[a-z][a-z+-\.]+:\/\/.+/;
+RegExPatterns.RelativePath = /^(?![A-Z]:\\)(?!\.{1,2}(\/|\\))(?!\/\w)([.\w\-\/\\]+)$/;
 RegExPatterns.Wikilink = /(!?)\[\[([^\[\]|]*)(\|([^\[\]]*))?\]\]/;
-RegExPatterns.Markdownlink = /(!?)\[([^\]\[]*)\]\(([^)(]*)\)/;
+// static readonly Markdownlink = /(!?)\[([^\]\[]*)\]\(([^)(]*)\)/;
+//TODO: revise
+RegExPatterns.Markdownlink = /(!?)\[([^\]\[]*)\]\(((?:[^()\\]*|\\[\(\)]|(?:\([^()]*\)))*?)\)/;
 RegExPatterns.Htmllink = /<a\s+[^>]*href\s*=\s*['"]([^'"]*)['"][^>]*>(.*?)<\/a>/;
 RegExPatterns.AutolinkUrl = /<([a-zA-Z]{2,32}:[^>]+)>/;
 RegExPatterns.AutolinkMail = /<([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)>/;
-RegExPatterns.PlainUrl = /\b((?:[a-z][\w\-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\))+(?:\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/;
+// static readonly PlainUrl = /\b((?:[a-z][\w\-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\))+(?:\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/
+//TODO: revise
+RegExPatterns.PlainUrl = /\b((?:[a-z][\w\-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\([^\s()<>]*\))+(?:\([^\s()<>]*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/;
 RegExPatterns.InvalidNoteNameChars = /[#^\[\]\|*"\/\\<>:?]/;
 RegExPatterns.NoteHeading = /^#+\s+(.*)$/;
 RegExPatterns.AbsoluteUriCheck = /^(?:[a-z+]+:)?\/\//;
 RegExPatterns.AbsoluteFilePathCheck = /^\/|([a-z]:[\/\\])/;
 //TODO: fix
 RegExPatterns.CodeBlock = /(\`{3}([a-z#\s\"]*?)\n+)(.*?)(\n+\`{3})/;
-RegExPatterns.ImageDimentions = /((\d+)|((\d+)x(\d+)))$/;
+RegExPatterns.ImageDimentions = /^((\d+)|((\d+)x(\d+)))$/;
 RegExPatterns.Frontmatter = /(\-{3}\n+)(.*?)(\n*\-{3}\n)/;
 
 // utils.ts
@@ -314,6 +319,11 @@ var ImageDimensions = class extends TextPart {
     this.height = height;
   }
 };
+var DestinationType = /* @__PURE__ */ ((DestinationType2) => {
+  DestinationType2["Unknown"] = "unknown";
+  DestinationType2["Image"] = "image";
+  return DestinationType2;
+})(DestinationType || {});
 var LinkData = class extends TextPart {
   constructor(type, content, position, destination, text, embedded = false) {
     super(content, position);
@@ -481,56 +491,6 @@ function parsePlainUrl(regExp, match, raw, destination) {
   }
   return linkData;
 }
-function findLink(text, startPos, endPos, linkType = 65535 /* All */) {
-  const wikiLinkRegEx = /(!?)\[\[([^\[\]|]+)(\|([^\[\]]*))?\]\]/g;
-  const mdLinkRegEx = new RegExp(RegExPatterns.Markdownlink.source, "gmi");
-  const htmlLinkRegEx = /<a\s+[^>]*href\s*=\s*['"]([^'"]*)['"][^>]*>(.*?)<\/a>/gi;
-  const autolinkRegEx1 = /<([a-z]+:\/\/[^>]+)>/gmi;
-  const autolinkRegEx = /(<([a-zA-Z]{2,32}:[^>]+)>)|(<([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)>)/gmi;
-  let match;
-  if (linkType & 2 /* Wiki */) {
-    while (match = wikiLinkRegEx.exec(text)) {
-      if (startPos >= match.index && endPos <= wikiLinkRegEx.lastIndex) {
-        const [raw, exclamationMark, destination, , text2] = match;
-        const linkData = parseWikiLink(wikiLinkRegEx, match, raw, exclamationMark, text2, destination);
-        return linkData;
-      }
-    }
-  }
-  if (linkType & 1 /* Markdown */) {
-    while (match = mdLinkRegEx.exec(text)) {
-      if (startPos >= match.index && endPos <= mdLinkRegEx.lastIndex) {
-        const [raw, exclamationMark, text2, destination] = match;
-        const linkData = parseMarkdownLink(mdLinkRegEx, match, raw, exclamationMark, text2, destination);
-        return linkData;
-      }
-    }
-  }
-  if (linkType & 4 /* Html */) {
-    while (match = htmlLinkRegEx.exec(text)) {
-      if (startPos >= match.index && endPos <= htmlLinkRegEx.lastIndex) {
-        const [raw, destination, text2] = match;
-        const linkData = parseHtmlLink(mdLinkRegEx, match, raw, text2, destination);
-        return linkData;
-      }
-    }
-  }
-  if (linkType & 8 /* Autolink */) {
-    while (match = autolinkRegEx.exec(text)) {
-      if (startPos >= match.index && endPos <= autolinkRegEx.lastIndex) {
-        const [raw, urlAutolink, urlDestination, mailAutolink, mailDestination] = match;
-        const linkData = parseAutolink(
-          autolinkRegEx,
-          match,
-          raw,
-          urlDestination ? urlDestination : mailDestination
-        );
-        return linkData;
-      }
-    }
-  }
-  return void 0;
-}
 function replaceAllHtmlLinks(text) {
   const htmlLinkRegEx = /<a\s+[^>]*href\s*=\s*['"]([^'"]*)['"][^>]*>(.*?)<\/a>/gi;
   return text.replace(htmlLinkRegEx, (match, url, text2) => {
@@ -606,10 +566,21 @@ function removeWhitespaces(str) {
 async function getPageTitle(url, getPageText) {
   const titleRegEx = /<title[^>]*>([^<]*?)<\/title>/i;
   const text = await getPageText(url);
-  const match = text.match(titleRegEx);
-  if (match) {
-    const [, title] = match;
-    return decodeHtmlEntities(removeWhitespaces(title));
+  if (url.hostname === "www.youtube.com" && url.pathname === "/watch") {
+    const titlePrefix = '"playerOverlayVideoDetailsRenderer":{"title":{"simpleText":"';
+    const titleStart = text.indexOf(titlePrefix);
+    if (titleStart > 0) {
+      const titleEnd = text.indexOf('"}', titleStart);
+      if (titleEnd > 0) {
+        return text.substring(titleStart + titlePrefix.length, titleEnd);
+      }
+    }
+  } else {
+    const match = text.match(titleRegEx);
+    if (match) {
+      const [, title] = match;
+      return decodeHtmlEntities(removeWhitespaces(title));
+    }
   }
   throw new Error("Page has no title.");
 }
@@ -663,7 +634,7 @@ function decodeHtmlEntities(text) {
     return entry != null ? entry : match;
   });
 }
-function findLinks(text, type, start2, end2) {
+function findLinks(text, type, start2, end2, allowStartEndInsideLink = false) {
   const linksRegex = new RegExp(
     `${RegExPatterns.Markdownlink.source}|${RegExPatterns.Wikilink.source}|${RegExPatterns.AutolinkUrl.source}|${RegExPatterns.AutolinkMail.source}|${RegExPatterns.Htmllink.source}|${RegExPatterns.PlainUrl.source}`,
     "gmi"
@@ -694,7 +665,11 @@ function findLinks(text, type, start2, end2) {
         continue;
       }
     } else {
-      if (!(match.index >= startOffset && match.index + rawMatch.length <= endOffset)) {
+      if (allowStartEndInsideLink) {
+        if (!(startOffset >= match.index && endOffset <= match.index + rawMatch.length)) {
+          continue;
+        }
+      } else if (!(match.index >= startOffset && match.index + rawMatch.length <= endOffset)) {
         continue;
       }
     }
@@ -816,14 +791,31 @@ function getFileExtension(path) {
   }
   return null;
 }
-function destinationRequireAngleBrackets(destination) {
-  for (let i = 0; i < destination.length; i++) {
-    const code = destination.charCodeAt(i);
-    if (code === 32) {
-      return true;
-    }
+var DestinationType = /* @__PURE__ */ ((DestinationType2) => {
+  DestinationType2["None"] = "none";
+  DestinationType2["Absolute"] = "absolute";
+  DestinationType2["Relative"] = "relative";
+  DestinationType2["Shortest"] = "shortest";
+  return DestinationType2;
+})(DestinationType || {});
+function createWikiLink(sourcePath, destination, destinationSubPath, text, dimensions, destinationType = "none" /* None */) {
+  return `[[${destination}${destinationSubPath ? "#" + destinationSubPath : ""} ${text ? "|" + text : ""}${dimensions ? "|" + dimensions : ""}]]`;
+}
+function createMarkdownLink(sourcePath, destination, destinationSubPath, text, dimensions, destinationType = "none" /* None */) {
+  return `[${text != null ? text : ""}${dimensions ? "|" + dimensions : ""}](${destination}${destinationSubPath ? "#" + destinationSubPath : ""})`;
+}
+function getIntersection(interval1, interval2) {
+  console.log(interval1);
+  console.log(interval2);
+  const [start1, end1] = interval1;
+  const [start2, end2] = interval2;
+  if (start1 <= end2 && start2 <= end1) {
+    const intersectionStart = Math.max(start1, start2);
+    const intersectionEnd = Math.min(end1, end2);
+    return [intersectionStart, intersectionEnd];
+  } else {
+    return null;
   }
-  return false;
 }
 
 // suggesters/LinkTextSuggest.ts
@@ -2608,11 +2600,25 @@ var ReplaceLinkModal = class extends import_obsidian3.Modal {
   }
 };
 
+// IVault.ts
+var VaultConfiguration = class {
+  constructor(vault) {
+    this.vault = vault;
+  }
+  get useMarkdownLinks() {
+    return this.vault.getConfig("useMarkdownLinks");
+  }
+  get newLinkFormat() {
+    return this.vault.getConfig("newLinkFormat");
+  }
+};
+
 // Vault.ts
 var import_obsidian4 = require("obsidian");
 var VaultImp = class {
   constructor(app2) {
     this.app = app2;
+    this.configuration = new VaultConfiguration(this);
   }
   getFilesInFolder(folder) {
     let folders = [];
@@ -2665,8 +2671,7 @@ var VaultImp = class {
         return null;
       }
       const backlinksLinkData = {};
-      for (const sourceFile in backlinks) {
-        const linkCaches = backlinks[sourceFile];
+      for (const [sourceFile, linkCaches] of backlinks) {
         const linkDataArray = new Array();
         for (const linkCache of linkCaches) {
           const linkData = LinkData.parse(linkCache.original);
@@ -2693,6 +2698,15 @@ var VaultImp = class {
   getAbstractFileByPath(path) {
     return this.app.vault.getAbstractFileByPath(path);
   }
+  getConfig(setting) {
+    return this.app.vault.getConfig(setting);
+  }
+  getFiles() {
+    return this.app.vault.getFiles();
+  }
+  getMarkdownFiles() {
+    return this.app.vault.getMarkdownFiles();
+  }
 };
 
 // commands/ObsidianProxy.ts
@@ -2708,8 +2722,11 @@ var ObsidianProxy = class {
   createNotice(message, timeout) {
     return new import_obsidian5.Notice(message, timeout);
   }
-  requestUrl(request) {
-    return (0, import_obsidian5.requestUrl)(request);
+  requestUrl(request2) {
+    return (0, import_obsidian5.requestUrl)(request2);
+  }
+  request(req) {
+    return (0, import_obsidian5.request)(req);
   }
   clipboardWriteText(text) {
     navigator.clipboard.writeText(text);
@@ -2723,6 +2740,30 @@ var ObsidianProxy = class {
   showPromptModal(title, text, buttons, onSubmit) {
     this.uiFactory.createPromptModal(title, text, buttons, onSubmit).open();
   }
+  createLink(sourcePath, destination, destinationSubPath, text, dimensions) {
+    const useMarkdownLinks = this.Vault.configuration.useMarkdownLinks;
+    return useMarkdownLinks ? createMarkdownLink(sourcePath, destination, destinationSubPath, text, dimensions, "none" /* None */) : createWikiLink(sourcePath, destination, destinationSubPath, text, dimensions, "none" /* None */);
+  }
+  getFileCache(file) {
+    return this.app.metadataCache.getFileCache(file);
+  }
+  getBlock(editor, file) {
+    const cursor = editor.getCursor("from");
+    const fileCache = this.getFileCache(file);
+    let block = ((fileCache == null ? void 0 : fileCache.sections) || []).find((section) => {
+      return section.position.start.line <= cursor.line && section.position.end.line >= cursor.line;
+    });
+    if ((block == null ? void 0 : block.type) === "list") {
+      block = ((fileCache == null ? void 0 : fileCache.listItems) || []).find((item) => {
+        return item.position.start.line <= cursor.line && item.position.end.line >= cursor.line;
+      });
+    } else if ((block == null ? void 0 : block.type) === "heading") {
+      block = ((fileCache == null ? void 0 : fileCache.headings) || []).find((heading) => {
+        return heading.position.start.line === cursor.line;
+      });
+    }
+    return block;
+  }
 };
 
 // settings.ts
@@ -2735,7 +2776,7 @@ var DEFAULT_SETTINGS = {
   deleteUnreferencedLinkTarget: true,
   removeLinksFromHeadingsInternalWikilinkWithoutTextAction: "None" /* None */,
   onConvertToMdlinkAppendMdExtension: false,
-  autoselectWordOnCreateLink: false,
+  autoselectWordOnCreateLink: true,
   skipFrontmatterInNoteWideCommands: true,
   //feature flags
   ffReplaceLink: false,
@@ -2743,11 +2784,10 @@ var DEFAULT_SETTINGS = {
   ffWrapNoteInFolder: false,
   ffConvertLinksInFolder: false,
   ffObsidianUrlSupport: false,
-  ffAutoselectWordOnCreateLink: false,
   ffHighlightBrokenLinks: false,
   ffSetLinkDestinationFromClipbard: false,
   ffSkipFrontmatterInNoteWideCommands: false,
-  ffCopyLinkToHeading: false,
+  ffCopyLinkToObject: false,
   //context menu
   //TODO: fix typo
   contexMenu: {
@@ -2776,6 +2816,7 @@ var DEFAULT_SETTINGS = {
     wrapNoteInFolder: false,
     copyLinkToClipboard: true,
     copyLinkToHeadingToClipboard: true,
+    copyLinkToBlockToClipboard: false,
     cutLinkToClipboard: true
   }
 };
@@ -2786,28 +2827,45 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
     this.plugin = plugin;
+    this.repoUrl = "https://github.com/mii-key/obsidian-links";
+  }
+  getFullDocUrl(fragment) {
+    return this.repoUrl + "?tab=readme-ov-file#" + fragment;
+  }
+  getFullInsiderDocUrl(filename) {
+    return this.repoUrl + "/blob/master/docs/insider/" + filename;
+  }
+  setSettingHelpLink(setting, helpUrl) {
+    const nameEl = setting.settingEl.querySelector(".setting-item-name");
+    if (!nameEl) {
+      return;
+    }
+    this.setElementHelpLink(nameEl, helpUrl);
+  }
+  setElementHelpLink(element, helpUrl) {
+    if (!element) {
+      return;
+    }
+    const linkEl = createEl("a", {
+      href: helpUrl
+    });
+    const iconEl = element.createSpan();
+    iconEl.addClass("settings-help-icon");
+    (0, import_obsidian6.setIcon)(iconEl, "circle-help");
+    linkEl.appendChild(iconEl);
+    element.appendChild(linkEl);
   }
   display() {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("h3", { text: "Command settings" });
     const generalHeading = containerEl.createEl("h4", { text: "General" });
-    const autoselectWordOnCreateLinkCommandsSetting = new import_obsidian6.Setting(containerEl).setName("Autoselect upon creating a link").setDesc("Autoselect a word under the cursor when creating a link.").addToggle((toggle) => {
+    new import_obsidian6.Setting(containerEl).setName("Autoselect upon creating a link").setDesc("Autoselect a word under the cursor when creating a link.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.autoselectWordOnCreateLink).onChange(async (value) => {
         this.plugin.settings.autoselectWordOnCreateLink = value;
         await this.plugin.saveSettings();
       });
     });
-    const toggleAutoselectWordOnCreateLinkCommandsSetting = (enabled) => {
-      if (enabled) {
-        autoselectWordOnCreateLinkCommandsSetting.settingEl.show();
-        generalHeading.show();
-      } else {
-        autoselectWordOnCreateLinkCommandsSetting.settingEl.hide();
-        generalHeading.hide();
-      }
-    };
-    toggleAutoselectWordOnCreateLinkCommandsSetting(this.plugin.settings.ffAutoselectWordOnCreateLink);
     const skipFrontmatterInNoteWideCommandsSetting = new import_obsidian6.Setting(containerEl).setName("Skip Frontmatter").setDesc("Skip Frontmatter in note wide commands.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.skipFrontmatterInNoteWideCommands).onChange(async (value) => {
         this.plugin.settings.skipFrontmatterInNoteWideCommands = value;
@@ -2824,12 +2882,14 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
     };
     toggleskipFrontmatterInNoteWideCommandsSetting(this.plugin.settings.ffSkipFrontmatterInNoteWideCommands);
-    containerEl.createEl("h4", { text: "Set link text" });
+    const setListTextEl = containerEl.createEl("h4", { text: "Set link text" });
+    this.setElementHelpLink(setListTextEl, this.getFullDocUrl("set-link-text"));
     new import_obsidian6.Setting(containerEl).setName("Title separator").setDesc("String used as headings separator in 'Set link text' command.").addText((text) => text.setValue(this.plugin.settings.titleSeparator).onChange(async (value) => {
       this.plugin.settings.titleSeparator = value;
       await this.plugin.saveSettings();
     }));
-    containerEl.createEl("h4", { text: "Remove links from headings" });
+    const removeLinksFromHeadingEl = containerEl.createEl("h4", { text: "Remove links from headings" });
+    this.setElementHelpLink(removeLinksFromHeadingEl, this.getFullDocUrl("remove-links-from-headings"));
     new import_obsidian6.Setting(containerEl).setName("Internal wikilink without text").addDropdown((dropDown) => dropDown.addOptions({
       Delete: "Remove",
       ReplaceWithDestination: "Replace with destination",
@@ -2838,15 +2898,16 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       this.plugin.settings.removeLinksFromHeadingsInternalWikilinkWithoutTextAction = value;
       await this.plugin.saveSettings();
     }));
-    containerEl.createEl("h4", { text: "Delete link" });
+    const deleteLinkEl = containerEl.createEl("h4", { text: "Delete link" });
+    this.setElementHelpLink(deleteLinkEl, this.getFullDocUrl("delete-link"));
     new import_obsidian6.Setting(containerEl).setName("Delete unreferenced link target").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.deleteUnreferencedLinkTarget).onChange(async (value) => {
         this.plugin.settings.deleteUnreferencedLinkTarget = value;
         await this.plugin.saveSettings();
       });
     });
-    const convertToMdlinkCaptionEl = containerEl.createEl("h4", { text: "Convert to Markdown link" });
-    const settingOnConvertToMdlinkAppendMdExtension = new import_obsidian6.Setting(containerEl).setName("Append .md extension").setDesc("").setClass("setting-item-append-mdextension").addToggle((toggle) => {
+    containerEl.createEl("h4", { text: "Convert to Markdown link" });
+    new import_obsidian6.Setting(containerEl).setName("Append .md extension").setDesc("").setClass("setting-item-append-mdextension").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.onConvertToMdlinkAppendMdExtension).onChange(async (value) => {
         this.plugin.settings.onConvertToMdlinkAppendMdExtension = value;
         await this.plugin.saveSettings();
@@ -2919,6 +2980,20 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
           await this.plugin.saveSettings();
         });
       });
+      const settingCopyLinkToObjectContextMenu = new import_obsidian6.Setting(containerEl).setName("Copy link to element").setDesc("").addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.contexMenu.copyLinkToHeadingToClipboard).onChange(async (value) => {
+          this.plugin.settings.contexMenu.copyLinkToHeadingToClipboard = value;
+          await this.plugin.saveSettings();
+        });
+      });
+      const toggleCopyLinkToObjectContextMenuSetting = (enabled) => {
+        if (enabled) {
+          settingCopyLinkToObjectContextMenu.settingEl.show();
+        } else {
+          settingCopyLinkToObjectContextMenu.settingEl.hide();
+        }
+      };
+      toggleCopyLinkToObjectContextMenuSetting(this.plugin.settings.ffCopyLinkToObject);
       new import_obsidian6.Setting(containerEl).setName("Unlink").setDesc("").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.contexMenu.unlink).onChange(async (value) => {
           this.plugin.settings.contexMenu.unlink = value;
@@ -3037,13 +3112,6 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       earlyAccessDescription.createEl("span", {
         text: " to be fixed."
       });
-      new import_obsidian6.Setting(containerEl).setName("Autoselect a word upon creating a link").setDesc("Autoselect a word under the cursor when creating a link").setClass("setting-item-autoselect-word-create-link").addToggle((toggle) => {
-        toggle.setValue(this.plugin.settings.ffAutoselectWordOnCreateLink).onChange(async (value) => {
-          this.plugin.settings.ffAutoselectWordOnCreateLink = value;
-          toggleAutoselectWordOnCreateLinkCommandsSetting(value);
-          await this.plugin.saveSettings();
-        });
-      });
       containerEl.createEl("h3", { text: "Insider features" });
       const insiderDescription = containerEl.createEl("p");
       insiderDescription.createEl("span", {
@@ -3056,23 +3124,13 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       insiderDescription.createEl("span", {
         text: " and influence the direction of development."
       });
-      new import_obsidian6.Setting(containerEl).setName("Convert links in folder").setDesc("Convert links in a folder").setClass("setting-item--feature-convert-links-in-folder").addToggle((toggle) => {
+      const settingConvertLinksInFolder = new import_obsidian6.Setting(containerEl).setName("Convert links in folder").setDesc("Convert links in a folder").setClass("setting-item--feature-convert-links-in-folder").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.ffConvertLinksInFolder).onChange(async (value) => {
           this.plugin.settings.ffConvertLinksInFolder = value;
           await this.plugin.saveSettings();
         });
       });
-      const featureConvertLinksInFolderSettingDesc = containerEl.querySelector(".setting-item--feature-convert-links-in-folder .setting-item-description");
-      if (featureConvertLinksInFolderSettingDesc) {
-        featureConvertLinksInFolderSettingDesc.appendText(" see ");
-        featureConvertLinksInFolderSettingDesc.appendChild(
-          createEl("a", {
-            href: "https://github.com/mii-key/obsidian-links/blob/master/docs/insider/convert-links-in-folder.md",
-            text: "docs"
-          })
-        );
-        featureConvertLinksInFolderSettingDesc.appendText(".");
-      }
+      this.setSettingHelpLink(settingConvertLinksInFolder, this.getFullInsiderDocUrl("convert-links-in-folder.md"));
       new import_obsidian6.Setting(containerEl).setName("Obsidian URL support").setDesc("Add support for Obsidian URL").setClass("setting-item-featureObsidianUrl").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.ffObsidianUrlSupport).onChange(async (value) => {
           this.plugin.settings.ffObsidianUrlSupport = value;
@@ -3103,28 +3161,19 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
         ffSkipFrontmatterSettingDesc.appendChild(
           createEl("a", {
             href: "https://github.com/mii-key/obsidian-links/blob/master/docs/insider/skip-frontmatter.md",
-            text: "docs"
+            text: "docs "
           })
         );
         ffSkipFrontmatterSettingDesc.appendText(".");
       }
-      new import_obsidian6.Setting(containerEl).setName("Copy link to heading").setDesc("Copy link to a heading to the clipboard. ").setClass("setting-item-copy-link-to-heading").addToggle((toggle) => {
-        toggle.setValue(this.plugin.settings.ffCopyLinkToHeading).onChange(async (value) => {
-          this.plugin.settings.ffCopyLinkToHeading = value;
+      const settingCopyLinkToElement = new import_obsidian6.Setting(containerEl).setName("Copy link to element").setDesc("Copy link to a heading or a block to the clipboard. ").setClass("setting-item-copy-link-to-object").addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.ffCopyLinkToObject).onChange(async (value) => {
+          this.plugin.settings.ffCopyLinkToObject = value;
+          toggleCopyLinkToObjectContextMenuSetting(value);
           await this.plugin.saveSettings();
         });
       });
-      const feature1SettingDesc = containerEl.querySelector(".setting-item-copy-link-to-heading .setting-item-description");
-      if (feature1SettingDesc) {
-        feature1SettingDesc.appendText(" see ");
-        feature1SettingDesc.appendChild(
-          createEl("a", {
-            href: "https://github.com/mii-key/obsidian-links/blob/master/docs/insider/copy-link-to-heading.md",
-            text: "docs"
-          })
-        );
-        feature1SettingDesc.appendText(".");
-      }
+      this.setSettingHelpLink(settingCopyLinkToElement, this.getFullInsiderDocUrl("copy-link-to-element.md"));
     }
   }
 };
@@ -3159,12 +3208,12 @@ var UnlinkLinkCommand = class extends CommandBase {
     } else {
       const text = editor.getValue();
       const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-      const linkData = findLink(text, cursorOffset, cursorOffset, 2 /* Wiki */ | 4 /* Html */ | 1 /* Markdown */);
+      const links = findLinks(text, 2 /* Wiki */ | 4 /* Html */ | 1 /* Markdown */, cursorOffset, cursorOffset);
       if (checking) {
-        return !!linkData;
+        return links.length > 0;
       }
-      if (linkData) {
-        this.unlinkLink(linkData, editor);
+      if (links) {
+        this.unlinkLink(links[0], editor);
       }
     }
   }
@@ -3214,13 +3263,14 @@ var DeleteLinkCommand = class extends CommandBase {
       return false;
     }
     const text = editor.getValue();
-    const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    const linkData = findLink(text, cursorOffset, cursorOffset);
+    const cursorOffsetStart = editor.posToOffset(editor.getCursor("from"));
+    const cursorOffsetEnd = editor.posToOffset(editor.getCursor("to"));
+    const links = findLinks(text, 65535 /* All */, cursorOffsetStart, cursorOffsetEnd, true);
     if (checking) {
-      return !!linkData;
+      return (links == null ? void 0 : links.length) == 1;
     }
-    if (linkData) {
-      this.deleteLink(linkData, editor);
+    if ((links == null ? void 0 : links.length) == 1) {
+      this.deleteLink(links[0], editor);
     }
   }
   deleteLink(linkData, editor) {
@@ -3232,12 +3282,22 @@ var DeleteLinkCommand = class extends CommandBase {
         if (hashIdx == 0) {
           return;
         }
-        const filePath = hashIdx > 0 ? destination.substring(0, hashIdx) : destination;
+        let filePath = hashIdx > 0 ? destination.substring(0, hashIdx) : destination;
         let file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath);
         if (!file) {
           const path = (0, import_parse_filepath2.default)(filePath);
-          if (path.ext === "") {
-            file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath + ".md");
+          let pathExt = path.ext;
+          if (pathExt === "") {
+            pathExt = ".md";
+            filePath += pathExt;
+            file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath);
+          }
+          if (!file) {
+            const vaultFiles = pathExt === ".md" ? this.obsidianProxy.Vault.getMarkdownFiles() : this.obsidianProxy.Vault.getFiles();
+            const targetFile = vaultFiles.find((x) => x.path.endsWith(filePath));
+            if (targetFile) {
+              file = targetFile;
+            }
           }
         }
         if (!file) {
@@ -3450,12 +3510,12 @@ var ConvertLinkToWikilinkCommand = class extends CommandBase {
     }
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    const linkData = findLink(text, cursorOffset, cursorOffset, 1 /* Markdown */);
+    const links = findLinks(text, 1 /* Markdown */, cursorOffset, cursorOffset);
     if (checking) {
-      return !!linkData && linkData.destination && !linkData.destination.content.trim().includes(":");
+      return links.length > 0 && !!links[0].destination && !links[0].destination.content.trim().includes(":");
     }
-    if (linkData) {
-      this.convertLinkToWikiLink(linkData, editor);
+    if (links.length) {
+      this.convertLinkToWikiLink(links[0], editor);
     }
   }
   convertLinkToWikiLink(linkData, editor) {
@@ -3547,17 +3607,18 @@ var CopyLinkDestinationToClipboardCommand = class extends CommandBase {
     this.obdisianProxy = obsidianProxy;
   }
   handler(editor, checking) {
+    var _a;
     if (checking && !this.isEnabled()) {
       return false;
     }
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    const linkData = findLink(text, cursorOffset, cursorOffset, 2 /* Wiki */ | 1 /* Markdown */ | 4 /* Html */ | 8 /* Autolink */);
+    const links = findLinks(text, 2 /* Wiki */ | 1 /* Markdown */ | 4 /* Html */ | 8 /* Autolink */, cursorOffset, cursorOffset);
     if (checking) {
-      return !!linkData && !!linkData.destination;
+      return !!(links == null ? void 0 : links.length) && !!((_a = links[0]) == null ? void 0 : _a.destination);
     }
-    if (linkData) {
-      this.copyLinkUnderCursorToClipboard(linkData);
+    if (links == null ? void 0 : links.length) {
+      this.copyLinkUnderCursorToClipboard(links[0]);
     }
   }
   copyLinkUnderCursorToClipboard(linkData) {
@@ -3638,7 +3699,8 @@ var EditLinkTextCommand = class extends CommandBase {
   getLink(editor) {
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    return findLink(text, cursorOffset, cursorOffset);
+    const links = findLinks(text, 65535 /* All */, cursorOffset, cursorOffset);
+    return (links == null ? void 0 : links.length) > 0 ? links[0] : void 0;
   }
 };
 
@@ -3653,24 +3715,39 @@ var SetLinkTextCommand = class extends CommandBase {
     this.obsidianProxy = obsidianProxy;
     this.callback = callback;
   }
+  //TODO: refactor
   handler(editor, checking) {
-    var _a;
+    var _a, _b;
     if (checking && !this.isEnabled()) {
       return false;
     }
-    const linkData = this.getLink(editor);
+    const linkData = this.getLinks(editor);
+    const selection = editor.getSelection();
     if (checking) {
-      return !!linkData && (linkData.type & (1 /* Markdown */ | 2 /* Wiki */)) != 0 && !!((_a = linkData.destination) == null ? void 0 : _a.content) && (!linkData.text || !(linkData == null ? void 0 : linkData.text.content) || !linkData.destination.content.startsWith("#") && linkData.destination.content.includes("#"));
+      return selection ? !!(linkData == null ? void 0 : linkData.length) && !!linkData.find((x) => {
+        var _a2;
+        return !x.text && ((_a2 = x.destination) == null ? void 0 : _a2.content) && !isAbsoluteUri(x.destination.content);
+      }) : !!(linkData == null ? void 0 : linkData.length) && (linkData[0].type & (1 /* Markdown */ | 2 /* Wiki */)) != 0 && !!((_a = linkData[0].destination) == null ? void 0 : _a.content) && (!linkData[0].text || !((_b = linkData[0]) == null ? void 0 : _b.text.content) || !linkData[0].destination.content.startsWith("#") && linkData[0].destination.content.includes("#"));
     }
-    if (linkData) {
+    if (linkData == null ? void 0 : linkData.length) {
       setTimeout(() => {
-        this.setLinkText(linkData, editor).then(() => {
-          var _a2;
-          (_a2 = this.callback) == null ? void 0 : _a2.call(this, null, void 0);
-        }).catch((err) => {
-          var _a2;
-          return (_a2 = this.callback) == null ? void 0 : _a2.call(this, err, void 0);
-        });
+        if (selection) {
+          this.setLinksText(linkData, editor).then(() => {
+            var _a2;
+            (_a2 = this.callback) == null ? void 0 : _a2.call(this, null, void 0);
+          }).catch((err) => {
+            var _a2;
+            return (_a2 = this.callback) == null ? void 0 : _a2.call(this, err, void 0);
+          });
+        } else {
+          this.setLinkText(linkData[0], editor).then(() => {
+            var _a2;
+            (_a2 = this.callback) == null ? void 0 : _a2.call(this, null, void 0);
+          }).catch((err) => {
+            var _a2;
+            return (_a2 = this.callback) == null ? void 0 : _a2.call(this, err, void 0);
+          });
+        }
       }, 500);
     }
   }
@@ -3718,11 +3795,32 @@ var SetLinkTextCommand = class extends CommandBase {
       editor.setSelection(editor.offsetToPos(textStart), editor.offsetToPos(textStart + text.length));
     }
   }
+  //TODO: wip
+  async setLinksText(linkData, editor) {
+    var _a;
+    const offset2 = editor.getSelection() ? editor.posToOffset(editor.getCursor("from")) : 0;
+    for (let i = linkData.length - 1; i >= 0; i--) {
+      const destinationContent = (_a = linkData[i].destination) == null ? void 0 : _a.content;
+      if (linkData[i].text || !destinationContent || isAbsoluteUri(destinationContent) || destinationContent.lastIndexOf("#") >= 0) {
+        continue;
+      }
+      const text = getFileName(destinationContent);
+      let textStart = offset2 + linkData[i].position.start + linkData[i].destination.position.end;
+      editor.replaceRange("|" + text, editor.offsetToPos(textStart));
+      textStart++;
+    }
+  }
   //TODO: refactor
-  getLink(editor) {
-    const text = editor.getValue();
-    const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    return findLink(text, cursorOffset, cursorOffset);
+  getLinks(editor) {
+    const selection = editor.getSelection();
+    if (selection) {
+      return findLinks(selection, 2 /* Wiki */);
+    } else {
+      const text = editor.getValue();
+      const cursorOffset = editor.posToOffset(editor.getCursor("from"));
+      const links = findLinks(text, 2 /* Wiki */ | 1 /* Markdown */, cursorOffset, cursorOffset);
+      return (links == null ? void 0 : links.length) > 0 ? [links[0]] : [];
+    }
   }
   showLinkTextSuggestions(linkData, editor) {
     const titles = getLinkTitles(linkData);
@@ -3776,11 +3874,12 @@ var EditLinkDestinationCommand = class extends CommandBase {
       editor.setSelection(editor.offsetToPos(start2), editor.offsetToPos(end2));
     }
   }
-  //TODO: refactor - used in multiple commands
   getLink(editor) {
     const text = editor.getValue();
-    const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    return findLink(text, cursorOffset, cursorOffset);
+    const cursorOffsetStart = editor.posToOffset(editor.getCursor("from"));
+    const cursorOffsetEnd = editor.posToOffset(editor.getCursor("to"));
+    const links = findLinks(text, 65535 /* All */, cursorOffsetStart, cursorOffsetEnd);
+    return (links == null ? void 0 : links.length) == 1 ? links[0] : void 0;
   }
 };
 
@@ -3822,9 +3921,9 @@ var CreateLinkFromSelectionCommand = class extends CommandBase {
     }
     let selection = editor.getSelection();
     if (checking) {
-      return !!selection || this.obsidianProxy.settings.ffAutoselectWordOnCreateLink && this.obsidianProxy.settings.autoselectWordOnCreateLink;
+      return !!selection || this.obsidianProxy.settings.autoselectWordOnCreateLink;
     }
-    if (!selection && this.obsidianProxy.settings.ffAutoselectWordOnCreateLink && this.obsidianProxy.settings.autoselectWordOnCreateLink) {
+    if (!selection && this.obsidianProxy.settings.autoselectWordOnCreateLink) {
       selection = selectWordUnderCursor(editor);
     }
     const linkStart = editor.posToOffset(editor.getCursor("from"));
@@ -3851,17 +3950,15 @@ var CreateLinkFromClipboardCommand = class extends CommandBase {
     if (checking) {
       const noteText = editor.getValue();
       const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-      const link = findLink(noteText, cursorOffset, cursorOffset, 65535 /* All */);
-      if (link && link.position.start < cursorOffset && link.position.end > cursorOffset) {
-        return false;
-      }
-      return true;
+      const links = findLinks(noteText, 65535 /* All */, cursorOffset, cursorOffset);
+      return (links == null ? void 0 : links.length) === 0;
     }
     (async () => {
       var _a, _b, _c;
       const httpUrlRegEx = /^(http|https):\/\/[^ "]+$/i;
       const clipboardText = await this.obsidianProxy.clipboardReadText();
       const links = findLinks(clipboardText, 65535 /* All */);
+      let linkText = "";
       let linkDestination = "";
       if (links.length) {
         const link = links[0];
@@ -3872,6 +3969,7 @@ var CreateLinkFromClipboardCommand = class extends CommandBase {
               const filePath = url.searchParams.get("file");
               if (filePath) {
                 linkDestination = decodeURI(filePath);
+                linkText = getFileName(linkDestination);
               }
             }
           }
@@ -3881,9 +3979,11 @@ var CreateLinkFromClipboardCommand = class extends CommandBase {
       } else {
         linkDestination = clipboardText;
       }
-      let linkText = linkDestination;
+      if (!linkText) {
+        linkText = linkDestination;
+      }
       let selection = editor.getSelection();
-      if (!selection && this.obsidianProxy.settings.ffAutoselectWordOnCreateLink && this.obsidianProxy.settings.autoselectWordOnCreateLink) {
+      if (!selection && this.obsidianProxy.settings.autoselectWordOnCreateLink) {
         selection = selectWordUnderCursor(editor);
       }
       let isUrl = false;
@@ -4377,13 +4477,14 @@ var WrapNoteInFolderCommand = class extends CommandBase {
     if (!currentNotePath || !currentNoteParentPath) {
       return;
     }
-    const matchNoteName = currentNotePath.match(/(.*\/)(.*)\.md/);
+    const matchNoteName = currentNotePath.match(/(.*\/)?(.*)\.md/);
     if (!matchNoteName) {
       return;
     }
     const currentNoteName = matchNoteName[2];
     (async () => {
-      const newParentFolder = `${currentNoteParentPath}/${currentNoteName}`;
+      const hasSeparator = currentNoteParentPath[currentNoteParentPath.length - 1] === "/" || currentNoteParentPath[currentNoteParentPath.length - 1] == "\\";
+      const newParentFolder = `${currentNoteParentPath}${hasSeparator ? "" : "/"}${currentNoteName}`;
       await this.obsidianProxy.Vault.createFolder(newParentFolder);
       await this.obsidianProxy.Vault.rename(currentNotePath, `${newParentFolder}/${currentNoteName}.md`);
     })();
@@ -4703,43 +4804,100 @@ var SetLinkDestinationFromClipboardCommand = class extends ConvertToMdlinkComman
   }
 };
 
-// commands/CopyLinkToHeadingToClipboardCommand.ts
-var CopyLinkToHeadingToClipboardCommand = class extends CommandBase {
+// commands/CopyLinkToObjectToClipboardCommand.ts
+var CopyLinkToObjectToClipboardCommand = class extends CommandBase {
   constructor(obsidianProxy, isPresentInContextMenu = () => true, isEnabled = () => true) {
     super(isPresentInContextMenu, isEnabled);
-    this.id = "editor-copy-link-to-heading-to-clipboard";
-    this.displayNameCommand = "Copy link to heading";
-    this.displayNameContextMenu = "Copy link to heading";
+    this.id = "editor-copy-link-to-object-to-clipboard";
+    this.displayNameCommand = "Copy link to element";
+    this.displayNameContextMenu = "Copy link to element";
     this.icon = "copy";
     this.obsidianProxy = obsidianProxy;
-    this.isEnabled = () => this.obsidianProxy.settings.ffCopyLinkToHeading;
-    this.isPresentInContextMenu = () => this.obsidianProxy.settings.ffCopyLinkToHeading && this.obsidianProxy.settings.contexMenu.copyLinkToHeadingToClipboard;
+    this.isEnabled = () => this.obsidianProxy.settings.ffCopyLinkToObject;
+    this.isPresentInContextMenu = () => this.obsidianProxy.settings.ffCopyLinkToObject && this.obsidianProxy.settings.contexMenu.copyLinkToHeadingToClipboard;
   }
   handler(editor, checking) {
-    var _a;
     if (checking && !this.isEnabled()) {
       return false;
     }
     const text = editor.getLine(editor.getCursor("from").line);
-    const result = text.match(new RegExp(RegExPatterns.NoteHeading.source));
-    if (checking) {
-      return !!result;
-    }
+    const headingMatch = text.match(new RegExp(RegExPatterns.NoteHeading.source));
     const currentView = this.obsidianProxy.Vault.getActiveNoteView();
-    const currentNotePath = (_a = currentView == null ? void 0 : currentView.file) == null ? void 0 : _a.path;
-    if (result && result[1] && currentNotePath) {
-      console.log(currentNotePath);
-      this.copyLinkToHeadingUnderCursorToClipboard(result[1], currentNotePath);
+    const block = headingMatch ? void 0 : (currentView == null ? void 0 : currentView.file) ? this.obsidianProxy.getBlock(editor, currentView == null ? void 0 : currentView.file) : void 0;
+    if (checking) {
+      return !!headingMatch || !!block;
+    }
+    const currentNoteFile = currentView == null ? void 0 : currentView.file;
+    if (headingMatch && headingMatch[1] && currentNoteFile) {
+      this.copyLinkToHeadingUnderCursorToClipboard(editor, headingMatch[1], currentNoteFile);
+    } else if (block && (currentView == null ? void 0 : currentView.file)) {
+      this.copyLinkToBlockUnderCursorToClipboard(currentView == null ? void 0 : currentView.file, editor, block);
     }
   }
-  copyLinkToHeadingUnderCursorToClipboard(heading, notePath) {
-    let destination = `${notePath}#${heading}`;
-    if (destinationRequireAngleBrackets(destination)) {
-      destination = `<${destination}>`;
-    }
-    const rawLink = `[${heading}](${destination})`;
+  copyLinkToHeadingUnderCursorToClipboard(editor, heading, noteFile) {
+    const selection = editor.getSelection();
+    const linkText = selection ? selection : heading;
+    const rawLink = this.obsidianProxy.createLink("", noteFile.path, heading, linkText);
     this.obsidianProxy.clipboardWriteText(rawLink);
     this.obsidianProxy.createNotice("Link copied to your clipboard");
+  }
+  copyLinkToBlockUnderCursorToClipboard(file, editor, block) {
+    var _a;
+    let linkText = void 0;
+    const selection = editor.getSelection();
+    const blockFirstLine = editor.getLine(block.position.start.line);
+    const links = findLinks(blockFirstLine, 2 /* Wiki */ | 1 /* Markdown */);
+    const firstLink = links.length ? links[0] : void 0;
+    if (selection) {
+      console.log(selection);
+      const cursorStart = editor.posToOffset(editor.getCursor("from"));
+      const cursorEnd = editor.posToOffset(editor.getCursor("to"));
+      console.log(firstLink);
+      if (!firstLink || !getIntersection(
+        [cursorStart, cursorEnd],
+        [firstLink.position.start + block.position.start.offset, firstLink.position.end + block.position.start.offset]
+      )) {
+        linkText = selection;
+      } else {
+        if (links && links.length && links[0].destinationType == DestinationType.Image) {
+          linkText = (_a = links[0].text) == null ? void 0 : _a.content;
+        }
+      }
+    }
+    if (block.id) {
+      this.obsidianProxy.clipboardWriteText(
+        this.obsidianProxy.createLink("", file.path, "^" + block.id, linkText)
+      );
+      this.obsidianProxy.createNotice("Link copied to your clipboard");
+      return;
+    }
+    const sectionEnd = block.position.end;
+    const end2 = {
+      ch: sectionEnd.col,
+      line: sectionEnd.line
+    };
+    const id = this.generateId();
+    editor.replaceRange(`${this.isEolRequired(block) ? "\n\n" : " "}^${id}`, end2);
+    this.obsidianProxy.clipboardWriteText(
+      this.obsidianProxy.createLink("", file.path, "^" + id, linkText)
+    );
+    this.obsidianProxy.createNotice("Link copied to your clipboard");
+  }
+  generateId() {
+    return Math.random().toString(36).substring(2, 6);
+  }
+  isEolRequired(block) {
+    const blockType = block.type || "";
+    switch (blockType) {
+      case "blockquote":
+      case "code":
+      case "table":
+      case "comment":
+      case "footnoteDefinition":
+        return true;
+      default:
+        return false;
+    }
   }
 };
 
@@ -4758,12 +4916,12 @@ var EmbedLinkCommand = class extends CommandBase {
     }
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    const linkData = findLink(text, cursorOffset, cursorOffset, 2 /* Wiki */ | 1 /* Markdown */);
+    const links = findLinks(text, 2 /* Wiki */ | 1 /* Markdown */, cursorOffset, cursorOffset);
     if (checking) {
-      return !!linkData && !linkData.embedded && !!linkData.destination;
+      return (links == null ? void 0 : links.length) > 0 && !links[0].embedded && !!links[0].destination;
     }
-    if (linkData) {
-      this.embedLinkUnderCursor(linkData, editor);
+    if (links == null ? void 0 : links.length) {
+      this.embedLinkUnderCursor(links[0], editor);
     }
   }
   embedLinkUnderCursor(linkData, editor) {
@@ -4792,12 +4950,12 @@ var UnembedLinkCommand = class extends CommandBase {
     }
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    const linkData = findLink(text, cursorOffset, cursorOffset, 2 /* Wiki */ | 1 /* Markdown */);
+    const links = findLinks(text, 2 /* Wiki */ | 1 /* Markdown */, cursorOffset, cursorOffset);
     if (checking) {
-      return !!linkData && linkData.embedded && !!linkData.destination;
+      return (links == null ? void 0 : links.length) === 1 && links[0].embedded && !!links[0].destination;
     }
-    if (linkData) {
-      this.unembedLinkUnderCursor(linkData, editor);
+    if (links) {
+      this.unembedLinkUnderCursor(links[0], editor);
     }
   }
   unembedLinkUnderCursor(linkData, editor) {
@@ -4860,7 +5018,7 @@ function createCommands(obsidianProxy, settings) {
   commands.set(ConvertLinkToHtmllinkCommand.name, new ConvertLinkToHtmllinkCommand(obsidianProxy));
   commands.set(ConvertLinkToAutolinkCommand.name, new ConvertLinkToAutolinkCommand(() => settings.contexMenu.convertToAutolink));
   commands.set(CopyLinkToClipboardCommand.name, new CopyLinkToClipboardCommand(obsidianProxy));
-  commands.set(CopyLinkToHeadingToClipboardCommand.name, new CopyLinkToHeadingToClipboardCommand(obsidianProxy));
+  commands.set(CopyLinkToObjectToClipboardCommand.name, new CopyLinkToObjectToClipboardCommand(obsidianProxy));
   commands.set(CutLinkToClipboardCommand.name, new CutLinkToClipboardCommand(obsidianProxy));
   commands.set(
     CopyLinkDestinationToClipboardCommand.name,
@@ -4903,7 +5061,7 @@ function getContextMenuCommands(obsidianProxy, settings) {
     EditLinkDestinationCommand.name,
     SetLinkDestinationFromClipboardCommand.name,
     CopyLinkToClipboardCommand.name,
-    CopyLinkToHeadingToClipboardCommand.name,
+    CopyLinkToObjectToClipboardCommand.name,
     CutLinkToClipboardCommand.name,
     CopyLinkDestinationToClipboardCommand.name,
     null,
@@ -5028,8 +5186,8 @@ var ObsidianLinksPlugin = class extends import_obsidian8.Plugin {
   createNotice(message, timeout) {
     return new import_obsidian8.Notice(message, timeout);
   }
-  requestUrl(request) {
-    return (0, import_obsidian8.requestUrl)(request);
+  requestUrl(request2) {
+    return (0, import_obsidian8.requestUrl)(request2);
   }
   measurePerformance(func) {
     const start2 = (0, import_obsidian8.moment)();
@@ -5144,7 +5302,8 @@ var ObsidianLinksPlugin = class extends import_obsidian8.Plugin {
   getLink(editor) {
     const text = editor.getValue();
     const cursorOffset = editor.posToOffset(editor.getCursor("from"));
-    return findLink(text, cursorOffset, cursorOffset);
+    const links = findLinks(text, 65535 /* All */, cursorOffset, cursorOffset);
+    return (links == null ? void 0 : links.length) == 1 ? links[0] : void 0;
   }
   replaceExternalLinkUnderCursorHandler(editor, checking) {
     const linkData = this.getLink(editor);
@@ -5162,7 +5321,7 @@ var ObsidianLinksPlugin = class extends import_obsidian8.Plugin {
       if (path) {
         let target = path;
         if (path.startsWith("[")) {
-          const links = findLinks(path, 2 /* Wiki */);
+          const links = findLinks(path, 2 /* Wiki */ | 1 /* Markdown */);
           if (links.length > 0 && ((_a = links[0].destination) == null ? void 0 : _a.content)) {
             target = (_b = links[0].destination) == null ? void 0 : _b.content;
           }
@@ -5337,3 +5496,5 @@ map-cache/index.js:
    * Licensed under the MIT License.
    *)
 */
+
+/* nosourcemap */

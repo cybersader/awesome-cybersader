@@ -292,11 +292,13 @@
   "lintCommands": [
     {
       "id": null,
-      "name": ""
+      "name": "",
+      "enabled": true
     },
     {
       "id": "",
-      "name": ""
+      "name": "",
+      "enabled": true
     }
   ],
   "customRegexes": [
@@ -304,25 +306,29 @@
       "label": "Get rid of ASCII bullets",
       "find": "(- )(• )",
       "replace": "$1",
-      "flags": "gm"
+      "flags": "gm",
+      "enabled": true
     },
     {
       "label": "Get rid of ASCII bullets 2",
       "find": "(- )(O )",
       "replace": "$1",
-      "flags": "gm"
+      "flags": "gm",
+      "enabled": true
     },
     {
       "label": "Get rid of ASCII bullets 3",
       "find": "(- )(o )",
       "replace": "$1",
-      "flags": "gm"
+      "flags": "gm",
+      "enabled": true
     },
     {
       "label": "No spaces after bullet point",
       "find": "(^\\s*- )( {1,8})",
       "replace": "$1",
-      "flags": "gm"
+      "flags": "gm",
+      "enabled": true
     }
   ],
   "commonStyles": {

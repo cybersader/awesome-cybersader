@@ -2,7 +2,7 @@
   "propertiesInDocument": "visible",
   "livePreview": true,
   "newLinkFormat": "relative",
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./",
   "autoPairMarkdown": false,

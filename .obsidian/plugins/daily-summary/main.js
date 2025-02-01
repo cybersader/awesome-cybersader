@@ -33,7 +33,10 @@ var DEFAULT_SETTINGS = {
   apiKey: "",
   apiEndpoint: "",
   ollamaModel: "",
-  reportLocation: "/"
+  openaiModel: "gpt-4o-mini",
+  reportLocation: "/",
+  excludedFolders: [],
+  promptTemplate: "Please summarize the main content of today's notes:\n\n{{notes}}"
 };
 
 // main.ts
@@ -67,14 +70,22 @@ var DailyDigestPlugin = class extends import_obsidian.Plugin {
   }
   async generateDailyReport(daysOffset = 0) {
     try {
-      const targetDate = /* @__PURE__ */ new Date();
+      let targetDate = /* @__PURE__ */ new Date();
       targetDate.setDate(targetDate.getDate() + daysOffset);
-      targetDate.setHours(0, 0, 0, 0);
+      targetDate = new Date(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
       const files = this.app.vault.getMarkdownFiles();
       const todayNotes = files.filter((file) => {
-        const fileCreateDate = new Date(file.stat.ctime).setHours(0, 0, 0, 0);
-        const fileModifyDate = new Date(file.stat.mtime).setHours(0, 0, 0, 0);
-        return fileCreateDate.valueOf() === targetDate.valueOf() || fileModifyDate.valueOf() === targetDate.valueOf();
+        const fileDate = new Date(file.stat.ctime);
+        const fileCreateDate = new Date(fileDate.getFullYear(), fileDate.getMonth(), fileDate.getDate()).getTime();
+        const modifyDate = new Date(file.stat.mtime);
+        const fileModifyDate = new Date(modifyDate.getFullYear(), modifyDate.getMonth(), modifyDate.getDate()).getTime();
+        const isExcluded = this.settings.excludedFolders.some((folder) => {
+          if (!folder) return false;
+          const normalizedFolder = (0, import_obsidian.normalizePath)(folder);
+          const normalizedFilePath = (0, import_obsidian.normalizePath)(file.path);
+          return normalizedFilePath.startsWith(normalizedFolder + "/") || normalizedFilePath === normalizedFolder;
+        });
+        return !isExcluded && (fileCreateDate === targetDate.getTime() || fileModifyDate === targetDate.getTime());
       });
       new import_obsidian.Notice(`Found ${todayNotes.length} notes`);
       if (todayNotes.length === 0) {
@@ -93,26 +104,6 @@ var DailyDigestPlugin = class extends import_obsidian.Plugin {
       await this.logError(error, "Fail to generate report");
       console.error("Error generating daily report:", error);
       new import_obsidian.Notice(`Error: ${error.message}`);
-    }
-  }
-  async getTodayNotes() {
-    try {
-      const files = this.app.vault.getMarkdownFiles();
-      const todayDate = (/* @__PURE__ */ new Date()).setHours(0, 0, 0, 0);
-      const todayNotes = files.filter((file) => {
-        try {
-          const fileNameDate = this.getDateFromFileName(file.name).setHours(0, 0, 0, 0);
-          if (fileNameDate.valueOf() === todayDate.valueOf()) return true;
-          else return false;
-        } catch (err) {
-          const fileCreateDate = new Date(file.stat.ctime).setHours(0, 0, 0, 0);
-          const fileModifyDate = new Date(file.stat.mtime).setHours(0, 0, 0, 0);
-          return fileCreateDate.valueOf() === todayDate.valueOf() || fileModifyDate.valueOf() === todayDate.valueOf();
-        }
-      });
-      return todayNotes;
-    } catch (error) {
-      throw error;
     }
   }
   async callLLM(prompt) {
@@ -149,7 +140,7 @@ var DailyDigestPlugin = class extends import_obsidian.Plugin {
             "Authorization": `Bearer ${this.settings.apiKey}`
           },
           body: JSON.stringify({
-            model: "gpt-4o-mini",
+            model: this.settings.openaiModel,
             messages: [
               {
                 role: "user",
@@ -171,7 +162,11 @@ var DailyDigestPlugin = class extends import_obsidian.Plugin {
   }
   async createDailyReport(date, content) {
     try {
-      const fileName = (0, import_obsidian.normalizePath)(`${this.settings.reportLocation}/Daily Report-${date.toISOString().split("T")[0]}.md`);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      const dateString = `${year}-${month}-${day}`;
+      const fileName = (0, import_obsidian.normalizePath)(`${this.settings.reportLocation}/Daily Report-${dateString}.md`);
       if (await this.app.vault.adapter.exists(fileName)) {
         const existingContent = await this.app.vault.adapter.read(fileName);
         const newContent = `${existingContent}
@@ -181,7 +176,7 @@ var DailyDigestPlugin = class extends import_obsidian.Plugin {
 ${content}`;
         await this.app.vault.adapter.write(fileName, newContent);
       } else {
-        const fileContent = `# ${date.toISOString().split("T")[0]} report
+        const fileContent = `# ${dateString} report
 
 ${content}`;
         await this.app.vault.create(fileName, fileContent);
@@ -208,9 +203,7 @@ ${content}`;
         })
       );
       const allContent = notesContents.join("\n\n");
-      return `Please summarize the main content of today's notes:
-
-${allContent}`;
+      return this.settings.promptTemplate.replace("{{notes}}", allContent);
     } catch (error) {
       console.error("Fail to generate prompt:", error);
       throw new Error(`Fail to generate prompt: ${error.message}`);
@@ -264,8 +257,20 @@ var DailyDigestSettingTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
+    new import_obsidian.Setting(containerEl).setName("OpenAI model").setDesc("Enter the name of the OpenAI model to use").addText((text) => text.setPlaceholder("gpt-4o-mini").setValue(this.plugin.settings.openaiModel).onChange(async (value) => {
+      this.plugin.settings.openaiModel = value;
+      await this.plugin.saveSettings();
+    }));
     new import_obsidian.Setting(containerEl).setName("Report save location").setDesc("Set the folder path to save the report (e.g., /Reports or /Daily)").addText((text) => text.setPlaceholder("/").setValue(this.plugin.settings.reportLocation).onChange(async (value) => {
       this.plugin.settings.reportLocation = value;
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Excluded folders").setDesc("Set the folders to exclude from the report (e.g., /Archive or /Trash)").addText((text) => text.setPlaceholder("/").setValue(this.plugin.settings.excludedFolders.join(",")).onChange(async (value) => {
+      this.plugin.settings.excludedFolders = value.split(",");
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Prompt Template").setDesc("Customize your prompt template. Use {{notes}} as placeholder for notes content.").addTextArea((text) => text.setPlaceholder("Please summarize the main content of today's notes:\n\n{{notes}}").setValue(this.plugin.settings.promptTemplate).onChange(async (value) => {
+      this.plugin.settings.promptTemplate = value;
       await this.plugin.saveSettings();
     }));
   }

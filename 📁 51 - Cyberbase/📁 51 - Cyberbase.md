@@ -8,13 +8,13 @@ date modified: Friday, January 31st 2025, 4:56 pm
 ---
 
 %% Begin Landmark %%
+- **[[✒️ Cyberbase Architecture]]**
+
 - **[[✒️ Obsidian Tech Stack Diagram]]**
 
 - **[[Awesome Obsidian Wiki Examples]]**
 - **[[Awesome WikiJS Examples]]**
-- **[[Contributable Obsidian Wiki]]**
-	- **[[✒️ Cyberbase Architecture]]**
-
+- **[[[[✒️ Cyberbase Architecture/✒️ Cyberbase Architecture]]**
 	- **[[🐛 Known Base Bugs, Issues]]**
 	- **[[Astro with Content Layer]]**
 	- **[[Auto Publish For Obsidian Publish]]**

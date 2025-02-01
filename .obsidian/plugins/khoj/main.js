@@ -1055,6 +1055,10 @@ async function updateContentIndex(vault, setting, lastSync, regenerate = false, 
     if (fileTypeToExtension.image.includes(file.extension))
       return setting.syncFileType.images;
     return false;
+  }).filter((file) => {
+    if (setting.syncFolders.length === 0)
+      return true;
+    return setting.syncFolders.some((folder) => file.path.startsWith(folder + "/") || file.path === folder);
   });
   let countOfFilesToIndex = 0;
   let countOfFilesToDelete = 0;
@@ -1348,7 +1352,9 @@ var DEFAULT_SETTINGS = {
     images: true,
     pdf: true
   },
-  userInfo: null
+  userInfo: null,
+  syncFolders: [],
+  syncInterval: 60
 };
 var KhojSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
@@ -1404,6 +1410,28 @@ var KhojSettingTab = class extends import_obsidian2.PluginSettingTab {
       this.plugin.settings.autoConfigure = value;
       await this.plugin.saveSettings();
     }));
+    const syncIntervalValues = [1, 5, 10, 20, 30, 45, 60, 120, 1440];
+    new import_obsidian2.Setting(containerEl).setName("Sync Interval").setDesc("Minutes between automatic synchronizations").addDropdown((dropdown) => dropdown.addOptions(Object.fromEntries(syncIntervalValues.map((value) => [
+      value.toString(),
+      value === 1 ? "1 minute" : value === 1440 ? "24 hours" : `${value} minutes`
+    ]))).setValue(this.plugin.settings.syncInterval.toString()).onChange(async (value) => {
+      this.plugin.settings.syncInterval = parseInt(value);
+      await this.plugin.saveSettings();
+      this.plugin.restartSyncTimer();
+    }));
+    const syncFoldersContainer = containerEl.createDiv("sync-folders-container");
+    const foldersSetting = new import_obsidian2.Setting(syncFoldersContainer).setName("Sync Folders").setDesc("Specify folders to sync (leave empty to sync entire vault)").addButton((button) => button.setButtonText("Add Folder").onClick(() => {
+      const modal = new FolderSuggestModal(this.app, (folder) => {
+        if (!this.plugin.settings.syncFolders.includes(folder)) {
+          this.plugin.settings.syncFolders.push(folder);
+          this.plugin.saveSettings();
+          this.updateFolderList(folderListEl);
+        }
+      });
+      modal.open();
+    }));
+    const folderListEl = syncFoldersContainer.createDiv("folder-list");
+    this.updateFolderList(folderListEl);
     let indexVaultSetting = new import_obsidian2.Setting(containerEl);
     indexVaultSetting.setName("Force Sync").setDesc("Manually force Khoj to re-index your Obsidian Vault.").addButton((button) => button.setButtonText("Update").setCta().onClick(async () => {
       button.setButtonText("Updating \u{1F311}");
@@ -1436,6 +1464,68 @@ var KhojSettingTab = class extends import_obsidian2.PluginSettingTab {
       indexVaultSetting = indexVaultSetting.setDisabled(false);
     }));
   }
+  updateFolderList(containerEl) {
+    containerEl.empty();
+    if (this.plugin.settings.syncFolders.length === 0) {
+      containerEl.createEl("div", {
+        text: "Syncing entire vault",
+        cls: "folder-list-empty"
+      });
+      return;
+    }
+    const list = containerEl.createEl("ul", { cls: "folder-list" });
+    this.plugin.settings.syncFolders.forEach((folder) => {
+      const item = list.createEl("li", { cls: "folder-list-item" });
+      item.createSpan({ text: folder });
+      const removeButton = item.createEl("button", {
+        cls: "folder-list-remove",
+        text: "\xD7"
+      });
+      removeButton.addEventListener("click", async () => {
+        this.plugin.settings.syncFolders = this.plugin.settings.syncFolders.filter((f) => f !== folder);
+        await this.plugin.saveSettings();
+        this.updateFolderList(containerEl);
+      });
+    });
+  }
+};
+var FolderSuggestModal = class extends import_obsidian2.SuggestModal {
+  constructor(app, onChoose) {
+    super(app);
+    this.onChoose = onChoose;
+  }
+  getSuggestions(query) {
+    const folders = this.getAllFolders();
+    if (!query)
+      return folders;
+    return folders.filter((folder) => folder.toLowerCase().includes(query.toLowerCase()));
+  }
+  renderSuggestion(folder, el) {
+    el.createSpan({
+      text: folder || "/",
+      cls: "folder-suggest-item"
+    });
+  }
+  onChooseSuggestion(folder, _) {
+    this.onChoose(folder);
+  }
+  getAllFolders() {
+    const folders = /* @__PURE__ */ new Set();
+    folders.add("");
+    this.app.vault.getAllLoadedFiles().forEach((file) => {
+      var _a;
+      const folderPath = (_a = file.parent) == null ? void 0 : _a.path;
+      if (folderPath) {
+        folders.add(folderPath);
+        let parent = folderPath;
+        while (parent.includes("/")) {
+          parent = parent.substring(0, parent.lastIndexOf("/"));
+          folders.add(parent);
+        }
+      }
+    });
+    return Array.from(folders).sort();
+  }
 };
 
 // src/search_modal.ts
@@ -1445,10 +1535,22 @@ var KhojSearchModal = class extends import_obsidian3.SuggestModal {
     super(app);
     this.rerank = false;
     this.query = "";
+    this.currentController = null;
+    this.isLoading = false;
     this.app = app;
     this.setting = setting;
     this.find_similar_notes = find_similar_notes;
     this.inputEl.hidden = this.find_similar_notes;
+    this.loadingEl = createDiv({ cls: "search-loading" });
+    const spinnerEl = this.loadingEl.createDiv({ cls: "search-loading-spinner" });
+    this.loadingEl.style.position = "absolute";
+    this.loadingEl.style.top = "50%";
+    this.loadingEl.style.left = "50%";
+    this.loadingEl.style.transform = "translate(-50%, -50%)";
+    this.loadingEl.style.zIndex = "1000";
+    this.loadingEl.style.display = "none";
+    this.modalEl.appendChild(this.loadingEl);
+    this.emptyStateText = "";
     this.scope.register(["Mod"], "Enter", async () => {
       this.rerank = true;
       this.inputEl.dispatchEvent(new Event("input"));
@@ -1483,6 +1585,67 @@ var KhojSearchModal = class extends import_obsidian3.SuggestModal {
     this.setInstructions(modalInstructions);
     this.setPlaceholder("Search with Khoj...");
   }
+  isFileInVault(filePath) {
+    const normalizedPath = filePath.replace(/\\/g, "/");
+    return this.app.vault.getFiles().some((file) => file.path === normalizedPath);
+  }
+  async getSuggestions(query) {
+    if (!query.trim()) {
+      this.isLoading = false;
+      this.updateLoadingState();
+      return [];
+    }
+    this.isLoading = true;
+    this.updateLoadingState();
+    if (this.currentController) {
+      this.currentController.abort();
+    }
+    try {
+      this.currentController = new AbortController();
+      let encodedQuery = encodeURIComponent(query);
+      let searchUrl = `${this.setting.khojUrl}/api/search?q=${encodedQuery}&n=${this.setting.resultsCount}&r=${this.rerank}&client=obsidian`;
+      let headers = {
+        "Authorization": `Bearer ${this.setting.khojApiKey}`
+      };
+      const response = await fetch(searchUrl, {
+        headers,
+        signal: this.currentController.signal
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      let results = data.filter((result) => {
+        var _a;
+        return !this.find_similar_notes || !result.additional.file.endsWith((_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path);
+      }).map((result) => {
+        return {
+          entry: result.entry,
+          file: result.additional.file,
+          inVault: this.isFileInVault(result.additional.file)
+        };
+      }).sort((a, b) => {
+        if (a.inVault === b.inVault)
+          return 0;
+        return a.inVault ? -1 : 1;
+      });
+      this.query = query;
+      this.isLoading = false;
+      this.updateLoadingState();
+      return results;
+    } catch (error) {
+      if (error.name === "AbortError") {
+        return void 0;
+      }
+      console.error("Search error:", error);
+      this.isLoading = false;
+      this.updateLoadingState();
+      return [];
+    }
+  }
+  updateLoadingState() {
+    this.loadingEl.style.display = this.isLoading ? "block" : "none";
+  }
   async onOpen() {
     if (this.find_similar_notes) {
       let file = this.app.workspace.getActiveFile();
@@ -1496,30 +1659,25 @@ var KhojSearchModal = class extends import_obsidian3.SuggestModal {
       }
     }
   }
-  async getSuggestions(query) {
-    let encodedQuery = encodeURIComponent(query);
-    let searchUrl = `${this.setting.khojUrl}/api/search?q=${encodedQuery}&n=${this.setting.resultsCount}&r=${this.rerank}&client=obsidian`;
-    let headers = { "Authorization": `Bearer ${this.setting.khojApiKey}` };
-    let response = await (0, import_obsidian3.request)({ url: `${searchUrl}`, headers });
-    let results = JSON.parse(response).filter((result) => {
-      var _a;
-      return !this.find_similar_notes || !result.additional.file.endsWith((_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path);
-    }).map((result) => {
-      return { entry: result.entry, file: result.additional.file };
-    });
-    this.query = query;
-    return results;
-  }
   async renderSuggestion(result, el) {
     var _a;
     let lines_to_render = 8;
     let os_path_separator = result.file.includes("\\") ? "\\" : "/";
     let filename = result.file.split(os_path_separator).pop();
-    el.createEl("div", { cls: "khoj-result-file" }).setText(filename != null ? filename : "");
+    const fileEl = el.createEl("div", {
+      cls: `khoj-result-file ${result.inVault ? "in-vault" : "not-in-vault"}`
+    });
+    fileEl.setText(filename != null ? filename : "");
+    if (!result.inVault) {
+      fileEl.createSpan({
+        text: " (not in vault)",
+        cls: "khoj-result-file-status"
+      });
+    }
     let result_el = el.createEl("div", { cls: "khoj-result-entry" });
     let resultToRender = "";
     let fileExtension = (_a = filename == null ? void 0 : filename.split(".").pop()) != null ? _a : "";
-    if (supportedImageFilesTypes.includes(fileExtension) && filename) {
+    if (supportedImageFilesTypes.includes(fileExtension) && filename && result.inVault) {
       let linkToEntry = filename;
       let imageFiles = this.app.vault.getFiles().filter((file) => supportedImageFilesTypes.includes(fileExtension));
       let fileInVault = getFileFromPath(imageFiles, result.file);
@@ -1535,6 +1693,10 @@ var KhojSearchModal = class extends import_obsidian3.SuggestModal {
     import_obsidian3.MarkdownRenderer.renderMarkdown(resultToRender, result_el, result.file, null);
   }
   async onChooseSuggestion(result, _) {
+    if (!result.inVault) {
+      new import_obsidian3.Notice("This file is not in your vault");
+      return;
+    }
     const mdFiles = this.app.vault.getMarkdownFiles();
     const binaryFiles = this.app.vault.getFiles().filter((file) => supportedBinaryFileTypes.includes(file.extension));
     let linkToEntry = getLinkToEntry(mdFiles.concat(binaryFiles), result.file, result.entry);
@@ -1929,19 +2091,31 @@ var KhojChatView = class extends KhojPaneView {
   }
   markdownTextToSanitizedHtml(markdownText, component) {
     let virtualChatMessageBodyTextEl = document.createElement("div");
-    import_obsidian5.MarkdownRenderer.renderMarkdown(markdownText, virtualChatMessageBodyTextEl, "", component);
+    import_obsidian5.MarkdownRenderer.render(this.app, markdownText, virtualChatMessageBodyTextEl, "", component);
     virtualChatMessageBodyTextEl.innerHTML = virtualChatMessageBodyTextEl.innerHTML.replace(/<img(?:(?!src=["'](app:|data:|https:\/\/generated\.khoj\.dev)).)*?>/gis, "");
     return DOMPurify.sanitize(virtualChatMessageBodyTextEl.innerHTML);
   }
-  renderMessageWithReferences(chatEl, message, sender, context, onlineContext, dt, intentType, inferredQueries, conversationId) {
+  renderMessageWithReferences(chatEl, message, sender, turnId, context, onlineContext, dt, intentType, inferredQueries, conversationId, images, excalidrawDiagram, mermaidjsDiagram) {
     if (!message)
       return;
     let chatMessageEl;
-    if ((intentType == null ? void 0 : intentType.includes("text-to-image")) || intentType === "excalidraw") {
-      let imageMarkdown = this.generateImageMarkdown(message, intentType, inferredQueries, conversationId);
-      chatMessageEl = this.renderMessage(chatEl, imageMarkdown, sender, dt);
+    if ((intentType == null ? void 0 : intentType.includes("text-to-image")) || intentType === "excalidraw" || images && images.length > 0 || mermaidjsDiagram || excalidrawDiagram) {
+      let imageMarkdown = this.generateImageMarkdown(message, intentType != null ? intentType : "", inferredQueries, conversationId, images, excalidrawDiagram, mermaidjsDiagram);
+      chatMessageEl = this.renderMessage({
+        chatBodyEl: chatEl,
+        message: imageMarkdown,
+        sender,
+        dt,
+        turnId
+      });
     } else {
-      chatMessageEl = this.renderMessage(chatEl, message, sender, dt);
+      chatMessageEl = this.renderMessage({
+        chatBodyEl: chatEl,
+        message,
+        sender,
+        dt,
+        turnId
+      });
     }
     if ((context == null || context.length == 0) && (onlineContext == null || onlineContext && Object.keys(onlineContext).length == 0)) {
       return;
@@ -1954,20 +2128,25 @@ var KhojChatView = class extends KhojPaneView {
     let chatMessageBodyEl = chatMessageEl.getElementsByClassName("khoj-chat-message-text")[0];
     chatMessageBodyEl.appendChild(this.createReferenceSection(references));
   }
-  generateImageMarkdown(message, intentType, inferredQueries, conversationId) {
+  generateImageMarkdown(message, intentType, inferredQueries, conversationId, images, excalidrawDiagram, mermaidjsDiagram) {
     let imageMarkdown = "";
     if (intentType === "text-to-image") {
       imageMarkdown = `![](data:image/png;base64,${message})`;
     } else if (intentType === "text-to-image2") {
       imageMarkdown = `![](${message})`;
     } else if (intentType === "text-to-image-v3") {
-      imageMarkdown = `![](data:image/webp;base64,${message})`;
-    } else if (intentType === "excalidraw") {
+      imageMarkdown = `![](${message})`;
+    } else if (intentType === "excalidraw" || excalidrawDiagram) {
       const domain = this.setting.khojUrl.endsWith("/") ? this.setting.khojUrl : `${this.setting.khojUrl}/`;
       const redirectMessage = `Hey, I'm not ready to show you diagrams yet here. But you can view it in ${domain}chat?conversationId=${conversationId}`;
       imageMarkdown = redirectMessage;
+    } else if (mermaidjsDiagram) {
+      imageMarkdown = "```mermaid\n" + mermaidjsDiagram + "\n```";
+    } else if (images && images.length > 0) {
+      imageMarkdown += images.map((image) => `![](${image})`).join("\n\n");
+      imageMarkdown += message;
     }
-    if (inferredQueries) {
+    if ((images == null ? void 0 : images.length) === 0 && inferredQueries) {
       imageMarkdown += "\n\n**Inferred Query**:";
       for (let inferredQuery of inferredQueries) {
         imageMarkdown += `
@@ -1977,13 +2156,13 @@ ${inferredQuery}`;
     }
     return imageMarkdown;
   }
-  renderMessage(chatBodyEl, message, sender, dt, raw = false, willReplace = true) {
+  renderMessage({ chatBodyEl, message, sender, dt, turnId, raw = false, willReplace = true, isSystemMessage = false }) {
     let message_time = this.formatDate(dt != null ? dt : new Date());
-    let emojified_sender = sender == "khoj" ? "\u{1F3EE} Khoj" : "\u{1F914} You";
     let chatMessageEl = chatBodyEl.createDiv({
       attr: {
-        "data-meta": `${emojified_sender} at ${message_time}`,
-        class: `khoj-chat-message ${sender}`
+        "data-meta": message_time,
+        class: `khoj-chat-message ${sender}`,
+        ...turnId && { "data-turnId": turnId }
       }
     });
     let chatMessageBodyEl = chatMessageEl.createDiv();
@@ -1996,7 +2175,7 @@ ${inferredQuery}`;
       chatMessageBodyTextEl.innerHTML = this.markdownTextToSanitizedHtml(message, this);
     }
     if (willReplace === true) {
-      this.renderActionButtons(message, chatMessageBodyTextEl);
+      this.renderActionButtons(message, chatMessageBodyTextEl, isSystemMessage);
     }
     chatMessageEl.style.userSelect = "text";
     this.scrollChatToBottom();
@@ -2007,7 +2186,7 @@ ${inferredQuery}`;
     let chatBodyEl = this.contentEl.getElementsByClassName("khoj-chat-body")[0];
     let chatMessageEl = chatBodyEl.createDiv({
       attr: {
-        "data-meta": `\u{1F3EE} Khoj at ${messageTime}`,
+        "data-meta": messageTime,
         class: `khoj-chat-message khoj`
       }
     });
@@ -2022,7 +2201,7 @@ ${inferredQuery}`;
     this.renderActionButtons(this.chatMessageState.rawResponse, htmlElement);
     this.scrollChatToBottom();
   }
-  renderActionButtons(message, chatMessageBodyTextEl) {
+  renderActionButtons(message, chatMessageBodyTextEl, isSystemMessage = false) {
     var _a;
     let copyButton = this.contentEl.createEl("button");
     copyButton.classList.add("chat-action-button");
@@ -2036,6 +2215,21 @@ ${inferredQuery}`;
     pasteToFile.addEventListener("click", (event) => {
       pasteTextAtCursor(createCopyParentText(message, "clipboard-paste")(event));
     });
+    let deleteButton = null;
+    if (!isSystemMessage) {
+      deleteButton = this.contentEl.createEl("button");
+      deleteButton.classList.add("chat-action-button");
+      deleteButton.title = "Delete Message";
+      (0, import_obsidian5.setIcon)(deleteButton, "trash-2");
+      deleteButton.addEventListener("click", () => {
+        const messageEl = chatMessageBodyTextEl.closest(".khoj-chat-message");
+        if (messageEl) {
+          if (confirm("Are you sure you want to delete this message?")) {
+            this.deleteMessage(messageEl);
+          }
+        }
+      });
+    }
     let speechButton = null;
     if ((_a = this.setting.userInfo) == null ? void 0 : _a.is_active) {
       speechButton = this.contentEl.createEl("button");
@@ -2045,6 +2239,9 @@ ${inferredQuery}`;
       speechButton.addEventListener("click", (event) => this.textToSpeech(message, event));
     }
     chatMessageBodyTextEl.append(copyButton, pasteToFile);
+    if (deleteButton) {
+      chatMessageBodyTextEl.append(deleteButton);
+    }
     if (speechButton) {
       chatMessageBodyTextEl.append(speechButton);
     }
@@ -2065,7 +2262,7 @@ ${inferredQuery}`;
     if (chatInput) {
       chatInput.placeholder = this.startingMessage;
     }
-    this.renderMessage(chatBodyEl, "Hey \u{1F44B}\u{1F3FE}, what's up?", "khoj");
+    this.renderMessage({ chatBodyEl, message: "Hey \u{1F44B}\u{1F3FE}, what's up?", sender: "khoj", isSystemMessage: true });
   }
   async toggleChatSessions(forceShow = false) {
     var _a;
@@ -2076,7 +2273,7 @@ ${inferredQuery}`;
       return this.getChatHistory(chatBodyEl);
     }
     chatBodyEl.innerHTML = "";
-    const sidePanelEl = this.contentEl.createDiv("side-panel");
+    const sidePanelEl = chatBodyEl.createDiv("side-panel");
     const newConversationEl = sidePanelEl.createDiv("new-conversation");
     const conversationHeaderTitleEl = newConversationEl.createDiv("conversation-header-title");
     conversationHeaderTitleEl.textContent = "Conversations";
@@ -2120,7 +2317,6 @@ ${inferredQuery}`;
           conversationMenuEl = this.addConversationMenu(conversationMenuEl, conversationSessionEl, conversationTitle, conversationSessionTitleEl, chatBodyEl, incomingConversationId, incomingConversationId == conversationId);
           conversationSessionEl.appendChild(conversationMenuEl);
           conversationListBodyEl.appendChild(conversationSessionEl);
-          chatBodyEl.appendChild(sidePanelEl);
         }
       }
     } catch (err) {
@@ -2227,7 +2423,12 @@ ${inferredQuery}`;
       chatBodyEl.dataset.conversationId = responseJson.conversation_id;
       if (responseJson.detail) {
         let setupMsg = "Hi \u{1F44B}\u{1F3FE}, to start chatting add available chat models options via [the Django Admin panel](/server/admin) on the Server";
-        this.renderMessage(chatBodyEl, setupMsg, "khoj", void 0);
+        this.renderMessage({
+          chatBodyEl,
+          message: setupMsg,
+          sender: "khoj",
+          isSystemMessage: true
+        });
         return false;
       } else if (responseJson.response) {
         chatBodyEl.dataset.conversationId = responseJson.response.conversation_id;
@@ -2235,7 +2436,7 @@ ${inferredQuery}`;
         let chatLogs = ((_a = responseJson.response) == null ? void 0 : _a.conversation_id) ? (_b = responseJson.response.chat) != null ? _b : [] : responseJson.response;
         chatLogs.forEach((chatLog) => {
           var _a2, _b2, _c;
-          this.renderMessageWithReferences(chatBodyEl, chatLog.message, chatLog.by, chatLog.context, chatLog.onlineContext, new Date(chatLog.created), (_a2 = chatLog.intent) == null ? void 0 : _a2.type, (_b2 = chatLog.intent) == null ? void 0 : _b2["inferred-queries"], (_c = chatBodyEl.dataset.conversationId) != null ? _c : "");
+          this.renderMessageWithReferences(chatBodyEl, chatLog.message, chatLog.by, chatLog.turnId, chatLog.context, chatLog.onlineContext, new Date(chatLog.created), (_a2 = chatLog.intent) == null ? void 0 : _a2.type, (_b2 = chatLog.intent) == null ? void 0 : _b2["inferred-queries"], (_c = chatBodyEl.dataset.conversationId) != null ? _c : "", chatLog.images, chatLog.excalidrawDiagram, chatLog.mermaidjsDiagram);
           if (chatLog.by === "you") {
             this.userMessages.push(chatLog.message);
           }
@@ -2249,7 +2450,12 @@ ${inferredQuery}`;
       }
     } catch (err) {
       let errorMsg = "Unable to get response from Khoj server \u2764\uFE0F\u200D\u{1FA79}. Ensure server is running or contact developers for help at [team@khoj.dev](mailto:team@khoj.dev) or in [Discord](https://discord.gg/BDgyabRM6e)";
-      this.renderMessage(chatBodyEl, errorMsg, "khoj", void 0);
+      this.renderMessage({
+        chatBodyEl,
+        message: errorMsg,
+        sender: "khoj",
+        isSystemMessage: true
+      });
       return false;
     }
     return true;
@@ -2279,13 +2485,19 @@ ${inferredQuery}`;
       console.log(`status: ${chunk.data}`);
       const statusMessage = chunk.data;
       this.handleStreamResponse(this.chatMessageState.newResponseTextEl, statusMessage, this.chatMessageState.loadingEllipsis, false);
+    } else if (chunk.type === "generated_assets") {
+      const generatedAssets = chunk.data;
+      const imageData = this.handleImageResponse(generatedAssets, this.chatMessageState.rawResponse);
+      this.chatMessageState.generatedAssets = imageData;
+      this.handleStreamResponse(this.chatMessageState.newResponseTextEl, imageData, this.chatMessageState.loadingEllipsis, false);
     } else if (chunk.type === "start_llm_response") {
       console.log("Started streaming", new Date());
     } else if (chunk.type === "end_llm_response") {
       console.log("Stopped streaming", new Date());
+    } else if (chunk.type === "end_response") {
       if (this.chatMessageState.isVoice && ((_a = this.setting.userInfo) == null ? void 0 : _a.is_active))
         this.textToSpeech(this.chatMessageState.rawResponse);
-      this.finalizeChatBodyResponse(this.chatMessageState.references, this.chatMessageState.newResponseTextEl);
+      this.finalizeChatBodyResponse(this.chatMessageState.references, this.chatMessageState.newResponseTextEl, this.chatMessageState.turnId);
       const liveQuery = this.chatMessageState.rawQuery;
       this.chatMessageState = {
         newResponseTextEl: null,
@@ -2294,7 +2506,9 @@ ${inferredQuery}`;
         references: {},
         rawResponse: "",
         rawQuery: liveQuery,
-        isVoice: false
+        isVoice: false,
+        generatedAssets: "",
+        turnId: ""
       };
     } else if (chunk.type === "references") {
       this.chatMessageState.references = { "notes": chunk.data.context, "online": chunk.data.onlineContext };
@@ -2308,16 +2522,21 @@ ${inferredQuery}`;
           this.handleJsonResponse(jsonData);
         } catch (e) {
           this.chatMessageState.rawResponse += chunkData;
-          this.handleStreamResponse(this.chatMessageState.newResponseTextEl, this.chatMessageState.rawResponse, this.chatMessageState.loadingEllipsis);
+          this.handleStreamResponse(this.chatMessageState.newResponseTextEl, this.chatMessageState.rawResponse + this.chatMessageState.generatedAssets, this.chatMessageState.loadingEllipsis);
         }
       } else {
         this.chatMessageState.rawResponse += chunkData;
-        this.handleStreamResponse(this.chatMessageState.newResponseTextEl, this.chatMessageState.rawResponse, this.chatMessageState.loadingEllipsis);
+        this.handleStreamResponse(this.chatMessageState.newResponseTextEl, this.chatMessageState.rawResponse + this.chatMessageState.generatedAssets, this.chatMessageState.loadingEllipsis);
+      }
+    } else if (chunk.type === "metadata") {
+      const { turnId } = chunk.data;
+      if (turnId) {
+        this.chatMessageState.turnId = turnId;
       }
     }
   }
   handleJsonResponse(jsonData) {
-    if (jsonData.image || jsonData.detail) {
+    if (jsonData.image || jsonData.detail || jsonData.images || jsonData.mermaidjsDiagram) {
       this.chatMessageState.rawResponse = this.handleImageResponse(jsonData, this.chatMessageState.rawResponse);
     } else if (jsonData.response) {
       this.chatMessageState.rawResponse = jsonData.response;
@@ -2357,7 +2576,7 @@ ${inferredQuery}`;
     if (!query || query === "")
       return;
     let chatBodyEl = this.contentEl.getElementsByClassName("khoj-chat-body")[0];
-    this.renderMessage(chatBodyEl, query, "you");
+    this.renderMessage({ chatBodyEl, message: query, sender: "you" });
     let conversationId = chatBodyEl.dataset.conversationId;
     if (!conversationId) {
       let chatUrl2 = `${this.setting.khojUrl}/api/chat/sessions?client=obsidian`;
@@ -2393,7 +2612,9 @@ ${inferredQuery}`;
       references: {},
       rawQuery: query,
       rawResponse: "",
-      isVoice
+      isVoice,
+      generatedAssets: "",
+      turnId: ""
     };
     let response = await fetch(chatUrl, {
       method: "POST",
@@ -2617,7 +2838,7 @@ Content-Type: "application/octet-stream"\r
       } else if (imageJson.intentType === "text-to-image2") {
         rawResponse += `![generated_image](${imageJson.image})`;
       } else if (imageJson.intentType === "text-to-image-v3") {
-        rawResponse = `![](data:image/webp;base64,${imageJson.image})`;
+        rawResponse = `![generated_image](${imageJson.image})`;
       } else if (imageJson.intentType === "excalidraw") {
         const domain = this.setting.khojUrl.endsWith("/") ? this.setting.khojUrl : `${this.setting.khojUrl}/`;
         const redirectMessage = `Hey, I'm not ready to show you diagrams yet here. But you can view it in ${domain}`;
@@ -2630,14 +2851,31 @@ Content-Type: "application/octet-stream"\r
 
 ${inferredQuery}`;
       }
+    } else if (imageJson.images) {
+      imageJson.images.forEach((image) => {
+        rawResponse += `![generated_image](${image})
+
+`;
+      });
+    } else if (imageJson.excalidrawDiagram) {
+      const domain = this.setting.khojUrl.endsWith("/") ? this.setting.khojUrl : `${this.setting.khojUrl}/`;
+      const redirectMessage = `Hey, I'm not ready to show you diagrams yet here. But you can view it in ${domain}`;
+      rawResponse += redirectMessage;
+    } else if (imageJson.mermaidjsDiagram) {
+      rawResponse += imageJson.mermaidjsDiagram;
     }
     if (imageJson.detail)
       rawResponse += imageJson.detail;
     return rawResponse;
   }
-  finalizeChatBodyResponse(references, newResponseElement) {
+  finalizeChatBodyResponse(references, newResponseElement, turnId) {
+    var _a, _b, _c;
     if (!!newResponseElement && references != null && Object.keys(references).length > 0) {
       newResponseElement.appendChild(this.createReferenceSection(references));
+    }
+    if (!!newResponseElement && turnId) {
+      (_a = newResponseElement.parentElement) == null ? void 0 : _a.setAttribute("data-turnId", turnId);
+      (_c = (_b = newResponseElement.parentElement) == null ? void 0 : _b.previousElementSibling) == null ? void 0 : _c.setAttribute("data-turnId", turnId);
     }
     this.scrollChatToBottom();
     let chatInput = this.contentEl.getElementsByClassName("khoj-chat-input")[0];
@@ -2697,6 +2935,42 @@ ${inferredQuery}`;
       }
     }
   }
+  async deleteMessage(messageEl) {
+    const chatBodyEl = this.contentEl.getElementsByClassName("khoj-chat-body")[0];
+    const conversationId = chatBodyEl.dataset.conversationId;
+    const turnId = messageEl.getAttribute("data-turnId");
+    if (!turnId || !conversationId)
+      return;
+    try {
+      const response = await fetch(`${this.setting.khojUrl}/api/chat/conversation/message`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${this.setting.khojApiKey}`
+        },
+        body: JSON.stringify({
+          conversation_id: conversationId,
+          turn_id: turnId
+        })
+      });
+      if (response.ok) {
+        const isKhojMessage = messageEl.classList.contains("khoj");
+        const messages = Array.from(chatBodyEl.getElementsByClassName("khoj-chat-message"));
+        const messageIndex = messages.indexOf(messageEl);
+        if (isKhojMessage && messageIndex > 0) {
+          messages[messageIndex - 1].remove();
+        } else if (!isKhojMessage && messageIndex < messages.length - 1) {
+          messages[messageIndex + 1].remove();
+        }
+        messageEl.remove();
+      } else {
+        this.flashStatusInChatInput("Failed to delete message");
+      }
+    } catch (error) {
+      console.error("Error deleting message:", error);
+      this.flashStatusInChatInput("Error deleting message");
+    }
+  }
 };
 
 // src/main.ts
@@ -2724,23 +2998,39 @@ var Khoj = class extends import_obsidian6.Plugin {
         this.activateView("khoj-chat-view" /* CHAT */);
       }
     });
+    this.addCommand({
+      id: "sync",
+      name: "Sync new changes",
+      callback: async () => {
+        this.settings.lastSync = await updateContentIndex(this.app.vault, this.settings, this.settings.lastSync, false, true);
+      }
+    });
     this.registerView("khoj-chat-view" /* CHAT */, (leaf) => new KhojChatView(leaf, this.settings));
     this.addRibbonIcon("message-circle", "Khoj", (_) => {
       this.activateView("khoj-chat-view" /* CHAT */);
     });
     this.addSettingTab(new KhojSettingTab(this.app, this));
+    this.startSyncTimer();
+  }
+  startSyncTimer() {
+    if (this.indexingTimer) {
+      clearInterval(this.indexingTimer);
+    }
     this.indexingTimer = setInterval(async () => {
       if (this.settings.autoConfigure) {
         this.settings.lastSync = await updateContentIndex(this.app.vault, this.settings, this.settings.lastSync);
       }
-    }, 60 * 60 * 1e3);
+    }, this.settings.syncInterval * 60 * 1e3);
+  }
+  restartSyncTimer() {
+    this.startSyncTimer();
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
     ({ connectedToBackend: this.settings.connectedToBackend } = await canConnectToBackend(this.settings.khojUrl, this.settings.khojApiKey, true));
   }
   async saveSettings() {
-    this.saveData(this.settings);
+    await this.saveData(this.settings);
   }
   async onunload() {
     if (this.indexingTimer)

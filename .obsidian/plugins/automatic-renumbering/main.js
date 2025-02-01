@@ -235,12 +235,17 @@ var Mutex = class {
   }
 };
 
+// src/settings-tab.ts
+var import_obsidian = require("obsidian");
+
 // src/SettingsManager.ts
 var DEFAULT_SETTINGS = {
-  liveUpdate: true,
+  liveNumberingUpdate: true,
   smartPasting: true,
   startsFromOne: true,
-  indentSize: 4
+  indentSize: 4,
+  liveCheckboxUpdate: true,
+  sortCheckboxesToBottom: true
 };
 var SettingsManager = class {
   constructor() {
@@ -255,32 +260,45 @@ var SettingsManager = class {
   getSettings() {
     return this.settings;
   }
+  setSettings(settings) {
+    this.settings = settings;
+  }
   getLiveUpdate() {
-    return this.settings.liveUpdate;
+    return this.settings.liveNumberingUpdate;
   }
-  getSmartPasting() {
-    return this.settings.smartPasting;
-  }
-  getStartsFromOne() {
-    return this.settings.startsFromOne;
+  setLiveUpdate(value) {
+    this.settings.liveNumberingUpdate = value;
   }
   getIndentSize() {
     return this.settings.indentSize;
   }
-  setSettings(settings) {
-    this.settings = settings;
-  }
-  setLiveUpdate(value) {
-    this.settings.liveUpdate = value;
-  }
-  setSmartPasting(value) {
-    this.settings.smartPasting = value;
-  }
-  setStartsFromOne(value) {
-    this.settings.startsFromOne = value;
-  }
   setIndentSize(value) {
     this.settings.indentSize = value;
+  }
+  getSortCheckboxesBottom() {
+    return this.settings.sortCheckboxesToBottom;
+  }
+  setSortCheckboxesBottom(value) {
+    this.settings.sortCheckboxesToBottom = value;
+  }
+};
+
+// src/settings-tab.ts
+var AutoRenumberingSettings = class extends import_obsidian.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+    this.settingsManager = SettingsManager.getInstance();
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    new import_obsidian.Setting(containerEl).setName("Sort automatically").setDesc("Automatically sorts checkboxes").addToggle(
+      (toggle) => toggle.setValue(this.settingsManager.getLiveUpdate()).onChange(async (value) => {
+        this.settingsManager.setLiveUpdate(value);
+        await this.plugin.saveSettings();
+      })
+    );
   }
 };
 
@@ -295,529 +313,254 @@ function getLineInfo(line) {
     index++;
   }
   const spaceCharsNum = index;
-  while (index < length && "0".charCodeAt(0) <= line.charCodeAt(index) && line.charCodeAt(index) <= "9".charCodeAt(0))
+  while (index < length && "0".charCodeAt(0) <= line.charCodeAt(index) && line.charCodeAt(index) <= "9".charCodeAt(0)) {
     index++;
-  if (line[index] !== "." || line[index + 1] !== " ") {
+  }
+  const isNumberDetected = spaceCharsNum !== index && line[index] === "." && line[index + 1] === " ";
+  if (!isNumberDetected) {
+    const isChecked2 = getCheckboxInfo(line, index, isNumberDetected);
     return {
       spaceCharsNum,
       spaceIndent: numOfSpaceIndents,
       number: void 0,
-      textIndex: void 0
+      textIndex: index,
+      isChecked: isChecked2
     };
   }
   const number = parseInt(line.slice(spaceCharsNum, index));
+  index += 2;
+  const isChecked = getCheckboxInfo(line, index, isNumberDetected);
   if (isNaN(number)) {
     return {
       spaceCharsNum,
       spaceIndent: numOfSpaceIndents,
       number: void 0,
-      textIndex: void 0
+      textIndex: 0,
+      isChecked
     };
   }
-  return { spaceCharsNum, spaceIndent: numOfSpaceIndents, number, textIndex: index + 2 };
+  return {
+    spaceCharsNum,
+    spaceIndent: numOfSpaceIndents,
+    number,
+    textIndex: index,
+    isChecked
+  };
 }
-function getListStart(editor, currLineIndex) {
-  if (currLineIndex < 0 || editor.lastLine() < currLineIndex) {
-    return void 0;
-  }
-  const currInfo = getLineInfo(editor.getLine(currLineIndex));
-  if (currInfo.number === void 0) {
-    return void 0;
-  }
-  if (currLineIndex == 0)
-    return 0;
-  let prevIndex = currLineIndex - 1;
-  while (0 <= prevIndex && getLineInfo(editor.getLine(prevIndex)).number !== void 0) {
-    prevIndex--;
-  }
-  return prevIndex + 1;
-}
-function getLastListStart(lines) {
-  let index = void 0;
-  for (let i = lines.length - 1; i >= 0; i--) {
-    const info = getLineInfo(lines[i]);
-    if (info.number === void 0) {
-      break;
+function getCheckboxInfo(line, index, isNumberDetected) {
+  const EMPTY_CHECKBOX_NUMBERED = /^\s*\[ \] /;
+  const FULL_CHECKBOX_NUMBERED = /^\s*\[.\] /;
+  const EMPTY_CHECKBOX = /^\s*- \[ \] /;
+  const FULL_CHECKBOX = /^\s*- \[.\] /;
+  if (isNumberDetected) {
+    const s = line.slice(index);
+    if (EMPTY_CHECKBOX_NUMBERED.test(s)) {
+      return false;
     }
-    index = i;
-  }
-  return index;
-}
-function getPrevItemIndex(editor, index) {
-  if (index <= 0 || index > editor.lastLine()) {
-    return void 0;
-  }
-  const currSpaceOffset = getLineInfo(editor.getLine(index)).spaceIndent;
-  let prevIndex = index - 1;
-  let prevSpaceOffset = void 0;
-  for (; prevIndex >= 0; prevIndex--) {
-    prevSpaceOffset = getLineInfo(editor.getLine(prevIndex)).spaceIndent;
-    if (prevSpaceOffset <= currSpaceOffset) {
-      break;
-    }
-  }
-  if (prevSpaceOffset && prevSpaceOffset > currSpaceOffset) {
-    return void 0;
-  }
-  return prevIndex;
-}
-function isFirstInNumberedList(editor, index) {
-  if (index < 0) {
-    return false;
-  }
-  const currLine = getLineInfo(editor.getLine(index));
-  if (index === 0) {
-    return currLine.number !== void 0;
-  }
-  if (currLine.number === void 0) {
-    return false;
-  }
-  const prevIndex = getPrevItemIndex(editor, index);
-  if (prevIndex === void 0) {
-    return true;
-  }
-  const prevInfo = getLineInfo(editor.getLine(prevIndex));
-  if (prevInfo.spaceIndent < currLine.spaceIndent || prevInfo.number === void 0) {
-    return true;
-  }
-  return false;
-}
-
-// src/renumbering/pasteAndDropHandler.ts
-function handlePasteAndDrop(evt, editor, mutex2) {
-  var _a, _b;
-  if (!this.settingsManager.getLiveUpdate()) {
-    return;
-  }
-  const content = evt instanceof ClipboardEvent ? (_a = evt.clipboardData) == null ? void 0 : _a.getData("text") : evt instanceof DragEvent ? (_b = evt.dataTransfer) == null ? void 0 : _b.getData("text") : null;
-  if (evt.defaultPrevented || !content) {
-    return;
-  }
-  evt.preventDefault();
-  mutex2.runExclusive(() => {
-    this.blockChanges = true;
-    const { baseIndex, offset } = processTextInput(editor, content);
-    this.renumberer.allListsInRange(editor, baseIndex, baseIndex + offset);
-  });
-}
-function processTextInput(editor, textFromClipboard) {
-  var _a;
-  const { anchor, head } = editor.listSelections()[0];
-  const baseIndex = Math.min(anchor.line, head.line);
-  let numOfLines;
-  const smartPasting = SettingsManager.getInstance().getSmartPasting();
-  if (smartPasting) {
-    const afterPastingIndex = Math.max(anchor.line, head.line) + 1;
-    const line = editor.getLine(afterPastingIndex);
-    const info = getLineInfo(line);
-    if (info.number !== void 0) {
-      const retval = modifyText(textFromClipboard, info.number);
-      textFromClipboard = (_a = retval.modifiedText) != null ? _a : textFromClipboard;
-      numOfLines = retval.numOfLines;
-    } else {
-      numOfLines = countNewlines(textFromClipboard);
+    if (FULL_CHECKBOX_NUMBERED.test(s)) {
+      return true;
     }
   } else {
-    numOfLines = countNewlines(textFromClipboard);
-  }
-  editor.replaceSelection(textFromClipboard);
-  return { baseIndex, offset: numOfLines };
-}
-function countNewlines(text) {
-  let count = 0;
-  for (const char of text) {
-    if (char === "\n") {
-      count++;
+    if (EMPTY_CHECKBOX.test(line)) {
+      return false;
+    }
+    if (FULL_CHECKBOX.test(line)) {
+      return true;
     }
   }
-  return count;
-}
-function modifyText(text, newNumber) {
-  const lines = text.split("\n");
-  const lineIndex = getLastListStart(lines);
-  if (lineIndex === void 0) {
-    return { modifiedText: void 0, numOfLines: lines.length };
-  }
-  const targetLine = lines[lineIndex];
-  const info = getLineInfo(targetLine);
-  const newLine = targetLine.slice(0, info.spaceCharsNum) + newNumber + ". " + targetLine.slice(info.textIndex);
-  lines[lineIndex] = newLine;
-  const modifiedText = lines.join("\n");
-  return { modifiedText, numOfLines: lines.length };
+  return void 0;
 }
 
-// src/command-registration.ts
-function registerCommands(plugin) {
-  plugin.addCommand({
-    id: "1-at-cursor",
-    name: "At cursor position",
-    editorCallback: (editor) => {
-      plugin.setIsProcessing(true);
-      plugin.getRenumberer().listAtCursor(editor);
-      plugin.setIsProcessing(false);
-    }
-  });
-  plugin.addCommand({
-    id: "2-selection",
-    name: "Selected lists",
-    editorCallback: (editor) => {
-      const { anchor, head } = editor.listSelections()[0];
-      const startLine = Math.min(anchor.line, head.line);
-      const endLine = Math.max(anchor.line, head.line);
-      plugin.getRenumberer().allListsInRange(editor, startLine, endLine);
-    }
-  });
-  plugin.addCommand({
-    id: "3-entire-note",
-    name: "All numbered lists note",
-    editorCallback: (editor) => {
-      plugin.getRenumberer().allListsInRange(editor, 0, editor.lastLine());
-    }
-  });
+// src/checkbox.ts
+function reorderCheckboxes(editor, index) {
+  const info = getLineInfo(editor.getLine(index));
+  if (info.isChecked === void 0) {
+    return;
+  }
+  let toLine = info.isChecked === true ? getNewCheckedLoc(editor, index) : getNewUncheckedLoc(editor, index);
+  if (toLine === void 0 || index === toLine) {
+    return;
+  }
+  moveLine(editor, index, toLine);
 }
-
-// src/renumbering/Renumberer.ts
-var Renumberer = class {
-  constructor(strategy) {
-    // renumbers the list at cursor location from start to end
-    this.listAtCursor = (editor) => {
-      const { anchor, head } = editor.listSelections()[0];
-      const currLine = Math.min(anchor.line, head.line);
-      const newChanges = this.renumberEntireList(editor, currLine);
-      if (newChanges !== void 0) {
-        this.applyChangesToEditor(editor, newChanges.changes);
-      }
-    };
-    // renumbers all numbered lists in specified range
-    this.allListsInRange = (editor, index, endIndex) => {
-      const changes = [];
-      while (index <= endIndex) {
-        const line = editor.getLine(index);
-        if (line) {
-          const { number } = getLineInfo(line);
-          if (number) {
-            const newChanges = this.renumberEntireList(editor, index);
-            if (newChanges !== void 0) {
-              changes.push(...newChanges.changes);
-              index = newChanges.endIndex;
-            }
-          }
-        }
-        index++;
-      }
-      this.applyChangesToEditor(editor, changes);
-    };
-    this.strategy = strategy;
-  }
-  setStrategy(strategy) {
-    this.strategy = strategy;
-  }
-  renumber(editor, currLine) {
-    const changes = this.strategy.renumber(editor, currLine).changes;
-    if (changes.length > 0) {
-      this.applyChangesToEditor(editor, changes);
-    }
-  }
-  // updates a numbered list from start to end
-  renumberEntireList(editor, index) {
-    const startIndex = getListStart(editor, index);
-    if (startIndex !== void 0) {
-      return this.strategy.renumber(editor, startIndex, false);
-    }
+function getNewUncheckedLoc(editor, startIndex) {
+  if (startIndex < 0 || editor.lastLine() < startIndex) {
     return void 0;
   }
-  applyChangesToEditor(editor, changes) {
-    if (changes.length > 0) {
-      editor.transaction({ changes });
+  const startInfo = getLineInfo(editor.getLine(startIndex));
+  if (startInfo.isChecked !== false) {
+    return void 0;
+  }
+  const startContainsNumber = startInfo.number !== void 0;
+  function shouldBreak(currentInfo) {
+    const currentContainsNumber = currentInfo.number !== void 0;
+    const hasSameNumberStatus = currentContainsNumber === startContainsNumber;
+    const hasSameIndentation = currentInfo.spaceIndent === startInfo.spaceIndent;
+    if (!hasSameNumberStatus || !hasSameIndentation) {
+      return true;
     }
+    return currentInfo.isChecked === false || currentInfo.isChecked === void 0;
   }
-};
-
-// src/settings-tab.ts
-var import_obsidian = require("obsidian");
-
-// src/renumbering/generateChanges.ts
-function generateChanges(editor, index, indentTracker, shouldRenumberFromOne, isLocal = true) {
-  const changes = [];
-  const lastIndex = editor.lastLine() + 1;
-  if (index < 0 || lastIndex <= index) {
-    return { changes: [], endIndex: index };
-  }
-  index = index === 0 ? 1 : index;
-  let firstChange = true;
-  let prevSpaceIndent = getLineInfo(editor.getLine(index - 1)).spaceIndent;
-  for (; index < lastIndex; index++) {
-    const text = editor.getLine(index);
-    const { spaceIndent, spaceCharsNum, number: currNum, textIndex } = getLineInfo(text);
-    if (currNum === void 0) {
-      firstChange = false;
-      if (prevSpaceIndent < spaceIndent) {
-        indentTracker.insert(text);
-        continue;
-      }
+  let index = startIndex - 1;
+  while (0 <= index) {
+    const currentInfo = getLineInfo(editor.getLine(index));
+    if (shouldBreak(currentInfo)) {
       break;
     }
-    const previousNum = indentTracker.get()[spaceIndent];
-    let expectedNum = previousNum === void 0 ? void 0 : previousNum + 1;
-    const applyTextChange = (newText2) => {
-      changes.push({
-        from: { line: index, ch: 0 },
-        to: { line: index, ch: text.length },
-        text: newText2
-      });
-    };
-    const firstItemOnNewIndent = expectedNum === void 0;
-    const shouldUpdateToOne = shouldRenumberFromOne && firstItemOnNewIndent && prevSpaceIndent < spaceIndent;
-    const isValidIndent = spaceIndent <= indentTracker.lastIndex() + 1;
-    const isNumChanged = expectedNum !== currNum;
-    const shouldUpdate = expectedNum !== void 0 && isNumChanged && isValidIndent;
-    let newText = text;
-    if (shouldUpdateToOne) {
-      expectedNum = 1;
-      newText = `${text.slice(0, spaceCharsNum)}${expectedNum}. ${text.slice(textIndex)}`;
-      applyTextChange(newText);
-    } else if (shouldUpdate) {
-      newText = `${text.slice(0, spaceCharsNum)}${expectedNum}. ${text.slice(textIndex)}`;
-      applyTextChange(newText);
-    } else if (isLocal && !firstChange && spaceIndent === 0) {
-      break;
-    }
-    indentTracker.insert(newText);
-    prevSpaceIndent = spaceIndent;
-    firstChange = false;
+    index--;
   }
-  return { changes, endIndex: index - 1 };
+  return index + 1;
 }
-
-// src/renumbering/IndentTracker.ts
-var IndentTracker = class {
-  // builds the stack from the beginning of a numbered list, to the current line
-  constructor(editor, index, startFromOne) {
-    this.stack = [];
-    this.stackIndex = 0;
-    if (index > editor.lastLine()) {
-      return;
-    }
-    let prevIndex = getPrevItemIndex(editor, index);
-    if (prevIndex === void 0) {
-      this.insert(editor.getLine(index), startFromOne);
-      return;
-    }
-    if (startFromOne) {
-      if (isFirstInNumberedList(editor, prevIndex)) {
-        this.insert(editor.getLine(prevIndex), startFromOne);
-        prevIndex++;
-      } else if (isFirstInNumberedList(editor, index)) {
-        this.insert(editor.getLine(index), startFromOne);
-        return;
-      }
-    }
-    for (let i = prevIndex; i < index; i++) {
-      this.insert(editor.getLine(i));
-    }
+function getNewCheckedLoc(editor, startIndex) {
+  if (startIndex < 0 || editor.lastLine() < startIndex) {
+    return void 0;
   }
-  // inserts a line to the stack, ensuring its the last one each time. items in higher indices do not affect lower ones.
-  insert(textLine, startsFromOne = false) {
-    const info = getLineInfo(textLine);
-    this.stackIndex = info.spaceIndent;
-    this.stack[this.stackIndex] = startsFromOne ? 1 : info.number;
-    this.stack.length = this.stackIndex + 1;
+  const startInfo = getLineInfo(editor.getLine(startIndex));
+  if (startInfo.isChecked !== true) {
+    return void 0;
   }
-  get() {
-    return this.stack;
+  function shouldBreak(currentInfo) {
+    const currentContainsNumber = currentInfo.number !== void 0;
+    const hasSameNumberStatus = currentContainsNumber === startContainsNumber;
+    const hasSameIndentation = currentInfo.spaceIndent === startInfo.spaceIndent;
+    if (!hasSameNumberStatus || !hasSameIndentation) {
+      return true;
+    }
+    return currentInfo.isChecked === true || currentInfo.isChecked === void 0;
   }
-  lastIndex() {
-    return this.stackIndex;
+  const startContainsNumber = startInfo.number !== void 0;
+  let index = startIndex + 1;
+  while (index <= editor.lastLine()) {
+    const currentInfo = getLineInfo(editor.getLine(index));
+    if (shouldBreak(currentInfo)) {
+      break;
+    }
+    index++;
   }
-};
-
-// src/renumbering/strategies.ts
-var StartFromOneStrategy = class {
-  renumber(editor, index, isLocal = true) {
-    const createFirstLineChange = (text2, lineInfo2, index2) => {
-      if (lineInfo2.number !== 1) {
-        const newText = text2.slice(0, lineInfo2.spaceCharsNum) + "1. " + text2.slice(lineInfo2.textIndex);
-        return {
-          from: { line: index2, ch: 0 },
-          to: { line: index2, ch: text2.length },
-          text: newText
-        };
-      }
-      return void 0;
+  return index - 1;
+}
+function moveLine(editor, fromLine, toLine) {
+  if (fromLine === toLine) {
+    return;
+  }
+  const changes = [];
+  const content = editor.getLine(fromLine);
+  const lastLine = editor.lastLine();
+  let removeLine;
+  let insertLine;
+  if (fromLine === lastLine) {
+    removeLine = {
+      from: { line: fromLine - 1, ch: editor.getLine(fromLine - 1).length },
+      to: { line: fromLine + 1, ch: content.length },
+      text: ""
     };
-    const text = editor.getLine(index);
-    const lineInfo = getLineInfo(text);
-    let isFirstInList = isFirstInNumberedList(editor, index);
-    let firstLineChange = void 0;
-    if (isFirstInList) {
-      firstLineChange = createFirstLineChange(text, lineInfo, index);
-      index++;
-    }
-    if (index > editor.lastLine()) {
-      const changes = firstLineChange !== void 0 ? [firstLineChange] : [];
-      return { changes, endIndex: index };
-    }
-    const newLineInfo = getLineInfo(editor.getLine(index));
-    if (newLineInfo.number === void 0) {
-      const changes = firstLineChange !== void 0 ? [firstLineChange] : [];
-      return { changes, endIndex: index };
-    }
-    if (newLineInfo.spaceIndent < lineInfo.spaceIndent) {
-      isFirstInList = false;
-    }
-    const indentTracker = new IndentTracker(editor, index, isFirstInList);
-    const changeList = generateChanges(editor, index, indentTracker, true, isLocal);
-    if (firstLineChange) {
-      changeList.changes.unshift(firstLineChange);
-    }
-    return changeList;
+    insertLine = {
+      from: { line: toLine, ch: 0 },
+      to: { line: toLine, ch: 0 },
+      text: content + "\n"
+    };
+  } else if (toLine === lastLine) {
+    removeLine = {
+      from: { line: fromLine, ch: 0 },
+      to: { line: fromLine + 1, ch: 0 },
+      text: ""
+    };
+    insertLine = {
+      from: { line: toLine + 1, ch: 0 },
+      to: { line: toLine + 1, ch: 0 },
+      text: "\n" + content
+    };
+  } else {
+    removeLine = {
+      from: { line: fromLine, ch: 0 },
+      to: { line: fromLine + 1, ch: 0 },
+      text: ""
+    };
+    const adjustedLine = toLine > fromLine ? toLine + 1 : toLine;
+    insertLine = {
+      from: { line: adjustedLine, ch: 0 },
+      to: { line: adjustedLine, ch: 0 },
+      text: content + "\n"
+    };
   }
-};
-var DynamicStartStrategy = class {
-  renumber(editor, index, isLocal = true) {
-    let currInfo = getLineInfo(editor.getLine(index));
-    let prevInfo = void 0;
-    if (currInfo.number === void 0) {
-      index++;
-      prevInfo = currInfo;
-      currInfo = getLineInfo(editor.getLine(index));
-    }
-    if (currInfo.number === void 0) {
-      index++;
-      return { changes: [], endIndex: index };
-    }
-    if (index <= 0) {
-      const indentTracker2 = new IndentTracker(editor, index, false);
-      return index === editor.lastLine() ? { changes: [], endIndex: index } : generateChanges(editor, index + 1, indentTracker2, false, isLocal);
-    }
-    if (prevInfo && !prevInfo.number && prevInfo.spaceCharsNum < currInfo.spaceCharsNum) {
-      index++;
-    }
-    const indentTracker = new IndentTracker(editor, index, false);
-    return generateChanges(editor, index, indentTracker, false, isLocal);
-  }
-};
-
-// src/settings-tab.ts
-var AutoRenumberingSettings = class extends import_obsidian.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
-    this.plugin = plugin;
-    this.settingsManager = SettingsManager.getInstance();
-  }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    new import_obsidian.Setting(containerEl).setName("Live update").setDesc("Automatically update numbered lists as changes are made.").addToggle(
-      (toggle) => toggle.setValue(this.settingsManager.getLiveUpdate()).onChange(async (value) => {
-        this.settingsManager.setLiveUpdate(value);
-        await this.plugin.saveSettings();
-        if (value) {
-          smartPastingToggleEl.classList.add("smart-paste-toggle");
-          smartPastingToggleEl.classList.remove("smart-paste-toggle-disabled");
-        } else {
-          smartPastingToggleEl.classList.remove("smart-paste-toggle");
-          smartPastingToggleEl.classList.add("smart-paste-toggle-disabled");
-        }
-      })
-    );
-    const smartPastingSetting = new import_obsidian.Setting(containerEl).setName("Smart pasting").setDesc("Pasting keeps the sequencing consistent with the original numbered list.").addToggle(
-      (toggle) => toggle.setValue(this.settingsManager.getSmartPasting()).onChange(async (value) => {
-        this.settingsManager.setSmartPasting(value);
-        await this.plugin.saveSettings();
-      })
-    );
-    const smartPastingToggleEl = smartPastingSetting.settingEl;
-    const isLiveUpdateEnabled = this.settingsManager.getLiveUpdate();
-    if (isLiveUpdateEnabled) {
-      smartPastingToggleEl.classList.add("smart-paste-toggle");
-      smartPastingToggleEl.classList.remove("smart-paste-toggle-disabled");
-    } else {
-      smartPastingToggleEl.classList.add("smart-paste-toggle-disabled");
-      smartPastingToggleEl.classList.remove("smart-paste-toggle");
-    }
-    new import_obsidian.Setting(containerEl).setName("Start numbering from 1").setDesc("The first item of every numbered list is 1.").addToggle(
-      (toggle) => toggle.setValue(this.settingsManager.getStartsFromOne()).onChange(async (value) => {
-        this.settingsManager.setStartsFromOne(value);
-        if (value) {
-          this.plugin.setStrategy(new StartFromOneStrategy());
-        } else {
-          this.plugin.setStrategy(new DynamicStartStrategy());
-        }
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("Tab indent size").setDesc(
-      "Set the indent size to the same size as in the editor's settings. Can be found under: Options > Editor > Tab indent size."
-    ).addSlider((slider) => {
-      slider.setValue(this.settingsManager.getIndentSize()).setLimits(2, 8, 1).setDynamicTooltip().onChange(async (value) => {
-        this.settingsManager.setIndentSize(value);
-        await this.plugin.saveSettings();
-      });
-    });
-  }
-};
+  changes.push(insertLine, removeLine);
+  editor.transaction({ changes });
+}
 
 // main.ts
 var mutex = new Mutex();
 var AutoRenumbering = class extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
-    this.isProccessing = false;
     this.blockChanges = false;
+    this.checkboxClickedAt = void 0;
   }
   async onload() {
     await this.loadSettings();
-    registerCommands(this);
     this.addSettingTab(new AutoRenumberingSettings(this.app, this));
     this.settingsManager = SettingsManager.getInstance();
-    if (this.settingsManager.getStartsFromOne()) {
-      this.renumberer = new Renumberer(new StartFromOneStrategy());
-    } else {
-      this.renumberer = new Renumberer(new DynamicStartStrategy());
-    }
     this.registerEvent(
       this.app.workspace.on("editor-change", (editor) => {
         if (this.settingsManager.getLiveUpdate() === false) {
           return;
         }
-        if (!this.isProccessing) {
-          this.isProccessing = true;
-          setTimeout(() => {
-            mutex.runExclusive(() => {
-              if (this.blockChanges) {
-                return;
-              }
-              this.blockChanges = true;
+        setTimeout(() => {
+          mutex.runExclusive(() => {
+            const originalPos = editor.getCursor();
+            if (this.blockChanges) {
+              return;
+            }
+            this.blockChanges = true;
+            let currIndex;
+            if (this.checkboxClickedAt !== void 0) {
+              currIndex = this.checkboxClickedAt;
+            } else {
               const { anchor, head } = editor.listSelections()[0];
-              const currIndex = Math.min(anchor.line, head.line);
-              this.renumberer.renumber(editor, currIndex);
-            });
-            this.isProccessing = false;
-          }, 0);
-        }
-      })
-    );
-    this.registerEvent(
-      this.app.workspace.on("editor-paste", (evt, editor) => {
-        handlePasteAndDrop.call(this, evt, editor, mutex);
-      })
-    );
-    this.registerEvent(
-      this.app.workspace.on("editor-drop", (evt, editor) => {
-        handlePasteAndDrop.call(this, evt, editor, mutex);
+              currIndex = Math.min(anchor.line, head.line);
+            }
+            reorderCheckboxes(editor, currIndex);
+            if (!editor.somethingSelected()) {
+              const newLineInOriginalPos = editor.getLine(originalPos.line);
+              const newPos = {
+                line: originalPos.line,
+                ch: Math.min(originalPos.ch, newLineInOriginalPos.length)
+              };
+              editor.setCursor(newPos);
+            }
+          });
+        }, 0);
       })
     );
     this.handleKeystrokeBound = this.handleKeystroke.bind(this);
     window.addEventListener("keydown", this.handleKeystrokeBound);
+    this.handleMouseBound = this.handleMouseClick.bind(this);
+    window.addEventListener("click", this.handleMouseBound);
   }
   handleKeystroke(event) {
     mutex.runExclusive(() => {
       this.blockChanges = event.ctrlKey || event.metaKey || event.altKey;
     });
   }
+  handleMouseClick(event) {
+    mutex.runExclusive(() => {
+      this.checkboxClickedAt = void 0;
+      const target = event.target;
+      if (target.classList.contains("task-list-item-checkbox")) {
+        const listLine = target.closest(".HyperMD-list-line");
+        if (listLine) {
+          const editor = listLine.closest(".cm-editor");
+          if (editor) {
+            const allListLines = Array.from(editor.getElementsByClassName("HyperMD-list-line"));
+            this.checkboxClickedAt = allListLines.indexOf(listLine);
+          }
+        }
+      }
+      this.blockChanges = false;
+    });
+  }
   async onunload() {
     window.removeEventListener("keydown", this.handleKeystrokeBound);
+    window.removeEventListener("mouse", this.handleMouseBound);
   }
   async loadSettings() {
     const settingsManager = SettingsManager.getInstance();
@@ -826,18 +569,6 @@ var AutoRenumbering = class extends import_obsidian2.Plugin {
   async saveSettings() {
     const settingsManager = SettingsManager.getInstance();
     await this.saveData(settingsManager.getSettings());
-  }
-  getRenumberer() {
-    return this.renumberer;
-  }
-  getIsProcessing() {
-    return this.isProccessing;
-  }
-  setIsProcessing(value) {
-    this.isProccessing = value;
-  }
-  setStrategy(strategy) {
-    this.renumberer.setStrategy(strategy);
   }
 };
 

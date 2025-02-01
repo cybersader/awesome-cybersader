@@ -5,7 +5,9 @@ if you want to view the source, please visit the github repository of this plugi
 
 "use strict";
 
-var __defProp = Object.defineProperty, __getOwnPropDesc = Object.getOwnPropertyDescriptor, __getOwnPropNames = Object.getOwnPropertyNames, __hasOwnProp = Object.prototype.hasOwnProperty, __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, {
+var __defProp = Object.defineProperty, __getOwnPropDesc = Object.getOwnPropertyDescriptor, __getOwnPropNames = Object.getOwnPropertyNames, __hasOwnProp = Object.prototype.hasOwnProperty, __typeError = msg => {
+  throw TypeError(msg);
+}, __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, {
   enumerable: true,
   configurable: true,
   writable: true,
@@ -23,10 +25,9 @@ var __defProp = Object.defineProperty, __getOwnPropDesc = Object.getOwnPropertyD
   return to;
 }, __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
   value: true
-}), mod), __publicField = (obj, key, value) => {
-  __defNormalProp(obj, "symbol" != typeof key ? key + "" : key, value);
-  return value;
-}, main_exports = {};
+}), mod), __publicField = (obj, key, value) => __defNormalProp(obj, "symbol" != typeof key ? key + "" : key, value), __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg), __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), 
+getter ? getter.call(obj) : member.get(obj)), __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value), __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), 
+setter ? setter.call(obj, value) : member.set(obj, value), value), main_exports = {};
 
 __export(main_exports, {
   default: () => TagFolderPlugin5
@@ -80,7 +81,8 @@ var import_obsidian8 = require("obsidian"), enumShowListIn = {
   },
   linkShowOnlyFDR: true,
   linkCombineOtherTree: true,
-  showListIn: ""
+  showListIn: "",
+  displayFolderAsTag: false
 }, VIEW_TYPE_SCROLL = "tagfolder-view-scroll", EPOCH_MINUTE = 60, EPOCH_HOUR = 60 * EPOCH_MINUTE, EPOCH_DAY = 24 * EPOCH_HOUR, FRESHNESS_1 = "FRESHNESS_01", FRESHNESS_2 = "FRESHNESS_02", FRESHNESS_3 = "FRESHNESS_03", FRESHNESS_4 = "FRESHNESS_04", FRESHNESS_5 = "FRESHNESS_05", tagDispDict = {
   FRESHNESS_01: "🕐",
   FRESHNESS_02: "📖",
@@ -88,7 +90,8 @@ var import_obsidian8 = require("obsidian"), enumShowListIn = {
   FRESHNESS_04: "📚",
   FRESHNESS_05: "🗄",
   _VIRTUAL_TAG_FRESHNESS: "⌛",
-  _VIRTUAL_TAG_CANVAS: "📋 Canvas"
+  _VIRTUAL_TAG_CANVAS: "📋 Canvas",
+  _VIRTUAL_TAG_FOLDER: "📁"
 }, VIEW_TYPE_TAGFOLDER = "tagfolder-view", VIEW_TYPE_TAGFOLDER_LINK = "tagfolder-link-view", VIEW_TYPE_TAGFOLDER_LIST = "tagfolder-view-list", OrderKeyTag = {
   NAME: "Tag name",
   ITEMS: "Count of items"
@@ -101,514 +104,2441 @@ var import_obsidian8 = require("obsidian"), enumShowListIn = {
   MTIME: "Modified time",
   CTIME: "Created time",
   FULLPATH: "Fullpath of the file"
-};
+}, is_array = Array.isArray, array_from = Array.from, object_keys = Object.keys, define_property = Object.defineProperty, get_descriptor = Object.getOwnPropertyDescriptor, get_descriptors = Object.getOwnPropertyDescriptors, object_prototype = Object.prototype, array_prototype = Array.prototype, get_prototype_of = Object.getPrototypeOf, noop = () => {};
 
-function noop() {}
-
-function assign(tar, src) {
-  for (const k in src) tar[k] = src[k];
-  return tar;
+function run_all(arr) {
+  for (var i = 0; i < arr.length; i++) arr[i]();
 }
 
-function run(fn) {
-  return fn();
+var DEV = false, DERIVED = 2, EFFECT = 4, RENDER_EFFECT = 8, BLOCK_EFFECT = 16, BRANCH_EFFECT = 32, ROOT_EFFECT = 64, UNOWNED = 128, DISCONNECTED = 256, CLEAN = 512, DIRTY = 1024, MAYBE_DIRTY = 2048, INERT = 4096, DESTROYED = 8192, EFFECT_RAN = 16384, EFFECT_TRANSPARENT = 32768, LEGACY_DERIVED_PROP = 65536, INSPECT_EFFECT = 1 << 17, HEAD_EFFECT = 1 << 18, EFFECT_HAS_DERIVED = 1 << 19, STATE_SYMBOL = Symbol("$state"), STATE_SYMBOL_METADATA = Symbol("$state metadata"), LOADING_ATTR_SYMBOL = Symbol(""), request_idle_callback = "undefined" == typeof requestIdleCallback ? cb => setTimeout(cb, 1) : requestIdleCallback, is_micro_task_queued = false, is_idle_task_queued = false, current_queued_micro_tasks = [], current_queued_idle_tasks = [];
+
+function process_micro_tasks() {
+  is_micro_task_queued = false;
+  const tasks = current_queued_micro_tasks.slice();
+  current_queued_micro_tasks = [];
+  run_all(tasks);
 }
 
-function blank_object() {
-  return Object.create(null);
+function process_idle_tasks() {
+  is_idle_task_queued = false;
+  const tasks = current_queued_idle_tasks.slice();
+  current_queued_idle_tasks = [];
+  run_all(tasks);
 }
 
-function run_all(fns) {
-  fns.forEach(run);
+function queue_micro_task(fn) {
+  if (!is_micro_task_queued) {
+    is_micro_task_queued = true;
+    queueMicrotask(process_micro_tasks);
+  }
+  current_queued_micro_tasks.push(fn);
 }
 
-function is_function(thing) {
-  return "function" == typeof thing;
+function queue_idle_task(fn) {
+  if (!is_idle_task_queued) {
+    is_idle_task_queued = true;
+    request_idle_callback(process_idle_tasks);
+  }
+  current_queued_idle_tasks.push(fn);
+}
+
+function flush_tasks() {
+  if (is_micro_task_queued) process_micro_tasks();
+  if (is_idle_task_queued) process_idle_tasks();
+}
+
+var bold = "font-weight: bold", normal = "font-weight: normal";
+
+function hydration_attribute_changed(attribute, html2, value) {
+  if (DEV) console.warn(`%c[svelte] hydration_attribute_changed\n%cThe \`${attribute}\` attribute on \`${html2}\` changed its value between server and client renders. The client value, \`${value}\`, will be ignored in favour of the server value`, bold, normal); else console.warn("hydration_attribute_changed");
+}
+
+function hydration_html_changed(location) {
+  if (DEV) console.warn("%c[svelte] hydration_html_changed\n%c" + (location ? `The value of an \`{@html ...}\` block ${location} changed between server and client renders. The client value will be ignored in favour of the server value` : "The value of an `{@html ...}` block changed between server and client renders. The client value will be ignored in favour of the server value"), bold, normal); else console.warn("hydration_html_changed");
+}
+
+function hydration_mismatch(location) {
+  if (DEV) console.warn("%c[svelte] hydration_mismatch\n%c" + (location ? `Hydration failed because the initial UI does not match what was rendered on the server. The error occurred near ${location}` : "Hydration failed because the initial UI does not match what was rendered on the server"), bold, normal); else console.warn("hydration_mismatch");
+}
+
+function lifecycle_double_unmount() {
+  if (DEV) console.warn("%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted", bold, normal); else console.warn("lifecycle_double_unmount");
+}
+
+function ownership_invalid_binding(parent, child2, owner) {
+  if (DEV) console.warn(`%c[svelte] ownership_invalid_binding\n%c${parent} passed a value to ${child2} with \`bind:\`, but the value is owned by ${owner}. Consider creating a binding between ${owner} and ${parent}`, bold, normal); else console.warn("ownership_invalid_binding");
+}
+
+function ownership_invalid_mutation(component2, owner) {
+  if (DEV) console.warn("%c[svelte] ownership_invalid_mutation\n%c" + (component2 ? `${component2} mutated a value owned by ${owner}. This is strongly discouraged. Consider passing values to child components with \`bind:\`, or use a callback instead` : "Mutating a value outside the component that created it is strongly discouraged. Consider passing values to child components with `bind:`, or use a callback instead"), bold, normal); else console.warn("ownership_invalid_mutation");
+}
+
+function state_proxy_equality_mismatch(operator) {
+  if (DEV) console.warn(`%c[svelte] state_proxy_equality_mismatch\n%cReactive \`$state(...)\` proxies and the values they proxy have different identities. Because of this, comparisons with \`${operator}\` will produce unexpected results`, bold, normal); else console.warn("state_proxy_equality_mismatch");
+}
+
+var EACH_ITEM_REACTIVE = 1, EACH_INDEX_REACTIVE = 2, EACH_IS_CONTROLLED = 4, EACH_IS_ANIMATED = 8, EACH_ITEM_IMMUTABLE = 16, PROPS_IS_IMMUTABLE = 1, PROPS_IS_RUNES = 2, PROPS_IS_UPDATED = 4, PROPS_IS_BINDABLE = 8, PROPS_IS_LAZY_INITIAL = 16, TRANSITION_OUT = 2, TRANSITION_GLOBAL = 4, TEMPLATE_FRAGMENT = 1, TEMPLATE_USE_IMPORT_NODE = 2, HYDRATION_START = "[", HYDRATION_START_ELSE = "[!", HYDRATION_END = "]", HYDRATION_ERROR = {}, ELEMENT_PRESERVE_ATTRIBUTE_CASE = 2, UNINITIALIZED = Symbol(), FILENAME = Symbol("filename"), HMR = Symbol("hmr"), boundaries = {}, chrome_pattern = /at (?:.+ \()?(.+):(\d+):(\d+)\)?$/, firefox_pattern = /@(.+):(\d+):(\d+)$/;
+
+function get_stack() {
+  var _a;
+  const stack2 = (new Error).stack;
+  if (!stack2) return null;
+  const entries = [];
+  for (const line of stack2.split("\n")) {
+    let match = null != (_a = chrome_pattern.exec(line)) ? _a : firefox_pattern.exec(line);
+    if (match) entries.push({
+      file: match[1],
+      line: +match[2],
+      column: +match[3]
+    });
+  }
+  return entries;
+}
+
+function get_component() {
+  var _a;
+  const stack2 = null == (_a = get_stack()) ? void 0 : _a.slice(4);
+  if (!stack2) return null;
+  for (let i = 0; i < stack2.length; i++) {
+    const entry = stack2[i], modules = boundaries[entry.file];
+    if (modules) {
+      for (const module2 of modules) if (module2.start.line < entry.line && module2.end.line > entry.line) return module2.component;
+    } else if (0 === i) return null;
+  }
+  return null;
+}
+
+var ADD_OWNER = Symbol("ADD_OWNER");
+
+function add_owner(object, owner, global = false, skip_warning = false) {
+  if (object && !global) {
+    const component2 = dev_current_component_function, metadata = object[STATE_SYMBOL_METADATA];
+    if (metadata && !has_owner(metadata, component2)) {
+      let original = get_owner(metadata);
+      if (owner[FILENAME] !== component2[FILENAME] && !skip_warning) ownership_invalid_binding(component2[FILENAME], owner[FILENAME], original[FILENAME]);
+    }
+  }
+  add_owner_to_object(object, owner, new Set);
+}
+
+function widen_ownership(from, to) {
+  if (null !== to.owners) for (;from; ) {
+    if (null === from.owners) {
+      to.owners = null;
+      break;
+    }
+    for (const owner of from.owners) to.owners.add(owner);
+    from = from.parent;
+  }
+}
+
+function add_owner_to_object(object, owner, seen) {
+  const metadata = null == object ? void 0 : object[STATE_SYMBOL_METADATA];
+  if (metadata) {
+    if ("owners" in metadata && null != metadata.owners) metadata.owners.add(owner);
+  } else if (object && "object" == typeof object) {
+    if (seen.has(object)) return;
+    seen.add(object);
+    if (ADD_OWNER in object && object[ADD_OWNER]) render_effect((() => {
+      object[ADD_OWNER](owner);
+    })); else {
+      var proto = get_prototype_of(object);
+      if (proto === Object.prototype) for (const key in object) add_owner_to_object(object[key], owner, seen); else if (proto === Array.prototype) for (let i = 0; i < object.length; i += 1) add_owner_to_object(object[i], owner, seen);
+    }
+  }
+}
+
+function has_owner(metadata, component2) {
+  if (null === metadata.owners) return true; else return metadata.owners.has(component2) || null !== metadata.parent && has_owner(metadata.parent, component2);
+}
+
+function get_owner(metadata) {
+  var _a, _b;
+  return null != (_b = null == (_a = null == metadata ? void 0 : metadata.owners) ? void 0 : _a.values().next().value) ? _b : get_owner(metadata.parent);
+}
+
+var skip = false;
+
+function check_ownership(metadata) {
+  if (skip) return;
+  const component2 = get_component();
+  if (component2 && !has_owner(metadata, component2)) {
+    let original = get_owner(metadata);
+    if (original[FILENAME] !== component2[FILENAME]) ownership_invalid_mutation(component2[FILENAME], original[FILENAME]); else ownership_invalid_mutation();
+  }
+}
+
+function equals(value) {
+  return value === this.v;
 }
 
 function safe_not_equal(a, b) {
-  return a != a ? b == b : a !== b || a && "object" == typeof a || "function" == typeof a;
+  return a != a ? b == b : a !== b || null !== a && "object" == typeof a || "function" == typeof a;
 }
 
-function is_empty(obj) {
-  return 0 === Object.keys(obj).length;
+function safe_equals(value) {
+  return !safe_not_equal(value, this.v);
 }
 
-function subscribe(store, ...callbacks) {
-  if (null == store) {
-    for (const callback of callbacks) callback(void 0);
-    return noop;
-  }
-  const unsub = store.subscribe(...callbacks);
-  return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+function bind_invalid_checkbox_value() {
+  if (DEV) {
+    const error = new Error("bind_invalid_checkbox_value\nUsing `bind:value` together with a checkbox input is not allowed. Use `bind:checked` instead");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("bind_invalid_checkbox_value");
 }
 
-function component_subscribe(component, store, callback) {
-  component.$$.on_destroy.push(subscribe(store, callback));
+function derived_references_self() {
+  if (DEV) {
+    const error = new Error("derived_references_self\nA derived value cannot reference itself recursively");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("derived_references_self");
 }
 
-function create_slot(definition, ctx, $$scope, fn) {
-  if (definition) {
-    const slot_ctx = get_slot_context(definition, ctx, $$scope, fn);
-    return definition[0](slot_ctx);
-  }
+function effect_in_teardown(rune) {
+  if (DEV) {
+    const error = new Error(`effect_in_teardown\n\`${rune}\` cannot be used inside an effect cleanup function`);
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("effect_in_teardown");
 }
 
-function get_slot_context(definition, ctx, $$scope, fn) {
-  return definition[1] && fn ? assign($$scope.ctx.slice(), definition[1](fn(ctx))) : $$scope.ctx;
+function effect_in_unowned_derived() {
+  if (DEV) {
+    const error = new Error("effect_in_unowned_derived\nEffect cannot be created inside a `$derived` value that was not itself created inside an effect");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("effect_in_unowned_derived");
 }
 
-function get_slot_changes(definition, $$scope, dirty, fn) {
-  if (definition[2] && fn) {
-    const lets = definition[2](fn(dirty));
-    if (void 0 === $$scope.dirty) return lets;
-    if ("object" == typeof lets) {
-      const merged = [], len = Math.max($$scope.dirty.length, lets.length);
-      for (let i = 0; i < len; i += 1) merged[i] = $$scope.dirty[i] | lets[i];
-      return merged;
-    }
-    return $$scope.dirty | lets;
-  }
-  return $$scope.dirty;
+function effect_orphan(rune) {
+  if (DEV) {
+    const error = new Error(`effect_orphan\n\`${rune}\` can only be used inside an effect (e.g. during component initialisation)`);
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("effect_orphan");
 }
 
-function update_slot_base(slot, slot_definition, ctx, $$scope, slot_changes, get_slot_context_fn) {
-  if (slot_changes) {
-    const slot_context = get_slot_context(slot_definition, ctx, $$scope, get_slot_context_fn);
-    slot.p(slot_context, slot_changes);
-  }
+function effect_update_depth_exceeded() {
+  if (DEV) {
+    const error = new Error("effect_update_depth_exceeded\nMaximum update depth exceeded. This can happen when a reactive block or effect repeatedly sets a new value. Svelte limits the number of nested updates to prevent infinite loops");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("effect_update_depth_exceeded");
 }
 
-function get_all_dirty_from_scope($$scope) {
-  if ($$scope.ctx.length > 32) {
-    const dirty = [], length = $$scope.ctx.length / 32;
-    for (let i = 0; i < length; i++) dirty[i] = -1;
-    return dirty;
-  }
-  return -1;
+function hydration_failed() {
+  if (DEV) {
+    const error = new Error("hydration_failed\nFailed to hydrate the application");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("hydration_failed");
 }
 
-function null_to_empty(value) {
-  return null == value ? "" : value;
+function invalid_snippet() {
+  if (DEV) {
+    const error = new Error("invalid_snippet\nCould not `{@render}` snippet due to the expression being `null` or `undefined`. Consider using optional chaining `{@render snippet?.()}`");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("invalid_snippet");
 }
 
-var globals = "undefined" != typeof window ? window : "undefined" != typeof globalThis ? globalThis : global, ResizeObserverSingleton = class _ResizeObserverSingleton {
-  constructor(options) {
-    __publicField(this, "_listeners", "WeakMap" in globals ? new WeakMap : void 0);
-    __publicField(this, "_observer");
-    __publicField(this, "options");
-    this.options = options;
-  }
-  observe(element2, listener) {
-    this._listeners.set(element2, listener);
-    this._getObserver().observe(element2, this.options);
-    return () => {
-      this._listeners.delete(element2);
-      this._observer.unobserve(element2);
-    };
-  }
-  _getObserver() {
-    var _a;
-    return null != (_a = this._observer) ? _a : this._observer = new ResizeObserver((entries => {
-      var _a2;
-      for (const entry of entries) {
-        _ResizeObserverSingleton.entries.set(entry.target, entry);
-        null == (_a2 = this._listeners.get(entry.target)) || _a2(entry);
-      }
-    }));
-  }
-};
-
-ResizeObserverSingleton.entries = "WeakMap" in globals ? new WeakMap : void 0;
-
-var is_hydrating = false;
-
-function start_hydrating() {
-  is_hydrating = true;
+function props_invalid_value(key) {
+  if (DEV) {
+    const error = new Error(`props_invalid_value\nCannot do \`bind:${key}={undefined}\` when \`${key}\` has a fallback value`);
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("props_invalid_value");
 }
 
-function end_hydrating() {
-  is_hydrating = false;
+function rune_outside_svelte(rune) {
+  if (DEV) {
+    const error = new Error(`rune_outside_svelte\nThe \`${rune}\` rune is only available inside \`.svelte\` and \`.svelte.js/ts\` files`);
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("rune_outside_svelte");
 }
 
-function append(target, node) {
-  target.appendChild(node);
+function state_descriptors_fixed() {
+  if (DEV) {
+    const error = new Error("state_descriptors_fixed\nProperty descriptors defined on `$state` objects must contain `value` and always be `enumerable`, `configurable` and `writable`.");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("state_descriptors_fixed");
 }
 
-function append_styles(target, style_sheet_id, styles) {
-  const append_styles_to = get_root_for_style(target);
-  if (!append_styles_to.getElementById(style_sheet_id)) {
-    const style = element("style");
-    style.id = style_sheet_id;
-    style.textContent = styles;
-    append_stylesheet(append_styles_to, style);
-  }
+function state_prototype_fixed() {
+  if (DEV) {
+    const error = new Error("state_prototype_fixed\nCannot set prototype of `$state` object");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("state_prototype_fixed");
 }
 
-function get_root_for_style(node) {
-  if (!node) return document;
-  const root = node.getRootNode ? node.getRootNode() : node.ownerDocument;
-  if (root && root.host) return root; else return node.ownerDocument;
+function state_unsafe_local_read() {
+  if (DEV) {
+    const error = new Error("state_unsafe_local_read\nReading state that was created inside the same derived is forbidden. Consider using `untrack` to read locally created state");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("state_unsafe_local_read");
 }
 
-function append_stylesheet(node, style) {
-  append(node.head || node, style);
-  return style.sheet;
+function state_unsafe_mutation() {
+  if (DEV) {
+    const error = new Error("state_unsafe_mutation\nUpdating state inside a derived or a template expression is forbidden. If the value should not be reactive, declare it without `$state`");
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("state_unsafe_mutation");
 }
 
-function insert(target, node, anchor) {
-  target.insertBefore(node, anchor || null);
+var inspect_effects = new Set;
+
+function set_inspect_effects(v) {
+  inspect_effects = v;
 }
 
-function detach(node) {
-  if (node.parentNode) node.parentNode.removeChild(node);
-}
-
-function destroy_each(iterations, detaching) {
-  for (let i = 0; i < iterations.length; i += 1) if (iterations[i]) iterations[i].d(detaching);
-}
-
-function element(name) {
-  return document.createElement(name);
-}
-
-function svg_element(name) {
-  return document.createElementNS("http://www.w3.org/2000/svg", name);
-}
-
-function text(data) {
-  return document.createTextNode(data);
-}
-
-function space() {
-  return text(" ");
-}
-
-function empty() {
-  return text("");
-}
-
-function listen(node, event, handler, options) {
-  node.addEventListener(event, handler, options);
-  return () => node.removeEventListener(event, handler, options);
-}
-
-function stop_propagation(fn) {
-  return function(event) {
-    event.stopPropagation();
-    return fn.call(this, event);
+function source(v) {
+  return {
+    f: 0,
+    v,
+    reactions: null,
+    equals,
+    version: 0
   };
 }
 
-function attr(node, attribute, value) {
-  if (null == value) node.removeAttribute(attribute); else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
+function state(v) {
+  return push_derived_source(source(v));
 }
 
-function children(element2) {
-  return Array.from(element2.childNodes);
+function mutable_source(initial_value, immutable = false) {
+  var _a, _b;
+  const s = source(initial_value);
+  if (!immutable) s.equals = safe_equals;
+  if (null !== component_context && null !== component_context.l) (null != (_b = (_a = component_context.l).s) ? _b : _a.s = []).push(s);
+  return s;
 }
 
-function set_data(text2, data) {
-  data = "" + data;
-  if (text2.data !== data) text2.data = data;
+function push_derived_source(source2) {
+  if (null !== active_reaction && !!(active_reaction.f & DERIVED)) if (null === derived_sources) set_derived_sources([ source2 ]); else derived_sources.push(source2);
+  return source2;
 }
 
-function set_input_value(input, value) {
-  input.value = null == value ? "" : value;
+function set(source2, value) {
+  if (null !== active_reaction && is_runes() && !!(active_reaction.f & (DERIVED | BLOCK_EFFECT)) && (null === derived_sources || !derived_sources.includes(source2))) state_unsafe_mutation();
+  return internal_set(source2, value);
 }
 
-function set_style(node, key, value, important) {
-  if (null == value) node.style.removeProperty(key); else node.style.setProperty(key, value, important ? "important" : "");
-}
-
-function toggle_class(element2, name, toggle) {
-  element2.classList.toggle(name, !!toggle);
-}
-
-var current_component, HtmlTag = class {
-  constructor(is_svg = false) {
-    __publicField(this, "is_svg", false);
-    __publicField(this, "e");
-    __publicField(this, "n");
-    __publicField(this, "t");
-    __publicField(this, "a");
-    this.is_svg = is_svg;
-    this.e = this.n = null;
-  }
-  c(html) {
-    this.h(html);
-  }
-  m(html, target, anchor = null) {
-    if (!this.e) {
-      if (this.is_svg) this.e = svg_element(target.nodeName); else this.e = element(11 === target.nodeType ? "TEMPLATE" : target.nodeName);
-      this.t = "TEMPLATE" !== target.tagName ? target : target.content;
-      this.c(html);
+function internal_set(source2, value) {
+  if (!source2.equals(value)) {
+    source2.v = value;
+    source2.version = increment_version();
+    mark_reactions(source2, DIRTY);
+    if (is_runes() && null !== active_effect && !!(active_effect.f & CLEAN) && !(active_effect.f & BRANCH_EFFECT)) if (null !== new_deps && new_deps.includes(source2)) {
+      set_signal_status(active_effect, DIRTY);
+      schedule_effect(active_effect);
+    } else if (null === untracked_writes) set_untracked_writes([ source2 ]); else untracked_writes.push(source2);
+    if (DEV && inspect_effects.size > 0) {
+      const inspects = Array.from(inspect_effects);
+      var previously_flushing_effect = is_flushing_effect;
+      set_is_flushing_effect(true);
+      try {
+        for (const effect2 of inspects) {
+          if (!!(effect2.f & CLEAN)) set_signal_status(effect2, MAYBE_DIRTY);
+          if (check_dirtiness(effect2)) update_effect(effect2);
+        }
+      } finally {
+        set_is_flushing_effect(previously_flushing_effect);
+      }
+      inspect_effects.clear();
     }
-    this.i(anchor);
   }
-  h(html) {
-    this.e.innerHTML = html;
-    this.n = Array.from("TEMPLATE" === this.e.nodeName ? this.e.content.childNodes : this.e.childNodes);
-  }
-  i(anchor) {
-    for (let i = 0; i < this.n.length; i += 1) insert(this.t, this.n[i], anchor);
-  }
-  p(html) {
-    this.d();
-    this.h(html);
-    this.i(this.a);
-  }
-  d() {
-    this.n.forEach(detach);
-  }
-};
-
-function get_custom_elements_slots(element2) {
-  const result = {};
-  element2.childNodes.forEach((node => {
-    result[node.slot || "default"] = true;
-  }));
-  return result;
+  return value;
 }
 
-function set_current_component(component) {
-  current_component = component;
+function mark_reactions(signal, status) {
+  var reactions = signal.reactions;
+  if (null !== reactions) for (var runes = is_runes(), length = reactions.length, i = 0; i < length; i++) {
+    var reaction = reactions[i], flags = reaction.f;
+    if (!(flags & DIRTY)) if (runes || reaction !== active_effect) if (!(DEV && flags & INSPECT_EFFECT)) {
+      set_signal_status(reaction, status);
+      if (!!(flags & (CLEAN | UNOWNED))) if (!!(flags & DERIVED)) mark_reactions(reaction, MAYBE_DIRTY); else schedule_effect(reaction);
+    } else inspect_effects.add(reaction);
+  }
 }
 
-function get_current_component() {
-  if (!current_component) throw new Error("Function called outside component initialization");
-  return current_component;
+function derived(fn) {
+  var _a, flags = DERIVED | DIRTY;
+  if (null === active_effect) flags |= UNOWNED; else active_effect.f |= EFFECT_HAS_DERIVED;
+  const signal = {
+    children: null,
+    ctx: component_context,
+    deps: null,
+    equals,
+    f: flags,
+    fn,
+    reactions: null,
+    v: null,
+    version: 0,
+    parent: active_effect
+  };
+  if (null !== active_reaction && !!(active_reaction.f & DERIVED)) {
+    var derived3 = active_reaction;
+    (null != (_a = derived3.children) ? _a : derived3.children = []).push(signal);
+  }
+  return signal;
 }
 
-function onMount(fn) {
-  get_current_component().$$.on_mount.push(fn);
+function derived_safe_equal(fn) {
+  const signal = derived(fn);
+  signal.equals = safe_equals;
+  return signal;
 }
 
-function onDestroy(fn) {
-  get_current_component().$$.on_destroy.push(fn);
+function destroy_derived_children(derived3) {
+  var children = derived3.children;
+  if (null !== children) {
+    derived3.children = null;
+    for (var i = 0; i < children.length; i += 1) {
+      var child2 = children[i];
+      if (!!(child2.f & DERIVED)) destroy_derived(child2); else destroy_effect(child2);
+    }
+  }
 }
 
-function setContext(key, context) {
-  get_current_component().$$.context.set(key, context);
-  return context;
+var stack = [];
+
+function execute_derived(derived3) {
+  var value, prev_active_effect = active_effect;
+  set_active_effect(derived3.parent);
+  if (DEV) {
+    let prev_inspect_effects = inspect_effects;
+    set_inspect_effects(new Set);
+    try {
+      if (stack.includes(derived3)) derived_references_self();
+      stack.push(derived3);
+      destroy_derived_children(derived3);
+      value = update_reaction(derived3);
+    } finally {
+      set_active_effect(prev_active_effect);
+      set_inspect_effects(prev_inspect_effects);
+      stack.pop();
+    }
+  } else try {
+    destroy_derived_children(derived3);
+    value = update_reaction(derived3);
+  } finally {
+    set_active_effect(prev_active_effect);
+  }
+  return value;
+}
+
+function update_derived(derived3) {
+  var value = execute_derived(derived3);
+  set_signal_status(derived3, (skip_reaction || !!(derived3.f & UNOWNED)) && null !== derived3.deps ? MAYBE_DIRTY : CLEAN);
+  if (!derived3.equals(value)) {
+    derived3.v = value;
+    derived3.version = increment_version();
+  }
+}
+
+function destroy_derived(signal) {
+  destroy_derived_children(signal);
+  remove_reactions(signal, 0);
+  set_signal_status(signal, DESTROYED);
+  signal.v = signal.children = signal.deps = signal.ctx = signal.reactions = null;
+}
+
+function lifecycle_outside_component(name) {
+  if (DEV) {
+    const error = new Error(`lifecycle_outside_component\n\`${name}(...)\` can only be used during component initialisation`);
+    error.name = "Svelte error";
+    throw error;
+  } else throw new Error("lifecycle_outside_component");
+}
+
+var FLUSH_MICROTASK = 0, FLUSH_SYNC = 1, handled_errors = new WeakSet, scheduler_mode = FLUSH_MICROTASK, is_micro_task_queued2 = false, is_flushing_effect = false, is_destroying_effect = false;
+
+function set_is_flushing_effect(value) {
+  is_flushing_effect = value;
+}
+
+function set_is_destroying_effect(value) {
+  is_destroying_effect = value;
+}
+
+var queued_root_effects = [], flush_count = 0, dev_effect_stack = [], active_reaction = null;
+
+function set_active_reaction(reaction) {
+  active_reaction = reaction;
+}
+
+var active_effect = null;
+
+function set_active_effect(effect2) {
+  active_effect = effect2;
+}
+
+var derived_sources = null;
+
+function set_derived_sources(sources) {
+  derived_sources = sources;
+}
+
+var new_deps = null, skipped_deps = 0, untracked_writes = null;
+
+function set_untracked_writes(value) {
+  untracked_writes = value;
+}
+
+var current_version = 0, skip_reaction = false, is_signals_recorded = false, captured_signals = new Set, component_context = null, dev_current_component_function = null;
+
+function increment_version() {
+  return ++current_version;
+}
+
+function is_runes() {
+  return null !== component_context && null === component_context.l;
+}
+
+function check_dirtiness(reaction) {
+  var _a, _b, _c, _d, flags = reaction.f;
+  if (!!(flags & DIRTY)) return true;
+  if (!!(flags & MAYBE_DIRTY)) {
+    var dependencies = reaction.deps, is_unowned = !!(flags & UNOWNED);
+    if (null !== dependencies) {
+      var i;
+      if (!!(flags & DISCONNECTED)) {
+        for (i = 0; i < dependencies.length; i++) (null != (_b = (_a = dependencies[i]).reactions) ? _b : _a.reactions = []).push(reaction);
+        reaction.f ^= DISCONNECTED;
+      }
+      for (i = 0; i < dependencies.length; i++) {
+        var dependency = dependencies[i];
+        if (check_dirtiness(dependency)) update_derived(dependency);
+        if (is_unowned && null !== active_effect && !skip_reaction && !(null == (_c = null == dependency ? void 0 : dependency.reactions) ? void 0 : _c.includes(reaction))) (null != (_d = dependency.reactions) ? _d : dependency.reactions = []).push(reaction);
+        if (dependency.version > reaction.version) return true;
+      }
+    }
+    if (!is_unowned) set_signal_status(reaction, CLEAN);
+  }
+  return false;
+}
+
+function handle_error(error, effect2, component_context2) {
+  var _a, _b;
+  if (!DEV || handled_errors.has(error) || null === component_context2) throw error;
+  const component_stack = [], effect_name = null == (_a = effect2.fn) ? void 0 : _a.name;
+  if (effect_name) component_stack.push(effect_name);
+  let current_context = component_context2;
+  for (;null !== current_context; ) {
+    if (DEV) {
+      var filename = null == (_b = current_context.function) ? void 0 : _b[FILENAME];
+      if (filename) {
+        const file = filename.split("/").pop();
+        component_stack.push(file);
+      }
+    }
+    current_context = current_context.p;
+  }
+  const indent = /Firefox/.test(navigator.userAgent) ? "  " : "\t";
+  define_property(error, "message", {
+    value: error.message + `\n${component_stack.map((name => `\n${indent}in ${name}`)).join("")}\n`
+  });
+  const stack2 = error.stack;
+  if (stack2) {
+    const lines = stack2.split("\n"), new_lines = [];
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if (!line.includes("svelte/src/internal")) new_lines.push(line);
+    }
+    define_property(error, "stack", {
+      value: error.stack + new_lines.join("\n")
+    });
+  }
+  handled_errors.add(error);
+  throw error;
+}
+
+function update_reaction(reaction) {
+  var _a, _b, previous_deps = new_deps, previous_skipped_deps = skipped_deps, previous_untracked_writes = untracked_writes, previous_reaction = active_reaction, previous_skip_reaction = skip_reaction, prev_derived_sources = derived_sources, previous_component_context = component_context, flags = reaction.f;
+  new_deps = null;
+  skipped_deps = 0;
+  untracked_writes = null;
+  active_reaction = !(flags & (BRANCH_EFFECT | ROOT_EFFECT)) ? reaction : null;
+  skip_reaction = !is_flushing_effect && !!(flags & UNOWNED);
+  derived_sources = null;
+  component_context = reaction.ctx;
+  try {
+    var result = (0, reaction.fn)(), deps = reaction.deps;
+    if (null !== new_deps) {
+      var i;
+      remove_reactions(reaction, skipped_deps);
+      if (null !== deps && skipped_deps > 0) {
+        deps.length = skipped_deps + new_deps.length;
+        for (i = 0; i < new_deps.length; i++) deps[skipped_deps + i] = new_deps[i];
+      } else reaction.deps = deps = new_deps;
+      if (!skip_reaction) for (i = skipped_deps; i < deps.length; i++) (null != (_b = (_a = deps[i]).reactions) ? _b : _a.reactions = []).push(reaction);
+    } else if (null !== deps && skipped_deps < deps.length) {
+      remove_reactions(reaction, skipped_deps);
+      deps.length = skipped_deps;
+    }
+    return result;
+  } finally {
+    new_deps = previous_deps;
+    skipped_deps = previous_skipped_deps;
+    untracked_writes = previous_untracked_writes;
+    active_reaction = previous_reaction;
+    skip_reaction = previous_skip_reaction;
+    derived_sources = prev_derived_sources;
+    component_context = previous_component_context;
+  }
+}
+
+function remove_reaction(signal, dependency) {
+  let reactions = dependency.reactions;
+  if (null !== reactions) {
+    var index2 = reactions.indexOf(signal);
+    if (-1 !== index2) {
+      var new_length = reactions.length - 1;
+      if (0 === new_length) reactions = dependency.reactions = null; else {
+        reactions[index2] = reactions[new_length];
+        reactions.pop();
+      }
+    }
+  }
+  if (!(null !== reactions || !(dependency.f & DERIVED) || null !== new_deps && new_deps.includes(dependency))) {
+    set_signal_status(dependency, MAYBE_DIRTY);
+    if (!(dependency.f & (UNOWNED | DISCONNECTED))) dependency.f ^= DISCONNECTED;
+    remove_reactions(dependency, 0);
+  }
+}
+
+function remove_reactions(signal, start_index) {
+  var dependencies = signal.deps;
+  if (null !== dependencies) for (var i = start_index; i < dependencies.length; i++) remove_reaction(signal, dependencies[i]);
+}
+
+function update_effect(effect2) {
+  var flags = effect2.f;
+  if (!(flags & DESTROYED)) {
+    set_signal_status(effect2, CLEAN);
+    var previous_effect = active_effect, previous_component_context = component_context;
+    active_effect = effect2;
+    if (DEV) {
+      var previous_component_fn = dev_current_component_function;
+      dev_current_component_function = effect2.component_function;
+    }
+    try {
+      destroy_effect_deriveds(effect2);
+      if (!!(flags & BLOCK_EFFECT)) destroy_block_effect_children(effect2); else destroy_effect_children(effect2);
+      execute_effect_teardown(effect2);
+      var teardown2 = update_reaction(effect2);
+      effect2.teardown = "function" == typeof teardown2 ? teardown2 : null;
+      effect2.version = current_version;
+      if (DEV) dev_effect_stack.push(effect2);
+    } catch (error) {
+      handle_error(error, effect2, previous_component_context);
+    } finally {
+      active_effect = previous_effect;
+      if (DEV) dev_current_component_function = previous_component_fn;
+    }
+  }
+}
+
+function infinite_loop_guard() {
+  if (flush_count > 1e3) {
+    flush_count = 0;
+    if (DEV) try {
+      effect_update_depth_exceeded();
+    } catch (error) {
+      define_property(error, "stack", {
+        value: ""
+      });
+      console.error("Last ten effects were: ", dev_effect_stack.slice(-10).map((d => d.fn)));
+      dev_effect_stack = [];
+      throw error;
+    } else effect_update_depth_exceeded();
+  }
+  flush_count++;
+}
+
+function flush_queued_root_effects(root_effects) {
+  var length = root_effects.length;
+  if (0 !== length) {
+    infinite_loop_guard();
+    var previously_flushing_effect = is_flushing_effect;
+    is_flushing_effect = true;
+    try {
+      for (var i = 0; i < length; i++) {
+        var effect2 = root_effects[i];
+        if (!(effect2.f & CLEAN)) effect2.f ^= CLEAN;
+        var collected_effects = [];
+        process_effects(effect2, collected_effects);
+        flush_queued_effects(collected_effects);
+      }
+    } finally {
+      is_flushing_effect = previously_flushing_effect;
+    }
+  }
+}
+
+function flush_queued_effects(effects) {
+  var length = effects.length;
+  if (0 !== length) for (var i = 0; i < length; i++) {
+    var effect2 = effects[i];
+    if (!(effect2.f & (DESTROYED | INERT)) && check_dirtiness(effect2)) {
+      update_effect(effect2);
+      if (null === effect2.deps && null === effect2.first && null === effect2.nodes_start) if (null === effect2.teardown) unlink_effect(effect2); else effect2.fn = null;
+    }
+  }
+}
+
+function process_deferred() {
+  is_micro_task_queued2 = false;
+  if (flush_count > 1001) return;
+  const previous_queued_root_effects = queued_root_effects;
+  queued_root_effects = [];
+  flush_queued_root_effects(previous_queued_root_effects);
+  if (!is_micro_task_queued2) {
+    flush_count = 0;
+    if (DEV) dev_effect_stack = [];
+  }
+}
+
+function schedule_effect(signal) {
+  if (scheduler_mode === FLUSH_MICROTASK) if (!is_micro_task_queued2) {
+    is_micro_task_queued2 = true;
+    queueMicrotask(process_deferred);
+  }
+  for (var effect2 = signal; null !== effect2.parent; ) {
+    var flags = (effect2 = effect2.parent).f;
+    if (!!(flags & (ROOT_EFFECT | BRANCH_EFFECT))) {
+      if (!(flags & CLEAN)) return;
+      effect2.f ^= CLEAN;
+    }
+  }
+  queued_root_effects.push(effect2);
+}
+
+function process_effects(effect2, collected_effects) {
+  var current_effect = effect2.first, effects = [];
+  main_loop: for (;null !== current_effect; ) {
+    var flags = current_effect.f, is_branch = !!(flags & BRANCH_EFFECT);
+    if (!(is_branch && !!(flags & CLEAN) || flags & INERT)) if (!!(flags & RENDER_EFFECT)) {
+      if (is_branch) current_effect.f ^= CLEAN; else if (check_dirtiness(current_effect)) update_effect(current_effect);
+      var child2 = current_effect.first;
+      if (null !== child2) {
+        current_effect = child2;
+        continue;
+      }
+    } else if (!!(flags & EFFECT)) effects.push(current_effect);
+    var sibling2 = current_effect.next;
+    if (null === sibling2) {
+      let parent = current_effect.parent;
+      for (;null !== parent; ) {
+        if (effect2 === parent) break main_loop;
+        var parent_sibling = parent.next;
+        if (null !== parent_sibling) {
+          current_effect = parent_sibling;
+          continue main_loop;
+        }
+        parent = parent.parent;
+      }
+    }
+    current_effect = sibling2;
+  }
+  for (var i = 0; i < effects.length; i++) {
+    child2 = effects[i];
+    collected_effects.push(child2);
+    process_effects(child2, collected_effects);
+  }
+}
+
+function flush_sync(fn) {
+  var previous_scheduler_mode = scheduler_mode, previous_queued_root_effects = queued_root_effects;
+  try {
+    infinite_loop_guard();
+    const root_effects = [];
+    scheduler_mode = FLUSH_SYNC;
+    queued_root_effects = root_effects;
+    is_micro_task_queued2 = false;
+    flush_queued_root_effects(previous_queued_root_effects);
+    var result = null == fn ? void 0 : fn();
+    flush_tasks();
+    if (queued_root_effects.length > 0 || root_effects.length > 0) flush_sync();
+    flush_count = 0;
+    if (DEV) dev_effect_stack = [];
+    return result;
+  } finally {
+    scheduler_mode = previous_scheduler_mode;
+    queued_root_effects = previous_queued_root_effects;
+  }
+}
+
+function get(signal) {
+  var _a, _b, flags = signal.f, is_derived = !!(flags & DERIVED);
+  if (is_derived && !!(flags & DESTROYED)) {
+    var value = execute_derived(signal);
+    destroy_derived(signal);
+    return value;
+  }
+  if (is_signals_recorded) captured_signals.add(signal);
+  if (null !== active_reaction) {
+    if (null !== derived_sources && derived_sources.includes(signal)) state_unsafe_local_read();
+    var deps = active_reaction.deps;
+    if (null === new_deps && null !== deps && deps[skipped_deps] === signal) skipped_deps++; else if (null === new_deps) new_deps = [ signal ]; else new_deps.push(signal);
+    if (null !== untracked_writes && null !== active_effect && !!(active_effect.f & CLEAN) && !(active_effect.f & BRANCH_EFFECT) && untracked_writes.includes(signal)) {
+      set_signal_status(active_effect, DIRTY);
+      schedule_effect(active_effect);
+    }
+  } else if (is_derived && null === signal.deps) {
+    var derived3 = signal, parent = derived3.parent;
+    if (null !== parent && !(null == (_a = parent.deriveds) ? void 0 : _a.includes(derived3))) (null != (_b = parent.deriveds) ? _b : parent.deriveds = []).push(derived3);
+  }
+  if (is_derived) if (check_dirtiness(derived3 = signal)) update_derived(derived3);
+  return signal.v;
+}
+
+function untrack(fn) {
+  const previous_reaction = active_reaction;
+  try {
+    active_reaction = null;
+    return fn();
+  } finally {
+    active_reaction = previous_reaction;
+  }
+}
+
+var STATUS_MASK = ~(DIRTY | MAYBE_DIRTY | CLEAN);
+
+function set_signal_status(signal, status) {
+  signal.f = signal.f & STATUS_MASK | status;
 }
 
 function getContext(key) {
-  return get_current_component().$$.context.get(key);
+  const result = get_or_init_context_map("getContext").get(key);
+  if (DEV) {
+    const fn = component_context.function;
+    if (fn) add_owner(result, fn, true);
+  }
+  return result;
 }
 
-var dirty_components = [], binding_callbacks = [], render_callbacks = [], flush_callbacks = [], resolved_promise = Promise.resolve(), update_scheduled = false;
+function setContext(key, context) {
+  get_or_init_context_map("setContext").set(key, context);
+  return context;
+}
 
-function schedule_update() {
-  if (!update_scheduled) {
-    update_scheduled = true;
-    resolved_promise.then(flush);
+function get_or_init_context_map(name) {
+  var _a;
+  if (null === component_context) lifecycle_outside_component(name);
+  return null != (_a = component_context.c) ? _a : component_context.c = new Map(get_parent_context(component_context) || void 0);
+}
+
+function get_parent_context(component_context2) {
+  let parent = component_context2.p;
+  for (;null !== parent; ) {
+    const context_map = parent.c;
+    if (null !== context_map) return context_map;
+    parent = parent.p;
+  }
+  return null;
+}
+
+function push(props, runes = false, fn) {
+  component_context = {
+    p: component_context,
+    c: null,
+    e: null,
+    m: false,
+    s: props,
+    x: null,
+    l: null
+  };
+  if (!runes) component_context.l = {
+    s: null,
+    u: null,
+    r1: [],
+    r2: source(false)
+  };
+  if (DEV) {
+    component_context.function = fn;
+    dev_current_component_function = fn;
   }
 }
 
-function tick() {
-  schedule_update();
-  return resolved_promise;
+function pop(component2) {
+  var _a, _b;
+  const context_stack_item = component_context;
+  if (null !== context_stack_item) {
+    if (void 0 !== component2) context_stack_item.x = component2;
+    const component_effects = context_stack_item.e;
+    if (null !== component_effects) {
+      var previous_effect = active_effect, previous_reaction = active_reaction;
+      context_stack_item.e = null;
+      try {
+        for (var i = 0; i < component_effects.length; i++) {
+          var component_effect = component_effects[i];
+          set_active_effect(component_effect.effect);
+          set_active_reaction(component_effect.reaction);
+          effect(component_effect.fn);
+        }
+      } finally {
+        set_active_effect(previous_effect);
+        set_active_reaction(previous_reaction);
+      }
+    }
+    component_context = context_stack_item.p;
+    if (DEV) dev_current_component_function = null != (_b = null == (_a = context_stack_item.p) ? void 0 : _a.function) ? _b : null;
+    context_stack_item.m = true;
+  }
+  return component2 || {};
 }
 
-function add_render_callback(fn) {
-  render_callbacks.push(fn);
+if (DEV) {
+  let throw_rune_error = function(rune) {
+    if (!(rune in globalThis)) {
+      let value;
+      Object.defineProperty(globalThis, rune, {
+        configurable: true,
+        get: () => {
+          if (void 0 !== value) return value;
+          rune_outside_svelte(rune);
+        },
+        set: v => {
+          value = v;
+        }
+      });
+    }
+  };
+  throw_rune_error("$state");
+  throw_rune_error("$effect");
+  throw_rune_error("$derived");
+  throw_rune_error("$inspect");
+  throw_rune_error("$props");
+  throw_rune_error("$bindable");
 }
 
-function add_flush_callback(fn) {
-  flush_callbacks.push(fn);
+var hydrate_node, $window, $document, first_child_getter, next_sibling_getter, hydrating = false;
+
+function set_hydrating(value) {
+  hydrating = value;
 }
 
-var seen_callbacks = new Set, flushidx = 0;
+function set_hydrate_node(node) {
+  if (null === node) {
+    hydration_mismatch();
+    throw HYDRATION_ERROR;
+  }
+  return hydrate_node = node;
+}
 
-function flush() {
-  if (0 !== flushidx) return;
-  const saved_component = current_component;
-  do {
+function hydrate_next() {
+  return set_hydrate_node(get_next_sibling(hydrate_node));
+}
+
+function reset(node) {
+  if (hydrating) {
+    if (null !== get_next_sibling(hydrate_node)) {
+      hydration_mismatch();
+      throw HYDRATION_ERROR;
+    }
+    hydrate_node = node;
+  }
+}
+
+function next(count = 1) {
+  if (hydrating) {
+    for (var i = count, node = hydrate_node; i--; ) node = get_next_sibling(node);
+    hydrate_node = node;
+  }
+}
+
+function remove_nodes() {
+  for (var depth = 0, node = hydrate_node; ;) {
+    if (8 === node.nodeType) {
+      var data = node.data;
+      if (data === HYDRATION_END) {
+        if (0 === depth) return node;
+        depth -= 1;
+      } else if (data === HYDRATION_START || data === HYDRATION_START_ELSE) depth += 1;
+    }
+    var next2 = get_next_sibling(node);
+    node.remove();
+    node = next2;
+  }
+}
+
+function proxy(value, parent = null, prev) {
+  var _a, _b;
+  if ("object" != typeof value || null === value || STATE_SYMBOL in value) return value;
+  const prototype = get_prototype_of(value);
+  if (prototype !== object_prototype && prototype !== array_prototype) return value;
+  var metadata, sources = new Map, is_proxied_array = is_array(value), version = source(0);
+  if (is_proxied_array) sources.set("length", source(value.length));
+  if (DEV) {
+    metadata = {
+      parent,
+      owners: null
+    };
+    if (prev) {
+      const prev_owners = null == (_b = null == (_a = prev.v) ? void 0 : _a[STATE_SYMBOL_METADATA]) ? void 0 : _b.owners;
+      metadata.owners = prev_owners ? new Set(prev_owners) : null;
+    } else metadata.owners = null === parent ? null !== component_context ? new Set([ component_context.function ]) : null : new Set;
+  }
+  return new Proxy(value, {
+    defineProperty(_, prop2, descriptor) {
+      if (!("value" in descriptor) || false === descriptor.configurable || false === descriptor.enumerable || false === descriptor.writable) state_descriptors_fixed();
+      var s = sources.get(prop2);
+      if (void 0 === s) {
+        s = source(descriptor.value);
+        sources.set(prop2, s);
+      } else set(s, proxy(descriptor.value, metadata));
+      return true;
+    },
+    deleteProperty(target, prop2) {
+      var s = sources.get(prop2);
+      if (void 0 === s) {
+        if (prop2 in target) sources.set(prop2, source(UNINITIALIZED));
+      } else {
+        if (is_proxied_array && "string" == typeof prop2) {
+          var ls = sources.get("length"), n = Number(prop2);
+          if (Number.isInteger(n) && n < ls.v) set(ls, n);
+        }
+        set(s, UNINITIALIZED);
+        update_version(version);
+      }
+      return true;
+    },
+    get(target, prop2, receiver) {
+      var _a2;
+      if (DEV && prop2 === STATE_SYMBOL_METADATA) return metadata;
+      if (prop2 === STATE_SYMBOL) return value;
+      var s = sources.get(prop2), exists = prop2 in target;
+      if (void 0 === s && (!exists || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable))) {
+        s = source(proxy(exists ? target[prop2] : UNINITIALIZED, metadata));
+        sources.set(prop2, s);
+      }
+      if (void 0 !== s) {
+        var v = get(s);
+        if (DEV) {
+          var prop_metadata = null == v ? void 0 : v[STATE_SYMBOL_METADATA];
+          if (prop_metadata && (null == prop_metadata ? void 0 : prop_metadata.parent) !== metadata) widen_ownership(metadata, prop_metadata);
+        }
+        return v === UNINITIALIZED ? void 0 : v;
+      }
+      return Reflect.get(target, prop2, receiver);
+    },
+    getOwnPropertyDescriptor(target, prop2) {
+      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+      if (descriptor && "value" in descriptor) {
+        var s = sources.get(prop2);
+        if (s) descriptor.value = get(s);
+      } else if (void 0 === descriptor) {
+        var source2 = sources.get(prop2), value2 = null == source2 ? void 0 : source2.v;
+        if (void 0 !== source2 && value2 !== UNINITIALIZED) return {
+          enumerable: true,
+          configurable: true,
+          value: value2,
+          writable: true
+        };
+      }
+      return descriptor;
+    },
+    has(target, prop2) {
+      var _a2;
+      if (DEV && prop2 === STATE_SYMBOL_METADATA) return true;
+      if (prop2 === STATE_SYMBOL) return true;
+      var s = sources.get(prop2), has = void 0 !== s && s.v !== UNINITIALIZED || Reflect.has(target, prop2);
+      if (void 0 !== s || null !== active_effect && (!has || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable))) {
+        if (void 0 === s) {
+          s = source(has ? proxy(target[prop2], metadata) : UNINITIALIZED);
+          sources.set(prop2, s);
+        }
+        if (get(s) === UNINITIALIZED) return false;
+      }
+      return has;
+    },
+    set(target, prop2, value2, receiver) {
+      var _a2, s = sources.get(prop2), has = prop2 in target;
+      if (is_proxied_array && "length" === prop2) for (var i = value2; i < s.v; i += 1) {
+        var other_s = sources.get(i + "");
+        if (void 0 !== other_s) set(other_s, UNINITIALIZED); else if (i in target) {
+          other_s = source(UNINITIALIZED);
+          sources.set(i + "", other_s);
+        }
+      }
+      if (void 0 === s) {
+        if (!has || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable)) {
+          set(s = source(void 0), proxy(value2, metadata));
+          sources.set(prop2, s);
+        }
+      } else {
+        has = s.v !== UNINITIALIZED;
+        set(s, proxy(value2, metadata));
+      }
+      if (DEV) {
+        var prop_metadata = null == value2 ? void 0 : value2[STATE_SYMBOL_METADATA];
+        if (prop_metadata && (null == prop_metadata ? void 0 : prop_metadata.parent) !== metadata) widen_ownership(metadata, prop_metadata);
+        check_ownership(metadata);
+      }
+      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+      if (null == descriptor ? void 0 : descriptor.set) descriptor.set.call(receiver, value2);
+      if (!has) {
+        if (is_proxied_array && "string" == typeof prop2) {
+          var ls = sources.get("length"), n = Number(prop2);
+          if (Number.isInteger(n) && n >= ls.v) set(ls, n + 1);
+        }
+        update_version(version);
+      }
+      return true;
+    },
+    ownKeys(target) {
+      get(version);
+      var own_keys = Reflect.ownKeys(target).filter((key2 => {
+        var source3 = sources.get(key2);
+        return void 0 === source3 || source3.v !== UNINITIALIZED;
+      }));
+      for (var [key, source2] of sources) if (source2.v !== UNINITIALIZED && !(key in target)) own_keys.push(key);
+      return own_keys;
+    },
+    setPrototypeOf() {
+      state_prototype_fixed();
+    }
+  });
+}
+
+function update_version(signal, d = 1) {
+  set(signal, signal.v + d);
+}
+
+function get_proxied_value(value) {
+  if (null !== value && "object" == typeof value && STATE_SYMBOL in value) return value[STATE_SYMBOL]; else return value;
+}
+
+function init_array_prototype_warnings() {
+  const array_prototype2 = Array.prototype, cleanup = Array.__svelte_cleanup;
+  if (cleanup) cleanup();
+  const {indexOf, lastIndexOf, includes} = array_prototype2;
+  array_prototype2.indexOf = function(item, from_index) {
+    const index2 = indexOf.call(this, item, from_index);
+    if (-1 === index2) if (-1 !== indexOf.call(get_proxied_value(this), get_proxied_value(item), from_index)) state_proxy_equality_mismatch("array.indexOf(...)");
+    return index2;
+  };
+  array_prototype2.lastIndexOf = function(item, from_index) {
+    const index2 = lastIndexOf.call(this, item, null != from_index ? from_index : this.length - 1);
+    if (-1 === index2) if (-1 !== lastIndexOf.call(get_proxied_value(this), get_proxied_value(item), null != from_index ? from_index : this.length - 1)) state_proxy_equality_mismatch("array.lastIndexOf(...)");
+    return index2;
+  };
+  array_prototype2.includes = function(item, from_index) {
+    const has = includes.call(this, item, from_index);
+    if (!has) if (includes.call(get_proxied_value(this), get_proxied_value(item), from_index)) state_proxy_equality_mismatch("array.includes(...)");
+    return has;
+  };
+  Array.__svelte_cleanup = () => {
+    array_prototype2.indexOf = indexOf;
+    array_prototype2.lastIndexOf = lastIndexOf;
+    array_prototype2.includes = includes;
+  };
+}
+
+function init_operations() {
+  if (void 0 === $window) {
+    $window = window;
+    $document = document;
+    var element_prototype = Element.prototype, node_prototype = Node.prototype;
+    first_child_getter = get_descriptor(node_prototype, "firstChild").get;
+    next_sibling_getter = get_descriptor(node_prototype, "nextSibling").get;
+    element_prototype.__click = void 0;
+    element_prototype.__className = "";
+    element_prototype.__attributes = null;
+    element_prototype.__styles = null;
+    element_prototype.__e = void 0;
+    Text.prototype.__t = void 0;
+    if (DEV) {
+      element_prototype.__svelte_meta = null;
+      init_array_prototype_warnings();
+    }
+  }
+}
+
+function create_text(value = "") {
+  return document.createTextNode(value);
+}
+
+function get_first_child(node) {
+  return first_child_getter.call(node);
+}
+
+function get_next_sibling(node) {
+  return next_sibling_getter.call(node);
+}
+
+function child(node, is_text) {
+  if (!hydrating) return get_first_child(node);
+  var child2 = get_first_child(hydrate_node);
+  if (null === child2) child2 = hydrate_node.appendChild(create_text()); else if (is_text && 3 !== child2.nodeType) {
+    var text2 = create_text();
+    null == child2 || child2.before(text2);
+    set_hydrate_node(text2);
+    return text2;
+  }
+  set_hydrate_node(child2);
+  return child2;
+}
+
+function first_child(fragment, is_text) {
+  var _a, _b;
+  if (!hydrating) {
+    var first = get_first_child(fragment);
+    if (first instanceof Comment && "" === first.data) return get_next_sibling(first); else return first;
+  }
+  if (is_text && 3 !== (null == (_a = hydrate_node) ? void 0 : _a.nodeType)) {
+    var text2 = create_text();
+    null == (_b = hydrate_node) || _b.before(text2);
+    set_hydrate_node(text2);
+    return text2;
+  }
+  return hydrate_node;
+}
+
+function sibling(node, count = 1, is_text = false) {
+  let next_sibling = hydrating ? hydrate_node : node;
+  for (;count--; ) next_sibling = get_next_sibling(next_sibling);
+  if (!hydrating) return next_sibling;
+  var type = next_sibling.nodeType;
+  if (is_text && 3 !== type) {
+    var text2 = create_text();
+    null == next_sibling || next_sibling.before(text2);
+    set_hydrate_node(text2);
+    return text2;
+  }
+  set_hydrate_node(next_sibling);
+  return next_sibling;
+}
+
+function clear_text_content(node) {
+  node.textContent = "";
+}
+
+function validate_effect(rune) {
+  if (null === active_effect && null === active_reaction) effect_orphan(rune);
+  if (null !== active_reaction && !!(active_reaction.f & UNOWNED)) effect_in_unowned_derived();
+  if (is_destroying_effect) effect_in_teardown(rune);
+}
+
+function push_effect(effect2, parent_effect) {
+  var parent_last = parent_effect.last;
+  if (null === parent_last) parent_effect.last = parent_effect.first = effect2; else {
+    parent_last.next = effect2;
+    effect2.prev = parent_last;
+    parent_effect.last = effect2;
+  }
+}
+
+function create_effect(type, fn, sync, push2 = true) {
+  var _a, is_root = !!(type & ROOT_EFFECT), parent_effect = active_effect;
+  if (DEV) for (;null !== parent_effect && !!(parent_effect.f & INSPECT_EFFECT); ) parent_effect = parent_effect.parent;
+  var effect2 = {
+    ctx: component_context,
+    deps: null,
+    deriveds: null,
+    nodes_start: null,
+    nodes_end: null,
+    f: type | DIRTY,
+    first: null,
+    fn,
+    last: null,
+    next: null,
+    parent: is_root ? null : parent_effect,
+    prev: null,
+    teardown: null,
+    transitions: null,
+    version: 0
+  };
+  if (DEV) effect2.component_function = dev_current_component_function;
+  if (sync) {
+    var previously_flushing_effect = is_flushing_effect;
     try {
-      for (;flushidx < dirty_components.length; ) {
-        const component = dirty_components[flushidx];
-        flushidx++;
-        set_current_component(component);
-        update(component.$$);
-      }
+      set_is_flushing_effect(true);
+      update_effect(effect2);
+      effect2.f |= EFFECT_RAN;
     } catch (e) {
-      dirty_components.length = 0;
-      flushidx = 0;
+      destroy_effect(effect2);
       throw e;
+    } finally {
+      set_is_flushing_effect(previously_flushing_effect);
     }
-    set_current_component(null);
-    dirty_components.length = 0;
-    flushidx = 0;
-    for (;binding_callbacks.length; ) binding_callbacks.pop()();
-    for (let i = 0; i < render_callbacks.length; i += 1) {
-      const callback = render_callbacks[i];
-      if (!seen_callbacks.has(callback)) {
-        seen_callbacks.add(callback);
-        callback();
-      }
+  } else if (null !== fn) schedule_effect(effect2);
+  if (!(sync && null === effect2.deps && null === effect2.first && null === effect2.nodes_start && null === effect2.teardown && !(effect2.f & EFFECT_HAS_DERIVED)) && !is_root && push2) {
+    if (null !== parent_effect) push_effect(effect2, parent_effect);
+    if (null !== active_reaction && !!(active_reaction.f & DERIVED)) {
+      var derived3 = active_reaction;
+      (null != (_a = derived3.children) ? _a : derived3.children = []).push(effect2);
     }
-    render_callbacks.length = 0;
-  } while (dirty_components.length);
-  for (;flush_callbacks.length; ) flush_callbacks.pop()();
-  update_scheduled = false;
-  seen_callbacks.clear();
-  set_current_component(saved_component);
-}
-
-function update($$) {
-  if (null !== $$.fragment) {
-    $$.update();
-    run_all($$.before_update);
-    const dirty = $$.dirty;
-    $$.dirty = [ -1 ];
-    $$.fragment && $$.fragment.p($$.ctx, dirty);
-    $$.after_update.forEach(add_render_callback);
   }
+  return effect2;
 }
 
-function flush_render_callbacks(fns) {
-  const filtered = [], targets = [];
-  render_callbacks.forEach((c => -1 === fns.indexOf(c) ? filtered.push(c) : targets.push(c)));
-  targets.forEach((c => c()));
-  render_callbacks = filtered;
+function teardown(fn) {
+  const effect2 = create_effect(RENDER_EFFECT, null, false);
+  set_signal_status(effect2, CLEAN);
+  effect2.teardown = fn;
+  return effect2;
 }
 
-var outros, outroing = new Set;
+function user_effect(fn) {
+  var _a;
+  validate_effect("$effect");
+  var defer = null !== active_effect && !!(active_effect.f & BRANCH_EFFECT) && null !== component_context && !component_context.m;
+  if (DEV) define_property(fn, "name", {
+    value: "$effect"
+  });
+  if (defer) {
+    var context = component_context;
+    (null != (_a = context.e) ? _a : context.e = []).push({
+      fn,
+      effect: active_effect,
+      reaction: active_reaction
+    });
+  } else return effect(fn);
+}
 
-function group_outros() {
-  outros = {
-    r: 0,
-    c: [],
-    p: outros
+function effect_root(fn) {
+  const effect2 = create_effect(ROOT_EFFECT, fn, true);
+  return () => {
+    destroy_effect(effect2);
   };
 }
 
-function check_outros() {
-  if (!outros.r) run_all(outros.c);
-  outros = outros.p;
+function effect(fn) {
+  return create_effect(EFFECT, fn, false);
 }
 
-function transition_in(block, local) {
-  if (block && block.i) {
-    outroing.delete(block);
-    block.i(local);
+function render_effect(fn) {
+  return create_effect(RENDER_EFFECT, fn, true);
+}
+
+function template_effect(fn) {
+  if (DEV) define_property(fn, "name", {
+    value: "{expression}"
+  });
+  return block(fn);
+}
+
+function block(fn, flags = 0) {
+  return create_effect(RENDER_EFFECT | BLOCK_EFFECT | flags, fn, true);
+}
+
+function branch(fn, push2 = true) {
+  return create_effect(RENDER_EFFECT | BRANCH_EFFECT, fn, true, push2);
+}
+
+function execute_effect_teardown(effect2) {
+  var teardown2 = effect2.teardown;
+  if (null !== teardown2) {
+    const previously_destroying_effect = is_destroying_effect, previous_reaction = active_reaction;
+    set_is_destroying_effect(true);
+    set_active_reaction(null);
+    try {
+      teardown2.call(null);
+    } finally {
+      set_is_destroying_effect(previously_destroying_effect);
+      set_active_reaction(previous_reaction);
+    }
   }
 }
 
-function transition_out(block, local, detach2, callback) {
-  if (block && block.o) {
-    if (outroing.has(block)) return;
-    outroing.add(block);
-    outros.c.push((() => {
-      outroing.delete(block);
-      if (callback) {
-        if (detach2) block.d(1);
-        callback();
-      }
-    }));
-    block.o(local);
-  } else if (callback) callback();
-}
-
-function ensure_array_like(array_like_or_iterator) {
-  return void 0 !== (null == array_like_or_iterator ? void 0 : array_like_or_iterator.length) ? array_like_or_iterator : Array.from(array_like_or_iterator);
-}
-
-var SvelteElement, _boolean_attributes = [ "allowfullscreen", "allowpaymentrequest", "async", "autofocus", "autoplay", "checked", "controls", "default", "defer", "disabled", "formnovalidate", "hidden", "inert", "ismap", "loop", "multiple", "muted", "nomodule", "novalidate", "open", "playsinline", "readonly", "required", "reversed", "selected" ], boolean_attributes = new Set([ ..._boolean_attributes ]);
-
-function bind(component, name, callback) {
-  const index = component.$$.props[name];
-  if (void 0 !== index) {
-    component.$$.bound[index] = callback;
-    callback(component.$$.ctx[index]);
+function destroy_effect_deriveds(signal) {
+  var deriveds = signal.deriveds;
+  if (null !== deriveds) {
+    signal.deriveds = null;
+    for (var i = 0; i < deriveds.length; i += 1) destroy_derived(deriveds[i]);
   }
 }
 
-function create_component(block) {
-  block && block.c();
+function destroy_effect_children(signal, remove_dom = false) {
+  var effect2 = signal.first;
+  signal.first = signal.last = null;
+  for (;null !== effect2; ) {
+    var next2 = effect2.next;
+    destroy_effect(effect2, remove_dom);
+    effect2 = next2;
+  }
 }
 
-function mount_component(component, target, anchor) {
-  const {fragment, after_update} = component.$$;
-  fragment && fragment.m(target, anchor);
-  add_render_callback((() => {
-    const new_on_destroy = component.$$.on_mount.map(run).filter(is_function);
-    if (component.$$.on_destroy) component.$$.on_destroy.push(...new_on_destroy); else run_all(new_on_destroy);
-    component.$$.on_mount = [];
+function destroy_block_effect_children(signal) {
+  for (var effect2 = signal.first; null !== effect2; ) {
+    var next2 = effect2.next;
+    if (!(effect2.f & BRANCH_EFFECT)) destroy_effect(effect2);
+    effect2 = next2;
+  }
+}
+
+function destroy_effect(effect2, remove_dom = true) {
+  var removed = false;
+  if ((remove_dom || !!(effect2.f & HEAD_EFFECT)) && null !== effect2.nodes_start) {
+    for (var node = effect2.nodes_start, end = effect2.nodes_end; null !== node; ) {
+      var next2 = node === end ? null : get_next_sibling(node);
+      node.remove();
+      node = next2;
+    }
+    removed = true;
+  }
+  destroy_effect_deriveds(effect2);
+  destroy_effect_children(effect2, remove_dom && !removed);
+  remove_reactions(effect2, 0);
+  set_signal_status(effect2, DESTROYED);
+  var transitions = effect2.transitions;
+  if (null !== transitions) for (const transition2 of transitions) transition2.stop();
+  execute_effect_teardown(effect2);
+  var parent = effect2.parent;
+  if (null !== parent && null !== parent.first) unlink_effect(effect2);
+  if (DEV) effect2.component_function = null;
+  effect2.next = effect2.prev = effect2.teardown = effect2.ctx = effect2.deps = effect2.parent = effect2.fn = effect2.nodes_start = effect2.nodes_end = null;
+}
+
+function unlink_effect(effect2) {
+  var parent = effect2.parent, prev = effect2.prev, next2 = effect2.next;
+  if (null !== prev) prev.next = next2;
+  if (null !== next2) next2.prev = prev;
+  if (null !== parent) {
+    if (parent.first === effect2) parent.first = next2;
+    if (parent.last === effect2) parent.last = prev;
+  }
+}
+
+function pause_effect(effect2, callback) {
+  var transitions = [];
+  pause_children(effect2, transitions, true);
+  run_out_transitions(transitions, (() => {
+    destroy_effect(effect2);
+    if (callback) callback();
   }));
-  after_update.forEach(add_render_callback);
 }
 
-function destroy_component(component, detaching) {
-  const $$ = component.$$;
-  if (null !== $$.fragment) {
-    flush_render_callbacks($$.after_update);
-    run_all($$.on_destroy);
-    $$.fragment && $$.fragment.d(detaching);
-    $$.on_destroy = $$.fragment = null;
-    $$.ctx = [];
-  }
+function run_out_transitions(transitions, fn) {
+  var remaining = transitions.length;
+  if (remaining > 0) {
+    var check = () => --remaining || fn();
+    for (var transition2 of transitions) transition2.out(check);
+  } else fn();
 }
 
-function make_dirty(component, i) {
-  if (-1 === component.$$.dirty[0]) {
-    dirty_components.push(component);
-    schedule_update();
-    component.$$.dirty.fill(0);
-  }
-  component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
-}
-
-function init(component, options, instance7, create_fragment7, not_equal, props, append_styles2 = null, dirty = [ -1 ]) {
-  const parent_component = current_component;
-  set_current_component(component);
-  const $$ = component.$$ = {
-    fragment: null,
-    ctx: [],
-    props,
-    update: noop,
-    not_equal,
-    bound: blank_object(),
-    on_mount: [],
-    on_destroy: [],
-    on_disconnect: [],
-    before_update: [],
-    after_update: [],
-    context: new Map(options.context || (parent_component ? parent_component.$$.context : [])),
-    callbacks: blank_object(),
-    dirty,
-    skip_bound: false,
-    root: options.target || parent_component.$$.root
-  };
-  append_styles2 && append_styles2($$.root);
-  let ready = false;
-  $$.ctx = instance7 ? instance7(component, options.props || {}, ((i, ret, ...rest) => {
-    const value = rest.length ? rest[0] : ret;
-    if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
-      if (!$$.skip_bound && $$.bound[i]) $$.bound[i](value);
-      if (ready) make_dirty(component, i);
+function pause_children(effect2, transitions, local) {
+  if (!(effect2.f & INERT)) {
+    effect2.f ^= INERT;
+    if (null !== effect2.transitions) for (const transition2 of effect2.transitions) if (transition2.is_global || local) transitions.push(transition2);
+    for (var child2 = effect2.first; null !== child2; ) {
+      var sibling2 = child2.next;
+      pause_children(child2, transitions, !!(child2.f & EFFECT_TRANSPARENT) || !!(child2.f & BRANCH_EFFECT) ? local : false);
+      child2 = sibling2;
     }
-    return ret;
-  })) : [];
-  $$.update();
-  ready = true;
-  run_all($$.before_update);
-  $$.fragment = create_fragment7 ? create_fragment7($$.ctx) : false;
-  if (options.target) {
-    if (options.hydrate) {
-      start_hydrating();
-      const nodes = children(options.target);
-      $$.fragment && $$.fragment.l(nodes);
-      nodes.forEach(detach);
-    } else $$.fragment && $$.fragment.c();
-    if (options.intro) transition_in(component.$$.fragment);
-    mount_component(component, options.target, options.anchor);
-    end_hydrating();
-    flush();
   }
-  set_current_component(parent_component);
 }
+
+function resume_effect(effect2) {
+  resume_children(effect2, true);
+}
+
+function resume_children(effect2, local) {
+  if (effect2.f & INERT) {
+    effect2.f ^= INERT;
+    if (check_dirtiness(effect2)) update_effect(effect2);
+    for (var child2 = effect2.first; null !== child2; ) {
+      var sibling2 = child2.next;
+      resume_children(child2, !!(child2.f & EFFECT_TRANSPARENT) || !!(child2.f & BRANCH_EFFECT) ? local : false);
+      child2 = sibling2;
+    }
+    if (null !== effect2.transitions) for (const transition2 of effect2.transitions) if (transition2.is_global || local) transition2.in();
+  }
+}
+
+var all_styles = new Map;
+
+function register_style(hash2, style) {
+  var styles = all_styles.get(hash2);
+  if (!styles) {
+    styles = new Set;
+    all_styles.set(hash2, styles);
+  }
+  styles.add(style);
+}
+
+var head_anchor, all_registered_events = new Set, root_event_handles = new Set;
+
+function create_event(event_name, dom, handler, options) {
+  function target_handler(event2) {
+    if (!options.capture) handle_event_propagation.call(dom, event2);
+    if (!event2.cancelBubble) {
+      var previous_reaction = active_reaction, previous_effect = active_effect;
+      set_active_reaction(null);
+      set_active_effect(null);
+      try {
+        return handler.call(this, event2);
+      } finally {
+        set_active_reaction(previous_reaction);
+        set_active_effect(previous_effect);
+      }
+    }
+  }
+  if (event_name.startsWith("pointer") || event_name.startsWith("touch") || "wheel" === event_name) queue_micro_task((() => {
+    dom.addEventListener(event_name, target_handler, options);
+  })); else dom.addEventListener(event_name, target_handler, options);
+  return target_handler;
+}
+
+function event(event_name, dom, handler, capture, passive2) {
+  var options = {
+    capture,
+    passive: passive2
+  }, target_handler = create_event(event_name, dom, handler, options);
+  if (dom === document.body || dom === window || dom === document) teardown((() => {
+    dom.removeEventListener(event_name, target_handler, options);
+  }));
+}
+
+function delegate(events) {
+  for (var i = 0; i < events.length; i++) all_registered_events.add(events[i]);
+  for (var fn of root_event_handles) fn(events);
+}
+
+function handle_event_propagation(event2) {
+  var _a, owner_document = this.ownerDocument, event_name = event2.type, path = (null == (_a = event2.composedPath) ? void 0 : _a.call(event2)) || [], current_target = path[0] || event2.target, path_idx = 0, handled_at = event2.__root;
+  if (handled_at) {
+    var at_idx = path.indexOf(handled_at);
+    if (-1 !== at_idx && (this === document || this === window)) {
+      event2.__root = this;
+      return;
+    }
+    var handler_idx = path.indexOf(this);
+    if (-1 === handler_idx) return;
+    if (at_idx <= handler_idx) path_idx = at_idx;
+  }
+  if ((current_target = path[path_idx] || event2.target) !== this) {
+    define_property(event2, "currentTarget", {
+      configurable: true,
+      get: () => current_target || owner_document
+    });
+    var previous_reaction = active_reaction, previous_effect = active_effect;
+    set_active_reaction(null);
+    set_active_effect(null);
+    try {
+      for (var throw_error, other_errors = []; null !== current_target; ) {
+        var parent_element = current_target.assignedSlot || current_target.parentNode || current_target.host || null;
+        try {
+          var delegated = current_target["__" + event_name];
+          if (void 0 !== delegated && !current_target.disabled) if (is_array(delegated)) {
+            var [fn, ...data] = delegated;
+            fn.apply(current_target, [ event2, ...data ]);
+          } else delegated.call(current_target, event2);
+        } catch (error) {
+          if (throw_error) other_errors.push(error); else throw_error = error;
+        }
+        if (event2.cancelBubble || parent_element === this || null === parent_element) break;
+        current_target = parent_element;
+      }
+      if (throw_error) {
+        for (let error of other_errors) queueMicrotask((() => {
+          throw error;
+        }));
+        throw throw_error;
+      }
+    } finally {
+      event2.__root = this;
+      delete event2.currentTarget;
+      set_active_reaction(previous_reaction);
+      set_active_effect(previous_effect);
+    }
+  }
+}
+
+function reset_head_anchor() {
+  head_anchor = void 0;
+}
+
+function create_fragment_from_html(html2) {
+  var elem = document.createElement("template");
+  elem.innerHTML = html2;
+  return elem.content;
+}
+
+function assign_nodes(start, end) {
+  var effect2 = active_effect;
+  if (null === effect2.nodes_start) {
+    effect2.nodes_start = start;
+    effect2.nodes_end = end;
+  }
+}
+
+function template(content, flags) {
+  var node, is_fragment = !!(flags & TEMPLATE_FRAGMENT), use_import_node = !!(flags & TEMPLATE_USE_IMPORT_NODE), has_start = !content.startsWith("<!>");
+  return () => {
+    if (hydrating) {
+      assign_nodes(hydrate_node, null);
+      return hydrate_node;
+    }
+    if (void 0 === node) {
+      node = create_fragment_from_html(has_start ? content : "<!>" + content);
+      if (!is_fragment) node = get_first_child(node);
+    }
+    var clone = use_import_node ? document.importNode(node, true) : node.cloneNode(true);
+    if (is_fragment) assign_nodes(get_first_child(clone), clone.lastChild); else assign_nodes(clone, clone);
+    return clone;
+  };
+}
+
+function comment() {
+  if (hydrating) {
+    assign_nodes(hydrate_node, null);
+    return hydrate_node;
+  }
+  var frag = document.createDocumentFragment(), start = document.createComment(""), anchor = create_text();
+  frag.append(start, anchor);
+  assign_nodes(start, anchor);
+  return frag;
+}
+
+function append(anchor, dom) {
+  if (!hydrating) {
+    if (null !== anchor) anchor.before(dom);
+  } else {
+    active_effect.nodes_end = hydrate_node;
+    hydrate_next();
+  }
+}
+
+var regex_return_characters = /\r/g;
+
+function hash(str) {
+  let hash2 = 5381, i = (str = str.replace(regex_return_characters, "")).length;
+  for (;i--; ) hash2 = (hash2 << 5) - hash2 ^ str.charCodeAt(i);
+  return (hash2 >>> 0).toString(36);
+}
+
+var DOM_BOOLEAN_ATTRIBUTES = [ "allowfullscreen", "async", "autofocus", "autoplay", "checked", "controls", "default", "disabled", "formnovalidate", "hidden", "indeterminate", "ismap", "loop", "multiple", "muted", "nomodule", "novalidate", "open", "playsinline", "readonly", "required", "reversed", "seamless", "selected", "webkitdirectory" ], DOM_PROPERTIES = [ ...DOM_BOOLEAN_ATTRIBUTES, "formNoValidate", "isMap", "noModule", "playsInline", "readOnly", "value", "inert", "volume" ], PASSIVE_EVENTS = [ "touchstart", "touchmove" ];
+
+function is_passive_event(name) {
+  return PASSIVE_EVENTS.includes(name);
+}
+
+var should_intro = true;
+
+function set_text(text2, value) {
+  var _a, str = null == value ? "" : "object" == typeof value ? value + "" : value;
+  if (str !== (null != (_a = text2.__t) ? _a : text2.__t = text2.nodeValue)) {
+    text2.__t = str;
+    text2.nodeValue = null == str ? "" : str + "";
+  }
+}
+
+function mount(component2, options) {
+  return _mount(component2, options);
+}
+
+function hydrate(component2, options) {
+  var _a;
+  init_operations();
+  options.intro = null != (_a = options.intro) ? _a : false;
+  const target = options.target, was_hydrating = hydrating, previous_hydrate_node = hydrate_node;
+  try {
+    for (var anchor = get_first_child(target); anchor && (8 !== anchor.nodeType || anchor.data !== HYDRATION_START); ) anchor = get_next_sibling(anchor);
+    if (!anchor) throw HYDRATION_ERROR;
+    set_hydrating(true);
+    set_hydrate_node(anchor);
+    hydrate_next();
+    const instance = _mount(component2, {
+      ...options,
+      anchor
+    });
+    if (null === hydrate_node || 8 !== hydrate_node.nodeType || hydrate_node.data !== HYDRATION_END) {
+      hydration_mismatch();
+      throw HYDRATION_ERROR;
+    }
+    set_hydrating(false);
+    return instance;
+  } catch (error) {
+    if (error === HYDRATION_ERROR) {
+      if (false === options.recover) hydration_failed();
+      init_operations();
+      clear_text_content(target);
+      set_hydrating(false);
+      return mount(component2, options);
+    }
+    throw error;
+  } finally {
+    set_hydrating(was_hydrating);
+    set_hydrate_node(previous_hydrate_node);
+    reset_head_anchor();
+  }
+}
+
+var document_listeners = new Map;
+
+function _mount(Component, {target, anchor, props = {}, events, context, intro = true}) {
+  init_operations();
+  var registered_events = new Set, event_handle = events2 => {
+    for (var i = 0; i < events2.length; i++) {
+      var event_name = events2[i];
+      if (!registered_events.has(event_name)) {
+        registered_events.add(event_name);
+        var passive2 = is_passive_event(event_name);
+        target.addEventListener(event_name, handle_event_propagation, {
+          passive: passive2
+        });
+        var n = document_listeners.get(event_name);
+        if (void 0 === n) {
+          document.addEventListener(event_name, handle_event_propagation, {
+            passive: passive2
+          });
+          document_listeners.set(event_name, 1);
+        } else document_listeners.set(event_name, n + 1);
+      }
+    }
+  };
+  event_handle(array_from(all_registered_events));
+  root_event_handles.add(event_handle);
+  var component2 = void 0, unmount2 = effect_root((() => {
+    var anchor_node = null != anchor ? anchor : target.appendChild(create_text());
+    branch((() => {
+      if (context) {
+        push({});
+        component_context.c = context;
+      }
+      if (events) props.$$events = events;
+      if (hydrating) assign_nodes(anchor_node, null);
+      should_intro = intro;
+      component2 = Component(anchor_node, props) || {};
+      should_intro = true;
+      if (hydrating) active_effect.nodes_end = hydrate_node;
+      if (context) pop();
+    }));
+    return () => {
+      var _a;
+      for (var event_name of registered_events) {
+        target.removeEventListener(event_name, handle_event_propagation);
+        var n = document_listeners.get(event_name);
+        if (0 == --n) {
+          document.removeEventListener(event_name, handle_event_propagation);
+          document_listeners.delete(event_name);
+        } else document_listeners.set(event_name, n);
+      }
+      root_event_handles.delete(event_handle);
+      mounted_components.delete(component2);
+      if (anchor_node !== anchor) null == (_a = anchor_node.parentNode) || _a.removeChild(anchor_node);
+    };
+  }));
+  mounted_components.set(component2, unmount2);
+  return component2;
+}
+
+var mounted_components = new WeakMap;
+
+function unmount(component2) {
+  const fn = mounted_components.get(component2);
+  if (fn) fn(); else if (DEV) lifecycle_double_unmount();
+}
+
+function if_block(node, get_condition, consequent_fn, alternate_fn = null, elseif = false) {
+  if (hydrating) hydrate_next();
+  var anchor = node, consequent_effect = null, alternate_effect = null, condition = null;
+  block((() => {
+    if (condition === (condition = !!get_condition())) return;
+    let mismatch = false;
+    if (hydrating) {
+      const is_else = anchor.data === HYDRATION_START_ELSE;
+      if (condition === is_else) {
+        set_hydrate_node(anchor = remove_nodes());
+        set_hydrating(false);
+        mismatch = true;
+      }
+    }
+    if (condition) {
+      if (consequent_effect) resume_effect(consequent_effect); else consequent_effect = branch((() => consequent_fn(anchor)));
+      if (alternate_effect) pause_effect(alternate_effect, (() => {
+        alternate_effect = null;
+      }));
+    } else {
+      if (alternate_effect) resume_effect(alternate_effect); else if (alternate_fn) alternate_effect = branch((() => alternate_fn(anchor)));
+      if (consequent_effect) pause_effect(consequent_effect, (() => {
+        consequent_effect = null;
+      }));
+    }
+    if (mismatch) set_hydrating(true);
+  }), elseif ? EFFECT_TRANSPARENT : 0);
+  if (hydrating) anchor = hydrate_node;
+}
+
+var current_each_item = null;
+
+function index(_, i) {
+  return i;
+}
+
+function pause_effects(state2, items, controlled_anchor, items_map) {
+  for (var transitions = [], length = items.length, i = 0; i < length; i++) pause_children(items[i].e, transitions, true);
+  var is_controlled = length > 0 && 0 === transitions.length && null !== controlled_anchor;
+  if (is_controlled) {
+    var parent_node = controlled_anchor.parentNode;
+    clear_text_content(parent_node);
+    parent_node.append(controlled_anchor);
+    items_map.clear();
+    link(state2, items[0].prev, items[length - 1].next);
+  }
+  run_out_transitions(transitions, (() => {
+    for (var i2 = 0; i2 < length; i2++) {
+      var item = items[i2];
+      if (!is_controlled) {
+        items_map.delete(item.k);
+        link(state2, item.prev, item.next);
+      }
+      destroy_effect(item.e, !is_controlled);
+    }
+  }));
+}
+
+function each(node, flags, get_collection, get_key, render_fn, fallback_fn = null) {
+  var anchor = node, state2 = {
+    flags,
+    items: new Map,
+    first: null
+  };
+  if (!!(flags & EACH_IS_CONTROLLED)) {
+    var parent_node = node;
+    anchor = hydrating ? set_hydrate_node(get_first_child(parent_node)) : parent_node.appendChild(create_text());
+  }
+  if (hydrating) hydrate_next();
+  var fallback2 = null, was_empty = false;
+  block((() => {
+    var collection = get_collection(), array = is_array(collection) ? collection : null == collection ? [] : array_from(collection), length = array.length;
+    if (was_empty && 0 === length) return;
+    was_empty = 0 === length;
+    let mismatch = false;
+    if (hydrating) if (anchor.data === HYDRATION_START_ELSE != (0 === length)) {
+      set_hydrate_node(anchor = remove_nodes());
+      set_hydrating(false);
+      mismatch = true;
+    }
+    if (hydrating) {
+      for (var item, prev = null, i = 0; i < length; i++) {
+        if (8 === hydrate_node.nodeType && hydrate_node.data === HYDRATION_END) {
+          anchor = hydrate_node;
+          mismatch = true;
+          set_hydrating(false);
+          break;
+        }
+        var value = array[i], key = get_key(value, i);
+        item = create_item(hydrate_node, state2, prev, null, value, key, i, render_fn, flags);
+        state2.items.set(key, item);
+        prev = item;
+      }
+      if (length > 0) set_hydrate_node(remove_nodes());
+    }
+    if (!hydrating) reconcile(array, state2, anchor, render_fn, flags, get_key);
+    if (null !== fallback_fn) if (0 === length) if (fallback2) resume_effect(fallback2); else fallback2 = branch((() => fallback_fn(anchor))); else if (null !== fallback2) pause_effect(fallback2, (() => {
+      fallback2 = null;
+    }));
+    if (mismatch) set_hydrating(true);
+    get_collection();
+  }));
+  if (hydrating) anchor = hydrate_node;
+}
+
+function reconcile(array, state2, anchor, render_fn, flags, get_key) {
+  var _a, _b, _c, _d, seen, to_animate, value, key, item, i, is_animated = !!(flags & EACH_IS_ANIMATED), should_update = !!(flags & (EACH_ITEM_REACTIVE | EACH_INDEX_REACTIVE)), length = array.length, items = state2.items, current = state2.first, prev = null, matched = [], stashed = [];
+  if (is_animated) for (i = 0; i < length; i += 1) {
+    key = get_key(value = array[i], i);
+    if (void 0 !== (item = items.get(key))) {
+      null == (_a = item.a) || _a.measure();
+      (null != to_animate ? to_animate : to_animate = new Set).add(item);
+    }
+  }
+  for (i = 0; i < length; i += 1) {
+    key = get_key(value = array[i], i);
+    if (void 0 !== (item = items.get(key))) {
+      if (should_update) update_item(item, value, i, flags);
+      if (!!(item.e.f & INERT)) {
+        resume_effect(item.e);
+        if (is_animated) {
+          null == (_b = item.a) || _b.unfix();
+          (null != to_animate ? to_animate : to_animate = new Set).delete(item);
+        }
+      }
+      if (item !== current) {
+        if (void 0 !== seen && seen.has(item)) {
+          if (matched.length < stashed.length) {
+            var j, start = stashed[0];
+            prev = start.prev;
+            var a = matched[0], b = matched[matched.length - 1];
+            for (j = 0; j < matched.length; j += 1) move(matched[j], start, anchor);
+            for (j = 0; j < stashed.length; j += 1) seen.delete(stashed[j]);
+            link(state2, a.prev, b.next);
+            link(state2, prev, a);
+            link(state2, b, start);
+            current = start;
+            prev = b;
+            i -= 1;
+            matched = [];
+            stashed = [];
+          } else {
+            seen.delete(item);
+            move(item, current, anchor);
+            link(state2, item.prev, item.next);
+            link(state2, item, null === prev ? state2.first : prev.next);
+            link(state2, prev, item);
+            prev = item;
+          }
+          continue;
+        }
+        matched = [];
+        stashed = [];
+        for (;null !== current && current.k !== key; ) {
+          if (!(current.e.f & INERT)) (null != seen ? seen : seen = new Set).add(current);
+          stashed.push(current);
+          current = current.next;
+        }
+        if (null === current) continue;
+        item = current;
+      }
+      matched.push(item);
+      prev = item;
+      current = item.next;
+    } else {
+      prev = create_item(current ? current.e.nodes_start : anchor, state2, prev, null === prev ? state2.first : prev.next, value, key, i, render_fn, flags);
+      items.set(key, prev);
+      matched = [];
+      stashed = [];
+      current = prev.next;
+    }
+  }
+  if (null !== current || void 0 !== seen) {
+    for (var to_destroy = void 0 === seen ? [] : array_from(seen); null !== current; ) {
+      if (!(current.e.f & INERT)) to_destroy.push(current);
+      current = current.next;
+    }
+    var destroy_length = to_destroy.length;
+    if (destroy_length > 0) {
+      var controlled_anchor = !!(flags & EACH_IS_CONTROLLED) && 0 === length ? anchor : null;
+      if (is_animated) {
+        for (i = 0; i < destroy_length; i += 1) null == (_c = to_destroy[i].a) || _c.measure();
+        for (i = 0; i < destroy_length; i += 1) null == (_d = to_destroy[i].a) || _d.fix();
+      }
+      pause_effects(state2, to_destroy, controlled_anchor, items);
+    }
+  }
+  if (is_animated) queue_micro_task((() => {
+    var _a2;
+    if (void 0 !== to_animate) for (item of to_animate) null == (_a2 = item.a) || _a2.apply();
+  }));
+  active_effect.first = state2.first && state2.first.e;
+  active_effect.last = prev && prev.e;
+}
+
+function update_item(item, value, index2, type) {
+  if (!!(type & EACH_ITEM_REACTIVE)) internal_set(item.v, value);
+  if (!!(type & EACH_INDEX_REACTIVE)) internal_set(item.i, index2); else item.i = index2;
+}
+
+function create_item(anchor, state2, prev, next2, value, key, index2, render_fn, flags) {
+  var previous_each_item = current_each_item;
+  try {
+    var v = !!(flags & EACH_ITEM_REACTIVE) ? !(flags & EACH_ITEM_IMMUTABLE) ? mutable_source(value) : source(value) : value, i = !(flags & EACH_INDEX_REACTIVE) ? index2 : source(index2), item = {
+      i,
+      v,
+      k: key,
+      a: null,
+      e: null,
+      prev,
+      next: next2
+    };
+    current_each_item = item;
+    item.e = branch((() => render_fn(anchor, v, i)), hydrating);
+    item.e.prev = prev && prev.e;
+    item.e.next = next2 && next2.e;
+    if (null === prev) state2.first = item; else {
+      prev.next = item;
+      prev.e.next = item.e;
+    }
+    if (null !== next2) {
+      next2.prev = item;
+      next2.e.prev = item.e;
+    }
+    return item;
+  } finally {
+    current_each_item = previous_each_item;
+  }
+}
+
+function move(item, next2, anchor) {
+  for (var end = item.next ? item.next.e.nodes_start : anchor, dest = next2 ? next2.e.nodes_start : anchor, node = item.e.nodes_start; node !== end; ) {
+    var next_node = get_next_sibling(node);
+    dest.before(node);
+    node = next_node;
+  }
+}
+
+function link(state2, prev, next2) {
+  if (null === prev) state2.first = next2; else {
+    prev.next = next2;
+    prev.e.next = next2 && next2.e;
+  }
+  if (null !== next2) {
+    next2.prev = prev;
+    next2.e.prev = prev && prev.e;
+  }
+}
+
+function check_hash(element2, server_hash, value) {
+  var _a, _b;
+  if (!server_hash || server_hash === hash(String(null != value ? value : ""))) return;
+  let location;
+  const loc = null == (_a = element2.__svelte_meta) ? void 0 : _a.loc;
+  if (loc) location = `near ${loc.file}:${loc.line}:${loc.column}`; else if (null == (_b = dev_current_component_function) ? void 0 : _b[FILENAME]) location = `in ${dev_current_component_function[FILENAME]}`;
+  hydration_html_changed(null == location ? void 0 : location.replace(/\//g, "/​"));
+}
+
+function html(node, get_value, svg, mathml, skip_warning) {
+  var effect2, anchor = node, value = "";
+  block((() => {
+    var _a;
+    if (value !== (value = null != (_a = get_value()) ? _a : "")) {
+      if (void 0 !== effect2) {
+        destroy_effect(effect2);
+        effect2 = void 0;
+      }
+      if ("" !== value) effect2 = branch((() => {
+        if (!hydrating) {
+          var html2 = value + "";
+          if (svg) html2 = `<svg>${html2}</svg>`; else if (mathml) html2 = `<math>${html2}</math>`;
+          var node2 = create_fragment_from_html(html2);
+          if (svg || mathml) node2 = get_first_child(node2);
+          assign_nodes(get_first_child(node2), node2.lastChild);
+          if (svg || mathml) for (;get_first_child(node2); ) anchor.before(get_first_child(node2)); else anchor.before(node2);
+        } else {
+          for (var hash2 = hydrate_node.data, next2 = hydrate_next(), last = next2; null !== next2 && (8 !== next2.nodeType || "" !== next2.data); ) {
+            last = next2;
+            next2 = get_next_sibling(next2);
+          }
+          if (null === next2) {
+            hydration_mismatch();
+            throw HYDRATION_ERROR;
+          }
+          if (DEV && !skip_warning) check_hash(next2.parentNode, hash2, value);
+          assign_nodes(hydrate_node, last);
+          anchor = set_hydrate_node(next2);
+        }
+      }));
+    } else if (hydrating) hydrate_next();
+  }));
+}
+
+function snippet(node, get_snippet, ...args) {
+  var snippet_effect, anchor = node, snippet2 = noop;
+  block((() => {
+    if (snippet2 !== (snippet2 = get_snippet())) {
+      if (snippet_effect) {
+        destroy_effect(snippet_effect);
+        snippet_effect = null;
+      }
+      if (DEV && null == snippet2) invalid_snippet();
+      snippet_effect = branch((() => snippet2(anchor, ...args)));
+    }
+  }), EFFECT_TRANSPARENT);
+  if (hydrating) anchor = hydrate_node;
+}
+
+function append_styles(anchor, css) {
+  queue_micro_task((() => {
+    var _a, root6 = anchor.getRootNode(), target = root6.host ? root6 : null != (_a = root6.head) ? _a : root6.ownerDocument.head;
+    if (!target.querySelector("#" + css.hash)) {
+      const style = document.createElement("style");
+      style.id = css.hash;
+      style.textContent = css.code;
+      target.appendChild(style);
+      if (DEV) register_style(css.hash, style);
+    }
+  }));
+}
+
+var listening_to_form_reset = false;
+
+function add_form_reset_listener() {
+  if (!listening_to_form_reset) {
+    listening_to_form_reset = true;
+    document.addEventListener("reset", (evt => {
+      Promise.resolve().then((() => {
+        var _a;
+        if (!evt.defaultPrevented) for (const e of evt.target.elements) null == (_a = e.__on_r) || _a.call(e);
+      }));
+    }), {
+      capture: true
+    });
+  }
+}
+
+function remove_input_defaults(input) {
+  if (hydrating) {
+    var already_removed = false, remove_defaults = () => {
+      if (!already_removed) {
+        already_removed = true;
+        if (input.hasAttribute("value")) {
+          var value = input.value;
+          set_attribute(input, "value", null);
+          input.value = value;
+        }
+        if (input.hasAttribute("checked")) {
+          var checked = input.checked;
+          set_attribute(input, "checked", null);
+          input.checked = checked;
+        }
+      }
+    };
+    input.__on_r = remove_defaults;
+    queue_idle_task(remove_defaults);
+    add_form_reset_listener();
+  }
+}
+
+function set_attribute(element2, attribute, value, skip_warning) {
+  var _a, attributes = null != (_a = element2.__attributes) ? _a : element2.__attributes = {};
+  if (hydrating) {
+    attributes[attribute] = element2.getAttribute(attribute);
+    if ("src" === attribute || "srcset" === attribute || "href" === attribute && "LINK" === element2.nodeName) {
+      if (!skip_warning) check_src_in_dev_hydration(element2, attribute, null != value ? value : "");
+      return;
+    }
+  }
+  if (attributes[attribute] !== (attributes[attribute] = value)) {
+    if ("style" === attribute && "__styles" in element2) element2.__styles = {};
+    if ("loading" === attribute) element2[LOADING_ATTR_SYMBOL] = value;
+    if (null == value) element2.removeAttribute(attribute); else if ("string" != typeof value && get_setters(element2).includes(attribute)) element2[attribute] = value; else element2.setAttribute(attribute, value);
+  }
+}
+
+var setters_cache = new Map;
+
+function get_setters(element2) {
+  var descriptors, setters = setters_cache.get(element2.nodeName);
+  if (setters) return setters;
+  setters_cache.set(element2.nodeName, setters = []);
+  for (var proto = get_prototype_of(element2), element_proto = Element.prototype; element_proto !== proto; ) {
+    descriptors = get_descriptors(proto);
+    for (var key in descriptors) if (descriptors[key].set) setters.push(key);
+    proto = get_prototype_of(proto);
+  }
+  return setters;
+}
+
+function check_src_in_dev_hydration(element2, attribute, value) {
+  var _a;
+  if (DEV) if ("srcset" !== attribute || !srcset_url_equal(element2, value)) if (!src_url_equal(null != (_a = element2.getAttribute(attribute)) ? _a : "", value)) hydration_attribute_changed(attribute, element2.outerHTML.replace(element2.innerHTML, element2.innerHTML && "..."), String(value));
+}
+
+function src_url_equal(element_src, url) {
+  if (element_src === url) return true; else return new URL(element_src, document.baseURI).href === new URL(url, document.baseURI).href;
+}
+
+function split_srcset(srcset) {
+  return srcset.split(",").map((src => src.trim().split(" ").filter(Boolean)));
+}
+
+function srcset_url_equal(element2, srcset) {
+  var element_urls = split_srcset(element2.srcset), urls = split_srcset(srcset);
+  return urls.length === element_urls.length && urls.every((([url, width], i) => width === element_urls[i][1] && (src_url_equal(element_urls[i][0], url) || src_url_equal(url, element_urls[i][0]))));
+}
+
+function set_class(dom, value) {
+  var prev_class_name = dom.__className, next_class_name = to_class(value);
+  if (hydrating && dom.className === next_class_name) dom.__className = next_class_name; else if (prev_class_name !== next_class_name || hydrating && dom.className !== next_class_name) {
+    if (null == value) dom.removeAttribute("class"); else dom.className = next_class_name;
+    dom.__className = next_class_name;
+  }
+}
+
+function to_class(value) {
+  return null == value ? "" : value;
+}
+
+function toggle_class(dom, class_name, value) {
+  if (value) {
+    if (dom.classList.contains(class_name)) return;
+    dom.classList.add(class_name);
+  } else {
+    if (!dom.classList.contains(class_name)) return;
+    dom.classList.remove(class_name);
+  }
+}
+
+function listen_to_event_and_reset_event(element2, event2, handler, on_reset = handler) {
+  element2.addEventListener(event2, handler);
+  const prev = element2.__on_r;
+  if (prev) element2.__on_r = () => {
+    prev();
+    on_reset();
+  }; else element2.__on_r = on_reset;
+  add_form_reset_listener();
+}
+
+function bind_value(input, get3, set2 = get3) {
+  var runes = is_runes();
+  listen_to_event_and_reset_event(input, "input", (() => {
+    if (DEV && "checkbox" === input.type) bind_invalid_checkbox_value();
+    var value = is_numberlike_input(input) ? to_number(input.value) : input.value;
+    set2(value);
+    if (runes && value !== (value = get3())) input.value = null != value ? value : "";
+  }));
+  render_effect((() => {
+    if (DEV && "checkbox" === input.type) bind_invalid_checkbox_value();
+    var value = get3();
+    if (!hydrating || input.defaultValue === input.value) {
+      if (!is_numberlike_input(input) || value !== to_number(input.value)) if ("date" !== input.type || value || input.value) if (value !== input.value) input.value = null != value ? value : "";
+    } else set2(input.value);
+  }));
+}
+
+function is_numberlike_input(input) {
+  var type = input.type;
+  return "number" === type || "range" === type;
+}
+
+function to_number(value) {
+  return "" === value ? null : +value;
+}
+
+function is_bound_this(bound_value, element_or_component) {
+  return bound_value === element_or_component || (null == bound_value ? void 0 : bound_value[STATE_SYMBOL]) === element_or_component;
+}
+
+function bind_this(element_or_component = {}, update2, get_value, get_parts) {
+  effect((() => {
+    var old_parts, parts;
+    render_effect((() => {
+      old_parts = parts;
+      parts = (null == get_parts ? void 0 : get_parts()) || [];
+      untrack((() => {
+        if (element_or_component !== get_value(...parts)) {
+          update2(element_or_component, ...parts);
+          if (old_parts && is_bound_this(get_value(...old_parts), element_or_component)) update2(null, ...old_parts);
+        }
+      }));
+    }));
+    return () => {
+      queue_micro_task((() => {
+        if (parts && is_bound_this(get_value(...parts), element_or_component)) update2(null, ...parts);
+      }));
+    };
+  }));
+  return element_or_component;
+}
+
+var _events, _instance, is_store_binding = false;
+
+function store_get(store, store_name, stores) {
+  var _a;
+  const entry = null != (_a = stores[store_name]) ? _a : stores[store_name] = {
+    store: null,
+    source: mutable_source(void 0),
+    unsubscribe: noop
+  };
+  if (entry.store !== store) {
+    entry.unsubscribe();
+    entry.store = null != store ? store : null;
+    if (null == store) {
+      entry.source.v = void 0;
+      entry.unsubscribe = noop;
+    } else {
+      var is_synchronous_callback = true;
+      entry.unsubscribe = subscribe_to_store(store, (v => {
+        if (is_synchronous_callback) entry.source.v = v; else set(entry.source, v);
+      }));
+      is_synchronous_callback = false;
+    }
+  }
+  return get(entry.source);
+}
+
+function store_set(store, value) {
+  store.set(value);
+  return value;
+}
+
+function setup_stores() {
+  const stores = {};
+  teardown((() => {
+    for (var store_name in stores) stores[store_name].unsubscribe();
+  }));
+  return stores;
+}
+
+function capture_store_binding(fn) {
+  var previous_is_store_binding = is_store_binding;
+  try {
+    is_store_binding = false;
+    return [ fn(), is_store_binding ];
+  } finally {
+    is_store_binding = previous_is_store_binding;
+  }
+}
+
+function with_parent_branch(fn) {
+  for (var effect2 = active_effect, previous_effect = active_effect; null !== effect2 && !(effect2.f & (BRANCH_EFFECT | ROOT_EFFECT)); ) effect2 = effect2.parent;
+  try {
+    set_active_effect(effect2);
+    return fn();
+  } finally {
+    set_active_effect(previous_effect);
+  }
+}
+
+function prop(props, key, flags, fallback2) {
+  var _a, prop_value, immutable = !!(flags & PROPS_IS_IMMUTABLE), runes = !!(flags & PROPS_IS_RUNES), bindable = !!(flags & PROPS_IS_BINDABLE), lazy = !!(flags & PROPS_IS_LAZY_INITIAL), is_store_sub = false;
+  if (bindable) [prop_value, is_store_sub] = capture_store_binding((() => props[key])); else prop_value = props[key];
+  var getter, setter = null == (_a = get_descriptor(props, key)) ? void 0 : _a.set, fallback_value = fallback2, fallback_dirty = true, fallback_used = false, get_fallback = () => {
+    fallback_used = true;
+    if (fallback_dirty) {
+      fallback_dirty = false;
+      if (lazy) fallback_value = untrack(fallback2); else fallback_value = fallback2;
+    }
+    return fallback_value;
+  };
+  if (void 0 === prop_value && void 0 !== fallback2) {
+    if (setter && runes) props_invalid_value(key);
+    prop_value = get_fallback();
+    if (setter) setter(prop_value);
+  }
+  if (runes) getter = () => {
+    var value = props[key];
+    if (void 0 === value) return get_fallback();
+    fallback_dirty = true;
+    fallback_used = false;
+    return value;
+  }; else {
+    var derived_getter = with_parent_branch((() => (immutable ? derived : derived_safe_equal)((() => props[key]))));
+    derived_getter.f |= LEGACY_DERIVED_PROP;
+    getter = () => {
+      var value = get(derived_getter);
+      if (void 0 !== value) fallback_value = void 0;
+      return void 0 === value ? fallback_value : value;
+    };
+  }
+  if (!(flags & PROPS_IS_UPDATED)) return getter;
+  if (setter) {
+    var legacy_parent = props.$$legacy;
+    return function(value, mutation) {
+      if (arguments.length > 0) {
+        if (!runes || !mutation || legacy_parent || is_store_sub) setter(mutation ? getter() : value);
+        return value;
+      } else return getter();
+    };
+  }
+  var from_child = false, was_from_child = false, inner_current_value = mutable_source(prop_value), current_value = with_parent_branch((() => derived((() => {
+    var parent_value = getter(), child_value = get(inner_current_value);
+    if (from_child || void 0 === parent_value && !!(active_reaction.f & DESTROYED)) {
+      from_child = false;
+      was_from_child = true;
+      return child_value;
+    }
+    was_from_child = false;
+    return inner_current_value.v = parent_value;
+  }))));
+  if (!immutable) current_value.equals = safe_equals;
+  return function(value, mutation) {
+    if (is_signals_recorded) {
+      from_child = was_from_child;
+      getter();
+      get(inner_current_value);
+    }
+    if (arguments.length > 0) {
+      const new_value = mutation ? get(current_value) : runes && bindable ? proxy(value) : value;
+      if (!current_value.equals(new_value)) {
+        from_child = true;
+        set(inner_current_value, new_value);
+        if (fallback_used && void 0 !== fallback_value) fallback_value = new_value;
+        untrack((() => get(current_value)));
+      }
+      return value;
+    }
+    return get(current_value);
+  };
+}
+
+function createClassComponent(options) {
+  return new Svelte4Component(options);
+}
+
+var SvelteElement, Svelte4Component = class {
+  constructor(options) {
+    __privateAdd(this, _events);
+    __privateAdd(this, _instance);
+    var _a, _b, sources = new Map, add_source = (key, value) => {
+      var s = mutable_source(value);
+      sources.set(key, s);
+      return s;
+    };
+    const props = new Proxy({
+      ...options.props || {},
+      $$events: {}
+    }, {
+      get(target, prop2) {
+        var _a2;
+        return get(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, Reflect.get(target, prop2)));
+      },
+      has(target, prop2) {
+        var _a2;
+        get(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, Reflect.get(target, prop2)));
+        return Reflect.has(target, prop2);
+      },
+      set(target, prop2, value) {
+        var _a2;
+        set(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, value), value);
+        return Reflect.set(target, prop2, value);
+      }
+    });
+    __privateSet(this, _instance, (options.hydrate ? hydrate : mount)(options.component, {
+      target: options.target,
+      props,
+      context: options.context,
+      intro: null != (_a = options.intro) ? _a : false,
+      recover: options.recover
+    }));
+    if (!(null == (_b = null == options ? void 0 : options.props) ? void 0 : _b.$$host) || false === options.sync) flush_sync();
+    __privateSet(this, _events, props.$$events);
+    for (const key of Object.keys(__privateGet(this, _instance))) if ("$set" !== key && "$destroy" !== key && "$on" !== key) define_property(this, key, {
+      get() {
+        return __privateGet(this, _instance)[key];
+      },
+      set(value) {
+        __privateGet(this, _instance)[key] = value;
+      },
+      enumerable: true
+    });
+    __privateGet(this, _instance).$set = next2 => {
+      Object.assign(props, next2);
+    };
+    __privateGet(this, _instance).$destroy = () => {
+      unmount(__privateGet(this, _instance));
+    };
+  }
+  $set(props) {
+    __privateGet(this, _instance).$set(props);
+  }
+  $on(event2, callback) {
+    __privateGet(this, _events)[event2] = __privateGet(this, _events)[event2] || [];
+    const cb = (...args) => callback.call(this, ...args);
+    __privateGet(this, _events)[event2].push(cb);
+    return () => {
+      __privateGet(this, _events)[event2] = __privateGet(this, _events)[event2].filter((fn => fn !== cb));
+    };
+  }
+  $destroy() {
+    __privateGet(this, _instance).$destroy();
+  }
+};
+
+_events = new WeakMap;
+
+_instance = new WeakMap;
 
 if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement {
   constructor($$componentCtor, $$slots, use_shadow_dom) {
@@ -622,6 +2552,7 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
     __publicField(this, "$$p_d", {});
     __publicField(this, "$$l", {});
     __publicField(this, "$$l_u", new Map);
+    __publicField(this, "$$me");
     this.$$ctor = $$componentCtor;
     this.$$s = $$slots;
     if (use_shadow_dom) this.attachShadow({
@@ -650,27 +2581,20 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
   async connectedCallback() {
     this.$$cn = true;
     if (!this.$$c) {
-      let create_slot2 = function(name) {
-        return () => {
-          let node;
-          return {
-            c: function create() {
-              node = element("slot");
-              if ("default" !== name) attr(node, "name", name);
-            },
-            m: function mount(target, anchor) {
-              insert(target, node, anchor);
-            },
-            d: function destroy(detaching) {
-              if (detaching) detach(node);
-            }
-          };
+      let create_slot = function(name) {
+        return anchor => {
+          const slot2 = document.createElement("slot");
+          if ("default" !== name) slot2.name = name;
+          append(anchor, slot2);
         };
       };
       await Promise.resolve();
       if (!this.$$cn || this.$$c) return;
       const $$slots = {}, existing_slots = get_custom_elements_slots(this);
-      for (const name of this.$$s) if (name in existing_slots) $$slots[name] = [ create_slot2(name) ];
+      for (const name of this.$$s) if (name in existing_slots) if ("default" === name && !this.$$d.children) {
+        this.$$d.children = create_slot(name);
+        $$slots.default = true;
+      } else $$slots[name] = create_slot(name);
       for (const attribute of this.attributes) {
         const name = this.$$g_p(attribute.name);
         if (!(name in this.$$d)) this.$$d[name] = get_custom_element_value(name, attribute.value, this.$$p_d, "toProp");
@@ -679,29 +2603,28 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
         this.$$d[key] = this[key];
         delete this[key];
       }
-      this.$$c = new this.$$ctor({
+      this.$$c = createClassComponent({
+        component: this.$$ctor,
         target: this.shadowRoot || this,
         props: {
           ...this.$$d,
           $$slots,
-          $$scope: {
-            ctx: []
-          }
+          $$host: this
         }
       });
-      const reflect_attributes = () => {
-        this.$$r = true;
-        for (const key in this.$$p_d) {
-          this.$$d[key] = this.$$c.$$.ctx[this.$$c.$$.props[key]];
-          if (this.$$p_d[key].reflect) {
+      this.$$me = effect_root((() => {
+        render_effect((() => {
+          var _a;
+          this.$$r = true;
+          for (const key of object_keys(this.$$c)) {
+            if (!(null == (_a = this.$$p_d[key]) ? void 0 : _a.reflect)) continue;
+            this.$$d[key] = this.$$c[key];
             const attribute_value = get_custom_element_value(key, this.$$d[key], this.$$p_d, "toAttribute");
             if (null == attribute_value) this.removeAttribute(this.$$p_d[key].attribute || key); else this.setAttribute(this.$$p_d[key].attribute || key, attribute_value);
           }
-        }
-        this.$$r = false;
-      };
-      this.$$c.$$.after_update.push(reflect_attributes);
-      reflect_attributes();
+          this.$$r = false;
+        }));
+      }));
       for (const type in this.$$l) for (const listener of this.$$l[type]) {
         const unsub = this.$$c.$on(type, listener);
         this.$$l_u.set(listener, unsub);
@@ -709,35 +2632,36 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
       this.$$l = {};
     }
   }
-  attributeChangedCallback(attr2, _oldValue, newValue) {
+  attributeChangedCallback(attr, _oldValue, newValue) {
     var _a;
     if (!this.$$r) {
-      attr2 = this.$$g_p(attr2);
-      this.$$d[attr2] = get_custom_element_value(attr2, newValue, this.$$p_d, "toProp");
+      attr = this.$$g_p(attr);
+      this.$$d[attr] = get_custom_element_value(attr, newValue, this.$$p_d, "toProp");
       null == (_a = this.$$c) || _a.$set({
-        [attr2]: this.$$d[attr2]
+        [attr]: this.$$d[attr]
       });
     }
   }
   disconnectedCallback() {
     this.$$cn = false;
     Promise.resolve().then((() => {
-      if (!this.$$cn) {
+      if (!this.$$cn && this.$$c) {
         this.$$c.$destroy();
+        this.$$me();
         this.$$c = void 0;
       }
     }));
   }
   $$g_p(attribute_name) {
-    return Object.keys(this.$$p_d).find((key => this.$$p_d[key].attribute === attribute_name || !this.$$p_d[key].attribute && key.toLowerCase() === attribute_name)) || attribute_name;
+    return object_keys(this.$$p_d).find((key => this.$$p_d[key].attribute === attribute_name || !this.$$p_d[key].attribute && key.toLowerCase() === attribute_name)) || attribute_name;
   }
 };
 
-function get_custom_element_value(prop, value, props_definition, transform) {
+function get_custom_element_value(prop2, value, props_definition, transform) {
   var _a;
-  const type = null == (_a = props_definition[prop]) ? void 0 : _a.type;
+  const type = null == (_a = props_definition[prop2]) ? void 0 : _a.type;
   value = "Boolean" === type && "boolean" != typeof value ? null != value : value;
-  if (!transform || !props_definition[prop]) return value; else if ("toAttribute" === transform) switch (type) {
+  if (!transform || !props_definition[prop2]) return value; else if ("toAttribute" === transform) switch (type) {
    case "Object":
    case "Array":
     return null == value ? null : JSON.stringify(value);
@@ -766,37 +2690,52 @@ function get_custom_element_value(prop, value, props_definition, transform) {
   }
 }
 
-var SvelteComponent = class {
-  constructor() {
-    __publicField(this, "$$");
-    __publicField(this, "$$set");
+function get_custom_elements_slots(element2) {
+  const result = {};
+  element2.childNodes.forEach((node => {
+    result[node.slot || "default"] = true;
+  }));
+  return result;
+}
+
+function onMount(fn) {
+  if (null === component_context) lifecycle_outside_component("onMount");
+  if (null !== component_context.l) init_update_callbacks(component_context).m.push(fn); else user_effect((() => {
+    const cleanup = untrack(fn);
+    if ("function" == typeof cleanup) return cleanup;
+  }));
+}
+
+function onDestroy(fn) {
+  if (null === component_context) lifecycle_outside_component("onDestroy");
+  onMount((() => () => untrack(fn)));
+}
+
+function init_update_callbacks(context) {
+  var _a, l = context.l;
+  return null != (_a = l.u) ? _a : l.u = {
+    a: [],
+    b: [],
+    m: []
+  };
+}
+
+function subscribe_to_store(store, run2, invalidate) {
+  if (null == store) {
+    run2(void 0);
+    if (invalidate) invalidate(void 0);
+    return noop;
   }
-  $destroy() {
-    destroy_component(this, 1);
-    this.$destroy = noop;
-  }
-  $on(type, callback) {
-    if (!is_function(callback)) return noop;
-    const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
-    callbacks.push(callback);
-    return () => {
-      const index = callbacks.indexOf(callback);
-      if (-1 !== index) callbacks.splice(index, 1);
-    };
-  }
-  $set(props) {
-    if (this.$$set && !is_empty(props)) {
-      this.$$.skip_bound = true;
-      this.$$set(props);
-      this.$$.skip_bound = false;
-    }
-  }
-}, PUBLIC_VERSION = "4", subscriber_queue = [];
+  const unsub = untrack((() => store.subscribe(run2, invalidate)));
+  return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+}
+
+var subscriber_queue = [];
 
 function writable(value, start = noop) {
-  let stop;
+  let stop = null;
   const subscribers = new Set;
-  function set(new_value) {
+  function set2(new_value) {
     if (safe_not_equal(value, new_value)) {
       value = new_value;
       if (stop) {
@@ -813,15 +2752,15 @@ function writable(value, start = noop) {
     }
   }
   function update2(fn) {
-    set(fn(value));
+    set2(fn(value));
   }
   return {
-    set,
+    set: set2,
     update: update2,
-    subscribe: function subscribe2(run2, invalidate = noop) {
+    subscribe: function subscribe(run2, invalidate = noop) {
       const subscriber = [ run2, invalidate ];
       subscribers.add(subscriber);
-      if (1 === subscribers.size) stop = start(set, update2) || noop;
+      if (1 === subscribers.size) stop = start(set2, update2) || noop;
       run2(value);
       return () => {
         subscribers.delete(subscriber);
@@ -834,7 +2773,7 @@ function writable(value, start = noop) {
   };
 }
 
-var currentFile = writable(""), maxDepth = writable(0), searchString = writable(""), tagInfo = writable({}), tagFolderSetting = writable(DEFAULT_SETTINGS), selectedTags = writable(), allViewItems = writable(), allViewItemsByLink = writable(), appliedFiles = writable(), v2expandedTags = writable(new Set), performHide = writable(0);
+var currentFile = writable(""), maxDepth = writable(0), searchString = writable(""), tagInfo = writable({}), tagFolderSetting = writable(DEFAULT_SETTINGS), selectedTags = writable(), allViewItems = writable(), allViewItemsByLink = writable(), appliedFiles = writable(), v2expandedTags = writable(new Set), performHide = writable(0), pluginInstance = writable(void 0);
 
 function unique(items) {
   return [ ...new Set([ ...items ]) ];
@@ -845,8 +2784,8 @@ function trimSlash(src, keepStart = false, keepEnd = false) {
   if (0 == st && null == end) return src; else return src.slice(st, end);
 }
 
-function trimPrefix(source, prefix) {
-  if (source.startsWith(prefix)) return source.substring(prefix.length); else return source;
+function trimPrefix(source2, prefix) {
+  if (source2.startsWith(prefix)) return source2.substring(prefix.length); else return source2;
 }
 
 function ancestorToTags(ancestors) {
@@ -1104,52 +3043,6 @@ function getAllLinksRecursive(item, trail) {
   return unique([ ...leftLinks, ...allChildLinks ]);
 }
 
-function isSameViewItems(a, b) {
-  if (a === b) return true;
-  if (a.length != b.length) return false;
-  for (const i in a) {
-    if (a[i].length != b[i].length) return false;
-    if (!_isSameViewItem(a[i], b[i])) return false;
-  }
-  return true;
-}
-
-function _isSameViewItem(a, b) {
-  if (!a || !b) return false;
-  if (a === b) return true;
-  if (a.length != b.length) return false;
-  for (const j in a) {
-    if (a[j] === b[j]) return true;
-    for (const k in a[j]) if (!isSameObj(a[j][k], b[j][k])) return false;
-  }
-  return true;
-}
-
-function isSameV2FolderItem(a, b) {
-  if (a === b) return true;
-  if (a.length != b.length) return false;
-  for (const i in a) {
-    if (a[i].length != b[i].length) return false;
-    if (a[i] === b[i]) return true;
-    for (const j in a[i]) {
-      if (a[i][j][V2FI_IDX_TAG] !== b[i][j][V2FI_IDX_TAG]) return false;
-      if (a[i][j][V2FI_IDX_TAGNAME] !== b[i][j][V2FI_IDX_TAGNAME]) return false;
-      if (!isSameObj(a[i][j][V2FI_IDX_TAGDISP], b[i][j][V2FI_IDX_TAGDISP])) return false;
-      if (!_isSameViewItem(a[i][j][V2FI_IDX_CHILDREN], b[i][j][V2FI_IDX_CHILDREN])) return false;
-    }
-  }
-  return true;
-}
-
-function isSameObj(a, b) {
-  if (a === b) return true;
-  if ("string" == typeof a || "number" == typeof a) return a == b;
-  if (a.length != b.length) return false;
-  const len = a.length;
-  for (let i = 0; i < len; i++) if (!isSameObj(a[i], b[i])) return false;
-  return true;
-}
-
 var waitingProcess = new Map, runningProcess = new Set;
 
 async function scheduleOnceIfDuplicated(key, proc) {
@@ -1203,319 +3096,137 @@ function isSameAny(a, b) {
   }
 }
 
-var import_obsidian2 = require("obsidian");
+var import_obsidian2 = require("obsidian"), PUBLIC_VERSION = "5";
 
 if ("undefined" != typeof window) (window.__svelte || (window.__svelte = {
   v: new Set
 })).v.add(PUBLIC_VERSION);
 
-var import_obsidian = require("obsidian");
+var import_obsidian = require("obsidian"), root = template('<div class="markdownBody svelte-1qfikme" style="min-height: 1em;"></div>'), $$css = {
+  hash: "svelte-1qfikme",
+  code: "\n\t.markdownBody.svelte-1qfikme {\n\t\tuser-select: text;\n\t\t-webkit-user-select: text;\n\t}\n"
+};
 
-function add_css(target) {
-  append_styles(target, "svelte-1qfikme", ".markdownBody.svelte-1qfikme{user-select:text;-webkit-user-select:text}");
-}
-
-function create_fragment(ctx) {
-  let div;
-  return {
-    c() {
-      div = element("div");
-      attr(div, "class", "markdownBody svelte-1qfikme");
-      set_style(div, "min-height", "1em");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      ctx[5](div);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) detach(div);
-      ctx[5](null);
-    }
-  };
-}
-
-function instance($$self, $$props, $$invalidate) {
-  let el, {file = {
+function ScrollViewMarkdownComponent($$anchor, $$props) {
+  push($$props, true);
+  append_styles($$anchor, $$css);
+  let file = prop($$props, "file", 19, (() => ({
     path: ""
-  }} = $$props, {observer} = $$props, {plugin} = $$props, renderedContent = "";
+  }))), el = state(void 0), renderedContent = state("");
   function onAppearing(_) {
-    if (file.content && el && renderedContent != file.content) {
-      import_obsidian.MarkdownRenderer.render(plugin.app, file.content, el, file.path, plugin);
-      $$invalidate(4, renderedContent = file.content);
+    if (file().content && get(el) && get(renderedContent) != file().content) {
+      import_obsidian.MarkdownRenderer.render($$props.plugin.app, file().content, get(el), file().path, $$props.plugin);
+      set(renderedContent, proxy(file().content));
     }
   }
   onMount((() => {
-    observer.observe(el);
-    el.addEventListener("appearing", onAppearing);
+    if (get(el) && $$props.observer) {
+      $$props.observer.observe(get(el));
+      get(el).addEventListener("appearing", onAppearing);
+    }
   }));
   onDestroy((() => {
-    observer.unobserve(el);
-    el.removeEventListener("appearing", onAppearing);
+    if (get(el) && $$props.observer) {
+      $$props.observer.unobserve(get(el));
+      get(el).removeEventListener("appearing", onAppearing);
+    }
   }));
-  $$self.$$set = $$props2 => {
-    if ("file" in $$props2) $$invalidate(1, file = $$props2.file);
-    if ("observer" in $$props2) $$invalidate(2, observer = $$props2.observer);
-    if ("plugin" in $$props2) $$invalidate(3, plugin = $$props2.plugin);
-  };
-  $$self.$$.update = () => {
-    if (27 & $$self.$$.dirty) if (renderedContent && file && file.content && el && renderedContent != file.content) {
-      $$invalidate(0, el.style.minHeight = `${el.clientHeight}px`, el);
-      $$invalidate(0, el.innerHTML = "", el);
-      import_obsidian.MarkdownRenderer.render(plugin.app, file.content, el, file.path, plugin);
-      $$invalidate(4, renderedContent = file.content);
-      $$invalidate(0, el.style.minHeight = "20px", el);
+  user_effect((() => {
+    if (get(renderedContent) && file() && file().content && get(el) && get(renderedContent) != file().content) {
+      get(el).style.minHeight = `${get(el).clientHeight}px`;
+      get(el).innerHTML = "";
+      import_obsidian.MarkdownRenderer.render($$props.plugin.app, file().content, get(el), file().path, $$props.plugin);
+      set(renderedContent, proxy(file().content));
+      get(el).style.minHeight = "20px";
     }
-  };
-  return [ el, file, observer, plugin, renderedContent, function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"]((() => {
-      el = $$value;
-      $$invalidate(0, el), $$invalidate(4, renderedContent), $$invalidate(1, file), $$invalidate(3, plugin);
-    }));
-  } ];
-}
-
-var ScrollViewMarkdownComponent = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance, create_fragment, safe_not_equal, {
-      file: 1,
-      observer: 2,
-      plugin: 3
-    }, add_css);
-  }
-}, ScrollViewMarkdownComponent_default = ScrollViewMarkdownComponent;
-
-function add_css2(target) {
-  append_styles(target, "svelte-s1mg0b", ".header.svelte-s1mg0b{background-color:var(--background-secondary-alt);position:sticky;top:0;color:var(--text-normal);margin-bottom:8px}.file.svelte-s1mg0b{cursor:pointer}.path.svelte-s1mg0b{font-size:75%}hr.svelte-s1mg0b{margin:8px auto}");
-}
-
-function get_each_context(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[12] = list[i];
-  return child_ctx;
-}
-
-function create_each_block(ctx) {
-  let div1, div0, span0, t0, t1, span1, t2, t3, t4, t5, scrollviewmarkdown, t6, hr, t7, current, mounted, dispose, t0_value = ctx[12].title + "", t3_value = ctx[12].path + "";
-  scrollviewmarkdown = new ScrollViewMarkdownComponent_default({
-    props: {
-      file: ctx[12],
-      observer: ctx[2],
-      plugin: ctx[0]
-    }
-  });
-  function click_handler(...args) {
-    return ctx[9](ctx[12], ...args);
-  }
-  return {
-    c() {
-      div1 = element("div");
-      div0 = element("div");
-      span0 = element("span");
-      t0 = text(t0_value);
-      t1 = space();
-      span1 = element("span");
-      t2 = text("(");
-      t3 = text(t3_value);
-      t4 = text(")");
-      t5 = space();
-      create_component(scrollviewmarkdown.$$.fragment);
-      t6 = space();
-      hr = element("hr");
-      t7 = space();
-      attr(span1, "class", "path svelte-s1mg0b");
-      attr(div0, "class", "header svelte-s1mg0b");
-      attr(hr, "class", "svelte-s1mg0b");
-      attr(div1, "class", "file svelte-s1mg0b");
-    },
-    m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
-      append(div0, span0);
-      append(span0, t0);
-      append(div0, t1);
-      append(div0, span1);
-      append(span1, t2);
-      append(span1, t3);
-      append(span1, t4);
-      append(div1, t5);
-      mount_component(scrollviewmarkdown, div1, null);
-      append(div1, t6);
-      append(div1, hr);
-      append(div1, t7);
-      ctx[10](div1);
-      current = true;
-      if (!mounted) {
-        dispose = listen(div1, "click", click_handler);
-        mounted = true;
-      }
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      if ((!current || 16 & dirty) && t0_value !== (t0_value = ctx[12].title + "")) set_data(t0, t0_value);
-      if ((!current || 16 & dirty) && t3_value !== (t3_value = ctx[12].path + "")) set_data(t3, t3_value);
-      const scrollviewmarkdown_changes = {};
-      if (16 & dirty) scrollviewmarkdown_changes.file = ctx[12];
-      if (4 & dirty) scrollviewmarkdown_changes.observer = ctx[2];
-      if (1 & dirty) scrollviewmarkdown_changes.plugin = ctx[0];
-      scrollviewmarkdown.$set(scrollviewmarkdown_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(scrollviewmarkdown.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(scrollviewmarkdown.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(div1);
-      destroy_component(scrollviewmarkdown);
-      ctx[10](null);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-
-function create_fragment2(ctx) {
-  let div1, div0, t0, t1, t2, hr, t3, current, each_value = ensure_array_like(ctx[4]), each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-  const out = i => transition_out(each_blocks[i], 1, 1, (() => {
-    each_blocks[i] = null;
   }));
-  return {
-    c() {
-      div1 = element("div");
-      div0 = element("div");
-      t0 = text("Files with ");
-      t1 = text(ctx[3]);
-      t2 = space();
-      hr = element("hr");
-      t3 = space();
-      for (let i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
-      attr(div0, "class", "header svelte-s1mg0b");
-      attr(hr, "class", "svelte-s1mg0b");
-      attr(div1, "class", "x");
-    },
-    m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
-      append(div0, t0);
-      append(div0, t1);
-      append(div1, t2);
-      append(div1, hr);
-      append(div1, t3);
-      for (let i = 0; i < each_blocks.length; i += 1) if (each_blocks[i]) each_blocks[i].m(div1, null);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      if (!current || 8 & dirty) set_data(t1, ctx2[3]);
-      if (55 & dirty) {
-        each_value = ensure_array_like(ctx2[4]);
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(div1, null);
-          }
-        }
-        group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) out(i);
-        check_outros();
-      }
-    },
-    i(local) {
-      if (!current) {
-        for (let i = 0; i < each_value.length; i += 1) transition_in(each_blocks[i]);
-        current = true;
-      }
-    },
-    o(local) {
-      each_blocks = each_blocks.filter(Boolean);
-      for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(div1);
-      destroy_each(each_blocks, detaching);
-    }
-  };
+  var div = root();
+  bind_this(div, ($$value => set(el, $$value)), (() => get(el)));
+  append($$anchor, div);
+  pop();
 }
 
-function instance2($$self, $$props, $$invalidate) {
-  let files, tagPath, scrollEl, observer, {store = writable({
+var on_click = (evt, handleOpenFile, file) => handleOpenFile(evt, get(file)), root_1 = template('<div class="file svelte-s1mg0b"><div class="header svelte-s1mg0b"><span> </span> <span class="path svelte-s1mg0b"> </span></div> <!> <hr class="svelte-s1mg0b"></div>'), root2 = template('<div class="x"><div class="header svelte-s1mg0b"> </div> <hr class="svelte-s1mg0b"> <!></div>'), $$css2 = {
+  hash: "svelte-s1mg0b",
+  code: "\n\t.header.svelte-s1mg0b {\n\t\tbackground-color: var(--background-secondary-alt);\n\t\tposition: sticky;\n\t\ttop: 0;\n\t\tcolor: var(--text-normal);\n\t\tmargin-bottom: 8px;\n\t}\n\t.file.svelte-s1mg0b {\n\t\tcursor: pointer;\n\t}\n\t.path.svelte-s1mg0b {\n\t\tfont-size: 75%;\n\t}\n\thr.svelte-s1mg0b {\n\t\tmargin: 8px auto;\n\t}\n"
+};
+
+function ScrollViewComponent($$anchor, $$props) {
+  push($$props, true);
+  append_styles($$anchor, $$css2);
+  const $$stores = setup_stores();
+  let store = prop($$props, "store", 19, (() => writable({
     files: [],
     title: "",
     tagPath: ""
-  })} = $$props, {openfile} = $$props, {plugin} = $$props, state = {
-    files: [],
-    title: "",
-    tagPath: ""
-  };
+  })));
+  const _state = derived((() => store_get(store(), "$store", $$stores)));
+  let files = derived((() => get(_state).files));
+  const tagPath = derived((() => get(_state).tagPath.split(", ").map((e => "#" + trimTrailingSlash(e).split("/").map((e2 => renderSpecialTag(e2.trim()))).join("/"))).join(", ")));
   function handleOpenFile(e, file) {
-    openfile(file.path, false);
+    $$props.openfile(file.path, false);
     e.preventDefault();
   }
+  let scrollEl = state(void 0), observer = state(void 0);
   const onAppearing = new CustomEvent("appearing", {
     detail: {}
   });
-  onMount((() => {
-    $$invalidate(2, observer = new IntersectionObserver((entries => {
-      for (const entry of entries) if (entry.isIntersecting) entry.target.dispatchEvent(onAppearing);
-    }), {
-      root: scrollEl,
+  user_effect((() => {
+    const options = {
+      root: get(scrollEl),
       rootMargin: "10px",
       threshold: 0
-    }));
+    };
+    set(observer, proxy(new IntersectionObserver((entries => {
+      for (const entry of entries) if (entry.isIntersecting) entry.target.dispatchEvent(onAppearing);
+    }), options)));
   }));
   onDestroy((() => {
-    observer.disconnect();
+    null === get(observer) || void 0 === get(observer) || get(observer).disconnect();
   }));
-  $$self.$$set = $$props2 => {
-    if ("store" in $$props2) $$invalidate(6, store = $$props2.store);
-    if ("openfile" in $$props2) $$invalidate(7, openfile = $$props2.openfile);
-    if ("plugin" in $$props2) $$invalidate(0, plugin = $$props2.plugin);
-  };
-  $$self.$$.update = () => {
-    if (64 & $$self.$$.dirty) store.subscribe((_state => {
-      $$invalidate(8, state = {
-        ..._state
-      });
-      return () => {};
+  var div = root2(), div_1 = child(div), text2 = child(div_1);
+  reset(div_1);
+  each(sibling(div_1, 4), 17, (() => get(files)), index, (($$anchor2, file) => {
+    var div_2 = root_1();
+    bind_this(div_2, ($$value => set(scrollEl, $$value)), (() => get(scrollEl)));
+    div_2.__click = [ on_click, handleOpenFile, file ];
+    var div_3 = child(div_2), span = child(div_3), text_1 = child(span, true);
+    reset(span);
+    var span_1 = sibling(span, 2), text_2 = child(span_1);
+    reset(span_1);
+    reset(div_3);
+    ScrollViewMarkdownComponent(sibling(div_3, 2), {
+      get file() {
+        return get(file);
+      },
+      get observer() {
+        return get(observer);
+      },
+      get plugin() {
+        return $$props.plugin;
+      }
+    });
+    next(2);
+    reset(div_2);
+    template_effect((() => {
+      var _a;
+      set_text(text_1, get(file).title);
+      set_text(text_2, `(${null != (_a = get(file).path) ? _a : ""})`);
     }));
-    if (256 & $$self.$$.dirty) $$invalidate(4, files = state.files);
-    if (256 & $$self.$$.dirty) $$invalidate(3, tagPath = state.tagPath.split(", ").map((e => "#" + trimTrailingSlash(e).split("/").map((e2 => renderSpecialTag(e2.trim()))).join("/"))).join(", "));
-  };
-  return [ plugin, scrollEl, observer, tagPath, files, handleOpenFile, store, openfile, state, (file, evt) => handleOpenFile(evt, file), function div1_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"]((() => {
-      scrollEl = $$value;
-      $$invalidate(1, scrollEl);
-    }));
-  } ];
+    append($$anchor2, div_2);
+  }));
+  reset(div);
+  template_effect((() => {
+    var _a;
+    return set_text(text2, `Files with ${null != (_a = get(tagPath)) ? _a : ""}`);
+  }));
+  append($$anchor, div);
+  pop();
 }
 
-var ScrollViewComponent = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance2, create_fragment2, safe_not_equal, {
-      store: 6,
-      openfile: 7,
-      plugin: 0
-    }, add_css2);
-  }
-}, ScrollViewComponent_default = ScrollViewComponent, ScrollView = class extends import_obsidian2.ItemView {
+delegate([ "click" ]);
+
+var ScrollView = class extends import_obsidian2.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.icon = "sheets-in-box";
@@ -1549,11 +3260,11 @@ var ScrollViewComponent = class extends SvelteComponent {
     };
     await this.updateView();
   }
-  async setState(state, result) {
+  async setState(state2, result) {
     this.state = {
-      ...state
+      ...state2
     };
-    this.title = state.title;
+    this.title = state2.title;
     await this.updateView();
   }
   getState() {
@@ -1587,7 +3298,7 @@ var ScrollViewComponent = class extends SvelteComponent {
     this.store.set(this.state);
   }
   async onOpen() {
-    this.component = new ScrollViewComponent_default({
+    const app = mount(ScrollViewComponent, {
       target: this.contentEl,
       props: {
         store: this.store,
@@ -1595,15 +3306,20 @@ var ScrollViewComponent = class extends SvelteComponent {
         plugin: this.plugin
       }
     });
+    this.component = app;
+    return await Promise.resolve();
   }
   async onClose() {
-    var _a;
-    null == (_a = this.component) || _a.$destroy();
+    if (this.component) {
+      unmount(this.component);
+      this.component = void 0;
+    }
+    return await Promise.resolve();
   }
 }, import_obsidian6 = require("obsidian");
 
-function performSortExactFirst(_items, children2, leftOverItems) {
-  const childrenPathsArr = children2.map((e => e[V2FI_IDX_CHILDREN].map((ee => ee.path)))).flat(), childrenPaths = new Set(childrenPathsArr), exactHerePaths = new Set(_items.map((e => e.path)));
+function performSortExactFirst(_items, children, leftOverItems) {
+  const childrenPathsArr = children.map((e => e[V2FI_IDX_CHILDREN].map((ee => ee.path)))).flat(), childrenPaths = new Set(childrenPathsArr), exactHerePaths = new Set(_items.map((e => e.path)));
   childrenPaths.forEach((path => exactHerePaths.delete(path)));
   return [ ...[ ...leftOverItems ].sort(((a, b) => (exactHerePaths.has(a.path) ? -1 : 0) + (exactHerePaths.has(b.path) ? 1 : 0))) ];
 }
@@ -1619,7 +3335,7 @@ function nextTick2() {
 var delays = [ nextTick2, delay2, nextTick2, waitForRequestAnimationFrame ], delayIdx = 0;
 
 async function collectChildren(previousTrail, tags, _tagInfo, _items) {
-  const previousTrailLC = previousTrail.toLowerCase(), children2 = [], tagPerItem = new Map, lowercaseMap = new Map;
+  const previousTrailLC = previousTrail.toLowerCase(), children = [], tagPerItem = new Map, lowercaseMap = new Map;
   for (const item of _items) item.tags.forEach((itemTag => {
     var _a;
     const tagLc = null != (_a = lowercaseMap.get(itemTag)) ? _a : lowercaseMap.set(itemTag, itemTag.toLowerCase()).get(itemTag);
@@ -1629,21 +3345,21 @@ async function collectChildren(previousTrail, tags, _tagInfo, _items) {
   for (const tag of tags) {
     const tagLC = tag.toLowerCase(), tagNestedLC = trimPrefix(tagLC, previousTrailLC), items = [];
     for (const [itemTag, tempItems] of tagPerItem) if (pathMatch(itemTag, tagLC)) items.push(...tempItems); else if (pathMatch(itemTag, tagNestedLC)) items.push(...tempItems);
-    children2.push([ tag, ...parseTagName(tag, _tagInfo), [ ...new Set(items) ] ]);
+    children.push([ tag, ...parseTagName(tag, _tagInfo), [ ...new Set(items) ] ]);
     delayIdx++;
     delayIdx %= 4;
     await delays[delayIdx]();
   }
-  return children2;
+  return children;
 }
 
 async function collectTreeChildren({key, expandLimit, depth, tags, trailLower, _setting, isMainTree, isSuppressibleLevel, viewType, previousTrail, _tagInfo, _items, linkedItems, isRoot, sortFunc}) {
-  let suppressLevels = [], children2 = [];
+  let suppressLevels = [], children = [];
   if (expandLimit && depth >= expandLimit) {
-    children2 = [];
+    children = [];
     suppressLevels = getExtraTags(tags, trailLower, _setting.reduceNestedParent);
-  } else if (!isMainTree) children2 = []; else if (isSuppressibleLevel) {
-    children2 = [];
+  } else if (!isMainTree) children = []; else if (isSuppressibleLevel) {
+    children = [];
     suppressLevels = getExtraTags(tags, trailLower, _setting.reduceNestedParent);
   } else {
     let wChildren = [];
@@ -1667,1706 +3383,628 @@ async function collectTreeChildren({key, expandLimit, depth, tags, trailLower, _
       }
       if (isMainTree && isRoot) {
         const archiveTags = _setting.archiveTags.toLowerCase().replace(/[\n ]/g, "").split(",");
-        wChildren = wChildren.map((e => archiveTags.some((aTag => `${aTag}//`.startsWith(e[V2FI_IDX_TAG].toLowerCase() + "/"))) ? e : [ e[V2FI_IDX_TAG], e[V2FI_IDX_TAGNAME], e[V2FI_IDX_TAGDISP], e[V2FI_IDX_CHILDREN].filter((items => !items.tags.some((e2 => archiveTags.contains(e2.toLowerCase()))))) ])).filter((child => 0 != child[V2FI_IDX_CHILDREN].length));
+        wChildren = wChildren.map((e => archiveTags.some((aTag => `${aTag}//`.startsWith(e[V2FI_IDX_TAG].toLowerCase() + "/"))) ? e : [ e[V2FI_IDX_TAG], e[V2FI_IDX_TAGNAME], e[V2FI_IDX_TAGDISP], e[V2FI_IDX_CHILDREN].filter((items => !items.tags.some((e2 => archiveTags.contains(e2.toLowerCase()))))) ])).filter((child2 => 0 != child2[V2FI_IDX_CHILDREN].length));
       }
     }
     wChildren = wChildren.sort(sortFunc);
-    children2 = wChildren;
+    children = wChildren;
   }
   return {
     suppressLevels,
-    children: children2
+    children
   };
 }
 
-var get_default_slot_changes = dirty => ({
-  isVisible: 1 & dirty
-}), get_default_slot_context = ctx => ({
-  isVisible: ctx[0]
-});
+var root3 = template("<div><!></div>");
 
-function create_fragment3(ctx) {
-  let div, current;
-  const default_slot_template = ctx[5].default, default_slot = create_slot(default_slot_template, ctx, ctx[4], get_default_slot_context);
-  return {
-    c() {
-      div = element("div");
-      if (default_slot) default_slot.c();
-      attr(div, "class", ctx[1]);
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      if (default_slot) default_slot.m(div, null);
-      ctx[6](div);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      if (default_slot) if (default_slot.p && (!current || 17 & dirty)) update_slot_base(default_slot, default_slot_template, ctx2, ctx2[4], !current ? get_all_dirty_from_scope(ctx2[4]) : get_slot_changes(default_slot_template, ctx2[4], dirty, get_default_slot_changes), get_default_slot_context);
-      if (!current || 2 & dirty) attr(div, "class", ctx2[1]);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(default_slot, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-      if (default_slot) default_slot.d(detaching);
-      ctx[6](null);
-    }
-  };
-}
-
-function instance3($$self, $$props, $$invalidate) {
-  let {$$slots: slots = {}, $$scope} = $$props, {cssClass = ""} = $$props, {isVisible = false} = $$props, hidingScheduled = false;
+function OnDemandRender($$anchor, $$props) {
+  push($$props, true);
+  let cssClass = prop($$props, "cssClass", 3, ""), isVisible = prop($$props, "isVisible", 15, false), hidingScheduled = state(false);
   const {observe, unobserve} = getContext("observer");
   function setIsVisible(visibility) {
-    if (isVisible != visibility) if (visibility) $$invalidate(0, isVisible = visibility);
-    hidingScheduled = !visibility;
+    if (isVisible() != visibility) if (visibility) isVisible(visibility);
+    set(hidingScheduled, !visibility);
   }
   onMount((() => {
     performHide.subscribe((() => {
-      if (hidingScheduled) {
-        $$invalidate(0, isVisible = false);
-        hidingScheduled = false;
+      if (get(hidingScheduled)) {
+        isVisible(false);
+        set(hidingScheduled, false);
       }
     }));
   }));
   onDestroy((() => {
-    if (_el) unobserve(_el);
+    if (get(_el)) unobserve(get(_el));
   }));
-  let _el, el;
-  $$self.$$set = $$props2 => {
-    if ("cssClass" in $$props2) $$invalidate(1, cssClass = $$props2.cssClass);
-    if ("isVisible" in $$props2) $$invalidate(0, isVisible = $$props2.isVisible);
-    if ("$$scope" in $$props2) $$invalidate(4, $$scope = $$props2.$$scope);
-  };
-  $$self.$$.update = () => {
-    if (12 & $$self.$$.dirty) if (_el != el) {
-      if (_el) unobserve(_el);
-      $$invalidate(3, _el = el);
-      if (el) observe(el, setIsVisible);
+  let _el = state(void 0), el = state(void 0);
+  user_effect((() => {
+    if (get(_el) != get(el)) {
+      if (get(_el)) unobserve(get(_el));
+      set(_el, proxy(get(el)));
+      if (get(el)) observe(get(el), setIsVisible);
     }
-  };
-  return [ isVisible, cssClass, el, _el, $$scope, slots, function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"]((() => {
-      el = $$value;
-      $$invalidate(2, el);
-    }));
-  } ];
+  }));
+  var div = root3();
+  bind_this(div, ($$value => set(el, $$value)), (() => get(el)));
+  snippet(child(div), (() => {
+    var _a;
+    return null != (_a = $$props.children) ? _a : noop;
+  }), (() => ({
+    isVisible: isVisible()
+  })));
+  reset(div);
+  template_effect((() => set_class(div, cssClass())));
+  append($$anchor, div);
+  pop();
 }
 
-var OnDemandRender = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance3, create_fragment3, safe_not_equal, {
-      cssClass: 1,
-      isVisible: 0
-    });
-  }
-}, OnDemandRender_default = OnDemandRender;
+var on_click2 = (evt, $$props) => $$props.openFile($$props.item.path, evt.metaKey || evt.ctrlKey), on_mouseover = (e, handleMouseover, $$props) => {
+  handleMouseover(e, $$props.item.path);
+}, on_contextmenu = (evt, $$props) => $$props.showMenu(evt, $$props.trail, void 0, [ $$props.item ]), root_2 = template('<div class="tf-taglist"><!></div>'), root_12 = template('<div class="tree-item-self is-clickable nav-file-title"><div class="tree-item-inner nav-file-title-content lsl-f"> </div> <!></div>');
 
-function create_if_block(ctx) {
-  let div;
-  return {
-    c() {
-      div = element("div");
-      attr(div, "class", "tf-taglist");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      div.innerHTML = ctx[5];
-    },
-    p(ctx2, dirty) {
-      if (32 & dirty) div.innerHTML = ctx2[5];
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-    }
-  };
-}
-
-function create_default_slot(ctx) {
-  let div1, div0, t0, t1, div1_data_path_value, mounted, dispose, t0_value = (ctx[20] ? ctx[0].displayName : "") + "", if_block = ctx[20] && create_if_block(ctx);
-  return {
-    c() {
-      div1 = element("div");
-      div0 = element("div");
-      t0 = text(t0_value);
-      t1 = space();
-      if (if_block) if_block.c();
-      attr(div0, "class", "tree-item-inner nav-file-title-content lsl-f");
-      attr(div1, "class", "tree-item-self is-clickable nav-file-title");
-      attr(div1, "draggable", ctx[6]);
-      attr(div1, "data-path", div1_data_path_value = ctx[0].path);
-      toggle_class(div1, "is-active", ctx[7]);
-    },
-    m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
-      append(div0, t0);
-      append(div1, t1);
-      if (if_block) if_block.m(div1, null);
-      if (!mounted) {
-        dispose = [ listen(div1, "dragstart", ctx[9]), listen(div1, "click", ctx[14]), listen(div1, "mouseover", ctx[15]), listen(div1, "focus", focus_handler), listen(div1, "contextmenu", ctx[16]) ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (1048577 & dirty && t0_value !== (t0_value = (ctx2[20] ? ctx2[0].displayName : "") + "")) set_data(t0, t0_value);
-      if (ctx2[20]) if (if_block) if_block.p(ctx2, dirty); else {
-        if_block = create_if_block(ctx2);
-        if_block.c();
-        if_block.m(div1, null);
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-      if (64 & dirty) attr(div1, "draggable", ctx2[6]);
-      if (1 & dirty && div1_data_path_value !== (div1_data_path_value = ctx2[0].path)) attr(div1, "data-path", div1_data_path_value);
-      if (128 & dirty) toggle_class(div1, "is-active", ctx2[7]);
-    },
-    d(detaching) {
-      if (detaching) detach(div1);
-      if (if_block) if_block.d();
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-
-function create_fragment4(ctx) {
-  let ondemandrender, updating_isVisible, current;
-  function ondemandrender_isVisible_binding(value) {
-    ctx[17](value);
-  }
-  let ondemandrender_props = {
-    cssClass: "tree-item nav-file",
-    $$slots: {
-      default: [ create_default_slot, ({isVisible}) => ({
-        20: isVisible
-      }), ({isVisible}) => isVisible ? 1048576 : 0 ]
-    },
-    $$scope: {
-      ctx
-    }
-  };
-  if (void 0 !== ctx[4]) ondemandrender_props.isVisible = ctx[4];
-  ondemandrender = new OnDemandRender_default({
-    props: ondemandrender_props
-  });
-  binding_callbacks.push((() => bind(ondemandrender, "isVisible", ondemandrender_isVisible_binding)));
-  return {
-    c() {
-      create_component(ondemandrender.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(ondemandrender, target, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      const ondemandrender_changes = {};
-      if (3145967 & dirty) ondemandrender_changes.$$scope = {
-        dirty,
-        ctx: ctx2
-      };
-      if (!updating_isVisible && 16 & dirty) {
-        updating_isVisible = true;
-        ondemandrender_changes.isVisible = ctx2[4];
-        add_flush_callback((() => updating_isVisible = false));
-      }
-      ondemandrender.$set(ondemandrender_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(ondemandrender.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(ondemandrender.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(ondemandrender, detaching);
-    }
-  };
-}
-
-var focus_handler = () => {};
-
-function instance4($$self, $$props, $$invalidate) {
-  let isActive, draggable, $tagFolderSetting;
-  component_subscribe($$self, tagFolderSetting, ($$value => $$invalidate(18, $tagFolderSetting = $$value)));
-  let {viewType = "tags"} = $$props, {item} = $$props, {trail} = $$props, {openFile} = $$props, {showMenu} = $$props, {hoverPreview} = $$props;
+function V2TreeItemComponent($$anchor, $$props) {
+  push($$props, true);
+  const $$stores = setup_stores(), $pluginInstance = () => store_get(pluginInstance, "$pluginInstance", $$stores);
   function handleMouseover(e, path) {
-    hoverPreview(e, path);
+    $$props.hoverPreview(e, path);
   }
-  let _currentActiveFilePath = "", _setting = $tagFolderSetting;
-  currentFile.subscribe((path => {
-    $$invalidate(12, _currentActiveFilePath = path);
-  }));
-  tagFolderSetting.subscribe((setting => {
-    $$invalidate(13, _setting = setting);
-  }));
-  let extraTagsHtml = "", isItemVisible = false;
-  const dm = app.dragManager;
-  $$self.$$set = $$props2 => {
-    if ("viewType" in $$props2) $$invalidate(10, viewType = $$props2.viewType);
-    if ("item" in $$props2) $$invalidate(0, item = $$props2.item);
-    if ("trail" in $$props2) $$invalidate(1, trail = $$props2.trail);
-    if ("openFile" in $$props2) $$invalidate(2, openFile = $$props2.openFile);
-    if ("showMenu" in $$props2) $$invalidate(3, showMenu = $$props2.showMenu);
-    if ("hoverPreview" in $$props2) $$invalidate(11, hoverPreview = $$props2.hoverPreview);
-  };
-  $$self.$$.update = () => {
-    if (4097 & $$self.$$.dirty) $$invalidate(7, isActive = item.path == _currentActiveFilePath);
-    if (8211 & $$self.$$.dirty) if (isItemVisible) {
-      const tagsLeft = uniqueCaseIntensive(getExtraTags(item.tags, [ ...trail ], _setting.reduceNestedParent).map((e => trimSlash(e, false, true))).filter((e => "" != e)));
-      $$invalidate(5, extraTagsHtml = `${tagsLeft.map((e => `<span class="tf-tag">${escapeStringToHTML(renderSpecialTag(e))}</span>`)).join("")}`);
-    }
-    if (8192 & $$self.$$.dirty) $$invalidate(6, draggable = !_setting.disableDragging);
-  };
-  return [ item, trail, openFile, showMenu, isItemVisible, extraTagsHtml, draggable, isActive, handleMouseover, function dragStartFile(args) {
-    if (!draggable) return;
-    const file = app.vault.getAbstractFileByPath(item.path), param = dm.dragFile(args, file);
-    if (param) return dm.onDragStart(args, param);
-  }, viewType, hoverPreview, _currentActiveFilePath, _setting, evt => openFile(item.path, evt.metaKey || evt.ctrlKey), e => {
-    handleMouseover(e, item.path);
-  }, evt => showMenu(evt, trail, void 0, [ item ]), function ondemandrender_isVisible_binding(value) {
-    isItemVisible = value;
-    $$invalidate(4, isItemVisible);
-  } ];
-}
-
-var V2TreeItemComponent = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance4, create_fragment4, safe_not_equal, {
-      viewType: 10,
-      item: 0,
-      trail: 1,
-      openFile: 2,
-      showMenu: 3,
-      hoverPreview: 11
+  const _setting = derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores))), _currentActiveFilePath = derived((() => store_get(currentFile, "$currentFile", $$stores)));
+  let isActive = derived((() => $$props.item.path == get(_currentActiveFilePath))), isItemVisible = state(false);
+  const tagsLeft = derived((() => get(isItemVisible) ? uniqueCaseIntensive(getExtraTags($$props.item.tags, [ ...$$props.trail ], get(_setting).reduceNestedParent).map((e => trimSlash(e, false, true))).map((e => e.split("/").map((ee => renderSpecialTag(ee))).join("/"))).filter((e => "" != e))) : [])), extraTagsHtml = derived((() => `${get(tagsLeft).map((e => `<span class="tf-tag">${escapeStringToHTML(e)}</span>`)).join("")}`)), draggable = derived((() => !get(_setting).disableDragging)), app = derived((() => null === $pluginInstance() || void 0 === $pluginInstance() ? void 0 : $pluginInstance().app)), dm = derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
+  function dragStartFile(args) {
+    if (!get(draggable)) return;
+    const file = get(app).vault.getAbstractFileByPath($$props.item.path), param = get(dm).dragFile(args, file);
+    if (param) return get(dm).onDragStart(args, param);
+  }
+  {
+    const children = ($$anchor2, $$arg0) => {
+      let isVisible = () => null == $$arg0 ? void 0 : $$arg0().isVisible;
+      var div = root_12();
+      div.__click = [ on_click2, $$props ];
+      div.__mouseover = [ on_mouseover, handleMouseover, $$props ];
+      div.__contextmenu = [ on_contextmenu, $$props ];
+      var div_1 = child(div), text2 = child(div_1, true);
+      reset(div_1);
+      if_block(sibling(div_1, 2), isVisible, ($$anchor3 => {
+        var div_2 = root_2();
+        html(child(div_2), (() => get(extraTagsHtml)), false, false);
+        reset(div_2);
+        append($$anchor3, div_2);
+      }));
+      reset(div);
+      template_effect((() => {
+        set_attribute(div, "draggable", get(draggable));
+        set_attribute(div, "data-path", $$props.item.path);
+        toggle_class(div, "is-active", get(isActive));
+        set_text(text2, isVisible() ? $$props.item.displayName : "");
+      }));
+      event("dragstart", div, dragStartFile);
+      event("focus", div, (() => {}));
+      append($$anchor2, div);
+    };
+    OnDemandRender($$anchor, {
+      cssClass: "tree-item nav-file",
+      get isVisible() {
+        return get(isItemVisible);
+      },
+      set isVisible($$value) {
+        set(isItemVisible, proxy($$value));
+      },
+      children,
+      $$slots: {
+        default: true
+      }
     });
   }
-}, V2TreeItemComponent_default = V2TreeItemComponent;
-
-function get_each_context2(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
-  return child_ctx;
+  pop();
 }
 
-function get_each_context_1(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[71] = list[i];
-  return child_ctx;
-}
+delegate([ "click", "mouseover", "contextmenu" ]);
 
-function get_each_context_2(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
-  return child_ctx;
-}
-
-function get_each_context_3(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[76] = list[i][0];
-  child_ctx[0] = list[i][1];
-  child_ctx[1] = list[i][2];
-  child_ctx[77] = list[i][3];
-  return child_ctx;
-}
-
-function create_else_block(ctx) {
-  let ondemandrender, updating_isVisible, current;
-  function ondemandrender_isVisible_binding(value) {
-    ctx[53](value);
+function handleOpenItem(evt, viewType, $$props, filename) {
+  if ("tags" != viewType()) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $$props.openFile(get(filename), evt.metaKey || evt.ctrlKey);
   }
-  let ondemandrender_props = {
-    cssClass: `tree-item-self${!ctx[4] ? " is-clickable mod-collapsible" : ""} nav-folder-title tag-folder-title${ctx[25] ? " is-active" : ""}`,
-    $$slots: {
-      default: [ create_default_slot2 ]
-    },
-    $$scope: {
-      ctx
-    }
-  };
-  if (void 0 !== ctx[17]) ondemandrender_props.isVisible = ctx[17];
-  ondemandrender = new OnDemandRender_default({
-    props: ondemandrender_props
-  });
-  binding_callbacks.push((() => bind(ondemandrender, "isVisible", ondemandrender_isVisible_binding)));
-  return {
-    c() {
-      create_component(ondemandrender.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(ondemandrender, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const ondemandrender_changes = {};
-      if (33554448 & dirty[0]) ondemandrender_changes.cssClass = `tree-item-self${!ctx2[4] ? " is-clickable mod-collapsible" : ""} nav-folder-title tag-folder-title${ctx2[25] ? " is-active" : ""}`;
-      if (96616584 & dirty[0] | 262144 & dirty[2]) ondemandrender_changes.$$scope = {
-        dirty,
-        ctx: ctx2
-      };
-      if (!updating_isVisible && 131072 & dirty[0]) {
-        updating_isVisible = true;
-        ondemandrender_changes.isVisible = ctx2[17];
-        add_flush_callback((() => updating_isVisible = false));
-      }
-      ondemandrender.$set(ondemandrender_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(ondemandrender.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(ondemandrender.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(ondemandrender, detaching);
-    }
-  };
 }
 
-function create_if_block_1(ctx) {
-  let if_block_anchor, if_block = ctx[4] && create_if_block_2(ctx);
-  return {
-    c() {
-      if (if_block) if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block) if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, dirty) {
-      if (ctx2[4]) if (if_block) if_block.p(ctx2, dirty); else {
-        if_block = create_if_block_2(ctx2);
-        if_block.c();
-        if_block.m(if_block_anchor.parentNode, if_block_anchor);
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) detach(if_block_anchor);
-      if (if_block) if_block.d(detaching);
-    }
-  };
-}
+var on_contextmenu2 = (evt, shouldResponsibleFor, $$props, trail, suppressLevels, viewType, tagName, filename, _items) => {
+  evt.stopPropagation();
+  if (shouldResponsibleFor(evt)) $$props.showMenu(evt, [ ...trail(), ...get(suppressLevels) ], "tags" == viewType() ? tagName() : get(filename), get(_items));
+}, root_22 = template('<div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content"> </div></div>'), root_6 = template('<svg class="svg-icon"></svg>'), root_7 = template('<div class="tagfolder-titletagname"><!></div>'), root_8 = template('<div class="tagfolder-titletagname">...</div>'), on_click3 = (e, handleOpenScroll, trail, _items) => handleOpenScroll(e, trail(), get(_items).map((e2 => e2.path))), root_4 = template('<div class="tree-item-icon collapse-icon nav-folder-collapse-indicator"><!></div> <div class="tree-item-inner nav-folder-title-content lsl-f"><!> <div class="tagfolder-quantity itemscount"><span class="itemscount"> </span></div></div>', 1), root_10 = template("<!> <!>", 1), root_15 = template('<div class="tree-item-children nav-folder-children"><!></div>'), root4 = template("<div><!> <!></div>");
 
-function create_else_block_2(ctx) {
-  let svg;
-  return {
-    c() {
-      svg = svg_element("svg");
-      attr(svg, "class", "svg-icon");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) detach(svg);
-    }
-  };
-}
-
-function create_if_block_4(ctx) {
-  let html_tag, html_anchor;
-  return {
-    c() {
-      html_tag = new HtmlTag(false);
-      html_anchor = empty();
-      html_tag.a = html_anchor;
-    },
-    m(target, anchor) {
-      html_tag.m(ctx[7], target, anchor);
-      insert(target, html_anchor, anchor);
-    },
-    p(ctx2, dirty) {
-      if (128 & dirty[0]) html_tag.p(ctx2[7]);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(html_anchor);
-        html_tag.d();
-      }
-    }
-  };
-}
-
-function create_else_block_1(ctx) {
-  let div;
-  return {
-    c() {
-      div = element("div");
-      div.textContent = "...";
-      attr(div, "class", "tagfolder-titletagname");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) detach(div);
-    }
-  };
-}
-
-function create_if_block_3(ctx) {
-  let div, mounted, dispose;
-  return {
-    c() {
-      div = element("div");
-      attr(div, "class", "tagfolder-titletagname");
-      attr(div, "draggable", ctx[22]);
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      div.innerHTML = ctx[24];
-      if (!mounted) {
-        dispose = listen(div, "dragstart", ctx[30]);
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (16777216 & dirty[0]) div.innerHTML = ctx2[24];
-      if (4194304 & dirty[0]) attr(div, "draggable", ctx2[22]);
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-
-function create_default_slot2(ctx) {
-  let div0, t0, div2, t1, div1, span, t2, mounted, dispose;
-  function select_block_type_1(ctx2, dirty) {
-    if (ctx2[17]) return create_if_block_4; else return create_else_block_2;
-  }
-  let current_block_type = select_block_type_1(ctx), if_block0 = current_block_type(ctx);
-  function select_block_type_2(ctx2, dirty) {
-    if (ctx2[17]) return create_if_block_3; else return create_else_block_1;
-  }
-  let current_block_type_1 = select_block_type_2(ctx), if_block1 = current_block_type_1(ctx);
-  return {
-    c() {
-      div0 = element("div");
-      if_block0.c();
-      t0 = space();
-      div2 = element("div");
-      if_block1.c();
-      t1 = space();
-      div1 = element("div");
-      span = element("span");
-      t2 = text(ctx[23]);
-      attr(div0, "class", "tree-item-icon collapse-icon nav-folder-collapse-indicator");
-      toggle_class(div0, "is-collapsed", ctx[26]);
-      attr(span, "class", "itemscount");
-      attr(span, "draggable", ctx[22]);
-      attr(div1, "class", "tagfolder-quantity itemscount");
-      attr(div2, "class", "tree-item-inner nav-folder-title-content lsl-f");
-    },
-    m(target, anchor) {
-      insert(target, div0, anchor);
-      if_block0.m(div0, null);
-      insert(target, t0, anchor);
-      insert(target, div2, anchor);
-      if_block1.m(div2, null);
-      append(div2, t1);
-      append(div2, div1);
-      append(div1, span);
-      append(span, t2);
-      if (!mounted) {
-        dispose = [ listen(div0, "click", ctx[28]), listen(span, "dragstart", ctx[29]), listen(div1, "click", ctx[52]), listen(div2, "click", ctx[31]) ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (current_block_type === (current_block_type = select_block_type_1(ctx2)) && if_block0) if_block0.p(ctx2, dirty); else {
-        if_block0.d(1);
-        if_block0 = current_block_type(ctx2);
-        if (if_block0) {
-          if_block0.c();
-          if_block0.m(div0, null);
-        }
-      }
-      if (67108864 & dirty[0]) toggle_class(div0, "is-collapsed", ctx2[26]);
-      if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx2)) && if_block1) if_block1.p(ctx2, dirty); else {
-        if_block1.d(1);
-        if_block1 = current_block_type_1(ctx2);
-        if (if_block1) {
-          if_block1.c();
-          if_block1.m(div2, t1);
-        }
-      }
-      if (8388608 & dirty[0]) set_data(t2, ctx2[23]);
-      if (4194304 & dirty[0]) attr(span, "draggable", ctx2[22]);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(div0);
-        detach(t0);
-        detach(div2);
-      }
-      if_block0.d();
-      if_block1.d();
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-
-function create_if_block_2(ctx) {
-  let div1, div0, t;
-  return {
-    c() {
-      div1 = element("div");
-      div0 = element("div");
-      t = text(ctx[8]);
-      attr(div0, "class", "tree-item-inner nav-folder-title-content");
-      attr(div1, "class", "tree-item-self nav-folder-title");
-    },
-    m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
-      append(div0, t);
-    },
-    p(ctx2, dirty) {
-      if (256 & dirty[0]) set_data(t, ctx2[8]);
-    },
-    d(detaching) {
-      if (detaching) detach(div1);
-    }
-  };
-}
-
-function create_if_block2(ctx) {
-  let div, t, current, each_value_2 = ensure_array_like(ctx[18]), each_blocks_1 = [];
-  for (let i = 0; i < each_value_2.length; i += 1) each_blocks_1[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-  const out = i => transition_out(each_blocks_1[i], 1, 1, (() => {
-    each_blocks_1[i] = null;
-  }));
-  let each_value = ensure_array_like(ctx[19]), each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) each_blocks[i] = create_each_block2(get_each_context2(ctx, each_value, i));
-  const out_1 = i => transition_out(each_blocks[i], 1, 1, (() => {
-    each_blocks[i] = null;
-  }));
-  return {
-    c() {
-      div = element("div");
-      for (let i = 0; i < each_blocks_1.length; i += 1) each_blocks_1[i].c();
-      t = space();
-      for (let i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
-      attr(div, "class", "tree-item-children nav-folder-children");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      for (let i = 0; i < each_blocks_1.length; i += 1) if (each_blocks_1[i]) each_blocks_1[i].m(div, null);
-      append(div, t);
-      for (let i = 0; i < each_blocks.length; i += 1) if (each_blocks[i]) each_blocks[i].m(div, null);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (368364 & dirty[0]) {
-        each_value_2 = ensure_array_like(ctx2[18]);
-        let i;
-        for (i = 0; i < each_value_2.length; i += 1) {
-          const child_ctx = get_each_context_2(ctx2, each_value_2, i);
-          if (each_blocks_1[i]) {
-            each_blocks_1[i].p(child_ctx, dirty);
-            transition_in(each_blocks_1[i], 1);
-          } else {
-            each_blocks_1[i] = create_each_block_2(child_ctx);
-            each_blocks_1[i].c();
-            transition_in(each_blocks_1[i], 1);
-            each_blocks_1[i].m(div, t);
-          }
-        }
-        group_outros();
-        for (i = each_value_2.length; i < each_blocks_1.length; i += 1) out(i);
-        check_outros();
-      }
-      if (593432 & dirty[0]) {
-        each_value = ensure_array_like(ctx2[19]);
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context2(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block2(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(div, null);
-          }
-        }
-        group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) out_1(i);
-        check_outros();
-      }
-    },
-    i(local) {
-      if (!current) {
-        for (let i = 0; i < each_value_2.length; i += 1) transition_in(each_blocks_1[i]);
-        for (let i = 0; i < each_value.length; i += 1) transition_in(each_blocks[i]);
-        current = true;
-      }
-    },
-    o(local) {
-      each_blocks_1 = each_blocks_1.filter(Boolean);
-      for (let i = 0; i < each_blocks_1.length; i += 1) transition_out(each_blocks_1[i]);
-      each_blocks = each_blocks.filter(Boolean);
-      for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-      destroy_each(each_blocks_1, detaching);
-      destroy_each(each_blocks, detaching);
-    }
-  };
-}
-
-function create_each_block_3(ctx) {
-  let v2treefoldercomponent, current;
-  v2treefoldercomponent = new V2TreeFolderComponent({
-    props: {
-      viewType: ctx[2],
-      items: ctx[77],
-      thisName: ctx[76],
-      trail: [ ...ctx[3], ...ctx[16], ctx[76] ],
-      folderIcon: ctx[7],
-      openFile: ctx[10],
-      isRoot: false,
-      showMenu: ctx[9],
-      isMainTree: ctx[5],
-      openScrollView: ctx[12],
-      hoverPreview: ctx[11],
-      tagName: ctx[0],
-      tagNameDisp: ctx[1],
-      depth: ctx[15] ? ctx[6] : ctx[6] + 1
-    }
-  });
-  return {
-    c() {
-      create_component(v2treefoldercomponent.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(v2treefoldercomponent, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const v2treefoldercomponent_changes = {};
-      if (4 & dirty[0]) v2treefoldercomponent_changes.viewType = ctx2[2];
-      if (262144 & dirty[0]) v2treefoldercomponent_changes.items = ctx2[77];
-      if (262144 & dirty[0]) v2treefoldercomponent_changes.thisName = ctx2[76];
-      if (327688 & dirty[0]) v2treefoldercomponent_changes.trail = [ ...ctx2[3], ...ctx2[16], ctx2[76] ];
-      if (128 & dirty[0]) v2treefoldercomponent_changes.folderIcon = ctx2[7];
-      if (1024 & dirty[0]) v2treefoldercomponent_changes.openFile = ctx2[10];
-      if (512 & dirty[0]) v2treefoldercomponent_changes.showMenu = ctx2[9];
-      if (32 & dirty[0]) v2treefoldercomponent_changes.isMainTree = ctx2[5];
-      if (4096 & dirty[0]) v2treefoldercomponent_changes.openScrollView = ctx2[12];
-      if (2048 & dirty[0]) v2treefoldercomponent_changes.hoverPreview = ctx2[11];
-      if (262144 & dirty[0]) v2treefoldercomponent_changes.tagName = ctx2[0];
-      if (262144 & dirty[0]) v2treefoldercomponent_changes.tagNameDisp = ctx2[1];
-      if (32832 & dirty[0]) v2treefoldercomponent_changes.depth = ctx2[15] ? ctx2[6] : ctx2[6] + 1;
-      v2treefoldercomponent.$set(v2treefoldercomponent_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(v2treefoldercomponent.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(v2treefoldercomponent.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(v2treefoldercomponent, detaching);
-    }
-  };
-}
-
-function create_each_block_2(ctx) {
-  let each_1_anchor, current, each_value_3 = ensure_array_like(ctx[13]), each_blocks = [];
-  for (let i = 0; i < each_value_3.length; i += 1) each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
-  const out = i => transition_out(each_blocks[i], 1, 1, (() => {
-    each_blocks[i] = null;
-  }));
-  return {
-    c() {
-      for (let i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
-      each_1_anchor = empty();
-    },
-    m(target, anchor) {
-      for (let i = 0; i < each_blocks.length; i += 1) if (each_blocks[i]) each_blocks[i].m(target, anchor);
-      insert(target, each_1_anchor, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (368364 & dirty[0]) {
-        each_value_3 = ensure_array_like(ctx2[13]);
-        let i;
-        for (i = 0; i < each_value_3.length; i += 1) {
-          const child_ctx = get_each_context_3(ctx2, each_value_3, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block_3(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-          }
-        }
-        group_outros();
-        for (i = each_value_3.length; i < each_blocks.length; i += 1) out(i);
-        check_outros();
-      }
-    },
-    i(local) {
-      if (!current) {
-        for (let i = 0; i < each_value_3.length; i += 1) transition_in(each_blocks[i]);
-        current = true;
-      }
-    },
-    o(local) {
-      each_blocks = each_blocks.filter(Boolean);
-      for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(each_1_anchor);
-      destroy_each(each_blocks, detaching);
-    }
-  };
-}
-
-function create_each_block_1(ctx) {
-  let treeitemitemcomponent, current;
-  treeitemitemcomponent = new V2TreeItemComponent_default({
-    props: {
-      item: ctx[71],
-      openFile: ctx[10],
-      trail: ctx[4] ? [ ...ctx[3] ] : [ ...ctx[3], ...ctx[16] ],
-      showMenu: ctx[9],
-      hoverPreview: ctx[11]
-    }
-  });
-  return {
-    c() {
-      create_component(treeitemitemcomponent.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(treeitemitemcomponent, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const treeitemitemcomponent_changes = {};
-      if (524288 & dirty[0]) treeitemitemcomponent_changes.item = ctx2[71];
-      if (1024 & dirty[0]) treeitemitemcomponent_changes.openFile = ctx2[10];
-      if (65560 & dirty[0]) treeitemitemcomponent_changes.trail = ctx2[4] ? [ ...ctx2[3] ] : [ ...ctx2[3], ...ctx2[16] ];
-      if (512 & dirty[0]) treeitemitemcomponent_changes.showMenu = ctx2[9];
-      if (2048 & dirty[0]) treeitemitemcomponent_changes.hoverPreview = ctx2[11];
-      treeitemitemcomponent.$set(treeitemitemcomponent_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(treeitemitemcomponent.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(treeitemitemcomponent.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(treeitemitemcomponent, detaching);
-    }
-  };
-}
-
-function create_each_block2(ctx) {
-  let each_1_anchor, current, each_value_1 = ensure_array_like(ctx[13]), each_blocks = [];
-  for (let i = 0; i < each_value_1.length; i += 1) each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-  const out = i => transition_out(each_blocks[i], 1, 1, (() => {
-    each_blocks[i] = null;
-  }));
-  return {
-    c() {
-      for (let i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
-      each_1_anchor = empty();
-    },
-    m(target, anchor) {
-      for (let i = 0; i < each_blocks.length; i += 1) if (each_blocks[i]) each_blocks[i].m(target, anchor);
-      insert(target, each_1_anchor, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (593432 & dirty[0]) {
-        each_value_1 = ensure_array_like(ctx2[13]);
-        let i;
-        for (i = 0; i < each_value_1.length; i += 1) {
-          const child_ctx = get_each_context_1(ctx2, each_value_1, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block_1(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-          }
-        }
-        group_outros();
-        for (i = each_value_1.length; i < each_blocks.length; i += 1) out(i);
-        check_outros();
-      }
-    },
-    i(local) {
-      if (!current) {
-        for (let i = 0; i < each_value_1.length; i += 1) transition_in(each_blocks[i]);
-        current = true;
-      }
-    },
-    o(local) {
-      each_blocks = each_blocks.filter(Boolean);
-      for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(each_1_anchor);
-      destroy_each(each_blocks, detaching);
-    }
-  };
-}
-
-function create_fragment5(ctx) {
-  let div, current_block_type_index, if_block0, t, div_class_value, current, mounted, dispose;
-  const if_block_creators = [ create_if_block_1, create_else_block ], if_blocks = [];
-  function select_block_type(ctx2, dirty) {
-    if (ctx2[4] || !ctx2[5]) return 0; else return 1;
-  }
-  current_block_type_index = select_block_type(ctx);
-  if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-  let if_block1 = !ctx[26] && create_if_block2(ctx);
-  return {
-    c() {
-      div = element("div");
-      if_block0.c();
-      t = space();
-      if (if_block1) if_block1.c();
-      attr(div, "class", div_class_value = `tree-item nav-folder${ctx[26] ? " is-collapsed" : ""}${ctx[4] ? " mod-root" : ""}${ctx[20] ? " updating" : ""}`);
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      if_blocks[current_block_type_index].m(div, null);
-      append(div, t);
-      if (if_block1) if_block1.m(div, null);
-      current = true;
-      if (!mounted) {
-        dispose = [ listen(div, "click", stop_propagation(ctx[28])), listen(div, "contextmenu", stop_propagation(ctx[54])) ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      let previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type(ctx2);
-      if (current_block_type_index === previous_block_index) if_blocks[current_block_type_index].p(ctx2, dirty); else {
-        group_outros();
-        transition_out(if_blocks[previous_block_index], 1, 1, (() => {
-          if_blocks[previous_block_index] = null;
-        }));
-        check_outros();
-        if_block0 = if_blocks[current_block_type_index];
-        if (!if_block0) {
-          if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
-          if_block0.c();
-        } else if_block0.p(ctx2, dirty);
-        transition_in(if_block0, 1);
-        if_block0.m(div, t);
-      }
-      if (!ctx2[26]) if (if_block1) {
-        if_block1.p(ctx2, dirty);
-        if (67108864 & dirty[0]) transition_in(if_block1, 1);
-      } else {
-        if_block1 = create_if_block2(ctx2);
-        if_block1.c();
-        transition_in(if_block1, 1);
-        if_block1.m(div, null);
-      } else if (if_block1) {
-        group_outros();
-        transition_out(if_block1, 1, 1, (() => {
-          if_block1 = null;
-        }));
-        check_outros();
-      }
-      if (!current || 68157456 & dirty[0] && div_class_value !== (div_class_value = `tree-item nav-folder${ctx2[26] ? " is-collapsed" : ""}${ctx2[4] ? " mod-root" : ""}${ctx2[20] ? " updating" : ""}`)) attr(div, "class", div_class_value);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(if_block0);
-        transition_in(if_block1);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(if_block0);
-      transition_out(if_block1);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-      if_blocks[current_block_type_index].d();
-      if (if_block1) if_block1.d();
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-
-var batchSize = 80;
-
-function shouldResponsibleFor(evt) {
-  if (evt.target instanceof Element && evt.target.matchParent(".is-clickable.mod-collapsible.nav-folder-title")) return true; else return false;
-}
-
-function splitArrayToBatch(items) {
-  const ret = [];
-  if (items && items.length > 0) {
-    const applyItems = [ ...items ];
-    do {
-      const batch = applyItems.splice(0, batchSize);
-      if (0 == batch.length) break;
-      ret.push(batch);
-      if (batch.length < batchSize) break;
-    } while (applyItems.length > 0);
-  }
-  return ret;
-}
-
-function instance5($$self, $$props, $$invalidate) {
-  let filename, trailKey, collapsed, sortFunc, trailLower, isActive, classKey, tagsDispHtml, itemCount, draggable, $tagFolderSetting, $v2expandedTags;
-  component_subscribe($$self, tagFolderSetting, ($$value => $$invalidate(61, $tagFolderSetting = $$value)));
-  component_subscribe($$self, v2expandedTags, ($$value => $$invalidate(51, $v2expandedTags = $$value)));
+function V2TreeFolderComponent_1($$anchor, $$props) {
+  push($$props, true);
+  const $$stores = setup_stores();
   var _a, _b, _c;
-  let {viewType = "tags"} = $$props, {thisName = ""} = $$props, {items = []} = $$props, _items = [], {tagName = ""} = $$props, {tagNameDisp = []} = $$props, {trail = []} = $$props, {isRoot} = $$props, {isMainTree} = $$props, {depth = 1} = $$props, {folderIcon = ""} = $$props, {headerTitle = ""} = $$props, {showMenu} = $$props, {openFile} = $$props, {hoverPreview} = $$props, {openScrollView} = $$props;
-  v2expandedTags.subscribe((expTags => {
-    if (null == trailKey) return;
-    const collapsedNew = !expTags.has(trailKey);
-    if (collapsed != collapsedNew) $$invalidate(26, collapsed = collapsedNew);
-  }));
-  let _setting = $tagFolderSetting, expandLimit = 0;
-  tagFolderSetting.subscribe((setting => {
-    $$invalidate(35, _setting = setting);
-    $$invalidate(36, expandLimit = 0);
-    if (_setting.expandLimit) if ("links" == viewType) $$invalidate(36, expandLimit = _setting.expandLimit + 1); else $$invalidate(36, expandLimit = _setting.expandLimit);
-  }));
-  let _tagInfo = {};
-  tagInfo.subscribe((info => {
-    $$invalidate(37, _tagInfo = info);
-  }));
-  let _currentActiveFilePath = "";
-  currentFile.subscribe((path => {
-    $$invalidate(38, _currentActiveFilePath = path);
-  }));
+  let viewType = prop($$props, "viewType", 3, "tags"), thisName = prop($$props, "thisName", 3, ""), items = prop($$props, "items", 19, (() => [])), tagName = prop($$props, "tagName", 11, ""), tagNameDisp = prop($$props, "tagNameDisp", 27, (() => proxy([]))), trail = prop($$props, "trail", 19, (() => [])), depth = prop($$props, "depth", 3, 1), folderIcon = prop($$props, "folderIcon", 3, ""), headerTitle = prop($$props, "headerTitle", 3, ""), _setting = derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores)));
+  const expandLimit = derived((() => !get(_setting).expandLimit ? 0 : "links" == viewType() ? get(_setting).expandLimit + 1 : get(_setting).expandLimit)), _tagInfo = derived((() => store_get(tagInfo, "$tagInfo", $$stores))), _currentActiveFilePath = derived((() => store_get(currentFile, "$currentFile", $$stores)));
   function handleOpenScroll(e, trails, filePaths) {
-    if ("tags" == viewType) openScrollView(void 0, "", joinPartialPath(removeIntermediatePath(trails)).join(", "), filePaths); else if ("links" == viewType) openScrollView(void 0, "", `Linked to ${filename}`, filePaths);
+    if ("tags" == viewType()) $$props.openScrollView(void 0, "", joinPartialPath(removeIntermediatePath(trails)).join(", "), filePaths); else if ("links" == viewType()) $$props.openScrollView(void 0, "", `Linked to ${get(filename)}`, filePaths);
     e.preventDefault();
   }
-  let thisInfo, tags = [], isInDedicatedTag = false, previousTrail = "", isSuppressibleLevel = false, suppressLevels = [], children2 = [], childrenDisp = [], leftOverItems = [], leftOverItemsDisp = [], tagsDisp = [], thisLinks = [], linkedItems = new Map, _lastParam = {}, isUpdating = false;
-  const viewContextID = `${null !== (_b = getContext("viewID")) && void 0 !== _b ? _b : ""}`;
-  let isFolderVisible = false, queueLeftOverItems = [], batchedLeftOverItems = [];
-  async function applyLeftOverItems(items2) {
-    if (0 == batchedLeftOverItems.length) if (0 == leftOverItemsDisp.length) try {
-      const allOfBatch = splitArrayToBatch(items2);
-      if (isSameViewItems(leftOverItemsDisp, allOfBatch)) return;
-      batchedLeftOverItems = allOfBatch;
-      queueLeftOverItems = [];
-      $$invalidate(19, leftOverItemsDisp = []);
-      for (const batch of batchedLeftOverItems) {
-        $$invalidate(19, leftOverItemsDisp = [ ...leftOverItemsDisp, batch ]);
-        if (batch.length == batchSize) {
-          await doEvents();
-          await tick();
-        }
-        if (queueLeftOverItems.length > 0) {
-          const p = queueLeftOverItems;
-          queueLeftOverItems = [];
-          batchedLeftOverItems = [];
-          return applyLeftOverItems(p);
-        }
-      }
-    } finally {
-      batchedLeftOverItems = [];
-    } else $$invalidate(19, leftOverItemsDisp = splitArrayToBatch(items2)); else queueLeftOverItems = items2;
+  function shouldResponsibleFor(evt) {
+    if (evt.target instanceof Element && evt.target.matchParent(".is-clickable.mod-collapsible.nav-folder-title")) return true; else return false;
   }
-  let queuedChildrenDisp = [], batchedChildren = [];
-  async function applyChildren(items2) {
-    if (0 == batchedChildren.length) if (0 == childrenDisp.length) try {
-      const allOfBatch = splitArrayToBatch(items2);
-      if (isSameV2FolderItem(childrenDisp, allOfBatch)) return;
-      batchedChildren = allOfBatch;
-      $$invalidate(18, childrenDisp = []);
-      for (const batch of batchedChildren) {
-        $$invalidate(18, childrenDisp = [ ...childrenDisp, batch ]);
-        if (batch.length == batchSize) {
-          await doEvents();
-          await tick();
-        }
-        if (queuedChildrenDisp.length > 0) {
-          const p = queuedChildrenDisp;
-          queuedChildrenDisp = [];
-          batchedChildren = [];
-          return applyChildren(p);
-        }
-      }
-    } finally {
-      batchedChildren = [];
-    } else $$invalidate(18, childrenDisp = splitArrayToBatch(items2)); else queuedChildrenDisp = items2;
-  }
-  const dm = app.dragManager;
-  $$self.$$set = $$props2 => {
-    if ("viewType" in $$props2) $$invalidate(2, viewType = $$props2.viewType);
-    if ("thisName" in $$props2) $$invalidate(32, thisName = $$props2.thisName);
-    if ("items" in $$props2) $$invalidate(13, items = $$props2.items);
-    if ("tagName" in $$props2) $$invalidate(0, tagName = $$props2.tagName);
-    if ("tagNameDisp" in $$props2) $$invalidate(1, tagNameDisp = $$props2.tagNameDisp);
-    if ("trail" in $$props2) $$invalidate(3, trail = $$props2.trail);
-    if ("isRoot" in $$props2) $$invalidate(4, isRoot = $$props2.isRoot);
-    if ("isMainTree" in $$props2) $$invalidate(5, isMainTree = $$props2.isMainTree);
-    if ("depth" in $$props2) $$invalidate(6, depth = $$props2.depth);
-    if ("folderIcon" in $$props2) $$invalidate(7, folderIcon = $$props2.folderIcon);
-    if ("headerTitle" in $$props2) $$invalidate(8, headerTitle = $$props2.headerTitle);
-    if ("showMenu" in $$props2) $$invalidate(9, showMenu = $$props2.showMenu);
-    if ("openFile" in $$props2) $$invalidate(10, openFile = $$props2.openFile);
-    if ("hoverPreview" in $$props2) $$invalidate(11, hoverPreview = $$props2.hoverPreview);
-    if ("openScrollView" in $$props2) $$invalidate(12, openScrollView = $$props2.openScrollView);
-  };
-  $$self.$$.update = () => {
-    if (4 & $$self.$$.dirty[0] | 2 & $$self.$$.dirty[1]) $$invalidate(21, filename = "tags" == viewType ? "" : thisName.substring(thisName.indexOf(":") + 1));
-    if (8 & $$self.$$.dirty[0]) $$invalidate(50, trailKey = trail.join("*"));
-    if (16 & $$self.$$.dirty[0] | 1572864 & $$self.$$.dirty[1]) $$invalidate(26, collapsed = !isRoot && !$v2expandedTags.has(trailKey));
-    if (4 & $$self.$$.dirty[0] | 80 & $$self.$$.dirty[1]) $$invalidate(48, sortFunc = selectCompareMethodTags(_setting, "links" == viewType ? {} : _tagInfo));
-    if (8 & $$self.$$.dirty[0]) $$invalidate(49, trailLower = trail.map((e => e.toLowerCase())));
-    if (24576 & $$self.$$.dirty[0]) if (!_isSameViewItem(items, _items)) $$invalidate(14, _items = items);
-    if (4 & $$self.$$.dirty[0] | 32774 & $$self.$$.dirty[1]) {
-      $$invalidate(45, thisLinks = []);
-      $$invalidate(46, thisInfo = void 0);
-      if ("links" == viewType) {
-        $$invalidate(46, thisInfo = getViewItemFromPath(thisName));
-        $$invalidate(45, thisLinks = (null !== $$invalidate(33, _a = null == thisInfo ? void 0 : thisInfo.links) && void 0 !== _a ? _a : []).map((e => `${e}`)));
-      }
-    }
-    if (3 & $$self.$$.dirty[0] | 66 & $$self.$$.dirty[1]) if ("" == tagName && 0 == tagNameDisp.length) {
-      const [wTagName, wTagNameDisp] = parseTagName(thisName, _tagInfo);
-      $$invalidate(0, tagName = wTagName);
-      $$invalidate(1, tagNameDisp = wTagNameDisp);
-    }
-    if (49277 & $$self.$$.dirty[0] | 317234 & $$self.$$.dirty[1]) {
-      linkedItems.clear();
-      $$invalidate(15, isInDedicatedTag = false);
-      let isMixedDedicatedTag = false;
-      if (_items) {
-        $$invalidate(39, tags = []);
-        $$invalidate(40, previousTrail = "");
-        if (trail.length >= 1 && trail[trail.length - 1].endsWith("/")) {
-          $$invalidate(40, previousTrail = trail[trail.length - 1]);
-          $$invalidate(15, isInDedicatedTag = true);
-          isMixedDedicatedTag = true;
-        }
-        if (isMainTree && (!expandLimit || expandLimit && depth < expandLimit)) {
-          $$invalidate(41, isSuppressibleLevel = false);
-          isMixedDedicatedTag = false;
-          let tagsAll = uniqueCaseIntensive(_items.flatMap((e => e.tags)));
-          if ("links" == viewType) {
-            tagsAll = unique(_items.flatMap((e => e.links)));
-            if (!isRoot) {
-              tagsAll = thisLinks;
-              if (!_setting.linkShowOnlyFDR) tagsAll = thisInfo ? getAllLinksRecursive(thisInfo, [ ...trail ]) : thisLinks;
-            }
-            if (!isRoot || _setting.expandUntaggedToRoot) tagsAll = tagsAll.filter((e => "_unlinked" != e));
-            tagsAll = tagsAll.filter((e => !trail.contains(e)));
-            for (const tag of tagsAll) if ("_unlinked" == tag) linkedItems.set(tag, _items.filter((e => e.links.contains(tag)))); else {
-              const wItems = _items.filter((e => e.path == tag));
-              linkedItems.set(tag, wItems);
-            }
-            $$invalidate(39, tags = []);
-            $$invalidate(43, leftOverItems = []);
-            if ("_unlinked" == thisName) $$invalidate(43, leftOverItems = _items); else tagsAll.forEach((tag => {
-              if ("_unlinked" == tag) {
-                tags.push(tag);
-                return;
-              }
-              const x = getViewItemFromPath(tag);
-              if (null == x) return false;
-              const existLinks = x.links.filter((e => !trail.contains(e) && e != thisName)), nextDepth = !expandLimit || expandLimit && depth + 1 < expandLimit;
-              if (existLinks.length >= 2 && nextDepth) tags.push(tag); else leftOverItems.push(x);
-            }));
-          } else {
-            const lastTrailTagLC = trimTrailingSlash(previousTrail).toLowerCase();
-            if (isInDedicatedTag && tagsAll.some((e => e.toLowerCase() == lastTrailTagLC))) $$invalidate(15, isInDedicatedTag = false);
-            if (!isRoot || _setting.expandUntaggedToRoot) tagsAll = tagsAll.filter((e => "_untagged" != e));
-            let existTags = [ ...tagsAll ];
-            existTags = existTags.filter((tag => trail.every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase())))));
-            existTags = existTags.filter((tag => tag.toLowerCase() != thisName.toLowerCase() && tag.toLowerCase() != tagName.toLowerCase()));
-            existTags = existTags.filter((tag => !tag.toLowerCase().endsWith("/" + trimSlash(thisName).toLowerCase())));
-            let escapedPreviousTrail = previousTrail;
-            if (isInDedicatedTag) existTags = existTags.filter((e => (e + "/").startsWith(previousTrail)));
-            if (isMixedDedicatedTag) {
-              escapedPreviousTrail = previousTrail.split("/").join("*");
-              existTags = existTags.map((e => (e + "/").startsWith(previousTrail) ? escapedPreviousTrail + e.substring(previousTrail.length) : e));
-            }
-            let existTagsFiltered1 = [];
-            if (!_setting.doNotSimplifyTags) if (1 == _items.length) {
-              existTagsFiltered1 = existTags;
-              $$invalidate(41, isSuppressibleLevel = true);
-            } else if (1 == uniqueCaseIntensive(_items.map((e => e.tags.sort().join("**")))).length) {
-              $$invalidate(41, isSuppressibleLevel = true);
-              existTagsFiltered1 = existTags;
-            }
-            if (!isSuppressibleLevel) {
-              const removeItems = [ thisName.toLowerCase() ];
-              if (_setting.reduceNestedParent) removeItems.push(...trailLower);
-              let tagsOnNextLevel = [];
-              if ("tags" == viewType) tagsOnNextLevel = uniqueCaseIntensive(existTags.map((e => {
-                const idx = e.indexOf("/");
-                if (idx < 1) return e;
-                let piece = e.substring(0, idx + 1), idx2 = idx;
-                for (;removeItems.some((e2 => e2.startsWith(piece.toLowerCase()))); ) {
-                  idx2 = e.indexOf("/", idx2 + 1);
-                  if (-1 === idx2) {
-                    piece = e;
-                    break;
-                  }
-                  piece = e.substring(0, idx2 + 1);
-                }
-                return piece;
-              }))); else tagsOnNextLevel = unique(existTags);
-              const trailShortest = removeIntermediatePath(trail);
-              existTagsFiltered1 = tagsOnNextLevel.filter((tag => trailShortest.every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase())))));
-            }
-            if (isMixedDedicatedTag || isInDedicatedTag) existTagsFiltered1 = existTagsFiltered1.map((e => e.replace(escapedPreviousTrail, previousTrail)));
-            const existTagsFiltered1LC = existTagsFiltered1.map((e => e.toLowerCase())), existTagsFiltered3 = uniqueCaseIntensive(existTagsFiltered1.map((e => existTagsFiltered1LC.contains(e.toLowerCase() + "/") ? e + "/" : e)));
-            if (previousTrail.endsWith("/")) {
-              const existTagsFiltered4 = [];
-              for (const tag of existTagsFiltered3) if (!existTagsFiltered3.map((e => e.toLowerCase())).contains((previousTrail + tag).toLowerCase())) existTagsFiltered4.push(tag);
-              $$invalidate(39, tags = uniqueCaseIntensive(removeIntermediatePath(existTagsFiltered4)));
-            } else $$invalidate(39, tags = uniqueCaseIntensive(removeIntermediatePath(existTagsFiltered3)));
-          }
-        }
-      }
-    }
-    if (147572 & $$self.$$.dirty[0] | 919408 & $$self.$$.dirty[1]) (function updateX(param) {
-      if (!isSameAny(param, _lastParam)) {
-        _lastParam = {
-          ...param
-        };
-        if (param.isFolderVisible || isRoot) scheduleOnceIfDuplicated("update-children-" + param.key, (async () => {
-          $$invalidate(20, isUpdating = true);
-          const ret = await collectTreeChildren(param);
-          $$invalidate(42, children2 = ret.children);
-          $$invalidate(16, suppressLevels = ret.suppressLevels);
-          $$invalidate(20, isUpdating = false);
-        }));
-      }
-    })({
-      key: trailKey + (isRoot ? "-r" : "-x") + viewContextID,
-      expandLimit,
-      depth,
-      tags,
-      trailLower,
-      _setting,
-      isMainTree,
-      isSuppressibleLevel,
-      viewType,
-      previousTrail,
-      _tagInfo,
-      _items,
-      linkedItems,
-      isRoot,
-      isFolderVisible,
-      sortFunc
-    });
-    if (49204 & $$self.$$.dirty[0] | 7184 & $$self.$$.dirty[1]) {
-      if (_setting.useMultiPaneList && isMainTree) $$invalidate(43, leftOverItems = []); else if (isRoot && isMainTree && !isSuppressibleLevel) if (_setting.expandUntaggedToRoot) $$invalidate(43, leftOverItems = _items.filter((e => e.tags.contains("_untagged") || e.tags.contains("_unlinked")))); else $$invalidate(43, leftOverItems = []); else if (isRoot && !isMainTree) $$invalidate(43, leftOverItems = _items); else if ("tags" == viewType) if ("NONE" == _setting.hideItems) $$invalidate(43, leftOverItems = _items); else if ("DEDICATED_INTERMIDIATES" == _setting.hideItems && isInDedicatedTag || "ALL_EXCEPT_BOTTOM" == _setting.hideItems) $$invalidate(43, leftOverItems = _items.filter((e => !children2.map((e2 => e2[V2FI_IDX_CHILDREN])).flat().find((ee => e.path == ee.path))))); else $$invalidate(43, leftOverItems = _items);
-      if (_setting.sortExactFirst) $$invalidate(43, leftOverItems = performSortExactFirst(_items, children2, leftOverItems));
-    }
-    if (16388 & $$self.$$.dirty[0] | 4482 & $$self.$$.dirty[1]) $$invalidate(25, isActive = _items && _items.some((e => e.path == _currentActiveFilePath)) || "links" == viewType && (thisName == _currentActiveFilePath || tags.contains(_currentActiveFilePath) || leftOverItems.some((e => e.path == _currentActiveFilePath))));
-    if (98306 & $$self.$$.dirty[0] | 1024 & $$self.$$.dirty[1]) if (isSuppressibleLevel && isInDedicatedTag) $$invalidate(44, tagsDisp = [ [ ...tagNameDisp, ...suppressLevels.flatMap((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] ]); else if (isSuppressibleLevel) $$invalidate(44, tagsDisp = [ tagNameDisp, ...suppressLevels.map((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ]); else $$invalidate(44, tagsDisp = [ tagNameDisp ]);
-    if (4 & $$self.$$.dirty[0]) $$invalidate(47, classKey = "links" == viewType ? " tf-link" : " tf-tag");
-    if (131072 & $$self.$$.dirty[0] | 73728 & $$self.$$.dirty[1]) $$invalidate(24, tagsDispHtml = isFolderVisible ? tagsDisp.map((e => `<span class="tagfolder-tag tag-tag${classKey}">${e.map((ee => `<span class="tf-tag-each">${escapeStringToHTML(ee)}</span>`)).join("")}</span>`)).join("") : "");
-    if (16388 & $$self.$$.dirty[0] | 4360 & $$self.$$.dirty[1]) $$invalidate(23, itemCount = "tags" == viewType ? null !== $$invalidate(34, _c = null == _items ? void 0 : _items.length) && void 0 !== _c ? _c : 0 : tags.length + leftOverItems.length);
-    if (4096 & $$self.$$.dirty[1]) applyLeftOverItems(leftOverItems);
-    if (2048 & $$self.$$.dirty[1]) applyChildren(children2);
-    if (16 & $$self.$$.dirty[1]) $$invalidate(22, draggable = !_setting.disableDragging);
-  };
-  return [ tagName, tagNameDisp, viewType, trail, isRoot, isMainTree, depth, folderIcon, headerTitle, showMenu, openFile, hoverPreview, openScrollView, items, _items, isInDedicatedTag, suppressLevels, isFolderVisible, childrenDisp, leftOverItemsDisp, isUpdating, filename, draggable, itemCount, tagsDispHtml, isActive, collapsed, handleOpenScroll, function toggleFolder(evt) {
+  function toggleFolder(evt) {
+    evt.stopPropagation();
     if (shouldResponsibleFor(evt)) {
       evt.preventDefault();
-      evt.stopPropagation();
-      if (_setting.useMultiPaneList) selectedTags.set(trail);
+      if (get(_setting).useMultiPaneList) selectedTags.set(trail());
       v2expandedTags.update((evt2 => {
-        if (evt2.has(trailKey)) evt2.delete(trailKey); else evt2.add(trailKey);
+        if (evt2.has(get(trailKey))) evt2.delete(get(trailKey)); else evt2.add(get(trailKey));
         return evt2;
       }));
     }
-  }, function dragStartFiles(args) {
-    if (!draggable) return;
-    const files = _items.map((e => app.vault.getAbstractFileByPath(e.path))), param = dm.dragFiles(args, files);
-    if (param) return dm.onDragStart(args, param);
-  }, function dragStartName(args) {
-    if (!draggable) return;
-    if ("links" == viewType) return function dragStartFile(args) {
-      if (!draggable) return;
-      const file = app.vault.getAbstractFileByPath(filename), param = dm.dragFile(args, file);
-      if (param) return dm.onDragStart(args, param); else return;
+  }
+  let _lastParam, suppressLevels = state(proxy([])), children = state(proxy([])), isUpdating = state(false);
+  const viewContextID = `${null !== (_a = getContext("viewID")) && void 0 !== _a ? _a : ""}`;
+  let isFolderVisible = state(false);
+  function splitArrayToBatch(items2) {
+    const ret = [];
+    if (items2 && items2.length > 0) {
+      const applyItems = [ ...items2 ];
+      do {
+        const batch = applyItems.splice(0, 80);
+        if (0 == batch.length) break;
+        ret.push(batch);
+        if (batch.length < 80) break;
+      } while (applyItems.length > 0);
+    }
+    return ret;
+  }
+  function dragStartFiles(args) {
+    if (!get(draggable)) return;
+    const files = get(_items).map((e => get(app).vault.getAbstractFileByPath(e.path))), param = get(dm).dragFiles(args, files);
+    if (param) return get(dm).onDragStart(args, param);
+  }
+  function dragStartName(args) {
+    if (!get(draggable)) return;
+    if ("links" == viewType()) return function dragStartFile(args) {
+      if (!get(draggable)) return;
+      const file = get(app).vault.getAbstractFileByPath(get(filename)), param = get(dm).dragFile(args, file);
+      if (param) return get(dm).onDragStart(args, param); else return;
     }(args);
-    const expandedTags = [ ...ancestorToLongestTag(ancestorToTags(joinPartialPath(removeIntermediatePath([ ...trail, ...suppressLevels ])))) ].map((e => trimTrailingSlash(e))).map((e => e.split("/").filter((ee => !isSpecialTag(ee))).join("/"))).filter((e => "" != e)).map((e => "#" + e)).join(" ").trim();
+    const expandedTags = [ ...ancestorToLongestTag(ancestorToTags(joinPartialPath(removeIntermediatePath([ ...trail(), ...get(suppressLevels) ])))) ].map((e => trimTrailingSlash(e))).map((e => e.split("/").filter((ee => !isSpecialTag(ee))).join("/"))).filter((e => "" != e)).map((e => "#" + e)).join(" ").trim();
     args.dataTransfer.setData("text/plain", expandedTags);
     args.dataTransfer.setData("Text", expandedTags);
     args.title = expandedTags;
     args.draggable = true;
-    dm.onDragStart(args, args);
-  }, function handleOpenItem(evt) {
-    if ("tags" != viewType) {
-      evt.preventDefault();
-      evt.stopPropagation();
-      openFile(filename, evt.metaKey || evt.ctrlKey);
-    }
-  }, thisName, _a, _c, _setting, expandLimit, _tagInfo, _currentActiveFilePath, tags, previousTrail, isSuppressibleLevel, children2, leftOverItems, tagsDisp, thisLinks, thisInfo, classKey, sortFunc, trailLower, trailKey, $v2expandedTags, e => handleOpenScroll(e, trail, _items.map((e2 => e2.path))), function ondemandrender_isVisible_binding(value) {
-    isFolderVisible = value;
-    $$invalidate(17, isFolderVisible);
-  }, evt => {
-    if (shouldResponsibleFor(evt)) showMenu(evt, [ ...trail, ...suppressLevels ], "tags" == viewType ? tagName : filename, _items);
-  } ];
-}
-
-var V2TreeFolderComponent = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance5, create_fragment5, safe_not_equal, {
-      viewType: 2,
-      thisName: 32,
-      items: 13,
-      tagName: 0,
-      tagNameDisp: 1,
-      trail: 3,
-      isRoot: 4,
-      isMainTree: 5,
-      depth: 6,
-      folderIcon: 7,
-      headerTitle: 8,
-      showMenu: 9,
-      openFile: 10,
-      hoverPreview: 11,
-      openScrollView: 12
-    }, null, [ -1, -1, -1 ]);
+    get(dm).onDragStart(args, args);
   }
-}, V2TreeFolderComponent_default = V2TreeFolderComponent, import_obsidian3 = require("obsidian");
-
-function add_css3(target) {
-  append_styles(target, "svelte-1xm87ro", ".nav-files-container.svelte-1xm87ro{height:100%}");
-}
-
-function create_if_block_32(ctx) {
-  let div0, t0, div1, t1, div2, div2_class_value, mounted, dispose;
-  return {
-    c() {
-      div0 = element("div");
-      t0 = space();
-      div1 = element("div");
-      t1 = space();
-      div2 = element("div");
-      attr(div0, "class", "clickable-icon nav-action-button");
-      attr(div0, "aria-label", "Change sort order");
-      attr(div1, "class", "clickable-icon nav-action-button");
-      attr(div1, "aria-label", "Expand limit");
-      attr(div2, "class", div2_class_value = null_to_empty("clickable-icon nav-action-button" + (ctx[14] ? " is-active" : "")) + " svelte-1xm87ro");
-      attr(div2, "aria-label", "Search");
-    },
-    m(target, anchor) {
-      insert(target, div0, anchor);
-      div0.innerHTML = ctx[18];
-      insert(target, t0, anchor);
-      insert(target, div1, anchor);
-      div1.innerHTML = ctx[19];
-      insert(target, t1, anchor);
-      insert(target, div2, anchor);
-      div2.innerHTML = ctx[20];
-      if (!mounted) {
-        dispose = [ listen(div0, "click", (function() {
-          if (is_function(ctx[4])) ctx[4].apply(this, arguments);
-        })), listen(div1, "click", (function() {
-          if (is_function(ctx[3])) ctx[3].apply(this, arguments);
-        })), listen(div2, "click", ctx[28]) ];
-        mounted = true;
-      }
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      if (262144 & dirty[0]) div0.innerHTML = ctx[18];
-      if (524288 & dirty[0]) div1.innerHTML = ctx[19];
-      if (1048576 & dirty[0]) div2.innerHTML = ctx[20];
-      if (16384 & dirty[0] && div2_class_value !== (div2_class_value = null_to_empty("clickable-icon nav-action-button" + (ctx[14] ? " is-active" : "")) + " svelte-1xm87ro")) attr(div2, "class", div2_class_value);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(div0);
-        detach(t0);
-        detach(div1);
-        detach(t1);
-        detach(div2);
-      }
-      mounted = false;
-      run_all(dispose);
+  const filename = derived((() => "tags" == viewType() ? "" : thisName().substring(thisName().indexOf(":") + 1))), thisInfo = derived((() => "links" != viewType() ? void 0 : getViewItemFromPath(thisName()))), thisLinks = derived((() => "links" != viewType() ? [] : (null !== (_b = null === get(thisInfo) || void 0 === get(thisInfo) ? void 0 : get(thisInfo).links) && void 0 !== _b ? _b : []).map((e => `${e}`)))), thisNameLC = derived((() => thisName().toLowerCase())), tagNameLC = derived((() => tagName().toLowerCase())), trailKey = derived((() => trail().join("*"))), trailLower = derived((() => trail().map((e => e.toLowerCase())))), collapsed = derived((() => !$$props.isRoot && !store_get(v2expandedTags, "$v2expandedTags", $$stores).has(get(trailKey)))), inMiddleOfTagHierarchy = derived((() => trail().length >= 1 && trail()[trail().length - 1].endsWith("/"))), previousTrail = derived((() => get(inMiddleOfTagHierarchy) ? trail()[trail().length - 1] : "")), lastTrailTagLC = derived((() => trimTrailingSlash(get(previousTrail)).toLowerCase())), _items = derived(items), tagsAllCI = derived((() => uniqueCaseIntensive(get(_items).flatMap((e => e.tags))))), tagsAllLower = derived((() => get(tagsAllCI).map((e => e.toLowerCase())))), isInDedicatedTag = derived((() => get(inMiddleOfTagHierarchy) && !get(tagsAllLower).contains(get(lastTrailTagLC)))), isMixedDedicatedTag = derived((() => get(inMiddleOfTagHierarchy))), displayTagCandidates = derived((() => {
+    let tagsAll = [];
+    if ("links" == viewType()) {
+      if (!$$props.isRoot) if (!get(_setting).linkShowOnlyFDR) tagsAll = get(thisInfo) ? getAllLinksRecursive(get(thisInfo), [ ...trail() ]) : [ ...get(thisLinks) ]; else tagsAll = [ ...get(thisLinks) ]; else tagsAll = unique(get(_items).flatMap((e => e.links)));
+      if (!$$props.isRoot || get(_setting).expandUntaggedToRoot) tagsAll = tagsAll.filter((e => "_unlinked" != e));
+      tagsAll = tagsAll.filter((e => !trail().contains(e)));
+    } else {
+      tagsAll = uniqueCaseIntensive(get(_items).flatMap((e => e.tags)));
+      if (!$$props.isRoot || get(_setting).expandUntaggedToRoot) tagsAll = tagsAll.filter((e => "_untagged" != e));
     }
-  };
-}
-
-function create_if_block_22(ctx) {
-  let div, mounted, dispose;
-  return {
-    c() {
-      div = element("div");
-      attr(div, "class", "clickable-icon nav-action-button");
-      attr(div, "aria-label", "Switch List/Tree");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      div.innerHTML = ctx[21];
-      if (!mounted) {
-        dispose = listen(div, "click", ctx[30]);
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (2097152 & dirty[0]) div.innerHTML = ctx2[21];
-    },
-    d(detaching) {
-      if (detaching) detach(div);
-      mounted = false;
-      dispose();
+    return tagsAll;
+  })), tagsExceptAlreadyShown = derived((() => "tags" != viewType() ? [] : get(displayTagCandidates).filter((tag => trail().every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase()))))))), passedTagWithoutThis = derived((() => {
+    const trimSlashedThisNameLC = "/" + trimSlash(thisName()).toLowerCase();
+    return get(tagsExceptAlreadyShown).filter((tag => {
+      const lc = tag.toLowerCase();
+      return lc != get(thisNameLC) && lc != get(tagNameLC);
+    })).filter((tag => !tag.toLowerCase().endsWith(trimSlashedThisNameLC)));
+  })), escapedPreviousTrail = derived((() => !get(isMixedDedicatedTag) ? get(previousTrail) : get(previousTrail).split("/").join("*"))), sparseIntermediateTags = derived((() => {
+    const t1 = !get(isInDedicatedTag) ? get(passedTagWithoutThis) : get(passedTagWithoutThis).filter((e => (e + "/").startsWith(get(previousTrail))));
+    if (!get(isInDedicatedTag)) return t1; else return t1.map((e => (e + "/").startsWith(get(previousTrail)) ? get(escapedPreviousTrail) + e.substring(get(previousTrail).length) : e));
+  })), tagsPhaseX1 = derived((() => get(sparseIntermediateTags))), $$d = derived((() => {
+    let isSuppressibleLevel2 = false, existTags = get(tagsPhaseX1), existTagsFiltered1 = [];
+    if (!get(_setting).doNotSimplifyTags && "links" != viewType()) if (1 == get(_items).length) {
+      existTagsFiltered1 = existTags;
+      isSuppressibleLevel2 = true;
+    } else if (1 == uniqueCaseIntensive(get(_items).map((e => [ ...e.tags ].sort().join("**")))).length) {
+      isSuppressibleLevel2 = true;
+      existTagsFiltered1 = existTags;
     }
-  };
-}
-
-function create_if_block_12(ctx) {
-  let div0, t0, div1, t1, div2, mounted, dispose;
-  return {
-    c() {
-      div0 = element("div");
-      t0 = space();
-      div1 = element("div");
-      t1 = space();
-      div2 = element("div");
-      attr(div0, "class", "clickable-icon nav-action-button");
-      attr(div0, "aria-label", "Toggle Incoming");
-      toggle_class(div0, "is-active", ctx[12]);
-      attr(div1, "class", "clickable-icon nav-action-button");
-      attr(div1, "aria-label", "Toggle Outgoing");
-      toggle_class(div1, "is-active", ctx[11]);
-      attr(div2, "class", "clickable-icon nav-action-button");
-      attr(div2, "aria-label", "Toggle Hide indirect notes");
-      toggle_class(div2, "is-active", ctx[13]);
-    },
-    m(target, anchor) {
-      insert(target, div0, anchor);
-      div0.innerHTML = ctx[23];
-      insert(target, t0, anchor);
-      insert(target, div1, anchor);
-      div1.innerHTML = ctx[22];
-      insert(target, t1, anchor);
-      insert(target, div2, anchor);
-      div2.innerHTML = ctx[24];
-      if (!mounted) {
-        dispose = [ listen(div0, "click", ctx[31]), listen(div1, "click", ctx[32]), listen(div2, "click", ctx[33]) ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (8388608 & dirty[0]) div0.innerHTML = ctx2[23];
-      if (4096 & dirty[0]) toggle_class(div0, "is-active", ctx2[12]);
-      if (4194304 & dirty[0]) div1.innerHTML = ctx2[22];
-      if (2048 & dirty[0]) toggle_class(div1, "is-active", ctx2[11]);
-      if (16777216 & dirty[0]) div2.innerHTML = ctx2[24];
-      if (8192 & dirty[0]) toggle_class(div2, "is-active", ctx2[13]);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(div0);
-        detach(t0);
-        detach(div1);
-        detach(t1);
-        detach(div2);
-      }
-      mounted = false;
-      run_all(dispose);
+    if (!isSuppressibleLevel2) {
+      const removeItems = [ get(thisNameLC) ];
+      if (get(_setting).reduceNestedParent) removeItems.push(...get(trailLower));
+      let tagsOnNextLevel = [];
+      if ("tags" == viewType()) tagsOnNextLevel = uniqueCaseIntensive(existTags.map((e => {
+        const idx = e.indexOf("/");
+        if (idx < 1) return e;
+        let piece = e.substring(0, idx + 1), idx2 = idx;
+        for (;removeItems.some((e2 => e2.startsWith(piece.toLowerCase()))); ) {
+          idx2 = e.indexOf("/", idx2 + 1);
+          if (-1 === idx2) {
+            piece = e;
+            break;
+          }
+          piece = e.substring(0, idx2 + 1);
+        }
+        return piece;
+      }))); else tagsOnNextLevel = unique(existTags);
+      const trailShortest = removeIntermediatePath(trail());
+      existTagsFiltered1 = tagsOnNextLevel.filter((tag => trailShortest.every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase())))));
     }
-  };
-}
-
-function create_if_block3(ctx) {
-  let div2, div1, input, t, div0, mounted, dispose;
-  return {
-    c() {
-      div2 = element("div");
-      div1 = element("div");
-      input = element("input");
-      t = space();
-      div0 = element("div");
-      attr(input, "type", "search");
-      attr(input, "spellcheck", "false");
-      attr(input, "placeholder", "Type to start search...");
-      attr(div0, "class", "search-input-clear-button");
-      attr(div0, "aria-label", "Clear search");
-      set_style(div0, "display", "" == ctx[10].trim() ? "none" : "");
-      attr(div1, "class", "search-input-container global-search-input-container");
-      attr(div2, "class", "search-row");
-    },
-    m(target, anchor) {
-      insert(target, div2, anchor);
-      append(div2, div1);
-      append(div1, input);
-      set_input_value(input, ctx[10]);
-      append(div1, t);
-      append(div1, div0);
-      if (!mounted) {
-        dispose = [ listen(input, "input", ctx[43]), listen(div0, "click", ctx[29]) ];
-        mounted = true;
+    if (get(isMixedDedicatedTag) || get(isInDedicatedTag)) existTagsFiltered1 = existTagsFiltered1.map((e => e.replace(get(escapedPreviousTrail), get(previousTrail))));
+    if (get(isMixedDedicatedTag) || get(isInDedicatedTag)) existTagsFiltered1 = existTagsFiltered1.map((e => e.replace(get(escapedPreviousTrail), get(previousTrail))));
+    const existTagsFiltered1LC = existTagsFiltered1.map((e => e.toLowerCase()));
+    return {
+      filteredTags: uniqueCaseIntensive(existTagsFiltered1.map((e => existTagsFiltered1LC.contains(e.toLowerCase() + "/") ? e + "/" : e))),
+      isSuppressibleLevel: isSuppressibleLevel2
+    };
+  })), filteredTags = derived((() => get($$d).filteredTags)), isSuppressibleLevel = derived((() => get($$d).isSuppressibleLevel)), $$d_1 = derived((() => {
+    let tags2 = [];
+    const leftOverItemsSrc2 = [];
+    if (!get(_items)) return {
+      tags: tags2,
+      leftOverItemsSrc: leftOverItemsSrc2
+    };
+    if (!($$props.isMainTree && (!get(expandLimit) || get(expandLimit) && depth() < get(expandLimit)))) return {
+      tags: tags2,
+      leftOverItemsSrc: leftOverItemsSrc2
+    };
+    if ("links" == viewType()) {
+      const ret = get(tagsOfLinkedItems);
+      return {
+        tags: ret.tags,
+        leftOverItemsSrc: ret.leftOverItems
+      };
+    }
+    if (get(previousTrail).endsWith("/")) {
+      const existTagsFiltered4 = [];
+      for (const tag of get(filteredTags)) if (!get(filteredTags).map((e => e.toLowerCase())).contains((get(previousTrail) + tag).toLowerCase())) existTagsFiltered4.push(tag);
+      tags2 = uniqueCaseIntensive(removeIntermediatePath(existTagsFiltered4));
+    } else tags2 = uniqueCaseIntensive(removeIntermediatePath(get(filteredTags)));
+    return {
+      tags: tags2,
+      leftOverItemsSrc: leftOverItemsSrc2
+    };
+  })), tags = derived((() => get($$d_1).tags)), leftOverItemsSrc = derived((() => get($$d_1).leftOverItemsSrc)), linkedItems = derived((() => {
+    const ret = new Map;
+    if ("tags" == viewType()) return ret;
+    for (const tag of get(displayTagCandidates)) if ("_unlinked" == tag) ret.set(tag, get(_items).filter((e => e.links.contains(tag)))); else {
+      const wItems = get(_items).filter((e => e.path == tag));
+      ret.set(tag, wItems);
+    }
+    return ret;
+  })), tagsOfLinkedItems = derived((() => {
+    let leftOverItems2 = [], tags2 = [];
+    if ("tags" == viewType()) return {
+      tags: tags2,
+      leftOverItems: leftOverItems2
+    };
+    if ("_unlinked" == thisName()) leftOverItems2 = get(_items); else get(displayTagCandidates).forEach((tag => {
+      if ("_unlinked" == tag) {
+        tags2.push(tag);
+        return;
       }
-    },
-    p(ctx2, dirty) {
-      if (1024 & dirty[0] && input.value !== ctx2[10]) set_input_value(input, ctx2[10]);
-      if (1024 & dirty[0]) set_style(div0, "display", "" == ctx2[10].trim() ? "none" : "");
-    },
-    d(detaching) {
-      if (detaching) detach(div2);
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-
-function create_fragment6(ctx) {
-  let div0, t0, div3, div2, div1, t1, t2, t3, t4, t5, div4, v2treefoldercomponent, current, mounted, dispose, if_block0 = ctx[9] && create_if_block_32(ctx), if_block1 = ctx[7] && create_if_block_22(ctx), if_block2 = "links" == ctx[8] && create_if_block_12(ctx), if_block3 = ctx[14] && ctx[9] && create_if_block3(ctx);
-  v2treefoldercomponent = new V2TreeFolderComponent_default({
-    props: {
-      viewType: ctx[8],
-      items: ctx[25],
-      folderIcon: ctx[17],
-      thisName: "",
-      isRoot: true,
-      showMenu: ctx[2],
-      openFile: ctx[1],
-      isMainTree: ctx[9],
-      hoverPreview: ctx[0],
-      openScrollView: ctx[6],
-      depth: 1,
-      headerTitle: ctx[27]
-    }
-  });
-  return {
-    c() {
-      div0 = element("div");
-      t0 = space();
-      div3 = element("div");
-      div2 = element("div");
-      div1 = element("div");
-      t1 = space();
-      if (if_block0) if_block0.c();
-      t2 = space();
-      if (if_block1) if_block1.c();
-      t3 = space();
-      if (if_block2) if_block2.c();
-      t4 = space();
-      if (if_block3) if_block3.c();
-      t5 = space();
-      div4 = element("div");
-      create_component(v2treefoldercomponent.$$.fragment);
-      div0.hidden = true;
-      attr(div1, "class", "clickable-icon nav-action-button");
-      attr(div1, "aria-label", "New note");
-      attr(div2, "class", "nav-buttons-container tagfolder-buttons-container");
-      attr(div3, "class", "nav-header");
-      attr(div4, "class", "nav-files-container node-insert-event svelte-1xm87ro");
-    },
-    m(target, anchor) {
-      insert(target, div0, anchor);
-      ctx[42](div0);
-      insert(target, t0, anchor);
-      insert(target, div3, anchor);
-      append(div3, div2);
-      append(div2, div1);
-      div1.innerHTML = ctx[16];
-      append(div2, t1);
-      if (if_block0) if_block0.m(div2, null);
-      append(div2, t2);
-      if (if_block1) if_block1.m(div2, null);
-      append(div2, t3);
-      if (if_block2) if_block2.m(div2, null);
-      insert(target, t4, anchor);
-      if (if_block3) if_block3.m(target, anchor);
-      insert(target, t5, anchor);
-      insert(target, div4, anchor);
-      mount_component(v2treefoldercomponent, div4, null);
-      ctx[44](div4);
-      current = true;
-      if (!mounted) {
-        dispose = listen(div1, "click", (function() {
-          if (is_function(ctx[5])) ctx[5].apply(this, arguments);
+      const x = getViewItemFromPath(tag);
+      if (null == x) return false;
+      const existLinks = x.links.filter((e => !trail().contains(e) && e != thisName())), nextDepth = !get(expandLimit) || get(expandLimit) && depth() + 1 < get(expandLimit);
+      if (existLinks.length >= 2 && nextDepth) tags2.push(tag); else leftOverItems2.push(x);
+    }));
+    return {
+      tags: tags2,
+      leftOverItems: leftOverItems2
+    };
+  })), leftOverItemsUnsorted = derived((() => {
+    if (get(_setting).useMultiPaneList && $$props.isMainTree) return [];
+    if ($$props.isRoot && $$props.isMainTree && !get(isSuppressibleLevel)) if (get(_setting).expandUntaggedToRoot) return get(_items).filter((e => e.tags.contains("_untagged") || e.tags.contains("_unlinked"))); else return [];
+    if ($$props.isRoot && !$$props.isMainTree) return get(_items);
+    if ("tags" == viewType()) if ("NONE" == get(_setting).hideItems) return get(_items); else if ("DEDICATED_INTERMIDIATES" == get(_setting).hideItems && get(isInDedicatedTag) || "ALL_EXCEPT_BOTTOM" == get(_setting).hideItems) return get(_items).filter((e => !get(children).map((e2 => e2[V2FI_IDX_CHILDREN])).flat().find((ee => e.path == ee.path)))); else return get(_items); else return get(leftOverItemsSrc);
+  })), leftOverItems = derived((() => get(_setting).sortExactFirst ? performSortExactFirst(get(_items), get(children), get(leftOverItemsUnsorted)) : get(leftOverItemsUnsorted)));
+  let isActive = derived((() => get(_items) && get(_items).some((e => e.path == get(_currentActiveFilePath))) || "links" == viewType() && (thisName() == get(_currentActiveFilePath) || get(tags).contains(get(_currentActiveFilePath)) || get(leftOverItems).some((e => e.path == get(_currentActiveFilePath))))));
+  const tagsDisp = derived((() => get(isSuppressibleLevel) && get(isInDedicatedTag) ? [ [ ...tagNameDisp(), ...get(suppressLevels).flatMap((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] ] : get(isSuppressibleLevel) ? [ tagNameDisp(), ...get(suppressLevels).map((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] : [ tagNameDisp() ])), classKey = derived((() => "links" == viewType() ? " tf-link" : " tf-tag")), tagsDispHtml = derived((() => get(isFolderVisible) ? get(tagsDisp).map((e => `<span class="tagfolder-tag tag-tag${get(classKey)}">${e.map((ee => `<span class="tf-tag-each">${escapeStringToHTML(ee)}</span>`)).join("")}</span>`)).join("") : "")), itemCount = derived((() => "tags" == viewType() ? null !== (_c = null === get(_items) || void 0 === get(_items) ? void 0 : get(_items).length) && void 0 !== _c ? _c : 0 : get(tags).length + get(leftOverItems).length)), leftOverItemsDisp = derived((() => splitArrayToBatch(get(leftOverItems)))), childrenDisp = derived((() => splitArrayToBatch(get(children)))), draggable = derived((() => !get(_setting).disableDragging)), app = derived((() => store_get(pluginInstance, "$pluginInstance", $$stores).app)), dm = derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
+  user_effect((() => {
+    const key = get(trailKey) + ($$props.isRoot ? "-r" : "-x") + viewContextID, sortFunc = selectCompareMethodTags(get(_setting), "links" == viewType() ? {} : get(_tagInfo));
+    (function updateX(param) {
+      if (!isSameAny(param, _lastParam)) {
+        _lastParam = {
+          ...param
+        };
+        if (param.isFolderVisible || $$props.isRoot) scheduleOnceIfDuplicated("update-children-" + param.key, (async () => {
+          set(isUpdating, true);
+          const ret = await collectTreeChildren(param);
+          set(children, proxy(ret.children));
+          set(suppressLevels, proxy(ret.suppressLevels));
+          set(isUpdating, false);
         }));
-        mounted = true;
       }
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      if (!current || 65536 & dirty[0]) div1.innerHTML = ctx[16];
-      if (ctx[9]) if (if_block0) if_block0.p(ctx, dirty); else {
-        if_block0 = create_if_block_32(ctx);
-        if_block0.c();
-        if_block0.m(div2, t2);
-      } else if (if_block0) {
-        if_block0.d(1);
-        if_block0 = null;
+    })({
+      key,
+      expandLimit: get(expandLimit),
+      depth: depth(),
+      tags: get(tags),
+      trailLower: get(trailLower),
+      _setting: get(_setting),
+      isMainTree: $$props.isMainTree,
+      isSuppressibleLevel: get(isSuppressibleLevel),
+      viewType: viewType(),
+      previousTrail: get(previousTrail),
+      _tagInfo: get(_tagInfo),
+      _items: get(_items),
+      linkedItems: get(linkedItems),
+      isRoot: $$props.isRoot,
+      isFolderVisible: get(isFolderVisible),
+      sortFunc
+    });
+  }));
+  var div = root4();
+  div.__click = toggleFolder;
+  div.__contextmenu = [ on_contextmenu2, shouldResponsibleFor, $$props, trail, suppressLevels, viewType, tagName, filename, _items ];
+  var node = child(div);
+  if_block(node, (() => $$props.isRoot || !$$props.isMainTree), ($$anchor2 => {
+    var fragment = comment();
+    if_block(first_child(fragment), (() => $$props.isRoot), ($$anchor3 => {
+      var div_1 = root_22(), div_2 = child(div_1), text2 = child(div_2, true);
+      reset(div_2);
+      reset(div_1);
+      template_effect((() => set_text(text2, headerTitle())));
+      append($$anchor3, div_1);
+    }));
+    append($$anchor2, fragment);
+  }), ($$anchor2 => {
+    var cssClass = derived((() => `tree-item-self${!$$props.isRoot ? " is-clickable mod-collapsible" : ""} nav-folder-title tag-folder-title${get(isActive) ? " is-active" : ""}`));
+    OnDemandRender($$anchor2, {
+      get cssClass() {
+        return get(cssClass);
+      },
+      get isVisible() {
+        return get(isFolderVisible);
+      },
+      set isVisible($$value) {
+        set(isFolderVisible, proxy($$value));
+      },
+      children: ($$anchor3, $$slotProps) => {
+        var fragment_2 = root_4(), div_3 = first_child(fragment_2);
+        div_3.__click = toggleFolder;
+        if_block(child(div_3), (() => get(isFolderVisible)), ($$anchor4 => {
+          var fragment_3 = comment();
+          html(first_child(fragment_3), folderIcon, false, false);
+          append($$anchor4, fragment_3);
+        }), ($$anchor4 => {
+          append($$anchor4, root_6());
+        }));
+        reset(div_3);
+        var div_4 = sibling(div_3, 2);
+        div_4.__click = [ handleOpenItem, viewType, $$props, filename ];
+        var node_4 = child(div_4);
+        if_block(node_4, (() => get(isFolderVisible)), ($$anchor4 => {
+          var div_5 = root_7();
+          html(child(div_5), (() => get(tagsDispHtml)), false, false);
+          reset(div_5);
+          template_effect((() => set_attribute(div_5, "draggable", get(draggable))));
+          event("dragstart", div_5, dragStartName);
+          append($$anchor4, div_5);
+        }), ($$anchor4 => {
+          append($$anchor4, root_8());
+        }));
+        var div_7 = sibling(node_4, 2);
+        div_7.__click = [ on_click3, handleOpenScroll, trail, _items ];
+        var span = child(div_7), text_1 = child(span, true);
+        reset(span);
+        reset(div_7);
+        reset(div_4);
+        template_effect((() => {
+          toggle_class(div_3, "is-collapsed", get(collapsed));
+          set_attribute(span, "draggable", get(draggable));
+          set_text(text_1, get(itemCount));
+        }));
+        event("dragstart", span, dragStartFiles);
+        append($$anchor3, fragment_2);
+      },
+      $$slots: {
+        default: true
       }
-      if (ctx[7]) if (if_block1) if_block1.p(ctx, dirty); else {
-        if_block1 = create_if_block_22(ctx);
-        if_block1.c();
-        if_block1.m(div2, t3);
-      } else if (if_block1) {
-        if_block1.d(1);
-        if_block1 = null;
-      }
-      if ("links" == ctx[8]) if (if_block2) if_block2.p(ctx, dirty); else {
-        if_block2 = create_if_block_12(ctx);
-        if_block2.c();
-        if_block2.m(div2, null);
-      } else if (if_block2) {
-        if_block2.d(1);
-        if_block2 = null;
-      }
-      if (ctx[14] && ctx[9]) if (if_block3) if_block3.p(ctx, dirty); else {
-        if_block3 = create_if_block3(ctx);
-        if_block3.c();
-        if_block3.m(t5.parentNode, t5);
-      } else if (if_block3) {
-        if_block3.d(1);
-        if_block3 = null;
-      }
-      const v2treefoldercomponent_changes = {};
-      if (256 & dirty[0]) v2treefoldercomponent_changes.viewType = ctx[8];
-      if (33554432 & dirty[0]) v2treefoldercomponent_changes.items = ctx[25];
-      if (131072 & dirty[0]) v2treefoldercomponent_changes.folderIcon = ctx[17];
-      if (4 & dirty[0]) v2treefoldercomponent_changes.showMenu = ctx[2];
-      if (2 & dirty[0]) v2treefoldercomponent_changes.openFile = ctx[1];
-      if (512 & dirty[0]) v2treefoldercomponent_changes.isMainTree = ctx[9];
-      if (1 & dirty[0]) v2treefoldercomponent_changes.hoverPreview = ctx[0];
-      if (64 & dirty[0]) v2treefoldercomponent_changes.openScrollView = ctx[6];
-      if (134217728 & dirty[0]) v2treefoldercomponent_changes.headerTitle = ctx[27];
-      v2treefoldercomponent.$set(v2treefoldercomponent_changes);
-    },
-    i(local) {
-      if (!current) {
-        transition_in(v2treefoldercomponent.$$.fragment, local);
-        current = true;
-      }
-    },
-    o(local) {
-      transition_out(v2treefoldercomponent.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(div0);
-        detach(t0);
-        detach(div3);
-        detach(t4);
-        detach(t5);
-        detach(div4);
-      }
-      ctx[42](null);
-      if (if_block0) if_block0.d();
-      if (if_block1) if_block1.d();
-      if (if_block2) if_block2.d();
-      if (if_block3) if_block3.d(detaching);
-      destroy_component(v2treefoldercomponent);
-      ctx[44](null);
-      mounted = false;
-      dispose();
-    }
-  };
+    });
+  }));
+  if_block(sibling(node, 2), (() => !get(collapsed)), ($$anchor2 => {
+    var fragment_9 = comment();
+    const treeContent = ($$anchor3, childrenDisp2 = noop, leftOverItemsDisp2 = noop) => {
+      var fragment_4 = root_10(), node_7 = first_child(fragment_4);
+      each(node_7, 17, childrenDisp2, index, (($$anchor4, items2) => {
+        var fragment_5 = comment();
+        each(first_child(fragment_5), 17, (() => get(items2)), index, (($$anchor5, $$item) => {
+          let f = () => get($$item)[0];
+          var trail_1 = derived((() => [ ...trail(), ...get(suppressLevels), f() ])), depth_1 = derived((() => get(isInDedicatedTag) ? depth() : depth() + 1));
+          V2TreeFolderComponent_1($$anchor5, {
+            get viewType() {
+              return viewType();
+            },
+            get items() {
+              return get($$item)[3];
+            },
+            get thisName() {
+              return f();
+            },
+            get trail() {
+              return get(trail_1);
+            },
+            get folderIcon() {
+              return folderIcon();
+            },
+            get openFile() {
+              return $$props.openFile;
+            },
+            isRoot: false,
+            get showMenu() {
+              return $$props.showMenu;
+            },
+            get isMainTree() {
+              return $$props.isMainTree;
+            },
+            get openScrollView() {
+              return $$props.openScrollView;
+            },
+            get hoverPreview() {
+              return $$props.hoverPreview;
+            },
+            get tagName() {
+              return get($$item)[1];
+            },
+            get tagNameDisp() {
+              return get($$item)[2];
+            },
+            get depth() {
+              return get(depth_1);
+            }
+          });
+        }));
+        append($$anchor4, fragment_5);
+      }));
+      each(sibling(node_7, 2), 17, leftOverItemsDisp2, index, (($$anchor4, items2) => {
+        var fragment_7 = comment();
+        each(first_child(fragment_7), 17, (() => get(items2)), index, (($$anchor5, item) => {
+          var trail_2 = derived((() => $$props.isRoot ? [ ...trail() ] : [ ...trail(), ...get(suppressLevels) ]));
+          V2TreeItemComponent($$anchor5, {
+            get item() {
+              return get(item);
+            },
+            get openFile() {
+              return $$props.openFile;
+            },
+            get trail() {
+              return get(trail_2);
+            },
+            get showMenu() {
+              return $$props.showMenu;
+            },
+            get hoverPreview() {
+              return $$props.hoverPreview;
+            }
+          });
+        }));
+        append($$anchor4, fragment_7);
+      }));
+      append($$anchor3, fragment_4);
+    };
+    if_block(first_child(fragment_9), (() => !$$props.isRoot), ($$anchor3 => {
+      var div_8 = root_15(), node_12 = child(div_8);
+      treeContent(node_12, (() => get(childrenDisp)), (() => get(leftOverItemsDisp)));
+      reset(div_8);
+      append($$anchor3, div_8);
+    }), ($$anchor3 => {
+      treeContent($$anchor3, (() => get(childrenDisp)), (() => get(leftOverItemsDisp)));
+    }));
+    append($$anchor2, fragment_9);
+  }));
+  reset(div);
+  template_effect((() => set_class(div, `tree-item nav-folder${get(collapsed) ? " is-collapsed" : ""}${$$props.isRoot ? " mod-root" : ""}${get(isUpdating) ? " updating" : ""}`)));
+  append($$anchor, div);
+  pop();
 }
 
-function instance6($$self, $$props, $$invalidate) {
-  let headerTitle, $tagFolderSetting;
-  component_subscribe($$self, tagFolderSetting, ($$value => $$invalidate(47, $tagFolderSetting = $$value)));
-  var _a;
-  let isMainTree, {hoverPreview} = $$props, {openFile} = $$props, {vaultName = ""} = $$props, {title = ""} = $$props, {tags = []} = $$props, {saveSettings} = $$props, {showMenu} = $$props, {showLevelSelect} = $$props, {showOrder} = $$props, {newNote} = $$props, {openScrollView} = $$props, {isViewSwitchable} = $$props, {switchView} = $$props, {viewType = "tags"} = $$props, viewItemsSrc = [], updatedFiles = [];
+delegate([ "click", "contextmenu" ]);
+
+var import_obsidian3 = require("obsidian");
+
+function toggleSearch(_, showSearch, $searchString) {
+  set(showSearch, !get(showSearch));
+  if (!get(showSearch)) store_set(searchString, "");
+}
+
+function clearSearch(__1, $searchString) {
+  store_set(searchString, "");
+}
+
+function doSwitch(__2, $$props) {
+  if ($$props.switchView) $$props.switchView();
+}
+
+var root_13 = template('<div class="clickable-icon nav-action-button" aria-label="Change sort order"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Expand limit"><!></div>  <div aria-label="Search"><!></div>', 1), root_23 = template('<div class="clickable-icon nav-action-button" aria-label="Switch List/Tree"><!></div>'), root_3 = template('<div class="clickable-icon nav-action-button" aria-label="Toggle Incoming"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Outgoing"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Incoming&amp;Outgoing"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Hide indirect notes"><!></div>', 1), root_42 = template('<div class="search-row"><div class="search-input-container global-search-input-container"><input type="search" spellcheck="false" placeholder="Type to start search...">  <div class="search-input-clear-button" aria-label="Clear search"></div></div></div>'), root5 = template('<div hidden></div> <div class="nav-header"><div class="nav-buttons-container tagfolder-buttons-container"><div class="clickable-icon nav-action-button" aria-label="New note"><!></div> <!> <!> <!></div></div> <!> <div class="nav-files-container node-insert-event svelte-1xm87ro"><!></div>', 1), $$css3 = {
+  hash: "svelte-1xm87ro",
+  code: "\n\t.nav-files-container.svelte-1xm87ro {\n\t\theight: 100%;\n\t}\n"
+};
+
+function TagFolderViewComponent($$anchor, $$props) {
+  push($$props, true);
+  append_styles($$anchor, $$css3);
+  const $$stores = setup_stores(), $searchString = () => store_get(searchString, "$searchString", $$stores);
+  let vaultName = prop($$props, "vaultName", 3, ""), title = prop($$props, "title", 15, ""), tags = prop($$props, "tags", 31, (() => proxy([]))), viewType = prop($$props, "viewType", 3, "tags");
+  const isMainTree = derived((() => 0 == tags().length));
+  null === $$props.stateStore || void 0 === $$props.stateStore || $$props.stateStore.subscribe((state2 => {
+    tags(state2.tags);
+    title(state2.title);
+  }));
+  let updatedFiles = state(proxy([]));
   appliedFiles.subscribe((async filenames => {
-    updatedFiles = null != filenames ? filenames : [];
+    set(updatedFiles, proxy(null != filenames ? filenames : []));
   }));
-  if ("tags" == viewType) allViewItems.subscribe((items => {
-    $$invalidate(40, viewItemsSrc = items);
-  })); else if ("links" == viewType) allViewItemsByLink.subscribe((async items => {
-    if (viewItemsSrc) {
-      const filtered = [ ...viewItemsSrc.filter((e => !updatedFiles.some((filename => e.links.contains(filename))))) ];
-      updatedFiles = [];
-      $$invalidate(40, viewItemsSrc = filtered);
-      await tick();
-    }
-    $$invalidate(40, viewItemsSrc = items);
+  const viewItemsSrc = derived((() => {
+    if ("tags" == viewType()) return store_get(allViewItems, "$allViewItems", $$stores); else return store_get(allViewItemsByLink, "$allViewItemsByLink", $$stores);
   }));
-  let search = "";
-  searchString.subscribe((newSearch => {
-    if (search != newSearch) {
-      if ("" != newSearch) $$invalidate(14, showSearch = true);
-      $$invalidate(10, search = newSearch);
-    }
-  }));
-  let _setting = $tagFolderSetting, outgoingEnabled = false, incomingEnabled = false, onlyFDREnabled = false;
+  let _setting = state(proxy(store_get(tagFolderSetting, "$tagFolderSetting", $$stores))), outgoingEnabled = state(false), incomingEnabled = state(false), bothEnabled = state(false), onlyFDREnabled = state(false);
   tagFolderSetting.subscribe((setting => {
-    var _a2, _b, _c, _d, _e, _f;
-    $$invalidate(41, _setting = setting);
-    $$invalidate(11, outgoingEnabled = null !== (_c = null === (_b = null === (_a2 = _setting.linkConfig) || void 0 === _a2 ? void 0 : _a2.outgoing) || void 0 === _b ? void 0 : _b.enabled) && void 0 !== _c ? _c : false);
-    $$invalidate(12, incomingEnabled = null !== (_f = null === (_e = null === (_d = _setting.linkConfig) || void 0 === _d ? void 0 : _d.incoming) || void 0 === _e ? void 0 : _e.enabled) && void 0 !== _f ? _f : false);
-    $$invalidate(13, onlyFDREnabled = _setting.linkShowOnlyFDR);
+    var _a, _b, _c, _d, _e, _f;
+    set(_setting, proxy(setting));
+    const incoming = null !== (_c = null === (_b = null === (_a = get(_setting).linkConfig) || void 0 === _a ? void 0 : _a.incoming) || void 0 === _b ? void 0 : _b.enabled) && void 0 !== _c ? _c : false, outgoing = null !== (_f = null === (_e = null === (_d = get(_setting).linkConfig) || void 0 === _d ? void 0 : _d.outgoing) || void 0 === _e ? void 0 : _e.enabled) && void 0 !== _f ? _f : false;
+    if (!incoming && !outgoing) {
+      let newSet = {
+        ...get(_setting)
+      };
+      newSet.linkConfig.incoming.enabled = true;
+      newSet.linkConfig.outgoing.enabled = true;
+      if ($$props.saveSettings) $$props.saveSettings(newSet);
+      set(bothEnabled, true);
+    } else {
+      set(outgoingEnabled, proxy(!incoming && outgoing));
+      set(incomingEnabled, proxy(incoming && !outgoing));
+      set(bothEnabled, proxy(incoming && outgoing));
+    }
+    set(onlyFDREnabled, proxy(get(_setting).linkShowOnlyFDR));
   }));
-  let iconDivEl, observer, showSearch = false, newNoteIcon = "", folderIcon = "", upAndDownArrowsIcon = "", stackedLevels = "", searchIcon = "", switchIcon = "", outgoingIcon = "", incomingIcon = "", linkIcon = "", observingElements = new Map;
+  let observer, showSearch = state(false), iconDivEl = state(void 0), newNoteIcon = state(""), folderIcon = state(""), upAndDownArrowsIcon = state(""), stackedLevels = state(""), searchIcon = state(""), switchIcon = state(""), outgoingIcon = state(""), incomingIcon = state(""), bothIcon = state(""), linkIcon = state("");
+  async function switchIncoming() {
+    let newSet = {
+      ...get(_setting)
+    };
+    newSet.linkConfig.incoming.enabled = true;
+    newSet.linkConfig.outgoing.enabled = false;
+    if ($$props.saveSettings) await $$props.saveSettings(newSet);
+  }
+  async function switchOutgoing() {
+    let newSet = {
+      ...get(_setting)
+    };
+    newSet.linkConfig.incoming.enabled = false;
+    newSet.linkConfig.outgoing.enabled = true;
+    if ($$props.saveSettings) await $$props.saveSettings(newSet);
+  }
+  async function switchBoth() {
+    let newSet = {
+      ...get(_setting)
+    };
+    newSet.linkConfig.incoming.enabled = true;
+    newSet.linkConfig.outgoing.enabled = true;
+    if ($$props.saveSettings) await $$props.saveSettings(newSet);
+  }
+  async function switchOnlyFDR() {
+    let newSet = {
+      ...get(_setting)
+    };
+    newSet.linkShowOnlyFDR = !get(_setting).linkShowOnlyFDR;
+    if ($$props.saveSettings) await $$props.saveSettings(newSet);
+  }
+  let scrollParent, observingElements = new Map, observingElQueue = [];
   function unobserve(el) {
-    observer.unobserve(el);
+    null == observer || observer.unobserve(el);
+  }
+  function observeAllQueued() {
+    observingElQueue.forEach((el => {
+      null == observer || observer.observe(el);
+    }));
+    observingElQueue = [];
   }
   setContext("observer", {
     observe: function observe(el, callback) {
-      if (observingElements.has(el)) unobserve(el);
+      if (!observer) observingElQueue.push(el); else if (observingElQueue.length > 0) observeAllQueued();
+      if (observingElements.has(el)) {
+        unobserve(el);
+        observingElements.delete(el);
+      }
       observingElements.set(el, {
         callback,
         lastState: void 0
       });
-      observer.observe(el);
+      null == observer || observer.observe(el);
     },
     unobserve
   });
@@ -3384,28 +4022,33 @@ function instance6($$self, $$props, $$invalidate) {
       rootMargin: "40px 0px",
       threshold: 0
     });
-    (0, import_obsidian3.setIcon)(iconDivEl, "right-triangle");
-    $$invalidate(17, folderIcon = `${iconDivEl.innerHTML}`);
-    (0, import_obsidian3.setIcon)(iconDivEl, "lucide-edit");
-    $$invalidate(16, newNoteIcon = `${iconDivEl.innerHTML}`);
-    if (isMainTree) {
-      (0, import_obsidian3.setIcon)(iconDivEl, "lucide-sort-asc");
-      $$invalidate(18, upAndDownArrowsIcon = iconDivEl.innerHTML);
-      (0, import_obsidian3.setIcon)(iconDivEl, "stacked-levels");
-      $$invalidate(19, stackedLevels = iconDivEl.innerHTML);
-      (0, import_obsidian3.setIcon)(iconDivEl, "search");
-      $$invalidate(20, searchIcon = iconDivEl.innerHTML);
+    observeAllQueued();
+    if (get(iconDivEl)) {
+      (0, import_obsidian3.setIcon)(get(iconDivEl), "right-triangle");
+      set(folderIcon, `${get(iconDivEl).innerHTML}`);
+      (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-edit");
+      set(newNoteIcon, `${get(iconDivEl).innerHTML}`);
+      if (get(isMainTree)) {
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-sort-asc");
+        set(upAndDownArrowsIcon, proxy(get(iconDivEl).innerHTML));
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "stacked-levels");
+        set(stackedLevels, proxy(get(iconDivEl).innerHTML));
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "search");
+        set(searchIcon, proxy(get(iconDivEl).innerHTML));
+      }
+      if ("links" == viewType()) {
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "links-coming-in");
+        set(incomingIcon, proxy(get(iconDivEl).innerHTML));
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "links-going-out");
+        set(outgoingIcon, proxy(get(iconDivEl).innerHTML));
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "link");
+        set(linkIcon, proxy(get(iconDivEl).innerHTML));
+        (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-link-2");
+        set(bothIcon, proxy(get(iconDivEl).innerHTML));
+      }
+      (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-arrow-left-right");
+      set(switchIcon, proxy(get(iconDivEl).innerHTML));
     }
-    if ("links" == viewType) {
-      (0, import_obsidian3.setIcon)(iconDivEl, "links-coming-in");
-      $$invalidate(23, incomingIcon = iconDivEl.innerHTML);
-      (0, import_obsidian3.setIcon)(iconDivEl, "links-going-out");
-      $$invalidate(22, outgoingIcon = iconDivEl.innerHTML);
-      (0, import_obsidian3.setIcon)(iconDivEl, "link");
-      $$invalidate(24, linkIcon = iconDivEl.innerHTML);
-    }
-    (0, import_obsidian3.setIcon)(iconDivEl, "lucide-arrow-left-right");
-    $$invalidate(21, switchIcon = iconDivEl.innerHTML);
     const int = setInterval((() => {
       performHide.set(Date.now());
     }), 5e3);
@@ -3414,110 +4057,156 @@ function instance6($$self, $$props, $$invalidate) {
     };
   }));
   onDestroy((() => {
-    observer.disconnect();
+    null == observer || observer.disconnect();
   }));
-  let scrollParent, viewItems = [];
+  let headerTitle = derived((() => "" == title() ? `${"tags" == viewType() ? "Tags" : "Links"}: ${vaultName()}` : `Items: ${title()}`));
+  const viewItems = derived((() => {
+    var _a;
+    if (!get(viewItemsSrc)) return [];
+    if (get(isMainTree)) return get(viewItemsSrc);
+    let items = get(viewItemsSrc);
+    const lowerTags = tags().map((e => e.toLowerCase()));
+    for (const tag of lowerTags) items = items.filter((e => e.tags.some((e2 => (e2.toLowerCase() + "/").startsWith(tag)))));
+    const firstLevel = trimTrailingSlash(null !== (_a = tags().first()) && void 0 !== _a ? _a : "").toLowerCase(), archiveTags = get(_setting).archiveTags.toLowerCase().replace(/[\n ]/g, "").split(",");
+    if (!archiveTags.contains(firstLevel)) items = items.filter((item => !item.tags.some((e => archiveTags.contains(e.toLowerCase())))));
+    return items;
+  }));
   setContext("viewID", `${Math.random()}`);
-  $$self.$$set = $$props2 => {
-    if ("hoverPreview" in $$props2) $$invalidate(0, hoverPreview = $$props2.hoverPreview);
-    if ("openFile" in $$props2) $$invalidate(1, openFile = $$props2.openFile);
-    if ("vaultName" in $$props2) $$invalidate(34, vaultName = $$props2.vaultName);
-    if ("title" in $$props2) $$invalidate(35, title = $$props2.title);
-    if ("tags" in $$props2) $$invalidate(36, tags = $$props2.tags);
-    if ("saveSettings" in $$props2) $$invalidate(37, saveSettings = $$props2.saveSettings);
-    if ("showMenu" in $$props2) $$invalidate(2, showMenu = $$props2.showMenu);
-    if ("showLevelSelect" in $$props2) $$invalidate(3, showLevelSelect = $$props2.showLevelSelect);
-    if ("showOrder" in $$props2) $$invalidate(4, showOrder = $$props2.showOrder);
-    if ("newNote" in $$props2) $$invalidate(5, newNote = $$props2.newNote);
-    if ("openScrollView" in $$props2) $$invalidate(6, openScrollView = $$props2.openScrollView);
-    if ("isViewSwitchable" in $$props2) $$invalidate(7, isViewSwitchable = $$props2.isViewSwitchable);
-    if ("switchView" in $$props2) $$invalidate(38, switchView = $$props2.switchView);
-    if ("viewType" in $$props2) $$invalidate(8, viewType = $$props2.viewType);
+  var fragment = root5(), div = first_child(fragment);
+  bind_this(div, ($$value => set(iconDivEl, $$value)), (() => get(iconDivEl)));
+  var div_1 = sibling(div, 2), div_2 = child(div_1), div_3 = child(div_2);
+  div_3.__click = function(...$$args) {
+    var _a;
+    null == (_a = $$props.newNote) || _a.apply(this, $$args);
   };
-  $$self.$$.update = () => {
-    if (1024 & $$self.$$.dirty[0]) searchString.set(search);
-    if (256 & $$self.$$.dirty[0] | 24 & $$self.$$.dirty[1]) $$invalidate(27, headerTitle = "" == title ? `${"tags" == viewType ? "Tags" : "Links"}: ${vaultName}` : `Items: ${title}`);
-    if (32 & $$self.$$.dirty[1]) $$invalidate(9, isMainTree = 0 == tags.length);
-    if (512 & $$self.$$.dirty[0] | 1824 & $$self.$$.dirty[1]) if (viewItemsSrc) if (isMainTree) $$invalidate(25, viewItems = viewItemsSrc); else {
-      let items = viewItemsSrc;
-      const lowerTags = tags.map((e => e.toLowerCase()));
-      for (const tag of lowerTags) items = items.filter((e => e.tags.some((e2 => (e2.toLowerCase() + "/").startsWith(tag)))));
-      const firstLevel = trimTrailingSlash(null !== $$invalidate(39, _a = tags.first()) && void 0 !== _a ? _a : "").toLowerCase(), archiveTags = _setting.archiveTags.toLowerCase().replace(/[\n ]/g, "").split(",");
-      if (!archiveTags.contains(firstLevel)) items = items.filter((item => !item.tags.some((e => archiveTags.contains(e.toLowerCase())))));
-      $$invalidate(25, viewItems = items);
+  html(child(div_3), (() => get(newNoteIcon)), false, false);
+  reset(div_3);
+  var node_1 = sibling(div_3, 2);
+  if_block(node_1, (() => get(isMainTree)), ($$anchor2 => {
+    var fragment_1 = root_13(), div_4 = first_child(fragment_1);
+    div_4.__click = function(...$$args) {
+      var _a;
+      null == (_a = $$props.showOrder) || _a.apply(this, $$args);
+    };
+    html(child(div_4), (() => get(upAndDownArrowsIcon)), false, false);
+    reset(div_4);
+    var div_5 = sibling(div_4, 2);
+    div_5.__click = function(...$$args) {
+      var _a;
+      null == (_a = $$props.showLevelSelect) || _a.apply(this, $$args);
+    };
+    html(child(div_5), (() => get(stackedLevels)), false, false);
+    reset(div_5);
+    var div_6 = sibling(div_5, 2);
+    div_6.__click = [ toggleSearch, showSearch, $searchString ];
+    html(child(div_6), (() => get(searchIcon)), false, false);
+    reset(div_6);
+    template_effect((() => {
+      var _a;
+      return set_class(div_6, `${null != (_a = "clickable-icon nav-action-button " + (get(showSearch) ? " is-active" : "")) ? _a : ""} svelte-1xm87ro`);
+    }));
+    append($$anchor2, fragment_1);
+  }));
+  var node_5 = sibling(node_1, 2);
+  if_block(node_5, (() => $$props.isViewSwitchable), ($$anchor2 => {
+    var div_7 = root_23();
+    div_7.__click = [ doSwitch, $$props ];
+    html(child(div_7), (() => get(switchIcon)), false, false);
+    reset(div_7);
+    append($$anchor2, div_7);
+  }));
+  if_block(sibling(node_5, 2), (() => "links" == viewType()), ($$anchor2 => {
+    var fragment_2 = root_3(), div_8 = first_child(fragment_2);
+    div_8.__click = switchIncoming;
+    html(child(div_8), (() => get(incomingIcon)), false, false);
+    reset(div_8);
+    var div_9 = sibling(div_8, 2);
+    div_9.__click = switchOutgoing;
+    html(child(div_9), (() => get(outgoingIcon)), false, false);
+    reset(div_9);
+    var div_10 = sibling(div_9, 2);
+    div_10.__click = switchBoth;
+    html(child(div_10), (() => get(bothIcon)), false, false);
+    reset(div_10);
+    var div_11 = sibling(div_10, 2);
+    div_11.__click = switchOnlyFDR;
+    html(child(div_11), (() => get(linkIcon)), false, false);
+    reset(div_11);
+    template_effect((() => {
+      toggle_class(div_8, "is-active", get(incomingEnabled));
+      toggle_class(div_9, "is-active", get(outgoingEnabled));
+      toggle_class(div_10, "is-active", get(bothEnabled));
+      toggle_class(div_11, "is-active", get(onlyFDREnabled));
+    }));
+    append($$anchor2, fragment_2);
+  }));
+  reset(div_2);
+  reset(div_1);
+  var node_12 = sibling(div_1, 2);
+  if_block(node_12, (() => get(showSearch) && get(isMainTree)), ($$anchor2 => {
+    var div_12 = root_42(), div_13 = child(div_12), input = child(div_13);
+    remove_input_defaults(input);
+    var div_14 = sibling(input, 2);
+    const style_derived = derived((() => {
+      var _a;
+      return `display:${null != (_a = "" == $searchString().trim() ? "none" : "") ? _a : ""};`;
+    }));
+    div_14.__click = [ clearSearch, $searchString ];
+    reset(div_13);
+    reset(div_12);
+    template_effect((() => set_attribute(div_14, "style", get(style_derived))));
+    bind_value(input, $searchString, ($$value => store_set(searchString, $$value)));
+    append($$anchor2, div_12);
+  }));
+  var div_15 = sibling(node_12, 2);
+  bind_this(div_15, ($$value => scrollParent = $$value), (() => scrollParent));
+  V2TreeFolderComponent_1(child(div_15), {
+    get viewType() {
+      return viewType();
+    },
+    get items() {
+      return get(viewItems);
+    },
+    get folderIcon() {
+      return get(folderIcon);
+    },
+    thisName: "",
+    isRoot: true,
+    get showMenu() {
+      return $$props.showMenu;
+    },
+    get openFile() {
+      return $$props.openFile;
+    },
+    get isMainTree() {
+      return get(isMainTree);
+    },
+    get hoverPreview() {
+      return $$props.hoverPreview;
+    },
+    get openScrollView() {
+      return $$props.openScrollView;
+    },
+    depth: 1,
+    get headerTitle() {
+      return get(headerTitle);
     }
-  };
-  return [ hoverPreview, openFile, showMenu, showLevelSelect, showOrder, newNote, openScrollView, isViewSwitchable, viewType, isMainTree, search, outgoingEnabled, incomingEnabled, onlyFDREnabled, showSearch, iconDivEl, newNoteIcon, folderIcon, upAndDownArrowsIcon, stackedLevels, searchIcon, switchIcon, outgoingIcon, incomingIcon, linkIcon, viewItems, scrollParent, headerTitle, function toggleSearch() {
-    $$invalidate(14, showSearch = !showSearch);
-    if (!showSearch) $$invalidate(10, search = "");
-  }, function clearSearch() {
-    $$invalidate(10, search = "");
-  }, function doSwitch() {
-    if (switchView) switchView();
-  }, async function switchIncoming() {
-    let newSet = {
-      ..._setting
-    };
-    newSet.linkConfig.incoming.enabled = !_setting.linkConfig.incoming.enabled;
-    if (!newSet.linkConfig.incoming.enabled && !newSet.linkConfig.outgoing.enabled) newSet.linkConfig.incoming.enabled = true;
-    if (saveSettings) await saveSettings(newSet);
-  }, async function switchOutgoing() {
-    let newSet = {
-      ..._setting
-    };
-    newSet.linkConfig.outgoing.enabled = !_setting.linkConfig.outgoing.enabled;
-    if (!newSet.linkConfig.incoming.enabled && !newSet.linkConfig.outgoing.enabled) newSet.linkConfig.outgoing.enabled = true;
-    if (saveSettings) await saveSettings(newSet);
-  }, async function switchOnlyFDR() {
-    let newSet = {
-      ..._setting
-    };
-    newSet.linkShowOnlyFDR = !_setting.linkShowOnlyFDR;
-    if (saveSettings) await saveSettings(newSet);
-  }, vaultName, title, tags, saveSettings, switchView, _a, viewItemsSrc, _setting, function div0_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"]((() => {
-      iconDivEl = $$value;
-      $$invalidate(15, iconDivEl);
-    }));
-  }, function input_input_handler() {
-    search = this.value;
-    $$invalidate(10, search);
-  }, function div4_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"]((() => {
-      scrollParent = $$value;
-      $$invalidate(26, scrollParent);
-    }));
-  } ];
+  });
+  reset(div_15);
+  append($$anchor, fragment);
+  pop();
 }
 
-var TagFolderViewComponent = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance6, create_fragment6, safe_not_equal, {
-      hoverPreview: 0,
-      openFile: 1,
-      vaultName: 34,
-      title: 35,
-      tags: 36,
-      saveSettings: 37,
-      showMenu: 2,
-      showLevelSelect: 3,
-      showOrder: 4,
-      newNote: 5,
-      openScrollView: 6,
-      isViewSwitchable: 7,
-      switchView: 38,
-      viewType: 8
-    }, add_css3, [ -1, -1 ]);
-  }
-}, TagFolderViewComponent_default = TagFolderViewComponent, import_obsidian5 = require("obsidian"), import_obsidian4 = require("obsidian"), askString = (app2, title, placeholder, initialText) => new Promise((res => {
-  new PopoverSelectString(app2, title, placeholder, initialText, (result => res(result))).open();
+delegate([ "click" ]);
+
+var import_obsidian5 = require("obsidian"), import_obsidian4 = require("obsidian"), askString = (app, title, placeholder, initialText) => new Promise((res => {
+  new PopoverSelectString(app, title, placeholder, initialText, (result => res(result))).open();
 })), PopoverSelectString = class extends import_obsidian4.SuggestModal {
-  constructor(app2, title, placeholder, initialText, callback) {
-    super(app2);
+  constructor(app, title, placeholder, initialText, callback) {
+    super(app);
     this.callback = () => {};
     this.title = "";
-    this.app = app2;
+    this.app = app;
     this.title = title;
     this.setPlaceholder(null != placeholder ? placeholder : ">");
     this.callback = callback;
@@ -3558,6 +4247,10 @@ function toggleObjectProp(obj, propName, value) {
 }
 
 var TagFolderViewBase = class extends import_obsidian5.ItemView {
+  constructor() {
+    super(...arguments);
+    this.navigation = false;
+  }
   async saveSettings(settings) {
     this.plugin.settings = {
       ...this.plugin.settings,
@@ -3569,7 +4262,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
   showOrder(evt) {
     const menu = new import_obsidian5.Menu;
     menu.addItem((item => {
-      item.setTitle("Tags").setIcon("hashtag").onClick((async evt2 => {
+      item.setTitle("Tags").setIcon("hashtag").onClick((evt2 => {
         const menu2 = new import_obsidian5.Menu;
         for (const key in OrderKeyTag) for (const direction in OrderDirection) menu2.addItem((item2 => {
           const newSetting = `${key}_${direction}`;
@@ -3588,7 +4281,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
       return item;
     }));
     menu.addItem((item => {
-      item.setTitle("Items").setIcon("document").onClick((async evt2 => {
+      item.setTitle("Items").setIcon("document").onClick((evt2 => {
         const menu2 = new import_obsidian5.Menu;
         for (const key in OrderKeyItem) for (const direction in OrderDirection) menu2.addItem((item2 => {
           const newSetting = `${key}_${direction}`;
@@ -3695,7 +4388,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
             }));
           }));
           menu.addItem((item => {
-            item.setTitle("Open list").setIcon("sheets-in-box").onClick((async () => {
+            item.setTitle("Open list").setIcon("sheets-in-box").onClick((() => {
               selectedTags.set(expandedTagsAll);
             }));
           }));
@@ -3707,20 +4400,20 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
       this.app.workspace.trigger("file-menu", menu, file, "file-explorer");
       menu.addSeparator();
       menu.addItem((item => item.setTitle("Open in new tab").setSection("open").setIcon("lucide-file-plus").onClick((async () => {
-        app.workspace.openLinkText(path, path, "tab");
+        await this.app.workspace.openLinkText(path, path, "tab");
       }))));
       menu.addItem((item => item.setTitle("Open to the right").setSection("open").setIcon("lucide-separator-vertical").onClick((async () => {
-        app.workspace.openLinkText(path, path, "split");
+        await this.app.workspace.openLinkText(path, path, "split");
       }))));
     } else if (!isTagTree && targetTag) {
       const path = targetTag, file = this.app.vault.getAbstractFileByPath(path);
       this.app.workspace.trigger("file-menu", menu, file, "file-explorer");
       menu.addSeparator();
       menu.addItem((item => item.setTitle("Open in new tab").setSection("open").setIcon("lucide-file-plus").onClick((async () => {
-        app.workspace.openLinkText(path, path, "tab");
+        await this.app.workspace.openLinkText(path, path, "tab");
       }))));
       menu.addItem((item => item.setTitle("Open to the right").setSection("open").setIcon("lucide-separator-vertical").onClick((async () => {
-        app.workspace.openLinkText(path, path, "split");
+        await this.app.workspace.openLinkText(path, path, "split");
       }))));
     }
     if ("screenX" in evt) menu.showAtPosition({
@@ -3765,11 +4458,11 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
   }
   async onOpen() {
     this.containerEl.empty();
-    this.component = new TagFolderViewComponent_default({
+    const app = mount(TagFolderViewComponent, {
       target: this.containerEl,
       props: {
         openFile: this.plugin.focusFile,
-        hoverPreview: this.plugin.hoverPreview,
+        hoverPreview: (a, b) => this.plugin.hoverPreview(a, b),
         vaultName: this.app.vault.getName(),
         showMenu: this.showMenu,
         showLevelSelect: this.showLevelSelect,
@@ -3782,9 +4475,12 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
         saveSettings: this.saveSettings.bind(this)
       }
     });
+    this.component = app;
+    return await Promise.resolve();
   }
   async onClose() {
-    this.component.$destroy();
+    unmount(this.component);
+    return await Promise.resolve();
   }
 }, import_obsidian7 = require("obsidian"), TagFolderList = class extends TagFolderViewBase {
   constructor(leaf, plugin) {
@@ -3795,6 +4491,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
       tags: [],
       title: ""
     };
+    this.stateStore = writable(this.state);
     this.plugin = plugin;
     this.showMenu = this.showMenu.bind(this);
     this.showOrder = this.showOrder.bind(this);
@@ -3802,8 +4499,8 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
     this.showLevelSelect = this.showLevelSelect.bind(this);
     this.switchView = this.switchView.bind(this);
   }
-  onPaneMenu(menu, source) {
-    super.onPaneMenu(menu, source);
+  onPaneMenu(menu, source2) {
+    super.onPaneMenu(menu, source2);
     menu.addItem((item => {
       item.setIcon("pin").setTitle("Pin").onClick((() => {
         this.leaf.togglePinned();
@@ -3813,16 +4510,14 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
   getIcon() {
     return "stacked-levels";
   }
-  async setState(state, result) {
-    var _a;
+  async setState(state2, result) {
     this.state = {
-      ...state
+      ...this.state,
+      ...state2
     };
-    this.title = state.tags.join(",");
-    this.component.$set({
-      tags: state.tags,
-      title: null != (_a = state.title) ? _a : ""
-    });
+    this.title = state2.tags.join(",");
+    this.stateStore.set(this.state);
+    return await Promise.resolve();
   }
   getState() {
     return this.state;
@@ -3838,7 +4533,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
   }
   async onOpen() {
     this.containerEl.empty();
-    this.component = new TagFolderViewComponent_default({
+    this.component = mount(TagFolderViewComponent, {
       target: this.containerEl,
       props: {
         openFile: this.plugin.focusFile,
@@ -3851,12 +4546,18 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
         openScrollView: this.plugin.openScrollView,
         isViewSwitchable: this.plugin.settings.useMultiPaneList,
         switchView: this.switchView,
-        saveSettings: this.saveSettings.bind(this)
+        saveSettings: this.saveSettings.bind(this),
+        stateStore: this.stateStore
       }
     });
+    return await Promise.resolve();
   }
   async onClose() {
-    if (this.component) this.component.$destroy();
+    if (this.component) {
+      unmount(this.component);
+      this.component = void 0;
+    }
+    return await Promise.resolve();
   }
 }, HideItemsType = {
   NONE: "Hide nothing",
@@ -3897,9 +4598,9 @@ function getCompareMethodItems(settings) {
   }
 }
 
-function onElement(el, event, selector, callback, options) {
-  el.on(event, selector, callback, options);
-  return () => el.off(event, selector, callback, options);
+function onElement(el, event2, selector, callback, options) {
+  el.on(event2, selector, callback, options);
+  return () => el.off(event2, selector, callback, options);
 }
 
 var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
@@ -3987,6 +4688,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     this.setSearchString = this.setSearchString.bind(this);
     this.openScrollView = this.openScrollView.bind(this);
     this.loadFileInfo = (0, import_obsidian8.debounce)(this.loadFileInfo.bind(this), this.settings.scanDelay, true);
+    pluginInstance.set(this);
     this.registerView(VIEW_TYPE_TAGFOLDER, (leaf => new TagFolderView(leaf, this, "tags")));
     this.registerView(VIEW_TYPE_TAGFOLDER_LINK, (leaf => new TagFolderView(leaf, this, "links")));
     this.registerView(VIEW_TYPE_TAGFOLDER_LIST, (leaf => new TagFolderList(leaf, this)));
@@ -4054,31 +4756,31 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       this.searchString = search;
       this.refreshAllTree();
     }));
-    const setTagSearchString = (event, tagString) => {
+    const setTagSearchString = (event2, tagString) => {
       if (tagString) {
         const regExpTagStr = new RegExp(`(^|\\s)${tagString.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(\\s|$)`, "u"), regExpTagStrInv = new RegExp(`(^|\\s)-${tagString.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(\\s|$)`, "u");
-        if (event.altKey) return; else if (event.ctrlKey && event.shiftKey) {
+        if (event2.altKey) return; else if (event2.ctrlKey && event2.shiftKey) {
           if (this.searchString.match(regExpTagStr)) this.setSearchString(this.searchString.replace(regExpTagStr, "")); else if (!this.searchString.match(regExpTagStrInv)) this.setSearchString(this.searchString + (0 == this.searchString.length ? "" : " ") + `-${tagString}`);
-        } else if (event.ctrlKey) {
+        } else if (event2.ctrlKey) {
           if (this.searchString.match(regExpTagStrInv)) this.setSearchString(this.searchString.replace(regExpTagStrInv, "")); else if (!this.searchString.match(regExpTagStr)) this.setSearchString(this.searchString + (0 == this.searchString.length ? "" : " ") + `${tagString}`);
         } else this.setSearchString(tagString);
-        event.preventDefault();
-        event.stopPropagation();
+        event2.preventDefault();
+        event2.stopPropagation();
       }
     };
-    this.register(onElement(document, "click", 'a.tag[href^="#"]', ((event, targetEl) => {
+    this.register(onElement(document, "click", 'a.tag[href^="#"]', ((event2, targetEl) => {
       var _a;
       if (!this.settings.overrideTagClicking) return;
       const tagString = targetEl.innerText.substring(1);
       if (tagString) {
-        setTagSearchString(event, tagString);
+        setTagSearchString(event2, tagString);
         const leaf = null == (_a = this.getView()) ? void 0 : _a.leaf;
         if (leaf) this.app.workspace.revealLeaf(leaf);
       }
     }), {
       capture: true
     }));
-    this.register(onElement(document, "click", "span.cm-hashtag.cm-meta", ((event, targetEl) => {
+    this.register(onElement(document, "click", "span.cm-hashtag.cm-meta", ((event2, targetEl) => {
       var _a;
       if (!this.settings.overrideTagClicking) return;
       let enumTags = targetEl, tagString = "";
@@ -4097,7 +4799,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         enumTags = enumTags.nextElementSibling;
       } while (enumTags);
       tagString = tagString.substring(1);
-      setTagSearchString(event, tagString);
+      setTagSearchString(event2, tagString);
       const leaf = null == (_a = this.getView()) ? void 0 : _a.leaf;
       if (leaf) this.app.workspace.revealLeaf(leaf);
     }), {
@@ -4170,7 +4872,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         const newCache = this.getFileCacheData(procDiff);
         if (newCache) {
           if (null != this.getLinkView()) {
-            const oldLinks = (null == old ? void 0 : old.links) || [], newLinks = newCache.links, diffs2 = unique([ ...oldLinks, ...newLinks ]).filter((link => !oldLinks.contains(link) || !newLinks.contains(link)));
+            const oldLinks = (null == old ? void 0 : old.links) || [], newLinks = newCache.links, diffs2 = unique([ ...oldLinks, ...newLinks ]).filter((link2 => !oldLinks.contains(link2) || !newLinks.contains(link2)));
             for (const filename of diffs2) {
               const file = this.app.vault.getAbstractFileByPath(filename);
               if (file instanceof import_obsidian8.TFile) processDiffs.push(file);
@@ -4204,6 +4906,11 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       if (this.settings.useVirtualTag) {
         const disp = secondsToFreshness(today - fileCache.file.stat.mtime);
         allTags.push(`_VIRTUAL_TAG_FRESHNESS/${disp}`);
+      }
+      if (this.settings.displayFolderAsTag) {
+        const path = [ "_VIRTUAL_TAG_FOLDER", ...fileCache.file.path.split("/") ];
+        path.pop();
+        if (path.length > 0) allTags.push(`${path.join("/")}`);
       }
       if (allTags.some((tag => ignoreDocTags.contains(tag.toLowerCase())))) continue;
       if (searchItems.map((searchItem => {
@@ -4274,7 +4981,9 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       }
     } finally {
       this.processingFileInfo = false;
-    } else diffs.forEach((e => this.loadFileInfoAsync(e)));
+    } else diffs.forEach((e => {
+      this.loadFileInfoAsync(e);
+    }));
   }
   async applyFileInfoToView() {
     const itemsSorted = (await this.getItemsList("tag")).sort(this.compareItems);
@@ -4308,7 +5017,9 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       await this.loadFileInfos([]);
     }
   }
-  onunload() {}
+  onunload() {
+    pluginInstance.set(void 0);
+  }
   async openScrollView(leaf, title, tagPath, files) {
     if (!leaf) leaf = this.app.workspace.getLeaf("split");
     await leaf.setViewState({
@@ -4380,7 +5091,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       }
     })); else {
       const newState = leaves[0].getViewState();
-      leaves[0].setViewState({
+      await leaves[0].setViewState({
         type: VIEW_TYPE_TAGFOLDER,
         state: {
           ...newState,
@@ -4399,7 +5110,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       }
     })); else {
       const newState = leaves[0].getViewState();
-      leaves[0].setViewState({
+      await leaves[0].setViewState({
         type: VIEW_TYPE_TAGFOLDER_LINK,
         state: {
           ...newState,
@@ -4419,12 +5130,12 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
   async activateView() {
     const leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER);
     await this.initView();
-    if (leaves.length > 0) this.app.workspace.revealLeaf(leaves[0]);
+    if (leaves.length > 0) await this.app.workspace.revealLeaf(leaves[0]);
   }
   async activateViewLink() {
     const leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER_LINK);
     await this.initLinkView();
-    if (leaves.length > 0) this.app.workspace.revealLeaf(leaves[0]);
+    if (leaves.length > 0) await this.app.workspace.revealLeaf(leaves[0]);
   }
   async modifyFile(file) {
     if (this.settings.useTagInfo) if (!this.skipOnce) {
@@ -4472,7 +5183,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     if (null == this.tagInfo) return;
     let file = this.getTagInfoFile();
     if (null == file) file = await this.app.vault.create(this.getTagInfoFilename(), "");
-    await app.fileManager.processFrontMatter(file, (matter => {
+    await this.app.fileManager.processFrontMatter(file, (matter => {
       const ti = Object.entries(this.tagInfo);
       for (const [key, value] of ti) if (void 0 === value) delete matter[key]; else matter[key] = value;
     }));
@@ -4500,22 +5211,24 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     this.refreshAllViewItems();
   }
   async openListView(tagSrc) {
-    var _a;
+    var _a, _b;
     if (!tagSrc) return;
     const tags = "root" == tagSrc.first() ? tagSrc.slice(1) : tagSrc;
     let theLeaf;
     for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER_LIST)) {
-      const state = leaf.getViewState();
-      if (state.state.tags.slice().sort().join("-") == tags.slice().sort().join("-")) {
-        this.app.workspace.setActiveLeaf(leaf, {
-          focus: true
-        });
-        return;
+      const state2 = leaf.getViewState();
+      if (null == (_a = state2.state) ? void 0 : _a.tags) {
+        if (state2.state.tags.slice().sort().join("-") == tags.slice().sort().join("-")) {
+          this.app.workspace.setActiveLeaf(leaf, {
+            focus: true
+          });
+          return;
+        }
+        if (state2.pinned) ; else theLeaf = leaf;
       }
-      if (state.pinned) ; else theLeaf = leaf;
     }
     if (!theLeaf) {
-      const parent = null == (_a = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER)) ? void 0 : _a.first();
+      const parent = null == (_b = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER)) ? void 0 : _b.first();
       if (!parent) return;
       switch (this.settings.showListIn) {
        case "CURRENT_PANE":
@@ -4541,7 +5254,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         title
       }
     });
-    this.app.workspace.revealLeaf(theLeaf);
+    await this.app.workspace.revealLeaf(theLeaf);
   }
   async createNewNote(tags) {
     const expandedTagsAll = ancestorToLongestTag(ancestorToTags(joinPartialPath(removeIntermediatePath(null != tags ? tags : [])))).map((e => trimTrailingSlash(e))), expandedTags = expandedTagsAll.map((e => e.split("/").filter((ee => !isSpecialTag(ee))).join("/"))).filter((e => "" != e)).map((e => "#" + e)).join(" ").trim(), ww = await this.app.fileManager.createAndOpenMarkdownFile();
@@ -4552,8 +5265,8 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     })); else await this.app.vault.append(ww, expandedTags);
   }
 }, TagFolderSettingTab = class extends import_obsidian8.PluginSettingTab {
-  constructor(app2, plugin) {
-    super(app2, plugin);
+  constructor(app, plugin) {
+    super(app, plugin);
     this.plugin = plugin;
   }
   hide() {
@@ -4563,9 +5276,6 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     const {containerEl} = this;
     containerEl.empty();
     containerEl.createEl("h2", {
-      text: "Settings for TagFolder"
-    });
-    containerEl.createEl("h3", {
       text: "Behavior"
     });
     new import_obsidian8.Setting(containerEl).setName("Always Open").setDesc("Place TagFolder on the left pane and activate it at every Obsidian launch").addToggle((toggle => toggle.setValue(this.plugin.settings.alwaysOpen).onChange((async value => {
@@ -4593,7 +5303,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Files"
     });
     new import_obsidian8.Setting(containerEl).setName("Display method").setDesc("How to show a title of files").addDropdown((dropdown => dropdown.addOptions({
@@ -4636,7 +5346,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Tags"
     });
     const setOrderMethodTag = async (key, order) => {
@@ -4657,13 +5367,19 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
+    new import_obsidian8.Setting(containerEl).setName("Display folder as tag").addToggle((toggle => {
+      toggle.setValue(this.plugin.settings.displayFolderAsTag).onChange((async value => {
+        this.plugin.settings.displayFolderAsTag = value;
+        await this.plugin.saveSettings();
+      }));
+    }));
     new import_obsidian8.Setting(containerEl).setName("Store tags in frontmatter for new notes").setDesc("Otherwise, tags are stored with #hashtags at the top of the note").addToggle((toggle => {
       toggle.setValue(this.plugin.settings.useFrontmatterTagsForNewNotes).onChange((async value => {
         this.plugin.settings.useFrontmatterTagsForNewNotes = value;
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Actions"
     });
     new import_obsidian8.Setting(containerEl).setName("Search tags inside TagFolder when clicking tags").addToggle((toggle => {
@@ -4684,7 +5400,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Arrangements"
     });
     new import_obsidian8.Setting(containerEl).setName("Hide Items").setDesc("Hide items on the landing or nested tags").addDropdown((dd => {
@@ -4723,7 +5439,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Link Folder"
     });
     new import_obsidian8.Setting(containerEl).setName("Use Incoming").setDesc("").addToggle((toggle => toggle.setValue(this.plugin.settings.linkConfig.incoming.enabled).onChange((async value => {
@@ -4742,7 +5458,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       this.plugin.settings.linkCombineOtherTree = value;
       await this.plugin.saveSettings();
     }))));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Filters"
     });
     new import_obsidian8.Setting(containerEl).setName("Target Folders").setDesc("If configured, the plugin will only target files in it.").addTextArea((text2 => text2.setValue(this.plugin.settings.targetFolders).setPlaceholder("study,documents/summary").onChange((async value => {
@@ -4765,7 +5481,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       this.plugin.settings.archiveTags = value;
       await this.plugin.saveSettings();
     }))));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Misc"
     });
     new import_obsidian8.Setting(containerEl).setName("Tag scanning delay").setDesc("Sets the delay for reflecting metadata changes to the tag tree. (Plugin reload is required.)").addText((text2 => {
@@ -4785,7 +5501,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         await this.plugin.saveSettings();
       }));
     }));
-    containerEl.createEl("h3", {
+    containerEl.createEl("h2", {
       text: "Utilities"
     });
     new import_obsidian8.Setting(containerEl).setName("Dumping tags for reporting bugs").setDesc("If you want to open an issue to the GitHub, this information can be useful. and, also if you want to keep secrets about names of tags, you can use `disguised`.").addButton((button => button.setButtonText("Copy tags").setDisabled(false).onClick((async () => {
@@ -4795,10 +5511,11 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     })))).addButton((button => button.setButtonText("Copy disguised tags").setDisabled(false).onClick((async () => {
       const x = new Map;
       let i = 0;
-      const items = (await this.plugin.getItemsList("tag")).map((e => e.tags.filter((e2 => "_untagged" != e2)).map((e2 => x.has(e2) ? x.get(e2) : (x.set(e2, i++), 
-      i))))).filter((e => e.length));
-      await navigator.clipboard.writeText(items.map((e => e.map((e2 => `#tag${e2}`)).join(", "))).join("\n"));
+      const items = (await this.plugin.getItemsList("tag")).map((e => e.tags.filter((e2 => "_untagged" != e2)).map((e2 => e2.split("/").map((e3 => e3.startsWith("_VIRTUAL") ? e3 : x.has(e3) ? x.get(e3) : (x.set(e3, "tag" + i++), 
+      i))).join("/"))).filter((e2 => e2.length))));
+      await navigator.clipboard.writeText(items.map((e => e.map((e2 => `#${e2}`)).join(", "))).join("\n"));
       new import_obsidian8.Notice("Copied to clipboard");
     }))));
   }
 };
+/* nosourcemap */
