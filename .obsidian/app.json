@@ -8,7 +8,6 @@
   "autoPairMarkdown": false,
   "autoPairBrackets": false,
   "promptDelete": false,
-  "showRibbon": true,
   "showUnsupportedFiles": true,
   "userIgnoreFilters": [
     "📁 99 - Changelog/"
