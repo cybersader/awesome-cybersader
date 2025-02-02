@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Gitignore Folder Tracking Removal",
+      "path": "📁 21 - Development/Git/Gitignore Folder Tracking Removal/Gitignore Folder Tracking Removal.md"
+    },
+    {
+      "basename": "Handling Obsidian Git Conflicts & Issues",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Git/Handling Obsidian Git Conflicts & Issues/Handling Obsidian Git Conflicts & Issues.md"
+    },
+    {
       "basename": "Obsidian Git",
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Diagrams",
       "path": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md"
-    },
-    {
-      "basename": "Presentation Tools & Tech",
-      "path": "📁 12 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
-    },
-    {
-      "basename": "Link Curation Tools",
-      "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
     }
   ],
   "omittedPaths": [],

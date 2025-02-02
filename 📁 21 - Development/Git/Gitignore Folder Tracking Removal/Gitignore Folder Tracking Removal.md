@@ -1,10 +1,13 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Sunday, November 3rd 2024, 4:22 pm
-date modified: Sunday, November 3rd 2024, 4:41 pm
+date modified: Sunday, February 2nd 2025, 12:17 pm
 ---
+
+[Obsidian Git](../../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Git/Obsidian%20Git.md)
 
 **Command-Line Solutions for Removing Files from Git Tracking**
 
