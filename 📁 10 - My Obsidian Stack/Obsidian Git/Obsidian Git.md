@@ -1,10 +1,10 @@
 ---
-aliases:
-  - Obsidian Git Plugin
-tags: 
+permalink:
+aliases: [Obsidian Git Plugin]
+tags: []
 publish: true
 date created: Friday, April 26th 2024, 9:42 pm
-date modified: Thursday, November 7th 2024, 8:50 pm
+date modified: Sunday, February 2nd 2025, 11:55 am
 ---
 
 # Links
