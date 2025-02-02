@@ -14,7 +14,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 
 - **[[Awesome Obsidian Wiki Examples]]**
 - **[[Awesome WikiJS Examples]]**
-- **[[[[✒️ Cyberbase Architecture/✒️ Cyberbase Architecture]]**
+- **[[Contributable Obsidian Wiki]]**
 	- **[[🐛 Known Base Bugs, Issues]]**
 	- **[[Astro with Content Layer]]**
 	- **[[Auto Publish For Obsidian Publish]]**
@@ -29,6 +29,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 	- **[[Obsidian Publish Analytics]]**
 	- **[[Obsidian Publish SEO]]**
 	- **[[TinaCMS]]**
+- **[[Cyberbase Development]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Obsidian as a CMS]]**
 

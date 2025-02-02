@@ -1,16 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-02-02-Sunday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-02-Sunday/2025-02-02-Sunday.md"
+    },
+    {
+      "basename": "Cyberbase Development",
+      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
+    },
+    {
+      "basename": "Syncing Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Syncing Obsidian/Syncing Obsidian.md"
+    },
+    {
+      "basename": "2025-02-01-Saturday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-01-Saturday/2025-02-01-Saturday.md"
+    },
+    {
+      "basename": "Cybersader Wiki Features and Changes",
+      "path": "📁 51 - Cyberbase/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
+    },
+    {
+      "basename": "Awesome WikiJS Examples",
+      "path": "📁 51 - Cyberbase/Awesome WikiJS Examples/Awesome WikiJS Examples.md"
+    },
+    {
       "basename": "Contributable Obsidian Wiki",
       "path": "📁 51 - Cyberbase/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Awesome Obsidian Wiki Examples",
+      "path": "📁 51 - Cyberbase/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
+    },
+    {
+      "basename": "✒️ Obsidian Tech Stack Diagram",
+      "path": "📁 51 - Cyberbase/✒️ Obsidian Tech Stack Diagram/✒️ Obsidian Tech Stack Diagram.md"
+    },
+    {
+      "basename": "✒️ Cyberbase Architecture",
+      "path": "📁 51 - Cyberbase/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
+    },
+    {
+      "basename": "Astro with Content Layer",
+      "path": "📁 51 - Cyberbase/Contributable Obsidian Wiki/Astro with Content Layer/Astro with Content Layer.md"
     },
     {
       "basename": "📁 51 - Cyberbase",
       "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
     },
     {
-      "basename": "2025-02-01-Saturday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-01-Saturday/2025-02-01-Saturday.md"
+      "basename": "Obsidian as a CMS",
+      "path": "📁 51 - Cyberbase/Obsidian as a CMS/Obsidian as a CMS.md"
     },
     {
       "basename": "Content Link Downloader",
@@ -41,10 +81,6 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
     {
-      "basename": "Awesome WikiJS Examples",
-      "path": "📁 51 - Cyberbase/Awesome WikiJS Examples/Awesome WikiJS Examples.md"
-    },
-    {
       "basename": "Obsidian Regex Find & Replace",
       "path": "📁 10 - My Obsidian Stack/Obsidian Regex Find & Replace/Obsidian Regex Find & Replace.md"
     },
@@ -53,20 +89,8 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     },
     {
-      "basename": "Obsidian as a CMS",
-      "path": "📁 51 - Cyberbase/Obsidian as a CMS/Obsidian as a CMS.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 51 - Cyberbase/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
-    },
-    {
       "basename": "Breaking Vault Changes",
       "path": "📁 10 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md"
-    },
-    {
-      "basename": "Awesome Obsidian Wiki Examples",
-      "path": "📁 51 - Cyberbase/Awesome Obsidian Wiki Examples/Awesome Obsidian Wiki Examples.md"
     },
     {
       "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
@@ -83,10 +107,6 @@
     {
       "basename": "⬇️ Obsidian Integrations",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Integrations/⬇️ Obsidian Integrations.md"
-    },
-    {
-      "basename": "✒️ Obsidian Tech Stack Diagram",
-      "path": "📁 51 - Cyberbase/✒️ Obsidian Tech Stack Diagram/✒️ Obsidian Tech Stack Diagram.md"
     },
     {
       "basename": "📁 10 - My Obsidian Stack",
@@ -179,26 +199,6 @@
     {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
-    },
-    {
-      "basename": "Awesome Storage Hardware",
-      "path": "📁 03 - Curations, Stacks/Awesome Storage Hardware/Awesome Storage Hardware.md"
-    },
-    {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations/Awesome Cyber Resource Curations.md"
-    },
-    {
-      "basename": "⬇️ Curation Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇️ Curation Dropzone/⬇️ Curation Dropzone.md"
-    },
-    {
-      "basename": "📁 50 - Cybersade",
-      "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
-    },
-    {
-      "basename": "2025-01-31-Friday",
-      "path": "🕸️ Daily Notes/2025/01/2025-01-31-Friday/2025-01-31-Friday.md"
     }
   ],
   "omittedPaths": [],

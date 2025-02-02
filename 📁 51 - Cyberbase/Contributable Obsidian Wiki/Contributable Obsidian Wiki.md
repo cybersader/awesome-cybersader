@@ -11,7 +11,7 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
 %% Begin Landmark %%
-- **[[../✒️ Cyberbase Architecture/✒️ Cyberbase Architecture]]]**
+- **[[🐛 Known Base Bugs, Issues]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
 - **[[Collaboration in Obsidian]]**

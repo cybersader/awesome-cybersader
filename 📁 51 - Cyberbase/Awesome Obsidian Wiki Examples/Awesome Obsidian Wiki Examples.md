@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, July 6th 2024, 1:16 pm
-date modified: Monday, December 16th 2024, 8:47 am
+date modified: Saturday, February 1st 2025, 5:58 pm
 ---
 
 [Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
@@ -38,6 +38,7 @@ date modified: Monday, December 16th 2024, 8:47 am
 - https://notes.philoserf.com/Home
 - https://plugins.javalent.com/home#Practical+plugins
 - https://www.are.na/marco-noris/obsidian-publish-websites
+
 # Misc JS and CSS
 
 - https://gist.github.com/elkadre

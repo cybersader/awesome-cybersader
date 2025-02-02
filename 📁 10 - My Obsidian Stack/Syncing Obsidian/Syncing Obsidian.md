@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Friday, April 26th 2024, 3:18 pm
-date modified: Sunday, August 11th 2024, 5:15 pm
+date modified: Saturday, February 1st 2025, 5:59 pm
 ---
 
 %% Begin Landmark %%
@@ -12,6 +13,10 @@ date modified: Sunday, August 11th 2024, 5:15 pm
 
 %% End Landmark %%
 - [ ] Decide on syncing solution that allows for large size vaults, back and forth use between clients, and easy configuration ➕ 2024-04-26
+
+# Obsidian Plugins
+
+- [Remotely Save official website](https://remotelysave.com/)
 
 # Options
 
