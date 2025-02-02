@@ -3,7 +3,7 @@ permalink:
 aliases: [New Tech]
 tags: []
 date created: Monday, March 18th 2024, 1:59 pm
-date modified: Friday, January 31st 2025, 4:57 pm
+date modified: Sunday, February 2nd 2025, 1:02 pm
 created: Monday, Mar 18, 2024 01:59 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
 publish: true
@@ -21,6 +21,7 @@ publish: true
 - [Cursor](https://www.cursor.com/) 
 	- [(5) Cursor Is Beating VS Code (...by forking it) - YouTube](https://www.youtube.com/watch?v=e2vct-TQquw)
 	- 
+- [Sourcegraph | Industrializing software development with AI agents](https://sourcegraph.com/)
 
 # Daily Drivers
 
