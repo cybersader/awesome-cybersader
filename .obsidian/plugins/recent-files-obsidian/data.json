@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "📁 51 - Cyberbase",
-      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
+      "basename": "Cyberbase Development",
+      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
+    },
+    {
+      "basename": "2025-02-02-Sunday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-02-Sunday/2025-02-02-Sunday.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "⬇️ New Tools",
       "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
+    },
+    {
+      "basename": "⬇️ Curation Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇️ Curation Dropzone/⬇️ Curation Dropzone.md"
+    },
+    {
+      "basename": "📁 03 - Curations, Stacks",
+      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
+    },
+    {
+      "basename": "Daily Driver Stuff",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
+    },
+    {
+      "basename": "📁 51 - Cyberbase",
+      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
     },
     {
       "basename": "Syncing Obsidian",
@@ -23,18 +47,6 @@
     {
       "basename": "Obsidian Git",
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
-    },
-    {
-      "basename": "2025-02-01-Saturday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-01-Saturday/2025-02-01-Saturday.md"
-    },
-    {
-      "basename": "2025-02-02-Sunday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-02-Sunday/2025-02-02-Sunday.md"
-    },
-    {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "Cybersader Wiki Features and Changes",
@@ -183,22 +195,6 @@
     {
       "basename": "Awesome Splunk",
       "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
-    },
-    {
-      "basename": "Hosting",
-      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
-    },
-    {
-      "basename": "Social Choice Theory",
-      "path": "📁 16 - Society, Culture, Politics, Government/Social Choice Theory/Social Choice Theory.md"
-    },
-    {
-      "basename": "Polling Tools",
-      "path": "📁 03 - Curations, Stacks/Polling Tools/Polling Tools.md"
-    },
-    {
-      "basename": "Diagrams",
-      "path": "📁 03 - Curations, Stacks/Diagrams/Diagrams.md"
     }
   ],
   "omittedPaths": [],

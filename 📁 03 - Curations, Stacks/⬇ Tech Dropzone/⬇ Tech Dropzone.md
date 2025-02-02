@@ -4,13 +4,14 @@ aliases: []
 tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Saturday, January 25th 2025, 10:06 pm
+date modified: Sunday, February 2nd 2025, 3:13 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [mouseless.click > mouseless > no mouse to click](https://mouseless.click/)
 - [huly.io > Everything App for your teams](https://huly.io/)
 - [usemotion.com > The Only AI Project Manager That Predicts & Prevents Delays For Teams](https://www.usemotion.com/project-manager)
 - [StackShare - Tech Stack Intelligence](https://stackshare.io/)
@@ -103,7 +104,6 @@ sarcasm, math, and language.
 - [Expert led courses for front-end web developers. | egghead.io](https://egghead.io/)
 - [IP Chicken - What is my IP address? Free public IP lookup.](https://ipchicken.com/)
 - [Managed Cloud Hosting Platform Simplified - Cloudways](https://www.cloudways.com/en/)
-- [Decap CMS | Open-Source Content Management System](https://decapcms.org/)
 - [https://www.iansresearch.com/](https://www.iansresearch.com/)
 - [https://docs.velociraptor.app/](https://docs.velociraptor.app/)
 - [Install PowerToys | Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/install)

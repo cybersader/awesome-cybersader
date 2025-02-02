@@ -1,0 +1,158 @@
+---
+aliases: []
+tags: []
+publish: true
+permalink:
+date created: Saturday, February 1st 2025, 5:58 pm
+date modified: Sunday, February 2nd 2025, 4:06 pm
+---
+
+# Tech Stack DROP
+
+- Finding company tech stacks
+	- [stackshare.io > StackShare - Tech Stack Intelligence](https://stackshare.io/)
+- Blogging tech and websites
+	- [hashnode.com > Hashnode — Pricing.](https://hashnode.com/pricing)
+	- dev
+	- ghost
+	- medium
+- CMS
+	- Strapi
+		- [jamstack.org > Strapi | Jamstack](https://jamstack.org/headless-cms/strapi/)
+		- [strapi.io > Role Based Access Control - Custom Roles and Permissions](https://strapi.io/features/custom-roles-and-permissions)
+		- [strapi.io > Custom Roles & Permissions Available for Free in Strapi v4.8](https://strapi.io/blog/custom-roles-and-permissions-available-for-free-in-strapi-v4-8)
+		- Integrations
+			- [strapi.io > Integrate CkEditor with Strapi](https://strapi.io/integrations/ckeditor)
+			- [strapi.io > Strapi Integrations](https://strapi.io/integrations)
+			- [github.com > CinquinAndy/notes-to-strapi-export-article-ai: [prod] - 🚀 Strapi Exporter: Supercharge Your Obsidian-to-Strapi Workflow](https://github.com/CinquinAndy/notes-to-strapi-export-article-ai)
+			- [strapi.io > Integrate TinyMCE with Strapi](https://strapi.io/integrations/tinymce)
+			- [market.strapi.io > Mailgun | Strapi Market](https://market.strapi.io/providers/@strapi-provider-email-mailgun)
+			- [market.strapi.io > Cloudinary | Strapi Market](https://market.strapi.io/providers/@strapi-provider-upload-cloudinary)
+		- 
+	- Sveltia
+		- [github.com > sveltia/sveltia-cms: Netlify/Decap CMS alternative. Fast](https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#features-not-to-be-implemented)
+		- [jamstack.org > Sveltia CMS | Jamstack](https://jamstack.org/headless-cms/sveltia-cms/)
+	- Pages CMS
+		- [pagescms.org > Pages CMS: The No-Hassle CMS for Static Sites Generators](https://pagescms.org/)
+	- Tina CMS
+		- [jamstack.org > Tina | Jamstack](https://jamstack.org/headless-cms/tinacms/)
+		- [tina.io > TinaCMS – Headless CMS with GitHub & Markdown Support](https://tina.io/)
+	- Keystone
+		- [jamstack.org > Keystone | Jamstack](https://jamstack.org/headless-cms/keystone/)
+		- [keystonejs.com > KeystoneJS: The superpowered Node.js Headless CMS for developers](https://keystonejs.com/)
+	- Coisas
+		- [coisas.fiatjaf.com > Coisas CMS](https://coisas.fiatjaf.com/) - edit GitHub pages in the browser with github.dev
+		- [jamstack.org > Coisas | Jamstack](https://jamstack.org/headless-cms/coisas/)
+	- Sanity
+		- [sanity.io > Headless CMS | Sanity](https://www.sanity.io/headless-cms)
+		- [sanity.io > Migrating Custom Auth Providers | Migrating from v2](https://www.sanity.io/docs/migrating-custom-auth-providers)
+		- [sanity.io > AuthConfig - interface - sanity - API References](https://www.sanity.io/docs/reference/api/sanity/AuthConfig)
+		- [sanity.io > Roles | Access control](https://www.sanity.io/docs/roles)
+		- 
+		- [sanity.io > Auth API | Reference](https://www.sanity.io/docs/auth-api-reference)
+- SSG, JS Frameworks
+	- Jekyll
+		- [jamstack.org > Jekyll | Jamstack](https://jamstack.org/generators/jekyll/)
+	- Hugo
+		- [jamstack.org > Hugo | Jamstack](https://jamstack.org/generators/hugo/)
+	- 
+	- Astro
+		- [jamstack.org > Astro | Jamstack](https://jamstack.org/generators/astro/)
+	- 11ty
+		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
+- Auth 
+	- Auth0
+		- [auth0.com > Auth0: Secure access for everyone. But not just anyone.](https://auth0.com/)
+	- Okta
+		- [okta.com > Employee and Customer Identity Solutions | Okta](https://www.okta.com/)
+	- Clerk
+		- [clerk.com > Pricing](https://clerk.com/pricing)
+		- 
+- Sync & conflict resolution
+	- Search terms
+		- Sync engines, CRDT, COOT, OT
+		- sync engines and RPC CRDT
+		- Local first
+		- local first sync crdt merge
+		- CRDT vs OT
+		- local first content
+	- Concepts, Conversations
+		- [crdt.tech > About CRDTs • Conflict-free Replicated Data Types](https://crdt.tech/)
+		- [dev.to > Creating the Local First Stack](https://dev.to/ebuckley/creating-the-local-first-stack-4aki)
+		- [sandromaglione.com > Local-first vs Sync engines | Sandro Maglione](https://www.sandromaglione.com/articles/local-first-vs-sync-engines)
+		- [powersync.com > Local-First Software is a Big Deal](https://www.powersync.com/blog/local-first-is-a-big-deal-especially-for-the-web)
+		- [docs.expo.dev > Local-first architecture with Expo](https://docs.expo.dev/guides/local-first/)
+		- [rxdb.info > Downsides of Local First / Offline First | RxDB - JavaScript Database](https://rxdb.info/downsides-of-offline-first.html)
+		- [dev.to > Comparing local-first frameworks and approaches](https://dev.to/neon-postgres/comparing-local-first-frameworks-and-approaches-1hgn)
+		- [evilmartians.com > Recapping the first Local‑First conference in 15 minutes—Martian Chronicles](https://evilmartians.com/chronicles/recapping-the-first-local-first-conference-in-15-minutes)
+		- [squads.com > Building Better Apps with Local-First Principles](https://squads.com/blog/building-better-apps-with-local-first-principles)
+		- [dev.to > Synking all the things with CRDTs: Local first development](https://dev.to/charlietap/synking-all-the-things-with-crdts-local-first-development-3241)
+		- [news.ycombinator.com > Resilient Sync for Local First | Hacker News](https://news.ycombinator.com/item?id=40772955)
+		- [news.ycombinator.com > You Might Not Need a CRDT: Document Sync in the Wild [video] | Hacker News](https://news.ycombinator.com/item?id=39615987)
+		- [tonsky.me > Local](https://tonsky.me/blog/crdt-filesync/) - local first concepts from conference and creator of "local first" idea
+		- [stackoverflow.com > Differences between OT and CRDT](https://stackoverflow.com/questions/26694359/differences-between-ot-and-crdt)
+		- [tiny.cloud > Building real-time collaboration applications: OT vs CRDT](https://www.tiny.cloud/blog/real-time-collaboration-ot-vs-crdt/)
+		- [fiberplane.com > Why we at Fiberplane use Operational Transformation instead of CRDT](https://fiberplane.com/blog/why-we-at-fiberplane-use-operational-transformation-instead-of-crdt/)
+		- [thom.ee > Deciding between CRDTs and OT for data synchronization - Thom's Dev Blog](https://thom.ee/blog/crdt-vs-operational-transformation/)
+		- [josephg.com > I was wrong. CRDTs are the future](https://josephg.com/blog/crdts-are-the-future/)
+		- [medium.com > Why AFFiNE Chose CRDT over OT to Build a Collaborative Editor](https://medium.com/@affineworkos/why-affine-chose-crdt-over-ot-to-build-a-collaborative-editor-14b05689584c)
+		- [gaurav789.hashnode.dev > "CRDTs and OT: The Art of Conflict-Free Data Synchronization"](https://gaurav789.hashnode.dev/mastering-distributed-collaboration-the-crdt-and-ot-handbook)
+		- [redis.io > Diving into Conflict-Free Replicated Data Types (CRDTs) - Redis](https://redis.io/blog/diving-into-crdts/)
+		- [shambhavishandilya.medium.com > Understanding real-time collaboration with CRDTs](https://shambhavishandilya.medium.com/understanding-real-time-collaboration-with-crdts-e764eb65024e)
+		- [dev.to > Conflict-Free Replicated Data Types (CRDTs) in Frontend Development](https://dev.to/syedmuhammadaliraza/conflict-free-replicated-data-types-crdts-in-frontend-development-4nh3)
+		- [inkandswitch.com > Local-first software: You own your data](https://www.inkandswitch.com/local-first/)
+		- 
+	- Obsidian Forum
+		- [forum.obsidian.md > Conflict-Free Replicated Data Type (CRDT) - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/conflict-free-replicated-data-type-crdt/79940)
+		- 
+	- Tech - CRDT, OT, COOT, text editors, content editing
+		- [yjs.dev > Yjs Shared Editing](https://yjs.dev/#features)
+		- [github.com > KyleAMathews/trpc-crdt: tRPC integrations for CRDTs: CRDT-native RPC calls](https://github.com/KyleAMathews/trpc-crdt)
+			- [bricolage.io > Announcing trpc-crdt](https://bricolage.io/announcing-trpc-crdt/)
+		- [localfirstweb.dev > Local-First Software](https://localfirstweb.dev/)
+		- [operational-transformation · GitHub Topics](https://github.com/topics/operational-transformation)
+		- [github.com > share/sharedb: Realtime database backend based on Operational Transformation (OT)](https://github.com/share/sharedb)
+			- [share.github.io > Database adapters](https://share.github.io/sharedb/adapters/database#memorydb)
+		- 
+		- [gist.github.com > Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
+		- [automerge.org > Welcome to Automerge | Automerge CRDT](https://automerge.org/docs/hello/)
+			- [automerge.org > Automerge 2.0 | Automerge CRDT](https://automerge.org/blog/automerge-2/)
+		- [github.com > alangibson/awesome-crdt: A collection of awesome CRDT resources](https://github.com/alangibson/awesome-crdt)
+		- [syncedstore.org > Introduction to SyncedStore | SyncedStore - Javascript CRDT based real-time sync](https://syncedstore.org/docs/)
+		- [cricklet.github.io > Operational Transform](https://cricklet.github.io/sites/blue/index.html)
+		- 
+		- Afffine - Notion competitor actually done a lot of work in this space
+			- [blocksuite.io > BlockSuite | Content Editing Tech Stack](https://blocksuite.io/)
+			- [octobase.dev > OctoBase](https://octobase.dev/) - local first content focused database made from same company as Affine
+		- Sync engines
+			- [electric-sql.com > ElectricSQL | Postgres sync engine](https://electric-sql.com/)
+			- [powersync.com > PowerSync: Backend DB - SQLite sync engine | For Postgres](https://www.powersync.com/)
+			- [stack.convex.dev > An Object Sync Engine for Local-first Apps](https://stack.convex.dev/object-sync-engine)
+			- [rxdb.info > Local First / Offline First | RxDB - JavaScript Database](https://rxdb.info/offline-first.html)
+			- [localfirstweb.dev > Local-First Software](https://localfirstweb.dev/)
+			- [turso.tech > Local First SQLite](https://turso.tech/local-first)
+			- [gist.github.com > Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
+		- 
+- Chunking and resumable uploading/downloading
+	- [tus.io > tus - resumable file uploads](https://tus.io/)
+- General application platforms, hosting
+	- [appwrite.io > Appwrite - Build like a team of hundreds](https://appwrite.io/)
+	- [sevalla.com > Sevalla](https://sevalla.com/)
+- Database, data lakes - tech
+	- ORM and API
+		- [prisma.io > Prisma | Simplify working and interacting with databases](https://www.prisma.io/)
+		- [hasura.io > Universal data access layer for next-gen apps and AI](https://hasura.io/)
+	- Databases
+		- [supabase.com > Supabase | The Open Source Firebase Alternative](https://supabase.com/)
+		- [surrealdb.com > SurrealDB | The ultimate multi-model database for tomorrow's applications](https://surrealdb.com/)
+		- [octobase.dev > OctoBase](https://octobase.dev/) - OctoBase is an offline-available, scalable, self-contained collaborative database implemented based on CRDTs. It is the core to resolve conflicts between the duplication of data and manage the databases so that real-time collaboration and local-first storage is possible. It supports local storage and serve-side storage.
+		- [gun.js.org > Decentralized Database](https://gun.js.org/)
+			- [gun.eco > GUN — the database for freedom fighters - Docs v2.0](https://gun.eco/)
+		- [arangodb.com > Document Store](https://arangodb.com/document-store/)
+		- 
+	- Data lakes
+		- Dremio
+			- [dremio.com > Conflict-Free Replicated Data Type (CRDT)](https://www.dremio.com/wiki/conflict-free-replicated-data-type/)
+- Containers
+	- [podman.io > Podman](https://podman.io/)
+- 
