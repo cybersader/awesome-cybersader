@@ -2,6 +2,7 @@
 .trash/
 .obsidian/plugins/fileorganizer2000/data.json
 .obsidian/plugins/send-to-ghost/data.json
+.obsidian/plugins/remotely-save/data.json
 # ignore library of congress taxonomy subject heading names from linked-data-vocabularies plugin
 *madsrdf.jsonld*
 
