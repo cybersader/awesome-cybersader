@@ -4,13 +4,15 @@ aliases: []
 tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, February 2nd 2025, 3:13 pm
+date modified: Monday, February 3rd 2025, 4:25 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [linkwarden.app > Linkwarden](https://linkwarden.app/)
+- [typefully.com > Typefully: Best social media tool for creators & businesses](https://typefully.com/)
 - [mouseless.click > mouseless > no mouse to click](https://mouseless.click/)
 - [huly.io > Everything App for your teams](https://huly.io/)
 - [usemotion.com > The Only AI Project Manager That Predicts & Prevents Delays For Teams](https://www.usemotion.com/project-manager)

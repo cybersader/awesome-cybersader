@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Monday, February 3rd 2025, 9:04 am
+date modified: Monday, February 3rd 2025, 4:26 pm
 ---
 
 # Tech Stack DROP
@@ -62,6 +62,16 @@ date modified: Monday, February 3rd 2025, 9:04 am
 		- [sanity.io > Roles | Access control](https://www.sanity.io/docs/roles)
 		- 
 		- [sanity.io > Auth API | Reference](https://www.sanity.io/docs/auth-api-reference)
+	- Craft CMS
+		- [plugins.craftcms.com > Fields](https://plugins.craftcms.com/categories/fields?craft5=)
+		- [craftcms.com > Front-End User Accounts | Craft CMS](https://craftcms.com/knowledge-base/front-end-user-accounts) - way to have public registration
+	- Magnolia CMS
+		- [magnolia-cms.com > Composable DXP made for real enterprises | Magnolia Headless CMS](https://www.magnolia-cms.com/?logo=1)
+	- Gentics Mesh
+		- [github.com > gentics/mesh: Gentics Mesh - The open source headless CMS for developers](https://github.com/gentics/mesh)
+		- [gentics.com > Documentation · Gentics Mesh - Documentation](https://www.gentics.com/mesh/docs/)
+		- [gentics.com > Authentication · Gentics Mesh - Documentation](https://www.gentics.com/mesh/docs/authentication/#_authentication)
+		- 
 - SSG, JS Frameworks
 	- Jekyll
 		- [jamstack.org > Jekyll | Jamstack](https://jamstack.org/generators/jekyll/)
@@ -76,21 +86,59 @@ date modified: Monday, February 3rd 2025, 9:04 am
 		- 
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
+- API Gateways, bot protection
+	- [sgnl.ai > Kong API Gateway Authorization](https://sgnl.ai/2023/09/kong-api-gateway-authorization/)
+	- 
 - Auth
 	- Search terms
 		- guest authentication contribution fusion auth clerk auth0 auth.js guest auth
 	- Auth.js
 		- [authjs.dev > Auth.js | Fusionauth](https://authjs.dev/getting-started/providers/fusionauth?framework=next-js)
-		- 
+		- [authjs.dev > Auth.js | Authentication for the Web](https://authjs.dev/)
 	- Auth0
 		- [auth0.com > Auth0: Secure access for everyone. But not just anyone.](https://auth0.com/)
 	- Okta
 		- [okta.com > Employee and Customer Identity Solutions | Okta](https://www.okta.com/)
 	- Clerk
 		- [clerk.com > Pricing](https://clerk.com/pricing)
+	- Ory
+		- [ory.sh > Ory - API-first Identity Management](https://www.ory.sh/)
+		- [ory.sh > Ory Kratos - Cloud Native Identity and User Management System](https://www.ory.sh/kratos/)
+		- 
+	- SuperTokens
+		- [supertokens.com > SuperTokens](https://supertokens.com/)
+		- [supertokens.com > Pricing & Features for SuperTokens](https://supertokens.com/pricing)
+	- Hanko
+		- [hanko.io > Pricing — Hanko](https://www.hanko.io/pricing)
+	- Oso - authorization
+		- [osohq.com > Use Cases](https://www.osohq.com/use-cases)
+	- Fief
+		- [docs.fief.dev > Fief](https://docs.fief.dev/#project-roadmap)
+	- Cerbos
+		- [cerbos.dev > Cerbos: Open-Source Authorization Layer & Access Control System](https://www.cerbos.dev/)
+		- [cerbos.dev > For developers - Implement authorization once | Cerbos](https://www.cerbos.dev/for-developers)
+	- Bitwarden - passwordless.dev
+		- [bitwarden.com > Bitwarden Passwordless.dev - Passwordless Authentication | Bitwarden](https://bitwarden.com/products/passwordless/)
+	- Dex - Federated OpenID Connect Provider
+		- [dexidp.io > Dex](https://dexidp.io/)
+	- FusionAuth
+		- [fusionauth.io > Authentication & User Management Software - FusionAuth](https://fusionauth.io/)
+	- Stytch
+		- [stytch.com > Stytch – The most powerful identity platform built for developers](https://stytch.com/)
+		- [stytch.com > Fraud & Risk Prevention | Stytch](https://stytch.com/fraud)
+	- Identity provider
+		- Keycloak
+			- [keycloak.org > Keycloak](https://www.keycloak.org/)
+		- Authentik
+			- [goauthentik.io > Welcome | authentik](https://goauthentik.io/)
+			- [github.com > goauthentik/authentik: The authentication glue you need.](https://github.com/goauthentik/authentik)
+			- [docs.goauthentik.io > Integrate with Wiki.js | authentik](https://docs.goauthentik.io/integrations/services/wiki-js/)
+		- Authelia
+			- [authelia.com > Authelia](https://www.authelia.com/)
+			- [authelia.com > Integrations](https://www.authelia.com/integration/prologue/introduction/)
+			- 
 - Git auth
 	- [github.com > netlify/git-gateway: A Gateway to Git APIs](https://github.com/netlify/git-gateway)
-	- 
 - Hosting
 	- Netlify
 		- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
