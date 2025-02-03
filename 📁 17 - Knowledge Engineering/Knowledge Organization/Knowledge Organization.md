@@ -20,7 +20,7 @@ date modified: Monday, February 3rd 2025, 12:55 pm
 
 - [Building a Second Brain: The Illustrated Notes](https://maggieappleton.com/basb)
 
-- [Obsidian Resources - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/obsidian-resources/81835
+- [Obsidian Resources - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/obsidian-resources/81835)
 - [An opinionated reflection on using folders, links, tags, and properties - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/an-opinionated-reflection-on-using-folders-links-tags-and-properties/78548) 
 
 - [CUT(ter) AWAY THE CHAOS OF YOUR VAULT WITH THIS ONE (two three four five six) SIMPLE METHOD(s) - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/cut-ter-away-the-chaos-of-your-vault-with-this-one-two-three-four-five-six-simple-method-s/33700) 
