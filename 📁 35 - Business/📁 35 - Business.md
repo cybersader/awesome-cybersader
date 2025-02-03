@@ -9,6 +9,7 @@ publish: true
 
 %% Begin Waypoint %%
 - **[[Local Marketing]]**
+- **[[Marketing Tech]]**
 - **[[Monetization & Funding]]**
 - **[[Tech Startup]]**
 	- **[[Founder Lifestyle]]**

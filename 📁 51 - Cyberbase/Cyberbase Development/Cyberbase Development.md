@@ -120,7 +120,12 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- [github.com > alangibson/awesome-crdt: A collection of awesome CRDT resources](https://github.com/alangibson/awesome-crdt)
 		- [syncedstore.org > Introduction to SyncedStore | SyncedStore - Javascript CRDT based real-time sync](https://syncedstore.org/docs/)
 		- [cricklet.github.io > Operational Transform](https://cricklet.github.io/sites/blue/index.html)
-		- 
+		- [convergence.io > The Real-Time Collaboration Engine](https://convergence.io/)
+		- Text and code editors
+			- [ckeditor.com > WYSIWYG HTML Editor with Collaborative Rich Text Editing](https://ckeditor.com/)
+			- [tiptap.dev > Tiptap Collaboration - Collaborative Real Time Editor](https://tiptap.dev/product/collaboration)
+			- [teleporthq.io > Low-code Front-end Design & Development Platform | TeleportHQ](https://teleporthq.io/)
+			- 
 		- Afffine - Notion competitor actually done a lot of work in this space
 			- [blocksuite.io > BlockSuite | Content Editing Tech Stack](https://blocksuite.io/)
 			- [octobase.dev > OctoBase](https://octobase.dev/) - local first content focused database made from same company as Affine

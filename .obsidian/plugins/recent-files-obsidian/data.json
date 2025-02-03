@@ -5,6 +5,18 @@
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
+      "basename": "Marketing Tech",
+      "path": "📁 35 - Business/Marketing Tech/Marketing Tech.md"
+    },
+    {
+      "basename": "📁 35 - Business",
+      "path": "📁 35 - Business/📁 35 - Business.md"
+    },
+    {
+      "basename": "Local Marketing",
+      "path": "📁 35 - Business/Local Marketing/Local Marketing.md"
+    },
+    {
       "basename": "2025-02-02-Sunday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-02-Sunday/2025-02-02-Sunday.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "Awesome AI",
       "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
-    },
-    {
-      "basename": "Awesome SecOps Data Engineering",
-      "path": "📁 03 - Curations, Stacks/Awesome SecOps Data Engineering/Awesome SecOps Data Engineering.md"
-    },
-    {
-      "basename": "Awesome Splunk",
-      "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
     }
   ],
   "omittedPaths": [],
