@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Sunday, February 2nd 2025, 4:06 pm
+date modified: Monday, February 3rd 2025, 9:04 am
 ---
 
 # Tech Stack DROP
@@ -60,14 +60,21 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- [jamstack.org > Astro | Jamstack](https://jamstack.org/generators/astro/)
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
-- Auth 
+- Auth
 	- Auth0
 		- [auth0.com > Auth0: Secure access for everyone. But not just anyone.](https://auth0.com/)
 	- Okta
 		- [okta.com > Employee and Customer Identity Solutions | Okta](https://www.okta.com/)
 	- Clerk
 		- [clerk.com > Pricing](https://clerk.com/pricing)
-		- 
+- Git auth
+	- [github.com > netlify/git-gateway: A Gateway to Git APIs](https://github.com/netlify/git-gateway)
+	- 
+- Hosting
+	- Netlify
+		- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
+		- [docs.netlify.com > Welcome to Netlify](https://docs.netlify.com/)
+	- 
 - Sync & conflict resolution
 	- Search terms
 		- Sync engines, CRDT, COOT, OT
@@ -76,8 +83,11 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- local first sync crdt merge
 		- CRDT vs OT
 		- local first content
+		- collab real time editor developer
+		- crdt webrtc ot library
 	- Concepts, Conversations
 		- [crdt.tech > About CRDTs • Conflict-free Replicated Data Types](https://crdt.tech/)
+		- [crdt.tech > Implementations > Code • Conflict-free Replicated Data Types](https://crdt.tech/implementations)
 		- [dev.to > Creating the Local First Stack](https://dev.to/ebuckley/creating-the-local-first-stack-4aki)
 		- [sandromaglione.com > Local-first vs Sync engines | Sandro Maglione](https://www.sandromaglione.com/articles/local-first-vs-sync-engines)
 		- [powersync.com > Local-First Software is a Big Deal](https://www.powersync.com/blog/local-first-is-a-big-deal-especially-for-the-web)
@@ -107,6 +117,7 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- 
 	- Tech - CRDT, OT, COOT, text editors, content editing
 		- [yjs.dev > Yjs Shared Editing](https://yjs.dev/#features)
+			- [github.com > yjs/yjs: Shared data types for building collaborative software](https://github.com/yjs/yjs)
 		- [github.com > KyleAMathews/trpc-crdt: tRPC integrations for CRDTs: CRDT-native RPC calls](https://github.com/KyleAMathews/trpc-crdt)
 			- [bricolage.io > Announcing trpc-crdt](https://bricolage.io/announcing-trpc-crdt/)
 		- [localfirstweb.dev > Local-First Software](https://localfirstweb.dev/)
@@ -121,14 +132,38 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- [syncedstore.org > Introduction to SyncedStore | SyncedStore - Javascript CRDT based real-time sync](https://syncedstore.org/docs/)
 		- [cricklet.github.io > Operational Transform](https://cricklet.github.io/sites/blue/index.html)
 		- [convergence.io > The Real-Time Collaboration Engine](https://convergence.io/)
+		- [hasura.io > CouchDB style sync and conflict resolution on Postgres with Hasura](https://hasura.io/blog/couchdb-style-conflict-resolution-rxdb-hasura#example-apps)
 		- Text and code editors
+			- [realtime-collobarative-editor · GitHub Topics](https://github.com/topics/realtime-collobarative-editor)
 			- [ckeditor.com > WYSIWYG HTML Editor with Collaborative Rich Text Editing](https://ckeditor.com/)
 			- [tiptap.dev > Tiptap Collaboration - Collaborative Real Time Editor](https://tiptap.dev/product/collaboration)
 			- [teleporthq.io > Low-code Front-end Design & Development Platform | TeleportHQ](https://teleporthq.io/)
+			- [github.com > sahilatahar/Code-Sync: A real-time collaborative code editor featuring unique room generation](https://github.com/sahilatahar/Code-Sync)
+			- [github.com > dakshesh14/real-time-collaborative-text-editor: A rich-text collaborative editor which allows multiple users to edit the same document at the same time. Uses CRDT and web-socket for real-time collabroation](https://github.com/dakshesh14/real-time-collaborative-text-editor)
+			- [github.com > bangle-io/banger-editor: (previously bangle-editor) Collection of higher level rich text editing tools. It powers the local only note taking app https://bangle.io](https://github.com/bangle-io/banger-editor)
+			- [conclave-team.github.io > conclave](https://conclave-team.github.io/conclave/)
+				- [hackernoon.com > Building Conclave: a decentralized](https://hackernoon.com/building-conclave-a-decentralized-real-time-collaborative-text-editor-a6ab438fe79f)
 			- 
-		- Afffine - Notion competitor actually done a lot of work in this space
-			- [blocksuite.io > BlockSuite | Content Editing Tech Stack](https://blocksuite.io/)
-			- [octobase.dev > OctoBase](https://octobase.dev/) - local first content focused database made from same company as Affine
+		- Related to online notetaking apps
+			- Afffine - Notion competitor actually done a lot of work in this space
+				- [blocksuite.io > BlockSuite | Content Editing Tech Stack](https://blocksuite.io/)
+				- [octobase.dev > OctoBase](https://octobase.dev/) - local first content focused database made from same company as Affine
+			- appflowy
+				- [docs.appflowy.io > ](https://docs.appflowy.io/docs/appflowy/readme/welcome-to-appflowy)
+			- Outline
+				- [docs.getoutline.com > Collaborative editing - Outline](https://docs.getoutline.com/s/guide/doc/collaborative-editing-GjkoCop1B7)
+			- Boost Note
+				- [boostnote.io > Knowledge base| Boost Note](https://boostnote.io/knowledge-base)
+				- [boostnote.io > Real-time coauthoring in Markdown | Boost Note](https://boostnote.io/features/coauthoring)
+			- Standard Notes
+				- [standardnotes.com > Features | Standard Notes](https://standardnotes.com/features)
+				- [listed.to > Listed — Welcome to your new public journal.](https://listed.to/)
+				- [standardnotes.com > Can I collaborate with others on a note?](https://standardnotes.com/help/50/can-i-collaborate-with-others-on-a-note) - they don't do collab
+			- Bangle.io
+				- [bangle.io > Bangle.io](https://bangle.io/) - Bangle.io is a powerful yet simple note taking web app that works on top of your locally saved Markdown files.
+				- [github.com > bangle-io/bangle-io: A web only WYSIWYG note taking app that saves notes locally in markdown format.](https://github.com/bangle-io/bangle-io)
+				- [github.com > bangle-io/banger-editor: (previously bangle-editor) Collection of higher level rich text editing tools. It powers the local only note taking app https://bangle.io](https://github.com/bangle-io/banger-editor)
+			- 
 		- Sync engines
 			- [electric-sql.com > ElectricSQL | Postgres sync engine](https://electric-sql.com/)
 			- [powersync.com > PowerSync: Backend DB - SQLite sync engine | For Postgres](https://www.powersync.com/)
@@ -154,10 +189,14 @@ date modified: Sunday, February 2nd 2025, 4:06 pm
 		- [gun.js.org > Decentralized Database](https://gun.js.org/)
 			- [gun.eco > GUN — the database for freedom fighters - Docs v2.0](https://gun.eco/)
 		- [arangodb.com > Document Store](https://arangodb.com/document-store/)
-		- 
+		- CouchDB
+			- [neighbourhood.ie > Neighbourhoodie - Automatic Conflict Resolution with CouchDB and Svelte](https://neighbourhood.ie/blog/2024/12/11/automatic-conflict-resolution/)
+			- 
 	- Data lakes
 		- Dremio
 			- [dremio.com > Conflict-Free Replicated Data Type (CRDT)](https://www.dremio.com/wiki/conflict-free-replicated-data-type/)
 - Containers
 	- [podman.io > Podman](https://podman.io/)
+- WebRTC
+	- [webrtc.org > WebRTC](https://webrtc.org/)
 - 

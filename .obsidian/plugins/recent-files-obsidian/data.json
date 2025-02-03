@@ -9,12 +9,16 @@
       "path": "📁 35 - Business/Marketing Tech/Marketing Tech.md"
     },
     {
-      "basename": "📁 35 - Business",
-      "path": "📁 35 - Business/📁 35 - Business.md"
-    },
-    {
       "basename": "Local Marketing",
       "path": "📁 35 - Business/Local Marketing/Local Marketing.md"
+    },
+    {
+      "basename": "2025-02-03-Monday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-03-Monday/2025-02-03-Monday.md"
+    },
+    {
+      "basename": "📁 35 - Business",
+      "path": "📁 35 - Business/📁 35 - Business.md"
     },
     {
       "basename": "2025-02-02-Sunday",
@@ -195,10 +199,6 @@
     {
       "basename": "Awesome REST Clients",
       "path": "📁 03 - Curations, Stacks/Awesome REST Clients/Awesome REST Clients.md"
-    },
-    {
-      "basename": "Awesome AI",
-      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     }
   ],
   "omittedPaths": [],
