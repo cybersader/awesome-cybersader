@@ -36,7 +36,19 @@ date modified: Monday, February 3rd 2025, 9:04 am
 		- [pagescms.org > Pages CMS: The No-Hassle CMS for Static Sites Generators](https://pagescms.org/)
 	- Tina CMS
 		- [jamstack.org > Tina | Jamstack](https://jamstack.org/headless-cms/tinacms/)
+		- [tina.io > TinaCMS for Astro](https://tina.io/astro)
 		- [tina.io > TinaCMS – Headless CMS with GitHub & Markdown Support](https://tina.io/)
+		- [tina.io > Self-hosted Auth Provider Overview](https://tina.io/docs/reference/self-hosted/auth-provider/overview)
+		- [tina.io > Choosing a Database Adapter](https://tina.io/docs/reference/self-hosted/database-adapter/overview)
+		- [tina.io > Choosing a Git Provider](https://tina.io/docs/reference/self-hosted/git-provider/overview)
+		- [tina.io > Hosting The Tina Backend on Netlify Functions](https://tina.io/docs/reference/self-hosted/tina-backend/netlify-functions)
+		- [tina.io > Frameworks](https://tina.io/docs/integration/frameworks)
+		- [tina.io > Setting up Authentication](https://tina.io/docs/reference/media/external/authentication)
+		- [tina.io > Self-Hosted > User Management](https://tina.io/docs/self-hosted/user-management)
+		- [tina.io > Git Co-Authoring - What is it and how do we use it?](https://tina.io/docs/tina-cloud/git-co-authoring)
+		- [tina.io > Going to Production with TinaCloud](https://tina.io/docs/tina-cloud/overview)
+		- [tina.io > Custom Auth Provider](https://tina.io/docs/reference/self-hosted/auth-provider/bring-your-own)
+		- 
 	- Keystone
 		- [jamstack.org > Keystone | Jamstack](https://jamstack.org/headless-cms/keystone/)
 		- [keystonejs.com > KeystoneJS: The superpowered Node.js Headless CMS for developers](https://keystonejs.com/)
@@ -58,9 +70,18 @@ date modified: Monday, February 3rd 2025, 9:04 am
 	- 
 	- Astro
 		- [jamstack.org > Astro | Jamstack](https://jamstack.org/generators/astro/)
+		- [astro.build > Integrations | Astro](https://astro.build/integrations/?search=Obsidian)
+		- [github.com > Fevol/starlight-theme-obsidian: Starlight theme inspired by the style of Obsidian Publish sites](https://github.com/Fevol/starlight-theme-obsidian#readme)
+		- [github.com > aitorllj93/astro-loader-obsidian: Use your Obsidian vault in Astro projects](https://github.com/aitorllj93/astro-loader-obsidian)
+		- 
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
 - Auth
+	- Search terms
+		- guest authentication contribution fusion auth clerk auth0 auth.js guest auth
+	- Auth.js
+		- [authjs.dev > Auth.js | Fusionauth](https://authjs.dev/getting-started/providers/fusionauth?framework=next-js)
+		- 
 	- Auth0
 		- [auth0.com > Auth0: Secure access for everyone. But not just anyone.](https://auth0.com/)
 	- Okta
@@ -74,6 +95,9 @@ date modified: Monday, February 3rd 2025, 9:04 am
 	- Netlify
 		- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
 		- [docs.netlify.com > Welcome to Netlify](https://docs.netlify.com/)
+- Statis website services and tech
+	- [Staticman: Static sites with superpowers](https://staticman.net/)
+	- [github.com > agarrharr/awesome-static-website-services: 📄 🛠 A curated list of awesome static websites services](https://github.com/agarrharr/awesome-static-website-services?tab=readme-ov-file#authentication)
 	- 
 - Sync & conflict resolution
 	- Search terms
