@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Monday, December 9th 2024, 6:54 pm
+date modified: Monday, February 3rd 2025, 12:55 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -13,6 +13,7 @@ date modified: Monday, December 9th 2024, 6:54 pm
 
 # Links Relating To Obsidian Vaults
 
+- [youtube.com > Obsidian: The Good Parts | No Boilerplate](https://www.youtube.com/watch?v=B0yAy2j-9V0&t=359s)
 - https://forum.obsidian.md/t/cataloging-classification-information-science-pkms-and-you/10071
 - https://hyperbolic.cloud/Knowledge/Knowledge+Management/Obsidian+Techniques
 - https://forum.obsidian.md/t/difficulties-in-developing-a-udc-or-ddc-classifier/78072

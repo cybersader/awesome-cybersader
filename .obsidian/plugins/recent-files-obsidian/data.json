@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "🕸️ UNSTRUCTURED",
       "path": "🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md"
-    },
-    {
-      "basename": "Awesome Stream Deck Alternatives",
-      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
-    },
-    {
-      "basename": "Awesome REST Clients",
-      "path": "📁 03 - Curations, Stacks/Awesome REST Clients/Awesome REST Clients.md"
     }
   ],
   "omittedPaths": [],
