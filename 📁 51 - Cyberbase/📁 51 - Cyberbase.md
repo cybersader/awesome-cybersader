@@ -12,25 +12,23 @@ date modified: Friday, January 31st 2025, 4:56 pm
 
 - **[[✒️ Obsidian Tech Stack Diagram]]**
 
+- **[[🐛 Known Base Bugs, Issues]]**
+- **[[Astro with Content Layer]]**
+- **[[Auto Publish For Obsidian Publish]]**
 - **[[Awesome Obsidian Wiki Examples]]**
 - **[[Awesome WikiJS Examples]]**
+- **[[Collaboration in Obsidian]]**
 - **[[Contributable Obsidian Wiki]]**
-	- **[[🐛 Known Base Bugs, Issues]]**
-	- **[[Astro with Content Layer]]**
-	- **[[Auto Publish For Obsidian Publish]]**
-	- **[[Collaboration in Obsidian]]**
-	- **[[Contribution System]]**
-	- **[[Customizing Obsidian Publish]]**
-	- **[[Decap CMS]]**
-	- **[[Folder Notes & Publish]]**
-	- **[[GitHub Repo Size Limits]]**
-	- **[[Media Hosting in Obsidian]]**
-	- **[[Obsidian Plugins and Ideas for Contributions]]**
-	- **[[Obsidian Publish Analytics]]**
-	- **[[Obsidian Publish SEO]]**
-	- **[[TinaCMS]]**
+- **[[Contribution System]]**
+- **[[Customizing Obsidian Publish]]**
 - **[[Cyberbase Development]]**
 - **[[Cybersader Wiki Features and Changes]]**
+- **[[Folder Notes & Publish]]**
+- **[[GitHub Repo Size Limits]]**
+- **[[Media Hosting in Obsidian]]**
 - **[[Obsidian as a CMS]]**
+- **[[Obsidian Plugins and Ideas for Contributions]]**
+- **[[Obsidian Publish Analytics]]**
+- **[[Obsidian Publish SEO]]**
 
 %% End Landmark %%

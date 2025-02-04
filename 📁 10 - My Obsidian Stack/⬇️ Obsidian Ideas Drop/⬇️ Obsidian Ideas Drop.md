@@ -79,7 +79,7 @@ date modified: Friday, January 31st 2025, 5:01 pm
 
 # Custom Plugins
 
-[Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
+[Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 
 - Plugin that can use parent folders to add/prepend (even w/regex) the parent folders to the title of a note to create additional aliases
 - Plugin that makes pretty permalinks based on wiki page name and duplicates in the vault

@@ -7,7 +7,7 @@ date created: Wednesday, April 24th 2024, 4:40 pm
 date modified: Monday, December 2nd 2024, 4:07 pm
 ---
 
-[Awesome Obsidian Wiki Examples](../../Awesome%20Obsidian%20Wiki%20Examples/Awesome%20Obsidian%20Wiki%20Examples.md)
+[Awesome Obsidian Wiki Examples](../Awesome%20Obsidian%20Wiki%20Examples/Awesome%20Obsidian%20Wiki%20Examples.md)
 
 > [!tldr] Customization is mainly done with publish.js and publish.css
 

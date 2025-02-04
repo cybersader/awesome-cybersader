@@ -4,8 +4,18 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Monday, February 3rd 2025, 4:26 pm
+date modified: Monday, February 3rd 2025, 8:54 pm
 ---
+
+# MVP Obsidian Publish Cyberbase
+
+[Customizing Obsidian Publish](../Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
+
+- [Stable URLs on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/10/07/stable-publish-urls)
+
+- Edit in GitHub
+	- obsidian edit in github link publish
+	- 
 
 # Tech Stack DROP
 
@@ -71,6 +81,8 @@ date modified: Monday, February 3rd 2025, 4:26 pm
 		- [github.com > gentics/mesh: Gentics Mesh - The open source headless CMS for developers](https://github.com/gentics/mesh)
 		- [gentics.com > Documentation · Gentics Mesh - Documentation](https://www.gentics.com/mesh/docs/)
 		- [gentics.com > Authentication · Gentics Mesh - Documentation](https://www.gentics.com/mesh/docs/authentication/#_authentication)
+	- Decap CMS
+		- [Open Authoring | Decap CMS | Open-Source Content Management System](https://decapcms.org/docs/open-authoring/)
 		- 
 - SSG, JS Frameworks
 	- Jekyll

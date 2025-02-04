@@ -10,7 +10,7 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
 
 [Obsidian Run](../Obsidian%20Run/Obsidian%20Run.md)
-[Plugin Development](../../../📁%2010%20-%20My%20Obsidian%20Stack/Plugin%20Development/Plugin%20Development.md)
+[Plugin Development](../../📁%2010%20-%20My%20Obsidian%20Stack/Plugin%20Development/Plugin%20Development.md)
 
 - [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
 

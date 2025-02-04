@@ -7,7 +7,7 @@ date created: Saturday, July 6th 2024, 1:16 pm
 date modified: Saturday, February 1st 2025, 5:58 pm
 ---
 
-[Customizing Obsidian Publish](../Contributable%20Obsidian%20Wiki/Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
+[Customizing Obsidian Publish](../Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
 [Folder Notes & Publish](../Contributable%20Obsidian%20Wiki/Folder%20Notes%20&%20Publish/Folder%20Notes%20&%20Publish.md)
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 

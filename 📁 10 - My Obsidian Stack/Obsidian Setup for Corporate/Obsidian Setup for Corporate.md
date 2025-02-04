@@ -11,7 +11,7 @@ permalink: corporate-obsidian
 [Obsidian Vault Security](../Obsidian%20Vault%20Security/Obsidian%20Vault%20Security.md)
 [Scalable Project Management](../../🕸️%20UNSTRUCTURED/Scalable%20Project%20Management.md)
 [Exports in Obsidian](../Exports%20in%20Obsidian/Exports%20in%20Obsidian.md)
-[Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+[Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 [Obsidian & Corporate Docs](../Obsidian%20&%20Corporate%20Docs/Obsidian%20&%20Corporate%20Docs.md)
 [Templater](../Templater/Templater.md)
 [Project Management](../Project%20Management/Project%20Management.md)
@@ -56,7 +56,7 @@ Here's the high-level questions/steps to implementing Obsidian:
 
 ### Live Collaboration - options for collaborating live if need be
 
-- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 
 ### Backups, Version Control - backing up files and versioning vaults
 
@@ -141,7 +141,7 @@ Here's the high-level questions/steps to implementing Obsidian:
 	- Yes
 		- Do you have time to implement something technical?
 			- Yes
-				- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md) - more solutions here for peer-to-peer
+				- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md) - more solutions here for peer-to-peer
 			- No
 				- Obsidian Sync might be your only option
 				- Look at tools other than Obsidian
@@ -156,10 +156,10 @@ Here's the high-level questions/steps to implementing Obsidian:
 
 - Do you want this behind a corporate VPN, SSO, or administered MFA?
 	- Yes
-		- Network Share that requires Corporate VPN + [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
-		- Local vault + OneDrive OR Google Drive + [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+		- Network Share that requires Corporate VPN + [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+		- Local vault + OneDrive OR Google Drive + [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 	- No
-		- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+		- [Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 
 ### 4) Securing Plugins and Hosting an Example Vault - Distribution
 
@@ -202,7 +202,7 @@ Here's the high-level questions/steps to implementing Obsidian:
 
 # Syncing & Collaboration
 
-[Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Contributable%20Obsidian%20Wiki/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
+[Collaboration in Obsidian](../../📁%2051%20-%20Cyberbase/Collaboration%20in%20Obsidian/Collaboration%20in%20Obsidian.md)
 [Syncing Obsidian](../Syncing%20Obsidian/Syncing%20Obsidian.md)
 
 - This is the hardest part of solving the using Obsidian in corporate problem.  Plugins can at least be controlled and whitelisted.  The goal with using Obsidian is to cheat the system by having a really cheap, valuable, extensible, universal system, all with plaintext on the backend for compatibility and flexibility.

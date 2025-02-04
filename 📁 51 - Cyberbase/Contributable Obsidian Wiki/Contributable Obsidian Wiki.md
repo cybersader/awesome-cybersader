@@ -10,24 +10,6 @@ date modified: Sunday, December 22nd 2024, 10:22 pm
 [GitHub + Obsidian + Notion - Digital Garden](../../📁%2001%20-%20Projects/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden/GitHub%20+%20Obsidian%20+%20Notion%20-%20Digital%20Garden.md)
 [Obsidian as a CMS](../Obsidian%20as%20a%20CMS/Obsidian%20as%20a%20CMS.md)
 
-%% Begin Landmark %%
-- **[[🐛 Known Base Bugs, Issues]]**
-- **[[Astro with Content Layer]]**
-- **[[Auto Publish For Obsidian Publish]]**
-- **[[Collaboration in Obsidian]]**
-- **[[Contribution System]]**
-- **[[Customizing Obsidian Publish]]**
-- **[[Decap CMS]]**
-- **[[Folder Notes & Publish]]**
-- **[[GitHub Repo Size Limits]]**
-- **[[Media Hosting in Obsidian]]**
-- **[[Obsidian Plugins and Ideas for Contributions]]**
-- **[[Obsidian Publish Analytics]]**
-- **[[Obsidian Publish SEO]]**
-- **[[TinaCMS]]**
-
-%% End Landmark %%
-
 # DROPZONE
 
 - [The Contentstack Composable Management Platform](https://www.contentstack.com/composable-dxp)
