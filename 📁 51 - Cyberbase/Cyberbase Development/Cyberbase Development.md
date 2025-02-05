@@ -19,10 +19,27 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 
 ## Obsidian Publish Websites
 
+- Contributory implementations
+	- Obsidian Hub
+		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
+- With style and functionality
+	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)
+	- 
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
+	- [publish.obsidian.md > Combat Styles - Runequest NewGallo - Obsidian Publish](https://publish.obsidian.md/newgallo/Runequest/Rules/House+Rules/Combat+Styles)
+	- [publish.obsidian.md > 100 Welcome to Outlines of Technique in Cardiac Surgery - Cardiac Outlines - Obsidian Publish](https://publish.obsidian.md/cardiacoutlines/Textbook/100+Welcome+to+Outlines+of+Technique+in+Cardiac+Surgery)
+	- [publish.obsidian.md > Welcome to The Quantum Well! - The Quantum Well - Obsidian Publish](https://publish.obsidian.md/myquantumwell/Welcome+to+The+Quantum+Well!)
+	- [evanharmon.com > Memex - Evan Harmon - Memex](https://evanharmon.com/memex/Memex)
 	- 
 - Basic but with other good elements
+	- [publish.obsidian.md > Honest Thoughts about the Modern Data Stack - Ram-bunctious Ruminations - Obsidian Publish](https://publish.obsidian.md/rambunctious-ruminations/Data+Management/Honest+Thoughts+about+the+Modern+Data+Stack)
+	- [publish.obsidian.md > Screenshot-to-Code - PKC - Obsidian Publish](https://publish.obsidian.md/pkc/Literature/Reading+notes/Screenshot-to-Code)
+	- [publish.obsidian.md > Protopassion - Aidan Helfant's Digital Garden - Obsidian Publish](https://publish.obsidian.md/aidanhelfant/Concept+Notes/Protopassion)
+	- [publish.obsidian.md > Yosoy Symbol - YOSOY - I AM Path Web of Notes - Obsidian Publish](https://publish.obsidian.md/yosoy/concepts/Yosoy+Symbol)
+	- [publish.obsidian.md > A Warm Welcome - Scott Novis Notes - Obsidian Publish](https://publish.obsidian.md/scottnovis/Published/A+Warm+Welcome)
+	- [notes.bryanjenks.dev > Johnny Decimal -](https://notes.bryanjenks.dev/Z/Johnny+Decimal)
+	- [publish.obsidian.md > QGIS - PKC - Obsidian Publish](https://publish.obsidian.md/pkc/Literature/PKM/Tools/QGIS)
 	- 
 
 ## 
