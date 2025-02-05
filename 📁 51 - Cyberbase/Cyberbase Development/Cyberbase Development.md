@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Monday, February 3rd 2025, 8:54 pm
+date modified: Tuesday, February 4th 2025, 8:43 pm
 ---
 
 # MVP Obsidian Publish Cyberbase
@@ -17,15 +17,19 @@ date modified: Monday, February 3rd 2025, 8:54 pm
 	- obsidian edit in github link publish
 	- 
 
+## Obsidian Publish Websites
+
+- With some style
+	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
+	- 
+- Basic but with other good elements
+	- 
+
+## 
 # Tech Stack DROP
 
 - Finding company tech stacks
 	- [stackshare.io > StackShare - Tech Stack Intelligence](https://stackshare.io/)
-- Blogging tech and websites
-	- [hashnode.com > Hashnode — Pricing.](https://hashnode.com/pricing)
-	- dev
-	- ghost
-	- medium
 - CMS
 	- Strapi
 		- [jamstack.org > Strapi | Jamstack](https://jamstack.org/headless-cms/strapi/)
