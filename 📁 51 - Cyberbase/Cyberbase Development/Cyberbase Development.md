@@ -24,6 +24,10 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
 - With style and functionality
 	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)
+	- [publish.obsidian.md > Student Vault - Aviation - Obsidian Publish](https://publish.obsidian.md/student/Student+Vault)
+	- [publish.obsidian.md > ITS Theme - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme)
+	- [publish.obsidian.md > README - KaaS - Obsidian Publish](https://publish.obsidian.md/kaas-published/README)
+	- [brain.louis030195.com > README - louis030195](https://brain.louis030195.com/README)
 	- 
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
@@ -31,6 +35,12 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 	- [publish.obsidian.md > 100 Welcome to Outlines of Technique in Cardiac Surgery - Cardiac Outlines - Obsidian Publish](https://publish.obsidian.md/cardiacoutlines/Textbook/100+Welcome+to+Outlines+of+Technique+in+Cardiac+Surgery)
 	- [publish.obsidian.md > Welcome to The Quantum Well! - The Quantum Well - Obsidian Publish](https://publish.obsidian.md/myquantumwell/Welcome+to+The+Quantum+Well!)
 	- [evanharmon.com > Memex - Evan Harmon - Memex](https://evanharmon.com/memex/Memex)
+	- [publish.obsidian.md > Mnemonics - AstroWiki - Obsidian Publish](https://publish.obsidian.md/astrowiki/Mnemonics)
+	- [publish.obsidian.md > Lawsight - Lawsight - Obsidian Publish](https://publish.obsidian.md/wanyulawyer/Lawsight)
+	- [publish.obsidian.md > Wiki - Monospace Mentor Wiki - Obsidian Publish](https://publish.obsidian.md/monospacementor/Wiki)
+	- [publish.obsidian.md > bubbletea - mnml's vault - Obsidian Publish](https://publish.obsidian.md/manuel/Wiki/Programming/bubbletea)
+	- [publish.obsidian.md > README - David Gasquez - Obsidian Publish](https://publish.obsidian.md/davidgasquez/README)
+	- [notes.johnmavrick.com > Welcome 🌌 - John's Digital Galaxy 🌌](https://notes.johnmavrick.com/Digital+Galaxy/Welcome+%F0%9F%8C%8C)
 	- 
 - Basic but with other good elements
 	- [publish.obsidian.md > Honest Thoughts about the Modern Data Stack - Ram-bunctious Ruminations - Obsidian Publish](https://publish.obsidian.md/rambunctious-ruminations/Data+Management/Honest+Thoughts+about+the+Modern+Data+Stack)
@@ -40,6 +50,9 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 	- [publish.obsidian.md > A Warm Welcome - Scott Novis Notes - Obsidian Publish](https://publish.obsidian.md/scottnovis/Published/A+Warm+Welcome)
 	- [notes.bryanjenks.dev > Johnny Decimal -](https://notes.bryanjenks.dev/Z/Johnny+Decimal)
 	- [publish.obsidian.md > QGIS - PKC - Obsidian Publish](https://publish.obsidian.md/pkc/Literature/PKM/Tools/QGIS)
+	- [goryugo.com > 🏠トップページ - ごりゅご.com](https://goryugo.com/home)
+	- [publish.obsidian.md > Welcome to my digital garden - Alexis Rondeau - Obsidian Publish](https://publish.obsidian.md/alexisrondeau/Welcome+to+my+digital+garden)
+	- [publish.obsidian.md > 👋 welcome - eriktuck - Obsidian Publish](https://publish.obsidian.md/eriktuck/%F0%9F%91%8B+welcome)
 	- 
 
 ## 
