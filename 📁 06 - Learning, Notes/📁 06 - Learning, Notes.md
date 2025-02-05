@@ -13,6 +13,7 @@ publish: true
 	- **[[Active Defense & Cyber Deception]]**
 	- **[[Adversarial Emulation Extravaganza w Kent & Jordan]]**
 	- **[[DNS Deep Diving - Serena DiPenti]]**
+	- **[[Five Things We Will Ignore 2025]]**
 	- **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**
 
 	- **[[IR Summit 2024]]**
