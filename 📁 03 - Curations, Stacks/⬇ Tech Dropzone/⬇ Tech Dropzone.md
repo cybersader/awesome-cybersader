@@ -11,6 +11,7 @@ date modified: Monday, February 3rd 2025, 4:25 pm
 
 # Software, Web
 
+- https://tryriot.com/
 - [linkwarden.app > Linkwarden](https://linkwarden.app/)
 - [typefully.com > Typefully: Best social media tool for creators & businesses](https://typefully.com/)
 - [mouseless.click > mouseless > no mouse to click](https://mouseless.click/)
