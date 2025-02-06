@@ -59,6 +59,7 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 	- [publish.obsidian.md > Contents - john15263 - Obsidian Publish](https://publish.obsidian.md/john15263/Contents)
 	- [publish.obsidian.md > START HERE - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/START+HERE)
 	- [publish.obsidian.md > Moses's Digital Garden - Moses Second Brain - Obsidian Publish](https://publish.obsidian.md/mosessecondbrain/Obsidian+Publish/Moses's+Digital+Garden)
+	- [bookofbeing.life > 👋 Welcome - The Book of Being](https://bookofbeing.life/welcome)
 	- 
 
 ## 
