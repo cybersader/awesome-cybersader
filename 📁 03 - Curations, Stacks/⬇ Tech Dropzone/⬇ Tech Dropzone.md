@@ -4,13 +4,14 @@ aliases: []
 tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Wednesday, February 5th 2025, 8:56 pm
+date modified: Thursday, February 6th 2025, 4:56 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [resist.bot > Resistbot](https://resist.bot/)
 - [Publishing tools (desktop → web, no-code) · Untested](https://untested.sonnet.io/notes/publishing-tools-desktop-web-no-code/)
 - [stephango.com > Steph Ango](https://stephango.com/)
 - [b3log.org > SiYuan - Privacy-first personal knowledge management system that supports Markdown](https://b3log.org/siyuan/en/)
