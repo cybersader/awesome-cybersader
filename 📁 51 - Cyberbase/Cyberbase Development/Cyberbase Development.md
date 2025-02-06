@@ -30,6 +30,7 @@ date modified: Wednesday, February 5th 2025, 10:15 pm
 	- [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
 	- [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - With style and functionality
+	- [yomaru.dev > 901 🏠 Home - Hananoshika Yomaru](https://yomaru.dev/home)
 	- [lab.marconoris.com > Notas sobre el ahora - Ouroboros lab](https://lab.marconoris.com/now)
 	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)
 	- [publish.obsidian.md > Student Vault - Aviation - Obsidian Publish](https://publish.obsidian.md/student/Student+Vault)
