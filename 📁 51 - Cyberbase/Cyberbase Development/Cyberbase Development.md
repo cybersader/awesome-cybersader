@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Tuesday, February 4th 2025, 8:43 pm
+date modified: Wednesday, February 5th 2025, 7:58 pm
 ---
 
 # MVP Obsidian Publish Cyberbase
@@ -22,12 +22,25 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 - Contributory implementations
 	- Obsidian Hub
 		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
+	- [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
+	- [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - With style and functionality
 	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)
 	- [publish.obsidian.md > Student Vault - Aviation - Obsidian Publish](https://publish.obsidian.md/student/Student+Vault)
 	- [publish.obsidian.md > ITS Theme - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme)
 	- [publish.obsidian.md > README - KaaS - Obsidian Publish](https://publish.obsidian.md/kaas-published/README)
 	- [brain.louis030195.com > README - louis030195](https://brain.louis030195.com/README)
+	- [benissen.com > Ben issen - Ben issen](https://benissen.com/Ben+issen)
+	- [100daysago.com > Welcome - 100 Days Ago](https://100daysago.com/Welcome)
+	- [brza.org > * - BRZA](https://brza.org/*)
+	- [deep-web.us > Welcome! - Deep Web](https://deep-web.us/Welcome!)
+	- [ginamarieagosta.us > Welcome - Gina Marie's Brain Forest](https://ginamarieagosta.us/Welcome)
+	- [em.ponders.us > Welcome - E.M.Ponders](https://em.ponders.us/0+Start+Here/Welcome)
+	- [stumax.info > Welcome - stumax.info](https://stumax.info/Welcome)
+	- [jacksondahl.com > About - Jackson Dahl](https://jacksondahl.com/About)
+	- [xmlaficionado.com > home - XML Aficionado](https://xmlaficionado.com/XML+Aficionado/home)
+	- [yaminapressler.com > about - yay soil!](https://yaminapressler.com/Website/about+me/about)
+	- [garden.soultoworld.com > Welcome - healing the creative soul](https://garden.soultoworld.com/Welcome)
 	- 
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
@@ -44,8 +57,21 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 	- [publish.obsidian.md > Retreats - Rob Burbea's Digital Garden - Obsidian Publish](https://publish.obsidian.md/rob-burbea/Retreats)
 	- [publish.obsidian.md > The Black Book - The Black Book - Obsidian Publish](https://publish.obsidian.md/cynixia/The+Black+Book)
 	- [publish.obsidian.md > 00 Home MOC - addielamarr - Obsidian Publish](https://publish.obsidian.md/addielamarr/00+Home+MOC)
-	- 
+	- [char.blog > Blog - About - char.blog](https://char.blog/about)
+	- [brain.drmario.tech > 🙋🏻‍♂️ About - Dr. Mario's 🧠](https://brain.drmario.tech/about)
+	- [minerva.mamansoft.net > Home - Minerva](https://minerva.mamansoft.net/Home)
+	- [blog.gentilkiwi.com > Blog de Gentil Kiwi](https://blog.gentilkiwi.com/)
+	- [minimal.guide > Home - Minimal Documentation](https://minimal.guide/home)
+	- [adry-health.com > Home - Adriano Fontanari  | Product Manager | Complexity Lover](https://adry-health.com/adry-health.com/Home)
+	- [n-o.ooo > ᦓ. ᦔꫀ ꠹ꪖᧁꫀ᥅ - ░ ░ ░ ░ ░](https://n-o.ooo/001+%E2%96%93%E2%96%92%C2%AD%E2%96%91%E2%A1%B7%E2%A0%82%F0%9D%9F%B6%E2%A0%90%E2%A2%BE%E2%96%91%E2%96%92%E2%96%93/%E1%A6%93.+%E1%A6%94%EA%AB%80+%EA%A0%B9%EA%AA%96%E1%A7%81%EA%AB%80%E1%A5%85)
+	- [docs.caddissystems.com > Caddis Documentation - Caddis Documentation](https://docs.caddissystems.com/Caddis+Documentation)
+	- [notes.lo5t.com > home - Patrick Lewis Notes](https://notes.lo5t.com/notes/cheat-sheets/home)
+	- [davidryan.info > 🏠 Home - davidryan.info](https://davidryan.info/%F0%9F%8F%A0+Home)
+	- [ontologie.humansmatter.co > ontologie - Ontologie](https://ontologie.humansmatter.co/ontologie)
+	- [grosinger.net > Home - Tony Grosinger](https://grosinger.net/Home)
+	- [scripturemapping.com > Scripture Mapping - Home - Scripture Mapping](https://scripturemapping.com/Scripture+Mapping+-+Home)
 - Basic but with other good elements
+	- [ussfcc.org > HOME -](https://ussfcc.org/HOME#Our%20Mission)
 	- [publish.obsidian.md > Honest Thoughts about the Modern Data Stack - Ram-bunctious Ruminations - Obsidian Publish](https://publish.obsidian.md/rambunctious-ruminations/Data+Management/Honest+Thoughts+about+the+Modern+Data+Stack)
 	- [publish.obsidian.md > Screenshot-to-Code - PKC - Obsidian Publish](https://publish.obsidian.md/pkc/Literature/Reading+notes/Screenshot-to-Code)
 	- [publish.obsidian.md > Protopassion - Aidan Helfant's Digital Garden - Obsidian Publish](https://publish.obsidian.md/aidanhelfant/Concept+Notes/Protopassion)
@@ -60,9 +86,62 @@ date modified: Tuesday, February 4th 2025, 8:43 pm
 	- [publish.obsidian.md > START HERE - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/START+HERE)
 	- [publish.obsidian.md > Moses's Digital Garden - Moses Second Brain - Obsidian Publish](https://publish.obsidian.md/mosessecondbrain/Obsidian+Publish/Moses's+Digital+Garden)
 	- [bookofbeing.life > 👋 Welcome - The Book of Being](https://bookofbeing.life/welcome)
-	- 
+	- [publish.obsidian.md > Coordinate Systems - Shane's Database - Obsidian Publish](https://publish.obsidian.md/shanesql/Coordinate+Systems)
+	- [binaryfinery.com > binaryfinery -](https://binaryfinery.com/binaryfinery)
+	- [billmoriarty.com > Home - Bill Moriarty](https://billmoriarty.com/home)
+	- [bfallen.org > About these notes - Brian's Working Notes](https://bfallen.org/1+Zettelkasten/About+these+notes)
+	- [2fort.net > _Start here - 2fort Security](https://2fort.net/_Start+here)
+	- [nobr.me > about me - Nobel Yoo](https://nobr.me/about+me)
+	- [bobbieysabel.com > _Start Here -](https://bobbieysabel.com/_Start+Here/_Start+Here)
+	- [1060.fyi > Welcome - 1060](https://1060.fyi/Welcome)
+	- [wiki.kelvpn.com > MAIN PAGE - KELVPN WIKI](https://wiki.kelvpn.com/MAIN+PAGE)
+	- [carbonatik.com > The Future of Mining - Carbonatik](https://carbonatik.com/The+Future+of+Mining)
+	- [ben.dev > Hello - Ben Bromhead](https://ben.dev/hello)
+	- [cag.wiki > Home - cag.wiki](https://cag.wiki/public/Home)
 
-## 
+## Code, Services, Workarounds, Adding Functionality
+
+- Generating GitHub buttons
+	- via GitHub Actions
+		- Footer with edit buttons
+		    - [obsidian-hub/.github/scripts/add_footer.py at 1100d41da6a79d4811b685959d97f8e2b397e504 · obsidian-community/obsidian-hub](https://github.com/obsidian-community/obsidian-hub/blob/1100d41da6a79d4811b685959d97f8e2b397e504/.github/scripts/add_footer.py#L83)
+		- 
+- Rendering file metadata
+	- [Show properties of a note in the published pages - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/show-properties-of-a-note-in-the-published-pages/68164)
+	- [Render file metadata in Publish - Help - Obsidian Forum](https://forum.obsidian.md/t/render-file-metadata-in-publish/83528/2)
+
+## Publish CSS, Icons, Appearance
+
+### Docs, Articles, Obsidian Help
+
+- [Customize your site - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Customize+your+site)
+- [Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
+- [Themes - Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Themes)
+- [Publish-Specific Themes - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/publish-specific-themes/9069)
+- [Obsidian CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
+    - [https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
+- [Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
+    - [Best practices for Publish themes - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Best+practices+for+Publish+themes)
+    
+    - You can build themes for your [Obsidian Publish](https://help.obsidian.md/Obsidian+Publish/Introduction+to+Obsidian+Publish) site. Themes for Obsidian Publish use the same [CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables) as the Obsidian app along with [Publish-specific CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian%20Publish).
+    - See [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) for more in-depth information on the `body`, `:root`, `.theme-dark`, and `.theme-light` selectors.
+    - To build a theme for your site:
+        1. Add a file called `publish.css` to the root folder of your vault.
+        2. Publish `publish.css` to enable the theme on your live Publish site.
+### Themes, Templates, CSS Files
+
+#### Publish Themes, Community Themes
+
+- [🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
+- [Minimal for Obsidian Publish - Minimal Documentation](https://minimal.guide/publish/download)
+- [mgmeyers/obsidian-california-coast-theme: A minimalist obsidian theme inspired by macOS Big Sur](https://github.com/mgmeyers/obsidian-california-coast-theme)
+
+#### Publish CSS
+
+- [obsidian-publish-css/publish.css at master · selfire1/obsidian-publish-css](https://github.com/selfire1/obsidian-publish-css/blob/master/publish.css)
+- [data-engineering-wiki/publish.css at 6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf · data-engineering-community/data-engineering-wiki](https://github.com/data-engineering-community/data-engineering-wiki/blob/6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf/publish.css#L35)
+- [selfire1/obsidian-publish-css: The CSS for my Obsdian publish site.](https://github.com/selfire1/obsidian-publish-css)
+
 # Tech Stack DROP
 
 - Finding company tech stacks
