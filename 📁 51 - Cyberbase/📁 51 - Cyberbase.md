@@ -24,6 +24,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Customizing Obsidian Publish]]**
 - **[[Cyberbase Development]]**
 - **[[Cyberbase Domains]]**
+- **[[Cyberbase Tech Stack]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
@@ -32,5 +33,6 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Obsidian Plugins and Ideas for Contributions]]**
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**
+- **[[Static Website Services]]**
 
 %% End Landmark %%

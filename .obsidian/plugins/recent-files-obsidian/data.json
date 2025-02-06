@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-02-05-Wednesday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-05-Wednesday/2025-02-05-Wednesday.md"
-    },
-    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
+      "basename": "Static Website Services",
+      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
+    },
+    {
+      "basename": "Cyberbase Tech Stack",
+      "path": "📁 51 - Cyberbase/Cyberbase Tech Stack/Cyberbase Tech Stack.md"
+    },
+    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "2025-02-05-Wednesday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-05-Wednesday/2025-02-05-Wednesday.md"
     },
     {
       "basename": "2025-02-04-Tuesday",
@@ -191,14 +199,6 @@
     {
       "basename": "Cyber Blogs",
       "path": "📁 03 - Curations, Stacks/Cyber Blogs/Cyber Blogs.md"
-    },
-    {
-      "basename": "Online Development Environments",
-      "path": "📁 03 - Curations, Stacks/Online Development Environments/Online Development Environments.md"
-    },
-    {
-      "basename": "Obsidian to Ghost",
-      "path": "📁 10 - My Obsidian Stack/Obsidian to Ghost/Obsidian to Ghost.md"
     }
   ],
   "omittedPaths": [],

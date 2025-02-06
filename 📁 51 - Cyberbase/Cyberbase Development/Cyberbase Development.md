@@ -4,27 +4,33 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Wednesday, February 5th 2025, 7:58 pm
+date modified: Wednesday, February 5th 2025, 10:15 pm
 ---
+
+# ⬇️ DROP
+
+- [Stable URLs on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/10/07/stable-publish-urls)
+- [Enveloppe/obsidian-enveloppe: Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!](https://github.com/Enveloppe/obsidian-enveloppe)
+- [A lazy man's Obsidian + Astro workflow integration : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/1943yza/a_lazy_mans_obsidian_astro_workflow_integration/)
 
 # MVP Obsidian Publish Cyberbase
 
 [Customizing Obsidian Publish](../Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
 
-- [Stable URLs on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/10/07/stable-publish-urls)
-
-- Edit in GitHub
-	- obsidian edit in github link publish
-	- 
+- 
 
 ## Obsidian Publish Websites
 
+- Curations
+	- https://www.are.na/marco-noris/obsidian-publish-websites
+	- 
 - Contributory implementations
 	- Obsidian Hub
 		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
 	- [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
 	- [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - With style and functionality
+	- [lab.marconoris.com > Notas sobre el ahora - Ouroboros lab](https://lab.marconoris.com/now)
 	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)
 	- [publish.obsidian.md > Student Vault - Aviation - Obsidian Publish](https://publish.obsidian.md/student/Student+Vault)
 	- [publish.obsidian.md > ITS Theme - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme)
@@ -41,6 +47,9 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 	- [xmlaficionado.com > home - XML Aficionado](https://xmlaficionado.com/XML+Aficionado/home)
 	- [yaminapressler.com > about - yay soil!](https://yaminapressler.com/Website/about+me/about)
 	- [garden.soultoworld.com > Welcome - healing the creative soul](https://garden.soultoworld.com/Welcome)
+	- [publish.obsidian.md > welcome - mister chad - Obsidian Publish](https://publish.obsidian.md/mister-chad/welcome)
+		- https://github.com/chad-bennett/obsidian-publish-css
+	- [beto.group > BONJOUR - BETO.GROUP](https://www.beto.group/bonjour)
 	- 
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
@@ -98,8 +107,35 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 	- [carbonatik.com > The Future of Mining - Carbonatik](https://carbonatik.com/The+Future+of+Mining)
 	- [ben.dev > Hello - Ben Bromhead](https://ben.dev/hello)
 	- [cag.wiki > Home - cag.wiki](https://cag.wiki/public/Home)
+	- [notes.nicolevanderhoeven.com > Fork My Brain - Fork My Brain](https://notes.nicolevanderhoeven.com/Fork+My+Brain)
+	- [anthonyamar.fr > Welcome in my mind 🧠 - My second-brain](https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0)
+
+## Publish - API and docs (JS, CSS)
+
+- [forum.obsidian.md > How to Use Obsidian.app CSS Themes in Obsidian Publish - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/how-to-use-obsidian-app-css-themes-in-obsidian-publish/21504)
+- [Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/5)
+
+- [forum.obsidian.md > Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/3)
+
+- [docs.obsidian.md > Publish - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Publish)
+- [help.obsidian.md > Customize your site - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Customize+your+site)
+- 
+
+- CSS Themes
+	- [publish.obsidian.md > 🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
+	- 
+
+## Functionality Limitations - JS
+
+- Publish.js?
+- Static website services? How?
+- Forms?
 
 ## Code, Services, Workarounds, Adding Functionality
+
+- Forum link - [Obsidian Publish resources - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-resources/74582)
+- [forum.obsidian.md > Latest publish topics - Obsidian Forum](https://forum.obsidian.md/tag/publish)
+- [Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/5)
 
 - Generating GitHub buttons
 	- via GitHub Actions
@@ -109,6 +145,53 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 - Rendering file metadata
 	- [Show properties of a note in the published pages - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/show-properties-of-a-note-in-the-published-pages/68164)
 	- [Render file metadata in Publish - Help - Obsidian Forum](https://forum.obsidian.md/t/render-file-metadata-in-publish/83528/2)
+	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/22
+	- [I want to enable links written in properties in Obdisian Publish - Help - Obsidian Forum](https://forum.obsidian.md/t/i-want-to-enable-links-written-in-properties-in-obdisian-publish/77605)
+	- 
+- Handling folder notes
+	- [How to redirect to note when clicking on folder in Publish - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/how-to-redirect-to-note-when-clicking-on-folder-in-publish/38042)
+- Hiding things in publish only
+	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/29
+- Hotkeys in Obsidian Publish
+	- [lab.marconoris.com > Publish search hotkey - Ouroboros lab](https://lab.marconoris.com/obsidian/publish-search-hotkey)
+	- [forum.obsidian.md > Publish.js code snippet for slash key quick search functionality - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/publish-js-code-snippet-for-slash-key-quick-search-functionality/53141/2)
+		- https://github.com/harttraveller/publish/blob/main/publish.js
+	- 
+- Image gallery
+	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/11#image-tricks-1
+- Tabbed callout
+	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/10#callouts-1
+- Reader view
+	- [Reader view in Publish using cssClasses - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/reader-view-in-publish-using-cssclasses/84229/1)
+- Searchable tables?
+	- [🃟 Tempus est 🃟 - Sharing is caring - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/tempus-est-sharing-is-caring/87699/12)
+- Mobile table of contents
+	- [forum.obsidian.md > Mobile table of contents for Publish sites - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/mobile-table-of-contents-for-publish-sites/39854/13)
+- Cookie banner
+	- [Cookie banner management in Obsidian Publish - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/cookie-banner-management-in-obsidian-publish/87018/3)
+	- [lab.marconoris.com > Obsidian Publish cookie banner - Ouroboros lab](https://lab.marconoris.com/obsidian/publish-cookie-banner)
+- Analytics
+	- [Enable Plausible Analytics on an Obsidian Publish site - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/enable-plausible-analytics-on-an-obsidian-publish-site/34661)
+- Custom footer
+	- [lab.marconoris.com > Obsidian Publish footer customization - Ouroboros lab](https://lab.marconoris.com/obsidian/footer-customization)
+	- Edit in GitHub
+	- Copy this note
+	- Download this note
+	- Was this page helpful
+	    - [Free Online Form Builder | Tally](https://tally.so/)
+- Social CSS
+	- [lab.marconoris.com > Social css - Ouroboros lab](https://lab.marconoris.com/obsidian/social-code)
+- SVG inline icons
+	- [lab.marconoris.com > SVG inline icons - Ouroboros lab](https://lab.marconoris.com/obsidian/svg-inline-icons)
+- 
+
+## Rendering Markdown w/Community Plugins in Obsidian
+
+- [udus122/dataview-publisher: Output markdown from your Dataview queries and keep them up to date. You can also be able to publish them.](https://github.com/udus122/dataview-publisher)
+- [joschua.io > Using Dataview on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/09/01/obsidian-publish-dataview)
+- Templater breadcrumbs
+	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/10#breadcrumbs-2
+- [lab.marconoris.com > Templater - Navigation links between notes - Ouroboros lab](https://lab.marconoris.com/obsidian/templater-navigation-links-between-notes)
 
 ## Publish CSS, Icons, Appearance
 
@@ -128,6 +211,7 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
     - To build a theme for your site:
         1. Add a file called `publish.css` to the root folder of your vault.
         2. Publish `publish.css` to enable the theme on your live Publish site.
+
 ### Themes, Templates, CSS Files
 
 #### Publish Themes, Community Themes
@@ -215,6 +299,7 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 		- [astro.build > Integrations | Astro](https://astro.build/integrations/?search=Obsidian)
 		- [github.com > Fevol/starlight-theme-obsidian: Starlight theme inspired by the style of Obsidian Publish sites](https://github.com/Fevol/starlight-theme-obsidian#readme)
 		- [github.com > aitorllj93/astro-loader-obsidian: Use your Obsidian vault in Astro projects](https://github.com/aitorllj93/astro-loader-obsidian)
+		- [starlight.astro.build > Starlight 🌟 Build documentation sites with Astro](https://starlight.astro.build/)
 		- 
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
@@ -224,6 +309,13 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 - Auth
 	- Search terms
 		- guest authentication contribution fusion auth clerk auth0 auth.js guest auth
+	- Better-Auth
+		- [better-auth.com > Better Auth](https://www.better-auth.com/)
+	- Stack auth
+		- [stack-auth.com > Stack Auth — the open-source Auth0 & Clerk alternative](https://stack-auth.com/)
+	- Open Auth
+		- [openauth.js.org > OpenAuth](https://openauth.js.org/)
+	- 
 	- Auth.js
 		- [authjs.dev > Auth.js | Fusionauth](https://authjs.dev/getting-started/providers/fusionauth?framework=next-js)
 		- [authjs.dev > Auth.js | Authentication for the Web](https://authjs.dev/)
@@ -328,7 +420,7 @@ date modified: Wednesday, February 5th 2025, 7:58 pm
 		- [operational-transformation · GitHub Topics](https://github.com/topics/operational-transformation)
 		- [github.com > share/sharedb: Realtime database backend based on Operational Transformation (OT)](https://github.com/share/sharedb)
 			- [share.github.io > Database adapters](https://share.github.io/sharedb/adapters/database#memorydb)
-		- 
+		- [rethinkdb.com > RethinkDB: the open-source database for the realtime web](https://rethinkdb.com/)
 		- [gist.github.com > Building an offline realtime sync engine](https://gist.github.com/pesterhazy/3e039677f2e314cb77ffe3497ebca07b)
 		- [automerge.org > Welcome to Automerge | Automerge CRDT](https://automerge.org/docs/hello/)
 			- [automerge.org > Automerge 2.0 | Automerge CRDT](https://automerge.org/blog/automerge-2/)
