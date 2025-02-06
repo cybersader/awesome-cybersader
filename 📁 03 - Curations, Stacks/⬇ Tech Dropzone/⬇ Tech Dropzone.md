@@ -4,14 +4,15 @@ aliases: []
 tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Monday, February 3rd 2025, 4:25 pm
+date modified: Wednesday, February 5th 2025, 6:58 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
-- https://tryriot.com/
+- [b3log.org > SiYuan - Privacy-first personal knowledge management system that supports Markdown](https://b3log.org/siyuan/en/)
+- [tryriot.com > Riot, where companies get their teams secured.](https://tryriot.com/)
 - [linkwarden.app > Linkwarden](https://linkwarden.app/)
 - [typefully.com > Typefully: Best social media tool for creators & businesses](https://typefully.com/)
 - [mouseless.click > mouseless > no mouse to click](https://mouseless.click/)
