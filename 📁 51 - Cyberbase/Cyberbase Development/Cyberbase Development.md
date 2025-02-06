@@ -301,7 +301,7 @@ date modified: Wednesday, February 5th 2025, 10:15 pm
 		- [github.com > Fevol/starlight-theme-obsidian: Starlight theme inspired by the style of Obsidian Publish sites](https://github.com/Fevol/starlight-theme-obsidian#readme)
 		- [github.com > aitorllj93/astro-loader-obsidian: Use your Obsidian vault in Astro projects](https://github.com/aitorllj93/astro-loader-obsidian)
 		- [starlight.astro.build > Starlight 🌟 Build documentation sites with Astro](https://starlight.astro.build/)
-		- 
+		- [github.com > one-aalam/awesome-astro: Curated resources on building sites with Astro](https://github.com/one-aalam/awesome-astro)
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
 - API Gateways, bot protection
