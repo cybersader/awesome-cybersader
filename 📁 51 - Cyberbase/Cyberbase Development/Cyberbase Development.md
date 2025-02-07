@@ -304,7 +304,6 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 		- [dossierhq.dev > Dossier is an open source toolkit for building headless CMSs](https://www.dossierhq.dev/)
 	- Hygraph
 		- [hygraph.com > The Next Generation GraphQL Headless CMS](https://hygraph.com/)
-- 
 - SSG, JS Frameworks
 	- Jekyll
 		- [jamstack.org > Jekyll | Jamstack](https://jamstack.org/generators/jekyll/)
@@ -318,6 +317,7 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 		- [github.com > aitorllj93/astro-loader-obsidian: Use your Obsidian vault in Astro projects](https://github.com/aitorllj93/astro-loader-obsidian)
 		- [starlight.astro.build > Starlight 🌟 Build documentation sites with Astro](https://starlight.astro.build/)
 		- [github.com > one-aalam/awesome-astro: Curated resources on building sites with Astro](https://github.com/one-aalam/awesome-astro)
+		- [docs.astro.build > Getting started](https://docs.astro.build/en/getting-started/)
 	- 11ty
 		- [11ty.dev > Eleventy is a simpler static site generator](https://www.11ty.dev/)
 - API Gateways, bot protection
@@ -526,4 +526,6 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 	- [podman.io > Podman](https://podman.io/)
 - WebRTC
 	- [webrtc.org > WebRTC](https://webrtc.org/)
-- 
+- GitHub stuff
+	- [anonymous.4open.science > Anonymous GitHub](https://anonymous.4open.science/)
+	- 
