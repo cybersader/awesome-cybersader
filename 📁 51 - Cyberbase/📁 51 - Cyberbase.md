@@ -24,6 +24,9 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Customizing Obsidian Publish]]**
 - **[[Cyberbase Development]]**
 - **[[Cyberbase Domains]]**
+- **[[Cyberbase Font]]**
+- **[[Cyberbase Prompts]]**
+	- **[[CB1 - Customize Publish]]**
 - **[[Cyberbase Tech Stack]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Folder Notes & Publish]]**

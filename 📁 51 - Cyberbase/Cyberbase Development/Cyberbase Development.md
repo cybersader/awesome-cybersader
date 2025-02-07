@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Thursday, February 6th 2025, 8:49 pm
+date modified: Thursday, February 6th 2025, 10:03 pm
 ---
 
 # ⬇️ DROP
@@ -113,7 +113,6 @@ date modified: Thursday, February 6th 2025, 8:49 pm
 
 ## Publish JS, CSS
 
-- [forum.obsidian.md > How to Use Obsidian.app CSS Themes in Obsidian Publish - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/how-to-use-obsidian-app-css-themes-in-obsidian-publish/21504)
 - [Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/5)
 - [forum.obsidian.md > Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/3)
 - [docs.obsidian.md > Publish - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Publish)
@@ -121,21 +120,50 @@ date modified: Thursday, February 6th 2025, 8:49 pm
 - [docs.obsidian.md > Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
 - [docs.obsidian.md > Best practices for Publish themes - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Best+practices+for+Publish+themes)
 - [docs.obsidian.md > Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
+- [publish.obsidian.md > 🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
+- [docs.obsidian.md > CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
 
-- CSS Themes
-	- [publish.obsidian.md > 🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
-	- [docs.obsidian.md > CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
-	- 
-## Obsidian Themes
+- Dynamic theme settings
+	- [github.com > mgmeyers/obsidian-style-settings: A dynamic user interface for adjusting theme](https://github.com/mgmeyers/obsidian-style-settings)
 
-### Obsidian Publish Themes - optimized, specific
+- [Customize your site - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Customize+your+site)
+- [Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
+- [Themes - Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Themes)
+- [Publish-Specific Themes - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/publish-specific-themes/9069)
+- [Obsidian CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
+- You can build themes for your [Obsidian Publish](https://help.obsidian.md/Obsidian+Publish/Introduction+to+Obsidian+Publish) site. Themes for Obsidian Publish use the same [CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables) as the Obsidian app along with [Publish-specific CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian%20Publish).
+- See [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) for more in-depth information on the `body`, `:root`, `.theme-dark`, and `.theme-light` selectors.
+- To build a theme for your site:
+	1. Add a file called `publish.css` to the root folder of your vault.
+	2. Publish `publish.css` to enable the theme on your live Publish site.
+- [docs.obsidian.md > Embed fonts and images in your theme - Developer Documentation](https://docs.obsidian.md/Themes/App+themes/Embed+fonts+and+images+in+your+theme)
+- 
+### Publish.css
+
+- [github.com > selfire1/obsidian-publish-css: The CSS for my Obsdian publish site.](https://github.com/selfire1/obsidian-publish-css)
+- [github.com > data-engineering-wiki/publish.css at 6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf · data-engineering-community/data-engineering-wiki](https://github.com/data-engineering-community/data-engineering-wiki/blob/6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf/publish.css#L35)
+- [github.com > obsidian-publish-css/publish.css at master · selfire1/obsidian-publish-css](https://github.com/selfire1/obsidian-publish-css/blob/master/publish.css)
+- 
+
+### Obsidian Themes
+
+#### Obsidian Publish Themes - optimized, specific
 
 - [minimal.guide > Home - Minimal Documentation](https://minimal.guide/home)
-	- 
-
-### Obsidian Desktop Themes
-
+	- [minimal.guide > Create an image gallery for Obsidian Publish - Minimal Documentation](https://minimal.guide/guides/image-gallery)
+	- [minimal.guide > Helper classes - Minimal Documentation](https://minimal.guide/features/helper-classes)
+	- [minimal.guide > Cards - Minimal Documentation](https://minimal.guide/cards)
+	- [minimal.guide > Image grids - Minimal Documentation](https://minimal.guide/image-grids)
+	- [minimal.guide > Tables - Minimal Documentation](https://minimal.guide/tables)
 - 
+
+#### Obsidian Desktop Themes
+
+- Minimal
+	- Nord - for light mode
+	- Atom - for dark mode
+- Cyber Glow
+- Encore
 
 ## Functionality Limitations - JS
 
@@ -204,39 +232,6 @@ date modified: Thursday, February 6th 2025, 8:49 pm
 - Templater breadcrumbs
 	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/10#breadcrumbs-2
 - [lab.marconoris.com > Templater - Navigation links between notes - Ouroboros lab](https://lab.marconoris.com/obsidian/templater-navigation-links-between-notes)
-
-## Publish CSS, Icons, Appearance
-
-### Docs, Articles, Obsidian Help
-
-- [Customize your site - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Customize+your+site)
-- [Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
-- [Themes - Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Themes)
-- [Publish-Specific Themes - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/publish-specific-themes/9069)
-- [Obsidian CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
-    - [https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
-- [Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
-    - [Best practices for Publish themes - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Best+practices+for+Publish+themes)
-    
-    - You can build themes for your [Obsidian Publish](https://help.obsidian.md/Obsidian+Publish/Introduction+to+Obsidian+Publish) site. Themes for Obsidian Publish use the same [CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables) as the Obsidian app along with [Publish-specific CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian%20Publish).
-    - See [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) for more in-depth information on the `body`, `:root`, `.theme-dark`, and `.theme-light` selectors.
-    - To build a theme for your site:
-        1. Add a file called `publish.css` to the root folder of your vault.
-        2. Publish `publish.css` to enable the theme on your live Publish site.
-
-### Themes, Templates, CSS Files
-
-#### Publish Themes, Community Themes
-
-- [🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
-- [Minimal for Obsidian Publish - Minimal Documentation](https://minimal.guide/publish/download)
-- [mgmeyers/obsidian-california-coast-theme: A minimalist obsidian theme inspired by macOS Big Sur](https://github.com/mgmeyers/obsidian-california-coast-theme)
-
-#### Publish CSS
-
-- [obsidian-publish-css/publish.css at master · selfire1/obsidian-publish-css](https://github.com/selfire1/obsidian-publish-css/blob/master/publish.css)
-- [data-engineering-wiki/publish.css at 6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf · data-engineering-community/data-engineering-wiki](https://github.com/data-engineering-community/data-engineering-wiki/blob/6c4a2a4fe56a9ecf82d629d3f3c3b84654f782bf/publish.css#L35)
-- [selfire1/obsidian-publish-css: The CSS for my Obsdian publish site.](https://github.com/selfire1/obsidian-publish-css)
 
 # Tech Stack DROP
 

@@ -763,6 +763,9 @@
       },
       "darlal-switcher-plus": {
         "startupType": "disabled"
+      },
+      "obsidian-minimal-settings": {
+        "startupType": "instant"
       }
     }
   }

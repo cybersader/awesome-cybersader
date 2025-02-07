@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-02-06-Thursday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Cyberbase Font",
+      "path": "📁 51 - Cyberbase/Cyberbase Font/Cyberbase Font.md"
+    },
+    {
+      "basename": "Cyberbase Prompts",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/Cyberbase Prompts.md"
+    },
+    {
+      "basename": "Static Website Services",
+      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
     },
     {
       "basename": "Hosting",
@@ -19,14 +43,6 @@
     {
       "basename": "📁 19 - Self-Hosting",
       "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
-    },
-    {
-      "basename": "Static Website Services",
-      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
-    },
-    {
-      "basename": "2025-02-06-Thursday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
     },
     {
       "basename": "Cyberbase Tech Stack",
@@ -173,10 +189,6 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
     },
     {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
       "basename": "Obsidian & Corporate Docs",
       "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Obsidian Setup for Corporate",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
-    },
-    {
-      "basename": "Breaking Vault Changes",
-      "path": "📁 10 - My Obsidian Stack/Breaking Vault Changes/Breaking Vault Changes.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     }
   ],
   "omittedPaths": [],

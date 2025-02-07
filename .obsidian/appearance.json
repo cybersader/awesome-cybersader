@@ -1,5 +1,8 @@
 {
   "accentColor": "",
   "showRibbon": true,
-  "cssTheme": ""
+  "cssTheme": "Minimal",
+  "baseFontSizeAction": false,
+  "theme": "system",
+  "interfaceFontFamily": ""
 }
