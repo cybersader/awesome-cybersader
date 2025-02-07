@@ -379,7 +379,7 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 			- [authelia.com > Integrations](https://www.authelia.com/integration/prologue/introduction/)
 			- 
 - Git auth
-	- [github.com > netlify/git-gateway: A Gateway to Git APIs](https://github.com/netlify/git-gateway)
+	- [github.com > netlify/git-gateway: A Gateway to Git APIs](https://github.com/netlify/git-gateway) - not maintained anymore
 - Hosting
 	- Netlify
 		- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
