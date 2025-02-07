@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Frontend Build Tools",
+      "path": "📁 21 - Development/Frontend Build Tools/Frontend Build Tools.md"
+    },
+    {
+      "basename": "Static Website Services",
+      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
+    },
+    {
+      "basename": "2025-02-06-Thursday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
+    },
+    {
       "basename": "2025-02-07-Friday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-07-Friday/2025-02-07-Friday.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
-      "basename": "2025-02-06-Thursday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
     },
     {
       "basename": "Cyberbase Development",
@@ -35,10 +43,6 @@
     {
       "basename": "Cyberbase Prompts",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/Cyberbase Prompts.md"
-    },
-    {
-      "basename": "Static Website Services",
-      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
     },
     {
       "basename": "Hosting",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Plugins and 3rd Party Tools",
       "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
-    },
-    {
-      "basename": "Obsidian & Corporate Docs",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
     }
   ],
   "omittedPaths": [],
