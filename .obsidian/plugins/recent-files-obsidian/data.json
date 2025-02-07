@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Xbox Home Networking",
+      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Knowledge Management Workflows",
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
-    },
-    {
-      "basename": "Obsidian Plugins and 3rd Party Tools",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Plugins and 3rd Party Tools/Obsidian Plugins and 3rd Party Tools.md"
     }
   ],
   "omittedPaths": [],

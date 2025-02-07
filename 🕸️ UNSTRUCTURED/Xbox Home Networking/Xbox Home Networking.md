@@ -19,8 +19,6 @@ date modified: Wednesday, January 1st 2025, 11:21 am
 
 - [Network ports used by the Xbox network on the Xbox console | Xbox Support](https://support.xbox.com/en-US/help/hardware-network/connect-network/network-ports-used-xbox-live)
 
-- 
-
 - Port 88 (UDP)
 - Port 3074 (UDP and TCP)
 - Port 53 (UDP and TCP)
@@ -86,6 +84,7 @@ What can get it working:
 
 5) Diagnostics pfTop (for more troubleshooting)
 
+- 
 - Noticed below igmp related state
 - igmp      In  192.168.1.15:0                224.0.0.22:0                   NO_TRAFFIC:SINGLE       00:00:19  00:00:12        0        0
 
