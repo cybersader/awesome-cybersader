@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Wednesday, February 5th 2025, 10:15 pm
+date modified: Thursday, February 6th 2025, 6:57 pm
 ---
 
 # ⬇️ DROP
@@ -288,7 +288,22 @@ date modified: Wednesday, February 5th 2025, 10:15 pm
 		- [gentics.com > Authentication · Gentics Mesh - Documentation](https://www.gentics.com/mesh/docs/authentication/#_authentication)
 	- Decap CMS
 		- [Open Authoring | Decap CMS | Open-Source Content Management System](https://decapcms.org/docs/open-authoring/)
-		- 
+	- Atomic Server CMS
+		- [atomicserver.eu > atomic-server](https://atomicserver.eu/)
+	- Squidex
+		- [Squidex - an OpenSource Headless CMS, a CMS with an API](https://squidex.io/)
+	- Manifest CMS
+		- [manifest.build > Manifest - The 1-file Micro-backend](https://manifest.build/)
+	- Flextype
+		- [awilum.github.io > Flextype is Modern Open Source Flat Files Content Management System.](https://awilum.github.io/flextype/)
+	- Prismic
+		- [prismic.io > Prismic: Headless Page Builder - Launch and Iterate Faster](https://prismic.io/)
+	- Contember
+		- [contember.com > Build powerful business apps | Contember](https://www.contember.com/)
+	- Dossier
+		- [dossierhq.dev > Dossier is an open source toolkit for building headless CMSs](https://www.dossierhq.dev/)
+	- Hygraph
+		- [hygraph.com > The Next Generation GraphQL Headless CMS](https://hygraph.com/)
 - SSG, JS Frameworks
 	- Jekyll
 		- [jamstack.org > Jekyll | Jamstack](https://jamstack.org/generators/jekyll/)
