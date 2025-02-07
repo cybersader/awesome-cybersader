@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-02-06-Thursday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
+      "basename": "How to look at obsidian publish code",
+      "path": "📁 51 - Cyberbase/How to look at obsidian publish code/How to look at obsidian publish code.md"
     },
     {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+    },
+    {
+      "basename": "2025-02-06-Thursday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
     },
     {
       "basename": "Cyberbase Development",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Regex Find & Replace",
       "path": "📁 10 - My Obsidian Stack/Obsidian Regex Find & Replace/Obsidian Regex Find & Replace.md"
-    },
-    {
-      "basename": "Obsidian Setup for Corporate",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Obsidian Setup for Corporate.md"
     }
   ],
   "omittedPaths": [],

@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, February 6th 2025, 9:49 pm
-date modified: Thursday, February 6th 2025, 10:27 pm
+date modified: Thursday, February 6th 2025, 10:35 pm
 ---
 
 Okay I'm trying to build my Obsidian Publish website to look and function in an awesome fashion. My name is Cybersader and I want to build the most modern cool, gradient having, with animations, and yet fast website with inspiration from Astro JS. I want it to be sleek. Obsidian Publish essentially generates a static website from your Obsidian notes. The issue is that all you have to actually change the theme and function of your website is a publish.css and publish.js file that you can add in your vault that gets ingested when the website is built. I've got docs, examples from other people's vaults, complex explanations, and more to show you. Then, let's build a really good css and js file. Then, we can create a workflow for optimizing or minifying it. One of the only things that I need to implement, for sure, functionality wise is to dynamically generate a Edit, View, and Download button for GitHub for each page.
@@ -221,9 +221,121 @@ Yes.
 
 https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish
 
+### Site sidebars
+
+[docs.obsidian.md > Site sidebars - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+sidebars)
+
+
+The left sidebar is present when [Site navigation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+navigation) is turned on. The right sidebar is present when the **Graph** and/or **Table of Contents** [Site components](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+components) are turned on. When these components are turned off, the following variables have no effect.
+
+#### CSS variables 
+
+Publish-specific variables should be defined on the `.published-container`.
+
+|Variable|Description|
+|---|---|
+|`--sidebar-left-width`|Width of the left sidebar|
+|`--sidebar-left-background`|Background color of left sidebar|
+|`--sidebar-left-border-width`|Right border width of left sidebar|
+|`--sidebar-left-border-color`|Right border color of left sidebar|
+|`--sidebar-right-width`|Width of the right sidebar|
+|`--sidebar-right-background`|Background color of right sidebar|
+|`--sidebar-right-border-width`|Left border width of right sidebar|
+|`--sidebar-right-border-color`|Left border color of right sidebar|
+
+Links to this page
+
+### Site pages
+
+[docs.obsidian.md > Site pages - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+pages)
+
+This page lists CSS variables used for Obsidian Publish pages.
+
+#### CSS variables 
+
+Publish-specific variables should be defined on the `.published-container`.
+
+##### Page width and padding 
+
+|Variable|Description|
+|---|---|
+|`--page-width`|Width of a note when readable line width is on|
+|`--page-padding`|Padding around a note|
+
+##### Page title 
+
+The note title displayed at the top of the page. This title can be hidden in the Publish site settings using the "**Hide page title**" option.
+
+|Variable|Description|
+|---|---|
+|`--page-title-color`|Font color|
+|`--page-title-font`|Font family, see [Site fonts](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+fonts)|
+|`--page-title-line-height`|Line height|
+|`--page-title-size`|Font size|
+|`--page-title-style`|Font style, e.g. normal or italic|
+|`--page-title-variant`|Font variant|
+|`--page-title-weight`|Font weight|
+
+Links to this page
+
+### Site navigation
+
+[docs.obsidian.md > Site navigation - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+navigation)
+
+When activated in Publish settings, navigation is placed in the left sidebar and can be styled with the following variables. Top-level items and folders can be treated differently than nested items.
+
+#### CSS variables 
+
+Publish-specific variables should be defined on the `.published-container`.
+
+|Variable|Description|
+|---|---|
+|`--nav-collapse-icon-color`|Collapse icon color|
+|`--nav-collapse-icon-color-hover`|Collapse icon color (hovered)|
+|`--nav-parent-item-color`|Font color for folders and top-level items|
+|`--nav-parent-item-color-active`|Font color for active top-level items|
+|`--nav-parent-item-weight`|Font weight for top-level items|
+|`--nav-item-color`|Font color for nested items|
+|`--nav-item-color-hover`|Font color for hovered nested items|
+|`--nav-item-color-active`|Font color for active nested items|
+|`--nav-item-border-color`|Border color for nested items|
+|`--nav-item-border-color-hover`|Border color for hovered nested items|
+|`--nav-item-border-color-active`|Border color for active nested items|
+|`--nav-item-weight-active`|Font weight for active nested items|
+
+Links to this page
+
 ### Site Header
 
 [docs.obsidian.md > Site header - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Site+header)
+The site header contains the site logo (if added in Publish settings), the site name, and the mobile hamburger menu if navigation is turned on.
+
+The site header appears as a horizontal header at the top of the page on mobile devices and when navigation is turned off. When navigation is turned on in Publish settings, the site name and logo appear in the left sidebar.
+
+This page lists CSS variables used for Obsidian Publish site header, site logo, and site name
+
+#### CSS variables 
+
+Publish-specific variables should be defined on the `.published-container`.
+
+|Variable|Description|
+|---|---|
+|`--logo-width`|Logo default width|
+|`--logo-height`|Logo default height|
+|`--logo-max-width`|Logo max width|
+|`--logo-max-height`|Logo max height|
+|`--logo-radius`|Logo corner radius|
+|`--header-height`|Height of the site header|
+|`--site-name-color`|Site name color|
+|`--site-name-color-hover`|Site name hovered color|
+|`--site-name-font`|Site name font family|
+|`--site-name-size`|Site name font size|
+|`--site-name-weight`|Site name font weight|
+|`--site-menu-icon-color`|Mobile menu icon color|
+|`--site-menu-icon-color-hover`|Mobile menu hovered icon color|
+|`--site-menu-icon-size`|Mobile menu icon size|
+
+Links to this page
 
 ### Site Footer
 
