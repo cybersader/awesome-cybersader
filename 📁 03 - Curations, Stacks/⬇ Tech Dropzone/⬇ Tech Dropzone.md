@@ -11,6 +11,7 @@ date modified: Thursday, February 6th 2025, 4:56 pm
 
 # Software, Web
 
+- [Mintlify — The documentation you want, effortlessly](https://mintlify.com/)
 - [resist.bot > Resistbot](https://resist.bot/)
 - [Publishing tools (desktop → web, no-code) · Untested](https://untested.sonnet.io/notes/publishing-tools-desktop-web-no-code/)
 - [stephango.com > Steph Ango](https://stephango.com/)

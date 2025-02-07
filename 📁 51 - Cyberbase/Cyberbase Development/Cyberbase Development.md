@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Thursday, February 6th 2025, 7:15 pm
+date modified: Thursday, February 6th 2025, 8:49 pm
 ---
 
 # ⬇️ DROP
@@ -111,20 +111,31 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 	- [notes.nicolevanderhoeven.com > Fork My Brain - Fork My Brain](https://notes.nicolevanderhoeven.com/Fork+My+Brain)
 	- [anthonyamar.fr > Welcome in my mind 🧠 - My second-brain](https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0)
 
-## Publish - API and docs (JS, CSS)
+## Publish JS, CSS
 
 - [forum.obsidian.md > How to Use Obsidian.app CSS Themes in Obsidian Publish - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/how-to-use-obsidian-app-css-themes-in-obsidian-publish/21504)
 - [Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/5)
-
 - [forum.obsidian.md > Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546/3)
-
 - [docs.obsidian.md > Publish - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/Publish/Publish)
 - [help.obsidian.md > Customize your site - Obsidian Help](https://help.obsidian.md/Obsidian+Publish/Customize+your+site)
-- 
+- [docs.obsidian.md > Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
+- [docs.obsidian.md > Best practices for Publish themes - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Best+practices+for+Publish+themes)
+- [docs.obsidian.md > Build a Publish theme - Developer Documentation](https://docs.obsidian.md/Themes/Obsidian+Publish+themes/Build+a+Publish+theme)
 
 - CSS Themes
 	- [publish.obsidian.md > 🗂️ Themes - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Themes/%F0%9F%97%82%EF%B8%8F+Themes)
+	- [docs.obsidian.md > CSS variables - Developer Documentation](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Obsidian+Publish)
 	- 
+## Obsidian Themes
+
+### Obsidian Publish Themes - optimized, specific
+
+- [minimal.guide > Home - Minimal Documentation](https://minimal.guide/home)
+	- 
+
+### Obsidian Desktop Themes
+
+- 
 
 ## Functionality Limitations - JS
 
@@ -528,4 +539,8 @@ date modified: Thursday, February 6th 2025, 7:15 pm
 	- [webrtc.org > WebRTC](https://webrtc.org/)
 - GitHub stuff
 	- [anonymous.4open.science > Anonymous GitHub](https://anonymous.4open.science/)
-	- 
+- Personal collaboration tools
+	- If you're collaborating with people you know personally somehow
+	- Peerdraft
+	- Relay
+- 
