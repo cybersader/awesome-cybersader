@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 8:56 am
-date modified: Friday, February 7th 2025, 9:26 am
+date modified: Friday, February 7th 2025, 12:50 pm
 ---
 
 [Cyberbase Development](../../📁%2051%20-%20Cyberbase/Cyberbase%20Development/Cyberbase%20Development.md)
@@ -15,10 +15,19 @@ date modified: Friday, February 7th 2025, 9:26 am
 - [youtube.com > JavaScript Modules in 100 Seconds | Fireship](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
 - [youtube.com > 100+ JavaScript Concepts you Need to Know | Fireship](https://www.youtube.com/watch?v=lkIFF4maKMU)
 - [youtube.com > Front-end web development is changing, quickly | Fireship](https://www.youtube.com/watch?v=TBIjgBVFjVI)
+- [youtube.com > The Front End Iceberg Explained | Theo - t3․gg](https://www.youtube.com/watch?v=KYDwcUKlxwQ)
 
 ## Frontend Frameworks
 
-- 
+- [youtube.com > JavaScript Frameworks in 2025 | Theo - t3․gg](https://www.youtube.com/watch?v=TKcetuFoYU0)
+
+- [youtube.com > Vite in 100 Seconds | Fireship](https://www.youtube.com/watch?v=KCrXgy8qtjM&list=WL&index=2&t=79s)
+- SolidJS
+- React
+- Angular
+- Vue
+- Next
+- Nuxt
 
 ## Bundlers
 
