@@ -14,6 +14,7 @@ date modified: Friday, February 7th 2025, 9:26 am
 - [youtube.com > Module Bundlers Explained... Webpack | Fireship](https://www.youtube.com/watch?v=5IG4UmULyoA&list=WL&index=7&t=96s)
 - [youtube.com > JavaScript Modules in 100 Seconds | Fireship](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
 - [youtube.com > 100+ JavaScript Concepts you Need to Know | Fireship](https://www.youtube.com/watch?v=lkIFF4maKMU)
+- [youtube.com > Front-end web development is changing, quickly | Fireship](https://www.youtube.com/watch?v=TBIjgBVFjVI)
 
 ## Frontend Frameworks
 
@@ -21,6 +22,9 @@ date modified: Friday, February 7th 2025, 9:26 am
 
 ## Bundlers
 
+- [youtube.com > Bun's FINALLY A Bundler (and much much more) | Theo - t3․gg](https://www.youtube.com/watch?v=Y5JrsqBt7sI)
+- [youtube.com > Another new JS bundler? This one’s interesting I promise | Theo - t3․gg](https://www.youtube.com/watch?v=_sxwQBWJQHA)
+- [youtube.com > Rolldown is here, can it save Vite? | Theo - t3․gg](https://www.youtube.com/watch?v=IDe1zVWoX94)
 - 
 
 # Browser JS Basics
