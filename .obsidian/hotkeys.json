@@ -226,5 +226,14 @@
       ],
       "key": "H"
     }
+  ],
+  "webviewer:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "W"
+    }
   ]
 }

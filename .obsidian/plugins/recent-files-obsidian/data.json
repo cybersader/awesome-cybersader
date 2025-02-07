@@ -5,12 +5,24 @@
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
-      "basename": "Static Website Services",
-      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
+      "basename": "Hosting",
+      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "⬇️ Self-Hosting DROP",
+      "path": "📁 19 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
+    },
+    {
+      "basename": "📁 19 - Self-Hosting",
+      "path": "📁 19 - Self-Hosting/📁 19 - Self-Hosting.md"
+    },
+    {
+      "basename": "Static Website Services",
+      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
     },
     {
       "basename": "2025-02-06-Thursday",
@@ -187,18 +199,6 @@
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Microsoft Graph API in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Integrations",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Integrations/⬇️ Obsidian Integrations.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     }
   ],
   "omittedPaths": [],

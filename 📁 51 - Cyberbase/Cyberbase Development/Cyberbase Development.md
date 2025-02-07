@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Thursday, February 6th 2025, 6:57 pm
+date modified: Thursday, February 6th 2025, 7:15 pm
 ---
 
 # ⬇️ DROP
@@ -304,6 +304,7 @@ date modified: Thursday, February 6th 2025, 6:57 pm
 		- [dossierhq.dev > Dossier is an open source toolkit for building headless CMSs](https://www.dossierhq.dev/)
 	- Hygraph
 		- [hygraph.com > The Next Generation GraphQL Headless CMS](https://hygraph.com/)
+- 
 - SSG, JS Frameworks
 	- Jekyll
 		- [jamstack.org > Jekyll | Jamstack](https://jamstack.org/generators/jekyll/)
@@ -383,6 +384,20 @@ date modified: Thursday, February 6th 2025, 6:57 pm
 	- Netlify
 		- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
 		- [docs.netlify.com > Welcome to Netlify](https://docs.netlify.com/)
+		- https://www.netlify.com/integrations
+	- Cloudflare
+		- [developers.cloudflare.com > Framework guides · Cloudflare Pages docs](https://developers.cloudflare.com/pages/framework-guides/)
+		- [pages.cloudflare.com > Cloudflare Pages](https://pages.cloudflare.com/)
+	- GitHub Pages
+		- [pages.github.com > GitHub Pages](https://pages.github.com/)
+	- GitLab Pages
+		- [docs.gitlab.com > GitLab Pages | GitLab](https://docs.gitlab.com/ee/user/project/pages/)
+	- Firebase
+		- [firebase.google.com > Firebase | Google's Mobile and Web App Development Platform](https://firebase.google.com/)
+	- Digital Ocean
+		- [digitalocean.com > Budget-Friendly Cloud Server Pricing | DigitalOcean](https://www.digitalocean.com/pricing)
+	- Vercel
+		- [vercel.com > Find a plan to power your projects. – Vercel](https://vercel.com/pricing)
 - Statis website services and tech
 	- [Staticman: Static sites with superpowers](https://staticman.net/)
 	- [github.com > agarrharr/awesome-static-website-services: 📄 🛠 A curated list of awesome static websites services](https://github.com/agarrharr/awesome-static-website-services?tab=readme-ov-file#authentication)
