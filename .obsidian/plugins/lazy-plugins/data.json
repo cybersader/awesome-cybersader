@@ -174,7 +174,7 @@
         "startupType": "disabled"
       },
       "floating-toc": {
-        "startupType": "instant"
+        "startupType": "disabled"
       },
       "obsidian-folder-index": {
         "startupType": "disabled"
