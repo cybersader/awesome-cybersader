@@ -30,7 +30,6 @@ date modified: Friday, February 7th 2025, 10:14 pm
 	- Obsidian Hub
 		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
 	- [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
-	- [Cyber Security Wiki by Payatu | Cyber Security Wiki](https://cyber-security.wiki/)
 - With style and functionality
 	- [yomaru.dev > 901 🏠 Home - Hananoshika Yomaru](https://yomaru.dev/home)
 	- [lab.marconoris.com > Notas sobre el ahora - Ouroboros lab](https://lab.marconoris.com/now)
