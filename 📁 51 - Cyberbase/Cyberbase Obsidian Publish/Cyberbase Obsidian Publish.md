@@ -1,17 +1,25 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 10:00 pm
-date modified: Friday, February 7th 2025, 10:00 pm
+date modified: Friday, February 7th 2025, 10:14 pm
 ---
 
 # MVP Obsidian Publish Cyberbase
 
 [Customizing Obsidian Publish](../Customizing%20Obsidian%20Publish/Customizing%20Obsidian%20Publish.md)
 
+- [reddit.com > How do you test and develop publish.js scripts?](https://www.reddit.com/r/ObsidianMD/comments/1fkyhl2/how_do_you_test_and_develop_publishjs_scripts/)
 - 
+
+## Obsidian API and "Typings"
+
+- [github.com > obsidian-api/publish.d.ts at master · obsidianmd/obsidian-api](https://github.com/obsidianmd/obsidian-api/blob/master/publish.d.ts)
+- [github.com > Fevol/obsidian-typings: Typescript typings for undocumented parts of the Obsidian API](https://github.com/Fevol/obsidian-typings)
+- [forum.obsidian.md > Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546)
+
 
 ## Obsidian Publish Websites
 
