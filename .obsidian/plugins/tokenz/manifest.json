@@ -1,0 +1,10 @@
+{
+	"id": "tokenz",
+	"name": "Tokenz",
+	"version": "0.8.1",
+	"minAppVersion": "1.6.6",
+	"description": "Insert shortcodes into your document, e.g smileys :) or emojis :wink: . User-defined short code maps are also supported.",
+	"author": "Ferenc Moricz",
+	"authorUrl": "https://github.com/ferenk",
+	"isDesktopOnly": false
+}

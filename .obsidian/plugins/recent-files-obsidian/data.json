@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "CB1 - Customize Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+      "basename": "CSS",
+      "path": "📁 21 - Development/CSS/CSS.md"
     },
     {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
       "basename": "Frontend Web JS",
@@ -15,10 +23,6 @@
     {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Development Environments",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Git",
       "path": "📁 10 - My Obsidian Stack/Obsidian Git/Obsidian Git.md"
-    },
-    {
-      "basename": "Cybersader Wiki Features and Changes",
-      "path": "📁 51 - Cyberbase/Cybersader Wiki Features and Changes/Cybersader Wiki Features and Changes.md"
     }
   ],
   "omittedPaths": [],

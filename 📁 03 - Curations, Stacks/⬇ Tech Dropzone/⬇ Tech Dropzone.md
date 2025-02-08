@@ -4,13 +4,14 @@ aliases: []
 tags: ["#opensourcesoftware", "#privacy", "#software"]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Thursday, February 6th 2025, 4:56 pm
+date modified: Saturday, February 8th 2025, 2:15 pm
 ---
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 
 # Software, Web
 
+- [screenpi.pe > screenpipe | Context layer for AGI](https://screenpi.pe/)
 - [Mintlify — The documentation you want, effortlessly](https://mintlify.com/)
 - [resist.bot > Resistbot](https://resist.bot/)
 - [Publishing tools (desktop → web, no-code) · Untested](https://untested.sonnet.io/notes/publishing-tools-desktop-web-no-code/)

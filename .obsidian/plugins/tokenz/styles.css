@@ -1,0 +1,24 @@
+.tz-suggester-container {
+  display: flex;
+  place-content: space-between;
+}
+
+.tz-key-shortcode {
+  margin-right: 8px;
+}
+
+.tz-settings-disabled {
+  opacity: 0.5;
+}
+
+.tz-highlight1 {
+  color: hsl(42, 70%, 65%);
+}
+
+.tz-highlight2 {
+  color: hsl(42, 55%, 55%)
+}
+
+.tz-highlight3 {
+  color: hsl(42, 55%, 45%)
+}
