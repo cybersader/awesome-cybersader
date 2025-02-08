@@ -1,11 +1,10 @@
 ---
-aliases:
-  - Cynar.io
-tags: 
+aliases: [Cynar.io]
+tags: []
 publish: true
 permalink: 
 date created: Sunday, December 22nd 2024, 5:03 pm
-date modified: Sunday, December 22nd 2024, 5:30 pm
+date modified: Saturday, February 8th 2025, 11:51 am
 ---
 
 [Workforce Cyber Resilience](../../📁%2005%20-%20Organizational%20Cyber/Workforce%20Cyber%20Resilience/Workforce%20Cyber%20Resilience.md)
@@ -53,3 +52,6 @@ date modified: Sunday, December 22nd 2024, 5:30 pm
 - [Full article: Choose your own training adventure: designing a gamified SETA artefact for improving information security and privacy through interactive storytelling](https://www.tandfonline.com/doi/full/10.1080/0960085X.2020.1797546 "Full article: Choose your own training adventure: designing a gamified SETA artefact for improving information security and privacy through interactive storytelling")
 - [Level up! These games will make learning about cybersecurity fun](https://www.welivesecurity.com/en/we-live-progress/level-up-games-make-learning-cybersecurity-fun/ "Level up! These games will make learning about cybersecurity fun")
 - [Cybersecurity Readiness Exercises - Red Canary](https://redcanary.com/products/cybersecurity-readiness/?_bt=701412109889&_bk=cyber+security+exercise+scenarios&_bm=b&_bn=g&_bg=163998289438&gad_source=1 "Cybersecurity Readiness Exercises - Red Canary")
+
+- [pixijs.com > PixiJS | The HTML5 Creation Engine | PixiJS](https://pixijs.com/)
+- 

@@ -17,6 +17,8 @@ date modified: Friday, February 7th 2025, 10:07 pm
 - [youtube.com > Front-end web development is changing, quickly | Fireship](https://www.youtube.com/watch?v=TBIjgBVFjVI)
 - [youtube.com > The Front End Iceberg Explained | Theo - t3․gg](https://www.youtube.com/watch?v=KYDwcUKlxwQ)
 
+- [ui.shadcn.com > shadcn/ui](https://ui.shadcn.com/)
+- [v0.dev > v0 by Vercel](https://v0.dev/)
 ## HTML-focused?
 
 - HTMX

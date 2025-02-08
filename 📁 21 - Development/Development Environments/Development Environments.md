@@ -1,12 +1,15 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Sunday, November 17th 2024, 9:47 pm
-date modified: Sunday, November 17th 2024, 9:47 pm
+date modified: Saturday, February 8th 2025, 11:57 am
 ---
 
 - [ ] Curate dev environments and IDEs ➕ 2024-11-17
+
+- [stackblitz.com > StackBlitz | Instant Dev Environments | Click. Code. Done.](https://stackblitz.com/)
 
 # For Eleventy
 
