@@ -26,7 +26,6 @@
   "multi-properties",
   "note-refactor-obsidian",
   "omnisearch",
-  "obsidian-plugin-groups",
   "recent-files-obsidian",
   "obsidian-tasks-plugin",
   "templater-obsidian",
@@ -45,5 +44,7 @@
   "consistent-attachments-and-links",
   "obsidian-icon-folder",
   "fileorganizer2000",
-  "obsidian-minimal-settings"
+  "obsidian-minimal-settings",
+  "obsidian-hider",
+  "obsidian-style-settings"
 ]

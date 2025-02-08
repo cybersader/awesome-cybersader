@@ -198,7 +198,7 @@
         "startupType": "instant"
       },
       "obsidian-hider": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "home-tab": {
         "startupType": "disabled"
@@ -714,7 +714,7 @@
         "startupType": "disabled"
       },
       "obsidian-style-settings": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "obsidian-tracker": {
         "startupType": "disabled"
