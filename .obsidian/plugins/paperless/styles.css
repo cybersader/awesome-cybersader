@@ -1,0 +1,25 @@
+.obsidian-paperless-overallDiv {
+    position: relative;
+}
+.obsidian-paperless-imageDiv {
+    height: 180px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+.obsidian-paperless-tagDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.obsidian-paperless-column {
+    float: left;
+    width: 50%;
+} 
+/* Clear floats after the columns */
+.obsidian-paperless-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -53,6 +53,7 @@ date modified: Friday, February 7th 2025, 10:14 pm
 	- [publish.obsidian.md > welcome - mister chad - Obsidian Publish](https://publish.obsidian.md/mister-chad/welcome)
 		- https://github.com/chad-bennett/obsidian-publish-css
 	- [beto.group > BONJOUR - BETO.GROUP](https://www.beto.group/bonjour)
+	- [publish.obsidian.md > ITS Theme - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme)
 	- 
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
@@ -82,6 +83,9 @@ date modified: Friday, February 7th 2025, 10:14 pm
 	- [ontologie.humansmatter.co > ontologie - Ontologie](https://ontologie.humansmatter.co/ontologie)
 	- [grosinger.net > Home - Tony Grosinger](https://grosinger.net/Home)
 	- [scripturemapping.com > Scripture Mapping - Home - Scripture Mapping](https://scripturemapping.com/Scripture+Mapping+-+Home)
+	- [arbiters.tenebrousdragon.com > It all starts here - Arbiters of Fate](https://arbiters.tenebrousdragon.com/start-here)
+	- [arkadiuszlenkiewicz.pl > Witaj w cyfrowym ogrodzie - Arkadiusz Lenkiewicz](https://arkadiuszlenkiewicz.pl/Witaj+w+cyfrowym+ogrodzie)
+	- 
 - Basic but with other good elements
 	- [ussfcc.org > HOME -](https://ussfcc.org/HOME#Our%20Mission)
 	- [publish.obsidian.md > Honest Thoughts about the Modern Data Stack - Ram-bunctious Ruminations - Obsidian Publish](https://publish.obsidian.md/rambunctious-ruminations/Data+Management/Honest+Thoughts+about+the+Modern+Data+Stack)
@@ -112,6 +116,8 @@ date modified: Friday, February 7th 2025, 10:14 pm
 	- [cag.wiki > Home - cag.wiki](https://cag.wiki/public/Home)
 	- [notes.nicolevanderhoeven.com > Fork My Brain - Fork My Brain](https://notes.nicolevanderhoeven.com/Fork+My+Brain)
 	- [anthonyamar.fr > Welcome in my mind 🧠 - My second-brain](https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0)
+	- [japanadventure2024.com > Welcome 👋 - Japan Adventure 2024](https://japanadventure2024.com/Welcome+%F0%9F%91%8B)
+	- 
 
 ## Publish JS, CSS
 

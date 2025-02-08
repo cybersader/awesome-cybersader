@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 1st 2025, 5:58 pm
-date modified: Friday, February 7th 2025, 9:59 pm
+date modified: Saturday, February 8th 2025, 12:52 pm
 ---
 
 # ⬇️ DROP
@@ -12,10 +12,13 @@ date modified: Friday, February 7th 2025, 9:59 pm
 - [Stable URLs on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/10/07/stable-publish-urls)
 - [Enveloppe/obsidian-enveloppe: Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!](https://github.com/Enveloppe/obsidian-enveloppe)
 - [A lazy man's Obsidian + Astro workflow integration : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/1943yza/a_lazy_mans_obsidian_astro_workflow_integration/)
+
 # Tech Stack DROP
 
 - Finding company tech stacks
 	- [stackshare.io > StackShare - Tech Stack Intelligence](https://stackshare.io/)
+- Content authoring format
+	- [markdoc.dev > A powerful](https://markdoc.dev/)
 - CMS
 	- Strapi
 		- [jamstack.org > Strapi | Jamstack](https://jamstack.org/headless-cms/strapi/)

@@ -5,16 +5,28 @@
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
+      "basename": "Cyberbase Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
+    },
+    {
+      "basename": "Frontend Web JS",
+      "path": "📁 21 - Development/Frontend Web JS/Frontend Web JS.md"
+    },
+    {
+      "basename": "Cyberbase Development",
+      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
       "basename": "Development Environments",
       "path": "📁 21 - Development/Development Environments/Development Environments.md"
     },
     {
       "basename": "Cynario",
       "path": "📁 01 - Projects/Cynario/Cynario.md"
-    },
-    {
-      "basename": "Frontend Web JS",
-      "path": "📁 21 - Development/Frontend Web JS/Frontend Web JS.md"
     },
     {
       "basename": "2025-02-08-Saturday",
@@ -25,20 +37,12 @@
       "path": "🕸️ Daily Notes/2025/02/2025-02-07-Friday/2025-02-07-Friday.md"
     },
     {
-      "basename": "Cyberbase Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
       "basename": "Org Data Governance",
       "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     },
     {
       "basename": "Red for Blue - offense for defense",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense/Red for Blue - offense for defense.md"
-    },
-    {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "Digital Content Creation",
@@ -59,10 +63,6 @@
     {
       "basename": "How to look at obsidian publish code",
       "path": "📁 51 - Cyberbase/How to look at obsidian publish code/How to look at obsidian publish code.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
       "basename": "Plugin Development",

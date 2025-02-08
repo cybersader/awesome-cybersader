@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, February 6th 2025, 9:49 pm
-date modified: Friday, February 7th 2025, 10:28 pm
+date modified: Saturday, February 8th 2025, 12:51 pm
 ---
 
 Okay I'm trying to build my Obsidian Publish website to look and function in an awesome fashion. My name is Cybersader and I want to build the most modern cool, gradient having, with animations, and yet fast website with inspiration from Astro JS. I want it to be sleek. Obsidian Publish essentially generates a static website from your Obsidian notes. The issue is that all you have to actually change the theme and function of your website is a publish.css and publish.js file that you can add in your vault that gets ingested when the website is built. I've got docs, examples from other people's vaults, complex explanations, and more to show you. Then, let's build a really good css and js file. Then, we can create a workflow for optimizing or minifying it. One of the only things that I need to implement, for sure, functionality wise is to dynamically generate a Edit, View, and Download button for GitHub for each page.
@@ -1268,3 +1268,5 @@ declare global {
 - [fevol.github.io > Obsidian Typings](https://fevol.github.io/obsidian-typings/)
 
 # Implementation Examples
+
+- 
