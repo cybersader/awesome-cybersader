@@ -766,6 +766,30 @@
       },
       "obsidian-minimal-settings": {
         "startupType": "instant"
+      },
+      "dynamic-outline": {
+        "startupType": "disabled"
+      },
+      "obsidian-export-image": {
+        "startupType": "disabled"
+      },
+      "frontmatter-markdown-links": {
+        "startupType": "disabled"
+      },
+      "obsidian-fuzzytag": {
+        "startupType": "disabled"
+      },
+      "paperless": {
+        "startupType": "disabled"
+      },
+      "smart-connections-visualizer": {
+        "startupType": "disabled"
+      },
+      "notes-to-strapi-export-article-ai": {
+        "startupType": "disabled"
+      },
+      "tokenz": {
+        "startupType": "disabled"
       }
     }
   }
