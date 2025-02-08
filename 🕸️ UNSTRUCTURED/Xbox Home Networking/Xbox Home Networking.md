@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Wednesday, January 1st 2025, 11:21 am
+date modified: Friday, February 7th 2025, 7:05 pm
 ---
 
 # Multicast, UPnP, IGMP
@@ -35,7 +35,14 @@ date modified: Wednesday, January 1st 2025, 11:21 am
 - Using system packages
 	- [System Patches Package | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/development/system-patches.html)
 	- [UPnP Fix for multiple clients/consoles playing the same game | Netgate Forum](https://forum.netgate.com/topic/169837/upnp-fix-for-multiple-clients-consoles-playing-the-same-game)
-	- 
+- [pfSense.home.arpa - Firewall: NAT: Outbound](https://192.168.1.1/firewall_nat_out.php "pfSense.home.arpa - Firewall: NAT: Outbound")
+- [Search | Netgate Forum](https://forum.netgate.com/search?in=titles&term=xbox&matchWords=all&by=&categories=66&searchChildren=false&hasTags=&replies=&repliesFilter=atleast&timeFilter=newer&timeRange=&sortBy=relevance&sortDirection=desc&showAs=posts&page=8 "Search | Netgate Forum")
+- [Xbox 360 problems | Netgate Forum](https://forum.netgate.com/topic/63490/xbox-360-problems "Xbox 360 problems | Netgate Forum")
+- [Re: XBOX Port Forwards | Netgate Forum](https://forum.netgate.com/topic/103935/re-xbox-port-forwards "Re: XBOX Port Forwards | Netgate Forum")
+- [Multiple XBOX 360s and pfSense | Netgate Forum](https://forum.netgate.com/topic/41978/multiple-xbox-360s-and-pfsense "Multiple XBOX 360s and pfSense | Netgate Forum")
+- [Xbox live | Netgate Forum](https://forum.netgate.com/topic/41777/xbox-live/5 "Xbox live | Netgate Forum")
+- [Xbox UPnp (fixed) | Netgate Forum](https://forum.netgate.com/topic/188835/xbox-upnp-fixed/2 "Xbox UPnp (fixed) | Netgate Forum")
+- [Configuring pfSense Software for Online Gaming | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/recipes/games.html "Configuring pfSense Software for Online Gaming | pfSense Documentation")
 
 - IGMP being blocked?
 	- ![](_attachments/file-20241214191242944.png)
