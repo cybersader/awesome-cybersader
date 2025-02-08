@@ -695,21 +695,21 @@ Controls the styling of [embeds](https://minimal.guide/embeds)
 
 Controls the row and column styling of [tables](https://minimal.guide/tables)
 
-|Class|Description|
-|:--|:--|
-|`table-nowrap`|Disable line wrapping in table cells|
-|`table-wrap`|Force wrapping in table cells|
-|`table-center`|Center small tables narrower than line width|
-|`table-numbers`|Add row numbers to tables|
-|`table-tabular`|Use tabular figures in tables|
-|`table-small`|Use small font size in tables|
-|`table-tiny`|Use tiny font size in tables|
-|`table-lines`|Add borders around all table cells|
-|`row-lines`|Add borders between table rows|
-|`col-lines`|Add borders between table columns|
-|`row-alt`|Add striped background to alternating table rows|
-|`col-alt`|Add striped background to alternating table columns|
-|`row-highlight`|Highlight rows on hover|
+| Class           | Description                                         |
+| :-------------- | :-------------------------------------------------- |
+| `table-nowrap`  | Disable line wrapping in table cells                |
+| `table-wrap`    | Force wrapping in table cells                       |
+| `table-center`  | Center small tables narrower than line width        |
+| `table-numbers` | Add row numbers to tables                           |
+| `table-tabular` | Use tabular figures in tables                       |
+| `table-small`   | Use small font size in tables                       |
+| `table-tiny`    | Use tiny font size in tables                        |
+| `table-lines`   | Add borders around all table cells                  |
+| `row-lines`     | Add borders between table rows                      |
+| `col-lines`     | Add borders between table columns                   |
+| `row-alt`       | Add striped background to alternating table rows    |
+| `col-alt`       | Add striped background to alternating table columns |
+| `row-highlight` | Highlight rows on hover                             |
 
 #### Cards 
 
@@ -726,3 +726,4 @@ Helper class for [Cards](https://minimal.guide/cards) feature
 |`cards-2-1`|Fit images in cards to 2:1 ratio|
 |`cards-2-3`|Fit images in cards to 2:3 ratio|
 |`cards-cols-1` to `8`|Force a specific number of columns (from 1 to 8)|
+

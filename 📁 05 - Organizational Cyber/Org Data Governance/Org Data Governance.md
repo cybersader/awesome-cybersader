@@ -1,9 +1,10 @@
 ---
+permalink:
 aliases: []
 tags: [IAM, identity, governance, data_governance]
 publish: true
 date created: Monday, June 24th 2024, 7:03 pm
-date modified: Friday, November 22nd 2024, 3:53 pm
+date modified: Friday, February 7th 2025, 10:02 pm
 ---
 
 %% Begin Waypoint %%
@@ -21,6 +22,9 @@ date modified: Friday, November 22nd 2024, 3:53 pm
 
 - Data Mapping in File Shares
 	- Python + Pandas + Plotly Treemaps
+	- [github.com > blacklanternsecurity/MANSPIDER: Spider entire networks for juicy files sitting on SMB shares.  Search filenames or file content - regex supported!](https://github.com/blacklanternsecurity/MANSPIDER)
+	- [github.com > NetSPI/PowerHuntShares: PowerHuntShares is an audit script designed in inventory](https://github.com/NetSPI/PowerHuntShares/tree/main?tab=readme-ov-file)
+	- [github.com > SySS-Research/smbcrawler: smbcrawler is no-nonsense tool that takes credentials and a list of hosts and 'crawls' (or 'spiders') through those shares](https://github.com/SySS-Research/smbcrawler)
 	- Data classification (open source and free) - [SnaffCon/Snaffler: a tool for pentesters to help find ... - GitHub GitHub https://github.com › SnaffCon › Snaffler](https://github.com/SnaffCon/Snaffler)
 		- Use a paid tool to map and classify data access, permissions, staleness, duplicates, etc. 
 	- [Plotly | Treemap charts in Python](https://plotly.com/python/treemaps/)

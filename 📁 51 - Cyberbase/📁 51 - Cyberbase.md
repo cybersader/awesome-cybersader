@@ -25,6 +25,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Cyberbase Development]]**
 - **[[Cyberbase Domains]]**
 - **[[Cyberbase Font]]**
+- **[[Cyberbase Obsidian Publish]]**
 - **[[Cyberbase Prompts]]**
 	- **[[CB1 - Customize Publish]]**
 - **[[Cyberbase Tech Stack]]**

@@ -44,7 +44,18 @@ Popular multi-streamers:
 - [Maxon: Filmmaking, Motion Design, Animation, VFX, and Editing Software](https://www.maxon.net/en)
 - [Designs.ai - Creative work done effortlessly](https://designs.ai/)
 - [Jump cut video app | Automatically Remove Silence](https://www.timebolt.io/)
-
+- [Automatically Remove Silence | Rapid Video Editing Software](https://www.timebolt.io/ "Automatically Remove Silence | Rapid Video Editing Software")
+- [Automatic Silence Remover &amp; Animated Captions | Premiere Pro &amp; DaVinci Resolve Plugin | AutoCut](https://www.autocut.com/en/#pricing "Automatic Silence Remover &amp; Animated Captions | Premiere Pro &amp; DaVinci Resolve Plugin | AutoCut")
+- [automatic jump cuts and remove silence DaVinci resolve - Brave Search](https://search.brave.com/search?q=automatic+jump+cuts+and+remove+silence+DaVinci+resolve&source=web&summary=1&conversation=ac17f350c5c758b8bd1b40 "automatic jump cuts and remove silence DaVinci resolve - Brave Search")
+- [Automatically Remove Silence and Jump Cut Videos · SavvyCut](https://www.savvycut.com/ "Automatically Remove Silence and Jump Cut Videos · SavvyCut")
+- [Jump Cutter - Automatically remove silence from videos](https://autojumpcutter.com/ "Jump Cutter - Automatically remove silence from videos")
+- [Jump/Cut - Automatic Silence Remover](https://getjumpcut.com/ "Jump/Cut - Automatic Silence Remover")
+- [Remove Silence with DaVinci Resolve and Recut](https://getrecut.com/davinci-resolve-remove-silence/ "Remove Silence with DaVinci Resolve and Recut")
+- [Blackmagic Forum • View topic - Silence remover in DaVinci Resolve](https://forum.blackmagicdesign.com/viewtopic.php?t=183066&amp;p=957051 "Blackmagic Forum • View topic - Silence remover in DaVinci Resolve")
+- [DaVinci resolve silence jump cut text base editing - Brave Search](https://search.brave.com/search?q=DaVinci+resolve+silence+jump+cut+text+base+editing&source=android&summary=1&conversation=ccd80fb4d986e2f3d11e0b "DaVinci resolve silence jump cut text base editing - Brave Search")
+- [Blackmagic Forum • View topic - Text based edit + Remove silence on timeline, not the clip](https://forum.blackmagicdesign.com/viewtopic.php?uid=16&f=21&t=209119&start=0 "Blackmagic Forum • View topic - Text based edit + Remove silence on timeline, not the clip")
+- [DaVinci Resolve 19 – Cut | Blackmagic Design](https://www.blackmagicdesign.com/products/davinciresolve/cut "DaVinci Resolve 19 – Cut | Blackmagic Design")
+- [Automatic Silence Remover &amp; Animated Captions | Premiere Pro &amp; DaVinci Resolve Plugin | AutoCut](https://www.autocut.com/en/ "Automatic Silence Remover &amp; Animated Captions | Premiere Pro &amp; DaVinci Resolve Plugin | AutoCut")
 ## Stock and Content Tools
 
 - [PlayPhrase.me: Site for cinema archaeologists.](https://playphrase.me/#/search)
