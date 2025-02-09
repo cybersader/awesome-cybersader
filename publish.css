@@ -54,3 +54,142 @@ a:hover {
   text-decoration: underline;
   transition: all 0.2s ease;
 }
+
+/* ========================================================
+   publish.css
+   Minimal Publish CSS
+   - Modern base font via Google Fonts (e.g. Inter)
+   - Dark (Atom) and Light (Nord) theme definitions
+   - Responsive breakpoints for tablet (min-width:1000px) and mobile (max-width:750px)
+   - Styling for header, footer, frontmatter display, and GitHub links
+======================================================== */
+
+/* Import modern font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Base rules */
+:root {
+  --font-text-size: 16px;
+  --font-small: 13px;
+  --font-family: 'Inter', sans-serif;
+  
+  /* You can define more shared variables here if desired */
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-text-size);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =======================
+   THEME DEFINITIONS
+========================== */
+
+/* Dark theme – Atom (minimal-atom-dark) */
+body.theme-dark {
+  /* Backgrounds and text colors from Atom theme */
+  background-color: #282c34;
+  color: #d8dae1;
+}
+
+/* Light theme – Nord (minimal-atom-light / Nord color scheme) */
+body.theme-light {
+  background-color: #fafafa;
+  color: #2e3440;
+}
+
+/* You may also add additional variables for UI elements if desired */
+
+
+/* =======================
+   LAYOUT & COMPONENTS
+========================== */
+
+/* Header */
+.mod-header {
+  padding: 1em;
+  border-bottom: 2px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mod-header .page-header {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Footer */
+.mod-footer {
+  padding: 1em;
+  border-top: 2px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Content area */
+.content {
+  padding: 1em;
+}
+
+/* Frontmatter display: When the JS has parsed your YAML frontmatter */
+.frontmatter-display,
+.properties-container {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  padding: 1em;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+.frontmatter-display h2,
+.github-links h2 {
+  margin-top: 0;
+}
+
+/* GitHub links styling */
+.github-links {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0.75em;
+  margin-bottom: 1em;
+}
+.github-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+.github-links ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  border: 1px solid transparent;
+  padding: 0.25em 0.5em;
+  transition: background 0.2s, border-color 0.2s;
+}
+.github-links ul li a:hover {
+  background: rgba(0,0,0,0.05);
+  border-color: #aaa;
+}
+
+/* =======================
+   Responsive Breakpoints
+========================== */
+@media screen and (max-width: 1000px) {
+  /* Tablet and smaller: hide right sidebar if needed */
+  .site-body-right-column {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* Mobile: hide left sidebar (and possibly navigation) */
+  .site-body-left-column {
+    display: none;
+  }
+}
+
+/* =======================
+   Additional styles for callouts, buttons, etc.
+   (You can extend these as needed.)
+========================== */
