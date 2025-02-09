@@ -4,11 +4,24 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, February 6th 2025, 9:49 pm
-date modified: Saturday, February 8th 2025, 3:12 pm
+date modified: Saturday, February 8th 2025, 6:34 pm
 ---
 
 Okay I'm trying to build my Obsidian Publish website to look and function in an awesome fashion. My name is Cybersader and I want to build the most modern cool, gradient having, with animations, and yet fast website with inspiration from Astro JS. I want it to be sleek. Obsidian Publish essentially generates a static website from your Obsidian notes. The issue is that all you have to actually change the theme and function of your website is a publish.css and publish.js file that you can add in your vault that gets ingested when the website is built. I've got docs, examples from other people's vaults, complex explanations, and more to show you. Then, let's build a really good css and js file. Then, we can create a workflow for optimizing or minifying it. One of the only things that I need to implement, for sure, functionality wise is to dynamically generate a Edit, View, and Download button for GitHub for each page.
 
+I would rather have this auto-generate from JS code running on the page that uses a manually put repo variable like my repo "https://github.com/cybersader/awesome-cybersader" and then dynamically generate a view, copy (raw page data), download, or edit links that are pretty buttons with GitHub svg.  This could maybe be done from the vault side, but I would rather have it done from within the vault.  
+
+Below is more ideas I had randomly that are related:
+
+```
+Okay so I'm trying to use obsidian publish along with a publish.js and publish.css file. This is the only way that they allow you to add functionality or change the theme of your website. However there's definitely a lot of limitations when it comes to what you can change. I'm not a developer so I'm not familiar with how to code something for the CSS or JS side of things in this regard. If it was my own project I could start everything with a front end framework from an IDE and just start coding from there and be able to push it out after bundling it. However I'm not sure how to bridge development for partly something I don't have access to where I can only push a JS or CSS file that will change other existing code that I have no control of. Maybe this is a general problem that people run into before. I need a breakdown of the front end mental model here and how to look at it in terms of what I can control and what I can't and what my limitations are in terms of what runs in the browser. I will leave you some documentation below. But yeah I want to actually understand how to approach this problem. Where am I going to be coding and I'm guessing my testing will have to involve pushing the publish and then looking at the results and then going back. Another thing I could figure out is how do I look at a website and figure out all of the variables that I have at my disposal such as my published website after the fact. How do I see where the publish.js and publish.css files went?
+
+Can I develop in a front end framework somehow even though I don't have this structure and then bundle the code before providing it so that it's optimized? Can I do network calls and things like that still with the JavaScript? Another thing that I want to know is how to look at other existing obsidian publish websites and pull out the JS and CSS code that they are using. I'm assuming some of this is minified however I still want to know maybe how I can get that data out and use it myself or test it out
+
+Are there frameworks for developing in this context? Out there we have bundlers like roll down roll up vote and others. We also have css optimization stuff. Is there a way for me to take my published website and reverse generate the code I would need for testing things? Kuto is also a reverse bundler but that's probably different. The other thing I run into is if I can do network calls in the case of CORS. It's possible I could use a cloudflare worker based cors proxy to hide these though. I'm also not sure if I can use es modules in the browser. One could say that this is literally reverse engineering a website. The goal here is that I want to keep things efficient but I'm not sure how to start developing in that way in this context.
+
+I would want it right below div.page-header and the same thing right above div.backlinks. I would want it to also be pretty and with the github svg or edit svg like a pen for the edit one and down arrow for download. I also want the CSS to be pretty. I can add JS to my publish.js file too
+```
 # Obsidian Docs - Publish, JS, CSS, Themes
 
 ## Build a Publish theme
@@ -1267,9 +1280,3525 @@ declare global {
 
 - [fevol.github.io > Obsidian Typings](https://fevol.github.io/obsidian-typings/)
 
-# Implementation Examples
+# Publish JS/CSS - Implementation Examples
+
+## Obsidian Hub
+
+[github.com > obsidian-community/obsidian-hub: Resource hub for Obsidian resources.](https://github.com/obsidian-community/obsidian-hub)
+
+```css
+.page-header {
+	display: none;
+}
+
+.markdown-preview-view h1{
+	line-height: 1.1em;
+}
+
+.site-body-left-column-site-logo {
+    /* make the logo be in the center */
+	align-self: center;
+    /* 18 px padding so that it aligns with the center of the text below it as  well as with the search bar */
+    padding-right: 18px;
+    /* make it big */
+    width: 100%;
+    /* The original 120px plus 18px padding */
+    max-width: 138px;
+}
+
+.site-body-left-column-site-name {
+	text-align: center;
+    /* 18px padding so it alignes with the search bar */
+    padding-right: 18px;
+}
+
+/* Widen/Dynamically Size File Explorer & Right Panel */
+.site-body-left-column  { flex:  0 .9 350px; }
+.site-body-right-column { flex: .1 .9 300px; }
+
+/* Hide Graph Around 1300px */
+@media screen and (max-width: 1300px) {
+    .published-container.has-graph .graph-view-outer {
+        display: none;
+    }    
+}
+
+/* Embed Adjustments */
+.internal-embed[alt*="clean"] .markdown-embed,
+.markdown-preview-view .internal-embed[alt*="clean"]:not(.image-embed),
+.internal-embed[alt*="clean"] .markdown-embed .markdown-preview-view {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*Fix Embed Link Icon Alignment*/
+.internal-embed[alt*="clean"] .markdown-embed-link { top: 0px; }
+/*Hide Embed Link Icon Unless Hovered*/
+.internal-embed[alt*="clean"]:not(:hover) .markdown-embed-link { display: none; }
+
+/*"Hide" Bullet*/
+.internal-embed[alt*="bullet"] .markdown-embed ul { padding-inline-start: 0; }
 
 
+
+
+/* Footer Heading */
+h1[data-heading="This note on GitHub"],
+h1[data-heading="This note in GitHub"] {
+    font-size: var(--editor-font-size);
+    text-align: center;
+}
+h1[data-heading="This note on GitHub"]::before,
+h1[data-heading="This note in GitHub"]::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--background-modifier-border);
+    margin-bottom: 10px;
+}
+/* Style Footer Links */
+span.git-footer {
+    display: block;
+    text-align: center;
+    bottom: 0;
+}
+.git-footer .external-link {
+    background-image: url();
+    padding-right: 0;
+    padding: 6px 15px;
+    background: var(--interactive-normal);
+    border-radius: 4px;
+    text-decoration: none;
+}
+.git-footer .external-link:hover {
+    background: var(--interactive-accent-hover);
+    color: var(--text-on-accent);
+}
+/* Footer Link Icons */
+.git-footer .external-link::before {
+    vertical-align: -3px;
+    padding-right: 4px;
+}
+.git-footer .external-link[title="git-hub-edit-note"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2017.25V21h3.75L17.81%209.94l-3.75-3.75L3%2017.25zM20.71%207.04a.996.996%200%200%200%200-1.41l-2.34-2.34a.996.996%200%200%200-1.41%200l-1.83%201.83l3.75%203.75l1.83-1.83z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E');
+}
+.git-footer .external-link[title="git-hub-copy-note"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M216%2032H88a8%208%200%200%200-8%208v40H40a8%208%200%200%200-8%208v128a8%208%200%200%200%208%208h128a8%208%200%200%200%208-8v-40h40a8%208%200%200%200%208-8V40a8%208%200%200%200-8-8zm-8%20128h-32V88a8%208%200%200%200-8-8H96V48h112z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E');
+}
+.git-footer .external-link[title="git-hub-download-vault"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%209h-4V3H9v6H5l7%207l7-7zM5%2018v2h14v-2H5z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E')
+}
+```
+
+## Yomaru.dev
+
+[yomaru.dev > 901 🏠 Home - Hananoshika Yomaru](https://yomaru.dev/home)
+
+```js
+var publish = (() => {
+  var Qn = Object.defineProperty,
+    zn = Object.defineProperties;
+  var Zn = Object.getOwnPropertyDescriptors;
+  var Be = Object.getOwnPropertySymbols;
+  var Jn = Object.prototype.hasOwnProperty,
+    Xn = Object.prototype.propertyIsEnumerable;
+  var qe = (e, n, i) =>
+      n in e
+        ? Qn(e, n, { enumerable: !0, configurable: !0, writable: !0, value: i })
+        : (e[n] = i),
+    Ye = (e, n) => {
+      for (var i in n || (n = {})) Jn.call(n, i) && qe(e, i, n[i]);
+      if (Be) for (var i of Be(n)) Xn.call(n, i) && qe(e, i, n[i]);
+      return e;
+    },
+    Ue = (e, n) => zn(e, Zn(n));
+  var ei = ((e) =>
+    typeof require != "undefined"
+      ? require
+      : typeof Proxy != "undefined"
+      ? new Proxy(e, {
+          get: (n, i) => (typeof require != "undefined" ? require : n)[i],
+        })
+      : e)(function (e) {
+    if (typeof require != "undefined") return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + e + '" is not supported');
+  });
+  var T = (e, n, i) =>
+    new Promise((r, t) => {
+      var l = (a) => {
+          try {
+            c(i.next(a));
+          } catch (u) {
+            t(u);
+          }
+        },
+        o = (a) => {
+          try {
+            c(i.throw(a));
+          } catch (u) {
+            t(u);
+          }
+        },
+        c = (a) => (a.done ? r(a.value) : Promise.resolve(a.value).then(l, o));
+      c((i = i.apply(e, n)).next());
+    });
+  var $e = () => {
+    (function (e, n, i) {
+      let r = function (l, o) {
+          l.q.push(o);
+        },
+        t = e.document;
+      e.Cal =
+        e.Cal ||
+        function () {
+          let l = e.Cal,
+            o = arguments;
+          if (
+            (l.loaded ||
+              ((l.ns = {}),
+              (l.q = l.q || []),
+              (t.head.appendChild(t.createElement("script")).src = n),
+              (l.loaded = !0)),
+            o[0] === i)
+          ) {
+            let c = function () {
+                r(c, arguments);
+              },
+              a = o[1];
+            (c.q = c.q || []),
+              typeof a == "string" ? (l.ns[a] = c) && r(c, o) : r(l, o);
+            return;
+          }
+          r(l, o);
+        };
+    })(window, "https://app.cal.com/embed/embed.js", "init"),
+      Cal("init", { origin: "https://cal.com" }),
+      Cal("ui", {
+        styles: { branding: { brandColor: "#000000" } },
+        hideEventTypeDetails: !1,
+        layout: "month_view",
+      });
+  };
+  var Ge = ei("obsidian/publish"),
+    ge = class extends Ge.MarkdownRenderChild {
+      constructor(i, r) {
+        super(i);
+        (this.text = r), this.load();
+      }
+      onload() {
+        var r;
+        let i = this.containerEl.createSpan({
+          text: (r = ge.ALL_EMOJIS[this.text]) != null ? r : this.text,
+        });
+        this.containerEl.replaceWith(i);
+      }
+    },
+    B = ge;
+  B.ALL_EMOJIS = {
+    ":+1:": "\u{1F44D}",
+    ":sunglasses:": "\u{1F60E}",
+    ":smile:": "\u{1F604}",
+  };
+  function an(e) {
+    return typeof e == "undefined" || e === null;
+  }
+  function ni(e) {
+    return typeof e == "object" && e !== null;
+  }
+  function ii(e) {
+    return Array.isArray(e) ? e : an(e) ? [] : [e];
+  }
+  function ri(e, n) {
+    var i, r, t, l;
+    if (n)
+      for (l = Object.keys(n), i = 0, r = l.length; i < r; i += 1)
+        (t = l[i]), (e[t] = n[t]);
+    return e;
+  }
+  function ti(e, n) {
+    var i = "",
+      r;
+    for (r = 0; r < n; r += 1) i += e;
+    return i;
+  }
+  function oi(e) {
+    return e === 0 && Number.NEGATIVE_INFINITY === 1 / e;
+  }
+  var li = an,
+    ci = ni,
+    ai = ii,
+    ui = ti,
+    si = oi,
+    di = ri,
+    b = {
+      isNothing: li,
+      isObject: ci,
+      toArray: ai,
+      repeat: ui,
+      isNegativeZero: si,
+      extend: di,
+    };
+  function un(e, n) {
+    var i = "",
+      r = e.reason || "(unknown reason)";
+    return e.mark
+      ? (e.mark.name && (i += 'in "' + e.mark.name + '" '),
+        (i += "(" + (e.mark.line + 1) + ":" + (e.mark.column + 1) + ")"),
+        !n &&
+          e.mark.snippet &&
+          (i +=
+            `
+
+` + e.mark.snippet),
+        r + " " + i)
+      : r;
+  }
+  function Y(e, n) {
+    Error.call(this),
+      (this.name = "YAMLException"),
+      (this.reason = e),
+      (this.mark = n),
+      (this.message = un(this, !1)),
+      Error.captureStackTrace
+        ? Error.captureStackTrace(this, this.constructor)
+        : (this.stack = new Error().stack || "");
+  }
+  Y.prototype = Object.create(Error.prototype);
+  Y.prototype.constructor = Y;
+  Y.prototype.toString = function (n) {
+    return this.name + ": " + un(this, n);
+  };
+  var w = Y;
+  function xe(e, n, i, r, t) {
+    var l = "",
+      o = "",
+      c = Math.floor(t / 2) - 1;
+    return (
+      r - n > c && ((l = " ... "), (n = r - c + l.length)),
+      i - r > c && ((o = " ..."), (i = r + c - o.length)),
+      {
+        str: l + e.slice(n, i).replace(/\t/g, "\u2192") + o,
+        pos: r - n + l.length,
+      }
+    );
+  }
+  function ve(e, n) {
+    return b.repeat(" ", n - e.length) + e;
+  }
+  function fi(e, n) {
+    if (((n = Object.create(n || null)), !e.buffer)) return null;
+    n.maxLength || (n.maxLength = 79),
+      typeof n.indent != "number" && (n.indent = 1),
+      typeof n.linesBefore != "number" && (n.linesBefore = 3),
+      typeof n.linesAfter != "number" && (n.linesAfter = 2);
+    for (
+      var i = /\r?\n|\r|\0/g, r = [0], t = [], l, o = -1;
+      (l = i.exec(e.buffer));
+
+    )
+      t.push(l.index),
+        r.push(l.index + l[0].length),
+        e.position <= l.index && o < 0 && (o = r.length - 2);
+    o < 0 && (o = r.length - 1);
+    var c = "",
+      a,
+      u,
+      d = Math.min(e.line + n.linesAfter, t.length).toString().length,
+      s = n.maxLength - (n.indent + d + 3);
+    for (a = 1; a <= n.linesBefore && !(o - a < 0); a++)
+      (u = xe(e.buffer, r[o - a], t[o - a], e.position - (r[o] - r[o - a]), s)),
+        (c =
+          b.repeat(" ", n.indent) +
+          ve((e.line - a + 1).toString(), d) +
+          " | " +
+          u.str +
+          `
+` +
+          c);
+    for (
+      u = xe(e.buffer, r[o], t[o], e.position, s),
+        c +=
+          b.repeat(" ", n.indent) +
+          ve((e.line + 1).toString(), d) +
+          " | " +
+          u.str +
+          `
+`,
+        c +=
+          b.repeat("-", n.indent + d + 3 + u.pos) +
+          `^
+`,
+        a = 1;
+      a <= n.linesAfter && !(o + a >= t.length);
+      a++
+    )
+      (u = xe(e.buffer, r[o + a], t[o + a], e.position - (r[o] - r[o + a]), s)),
+        (c +=
+          b.repeat(" ", n.indent) +
+          ve((e.line + a + 1).toString(), d) +
+          " | " +
+          u.str +
+          `
+`);
+    return c.replace(/\n$/, "");
+  }
+  var pi = fi,
+    hi = [
+      "kind",
+      "multi",
+      "resolve",
+      "construct",
+      "instanceOf",
+      "predicate",
+      "represent",
+      "representName",
+      "defaultStyle",
+      "styleAliases",
+    ],
+    mi = ["scalar", "sequence", "mapping"];
+  function gi(e) {
+    var n = {};
+    return (
+      e !== null &&
+        Object.keys(e).forEach(function (i) {
+          e[i].forEach(function (r) {
+            n[String(r)] = i;
+          });
+        }),
+      n
+    );
+  }
+  function xi(e, n) {
+    if (
+      ((n = n || {}),
+      Object.keys(n).forEach(function (i) {
+        if (hi.indexOf(i) === -1)
+          throw new w(
+            'Unknown option "' +
+              i +
+              '" is met in definition of "' +
+              e +
+              '" YAML type.'
+          );
+      }),
+      (this.options = n),
+      (this.tag = e),
+      (this.kind = n.kind || null),
+      (this.resolve =
+        n.resolve ||
+        function () {
+          return !0;
+        }),
+      (this.construct =
+        n.construct ||
+        function (i) {
+          return i;
+        }),
+      (this.instanceOf = n.instanceOf || null),
+      (this.predicate = n.predicate || null),
+      (this.represent = n.represent || null),
+      (this.representName = n.representName || null),
+      (this.defaultStyle = n.defaultStyle || null),
+      (this.multi = n.multi || !1),
+      (this.styleAliases = gi(n.styleAliases || null)),
+      mi.indexOf(this.kind) === -1)
+    )
+      throw new w(
+        'Unknown kind "' +
+          this.kind +
+          '" is specified for "' +
+          e +
+          '" YAML type.'
+      );
+  }
+  var E = xi;
+  function We(e, n) {
+    var i = [];
+    return (
+      e[n].forEach(function (r) {
+        var t = i.length;
+        i.forEach(function (l, o) {
+          l.tag === r.tag &&
+            l.kind === r.kind &&
+            l.multi === r.multi &&
+            (t = o);
+        }),
+          (i[t] = r);
+      }),
+      i
+    );
+  }
+  function vi() {
+    var e = {
+        scalar: {},
+        sequence: {},
+        mapping: {},
+        fallback: {},
+        multi: { scalar: [], sequence: [], mapping: [], fallback: [] },
+      },
+      n,
+      i;
+    function r(t) {
+      t.multi
+        ? (e.multi[t.kind].push(t), e.multi.fallback.push(t))
+        : (e[t.kind][t.tag] = e.fallback[t.tag] = t);
+    }
+    for (n = 0, i = arguments.length; n < i; n += 1) arguments[n].forEach(r);
+    return e;
+  }
+  function be(e) {
+    return this.extend(e);
+  }
+  be.prototype.extend = function (n) {
+    var i = [],
+      r = [];
+    if (n instanceof E) r.push(n);
+    else if (Array.isArray(n)) r = r.concat(n);
+    else if (n && (Array.isArray(n.implicit) || Array.isArray(n.explicit)))
+      n.implicit && (i = i.concat(n.implicit)),
+        n.explicit && (r = r.concat(n.explicit));
+    else
+      throw new w(
+        "Schema.extend argument should be a Type, [ Type ], or a schema definition ({ implicit: [...], explicit: [...] })"
+      );
+    i.forEach(function (l) {
+      if (!(l instanceof E))
+        throw new w(
+          "Specified list of YAML types (or a single Type object) contains a non-Type object."
+        );
+      if (l.loadKind && l.loadKind !== "scalar")
+        throw new w(
+          "There is a non-scalar type in the implicit list of a schema. Implicit resolving of such types is not supported."
+        );
+      if (l.multi)
+        throw new w(
+          "There is a multi type in the implicit list of a schema. Multi tags can only be listed as explicit."
+        );
+    }),
+      r.forEach(function (l) {
+        if (!(l instanceof E))
+          throw new w(
+            "Specified list of YAML types (or a single Type object) contains a non-Type object."
+          );
+      });
+    var t = Object.create(be.prototype);
+    return (
+      (t.implicit = (this.implicit || []).concat(i)),
+      (t.explicit = (this.explicit || []).concat(r)),
+      (t.compiledImplicit = We(t, "implicit")),
+      (t.compiledExplicit = We(t, "explicit")),
+      (t.compiledTypeMap = vi(t.compiledImplicit, t.compiledExplicit)),
+      t
+    );
+  };
+  var yi = be,
+    bi = new E("tag:yaml.org,2002:str", {
+      kind: "scalar",
+      construct: function (e) {
+        return e !== null ? e : "";
+      },
+    }),
+    Ei = new E("tag:yaml.org,2002:seq", {
+      kind: "sequence",
+      construct: function (e) {
+        return e !== null ? e : [];
+      },
+    }),
+    Ai = new E("tag:yaml.org,2002:map", {
+      kind: "mapping",
+      construct: function (e) {
+        return e !== null ? e : {};
+      },
+    }),
+    wi = new yi({ explicit: [bi, Ei, Ai] });
+  function Ci(e) {
+    if (e === null) return !0;
+    var n = e.length;
+    return (
+      (n === 1 && e === "~") ||
+      (n === 4 && (e === "null" || e === "Null" || e === "NULL"))
+    );
+  }
+  function Si() {
+    return null;
+  }
+  function ki(e) {
+    return e === null;
+  }
+  var Li = new E("tag:yaml.org,2002:null", {
+    kind: "scalar",
+    resolve: Ci,
+    construct: Si,
+    predicate: ki,
+    represent: {
+      canonical: function () {
+        return "~";
+      },
+      lowercase: function () {
+        return "null";
+      },
+      uppercase: function () {
+        return "NULL";
+      },
+      camelcase: function () {
+        return "Null";
+      },
+      empty: function () {
+        return "";
+      },
+    },
+    defaultStyle: "lowercase",
+  });
+  function Ti(e) {
+    if (e === null) return !1;
+    var n = e.length;
+    return (
+      (n === 4 && (e === "true" || e === "True" || e === "TRUE")) ||
+      (n === 5 && (e === "false" || e === "False" || e === "FALSE"))
+    );
+  }
+  function _i(e) {
+    return e === "true" || e === "True" || e === "TRUE";
+  }
+  function Fi(e) {
+    return Object.prototype.toString.call(e) === "[object Boolean]";
+  }
+  var Mi = new E("tag:yaml.org,2002:bool", {
+    kind: "scalar",
+    resolve: Ti,
+    construct: _i,
+    predicate: Fi,
+    represent: {
+      lowercase: function (e) {
+        return e ? "true" : "false";
+      },
+      uppercase: function (e) {
+        return e ? "TRUE" : "FALSE";
+      },
+      camelcase: function (e) {
+        return e ? "True" : "False";
+      },
+    },
+    defaultStyle: "lowercase",
+  });
+  function Ii(e) {
+    return (
+      (48 <= e && e <= 57) || (65 <= e && e <= 70) || (97 <= e && e <= 102)
+    );
+  }
+  function Oi(e) {
+    return 48 <= e && e <= 55;
+  }
+  function Ni(e) {
+    return 48 <= e && e <= 57;
+  }
+  function Di(e) {
+    if (e === null) return !1;
+    var n = e.length,
+      i = 0,
+      r = !1,
+      t;
+    if (!n) return !1;
+    if (((t = e[i]), (t === "-" || t === "+") && (t = e[++i]), t === "0")) {
+      if (i + 1 === n) return !0;
+      if (((t = e[++i]), t === "b")) {
+        for (i++; i < n; i++)
+          if (((t = e[i]), t !== "_")) {
+            if (t !== "0" && t !== "1") return !1;
+            r = !0;
+          }
+        return r && t !== "_";
+      }
+      if (t === "x") {
+        for (i++; i < n; i++)
+          if (((t = e[i]), t !== "_")) {
+            if (!Ii(e.charCodeAt(i))) return !1;
+            r = !0;
+          }
+        return r && t !== "_";
+      }
+      if (t === "o") {
+        for (i++; i < n; i++)
+          if (((t = e[i]), t !== "_")) {
+            if (!Oi(e.charCodeAt(i))) return !1;
+            r = !0;
+          }
+        return r && t !== "_";
+      }
+    }
+    if (t === "_") return !1;
+    for (; i < n; i++)
+      if (((t = e[i]), t !== "_")) {
+        if (!Ni(e.charCodeAt(i))) return !1;
+        r = !0;
+      }
+    return !(!r || t === "_");
+  }
+  function Ri(e) {
+    var n = e,
+      i = 1,
+      r;
+    if (
+      (n.indexOf("_") !== -1 && (n = n.replace(/_/g, "")),
+      (r = n[0]),
+      (r === "-" || r === "+") &&
+        (r === "-" && (i = -1), (n = n.slice(1)), (r = n[0])),
+      n === "0")
+    )
+      return 0;
+    if (r === "0") {
+      if (n[1] === "b") return i * parseInt(n.slice(2), 2);
+      if (n[1] === "x") return i * parseInt(n.slice(2), 16);
+      if (n[1] === "o") return i * parseInt(n.slice(2), 8);
+    }
+    return i * parseInt(n, 10);
+  }
+  function ji(e) {
+    return (
+      Object.prototype.toString.call(e) === "[object Number]" &&
+      e % 1 === 0 &&
+      !b.isNegativeZero(e)
+    );
+  }
+  var Hi = new E("tag:yaml.org,2002:int", {
+      kind: "scalar",
+      resolve: Di,
+      construct: Ri,
+      predicate: ji,
+      represent: {
+        binary: function (e) {
+          return e >= 0 ? "0b" + e.toString(2) : "-0b" + e.toString(2).slice(1);
+        },
+        octal: function (e) {
+          return e >= 0 ? "0o" + e.toString(8) : "-0o" + e.toString(8).slice(1);
+        },
+        decimal: function (e) {
+          return e.toString(10);
+        },
+        hexadecimal: function (e) {
+          return e >= 0
+            ? "0x" + e.toString(16).toUpperCase()
+            : "-0x" + e.toString(16).toUpperCase().slice(1);
+        },
+      },
+      defaultStyle: "decimal",
+      styleAliases: {
+        binary: [2, "bin"],
+        octal: [8, "oct"],
+        decimal: [10, "dec"],
+        hexadecimal: [16, "hex"],
+      },
+    }),
+    Pi = new RegExp(
+      "^(?:[-+]?(?:[0-9][0-9_]*)(?:\\.[0-9_]*)?(?:[eE][-+]?[0-9]+)?|\\.[0-9_]+(?:[eE][-+]?[0-9]+)?|[-+]?\\.(?:inf|Inf|INF)|\\.(?:nan|NaN|NAN))$"
+    );
+  function Bi(e) {
+    return !(e === null || !Pi.test(e) || e[e.length - 1] === "_");
+  }
+  function qi(e) {
+    var n, i;
+    return (
+      (n = e.replace(/_/g, "").toLowerCase()),
+      (i = n[0] === "-" ? -1 : 1),
+      "+-".indexOf(n[0]) >= 0 && (n = n.slice(1)),
+      n === ".inf"
+        ? i === 1
+          ? Number.POSITIVE_INFINITY
+          : Number.NEGATIVE_INFINITY
+        : n === ".nan"
+        ? NaN
+        : i * parseFloat(n, 10)
+    );
+  }
+  var Yi = /^[-+]?[0-9]+e/;
+  function Ui(e, n) {
+    var i;
+    if (isNaN(e))
+      switch (n) {
+        case "lowercase":
+          return ".nan";
+        case "uppercase":
+          return ".NAN";
+        case "camelcase":
+          return ".NaN";
+      }
+    else if (Number.POSITIVE_INFINITY === e)
+      switch (n) {
+        case "lowercase":
+          return ".inf";
+        case "uppercase":
+          return ".INF";
+        case "camelcase":
+          return ".Inf";
+      }
+    else if (Number.NEGATIVE_INFINITY === e)
+      switch (n) {
+        case "lowercase":
+          return "-.inf";
+        case "uppercase":
+          return "-.INF";
+        case "camelcase":
+          return "-.Inf";
+      }
+    else if (b.isNegativeZero(e)) return "-0.0";
+    return (i = e.toString(10)), Yi.test(i) ? i.replace("e", ".e") : i;
+  }
+  function $i(e) {
+    return (
+      Object.prototype.toString.call(e) === "[object Number]" &&
+      (e % 1 !== 0 || b.isNegativeZero(e))
+    );
+  }
+  var Gi = new E("tag:yaml.org,2002:float", {
+      kind: "scalar",
+      resolve: Bi,
+      construct: qi,
+      predicate: $i,
+      represent: Ui,
+      defaultStyle: "lowercase",
+    }),
+    Wi = wi.extend({ implicit: [Li, Mi, Hi, Gi] }),
+    Ki = Wi,
+    sn = new RegExp("^([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])$"),
+    dn = new RegExp(
+      "^([0-9][0-9][0-9][0-9])-([0-9][0-9]?)-([0-9][0-9]?)(?:[Tt]|[ \\t]+)([0-9][0-9]?):([0-9][0-9]):([0-9][0-9])(?:\\.([0-9]*))?(?:[ \\t]*(Z|([-+])([0-9][0-9]?)(?::([0-9][0-9]))?))?$"
+    );
+  function Vi(e) {
+    return e === null ? !1 : sn.exec(e) !== null || dn.exec(e) !== null;
+  }
+  function Qi(e) {
+    var n,
+      i,
+      r,
+      t,
+      l,
+      o,
+      c,
+      a = 0,
+      u = null,
+      d,
+      s,
+      p;
+    if (((n = sn.exec(e)), n === null && (n = dn.exec(e)), n === null))
+      throw new Error("Date resolve error");
+    if (((i = +n[1]), (r = +n[2] - 1), (t = +n[3]), !n[4]))
+      return new Date(Date.UTC(i, r, t));
+    if (((l = +n[4]), (o = +n[5]), (c = +n[6]), n[7])) {
+      for (a = n[7].slice(0, 3); a.length < 3; ) a += "0";
+      a = +a;
+    }
+    return (
+      n[9] &&
+        ((d = +n[10]),
+        (s = +(n[11] || 0)),
+        (u = (d * 60 + s) * 6e4),
+        n[9] === "-" && (u = -u)),
+      (p = new Date(Date.UTC(i, r, t, l, o, c, a))),
+      u && p.setTime(p.getTime() - u),
+      p
+    );
+  }
+  function zi(e) {
+    return e.toISOString();
+  }
+  var Zi = new E("tag:yaml.org,2002:timestamp", {
+    kind: "scalar",
+    resolve: Vi,
+    construct: Qi,
+    instanceOf: Date,
+    represent: zi,
+  });
+  function Ji(e) {
+    return e === "<<" || e === null;
+  }
+  var Xi = new E("tag:yaml.org,2002:merge", { kind: "scalar", resolve: Ji }),
+    Se = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+\r`;
+  function er(e) {
+    if (e === null) return !1;
+    var n,
+      i,
+      r = 0,
+      t = e.length,
+      l = Se;
+    for (i = 0; i < t; i++)
+      if (((n = l.indexOf(e.charAt(i))), !(n > 64))) {
+        if (n < 0) return !1;
+        r += 6;
+      }
+    return r % 8 === 0;
+  }
+  function nr(e) {
+    var n,
+      i,
+      r = e.replace(/[\r\n=]/g, ""),
+      t = r.length,
+      l = Se,
+      o = 0,
+      c = [];
+    for (n = 0; n < t; n++)
+      n % 4 === 0 &&
+        n &&
+        (c.push((o >> 16) & 255), c.push((o >> 8) & 255), c.push(o & 255)),
+        (o = (o << 6) | l.indexOf(r.charAt(n)));
+    return (
+      (i = (t % 4) * 6),
+      i === 0
+        ? (c.push((o >> 16) & 255), c.push((o >> 8) & 255), c.push(o & 255))
+        : i === 18
+        ? (c.push((o >> 10) & 255), c.push((o >> 2) & 255))
+        : i === 12 && c.push((o >> 4) & 255),
+      new Uint8Array(c)
+    );
+  }
+  function ir(e) {
+    var n = "",
+      i = 0,
+      r,
+      t,
+      l = e.length,
+      o = Se;
+    for (r = 0; r < l; r++)
+      r % 3 === 0 &&
+        r &&
+        ((n += o[(i >> 18) & 63]),
+        (n += o[(i >> 12) & 63]),
+        (n += o[(i >> 6) & 63]),
+        (n += o[i & 63])),
+        (i = (i << 8) + e[r]);
+    return (
+      (t = l % 3),
+      t === 0
+        ? ((n += o[(i >> 18) & 63]),
+          (n += o[(i >> 12) & 63]),
+          (n += o[(i >> 6) & 63]),
+          (n += o[i & 63]))
+        : t === 2
+        ? ((n += o[(i >> 10) & 63]),
+          (n += o[(i >> 4) & 63]),
+          (n += o[(i << 2) & 63]),
+          (n += o[64]))
+        : t === 1 &&
+          ((n += o[(i >> 2) & 63]),
+          (n += o[(i << 4) & 63]),
+          (n += o[64]),
+          (n += o[64])),
+      n
+    );
+  }
+  function rr(e) {
+    return Object.prototype.toString.call(e) === "[object Uint8Array]";
+  }
+  var tr = new E("tag:yaml.org,2002:binary", {
+      kind: "scalar",
+      resolve: er,
+      construct: nr,
+      predicate: rr,
+      represent: ir,
+    }),
+    or = Object.prototype.hasOwnProperty,
+    lr = Object.prototype.toString;
+  function cr(e) {
+    if (e === null) return !0;
+    var n = [],
+      i,
+      r,
+      t,
+      l,
+      o,
+      c = e;
+    for (i = 0, r = c.length; i < r; i += 1) {
+      if (((t = c[i]), (o = !1), lr.call(t) !== "[object Object]")) return !1;
+      for (l in t)
+        if (or.call(t, l))
+          if (!o) o = !0;
+          else return !1;
+      if (!o) return !1;
+      if (n.indexOf(l) === -1) n.push(l);
+      else return !1;
+    }
+    return !0;
+  }
+  function ar(e) {
+    return e !== null ? e : [];
+  }
+  var ur = new E("tag:yaml.org,2002:omap", {
+      kind: "sequence",
+      resolve: cr,
+      construct: ar,
+    }),
+    sr = Object.prototype.toString;
+  function dr(e) {
+    if (e === null) return !0;
+    var n,
+      i,
+      r,
+      t,
+      l,
+      o = e;
+    for (l = new Array(o.length), n = 0, i = o.length; n < i; n += 1) {
+      if (
+        ((r = o[n]),
+        sr.call(r) !== "[object Object]" ||
+          ((t = Object.keys(r)), t.length !== 1))
+      )
+        return !1;
+      l[n] = [t[0], r[t[0]]];
+    }
+    return !0;
+  }
+  function fr(e) {
+    if (e === null) return [];
+    var n,
+      i,
+      r,
+      t,
+      l,
+      o = e;
+    for (l = new Array(o.length), n = 0, i = o.length; n < i; n += 1)
+      (r = o[n]), (t = Object.keys(r)), (l[n] = [t[0], r[t[0]]]);
+    return l;
+  }
+  var pr = new E("tag:yaml.org,2002:pairs", {
+      kind: "sequence",
+      resolve: dr,
+      construct: fr,
+    }),
+    hr = Object.prototype.hasOwnProperty;
+  function mr(e) {
+    if (e === null) return !0;
+    var n,
+      i = e;
+    for (n in i) if (hr.call(i, n) && i[n] !== null) return !1;
+    return !0;
+  }
+  function gr(e) {
+    return e !== null ? e : {};
+  }
+  var xr = new E("tag:yaml.org,2002:set", {
+      kind: "mapping",
+      resolve: mr,
+      construct: gr,
+    }),
+    fn = Ki.extend({ implicit: [Zi, Xi], explicit: [tr, ur, pr, xr] }),
+    F = Object.prototype.hasOwnProperty,
+    J = 1,
+    pn = 2,
+    hn = 3,
+    X = 4,
+    ye = 1,
+    vr = 2,
+    Ke = 3,
+    yr =
+      /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x84\x86-\x9F\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/,
+    br = /[\x85\u2028\u2029]/,
+    Er = /[,\[\]\{\}]/,
+    mn = /^(?:!|!!|![a-z\-]+!)$/i,
+    gn =
+      /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i;
+  function Ve(e) {
+    return Object.prototype.toString.call(e);
+  }
+  function k(e) {
+    return e === 10 || e === 13;
+  }
+  function I(e) {
+    return e === 9 || e === 32;
+  }
+  function C(e) {
+    return e === 9 || e === 32 || e === 10 || e === 13;
+  }
+  function D(e) {
+    return e === 44 || e === 91 || e === 93 || e === 123 || e === 125;
+  }
+  function Ar(e) {
+    var n;
+    return 48 <= e && e <= 57
+      ? e - 48
+      : ((n = e | 32), 97 <= n && n <= 102 ? n - 97 + 10 : -1);
+  }
+  function wr(e) {
+    return e === 120 ? 2 : e === 117 ? 4 : e === 85 ? 8 : 0;
+  }
+  function Cr(e) {
+    return 48 <= e && e <= 57 ? e - 48 : -1;
+  }
+  function Qe(e) {
+    return e === 48
+      ? "\0"
+      : e === 97
+      ? "\x07"
+      : e === 98
+      ? "\b"
+      : e === 116 || e === 9
+      ? "	"
+      : e === 110
+      ? `
+`
+      : e === 118
+      ? "\v"
+      : e === 102
+      ? "\f"
+      : e === 114
+      ? "\r"
+      : e === 101
+      ? "\x1B"
+      : e === 32
+      ? " "
+      : e === 34
+      ? '"'
+      : e === 47
+      ? "/"
+      : e === 92
+      ? "\\"
+      : e === 78
+      ? "\x85"
+      : e === 95
+      ? "\xA0"
+      : e === 76
+      ? "\u2028"
+      : e === 80
+      ? "\u2029"
+      : "";
+  }
+  function Sr(e) {
+    return e <= 65535
+      ? String.fromCharCode(e)
+      : String.fromCharCode(
+          ((e - 65536) >> 10) + 55296,
+          ((e - 65536) & 1023) + 56320
+        );
+  }
+  var xn = new Array(256),
+    vn = new Array(256);
+  for (M = 0; M < 256; M++) (xn[M] = Qe(M) ? 1 : 0), (vn[M] = Qe(M));
+  var M;
+  function kr(e, n) {
+    (this.input = e),
+      (this.filename = n.filename || null),
+      (this.schema = n.schema || fn),
+      (this.onWarning = n.onWarning || null),
+      (this.legacy = n.legacy || !1),
+      (this.json = n.json || !1),
+      (this.listener = n.listener || null),
+      (this.implicitTypes = this.schema.compiledImplicit),
+      (this.typeMap = this.schema.compiledTypeMap),
+      (this.length = e.length),
+      (this.position = 0),
+      (this.line = 0),
+      (this.lineStart = 0),
+      (this.lineIndent = 0),
+      (this.firstTabInLine = -1),
+      (this.documents = []);
+  }
+  function yn(e, n) {
+    var i = {
+      name: e.filename,
+      buffer: e.input.slice(0, -1),
+      position: e.position,
+      line: e.line,
+      column: e.position - e.lineStart,
+    };
+    return (i.snippet = pi(i)), new w(n, i);
+  }
+  function f(e, n) {
+    throw yn(e, n);
+  }
+  function ee(e, n) {
+    e.onWarning && e.onWarning.call(null, yn(e, n));
+  }
+  var ze = {
+    YAML: function (n, i, r) {
+      var t, l, o;
+      n.version !== null && f(n, "duplication of %YAML directive"),
+        r.length !== 1 && f(n, "YAML directive accepts exactly one argument"),
+        (t = /^([0-9]+)\.([0-9]+)$/.exec(r[0])),
+        t === null && f(n, "ill-formed argument of the YAML directive"),
+        (l = parseInt(t[1], 10)),
+        (o = parseInt(t[2], 10)),
+        l !== 1 && f(n, "unacceptable YAML version of the document"),
+        (n.version = r[0]),
+        (n.checkLineBreaks = o < 2),
+        o !== 1 && o !== 2 && ee(n, "unsupported YAML version of the document");
+    },
+    TAG: function (n, i, r) {
+      var t, l;
+      r.length !== 2 && f(n, "TAG directive accepts exactly two arguments"),
+        (t = r[0]),
+        (l = r[1]),
+        mn.test(t) ||
+          f(n, "ill-formed tag handle (first argument) of the TAG directive"),
+        F.call(n.tagMap, t) &&
+          f(
+            n,
+            'there is a previously declared suffix for "' + t + '" tag handle'
+          ),
+        gn.test(l) ||
+          f(n, "ill-formed tag prefix (second argument) of the TAG directive");
+      try {
+        l = decodeURIComponent(l);
+      } catch (o) {
+        f(n, "tag prefix is malformed: " + l);
+      }
+      n.tagMap[t] = l;
+    },
+  };
+  function _(e, n, i, r) {
+    var t, l, o, c;
+    if (n < i) {
+      if (((c = e.input.slice(n, i)), r))
+        for (t = 0, l = c.length; t < l; t += 1)
+          (o = c.charCodeAt(t)),
+            o === 9 ||
+              (32 <= o && o <= 1114111) ||
+              f(e, "expected valid JSON character");
+      else yr.test(c) && f(e, "the stream contains non-printable characters");
+      e.result += c;
+    }
+  }
+  function Ze(e, n, i, r) {
+    var t, l, o, c;
+    for (
+      b.isObject(i) ||
+        f(
+          e,
+          "cannot merge mappings; the provided source object is unacceptable"
+        ),
+        t = Object.keys(i),
+        o = 0,
+        c = t.length;
+      o < c;
+      o += 1
+    )
+      (l = t[o]), F.call(n, l) || ((n[l] = i[l]), (r[l] = !0));
+  }
+  function R(e, n, i, r, t, l, o, c, a) {
+    var u, d;
+    if (Array.isArray(t))
+      for (
+        t = Array.prototype.slice.call(t), u = 0, d = t.length;
+        u < d;
+        u += 1
+      )
+        Array.isArray(t[u]) &&
+          f(e, "nested arrays are not supported inside keys"),
+          typeof t == "object" &&
+            Ve(t[u]) === "[object Object]" &&
+            (t[u] = "[object Object]");
+    if (
+      (typeof t == "object" &&
+        Ve(t) === "[object Object]" &&
+        (t = "[object Object]"),
+      (t = String(t)),
+      n === null && (n = {}),
+      r === "tag:yaml.org,2002:merge")
+    )
+      if (Array.isArray(l))
+        for (u = 0, d = l.length; u < d; u += 1) Ze(e, n, l[u], i);
+      else Ze(e, n, l, i);
+    else
+      !e.json &&
+        !F.call(i, t) &&
+        F.call(n, t) &&
+        ((e.line = o || e.line),
+        (e.lineStart = c || e.lineStart),
+        (e.position = a || e.position),
+        f(e, "duplicated mapping key")),
+        t === "__proto__"
+          ? Object.defineProperty(n, t, {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              value: l,
+            })
+          : (n[t] = l),
+        delete i[t];
+    return n;
+  }
+  function ke(e) {
+    var n;
+    (n = e.input.charCodeAt(e.position)),
+      n === 10
+        ? e.position++
+        : n === 13
+        ? (e.position++, e.input.charCodeAt(e.position) === 10 && e.position++)
+        : f(e, "a line break is expected"),
+      (e.line += 1),
+      (e.lineStart = e.position),
+      (e.firstTabInLine = -1);
+  }
+  function y(e, n, i) {
+    for (var r = 0, t = e.input.charCodeAt(e.position); t !== 0; ) {
+      for (; I(t); )
+        t === 9 && e.firstTabInLine === -1 && (e.firstTabInLine = e.position),
+          (t = e.input.charCodeAt(++e.position));
+      if (n && t === 35)
+        do t = e.input.charCodeAt(++e.position);
+        while (t !== 10 && t !== 13 && t !== 0);
+      if (k(t))
+        for (
+          ke(e), t = e.input.charCodeAt(e.position), r++, e.lineIndent = 0;
+          t === 32;
+
+        )
+          e.lineIndent++, (t = e.input.charCodeAt(++e.position));
+      else break;
+    }
+    return (
+      i !== -1 && r !== 0 && e.lineIndent < i && ee(e, "deficient indentation"),
+      r
+    );
+  }
+  function re(e) {
+    var n = e.position,
+      i;
+    return (
+      (i = e.input.charCodeAt(n)),
+      !!(
+        (i === 45 || i === 46) &&
+        i === e.input.charCodeAt(n + 1) &&
+        i === e.input.charCodeAt(n + 2) &&
+        ((n += 3), (i = e.input.charCodeAt(n)), i === 0 || C(i))
+      )
+    );
+  }
+  function Le(e, n) {
+    n === 1
+      ? (e.result += " ")
+      : n > 1 &&
+        (e.result += b.repeat(
+          `
+`,
+          n - 1
+        ));
+  }
+  function Lr(e, n, i) {
+    var r,
+      t,
+      l,
+      o,
+      c,
+      a,
+      u,
+      d,
+      s = e.kind,
+      p = e.result,
+      h;
+    if (
+      ((h = e.input.charCodeAt(e.position)),
+      C(h) ||
+        D(h) ||
+        h === 35 ||
+        h === 38 ||
+        h === 42 ||
+        h === 33 ||
+        h === 124 ||
+        h === 62 ||
+        h === 39 ||
+        h === 34 ||
+        h === 37 ||
+        h === 64 ||
+        h === 96 ||
+        ((h === 63 || h === 45) &&
+          ((t = e.input.charCodeAt(e.position + 1)), C(t) || (i && D(t)))))
+    )
+      return !1;
+    for (
+      e.kind = "scalar", e.result = "", l = o = e.position, c = !1;
+      h !== 0;
+
+    ) {
+      if (h === 58) {
+        if (((t = e.input.charCodeAt(e.position + 1)), C(t) || (i && D(t))))
+          break;
+      } else if (h === 35) {
+        if (((r = e.input.charCodeAt(e.position - 1)), C(r))) break;
+      } else {
+        if ((e.position === e.lineStart && re(e)) || (i && D(h))) break;
+        if (k(h))
+          if (
+            ((a = e.line),
+            (u = e.lineStart),
+            (d = e.lineIndent),
+            y(e, !1, -1),
+            e.lineIndent >= n)
+          ) {
+            (c = !0), (h = e.input.charCodeAt(e.position));
+            continue;
+          } else {
+            (e.position = o),
+              (e.line = a),
+              (e.lineStart = u),
+              (e.lineIndent = d);
+            break;
+          }
+      }
+      c && (_(e, l, o, !1), Le(e, e.line - a), (l = o = e.position), (c = !1)),
+        I(h) || (o = e.position + 1),
+        (h = e.input.charCodeAt(++e.position));
+    }
+    return _(e, l, o, !1), e.result ? !0 : ((e.kind = s), (e.result = p), !1);
+  }
+  function Tr(e, n) {
+    var i, r, t;
+    if (((i = e.input.charCodeAt(e.position)), i !== 39)) return !1;
+    for (
+      e.kind = "scalar", e.result = "", e.position++, r = t = e.position;
+      (i = e.input.charCodeAt(e.position)) !== 0;
+
+    )
+      if (i === 39)
+        if (
+          (_(e, r, e.position, !0),
+          (i = e.input.charCodeAt(++e.position)),
+          i === 39)
+        )
+          (r = e.position), e.position++, (t = e.position);
+        else return !0;
+      else
+        k(i)
+          ? (_(e, r, t, !0), Le(e, y(e, !1, n)), (r = t = e.position))
+          : e.position === e.lineStart && re(e)
+          ? f(e, "unexpected end of the document within a single quoted scalar")
+          : (e.position++, (t = e.position));
+    f(e, "unexpected end of the stream within a single quoted scalar");
+  }
+  function _r(e, n) {
+    var i, r, t, l, o, c;
+    if (((c = e.input.charCodeAt(e.position)), c !== 34)) return !1;
+    for (
+      e.kind = "scalar", e.result = "", e.position++, i = r = e.position;
+      (c = e.input.charCodeAt(e.position)) !== 0;
+
+    ) {
+      if (c === 34) return _(e, i, e.position, !0), e.position++, !0;
+      if (c === 92) {
+        if (
+          (_(e, i, e.position, !0),
+          (c = e.input.charCodeAt(++e.position)),
+          k(c))
+        )
+          y(e, !1, n);
+        else if (c < 256 && xn[c]) (e.result += vn[c]), e.position++;
+        else if ((o = wr(c)) > 0) {
+          for (t = o, l = 0; t > 0; t--)
+            (c = e.input.charCodeAt(++e.position)),
+              (o = Ar(c)) >= 0
+                ? (l = (l << 4) + o)
+                : f(e, "expected hexadecimal character");
+          (e.result += Sr(l)), e.position++;
+        } else f(e, "unknown escape sequence");
+        i = r = e.position;
+      } else
+        k(c)
+          ? (_(e, i, r, !0), Le(e, y(e, !1, n)), (i = r = e.position))
+          : e.position === e.lineStart && re(e)
+          ? f(e, "unexpected end of the document within a double quoted scalar")
+          : (e.position++, (r = e.position));
+    }
+    f(e, "unexpected end of the stream within a double quoted scalar");
+  }
+  function Fr(e, n) {
+    var i = !0,
+      r,
+      t,
+      l,
+      o = e.tag,
+      c,
+      a = e.anchor,
+      u,
+      d,
+      s,
+      p,
+      h,
+      m = Object.create(null),
+      x,
+      v,
+      S,
+      g;
+    if (((g = e.input.charCodeAt(e.position)), g === 91))
+      (d = 93), (h = !1), (c = []);
+    else if (g === 123) (d = 125), (h = !0), (c = {});
+    else return !1;
+    for (
+      e.anchor !== null && (e.anchorMap[e.anchor] = c),
+        g = e.input.charCodeAt(++e.position);
+      g !== 0;
+
+    ) {
+      if ((y(e, !0, n), (g = e.input.charCodeAt(e.position)), g === d))
+        return (
+          e.position++,
+          (e.tag = o),
+          (e.anchor = a),
+          (e.kind = h ? "mapping" : "sequence"),
+          (e.result = c),
+          !0
+        );
+      i
+        ? g === 44 && f(e, "expected the node content, but found ','")
+        : f(e, "missed comma between flow collection entries"),
+        (v = x = S = null),
+        (s = p = !1),
+        g === 63 &&
+          ((u = e.input.charCodeAt(e.position + 1)),
+          C(u) && ((s = p = !0), e.position++, y(e, !0, n))),
+        (r = e.line),
+        (t = e.lineStart),
+        (l = e.position),
+        j(e, n, J, !1, !0),
+        (v = e.tag),
+        (x = e.result),
+        y(e, !0, n),
+        (g = e.input.charCodeAt(e.position)),
+        (p || e.line === r) &&
+          g === 58 &&
+          ((s = !0),
+          (g = e.input.charCodeAt(++e.position)),
+          y(e, !0, n),
+          j(e, n, J, !1, !0),
+          (S = e.result)),
+        h
+          ? R(e, c, m, v, x, S, r, t, l)
+          : s
+          ? c.push(R(e, null, m, v, x, S, r, t, l))
+          : c.push(x),
+        y(e, !0, n),
+        (g = e.input.charCodeAt(e.position)),
+        g === 44
+          ? ((i = !0), (g = e.input.charCodeAt(++e.position)))
+          : (i = !1);
+    }
+    f(e, "unexpected end of the stream within a flow collection");
+  }
+  function Mr(e, n) {
+    var i,
+      r,
+      t = ye,
+      l = !1,
+      o = !1,
+      c = n,
+      a = 0,
+      u = !1,
+      d,
+      s;
+    if (((s = e.input.charCodeAt(e.position)), s === 124)) r = !1;
+    else if (s === 62) r = !0;
+    else return !1;
+    for (e.kind = "scalar", e.result = ""; s !== 0; )
+      if (((s = e.input.charCodeAt(++e.position)), s === 43 || s === 45))
+        ye === t
+          ? (t = s === 43 ? Ke : vr)
+          : f(e, "repeat of a chomping mode identifier");
+      else if ((d = Cr(s)) >= 0)
+        d === 0
+          ? f(
+              e,
+              "bad explicit indentation width of a block scalar; it cannot be less than one"
+            )
+          : o
+          ? f(e, "repeat of an indentation width identifier")
+          : ((c = n + d - 1), (o = !0));
+      else break;
+    if (I(s)) {
+      do s = e.input.charCodeAt(++e.position);
+      while (I(s));
+      if (s === 35)
+        do s = e.input.charCodeAt(++e.position);
+        while (!k(s) && s !== 0);
+    }
+    for (; s !== 0; ) {
+      for (
+        ke(e), e.lineIndent = 0, s = e.input.charCodeAt(e.position);
+        (!o || e.lineIndent < c) && s === 32;
+
+      )
+        e.lineIndent++, (s = e.input.charCodeAt(++e.position));
+      if ((!o && e.lineIndent > c && (c = e.lineIndent), k(s))) {
+        a++;
+        continue;
+      }
+      if (e.lineIndent < c) {
+        t === Ke
+          ? (e.result += b.repeat(
+              `
+`,
+              l ? 1 + a : a
+            ))
+          : t === ye &&
+            l &&
+            (e.result += `
+`);
+        break;
+      }
+      for (
+        r
+          ? I(s)
+            ? ((u = !0),
+              (e.result += b.repeat(
+                `
+`,
+                l ? 1 + a : a
+              )))
+            : u
+            ? ((u = !1),
+              (e.result += b.repeat(
+                `
+`,
+                a + 1
+              )))
+            : a === 0
+            ? l && (e.result += " ")
+            : (e.result += b.repeat(
+                `
+`,
+                a
+              ))
+          : (e.result += b.repeat(
+              `
+`,
+              l ? 1 + a : a
+            )),
+          l = !0,
+          o = !0,
+          a = 0,
+          i = e.position;
+        !k(s) && s !== 0;
+
+      )
+        s = e.input.charCodeAt(++e.position);
+      _(e, i, e.position, !1);
+    }
+    return !0;
+  }
+  function Je(e, n) {
+    var i,
+      r = e.tag,
+      t = e.anchor,
+      l = [],
+      o,
+      c = !1,
+      a;
+    if (e.firstTabInLine !== -1) return !1;
+    for (
+      e.anchor !== null && (e.anchorMap[e.anchor] = l),
+        a = e.input.charCodeAt(e.position);
+      a !== 0 &&
+      (e.firstTabInLine !== -1 &&
+        ((e.position = e.firstTabInLine),
+        f(e, "tab characters must not be used in indentation")),
+      !(a !== 45 || ((o = e.input.charCodeAt(e.position + 1)), !C(o))));
+
+    ) {
+      if (((c = !0), e.position++, y(e, !0, -1) && e.lineIndent <= n)) {
+        l.push(null), (a = e.input.charCodeAt(e.position));
+        continue;
+      }
+      if (
+        ((i = e.line),
+        j(e, n, hn, !1, !0),
+        l.push(e.result),
+        y(e, !0, -1),
+        (a = e.input.charCodeAt(e.position)),
+        (e.line === i || e.lineIndent > n) && a !== 0)
+      )
+        f(e, "bad indentation of a sequence entry");
+      else if (e.lineIndent < n) break;
+    }
+    return c
+      ? ((e.tag = r), (e.anchor = t), (e.kind = "sequence"), (e.result = l), !0)
+      : !1;
+  }
+  function Ir(e, n, i) {
+    var r,
+      t,
+      l,
+      o,
+      c,
+      a,
+      u = e.tag,
+      d = e.anchor,
+      s = {},
+      p = Object.create(null),
+      h = null,
+      m = null,
+      x = null,
+      v = !1,
+      S = !1,
+      g;
+    if (e.firstTabInLine !== -1) return !1;
+    for (
+      e.anchor !== null && (e.anchorMap[e.anchor] = s),
+        g = e.input.charCodeAt(e.position);
+      g !== 0;
+
+    ) {
+      if (
+        (!v &&
+          e.firstTabInLine !== -1 &&
+          ((e.position = e.firstTabInLine),
+          f(e, "tab characters must not be used in indentation")),
+        (r = e.input.charCodeAt(e.position + 1)),
+        (l = e.line),
+        (g === 63 || g === 58) && C(r))
+      )
+        g === 63
+          ? (v && (R(e, s, p, h, m, null, o, c, a), (h = m = x = null)),
+            (S = !0),
+            (v = !0),
+            (t = !0))
+          : v
+          ? ((v = !1), (t = !0))
+          : f(
+              e,
+              "incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line"
+            ),
+          (e.position += 1),
+          (g = r);
+      else {
+        if (
+          ((o = e.line),
+          (c = e.lineStart),
+          (a = e.position),
+          !j(e, i, pn, !1, !0))
+        )
+          break;
+        if (e.line === l) {
+          for (g = e.input.charCodeAt(e.position); I(g); )
+            g = e.input.charCodeAt(++e.position);
+          if (g === 58)
+            (g = e.input.charCodeAt(++e.position)),
+              C(g) ||
+                f(
+                  e,
+                  "a whitespace character is expected after the key-value separator within a block mapping"
+                ),
+              v && (R(e, s, p, h, m, null, o, c, a), (h = m = x = null)),
+              (S = !0),
+              (v = !1),
+              (t = !1),
+              (h = e.tag),
+              (m = e.result);
+          else if (S)
+            f(e, "can not read an implicit mapping pair; a colon is missed");
+          else return (e.tag = u), (e.anchor = d), !0;
+        } else if (S)
+          f(
+            e,
+            "can not read a block mapping entry; a multiline key may not be an implicit key"
+          );
+        else return (e.tag = u), (e.anchor = d), !0;
+      }
+      if (
+        ((e.line === l || e.lineIndent > n) &&
+          (v && ((o = e.line), (c = e.lineStart), (a = e.position)),
+          j(e, n, X, !0, t) && (v ? (m = e.result) : (x = e.result)),
+          v || (R(e, s, p, h, m, x, o, c, a), (h = m = x = null)),
+          y(e, !0, -1),
+          (g = e.input.charCodeAt(e.position))),
+        (e.line === l || e.lineIndent > n) && g !== 0)
+      )
+        f(e, "bad indentation of a mapping entry");
+      else if (e.lineIndent < n) break;
+    }
+    return (
+      v && R(e, s, p, h, m, null, o, c, a),
+      S && ((e.tag = u), (e.anchor = d), (e.kind = "mapping"), (e.result = s)),
+      S
+    );
+  }
+  function Or(e) {
+    var n,
+      i = !1,
+      r = !1,
+      t,
+      l,
+      o;
+    if (((o = e.input.charCodeAt(e.position)), o !== 33)) return !1;
+    if (
+      (e.tag !== null && f(e, "duplication of a tag property"),
+      (o = e.input.charCodeAt(++e.position)),
+      o === 60
+        ? ((i = !0), (o = e.input.charCodeAt(++e.position)))
+        : o === 33
+        ? ((r = !0), (t = "!!"), (o = e.input.charCodeAt(++e.position)))
+        : (t = "!"),
+      (n = e.position),
+      i)
+    ) {
+      do o = e.input.charCodeAt(++e.position);
+      while (o !== 0 && o !== 62);
+      e.position < e.length
+        ? ((l = e.input.slice(n, e.position)),
+          (o = e.input.charCodeAt(++e.position)))
+        : f(e, "unexpected end of the stream within a verbatim tag");
+    } else {
+      for (; o !== 0 && !C(o); )
+        o === 33 &&
+          (r
+            ? f(e, "tag suffix cannot contain exclamation marks")
+            : ((t = e.input.slice(n - 1, e.position + 1)),
+              mn.test(t) ||
+                f(e, "named tag handle cannot contain such characters"),
+              (r = !0),
+              (n = e.position + 1))),
+          (o = e.input.charCodeAt(++e.position));
+      (l = e.input.slice(n, e.position)),
+        Er.test(l) &&
+          f(e, "tag suffix cannot contain flow indicator characters");
+    }
+    l && !gn.test(l) && f(e, "tag name cannot contain such characters: " + l);
+    try {
+      l = decodeURIComponent(l);
+    } catch (c) {
+      f(e, "tag name is malformed: " + l);
+    }
+    return (
+      i
+        ? (e.tag = l)
+        : F.call(e.tagMap, t)
+        ? (e.tag = e.tagMap[t] + l)
+        : t === "!"
+        ? (e.tag = "!" + l)
+        : t === "!!"
+        ? (e.tag = "tag:yaml.org,2002:" + l)
+        : f(e, 'undeclared tag handle "' + t + '"'),
+      !0
+    );
+  }
+  function Nr(e) {
+    var n, i;
+    if (((i = e.input.charCodeAt(e.position)), i !== 38)) return !1;
+    for (
+      e.anchor !== null && f(e, "duplication of an anchor property"),
+        i = e.input.charCodeAt(++e.position),
+        n = e.position;
+      i !== 0 && !C(i) && !D(i);
+
+    )
+      i = e.input.charCodeAt(++e.position);
+    return (
+      e.position === n &&
+        f(e, "name of an anchor node must contain at least one character"),
+      (e.anchor = e.input.slice(n, e.position)),
+      !0
+    );
+  }
+  function Dr(e) {
+    var n, i, r;
+    if (((r = e.input.charCodeAt(e.position)), r !== 42)) return !1;
+    for (
+      r = e.input.charCodeAt(++e.position), n = e.position;
+      r !== 0 && !C(r) && !D(r);
+
+    )
+      r = e.input.charCodeAt(++e.position);
+    return (
+      e.position === n &&
+        f(e, "name of an alias node must contain at least one character"),
+      (i = e.input.slice(n, e.position)),
+      F.call(e.anchorMap, i) || f(e, 'unidentified alias "' + i + '"'),
+      (e.result = e.anchorMap[i]),
+      y(e, !0, -1),
+      !0
+    );
+  }
+  function j(e, n, i, r, t) {
+    var l,
+      o,
+      c,
+      a = 1,
+      u = !1,
+      d = !1,
+      s,
+      p,
+      h,
+      m,
+      x,
+      v;
+    if (
+      (e.listener !== null && e.listener("open", e),
+      (e.tag = null),
+      (e.anchor = null),
+      (e.kind = null),
+      (e.result = null),
+      (l = o = c = X === i || hn === i),
+      r &&
+        y(e, !0, -1) &&
+        ((u = !0),
+        e.lineIndent > n
+          ? (a = 1)
+          : e.lineIndent === n
+          ? (a = 0)
+          : e.lineIndent < n && (a = -1)),
+      a === 1)
+    )
+      for (; Or(e) || Nr(e); )
+        y(e, !0, -1)
+          ? ((u = !0),
+            (c = l),
+            e.lineIndent > n
+              ? (a = 1)
+              : e.lineIndent === n
+              ? (a = 0)
+              : e.lineIndent < n && (a = -1))
+          : (c = !1);
+    if (
+      (c && (c = u || t),
+      (a === 1 || X === i) &&
+        (J === i || pn === i ? (x = n) : (x = n + 1),
+        (v = e.position - e.lineStart),
+        a === 1
+          ? (c && (Je(e, v) || Ir(e, v, x))) || Fr(e, x)
+            ? (d = !0)
+            : ((o && Mr(e, x)) || Tr(e, x) || _r(e, x)
+                ? (d = !0)
+                : Dr(e)
+                ? ((d = !0),
+                  (e.tag !== null || e.anchor !== null) &&
+                    f(e, "alias node should not have any properties"))
+                : Lr(e, x, J === i) &&
+                  ((d = !0), e.tag === null && (e.tag = "?")),
+              e.anchor !== null && (e.anchorMap[e.anchor] = e.result))
+          : a === 0 && (d = c && Je(e, v))),
+      e.tag === null)
+    )
+      e.anchor !== null && (e.anchorMap[e.anchor] = e.result);
+    else if (e.tag === "?") {
+      for (
+        e.result !== null &&
+          e.kind !== "scalar" &&
+          f(
+            e,
+            'unacceptable node kind for !<?> tag; it should be "scalar", not "' +
+              e.kind +
+              '"'
+          ),
+          s = 0,
+          p = e.implicitTypes.length;
+        s < p;
+        s += 1
+      )
+        if (((m = e.implicitTypes[s]), m.resolve(e.result))) {
+          (e.result = m.construct(e.result)),
+            (e.tag = m.tag),
+            e.anchor !== null && (e.anchorMap[e.anchor] = e.result);
+          break;
+        }
+    } else if (e.tag !== "!") {
+      if (F.call(e.typeMap[e.kind || "fallback"], e.tag))
+        m = e.typeMap[e.kind || "fallback"][e.tag];
+      else
+        for (
+          m = null,
+            h = e.typeMap.multi[e.kind || "fallback"],
+            s = 0,
+            p = h.length;
+          s < p;
+          s += 1
+        )
+          if (e.tag.slice(0, h[s].tag.length) === h[s].tag) {
+            m = h[s];
+            break;
+          }
+      m || f(e, "unknown tag !<" + e.tag + ">"),
+        e.result !== null &&
+          m.kind !== e.kind &&
+          f(
+            e,
+            "unacceptable node kind for !<" +
+              e.tag +
+              '> tag; it should be "' +
+              m.kind +
+              '", not "' +
+              e.kind +
+              '"'
+          ),
+        m.resolve(e.result, e.tag)
+          ? ((e.result = m.construct(e.result, e.tag)),
+            e.anchor !== null && (e.anchorMap[e.anchor] = e.result))
+          : f(e, "cannot resolve a node with !<" + e.tag + "> explicit tag");
+    }
+    return (
+      e.listener !== null && e.listener("close", e),
+      e.tag !== null || e.anchor !== null || d
+    );
+  }
+  function Rr(e) {
+    var n = e.position,
+      i,
+      r,
+      t,
+      l = !1,
+      o;
+    for (
+      e.version = null,
+        e.checkLineBreaks = e.legacy,
+        e.tagMap = Object.create(null),
+        e.anchorMap = Object.create(null);
+      (o = e.input.charCodeAt(e.position)) !== 0 &&
+      (y(e, !0, -1),
+      (o = e.input.charCodeAt(e.position)),
+      !(e.lineIndent > 0 || o !== 37));
+
+    ) {
+      for (
+        l = !0, o = e.input.charCodeAt(++e.position), i = e.position;
+        o !== 0 && !C(o);
+
+      )
+        o = e.input.charCodeAt(++e.position);
+      for (
+        r = e.input.slice(i, e.position),
+          t = [],
+          r.length < 1 &&
+            f(
+              e,
+              "directive name must not be less than one character in length"
+            );
+        o !== 0;
+
+      ) {
+        for (; I(o); ) o = e.input.charCodeAt(++e.position);
+        if (o === 35) {
+          do o = e.input.charCodeAt(++e.position);
+          while (o !== 0 && !k(o));
+          break;
+        }
+        if (k(o)) break;
+        for (i = e.position; o !== 0 && !C(o); )
+          o = e.input.charCodeAt(++e.position);
+        t.push(e.input.slice(i, e.position));
+      }
+      o !== 0 && ke(e),
+        F.call(ze, r)
+          ? ze[r](e, r, t)
+          : ee(e, 'unknown document directive "' + r + '"');
+    }
+    if (
+      (y(e, !0, -1),
+      e.lineIndent === 0 &&
+      e.input.charCodeAt(e.position) === 45 &&
+      e.input.charCodeAt(e.position + 1) === 45 &&
+      e.input.charCodeAt(e.position + 2) === 45
+        ? ((e.position += 3), y(e, !0, -1))
+        : l && f(e, "directives end mark is expected"),
+      j(e, e.lineIndent - 1, X, !1, !0),
+      y(e, !0, -1),
+      e.checkLineBreaks &&
+        br.test(e.input.slice(n, e.position)) &&
+        ee(e, "non-ASCII line breaks are interpreted as content"),
+      e.documents.push(e.result),
+      e.position === e.lineStart && re(e))
+    ) {
+      e.input.charCodeAt(e.position) === 46 &&
+        ((e.position += 3), y(e, !0, -1));
+      return;
+    }
+    if (e.position < e.length - 1)
+      f(e, "end of the stream or a document separator is expected");
+    else return;
+  }
+  function bn(e, n) {
+    (e = String(e)),
+      (n = n || {}),
+      e.length !== 0 &&
+        (e.charCodeAt(e.length - 1) !== 10 &&
+          e.charCodeAt(e.length - 1) !== 13 &&
+          (e += `
+`),
+        e.charCodeAt(0) === 65279 && (e = e.slice(1)));
+    var i = new kr(e, n),
+      r = e.indexOf("\0");
+    for (
+      r !== -1 && ((i.position = r), f(i, "null byte is not allowed in input")),
+        i.input += "\0";
+      i.input.charCodeAt(i.position) === 32;
+
+    )
+      (i.lineIndent += 1), (i.position += 1);
+    for (; i.position < i.length - 1; ) Rr(i);
+    return i.documents;
+  }
+  function jr(e, n, i) {
+    n !== null &&
+      typeof n == "object" &&
+      typeof i == "undefined" &&
+      ((i = n), (n = null));
+    var r = bn(e, i);
+    if (typeof n != "function") return r;
+    for (var t = 0, l = r.length; t < l; t += 1) n(r[t]);
+  }
+  function Hr(e, n) {
+    var i = bn(e, n);
+    if (i.length !== 0) {
+      if (i.length === 1) return i[0];
+      throw new w("expected a single document in the stream, but found more");
+    }
+  }
+  var Pr = jr,
+    Br = Hr,
+    En = { loadAll: Pr, load: Br },
+    An = Object.prototype.toString,
+    wn = Object.prototype.hasOwnProperty,
+    Te = 65279,
+    qr = 9,
+    U = 10,
+    Yr = 13,
+    Ur = 32,
+    $r = 33,
+    Gr = 34,
+    Ee = 35,
+    Wr = 37,
+    Kr = 38,
+    Vr = 39,
+    Qr = 42,
+    Cn = 44,
+    zr = 45,
+    ne = 58,
+    Zr = 61,
+    Jr = 62,
+    Xr = 63,
+    et = 64,
+    Sn = 91,
+    kn = 93,
+    nt = 96,
+    Ln = 123,
+    it = 124,
+    Tn = 125,
+    A = {};
+  A[0] = "\\0";
+  A[7] = "\\a";
+  A[8] = "\\b";
+  A[9] = "\\t";
+  A[10] = "\\n";
+  A[11] = "\\v";
+  A[12] = "\\f";
+  A[13] = "\\r";
+  A[27] = "\\e";
+  A[34] = '\\"';
+  A[92] = "\\\\";
+  A[133] = "\\N";
+  A[160] = "\\_";
+  A[8232] = "\\L";
+  A[8233] = "\\P";
+  var rt = [
+      "y",
+      "Y",
+      "yes",
+      "Yes",
+      "YES",
+      "on",
+      "On",
+      "ON",
+      "n",
+      "N",
+      "no",
+      "No",
+      "NO",
+      "off",
+      "Off",
+      "OFF",
+    ],
+    tt = /^[-+]?[0-9_]+(?::[0-9_]+)+(?:\.[0-9_]*)?$/;
+  function ot(e, n) {
+    var i, r, t, l, o, c, a;
+    if (n === null) return {};
+    for (i = {}, r = Object.keys(n), t = 0, l = r.length; t < l; t += 1)
+      (o = r[t]),
+        (c = String(n[o])),
+        o.slice(0, 2) === "!!" && (o = "tag:yaml.org,2002:" + o.slice(2)),
+        (a = e.compiledTypeMap.fallback[o]),
+        a && wn.call(a.styleAliases, c) && (c = a.styleAliases[c]),
+        (i[o] = c);
+    return i;
+  }
+  function lt(e) {
+    var n, i, r;
+    if (((n = e.toString(16).toUpperCase()), e <= 255)) (i = "x"), (r = 2);
+    else if (e <= 65535) (i = "u"), (r = 4);
+    else if (e <= 4294967295) (i = "U"), (r = 8);
+    else
+      throw new w(
+        "code point within a string may not be greater than 0xFFFFFFFF"
+      );
+    return "\\" + i + b.repeat("0", r - n.length) + n;
+  }
+  var ct = 1,
+    G = 2;
+  function at(e) {
+    (this.schema = e.schema || fn),
+      (this.indent = Math.max(1, e.indent || 2)),
+      (this.noArrayIndent = e.noArrayIndent || !1),
+      (this.skipInvalid = e.skipInvalid || !1),
+      (this.flowLevel = b.isNothing(e.flowLevel) ? -1 : e.flowLevel),
+      (this.styleMap = ot(this.schema, e.styles || null)),
+      (this.sortKeys = e.sortKeys || !1),
+      (this.lineWidth = e.lineWidth || 80),
+      (this.noRefs = e.noRefs || !1),
+      (this.noCompatMode = e.noCompatMode || !1),
+      (this.condenseFlow = e.condenseFlow || !1),
+      (this.quotingType = e.quotingType === '"' ? G : ct),
+      (this.forceQuotes = e.forceQuotes || !1),
+      (this.replacer = typeof e.replacer == "function" ? e.replacer : null),
+      (this.implicitTypes = this.schema.compiledImplicit),
+      (this.explicitTypes = this.schema.compiledExplicit),
+      (this.tag = null),
+      (this.result = ""),
+      (this.duplicates = []),
+      (this.usedDuplicates = null);
+  }
+  function Xe(e, n) {
+    for (
+      var i = b.repeat(" ", n), r = 0, t = -1, l = "", o, c = e.length;
+      r < c;
+
+    )
+      (t = e.indexOf(
+        `
+`,
+        r
+      )),
+        t === -1
+          ? ((o = e.slice(r)), (r = c))
+          : ((o = e.slice(r, t + 1)), (r = t + 1)),
+        o.length &&
+          o !==
+            `
+` &&
+          (l += i),
+        (l += o);
+    return l;
+  }
+  function Ae(e, n) {
+    return (
+      `
+` + b.repeat(" ", e.indent * n)
+    );
+  }
+  function ut(e, n) {
+    var i, r, t;
+    for (i = 0, r = e.implicitTypes.length; i < r; i += 1)
+      if (((t = e.implicitTypes[i]), t.resolve(n))) return !0;
+    return !1;
+  }
+  function ie(e) {
+    return e === Ur || e === qr;
+  }
+  function W(e) {
+    return (
+      (32 <= e && e <= 126) ||
+      (161 <= e && e <= 55295 && e !== 8232 && e !== 8233) ||
+      (57344 <= e && e <= 65533 && e !== Te) ||
+      (65536 <= e && e <= 1114111)
+    );
+  }
+  function en(e) {
+    return W(e) && e !== Te && e !== Yr && e !== U;
+  }
+  function nn(e, n, i) {
+    var r = en(e),
+      t = r && !ie(e);
+    return (
+      ((i
+        ? r
+        : r && e !== Cn && e !== Sn && e !== kn && e !== Ln && e !== Tn) &&
+        e !== Ee &&
+        !(n === ne && !t)) ||
+      (en(n) && !ie(n) && e === Ee) ||
+      (n === ne && t)
+    );
+  }
+  function st(e) {
+    return (
+      W(e) &&
+      e !== Te &&
+      !ie(e) &&
+      e !== zr &&
+      e !== Xr &&
+      e !== ne &&
+      e !== Cn &&
+      e !== Sn &&
+      e !== kn &&
+      e !== Ln &&
+      e !== Tn &&
+      e !== Ee &&
+      e !== Kr &&
+      e !== Qr &&
+      e !== $r &&
+      e !== it &&
+      e !== Zr &&
+      e !== Jr &&
+      e !== Vr &&
+      e !== Gr &&
+      e !== Wr &&
+      e !== et &&
+      e !== nt
+    );
+  }
+  function dt(e) {
+    return !ie(e) && e !== ne;
+  }
+  function q(e, n) {
+    var i = e.charCodeAt(n),
+      r;
+    return i >= 55296 &&
+      i <= 56319 &&
+      n + 1 < e.length &&
+      ((r = e.charCodeAt(n + 1)), r >= 56320 && r <= 57343)
+      ? (i - 55296) * 1024 + r - 56320 + 65536
+      : i;
+  }
+  function _n(e) {
+    var n = /^\n* /;
+    return n.test(e);
+  }
+  var Fn = 1,
+    we = 2,
+    Mn = 3,
+    In = 4,
+    N = 5;
+  function ft(e, n, i, r, t, l, o, c) {
+    var a,
+      u = 0,
+      d = null,
+      s = !1,
+      p = !1,
+      h = r !== -1,
+      m = -1,
+      x = st(q(e, 0)) && dt(q(e, e.length - 1));
+    if (n || o)
+      for (a = 0; a < e.length; u >= 65536 ? (a += 2) : a++) {
+        if (((u = q(e, a)), !W(u))) return N;
+        (x = x && nn(u, d, c)), (d = u);
+      }
+    else {
+      for (a = 0; a < e.length; u >= 65536 ? (a += 2) : a++) {
+        if (((u = q(e, a)), u === U))
+          (s = !0),
+            h && ((p = p || (a - m - 1 > r && e[m + 1] !== " ")), (m = a));
+        else if (!W(u)) return N;
+        (x = x && nn(u, d, c)), (d = u);
+      }
+      p = p || (h && a - m - 1 > r && e[m + 1] !== " ");
+    }
+    return !s && !p
+      ? x && !o && !t(e)
+        ? Fn
+        : l === G
+        ? N
+        : we
+      : i > 9 && _n(e)
+      ? N
+      : o
+      ? l === G
+        ? N
+        : we
+      : p
+      ? In
+      : Mn;
+  }
+  function pt(e, n, i, r, t) {
+    e.dump = (function () {
+      if (n.length === 0) return e.quotingType === G ? '""' : "''";
+      if (!e.noCompatMode && (rt.indexOf(n) !== -1 || tt.test(n)))
+        return e.quotingType === G ? '"' + n + '"' : "'" + n + "'";
+      var l = e.indent * Math.max(1, i),
+        o =
+          e.lineWidth === -1
+            ? -1
+            : Math.max(Math.min(e.lineWidth, 40), e.lineWidth - l),
+        c = r || (e.flowLevel > -1 && i >= e.flowLevel);
+      function a(u) {
+        return ut(e, u);
+      }
+      switch (ft(n, c, e.indent, o, a, e.quotingType, e.forceQuotes && !r, t)) {
+        case Fn:
+          return n;
+        case we:
+          return "'" + n.replace(/'/g, "''") + "'";
+        case Mn:
+          return "|" + rn(n, e.indent) + tn(Xe(n, l));
+        case In:
+          return ">" + rn(n, e.indent) + tn(Xe(ht(n, o), l));
+        case N:
+          return '"' + mt(n) + '"';
+        default:
+          throw new w("impossible error: invalid scalar style");
+      }
+    })();
+  }
+  function rn(e, n) {
+    var i = _n(e) ? String(n) : "",
+      r =
+        e[e.length - 1] ===
+        `
+`,
+      t =
+        r &&
+        (e[e.length - 2] ===
+          `
+` ||
+          e ===
+            `
+`),
+      l = t ? "+" : r ? "" : "-";
+    return (
+      i +
+      l +
+      `
+`
+    );
+  }
+  function tn(e) {
+    return e[e.length - 1] ===
+      `
+`
+      ? e.slice(0, -1)
+      : e;
+  }
+  function ht(e, n) {
+    for (
+      var i = /(\n+)([^\n]*)/g,
+        r = (function () {
+          var u = e.indexOf(`
+`);
+          return (
+            (u = u !== -1 ? u : e.length),
+            (i.lastIndex = u),
+            on(e.slice(0, u), n)
+          );
+        })(),
+        t =
+          e[0] ===
+            `
+` || e[0] === " ",
+        l,
+        o;
+      (o = i.exec(e));
+
+    ) {
+      var c = o[1],
+        a = o[2];
+      (l = a[0] === " "),
+        (r +=
+          c +
+          (!t && !l && a !== ""
+            ? `
+`
+            : "") +
+          on(a, n)),
+        (t = l);
+    }
+    return r;
+  }
+  function on(e, n) {
+    if (e === "" || e[0] === " ") return e;
+    for (var i = / [^ ]/g, r, t = 0, l, o = 0, c = 0, a = ""; (r = i.exec(e)); )
+      (c = r.index),
+        c - t > n &&
+          ((l = o > t ? o : c),
+          (a +=
+            `
+` + e.slice(t, l)),
+          (t = l + 1)),
+        (o = c);
+    return (
+      (a += `
+`),
+      e.length - t > n && o > t
+        ? (a +=
+            e.slice(t, o) +
+            `
+` +
+            e.slice(o + 1))
+        : (a += e.slice(t)),
+      a.slice(1)
+    );
+  }
+  function mt(e) {
+    for (var n = "", i = 0, r, t = 0; t < e.length; i >= 65536 ? (t += 2) : t++)
+      (i = q(e, t)),
+        (r = A[i]),
+        !r && W(i)
+          ? ((n += e[t]), i >= 65536 && (n += e[t + 1]))
+          : (n += r || lt(i));
+    return n;
+  }
+  function gt(e, n, i) {
+    var r = "",
+      t = e.tag,
+      l,
+      o,
+      c;
+    for (l = 0, o = i.length; l < o; l += 1)
+      (c = i[l]),
+        e.replacer && (c = e.replacer.call(i, String(l), c)),
+        (L(e, n, c, !1, !1) ||
+          (typeof c == "undefined" && L(e, n, null, !1, !1))) &&
+          (r !== "" && (r += "," + (e.condenseFlow ? "" : " ")), (r += e.dump));
+    (e.tag = t), (e.dump = "[" + r + "]");
+  }
+  function ln(e, n, i, r) {
+    var t = "",
+      l = e.tag,
+      o,
+      c,
+      a;
+    for (o = 0, c = i.length; o < c; o += 1)
+      (a = i[o]),
+        e.replacer && (a = e.replacer.call(i, String(o), a)),
+        (L(e, n + 1, a, !0, !0, !1, !0) ||
+          (typeof a == "undefined" && L(e, n + 1, null, !0, !0, !1, !0))) &&
+          ((!r || t !== "") && (t += Ae(e, n)),
+          e.dump && U === e.dump.charCodeAt(0) ? (t += "-") : (t += "- "),
+          (t += e.dump));
+    (e.tag = l), (e.dump = t || "[]");
+  }
+  function xt(e, n, i) {
+    var r = "",
+      t = e.tag,
+      l = Object.keys(i),
+      o,
+      c,
+      a,
+      u,
+      d;
+    for (o = 0, c = l.length; o < c; o += 1)
+      (d = ""),
+        r !== "" && (d += ", "),
+        e.condenseFlow && (d += '"'),
+        (a = l[o]),
+        (u = i[a]),
+        e.replacer && (u = e.replacer.call(i, a, u)),
+        L(e, n, a, !1, !1) &&
+          (e.dump.length > 1024 && (d += "? "),
+          (d +=
+            e.dump +
+            (e.condenseFlow ? '"' : "") +
+            ":" +
+            (e.condenseFlow ? "" : " ")),
+          L(e, n, u, !1, !1) && ((d += e.dump), (r += d)));
+    (e.tag = t), (e.dump = "{" + r + "}");
+  }
+  function vt(e, n, i, r) {
+    var t = "",
+      l = e.tag,
+      o = Object.keys(i),
+      c,
+      a,
+      u,
+      d,
+      s,
+      p;
+    if (e.sortKeys === !0) o.sort();
+    else if (typeof e.sortKeys == "function") o.sort(e.sortKeys);
+    else if (e.sortKeys)
+      throw new w("sortKeys must be a boolean or a function");
+    for (c = 0, a = o.length; c < a; c += 1)
+      (p = ""),
+        (!r || t !== "") && (p += Ae(e, n)),
+        (u = o[c]),
+        (d = i[u]),
+        e.replacer && (d = e.replacer.call(i, u, d)),
+        L(e, n + 1, u, !0, !0, !0) &&
+          ((s =
+            (e.tag !== null && e.tag !== "?") ||
+            (e.dump && e.dump.length > 1024)),
+          s &&
+            (e.dump && U === e.dump.charCodeAt(0) ? (p += "?") : (p += "? ")),
+          (p += e.dump),
+          s && (p += Ae(e, n)),
+          L(e, n + 1, d, !0, s) &&
+            (e.dump && U === e.dump.charCodeAt(0) ? (p += ":") : (p += ": "),
+            (p += e.dump),
+            (t += p)));
+    (e.tag = l), (e.dump = t || "{}");
+  }
+  function cn(e, n, i) {
+    var r, t, l, o, c, a;
+    for (
+      t = i ? e.explicitTypes : e.implicitTypes, l = 0, o = t.length;
+      l < o;
+      l += 1
+    )
+      if (
+        ((c = t[l]),
+        (c.instanceOf || c.predicate) &&
+          (!c.instanceOf ||
+            (typeof n == "object" && n instanceof c.instanceOf)) &&
+          (!c.predicate || c.predicate(n)))
+      ) {
+        if (
+          (i
+            ? c.multi && c.representName
+              ? (e.tag = c.representName(n))
+              : (e.tag = c.tag)
+            : (e.tag = "?"),
+          c.represent)
+        ) {
+          if (
+            ((a = e.styleMap[c.tag] || c.defaultStyle),
+            An.call(c.represent) === "[object Function]")
+          )
+            r = c.represent(n, a);
+          else if (wn.call(c.represent, a)) r = c.represent[a](n, a);
+          else
+            throw new w(
+              "!<" + c.tag + '> tag resolver accepts not "' + a + '" style'
+            );
+          e.dump = r;
+        }
+        return !0;
+      }
+    return !1;
+  }
+  function L(e, n, i, r, t, l, o) {
+    (e.tag = null), (e.dump = i), cn(e, i, !1) || cn(e, i, !0);
+    var c = An.call(e.dump),
+      a = r,
+      u;
+    r && (r = e.flowLevel < 0 || e.flowLevel > n);
+    var d = c === "[object Object]" || c === "[object Array]",
+      s,
+      p;
+    if (
+      (d && ((s = e.duplicates.indexOf(i)), (p = s !== -1)),
+      ((e.tag !== null && e.tag !== "?") || p || (e.indent !== 2 && n > 0)) &&
+        (t = !1),
+      p && e.usedDuplicates[s])
+    )
+      e.dump = "*ref_" + s;
+    else {
+      if (
+        (d && p && !e.usedDuplicates[s] && (e.usedDuplicates[s] = !0),
+        c === "[object Object]")
+      )
+        r && Object.keys(e.dump).length !== 0
+          ? (vt(e, n, e.dump, t), p && (e.dump = "&ref_" + s + e.dump))
+          : (xt(e, n, e.dump), p && (e.dump = "&ref_" + s + " " + e.dump));
+      else if (c === "[object Array]")
+        r && e.dump.length !== 0
+          ? (e.noArrayIndent && !o && n > 0
+              ? ln(e, n - 1, e.dump, t)
+              : ln(e, n, e.dump, t),
+            p && (e.dump = "&ref_" + s + e.dump))
+          : (gt(e, n, e.dump), p && (e.dump = "&ref_" + s + " " + e.dump));
+      else if (c === "[object String]") e.tag !== "?" && pt(e, e.dump, n, l, a);
+      else {
+        if (c === "[object Undefined]") return !1;
+        if (e.skipInvalid) return !1;
+        throw new w("unacceptable kind of an object to dump " + c);
+      }
+      e.tag !== null &&
+        e.tag !== "?" &&
+        ((u = encodeURI(e.tag[0] === "!" ? e.tag.slice(1) : e.tag).replace(
+          /!/g,
+          "%21"
+        )),
+        e.tag[0] === "!"
+          ? (u = "!" + u)
+          : u.slice(0, 18) === "tag:yaml.org,2002:"
+          ? (u = "!!" + u.slice(18))
+          : (u = "!<" + u + ">"),
+        (e.dump = u + " " + e.dump));
+    }
+    return !0;
+  }
+  function yt(e, n) {
+    var i = [],
+      r = [],
+      t,
+      l;
+    for (Ce(e, i, r), t = 0, l = r.length; t < l; t += 1)
+      n.duplicates.push(i[r[t]]);
+    n.usedDuplicates = new Array(l);
+  }
+  function Ce(e, n, i) {
+    var r, t, l;
+    if (e !== null && typeof e == "object")
+      if (((t = n.indexOf(e)), t !== -1)) i.indexOf(t) === -1 && i.push(t);
+      else if ((n.push(e), Array.isArray(e)))
+        for (t = 0, l = e.length; t < l; t += 1) Ce(e[t], n, i);
+      else
+        for (r = Object.keys(e), t = 0, l = r.length; t < l; t += 1)
+          Ce(e[r[t]], n, i);
+  }
+  function bt(e, n) {
+    n = n || {};
+    var i = new at(n);
+    i.noRefs || yt(e, i);
+    var r = e;
+    return (
+      i.replacer && (r = i.replacer.call({ "": r }, "", r)),
+      L(i, 0, r, !0, !0)
+        ? i.dump +
+          `
+`
+        : ""
+    );
+  }
+  var Et = bt,
+    At = { dump: Et };
+  function _e(e, n) {
+    return function () {
+      throw new Error(
+        "Function yaml." +
+          e +
+          " is removed in js-yaml 4. Use yaml." +
+          n +
+          " instead, which is now safe by default."
+      );
+    };
+  }
+  var On = En.load,
+    Kt = En.loadAll,
+    Vt = At.dump;
+  var Qt = _e("safeLoad", "load"),
+    zt = _e("safeLoadAll", "loadAll"),
+    Zt = _e("safeDump", "dump");
+  var K = class extends Error {},
+    V = class extends Error {};
+  var wt =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+  function Ct(e) {
+    return On(e);
+  }
+  var te = class {
+    run(n, i) {
+      return T(this, null, function* () {
+        try {
+          let r = this.parseLinkMetadataFromYaml(n);
+          i.appendChild(this.genLinkEl(r));
+        } catch (r) {
+          r instanceof V
+            ? i.appendChild(this.genErrorEl(r.message))
+            : r instanceof K
+            ? i.appendChild(this.genErrorEl(r.message))
+            : r instanceof TypeError
+            ? (i.appendChild(
+                this.genErrorEl("internal links must be surrounded by quotes.")
+              ),
+              console.log(r))
+            : console.log("Code Block: cardlink unknown error", r);
+        }
+      });
+    }
+    parseLinkMetadataFromYaml(n) {
+      let i,
+        r = -1;
+      n = n.split(/\r?\n|\r|\n/g).map((t) =>
+        t.replace(/^\t+/g, (l) => {
+          let o = l.length;
+          return r < 0 && (r = o), " ".repeat(o);
+        })
+      ).join(`
+`);
+      try {
+        i = Ct(n);
+      } catch (t) {
+        throw (
+          (console.log(t),
+          new K("failed to parse yaml. Check debug console for more detail."))
+        );
+      }
+      if (!i || !i.url || !i.title)
+        throw new V("required params[url, title] are not found.");
+      return {
+        url: i.url,
+        title: i.title,
+        description: i.description,
+        host: i.host,
+        favicon: i.favicon,
+        image: i.image,
+        indent: r,
+      };
+    }
+    genErrorEl(n) {
+      let i = document.createElement("div");
+      i.addClass("auto-card-link-error-container");
+      let r = document.createElement("span");
+      return (r.textContent = `cardlink error: ${n}`), i.appendChild(r), i;
+    }
+    genLinkEl(n) {
+      let i = document.createElement("div");
+      i.addClass("auto-card-link-container"),
+        i.setAttr("data-auto-card-link-depth", n.indent);
+      let r = document.createElement("a");
+      r.addClass("auto-card-link-card"),
+        r.setAttr("href", n.url),
+        i.appendChild(r);
+      let t = document.createElement("div");
+      t.addClass("auto-card-link-main"), r.appendChild(t);
+      let l = document.createElement("div");
+      if (
+        (l.addClass("auto-card-link-title"),
+        (l.textContent = n.title),
+        t.appendChild(l),
+        n.description)
+      ) {
+        let a = document.createElement("div");
+        a.addClass("auto-card-link-description"),
+          (a.textContent = n.description),
+          t.appendChild(a);
+      }
+      let o = document.createElement("div");
+      if ((o.addClass("auto-card-link-host"), t.appendChild(o), n.favicon)) {
+        let a = document.createElement("img");
+        a.addClass("auto-card-link-favicon"),
+          a.setAttr("src", n.favicon),
+          o.appendChild(a);
+      }
+      if (n.host) {
+        let a = document.createElement("span");
+        (a.textContent = n.host), o.appendChild(a);
+      }
+      if (n.image) {
+        let a = document.createElement("img");
+        a.addClass("auto-card-link-thumbnail"),
+          a.setAttr("src", n.image),
+          a.setAttr("draggable", "false"),
+          r.appendChild(a);
+      }
+      let c = document.createElement("button");
+      return (
+        (c.innerHTML = wt),
+        (c.title = "Copy URL"),
+        c.classList.add("auto-card-link-copy-url"),
+        c.classList.add("clickable-icon"),
+        (c.onclick = () => {
+          navigator.clipboard.writeText(n.url),
+            vercelToast.createToast("Copied URL to clipboard", {
+              timeout: 1500,
+              type: "dark",
+            });
+        }),
+        i.appendChild(c),
+        i
+      );
+    }
+  };
+  var St = /\[([^\]]*)\]\(([^\(]*)\)/g,
+    Fe = { a: 2, b: 2, c: 2, d: 3, e: 3, f: 4, g: 4, h: 3, i: 4 },
+    Nn = (e, n, i, r) => {
+      let t = n.createEl("a");
+      (t.href = e.link),
+        (t.dataset.lightbox = i),
+        e.alt && (t.dataset.title = e.alt);
+      let l = t.createEl("img");
+      (l.src = e.link), e.alt && (l.alt = e.alt);
+    },
+    kt = (e, n) => {
+      e = e != null ? e : "640x480";
+      let i = n.createEl("img");
+      i.src = `https://via.placeholder.com/${e}`;
+    },
+    Dn = (e, n, i) => {
+      let r = Fe[n];
+      if (e.length < r)
+        for (let o = e.length; o < r; o++) e.push({ type: "placeholder" });
+      e.length > r && (e = e.slice(0, r));
+      let t = i.createEl("div", {
+          cls: `image-layouts-grid image-layouts-layout-${n}`,
+        }),
+        l = Math.random().toString(36).substring(7);
+      e.forEach((o, c) => {
+        let a = t.createEl("div", { cls: `image-layouts-image-${c}` });
+        o.type === "external"
+          ? Nn(o, a, l, c)
+          : o.type === "placeholder" && kt("640x480", a);
+      });
+    },
+    Lt = (e) => {
+      let n = [...e.trim().matchAll(St)];
+      if (n.length > 0) {
+        let i = n[0],
+          r = i[1],
+          t = i[2];
+        if (t) return { type: "external", link: t, alt: r || void 0 };
+      }
+      return console.log("not match ", e), null;
+    },
+    Me = (e) =>
+      e
+        .split(
+          `
+`
+        )
+        .filter((r) => r.startsWith("!"))
+        .map((r) => Lt(r))
+        .filter((r) => r !== null),
+    Rn = (e, n, i) => {
+      let r = i.createEl("div", { cls: `image-layouts-masonry-grid-${n}` }),
+        t = [];
+      for (let o = 0; o < n; o++) {
+        let c = r.createEl("div", { cls: "image-layouts-masonry-column" });
+        t.push(c);
+      }
+      let l = Math.random().toString(36).substring(7);
+      e.forEach((o, c) => {
+        let a = c % n,
+          u = t[a].createEl("div", { cls: `image-layouts-masonry-image-${c}` });
+        o.type === "external" && Nn(o, u, l, c);
+      });
+    };
+  var oe = class {
+    constructor() {
+      this.load();
+    }
+    onLoad() {
+      publish.registerMarkdownPostProcessor((n, i) => {
+        let r = n.querySelectorAll("code");
+        for (let t = 0; t < r.length; t++) {
+          let l = r.item(t),
+            o = l.innerText.trim();
+          o[0] === ":" && o[o.length - 1] === ":" && i.addChild(new B(l, o));
+        }
+      }),
+        publish.registerMarkdownCodeBlockProcessor("csv", (n, i, r) => {
+          let t = n
+              .split(
+                `
+`
+              )
+              .filter((c) => c.length > 0),
+            o = i.createEl("table").createEl("tbody");
+          for (let c = 0; c < t.length; c++) {
+            let a = t[c].split(","),
+              u = o.createEl("tr");
+            for (let d = 0; d < a.length; d++) u.createEl("td", { text: a[d] });
+          }
+        }),
+        Object.keys(Fe).forEach((n) => {
+          publish.registerMarkdownCodeBlockProcessor(
+            `image-layout-${n}`,
+            (i, r, t) => {
+              let l = Me(i);
+              Dn(l, n, r);
+            }
+          );
+        });
+      for (let n = 2; n <= 6; n++)
+        publish.registerMarkdownCodeBlockProcessor(
+          `image-layout-masonry-${n}`,
+          (i, r, t) => {
+            let l = Me(i);
+            Rn(l, n, r);
+          }
+        );
+      publish.registerMarkdownCodeBlockProcessor("cardlink", (n, i) =>
+        T(this, null, function* () {
+          yield new te().run(n, i);
+        })
+      ),
+        publish.registerMarkdownPostProcessor((n, i) =>
+          T(this, null, function* () {
+            let r = n.querySelectorAll("code[data-gist-id]");
+            if (r.length === 0) return;
+            let t = (l) =>
+              T(this, null, function* () {
+                l.childNodes.length === 0 &&
+                  window.GistEmbed &&
+                  setTimeout(() => {
+                    window.GistEmbed.init();
+                  }, 100);
+              });
+            for (let l of r) yield t(l);
+          })
+        );
+    }
+    onUnload() {}
+    load() {
+      this.onLoad();
+    }
+    unload() {
+      this.onUnload();
+    }
+    getFilePathsByName(n) {
+      return [n];
+    }
+  };
+  var Hn = () => {
+      let e = new Set();
+      return {
+        add: (r) => {
+          e.add(r);
+        },
+        fire: () => {
+          e.forEach((r) => r()), e.clear();
+        },
+      };
+    },
+    jn = (e, n, i, r = !1) => {
+      let t = Hn(),
+        l = i(),
+        o = (a) => {
+          let u = n(a, l);
+          typeof u == "function" && t.add(u);
+        };
+      r && o(l);
+      let c = e(() => {
+        let a = i();
+        a !== l && (t.fire(), o(a), (l = a));
+      });
+      return () => {
+        t.fire(), c();
+      };
+    },
+    Pn = (e, n) => {
+      let i = new Set();
+      return {
+        listeners: i,
+        get: () => e,
+        set: (r) => {
+          e !== r && ((e = r), n == null || n(), i.forEach((t) => t()));
+        },
+        subscribe: (r) => (i.add(r), () => void i.delete(r)),
+      };
+    },
+    Tt = (e) => {
+      let { get: n, set: i, subscribe: r } = e,
+        t = {
+          get value() {
+            return n();
+          },
+          set value(l) {
+            t.set(l);
+          },
+          set: (l) => i(l),
+          update: (l) => t.set(l(n())),
+          subscribe: (l) => jn(r, l, n),
+          watch: (l) => jn(r, l, n, !0),
+        };
+      return t;
+    },
+    H = Symbol(),
+    _t = (e) =>
+      Array.isArray(e)
+        ? e.slice()
+        : Object.create(
+            Object.getPrototypeOf(e),
+            Object.getOwnPropertyDescriptors(e)
+          );
+  function Oe(e, n, i = !1, r = 0) {
+    if (r === n.length) return e;
+    let t = n[r];
+    return i && !e[t] && (e[t] = {}), Oe(e[t], n, i, r + 1);
+  }
+  function Bn(e, n, i, r = 0) {
+    if (r === n.length) return i;
+    let t = n[r],
+      l = e[t],
+      o = Bn(l, n, i, r + 1);
+    if (o === l) return e;
+    let c = _t(e);
+    return (c[t] = o), c;
+  }
+  var Ft = (e, n) => (i, r) =>
+      r ? (n(r(e)), i()) : (n(i.subscribe(e)), i.value),
+    Mt = (e, n) => {
+      let { get: i, set: r, listeners: t } = e,
+        { add: l, fire: o } = Hn(),
+        c = !0,
+        a = Ft(() => {
+          t.size ? u() : (c = !0);
+        }, l),
+        u = () => {
+          o(), (c = !1), r(n(a));
+        };
+      e.get = () => (c && u(), i());
+    },
+    qn = (e) =>
+      new Proxy(
+        {},
+        {
+          get: (n, i) => {
+            if (i === H) return e;
+            let r = e.slice();
+            return r.push(i), qn(r);
+          },
+        }
+      ),
+    It = qn([]),
+    Ot = (e, n, i) => {
+      let r = Oe(e, n, !0),
+        t = r && r[H];
+      return t || (r[H] = i());
+    },
+    Nt =
+      (e, n = []) =>
+      (i) => {
+        let r = typeof i == "function" ? i(It)[H] : [i];
+        e.cache || (e.cache = {});
+        let t = n.concat(r),
+          { get: l } = e,
+          o = {
+            listeners: e.listeners,
+            subscribe: e.subscribe,
+            isStream: e.isStream,
+            get: () => {
+              let c = l();
+              return c ? Oe(c, t) : void 0;
+            },
+            set: (c) => e.atom.set(Bn(l(), t, c)),
+          };
+        return Ot(e.cache, t, () => Ne(o, e, t));
+      },
+    Dt = (e) => (n, i) => {
+      let r,
+        t = Pn(),
+        l = !0,
+        o = () => {
+          t.listeners.size ? c() : (l = !0);
+        },
+        c = () => {
+          let a = e.get(),
+            u = n(a, r);
+          (l = !1), (i && !u) || (t.set(u), (r = u));
+        };
+      return Ne({
+        get: () => (!e.isStream && l && c(), t.get()),
+        set: t.set,
+        listeners: t.listeners,
+        isStream: i || e.isStream,
+        subscribe: (a) => {
+          let u = e.subscribe(o),
+            d = t.subscribe(a);
+          return () => {
+            d(), t.listeners.size || u();
+          };
+        },
+      });
+    },
+    Ne = (e, n = e, i = []) => {
+      let r = Tt(e);
+      return (r.focus = Nt(n, i)), (r.map = Dt(e)), (r[H] = e), (e.atom = r), r;
+    };
+  function O(e, n) {
+    let i = typeof e == "function",
+      r = Pn(i ? void 0 : e, () => Ie.send(t));
+    (r.isStream = !arguments.length), i && Mt(r, e);
+    let t = Ne(r);
+    O.plugins.forEach((o) => o(t));
+    let l = n == null ? void 0 : n(t);
+    return (
+      Object.defineProperty(t, "actions", {
+        get() {
+          return Ie.wrap(l, t);
+        },
+      }),
+      t
+    );
+  }
+  O.plugins = [];
+  var Ie = { send: (e) => {}, wrap: (e, n) => e };
+  O.internal = { symbol: H, devtools: Ie };
+  var P = O(!0),
+    Yn =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left-close"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M9 3v18"/><path d="m16 15-3-3 3-3"/></svg>',
+    Un =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left-open"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg>',
+    $n = () => {
+      let e = document.querySelector(
+        "body > div > div.site-body > div.site-body-center-column"
+      );
+      e.style.position = "relative";
+      let n = document.createElement("button");
+      (n.innerHTML = P.value ? Yn : Un),
+        (n.style.position = "absolute"),
+        (n.style.top = "50px"),
+        (n.style.left = "-20px"),
+        (n.className = "focus-btn hidden md:block"),
+        (n.title = "Toggle Focus Mode"),
+        (n.type = "button"),
+        e.appendChild(n);
+      let i = document.querySelector(
+          "body > div > div.site-body > div.site-body-left-column"
+        ),
+        r = document.querySelector(
+          "body > div > div.site-body > div.site-body-center-column > div.render-container > div.site-body-right-column"
+        ),
+        t = document.querySelector(".markdown-preview-sizer "),
+        l = document.querySelector("body");
+      n.onclick = function (o) {
+        P.update((c) => !c),
+          (n.innerHTML = P.value ? Yn : Un),
+          P.value
+            ? (i.classList.remove("md:hidden"),
+              r.classList.remove("md:!hidden"),
+              t.style.removeProperty("margin"),
+              (n.style.left = "-20px"),
+              l.removeAttribute("data-focus-mode"))
+            : (i.addClasses(["md:hidden"]),
+              r.addClasses(["md:!hidden"]),
+              (t.style.margin = "auto"),
+              (n.style.left = "0px"),
+              l.setAttribute("data-focus-mode", "true"));
+      };
+    };
+  var De = O(!1),
+    Gn = () => {
+      let e = document.querySelector(".site-header > div.clickable-icon"),
+        n = e.cloneNode(!0);
+      document.querySelector(".site-header").appendChild(n);
+      let r = document.querySelector("div.published-container");
+      (n.onclick = function (t) {
+        let l = r.classList.contains("is-left-column-open");
+        r.classList.remove("is-left-column-open"),
+          De.update((o) => !o),
+          De.value
+            ? r.classList.add("is-right-column-open")
+            : l || r.classList.remove("is-right-column-open");
+      }),
+        (e.onclick = function (t) {
+          r.classList.remove("is-right-column-open"), De.update(() => !1);
+        }),
+        window.addEventListener("locationchange", function (t) {
+          let l = document.querySelector("body");
+          r.classList.remove("is-right-column-open");
+        });
+    };
+  var Wn = () => {
+    document.querySelectorAll("div.mermaid").forEach((n) => {
+      if (
+        n.parentElement &&
+        !n.parentElement.classList.contains("relative") &&
+        n.parentElement.tagName !== "BODY"
+      ) {
+        n.parentElement.classList.add("relative");
+        let i = document.createElement("div");
+        i.className =
+          "absolute bottom-3 right-3 flex flex-row items-center gap-2";
+        let r = n.querySelector("svg");
+        r.style.removeProperty("max-width"),
+          n.addClasses([
+            "max-w-[calc(min(100vw,var(--page-width))-2*var(--page-side-padding))]",
+            "md:max-w-[calc(100vw-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+            "lg:max-w-[calc(100vw-var(--sidebar-right-width)-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+          ]);
+        let t = document.createElement("button");
+        (t.innerHTML = "+"),
+          (t.onclick = (o) => {
+            let c = r.clientWidth * 1.1;
+            r.style.width = `${r.clientWidth * 1.1}px`;
+            let a =
+              Number(r.getAttribute("height")) /
+              Number(r.getAttribute("width"));
+            r.style.height = `${c * a}px`;
+          }),
+          (t.title = "Zoom In"),
+          i.appendChild(t);
+        let l = document.createElement("button");
+        (l.innerHTML = "-"),
+          (l.title = "Zoom Out"),
+          (l.onclick = (o) => {
+            let c = r.clientWidth / 1.1;
+            r.style.width = `${r.clientWidth / 1.1}px`;
+            let a =
+              Number(r.getAttribute("height")) /
+              Number(r.getAttribute("width"));
+            r.style.height = `${c * a}px`;
+          }),
+          i.appendChild(l),
+          n.parentElement.appendChild(i);
+      }
+    });
+  };
+  P.subscribe((e) => {
+    let n = document.querySelectorAll("div.mermaid");
+    e
+      ? n.forEach((i) => {
+          i.addClasses([
+            "md:max-w-[calc(100vw-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+            "lg:max-w-[calc(100vw-var(--sidebar-right-width)-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+          ]);
+        })
+      : n.forEach((i) => {
+          i.removeClasses([
+            "md:max-w-[calc(100vw-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+            "lg:max-w-[calc(100vw-var(--sidebar-right-width)-var(--sidebar-left-width)-2*var(--page-side-padding))]",
+          ]);
+        });
+  });
+  var Kn = () => {
+    let e = document.querySelector(
+        'div p img[alt~="banner"], div p img[alt~="banner+tall"], div p img[alt~="banner+small"]'
+      ),
+      n = e == null ? void 0 : e.closest(".markdown-embed");
+    if (!e) return;
+    let i = e.closest("div"),
+      t = e.closest(".markdown-preview-view ").querySelector(".mod-header");
+    t.insertBefore(e, t.firstChild), i.remove();
+  };
+  document.getElementsByClassName("site-footer")[0].innerHTML =
+    '<div style="text-align: center "><a href="https://www.buymeacoffee.com/yomaru" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 110px !important;" ></a></div>';
+  document
+    .querySelector(".published-container")
+    .style.setProperty("--footer-display", "block");
+  var ae = document.createElement("script");
+  ae.defer = !0;
+  ae.setAttribute("data-domain", "yomaru.dev");
+  ae.src = "https://sendfox.com/js/form.js";
+  document.head.appendChild(ae);
+  var Q = document.createElement("script");
+  Q.defer = !0;
+  Q.setAttribute("data-domain", "yomaru.dev");
+  Q.src = "https://plausible.io/js/plausible.js";
+  document.head.appendChild(Q);
+  Q.onload = function () {
+    console.log("plausible loaded");
+  };
+  window.SubstackFeedWidget = {
+    substackUrl: "yomaru.substack.com",
+    posts: 3,
+    hidden: ["author"],
+    colors: { primary: "#FFFFFF", secondary: "#9A9A9A", background: "#151515" },
+  };
+  window.CustomSubstackWidget = {
+    substackUrl: "yomaru.substack.com",
+    placeholder: "example@gmail.com",
+    buttonText: "Subscribe",
+    theme: "custom",
+    colors: {
+      primary: "#8B6CEF",
+      input: "#1E1E1E",
+      email: "#FFFFFF",
+      text: "#FFFFFF",
+    },
+  };
+  var He = document.createElement("script");
+  He.setAttribute("data-domain", "yomaru.dev");
+  He.src =
+    "https://cdn.jsdelivr.net/gh/bvanderhoof/gist-embed@master/dist/gist-embed.min.js";
+  document.head.appendChild(He);
+  var ue = document.createElement("link");
+  ue.setAttribute("data-domain", "yomaru.dev");
+  ue.href = "https://unpkg.com/vercel-toast/dist/vercel-toast.css";
+  ue.rel = "stylesheet";
+  document.head.appendChild(ue);
+  var se = document.createElement("script");
+  se.setAttribute("data-domain", "yomaru.dev");
+  se.src = "https://unpkg.com/vercel-toast";
+  se.defer = !0;
+  document.head.appendChild(se);
+  var de = document.createElement("script");
+  de.setAttribute("data-domain", "yomaru.dev");
+  de.src = "https://cdn.tailwindcss.com";
+  document.head.appendChild(de);
+  $e();
+  de.onload = function () {
+    let e = tailwind;
+    console.log("tailwind loaded", e),
+      (e.config = Ue(Ye({}, e.config), {
+        corePlugins: { preflight: !1 },
+        theme: { screens: { md: "750px", lg: "1000px" } },
+      }));
+  };
+  var fe = document.createElement("link");
+  fe.setAttribute("data-domain", "yomaru.dev");
+  fe.href =
+    "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css";
+  fe.rel = "stylesheet";
+  document.head.appendChild(fe);
+  var pe = document.createElement("script");
+  pe.setAttribute("data-domain", "yomaru.dev");
+  pe.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js";
+  pe.defer = !0;
+  document.head.appendChild(pe);
+  var Pe = document.createElement("script");
+  Pe.setAttribute("data-domain", "yomaru.dev");
+  Pe.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js";
+  document.head.appendChild(Pe);
+  var he = document.createElement("link");
+  he.setAttribute("data-domain", "yomaru.dev");
+  he.href =
+    "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css";
+  he.rel = "stylesheet";
+  document.head.appendChild(he);
+  var me = document.createElement("script");
+  me.setAttribute("data-domain", "yomaru.dev");
+  me.defer = !0;
+  me.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js";
+  me.onload = function () {
+    $("img").magnificPopup({ type: "image" });
+  };
+  var z = document.createElement("script");
+  z.defer = !0;
+  z.setAttribute("data-domain", "yomaru.dev");
+  z.src = "https://widget.senja.io/embed/frame.js";
+  document.head.appendChild(z);
+  z.onload = function () {
+    console.log("senja loaded");
+  };
+  var Z = document.createElement("script");
+  Z.defer = !0;
+  Z.setAttribute("data-domain", "yomaru.dev");
+  Z.src = "https://static.senja.io/dist/platform.js";
+  document.head.appendChild(Z);
+  Z.onload = function () {
+    console.log("senja2 loaded");
+  };
+  (() => {
+    let e = history.pushState;
+    history.pushState = function () {
+      let r = e.apply(this, arguments);
+      return (
+        window.dispatchEvent(new Event("pushstate")),
+        window.dispatchEvent(new Event("locationchange")),
+        r
+      );
+    };
+    let n = history.replaceState;
+    (history.replaceState = function () {
+      let r = n.apply(this, arguments);
+      return (
+        window.dispatchEvent(new Event("replacestate")),
+        window.dispatchEvent(new Event("locationchange")),
+        r
+      );
+    }),
+      window.addEventListener("popstate", () => {
+        window.dispatchEvent(new Event("locationchange"));
+      });
+  })();
+  window.addEventListener("locationchange", function (e) {
+    console.log("location changed!", window.location.href),
+      document
+        .querySelector(".published-container")
+        .classList.remove("is-left-column-open");
+  });
+  new oe();
+  var Vn = () => {
+    console.log("DOMContentLoaded already loaded");
+  };
+  document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", Vn)
+    : Vn();
+  $n();
+  Gn();
+  var Bt = document.querySelectorAll("div.list-item.published-section-header");
+  Bt.forEach((e) => {
+    e.classList.remove("list-item");
+  });
+  var Re,
+    le,
+    ce,
+    je = new WeakMap(),
+    qt = new MutationObserver((mutations) =>
+      T(void 0, null, function* () {
+        mutations.forEach((e) => {
+          e.type === "childList" &&
+            document.querySelectorAll("table").forEach((i) => {
+              if (!je.has(i)) {
+                Yt(i);
+                let r = Array.from(i.querySelectorAll("tr:has(td)"));
+                je.set(i, r);
+              }
+            });
+        }),
+          Wn(),
+          Kn(),
+          Re
+            ? eval(Re)
+            : yield fetch("https://iframely.net/embed.js")
+                .then((e) => e.text())
+                .then((text) => {
+                  (Re = text), eval(text);
+                });
+        let gistCodeElements = document.querySelectorAll("code[data-gist-id]");
+        gistCodeElements.forEach((e) => {
+          var i;
+          let n = e.childNodes;
+          n.length !== 0 &&
+            ((i = e.parentNode) == null || i.replaceChild(n[0], e));
+        });
+        let my2Elements = document.querySelectorAll(".gist .my-2");
+        my2Elements.forEach((e) => {
+          e.classList.remove("my-2");
+        });
+        let substackFeedEmbedElement = document.querySelector(
+          "#substack-feed-embed"
+        );
+        le ||
+          (yield fetch("https://substackapi.com/embeds/feed.js")
+            .then((e) => e.text())
+            .then((e) => {
+              le = e;
+            })),
+          le &&
+            substackFeedEmbedElement &&
+            substackFeedEmbedElement.innerHTML === "" &&
+            eval(le);
+        let substackWidgetElement = document.querySelector(
+          "#custom-substack-embed"
+        );
+        ce ||
+          (yield fetch("https://substackapi.com/widget.js")
+            .then((e) => e.text())
+            .then((e) => {
+              ce = e;
+            })),
+          ce &&
+            substackWidgetElement &&
+            substackWidgetElement.innerHTML === "" &&
+            eval(ce);
+      })
+    );
+  qt.observe(document.body, { childList: !0, subtree: !0 });
+  function Yt(e) {
+    e.querySelectorAll("th").forEach((n) => {
+      n.addEventListener("click", () => {
+        let i = Array.prototype.indexOf.call(n.parentElement.children, n),
+          r = n.classList.contains("th-sort-asc"),
+          t = n.classList.contains("th-sort-desc"),
+          l = null;
+        !r && !t ? (l = "asc") : r && (l = "desc"), Ut(e, i, l);
+      });
+    });
+  }
+  function Ut(e, n, i = null) {
+    let r = i === "asc" ? 1 : -1,
+      t = e.tBodies[0],
+      l;
+    for (
+      i !== null
+        ? ((l = Array.from(t.querySelectorAll("tr:has(td)"))),
+          (l = l.sort((o, c) => {
+            let a = o
+                .querySelector(`td:nth-child(${n + 1})`)
+                .textContent.trim(),
+              u = c.querySelector(`td:nth-child(${n + 1})`).textContent.trim();
+            return a > u ? 1 * r : -1 * r;
+          })))
+        : (l = je.get(e));
+      t.firstChild;
+
+    )
+      t.removeChild(t.firstChild);
+    t.append(...l),
+      e
+        .querySelectorAll("th")
+        .forEach((o) => o.classList.remove("th-sort-asc", "th-sort-desc")),
+      i !== null &&
+        (e
+          .querySelector(`th:nth-child(${n + 1})`)
+          .classList.toggle("th-sort-asc", i === "asc"),
+        e
+          .querySelector(`th:nth-child(${n + 1})`)
+          .classList.toggle("th-sort-desc", i === "desc"));
+  }
+})();
+/*! Bundled license information:
+
+js-yaml/dist/js-yaml.mjs:
+  (*! js-yaml 4.1.0 https://github.com/nodeca/js-yaml @license MIT *)
+*/
+
+```
 
 ## Data Engineering Wiki
 
@@ -1296,6 +4825,121 @@ for (const item of folders) {
         return false;
     });
 };
+```
+
+```css
+.graph-view.color-fill {
+  /* Supports all CSS color directives, like #HEX, rgb and rgba */
+  color: #7f6df2;
+}
+
+.site-footer {
+  display: none;
+}
+
+.site-body-left-column-site-name {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* Footer Heading */
+h2[data-heading="This note on GitHub"],
+h2[data-heading="This note in GitHub"] {
+    font-size: var(--editor-font-size);
+    text-align: center;
+}
+h2[data-heading="This note on GitHub"]::before,
+h2[data-heading="This note in GitHub"]::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--background-modifier-border);
+    margin-bottom: 10px;
+}
+
+/* Style GitHub footer links */
+span.git-footer {
+  display: block;
+  text-align: center;
+  bottom: 0;
+}
+.git-footer .external-link {
+  background-image: url();
+  padding-right: 0;
+  padding: 6px 15px;
+  background: var(--interactive-normal);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.git-footer .external-link:hover {
+  background: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+/* Footer Link Icons */
+.git-footer .external-link::before {
+  vertical-align: -3px;
+  padding-right: 4px;
+}
+.git-footer .external-link[title="git-hub-edit-note"]::before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2017.25V21h3.75L17.81%209.94l-3.75-3.75L3%2017.25zM20.71%207.04a.996.996%200%200%200%200-1.41l-2.34-2.34a.996.996%200%200%200-1.41%200l-1.83%201.83l3.75%203.75l1.83-1.83z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E');
+}
+.git-footer .external-link[title="git-hub-copy-note"]::before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M216%2032H88a8%208%200%200%200-8%208v40H40a8%208%200%200%200-8%208v128a8%208%200%200%200%208%208h128a8%208%200%200%200%208-8v-40h40a8%208%200%200%200%208-8V40a8%208%200%200%200-8-8zm-8%20128h-32V88a8%208%200%200%200-8-8H96V48h112z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E');
+}
+.git-footer .external-link[title="git-hub-download-vault"]::before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%209h-4V3H9v6H5l7%207l7-7zM5%2018v2h14v-2H5z%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E')
+}
+
+/* List Cards */
+.list-cards div > ul {
+    --link-color: var(--text-normal);
+    --link-unresolved-color: var(--text-muted);
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-color: var(--text-normal);
+    --link-external-decoration: none;
+    --link-external-decoration-hover: none;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding:0;
+}
+.list-cards div > ul > li {
+    display: flex;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--color-base-25);
+}
+.list-cards div > ul > li:has(ul) {
+	flex-direction: column;
+}
+.list-cards div > ul > li:has(ul) a {
+	flex-grow: 0;
+}
+.list-cards div ul > li a {
+	flex-grow: 1;
+    padding: 16px;
+    font-weight: var(--font-semibold);
+    background: none;
+}
+.list-cards div ul > li:hover {
+    border-color: var(--color-base-35);
+}
+
+.theme-dark .list-cards div ul > li {
+    background-color: var(--background-secondary);
+}
+.list-cards div ul ul {
+    display: block;
+    width: 100%;
+    color: var(--text-muted);
+    font-size: var(--font-smaller);
+    margin-top: -8px;
+    padding: 0 16px 16px;
+}
+.list-cards div ul ul > li {
+    display: block;
+}
 ```
 
 ## Beto.Group
@@ -2566,7 +6210,6 @@ const childObserver = new MutationObserver(handleChildAddition);
 childObserver.observe(document, { childList: true, subtree: true });
 
 ```
-
 
 ## EM Ponders
 
@@ -6536,2469 +10179,28 @@ img[alt*="sprf"]{
 
 [lab.marconoris.com > Notas sobre el ahora - Ouroboros lab](https://lab.marconoris.com/now)
 
-```css
-@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);body {
-    --font-default: ui-sans-serif,-apple-system,BlinkMacSystemFont,"Roboto","Helvetica","Arial","Segoe UI","Inter","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Microsoft YaHei Light",sans-serif;
-    --font-text-theme: var(--font-default);
-    --font-text-size-mobile: calc(0.95rem + 0.30vw);
-    --font-primary-sans: var(--font-default);
-    --font-secondary-sans: Helvetica,-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;
-    --font-primary-serif: Georgia,'Times New Roman',Times,serif;
-    --font-secondary-serif: "Merriweather",'Times New Roman',Times,serif;
-    --font-text-size: calc(0.8rem + 0.30vw);
-    --font-smallest: 0.8em;
-    --font-smaller: 0.875em;
-    --font-small: 0.933em;
-    --font-inputs: 0.933em;
-    --normal-weight: 400;
-    --bold-weight: 600;
-    --link-weight: inherit;
-    --cards-min-width: 180px;
-    --cards-max-width: 1fr;
-    --cards-mobile-width: 180px;
-    --cards-image-height: 400px;
-    --cards-padding: 1.2em;
-    --cards-image-fit: contain;
-    --cards-background: transparent;
-    --cards-border-width: 1px;
-    --cards-aspect-ratio: auto;
-    --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
-    --image-radius: 8px;
-    --img-grid-fit: cover;
-    --img-grid-background: transparent;
-    --img-grid-gap: 0.5rem;
-    --img-zoom-background: rgba(0,0,0,0.6);
-    --img-zoom-max-width: 96%;
-    --img-zoom-max-height: 90vh;
-    --img-zoom-in-cursor: zoom-in;
-    --img-zoom-out-cursor: zoom-out;
-    --icon-muted: 0.5;
-    --border-width: 1px;
-    --folding-offset: 16px;
-    --nested-padding: 30px;
-    --list-padding: 2em;
-    --list-spacing: 0.075em
-}
-
-@media (max-width: 400pt) {
-    body {
-        --cards-min-width:var(--cards-mobile-width);
-        --img-grid-gap: 0.25rem
-    }
-}
-
-.theme-light {
-    --color-red-rgb: 175,48,41;
-    --color-orange-rgb: 188,82,21;
-    --color-yellow-rgb: 173,131,1;
-    --color-green-rgb: 102,128,11;
-    --color-cyan-rgb: 36,131,123;
-    --color-blue-rgb: 32,94,166;
-    --color-purple-rgb: 94,64,157;
-    --color-pink-rgb: 160,47,111;
-    --color-red: #AF3029;
-    --color-orange: #BC5215;
-    --color-yellow: #AD8301;
-    --color-green: #66800B;
-    --color-cyan: #24837B;
-    --color-blue: #205EA6;
-    --color-purple: #5E409D;
-    --color-pink: #A02F6F
-}
-
-.theme-dark {
-    --color-red-rgb: 209,77,65;
-    --color-orange-rgb: 218,112,44;
-    --color-yellow-rgb: 208,162,21;
-    --color-green-rgb: 135,154,57;
-    --color-cyan-rgb: 58,169,159;
-    --color-blue-rgb: 67,133,190;
-    --color-purple-rgb: 139,126,200;
-    --color-pink-rgb: 206,93,151;
-    --color-red: #D14D41;
-    --color-orange: #DA702C;
-    --color-yellow: #D0A215;
-    --color-green: #879A39;
-    --color-cyan: #3AA99F;
-    --color-blue: #4385BE;
-    --color-purple: #8B7EC8;
-    --color-pink: #CE5D97
-}
-
-.theme-light {
-    --base-h: 360;
-    --base-s: 3%;
-    --base-l: 6%;
-    --accent-h: 175;
-    --accent-s: 57%;
-    --accent-l: 33%;
-    --bg1: #FFFCF0;
-    --bg2: #F2F0E5;
-    --bg3: rgba(16,15,15,0.05);
-    --ui1: #E6E4D9;
-    --ui2: #DAD8CE;
-    --ui3: #CECDC3;
-    --tx1: #100F0F;
-    --tx2: #6F6E69;
-    --tx3: #B7B5AC;
-    --hl1: rgba(187,220,206,0.3);
-    --hl2: rgba(247,209,61,0.3)
-}
-
-.theme-dark {
-    --base-h: 360;
-    --base-s: 3%;
-    --base-l: 6%;
-    --accent-h: 175;
-    --accent-s: 49%;
-    --accent-l: 45%;
-    --bg1: #100F0F;
-    --bg2: #1C1B1A;
-    --bg3: rgba(254,252,240,0.05);
-    --ui1: #282726;
-    --ui2: #343331;
-    --ui3: #403E3C;
-    --tx1: #CECDC3;
-    --tx2: #878580;
-    --tx3: #575653;
-    --hl1: rgba(30,95,91,0.3);
-    --hl2: rgba(213,159,17,0.3)
-}
-
-.theme-light {
-    --mono100: black;
-    --mono0: white
-}
-
-.theme-dark {
-    --mono100: white;
-    --mono0: black
-}
-
-.theme-dark,.theme-light {
-    --h1-color: var(--text-normal);
-    --h2-color: var(--text-normal);
-    --h3-color: var(--text-normal);
-    --h4-color: var(--text-normal);
-    --h5-color: var(--text-normal);
-    --h6-color: var(--text-muted)
-}
-
-.published-container {
-    --outline-heading-color-active: var(--tx1);
-    --sidebar-left-background: var(--bg2)
-}
-
-.theme-dark,.theme-light {
-    --background-primary: var(--bg1);
-    --background-primary-alt: var(--bg2);
-    --background-secondary: var(--bg2);
-    --background-secondary-alt: var(--bg1);
-    --background-tertiary: var(--bg3);
-    --background-table-rows: var(--bg2);
-    --background-modifier-form-field: var(--bg1);
-    --background-modifier-form-field-highlighted: var(--bg1);
-    --background-modifier-accent: var(--ax3);
-    --background-modifier-border: var(--ui1);
-    --background-modifier-border-hover: var(--ui2);
-    --background-modifier-border-focus: var(--ui3);
-    --background-modifier-success: var(--color-green);
-    --background-divider: var(--ui1);
-    --interactive-hover: var(--ui1);
-    --interactive-accent: var(--ax3);
-    --interactive-accent-hover: var(--ax3);
-    --quote-opening-modifier: var(--ui2);
-    --modal-border: var(--ui2);
-    --icon-color: var(--tx2);
-    --icon-color-hover: var(--tx2);
-    --icon-color-active: var(--tx1);
-    --icon-hex: var(--mono0);
-    --text-normal: var(--tx1);
-    --text-bold: var(--tx1);
-    --text-italic: var(--tx1);
-    --text-muted: var(--tx2);
-    --text-faint: var(--tx3);
-    --text-accent: var(--ax1);
-    --text-accent-hover: var(--ax2);
-    --text-on-accent: white;
-    --text-selection: var(--hl1);
-    --text-code: var(--tx4);
-    --text-error: var(--color-red);
-    --text-blockquote: var(--tx2);
-    --title-color: var(--tx1);
-    --title-color-inactive: var(--tx2)
-}
-
-.theme-light {
-    --interactive-normal: var(--bg1);
-    --interactive-accent-rgb: 220,220,220;
-    --text-highlight-bg: rgba(255, 225, 0, 0.5);
-    --text-highlight-bg-active: rgba(0, 0, 0, 0.1);
-    --background-modifier-error: rgba(255,0,0,0.14);
-    --background-modifier-error-hover: rgba(255,0,0,0.08);
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --btn-shadow-color: rgba(0, 0, 0, 0.05)
-}
-
-.theme-dark {
-    --interactive-normal: var(--bg3);
-    --interactive-accent-rgb: 66,66,66;
-    --text-highlight-bg: rgba(255, 177, 80, 0.3);
-    --text-highlight-bg-active: rgba(255, 255, 255, 0.1);
-    --background-modifier-error: rgba(255,20,20,0.12);
-    --background-modifier-error-hover: rgba(255,20,20,0.18);
-    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --btn-shadow-color: rgba(0, 0, 0, 0.2)
-}
-
-.alt-title .page-header,.hide-title .page-header {
-    display: none
-}
-
-.hide-title.markdown-preview-view div:nth-child(4) h1 {
-    margin-top: .25em;
-    font-variant: var(--page-title-variant);
-    letter-spacing: -.015em;
-    line-height: var(--page-title-line-height);
-    font-size: var(--page-title-size);
-    color: var(--page-title-color);
-    font-weight: var(--page-title-weight);
-    font-style: var(--page-title-style);
-    font-family: var(--page-title-font);
-    border: none
-}
-
-.h1-borders h1 {
-    border-bottom: 1px solid var(--ui1);
-    padding-bottom: .5em
-}
-
-.table-col-1-150.markdown-preview-view td:first-child {
-    width: 150px
-}
-
-.table-col-1-200.markdown-preview-view td:first-child {
-    width: 200px
-}
-
-.table-100 table,.table-cards table,.table-full table {
-    width: 100%
-}
-
-.table-small table {
-    --table-text-size: 85%
-}
-
-.table-tiny table {
-    --table-text-size: 75%
-}
-
-.row-hover {
-    --table-edge-cell-padding-first: 10px
-}
-
-.row-alt {
-    --table-row-alt-background: var(--background-table-rows);
-    --table-edge-cell-padding-first: 10px
-}
-
-.col-alt .markdown-rendered:not(.cards) {
-    --table-column-alt-background: var(--background-table-rows)
-}
-
-.table-tabular table {
-    font-variant-numeric: tabular-nums
-}
-
-.table-lines {
-    --table-border-width: var(--border-width);
-    --table-header-border-width: var(--border-width);
-    --table-column-first-border-width: var(--border-width);
-    --table-column-last-border-width: var(--border-width);
-    --table-row-last-border-width: var(--border-width);
-    --table-edge-cell-padding: 10px
-}
-
-.table-nowrap {
-    --table-white-space: nowrap
-}
-
-.table-nowrap .table-wrap,.trim-cols {
-    --table-white-space: normal
-}
-
-.table-numbers table {
-    counter-reset: section
-}
-
-.table-numbers table>thead>tr>th:first-child::before {
-    content: " ";
-    padding-right: .5em;
-    display: inline-block;
-    min-width: 2em
-}
-
-.table-numbers table>tbody>tr>td:first-child::before {
-    counter-increment: section;
-    content: counter(section) " ";
-    text-align: center;
-    padding-right: .5em;
-    display: inline-block;
-    min-width: 2em;
-    color: var(--text-faint);
-    font-variant-numeric: tabular-nums
-}
-
-.row-lines-off .table-view-table>tbody>tr>td,.row-lines-off table tbody>tr:last-child>td,.row-lines-off table tbody>tr>td {
-    border-bottom: none
-}
-
-.row-lines .table-view-table>tbody>tr>td,.row-lines table tbody>tr>td {
-    border-bottom: var(--table-border-width) solid var(--table-border-color)
-}
-
-.row-lines table tbody>tr:last-child>td {
-    border-bottom: none
-}
-
-.col-lines .table-view-table thead>tr>th:not(:last-child),.col-lines .table-view-table>tbody>tr>td:not(:last-child),.col-lines table tbody>tr>td:not(:last-child) {
-    border-right: var(--table-border-width) solid var(--background-modifier-border)
-}
-
-.row-hover {
-    --table-row-background-hover: hsla( var(--accent-h), 50%, 80%, 20% )
-}
-
-.theme-dark .row-hover,.theme-dark.row-hover {
-    --table-row-background-hover: hsla( var(--accent-h), 30%, 40%, 20% )
-}
-
-img[src$="#outline"],span[src$="#outline"] img {
-    border: 1px solid var(--ui1)
-}
-
-.published-container img[src$="#interface"],.published-container span[src$="#interface"] img {
-    border: 1px solid var(--ui1);
-    box-shadow: 0 .5px .9px rgba(0,0,0,.021),0 1.3px 2.5px rgba(0,0,0,.03),0 3px 6px rgba(0,0,0,.039),0 10px 20px rgba(0,0,0,.06);
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: var(--radius-m)
-}
-
-.theme-dark img[src$="#invert"],.theme-dark span[src$="#invert"] img {
-    filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: screen
-}
-
-.theme-light img[src$="#invertW"],.theme-light span[src$="#invertW"] img {
-    filter: invert(1) hue-rotate(180deg)
-}
-
-img[src$="#circle"],span[src$="#circle"] img {
-    border-radius: 50%;
-    aspect-ratio: 1/1
-}
-
-body {
-    --img-grid-fit: cover;
-    --img-grid-background: transparent;
-    --img-grid-gap: 0.5rem
-}
-
-@media (max-width: 400pt) {
-    body {
-        --img-grid-gap:0.25rem
-    }
-}
-
-.img-grid-ratio {
-    --image-grid-fit: contain
-}
-
-.img-grid .image-embed.is-loaded {
-    line-height: 0;
-    display: flex;
-    align-items: stretch
-}
-
-.img-grid .image-embed.is-loaded img {
-    background-color: var(--image-grid-background)
-}
-
-.img-grid .image-embed.is-loaded img:active {
-    background-color: transparent
-}
-
-.img-grid .markdown-preview-section>div:has(img) .image-embed~br,.img-grid .markdown-preview-section>div:has(img) img~br,.img-grid .markdown-preview-section>div:has(img) p:empty {
-    display: none
-}
-
-.img-grid .markdown-preview-section div:has(>.image-embed~.image-embed),.img-grid .markdown-preview-section div:has(>img~img),.img-grid .markdown-preview-section p:has(>.image-embed~.image-embed),.img-grid .markdown-preview-section p:has(>.image-embed~img),.img-grid .markdown-preview-section p:has(>img~.image-embed),.img-grid .markdown-preview-section p:has(>img~img) {
-    display: grid;
-    margin-block-start:var(--img-grid-gap);margin-block-end: var(--img-grid-gap);
-    grid-column-gap: var(--img-grid-gap);
-    grid-row-gap: 0;
-    grid-template-columns: repeat(auto-fit,minmax(0,1fr))
-}
-
-.img-grid .markdown-preview-section div:has(>.image-embed~.image-embed)>img,.img-grid .markdown-preview-section div:has(>img~img)>img,.img-grid .markdown-preview-section p:has(>.image-embed~.image-embed)>img,.img-grid .markdown-preview-section p:has(>.image-embed~img)>img,.img-grid .markdown-preview-section p:has(>img~.image-embed)>img,.img-grid .markdown-preview-section p:has(>img~img)>img {
-    object-fit: var(--image-grid-fit);
-    align-self: stretch
-}
-
-.img-grid .markdown-preview-section div:has(>.image-embed~.image-embed)>.internal-embed img,.img-grid .markdown-preview-section div:has(>img~img)>.internal-embed img,.img-grid .markdown-preview-section p:has(>.image-embed~.image-embed)>.internal-embed img,.img-grid .markdown-preview-section p:has(>.image-embed~img)>.internal-embed img,.img-grid .markdown-preview-section p:has(>img~.image-embed)>.internal-embed img,.img-grid .markdown-preview-section p:has(>img~img)>.internal-embed img {
-    object-fit: var(--image-grid-fit);
-    align-self: center
-}
-
-.img-grid .markdown-preview-section>div:has(img)>p {
-    display: grid;
-    margin-block-start:var(--img-grid-gap);margin-block-end: var(--img-grid-gap);
-    grid-column-gap: var(--img-grid-gap);
-    grid-row-gap: 0;
-    grid-template-columns: repeat(auto-fit,minmax(0,1fr))
-}
-
-.img-grid .markdown-preview-section>div:has(img)>p>br {
-    display: none
-}
-
-.img-zoom .image-embed {
-    cursor: zoom-in
-}
-
-.lightbox {
-    z-index: 99999;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    top: 0;
-    left: 0;
-    background: var(--img-zoom-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%
-}
-
-.lightbox .internal-embed.image-embed {
-    max-width: var(--img-zoom-max-width);
-    max-height: var(--img-zoom-max-height);
-    cursor: var(--img-zoom-in-cursor);
-    display: flex
-}
-
-.lightbox img {
-    cursor: var(--img-zoom-out-cursor);
-    object-fit: contain;
-    width: auto
-}
-
-.cards table {
-    --table-width: 100%;
-    --table-edge-cell-padding-first: calc(var(--cards-padding)/2);
-    --table-edge-cell-padding-last: calc(var(--cards-padding)/2);
-    --table-cell-padding: calc(var(--cards-padding)/3) calc(var(--cards-padding)/2);
-    line-height: 1.3
-}
-
-.cards table tbody {
-    clear: both;
-    padding: .5rem 0;
-    display: grid;
-    grid-template-columns: var(--cards-columns);
-    grid-column-gap: .75rem;
-    grid-row-gap: .75rem
-}
-
-.cards table>tbody>tr {
-    background-color: var(--cards-background);
-    border: var(--cards-border-width) solid var(--background-modifier-border);
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 0 calc(var(--cards-padding)/3) 0;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: box-shadow .15s linear;
-    max-width: var(--cards-max-width)
-}
-
-.cards table>tbody>tr:hover {
-    border: var(--cards-border-width) solid var(--background-modifier-border-hover);
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,.05),0 1px 3px 1px rgba(0,0,0,.025);
-    transition: box-shadow .15s linear
-}
-
-.cards table tbody>tr>td:first-child {
-    font-weight: var(--bold-weight);
-    border: none
-}
-
-.cards table tbody>tr>td:first-child a {
-    display: block
-}
-
-.cards table tbody>tr>td:last-child {
-    border: none
-}
-
-.cards table tbody>tr>td:not(:first-child) {
-    font-size: calc(var(--table-text-size) * .9);
-    color: var(--text-muted)
-}
-
-.cards table tbody>tr>td>* {
-    padding: calc(var(--cards-padding)/3) 0
-}
-
-.cards table tbody>tr>td:not(:last-child):not(:first-child) {
-    padding: 4px 0;
-    border-bottom: 1px solid var(--background-modifier-border);
-    width: calc(100% - var(--cards-padding));
-    margin: 0 calc(var(--cards-padding)/2)
-}
-
-.cards table tbody>tr>td a {
-    text-decoration: none
-}
-
-.cards table tbody>tr>td>button {
-    width: 100%;
-    margin: calc(var(--cards-padding)/2) 0
-}
-
-.cards table tbody>tr>td:last-child>button {
-    margin-bottom: calc(var(--cards-padding)/6)
-}
-
-.cards table tbody>tr>td>ul {
-    width: 100%;
-    padding: .25em 0!important;
-    margin: 0 auto!important
-}
-
-.cards table tbody>tr>td:has(img) {
-    padding: 0!important;
-    background-color: var(--background-secondary);
-    display: block;
-    margin: 0;
-    width: 100%
-}
-
-.cards table tbody>tr>td img {
-    aspect-ratio: var(--cards-aspect-ratio);
-    width: 100%;
-    object-fit: var(--cards-image-fit);
-    max-height: var(--cards-image-height);
-    background-color: var(--background-secondary);
-    vertical-align: bottom
-}
-
-.cards table thead {
-    display: none
-}
-
-.list-cards.markdown-preview-view .list-bullet,.list-cards.markdown-preview-view .list-collapse-indicator,.list-cards.markdown-preview-view.markdown-rendered.show-indentation-guide li>ul::before {
-    display: none
-}
-
-.list-cards.markdown-preview-view div>ul {
-    display: grid;
-    gap: .75rem;
-    grid-template-columns: var(--cards-columns);
-    padding: 0;
-    line-height: var(--line-height-tight)
-}
-
-.list-cards.markdown-preview-view div>ul>li {
-    background-color: var(--cards-background);
-    padding: calc(var(--cards-padding)/2);
-    border-radius: var(--radius-s);
-    border: var(--cards-border-width) solid var(--background-modifier-border);
-    overflow: hidden
-}
-
-.list-cards.markdown-preview-view div>ul .image-embed {
-    padding: 0;
-    display: block;
-    background-color: var(--background-secondary);
-    border-radius: var(--image-radius)
-}
-
-.list-cards.markdown-preview-view div>ul .image-embed img {
-    aspect-ratio: var(--cards-aspect-ratio);
-    object-fit: var(--cards-image-fit);
-    max-height: var(--cards-image-height);
-    background-color: var(--background-secondary);
-    vertical-align: bottom
-}
-
-.list-cards.markdown-preview-view div>ul>li>a {
-    --link-decoration: none;
-    --link-external-decoration: none;
-    font-weight: var(--bold-weight)
-}
-
-.list-cards.markdown-preview-view div ul>li:hover {
-    border-color: var(--background-modifier-border-hover)
-}
-
-.list-cards.markdown-preview-view div ul ul {
-    display: block;
-    width: 100%;
-    color: var(--text-muted);
-    font-size: var(--font-smallest);
-    margin: calc(var(--cards-padding)/-4) 0;
-    padding: calc(var(--cards-padding)/2) 0
-}
-
-.list-cards.markdown-preview-view div ul ul ul {
-    padding-bottom: calc(var(--cards-padding)/4)
-}
-
-.list-cards.markdown-preview-view div ul ul>li {
-    display: block
-}
-
-.cards.cards-16-9,.list-cards.cards-16-9 {
-    --cards-aspect-ratio: 16/9
-}
-
-.cards.cards-1-1,.list-cards.cards-1-1 {
-    --cards-aspect-ratio: 1/1
-}
-
-.cards.cards-2-1,.list-cards.cards-2-1 {
-    --cards-aspect-ratio: 2/1
-}
-
-.cards.cards-2-3,.list-cards.cards-2-3 {
-    --cards-aspect-ratio: 2/3
-}
-
-.cards.cards-cols-1,.list-cards.cards-cols-1 {
-    --cards-columns: repeat(1, minmax(0, 1fr))
-}
-
-.cards.cards-cols-2,.list-cards.cards-cols-2 {
-    --cards-columns: repeat(2, minmax(0, 1fr))
-}
-
-.cards.cards-cover,.list-cards.cards-cover {
-    --cards-image-fit: cover
-}
-
-.cards.cards-align-bottom table.dataview tbody>tr>td:last-child,.list-cards.cards-align-bottom table.dataview tbody>tr>td:last-child {
-    margin-top: auto
-}
-
-@media (max-width: 400pt) {
-    .cards table.dataview tbody>tr>td:not(:first-child) {
-        font-size:80%
-    }
-}
-
-@media (min-width: 400pt) {
-    .cards-cols-3 {
-        --cards-columns:repeat(3, minmax(0, 1fr))
-    }
-
-    .cards-cols-4 {
-        --cards-columns: repeat(4, minmax(0, 1fr))
-    }
-
-    .cards-cols-5 {
-        --cards-columns: repeat(5, minmax(0, 1fr))
-    }
-
-    .cards-cols-6 {
-        --cards-columns: repeat(6, minmax(0, 1fr))
-    }
-
-    .cards-cols-7 {
-        --cards-columns: repeat(7, minmax(0, 1fr))
-    }
-
-    .cards-cols-8 {
-        --cards-columns: repeat(8, minmax(0, 1fr))
-    }
-}
-
-.markdown-preview-view code {
-    color: var(--tx4);
-    font-size: .85em
-}
-
-.theme-light :not(pre)>code[class*=language-],.theme-light pre[class*=language-] {
-    background-color: var(--bg2)
-}
-
-iframe,img {
-    border-radius: var(--image-radius)
-}
-
-input[type=email],input[type=number],input[type=password],input[type=search],input[type=text] {
-    border-color: var(--ui1)
-}
-
-input[type=email]:hover,input[type=number]:hover,input[type=password]:hover,input[type=search]:hover,input[type=text]:hover {
-    border-color: var(--ui2)
-}
-
-input[type=email]:active,input[type=email]:focus,input[type=number]:active,input[type=number]:focus,input[type=password]:active,input[type=password]:focus,input[type=search]:active,input[type=search]:focus,input[type=text]:active,input[type=text]:focus {
-    border-color: var(--ui2);
-    box-shadow: 0 0 0 2px var(--ui2)
-}
-
-ol>li::marker,ul>li::marker {
-    color: var(--tx3)
-}
-
-body {
-    --table-header-border-width: 0;
-    --table-column-first-border-width: 0;
-    --table-column-last-border-width: 0;
-    --table-row-last-border-width: 0;
-    --table-edge-cell-padding-first: 0;
-    --table-edge-cell-padding-last: 10px;
-    --table-cell-padding: 4px 10px;
-    --table-header-size: var(--table-text-size)
-}
-
-.markdown-preview-view table {
-    border: var(--border-width) solid var(--border-color);
-    border-collapse: collapse;
-    margin-block-start:1em}
-
-.markdown-preview-view td,.markdown-preview-view th {
-    padding: var(--table-cell-padding)
-}
-
-.markdown-preview-view td:first-child,.markdown-preview-view th:first-child {
-    padding-left: var(--table-edge-cell-padding-first)
-}
-
-.markdown-preview-view td:last-child,.markdown-preview-view th:last-child {
-    padding-right: var(--table-edge-cell-padding-last)
-}
-
-.markdown-preview-view .tag:not(.token) {
-    background-color: transparent;
-    border: 1px solid var(--ui1);
-    color: var(--tx2);
-    font-size: var(--font-small)
-}
-
-.tooltip {
-    display: none
-}
-
-body {
-    --flexoki-blue-200: 146,191,219;
-    --flexoki-blue-300: 102,160,200;
-    --flexoki-red-500: 203,62,52;
-    --flexoki-yellow-150: 241,214,126;
-    --flexoki-yellow-300: 223,180,49;
-    --flexoki-yellow-400: 208,162,21;
-    --flexoki-purple-400: 139,126,200;
-    --flexoki-gray: 230,228,217;
-    --tag-color: var(--text-normal);
-    --tag-size: var(--font-smallest);
-    --tag-radius: var(--radius-s);
-    --tag-color-hover: var(--color-base-10);
-    --tag-padding-x: 4px;
-    --tag-padding-y: 1px;
-    --h1-size: calc(2.8em + 0.55vw);
-    --h2-size: calc(1.40em + 0.35vw);
-    --h3-size: calc(1.3em + 0.25vw);
-    --h4-size: calc(1.2em + 0.15vw);
-    --h5-size: calc(1.1em + 0.20vw);
-    --h6-size: calc(0.8em + 0.1vw);
-    --h1-weight: 100;
-    --h6-weight: 400;
-    --h2-weight: 300;
-    --h3-weight: 300;
-    --h4-weight: 300;
-    --h5-weight: 300;
-    --h1-line-height: 1;
-    --h2-line-height: 1.1;
-    --h3-line-height: var(--line-height-tight);
-    --h4-line-height: var(--line-height-tight);
-    --h5-line-height: 1.15;
-    --h6-line-height: var(--line-height-tight);
-    --h6-variant: all-small-caps
-}
-
-body.theme-light {
-    --color-base-55: #a3a199;
-    --color-base-80: #555450;
-    --tag-background: var(--background-secondary);
-    --tag-background-hover: var(--color-base-50);
-    --sidebar-left-border-width: 0px;
-    --sidebar-right-border-width: 0px
-}
-
-body.theme-dark {
-    --color-base-55: #63615d;
-    --color-base-80: #abaaa4;
-    --flexoki-gray: 40,39,38;
-    --tag-background: var(--color-base-35);
-    --tag-background-hover: var(--color-base-70);
-    --sidebar-left-border-width: 1px;
-    --sidebar-right-border-width: 1px
-}
-
-.theme-light {
-    --background-reader: var(--background-primary);
-    --blockquote-font-style: italic;
-    --blockquote-border-color: var(--color-base-25);
-    --blockquote-border-thickness: 1px;
-    --color-ligthorange: rgb(224, 150, 31);
-    --color-faintorange: rgb(204, 146, 83);
-    --color-darkorange: rgb(211, 117, 13);
-    --color-wine: #9a4a42;
-    --color-oldpink: #ac6a8c;
-    --color-wine-rgb: 154,74,66;
-    --color-oldpink-rgb: 172,106,140;
-    --color-gray-rgb: 111,110,105;
-    --color-base: 0,0,0;
-    --code-background: #efefe8;
-    --component-title-color: var(--text-normal);
-    --embed-border-left: 1px solid var(--blockquote-border-color);
-    --graph-node: var(--color-ligthorange);
-    --graph-node-unresolved: rgba(0, 0, 0, 1.00);
-    --graph-text: var(--color-base-60);
-    --img-zoom-color-background: rgba(250, 250, 244, 0.85);
-    --interactive-accent: var(--color-darkorange);
-    --link-color: rgb(16, 15, 15);
-    --link-external-color: rgb(16, 15, 15);
-    --link-external-decoration: underline;
-    --link-decoration: underline;
-    --blockquote-border-thickness: from-font;
-    --link-unresolved-color: var(--text-faint);
-    --link-unresolved-decoration-style: wavy;
-    --logo-width: 100%;
-    --sidebar-right-background: var(--color-base-10);
-    --text-light: var(--color-base-00);
-    --text-accent: var(--color-faintorange);
-    --text-accent-hover: var(--color-ligthorange);
-    --text-selection: var(--interactive-accent)
-}
-
-.theme-dark {
-    --background-reader: var(--background-primary);
-    --background-modifier-border: var(--color-base-35);
-    --blockquote-font-style: italic;
-    --blockquote-border-color: var(--color-base-50);
-    --color-wine: #b34b42;
-    --color-oldpink: #A02F6F;
-    --color-wine-rgb: 179,75,66;
-    --color-oldpink-rgb: 174,88,132;
-    --color-gray-rgb: 218,216,206;
-    --color-base: 255,255,255;
-    --code-background: var(--background-secondary);
-    --embed-border-left: 1px solid var(--blockquote-border-color);
-    --graph-node: rgb(56, 166, 222);
-    --graph-text: rgba(136, 159, 170, 1.00);
-    --graph-line: rgba(118, 117, 117, 0.6);
-    --graph-node-unresolved: #fd7878;
-    --interactive-accent: #4690b5;
-    --link-color: rgb(206, 205, 195);
-    --link-external-color: rgb(206, 205, 195);
-    --link-external-decoration: underline;
-    --link-decoration: underline;
-    --link-decoration-thickness: auto;
-    --link-unresolved-color: var(--text-faint);
-    --link-unresolved-decoration-color: var(--text-faint);
-    --link-unresolved-decoration-style: wavy;
-    --logo-width: 100%;
-    --img-zoom-color-background: rgba(0, 0, 0, 0.85);
-    --text-accent: rgb(96 184 228);
-    --text-accent-hover: #50d9fc;
-    --text-selection: var(--interactive-accent);
-    --text-light: var(--color-base-100)
-}
-
-.published-container {
-    --background-color: var(--background-primary);
-    --code-radius: var(--radius-m);
-    --footer-display: fixed;
-    --page-title-size: 14px;
-    --page-title-weight: 500;
-    --page-title-line-height: 1.1;
-    --page-title-variant: all-small-caps;
-    --page-title-color: var(--color-base-60);
-    --page-title-style: normal;
-    --sidebar-right-background: var(--background-primary);
-    --site-name-size: 14px;
-    --site-name-color: var(--text-accent);
-    --site-name-color-hover: var(--color-base-80);
-    --site-name-weight: 600
-}
-
-html {
-    -webkit-text-size-adjust: 100%
-}
-
-::-moz-selection {
-    color: #fff
-}
-
-::selection {
-    color: #fff
-}
-
-.site-body-center-column {
-    position: relative;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,.1)
-}
-
-.page-header {
-    letter-spacing: 0
-}
-
-.publish-renderer:has(:active) {
-    z-index: 99999
-}
-
-.site-header {
-    border-bottom: 0
-}
-
-.sliding-windows .render-container {
-    background-color: var(--background-primary)
-}
-
-.sliding-windows .publish-renderer,.sliding-windows .site-body-right-column {
-    box-shadow: none
-}
-
-button .external-link {
-    background-image: none
-}
-
-button {
-    cursor: pointer
-}
-
-button.center {
-    display: flex
-}
-
-button:not(.clickable-icon) {
-    color: var(--background-primary);
-    background-color: var(--interactive-accent);
-    padding: 15px;
-    margin: 40px auto
-}
-
-button:not(.clickable-icon):hover {
-    background-color: var(--text-accent);
-    color: var(--background-primary)
-}
-
-button:not(.clickable-icon) a.external-link,button:not(.clickable-icon) a.internal-link {
-    color: var(--background-primary);
-    padding: 5px 20px;
-    border: 0;
-    padding: 10px 30px;
-    margin: 0 auto;
-    text-decoration: none;
-    font-weight: 700
-}
-
-button:not(.clickable-icon) a.external-link:hover,button:not(.clickable-icon) a.internal-link:hover {
-    color: var(--background-primary);
-    text-decoration: none
-}
-
-@media screen and (min-width: 751px) {
-    #toggle-sidebar-btn {
-        margin:0;
-        width: 30px;
-        background: 0 0;
-        padding: 5px;
-        position: fixed;
-        right: 5px;
-        top: 5px;
-        background: 0 0;
-        border-radius: 50%;
-        border: 0;
-        box-shadow: none;
-        background: var(--background-primary);
-        opacity: 1;
-        color: var(--component-title-color);
-        z-index: 10
-    }
-
-    .theme-dark.sliding-windows #toggle-sidebar-btn {
-        top: 25px
-    }
-
-    #chooser {
-        position: absolute;
-        bottom: 5px;
-        right: 0;
-        background-color: var(--background-color);
-        padding: 7px 10px 2px 10px;
-        border-radius: 20px
-    }
-
-    #chooser a {
-        color: var(--text-muted);
-        margin-right: 5px
-    }
-
-    #chooser a:hover {
-        color: var(--text-accent-hover)
-    }
-
-    #chooser a:last-child {
-        margin-right: 0
-    }
-
-    #chooser svg {
-        width: 18px;
-        height: auto
-    }
-
-    .sliding-windows #toggle-sidebar-btn {
-        right: 287px;
-        top: 25px
-    }
-
-    #toggle-sidebar-btn:hover {
-        color: var(--color-base-100);
-        background: var(--background-secondary)
-    }
-
-    #toggle-sidebar-btn:hover {
-        cursor: pointer
-    }
-
-    .site-body:has(.landing) .publish-renderer,.site-body:has(.reader-view) .publish-renderer {
-        min-width: 800px!important
-    }
-
-    .published-container:has(.reader-view).is-readable-line-width:not(.has-navigation).has-graph .publish-renderer>.markdown-preview-view>.markdown-preview-sizer,.published-container:has(.reader-view).is-readable-line-width:not(.has-navigation).has-outline .publish-renderer>.markdown-preview-view>.markdown-preview-sizer {
-        margin-right: calc((100vw - var(--page-width))/ 2)!important
-    }
-
-    .site-body:has(.reader-view) #toggle-sidebar-btn {
-        color: var(--component-title-color)
-    }
-
-    .site-body:has(.reader-view) #toggle-sidebar-btn::before {
-        content: "Press r to switch view";
-        position: absolute;
-        top: 82px;
-        right: -46px;
-        transform: rotate(90deg);
-        color: var(--text-faint);
-        font-size: var(--font-smaller)
-    }
-
-    .site-body:has(.reader-view) .published-container .markdown-rendered h1 {
-        margin-top: 0
-    }
-
-    .site-body:has(.reader-view) .markdown-preview-view {
-        font-size: calc(.8rem + .3vw)
-    }
-
-    .site-body:has(.reader-view) #toggle-sidebar-btn {
-        top: 5px;
-        background: 0 0
-    }
-
-    .site-body:has(.reader-view) #toggle-sidebar-btn:hover {
-        background: 0 0
-    }
-
-    .sliding-windows .site-body:has(.reader-view) #toggle-sidebar-btn {
-        right: 5px
-    }
-
-    .published-container:has(.reader-view) .site-header {
-        display: block;
-        position: fixed;
-        top: 5px;
-        right: 30px;
-        z-index: 10;
-        height: auto;
-        padding: 5px 10px
-    }
-
-    .published-container:has(.reader-view) .site-header .site-header-text::after {
-        display: none
-    }
-
-    .sliding-windows:has(.reader-view) .publish-renderer,.sliding-windows:has(.reader-view) .render-container,body:has(.reader-view) {
-        background-color: var(--background-reader)
-    }
-
-    .sliding-windows:has(.reader-view.white) .publish-renderer,.sliding-windows:has(.reader-view.white) .render-container,body:has(.reader-view.white) {
-        background-color: #fff
-    }
-
-    .site-body:has(.reader-view) .render-container-inner {
-        margin: 0 auto
-    }
-
-    body:not(.sliding-windows):has(.reader-view) .is-readable-line-width.has-outline.has-navigation .publish-renderer>.markdown-preview-view>.markdown-preview-sizer {
-        margin-right: inherit
-    }
-
-    body:not(.sliding-windows):has(.reader-view) .publish-renderer>.markdown-preview-view>.markdown-preview-sizer {
-        margin: 0 auto
-    }
-
-    .sliding-windows div.hover-popover.is-loaded .publish-renderer {
-        width: inherit!important;
-        flex: inherit!important
-    }
-
-    .sliding-windows .published-container.has-graph .site-body:has(.reader-view) .site-body-center-column,.sliding-windows .site-body:has(.landing) .site-body-center-column,.sliding-windows .site-body:has(.reader-view) .site-body-center-column {
-        padding-right: 40px
-    }
-
-    .site-body:has(.landing) .site-body-center-column,.site-body:has(.reader-view) .site-body-center-column {
-        padding-left: 0;
-        box-shadow: none
-    }
-
-    .site-body:has(.reader-view) .graph-view-outer .published-section-header,.site-body:has(.reader-view) .mod-footer,.site-body:has(.reader-view) .nav-view-outer,.site-body:has(.reader-view) .outline-view-outer,.site-body:has(.reader-view) .page-header,.site-body:has(.reader-view) .search-view-container,.site-body:has(.reader-view) .site-body-left-column,.site-body:has(.reader-view) .site-body-left-column-site-logo,.site-body:has(.reader-view) .site-body-left-column-site-name,.site-body:has(.reader-view) .site-body-right-column,.site-body:has(.reader-view) .site-footer {
-        display: none
-    }
-}
-
-.site-body:has(.reader-view) h1 {
-    font-size: calc(3.4em + .55vw)
-}
-
-@media screen and (max-width: 750px) {
-    #toggle-sidebar-btn {
-        display:none
-    }
-
-    .site-body:has(.reader-view) .site-body-left-column {
-        display: flex!important
-    }
-
-    .markdown-rendered .callout-content ol>li,.markdown-rendered .callout-content ul>li {
-        margin-inline-start:1.25em}
-}
-
-@media screen and (max-width: 1024px) {
-    #toggle-sidebar-btn {
-        right:10px
-    }
-}
-
-::-webkit-scrollbar-track:has(.reader-view) {
-    background: rgba(14,13,13,0)
-}
-
-.site-body:has(.landing) .callout,.site-body:has(.landing) h1,.site-body:has(.landing) h2,.site-body:has(.landing) h3,.site-body:has(.landing) h4,.site-body:has(.landing) h5,.site-body:has(.landing) h6,.site-body:has(.landing) li,.site-body:has(.landing) p {
-    text-align: center
-}
-
-.site-body:has(.landing) li {
-    list-style-position: inside;
-    list-style: none
-}
-
-.site-body:has(.landing)>li:before {
-    content: "— "
-}
-
-.site-body:has(.landing)>li:after {
-    content: " —"
-}
-
-.site-body:has(.landing) .site-header {
-    right: 5px
-}
-
-.site-body:has(.landing) #chooser,.site-body:has(.landing) #toggle-sidebar-btn,.site-body:has(.landing) .graph-view-outer .published-section-header,.site-body:has(.landing) .mod-footer,.site-body:has(.landing) .nav-view-outer,.site-body:has(.landing) .outline-view-outer,.site-body:has(.landing) .page-header,.site-body:has(.landing) .search-view-container,.site-body:has(.landing) .site-body-left-column,.site-body:has(.landing) .site-body-left-column-site-logo,.site-body:has(.landing) .site-body-left-column-site-name,.site-body:has(.landing) .site-body-right-column,.site-body:has(.landing) .site-footer {
-    display: none!important
-}
-
-.site-body:has(.landing) .render-container-inner {
-    margin: 0 auto
-}
-
-@media screen and (max-width: 751px) {
-    .site-body:has(.landing) .site-header {
-        display:none
-    }
-}
-
-.published-container .backlinks {
-    margin-top: 100px;
-    margin-bottom: 100px
-}
-
-.backlink-items-container {
-    font-size: 16px
-}
-
-.backlinks .internal-link {
-    color: var(--text-muted)
-}
-
-.theme-dark .invert {
-    filter: invert()!important
-}
-
-.publish-article-heading .clickable-icon {
-    position: absolute
-}
-
-.theme-light .blend {
-    mix-blend-mode: multiply
-}
-
-.theme-dark .blend {
-    mix-blend-mode: normal
-}
-
-div.hover-popover.is-loaded h1,div.hover-popover.is-loaded h2 {
-    margin-block-end:.3em!important}
-
-#cookie-banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--bg2);
-    text-align: center;
-    padding: 10px;
-    z-index: 1000;
-    border-top: 1px solid var(--background-modifier-border)
-}
-
-#cookie-banner button:not(.clickable-icon) {
-    margin: 10px
-}
-
-.markdown-rendered div:has(>:is(p,pre,table,ul,ol,blockquote))+div>:is(h1,h2,h3,h4,h5,h6) {
-    margin-top: var(--heading-spacing)!important
-}
-
-.published-container .markdown-rendered h1,.published-container .markdown-rendered h2 {
-    border-bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: .35em
-}
-
-.markdown-rendered h1 .internal-link,.markdown-rendered h2 .internal-link,.markdown-rendered h3 .internal-link,.markdown-rendered h4 .internal-link,.markdown-rendered h5 .internal-link,.markdown-rendered h6 .internal-link {
-    text-decoration-thickness: 1px
-}
-
-.publish-article-heading .footnote-ref {
-    font-size: 1.3rem
-}
-
-.list-cards.markdown-preview-view div ul ul>li,.list-cards.markdown-preview-view div>ul>li {
-    margin-inline-start:0;background-color: var(--bg2);
-    border: 0
-}
-
-.list-cards.markdown-preview-view .callout div ul ul>li,.list-cards.markdown-preview-view .callout div>ul>li {
-    background-color: transparent;
-    border: 1px solid var(--tx2)
-}
-
-.list-cards.markdown-preview-view div>ul>li a {
-    font-weight: var(--bold-weight)
-}
-
-.markdown-preview-view .caption .external-link,.markdown-preview-view .small .external-link {
-    background-position-y: 2px
-}
-
-.theme-dark .external-link,.theme-dark .internal-link {
-    text-decoration-color: var(--color-base-70)
-}
-
-.external-link:hover,.markdown-rendered .internal-link:hover,.metadata-container .internal-link:hover {
-    text-decoration-color: var(--text-accent)
-}
-
-.theme-dark .markdown-rendered mark .internal-link {
-    color: var(--background-primary);
-    font-weight: 700
-}
-
-.outline-view-outer .outline-view {
-    padding-bottom: 80px
-}
-
-span.inline-note {
-    font-size: var(--font-smallest);
-    vertical-align: super;
-    color: var(--color-base-50);
-    padding: 3px;
-    font-style: italic
-}
-
-.footnote-ref {
-    font-size: var(--font-smallest)
-}
-
-input.search-bar {
-    border-radius: var(--radius-l);
-    background: var(--background-primary)
-}
-
-.publish-renderer .motionblur {
-    animation: blur-in 3s ease-out
-}
-
-@keyframes blur-in {
-    from {
-        filter: blur(4px) grayscale(100%)
-    }
-
-    to {
-        filter: blur(0) grayscale(0)
-    }
-}
-
-p svg.lucide {
-    vertical-align: middle
-}
-
-.theme-dark .markdown-rendered mark {
-    color: var(--background-primary);
-    background-color: rgb(255 235 146 / 71%)
-}
-
-.boxed {
-    padding: 15px;
-    border: 1px solid var(--color-base-50);
-    margin: 0 auto;
-    border-radius: var(--radius-m);
-    max-width: 700px;
-    text-align: center
-}
-
-.markdown-preview-view .caption,.markdown-preview-view .smalltext,.markdown-preview-view .smalltext *,.smalltext.smalltext.list-cards.markdown-preview-view div>ul>li {
-    font-size: var(--font-smallest)
-}
-
-.markdown-preview-view .caption a,.markdown-preview-view .smalltext a {
-    text-decoration-thickness: 1px
-}
-
-.grayscale img {
-    filter: grayscale()
-}
-
-.grayscale img:hover {
-    filter: none
-}
-
-.desaturated {
-    filter: grayscale(90%)
-}
-
-.desaturated a {
-    text-decoration: underline
-}
-
-.reduced {
-    font-size: 96%
-}
-
-.blur {
-    filter: blur(4px)
-}
-
-.blur:hover {
-    filter: blur(0)
-}
-
-.desaturated.blur {
-    filter: blur(4px) grayscale(90%)
-}
-
-.desaturated.blur:hover {
-    filter: blur(0) grayscale(90%)
-}
-
-.markdown-preview-view .date {
-    font-weight: 700;
-    opacity: .7;
-    text-align: right;
-    margin-right: 5px
-}
-
-.caption {
-    text-align: center;
-    display: block;
-    margin: -12px auto 35px
-}
-
-.list-cards .caption {
-    margin-top: 0
-}
-
-.img-grid .markdown-preview-section>div:has(.image-embed)>p span.caption {
-    text-align: left;
-    margin: 0 auto 35px
-}
-
-.markdown-preview-view .light * {
-    opacity: .7
-}
-
-.markdown-preview-view .footnotes ol {
-    font-size: var(--font-smallest)!important
-}
-
-ul>li.task-list-item .task-list-item-checkbox {
-    margin-left: -1.83em!important
-}
-
-.nav-view-outer,.outline-view-outer {
-    padding-bottom: 90px
-}
-
-.modal-close-button {
-    top: 16px
-}
-
-.markdown-preview-view.reduced p {
-    margin-block-start:0}
-
-@media screen and (min-width: 751px) {
-    .markdown-rendered.clean {
-        padding:70px!important
-    }
-
-    .markdown-rendered.clean h1 .markdown-rendered.clean h1 {
-        display: none
-    }
-}
-
-.mermaid {
-    text-align: center;
-    margin: 30px auto 30px auto
-}
-
-.mermaid .text-inner-tspan {
-    fill: var(--text-light)
-}
-
-.markdown-rendered table {
-    border-radius: var(--radius-m);
-    margin: 30px 0
-}
-
-.markdown-rendered.small-table table td {
-    font-size: var(--font-smallest)
-}
-
-.markdown-rendered.nolists ol,.markdown-rendered.nolists.clean-table ul,table ul:has(li.tag) {
-    margin: 0;
-    padding: 0
-}
-
-.markdown-rendered.nolists ol>li,.markdown-rendered.nolists ul>li,table ul:has(li.tag)>li {
-    list-style-type: none;
-    display: inline-block;
-    margin-inline-start:0}
-
-table ul:has(li.tag)>li::after {
-    content: " "
-}
-
-.markdown-rendered.nolists ol>li::after,.markdown-rendered.nolists ul>li::after {
-    content: " / "
-}
-
-.markdown-rendered.nolists ol>li:last-child::after,.markdown-rendered.nolists ul>li:last-child::after,table ul:has(li.tag)>li:last-child::after {
-    content: ""
-}
-
-.markdown-rendered.clean-table tbody>tr>td,.markdown-rendered.clean-table thead>tr>th {
-    border: none
-}
-
-.markdown-rendered.clean-table tbody tr>td:first-child,.markdown-rendered.clean-table thead tr>th:first-child {
-    text-align: right;
-    color: var(--color-base-55)
-}
-
-.theme-dark .markdown-rendered.clean-table tbody tr>td:first-child,.theme-dark .markdown-rendered.clean-table thead tr>th:first-child {
-    color: var(--text-muted)
-}
-
-.markdown-preview-view table {
-    border: var(--border-width) solid var(--border-color);
-    border-collapse: collapse;
-    margin-block-start:1em}
-
-.markdown-preview-view td,.markdown-preview-view th {
-    padding: var(--table-cell-padding)
-}
-
-.markdown-preview-view td:first-child,.markdown-preview-view th:first-child {
-    padding-left: var(--table-edge-cell-padding-first)
-}
-
-.markdown-preview-view td:last-child,.markdown-preview-view th:last-child {
-    padding-right: var(--table-edge-cell-padding-last)
-}
-
-.search-view-container {
-    margin: 0 0 10px 0
-}
-
-.site-body-left-column-site-logo img {
-    border-radius: 0
-}
-
-.site-body-left-column-site-logo img:hover {
-    cursor: pointer
-}
-
-.site-body-left-column-site-name {
-    z-index: 0!important;
-    padding: 0;
-    text-align: center;
-    font-weight: 600
-}
-
-.theme-dark .site-body-left-column-site-logo img {
-    filter: invert(1) hue-rotate(212deg);
-    opacity: 1
-}
-
-.site-body-left-column-site-theme-toggle {
-    margin: 0 auto;
-    padding-right: 32px;
-    position: absolute;
-    top: 10px;
-    left: 10px
-}
-
-.site-body-left-column .search-view-outer {
-    margin: 0;
-    display: contents
-}
-
-.site-body-left-column-site-name::after {
-    display: block;
-    content: "¿El cuerpo del texto o el texto del cuerpo?";
-    margin: 0 0 30px;
-    font-weight: 400;
-    font-size: var(--font-smaller);
-    color: var(--color-base-70)
-}
-
-.site-body-left-column-site-name::after:hover {
-    color: var(--color-base-100)
-}
-
-.site-header-text::after {
-    content: "¿El cuerpo del texto o el texto del cuerpo?";
-    font-size: var(--font-smaller);
-    text-align: right;
-    margin-left: 10px;
-    color: var(--color-base-70);
-    font-weight: 400
-}
-
-.site-header-text:hover {
-    text-decoration: none
-}
-
-.site-header-logo {
-    display: none
-}
-
-.site-body-left-column {
-    padding-right: 18px
-}
-
-.nav-view-outer .nav-view>.tree-item>.tree-item-children>.tree-item>.tree-item-self:hover {
-    opacity: .65
-}
-
-.callout {
-    margin: 30px 0;
-    padding: 10px;
-    border-radius: var(--radius-m);
-    border-left: 0
-}
-
-.callout[data-callout-metadata=red] {
-    --callout-color: var(--flexoki-red-500)!important
-}
-
-.callout[data-callout-metadata=blue] {
-    --callout-color: var(--flexoki-blue-300)!important
-}
-
-.callout[data-callout-metadata=yellow] {
-    --callout-color: var(--flexoki-yellow-400)!important
-}
-
-.callout[data-callout-metadata=purple] {
-    --callout-color: var(--flexoki-purple-400)!important
-}
-
-.callout[data-callout-metadata=gray] {
-    --callout-color: var(--flexoki-gray)!important
-}
-
-.callout[data-callout=highlight],.callout[data-callout=pdf] {
-    --callout-icon: "lucide-highlighter"
-}
-
-.callout[data-callout=pdf][data-callout-metadata=yellow] {
-    --callout-color: var(--color-yellow-rgb)
-}
-
-.callout[data-callout=pdf][data-callout-metadata=red] {
-    --callout-color: var(--color-orange-rgb)
-}
-
-.callout[data-callout=pdf][data-callout-metadata=note] {
-    --callout-color: var(--color-cyan-rgb)
-}
-
-.callout[data-callout=hint] {
-    --callout-color: var(--color-purple-rgb)
-}
-
-.callout[data-callout=important] {
-    --callout-color: var(--color-red-rgb)
-}
-
-.callout[data-callout=watch] {
-    --callout-icon: "lucide-youtube";
-    background-color: var(--background-secondary)
-}
-
-.callout[data-callout=timeline] {
-    --callout-icon: "lucide-calendar";
-    --callout-color: var(--color-purple-rgb)
-}
-
-.callout[data-callout=links] {
-    --callout-icon: "lucide-link";
-    --callout-color: var(--color-orange-rgb)
-}
-
-.callout[data-callout=bot],.callout[data-callout=note] {
-    --callout-color: var(--color-purple-rgb)
-}
-
-.callout[data-callout=user] {
-    --callout-icon: "lucide-user";
-    background-color: var(--background-secondary);
-    --callout-color: var(--color-gray-rgb)
-}
-
-.callout[data-callout=grid].callout,.callout[data-callout=routes] {
-    filter: none;
-    -webkit-filter: none
-}
-
-.callout[data-callout=cite] {
-    background-color: transparent;
-    border-radius: 0;
-    margin: 20px 30px;
-    padding: 0
-}
-
-.callout[data-callout=texts] {
-    --callout-icon: "lucide-file-text";
-    --callout-color: var(--color-oldpink-rgb)
-}
-
-.callout[data-callout=bot] {
-    --callout-icon: "lucide-bot-message-square"
-}
-
-.callout[data-callout=docs] {
-    --callout-icon: "lucide-paperclip";
-    --callout-color: var(--color-green-rgb)
-}
-
-.callout[data-callout=trail] {
-    --callout-icon: "lucide-footprints";
-    --callout-color: var(--color-yellow-rgb)
-}
-
-.callout[data-callout=routes] {
-    --callout-icon: "lucide-map";
-    --callout-color: var(--color-yellow-rgb)
-}
-
-.callout[data-callout=hipertext] {
-    --callout-icon: "lucide-refresh-cw";
-    --callout-color: var(--color-wine-rgb)
-}
-
-.callout[data-callout=small] {
-    --callout-icon: "circle-dashed";
-    background-color: transparent
-}
-
-.callout[data-callout=video] {
-    --callout-icon: "lucide-video"
-}
-
-.callout[data-callout=galleries],.callout[data-callout=images],.callout[data-callout=portfolio] {
-    --callout-icon: "lucide-image";
-    border: 1px solid var(--color-base-35);
-    margin: 20px auto 20px auto;
-    border-radius: var(--radius-m);
-    background-color: rgba(255,255,255,1)
-}
-
-.theme-dark .callout[data-callout=galleries],.theme-dark .callout[data-callout=images],.theme-dark .callout[data-callout=portfolio] {
-    background-color: rgba(0,0,0,1)
-}
-
-.callout[data-callout=newsbox] {
-    padding: 15px;
-    border: 1px solid var(--text-normal);
-    margin: 20px auto 20px auto;
-    border-radius: var(--radius-m);
-    background-color: transparent;
-    --callout-icon: "calendar-days"
-}
-
-.callout[data-callout=info] {
-    background-color: var(--background-secondary)
-}
-
-.callout[data-callout=infobox] {
-    padding: 0;
-    border: 1px solid var(--color-base-35);
-    margin: 20px auto 20px auto;
-    background-color: transparent;
-    font-size: var(--font-small)
-}
-
-.callout[data-callout=big-sans],.callout[data-callout=big-serif] {
-    font-size: 22px;
-    background: 0;
-    margin: 50px 0;
-    line-height: 30px;
-    padding: 0
-}
-
-.callout[data-callout=big-serif] {
-    font-family: var(--font-primary-serif)
-}
-
-.callout[data-callout=clean] {
-    background: 0;
-    border: 0;
-    padding: 30px 0 30px 50px
-}
-
-div.hover-popover.is-loaded .callout[data-callout=clean] {
-    margin-left: 0!important
-}
-
-.callout[data-callout=book] {
-    --callout-color: var(--color-yellow-rgb);
-    --callout-icon: "lucide-book"
-}
-
-div.popover.hover-popover.is-loaded .callout[data-callout=noteinfo] {
-    margin-top: 0!important
-}
-
-.callout[data-callout=noteinfo] {
-    --callout-icon: "lucide-info"
-}
-
-.callout[data-callout=noteinfo] {
-    font-size: var(--font-smaller);
-    background: 0;
-    padding: 0;
-    margin: 0 0 50px 0;
-    border-radius: 0;
-    line-height: var(--line-height-normal)
-}
-
-.callout[data-callout=small] {
-    font-size: var(--font-smallest);
-    padding: 0;
-    margin: 0 0 50px 0;
-    border-radius: 0;
-    opacity: 1;
-    line-height: var(--line-height-normal)
-}
-
-.callout[data-callout=languages] {
-    padding: 5px 5px;
-    background-color: transparent;
-    font-size: var(--font-smallest);
-    border: .01em solid var(--color-base-50);
-    margin: 0 0 5px 0;
-    --callout-icon: "lucide-languages";
-    font-variant: all-small-caps
-}
-
-.callout[data-callout=big-sans] .callout-title,.callout[data-callout=big-serif] .callout-title,.callout[data-callout=cite] .callout-icon,.callout[data-callout=cite] .callout-title,.callout[data-callout=clean]>.callout-title,.callout[data-callout=infobox] .callout-title,.callout[data-callout=infobox] .callout-title .svg-icon,.callout[data-callout=noteinfo] .callout-title,.callout[data-callout=small] .callout-title {
-    display: none
-}
-
-.callout[data-callout=languages] .callout-title {
-    padding: 0
-}
-
-.callout[data-callout=galleries] .callout-title,.callout[data-callout=images] .callout-title,.callout[data-callout=info] .callout-title,.callout[data-callout=languages] .callout-title .svg-icon,.callout[data-callout=portfolio] .callout-title {
-    filter: grayscale()
-}
-
-.callout[data-callout=languages] .callout-title-inner {
-    font-weight: 300;
-    color: var(--text-muted)
-}
-
-.callout[data-callout=cite] .callout-content {
-    font-weight: inherit;
-    font-style: italic;
-    font-family: var(--font-primary-serif)
-}
-
-.callout[data-callout=cite] .callout-content {
-    padding: 0
-}
-
-.callout[data-callout=cite] .callout-content blockquote {
-    border: 0;
-    padding: 0
-}
-
-.callout[data-callout=infobox] .callout-content {
-    padding-top: 10px;
-    text-align: center
-}
-
-.callout[data-callout=infobox] .callout-content p {
-    margin: 10px 0
-}
-
-.callout[data-callout=big-sans] .callout-content,.callout[data-callout=big-serif] .callout-content {
-    padding: 0 0 0 30px
-}
-
-.callout[data-callout=big-sans] p,.callout[data-callout=big-serif] p {
-    padding: 0;
-    margin: 0
-}
-
-.callout[data-callout=noteinfo] .callout-content {
-    padding: 0 0 2px 0;
-    text-indent: 0
-}
-
-.callout[data-callout=noteinfo] .callout-content p,.callout[data-callout=small] .callout-content,.callout[data-callout=small] .callout-content p {
-    padding: 0;
-    margin: 0
-}
-
-.callout[data-callout=noteinfo] .external-link,.callout[data-callout=small] .external-link {
-    background-size: 10px;
-    background-position-y: 0
-}
-
-.callout[data-callout=small] .callout-content p svg.lucide {
-    vertical-align: text-bottom
-}
-
-.callout[data-callout=noteinfo] .callout-content,.callout[data-callout=small] .callout-content {
-    padding: 0
-}
-
-.callout[data-callout=noteinfo] .callout-content {
-    color: var(--text-muted)
-}
-
-.callout[data-callout=noteinfo] .callout-content .markdown-rendered .tag:not(.token) {
-    font-size: var(--font-smaller)
-}
-
-.callout[data-callout=noteinfo] .callout-content a {
-    color: var(--color-base-60);
-    text-decoration-color: var(--color-base-40)
-}
-
-.callout[data-callout=noteinfo] .callout-content a:hover {
-    color: var(--text-accent-hover);
-    text-decoration-color: var(--text-accent-hover)
-}
-
-.callout[data-callout=noteinfo] .callout-content .tag:not(.token):hover {
-    color: var(--color-base-00)
-}
-
-.theme-dark .callout[data-callout=noteinfo] .callout-content .tag:not(.token):hover {
-    color: var(--color-base-60)
-}
-
-.callout[data-callout=languages] .callout-content {
-    display: none
-}
-
-.callout[data-callout=small] .callout-content .markdown-rendered .tag:not(.token) {
-    font-size: var(--font-smallest)
-}
-
-.callout .callout-title a {
-    font-weight: var(--bold-weight);
-    color: var(--callout-title-color)
-}
-
-.callout[data-callout=pdf][data-callout-metadata=yellow] .callout-title a {
-    filter: brightness(.8)
-}
-
-.markdown-preview-view .tag:not(.token) {
-    white-space: nowrap;
-    text-decoration: none;
-    font-size: var(--font-smallest);
-    border: 1px solid var(--ui3)
-}
-
-.markdown-preview-view .tag:not(.token):hover {
-    text-decoration: none;
-    background-color: var(--ui3)
-}
-
-.body:not(.minimal-unstyled-tags) {
-    margin: 1px 10px 0 0
-}
-
-.markdown-preview-view .callout:not([data-callout=noteinfo]):not([data-callout=clean]):not([data-callout=small]) .tag:not(.token) {
-    background-color: transparent;
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    padding: 0 5px;
-    font-size: var(--font-smallest)
-}
-
-.markdown-preview-view .callout:not([data-callout=noteinfo]):not([data-callout=clean]):not([data-callout=small]) .tag:not(.token):hover {
-    background-color: var(--text-normal);
-    color: var(--background-color)
-}
-
-.theme-light img[src$="#blend"],.theme-light span[src$="#blend"] img {
-    mix-blend-mode: multiply
-}
-
-.theme-light .lightbox [src$="#blend"],.theme-light .lightbox span[src$="#blend"] img {
-    mix-blend-mode: screen
-}
-
-.theme-light img[src$="#invert"],.theme-light span[src$="#invert"] img {
-    mix-blend-mode: multiply
-}
-
-.theme-light .lightbox [src$="#invert"],.theme-light .lightbox span[src$="#invert"] img {
-    mix-blend-mode: screen
-}
-
-.list-cards.cards-white.markdown-preview-view div>ul>li {
-    background-color: #fff
-}
-
-.list-cards.cards-noborder.markdown-preview-view div>ul>li {
-    border: 0
-}
-
-img {
-    cursor: var(--img-zoom-in-cursor)
-}
-
-.publish-renderer .grayscale img {
-    filter: grayscale(100%);
-    opacity: 1
-}
-
-.publish-renderer .grayscale img:hover {
-    filter: none;
-    opacity: 1
-}
-
-.markdown-preview-view img {
-    max-width: 100%;
-    border-radius: var(--radius-m);
-    display: block;
-    margin: 0 auto
-}
-
-.theme-dark img {
-    opacity: .8
-}
-
-.theme-dark .lightbox img {
-    opacity: 1
-}
-
-div[src$="#float"],span[src$="#float"] {
-    padding-right: 10px;
-    float: left
-}
-
-div[src$="#float"] img,img[src$="#float"],span[src$="#float"] img {
-    height: auto;
-    width: 100px
-}
-
-.lightbox div[src$="#float"] img,.lightbox img[src$="#float"],.lightbox span[src$="#float"] img {
-    height: auto;
-    width: auto
-}
-
-div[src$="#boxed"] img,img[src$="#boxed"],span[src$="#boxed"] img {
-    border: 1px solid var(--color-base-50)
-}
-
-.lightbox div[src$="#boxed"] img,.lightbox img[src$="#boxed"],.lightbox span[src$="#boxed"] img {
-    border: 0
-}
-
-.theme-dark div[src$="#icon"] img,.theme-dark img[src$="#icon"],.theme-dark span[src$="#icon"] img,.theme-dark svg.icon {
-    width: 18px;
-    margin-right: 2px;
-    filter: invert()
-}
-
-div[src$="#icon"] img,img[src$="#icon"],span[src$="#icon"] img,svg.icon {
-    width: 18px;
-    margin-right: 2px
-}
-
-.img-grid .image-embed.is-loaded[src$="#icon"],.img-grid div[src$="#icon"],.img-grid span[src$="#icon"],div[src$="#icon"],span[src$="#icon"] {
-    display: inline-block;
-    vertical-align: middle;
-    opacity: .6
-}
-
-.img-grid span[src$="#icon"].image-embed img:hover,.img-zoom span[src$="#icon"].image-embed img:hover,.markdown-preview-view img[src^=http],div[src$="#icon"].image-embed img:hover,span[src$="#icon"].image-embed img:hover {
-    cursor: default
-}
-
-span[src$="#icon"]+span[src$="#icon"] {
-    margin-left: 2px
-}
-
-.markdown-rendered video {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    border-radius: var(--radius-m)
-}
-
-.markdown-source-view .pdf-embed,.pdf-embed {
-    max-width: 100%;
-    height: auto!important
-}
-
-.internal-embed:not(.image-embed) {
-    --embed-padding: 20px 0 0 20px
-}
-
-.internal-embed:not(.image-embed) h1 {
-    margin-top: 0;
-    font-size: var(--h2-size)!important
-}
-
-.internal-embed:not(.image-embed).pdf-embed .iframe,.internal-embed:not(.image-embed).pdf-embed .iframe embed {
-    max-width: 100%!important
-}
-
-.markdown-embed-title {
-    white-space: pre-wrap;
-    font-variant: var(--page-title-variant);
-    line-height: var(--page-title-line-height);
-    font-size: var(--page-title-size);
-    color: var(--page-title-color);
-    font-weight: var(--page-title-weight);
-    font-style: var(--page-title-style);
-    font-family: var(--page-title-font);
-    margin-bottom: 50px
-}
-
-iframe video .media-controls {
-    width: 100%!important
-}
-
-iframe {
-    border: 0;
-    width: 100%;
-    max-width: 100%;
-    border-radius: var(--radius-m);
-    background-color: transparent;
-    margin: 50px auto 50px auto;
-    display: block
-}
-
-iframe.boxed {
-    padding: 0
-}
-
-iframe.border {
-    border-color: var(--color-base-100)
-}
-
-.internal-embed:not(.image-embed).pdf-embed {
-    height: 800px!important;
-    max-width: 100%;
-    width: 100%;
-    border: 0
-}
-
-.internal-embed:not(.image-embed).pdf-embed iframe {
-    height: 100%!important;
-    min-height: 340px;
-    max-width: 100%;
-    width: 100%;
-    border-radius: var(--radius-m);
-    margin: 0
-}
-
-.lr_embed {
-    margin: 20px 0
-}
-
-#slideshow .image-view .image,video {
-    border-radius: var(--radius-m)
-}
-
-.site-footer {
-    position: absolute;
-    right: 5px;
-    bottom: 0;
-    width: 258px;
-    font-size: 11px;
-    line-height: initial;
-    padding-bottom: 10px;
-    background-color: var(--background-primary)
-}
-
-.sliding-windows .site-footer {
-    right: 23px;
-    position: absolute;
-    bottom: 0;
-    width: 258px;
-    font-size: 11px;
-    line-height: initial;
-    padding-bottom: 10px;
-    background-color: var(--background-primary);
-    text-align: left
-}
-
-.site-footer a {
-    text-decoration: underline
-}
-
-.theme-light .site-footer {
-    color: rgba(127,127,127,1)
-}
-
-.theme-dark .site-footer {
-    color: rgba(126,126,126,1)
-}
-
-.site-footer .foot-links {
-    margin-bottom: 2px;
-    border-bottom: 0 dotted #e2e2e2;
-    padding-bottom: 2px;
-    display: none
-}
-
-.social {
-    margin: 5px auto 5px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 5px
-}
-
-.markdown-preview-view .social img[src^=http] {
-    cursor: pointer
-}
-
-.social .social-icon svg {
-    fill: var(--text-muted)
-}
-
-.social svg:hover path {
-    fill: var(--text-accent)
-}
-
-.social img.social-icon {
-    filter: opacity(.6)!important;
-    border-radius: 0
-}
-
-.social img.social-icon:hover {
-    filter: opacity(1)!important
-}
-
-.theme-dark .social img.social-icon {
-    filter: invert(1)!important;
-    opacity: .6
-}
-
-.theme-dark .social img.social-icon:hover {
-    opacity: 1
-}
-
-.social a {
-    background: 0 0;
-    text-decoration: none;
-    margin-right: 10px
-}
-
-.social a:last-child {
-    margin-right: 0!important
-}
-
-.site-footer .social .behance,.site-footer .social .facebook,.site-footer .social .linkedin,.site-footer .threads {
-    display: none!important
-}
-
-.site-footer .social {
-    text-align: right;
-    display: block
-}
-
-.sliding-windows .site-footer .social {
-    text-align: left;
-    display: block
-}
-
-.social svg {
-    width: auto;
-    height: 15px;
-    vertical-align: middle
-}
-
-.social svg .cls-0,.social svg:hover path.cls-0 {
-    fill: none
-}
-
-.social svg#mailme {
-    border-radius: 2px;
-    background: 0 0;
-    width: auto;
-    height: 12px;
-    gap: 33px
-}
-
-.social svg#portfolio {
-    height: 18px
-}
-
-.social svg#blog {
-    height: 20px
-}
-
-.social svg#behance {
-    background: 0 0;
-    width: auto;
-    height: 13px
-}
-
-.social svg#linkedin-icon {
-    background: 0 0;
-    width: auto;
-    height: 22px
-}
-
-.social svg#face {
-    border-radius: 2px
-}
-
-@media screen and (min-width: 1800px) {
-    .sliding-windows .publish-renderer {
-        width:800px;
-        flex: 0 0 800px
-    }
-
-    .site-body-left-column-site-name,body {
-        font-size: 110%
-    }
-}
-
-@media screen and (min-width: 2100px) {
-    .published-container {
-        --sidebar-left-width:400px
-    }
-
-    .nav-view,.site-body-left-column-site-name,body {
-        font-size: 120%
-    }
-
-    .nav-view [data-path]::after,.site-body-left-column-site-name::after {
-        font-size: 100%;
-        padding: 0
-    }
-
-    .callout[data-callout=circle],.callout[data-callout=noteinfo],.callout[data-callout=small] {
-        font-size: 85%!important
-    }
-}
-
-@media screen and (max-width: 730px) {
-    .site-header-text::after {
-        display:block;
-        text-align: left;
-        margin: 0
-    }
-
-    .page-header {
-        display: none
-    }
-
-    .site-footer {
-        width: 100%
-    }
-
-    .site-footer .social {
-        display: flex;
-        text-align: center
-    }
-
-    .site-footer {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        right: 0
-    }
-
-    .search-view-container {
-        margin: 10px 15px 15px
-    }
-
-    .search-view-container input {
-        height: 50px
-    }
-
-    .site-body-left-column-site-name,.site-body-left-column-site-theme-toggle {
-        margin: 0 0 20px 5px!important;
-        position: relative;
-        top: 0
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .markdown-rendered h1 {
-        margin-block-start:40px!important
-    }
-
-    .frontmatter-container {
-        margin-bottom: 3rem
-    }
-
-    .callout[data-callout=clean] {
-        background: 0;
-        border: 0;
-        padding: 10px 0 10px 0
-    }
-
-    .site-footer {
-        width: 100%
-    }
-
-    .site-body-left-column .search-view-outer {
-        margin: 20px 0 0 0
-    }
-
-    .site-footer .social {
-        display: none
-    }
-}
-
-@media screen and (max-width: 1024px) and (orientation:landscape) {
-    .site-body-left-column-site-logo,.site-footer {
-        width:150px!important;
-        display: none
-    }
-
-    .site-body-left-column-site-name,.site-body-left-column-site-theme-toggle {
-        margin: 0 0!important
-    }
-
-    .nav-view-outer {
-        opacity: 1
-    }
-
-    .markdown-preview-view:not(.show-frontmatter) .frontmatter {
-        display: none!important
-    }
-
-    .site-footer {
-        text-align: center;
-        width: 100%;
-        right: 50%;
-        bottom: -20px;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        padding: 5px 0 22px 0!important;
-        margin: 0
-    }
-
-    .site-footer .social {
-        display: none
-    }
-}
-
-@media screen and (max-width: 1024px) and (orientation:portrait) {
-    body {
-        --font-text-size:var(--font-text-size-mobile)!important
-    }
-
-    .tree-item-self .tree-item-icon {
-        padding-inline-start:25px!important}
-
-    .site-footer {
-        text-align: center;
-        right: 0;
-        width: 100%
-    }
-
-    .site-footer .social {
-        text-align: center
-    }
-}
-
-@media print {
-    #toggle-sidebar-btn,.backlinks,.boxed:has(.social),.callout.is-collapsed,.frontmatter-container,.markdown-preview-view:not(.show-frontmatter) .frontmatter,.page-header {
-        display: none!important
-    }
-}
-
-.footnote-tooltip {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 1000;
-    max-width: 300px;
-    font-size: .9em
-}
-
-.footnote-link:hover .footnote-tooltip {
-    display: block
+```js
+/* 
+Marco Noris - https://lab.marconoris.com 
+Select the Obsidian Publihs input search by pressing 'ctrl+f' keys
+*/
+
+
+function setupKeyboardShortcut() {
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'f') { //It is possible to change with other characters.
+      e.preventDefault(); // Prevent default behavior
+      var searchBar = document.querySelector('.search-bar');
+      if (searchBar) {
+        searchBar.focus();
+      }
+    }
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupKeyboardShortcut);
+} else {
+  setupKeyboardShortcut();
 }
 ```
 
@@ -9230,3 +10432,1294 @@ document.addEventListener("keydown", function(_) {
 });
 
 ```
+
+## Javalent
+
+[plugins.javalent.com > Home -](https://plugins.javalent.com/home#Practical+plugins)
+
+```js
+/* == Add Buy Me a Coffee to Right Side Menu == */
+
+document.getElementsByClassName('site-footer')[0].innerHTML = '<div style="text-align: center "><a href=\'https://www.buymeacoffee.com/valentine195\' target=\'_blank\'><img height=\'32\' width=\'150\' style=\'border:0;height:32px;opacity:0.5;filter:alpha(opacity=50);\' src=\'https://storage.ko-fi.com/cdn/kofi3.png?v=3\' border=\'0\' alt=\'Buy Me a Coffee at ko-fi.com\' /></a></div>';
+
+
+/* == Add Copy Code Button == */
+
+const svgCopy =
+    '<svg aria-hidden="true" height="12" viewBox="1 -2 12 18" version="1.1" width="18" data-view-component="true"><path fill-rule="evenodd" fill="rgb(200, 200, 200)" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" fill="rgb(200, 200, 200)" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg>'
+const svgCheck =
+    '<svg aria-hidden="true" height="12" viewBox="1 -2 12 18" version="1.1" width="18" data-view-component="true"><path fill-rule="evenodd" fill="rgb(63, 185, 80)" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>'
+
+// Function to create the copy button element
+function createButton() {
+    const button = document.createElement('button')
+    button.classList.add('copy-code-button')
+    button.type = 'button'
+    return button
+}
+
+// Function to update the button's icon with the specified SVG
+function updateButtonIcon(button, icon) {
+    button.innerHTML = icon
+}
+
+// Function to add a copy button to the code block
+function addCopyButton(block) {
+    const button = createButton()
+    updateButtonIcon(button, svgCopy)
+    block.parentNode.insertBefore(button, block.nextSibling)
+
+    // Add click event listener to the button
+    button.addEventListener('click', function () {
+        copyCodeToClipboard(block.textContent, button)
+    })
+}
+
+// Function to copy code to clipboard and update the button's icon
+function copyCodeToClipboard(code, button) {
+    navigator.clipboard
+        .writeText(code)
+        .then(function () {
+            console.log('Copied to clipboard: ' + code)
+            button.blur()
+            updateButtonIcon(button, svgCheck)
+            setTimeout(function () {
+                updateButtonIcon(button, svgCopy)
+            }, 2000)
+        })
+        .catch(function (error) {
+            console.error('Failed to copy code: ', error)
+        })
+}
+
+// Check for new code blocks periodically and add copy buttons if needed
+setInterval(function () {
+    document.querySelectorAll('pre code:not(.copy-code-button)').forEach(addCopyButton)
+}, 100)
+
+```
+
+## Minerva
+
+[minerva.mamansoft.net > Home - Minerva](https://minerva.mamansoft.net/Home)
+
+```js
+console.log("Load start publish.js");
+
+// Disable default favicon
+document.querySelector("head > link[rel=icon]").href =
+  "https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/favicon.ico";
+
+let id;
+
+function insertMetaData() {
+  const frontmatter = app.site.cache.cache[app.currentFilepath].frontmatter;
+  if (!frontmatter) {
+    clearInterval(id);
+    return;
+  }
+
+  const created = frontmatter["created"]?.replaceAll("-", "/");
+  const updated = frontmatter["updated"]?.replaceAll("-", "/");
+  const status = frontmatter["status"];
+  const url = frontmatter["url"];
+  if (!(created || updated || status || url)) {
+    clearInterval(id);
+    return;
+  }
+
+  const frontmatterEl = document.querySelector(".frontmatter");
+  if (!frontmatterEl) {
+    // DOMの準備が完了していないだけの可能性が高いためclearIntervalはしない
+    return;
+  }
+
+  const urlElement = url ? `<a href="${url}" class="url">一次情報あり</a>` : "";
+
+  frontmatterEl.insertAdjacentHTML(
+    "afterend",
+    `
+<div class="properties-container">
+  <div class="properties">
+    ${created ? '<div class="created">作成:' + created + "</div>" : ""}
+    ${updated ? '<div class="updated">更新:' + updated + "</div>" : ""}
+    ${status ? '<div class="status">' + status + "</div>" : ""}
+  </div>
+  <div class="properties">
+    ${urlElement}
+  </div>
+</div>
+`,
+  );
+
+  clearInterval(id);
+}
+
+const onChangeDOM = (mutationsList, observer) => {
+  for (let mutation of mutationsList) {
+    if (
+      mutation.type === "childList" &&
+      mutation.addedNodes[0]?.className === "page-header"
+    ) {
+      clearInterval(id);
+      id = setInterval(insertMetaData, 50);
+    }
+  }
+};
+
+const targetNode = document.querySelector(
+  ".markdown-preview-sizer.markdown-preview-section",
+);
+const observer = new MutationObserver(onChangeDOM);
+observer.observe(targetNode, { childList: true, subtree: true });
+id = setInterval(insertMetaData, 50);
+
+```
+
+## Excalidraw Wiki
+
+[excalidraw-obsidian.online > Welcome - Obsidian-Excalidraw](https://excalidraw-obsidian.online/Welcome)
+
+```js
+const clickToEnlarge = "Click and hold to enlarge. SHIFT + wheel to zoom. ESC to reset.";
+const clickToCollapse = "ESC to reset. Click and hold to collapse. SHIFT + wheel to zoom";
+
+//check if in iFrame - if yes the page is assumed to be an embedded frame
+if(window.self !== window.top) {
+  const elements = [
+    "div.site-body-right-column",
+    "div.site-body-left-column",
+    "div.site-header",
+    "div.site-footer"
+  ];
+  elements.forEach(x=>{
+    document.querySelectorAll(x).forEach(div=>{
+      div.style.display = "none";
+    });
+  });
+}
+
+const baseUrl = `${window.location.origin}/`;
+
+const [isDesktop, isMobile, isTablet] = (()=>{
+  const userAgent = navigator.userAgent;
+  const mobileKeywords = ['Mobile', 'Android', 'iPhone', 'iPad', 'Windows Phone'];
+
+  const isMobile = mobileKeywords.some(keyword => userAgent.includes(keyword));
+  const isTablet = /iPad/i.test(userAgent) || (isMobile && !/Mobile/i.test(userAgent));
+  const isDesktop = !isMobile && !isTablet;
+
+  return [isDesktop, isMobile, isTablet];
+})();
+
+const addNavigationToDiv = (container) => {
+  const svgElement = container?.querySelector('.excalidraw-svg');
+  if(!svgElement) return;
+  container.addClass("excalidraw-svg");
+  svgElement.removeAttribute("width");
+  svgElement.removeAttribute("height");
+  
+  if(!isDesktop) return;
+  
+  const textDiv = document.createElement('div');
+  textDiv.className = 'text';
+  textDiv.textContent = clickToEnlarge;
+  container.appendChild(textDiv);
+
+  let isEnlarged = false;
+  let timeout = null;
+  let isReadyToPan = false;
+  let isPanning = false;
+  let zoomLevel = 1;
+  let panX = 0;
+  let panY = 0;
+  let pinchStartDistance = 0;
+  let panStartX = 0;
+  let panStartY = 0;
+
+  const clearEnlargeTimeout = () => {
+    if(timeout) clearTimeout(timeout);
+    timeout = null;
+  }
+
+  const enablePointerEvents = (val) => {
+    svgElement.querySelectorAll("a").forEach(el=>{
+      el.style.pointerEvents = val ? "all" : "none";
+    });
+  }
+
+  const applyTransform = () => {
+    svgElement.style.transform = `scale(${zoomLevel}) translate(${panX}px, ${panY}px)`;
+    clearEnlargeTimeout();
+  };
+
+  //Wheel zoom
+  svgElement.addEventListener('wheel', (event) => {
+    if(!event.shiftKey ) return;
+    if (event.deltaY > 0) {
+    zoomLevel -= zoomLevel > 4 
+	  ? (zoomLevel > 6 
+	    ? (zoomLevel > 10 ? 0.4 : 0.3)
+		: 0.2) 
+	  : 0.1;
+    } else {
+    zoomLevel += zoomLevel > 4 
+	  ? (zoomLevel > 6 
+	    ? (zoomLevel > 10 ? 0.4 : 0.3)
+		: 0.2) 
+	  : 0.1;
+    }
+    applyTransform();
+  });
+
+  // Panning
+  svgElement.addEventListener('mousedown', (event) => {
+    isReadyToPan = true;
+    panStartX = event.clientX;
+    panStartY = event.clientY;
+  });
+
+  svgElement.addEventListener('mousemove', (event) => {
+    const deltaX = event.clientX - panStartX;
+    const deltaY = event.clientY - panStartY;
+    const distance = Math.sqrt(deltaX**2+deltaY**2);
+    if (isReadyToPan && (distance > 20)) {
+      if(!isPanning) {
+        enablePointerEvents(false);
+        isPanning = true;
+      }
+      panX += deltaX/zoomLevel;
+      panY += deltaY/zoomLevel;
+      panStartX = event.clientX;
+      panStartY = event.clientY;
+
+      applyTransform();
+    }
+  });
+
+  svgElement.addEventListener('mouseup', () => {
+    enablePointerEvents(true);
+    isPanning = false;
+    isReadyToPan = false;
+  });
+
+  svgElement.addEventListener('mouseleave', () => {
+    enablePointerEvents(true);
+    isPanning = false;
+    isReadyToPan = false;
+  });
+
+  //abort on Escape
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      enablePointerEvents(true);
+      isEnlarged = false;
+      isPanning = false;
+      isReadyToPan = false;
+      container.classList.remove("enlarged");
+      textDiv.textContent = clickToEnlarge;
+      zoomLevel = 1;
+      panX = 0;
+      panY = 0;
+      applyTransform();
+    }
+  });
+ 
+
+  //Enlarge on long click
+  svgElement.addEventListener('mouseup', () => clearEnlargeTimeout());
+  svgElement.addEventListener('mousedown', () => {
+    timeout = setTimeout(()=> {
+      timeout = null;
+      if(isPanning) return;
+      isReadyToPan = false;
+      if (isEnlarged) {
+        // Collapse the image
+        container.classList.remove("enlarged");
+        textDiv.textContent = clickToEnlarge;
+      } else {
+        // Enlarge the image
+        container.addClass("enlarged");
+        textDiv.textContent = clickToCollapse;
+      }
+      isEnlarged = !isEnlarged;
+    },1000);
+  });
+
+  applyTransform();
+}
+
+const processIMG = (img) => {
+  const svgURL = img.src;
+  const container = img.parentElement;
+
+  fetch(svgURL)
+    .then((response) => {
+      if (response.ok) {
+        return response.text();
+      }
+      throw new Error('Failed to fetch SVG');
+    })
+    .then((svgContent) => {    
+      svgContainer = document.createElement('div');
+      svgContainer.innerHTML = svgContent;
+      svgContainer.querySelectorAll(`a[href^="obsidian://open?vault="`).forEach(el=>{
+        el.setAttribute("href",unescape(el.getAttribute("href").replace(/.*&file=/,baseUrl).replaceAll(" ","+")));
+      });
+      svgContainer.querySelectorAll(`iframe[src^="obsidian://open?vault="`).forEach(el=>{
+        el.setAttribute("src",unescape(el.getAttribute("src").replace(/.*&file=/,baseUrl).replaceAll(" ","+")));
+      });
+      container.removeChild(img);
+      container.appendChild(svgContainer);
+      addNavigationToDiv(svgContainer);
+      
+    })
+    .catch((error) => {
+      console.error('Error: ' + error);
+    });
+}
+
+const processIframe = (iframe) => {
+  const p = iframe.parentElement;
+  if(!p || p.tagName.toLowerCase()!=="p") return;
+  const div = p.parentElement;
+  if(!div || div.tagName.toLowerCase()!=="div") return;
+
+  div.style.maxWidth = '600px';
+  div.style.maxHeight = '350px';
+  div.style.overflow = 'hidden';
+
+  p.style.position = 'relative';
+  p.style.width = '100%';
+  p.style.paddingBottom = '56.25%'; // 16:9 aspect ratio
+  p.style.height = '0';
+
+  // Apply inline styles to the iframe
+  iframe.style.position = 'absolute';
+  iframe.style.top = '0';
+  iframe.style.left = '0';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.border = '0';
+};
+
+const addMutationObserver = () => {
+  const targetElement = document.body;
+
+  const handler = (mutationsList, observer) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach(node => {
+          if (node instanceof Element) {
+            // Process SVG images as before
+            if (node.querySelector(`img[alt$=".svg"]`)) {
+              processIMG(node.querySelector(`img[alt$=".svg"]`));
+            }
+            // Process iframes with the class 'external-embed'
+            const iframe = node.querySelector('iframe.external-embed');
+            if (iframe) {
+              processIframe(iframe);
+              
+            }
+          }
+        });
+      }
+    }
+  };
+
+  const observer = new MutationObserver(handler);
+  const config = { childList: true, subtree: true };
+  observer.observe(targetElement, config);
+};
+
+//process images after loading
+document.body.querySelectorAll(`img[alt$=".svg"`).forEach(img => {
+  processIMG(img);
+});
+
+addMutationObserver();
+
+// -----------------------------------
+// Page redirect for 404 pages
+// -----------------------------------
+
+const pageNotFoundObserver = new MutationObserver(() => {
+  handlePageNotFound();
+});
+
+function handlePageNotFound() {
+  const container = document.querySelector('div.published-container.has-not-found');
+  if (container) {
+    pageNotFoundObserver.disconnect(); // Stop observing once the .published-container is found
+
+    const currentLocation = window.location.href;
+    const newLocation = currentLocation.replace(/Hobbies\/Excalidraw\+Blog\//, '');
+
+    // Update the content of the div.not-found-description
+    const notFoundDescription = document.querySelector('div.not-found-description');
+    if (notFoundDescription) {
+      notFoundDescription.innerHTML = `
+        <p style="text-align: center;">This page may have moved. You will be redirected in <span id="countdown" style="color:red;">10</span><span style="color:red;"> seconds</span>.</p>
+        <p style="text-align: center;">If you arrived from an external link, please email details to 
+        <a href="mailto:webmaster@visual-thinking-workshop.com">webmaster@visual-thinking-workshop.com</a>.</p>
+        <p style="text-align: center;"><a href="${newLocation}">Click here to redirect now.</a></p>
+      `;
+    }
+
+    // Countdown timer
+    let countdown = 10;
+    const countdownElement = document.getElementById('countdown');
+    const interval = setInterval(() => {
+	  //abort if the user has moved to another page
+	  if(currentLocation !== window.location.href) {
+		  clearInterval(interval);
+	  }
+      countdown -= 1;
+      countdownElement.textContent = countdown;
+      
+      // Once the countdown reaches 0, redirect the page
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = newLocation;
+      }
+    }, 1000); // Update every second
+
+    console.log(`Redirecting to: ${newLocation}`);
+    return true;
+  }
+  return false;
+}
+
+if(!handlePageNotFound()) {
+  const target = document.querySelector("div.published-container") ?? document.body;
+  pageNotFoundObserver.observe(target, { childList: true, attributes: true });
+}
+```
+
+## Anthony Amar
+
+[anthonyamar.fr > Welcome in my mind 🧠 - My second-brain](https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0)
+
+```js
+var path = decodeURI(window.location.pathname).replaceAll("+", " ");
+var str = path.substring(1) + ".md";
+var frontmatter = window.app.site.cache.cache[str].frontmatter;
+
+var metas = {}
+metas["title"] = frontmatter.title;
+metas["description"] = frontmatter.description;
+
+Object.keys(metas).forEach(function(key){
+  var metaTag = document.createElement('meta'); 
+  metaTag.name = key; 
+  metaTag.content = metas[key]; 
+  document.head.appendChild(metaTag);
+});
+```
+
+## Elkadre
+
+[gist.github.com > elkadre’s gists](https://gist.github.com/elkadre)
+
+```js
+/*
+Since this site is made with Obsidian, we use this publish.js file to customize the site.
+https://help.obsidian.md/Obsidian+Publish/Customize+your+site
+*/
+
+const site = "https://brain.elkadre.ch";
+
+// Customize navigation order
+
+let navOrderAsc = []; // These go on top
+let navOrderDsc = []; // These go at the bottom
+
+// Items not mentioned go in between in alphabetical order
+
+var siteLeft = document.querySelector('.site-body-left-column');
+var siteNav = siteLeft.querySelector('.nav-view-outer');
+var navContainer = siteNav.querySelector('.tree-item').querySelector('.tree-item-children');
+
+for (const item of navOrderAsc.reverse()) {
+    navItem = navContainer.querySelector(`[data-path="${item}.md"]`);
+    if (navItem == null) continue;
+    moveItem = navItem.parentElement;
+    navContainer.prepend(moveItem);
+};
+
+for (const item of navOrderDsc.reverse()) {
+    navItem = navContainer.querySelector(`[data-path="${item}.md"]`);
+    if (navItem == null) continue;
+    moveItem = navItem.parentElement;
+    navContainer.append(moveItem);
+};
+
+/* == Add Buy Me a Coffee to Left Side Menu == */
+
+var buymeacoffee = document.createElement("bmac");
+
+document.querySelector(".site-body-right-column").appendChild(buymeacoffee); 
+
+buymeacoffee.innerHTML = '<div style="text-align: center; display:block; bottom:0; right:10px; position: absolute; margin-bottom:30px; margin-left: "><a href="https://ko-fi.com/lkadre" target="_blank"><img src="https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png" alt="Buy Me A Coffee" height="60" width="60" style="opacity:0.3;filter:alpha(opacity=30);"></a></div>';
+
+
+/* == Publish Frontmatter code from tadashi-aikawa 
+https://forum.obsidian.md/t/show-properties-of-a-note-in-the-published-pages/68164/5?u=sigrunixia */
+
+let id;
+
+function insertMetaDates() {
+  const frontmatter = app.site.cache.cache[app.currentFilepath].frontmatter;
+  if (!frontmatter) {
+    return;
+  }
+
+  const lastupdate = frontmatter["lastupdate"]?.replaceAll("-", "/");
+  const fullname = frontmatter["fullname"]?.replaceAll("-", "/");
+  const birth = frontmatter["birth"]?.replaceAll("-", "/");
+  const death = frontmatter["death"]?.replaceAll("-", "/");
+  const type = frontmatter["type"]?.replaceAll("-", "/");
+  const jurisdiction = frontmatter["jurisdiction"]?.replaceAll("-", "/");
+  const url = frontmatter["url"];
+  const tags = frontmatter["tags"]
+
+  const frontmatterEl = document.querySelector(".frontmatter");
+  if (!frontmatterEl) {
+    return;
+  }
+
+  const tagElms = tags
+  .map(
+    (tag) => `
+  <a href="#${tag}" class="tag" target="_blank" rel="noopener">#${tag}</a>
+  `
+  )
+  .join("");
+
+
+
+  frontmatterEl.insertAdjacentHTML(
+    "afterend",
+    `
+<div class="propertyitemtable">
+    <div id="updatedateproperty" class="propertyitem">Last Update on ${lastupdate}</div>
+    <div id="fullnameproperty" class="propertyitem">full name: ${fullname}</div>
+    <div id="birthproperty" class="propertyitem">birth: ${birth}</div>
+    <div id="deathproperty" class="propertyitem">death: ${death}</div>
+    <div id="jurisdictionproperty" class="propertyitem">jurisdiction: ${jurisdiction}</div>
+    <div id="typeproperty" class="propertyitem">type: ${type}</div>
+    <div id="urlproperty" class="propertyitem"><a href="${url}"> URL </a></div>
+</div>
+<div class="propertyitemtags">
+        ${tagElms}
+</div>
+`
+  );
+
+if (!lastupdate) {
+    document.getElementById('updatedateproperty').style.display = "none"
+} else {
+    document.getElementById('updatedateproperty').style.display = ""
+}
+
+if (!fullname) {
+    document.getElementById('fullnameproperty').style.display = "none"
+} else {
+    document.getElementById('fullnameproperty').style.display = ""
+}
+
+if (!birth) {
+    document.getElementById('birthproperty').style.display = "none"
+} else {
+    document.getElementById('birthproperty').style.display = ""
+}
+
+if (!death) {
+    document.getElementById('deathproperty').style.display = "none"
+} else {
+    document.getElementById('deathproperty').style.display = ""
+}
+
+if (!jurisdiction) {
+  document.getElementById('jurisdictionproperty').style.display = "none"
+} else {
+  document.getElementById('jurisdictionproperty').style.display = ""
+}
+
+if (!url) {
+  document.getElementById('urlproperty').style.display = "none"
+} else {
+  document.getElementById('urlproperty').style.display = ""
+}
+
+if (!type) {
+  document.getElementById('typeproperty').style.display = "none"
+} else {
+  document.getElementById('typeproperty').style.display = ""
+}
+
+  clearInterval(id);
+}
+
+const onChangeDOM = (mutationsList, observer) => {
+  for (let mutation of mutationsList) {
+    if (
+      mutation.type === "childList" &&
+      mutation.addedNodes[0]?.className === "page-header"
+    ) {
+      clearInterval(id);
+      id = setInterval(insertMetaDates, 50);
+    }
+  }
+};
+
+
+const targetNode = document.querySelector(
+  ".markdown-preview-sizer.markdown-preview-section"
+);
+const observer = new MutationObserver(onChangeDOM);
+observer.observe(targetNode, { childList: true, subtree: true });
+id = setInterval(insertMetaDates, 50);
+```
+
+# Implementations from the Vault Side
+
+There's two good ways to implement things from the vault side:
+1. Use HTML or embeds
+2. Use plugins that programmatically generate into supported formats that would work in Publish 
+
+## Hiding Content from Obsidian Publish
+
+### 1. Wrapping Links in a “No Publish” Container and Hiding with CSS
+
+**a. Generate the Links Wrapped in a Container**
+
+When you generate your GitHub links (using Templater, QuickAdd, or another method), have the output wrapped in an element with a dedicated class (for example, `.no-publish`). For instance:
+
+markdown
+
+Copy
+
+`<div class="no-publish"> [View on GitHub](https://github.com/yourusername/yourrepo/blob/main/<% tp.file.path() %>) | [Edit on GitHub](https://github.com/yourusername/yourrepo/edit/main/<% tp.file.path() %>) </div>`
+
+**b. Hide the Container in publish.css**
+
+Then, in your publish.css (which controls the published website’s appearance), add a rule to hide that element:
+
+css
+
+Copy
+
+`.no-publish {   display: none; }`
+
+This way, while the links are present in your markdown files (and useful for local navigation or editing), they won’t be visible on the published site.
+
+---
+
+### 2. Removing the Elements via publish.js
+
+If you prefer to remove the elements entirely after the page loads (rather than just hiding them with CSS), you can add some JavaScript to your publish.js. For example, append the following snippet to your publish.js file:
+
+js
+
+Copy
+
+`function removeNoPublishElements() {   const noPublishElements = document.querySelectorAll('.no-publish');   noPublishElements.forEach(el => el.remove()); }  // Run once the page’s DOM is ready document.addEventListener("DOMContentLoaded", removeNoPublishElements);`
+
+This code waits for the page to load and then finds and removes all elements with the class `.no-publish` from the DOM.
+
+---
+
+### Additional Considerations
+
+- **Conditional Generation:**  
+    If you want the links available in certain environments (like local preview) but not in the published output, you might include a flag in your frontmatter (or use environment-specific variables) so that your template generates the block only when needed.  
+    However, using a “wrapper” and then hiding it via CSS or JS is straightforward and works well with Obsidian Publish’s customization.
+    
+- **Data Attributes:**  
+    Another option is to wrap the links with an element that carries a data attribute (for example, `data-publish="false"`) and then in CSS target it like so:
+    
+    css
+    
+    Copy
+    
+    `[data-publish="false"] {   display: none; }`
+    
+    This method works similarly to using a class.
+    
+- **Ensuring Clean Markup:**  
+    Since Obsidian Publish renders your markdown as HTML, ensure that your generated block is valid HTML. The approaches above (using `<div>`) should work without issues.
+
+## HTML and Embeds
+
+### Embed Web Pages
+
+[help.obsidian.md > Embed web pages - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages)
+
+Learn how to use the [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) HTML element to embed web pages in your notes.
+
+To embed a web page, add the following in your note and replace the placeholder text with the URL of the web page you want to embed:
+
+```html
+<iframe src="INSERT YOUR URL HERE"></iframe>
+```
+
+Note
+
+Some websites don't allow you to embed them. Instead, they may provide URLs that are meant for embedding them. If the website doesn't support embedding, try searching for the name of the website followed by "embed iframe". For example, "youtube embed iframe".
+
+Tip
+
+If you're using [Canvas](https://help.obsidian.md/Plugins/Canvas), you can embed a web page in a card. For more information, refer to [Canvas > Add cards from web pages](https://help.obsidian.md/Plugins/Canvas#Add%20cards%20from%20web%20pages).
+
+#### Embed a YouTube video 
+
+To embed a YouTube video, use the same Markdown syntax as [external images](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20images):
+
+```md
+![](https://www.youtube.com/watch?v=NnTvZWp5Q7o)
+```
+
+#### Embed a tweet 
+
+To embed a tweet, use the same Markdown syntax as [external images](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20images):
+
+```md
+![](https://twitter.com/obsdmd/status/1580548874246443010)
+```
+
+### HTML Content
+
+[help.obsidian.md > HTML content - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/HTML+content)
+
+Obsidian supports HTML to allow you to display your notes the way you want, or even [embed web pages](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages). Allowing HTML inside your notes comes with risks. To prevent malicious code from doing harm, Obsidian _sanitizes_ any HTML in your notes.
+
+Example
+
+The `<script>` element normally lets you run JavaScript whenever it loads. If Obsidian didn't sanitize HTML, an attacker could convince you to paste a text containing JavaScript that extracts sensitive information from your computer and sends it back to them.
+
+That said, since Markdown syntax does not support all forms of styling, using sanitized HTML can be yet another way of enhancing the quality of your notes. We've included some of the more common usages of HTML.
+
+More details on using `<iframe>` can be found in [Embed web pages](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages).
+
+#### Comments 
+
+[Markdown comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments) are the preferred way of adding hidden comments within your notes. However some methods of converting Markdown notes, such as [Pandoc](https://pandoc.org/), have limited support of Markdown comments. In those instances, you can use a `<!-- HTML Comment -->` instead!
+
+#### Underline 
+
+If you need to quickly underline an item in your notes, you can use `<u>Example</u>` to create your underlined text.
+
+#### Span/Div 
+
+Span and div tags can be used to apply custom classes from a [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets), or custom defined styling, onto a selected area of text. For example, using `<span style="font-family: cursive">your text</span>` can allow you to quickly change your font.
+
+#### Strikethrough 
+
+Need to strike ~~some text~~? Use `<s>this</s>` to strike it out.
+
+## Templater
+
+- [silentvoid13.github.io > ](https://silentvoid13.github.io/Templater/)
+
+### Script User Functions
+
+This type of user functions allows you to call JavaScript functions from JavaScript files and retrieve their output.
+
+To use script user functions, you need to specify a script folder in Templater's settings. This folder needs to be accessible from your vault.
+
+#### [Define a Script User Function](https://silentvoid13.github.io/Templater/user-functions/script-user-functions.html#define-a-script-user-function)
+
+Let's say you specified the `Scripts` folder as your script folder in Templater's settings.
+
+Templater will load all JavaScript (`.js` files) scripts in the `Scripts` folder.
+
+You can then create your script named `Scripts/my_script.js` (the `.js` extension is required) for example. You will likely have to create the file outside of Obsidian, as Obsidian only creates markdown files.
+
+You will then be able to call your scripts as user functions. The function name corresponds to the script file name.
+
+Scripts should follow the [CommonJS module specification](https://flaviocopes.com/commonjs/), and export a single function.
+
+``function my_function (msg) {     return `Message from my script: ${msg}`; } module.exports = my_function;``
+
+In this example, a complete command invocation would look like this:
+
+`<% tp.user.my_script("Hello World!") %>`
+
+Which would output `Message from my script: Hello World!`.
+
+#### [Global namespace](https://silentvoid13.github.io/Templater/user-functions/script-user-functions.html#global-namespace)
+
+In script user functions, you can still access global namespace variables like `app` or `moment`.
+
+However, you can't access the template engine scoped variables like `tp` or `tR`. If you want to use them, you must pass them as arguments for your function.
+
+#### [Functions Arguments](https://silentvoid13.github.io/Templater/user-functions/script-user-functions.html#functions-arguments)
+
+You can pass as many arguments as you want to your function, depending on how you defined it.
+
+You can for example pass the `tp` object to your function, to be able to use all of the [internal variables / functions](https://silentvoid13.github.io/Templater/internal-variables-functions/overview.html) of Templater: `<% tp.user.<user_function_name>(tp) %>`
+
+### Internal Functions
+
+The different internal variables and functions offered by [Templater](https://github.com/SilentVoid13/Templater) are available under different **modules**, to sort them. The existing **internal modules** are:
+
+- [App module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/app-module.html): `tp.app`
+- [Config module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/config-module.html): `tp.config`
+- [Date module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/date-module.html): `tp.date`
+- [File module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/file-module.html): `tp.file`
+- [Frontmatter module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/frontmatter-module.html): `tp.frontmatter`
+- [Hooks module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/hooks-module.html): `tp.hooks`
+- [Obsidian module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/obsidian-module.html): `tp.obsidian`
+- [System module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/system-module.html): `tp.system`
+- [Web module](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/web-module.html): `tp.web`
+
+If you understood the [object hierarchy](https://silentvoid13.github.io/Templater/syntax.html#objects-hierarchy) correctly, this means that a typical internal function call looks like this: `<% tp.<module_name>.<internal_function_name> %>`
+
+#### [Contribution](https://silentvoid13.github.io/Templater/internal-functions/overview.html#contribution)
+
+I invite everyone to contribute to this plugin development by adding new internal functions. More information [here](https://silentvoid13.github.io/Templater/internal-functions/contribute.html).
+
+### Settings
+
+#### [General Settings](https://silentvoid13.github.io/Templater/settings.html#general-settings)
+
+- `Template folder location`: Files in this folder will be available as templates.
+- `Syntax Highlighting on Desktop` adds syntax highlighting for [Templater](https://github.com/SilentVoid13/Templater) commands in edit mode.
+- `Syntax Highlighting on Mobile` adds syntax highlighting for [Templater](https://github.com/SilentVoid13/Templater) commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms."
+- `Automatic jump to cursor` automatically triggers `tp.file.cursor` after inserting a template. You can also set a hotkey to manually trigger `tp.file.cursor`.
+- `Trigger Templater on new file creation`: [Templater](https://github.com/SilentVoid13/Templater) will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. This makes [Templater](https://github.com/SilentVoid13/Templater) compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc.
+    - Make sure to set up rules under either Folder Templates or File Regex Template below.
+    - **Warning:** This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation."
+
+#### [Template Hotkeys](https://silentvoid13.github.io/Templater/settings.html#template-hotkeys)
+
+Template Hotkeys allows you to bind a template to a hotkey.
+
+#### [Folder Templates](https://silentvoid13.github.io/Templater/settings.html#folder-templates)
+
+**Note**: This setting is hidden by default. To view it first enable the `Trigger Template on new file creation` setting. And since it's mutually exclusive with File Regex Templates, enabling one will disable the other.
+
+You can specify a template that will automatically be used on a selected folder and children using the `Folder Templates` functionality. The deepest match will be used, so the order of the rules is irrelevant.
+
+Add a rule for "`/`" if you need a catch-all.
+
+#### [File Regex Templates](https://silentvoid13.github.io/Templater/settings.html#file-regex-templates)
+
+**Note**: This setting is hidden by default. To view it first enable the `Trigger Template on new file creation` setting. And since it's mutually exclusive with Folder Templates, enabling one will disable the other.
+
+You can specify regex declarations that a new file's path will be tested against. If a regex matches, the associated template will automatically be used. Rules are tested top-to-bottom, and the first match will be used.
+
+End with a rule for "`.*`" if you need a catch-all.
+
+Use a tool like [Regex101](https://regex101.com/) to verify your regexes.
+
+#### [Startup Templates](https://silentvoid13.github.io/Templater/settings.html#startup-templates)
+
+Startup Templates are templates that will get executed once when Templater starts.
+
+These templates won't output anything.
+
+This can be useful to set up templates adding hooks to obsidian events for example.
+
+#### [User Script Functions](https://silentvoid13.github.io/Templater/settings.html#user-script-functions)
+
+All JavaScript files in this folder will be loaded as CommonJS modules, to import custom [user functions](https://silentvoid13.github.io/Templater/user-functions/overview.html).
+
+The folder needs to be accessible from the vault.
+
+Check the [documentation](https://silentvoid13.github.io/Templater/user-functions/script-user-functions.html) for more information.
+
+#### [User System Command Functions](https://silentvoid13.github.io/Templater/settings.html#user-system-command-functions)
+
+Allows you to create [user functions](https://silentvoid13.github.io/Templater/user-functions/overview.html) linked to system commands.
+
+Check the [documentation](https://silentvoid13.github.io/Templater/user-functions/system-user-functions.html) for more information.
+
+**Warning:** It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.
+
+### Syntax
+
+[Templater](https://github.com/SilentVoid13/Templater) uses a custom templating engine ([rusty_engine](https://github.com/SilentVoid13/rusty_engine)) syntax to declare a command. You may need a bit of time to get used to it, but once you get the idea, the syntax is not that hard.
+
+All of Templater's functions are JavaScript objects that are invoked using a **command**.
+
+#### [Command syntax](https://silentvoid13.github.io/Templater/syntax.html#command-syntax)
+
+A command **must** have both an opening tag `<%` and a closing tag `%>`.
+
+A complete command using the `tp.date.now` internal function would be: `<% tp.date.now() %>`
+
+#### [Function syntax](https://silentvoid13.github.io/Templater/syntax.html#function-syntax)
+
+##### [Objects hierarchy](https://silentvoid13.github.io/Templater/syntax.html#objects-hierarchy)
+
+All of Templater's functions, whether it's an internal function or a user function, are available under the `tp` object. You could say that all our functions are children of the `tp` object. To access the "child" of an object, we have to use the dot notation `.`
+
+This means that a Templater function invocation will always start with `tp.<something>`
+
+###### [Function invocation](https://silentvoid13.github.io/Templater/syntax.html#function-invocation)
+
+To invoke a function, we need to use a syntax specific to functions calls: appending an opening and a closing parenthesis after the function name.
+
+As an example, we would use `tp.date.now()` to invoke the `tp.date.now` internal function.
+
+A function can have arguments and optional arguments. They are placed between the opening and the closing parenthesis, like so:
+
+`tp.date.now(arg1_value, arg2_value, arg3_value, ...)`
+
+All arguments must be passed in the correct order.
+
+The arguments of a function can have different **types**. Here is a non-exhaustive list of the possible types of a function:
+
+- A `string` type means the value must be placed within simple or double quotes (`"value"` or `'value'`)
+- A `number` type means the value must be an integer (`15`, `-5`, ...)
+- A `boolean` type means the value must be either `true` or `false` (completely lower case), and nothing else.
+
+The type of an argument must be respected when calling a function, or it won't work.
+
+##### [Function documentation syntax](https://silentvoid13.github.io/Templater/syntax.html#function-documentation-syntax)
+
+The documentation for the internal functions of Templater are using the following syntax:
+
+`tp.<my_function>(arg1_name: type, arg2_name?: type, arg3_name: type = <default_value>, arg4_name: type1|type2, ...)`
+
+Where:
+
+- `arg_name` represents a **symbolic** name for the argument, to understand what it is.
+- `type` represents the expected type for the argument. This type must be respected when calling the internal function, or it will throw an error.
+
+If an argument is optional, it will be appended with a question mark `?`, e.g. `arg2_name?: type`
+
+If an argument has a default value, it will be specified using an equal sign `=`, e.g. `arg3_name: type = <default_value>`.
+
+If an argument can have different types, it will be specified using a pipe `|`, e.g. `arg4_name: type1|type2`
+
+###### [Syntax warning](https://silentvoid13.github.io/Templater/syntax.html#syntax-warning)
+
+Please note that this syntax is for documentation purposes only, to be able to understand what arguments the function expects.
+
+You mustn't specify the name nor the type nor the default value of an argument when calling a function. Only the value of the arguments are required, as explained [here](https://silentvoid13.github.io/Templater/syntax.html#function-invocation)
+
+Let's take the `tp.date.now` internal function documentation as an example:
+
+`tp.date.now(format: string = "YYYY-MM-DD", offset?: number|string, reference?: string, reference_format?: string)`
+
+This internal function has 4 optional arguments:
+
+- a format of type `string`, with a default value of `"YYYY-MM-DD"`.
+- an offset of type `number` or of type `string`.
+- a reference of type `string` .
+- a reference_format of type `string` .
+
+That means that **valid invocations** for this internal function are:
+
+- `<% tp.date.now() %>`
+- `<% tp.date.now("YYYY-MM-DD", 7) %>`
+- `<% tp.date.now("YYYY-MM-DD", 7, "2021-04-09", "YYYY-MM-DD") %>`
+- `<% tp.date.now("dddd, MMMM Do YYYY", 0, tp.file.title, "YYYY-MM-DD") %>` *Assuming the file name is of the format: "YYYY-MM-DD"
+
+On the other hand, **invalid invocations** are:
+
+- `tp.date.now(format: string = "YYYY-MM-DD")`
+- `tp.date.now(format: string = "YYYY-MM-DD", offset?: 0)`
+
+
+## Dataview & DataviewJS
+
+- [github.com > udus122/dataview-publisher: Output markdown from your Dataview queries and keep them up to date. You can also be able to publish them.](https://github.com/udus122/dataview-publisher)
+- [github.com > dsebastien/obsidian-dataview-serializer: Obsidian plugin that gives you the power of Dataview](https://github.com/dsebastien/obsidian-dataview-serializer)
+
+### DataviewJS
+
+[blacksmithgu.github.io > Codeblock Reference - Dataview](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/)
+
+Dataview JavaScript Codeblocks are created using the `dataviewjs` language specification for a codeblock:
+
+` ```dataviewjs dv.table([], ...) ``` `
+
+The API is available through the implicitly provided `dv` (or `dataview`) variable, through which you can query for information, render HTML, and configure the view.
+
+Asynchronous API calls are marked with `⌛`.
+
+#### Query
+
+Query methods allow you to query the Dataview index for page metadata; to render this data, use the methods in the [render section](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#render).
+
+##### `dv.current()`
+
+Get page information (via `dv.page()`) for the page the script is currently executing on.
+
+##### `dv.pages(source)`
+
+Take a single string argument, `source`, which is the same form as a [query language source](https://blacksmithgu.github.io/obsidian-dataview/reference/sources). Return a [data array](https://blacksmithgu.github.io/obsidian-dataview/api/data-array) of page objects, which are plain objects with all of the page fields as values.
+
+`dv.pages() => all pages in your vault dv.pages("#books") => all pages with tag 'books' dv.pages('"folder"') => all pages from folder "folder" dv.pages("#yes or -#no") => all pages with tag #yes, or which DON'T have tag #no dv.pages('"folder" or #tag') => all pages with tag #tag, or from folder "folder"`
+
+Note that folders need to be double-quoted inside the string (i.e., `dv.pages("folder")` does not work, but `dv.pages('"folder"')` does) - this is to exactly match how sources are written in the query language.
+
+##### `dv.pagePaths(source)`
+
+As with `dv.pages`, but just returns a [data array](https://blacksmithgu.github.io/obsidian-dataview/api/data-array) of paths of pages that match the given source.
+
+`dv.pagePaths("#books") => the paths of pages with tag 'books'`
+
+##### `dv.page(path)`
+
+Map a simple path or link to the full page object, which includes all of the pages fields. Automatically does link resolution, and will figure out the extension automatically if not present.
+
+`dv.page("Index") => The page object for /Index dv.page("books/The Raisin.md") => The page object for /books/The Raisin.md`
+
+#### Render
+
+##### `dv.el(element, text)`
+
+Render arbitrary text in the given html element.
+
+`dv.el("b", "This is some bold text");`
+
+You can specify custom classes to add to the element via `cls`, and additional attributes via `attr`:
+
+`dv.el("b", "This is some text", { cls: "dataview dataview-class", attr: { alt: "Nice!" } });`
+
+##### `dv.header(level, text)`
+
+Render a header of level 1 - 6 with the given text.
+
+`dv.header(1, "Big!"); dv.header(6, "Tiny");`
+
+##### `dv.paragraph(text)`
+
+Render arbitrary text in a paragraph.
+
+`dv.paragraph("This is some text");`
+
+##### `dv.span(text)`
+
+Render arbitrary text in a span (no padding above/below, unlike a paragraph).
+
+`dv.span("This is some text");`
+
+##### `dv.execute(source)`
+
+Execute an arbitrary dataview query and embed the view into the current page.
+
+`dv.execute("LIST FROM #tag"); dv.execute("TABLE field1, field2 FROM #thing");`
+
+##### `dv.executeJs(source)`
+
+Execute an arbitrary DataviewJS query and embed the view into the current page.
+
+`dv.executeJs("dv.list([1, 2, 3])");`
+
+##### `dv.view(path, input)`
+
+Complex function which allows for custom views. Will attempt to load a JavaScript file at the given path, passing it `dv` and `input` and allowing it to execute. This allows for you to re-use custom view code across multiple pages. Note that this is an asynchronous function since it involves file I/O - make sure to `await` the result!
+
+`await dv.view("views/custom", { arg1: ..., arg2: ... });`
+
+If you want to also include custom CSS in your view, you can instead pass a path to a folder containing `view.js` and `view.css`; the CSS will be added to the view automatically:
+
+`views/custom  -> view.js  -> view.css`
+
+View scripts have access to the `dv` object (the API object), and an `input` object which is exactly whatever the second argument of `dv.view()` was.
+
+Bear in mind, `dv.view()` cannot read from directories starting with a dot, like `.views`. Example of an incorrect usage:
+
+`await dv.view(".views/view1", { arg1: 'a', arg2: 'b' });`
+
+Attempting this will yield the following exception:
+
+`Dataview: custom view not found for '.views/view1/view.js' or '.views/view1.js'.`
+
+Also note, directory paths always originate from the vault root.
+
+###### Example
+
+In this example, we have a custom script file named `view1.js` in the `scripts` directory.
+
+**File:** `scripts/view1.js`
+
+``console.log(`Loading view1`);  function foo(...args) {   console.log('foo is called with args', ...args); } foo(input)``
+
+And we have an Obsidian document located under `projects`. We'll call `dv.view()` from this document using the `scripts/view1.js` path.
+
+**Document:** `projects/customViews.md`
+
+`await dv.view("scripts/view1", { arg1: 'a', arg2: 'b' })` 
+
+When the above script is executed, it will print the following:
+
+`Loading view1 foo is called with args {arg1: 'a', arg2: 'b'}`
+
+#### Dataviews
+
+##### `dv.list(elements)`
+
+Render a dataview list of elements; accept both vanilla arrays and data arrays.
+
+`dv.list([1, 2, 3]) => list of 1, 2, 3 dv.list(dv.pages().file.name) => list of all file names dv.list(dv.pages().file.link) => list of all file links dv.list(dv.pages("#book").where(p => p.rating > 7)) => list of all books with rating greater than 7`
+
+##### `dv.taskList(tasks, groupByFile)`
+
+Render a dataview list of `Task` objects, as obtained by `page.file.tasks`. By default, this view will automatically group the tasks by their origin file. If you provide `false` as a second argument explicitly, it will instead render them as a single unified list.
+
+`// List all tasks from pages marked '#project' dv.taskList(dv.pages("#project").file.tasks)  // List all *uncompleted* tasks from pages marked #project dv.taskList(dv.pages("#project").file.tasks     .where(t => !t.completed))  // List all tasks tagged with '#tag' from pages marked #project dv.taskList(dv.pages("#project").file.tasks     .where(t => t.text.includes("#tag")))  // List all tasks from pages marked '#project', without grouping. dv.taskList(dv.pages("#project").file.tasks, false)`
+
+##### `dv.table(headers, elements)`
+
+Renders a dataview table. `headers` is an array of column headers. `elements` is an array of rows. Each row is itself an array of columns. Inside a row, every column which is an array will be rendered with bullet points.
+
+`dv.table(     ["Col1", "Col2", "Col3"],         [             ["Row1", "Dummy", "Dummy"],             ["Row2",                  ["Bullet1",                  "Bullet2",                  "Bullet3"],              "Dummy"],             ["Row3", "Dummy", "Dummy"]         ]     );`
+
+An example of how to render a simple table of book info sorted by rating.
+
+`dv.table(["File", "Genre", "Time Read", "Rating"], dv.pages("#book")     .sort(b => b.rating)     .map(b => [b.file.link, b.genre, b["time-read"], b.rating]))`
+
+#### Markdown Dataviews
+
+Functions which render to plain Markdown strings which you can then render or manipulate as desired.
+
+##### `dv.markdownTable(headers, values)`
+
+Equivalent to `dv.table()`, which renders a table with the given list of headers and 2D array of elements, but returns plain Markdown.
+
+`// Render a simple table of book info sorted by rating. const table = dv.markdownTable(["File", "Genre", "Time Read", "Rating"], dv.pages("#book")     .sort(b => b.rating)     .map(b => [b.file.link, b.genre, b["time-read"], b.rating]))  dv.paragraph(table);`
+
+##### `dv.markdownList(values)`
+
+Equivalent to `dv.list()`, which renders a list of the given elements, but returns plain Markdown.
+
+`const markdown = dv.markdownList([1, 2, 3]); dv.paragraph(markdown);`
+
+##### `dv.markdownTaskList(tasks)`
+
+Equivalent to `dv.taskList()`, which renders a task list, but returns plain Markdown.
+
+`const markdown = dv.markdownTaskList(dv.pages("#project").file.tasks); dv.paragraph(markdown);`
+
+#### Utility
+
+##### `dv.array(value)`
+
+Convert a given value or array into a Dataview [data array](https://blacksmithgu.github.io/obsidian-dataview/api/data-array). If the value is already a data array, returns it unchanged.
+
+`dv.array([1, 2, 3]) => dataview data array [1, 2, 3]`
+
+##### `dv.isArray(value)`
+
+Returns true if the given value is an array or dataview array.
+
+`dv.isArray(dv.array([1, 2, 3])) => true dv.isArray([1, 2, 3]) => true dv.isArray({ x: 1 }) => false`
+
+##### `dv.fileLink(path, [embed?], [display-name])`
+
+Converts a textual path into a Dataview `Link` object; you can optionally also specify if the link is embedded as well as it's display name.
+
+`dv.fileLink("2021-08-08") => link to file named "2021-08-08" dv.fileLink("book/The Raisin", true) => embed link to "The Raisin" dv.fileLink("Test", false, "Test File") => link to file "Test" with display name "Test File"`
+
+##### `dv.sectionLink(path, section, [embed?], [display?])`
+
+Converts a textual path + section name into a Dataview `Link` object; you can optionally also specify if the link is embedded and it's display name.
+
+`dv.sectionLink("Index", "Books") => [[Index#Books]] dv.sectionLink("Index", "Books", false, "My Books") => [[Index#Books|My Books]]`
+
+##### `dv.blockLink(path, blockId, [embed?], [display?])`
+
+Converts a textual path + block ID into a Dataview `Link` object; you can optionally also specify if the link is embedded and it's display name.
+
+`dv.blockLink("Notes", "12gdhjg3") => [[Index#^12gdhjg3]]`
+
+##### `dv.date(text)`
+
+Coerce text and links to luxon `DateTime`; if provided with a `DateTime`, return it unchanged.
+
+`dv.date("2021-08-08") => DateTime for August 8th, 2021 dv.date(dv.fileLink("2021-08-07")) => dateTime for August 8th, 2021`
+
+##### `dv.duration(text)`
+
+Coerce text to a luxon `Duration`; uses the same parsing rules as Dataview duration types.
+
+`dv.duration("8 minutes") => Duration { 8 minutes } dv.duration("9 hours, 2 minutes, 3 seconds") => Duration { 9 hours, 2 minutes, 3 seconds }`
+
+##### `dv.compare(a, b)`
+
+Compare two arbitrary JavaScript values according to dataview's default comparison rules; useful if you are writing a custom comparator and want to fall back to the default behavior. Returns a negative value if `a < b`, 0 if `a = b`, and a positive value if `a > b`.
+
+`dv.compare(1, 2) = -1 dv.compare("yes", "no") = 1 dv.compare({ what: 0 }, { what: 0 }) = 0`
+
+##### `dv.equal(a, b)`
+
+Compare two arbitrary JavaScript values and return true if they are equal according to Dataview's default comparison rules.
+
+`dv.equal(1, 2) = false dv.equal(1, 1) = true`
+
+##### `dv.clone(value)`
+
+Deep clone any Dataview value, including dates, arrays, and links.
+
+`dv.clone(1) = 1 dv.clone({ a: 1 }) = { a: 1 }`
+
+##### `dv.parse(value)`
+
+Parse an arbitrary string object into a complex Dataview type (mainly supporting links, dates, and durations).
+
+`dv.parse("[[A]]") = Link { path: A } dv.parse("2020-08-14") = DateTime { 2020-08-14 } dv.parse("9 seconds") = Duration { 9 seconds }`
+
+#### File I/O
+
+These utility methods are all contained in the `dv.io` sub-API, and are all _asynchronous_ (marked by ⌛).
+
+##### ⌛ `dv.io.csv(path, [origin-file])`
+
+Load a CSV from the given path (a link or string). Relative paths will be resolved relative to the optional origin file (defaulting to the current file if not provided). Return a dataview array, each element containing an object of the CSV values; if the file does not exist, return `undefined`.
+
+`await dv.io.csv("hello.csv") => [{ column1: ..., column2: ...}, ...]`
+
+##### ⌛ `dv.io.load(path, [origin-file])`
+
+Load the contents of the given path (a link or string) asynchronously. Relative paths will be resolved relative to the optional origin file (defaulting to the current file if not provided). Returns the string contents of the file, or `undefined` if the file does not exist.
+
+`await dv.io.load("File") => "# File\nThis is an example file..."`
+
+##### `dv.io.normalize(path, [origin-file])`
+
+Convert a relative link or path into an absolute path. If `origin-file` is provided, then the resolution is doing as if you were resolving the link from that file; if not, the path is resolved relative to the current file.
+
+`dv.io.normalize("Test") => "dataview/test/Test.md", if inside "dataview/test" dv.io.normalize("Test", "dataview/test2/Index.md") => "dataview/test2/Test.md", irrespective of the current file`
+
+#### Query Evaluation
+
+##### ⌛ `dv.query(source, [file, settings])`
+
+Execute a Dataview query and return the results as a structured return. The return type of this function varies by the query type being executed, though will always be an object with a `type` denoting the return type. This version of `query` returns a result type - you may want `tryQuery`, which instead throws an error on failed query execution.
+
+``await dv.query("LIST FROM #tag") =>     { successful: true, value: { type: "list", values: [value1, value2, ...] } }  await dv.query(`TABLE WITHOUT ID file.name, value FROM "path"`) =>     { successful: true, value: { type: "table", headers: ["file.name", "value"], values: [["A", 1], ["B", 2]] } }  await dv.query("TASK WHERE due") =>     { successful: true, value: { type: "task", values: [task1, task2, ...] } }``
+
+`dv.query` accepts two additional, optional arguments: 1. `file`: The file path to resolve the query from (in case of references to `this`). Defaults to the current file. 2. `settings`: Execution settings for running the query. This is largely an advanced use case (where I recommend you directly check the API implementation to see all available options).
+
+##### ⌛ `dv.tryQuery(source, [file, settings])`
+
+Exactly the same as `dv.query`, but more convenient in short scripts as execution failures will be raised as JavaScript exceptions instead of a result type.
+
+##### ⌛ `dv.queryMarkdown(source, [file], [settings])`
+
+Equivalent to `dv.query()`, but returns rendered Markdown.
+
+`await dv.queryMarkdown("LIST FROM #tag") =>     { successful: true, value: { "- [[Page 1]]\n- [[Page 2]]" } }`
+
+##### ⌛ `dv.tryQueryMarkdown(source, [file], [settings])`
+
+Exactly the same as `dv.queryMarkdown()`, but throws an error on parse failure.
+
+##### `dv.tryEvaluate(expression, [context])`
+
+Evaluate an arbitrary dataview expression (like `2 + 2` or `link("text")` or `x * 9`); throws an `Error` on parse or evaluation failure. `this` is an always-available implicit variable which refers to the current file.
+
+`dv.tryEvaluate("2 + 2") => 4 dv.tryEvaluate("x + 2", {x: 3}) => 5 dv.tryEvaluate("length(this.file.tasks)") => number of tasks in the current file`
+
+##### `dv.evaluate(expression, [context])`
+
+Evaluate an arbitrary dataview expression (like `2 + 2` or `link("text")` or `x * 9`), returning a `Result` object of the result. You can unwrap the result type by checking `result.successful` (and then fetching either `result.value` or `result.error`). If you want a simpler API that throws an error on a failed evaluation, use `dv.tryEvaluate`.
+
+`dv.evaluate("2 + 2") => Successful { value: 4 } dv.evaluate("2 +") => Failure { error: "Failed to parse ... " }`

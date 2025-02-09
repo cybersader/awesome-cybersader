@@ -15,7 +15,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[🐛 Known Base Bugs, Issues]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
-- **[[Awesome Obsidian Wiki Examples]]**
+- **Awesome Obsidian Wiki Examples**
 - **[[Awesome WikiJS Examples]]**
 - **[[Blogging Platforms]]**
 - **[[Collaboration in Obsidian]]**
@@ -28,6 +28,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Cyberbase Obsidian Publish]]**
 - **[[Cyberbase Prompts]]**
 	- **[[CB1 - Customize Publish]]**
+	- **[[CB2 - Testing Process]]**
 - **[[Cyberbase Tech Stack]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Folder Notes & Publish]]**
@@ -36,6 +37,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Media Hosting in Obsidian]]**
 - **[[Obsidian as a CMS]]**
 - **[[Obsidian Plugins and Ideas for Contributions]]**
+- **[[Obsidian Plugins that Affect CSS]]**
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**
 - **[[Static Website Services]]**

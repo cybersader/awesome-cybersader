@@ -4,8 +4,10 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 10:00 pm
-date modified: Friday, February 7th 2025, 10:14 pm
+date modified: Saturday, February 8th 2025, 5:43 pm
 ---
+
+- 
 
 # MVP Obsidian Publish Cyberbase
 
@@ -19,7 +21,6 @@ date modified: Friday, February 7th 2025, 10:14 pm
 - [github.com > obsidian-api/publish.d.ts at master · obsidianmd/obsidian-api](https://github.com/obsidianmd/obsidian-api/blob/master/publish.d.ts)
 - [github.com > Fevol/obsidian-typings: Typescript typings for undocumented parts of the Obsidian API](https://github.com/Fevol/obsidian-typings)
 - [forum.obsidian.md > Obsidian Publish API - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/obsidian-publish-api/22546)
-
 
 ## Obsidian Publish Websites
 
@@ -53,7 +54,10 @@ date modified: Friday, February 7th 2025, 10:14 pm
 		- https://github.com/chad-bennett/obsidian-publish-css
 	- [beto.group > BONJOUR - BETO.GROUP](https://www.beto.group/bonjour)
 	- [publish.obsidian.md > ITS Theme - SlRvb's Documentation - Obsidian Publish](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme)
-	- 
+	- [plugins.javalent.com > Home -](https://plugins.javalent.com/home#Practical+plugins)
+	- [minerva.mamansoft.net > Home - Minerva](https://minerva.mamansoft.net/Home)
+	- [excalidraw-obsidian.online > Welcome - Obsidian-Excalidraw](https://excalidraw-obsidian.online/Welcome)
+	- [anthonyamar.fr > Welcome in my mind 🧠 - My second-brain](https://anthonyamar.fr/Welcome+in+my+mind+%F0%9F%A7%A0)
 - With some style
 	- [publish.obsidian.md > Converse - mth225 - Obsidian Publish](https://publish.obsidian.md/mth225/Logic/Converse)
 	- [publish.obsidian.md > Combat Styles - Runequest NewGallo - Obsidian Publish](https://publish.obsidian.md/newgallo/Runequest/Rules/House+Rules/Combat+Styles)
@@ -240,3 +244,21 @@ date modified: Friday, February 7th 2025, 10:14 pm
 - Templater breadcrumbs
 	- https://forum.obsidian.md/t/obsidian-publish-resources/74582/10#breadcrumbs-2
 - [lab.marconoris.com > Templater - Navigation links between notes - Ouroboros lab](https://lab.marconoris.com/obsidian/templater-navigation-links-between-notes)
+
+# Github Actions
+
+- [github.com > lycheeverse/lychee: ⚡ Fast](https://github.com/lycheeverse/lychee)
+
+# Static Website Hacks
+
+## Remote Images 
+
+We can use remotely fetched images to redirect to services where it would be too hard to represent in Obsidian
+
+- Buy me a coffee
+
+# Obsidian HTML & Embeds - Vault to Publish
+
+- Obsidian Docs
+	- [help.obsidian.md > Embed web pages - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages)
+	- [help.obsidian.md > HTML content - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/HTML+content)

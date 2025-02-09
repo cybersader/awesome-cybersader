@@ -1,47 +1,56 @@
-/* Container for GitHub buttons */
+/* ================================ 
+   GitHub Buttons Styling 
+   ================================ */
 .github-buttons {
-    display: flex;
-    gap: 10px;
-    margin: 15px 0;
-    justify-content: center;
-  }
-  
-  /* Base styling for each GitHub button */
-  .github-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 14px;
-    background-color: var(--interactive-accent, #086ddd);
-    color: #fff;
-    border-radius: var(--radius-m, 8px);
-    text-decoration: none;
-    font-size: 0.95em;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .github-button:hover {
-    background-color: var(--interactive-accent-hover, #027aff);
-  }
-  
-  /* Styling the SVG icons inside the buttons */
-  .github-icon {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  /* Ensure text inside the buttons is aligned nicely */
-  .github-button span {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  /* Responsive adjustments (if needed) */
-  @media screen and (max-width: 750px) {
-    .github-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+  display: flex;
+  gap: 10px;
+  margin: 1em 0;
+  justify-content: center;
+}
+
+.github-button {
+  background: linear-gradient(45deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.github-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure inline SVG icons take on the button color */
+.github-button svg {
+  fill: currentColor;
+}
+
+/* Additional modern touches, gradients, and animations */
+/* For example, you might add a smooth fade-in on page load: */
+body {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* You can add more modern gradient backgrounds, subtle animations, etc. below */
+/* Example: animated gradient border for page header */
+.page-header {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #6e8efb, #a777e3) 1;
+}
+
+/* Example: stylish hover on links */
+a:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}

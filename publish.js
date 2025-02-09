@@ -1,79 +1,91 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Configuration: Set your repository's base URLs and branch.
-    const baseGithubUrl = "https://github.com/cybersader/awesome-cybersader";
-    const branch = "main";
-    const rawBaseGithubUrl = "https://raw.githubusercontent.com/cybersader/awesome-cybersader/main";
+// ================================
+// GitHub Buttons for Obsidian Publish
+// ================================
+
+// Set your GitHub repository URL here:
+const githubRepo = "https://github.com/cybersader/awesome-cybersader";
+
+// A helper function to compute the relative file path based on window.location.pathname.
+// (Adjust this logic if your URL structure differs.)
+function getCurrentFilePath() {
+  let path = window.location.pathname; // e.g. "/Notes/Home"
+  if (path === "/" || path === "") {
+    return "Index.md"; // default page
+  }
+  // Remove any trailing slash, remove the leading slash, and append .md if missing.
+  path = path.replace(/^\/+|\/+$/g, "");
+  if (!path.endsWith(".md")) {
+    path += ".md";
+  }
+  return path;
+}
+
+// Create the GitHub URLs based on the current file path.
+function generateGitHubLinks() {
+  const filePath = getCurrentFilePath();
+  return {
+    view: `${githubRepo}/blob/main/${filePath}`,
+    edit: `${githubRepo}/edit/main/${filePath}`,
+    download: `${githubRepo}/raw/main/${filePath}`,
+  };
+}
+
+// Create a button element with an inline SVG icon.
+function createButton(label, link, svgIcon) {
+  const a = document.createElement("a");
+  a.href = link;
+  a.target = "_blank";
+  a.classList.add("github-button");
+  // The innerHTML includes the SVG icon and the label.
+  a.innerHTML = svgIcon + " " + label;
+  return a;
+}
+
+// Inline SVG icons for each button (you can adjust these as desired)
+const svgView = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8z"/>
+  <path d="M8 5.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+</svg>`;
+const svgEdit = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-9.5 9.5a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l9.5-9.5zM11.207 2L3 10.207V13h2.793L14 4.793 11.207 2z"/>
+</svg>`;
+const svgDownload = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5-.5H5v-7a.5.5 0 0 1 1 0v7h4a.5.5 0 0 1 .354.854l-4 4a.5.5 0 0 1-.708 0l-4-4A.5.5 0 0 1 .5 9.9z"/>
+  <path d="M5.5 14.5a.5.5 0 0 1 0-1H10a.5.5 0 0 1 0 1H5.5z"/>
+</svg>`;
+
+// Create a container holding the buttons.
+function createGitHubButtons() {
+  const links = generateGitHubLinks();
+  const container = document.createElement("div");
+  container.classList.add("github-buttons");
   
-    // Get the current page's path (for example: "/README" or "/notes/my-note")
-    // Remove leading/trailing slashes
-    let filePath = window.location.pathname.replace(/^\/|\/$/g, "");
+  // Create buttons for "View", "Edit", and "Download"
+  const btnView = createButton("View", links.view, svgView);
+  const btnEdit = createButton("Edit", links.edit, svgEdit);
+  const btnDownload = createButton("Download", links.download, svgDownload);
   
-    // If no path exists (for the homepage), assume "README"
-    if (!filePath) {
-      filePath = "README";
-    }
-  
-    // Append the ".md" extension if it’s not already there
-    if (!filePath.endsWith(".md")) {
-      filePath += ".md";
-    }
-  
-    // Build the URLs based on the file path:
-    const editUrl = `${baseGithubUrl}/edit/${branch}/${filePath}`;
-    const viewUrl = `${baseGithubUrl}/${filePath}`;
-    const downloadUrl = `${rawBaseGithubUrl}/${filePath}`;
-  
-    // Build the HTML for the GitHub buttons using inline SVG icons.
-    // You can adjust the SVG paths to use your preferred icons.
-    const githubButtonsHTML = `
-      <a class="github-button" href="${editUrl}" target="_blank" title="Edit on GitHub">
-        <!-- Edit (pen) icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="github-icon edit-icon">
-          <path d="M11 4H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path>
-          <path d="M18.5 2.5a2.121 2.121 0 0 1 0 3L12 11l-4 1 1-4 6.5-6.5a2.121 2.121 0 0 1 3 0z"></path>
-        </svg>
-        <span>Edit</span>
-      </a>
-      <a class="github-button" href="${downloadUrl}" target="_blank" title="Download raw file">
-        <!-- Download (down arrow) icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="github-icon download-icon">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="7 10 12 15 17 10"></polyline>
-          <line x1="12" y1="15" x2="12" y2="3"></line>
-        </svg>
-        <span>Download</span>
-      </a>
-      <a class="github-button" href="${viewUrl}" target="_blank" title="View on GitHub">
-        <!-- View (external link) icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="github-icon view-icon">
-          <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"></path>
-          <polyline points="15 3 21 3 21 9"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3"></line>
-        </svg>
-        <span>View</span>
-      </a>
-    `;
-  
-    // Helper function to create a container for the buttons
-    function createGithubButtonsContainer() {
-      const container = document.createElement("div");
-      container.className = "github-buttons";
-      container.innerHTML = githubButtonsHTML;
-      return container;
-    }
-  
-    // Insert the buttons immediately after the page header (.page-header)
-    const pageHeader = document.querySelector(".page-header");
-    if (pageHeader) {
-      const topButtons = createGithubButtonsContainer();
-      pageHeader.parentNode.insertBefore(topButtons, pageHeader.nextSibling);
-    }
-  
-    // Insert a duplicate set of buttons immediately before the backlinks (.backlinks)
-    const backlinks = document.querySelector(".backlinks");
-    if (backlinks) {
-      const bottomButtons = createGithubButtonsContainer();
-      backlinks.parentNode.insertBefore(bottomButtons, backlinks);
-    }
-  });
-  
+  container.appendChild(btnView);
+  container.appendChild(btnEdit);
+  container.appendChild(btnDownload);
+  return container;
+}
+
+// Insert the buttons into the page at desired locations.
+function insertGitHubButtons() {
+  const buttons = createGitHubButtons();
+
+  // Insert right after .page-header if it exists.
+  const pageHeader = document.querySelector(".page-header");
+  if (pageHeader) {
+    pageHeader.parentNode.insertBefore(buttons.cloneNode(true), pageHeader.nextSibling);
+  }
+  // Insert right above .backlinks if it exists.
+  const backlinks = document.querySelector(".backlinks");
+  if (backlinks) {
+    backlinks.parentNode.insertBefore(buttons.cloneNode(true), backlinks);
+  }
+}
+
+// When the DOM is ready, run the insertion.
+document.addEventListener("DOMContentLoaded", insertGitHubButtons);
