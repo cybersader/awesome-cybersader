@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "📁 51 - Cyberbase/Untitled/Untitled.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Obsidian Markdown Examples",
+      "path": "📁 51 - Cyberbase/Obsidian Markdown Examples/Obsidian Markdown Examples.md"
+    },
+    {
+      "basename": "Obsidian Publish SEO",
+      "path": "📁 51 - Cyberbase/Obsidian Publish SEO/Obsidian Publish SEO.md"
     },
     {
       "basename": "HTML in Obsidian",
@@ -63,10 +71,6 @@
     {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Frontend Web JS",
@@ -195,10 +199,6 @@
     {
       "basename": "Astro with Content Layer",
       "path": "📁 51 - Cyberbase/Astro with Content Layer/Astro with Content Layer.md"
-    },
-    {
-      "basename": "Contribution System",
-      "path": "📁 51 - Cyberbase/Contribution System/Contribution System.md"
     }
   ],
   "omittedPaths": [],

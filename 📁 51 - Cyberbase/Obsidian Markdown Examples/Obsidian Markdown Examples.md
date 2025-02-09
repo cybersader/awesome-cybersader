@@ -87,14 +87,14 @@ To create a heading, add up to six `#` symbols before your heading text. The n
 
 ## Styling text
 
-| Style                  | Syntax                   | Example                        | Output                      |
-|------------------------|--------------------------|--------------------------------|-----------------------------|
-| Bold                   | `** **` or `__ __`       | `**Bold text**`                | **Bold text**               |
-| Italic                 | `* *` or `_ _`           | `*Italic text*`                | _Italic text_               |
-| Strikethrough          | `~~ ~~`                  | `~~Striked out text~~`         | ~~Striked out text~~        |
-| Highlight              | `== ==`                  | `==Highlighted text==`         | ==Highlighted text==        |
-| Bold and nested italic | `** **` and `_ _`        | `**Bold text and _nested italic_ text**` | **Bold text and _nested italic_ text** |
-| Bold and italic        | `*** ***` or `___ ___`   | `***Bold and italic text***`   | ***Bold and italic text***  |
+| Style                  | Syntax                 | Example                                  | Output                                 |
+| ---------------------- | ---------------------- | ---------------------------------------- | -------------------------------------- |
+| Bold                   | `** **` or `__ __`     | `**Bold text**`                          | **Bold text**                          |
+| Italic                 | `* *` or `_ _`         | `*Italic text*`                          | _Italic text_                          |
+| Strikethrough          | `~~ ~~`                | `~~Striked out text~~`                   | ~~Striked out text~~                   |
+| Highlight              | `== ==`                | `==Highlighted text==`                   | ==Highlighted text==                   |
+| Bold and nested italic | `** **` and `_ _`      | `**Bold text and _nested italic_ text**` | **Bold text and _nested italic_ text** |
+| Bold and italic        | `*** ***` or `___ ___` | `***Bold and italic text***`             | ***Bold and italic text***             |
 
 ## Quotes
 
@@ -415,9 +415,9 @@ If you want to use [aliases](https://help.obsidian.md/Linking+notes+and+files/A
 |[[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]]|![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)|
 ```
 
-|First column|Second column|
-|---|---|
-|[[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]]|![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)|
+| First column                                                           | Second column                                                                            |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]] | ![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg) |
 
 You can align text to the left, right, or center of a column by adding colons (`:`) to the header row.
 
