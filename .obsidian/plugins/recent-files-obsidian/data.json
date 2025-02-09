@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "📁 51 - Cyberbase/Untitled/Untitled.md"
+    },
+    {
+      "basename": "HTML in Obsidian",
+      "path": "📁 51 - Cyberbase/HTML in Obsidian/HTML in Obsidian.md"
+    },
+    {
       "basename": "CB2 - Testing Process",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing Process/CB2 - Testing Process.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Contribution System",
       "path": "📁 51 - Cyberbase/Contribution System/Contribution System.md"
-    },
-    {
-      "basename": "Contributable Obsidian Wiki",
-      "path": "📁 51 - Cyberbase/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
     }
   ],
   "omittedPaths": [],

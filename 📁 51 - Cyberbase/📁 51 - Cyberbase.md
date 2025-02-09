@@ -34,8 +34,10 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Folder Notes & Publish]]**
 - **[[GitHub Repo Size Limits]]**
 - **[[How to look at obsidian publish code]]**
+- **[[HTML in Obsidian]]**
 - **[[Media Hosting in Obsidian]]**
 - **[[Obsidian as a CMS]]**
+- **[[Obsidian Markdown Examples]]**
 - **[[Obsidian Plugins and Ideas for Contributions]]**
 - **[[Obsidian Plugins that Affect CSS]]**
 - **[[Obsidian Publish Analytics]]**
