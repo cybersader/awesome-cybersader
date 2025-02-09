@@ -5,6 +5,14 @@
       "path": "README.md"
     },
     {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+    },
+    {
+      "basename": "Obsidian Plugins that Affect CSS",
+      "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
+    },
+    {
       "basename": "2025-02-09-Sunday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-09-Sunday/2025-02-09-Sunday.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
-      "basename": "Obsidian Plugins that Affect CSS",
-      "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
     },
     {
       "basename": "Customizing Obsidian Publish",
@@ -195,10 +199,6 @@
     {
       "basename": "Cyberbase Domains",
       "path": "📁 51 - Cyberbase/Cyberbase Domains/Cyberbase Domains.md"
-    },
-    {
-      "basename": "Marketing Tech",
-      "path": "📁 35 - Business/Marketing Tech/Marketing Tech.md"
     }
   ],
   "omittedPaths": [],
