@@ -1,240 +1,109 @@
 /* ========================================================
-   publish.js – GitHub Links and Frontmatter Properties
+   publish.js – Insert GitHub links below title & in footer
    ======================================================== */
 
    console.log("publish.js loaded");
 
-   // -------------------------------------------------------------------
-   // Helper: Get frontmatter from the app cache
-   // -------------------------------------------------------------------
-   function getFrontmatterFromCache() {
-     // Compute the file path from the URL.
-     var path = decodeURI(window.location.pathname).replaceAll("+", " ");
-     var str = path.substring(1) + ".md"; // e.g. "README.md"
-     if (
-       window.app &&
-       app.site &&
-       app.site.cache &&
-       app.site.cache.cache &&
-       app.site.cache.cache[str] &&
-       app.site.cache.cache[str].frontmatter
-     ) {
-       console.log("Found frontmatter in cache for:", str);
-       return app.site.cache.cache[str].frontmatter;
-     } else {
-       console.warn("Frontmatter not found in cache for:", str);
-       return null;
-     }
-   }
+   // Build GitHub links based on the current URL path
+   function buildGitHubLinks() {
+     // 1) Get the current path (e.g., "/⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools")
+     const currentUrlPath = decodeURIComponent(window.location.pathname);
    
-   // -------------------------------------------------------------------
-   // Example 1: Insert meta tags (from frontmatter) into document head
-   // -------------------------------------------------------------------
-   function example1_insertMetaTags() {
-     var fm = getFrontmatterFromCache();
-     if (!fm) return;
-     var metas = {};
-     metas["title"] = fm.title;
-     metas["description"] = fm.description;
-     Object.keys(metas).forEach(function (key) {
-       var metaTag = document.createElement("meta");
-       metaTag.name = key;
-       metaTag.content = metas[key];
-       document.head.appendChild(metaTag);
-       console.log("Inserted meta tag for", key, ":", metas[key]);
-     });
-   }
+     // 2) Remove leading/trailing slash -> "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools"
+     const relativePath = currentUrlPath.replace(/^\/|\/$/g, "");
    
-   // -------------------------------------------------------------------
-   // Example 2: Insert a table of selected frontmatter properties
-   // -------------------------------------------------------------------
-   function example2_insertMetaDates() {
-     var fm = getFrontmatterFromCache();
-     if (!fm) return;
+     // 3) Your repo details
+     const githubUser   = "cybersader";
+     const githubRepo   = "awesome-cybersader";
+     const githubBranch = "main";
    
-     // Create a container to hold the properties.
-     var container = document.createElement("div");
-     container.className = "propertyitemtable";
-     container.innerHTML = `
-       <div id="updatedateproperty" class="propertyitem">Last Update on ${fm.lastupdate ? fm.lastupdate.replaceAll("-", "/") : "N/A"}</div>
-       <div id="fullnameproperty" class="propertyitem">Full Name: ${fm.fullname || "N/A"}</div>
-       <div id="birthproperty" class="propertyitem">Birth: ${fm.birth || "N/A"}</div>
-       <div id="deathproperty" class="propertyitem">Death: ${fm.death || "N/A"}</div>
-       <div id="jurisdictionproperty" class="propertyitem">Jurisdiction: ${fm.jurisdiction || "N/A"}</div>
-       <div id="typeproperty" class="propertyitem">Type: ${fm.type || "N/A"}</div>
-       <div id="urlproperty" class="propertyitem"><a href="${fm.url || "#"}">URL</a></div>
+     // 4) Encode each segment properly (spaces -> %20, not +)
+     const encodedPath = relativePath
+       .split("/")
+       .map(encodeURIComponent)
+       .join("/");
+   
+     // 5) Construct final GitHub links
+     const githubView = `https://github.com/${githubUser}/${githubRepo}/blob/${githubBranch}/${encodedPath}.md`;
+     const githubEdit = githubView.replace("/blob/", "/edit/");
+     const githubRaw  = `https://raw.githubusercontent.com/${githubUser}/${githubRepo}/${githubBranch}/${encodedPath}.md`;
+     const githubDev  = `https://github.dev/${githubUser}/${githubRepo}/blob/${githubBranch}/${encodedPath}.md`;
+   
+     // 6) Build the HTML snippet. Use <span class="git-footer"> because you have CSS for it.
+     //    We'll show 3 links as examples (Edit, Raw, Download Vault). 
+     //    You can add more or rename them as you like (e.g., the githubDev link).
+     const footerLinksHTML = `
+       <span class="git-footer">
+         <!-- "Edit" link uses the pencil icon from your CSS -->
+         <a class="external-link"
+            title="git-hub-edit-note"
+            href="${githubEdit}"
+            target="_blank">Edit Note</a>
+   
+         <!-- "Raw" link uses the copy icon from your CSS -->
+         <a class="external-link"
+            title="git-hub-copy-note"
+            href="${githubRaw}"
+            target="_blank">Raw Note</a>
+   
+         <!-- "Download Vault" link uses the download icon from your CSS.
+              This example downloads the entire repo as ZIP. -->
+         <a class="external-link"
+            title="git-hub-download-vault"
+            href="https://github.com/${githubUser}/${githubRepo}/archive/refs/heads/${githubBranch}.zip"
+            target="_blank">Download Vault</a>
+   
+         <!-- Optional: Add "Open in GitHub.dev"? 
+              <a class="external-link"
+                 title="git-hub-open-dev"
+                 href="${githubDev}" target="_blank">
+              Open in GitHub.dev
+              </a>
+         -->
+       </span>
      `;
-     // Insert the container at the top of the main content (or body if not found)
-     var content = document.querySelector(".content") || document.body;
-     content.insertBefore(container, content.firstChild);
-     console.log("Inserted frontmatter meta dates.");
+   
+     return footerLinksHTML;
    }
    
-   // -------------------------------------------------------------------
-   // Example 3: Insert a custom property ("up") if present
-   // -------------------------------------------------------------------
-   function example3_insertUp() {
-     var fm = getFrontmatterFromCache();
-     if (!fm) return;
-     if (!fm.up) {
-       console.log("No 'up' property in frontmatter.");
+   // Insert the GitHub links below the page title
+   function insertLinksBelowTitle(linksHTML) {
+     // Locate the page-header: <div class="mod-header mod-ui"><div class="page-header">README</div></div>
+     const pageHeader = document.querySelector(".mod-header.mod-ui .page-header");
+     if (!pageHeader) {
+       console.warn("No .page-header found for inserting GitHub links below title.");
        return;
      }
-     var container = document.createElement("div");
-     container.className = "properties";
-     container.innerHTML = `<div class="up">UP: ${fm.up}</div>`;
-     var content = document.querySelector(".content") || document.body;
-     content.insertBefore(container, content.firstChild);
-     console.log("Inserted 'up' property from frontmatter.");
+     // Insert the new HTML after the .page-header
+     pageHeader.insertAdjacentHTML("afterend", linksHTML);
+     console.log("Inserted GitHub links below the page title.");
    }
    
-   // -------------------------------------------------------------------
-   // GitHub Links Insertion: (if frontmatter includes a "github:" property)
-   // -------------------------------------------------------------------
-    function generateGitHubLinks() {
-      // Get the current URL path
-      const currentUrlPath = decodeURIComponent(window.location.pathname);
-      
-      // Extract the relative path from the current URL
-      // Example: '/⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools' -> '⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools'
-      const relativePath = currentUrlPath.replace(/^\/|\/$/, "");
-    
-      // Define GitHub repository details
-      const githubUser = "cybersader";
-      const githubRepo = "awesome-cybersader";
-      const githubBranch = "main";  // Adjust this if your branch name is different
-    
-      // Correctly encode the path for GitHub URLs
-      // Note: We encode each part of the path and join them with '/'
-      const githubPath = relativePath
-        .split('/')
-        .map(encodeURIComponent)
-        .join('/');
-
-      // Encode the path for GitHub (URL-safe encoding)
-      const encodedPath = encodeURIComponent(relativePath).replace(/%20/g, "+");
-    
-      // Build the links
-      const githubViewLink = `https://github.com/${githubUser}/${githubRepo}/blob/${githubBranch}/${githubPath}.md`;
-      const githubRawLink = `https://raw.githubusercontent.com/${githubUser}/${githubRepo}/refs/heads/${githubBranch}/${githubPath}.md`;
-      const githubDevLink = `https://github.dev/${githubUser}/${githubRepo}/blob/${githubBranch}/${githubPath}.md`;
-      const githubEditLink = githubViewLink.replace("/blob/", "/edit/");
-    
-      // Create the HTML for the links
-      const linksHTML = `
-        <h2>GitHub Links</h2>
-        <ul>
-          <li><a href="${githubViewLink}" target="_blank">View on GitHub</a></li>
-          <li><a href="${githubEditLink}" target="_blank">Edit on GitHub</a></li>
-          <li><a href="${githubRawLink}" target="_blank">Raw File</a></li>
-          <li><a href="${githubDevLink}" target="_blank">Open in GitHub.dev</a></li>
-        </ul>
-      `;
-    
-      // Insert the links into the page
-      const container = document.createElement("div");
-      container.className = "github-links";
-      container.innerHTML = linksHTML;
-      document.body.insertBefore(container, document.body.firstChild);
-    
-      console.log("Generated GitHub links:", {
-        view: githubViewLink,
-        edit: githubEditLink,
-        raw: githubRawLink,
-        dev: githubDevLink,
-      });
-    }
-   
-   function insertGitHubLinks() {
-     var fm = getFrontmatterFromCache();
-     if (!fm) {
-       console.warn("No frontmatter available for GitHub links.");
+   // Insert the GitHub links in the footer
+   function insertLinksInFooter(linksHTML) {
+     // The footer container: <div class="mod-footer mod-ui"> ... </div>
+     const footer = document.querySelector(".mod-footer.mod-ui");
+     if (!footer) {
+       console.warn("No .mod-footer.mod-ui found for inserting GitHub links.");
        return;
      }
-     if (!fm.github) {
-       console.warn("No 'github' property found in frontmatter.");
-       return;
-     }
-     var githubURL = fm.github.trim();
-     console.log("GitHub URL from frontmatter:", githubURL);
-     var viewURL = githubURL;
-     var editURL = githubURL.replace("/blob/", "/edit/");
-     var rawURL = githubURL.replace("/blob/", "/raw/");
-     var downloadURL = rawURL; // Use raw URL as download link
-   
-     var linksHTML = `
-       <h2>GitHub Links</h2>
-       <ul>
-         <li><a href="${viewURL}" target="_blank">View on GitHub</a></li>
-         <li><a href="${editURL}" target="_blank">Edit on GitHub</a></li>
-         <li><a href="${downloadURL}" target="_blank">Download</a></li>
-         <li><a href="#" id="copy-raw-url">Copy Raw URL</a></li>
-       </ul>
-     `;
-     var container = document.createElement("div");
-     container.className = "github-links";
-     container.innerHTML = linksHTML;
-     var content = document.querySelector(".content") || document.body;
-     content.insertBefore(container, content.firstChild);
-     console.log("Inserted GitHub links.");
-   
-     // Set up copy-to-clipboard for raw URL
-     var copyBtn = document.getElementById("copy-raw-url");
-     if (copyBtn) {
-       copyBtn.addEventListener("click", function (e) {
-         e.preventDefault();
-         navigator.clipboard.writeText(rawURL)
-           .then(function () {
-             console.log("Copied raw URL to clipboard:", rawURL);
-             alert("Raw URL copied to clipboard!");
-           })
-           .catch(function (err) {
-             console.error("Error copying raw URL:", err);
-           });
-       });
-     }
+     // Insert at the top of the footer content
+     footer.insertAdjacentHTML("afterbegin", linksHTML);
+     console.log("Inserted GitHub links at the footer.");
    }
    
-   // -------------------------------------------------------------------
-   // Main Initialization
-   // -------------------------------------------------------------------
+   // Main initialization
    function init() {
-     console.log("Initializing publish.js functions...");
-     // Uncomment the example(s) you wish to test:
-     // example1_insertMetaTags();
-     // example2_insertMetaDates();
-     // example3_insertUp();
-     // insertGitHubLinks();
-     generateGitHubLinks();
+     console.log("Initializing publish.js...");
+     const linksHTML = buildGitHubLinks();
+     insertLinksBelowTitle(linksHTML);
+     insertLinksInFooter(linksHTML);
    }
    
-   // Use DOMContentLoaded (or run immediately if document.readyState !== "loading")
+   // DOM ready
    if (document.readyState === "loading") {
-     document.addEventListener("DOMContentLoaded", function () {
-       console.log("DOMContentLoaded event fired.");
-       init();
-     });
+     document.addEventListener("DOMContentLoaded", init);
    } else {
-     console.log("Document already loaded.");
      init();
    }
-   
-   // -------------------------------------------------------------------
-   // Additional: MutationObserver to log DOM changes (for testing)
-   // -------------------------------------------------------------------
-   var targetNode = document.querySelector(".markdown-preview-sizer.markdown-preview-section");
-   if (targetNode) {
-     var observer = new MutationObserver(function (mutations) {
-       mutations.forEach(function (mutation) {
-         console.log("Mutation observed:", mutation);
-       });
-     });
-     observer.observe(targetNode, { childList: true, subtree: true });
-     console.log("MutationObserver attached to target node:", targetNode);
-   } else {
-     console.warn("No target node found for MutationObserver.");
-   }
-   
-   // Uncomment the following line to manually trigger a custom event for testing:
-   // document.dispatchEvent(new Event("DOMContentLoaded"));
    

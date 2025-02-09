@@ -1,14 +1,65 @@
-/* ========================================================
-   publish.css – Styling for GitHub Links & Frontmatter Props
-   ======================================================== */
+/* =========================
+   Footer Links Icons & Style
+   ========================= */
+   span.git-footer {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}
 
-/* GitHub links container */
+/* Common link style */
+.git-footer .external-link {
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    background: var(--interactive-normal, #ececec);
+    color: var(--text-normal, #333);
+    margin: 0 5px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.git-footer .external-link:hover {
+    background: var(--interactive-accent-hover, #ddd);
+    color: var(--text-on-accent, #000);
+}
+
+/* Icon placeholders via ::before using the 'title' attribute */
+
+.git-footer .external-link[title="git-hub-edit-note"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (pencil icon) ...%3E');
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+
+.git-footer .external-link[title="git-hub-copy-note"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (copy icon) ...%3E');
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+
+.git-footer .external-link[title="git-hub-download-vault"]::before {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (download icon) ...%3E');
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+
+/* (Optional) If you add "git-hub-open-dev" or others, add additional rules: */
+.git-footer .external-link[title="git-hub-open-dev"]::before {
+    /* Insert an icon of your choice. */
+}
+
+/* =========================
+   Existing publish.css 
+   (github-links, frontmatter, etc.)
+   ========================= */
 .github-links {
   border: 1px solid #ddd;
   background: #fff;
   padding: 0.75em;
-  margin-bottom: 1em;  /* You can replace var(--spacing) if needed */
+  margin-bottom: 1em;
 }
+
 .github-links ul {
   list-style: none;
   margin: 0;
@@ -16,6 +67,7 @@
   display: flex;
   gap: 1em;
 }
+
 .github-links ul li a {
   text-decoration: none;
   color: inherit;
@@ -24,36 +76,10 @@
   padding: 0.25em 0.5em;
   transition: background 0.2s, border-color 0.2s;
 }
+
 .github-links ul li a:hover {
   background: rgba(0, 0, 0, 0.05);
   border-color: #aaa;
 }
 
-/* Frontmatter properties display */
-.frontmatter-properties {
-  border: 1px solid #ccc;
-  background: #f9f9f9;
-  padding: 1em;
-  margin: 1em 0;
-  font-size: 0.9em;
-}
-.frontmatter-properties h2 {
-  margin-top: 0;
-}
-.frontmatter-properties table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.frontmatter-properties table td {
-  padding: 0.5em;
-  border: 1px solid #ddd;
-}
-
-/* (Optional) Additional responsive adjustments */
-/* For example, adjust margins on small screens */
-@media screen and (max-width: 750px) {
-  .github-links, .frontmatter-properties {
-    margin: 0.5em;
-    padding: 0.5em;
-  }
-}
+/* And so on for your frontmatter properties, etc. */
