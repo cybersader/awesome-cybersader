@@ -4,10 +4,11 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 8:56 am
-date modified: Sunday, February 9th 2025, 12:26 pm
+date modified: Sunday, February 9th 2025, 1:10 pm
 ---
 
 [Cyberbase Development](../../📁%2051%20-%20Cyberbase/Cyberbase%20Development/Cyberbase%20Development.md)
+[Media Hosting in Obsidian](../../📁%2051%20-%20Cyberbase/Media%20Hosting%20in%20Obsidian/Media%20Hosting%20in%20Obsidian.md)
 
 # DROP
 
@@ -15,11 +16,24 @@ date modified: Sunday, February 9th 2025, 12:26 pm
 - [github.com > sorrycc/awesome-javascript: 🐢 A collection of awesome browser-side  JavaScript libraries](https://github.com/sorrycc/awesome-javascript)
 
 - 
-## Native JS
+
+## Native JS, CSS, and Animations
 
 - [swapy.tahazsh.com > Swapy](https://swapy.tahazsh.com/)
 - [github.com > juliangarnier/anime: JavaScript animation engine](https://github.com/juliangarnier/anime/?tab=readme-ov-file#file-include)
 	- [animejs.com > anime.js](https://animejs.com/)
+- [lottiefiles.com > LottieFiles: Download Free lightweight animations for website & apps.](https://lottiefiles.com/)
+	- [lottiefiles.com > Lottie Web Player - LottieFiles](https://lottiefiles.com/web-player)
+	- [github.com > airbnb/lottie-web: Render After Effects animations natively on Web](https://github.com/airbnb/lottie-web)
+- [github.com > julianshapiro/velocity: Accelerated JavaScript animation.](https://github.com/julianshapiro/velocity)
+- [theatrejs.com > With HTML/SVG – Theatre.js](https://www.theatrejs.com/docs/latest/getting-started/with-html-svg)
+- [mojs.github.io > Getting started | mo.js](https://mojs.github.io/tutorials/getting-started.html)
+- Slides and carousels
+	- [glidejs.com > Glide.js | A dependency-free JavaScript ES6 slider and carousel](https://glidejs.com/)
+	- [kenwheeler.github.io > slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
+- Tailwind CSS in JS
+	- [twind.dev > Twind](https://twind.dev/)
+- [motion.dev > Motion - A modern animation library for JavaScript and React](https://motion.dev/docs/quick-start)
 - 
 
 # CSS
@@ -132,4 +146,9 @@ date modified: Sunday, February 9th 2025, 12:26 pm
 ## JS Libraries DROP
 
 - [Three.js – JavaScript 3D Library](https://threejs.org/)
+- .
+
+# Images - SVG
+
+- [svglogos.dev > SVG Logos](https://svglogos.dev/)
 - 
