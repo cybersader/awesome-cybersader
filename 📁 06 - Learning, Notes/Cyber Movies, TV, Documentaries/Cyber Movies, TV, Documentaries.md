@@ -3,7 +3,7 @@ permalink:
 aliases: []
 tags: [Curations]
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Tuesday, December 31st 2024, 3:57 pm
+date modified: Sunday, February 9th 2025, 10:45 am
 publish: true
 ---
 
@@ -84,6 +84,7 @@ Subfolders:
 - Prison Break
 - Better Call Saul
 - Blackhat
+- The Night Agent
 
 # Financial Sector and Cyber
 
