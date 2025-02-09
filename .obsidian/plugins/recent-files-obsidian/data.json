@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Quick Local JS Testing",
+      "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
+    },
+    {
+      "basename": "CB2 - Testing Process",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing Process/CB2 - Testing Process.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "Cyberbase JS & Services",
       "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
-    },
-    {
-      "basename": "CB1 - Customize Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
       "basename": "Digital Content Creation",
@@ -51,10 +59,6 @@
     {
       "basename": "HTML in Obsidian",
       "path": "📁 51 - Cyberbase/HTML in Obsidian/HTML in Obsidian.md"
-    },
-    {
-      "basename": "CB2 - Testing Process",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing Process/CB2 - Testing Process.md"
     },
     {
       "basename": "Customizing Obsidian Publish",
@@ -195,10 +199,6 @@
     {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Cyberbase Domains",
-      "path": "📁 51 - Cyberbase/Cyberbase Domains/Cyberbase Domains.md"
     }
   ],
   "omittedPaths": [],
