@@ -1,9 +1,13 @@
+/* ========================================================
+   publish.css – Styling for GitHub Links & Frontmatter Props
+   ======================================================== */
+
 /* GitHub links container */
 .github-links {
   border: 1px solid #ddd;
   background: #fff;
   padding: 0.75em;
-  margin-bottom: var(--spacing);
+  margin-bottom: 1em;  /* You can replace var(--spacing) if needed */
 }
 .github-links ul {
   list-style: none;
@@ -23,4 +27,33 @@
 .github-links ul li a:hover {
   background: rgba(0, 0, 0, 0.05);
   border-color: #aaa;
+}
+
+/* Frontmatter properties display */
+.frontmatter-properties {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  padding: 1em;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+.frontmatter-properties h2 {
+  margin-top: 0;
+}
+.frontmatter-properties table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.frontmatter-properties table td {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+}
+
+/* (Optional) Additional responsive adjustments */
+/* For example, adjust margins on small screens */
+@media screen and (max-width: 750px) {
+  .github-links, .frontmatter-properties {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
 }
