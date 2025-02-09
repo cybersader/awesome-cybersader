@@ -14,7 +14,7 @@ date modified: Sunday, February 9th 2025, 1:10 pm
 
 - [github.com > uhub/awesome-javascript: A curated list of awesome JavaScript frameworks](https://github.com/uhub/awesome-javascript)
 - [github.com > sorrycc/awesome-javascript: 🐢 A collection of awesome browser-side  JavaScript libraries](https://github.com/sorrycc/awesome-javascript)
-
+- [github.com > birobirobiro/awesome-shadcn-ui: A curated list of awesome things related to shadcn/ui.](https://github.com/birobirobiro/awesome-shadcn-ui)
 - 
 
 ## Native JS, CSS, and Animations
@@ -34,7 +34,6 @@ date modified: Sunday, February 9th 2025, 1:10 pm
 - Tailwind CSS in JS
 	- [twind.dev > Twind](https://twind.dev/)
 - [motion.dev > Motion - A modern animation library for JavaScript and React](https://motion.dev/docs/quick-start)
-- 
 
 # CSS
 

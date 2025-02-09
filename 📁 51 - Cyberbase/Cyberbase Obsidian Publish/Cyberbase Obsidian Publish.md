@@ -249,14 +249,6 @@ date modified: Saturday, February 8th 2025, 5:43 pm
 
 - [github.com > lycheeverse/lychee: ⚡ Fast](https://github.com/lycheeverse/lychee)
 
-# Static Website Hacks
-
-## Remote Images 
-
-We can use remotely fetched images to redirect to services where it would be too hard to represent in Obsidian
-
-- Buy me a coffee
-
 # Obsidian HTML & Embeds - Vault to Publish
 
 - Obsidian Docs
