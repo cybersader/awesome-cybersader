@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "2025-02-09-Sunday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-09-Sunday/2025-02-09-Sunday.md"
+    },
+    {
       "basename": "CSS",
       "path": "📁 21 - Development/CSS/CSS.md"
     },
     {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Obsidian Markdown Examples",
@@ -195,10 +199,6 @@
     {
       "basename": "Marketing Tech",
       "path": "📁 35 - Business/Marketing Tech/Marketing Tech.md"
-    },
-    {
-      "basename": "Astro with Content Layer",
-      "path": "📁 51 - Cyberbase/Astro with Content Layer/Astro with Content Layer.md"
     }
   ],
   "omittedPaths": [],

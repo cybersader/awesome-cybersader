@@ -790,6 +790,9 @@
       },
       "tokenz": {
         "startupType": "disabled"
+      },
+      "tailwind-snippet": {
+        "startupType": "disabled"
       }
     }
   }
