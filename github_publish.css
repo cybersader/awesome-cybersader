@@ -1,47 +1,40 @@
-/* Container for GitHub buttons */
-.github-buttons {
-    display: flex;
-    gap: 10px;
-    margin: 15px 0;
-    justify-content: center;
-  }
-  
-  /* Base styling for each GitHub button */
-  .github-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 14px;
-    background-color: var(--interactive-accent, #086ddd);
-    color: #fff;
-    border-radius: var(--radius-m, 8px);
-    text-decoration: none;
-    font-size: 0.95em;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .github-button:hover {
-    background-color: var(--interactive-accent-hover, #027aff);
-  }
-  
-  /* Styling the SVG icons inside the buttons */
-  .github-icon {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  /* Ensure text inside the buttons is aligned nicely */
-  .github-button span {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  /* Responsive adjustments (if needed) */
-  @media screen and (max-width: 750px) {
-    .github-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+.footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1em 0;
+  justify-content: center;
+}
+
+.footer-buttons .btn {
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background: var(--interactive-normal, #eee);
+  color: var(--text-normal, #333);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-buttons .btn:hover {
+  background: var(--interactive-accent-hover, #ddd);
+  color: var(--text-on-accent, #000);
+}
+
+/* Icons via title attributes */
+.footer-buttons .btn[title="git-hub-edit-note"]::before {
+  content: url('data:image/svg+xml,...SOME_PENCIL_ICON...');
+  margin-right: 4px;
+}
+.footer-buttons .btn[title="git-hub-copy-note"]::before {
+  content: url('data:image/svg+xml,...SOME_COPY_ICON...');
+  margin-right: 4px;
+}
+.footer-buttons .btn[title="git-hub-download-vault"]::before {
+  content: url('data:image/svg+xml,...SOME_DOWNLOAD_ICON...');
+  margin-right: 4px;
+}
+.footer-buttons .btn[title="git-hub-open-dev"]::before {
+  content: url('data:image/svg+xml,...SOME_GITHUB_DEV_ICON...');
+  margin-right: 4px;
+}

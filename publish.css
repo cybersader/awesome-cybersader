@@ -1,104 +1,40 @@
-/* =========================================================================
-   1) HEADER LINKS: flex row with page title on left, text links on right
-   ========================================================================= */
-
-/* The container we create in JS: .header-row */
-.header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Title on left, links on right */
-  margin-top: 0.5rem;  /* or 1em, as you prefer */
-}
-
-/* The text links area in the header: .header-links */
-.header-links {
-  display: flex;
-  gap: 1rem; /* space between links */
-}
-
-/* Each link in the header: .header-link-item */
-.header-link-item {
-  text-decoration: none;
-  color: var(--text-accent, #337ab7);
-  font-weight: 500;
-  padding: 4px 8px;
-  border-radius: 3px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.header-link-item:hover {
-  background: rgba(0, 0, 0, 0.1);
-  color: var(--text-on-accent, #000);
-}
-
-/* =========================================================================
-   2) FOOTER BUTTONS: .footer-buttons with wrap + .btn styles
-   ========================================================================= */
-
 .footer-buttons {
   display: flex;
-  flex-wrap: wrap;     /* wrap to next line on narrow screens */
-  gap: 0.5rem;         /* spacing between .btns */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1em 0;
+  justify-content: left;
 }
 
 .footer-buttons .btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 4px;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 6px 12px;
   background: var(--interactive-normal, #eee);
   color: var(--text-normal, #333);
   font-weight: 600;
   transition: background 0.2s, color 0.2s;
 }
 
-/* On hover, lighten or accent the background */
 .footer-buttons .btn:hover {
   background: var(--interactive-accent-hover, #ddd);
   color: var(--text-on-accent, #000);
 }
 
-/* =========================================================================
-   3) ICONS using title="git-hub-..." attributes
-   ========================================================================= */
-
-/* Example: pencil (edit note) */
+/* Icons via title attributes */
 .footer-buttons .btn[title="git-hub-edit-note"]::before {
-  content: url('data:image/svg+xml,%3Csvg%20...PENCIL_ICON_SVG...%3E');
+  content: url('data:image/svg+xml,...SOME_PENCIL_ICON...');
   margin-right: 4px;
 }
-
-/* Example: copy icon (raw note) */
 .footer-buttons .btn[title="git-hub-copy-note"]::before {
-  content: url('data:image/svg+xml,%3Csvg%20...COPY_ICON_SVG...%3E');
+  content: url('data:image/svg+xml,...SOME_COPY_ICON...');
   margin-right: 4px;
 }
-
-/* Example: download icon */
 .footer-buttons .btn[title="git-hub-download-vault"]::before {
-  content: url('data:image/svg+xml,%3Csvg%20...DOWNLOAD_ICON_SVG...%3E');
+  content: url('data:image/svg+xml,...SOME_DOWNLOAD_ICON...');
   margin-right: 4px;
 }
-
-/* Example: GitHub.dev icon */
 .footer-buttons .btn[title="git-hub-open-dev"]::before {
-  content: url('data:image/svg+xml,%3Csvg%20...DEV_ICON_SVG...%3E');
+  content: url('data:image/svg+xml,...SOME_GITHUB_DEV_ICON...');
   margin-right: 4px;
-}
-
-/* =========================================================================
-   4) Additional mobile adjustments
-   ========================================================================= */
-
-@media screen and (max-width: 600px) {
-  /* Slightly smaller spacing on mobile */
-  .header-links { gap: 0.5rem; }
-  .footer-buttons { gap: 0.3rem; }
-  .header-link-item, .btn {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-  }
 }
