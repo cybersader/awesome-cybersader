@@ -1,85 +1,54 @@
 /* =========================
-   Footer Links Icons & Style
+   Footer GitHub Links + Icons
    ========================= */
-   span.git-footer {
-    display: block;
-    text-align: center;
-    margin: 1em 0;
+
+/* The container for your GitHub links */
+span.git-footer {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
 }
 
-/* Common link style */
+/* Common link styles */
 .git-footer .external-link {
-    padding: 6px 15px;
-    text-decoration: none;
-    border-radius: 4px;
-    background: var(--interactive-normal, #ececec);
-    color: var(--text-normal, #333);
-    margin: 0 5px;
-    font-weight: 600;
-    transition: background 0.2s;
+  padding: 6px 15px;
+  margin: 0 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: var(--interactive-normal, #ECECEC);
+  color: var(--text-normal, #333);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
 }
 
 .git-footer .external-link:hover {
-    background: var(--interactive-accent-hover, #ddd);
-    color: var(--text-on-accent, #000);
+  background: var(--interactive-accent-hover, #DDD);
+  color: var(--text-on-accent, #000);
 }
 
-/* Icon placeholders via ::before using the 'title' attribute */
-
+/* Icons: .external-link[title="..."]::before */
 .git-footer .external-link[title="git-hub-edit-note"]::before {
-    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (pencil icon) ...%3E');
-    vertical-align: -3px;
-    margin-right: 4px;
+  content: url('data:image/svg+xml,%3Csvg%20...PENCIL_ICON_SVG...%3E');
+  vertical-align: -3px;
+  margin-right: 4px;
 }
 
 .git-footer .external-link[title="git-hub-copy-note"]::before {
-    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (copy icon) ...%3E');
-    vertical-align: -3px;
-    margin-right: 4px;
+  content: url('data:image/svg+xml,%3Csvg%20...COPY_ICON_SVG...%3E');
+  vertical-align: -3px;
+  margin-right: 4px;
 }
 
 .git-footer .external-link[title="git-hub-download-vault"]::before {
-    content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http... (download icon) ...%3E');
-    vertical-align: -3px;
-    margin-right: 4px;
+  content: url('data:image/svg+xml,%3Csvg%20...DOWNLOAD_ICON_SVG...%3E');
+  vertical-align: -3px;
+  margin-right: 4px;
 }
 
-/* (Optional) If you add "git-hub-open-dev" or others, add additional rules: */
+/* If you add "git-hub-open-dev" link, add something like:
 .git-footer .external-link[title="git-hub-open-dev"]::before {
-    /* Insert an icon of your choice. */
+  content: url('data:image/svg+xml,%3Csvg%20...%3E');
+  vertical-align: -3px;
+  margin-right: 4px;
 }
-
-/* =========================
-   Existing publish.css 
-   (github-links, frontmatter, etc.)
-   ========================= */
-.github-links {
-  border: 1px solid #ddd;
-  background: #fff;
-  padding: 0.75em;
-  margin-bottom: 1em;
-}
-
-.github-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1em;
-}
-
-.github-links ul li a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 600;
-  border: 1px solid transparent;
-  padding: 0.25em 0.5em;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.github-links ul li a:hover {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: #aaa;
-}
-
-/* And so on for your frontmatter properties, etc. */
+*/
