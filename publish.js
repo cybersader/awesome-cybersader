@@ -91,6 +91,60 @@
    // -------------------------------------------------------------------
    // GitHub Links Insertion: (if frontmatter includes a "github:" property)
    // -------------------------------------------------------------------
+    function generateGitHubLinks() {
+      // Get the current URL path
+      const currentUrlPath = decodeURIComponent(window.location.pathname);
+      
+      // Extract the relative path from the current URL
+      // Example: '/⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools' -> '⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools'
+      const relativePath = currentUrlPath.replace(/^\/|\/$/, "");
+    
+      // Define GitHub repository details
+      const githubUser = "cybersader";
+      const githubRepo = "awesome-cybersader";
+      const githubBranch = "main";  // Adjust this if your branch name is different
+    
+      // Correctly encode the path for GitHub URLs
+      // Note: We encode each part of the path and join them with '/'
+      const githubPath = relativePath
+        .split('/')
+        .map(encodeURIComponent)
+        .join('/');
+
+      // Encode the path for GitHub (URL-safe encoding)
+      const encodedPath = encodeURIComponent(relativePath).replace(/%20/g, "+");
+    
+      // Build the links
+      const githubViewLink = `https://github.com/${githubUser}/${githubRepo}/blob/${githubBranch}/${githubPath}.md`;
+      const githubRawLink = `https://raw.githubusercontent.com/${githubUser}/${githubRepo}/refs/heads/${githubBranch}/${githubPath}.md`;
+      const githubDevLink = `https://github.dev/${githubUser}/${githubRepo}/blob/${githubBranch}/${githubPath}.md`;
+      const githubEditLink = githubViewLink.replace("/blob/", "/edit/");
+    
+      // Create the HTML for the links
+      const linksHTML = `
+        <h2>GitHub Links</h2>
+        <ul>
+          <li><a href="${githubViewLink}" target="_blank">View on GitHub</a></li>
+          <li><a href="${githubEditLink}" target="_blank">Edit on GitHub</a></li>
+          <li><a href="${githubRawLink}" target="_blank">Raw File</a></li>
+          <li><a href="${githubDevLink}" target="_blank">Open in GitHub.dev</a></li>
+        </ul>
+      `;
+    
+      // Insert the links into the page
+      const container = document.createElement("div");
+      container.className = "github-links";
+      container.innerHTML = linksHTML;
+      document.body.insertBefore(container, document.body.firstChild);
+    
+      console.log("Generated GitHub links:", {
+        view: githubViewLink,
+        edit: githubEditLink,
+        raw: githubRawLink,
+        dev: githubDevLink,
+      });
+    }
+   
    function insertGitHubLinks() {
      var fm = getFrontmatterFromCache();
      if (!fm) {
@@ -151,6 +205,7 @@
      // example2_insertMetaDates();
      // example3_insertUp();
      // insertGitHubLinks();
+     generateGitHubLinks();
    }
    
    // Use DOMContentLoaded (or run immediately if document.readyState !== "loading")
