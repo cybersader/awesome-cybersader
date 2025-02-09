@@ -4,16 +4,22 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 8:56 am
-date modified: Sunday, February 9th 2025, 11:04 am
+date modified: Sunday, February 9th 2025, 12:26 pm
 ---
 
 [Cyberbase Development](../../📁%2051%20-%20Cyberbase/Cyberbase%20Development/Cyberbase%20Development.md)
 
 # DROP
 
+- [github.com > uhub/awesome-javascript: A curated list of awesome JavaScript frameworks](https://github.com/uhub/awesome-javascript)
+- [github.com > sorrycc/awesome-javascript: 🐢 A collection of awesome browser-side  JavaScript libraries](https://github.com/sorrycc/awesome-javascript)
+
+- 
 ## Native JS
 
 - [swapy.tahazsh.com > Swapy](https://swapy.tahazsh.com/)
+- [github.com > juliangarnier/anime: JavaScript animation engine](https://github.com/juliangarnier/anime/?tab=readme-ov-file#file-include)
+	- [animejs.com > anime.js](https://animejs.com/)
 - 
 
 # CSS
@@ -122,3 +128,8 @@ date modified: Sunday, February 9th 2025, 11:04 am
 	- Vite
 	- Webpack
 - You can also split and use dynamic imports
+
+## JS Libraries DROP
+
+- [Three.js – JavaScript 3D Library](https://threejs.org/)
+- 
