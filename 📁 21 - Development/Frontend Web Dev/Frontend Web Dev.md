@@ -4,12 +4,53 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 8:56 am
-date modified: Friday, February 7th 2025, 10:07 pm
+date modified: Sunday, February 9th 2025, 11:04 am
 ---
 
 [Cyberbase Development](../../📁%2051%20-%20Cyberbase/Cyberbase%20Development/Cyberbase%20Development.md)
 
-# DROP 
+# DROP
+
+## Native JS
+
+- [swapy.tahazsh.com > Swapy](https://swapy.tahazsh.com/)
+- 
+
+# CSS
+
+## CSS Resources
+
+- [github.com > nepaul/awesome-web-development: 🧡 A curated list of awesome web development resources.](https://github.com/nepaul/awesome-web-development)
+- [github.com > adamgiebl/neumorphism: 🎉 Generate CSS for your Neumorphism designs](https://github.com/adamgiebl/neumorphism)
+- [github.com > birobirobiro/awesome-shadcn-ui: A curated list of awesome things related to shadcn/ui.](https://github.com/birobirobiro/awesome-shadcn-ui)
+- 
+
+## Tailwind
+
+- Handling CSS selectors with query selectors on websites using Tailwind?
+	- Utility classes make it hard to select right?
+
+## CSS Minifier
+
+- [toptal.com > CSS Minifier & Compressor | Toptal®](https://www.toptal.com/developers/cssminifier)
+- [toptal.com > JavaScript Minifier & Compressor | Toptal®](https://www.toptal.com/developers/javascript-minifier)
+
+## CSS Selectors
+
+- [ghostinspector.com > CSS Selector Cheat Sheet: Strategies for Automated Browser Testing](https://ghostinspector.com/blog/css-selector-strategies-automated-browser-testing/)
+- [umaar.com > Clever CSS Selectors - CSS - Dev Tips](https://umaar.com/dev-tips/268-css-handy-attribute-selectors/)
+- 
+
+## CSS Analysis Tools
+
+- [projectwallace.com > Online CSS Analyzer - Project Wallace](https://www.projectwallace.com/analyze-css)
+- [isellsoap.github.io > Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/)
+- [css-tricks.com > Tools For Auditing CSS | CSS-Tricks](https://css-tricks.com/tools-for-auditing-css/)
+- [cssstats.com > CSS Stats](https://cssstats.com/stats/)
+
+# JS
+
+## DROP 
 
 - [youtube.com > Module Bundlers Explained... Webpack | Fireship](https://www.youtube.com/watch?v=5IG4UmULyoA&list=WL&index=7&t=96s)
 - [youtube.com > JavaScript Modules in 100 Seconds | Fireship](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
@@ -19,7 +60,8 @@ date modified: Friday, February 7th 2025, 10:07 pm
 
 - [ui.shadcn.com > shadcn/ui](https://ui.shadcn.com/)
 - [v0.dev > v0 by Vercel](https://v0.dev/)
-## HTML-focused?
+
+### HTML-focused?
 
 - HTMX
 	- [htmx.org > </> htmx - high power tools for html](https://htmx.org/) - htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
@@ -27,7 +69,7 @@ date modified: Friday, February 7th 2025, 10:07 pm
 - Alpine
 	- [alpinejs.dev > Alpine.js](https://alpinejs.dev/) - Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.
 
-## Frontend Frameworks
+### Frontend Frameworks
 
 - [youtube.com > JavaScript Frameworks in 2025 | Theo - t3․gg](https://www.youtube.com/watch?v=TKcetuFoYU0)
 
@@ -39,7 +81,7 @@ date modified: Friday, February 7th 2025, 10:07 pm
 - Next
 - Nuxt
 
-## Bundlers & Build Tools
+### Bundlers & Build Tools
 
 - [youtube.com > Bun's FINALLY A Bundler (and much much more) | Theo - t3․gg](https://www.youtube.com/watch?v=Y5JrsqBt7sI)
 - [youtube.com > Another new JS bundler? This one’s interesting I promise | Theo - t3․gg](https://www.youtube.com/watch?v=_sxwQBWJQHA)
@@ -51,9 +93,9 @@ date modified: Friday, February 7th 2025, 10:07 pm
 - [samthor.au > Kuto](https://samthor.au/2024/kuto/)
 - 
 
-# Browser JS Basics
+## Browser JS Basics
 
-## What Runs Natively in a Browser
+### What Runs Natively in a Browser
 
 1. Ecmascript
 2. Web Assembly
@@ -61,7 +103,7 @@ date modified: Friday, February 7th 2025, 10:07 pm
 - V8 engine 
 	- Does JIT compilation in the browser
 
-## Web JS Basics
+### Web JS Basics
 
 [youtube.com > 100+ JavaScript Concepts you Need to Know | Fireship](https://www.youtube.com/watch?v=lkIFF4maKMU&t=578s)
 
@@ -73,7 +115,7 @@ date modified: Friday, February 7th 2025, 10:07 pm
 	- Astro
 	- Svelte
 
-## Module Bundling
+### Module Bundling
 
 - Once you have the frontend code made in your framework, then you have to bundle it
 - Popular examples:
