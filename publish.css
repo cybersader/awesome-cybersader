@@ -1,81 +1,20 @@
-/* ================================ 
-   GitHub Buttons Styling 
-   ================================ */
-.github-buttons {
-  display: flex;
-  gap: 10px;
-  margin: 1em 0;
-  justify-content: center;
-}
-
-.github-button {
-  background: linear-gradient(45deg, #6e8efb, #a777e3);
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 0.9em;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.github-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Ensure inline SVG icons take on the button color */
-.github-button svg {
-  fill: currentColor;
-}
-
-/* Additional modern touches, gradients, and animations */
-/* For example, you might add a smooth fade-in on page load: */
-body {
-  opacity: 0;
-  animation: fadeIn 0.8s ease forwards;
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* You can add more modern gradient backgrounds, subtle animations, etc. below */
-/* Example: animated gradient border for page header */
-.page-header {
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #6e8efb, #a777e3) 1;
-}
-
-/* Example: stylish hover on links */
-a:hover {
-  text-decoration: underline;
-  transition: all 0.2s ease;
-}
-
 /* ========================================================
    publish.css
-   Minimal Publish CSS
-   - Modern base font via Google Fonts (e.g. Inter)
-   - Dark (Atom) and Light (Nord) theme definitions
-   - Responsive breakpoints for tablet (min-width:1000px) and mobile (max-width:750px)
-   - Styling for header, footer, frontmatter display, and GitHub links
-======================================================== */
+   ======================================================== */
 
-/* Import modern font */
+/* --------------------------------------------------------
+   Base settings and font
+--------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
-/* Base rules */
 :root {
   --font-text-size: 16px;
   --font-small: 13px;
   --font-family: 'Inter', sans-serif;
-  
-  /* You can define more shared variables here if desired */
+  --spacing: 1em;
 }
 
+/* Global base */
 body {
   font-family: var(--font-family);
   font-size: var(--font-text-size);
@@ -84,35 +23,52 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* =======================
-   THEME DEFINITIONS
-========================== */
+/* --------------------------------------------------------
+   THEMES
+   Atom for dark mode & Nord for light mode
+--------------------------------------------------------- */
 
-/* Dark theme – Atom (minimal-atom-dark) */
+/* Dark Mode – Atom Theme */
 body.theme-dark {
-  /* Backgrounds and text colors from Atom theme */
+  /* Colors taken from Atom theme variables */
+  --color-red: #e16d76;
+  --color-orange: #d19a66;
+  --color-yellow: #cec167;
+  --color-green: #98c379;
+  --color-cyan: #58b6c2;
+  --color-blue: #62afef;
+  --color-purple: #c678de;
+  --color-pink: #e16d76;
+  
   background-color: #282c34;
   color: #d8dae1;
 }
 
-/* Light theme – Nord (minimal-atom-light / Nord color scheme) */
+/* Light Mode – Nord Theme */
 body.theme-light {
+  /* Colors taken from Nord theme variables */
+  --color-red: #e45749;
+  --color-orange: #b76b02;
+  --color-yellow: #c18302;
+  --color-green: #50a150;
+  --color-cyan: #0d97b3;
+  --color-blue: #62afef;
+  --color-purple: #a626a4;
+  --color-pink: #e45749;
+  
   background-color: #fafafa;
   color: #2e3440;
 }
 
-/* You may also add additional variables for UI elements if desired */
-
-
-/* =======================
-   LAYOUT & COMPONENTS
-========================== */
+/* --------------------------------------------------------
+   Layout & Component Styles
+--------------------------------------------------------- */
 
 /* Header */
 .mod-header {
-  padding: 1em;
-  border-bottom: 2px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: var(--spacing);
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .mod-header .page-header {
   font-size: 2em;
@@ -122,23 +78,23 @@ body.theme-light {
 
 /* Footer */
 .mod-footer {
-  padding: 1em;
-  border-top: 2px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.05);
+  padding: var(--spacing);
+  border-top: 2px solid rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
-/* Content area */
+/* Main content area */
 .content {
-  padding: 1em;
+  padding: var(--spacing);
 }
 
-/* Frontmatter display: When the JS has parsed your YAML frontmatter */
+/* Frontmatter display (when inserted by JS) */
 .frontmatter-display,
 .properties-container {
   border: 1px solid #ccc;
   background: #f9f9f9;
-  padding: 1em;
-  margin: 1em 0;
+  padding: var(--spacing);
+  margin: var(--spacing) 0;
   font-size: 0.9em;
 }
 .frontmatter-display h2,
@@ -146,12 +102,12 @@ body.theme-light {
   margin-top: 0;
 }
 
-/* GitHub links styling */
+/* GitHub links container */
 .github-links {
   border: 1px solid #ddd;
   background: #fff;
   padding: 0.75em;
-  margin-bottom: 1em;
+  margin-bottom: var(--spacing);
 }
 .github-links ul {
   list-style: none;
@@ -169,27 +125,26 @@ body.theme-light {
   transition: background 0.2s, border-color 0.2s;
 }
 .github-links ul li a:hover {
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
   border-color: #aaa;
 }
 
-/* =======================
+/* --------------------------------------------------------
    Responsive Breakpoints
-========================== */
+--------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
-  /* Tablet and smaller: hide right sidebar if needed */
+  /* Hide right sidebar on tablets */
   .site-body-right-column {
     display: none;
   }
 }
 @media screen and (max-width: 750px) {
-  /* Mobile: hide left sidebar (and possibly navigation) */
+  /* Hide left sidebar on mobile */
   .site-body-left-column {
     display: none;
   }
 }
 
-/* =======================
-   Additional styles for callouts, buttons, etc.
-   (You can extend these as needed.)
-========================== */
+/* --------------------------------------------------------
+   Additional styling (optional extensions)
+--------------------------------------------------------- */
