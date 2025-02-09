@@ -37,16 +37,18 @@
      // Example currentUrlPath: "/⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools"
      const currentUrlPath = decodeURIComponent(window.location.pathname);
      const relativePath   = currentUrlPath.replace(/^\/|\/$/g, ""); // remove leading/trailing slash
-   
+     console.log(`Relative Path - ${relativePath}`)
      const githubUser   = "cybersader";
      const githubRepo   = "awesome-cybersader";
      const githubBranch = "main";
    
+     const encodedPath = relativePath.replace(/\+/g, "\%20");
+
      // Properly encode each segment (spaces -> %20, not "+")
-     const encodedPath = relativePath
-       .split("/")
-       .map(encodeURIComponent)
-       .join("/");
+    //  const encodedPath = relativePath
+    //    .split("/")
+    //    .map(encodeURIComponent)
+    //    .join("/");
    
      // Construct the final .md links
      const view = `https://github.com/${githubUser}/${githubRepo}/blob/${githubBranch}/${encodedPath}.md`;
@@ -62,15 +64,16 @@
     * buildHeaderLinksHTML(urls)
     * - Returns text-based links for the header (aligned to the right).
     */
-   function buildHeaderLinksHTML(urls) {
-     // Only showing “Edit Note” and “Raw Note” in text form as an example
-     return `
-       <div class="header-links">
-         <a class="header-link-item" href="${urls.edit}" target="_blank">Edit Note</a>
-         <a class="header-link-item" href="${urls.raw}"  target="_blank">Raw Note</a>
-       </div>
-     `;
-   }
+   function buildLinksHTML(urls, containerClass) {
+    return `
+      <div class="${containerClass}">
+        <a href="${urls.view}"     target="_blank">View</a>
+        <a href="${urls.edit}"     target="_blank">Edit</a>
+        <a href="${urls.raw}"      target="_blank">Raw</a>
+        <a href="${urls.download}" target="_blank">Download</a>
+      </div>
+    `;
+  }
    
    /**
     * buildFooterButtonsHTML(urls)
@@ -95,50 +98,24 @@
      `;
    }
    
-   /**
-    * insertLinksInHeaderRight()
-    * - Waits for the .page-header inside .mod-header.mod-ui
-    * - Wraps it in a flex container that positions the page title on the left
-    *   and the links on the right.
-    */
-   function insertLinksInHeaderRight() {
-     waitForElement(".mod-header.mod-ui .page-header", (pageHeaderEl) => {
-       const urls         = buildGitHubURLs();
-       const linksHTML    = buildHeaderLinksHTML(urls);
-   
-       // 1) Create a new container for flex layout
-       const headerRow = document.createElement("div");
-       headerRow.className = "header-row";
-   
-       // 2) Move the existing pageHeaderEl into this row
-       headerRow.appendChild(pageHeaderEl);
-   
-       // 3) Insert the new link items on the right side
-       const linksContainer = document.createElement("div");
-       linksContainer.innerHTML = linksHTML;
-       headerRow.appendChild(linksContainer);
-   
-       // 4) Place 'headerRow' back into the DOM where .page-header used to be
-       const parent = document.querySelector(".mod-header.mod-ui");
-       if (parent) {
-         parent.appendChild(headerRow);
-         console.log("[GitHub Links] Inserted header links to the right side.");
-       } else {
-         console.warn(".mod-header.mod-ui not found, cannot insert header links.");
-       }
-     });
-   }
-   
-   /**
-    * insertLinksInFooter()
-    * - Waits for the .mod-footer.mod-ui
-    * - Appends button-like links that wrap on narrow screens.
-    */
-   function insertLinksInFooter() {
+   function insertLinksBelowHeader() {
+    waitForElement(".mod-header.mod-ui", (headerEl) => {
+      const urls      = buildGitHubURLs();
+      const linksHTML = buildLinksHTML(urls, "header-git-links");
+  
+      // Insert right AFTER the .mod-header.mod-ui div
+      headerEl.insertAdjacentHTML("afterend", linksHTML);
+  
+      console.log("[GitHub Links] Inserted below .mod-header.mod-ui");
+    });
+  }
+
+   function insertLinksBelowFooter() {
      waitForElement(".mod-footer.mod-ui", (footerEl) => {
        const urls       = buildGitHubURLs();
        const footerHTML = buildFooterButtonsHTML(urls);
-       footerEl.insertAdjacentHTML("beforeend", footerHTML);
+       // Insert right AFTER the .mod-footer.mod-ui div
+      footerEl.insertAdjacentHTML("afterend", footerHTML);
        console.log("[GitHub Links] Inserted button-like links in the footer.");
      });
    }
@@ -149,8 +126,8 @@
     */
    function init() {
      console.log("Initializing publish.js...");
-     insertLinksInHeaderRight();
-     insertLinksInFooter();
+     insertLinksBelowHeader();
+     insertLinksBelowFooter();
    }
    
    // Fire on DOMContentLoaded (or immediately if already loaded)
