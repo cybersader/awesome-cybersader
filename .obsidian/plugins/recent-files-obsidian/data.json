@@ -5,6 +5,14 @@
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Quick Local JS Testing",
+      "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
+    },
+    {
       "basename": "Frontend Web Dev",
       "path": "📁 21 - Development/Frontend Web Dev/Frontend Web Dev.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "Obsidian Plugins that Affect CSS",
       "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
-    },
-    {
-      "basename": "Quick Local JS Testing",
-      "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
     },
     {
       "basename": "CB2 - Testing Process",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 17 - Knowledge Engineering",
       "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     }
   ],
   "omittedPaths": [],
