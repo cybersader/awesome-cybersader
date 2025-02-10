@@ -1,40 +1,99 @@
-.footer-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1em 0;
-  justify-content: left;
-}
-
-.footer-buttons .btn {
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 6px 12px;
-  background: var(--interactive-normal, #eee);
-  color: var(--text-normal, #333);
-  font-weight: 600;
-  transition: background 0.2s, color 0.2s;
-}
-
-.footer-buttons .btn:hover {
-  background: var(--interactive-accent-hover, #ddd);
-  color: var(--text-on-accent, #000);
-}
-
-/* Icons via title attributes */
-.footer-buttons .btn[title="git-hub-edit-note"]::before {
-  content: url('data:image/svg+xml,...SOME_PENCIL_ICON...');
-  margin-right: 4px;
-}
-.footer-buttons .btn[title="git-hub-copy-note"]::before {
-  content: url('data:image/svg+xml,...SOME_COPY_ICON...');
-  margin-right: 4px;
-}
-.footer-buttons .btn[title="git-hub-download-vault"]::before {
-  content: url('data:image/svg+xml,...SOME_DOWNLOAD_ICON...');
-  margin-right: 4px;
-}
-.footer-buttons .btn[title="git-hub-open-dev"]::before {
-  content: url('data:image/svg+xml,...SOME_GITHUB_DEV_ICON...');
-  margin-right: 4px;
-}
+/* =======================
+   1) Header Git Links
+   ======================= */
+   #header-git-links.header-git-links {
+    text-align: right;
+    margin: 1em 0;
+  }
+  #header-git-links a {
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: var(--text-accent, #66c0ff);
+    transition: background 0.2s, color 0.2s;
+  }
+  #header-git-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-on-accent, #fff);
+  }
+  
+  /* =======================
+     2) Footer Action Block
+     ======================= */
+  #footer-action-block {
+    margin: 1em 0; /* a bit of space above/below */
+  }
+  
+  .footer-divider {
+    margin-bottom: 1em; 
+    border: 0;
+    border-top: 1px solid var(--background-modifier-border, #aaa);
+    /* Or use Obsidian’s native var if you want */
+  }
+  
+  .footer-action-container h4 {
+    margin: 0.5em 0; /* spacing for the heading */
+    font-size: 1.1em;
+  }
+  
+  /* The row of button-like links */
+  .footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5em 0;
+  }
+  
+  /* Each button link */
+  .footer-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: var(--interactive-normal, #eee);
+    color: var(--text-normal, #333);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .footer-buttons .btn:hover {
+    background: var(--interactive-accent-hover, #ddd);
+    color: var(--text-on-accent, #000);
+  }
+  
+  /* Icons via title attributes */
+  .footer-buttons .btn[title="git-hub-edit-note"]::before {
+    content: url('data:image/svg+xml,...SOME_PENCIL_ICON...');
+    margin-right: 4px;
+  }
+  .footer-buttons .btn[title="git-hub-copy-note"]::before {
+    content: url('data:image/svg+xml,...SOME_COPY_ICON...');
+    margin-right: 4px;
+  }
+  .footer-buttons .btn[title="git-hub-download-vault"]::before {
+    content: url('data:image/svg+xml,...SOME_DOWNLOAD_ICON...');
+    margin-right: 4px;
+  }
+  .footer-buttons .btn[title="git-hub-open-dev"]::before {
+    content: url('data:image/svg+xml,...SOME_GITHUB_DEV_ICON...');
+    margin-right: 4px;
+  }
+  
+  /* etc. for raw, download, dev icons... */
+  
+  /* =======================
+     3) Right Column Button
+     ======================= */
+  #right-col-edit-btn.right-column-edit-button {
+    margin-bottom: 1em;
+    /* maybe text-align: right if you want it on the right side? */
+  }
+  #right-col-edit-btn .btn {
+    /* same button style as above or you can customize */
+    background: var(--interactive-normal, #eee);
+    color: var(--text-normal, #333);
+    font-weight: 600;
+  }
+  
