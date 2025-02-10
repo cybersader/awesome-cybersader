@@ -1,10 +1,10 @@
 ---
-aliases:
-  - Obsidian/Sync
-tags: 
+permalink:
+aliases: [Obsidian/Sync]
+tags: []
 publish: true
 date created: Tuesday, May 14th 2024, 6:34 pm
-date modified: Monday, November 4th 2024, 4:55 pm
+date modified: Monday, February 10th 2025, 1:02 pm
 ---
 
 # Live Sync with File Shares / File-Level
@@ -12,6 +12,7 @@ date modified: Monday, November 4th 2024, 4:55 pm
 - https://forum.obsidian.md/t/obsidian-sync-live-team-collaborative-editing/6058/10
 	- https://docs.pears.com/
 		- One way to implement this is that the participants control their vault, a directory synchronized in P2P. Technically it can use a protocol such as https://pears.com/, perhaps using Beaker. Then one can ‘mount’ several directories (vaults) of people you want to follow. And then use obsidian on top to see in real-time any change that happens.
+
 # Live Collab/Sync
 
 - [screen.garden](https://screen.garden/) 
@@ -34,6 +35,13 @@ date modified: Monday, November 4th 2024, 4:55 pm
 - https://github.com/canton7/SyncTrayzor
 
 # Workaround Methods - VS Code, Github.dev
+
+## Collaborative Online Editors
+
+- Cryptpad
+- Etherpad
+
+## VS Code, Github.dev
 
 - If hosted in GitHub you can use the github.dev editor with the LiveShare plugin
 - You could also hook up to your vault then use the same LiveShare Plugin
