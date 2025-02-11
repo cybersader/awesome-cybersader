@@ -1,0 +1,66 @@
+/* =============== Header Git Links =============== */
+#header-git-links.header-git-links {
+  text-align: right;   /* align to the right */
+  margin: 1em 0;
+}
+#header-git-links a {
+  margin-left: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--text-accent, #66c0ff);
+  transition: background 0.2s, color 0.2s;
+}
+#header-git-links a:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--text-on-accent, #fff);
+}
+
+/* =============== Footer Action Block =============== */
+#footer-action-block {
+  margin: 1em 0;
+}
+
+.footer-divider {
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid var(--background-modifier-border, #aaa);
+}
+
+.footer-action-container h4 {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+/* The row of button-like links */
+.footer-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  padding-top: 0.7em; /* Adjust the value as needed */
+}
+
+
+.footer-buttons .btn {
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background: var(--interactive-normal, #eee);
+  color: var(--text-normal, #333);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+.footer-buttons .btn:hover {
+  background: var(--interactive-accent-hover, #ddd);
+  color: var(--text-on-accent, #000);
+}
+
+/* Icons from title="git-hub-*" if desired */
+.footer-buttons .btn[title="git-hub-edit-note"]::before {
+  content: url('data:image/svg+xml,...pencil...');
+  margin-right: 4px;
+}

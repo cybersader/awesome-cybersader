@@ -29,7 +29,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Cyberbase Obsidian Publish]]**
 - **[[Cyberbase Prompts]]**
 	- **[[CB1 - Customize Publish]]**
-	- **[[CB2 - Testing Process]]**
+	- **[[CB2 - Testing & Properties]]**
 - **[[Cyberbase Tech Stack]]**
 - **[[Cybersader Wiki Features and Changes]]**
 - **[[Folder Notes & Publish]]**

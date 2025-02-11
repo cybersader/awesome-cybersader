@@ -1,15 +1,15 @@
 /* =========================================================================
-publish.js – 
-  1) 
-  2) 
-  3) 
+publish.js – Minimal setInterval approach to insert top links + footer block
 ========================================================================= */
 
 console.log("[publish.js] loaded");
 
-/** 
+// A small ID for our repeating check
+let insertIntervalId;
+
+/**
 * buildGitHubURLs():
-*   Generate the GitHub links from the current URL, replacing "+" with "%20".
+*   Build final .md links from current URL path, replacing "+" with "%20".
 */
 function buildGitHubURLs() {
   const currentUrlPath = decodeURIComponent(window.location.pathname);
@@ -33,14 +33,20 @@ function buildGitHubURLs() {
 
 /**
 * insertHeaderLinksIfMissing():
-*   If .mod-header.mod-ui exists and #header-git-links is not in DOM, insert new block.
+*   - If #header-git-links doesn't exist and .mod-header.mod-ui does, insert.
 */
 function insertHeaderLinksIfMissing() {
-  if (document.getElementById("header-git-links")) {console.log("already exists"); return;}  // Already inserted?
+  const existingHeaderBlock = document.getElementById("header-git-links");
+  if (existingHeaderBlock) {
+    return; // It's already there
+  }
 
-  const headerEl = document.querySelector(".mod-header.mod-ui");
-  if (!headerEl) return; // Not present yet
+  const headerEl = document.querySelector(".page-header");
+  if (!headerEl) {
+    return; // Header not rendered yet
+  }
 
+  // Build the block
   const { view, edit, raw, download } = buildGitHubURLs();
   const html = `
     <div id="header-git-links" class="header-git-links">
@@ -51,97 +57,79 @@ function insertHeaderLinksIfMissing() {
     </div>
   `;
   headerEl.insertAdjacentHTML("afterend", html);
+    // TODO - the above line creates a scrolling issue when using mod-header mod-ui for the selector
+    // stll not sure why
   console.log("[GitHub Links] Inserted #header-git-links below .mod-header.");
 }
 
 /**
 * insertFooterBlockIfMissing():
-*   If .mod-footer.mod-ui exists and #footer-action-block is not in DOM, insert HR + "Interact..." + buttons.
+*   - If #footer-action-block doesn't exist and .mod-footer.mod-ui does, insert
+*     an <hr> + "Interact with this page" heading + 4 button-like links.
 */
 function insertFooterBlockIfMissing() {
-  if (document.getElementById("footer-action-block")) return; // Already inserted?
+  const existingFooterBlock = document.getElementById("footer-action-block");
+  if (existingFooterBlock) {
+    return; // Already inserted
+  }
 
   const footerEl = document.querySelector(".mod-footer.mod-ui");
-  if (!footerEl) return; // Not present yet
+  if (!footerEl) {
+    return; // Footer not rendered yet
+  }
 
-  // Build the HTML with an HR + heading + button row
+  // Build the block
   const { edit, raw, download, dev } = buildGitHubURLs();
   const html = `
     <div id="footer-action-block">
       <hr class="footer-divider" />
       <div class="footer-action-container">
-        <h4>Interact with this page</h4>
+      <div class="published-section-header">  
+        <h4>Interact with this note</h4>
+      </div>
         <div class="footer-buttons">
           <a class="btn" title="git-hub-edit-note" href="${edit}"     target="_blank">Edit Note</a>
           <a class="btn" title="git-hub-copy-note" href="${raw}"      target="_blank">Raw Note</a>
           <a class="btn" title="git-hub-download-vault" href="${download}" target="_blank">Download Vault</a>
-          <a class="btn" title="git-hub-open-dev" href="${dev}"       target="_blank">GitHub.dev</a>
+          <a class="btn" title="git-hub-open-dev" href="${dev}"       target="_blank">GitHub.dev Editor</a>
         </div>
       </div>
     </div>
   `;
   footerEl.insertAdjacentHTML("beforeend", html);
-  console.log("[GitHub Links] Inserted #footer-action-block inside .mod-footer.");
+  console.log("[GitHub Links] Inserted #footer-action-block in .mod-footer.");
 }
 
 /**
-* insertRightColumnEditButtonIfMissing():
-*   If .site-body-right-column-inner is present (desktop?), 
-*   insert a single "Edit" button at the top (only once).
+* checkAndInsert():
+*   Called repeatedly by setInterval. 
+*   If a block is missing, re-insert it. 
 */
-function insertRightColumnEditButtonIfMissing() {
-  if (document.getElementById("right-col-edit-btn")) return; // Already inserted?
-
-  const rightCol = document.querySelector(".site-body-right-column-inner");
-  if (!rightCol) return; // Not present on mobile or not available
-
-  // Use the "edit" link from buildGitHubURLs()
-  const { edit } = buildGitHubURLs();
-  const btnHTML = `
-    <div id="right-col-edit-btn" class="right-column-edit-button">
-      <a class="btn" title="git-hub-edit-note" href="${edit}" target="_blank">
-        Edit Note
-      </a>
-    </div>
-  `;
-  // Insert at the top
-  rightCol.insertAdjacentHTML("afterbegin", btnHTML);
-  console.log("[GitHub Links] Inserted #right-col-edit-btn in right column.");
-}
-
-/**
-* reInsertIfMissing():
-*   Called on each DOM mutation, ensures all 3 sections are present if needed.
-*/
-function reInsertIfMissing() {
+function checkAndInsert() {
   insertHeaderLinksIfMissing();
   insertFooterBlockIfMissing();
-  insertRightColumnEditButtonIfMissing();
+  // You could also do insertRightColumnEditButtonIfMissing() here if you want
 }
 
 /**
 * init():
-*   Setup the main observer on .markdown-preview-sizer to detect re-renders.
-*   Insert once at startup too.
+*   Start a setInterval that calls checkAndInsert() every 100ms.
+*   If you want to automatically stop it once inserted, see note below.
 */
 function init() {
   console.log("[GitHub Links] init() called.");
-  reInsertIfMissing(); // Insert once
 
-  const container = document.querySelector(".markdown-preview-sizer.markdown-preview-section");
-  if (!container) {
-    console.warn("[GitHub Links] No .markdown-preview-sizer found. Cannot re-insert if removed.");
-    return;
-  }
+  // Start the repeating interval
+  // We can store the ID if we want to stop it after success, but often 
+  // it's simplest to keep it running so if the user navigates or Publish re-renders,
+  // the blocks get re-inserted if needed.
+  insertIntervalId = setInterval(checkAndInsert, 100);
 
-  const observer = new MutationObserver(() => {
-    reInsertIfMissing();
-  });
-  observer.observe(container, { childList: true, subtree: true });
-  console.log("[GitHub Links] MutationObserver attached to .markdown-preview-sizer.");
+  // Kick off an immediate check so there's no 100ms delay initially
+  checkAndInsert();
 }
 
-// Fire when DOM is loaded (or if already loaded)
+// Fire init once DOM is loaded
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", init);
 } else {
