@@ -13,6 +13,11 @@ The biggest issue I found is that, it turns out, the header-based links are the 
 
 Nevermind, I found the core issue.  The parent mod-header mod-ui class didn't have a margin even though its child did.  I'm guessing that inserting after the parent somehow makes the child freak out.  Not sure how to account for that honestly.  
 
+Anyway, I've sort of moved on from that problem and would like to insert some other things onto the page:
+
+1) **Including note frontmatter/properties:** the hardest thing will be making it so that "properties" or the frontmatter data associated with the note is parsed onto the page. If possible, I can make it so that I have to explicitly say what that frontmatter can be. I'll share some examples of how to do that below.
+2) Adding buttons fixed to the side for when the user goes into mobile.  It would be awesome if the buttons are double click.  On the first click, they open up and show the text associated with them.  Their regular form just has the svg for them and they're square.  These would be fixed to the side of `.markdown-preview-sizer markdown-preview-section` .  I could also include a share button that allows mobile users to share the note anywhere.
+3) I want to include the same buttons under a section on the page under the div with `.outline-view-outer node-insert-event`. I'll show an example of what the element looks like.  I would have a `.list-item published-section-header` div with the text like "Content" or "Actions".  
 # current publish.js
 
 ```js
