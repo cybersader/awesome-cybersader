@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 9th 2025, 1:44 pm
-date modified: Sunday, February 9th 2025, 1:54 pm
+date modified: Tuesday, February 11th 2025, 9:41 pm
 ---
 
 # DROP
@@ -56,6 +56,14 @@ date modified: Sunday, February 9th 2025, 1:54 pm
 - Fathom
 - Plausible
 - Posthog
+
+# Comments
+
+- [remark42.com > Remark42 – Privacy-focused lightweight commenting engine | Remark42](https://remark42.com/)
+	- [github.com > umputun/remark42: comment engine](https://github.com/umputun/remark42)
+- [commento.io > Commento](https://commento.io/)
+- [disqus.com > #1 in audience engagement and community growth | Disqus](https://disqus.com/pricing/)
+- [giscus.app > giscus](https://giscus.app/)
 
 # Static Website Tricks
 

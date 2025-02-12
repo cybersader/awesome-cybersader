@@ -4,10 +4,15 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 10:00 pm
-date modified: Saturday, February 8th 2025, 5:43 pm
+date modified: Tuesday, February 11th 2025, 9:09 pm
 ---
 
-- 
+# DROP
+
+- [ ] Implement title replacement with frontmatter.title ➕ 2025-02-11
+- [ ] Implement properties in Obsidian Publish in a modular manner
+- [ ] Implement share links
+- [ ] Implement comments
 
 # MVP Obsidian Publish Cyberbase
 
@@ -26,12 +31,14 @@ date modified: Saturday, February 8th 2025, 5:43 pm
 
 - Curations
 	- https://www.are.na/marco-noris/obsidian-publish-websites
-	- 
+	
 - Contributory implementations
 	- Obsidian Hub
 		- [publish.obsidian.md > 00 - Start here - Obsidian Hub - Obsidian Publish](https://publish.obsidian.md/hub/00+-+Start+here)
 	- [data-engineering-community/data-engineering-wiki: The best place to learn data engineering. Built and maintained by the data engineering community.](https://github.com/data-engineering-community/data-engineering-wiki)
 - With style and functionality
+	- [emrah.ca > ● - emrah.ca](https://emrah.ca/onair/%E2%97%8F)
+	- [stephanlevin.garden > Welcome - Digital 3D Garden](https://stephanlevin.garden/Welcome)
 	- [yomaru.dev > 901 🏠 Home - Hananoshika Yomaru](https://yomaru.dev/home)
 	- [lab.marconoris.com > Notas sobre el ahora - Ouroboros lab](https://lab.marconoris.com/now)
 	- [notes.linkingyourthinking.com > Home - LYT Kit](https://notes.linkingyourthinking.com/Home)

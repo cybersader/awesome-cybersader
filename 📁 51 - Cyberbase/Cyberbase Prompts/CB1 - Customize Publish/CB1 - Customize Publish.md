@@ -11082,6 +11082,8 @@ observer.observe(targetNode, { childList: true, subtree: true });
 id = setInterval(insertMetaDates, 50);
 ```
 
+
+## 
 # Implementations from the Vault Side
 
 There's two good ways to implement things from the vault side:

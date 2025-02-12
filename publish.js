@@ -6,6 +6,14 @@ console.log("[publish.js] loaded");
 
 // A small ID for our repeating check
 let insertIntervalId;
+const welcomePage = "README";
+
+/**
+ * Determines if the current screen width qualifies as mobile (≤ 750px).
+ */
+function isMobile() {
+  return window.matchMedia("(max-width: 750px)").matches;
+}
 
 /**
 * buildGitHubURLs():
@@ -32,13 +40,13 @@ function buildGitHubURLs() {
 }
 
 /**
-* insertHeaderLinksIfMissing():
-*   - If #header-git-links doesn't exist and .mod-header.mod-ui does, insert.
-*/
+ * insertHeaderLinksIfMissing():
+ * Inserts different sets of links based on screen size.
+ */
 function insertHeaderLinksIfMissing() {
   const existingHeaderBlock = document.getElementById("header-git-links");
   if (existingHeaderBlock) {
-    return; // It's already there
+    return; // Already inserted
   }
 
   const headerEl = document.querySelector(".page-header");
@@ -46,20 +54,34 @@ function insertHeaderLinksIfMissing() {
     return; // Header not rendered yet
   }
 
-  // Build the block
+  // Build URLs
   const { view, edit, raw, download } = buildGitHubURLs();
-  const html = `
-    <div id="header-git-links" class="header-git-links">
-      <a href="${view}"     target="_blank">View</a>
-      <a href="${edit}"     target="_blank">Edit</a>
-      <a href="${raw}"      target="_blank">Raw</a>
-      <a href="${download}" target="_blank">Download</a>
-    </div>
-  `;
+
+  // Determine which links to show
+  let html;
+  if (isMobile()) {
+    // Only show first two links on mobile
+    html = `
+      <div id="header-git-links" class="header-git-links">
+        <a href="${view}" target="_blank">View Source</a> |
+        <a href="${edit}" target="_blank">Edit Page</a>
+      </div>
+    `;
+  } else {
+    // Show all links on larger screens
+    html = `
+      <div id="header-git-links" class="header-git-links">
+        <a href="${view}" target="_blank">View Source</a> |
+        <a href="${edit}" target="_blank">Edit Page</a> |
+        <a href="${raw}" target="_blank">Copy</a> |
+        <a href="${download}" target="_blank">Download Vault</a>
+      </div>
+    `;
+  }
+
+  // Insert the links
   headerEl.insertAdjacentHTML("afterend", html);
-    // TODO - the above line creates a scrolling issue when using mod-header mod-ui for the selector
-    // stll not sure why
-  console.log("[GitHub Links] Inserted #header-git-links below .mod-header.");
+  console.log("[GitHub Links] Inserted #header-git-links.");
 }
 
 /**
@@ -100,15 +122,26 @@ function insertFooterBlockIfMissing() {
   console.log("[GitHub Links] Inserted #footer-action-block in .mod-footer.");
 }
 
+// Function to remove frontmatter for when we're on the welcome page
+function removeFrontmatter() {
+  const frontmatter = document.querySelector(".el-pre.mod-frontmatter.mod-ui");
+  frontmatter.style.display = "none"; // Hides the element
+}
+
 /**
 * checkAndInsert():
 *   Called repeatedly by setInterval. 
 *   If a block is missing, re-insert it. 
 */
 function checkAndInsert() {
-  insertHeaderLinksIfMissing();
-  insertFooterBlockIfMissing();
-  // You could also do insertRightColumnEditButtonIfMissing() here if you want
+  if (decodeURIComponent(window.location.pathname).replace(/^\/|\/$/g, "") == welcomePage) {
+    removeFrontmatter();
+    document.querySelector(".header-git-links").style.display = "none";
+  } else {
+    insertHeaderLinksIfMissing();
+    insertFooterBlockIfMissing();
+    // You could also do insertRightColumnEditButtonIfMissing() here if you want
+  }
 }
 
 /**
@@ -117,16 +150,14 @@ function checkAndInsert() {
 *   If you want to automatically stop it once inserted, see note below.
 */
 function init() {
-  console.log("[GitHub Links] init() called.");
-
-  // Start the repeating interval
-  // We can store the ID if we want to stop it after success, but often 
-  // it's simplest to keep it running so if the user navigates or Publish re-renders,
-  // the blocks get re-inserted if needed.
-  insertIntervalId = setInterval(checkAndInsert, 100);
-
-  // Kick off an immediate check so there's no 100ms delay initially
-  checkAndInsert();
+    console.log("[GitHub Links] init() called.");
+    // Start the repeating interval
+    // We can store the ID if we want to stop it after success, but often 
+    // it's simplest to keep it running so if the user navigates or Publish re-renders,
+    // the blocks get re-inserted if needed.
+    insertIntervalId = setInterval(checkAndInsert, 100);
+    // Kick off an immediate check so there's no 100ms delay initially
+    checkAndInsert();
 }
 
 // Fire init once DOM is loaded

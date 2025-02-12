@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Frontend Web Dev",
-      "path": "📁 21 - Development/Frontend Web Dev/Frontend Web Dev.md"
+      "basename": "README",
+      "path": "README.md"
     },
     {
-      "basename": "📁 34 - Music",
-      "path": "📁 34 - Music/📁 34 - Music.md"
+      "basename": "Cyberbase Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
+    },
+    {
+      "basename": "Cyberbase JS & Services",
+      "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+    },
+    {
+      "basename": "Cyberbase Development",
+      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "CB2 - Testing & Properties",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing & Properties/CB2 - Testing & Properties.md"
+    },
+    {
+      "basename": "2025-02-11-Tuesday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-11-Tuesday/2025-02-11-Tuesday.md"
+    },
+    {
+      "basename": "🕸️ Daily Notes",
+      "path": "🕸️ Daily Notes/🕸️ Daily Notes.md"
+    },
+    {
+      "basename": "Frontend Web Dev",
+      "path": "📁 21 - Development/Frontend Web Dev/Frontend Web Dev.md"
+    },
+    {
+      "basename": "📁 14 - Journal, Diary",
+      "path": "📁 14 - Journal, Diary/📁 14 - Journal, Diary.md"
+    },
+    {
+      "basename": "📁 34 - Music",
+      "path": "📁 34 - Music/📁 34 - Music.md"
     },
     {
       "basename": "⬇️ Society Drop",
@@ -23,14 +55,6 @@
     {
       "basename": "📁 31 - Education, Pedagogy",
       "path": "📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md"
-    },
-    {
-      "basename": "CB1 - Customize Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
-      "basename": "2025-02-11-Tuesday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-11-Tuesday/2025-02-11-Tuesday.md"
     },
     {
       "basename": "_attachments",
@@ -49,10 +73,6 @@
       "path": "📁 51 - Cyberbase/Collaboration in Obsidian/Collaboration in Obsidian.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "2025-02-10-Monday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-10-Monday/2025-02-10-Monday.md"
     },
@@ -65,24 +85,12 @@
       "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
     },
     {
-      "basename": "Cyberbase JS & Services",
-      "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
-    },
-    {
       "basename": "Obsidian Plugins that Affect CSS",
       "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
     },
     {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
-    },
-    {
       "basename": "Digital Content Creation",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
-    },
-    {
-      "basename": "Cyberbase Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -187,18 +195,6 @@
     {
       "basename": "Cyberbase Font",
       "path": "📁 51 - Cyberbase/Cyberbase Font/Cyberbase Font.md"
-    },
-    {
-      "basename": "Cyberbase Prompts",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/Cyberbase Prompts.md"
-    },
-    {
-      "basename": "Hosting",
-      "path": "📁 03 - Curations, Stacks/Hosting/Hosting.md"
-    },
-    {
-      "basename": "⬇️ Self-Hosting DROP",
-      "path": "📁 19 - Self-Hosting/⬇️ Self-Hosting DROP/⬇️ Self-Hosting DROP.md"
     }
   ],
   "omittedPaths": [],

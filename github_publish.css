@@ -1,10 +1,98 @@
+
+/* .published-container {
+  --background-color: var(--background-primary);
+  --code-radius: var(--radius-m);
+  --footer-display: fixed;
+  --page-title-size: 34px;
+  --page-title-weight: 500;
+  --page-title-line-height: 1.1;
+  --page-title-variant: all-small-caps;
+  --page-title-color: var(--color-base-60);
+  --page-title-style: normal;
+  --sidebar-right-background: var(--background-primary);
+  --site-name-size: 14px;
+  --site-name-color: var(--text-accent);
+  --site-name-color-hover: var(--color-base-80);
+  --site-name-weight: 600
+} */
+
+.site-footer a {
+  display: none;
+}
+
+.site-footer::after {
+  content: 'by @cybersader';
+  color: grey;
+}
+
+.site-body-left-column-site-name {
+	color: var(--h1);
+}
+
+.site-body-left-column-site-name {
+    transition: color 0.5s ease;
+}
+
+.site-body-left-column-site-name:hover {
+    color: var(--ax1);
+}
+
+/* .site-header-logo {
+	display: none;
+}
+
+.site-body-left-column-site-logo img {
+  width: 100px;
+  filter: var(--logo-mode);
+}
+
+.site-body-left-column-site-logo {
+text-align: left;
+} */
+
+/* =============== Header Git Links =============== */
+#header-git-links.header-git-links {
+  text-align: left;   /* align to the right */
+}
+#header-git-links a {
+  margin-right: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--text-accent, #66c0ff);
+}
+#header-git-links a:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--text-on-accent, #fff);
+}
+
+/* =============== Footer Action Block =============== */
+#footer-action-block {
+  margin: 1em 0;
+}
+
+.footer-divider {
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid var(--background-modifier-border, #aaa);
+}
+
+.footer-action-container h4 {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+/* The row of button-like links */
 .footer-buttons {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1em 0;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  padding-top: 0.7em; /* Adjust the value as needed */
 }
+
 
 .footer-buttons .btn {
   text-decoration: none;
@@ -16,25 +104,42 @@
   transition: background 0.2s, color 0.2s;
 }
 
+/* Hover effect */
 .footer-buttons .btn:hover {
   background: var(--interactive-accent-hover, #ddd);
   color: var(--text-on-accent, #000);
 }
 
-/* Icons via title attributes */
+/* Icons from title="git-hub-*" if desired */
 .footer-buttons .btn[title="git-hub-edit-note"]::before {
-  content: url('data:image/svg+xml,...SOME_PENCIL_ICON...');
+  content: url('data:image/svg+xml,...pencil...');
   margin-right: 4px;
 }
-.footer-buttons .btn[title="git-hub-copy-note"]::before {
-  content: url('data:image/svg+xml,...SOME_COPY_ICON...');
-  margin-right: 4px;
-}
-.footer-buttons .btn[title="git-hub-download-vault"]::before {
-  content: url('data:image/svg+xml,...SOME_DOWNLOAD_ICON...');
-  margin-right: 4px;
-}
-.footer-buttons .btn[title="git-hub-open-dev"]::before {
-  content: url('data:image/svg+xml,...SOME_GITHUB_DEV_ICON...');
-  margin-right: 4px;
-}
+
+
+/* Show frontmatter / properties */
+
+  /* .frontmatter {
+    display: block !important; 
+  } */
+
+/* =======================
+   3) Frontmatter Table
+   ======================= */
+   .propertyitemtable {
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 0.75em 1em;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  .propertyitem {
+    padding: 0.3em 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .propertyitem:last-child {
+    border-bottom: none;
+  }
+  .propertyitem strong {
+    margin-right: 0.5em;
+  }

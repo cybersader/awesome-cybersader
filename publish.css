@@ -1,21 +1,116 @@
+
+/* .published-container {
+  --background-color: var(--background-primary);
+  --code-radius: var(--radius-m);
+  --footer-display: fixed;
+  --page-title-size: 34px;
+  --page-title-weight: 500;
+  --page-title-line-height: 1.1;
+  --page-title-variant: all-small-caps;
+  --page-title-color: var(--color-base-60);
+  --page-title-style: normal;
+  --sidebar-right-background: var(--background-primary);
+  --site-name-size: 14px;
+  --site-name-color: var(--text-accent);
+  --site-name-color-hover: var(--color-base-80);
+  --site-name-weight: 600
+} */
+
+.site-footer a {
+  display: none;
+}
+
+.site-footer::after {
+  content: 'by @cybersader';
+  color: grey;
+}
+
+.site-body-left-column-site-name {
+	color: var(--h1);
+}
+
+.site-body-left-column-site-name {
+    transition: color 0.5s ease;
+}
+
+.site-body-left-column-site-name:hover {
+    color: var(--ax1);
+}
+
+/* .site-header-logo {
+	display: none;
+}
+
+.site-body-left-column-site-logo img {
+  width: 100px;
+  filter: var(--logo-mode);
+}
+
+.site-body-left-column-site-logo {
+text-align: left;
+} */
+
 /* =============== Header Git Links =============== */
 #header-git-links.header-git-links {
-  text-align: right;   /* align to the right */
-  margin: 1em 0;
+  text-align: center;  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* Allows links to wrap on smaller screens */
+  gap: 0.5em; 
+  padding: 0.5em 0;
 }
+
+/* Default link styles */
 #header-git-links a {
-  margin-left: 1em;
   text-decoration: none;
+  font-size: 1em;
   font-weight: 500;
-  padding: 4px 6px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
   color: var(--text-accent, #66c0ff);
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.2s ease-in-out;
 }
+
+/* Hover effect */
 #header-git-links a:hover {
   background: rgba(255,255,255,0.1);
   color: var(--text-on-accent, #fff);
 }
+
+/* Tablet & smaller */
+@media screen and (max-width: 1000px) {
+  #header-git-links {
+    flex-wrap: wrap;  /* Ensures links don't overflow */
+    gap: 0.4em;
+  }
+  
+  #header-git-links a {
+    font-size: 0.95em;
+    padding: 5px 8px;
+  }
+}
+
+/* Mobile-specific (Grid Layout) */
+@media screen and (max-width: 750px) {
+  #header-git-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Auto-fit ensures a responsive grid */
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #header-git-links a {
+    font-size: 1em;
+    padding: 6px 8px;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 100px;
+  }
+}
+
 
 /* =============== Footer Action Block =============== */
 #footer-action-block {
@@ -64,3 +159,31 @@
   content: url('data:image/svg+xml,...pencil...');
   margin-right: 4px;
 }
+
+
+/* Show frontmatter / properties */
+
+  .frontmatter {
+    display: block !important; 
+  }
+
+/* =======================
+   3) Frontmatter Table
+   ======================= */
+   .propertyitemtable {
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 0.75em 1em;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  .propertyitem {
+    padding: 0.3em 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .propertyitem:last-child {
+    border-bottom: none;
+  }
+  .propertyitem strong {
+    margin-right: 0.5em;
+  }
