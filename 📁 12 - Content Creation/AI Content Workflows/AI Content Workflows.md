@@ -1,6 +1,9 @@
 ---
+aliases: 
+tags: 
+permalink:
 date created: Friday, March 22nd 2024, 11:10 pm
-date modified: Friday, March 22nd 2024, 11:11 pm
+date modified: Wednesday, February 12th 2025, 8:30 pm
 publish: true
 ---
 
@@ -12,3 +15,4 @@ publish: true
 	- **[[Stable Diffusion Setup/SD Web UI Setup/SD Web UI Setup]]**
 
 %% End Waypoint %%
+

@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-02-12-Wednesday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-12-Wednesday/2025-02-12-Wednesday.md"
+      "basename": "📁 12 - Content Creation",
+      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
+    },
+    {
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "Stable Diffusion Setup",
+      "path": "📁 12 - Content Creation/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md"
+    },
+    {
+      "basename": "Digital Content Creation",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
+    },
+    {
+      "basename": "Awesome AI",
+      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     },
     {
       "basename": "CB2 - Testing & Properties",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing & Properties/CB2 - Testing & Properties.md"
+    },
+    {
+      "basename": "2025-02-12-Wednesday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-12-Wednesday/2025-02-12-Wednesday.md"
     },
     {
       "basename": "📁 37 - Music",
@@ -91,10 +111,6 @@
     {
       "basename": "Obsidian Plugins that Affect CSS",
       "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
-    },
-    {
-      "basename": "Digital Content Creation",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
@@ -183,22 +199,6 @@
     {
       "basename": "Static Website Services",
       "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
-    },
-    {
-      "basename": "2025-02-06-Thursday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-06-Thursday/2025-02-06-Thursday.md"
-    },
-    {
-      "basename": "How to look at obsidian publish code",
-      "path": "📁 51 - Cyberbase/How to look at obsidian publish code/How to look at obsidian publish code.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Cyberbase Font",
-      "path": "📁 51 - Cyberbase/Cyberbase Font/Cyberbase Font.md"
     }
   ],
   "omittedPaths": [],
