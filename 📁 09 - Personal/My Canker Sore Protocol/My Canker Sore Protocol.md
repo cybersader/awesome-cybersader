@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, February 12th 2025, 9:05 pm
-date modified: Wednesday, February 12th 2025, 9:20 pm
+date modified: Wednesday, February 12th 2025, 9:24 pm
 ---
 
 I've had canker sores for 20 years now and have figured out how to manage the pain and heal them quickly.
@@ -32,12 +32,17 @@ I've had canker sores for 20 years now and have figured out how to manage the pa
 - Pain relief:
 	- Ibuprofen or Acetaminophen (doesn't do much for the localized pain)
 	- Numbing:
-		- BLM (Benadryl, Maalox, and Lidocaine) mouthwash
+		- BLM (Benadryl, Maalox, and Lidocaine) mouthwash - prescription
 		- Benzocaine pastes, Kanka softbrush
 		- Ziacin-b
 		- Menthol - really effective
 		- Menthol patches work well if it's on your lip and you don't need to talk much
 		- Hexlresorcinol - there are lozenges with this in it and it's AWESOME feeling
+
+- Healing
+	- Oral b mouthwash for canker sores
+	- Oral debriding agents
+	- Chlorexidine mouthwash - prescription
 
 - Cauterization
 	- The best option

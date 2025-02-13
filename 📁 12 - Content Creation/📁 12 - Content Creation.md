@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:55 pm
-date modified: Wednesday, February 12th 2025, 8:58 pm
+date modified: Wednesday, February 12th 2025, 9:22 pm
 ---
 
 %% Begin Waypoint %%
@@ -44,6 +44,10 @@ date modified: Wednesday, February 12th 2025, 8:58 pm
 - 
 
 ## Person + Prompt + Image
+
+- 
+
+## Finding Art for AI
 
 - 
 
