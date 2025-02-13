@@ -5,12 +5,20 @@
       "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
     },
     {
-      "basename": "My Canker Sore Protocol",
-      "path": "📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md"
-    },
-    {
       "basename": "AI Content Workflows",
       "path": "📁 12 - Content Creation/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "Cybersader Art Prompts",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/Cybersader Art Prompts.md"
+    },
+    {
+      "basename": "Cybersader Content",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
+    },
+    {
+      "basename": "My Canker Sore Protocol",
+      "path": "📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md"
     },
     {
       "basename": "CB2 - Testing & Properties",
@@ -191,14 +199,6 @@
     {
       "basename": "Cynario",
       "path": "📁 01 - Projects/Cynario/Cynario.md"
-    },
-    {
-      "basename": "2025-02-07-Friday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-07-Friday/2025-02-07-Friday.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
     }
   ],
   "omittedPaths": [],

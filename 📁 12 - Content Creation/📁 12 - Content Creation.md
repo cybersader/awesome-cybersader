@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:55 pm
-date modified: Wednesday, February 12th 2025, 9:22 pm
+date modified: Wednesday, February 12th 2025, 10:06 pm
 ---
 
 %% Begin Waypoint %%
@@ -17,6 +17,8 @@ date modified: Wednesday, February 12th 2025, 9:22 pm
 - **[[Content Analytics]]**
 - [[Content Analytics & Recon]]
 - **[[Content Curation]]**
+- **[[Cybersader Content]]**
+	- **[[Cybersader Art Prompts]]**
 - **[[Mic Setup Audio 2024]]**
 - **[[Persona Creation]]**
 - **[[Presentation Tools & Tech]]**
@@ -27,29 +29,31 @@ date modified: Wednesday, February 12th 2025, 9:22 pm
 
 %% End Waypoint %%
 
-# Generative AI
+# Generative Art AI
 
 [AI Content Workflows](AI%20Content%20Workflows/AI%20Content%20Workflows.md)
+[Cyberbase Prompts](../📁%2051%20-%20Cyberbase/Cyberbase%20Prompts/Cyberbase%20Prompts.md)
 
-## Prompt
+- Stable diffusion
+	- [beta.dreamstudio.ai > DreamStudio](https://beta.dreamstudio.ai/generate)
+	- [civitai.com > Civitai: The Home of Open-Source Generative AI](https://civitai.com/)
+	- 
 
-- 
+- General image gen
+	- [openai.com > DALL·E 3](https://openai.com/index/dall-e-3/)
+	- 
 
-## Prompt + Image
+- AI video
+	- [runwayml.com > Runway | Tools for human imagination.](https://runwayml.com/)
+	- 
 
-- 
+- SVG generator
+	- [svgstud.io > AI-powered SVG Generator and Semantic Search | SVGStud.io](https://svgstud.io/main.html)
+	- [designer.microsoft.com > Microsoft Designer - Stunning designs in a flash](https://designer.microsoft.com/)
+	- 
 
-## Inpainting
-
-- 
-
-## Person + Prompt + Image
-
-- 
-
-## Finding Art for AI
-
-- 
+- Prompt examples
+	- [artbreeder.com > Browse - Artbreeder](https://www.artbreeder.com/browse)
 
 # Digital Content Creation
 
@@ -142,6 +146,8 @@ Popular multi-streamers:
 ## Screen Recording, Streaming, Audio
 
 ### Audio
+
+- [podcast.adobe.com > Adobe Podcast | AI audio recording and editing](https://podcast.adobe.com/)
 
 #### Shure Microphone Software
 
