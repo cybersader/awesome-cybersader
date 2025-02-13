@@ -9,11 +9,12 @@ date modified: Tuesday, October 22nd 2024, 7:50 pm
 ---
 
 %% Begin Waypoint %%
-- **[[⬇️ Personal Drop/⬇️ Personal Drop]]**
-- **[[Daily Routine/Daily Routine]]**
-- **[[Games from Childhood/Games from Childhood]]**
-- **[[Hobbies List/Hobbies List]]**
-- **[[Jumping & Diving Spots/Jumping & Diving Spots]]**
-- **[[Nuclear Disaster Recovery/Nuclear Disaster Recovery]]**
+- **[[⬇️ Personal Drop]]**
+- **[[Daily Routine]]**
+- **[[Games from Childhood]]**
+- **[[Hobbies List]]**
+- **[[Jumping & Diving Spots]]**
+- **[[My Canker Sore Protocol]]**
+- **[[Nuclear Disaster Recovery]]**
 
 %% End Waypoint %%

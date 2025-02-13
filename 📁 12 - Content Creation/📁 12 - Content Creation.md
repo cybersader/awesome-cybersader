@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:55 pm
-date modified: Wednesday, February 12th 2025, 8:33 pm
+date modified: Wednesday, February 12th 2025, 8:58 pm
 ---
 
 %% Begin Waypoint %%
@@ -30,6 +30,20 @@ date modified: Wednesday, February 12th 2025, 8:33 pm
 # Generative AI
 
 [AI Content Workflows](AI%20Content%20Workflows/AI%20Content%20Workflows.md)
+
+## Prompt
+
+- 
+
+## Prompt + Image
+
+- 
+
+## Inpainting
+
+- 
+
+## Person + Prompt + Image
 
 - 
 

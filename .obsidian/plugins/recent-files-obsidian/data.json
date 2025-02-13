@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "My Canker Sore Protocol",
+      "path": "📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md"
+    },
+    {
       "basename": "📁 12 - Content Creation",
       "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
     },
     {
-      "basename": "AI Content Workflows",
-      "path": "📁 12 - Content Creation/AI Content Workflows/AI Content Workflows.md"
+      "basename": "Content Curation",
+      "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
+    },
+    {
+      "basename": "Persona Creation",
+      "path": "📁 12 - Content Creation/Persona Creation/Persona Creation.md"
+    },
+    {
+      "basename": "Awesome AI",
+      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     },
     {
       "basename": "Stable Diffusion Setup",
@@ -15,10 +31,6 @@
     {
       "basename": "Digital Content Creation",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
-    },
-    {
-      "basename": "Awesome AI",
-      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     },
     {
       "basename": "CB2 - Testing & Properties",
@@ -187,18 +199,6 @@
     {
       "basename": "Org Data Governance",
       "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Red for Blue - offense for defense",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/Red for Blue - offense for defense/Red for Blue - offense for defense.md"
-    },
-    {
-      "basename": "Xbox Home Networking",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
-    },
-    {
-      "basename": "Static Website Services",
-      "path": "📁 51 - Cyberbase/Static Website Services/Static Website Services.md"
     }
   ],
   "omittedPaths": [],
