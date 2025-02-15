@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, February 15th 2025, 10:45 am
-date modified: Saturday, February 15th 2025, 10:53 am
+date modified: Saturday, February 15th 2025, 11:52 am
 ---
 
 [📁 12 - Content Creation](../../📁%2012%20-%20Content%20Creation.md)
@@ -18,4 +18,8 @@ date modified: Saturday, February 15th 2025, 10:53 am
 - [prompthero.com > Search prompts for Stable Diffusion](https://prompthero.com/)
 - [lexica.art > Lexica](https://lexica.art/)
 - [wikiart.org > WikiArt.org - Visual Art Encyclopedia](https://www.wikiart.org/)
+
+# Physical Art
+
+- [thisiscolossal.com > Colossal: Art & visual culture since 2010.](https://www.thisiscolossal.com/)
 - 

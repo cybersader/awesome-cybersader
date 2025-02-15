@@ -50,10 +50,15 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [comfyonline.app > ComfyOnline: Run ComfyUI online & deploy APIs with one click](https://www.comfyonline.app/)
 	- [krea.ai > KREA](https://www.krea.ai/)
 	- [openart.ai > AI Art Generator: Free AI Image Generator & Editor | OpenArt](https://openart.ai/)
+	- [patchwork.midjourney.com > Patchwork Login](https://patchwork.midjourney.com/)
+	- [klingai.com > KLING AI: Next-Generation AI Creative Studio](https://klingai.com/)
+	- [runcomfy.com > RunComfy: Top ComfyUI Platform - Fast & Easy](https://www.runcomfy.com/)
 	- 
 
 - AI video
 	- [runwayml.com > Runway | Tools for human imagination.](https://runwayml.com/)
+	- [voia.com > Voia: AI-Powered Virtual Production](https://www.voia.com/)
+	- [pika.art > Pika](https://pika.art/login)
 	- 
 
 - Dreambooth, LoRA
@@ -69,6 +74,8 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [artbreeder.com > Browse - Artbreeder](https://www.artbreeder.com/browse)
 	- [prompthero.com > Search prompts for Stable Diffusion](https://prompthero.com/)
 	- [lexica.art > Lexica](https://lexica.art/)
+	- [klingai.com > KLING AI: Next-Generation AI Creative Studio](https://klingai.com/)
+	- 
 
 # Digital Content Creation
 
