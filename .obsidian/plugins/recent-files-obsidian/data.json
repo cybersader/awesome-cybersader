@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "📁 12 - Content Creation",
-      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
-    },
-    {
       "basename": "Cybersader Art Prompts",
       "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/Cybersader Art Prompts.md"
+    },
+    {
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "_attachments",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/_attachments/_attachments.md"
+    },
+    {
+      "basename": "Cybersader Content",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
+    },
+    {
+      "basename": "📁 12 - Content Creation",
+      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
     },
     {
       "basename": "Cybersader Art Inspiration",
@@ -21,10 +33,6 @@
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing & Properties/CB2 - Testing & Properties.md"
     },
     {
-      "basename": "AI Content Workflows",
-      "path": "📁 12 - Content Creation/AI Content Workflows/AI Content Workflows.md"
-    },
-    {
       "basename": "2025-02-14-Friday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-14-Friday/2025-02-14-Friday.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "README",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/README.md"
-    },
-    {
-      "basename": "Cybersader Content",
-      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
     },
     {
       "basename": "My Canker Sore Protocol",
@@ -62,7 +66,7 @@
     },
     {
       "basename": "Stable Diffusion Setup",
-      "path": "📁 12 - Content Creation/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md"
+      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md"
     },
     {
       "basename": "2025-02-12-Wednesday",
@@ -195,10 +199,6 @@
     {
       "basename": "Awesome WikiJS Examples",
       "path": "📁 51 - Cyberbase/Awesome WikiJS Examples/Awesome WikiJS Examples.md"
-    },
-    {
-      "basename": "2025-02-08-Saturday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-08-Saturday/2025-02-08-Saturday.md"
     }
   ],
   "omittedPaths": [],

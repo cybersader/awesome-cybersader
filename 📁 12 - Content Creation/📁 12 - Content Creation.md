@@ -10,7 +10,6 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 %% Begin Waypoint %%
 - **[[⬇️ Content Creation Stack Ideas]]**
 - **[[⬇️ Cyber Content Ideas]]**
-- **[[AI Content Workflows]]**
 - **[[Audio Stack]]**
 - **[[Awesome Streaming]]**
 - **[[Camera Lenses]]**
@@ -18,6 +17,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 - [[Content Analytics & Recon]]
 - **[[Content Curation]]**
 - **[[Cybersader Content]]**
+	- **[[AI Content Workflows]]**
 	- **[[Cybersader Art Inspiration]]**
 	- **[[Cybersader Art Prompts]]**
 - **[[Mic Setup Audio 2024]]**
@@ -32,7 +32,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 
 # Generative Art AI
 
-[AI Content Workflows](AI%20Content%20Workflows/AI%20Content%20Workflows.md)
+[AI Content Workflows](Cybersader%20Content/AI%20Content%20Workflows/AI%20Content%20Workflows.md)
 [Cyberbase Prompts](../📁%2051%20-%20Cyberbase/Cyberbase%20Prompts/Cyberbase%20Prompts.md)
 [Cybersader Art Inspiration](Cybersader%20Content/Cybersader%20Art%20Inspiration/Cybersader%20Art%20Inspiration.md)
 
