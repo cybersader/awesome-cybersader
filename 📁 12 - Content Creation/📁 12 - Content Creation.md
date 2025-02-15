@@ -53,6 +53,7 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [patchwork.midjourney.com > Patchwork Login](https://patchwork.midjourney.com/)
 	- [klingai.com > KLING AI: Next-Generation AI Creative Studio](https://klingai.com/)
 	- [runcomfy.com > RunComfy: Top ComfyUI Platform - Fast & Easy](https://www.runcomfy.com/)
+	- [github.com > Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
 	- 
 
 - AI video
