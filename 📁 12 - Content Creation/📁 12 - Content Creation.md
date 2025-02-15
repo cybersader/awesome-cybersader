@@ -42,6 +42,10 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- 
 
 - General image gen
+	- S-tier
+		- [huggingface.co > Spaces - Hugging Face](https://huggingface.co/spaces?category=image-generation)
+		- [blackforestlabs.ai > FLUX Tools](https://blackforestlabs.ai/tools-home/)
+		- 
 	- [openai.com > DALL·E 3](https://openai.com/index/dall-e-3/)
 	- [midjourney.com > Midjourney](https://www.midjourney.com/home)
 	- [bluewillow.ai > BlueWillow | Free AI Art Generator](https://www.bluewillow.ai/)
@@ -54,7 +58,7 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [klingai.com > KLING AI: Next-Generation AI Creative Studio](https://klingai.com/)
 	- [runcomfy.com > RunComfy: Top ComfyUI Platform - Fast & Easy](https://www.runcomfy.com/)
 	- [github.com > Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
-	- 
+	- [blackforestlabs.ai > FLUX Tools](https://blackforestlabs.ai/tools-home/)
 
 - AI video
 	- [runwayml.com > Runway | Tools for human imagination.](https://runwayml.com/)
