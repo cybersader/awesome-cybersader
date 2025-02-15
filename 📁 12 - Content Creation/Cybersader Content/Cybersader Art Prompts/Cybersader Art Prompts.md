@@ -15,4 +15,7 @@ date modified: Wednesday, February 12th 2025, 10:00 pm
 - “A brooding, dark templar knight in futuristic black armor with a flowing cape, standing on a high-rise overlooking a neon-drenched city at dusk.”
 - “Cyber Templar: a modern reinterpretation of a medieval knight, with glowing insignia and urban grit, surveying a sprawling cityscape.”
 - “A solitary, armored warrior with templar motifs, set against a dark, rainy metropolis, his cape billowing in the wind as he contemplates the city below.”
+- paladin in center, dnd, fantasy, long white hair, holding sword, dark light night, intricate, elegant, sharp focus, illustration, highly detailed, dark lighting, full body, digital painting, concept art, matte, art by wlop and artgerm and greg rutkowski and alphonse mucha, masterpiece
+- Pixel art, hooded figure raising a sword above his head, dark, creepy, ominous, hyper-realistic, 4k, 8k, unreal engine, high resolution
+- Create a captivating background design for back cover design, medieval, with shadows and lighting effects, minimalist background, dark to light background
 - 
