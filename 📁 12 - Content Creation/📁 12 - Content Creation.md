@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:55 pm
-date modified: Saturday, February 15th 2025, 10:52 am
+date modified: Saturday, February 15th 2025, 3:04 pm
 ---
 
 %% Begin Waypoint %%
@@ -40,11 +40,14 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [beta.dreamstudio.ai > DreamStudio](https://beta.dreamstudio.ai/generate)
 	- [civitai.com > Civitai: The Home of Open-Source Generative AI](https://civitai.com/)
 	- 
+	- 
 
 - General image gen
 	- S-tier
 		- [huggingface.co > Spaces - Hugging Face](https://huggingface.co/spaces?category=image-generation)
 		- [blackforestlabs.ai > FLUX Tools](https://blackforestlabs.ai/tools-home/)
+		- Midjourney - 10 a month (96 if annual plan)
+		- Krea - 10 a month (96 if annual plan)
 		- 
 	- [openai.com > DALL·E 3](https://openai.com/index/dall-e-3/)
 	- [midjourney.com > Midjourney](https://www.midjourney.com/home)
@@ -59,6 +62,7 @@ date modified: Saturday, February 15th 2025, 10:52 am
 	- [runcomfy.com > RunComfy: Top ComfyUI Platform - Fast & Easy](https://www.runcomfy.com/)
 	- [github.com > Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
 	- [blackforestlabs.ai > FLUX Tools](https://blackforestlabs.ai/tools-home/)
+	- [fal.ai > fal.ai | The generative media platform for developers](https://fal.ai/)
 
 - AI video
 	- [runwayml.com > Runway | Tools for human imagination.](https://runwayml.com/)
