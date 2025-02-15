@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:55 pm
-date modified: Wednesday, February 12th 2025, 10:06 pm
+date modified: Saturday, February 15th 2025, 10:52 am
 ---
 
 %% Begin Waypoint %%
@@ -18,6 +18,7 @@ date modified: Wednesday, February 12th 2025, 10:06 pm
 - [[Content Analytics & Recon]]
 - **[[Content Curation]]**
 - **[[Cybersader Content]]**
+	- **[[Cybersader Art Inspiration]]**
 	- **[[Cybersader Art Prompts]]**
 - **[[Mic Setup Audio 2024]]**
 - **[[Persona Creation]]**
@@ -33,6 +34,7 @@ date modified: Wednesday, February 12th 2025, 10:06 pm
 
 [AI Content Workflows](AI%20Content%20Workflows/AI%20Content%20Workflows.md)
 [Cyberbase Prompts](../📁%2051%20-%20Cyberbase/Cyberbase%20Prompts/Cyberbase%20Prompts.md)
+[Cybersader Art Inspiration](Cybersader%20Content/Cybersader%20Art%20Inspiration/Cybersader%20Art%20Inspiration.md)
 
 - Stable diffusion
 	- [beta.dreamstudio.ai > DreamStudio](https://beta.dreamstudio.ai/generate)
@@ -41,10 +43,21 @@ date modified: Wednesday, February 12th 2025, 10:06 pm
 
 - General image gen
 	- [openai.com > DALL·E 3](https://openai.com/index/dall-e-3/)
+	- [midjourney.com > Midjourney](https://www.midjourney.com/home)
+	- [bluewillow.ai > BlueWillow | Free AI Art Generator](https://www.bluewillow.ai/)
+	- [dezgo.com > Text-to-Image Flux - Online Free AI Image Generator](https://dezgo.com/text2image/sdxl)
+	- [huggingface.co > Spaces - Hugging Face](https://huggingface.co/spaces)
+	- [comfyonline.app > ComfyOnline: Run ComfyUI online & deploy APIs with one click](https://www.comfyonline.app/)
+	- [krea.ai > KREA](https://www.krea.ai/)
+	- [openart.ai > AI Art Generator: Free AI Image Generator & Editor | OpenArt](https://openart.ai/)
 	- 
 
 - AI video
 	- [runwayml.com > Runway | Tools for human imagination.](https://runwayml.com/)
+	- 
+
+- Dreambooth, LoRA
+	- Can be used to insert or extract an element
 	- 
 
 - SVG generator
@@ -54,6 +67,8 @@ date modified: Wednesday, February 12th 2025, 10:06 pm
 
 - Prompt examples
 	- [artbreeder.com > Browse - Artbreeder](https://www.artbreeder.com/browse)
+	- [prompthero.com > Search prompts for Stable Diffusion](https://prompthero.com/)
+	- [lexica.art > Lexica](https://lexica.art/)
 
 # Digital Content Creation
 
