@@ -3,7 +3,7 @@ aliases: []
 tags: []
 permalink:
 date created: Friday, March 22nd 2024, 11:10 pm
-date modified: Saturday, February 15th 2025, 5:32 pm
+date modified: Saturday, February 15th 2025, 6:10 pm
 publish: true
 ---
 
@@ -18,9 +18,15 @@ publish: true
 
 # Midjourney
 
+## Using MJ in Discord
+
+- Add to your server by going to direct messages (on PC - not mobile), right-click the Midjourney bot after searching it, then add to your server
+- Start using the commands -  [docs.midjourney.com > Discord Quick Start](https://docs.midjourney.com/hc/en-us/articles/32631709682573-Discord-Quick-Start)
+- 
+
 ## Image -> Prompt
 
-- 
+- Use `/describe`
 
 ## Adding Self to Prompts or Existing Images
 
