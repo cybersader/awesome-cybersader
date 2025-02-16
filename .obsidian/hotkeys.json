@@ -235,5 +235,13 @@
       ],
       "key": "W"
     }
+  ],
+  "quick-tagger:quick-add-tag": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }
