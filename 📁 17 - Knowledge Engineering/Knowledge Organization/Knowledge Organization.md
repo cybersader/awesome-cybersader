@@ -1,10 +1,10 @@
 ---
-permalink:
+permalink: 
 aliases: [Obsidian Vault Structure]
-tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science]
+tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Monday, February 3rd 2025, 12:55 pm
+date modified: Sunday, February 16th 2025, 2:27 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)

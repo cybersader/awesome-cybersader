@@ -235,5 +235,13 @@
       ],
       "key": "W"
     }
+  ],
+  "tag-pane:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }

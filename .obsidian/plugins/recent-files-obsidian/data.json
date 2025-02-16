@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Wiki, KB, KMS",
+      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
+    },
+    {
       "basename": "2025-02-16-Sunday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md"
     },
     {
       "basename": "Portfolio CMSs",
       "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
-    },
-    {
-      "basename": "Wiki, KB, KMS",
-      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
     },
     {
       "basename": "✒️ Personal OpSec Arsenal",
@@ -191,14 +199,6 @@
     {
       "basename": "Obsidian Publish SEO",
       "path": "📁 51 - Cyberbase/Obsidian Publish SEO/Obsidian Publish SEO.md"
-    },
-    {
-      "basename": "HTML in Obsidian",
-      "path": "📁 51 - Cyberbase/HTML in Obsidian/HTML in Obsidian.md"
-    },
-    {
-      "basename": "Customizing Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
     }
   ],
   "omittedPaths": [],

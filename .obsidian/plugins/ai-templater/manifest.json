@@ -1,0 +1,14 @@
+{
+	"id": "ai-templater",
+	"name": "AI for Templater",
+	"version": "1.0.11",
+	"minAppVersion": "1.7.2",
+	"description": "AI Extension for the Templater plugin with the OpenAI Client Library.",
+	"author": "TfTHacker",
+	"authorUrl": "https://tfthacker.com/",
+	"helpUrl": "https://tfthacker.com/AIT",
+	"isDesktopOnly": false,
+	"fundingUrl": {
+		"Sponsor my work": "https://tfthacker.com/sponsor"
+	}
+}
