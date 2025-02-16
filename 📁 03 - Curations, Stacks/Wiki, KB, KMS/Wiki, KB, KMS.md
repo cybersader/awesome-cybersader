@@ -1,11 +1,8 @@
 ---
 permalink: 
-aliases: 
-tags:
-  - curations/cms
-  - curations/wiki
-  - curations/kms
-  - initiatives/cyberbase
+aliases: []
+tags: [curations/cms, curations/wiki, curations/kms
+  - initiatives/cyberbase]
 publish: true
 date created: Sunday, April 21st 2024, 11:47 pm
 date modified: Sunday, February 16th 2025, 1:31 pm
@@ -48,7 +45,8 @@ date modified: Sunday, February 16th 2025, 1:31 pm
 # Information Capture
 
 - Markdown Browser extensions
-- 
+- Obsidian web clipper
+- Brave with experimental browser tab grouping sync feature - [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
 
 # Information Retrieval
 

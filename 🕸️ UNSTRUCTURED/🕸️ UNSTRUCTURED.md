@@ -35,6 +35,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - [[Data Visualization, BI]]
 - **[[Databases]]**
 - [[Debugging Obsidian Plugins]]
+- [[Digital Garden]]
 - [[Documenting Activity]]
 - **[[Email Security]]**
 - **[[Endpoint Firewall]]**
