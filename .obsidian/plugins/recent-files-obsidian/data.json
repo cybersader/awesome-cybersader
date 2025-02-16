@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Cybersader Art Inspiration",
-      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md"
-    },
-    {
       "basename": "AI Content Workflows",
       "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "Wiki, KB, KMS",
+      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
+    },
+    {
+      "basename": "Cyberbase JS & Services",
+      "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
+    },
+    {
+      "basename": "2025-02-16-Sunday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md"
+    },
+    {
+      "basename": "Cybersader Art Inspiration",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md"
     },
     {
       "basename": "Cybersader Art Prompts",
@@ -79,10 +91,6 @@
     {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
-      "basename": "Cyberbase JS & Services",
-      "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
     },
     {
       "basename": "CB1 - Customize Publish",
@@ -191,14 +199,6 @@
     {
       "basename": "Mapped Frameworks",
       "path": "📁 01 - Projects/Obsidian Frameworker/Mapped Frameworks/Mapped Frameworks.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
-    },
-    {
-      "basename": "Awesome WikiJS Examples",
-      "path": "📁 51 - Cyberbase/Awesome WikiJS Examples/Awesome WikiJS Examples.md"
     }
   ],
   "omittedPaths": [],
