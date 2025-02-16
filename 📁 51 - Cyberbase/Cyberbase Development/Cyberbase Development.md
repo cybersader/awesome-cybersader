@@ -1,8 +1,10 @@
 ---
-aliases: []
-tags: []
+aliases: 
+tags:
+  - curations/development/auth
+  - curations/cms/headless
 publish: true
-permalink:
+permalink: 
 date created: Saturday, February 1st 2025, 5:58 pm
 date modified: Sunday, February 9th 2025, 1:44 pm
 ---
@@ -188,7 +190,7 @@ date modified: Sunday, February 9th 2025, 1:44 pm
 		- [digitalocean.com > Budget-Friendly Cloud Server Pricing | DigitalOcean](https://www.digitalocean.com/pricing)
 	- Vercel
 		- [vercel.com > Find a plan to power your projects. – Vercel](https://vercel.com/pricing)
-- Statis website services and tech
+- Static website services and tech
 	- [Staticman: Static sites with superpowers](https://staticman.net/)
 	- [github.com > agarrharr/awesome-static-website-services: 📄 🛠 A curated list of awesome static websites services](https://github.com/agarrharr/awesome-static-website-services?tab=readme-ov-file#authentication)
 	- 

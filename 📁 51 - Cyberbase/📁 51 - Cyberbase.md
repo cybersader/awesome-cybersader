@@ -1,8 +1,10 @@
 ---
-aliases: []
-tags: []
+aliases: 
+tags:
+  - initiatives/cyberbase
+  - personal/professional/personal-branding
 publish: true
-permalink:
+permalink: 
 date created: Friday, January 31st 2025, 4:49 pm
 date modified: Friday, January 31st 2025, 4:56 pm
 ---
@@ -15,8 +17,6 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[🐛 Known Base Bugs, Issues]]**
 - **[[Astro with Content Layer]]**
 - **[[Auto Publish For Obsidian Publish]]**
-- **Awesome Obsidian Wiki Examples**
-- **[[Awesome WikiJS Examples]]**
 - **[[Blogging Platforms]]**
 - **[[Collaboration in Obsidian]]**
 - **[[Contributable Obsidian Wiki]]**
@@ -43,7 +43,9 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Obsidian Plugins that Affect CSS]]**
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**
+- **[[Portfolio CMSs]]**
 - **[[Quick Local JS Testing]]**
 - **[[Static Website Services]]**
+- **[[WikiJS Examples]]**
 
 %% End Landmark %%

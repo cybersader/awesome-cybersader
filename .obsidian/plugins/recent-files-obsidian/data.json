@@ -1,28 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "AI Content Workflows",
-      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+      "basename": "2025-02-16-Sunday",
+      "path": "🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md"
+    },
+    {
+      "basename": "Portfolio CMSs",
+      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
     },
     {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
     },
     {
+      "basename": "✒️ Personal OpSec Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/✒️ Personal OpSec Arsenal/✒️ Personal OpSec Arsenal.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Obsidian as a CMS",
+      "path": "📁 51 - Cyberbase/Obsidian as a CMS/Obsidian as a CMS.md"
+    },
+    {
       "basename": "Cyberbase JS & Services",
       "path": "📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md"
     },
     {
-      "basename": "2025-02-16-Sunday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md"
+      "basename": "Cyberbase Development",
+      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
-      "basename": "Cybersader Art Inspiration",
-      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md"
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "📁 12 - Content Creation",
+      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
+    },
+    {
+      "basename": "📁 51 - Cyberbase",
+      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
+    },
+    {
+      "basename": "WikiJS Examples",
+      "path": "📁 51 - Cyberbase/WikiJS Examples/WikiJS Examples.md"
     },
     {
       "basename": "Cybersader Art Prompts",
       "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/Cybersader Art Prompts.md"
+    },
+    {
+      "basename": "📁 37 - Music",
+      "path": "📁 37 - Music/📁 37 - Music.md"
+    },
+    {
+      "basename": "Cybersader Art Inspiration",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md"
     },
     {
       "basename": "_attachments",
@@ -31,14 +67,6 @@
     {
       "basename": "Cybersader Content",
       "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
-    },
-    {
-      "basename": "📁 12 - Content Creation",
-      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
-    },
-    {
-      "basename": "2025-02-15-Saturday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-15-Saturday/2025-02-15-Saturday.md"
     },
     {
       "basename": "CB2 - Testing & Properties",
@@ -85,20 +113,12 @@
       "path": "🕸️ Daily Notes/2025/02/2025-02-12-Wednesday/2025-02-12-Wednesday.md"
     },
     {
-      "basename": "📁 37 - Music",
-      "path": "📁 37 - Music/📁 37 - Music.md"
-    },
-    {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
     },
     {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
       "basename": "2025-02-11-Tuesday",
@@ -179,26 +199,6 @@
     {
       "basename": "Customizing Obsidian Publish",
       "path": "📁 51 - Cyberbase/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
-    },
-    {
-      "basename": "Obsidian & Corporate Docs",
-      "path": "📁 10 - My Obsidian Stack/Obsidian & Corporate Docs/Obsidian & Corporate Docs.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
-    },
-    {
-      "basename": "Linking to Frameworks",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
-    },
-    {
-      "basename": "Mapped Frameworks",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Mapped Frameworks/Mapped Frameworks.md"
     }
   ],
   "omittedPaths": [],

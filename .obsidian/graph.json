@@ -8,34 +8,6 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "section:(incident)",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "section:(cyber)",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "section:(obsidian)",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "section:(privacy)",
-      "color": {
-        "a": 1,
-        "rgb": 2265816
-      }
-    },
-    {
       "query": "",
       "color": {
         "a": 1,
