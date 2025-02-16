@@ -1,12 +1,10 @@
 ---
-aliases: 
-tags:
-  - curations/cms
-  - curations/cms/headless
+aliases: []
+tags: [curations/cms, curations/cms/headless]
 publish: true
 permalink: 
 date created: Sunday, February 16th 2025, 2:04 pm
-date modified: Sunday, February 16th 2025, 2:13 pm
+date modified: Sunday, February 16th 2025, 3:45 pm
 ---
 
 - CMS

@@ -793,6 +793,33 @@
       },
       "tailwind-snippet": {
         "startupType": "disabled"
+      },
+      "ai-templater": {
+        "startupType": "disabled"
+      },
+      "auto-tasks": {
+        "startupType": "disabled"
+      },
+      "juggl": {
+        "startupType": "disabled"
+      },
+      "live-variables": {
+        "startupType": "disabled"
+      },
+      "graph-nested-tags": {
+        "startupType": "disabled"
+      },
+      "semantic-canvas": {
+        "startupType": "disabled"
+      },
+      "tag-buddy": {
+        "startupType": "disabled"
+      },
+      "tag-links": {
+        "startupType": "disabled"
+      },
+      "tag-project-odaimoko": {
+        "startupType": "disabled"
       }
     }
   }

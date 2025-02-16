@@ -4,10 +4,11 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Sunday, February 16th 2025, 3:08 pm
+date modified: Sunday, February 16th 2025, 3:39 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
+[Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
@@ -35,6 +36,7 @@ Here's the breakdown and ways I like to define it
 - Plugins
 	- [github.com > drPilman/obsidian-graph-nested-tags: A small plugin for Obsidian that links nested tags in graph view](https://github.com/drPilman/obsidian-graph-nested-tags)
 	- [github.com > HananoshikaYomaru/obsidian-tag-generator: Break down nested tags into multiple parent tags](https://github.com/HananoshikaYomaru/obsidian-tag-generator)
+- Controlled Vocabulary, Taxonomy, Ontology as Nested Tags?
 	- 
 
 # Links Relating To Obsidian Vaults
@@ -62,6 +64,16 @@ Here's the breakdown and ways I like to define it
 	- [Controlled Vocabulary](https://www.librarianshipstudies.com/2020/03/controlled-vocabulary.html)
 	- [Library of Congress Subject Headings (LCSH)](https://www.librarianshipstudies.com/2018/01/library-of-congress-subject-headings-lcsh.html)
 	- [Linked data: The future of library cataloging (by OCLC)](https://www.librarianshipstudies.com/2024/06/linked-data-future-of-library.html)
+- **TYPES OF CONTROLLED VOCABULARY**
+	- Some examples of Controlled Vocabulary are: 
+		1. Simple Term Lists (Pick Lists)
+		2. Thesauri
+		3. Subject Heading Lists (e.g. LCSH, SLSH)
+		4. Authority Files (e.g. LCNAF)
+		5. Taxonomies
+		6. Alphanumeric Classification Schemes (e.g., LCC, DDC, UDC)
+		7. Ontologies
+		8. Folksonomies
 
 # Wiki Organization Methodologies, Taxonomies, Structures
 
@@ -91,7 +103,7 @@ Here's the breakdown and ways I like to define it
 	- ==**Using the "Linked Data Service" API for Subject Headings**==
 		- [Technical Center - Downloads - LC Linked Data Service: Authorities and Vocabularies | Library of Congress](https://id.loc.gov/techcenter/) 
 		- [Technical Center - Searching - LC Linked Data Service: Authorities and Vocabularies | Library of Congress](https://id.loc.gov/techcenter/searching.html) 
-		- [ ] Extend or design an obsidian plugin that accomplishes using the LoC subject headings without needing to download it - utilize the id.loc.gov API ➕ 2024-10-26
+		- Extend or design an obsidian plugin that accomplishes using the LoC subject headings without needing to download it - utilize the id.loc.gov API
 		
 - Related, but not the desired API - LoC.gov API
 	- [JSON/YAML for LoC.gov | APIs for LoC.gov | Library of Congress](https://www.loc.gov/apis/json-and-yaml/) - not for the "linked data" and (subsequently) the subject headings data though

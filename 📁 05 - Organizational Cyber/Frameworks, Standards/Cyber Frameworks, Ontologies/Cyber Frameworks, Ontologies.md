@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Monday, October 7th 2024, 1:22 pm
-date modified: Monday, October 7th 2024, 1:30 pm
+date modified: Sunday, February 16th 2025, 3:37 pm
 ---
 
 # Initial Mapping for Frameworks

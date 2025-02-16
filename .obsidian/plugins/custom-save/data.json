@@ -1,5 +1,6 @@
 {
   "commandIds": [
+    "tag-breakdown-generator:run-file",
     "run:run-file"
   ]
 }
