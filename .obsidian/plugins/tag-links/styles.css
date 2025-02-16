@@ -1,0 +1,5 @@
+.invalid {
+    border-color: #ff4b4b !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+}

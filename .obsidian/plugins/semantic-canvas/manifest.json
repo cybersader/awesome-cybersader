@@ -1,0 +1,11 @@
+{
+	"id": "semantic-canvas",
+	"name": "Semantic Canvas",
+	"version": "1.2.1",
+	"minAppVersion": "0.15.0",
+	"description": "Create semantic knowledge graphs using Canvases to modify note properties graphically.",
+	"author": "Aaron Gillespie",
+	"authorUrl": "https://aarongilly.com",
+	"fundingUrl": "https://www.buymeacoffee.com/aarongilly",
+	"isDesktopOnly": false
+}

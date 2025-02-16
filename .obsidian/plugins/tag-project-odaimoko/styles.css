@@ -1,0 +1,25 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+/*@import "src/ui/pure-react/view-template/searchable-dropdown.css";*/
+
+.dropdown-root {
+}
+
+.dropdown-button-collection {
+    /* //defined in obsidian*/
+    background-color: var(--background-primary);
+    min-width: 100%;
+}
+
+.dropdown-button {
+    --dropdown-non-selected: none;
+    --dropdown-selected: var(--link-color);
+    width: 100%;
+}

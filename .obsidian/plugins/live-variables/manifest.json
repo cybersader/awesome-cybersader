@@ -1,0 +1,11 @@
+{
+	"id": "live-variables",
+	"name": "Live Variables",
+	"version": "2.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Define variables in your note's properties and reuse them throughout your content.",
+	"author": "Hamza Ben Yazid",
+	"authorUrl": "https://github.com/HamzaBenyazid",
+	"fundingUrl": " https://github.com/sponsors/HamzaBenyazid",
+	"isDesktopOnly": false
+}
