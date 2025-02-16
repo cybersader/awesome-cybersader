@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, February 7th 2025, 10:00 pm
-date modified: Tuesday, February 11th 2025, 9:09 pm
+date modified: Sunday, February 16th 2025, 4:37 pm
 ---
 
 # DROP
@@ -13,6 +13,7 @@ date modified: Tuesday, February 11th 2025, 9:09 pm
 - [ ] Implement properties in Obsidian Publish in a modular manner
 - [ ] Implement share links
 - [ ] Implement comments
+- [forum.obsidian.md > A frontmatter that finally supports links ! (Lila's frontmatter 🌸) - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/a-frontmatter-that-finally-supports-links-lilas-frontmatter/53087/36)
 
 # MVP Obsidian Publish Cyberbase
 

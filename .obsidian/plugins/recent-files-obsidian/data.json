@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Portfolio CMSs",
-      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+      "basename": "Cyberbase Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
     },
     {
       "basename": "2025-02-16-Sunday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md"
     },
     {
+      "basename": "📁 51 - Cyberbase",
+      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
+    },
+    {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "Portfolio CMSs",
+      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
     },
     {
       "basename": "Cyber Frameworks, Ontologies",
@@ -63,10 +75,6 @@
     {
       "basename": "📁 12 - Content Creation",
       "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
-    },
-    {
-      "basename": "📁 51 - Cyberbase",
-      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
     },
     {
       "basename": "WikiJS Examples",
@@ -133,10 +141,6 @@
       "path": "🕸️ Daily Notes/2025/02/2025-02-12-Wednesday/2025-02-12-Wednesday.md"
     },
     {
-      "basename": "Cyberbase Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Quick Local JS Testing",
       "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
-    },
-    {
-      "basename": "Obsidian Plugins that Affect CSS",
-      "path": "📁 51 - Cyberbase/Obsidian Plugins that Affect CSS/Obsidian Plugins that Affect CSS.md"
     }
   ],
   "omittedPaths": [],

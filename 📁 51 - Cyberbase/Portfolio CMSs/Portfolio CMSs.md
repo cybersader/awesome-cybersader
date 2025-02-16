@@ -2,7 +2,7 @@
 aliases: []
 tags: [curations/cms, curations/cms/headless]
 publish: true
-permalink: 
+permalink:
 date created: Sunday, February 16th 2025, 2:04 pm
 date modified: Sunday, February 16th 2025, 3:47 pm
 ---
@@ -19,7 +19,7 @@ date modified: Sunday, February 16th 2025, 3:47 pm
 			- [strapi.io > Integrate TinyMCE with Strapi](https://strapi.io/integrations/tinymce)
 			- [market.strapi.io > Mailgun | Strapi Market](https://market.strapi.io/providers/@strapi-provider-email-mailgun)
 			- [market.strapi.io > Cloudinary | Strapi Market](https://market.strapi.io/providers/@strapi-provider-upload-cloudinary)
-		- 
+		-
 	- Sveltia
 		- [github.com > sveltia/sveltia-cms: Netlify/Decap CMS alternative. Fast](https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#features-not-to-be-implemented)
 		- [jamstack.org > Sveltia CMS | Jamstack](https://jamstack.org/headless-cms/sveltia-cms/)
@@ -39,7 +39,7 @@ date modified: Sunday, February 16th 2025, 3:47 pm
 		- [tina.io > Git Co-Authoring - What is it and how do we use it?](https://tina.io/docs/tina-cloud/git-co-authoring)
 		- [tina.io > Going to Production with TinaCloud](https://tina.io/docs/tina-cloud/overview)
 		- [tina.io > Custom Auth Provider](https://tina.io/docs/reference/self-hosted/auth-provider/bring-your-own)
-		- 
+		-
 	- Keystone
 		- [jamstack.org > Keystone | Jamstack](https://jamstack.org/headless-cms/keystone/)
 		- [keystonejs.com > KeystoneJS: The superpowered Node.js Headless CMS for developers](https://keystonejs.com/)
@@ -51,7 +51,7 @@ date modified: Sunday, February 16th 2025, 3:47 pm
 		- [sanity.io > Migrating Custom Auth Providers | Migrating from v2](https://www.sanity.io/docs/migrating-custom-auth-providers)
 		- [sanity.io > AuthConfig - interface - sanity - API References](https://www.sanity.io/docs/reference/api/sanity/AuthConfig)
 		- [sanity.io > Roles | Access control](https://www.sanity.io/docs/roles)
-		- 
+		-
 		- [sanity.io > Auth API | Reference](https://www.sanity.io/docs/auth-api-reference)
 	- Craft CMS
 		- [plugins.craftcms.com > Fields](https://plugins.craftcms.com/categories/fields?craft5=)

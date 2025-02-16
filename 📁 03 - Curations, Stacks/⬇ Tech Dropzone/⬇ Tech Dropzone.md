@@ -1,13 +1,12 @@
 ---
-permalink:
+permalink: 
 aliases: []
-tags: ["#opensourcesoftware", "#privacy", "#software"]
+tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Saturday, February 8th 2025, 2:15 pm
+date modified: Sunday, February 16th 2025, 4:33 pm
 ---
 
-[⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 # Software, Web
 
 - [screenpi.pe > screenpipe | Context layer for AGI](https://screenpi.pe/)

@@ -4,11 +4,12 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Sunday, February 16th 2025, 3:39 pm
+date modified: Sunday, February 16th 2025, 4:18 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
 [Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
+[Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
@@ -16,7 +17,16 @@ date modified: Sunday, February 16th 2025, 3:39 pm
 
 ## Tagging
 
-### PARAUT - instead of PARA
+### Nested Tags
+
+- [help.obsidian.md > Tags - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Tags)
+- Plugins
+	- [github.com > drPilman/obsidian-graph-nested-tags: A small plugin for Obsidian that links nested tags in graph view](https://github.com/drPilman/obsidian-graph-nested-tags)
+	- [github.com > HananoshikaYomaru/obsidian-tag-generator: Break down nested tags into multiple parent tags](https://github.com/HananoshikaYomaru/obsidian-tag-generator)
+- Controlled Vocabulary, Taxonomy, Ontology as Nested Tags?
+	- [4.5 - Applying Research](../../📁%2098%20-%20ARCHIVE/GradSchoolProjects/Honey%20Accounts%20in%20Windows%20AD/Project%20Workspace/4.5%20-%20Applying%20Research.md)[Teleseer](../../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Cyber%20Tools/Teleseer.md)[DD 108](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/Learning/Cyber%20News,%20TTP,%20Learning/DD%20108.md)
+
+#### PARAUT - instead of PARA
 
 Here's the breakdown and ways I like to define it
 1. Projects, Workspaces
@@ -29,15 +39,6 @@ Here's the breakdown and ways I like to define it
 ## Folders
 
 - Make folders useful for storefront exploration. Think someone goes into your digital garden and you want to give them (your applicable and unique audience) places to explore
-
-# Nested Tags
-
-- [help.obsidian.md > Tags - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Tags)
-- Plugins
-	- [github.com > drPilman/obsidian-graph-nested-tags: A small plugin for Obsidian that links nested tags in graph view](https://github.com/drPilman/obsidian-graph-nested-tags)
-	- [github.com > HananoshikaYomaru/obsidian-tag-generator: Break down nested tags into multiple parent tags](https://github.com/HananoshikaYomaru/obsidian-tag-generator)
-- Controlled Vocabulary, Taxonomy, Ontology as Nested Tags?
-	- 
 
 # Links Relating To Obsidian Vaults
 

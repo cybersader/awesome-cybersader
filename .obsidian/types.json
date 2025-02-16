@@ -24,6 +24,8 @@
     "excalidraw-export-embed-scene": "checkbox",
     "excalidraw-open-md": "checkbox",
     "excalidraw-embeddable-theme": "text",
-    "sorting-spec": "text"
+    "sorting-spec": "text",
+    "graph": "multitext",
+    "links": "multitext"
   }
 }
