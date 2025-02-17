@@ -7,6 +7,8 @@ console.log("[publish.js] loaded");
 // A small ID for our repeating check
 let insertIntervalId;
 const welcomePage = "README";
+const USE_PROPERTY_TABLE = true; // If false, modifies existing .frontmatter HTML
+
 
 /**
  * Determines if the current screen width qualifies as mobile (≤ 750px).
@@ -122,6 +124,129 @@ function insertFooterBlockIfMissing() {
   console.log("[GitHub Links] Inserted #footer-action-block in .mod-footer.");
 }
 
+/**
+ * getFrontmatter():
+ *   Pull frontmatter from Obsidian Publish's in-memory cache, if available.
+ */
+function getFrontmatter() {
+  try {
+    const path = decodeURIComponent(window.location.pathname).replace(/\+/g, " ");
+    const mdFile = path.substring(1) + ".md"; // e.g. "README.md"
+    if (app?.site?.cache?.cache[mdFile]?.frontmatter) {
+      return app.site.cache.cache[mdFile].frontmatter;
+    }
+  } catch (err) {
+    console.warn("[publish.js] frontmatter not found:", err);
+  }
+  return null;
+}
+
+/**
+ * frontmatterWhitelist: 
+ *   An array of objects describing which keys we want to display,
+ *   how we label them, and how we transform the value if needed.
+ *
+ *   key: the actual frontmatter key
+ *   label: the displayed label (e.g. "📅 created")
+ *   transform: a function(value) => string, or null to leave as-is
+ */
+const frontmatterWhitelist = [
+  {
+    key: "date created",
+    label: "📅 created",
+    transform: null
+  },
+  {
+    key: "date modified",
+    label: "📅 updated",
+    transform: null
+  }/*,
+  {
+    key: "tags",
+    label: "Tags",
+    // If it's an array, we join with commas
+    transform: (value) => Array.isArray(value) ? value.join(", ") : value
+  },
+  {
+    key: "aliases",
+    label: "Aliases",
+    transform: (value) => Array.isArray(value) ? value.join(", ") : value
+  }*/
+  // ... add more items if you wish
+];
+
+/**
+ * insertFrontmatterIfMissing():
+ *   Checks for .frontmatter element + frontmatter data in cache.
+ *   If #frontmatter-block not present, build a block with the whitelisted keys.
+ */
+function insertFrontmatterIfMissing() {
+  // If we already inserted #frontmatter-block (for table mode), skip
+  if (USE_PROPERTY_TABLE && document.getElementById("frontmatter-block")) {
+    return;
+  }
+
+  const fmElement = document.querySelector(".frontmatter");
+  if (!fmElement) return; // no frontmatter in DOM
+
+  const fmData = getFrontmatter();
+  if (!fmData) return; // none in cache
+
+  // Collect the whitelisted keys
+  let rows = "";
+  frontmatterWhitelist.forEach(({ key, label, transform }) => {
+    if (fmData[key]) {
+      let val = fmData[key];
+      if (typeof transform === "function") {
+        val = transform(val);
+      }
+      rows += `
+        <div class="propertyitem">
+          <strong>${label}:</strong> ${val}
+        </div>
+      `;
+    }
+  });
+  if (!rows.trim()) return;
+
+  if (USE_PROPERTY_TABLE) {
+    // === Option A: Insert a new #frontmatter-block after .frontmatter ===
+    if (document.getElementById("frontmatter-block")) return; // skip duplicates
+    const html = `
+      <div id="frontmatter-block" class="propertyitemtable">
+        ${rows}
+      </div>
+    `;
+    fmElement.insertAdjacentHTML("afterend", html);
+    const originalYaml = document.querySelector(".frontmatter.language-yaml");
+    originalYaml.remove();
+  } else {
+    //TODO
+  }
+}
+
+/**
+ * removeEntireLine(span):
+ *   Removes the DOM nodes from 'span' until the next newline or <br>.
+ *   This effectively hides the entire line for a non-whitelisted key.
+ */
+function removeEntireLine(span) {
+  const parent = span.parentNode;
+  if (!parent) return;
+
+  // We'll remove siblings up to the next <br> or end-of-line
+  let current = span;
+  while (current && current.nodeName.toLowerCase() !== "br") {
+    const next = current.nextSibling;
+    parent.removeChild(current);
+    current = next;
+  }
+  // Optionally remove the <br> as well if you want that line entirely gone
+  if (current && current.nodeName.toLowerCase() === "br") {
+    parent.removeChild(current);
+  }
+}
+
 // Function to remove frontmatter for when we're on the welcome page
 function removeFrontmatter() {
   const frontmatter = document.querySelector(".el-pre.mod-frontmatter.mod-ui");
@@ -132,6 +257,18 @@ function removeFrontmatter() {
 function removeHeader() {
   const header = document.querySelector(".mod-header.mod-ui")
   header.style.display = "none"; // Hides the element
+}
+
+// Function to remove frontmatter for when we're on the welcome page
+function showFrontmatter() {
+  const frontmatter = document.querySelector(".el-pre.mod-frontmatter.mod-ui");
+  frontmatter.style.display = "block";
+}
+
+// Function to remove page title for home page
+function showHeader() {
+  const header = document.querySelector(".mod-header.mod-ui")
+  header.style.display = "block";
 }
 
 /**
@@ -147,6 +284,9 @@ function checkAndInsert() {
   } else {
     insertHeaderLinksIfMissing();
     insertFooterBlockIfMissing();
+    insertFrontmatterIfMissing(); // Show whitelisted frontmatter
+    showFrontmatter();
+    showHeader();
     // You could also do insertRightColumnEditButtonIfMissing() here if you want
   }
 }

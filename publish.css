@@ -160,33 +160,45 @@ text-align: left;
   margin-right: 4px;
 }
 
+/* Frontmatter */
 
-/* Show frontmatter / properties */
+/* Dark-mode friendly frontmatter block (table style) */
+.propertyitemtable {
+  background: var(--background-primary-alt);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
 
-.frontmatter {
-  display: block !important; 
-}
-
-/* =======================
-  3) Frontmatter Table
-======================= */
-  .propertyitemtable {
-  border: 1px solid #ccc;
-  background: #f9f9f9;
+  /* Existing styling */
   padding: 0.75em 1em;
   margin: 1em 0;
   font-size: 0.95em;
+  border-radius: 6px; /* optional rounding */
 }
 .propertyitem {
   padding: 0.3em 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--background-modifier-border);
 }
 .propertyitem:last-child {
   border-bottom: none;
 }
 .propertyitem strong {
   margin-right: 0.5em;
+  font-weight: 600;
 }
+
+/* If you override .frontmatter directly (USE_PROPERTY_TABLE = false),
+   ensure the same styling is used on .frontmatter */
+.frontmatter {
+  /* If merging, you can style .frontmatter similarly */
+  display: block !important; 
+  background: var(--background-primary-alt);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 6px;
+}
+
 
 /*
 

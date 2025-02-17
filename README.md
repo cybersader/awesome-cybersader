@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Sunday, February 16th 2025, 8:00 pm
+date modified: Monday, February 17th 2025, 11:37 am
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -60,7 +60,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Feb 17, 2025 - [[Portfolio CMSs]]
+> Mon, Feb 17, 2025 - [[README]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -90,9 +90,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[README.md\|README]]                                                                                      | Mon - 2/17/2025, 11:37 AM |
 | [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                     | Mon - 2/17/2025, 10:14 AM |
 | [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                | Mon - 2/17/2025, 9:38 AM  |
-| [[README.md\|README]]                                                                                      | Mon - 2/17/2025, 9:35 AM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                    | Mon - 2/17/2025, 9:34 AM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-17-Monday/2025-02-17-Monday.md\|2025-02-17-Monday]]                      | Mon - 2/17/2025, 9:34 AM  |
 | [[🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md\|Datetime Formatting]]                       | Sun - 2/16/2025, 6:57 PM  |
@@ -114,4 +114,7 @@ My public and contributable base/wiki for cybersecurity, cyber resilience, and c
 If you enjoy my work or find value from it, then you can support me below by sharing your thoughts or a small gift.
 
 - 💙 [Share your thoughts! - Write something](https://senja.io/p/cybersader/r/5RzvRy)
-- <a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" /></a>
+
+
+
+<a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" width="80%" /></a>
