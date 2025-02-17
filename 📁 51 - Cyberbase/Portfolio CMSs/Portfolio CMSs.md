@@ -4,10 +4,44 @@ tags: [curations/cms, curations/cms/headless]
 publish: true
 permalink:
 date created: Sunday, February 16th 2025, 2:04 pm
-date modified: Monday, February 17th 2025, 9:43 am
+date modified: Monday, February 17th 2025, 10:14 am
 ---
 
+[Cyberbase Development](../Cyberbase%20Development/Cyberbase%20Development.md)
+
 # Curated
+
+## Tech Stacks
+
+### Obsidian as CMS
+
+- [github.com > notkmhn/obyde: A minimal tool to convert a "standardly" configured Obsidian vault to a Jekyll or Hugo blog.](https://github.com/notkmhn/obyde)
+- 
+
+### Jekyll + CMS + Obsidian
+
+- 
+
+### Netlify
+
+- [netlify.com > Content Management | Netlify Integrations](https://www.netlify.com/integrations/content-management/)
+- [netlify.com > Works with Netlify Connect | Netlify Integrations](https://www.netlify.com/integrations/works-with-netlify-connect/)
+- [netlify.com > Templates | Netlify Integrations](https://www.netlify.com/integrations/templates/)
+- [netlify.com > Frameworks | Netlify Integrations](https://www.netlify.com/integrations/frameworks/)
+- 
+
+### Astro + CMS
+
+- [docs.astro.build > Decap CMS & Astro](https://docs.astro.build/en/guides/cms/decap-cms/)
+- [tina.io > Astro + Tina Setup Guide](https://tina.io/docs/frameworks/astro)
+- [frontmatter.codes > Headless CMS right in your code editor | Front Matter](https://frontmatter.codes/)
+- "astro cms starters"
+- [builder.io > Headless CMS For Astro - Drag & Drop CMS - Builder.io](https://www.builder.io/m/astro-cms)
+- [sanity.io > The best headless CMS for Astro - Voted #1 by developers](https://www.sanity.io/astro-cms)
+- [storyblok.com > Official CMS Partner for Astro | Storyblok](https://www.storyblok.com/astro-cms)
+- [astro.build > Astro > Astro, TinaCMS and Cloudinary starter](https://astro.build/themes/details/astro-tinacms-and-cloudinary-starter/)
+- [astro.build > Integrations | Astro](https://astro.build/integrations/?search=cms)
+- 
 
 ## SSG
 
@@ -16,12 +50,28 @@ date modified: Monday, February 17th 2025, 9:43 am
 - Hosting
 	- [docs.netlify.com > Astro on Netlify](https://docs.netlify.com/frameworks/astro/)
 	- [astro-platform-starter.netlify.app > Welcome to Astro.](https://astro-platform-starter.netlify.app/)
-- 
+- Templates, Starters
+	- [astro.build > Themes | Astro > portfolio](https://astro.build/themes/?search=&categories%5B%5D=portfolio&price%5B%5D=free)
+		- [github.com > JohnnyCulbreth/macos-terminal-portfolio: Interactive macOS-inspired portfolio with AI-powered chat](https://github.com/JohnnyCulbreth/macos-terminal-portfolio)
+		- [astro.build > Oscar Hernandez | Astro](https://astro.build/themes/details/dark-minimal/)
+		- [astro.build > Astro Milidev | Astro](https://astro.build/themes/details/astro-milidev/)
+		- [astro.build > Webcore Portfolio | Astro](https://astro.build/themes/details/webcore-portfolio/)
+		- [astro.build > Token Template  | Astro](https://astro.build/themes/details/token-template/)
+		- [astro.build > Kaizen - Minimal Portfolio | Astro](https://astro.build/themes/details/kaizen-minimal-portfolio/)
+		- 
 
 ## CMS
 
 ### CMS List
 
+- StudioCMS
+	- [studiocms.dev > StudioCMS](https://studiocms.dev/)
+- BCMS
+	- [thebcms.com > Built for developers](https://thebcms.com/)
+- Builder
+	- [builder.io > Headless CMS For Astro - Drag & Drop CMS - Builder.io](https://www.builder.io/m/astro-cms)
+- Frontmatter
+	- [frontmatter.codes > Headless CMS right in your code editor | Front Matter](https://frontmatter.codes/)
 - Strapi
 	- [jamstack.org > Strapi | Jamstack](https://jamstack.org/headless-cms/strapi/)
 	- [strapi.io > Role Based Access Control - Custom Roles and Permissions](https://strapi.io/features/custom-roles-and-permissions)
