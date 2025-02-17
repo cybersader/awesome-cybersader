@@ -60,7 +60,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Feb 16, 2025 - [[README]]
+> Mon, Feb 17, 2025 - [[Portfolio CMSs]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -90,6 +90,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                       | Last modified            |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                     | Mon - 2/17/2025, 9:35 AM |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                    | Mon - 2/17/2025, 9:34 AM |
+| [[🕸️ Daily Notes/2025/02/2025-02-17-Monday/2025-02-17-Monday.md\|2025-02-17-Monday]]                      | Mon - 2/17/2025, 9:34 AM |
 | [[README.md\|README]]                                                                                      | Sun - 2/16/2025, 8:00 PM |
 | [[🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md\|Datetime Formatting]]                       | Sun - 2/16/2025, 6:57 PM |
 | [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                 | Sun - 2/16/2025, 6:57 PM |
@@ -97,9 +100,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                         | Sun - 2/16/2025, 6:10 PM |
 | [[📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md\|Cyberbase Obsidian Publish]] | Sun - 2/16/2025, 4:37 PM |
 | [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                          | Sun - 2/16/2025, 4:33 PM |
-| [[📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md\|Knowledge Organization]] | Sun - 2/16/2025, 4:18 PM |
-| [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                     | Sun - 2/16/2025, 3:59 PM |
-| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]             | Sun - 2/16/2025, 3:37 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

@@ -1,0 +1,142 @@
+.cm-cursor-overlay {
+	left: -1%;
+	top: -2.2rem;
+	width: 102%;
+	position: absolute;
+	align-items: center;
+	background: var(--background-secondary) !important;
+	color: var(--text-normal);
+	font-size: var(--font-ui-medium);
+	border: 1px solid var(--background-modifier-border) !important;
+	user-select: none;
+	padding: 4px 8px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	visibility: visible;
+}
+
+.cm-cursor-overlay-inner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	overflow: visible;
+}
+
+.cm-tooltip-editor {
+	display: flex;
+	padding: 1px 0 1px 10px;
+	height: var(--line-height);
+	width: auto;
+	max-height: 100%;
+	align-items: center;
+	background-color: var(--background-primary);
+	border: 1px solid var(--background-modifier-border-focus);
+	border-radius: 4px;
+	overflow: visible;
+	margin-left: 8px;
+	flex: 1 0 0;
+	transition: flex-basis 0.3s ease;
+}
+
+.cm-cursor-overlay .cm-editor {
+	user-select: text;
+}
+
+/* Button Styles */
+.submit-button {
+	height: var(--line-height);
+}
+
+.tooltip-button {
+	height: var(--line-height);
+	margin-left: 8px;
+	border: 1px solid var(--background-modifier-border-focus);
+	box-shadow: none !important;
+}
+
+/* Loader Animation */
+.loader {
+	width: 5px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	color: var(--text-normal);
+	background: var(--background-primary);
+	animation: l5 1s infinite linear alternate;
+	margin: 0 20px 0 26px;
+	display: flex;
+}
+.loader.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+@keyframes l5 {
+	0%,
+	33% {
+		box-shadow: 10px 0 var(--text-accent), -10px 0 var(--text-faint);
+		background: var(--text-accent);
+	}
+	66%,
+	100% {
+		box-shadow: 10px 0 var(--text-faint), -10px 0 var(--text-accent);
+		background: var(--text-faint);
+	}
+}
+
+.cm-change-widget {
+	padding: 0px 4px;
+	color: var(--text-normal);
+	background-color: var(--background-primary-alt);
+}
+
+.cm-change-added {
+	background-color: rgba(var(--color-green-rgb), 0.2);
+}
+
+.cm-change-removed {
+	background-color: rgba(var(--color-red-rgb), 0.2);
+}
+
+.primary-action {
+	background-color: var(--interactive-accent) !important;
+	color: var(--text-on-accent) !important;
+}
+
+.tooltip-button:hover {
+	opacity: 0.8;
+}
+
+/* Style for the advanced text areas */
+.wide-text-settings {
+	width: 25em;
+	height: 10em;
+}
+
+/* Custom reccomendations */
+.cm-tooltip-autocomplete {
+	background-color: var(--background-secondary) !important;
+	color: var(--text-normal) !important;
+	font-size: var(--font-ui-small) !important;	
+}
+
+.cm-tooltip.cm-tooltip-below{
+	top: auto !important;
+	bottom: -2.2rem !important;
+
+}
+.cm-completionLabel{
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-normal);
+}
+
+/* Slash command highlighting */
+.cm-slashCommand {
+  color: var(--text-accent);
+  
+}

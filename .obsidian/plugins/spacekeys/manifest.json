@@ -1,0 +1,10 @@
+{
+	"id": "spacekeys",
+	"name": "Spacekeys",
+	"version": "0.3.1",
+	"minAppVersion": "1.7.0",
+	"description": "Define hotkeys based on sequences of keypresses.",
+	"author": "Jared Lumpe",
+	"authorUrl": "https://github.com/jlumpe",
+	"isDesktopOnly": true
+}

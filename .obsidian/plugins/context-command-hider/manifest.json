@@ -1,0 +1,10 @@
+{
+	"id": "context-command-hider",
+	"name": "Context Command Hider",
+	"version": "0.0.7",
+	"minAppVersion": "0.12.11",
+	"description": "Hide any command from the right-click menu.",
+	"author": "kzhovn, Mara-Li",
+	"authorUrl": "https://github.com/Mara-Li/",
+	"isDesktopOnly": false
+}
