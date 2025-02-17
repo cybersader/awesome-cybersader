@@ -1,6 +1,6 @@
 {
   "folder": "🕸️ Daily Notes",
-  "autorun": true,
+  "autorun": false,
   "format": "YYYY/MM/YYYY-MM-DD-dddd/YYYY-MM-DD-dddd",
   "template": ""
 }

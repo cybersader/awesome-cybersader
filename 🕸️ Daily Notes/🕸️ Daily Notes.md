@@ -43,5 +43,6 @@ date modified: Tuesday, October 22nd 2024, 7:55 pm
 		- **[[2025-02-14-Friday]]**
 		- **2025-02-15-Saturday**
 		- **[[2025-02-16-Sunday]]**
+		- **[[2025-02-17-Monday]]**
 
 %% End Waypoint %%
