@@ -4,14 +4,22 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, February 17th 2025, 11:37 am
+date modified: Monday, February 17th 2025, 12:45 pm
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
 ---
 
+<div style="text-align: center;">
+  <h1 style="margin-bottom: 10px;">Cybersader</h1>
+  <figure style="display: inline-block; margin: 0;">
+    <img src="_attachments/file-20250217124401299.png" alt="Cybersader art" style="width: 400px; max-width: 100%;">
+	  <br>
+    <figcaption>Welcome to my base in cyberspace</figcaption>
+  </figure>
+</div>
 
-> [!danger] Welcome to my base in cyberspace
+
 
 %%
 ```js
@@ -90,7 +98,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                      | Mon - 2/17/2025, 11:37 AM |
+| [[README.md\|README]]                                                                                      | Mon - 2/17/2025, 12:45 PM |
 | [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                     | Mon - 2/17/2025, 10:14 AM |
 | [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                | Mon - 2/17/2025, 9:38 AM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                    | Mon - 2/17/2025, 9:34 AM  |

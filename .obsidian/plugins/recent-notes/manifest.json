@@ -1,0 +1,10 @@
+{
+	"id": "recent-notes",
+	"name": "Recent Notes",
+	"version": "1.2.1",
+	"minAppVersion": "0.15.0",
+	"description": "List of recently edited notes with previews by time periods",
+	"author": "Kamil Rudnicki",
+	"authorUrl": "https://kamilrudnicki.com",
+	"isDesktopOnly": false
+}

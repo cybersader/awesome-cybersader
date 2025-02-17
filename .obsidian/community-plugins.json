@@ -25,7 +25,6 @@
   "multi-properties",
   "note-refactor-obsidian",
   "omnisearch",
-  "recent-files-obsidian",
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-timestamper",
@@ -46,5 +45,6 @@
   "obsidian-minimal-settings",
   "obsidian-hider",
   "obsidian-style-settings",
-  "obsidian-plugin-groups"
+  "obsidian-plugin-groups",
+  "recent-notes"
 ]
