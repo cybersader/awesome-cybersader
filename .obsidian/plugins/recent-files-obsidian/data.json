@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Portfolio CMSs",
       "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Datetime Formatting",
