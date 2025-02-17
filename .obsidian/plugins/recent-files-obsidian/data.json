@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Datetime Formatting",
+      "path": "🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md"
+    },
+    {
       "basename": "Cyberbase Obsidian Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
+    },
+    {
+      "basename": "Free SVG",
+      "path": "📁 12 - Content Creation/Free SVG/Free SVG.md"
     },
     {
       "basename": "2025-02-16-Sunday",
@@ -106,10 +118,6 @@
     },
     {
       "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "README",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/README.md"
     },
     {
@@ -191,14 +199,6 @@
     {
       "basename": "2025-02-10-Monday",
       "path": "🕸️ Daily Notes/2025/02/2025-02-10-Monday/2025-02-10-Monday.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Quick Local JS Testing",
-      "path": "📁 51 - Cyberbase/Quick Local JS Testing/Quick Local JS Testing.md"
     }
   ],
   "omittedPaths": [],

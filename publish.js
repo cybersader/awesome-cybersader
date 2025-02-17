@@ -128,6 +128,12 @@ function removeFrontmatter() {
   frontmatter.style.display = "none"; // Hides the element
 }
 
+// Function to remove page title for home page
+function removeHeader() {
+  const header = document.querySelector(".mod-header.mod-ui")
+  header.style.display = "none"; // Hides the element
+}
+
 /**
 * checkAndInsert():
 *   Called repeatedly by setInterval. 
@@ -136,6 +142,7 @@ function removeFrontmatter() {
 function checkAndInsert() {
   if (decodeURIComponent(window.location.pathname).replace(/^\/|\/$/g, "") == welcomePage) {
     removeFrontmatter();
+    removeHeader();
     document.querySelector(".header-git-links").style.display = "none";
   } else {
     insertHeaderLinksIfMissing();

@@ -20,6 +20,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 	- **[[AI Content Workflows]]**
 	- **[[Cybersader Art Inspiration]]**
 	- **[[Cybersader Art Prompts]]**
+- **[[Free SVG]]**
 - **[[Mic Setup Audio 2024]]**
 - **[[Persona Creation]]**
 - **[[Presentation Tools & Tech]]**

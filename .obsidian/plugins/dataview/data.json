@@ -19,7 +19,7 @@
   "inlineJsQueryPrefix": "$=",
   "inlineQueriesInCodeblocks": true,
   "enableInlineDataview": true,
-  "enableDataviewJs": false,
+  "enableDataviewJs": true,
   "enableInlineDataviewJs": false,
   "prettyRenderInlineFields": true,
   "prettyRenderInlineFieldsInLivePreview": true,

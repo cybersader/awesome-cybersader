@@ -65,6 +65,12 @@
       "icon": "lucide-calendar-days",
       "name": "Daily notes: Open today's daily note",
       "mode": "any"
+    },
+    {
+      "id": "dataview-publisher:update-blocks-and-publish",
+      "icon": "lucide-upload-cloud",
+      "name": "Dataview Publisher: Update dataview publish blocks and open publish panel",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
