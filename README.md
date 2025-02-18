@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, February 17th 2025, 12:45 pm
+date modified: Tuesday, February 18th 2025, 9:15 am
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Feb 17, 2025 - [[README]]
+> Tue, Feb 18, 2025 - [[2025 Cyber News]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,20 +96,22 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                       | Last modified             |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                      | Mon - 2/17/2025, 12:45 PM |
-| [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                     | Mon - 2/17/2025, 10:14 AM |
-| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                | Mon - 2/17/2025, 9:38 AM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                    | Mon - 2/17/2025, 9:34 AM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-17-Monday/2025-02-17-Monday.md\|2025-02-17-Monday]]                      | Mon - 2/17/2025, 9:34 AM  |
-| [[🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md\|Datetime Formatting]]                       | Sun - 2/16/2025, 6:57 PM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                 | Sun - 2/16/2025, 6:57 PM  |
-| [[📁 12 - Content Creation/Free SVG/Free SVG.md\|Free SVG]]                                                | Sun - 2/16/2025, 6:16 PM  |
-| [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                         | Sun - 2/16/2025, 6:10 PM  |
-| [[📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md\|Cyberbase Obsidian Publish]] | Sun - 2/16/2025, 4:37 PM  |
+| File                                                                                                                                                       | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 9:27 AM  |
+| [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Tue - 2/18/2025, 9:21 AM  |
+| [[README.md\|README]]                                                                                                                                      | Tue - 2/18/2025, 9:21 AM  |
+| [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM  |
+| [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                               | Tue - 2/18/2025, 9:05 AM  |
+| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Theism/Atheism vs Theism.md\|Atheism vs Theism]]                                                       | Tue - 2/18/2025, 9:04 AM  |
+| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Christianity/Atheism vs Christianity.md\|Atheism vs Christianity]]                                     | Tue - 2/18/2025, 9:04 AM  |
+| [[📁 13 - Religion, Ontology, Philosophy/Catholicism vs Protestantism/Catholicism vs Protestantism.md\|Catholicism vs Protestantism]]                      | Tue - 2/18/2025, 9:03 AM  |
+| [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                                                                     | Mon - 2/17/2025, 10:14 AM |
 
 %% DATAVIEW_PUBLISHER: end %%
+
+> [!info]  [📅 Changelog](📅%20Changelog/📅%20Changelog.md) - view more recent activity here
 
 # 📚 About | The Wiki
 

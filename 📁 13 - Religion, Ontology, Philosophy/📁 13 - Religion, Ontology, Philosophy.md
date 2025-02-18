@@ -12,7 +12,11 @@ date modified: Tuesday, November 12th 2024, 10:06 pm
 - **[[⬇️ Ontological Drop]]**
 	- **[[Lex Orandi, Lex Credendi]]**
 	- **[[Pints with Aquinas - JP]]**
+- **[[Atheism vs Christianity]]**
+- **[[Atheism vs Theism]]**
+- **[[Catholicism vs Protestantism]]**
 - **[[Church Operations During Conflict]]**
+- **[[Dangers of Indifference to Religion]]**
 - **[[Jesus and the Eucharist - Augustine Institute]]**
 - **[[Marriage]]**
 - **[[Parenthood]]**

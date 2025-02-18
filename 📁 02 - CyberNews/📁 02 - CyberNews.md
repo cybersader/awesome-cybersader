@@ -13,5 +13,6 @@ date modified: Friday, March 22nd 2024, 10:32 am
 	- **[[07 - July Cyber News]]**
 	- **[[08 - August Cyber News]]**
 	- [[US Privacy News]]
+- **[[2025 Cyber News]]**
 
 %% End Waypoint %%

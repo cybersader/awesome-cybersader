@@ -186,7 +186,7 @@
         "startupType": "disabled"
       },
       "frontmatter-links": {
-        "startupType": "disabled"
+        "startupType": "short"
       },
       "obsidian-git": {
         "startupType": "instant"
@@ -588,7 +588,7 @@
         "startupType": "disabled"
       },
       "dataview-publisher": {
-        "startupType": "disabled"
+        "startupType": "short"
       },
       "dataview-serializer": {
         "startupType": "disabled"
@@ -774,7 +774,7 @@
         "startupType": "disabled"
       },
       "frontmatter-markdown-links": {
-        "startupType": "disabled"
+        "startupType": "short"
       },
       "obsidian-fuzzytag": {
         "startupType": "disabled"
