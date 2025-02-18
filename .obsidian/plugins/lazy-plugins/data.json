@@ -826,6 +826,36 @@
       },
       "supercharged-links-obsidian": {
         "startupType": "disabled"
+      },
+      "clone-vault": {
+        "startupType": "disabled"
+      },
+      "context-command-hider": {
+        "startupType": "disabled"
+      },
+      "dataview-autocompletion": {
+        "startupType": "disabled"
+      },
+      "obsidian-icon-shortcodes": {
+        "startupType": "disabled"
+      },
+      "inline-encrypter": {
+        "startupType": "disabled"
+      },
+      "inlineai": {
+        "startupType": "disabled"
+      },
+      "recent-notes": {
+        "startupType": "instant"
+      },
+      "sheet-plus": {
+        "startupType": "disabled"
+      },
+      "spacekeys": {
+        "startupType": "disabled"
+      },
+      "tag-tactician": {
+        "startupType": "disabled"
       }
     }
   }
