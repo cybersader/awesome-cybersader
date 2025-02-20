@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Tue, Feb 18, 2025 - [[2025 Cyber News]]
+> Wed, Feb 19, 2025 - [[2025-02-19-Wednesday]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,18 +96,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                                       | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 9:27 AM  |
-| [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Tue - 2/18/2025, 9:21 AM  |
-| [[README.md\|README]]                                                                                                                                      | Tue - 2/18/2025, 9:21 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                               | Tue - 2/18/2025, 9:05 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Theism/Atheism vs Theism.md\|Atheism vs Theism]]                                                       | Tue - 2/18/2025, 9:04 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Christianity/Atheism vs Christianity.md\|Atheism vs Christianity]]                                     | Tue - 2/18/2025, 9:04 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/Catholicism vs Protestantism/Catholicism vs Protestantism.md\|Catholicism vs Protestantism]]                      | Tue - 2/18/2025, 9:03 AM  |
-| [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                                                                     | Mon - 2/17/2025, 10:14 AM |
+| File                                                                                                                                                       | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Wed - 2/19/2025, 9:45 PM |
+| [[README.md\|README]]                                                                                                                                      | Wed - 2/19/2025, 9:45 PM |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Wed - 2/19/2025, 9:38 PM |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM |
+| [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM |
+| [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM |
+| [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                               | Tue - 2/18/2025, 9:05 AM |
+| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Theism/Atheism vs Theism.md\|Atheism vs Theism]]                                                       | Tue - 2/18/2025, 9:04 AM |
+| [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Christianity/Atheism vs Christianity.md\|Atheism vs Christianity]]                                     | Tue - 2/18/2025, 9:04 AM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
