@@ -16,10 +16,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:13 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 8:37 PM  |
+| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 8:37 PM  |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Wed - 2/19/2025, 9:45 PM  |
-| [[README.md\|README]]                                                                                                                                      | Wed - 2/19/2025, 9:45 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Wed - 2/19/2025, 9:38 PM  |
 | [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
 | [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
 | [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM  |
@@ -65,6 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 16 - Society, Culture, Politics, Government/⬇️ Society Drop/⬇️ Society Drop.md\|⬇️ Society Drop]]                                                     | Tue - 2/11/2025, 8:00 PM  |
 | [[📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md\|📁 31 - Education, Pedagogy]]                                                                | Tue - 2/11/2025, 7:58 PM  |
 | [[📁 51 - Cyberbase/Cyberbase Prompts/Cyberbase Prompts.md\|Cyberbase Prompts]]                                                                            | Tue - 2/11/2025, 6:46 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-11-Tuesday/2025-02-11-Tuesday.md\|2025-02-11-Tuesday]]                                                                   | Tue - 2/11/2025, 8:41 AM  |
 
 %% DATAVIEW_PUBLISHER: end %%

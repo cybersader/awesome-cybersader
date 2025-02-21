@@ -243,5 +243,14 @@
       ],
       "key": "T"
     }
+  ],
+  "workspace:close": [],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
   ]
 }
