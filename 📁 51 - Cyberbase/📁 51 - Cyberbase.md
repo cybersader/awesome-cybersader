@@ -43,6 +43,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Obsidian Plugins that Affect CSS]]**
 - **[[Obsidian Publish Analytics]]**
 - **[[Obsidian Publish SEO]]**
+- **[[Obsidian Roadmaps]]**
 - **[[Portfolio CMSs]]**
 - **[[Quick Local JS Testing]]**
 - **[[Static Website Services]]**

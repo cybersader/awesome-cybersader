@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, December 5th 2024, 8:09 pm
-date modified: Friday, February 7th 2025, 7:05 pm
+date modified: Friday, February 21st 2025, 4:19 pm
 ---
 
 # Multicast, UPnP, IGMP
@@ -118,3 +118,7 @@ What can get it working:
 
 - [Solved: Netgear Address Reservation - Invalid MAC Address [Workaround] - iFixit Repair Guide](https://www.ifixit.com/Guide/Solved:+Netgear+Address+Reservation+-+Invalid+MAC+Address+%5BWorkaround%5D/162994)
 - ![](_attachments/file-20241205201805625.png)
+
+# Static Port Mapping
+
+- 
