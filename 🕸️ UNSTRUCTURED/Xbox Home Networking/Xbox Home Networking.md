@@ -121,4 +121,5 @@ What can get it working:
 
 # Static Port Mapping
 
+- [docs.netgate.com > Outbound NAT | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/nat/outbound.html#working-with-manual-outbound-nat-rules)
 - 
