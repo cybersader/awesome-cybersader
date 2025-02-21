@@ -16,10 +16,13 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]                                                                    | Fri - 2/21/2025, 5:08 PM  |
+| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                              | Fri - 2/21/2025, 4:14 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                                            | Fri - 2/21/2025, 4:07 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Fri - 2/21/2025, 1:09 PM  |
+| [[README.md\|README]]                                                                                                                                      | Fri - 2/21/2025, 1:09 PM  |
 | [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                                                                                 | Fri - 2/21/2025, 1:05 PM  |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                            | Fri - 2/21/2025, 12:35 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 9:18 PM  |
-| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 9:18 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
@@ -46,7 +49,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[🕸️ UNSTRUCTURED/Digital Garden.md\|Digital Garden]]                                                                                                     | Sun - 2/16/2025, 3:22 PM  |
 | [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md\|Wiki, KB, KMS]]                                                                                | Sun - 2/16/2025, 3:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-16-Sunday/2025-02-16-Sunday.md\|2025-02-16-Sunday]]                                                                      | Sun - 2/16/2025, 3:09 PM  |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                              | Sun - 2/16/2025, 2:09 PM  |
 | [[📁 51 - Cyberbase/WikiJS Examples/WikiJS Examples.md\|WikiJS Examples]]                                                                                  | Sun - 2/16/2025, 2:04 PM  |
 | [[📁 37 - Music/📁 37 - Music.md\|📁 37 - Music]]                                                                                                          | Sun - 2/16/2025, 1:54 PM  |
 | [[📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md\|AI Content Workflows]]                                         | Sat - 2/15/2025, 6:10 PM  |
@@ -64,7 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 51 - Cyberbase/Cyberbase Prompts/CB2 - Testing & Properties/CB2 - Testing & Properties.md\|CB2 - Testing & Properties]]                               | Wed - 2/12/2025, 1:48 PM  |
 | [[📁 51 - Cyberbase/Cyberbase JS & Services/Cyberbase JS & Services.md\|Cyberbase JS & Services]]                                                          | Tue - 2/11/2025, 9:43 PM  |
 | [[📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md\|CB1 - Customize Publish]]                                        | Tue - 2/11/2025, 8:45 PM  |
-| [[📁 14 - Journal, Diary/📁 14 - Journal, Diary.md\|📁 14 - Journal, Diary]]                                                                               | Tue - 2/11/2025, 8:06 PM  |
-| [[📁 16 - Society, Culture, Politics, Government/⬇️ Society Drop/⬇️ Society Drop.md\|⬇️ Society Drop]]                                                     | Tue - 2/11/2025, 8:00 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, Feb 21, 2025 - [[StudyGRC]]
+> Fri, Feb 21, 2025 - [[Xbox Home Networking]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,18 +96,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                                       | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                                                                                 | Fri - 2/21/2025, 1:05 PM  |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                            | Fri - 2/21/2025, 12:35 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 9:18 PM  |
-| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 9:18 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
-| [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM  |
+| File                                                                                           | Last modified             |
+| ---------------------------------------------------------------------------------------------- | ------------------------- |
+| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]        | Fri - 2/21/2025, 5:08 PM  |
+| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                  | Fri - 2/21/2025, 4:14 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                | Fri - 2/21/2025, 4:07 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                 | Fri - 2/21/2025, 1:09 PM  |
+| [[README.md\|README]]                                                                          | Fri - 2/21/2025, 1:09 PM  |
+| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                     | Fri - 2/21/2025, 1:05 PM  |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                | Fri - 2/21/2025, 12:35 PM |
+| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]    | Thu - 2/20/2025, 9:18 PM  |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                        | Thu - 2/20/2025, 8:12 PM  |
+| [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]] | Wed - 2/19/2025, 9:47 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
