@@ -16,9 +16,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                                                                                 | Fri - 2/21/2025, 1:05 PM  |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                            | Fri - 2/21/2025, 12:35 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 9:18 PM  |
+| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 9:18 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 9:17 PM  |
-| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 9:17 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
 | [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
@@ -64,7 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md\|CB1 - Customize Publish]]                                        | Tue - 2/11/2025, 8:45 PM  |
 | [[📁 14 - Journal, Diary/📁 14 - Journal, Diary.md\|📁 14 - Journal, Diary]]                                                                               | Tue - 2/11/2025, 8:06 PM  |
 | [[📁 16 - Society, Culture, Politics, Government/⬇️ Society Drop/⬇️ Society Drop.md\|⬇️ Society Drop]]                                                     | Tue - 2/11/2025, 8:00 PM  |
-| [[📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md\|📁 31 - Education, Pedagogy]]                                                                | Tue - 2/11/2025, 7:58 PM  |
-| [[📁 51 - Cyberbase/Cyberbase Prompts/Cyberbase Prompts.md\|Cyberbase Prompts]]                                                                            | Tue - 2/11/2025, 6:46 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
