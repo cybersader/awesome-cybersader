@@ -16,9 +16,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:13 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 8:37 PM  |
-| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 8:37 PM  |
+| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Thu - 2/20/2025, 9:17 PM  |
+| [[README.md\|README]]                                                                                                                                      | Thu - 2/20/2025, 9:17 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
 | [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
