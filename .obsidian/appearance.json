@@ -4,5 +4,8 @@
   "cssTheme": "Minimal",
   "baseFontSizeAction": false,
   "theme": "system",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "mermaid_gantt"
+  ]
 }

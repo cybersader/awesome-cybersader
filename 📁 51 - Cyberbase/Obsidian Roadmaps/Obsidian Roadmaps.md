@@ -4,8 +4,10 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Friday, February 21st 2025, 8:29 pm
+date modified: Friday, February 21st 2025, 9:32 pm
 ---
+
+- [forum.obsidian.md > How to style GANTT chart (mermaid)? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-to-style-gantt-chart-mermaid/47883/5)
 
 # Gantt chart view of Tasks
 
@@ -42,7 +44,6 @@ childLaneOption:: "breadcrumb"
 
 quarterDivider:: "[Q#]"
 
-tickInterval:: "1month"
 # TEST DATAVIEW 9
 
 ```dataviewjs
@@ -97,7 +98,7 @@ const config = {
   quarterDivider: dv.current().quarterDivider || "›",
   topLevelCrit: dv.current().topLevelCrit !== false,        // default true
   childLaneOption: dv.current().childLaneOption || "breadcrumb", // "breadcrumb" or "full"
-  tickInterval: dv.current().tickInterval || "1month" // Controls vertical grid lines
+  // TODO - can't be adjusted in Obsidian as of 2025 - 'tickInterval: dv.current().tickInterval || "1month" // Controls vertical grid lines
 };
 
 // ----------------------
@@ -199,6 +200,7 @@ if (tasks.length > 0) {
   if (config) {
     mermaidCode += "---\n";
     mermaidCode += "displayMode: " + config.displayMode + "\n";
+    mermaidCode += "numberSectionStyles: 5\n";
     //mermaidCode += "titleTopMargin: 25\n";
     //mermaidCode += "barHeight: 20\n";  // The height of the bars in the graph
     //mermaidCode += "barGap: 4\n";  // The margin between the different activities in the gantt diagram
@@ -209,8 +211,8 @@ if (tasks.length > 0) {
     //mermaidCode += "fontSize: 12\n";  // Font size
     //mermaidCode += "sectionFontSize: 24\n";  // Font size for sections
     //mermaidCode += "numberSectionStyles: 1\n";  // The number of alternating section styles
-    //mermaidCode += "axisFormat: '%d/%m'\n";  // Date/time format of the axis
-    mermaidCode += "tickInterval: '1week'\n";  // Axis ticks
+    mermaidCode += "axisFormat: '%d/%m'\n";  // Date/time format of the axis
+    mermaidCode += "tickInterval: '1month'\n";  // Axis ticks
     mermaidCode += "topAxis: true\n";  // When this flag is set, date labels will be added to the top of the chart
     mermaidCode += "weekday: 'sunday'\n";  // On which day a week-based interval should start
     mermaidCode += "---\n";

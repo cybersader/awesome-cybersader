@@ -1,0 +1,5 @@
+.mermaid .grid .tick line {
+	stroke: gray !important;
+	stroke-dasharray: 3;
+	opacity: 1 !important;
+}
