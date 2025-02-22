@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Friday, February 21st 2025, 9:32 pm
+date modified: Friday, February 21st 2025, 9:35 pm
 ---
 
 - [forum.obsidian.md > How to style GANTT chart (mermaid)? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-to-style-gantt-chart-mermaid/47883/5)
@@ -15,12 +15,6 @@ date modified: Friday, February 21st 2025, 9:32 pm
 
 1. Not all tasks need to go in ganttcharts: only place long terms tasks here.
 2. To mark a task for gantt chart, put hashtag #ganttchart on it and ensure start and due date is marked that will plot the entry based on priority.
-
-- [ ] IR #roadmap 🚩 🔺 ➕ 2025-02-21 🛫 2025-04-25 📅 2025-06-05
-- [ ] Test time #roadmap/dfir 🛫 2025-04-15 📅 2025-09-15
-- [ ] yrdy 3 #roadmap/dfir/child 🛫 2025-02-27 📅 2025-05-15
-- [ ] test_deep #roadmap/dfir/child/deeper 🛫 2025-04-02 📅 2025-08-12
-- [ ] test #roadmap/secops/vulnmgmt 🛫 2025-09-16 📅 2025-11-12
 
 roadmapTitle:: "Roadmap"
 roadmapDateFormat:: "YYYY-MM-DD"
@@ -43,6 +37,12 @@ childLaneOption:: "breadcrumb"
 >  "breadcrumb" (default) or "full"
 
 quarterDivider:: "[Q#]"
+
+- [ ] IR #roadmap 🚩 🔺 ➕ 2025-02-21 🛫 2025-04-25 📅 2025-06-05
+- [ ] Test time #roadmap/dfir 🛫 2025-04-15 📅 2025-09-15
+- [ ] yrdy 3 #roadmap/dfir/child 🛫 2025-02-27 📅 2025-05-15
+- [ ] test_deep #roadmap/dfir/child/deeper 🛫 2025-04-02 📅 2025-08-12
+- [ ] test #roadmap/secops/vulnmgmt 🛫 2025-09-16 📅 2025-11-12
 
 # TEST DATAVIEW 9
 
