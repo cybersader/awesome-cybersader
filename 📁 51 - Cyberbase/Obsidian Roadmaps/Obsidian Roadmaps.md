@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Friday, February 21st 2025, 6:15 pm
+date modified: Friday, February 21st 2025, 7:23 pm
 ---
 
 # Gantt chat view of Tasks
@@ -120,7 +120,7 @@ tags includes #roadmap
 
 - [ ] IR #roadmap 🚩 🔺 ➕ 2025-02-21 🛫 2025-04-25 📅 2025-06-05
 - [ ] Test time #roadmap/dfir 🛫 2025-04-15 📅 2025-09-15
-- [ ] yrdy 3 #roadmap/dfir/blah 🛫 2025-02-27 📅 2025-05-15
+- [ ] yrdy 3 #roadmap/child/deeper_child 🛫 2025-02-27 📅 2025-05-15
 
 roadmapTitle:: "Initiative Roadmap"
 roadmapDateFormat:: "YYYY-MM-DD"
@@ -128,12 +128,239 @@ roadmapAxisFormat:: "%d-%b"
 roadmapDefaultLane:: "General Roadmap"
 roadmapOverdueSuffix:: " overdue"
 roadmapOverdueFlag:: "crit"
-displayMode:: "compact"      # Optional: use "compact" to show multiple tasks per row
-ganttStart:: "2025-01-01"    # Chart start boundary
-ganttEnd:: "2025-12-31"      # Chart end boundary
-showStart:: true             # Include start date in label?
-showDue:: true               # Include due date in label?
-showCreation:: false         # Include creation date in label? (Uses file ctime)
+displayMode:: "compact"
+ganttStart:: "2025-01-01"
+ganttEnd:: "2025-12-31"
+showStart:: false            
+showDue:: false 
+showCreation:: false
+displayMode:: "compact"
+dateRangePattern:: "MM/DD" 
+showQuarters:: true
+topDivider:: "°"
+bottomDivider:: "•"
+
+# TEST DATAVIEW 7
+
+```dataviewjs
+// ----------------------
+// Helper Functions & Config
+// ----------------------
+
+// Priority mapping based on emojis.
+const priorityMap = {
+  "🔺": "Highest",
+  "⏫": "High",
+  "⏺️": "Medium",
+  "🔽": "Low",
+  "⏬": "Lowest"
+};
+
+const getPriority = (text) => {
+  for (let emoji in priorityMap) {
+    if (text.includes(emoji)) return priorityMap[emoji];
+  }
+  return "";
+};
+
+// Determine task status based on markers and priority.
+const getStatus = (text, priority, dueDate) => {
+  if (text.includes("🔺") || text.includes("🚩")) return "milestone";
+  if (new Date(dueDate) < new Date() ) return config.overdueFlag;
+  if (priority === "Highest") return "crit";
+  if (priority === "Low" || priority === "Lowest") return "inactive";
+  return "active";
+};
+
+// Read configuration from frontmatter.
+const config = {
+  title: dv.current().roadmapTitle || "Roadmap Tasks",
+  dateFormat: dv.current().roadmapDateFormat || "YYYY-MM-DD",
+  axisFormat: dv.current().roadmapAxisFormat || "%d-%b",
+  defaultLane: dv.current().roadmapDefaultLane || "General Roadmap",
+  overdueSuffix: dv.current().roadmapOverdueSuffix || " overdue",
+  overdueFlag: dv.current().roadmapOverdueFlag || "crit",
+  displayMode: dv.current().displayMode || "",
+  ganttStart: dv.current().ganttStart || "",
+  ganttEnd: dv.current().ganttEnd || "",
+  dateRangePattern: dv.current().dateRangePattern || "",  // e.g., "MM/DD"
+  showQuarters: dv.current().showQuarters !== false,       // default true
+  topDivider: dv.current().topDivider || "°",
+  bottomDivider: dv.current().bottomDivider || "•"
+};
+
+// ----------------------
+// Text Processing
+// ----------------------
+
+// Given a task text, strip out hashtags and marker emojis and dates.
+// Also, extract any nested roadmap segments.
+function processTaskText(text) {
+  // Extract roadmap segments up to 4 levels.
+  const roadmapRegex = /#roadmap(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?/;
+  let m = text.match(roadmapRegex);
+  let lane = config.defaultLane;
+  let childChain = [];
+  if (m) {
+    if (m[1]) lane = m[1];
+    for (let i = 2; i < m.length; i++) {
+      if (m[i]) childChain.push(m[i]);
+    }
+  }
+  // Remove all hashtags.
+  let pureText = text.replace(/#[\w\/-]+/g, "");
+  // Remove marker emojis (common ones used).
+  pureText = pureText.replace(/[🚩🔺⏫⏺️🔽⏬➕🛫📅]/g, "");
+  // Remove any dates (format YYYY-MM-DD) that might be inline.
+  pureText = pureText.replace(/\d{4}-\d{2}-\d{2}/g, "");
+  // Collapse extra whitespace.
+  pureText = pureText.replace(/\s+/g, " ").trim();
+  return { baseTitle: pureText, lane: lane, childChain: childChain };
+}
+
+// ----------------------
+// Main Task Processing & Grouping
+// ----------------------
+
+// Filter tasks that include #ganttchart or #roadmap and have start & due.
+const tasks = dv.pages("")
+  .file.tasks
+  .where(t => (t.text.includes("#ganttchart") || t.text.includes("#roadmap"))
+         && t.start && t.due && !t.completed && t.status != "-");
+
+// Group tasks by lane.
+const laneGroups = {};
+
+tasks.forEach(task => {
+  let startDate = task.start.toString().split("T")[0];
+  let dueDate = task.due.toString().split("T")[0];
+  
+  // Process text.
+  let { baseTitle, lane, childChain } = processTaskText(task.text);
+  
+  // Build a compact date range string if configured.
+  let dateRangeStr = "";
+  if (config.dateRangePattern) {
+    dateRangeStr = " [" + moment(startDate).format(config.dateRangePattern)
+      + " - " + moment(dueDate).format(config.dateRangePattern) + "]";
+  }
+  
+  // Determine priority.
+  let priority = getPriority(task.text);
+  
+  // Append priority in parentheses.
+  let priorityStr = "";
+  if (priority == ""){
+	  priorityStr = "";
+	}else {
+	  priorityStr = " (" + priority + ")";
+	}
+  
+  
+  // Optionally append child groups if any.
+  let childStr = "";
+  if (childChain.length > 0) {
+    childStr = " (" + childChain.join("/") + ")";
+  }
+  
+  // Final label: base text + date range + child groups + priority.
+  let finalLabel = baseTitle + dateRangeStr + childStr + priorityStr;
+  
+  // Determine status.
+  let status = getStatus(task.text, priority, dueDate);
+  
+  // Construct the mermaid task line.
+  let taskLine = "    " + finalLabel + " :" + status + ", " + startDate + ", " + dueDate;
+  
+  // Group by lane.
+  if (!laneGroups[lane]) laneGroups[lane] = [];
+  laneGroups[lane].push(taskLine);
+});
+
+// ----------------------
+// Build Mermaid Code Output
+// ----------------------
+if (tasks.length > 0) {
+  let mermaidCode = "```mermaid\n";
+  
+  // Embed displayMode front matter if set.
+  if (config.displayMode) {
+    mermaidCode += "---\n";
+    mermaidCode += "displayMode: " + config.displayMode + "\n";
+    mermaidCode += "---\n";
+  }
+  
+  mermaidCode += "gantt\n";
+  mermaidCode += "    title " + config.title + "\n";
+  mermaidCode += "    dateFormat " + config.dateFormat + "\n";
+  mermaidCode += "    axisFormat " + config.axisFormat + "\n";
+  mermaidCode += "    excludes weekends\n";
+  
+  // Top divider section with dummy START task.
+  if (config.ganttStart) {
+    mermaidCode += "section " + config.topDivider + "\n";
+    mermaidCode += "    START :milestone, " + config.ganttStart + ", " + config.ganttStart + "\n";
+  }
+  
+  // For each lane (e.g. General Roadmap, dfir, etc.)
+  for (const lane in laneGroups) {
+    mermaidCode += "\nsection " + lane + "\n";
+    mermaidCode += laneGroups[lane].join("\n") + "\n";
+  }
+  
+  // Bottom divider section: add quarter markers if enabled, then dummy END task.
+  mermaidCode += "\nsection " + config.bottomDivider + "\n";
+  if (config.showQuarters && config.ganttStart && config.ganttEnd) {
+    let startYear = new Date(config.ganttStart).getFullYear();
+    let endYear = new Date(config.ganttEnd).getFullYear();
+    console.log(`${startYear} through ${endYear}`);
+    if (startYear === endYear) {
+      let q1 = new Date(startYear, 3, 0).toISOString().split("T")[0];
+      let q2 = new Date(startYear, 6, 0).toISOString().split("T")[0];
+      let q3 = new Date(startYear, 9, 0).toISOString().split("T")[0];
+      let q4 = new Date(startYear, 12, 0).toISOString().split("T")[0];
+      mermaidCode += "    Q1 :milestone, " + q1 + ", " + q1 + "\n";
+      mermaidCode += "    Q2 :milestone, " + q2 + ", " + q2 + "\n";
+      mermaidCode += "    Q3 :milestone, " + q3 + ", " + q3 + "\n";
+      mermaidCode += "    Q4 :milestone, " + q4 + ", " + q4 + "\n";
+    }
+  }
+  if (config.ganttEnd) {
+    mermaidCode += "    END :milestone, " + config.ganttEnd + ", " + config.ganttEnd + "\n";
+  }
+  
+  mermaidCode += "```";
+  console.log(mermaidCode);
+  dv.el("pre", mermaidCode);
+} else {
+  dv.paragraph("No tasks found with #ganttchart or #roadmap marker and valid start/due dates.");
+}
+```
+
+```mermai
+---
+displayMode: compact,compact
+---
+gantt
+    title Initiative Roadmap
+    dateFormat YYYY-MM-DD
+    axisFormat %d-%b
+    excludes weekends
+section °
+    START :milestone, 2025-01-01, 2025-01-01
+
+section General Roadmap
+    IR [04/25 - 06/05] (Highest) :milestone, 2025-04-25, 2025-06-05
+
+section dfir
+    Test time [04/15 - 09/15] (Medium) :active, 2025-04-15, 2025-09-15
+
+section child
+    yrdy 3 [02/27 - 05/15] (deeper_child) (Medium) :active, 2025-02-27, 2025-05-15
+
+section •
+    END :milestone, 2025-12-31, 2025-12-31
+```
 
 # TEST DATAVIEW 6
 
@@ -314,7 +541,7 @@ if (tasks.length > 0) {
 
 # TEST DATAVIEW 5
 
-```dataviewjs
+```js
 // Configuration options pulled from front matter or inline fields.
 const config = {
   title: dv.current().roadmapTitle || "Roadmap Tasks",
@@ -433,29 +660,9 @@ if (tasks.length > 0) {
 }
 ```
 
-```mermaid
----
-displayMode: "compact"      # Optional: use "compact" to show multiple tasks per row
----
-gantt
-    title Initiative Roadmap
-    dateFormat YYYY-MM-DD
-    axisFormat %d-%b
-section __Chart Range__
-    START :milestone, "2025-01-01"    # Chart start boundary, "2025-01-01"    # Chart start boundary
-    END   :milestone, "2025-12-31"      # Chart end boundary, "2025-12-31"      # Chart end boundary
-
-section General Roadmap
-    IR  🚩 🔺 ➕ 2025-02-21 🛫 2025-04-25 📅 2025-06-05 [Highest] S:2025-04-25 D:2025-06-05 :milestone, 2025-04-25, 2025-06-05
-
-section dfir
-    Test time  🛫 2025-04-15 📅 2025-09-15 [Medium] S:2025-04-15 D:2025-09-15 :active, 2025-04-15, 2025-09-15
-    (blah) yrdy 3  🛫 2025-02-27 📅 2025-05-15 [Medium] S:2025-02-27 D:2025-05-15 :active, 2025-02-27, 2025-05-15
-```
-
 # TEST DATAVIEW 4
 
-```dataviewjs
+```js
 // Configuration options pulled from inline dataview fields or default values.
 const config = {
   title: dv.current().roadmapTitle || "Roadmap Tasks",
