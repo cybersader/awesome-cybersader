@@ -96,18 +96,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                           | Last modified             |
-| ---------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                | Sun - 2/23/2025, 12:57 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                 | Sun - 2/23/2025, 12:23 PM |
-| [[README.md\|README]]                                                                          | Sun - 2/23/2025, 12:23 PM |
-| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]        | Fri - 2/21/2025, 5:08 PM  |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                  | Fri - 2/21/2025, 4:14 PM  |
-| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                     | Fri - 2/21/2025, 1:05 PM  |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                | Fri - 2/21/2025, 12:35 PM |
-| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]    | Thu - 2/20/2025, 9:18 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                        | Thu - 2/20/2025, 8:12 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]] | Wed - 2/19/2025, 9:47 PM  |
+| File                                                                                        | Last modified             |
+| ------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]             | Sun - 2/23/2025, 1:10 PM  |
+| [[🕸️ UNSTRUCTURED/RSS/RSS.md\|RSS]]                                                        | Sun - 2/23/2025, 12:59 PM |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                  | Sun - 2/23/2025, 12:59 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                              | Sun - 2/23/2025, 12:57 PM |
+| [[README.md\|README]]                                                                       | Sun - 2/23/2025, 12:57 PM |
+| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]     | Fri - 2/21/2025, 5:08 PM  |
+| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                               | Fri - 2/21/2025, 4:14 PM  |
+| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                  | Fri - 2/21/2025, 1:05 PM  |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]             | Fri - 2/21/2025, 12:35 PM |
+| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]] | Thu - 2/20/2025, 9:18 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
