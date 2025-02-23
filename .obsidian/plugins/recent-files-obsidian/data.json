@@ -5,6 +5,10 @@
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md"
     },
     {
+      "basename": "RSS",
+      "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
+    },
+    {
       "basename": "Xbox Home Networking",
       "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Awesome AI",
       "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
-    },
-    {
-      "basename": "Stable Diffusion Setup",
-      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md"
     }
   ],
   "omittedPaths": [],

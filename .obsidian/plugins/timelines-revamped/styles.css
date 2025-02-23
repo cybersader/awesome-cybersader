@@ -89,6 +89,7 @@
 }
 .timeline-container.timeline-tail > h2 {
   padding-top: 20px;
+  display: flex;
 }
 .timeline-container.timeline-tail > h2::before {
   content: "";
