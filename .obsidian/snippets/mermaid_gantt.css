@@ -3,3 +3,9 @@
 	stroke-dasharray: 3;
 	opacity: 1 !important;
 }
+
+.mermaid {
+	display: flex !important;
+	font-size: 9px;
+	justify-content: center;
+}
