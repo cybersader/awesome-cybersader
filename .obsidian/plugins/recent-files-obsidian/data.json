@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Datetime Formatting",
-      "path": "🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md"
+      "basename": "Dataview and Chronos Roadmap",
+      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
+    },
+    {
+      "basename": "Dataview & Mermaid Roadmaps",
+      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md"
     },
     {
       "basename": "Obsidian Roadmaps",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md"
+    },
+    {
+      "basename": "Datetime Formatting",
+      "path": "🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md"
     },
     {
       "basename": "RSS",
@@ -191,14 +199,6 @@
     {
       "basename": "Content Curation",
       "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
-    },
-    {
-      "basename": "Persona Creation",
-      "path": "📁 12 - Content Creation/Persona Creation/Persona Creation.md"
-    },
-    {
-      "basename": "Awesome AI",
-      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     }
   ],
   "omittedPaths": [],
