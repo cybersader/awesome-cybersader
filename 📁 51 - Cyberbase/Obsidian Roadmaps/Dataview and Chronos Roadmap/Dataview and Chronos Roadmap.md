@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Sunday, February 23rd 2025, 4:26 pm
+date modified: Sunday, February 23rd 2025, 6:53 pm
 ---
 
 roadmapTitle:: "Roadmap"
@@ -59,8 +59,9 @@ Extra features:
 - When a created date is used and no other date, use a point with a purple color
 - When a started date is used and no other date, use a point with a green color
 - When a due date is used and no other date, use a point with a red color
-- When a frontmatter named "marker_NAME_HERE: date" is used, make a grey pointer at that date with that name
-- 
+- When a frontmatter property named "marker__COLOR_NAME_HERE: date" is used, make a pointer at that date with that name and color
+- When a frontmatter property named "group_NAME_HERE: date_range" is used, make a group at that range with that name
+- When a frontmatter property named "period_COLOR_NAME_HERE: date_range" is used, make a period at that range with that name and color
 
 ## TEST ZONE
 
