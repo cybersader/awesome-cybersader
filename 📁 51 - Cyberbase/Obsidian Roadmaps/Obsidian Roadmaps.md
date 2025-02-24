@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Monday, February 24th 2025, 11:55 am
+date modified: Monday, February 24th 2025, 5:22 pm
 ---
 
 %% Begin Waypoint %%
@@ -24,44 +24,41 @@ date modified: Monday, February 24th 2025, 11:55 am
 	- IR stuff
 - [ ] Test time #roadmap/dfir 🛫 2025-04-15 📅 2025-09-15
 - [ ] yrdy 3 #roadmap/dfir/child 🛫 2025-02-27 📅 2025-05-15
-- [ ] test_deep #roadmap/dfir/child/deeper 🛫 2025-04-02 📅 2025-08-12
+- [ ] test_deep #roadmap/dfir/child/deeper 🛫 2025-04-02 
 - [ ] test #roadmap/secops/vulnmgmt 🛫 2025-09-16 📅 2025-11-12
 - [ ] Title - desc 📅 2025-02-26
 - [ ] Title 2 - desc 🛫 2025-02-26
 
 # TESTING
 
-```js
+```dataviewjs
 /****************************************************************************************
- * "Chronos Timeline" Generator from Tasks
+ * Chronos Timeline Generator - Refactored
  *
- * This code collects tasks with certain markers, processes them according to 
- * user-defined frontmatter or inline config, and outputs a "```chronos" codeblock.
- *
- * Key Features:
- *  - Parse #roadmap tasks and optionally nest them.
- *  - Show single-date tasks as points or markers in Chronos if desired.
- *  - Show range tasks (start & due) as events or periods.
- *  - Color tasks by priority or status.
- *  - Use grouping based on root-level segments (dfir for #roadmap/dfir) 
- *    or "full" path or a "breadcrumb" approach.
- *  - Insert user-specified date range for Chronos's default view 
- *    (like > DEFAULTVIEW start|end).
- *  - Optional quarter markers if the user desires, or some other marking approach.
- *  - Insert sub-bullets under tasks (subtasks) into the item description if desired.
- *  - Break the Chronos line at the first dash (`-`) to produce `Event Title | Description`.
+ * Key Changes:
+ *  1. Single-date tasks => points (default `*`).
+ *     - If only "start" => green color (unless priority overrides).
+ *     - If only "due" => red color (unless priority overrides).
+ *     - If only "created"/"scheduled" => purple color (unless priority overrides).
+ *  2. If childLaneOption is "breadcrumb", append sub-markers to the item’s title. 
+ *     If "full", incorporate them into the Chronos group name.
+ *  3. If the roadmap marker is 3+ levels deep (#roadmap/one/two/three => chain.length >=2),
+ *     and we have a valid range => we create a `@ period`.
+ *  4. Quarter markers inserted if showQuarters => true, placed at top by default.
  ****************************************************************************************/
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION PULLED FROM FRONTMATTER OR INLINE FIELDS
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const config = {
+const cfg = {
   // Basic timeline settings
   title: dv.current().roadmapTitle || "Timeline",
-  dateFormat: dv.current().roadmapDateFormat || "YYYY-MM-DD", 
   defaultLane: dv.current().roadmapDefaultLane || "General",
-  groupMode: dv.current().childLaneOption || "breadcrumb",   // "breadcrumb" or "full"
+
+  // "breadcrumb" => append nested path to the item label
+  // "full" => group name includes the full path
+  childLaneOption: dv.current().childLaneOption || "breadcrumb",
 
   // Colors & Priority
   overdueSuffix: dv.current().roadmapOverdueSuffix || " overdue",
@@ -70,307 +67,310 @@ const config = {
     Highest: "red",
     High:    "orange",
     Medium:  "blue",
-    Low:     "green",
-    Lowest:  "cyan"
+    Low:     "cyan",
+    Lowest:  "gray"
   },
-  doneColor:    "gray",     // or "green" if you prefer
-  cancelledColor: "gray",   // or "red" if you prefer
-
-  // Additional toggles
-  topLevelCrit: dv.current().topLevelCrit !== false,  // not as relevant in Chronos, but kept for reference
-  onlyOneDateAsPoint: true,  // if a task has only a start OR due, treat as a Chronos point
+  doneColor:      "green",  // color for done tasks
+  cancelledColor: "gray",   // color for cancelled tasks
 
   // Subtasks -> description
-  // If true, nested bullet lines under tasks become part of the "description" in Chronos (the text after "|")
-  // The script will gather them up into a bullet list or single line
-  captureSubtasks: true,   
+  captureSubtasks: true,
 
-  // Order & DefaultView
-  defaultViewStart: dv.current().roadmapStart || "",
-  defaultViewEnd:   dv.current().roadmapEnd   || "",
-  // Chronos syntax example:   > DEFAULTVIEW 2025|2030
+  // single-date char
+  singleDateChar: "*",
+
+  // Single-date color defaults
+  createdOnlyColor: "purple",
+  startedOnlyColor: "green",
+  dueOnlyColor:     "red",
+
+  // If linkTasks is true, we insert a link to the note containing that task
+  linkTasks: dv.current().roadmapLinkTasks || false,
 
   // Quarter Markers
   showQuarters: dv.current().showQuarters !== false,
-  // "top" or "bottom" for whether to put these Q# lines in the code or not 
-  // (Chronos doesn't have a built-in concept of top/bottom, but we can place them as markers or points)
-  quarterPlacement: "markers",   // "markers" or "points"
+  quarterPlacement: "top", // or "bottom" or "none"
+
+  // Date Range for Chronos defaultView
+  defaultViewStart: dv.current().roadmapStart || "",
+  defaultViewEnd:   dv.current().roadmapEnd   || "",
+
+  // Ordering
+  orderBy: dv.current().orderBy || "start",  // e.g. "start|content" or "-start|end"
 };
 
-// Priority mapping based on emojis
-const priorityMap = {
+
+// Priority mapping from emojis
+const emojiPriorityMap = {
   "🔺": "Highest",
   "⏫": "High",
-  "🔼": "High",    // optional, if you also use these emojis
+  "🔼": "High",
   "⏺️": "Medium",
   "🔽": "Low",
   "⏬": "Lowest"
 };
 
-// A helper to detect priority from text
-function getPriority(text) {
-  for (let emoji in priorityMap) {
-    if (text.includes(emoji)) return priorityMap[emoji];
+// Extract priority from text by scanning for known emojis
+function getPriorityFromText(text) {
+  for (let e in emojiPriorityMap) {
+    if (text.includes(e)) return emojiPriorityMap[e];
   }
   return "";
 }
 
-// A helper to parse #roadmap markers
-function parseRoadmapMarkers(text) {
-  // up to 4 levels
-  const roadmapRegex = /#roadmap(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?/;
-  let lane = config.defaultLane;
-  let childChain = [];
-  let match = text.match(roadmapRegex);
-  if (match) {
-    if (match[1]) lane = match[1];
-    for (let i = 2; i < match.length; i++) {
-      if (match[i]) childChain.push(match[i]);
+// Parse #roadmap markers up to 4 levels
+function parseRoadmapMarkers(txt) {
+  const rx = /#roadmap(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?/;
+  let m = txt.match(rx);
+  let lane = cfg.defaultLane;
+  let chain = [];
+  if (m) {
+    if (m[1]) lane = m[1];
+    for (let i = 2; i < m.length; i++) {
+      if (m[i]) chain.push(m[i]);
     }
   }
-  return {lane, childChain};
+  return { lane, chain };
 }
 
 // Function that extracts a sub-bullet list for a given task, if desired.
-function collectSubtaskDescription(task) {
-  if (!config.captureSubtasks || !task.subtasks) return "";
+function gatherSubBullets(task) {
+  if (!cfg.captureSubtasks || !task.subtasks) return "";
   // Let's build a bullet list of subtask lines
   // This can be refined to skip completed or do something else
-  let lines = [];
+  let arr = [];
   for (let s of task.subtasks) {
     // skip if done or not, your choice
-    lines.push("- " + s.text);
+    arr.push(s.text + ". ");
   }
-  if (lines.length > 0) {
-    return "" + lines.join(". ");
+  if (arr.length > 0) {
+    return "" + arr.join(". ");
   }
   return "";
 }
 
-// A small helper to see if a task is "done" or "cancelled".
-function getTaskStatus(task) {
-  // typical tasks plugin statuses might be "done", "cancelled", etc.
-  if (task.status === "done") return "done";
-  if (task.status === "cancelled") return "cancelled";
-  return "pending";
+// Convert a dash " - " into [title,desc]
+function parseTitleDesc(str) {
+  let idx = str.indexOf(" - ");
+  if (idx < 0) return [str.trim(), ""];
+  let t = str.slice(0, idx).trim();
+  let d = str.slice(idx + 3).trim();
+  return [t, d];
 }
 
-// A helper to convert an Obsidian Task date to an ISO date string for Chronos
-function toChronosDate(obsidianDate) {
-  // ex: 2025-01-23
-  // Chronos supports YYYY, YYYY-MM, etc. We'll just produce YYYY-MM-DD
-  return obsidianDate.toString().split("T")[0];
+// Basic function for coloring tasks by done/cancelled
+function getStatusColor(task) {
+  if (task.status === "done") return `#${cfg.doneColor}`;
+  if (task.status === "cancelled") return `#${cfg.cancelledColor}`;
+  return ""; // no color for pending
 }
 
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
+// Convert Obsidian Task date to Chronos YYYY-MM-DD
+function toChronosDate(dateObj) {
+  return dateObj.toString().split("T")[0];
+}
 
-// MAIN CODE -------------------------------------------------------------------
 
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////
+// 2. MAIN SCRIPT
+//////////////////////////////////////////////////////////////////////////////////////////
 
-// Query tasks (#roadmap or #ganttchart or anything you want):
-const tasks = dv.pages("")
-  .file.tasks
-  .where(t => 
-    (t.text.includes("#roadmap") || t.text.includes("#timeline")) 
-    && !t.completed
-  );
-
-// We'll store lines in a big array, then  join them at the end
 let lines = [];
 
-// We might add some optional flags for Chronos at the top. 
-// e.g. > ORDERBY start
-// or a default view if config.defaultViewStart & config.defaultViewEnd
-// or a color scheme
-let topFlags = [];
+// 2.1. Query all tasks that have #roadmap
+const tasks = dv.pages("").file.tasks
+  .where(t => t.text.includes("#roadmap"));
 
-if (config.defaultViewStart && config.defaultViewEnd) {
-  topFlags.push(`DEFAULTVIEW  ${config.defaultViewStart}|${config.defaultViewEnd}`);
-} 
+for (let task of tasks) {
+  // We'll gather potential date fields:
+  let created   = task.created;
+  let scheduled = task.scheduled;
+  let start     = task.start;
+  let due       = task.due;
 
-// For ordering, you can decide how to handle. Let's do nothing by default:
-topFlags.push(`ORDERBY start`);
+  // Convert them to strings
+  let cDate = created   ? toChronosDate(created)   : "";
+  let sDate = start     ? toChronosDate(start)     : "";
+  let dDate = due       ? toChronosDate(due)       : "";
+  let schDate= scheduled? toChronosDate(scheduled) : "";
 
-//////////////////////////////////////
-// Process each task => Chronos items
-//////////////////////////////////////
-for (let t of tasks) {
-  // We assume "start" is t.start, "due" is t.due
-  let start = t.start ? toChronosDate(t.start) : "";
-  let end   = t.due   ? toChronosDate(t.due)   : "";
-  
-  // Get the text and parse lane markers
-  let rawText = t.text;
-  let {lane, childChain} = parseRoadmapMarkers(rawText);
+  // Parse #roadmap markers
+  let { lane, chain } = parseRoadmapMarkers(task.text);
 
-  // Compute priority from emojis
-  let prio = getPriority(rawText);
+  // Clean text for the base title
+  let cleaned = task.text
+    .replace(/#[\w\/-]+/g, "")
+    .replace(/[🚩🔺⏫⏺️🔽⏬➕🛫📅]/g, "")
+    .replace(/\d{4}-\d{2}-\d{2}/g, "")
+    .trim();
+  // "Title - desc" => separate
+  let [title, desc] = parseTitleDesc(cleaned);
 
-  // Also handle "done" or "cancelled" from tasks
-  let localStatus = getTaskStatus(t); // e.g. "done", "cancelled", "pending"
-  
-  // We'll map that to a color or so
-  let color = "";
-  if (localStatus === "done") {
-    color = `#${config.doneColor}`;
-  } else if (localStatus === "cancelled") {
-    color = `#${config.cancelledColor}`;
-  } else if (prio && config.priorityColors[prio]) {
-    color = `#${config.priorityColors[prio]}`; 
-    // for instance, #red, #blue, #green, etc.
+  // Subtasks in desc
+  if (cfg.captureSubtasks && task.subtasks) {
+    let subs = gatherSubBullets(task);
+    if (subs) desc += (desc ? "\n" : "") + subs;
   }
 
-  // For the final lane name if "childLaneOption" is "full"
-  // or keep it as the root and append childChain to the item label
-  let laneBreadcrumb = "";
-  let itemTitle = rawText;
-  // Remove the #roadmap... stuff from itemTitle:
-  itemTitle = itemTitle.replace(/#[\w\/-]+/g, "").trim();
-  // Remove common marker emojis.
-  itemTitle = itemTitle.replace(/[🚩🔺⏫⏺️🔽⏬➕🛫📅]/g, "");
-  // Remove inline dates (YYYY-MM-DD).
-  itemTitle = itemTitle.replace(/\d{4}-\d{2}-\d{2}/g, "");
-
-  // Optionally parse the " dash " in the text to separate title & desc
-  // If we want: "Title - desc text"
-  let dashIndex = itemTitle.indexOf(" - ");
-  let desc = "";
-  if (dashIndex > 0) {
-    desc = itemTitle.slice(dashIndex + 3).trim();
-    itemTitle = itemTitle.slice(0, dashIndex).trim();
-  }
-
-  // If capturing sub-bullets as well, append to desc
-  if (config.captureSubtasks) {
-    let subDesc = collectSubtaskDescription(t);
-    if (subDesc) {
-      desc += (desc ? "\n" : "") + subDesc;
+  // If we want a note link
+  if (cfg.linkTasks) {
+    let noteName = task.link; 
+    if (noteName) {
+      desc += desc ? `\n[[${noteName}]]` : `[[${noteName}]]`;
     }
   }
 
-  // If groupMode is "full"
-  if (config.groupMode === "full" && childChain.length > 0) {
-    lane = lane + "/" + childChain.join(" > ");
-  } 
-  // else if breadcrumb, we do nothing special to lane, but we add childChain to the itemTitle
-  else if (config.groupMode === "breadcrumb" && childChain.length > 0) {
-    itemTitle += ` (${childChain.join(" > ")})`;
+  // If childLaneOption is "breadcrumb", append chain to title
+  // If "full", incorporate them into the lane name
+  if (cfg.childLaneOption === "full" && chain.length > 0) {
+    lane = lane + "/" + chain.join("/");
+  } else if (cfg.childLaneOption === "breadcrumb" && chain.length > 0) {
+    title += ` (${chain.join("/")})`;
   }
 
-  // If the task has both start & end => treat as "Event"  => leading char is `-`
-  // If only one => treat as "Point" => leading char is `*` or `=` or `@` if you want a period
-  // But let's do "point" = single date, "event" = range, "period" = there's an option to treat it as a "period"
+  // Priority from emojis
+  let prio = getPriorityFromText(task.text);
 
-  // We'll default to events, but if only one date is present, we do a point
-  let timelineChar = "-";
-  let hasBoth = (start && end);
-  let sDateForChronos = `[${start}]`;
-  // if we have a range
-  if (hasBoth) {
-    // if they differ, we do [start~end]
-    if (start !== end) {
-      sDateForChronos = `[${start}~${end}]`;
+  // Overdue check
+  let isOverdue = false;
+  if (dDate) {
+    isOverdue = (new Date(dDate) < new Date() && task.status === "pending");
+  }
+
+  // Status color from done/cancelled
+  let color = getStatusColor(task); // if done => green, cancelled => grey
+  // If not done/cancelled => check priority color
+  if (!color && prio && cfg.priorityColors[prio]) {
+    color = `#${cfg.priorityColors[prio]}`;
+  }
+
+  // If overdue => color = overdueFlag, suffix on title
+  if (isOverdue) {
+    color = `#${cfg.overdueFlag}`;
+    title += cfg.overdueSuffix;
+  }
+
+  /************************************************************************
+   * 2.2. Determine if it's a single date or a date range => 
+   *     * [date]  or  - [start~end]
+   *     Possibly a "period" if chain≥2 and we have a range
+   ************************************************************************/
+  let hasStart  = !!sDate;
+  let hasDue    = !!dDate;
+  let hasCreate = !!cDate;
+  let hasSched  = !!schDate;
+
+  let lineChar  = "-"; 
+  let dateStr   = "";
+
+  // We want a range if (start or created) plus a due => e.g. [start~due] or [created~due]
+  // else a single date => a "point"
+  // * If chain≥2 => use `@` if it's a range
+  // else if single date => use `*`
+  
+  // 2.2.1. Check if we have a range
+  let leftSide = ""; 
+  let rightSide= "";
+
+  // We'll prefer start if available, else created or scheduled for the left
+  // We'll prefer due if available for the right
+  if (hasStart) leftSide = sDate;
+  else if (hasCreate) leftSide = cDate;
+  else if (hasSched)  leftSide = schDate;
+
+  if (hasDue) rightSide = dDate;
+
+  let hasRange = (!!leftSide && !!rightSide && (leftSide !== rightSide));
+
+  if (hasRange) {
+    dateStr = `[${leftSide}~${rightSide}]`;
+    lineChar = "-"; // default is an event
+    // If chain≥2 => make it a period
+    if (chain.length >= 2) {
+      lineChar = "@";
     }
   }
   else {
-    // only has 1 date => point
-    timelineChar = "*";
-    // pick whichever is non-empty
-    sDateForChronos = `[${start || end}]`;
+    // single date => use whichever we can find in priority:
+    // start? else due? else scheduled? else created?
+    // The code above might already pick the correct one, but let's finalize it:
+    let singleDate = leftSide || rightSide;
+    if (!singleDate) {
+      // no valid date found => skip
+      continue;
+    }
+    // single date => a "point"
+    lineChar = cfg.singleDateChar;
+    // If no color is set yet:
+    // if it was "start only" => green, "due only" => red, "scheduled or created" => purple
+    // but priority overrides if prio color is found
+    if (!color) {
+      if (hasStart && !hasDue && !hasSched && !hasCreate) {
+        color = `#${cfg.startedOnlyColor}`;
+      }
+      else if (!hasStart && hasDue && !hasSched && !hasCreate) {
+        color = `#${cfg.dueOnlyColor}`;
+      }
+      else if ((!hasStart && !hasDue) && (hasSched || hasCreate)) {
+        color = `#${cfg.createdOnlyColor}`;
+      }
+      // else if multiple single-date fields => we just keep empty or pick one
+    }
+    dateStr = `[${singleDate}]`;
   }
 
-  // next we do color and grouping
-  // Chronos syntax: - [dateRange] #color {Group Name} Title | desc
+  // Build final Chronos line
+  // e.g.  - [start~end] #red {lane} Title | desc
   let groupPart = lane ? `{${lane}}` : "";
-  let colorPart = color ? `${color}` : "";  // e.g. "#red"
+  let colorPart = color ? color : "";
+  let label = desc ? `${title} | ${desc}` : title;
 
-  let finalLabel = "";
-  if (desc) {
-    finalLabel = `${itemTitle} | ${desc}`;
-  } else {
-    finalLabel = itemTitle; // no desc
-  }
+  let segs = [];
+  segs.push(`${lineChar} ${dateStr}`);
+  if (colorPart) segs.push(colorPart);
+  if (groupPart) segs.push(groupPart);
+  segs.push(label);
 
-  // Put it all together
-  // e.g.:  - [2025-01-05~2025-01-15] #red {dfir} My Title | some desc
-  // You can skip the group if you don't want them as groups, or if Chronos's grouping is optional
-  // Also note that if you put a color, it must come before the group in Chronos syntax
-  let lineParts = [];
-  lineParts.push(`${timelineChar} ${sDateForChronos}`);
-  if (colorPart) lineParts.push(colorPart);
-  if (groupPart) lineParts.push(groupPart);
-  lineParts.push(finalLabel);
-
-  // join them with a space
-  let finalLine = lineParts.join(" ");
-
-  lines.push(finalLine);
-} // end tasks loop
-
-/////////////////////////////////////////////////////////
-// Build up the final Chronos code block
-/////////////////////////////////////////////////////////
-let chronosLines = [];
-chronosLines.push("```chronos");
-
-// Insert any topFlags like DEFAULTVIEW or ORDERBY:
-for (let f of topFlags) {
-  chronosLines.push(`> ${f}`);
+  lines.push(segs.join(" "));
 }
 
-// Optional: If we want user color or grouping examples, we can add them here
-if (config.defaultViewStart && config.defaultViewEnd) {
-  // example: > DEFAULTVIEW 2025|2026
-  // It's already done in topFlags
-}
 
-// Insert quarter markers if desired, as Markers or Points. 
-// If showQuarters => we can do something like:
-if (config.showQuarters && config.ganttStart && config.ganttEnd) {
-  let startYear = Number(moment(config.ganttStart, config.dateFormat).format("YYYY"));
-  let endYear   = Number(moment(config.ganttEnd, config.dateFormat).format("YYYY"));
-  if (startYear === endYear) {
-    // e.g. Q1, Q2, Q3, Q4 as markers or points
-    // We'll do markers with single date: e.g. = [year-03-31] Q1
-    // or we do a period or event, up to you
-    let q1 = moment(config.ganttStart, config.dateFormat).month(2).endOf("month").format("YYYY-MM-DD");
-    let q2 = moment(config.ganttStart, config.dateFormat).month(5).endOf("month").format("YYYY-MM-DD");
-    let q3 = moment(config.ganttStart, config.dateFormat).month(8).endOf("month").format("YYYY-MM-DD");
-    let q4 = moment(config.ganttStart, config.dateFormat).month(11).endOf("month").format("YYYY-MM-DD");
-    // If we want them at the top, put them at the start of lines array
-    // If you want them at the bottom, push them last
-    // We'll just add them first here:
-    lines.unshift(`= [${q4}] Q4 marker`);
-    lines.unshift(`= [${q3}] Q3 marker`);
-    lines.unshift(`= [${q2}] Q2 marker`);
-    lines.unshift(`= [${q1}] Q1 marker`);
+// 2.3. BUILD THE CHRONOS CODE BLOCK
+let out = [];
+out.push("```chronos");
+
+// Insert top flags: e.g. > DEFAULTVIEW and > ORDERBY
+if (cfg.defaultViewStart && cfg.defaultViewEnd) {
+  out.push(`> DEFAULTVIEW ${cfg.defaultViewStart}|${cfg.defaultViewEnd}`);
+}
+out.push(`> ORDERBY ${cfg.orderBy}`);
+
+out.push(`# ${cfg.title}`);
+
+// Insert Q1–Q4 if showQuarters
+if (cfg.showQuarters && cfg.defaultViewStart && cfg.defaultViewEnd) {
+  let startY = Number(moment(cfg.defaultViewStart).format("YYYY"));
+  let endY   = Number(moment(cfg.defaultViewEnd).format("YYYY"));
+  if (startY === endY) {
+    let q1 = moment(cfg.defaultViewStart).month(0).format("YYYY-MM-DD");
+    let q2 = moment(cfg.defaultViewStart).month(2).endOf("month").format("YYYY-MM-DD");
+    let q3 = moment(cfg.defaultViewStart).month(5).endOf("month").format("YYYY-MM-DD");
+    let q4 = moment(cfg.defaultViewStart).month(8).endOf("month").format("YYYY-MM-DD");
+    if (cfg.quarterPlacement === "top") {
+      out.push(`= [${q1}] Q1`);
+      out.push(`= [${q2}] Q2`);
+      out.push(`= [${q3}] Q3`);
+      out.push(`= [${q4}] Q4`);
+    }
   }
 }
 
-// Now let's push all lines
-chronosLines.push(...lines);
+// Finally add the lines from tasks
+for (let l of lines) {
+  out.push(l);
+}
 
-// Done. Close code block
-chronosLines.push("```");
+out.push("```");
 
-const chronosContent = chronosLines.join("\n")
-
-console.log(chronosContent);
-
-dv.paragraph(chronosContent);
+dv.paragraph(out.join("\n"));
 ```

@@ -862,6 +862,12 @@
       },
       "mermaid-tools": {
         "startupType": "disabled"
+      },
+      "aw-watcher-obsidian": {
+        "startupType": "disabled"
+      },
+      "obsidian-wakatime": {
+        "startupType": "instant"
       }
     }
   }

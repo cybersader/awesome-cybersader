@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, February 24th 2025, 2:58 pm
+date modified: Monday, February 24th 2025, 5:00 pm
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -18,7 +18,6 @@ cssclasses:
     <figcaption>Welcome to my base in cyberspace</figcaption>
   </figure>
 </div>
-
 
 %%
 ```js
@@ -97,39 +96,35 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                     | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 2:01 PM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Mon - 2/24/2025, 1:57 PM  |
+| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 5:03 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Mon - 2/24/2025, 4:46 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                          | Mon - 2/24/2025, 4:45 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 4:35 PM  |
+| [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 3:02 PM  |
 | [[📁 05 - Organizational Cyber/GRC/GRC.md\|GRC]]                                                                                         | Mon - 2/24/2025, 1:28 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 1:02 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                  | Mon - 2/24/2025, 12:40 PM |
 | [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                           | Mon - 2/24/2025, 12:35 PM |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                          | Mon - 2/24/2025, 11:56 AM |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]          | Mon - 2/24/2025, 10:34 AM |
-| [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 9:41 AM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                            | Mon - 2/24/2025, 8:49 AM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
 > [!info]  [📅 Changelog](📅%20Changelog/📅%20Changelog.md) - view more recent activity here
 
-## Stats
-
-<img height=20 alt="" src="" referrerpolicy="no-referrer">
-
 ## <img width="20" alt="" src="https://cdn.svgporn.com/logos/github-icon.svg" referrerpolicy="no-referrer"> Base Source
 
 <a href="https://github.com/cybersader/cyberbase">
-	<img width=500 src="https://github-readme-stats.vercel.app/api/pin/?username=cybersader&repo=cyberbase&show_icons=true&theme=github_dark"/>
+	<img class="responsive-readme-img" width=100% max-width=500 src="https://github-readme-stats.vercel.app/api/pin/?username=cybersader&repo=cyberbase&show_icons=true&theme=github_dark"/>
 </a>
 
-![Cybersader's GitHub stats | 500](https://github-readme-stats.vercel.app/api?username=cybersader&show_icons=true&theme=github_dark)
+<img class="responsive-readme-img" width=100% max-width=500 src="https://github-readme-stats.vercel.app/api?username=cybersader&show_icons=true&theme=github_dark"/>
 
 > [!info]- What is GitHub?
 > I use [GitHub](https://github.com/about) to store versions of my cyberbase.  It's used by programmers to manage their code and deliver software to the world, but I use it for this base's content.
 
 ### <img width="20" alt="" src="https://cdn.svgporn.com/logos/github-icon.svg" referrerpolicy="no-referrer"> My Activity (1 Year)
 
-<img width=500 src="https://ghchart.rshah.org/cybersader" alt="cybersader's Github chart" />
+<img class="responsive-readme-img" src="https://ghchart.rshah.org/cybersader" alt="cybersader's Github chart" />
 
 ## <img width="20" alt="" src="https://cdn.svgporn.com/logos/obsidian-icon.svg" referrerpolicy="no-referrer"> Time Spent in Base
 
@@ -137,7 +132,15 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 <a href="https://wakatime.com/badge/user/a3508f49-71cc-4d2d-a781-a151a68e95e8/project/43681d5f-d201-42bc-bcf5-a086479be5da"><img width=200 src="https://wakatime.com/badge/user/a3508f49-71cc-4d2d-a781-a151a68e95e8/project/43681d5f-d201-42bc-bcf5-a086479be5da.svg?style=for-the-badge" alt="wakatime"></a>
 
-![Cybersader Wakatime Stats | 500](https://github-readme-stats.vercel.app/api/wakatime?username=cybersader?theme=github_dark&show_icons=true)
+<img class="responsive-readme-img" src="https://github-readme-stats.vercel.app/api/wakatime?username=cybersader?theme=github_dark&show_icons=true" alt="cybersader activity" />
+
+## 📛 Badges
+
+> [!important]- Tech I Like
+> 
+> <img height=20 width=auto src="https://img.shields.io/badge/Bitwarden-175DDC?logo=bitwarden&logoColor=fff&style=flat-square" alt="Bitwarden Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=fff&style=flat-square" alt="Obsidian Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Ubiquiti-0559C9?logo=ubiquiti&logoColor=fff&style=flat-square" alt="Ubiquiti Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Burp%20Suite-F63?logo=burpsuite&logoColor=fff&style=flat-square" alt="Burp Suite Badge">  <img height=20 width=auto src="https://img.shields.io/badge/pfSense-212121?logo=pfsense&logoColor=fff&style=flat-square" alt="pfSense Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Android-34A853?logo=android&logoColor=fff&style=flat-square" alt="Android Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Todoist-E44332?logo=todoist&logoColor=fff&style=flat-square" alt="Todoist Badge">  <img height=20 width=auto src="https://img.shields.io/badge/ShareX-2885F1?logo=sharex&logoColor=fff&style=flat-square" alt="ShareX Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Signal-3B45FD?logo=signal&logoColor=fff&style=flat-square" alt="Signal Badge"> <img height=20 width=auto src="https://img.shields.io/badge/Proton%20Drive-EB508D?logo=protondrive&logoColor=fff&style=flat-square" alt="Proton Drive Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Proton%20Calendar-50B0E9?logo=protoncalendar&logoColor=fff&style=flat-square" alt="Proton Calendar Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Proton%20VPN-66DEB1?logo=protonvpn&logoColor=000&style=flat-square" alt="Proton VPN Badge">  <img height=20 width=auto src="https://img.shields.io/badge/TrueNAS-0095D5?logo=truenas&logoColor=fff&style=flat-square" alt="TrueNAS Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Immich-4250AF?logo=immich&logoColor=fff&style=flat-square" alt="Immich Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Awesome%20Lists-FC60A8?logo=awesomelists&logoColor=fff&style=flat-square" alt="Awesome Lists Badge">  <img height=20 width=auto src="https://img.shields.io/badge/VirusTotal-394EFF?logo=virustotal&logoColor=fff&style=flat-square" alt="VirusTotal Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat-square" alt="Python Badge">  <img height=20 width=auto src="https://img.shields.io/badge/YouTube-F00?logo=youtube&logoColor=fff&style=flat-square" alt="YouTube Badge">  <img height=20 width=auto src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square" alt="GitHub Badge">  <img height=20 width=auto src="https://img.shields.io/badge/OBS%20Studio-302E31?logo=obsstudio&logoColor=fff&style=flat-square" alt="OBS Studio Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Open%20Source%20Initiative-3DA639?logo=opensourceinitiative&logoColor=fff&style=flat-square" alt="Open Source Initiative Badge">  <img height=20 width=auto src="https://img.shields.io/badge/OWASP-000?logo=owasp&logoColor=fff&style=flat-square" alt="OWASP Badge">  <img height=20 width=auto src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=flat-square" alt="pandas Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Metasploit-2596CD?logo=metasploit&logoColor=fff&style=flat-square" alt="Metasploit Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Mermaid-FF3670?logo=mermaid&logoColor=fff&style=flat-square" alt="Mermaid Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Excalidraw-6965DB?logo=excalidraw&logoColor=fff&style=flat-square" alt="Excalidraw Badge">    <img height=20 width=auto src="https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff&style=flat-square" alt="Notion Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff&style=flat-square" alt="Kali Linux Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=fff&style=flat-square" alt="Wireshark Badge">  <img height=20 width=auto src="https://img.shields.io/badge/VMware-607078?logo=vmware&logoColor=fff&style=flat-square" alt="VMware Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=fff&style=flat-square" alt="Discord Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=fff&style=flat-square" alt="Cloudflare Badge">  
+
+%% height=20 width=auto -- put a space after the badge %%
 
 # 📚 About | The Wiki
 
@@ -155,8 +158,4 @@ If you enjoy my work or find value from it, then you can support me below by sha
 
 <a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" width="80%" /></a>
 
-%% Add the below params to make badges consistent %%
-%% height=20 width=auto %%
-%% put a space after the badge %%
 
-<img height=20 width=auto src="https://img.shields.io/badge/Bitwarden-175DDC?logo=bitwarden&logoColor=fff&style=flat-square" alt="Bitwarden Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=fff&style=flat-square" alt="Obsidian Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Ubiquiti-0559C9?logo=ubiquiti&logoColor=fff&style=flat-square" alt="Ubiquiti Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Burp%20Suite-F63?logo=burpsuite&logoColor=fff&style=flat-square" alt="Burp Suite Badge">  <img height=20 width=auto src="https://img.shields.io/badge/pfSense-212121?logo=pfsense&logoColor=fff&style=flat-square" alt="pfSense Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Android-34A853?logo=android&logoColor=fff&style=flat-square" alt="Android Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Todoist-E44332?logo=todoist&logoColor=fff&style=flat-square" alt="Todoist Badge">  <img height=20 width=auto src="https://img.shields.io/badge/ShareX-2885F1?logo=sharex&logoColor=fff&style=flat-square" alt="ShareX Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Signal-3B45FD?logo=signal&logoColor=fff&style=flat-square" alt="Signal Badge"> <img height=20 width=auto src="https://img.shields.io/badge/Proton%20Drive-EB508D?logo=protondrive&logoColor=fff&style=flat-square" alt="Proton Drive Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Proton%20Calendar-50B0E9?logo=protoncalendar&logoColor=fff&style=flat-square" alt="Proton Calendar Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Proton%20VPN-66DEB1?logo=protonvpn&logoColor=000&style=flat-square" alt="Proton VPN Badge">  <img height=20 width=auto src="https://img.shields.io/badge/TrueNAS-0095D5?logo=truenas&logoColor=fff&style=flat-square" alt="TrueNAS Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Immich-4250AF?logo=immich&logoColor=fff&style=flat-square" alt="Immich Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Awesome%20Lists-FC60A8?logo=awesomelists&logoColor=fff&style=flat-square" alt="Awesome Lists Badge">  <img height=20 width=auto src="https://img.shields.io/badge/VirusTotal-394EFF?logo=virustotal&logoColor=fff&style=flat-square" alt="VirusTotal Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat-square" alt="Python Badge">  <img height=20 width=auto src="https://img.shields.io/badge/YouTube-F00?logo=youtube&logoColor=fff&style=flat-square" alt="YouTube Badge">  <img height=20 width=auto src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square" alt="GitHub Badge">  <img height=20 width=auto src="https://img.shields.io/badge/OBS%20Studio-302E31?logo=obsstudio&logoColor=fff&style=flat-square" alt="OBS Studio Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Open%20Source%20Initiative-3DA639?logo=opensourceinitiative&logoColor=fff&style=flat-square" alt="Open Source Initiative Badge">  <img height=20 width=auto src="https://img.shields.io/badge/OWASP-000?logo=owasp&logoColor=fff&style=flat-square" alt="OWASP Badge">  <img height=20 width=auto src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=flat-square" alt="pandas Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Metasploit-2596CD?logo=metasploit&logoColor=fff&style=flat-square" alt="Metasploit Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Mermaid-FF3670?logo=mermaid&logoColor=fff&style=flat-square" alt="Mermaid Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Excalidraw-6965DB?logo=excalidraw&logoColor=fff&style=flat-square" alt="Excalidraw Badge">    <img height=20 width=auto src="https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff&style=flat-square" alt="Notion Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff&style=flat-square" alt="Kali Linux Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=fff&style=flat-square" alt="Wireshark Badge">  <img height=20 width=auto src="https://img.shields.io/badge/VMware-607078?logo=vmware&logoColor=fff&style=flat-square" alt="VMware Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=fff&style=flat-square" alt="Discord Badge">

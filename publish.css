@@ -16,6 +16,12 @@
   --site-name-weight: 600
 } */
 
+.responsive-readme-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
 .site-footer a {
   display: none;
 }
