@@ -392,10 +392,10 @@ if (config.showQuarters && config.ganttStart && config.ganttEnd) {
     // If we want them at the top, put them at the start of lines array
     // If you want them at the bottom, push them last
     // We'll just add them first here:
-    lines.unshift(`= [${q4}] Q4 marker`);
-    lines.unshift(`= [${q3}] Q3 marker`);
-    lines.unshift(`= [${q2}] Q2 marker`);
-    lines.unshift(`= [${q1}] Q1 marker`);
+    lines.unshift(`= [${q4}] Q4`);
+    lines.unshift(`= [${q3}] Q3`);
+    lines.unshift(`= [${q2}] Q2`);
+    lines.unshift(`= [${q1}] Q1`);
   }
 }
 
