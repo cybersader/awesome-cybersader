@@ -3,5 +3,7 @@
   "minimal-style@@h2-size": "1.5em",
   "minimal-style@@h3-size": "1.25em",
   "minimal-style@@h4-size": "1em",
-  "minimal-style@@h5-size": "0.9em"
+  "minimal-style@@h5-size": "0.9em",
+  "minimal-style@@minimal-code-scroll": false,
+  "minimal-style@@trim-cols": true
 }

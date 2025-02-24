@@ -4,32 +4,14 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Monday, February 24th 2025, 10:32 am
+date modified: Monday, February 24th 2025, 10:57 am
 ---
 
-roadmapTitle:: "Roadmap"
-roadmapDateFormat:: "YYYY-MM-DD"
-roadmapAxisFormat:: "%b"
-roadmapDefaultLane:: "General"
-roadmapOverdueSuffix:: " overdue"
-roadmapOverdueFlag:: "crit"
-displayMode:: "compact"
-ganttStart:: "2025-01-01"
-ganttEnd:: "2025-12-31"
-showStart:: false            
-showDue:: false 
-showCreation:: false
-dateRangePattern:: "MM/DD" 
-showQuarters:: true
-topDivider:: "°"
-bottomDivider:: "•"
-topLevelCrit:: true
-childLaneOption:: "breadcrumb"
->  "breadcrumb" (default) or "full"
+# Chronos Timeline (Community Plugin)
 
-quarterDivider:: "[Q#]"
-
-> [!info] Look at [Obsidian Roadmaps](../Obsidian%20Roadmaps.md) for the established tasks
+- [github.com > clairefro/obsidian-plugin-chronos: Render interactive timelines in your Obsidian notes from simple Markdown.](https://github.com/clairefro/obsidian-plugin-chronos?tab=readme-ov-file)
+- [github.com > clairefro/obsidian-plugin-chronos > Table of Contents](https://github.com/clairefro/obsidian-plugin-chronos?tab=readme-ov-file#contents)
+- 
 
 # Chronos + Dataview + Tasks
 
@@ -59,6 +41,29 @@ Extra features:
 - Add links to the related task
 
 ## TEST ZONE
+
+roadmapTitle:: "Roadmap"
+roadmapDateFormat:: "YYYY-MM-DD"
+roadmapAxisFormat:: "%b"
+roadmapDefaultLane:: "General"
+roadmapOverdueSuffix:: " overdue"
+roadmapOverdueFlag:: "red"
+ganttStart:: "2025-01-01"
+ganttEnd:: "2025-12-31"
+showStart:: false            
+showDue:: false 
+showCreation:: false
+dateRangePattern:: "MM/DD" 
+showQuarters:: true
+topDivider:: "°"
+bottomDivider:: "•"
+topLevelCrit:: true
+childLaneOption:: "breadcrumb"
+>  "breadcrumb" (default) or "full"
+
+quarterDivider:: "[Q#]"
+
+> [!info] Look at [Obsidian Roadmaps](../Obsidian%20Roadmaps.md) for the established tasks
 
 ## V0.1
 
@@ -405,9 +410,3 @@ console.log(chronosContent);
 
 dv.paragraph(chronosContent);
 ```
-
-# Chronos Timeline (Community Plugin)
-
-- [github.com > clairefro/obsidian-plugin-chronos: Render interactive timelines in your Obsidian notes from simple Markdown.](https://github.com/clairefro/obsidian-plugin-chronos?tab=readme-ov-file)
-- [github.com > clairefro/obsidian-plugin-chronos > Table of Contents](https://github.com/clairefro/obsidian-plugin-chronos?tab=readme-ov-file#contents)
-- 

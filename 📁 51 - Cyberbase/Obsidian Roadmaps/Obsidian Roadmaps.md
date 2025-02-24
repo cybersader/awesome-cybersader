@@ -86,8 +86,8 @@ const config = {
   captureSubtasks: true,   
 
   // Order & DefaultView
-  defaultViewStart: dv.current().ganttStart || "",
-  defaultViewEnd:   dv.current().ganttEnd   || "",
+  defaultViewStart: dv.current().roadmapStart || "",
+  defaultViewEnd:   dv.current().roadmapEnd   || "",
   // Chronos syntax example:   > DEFAULTVIEW 2025|2030
 
   // Quarter Markers
