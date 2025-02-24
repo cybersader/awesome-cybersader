@@ -19,7 +19,7 @@ Okay.  That all works pretty well now.  However, I've found another community pl
 
 Here's the things I need to implement with the new Chronos plugin:
 - Parse the tasks date into the format that Chronos uses
-- Colors based on priority 
+- Colors based on priority
 - Groups based on the tags (use the breadcrumb and full as options again w/top-level used for major groups)
 - Use a dash in the task title to break the event up into title and description.  If there's nested bullet points under the task, then parse those into the description if possible.  
 - Leave an option/frontmatter to turn on these aspects at will along with other variables or behavior like with the breadcrumb vs full
