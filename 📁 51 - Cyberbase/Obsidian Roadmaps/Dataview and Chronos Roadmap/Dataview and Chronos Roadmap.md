@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Sunday, February 23rd 2025, 7:06 pm
+date modified: Sunday, February 23rd 2025, 9:28 pm
 ---
 
 roadmapTitle:: "Roadmap"
@@ -379,6 +379,7 @@ if (config.defaultViewStart && config.defaultViewEnd) {
 // Insert quarter markers if desired, as Markers or Points. 
 // If showQuarters => we can do something like:
 if (config.showQuarters && config.ganttStart && config.ganttEnd) {
+	 console.log(`${showQuarters} - ${ganttStart} - ${ganttEnd}`)
   let startYear = Number(moment(config.ganttStart, config.dateFormat).format("YYYY"));
   let endYear   = Number(moment(config.ganttEnd, config.dateFormat).format("YYYY"));
   if (startYear === endYear) {
