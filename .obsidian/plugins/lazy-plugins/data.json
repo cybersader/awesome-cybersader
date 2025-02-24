@@ -856,6 +856,12 @@
       },
       "tag-tactician": {
         "startupType": "disabled"
+      },
+      "chronos": {
+        "startupType": "instant"
+      },
+      "mermaid-tools": {
+        "startupType": "disabled"
       }
     }
   }
