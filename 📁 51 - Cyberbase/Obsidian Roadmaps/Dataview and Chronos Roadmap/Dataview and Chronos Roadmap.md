@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Monday, February 24th 2025, 11:06 am
+date modified: Monday, February 24th 2025, 12:03 pm
 ---
 
 # Chronos Timeline (Community Plugin)
@@ -28,7 +28,6 @@ Here's the things I need to implement with the new Chronos plugin:
 - Give default view dates that define the start and end date such as used in previous code
 - Use the status of tasks to also affect the color
 - For tasks which only have a start or due date, make them points
-- Below the group level tasks like `\#roadmap/dfir`, if a description is not given, then instead use a "period" and base the color of the period of the, again, the task priority and/or status.  Done or cancelled could be the only time that green or red are used for instance to show those superseding statuses
 
 Extra features:
 - When a created date is used and no other date, use a point with a purple color
@@ -39,8 +38,8 @@ Extra features:
 - When a frontmatter property named "period_COLOR_NAME_HERE: date_range" is used, make a period at that range with that name and color
 - Be able to take the current year from start and end and auto-generate the quarters and put them in as markers
 - Add links to the related task
-- Give an option flag for automatically turning events that are 2 levels down like `\#roadmap/1st/2nd` into periods.  It's important to note that the color of the period should be, once again, based on status and priority.
-- 
+- Give an option flag for automatically turning events that are 2 levels down like `\#roadmap/1st/2nd` into periods.  It's important to note that the color of the period should be, once again, based on status and priority.  The point here is to have an option that allows you to generate those 2-deep tasks into periods when a description is not present.  Here's another way to phrase it.  Below the group level tasks like `\#roadmap/dfir`, if a description is not given, then instead use a "period" and base the color of the period of the, again, the task priority and/or status.  Done or cancelled could be the only time that green or red are used for instance to show those superseding statuses.
+- For markers that are created from tasks, use the green or red respectively when a start or due date is used.  If no start or due date is used, then use the scheduled date or the created date.  If a priority is also specifically given, then use the related priority color, but prioritize to the start or due date if those are given for the task in terms of color.
 
 ## TEST ZONE
 
@@ -156,7 +155,7 @@ function getPriority(text) {
 
 // A helper to parse #roadmap markers
 function parseRoadmapMarkers(text) {
-  // up to 4 levels
+  // parses up to 4 levels
   const roadmapRegex = /#roadmap(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?(?:\/([\w-]+))?/;
   let lane = config.defaultLane;
   let childChain = [];
@@ -201,11 +200,31 @@ function toChronosDate(obsidianDate) {
   return obsidianDate.toString().split("T")[0];
 }
 
-// Query tasks (#roadmap or #ganttchart or anything you want):
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// MAIN CODE -------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// Query tasks (#roadmap or #timeline or anything you want):
 const tasks = dv.pages("")
   .file.tasks
   .where(t => 
-    (t.text.includes("#roadmap") || t.text.includes("#ganttchart")) 
+    (t.text.includes("#roadmap") || t.text.includes("#timeline")) 
     && !t.completed
   );
 
@@ -242,6 +261,7 @@ for (let t of tasks) {
 
   // Also handle "done" or "cancelled" from tasks
   let localStatus = getTaskStatus(t); // e.g. "done", "cancelled", "pending"
+  
   // We'll map that to a color or so
   let color = "";
   if (localStatus === "done") {
@@ -259,6 +279,10 @@ for (let t of tasks) {
   let itemTitle = rawText;
   // Remove the #roadmap... stuff from itemTitle:
   itemTitle = itemTitle.replace(/#[\w\/-]+/g, "").trim();
+  // Remove common marker emojis.
+  itemTitle = itemTitle.replace(/[🚩🔺⏫⏺️🔽⏬➕🛫📅]/g, "");
+  // Remove inline dates (YYYY-MM-DD).
+  itemTitle = itemTitle.replace(/\d{4}-\d{2}-\d{2}/g, "");
 
   // Optionally parse the " dash " in the text to separate title & desc
   // If we want: "Title - desc text"
@@ -382,12 +406,16 @@ chronosLines.push(...lines);
 // Done. Close code block
 chronosLines.push("```");
 
+const chronosContent = chronosLines.join("\n")
+
+console.log(chronosContent);
+
 dv.paragraph(chronosLines.join("\n"));
 ```
 
 ## V0.1
 
-```dataviewjs
+```js
 /****************************************************************************************
  * "Chronos Timeline" Generator from Tasks
  *

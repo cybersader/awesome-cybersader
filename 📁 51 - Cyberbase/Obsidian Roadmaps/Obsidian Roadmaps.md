@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Monday, February 24th 2025, 10:34 am
+date modified: Monday, February 24th 2025, 11:55 am
 ---
 
 %% Begin Waypoint %%
@@ -223,6 +223,7 @@ for (let t of tasks) {
 
   // Also handle "done" or "cancelled" from tasks
   let localStatus = getTaskStatus(t); // e.g. "done", "cancelled", "pending"
+  
   // We'll map that to a color or so
   let color = "";
   if (localStatus === "done") {
