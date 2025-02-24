@@ -16,20 +16,22 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 10:26 AM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 10:24 AM |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]                         | Mon - 2/24/2025, 10:18 AM |
+| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 12:43 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 12:41 PM |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Mon - 2/24/2025, 12:40 PM |
+| [[📁 05 - Organizational Cyber/GRC/GRC.md\|GRC]]                                                                                                           | Mon - 2/24/2025, 12:36 PM |
+| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                                             | Mon - 2/24/2025, 12:35 PM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]                         | Mon - 2/24/2025, 12:09 PM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                                            | Mon - 2/24/2025, 11:56 AM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]                            | Mon - 2/24/2025, 10:34 AM |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]]                   | Mon - 2/24/2025, 9:41 AM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                              | Mon - 2/24/2025, 8:49 AM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                                            | Sun - 2/23/2025, 7:41 PM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]                            | Sun - 2/23/2025, 3:51 PM  |
 | [[🕸️ UNSTRUCTURED/RSS/RSS.md\|RSS]]                                                                                                                       | Sun - 2/23/2025, 12:59 PM |
 | [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                 | Sun - 2/23/2025, 12:59 PM |
 | [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]                                                                    | Fri - 2/21/2025, 5:08 PM  |
 | [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                                                                                 | Fri - 2/21/2025, 1:05 PM  |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                            | Fri - 2/21/2025, 12:35 PM |
 | [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Thu - 2/20/2025, 8:12 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
 | [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
 | [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
@@ -47,7 +49,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md\|Cyberbase Obsidian Publish]]                                                 | Sun - 2/16/2025, 4:37 PM  |
 | [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                                          | Sun - 2/16/2025, 4:33 PM  |
 | [[📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md\|Knowledge Organization]]                                                 | Sun - 2/16/2025, 4:18 PM  |
-| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                                             | Sun - 2/16/2025, 3:37 PM  |
 | [[📁 05 - Organizational Cyber/Frameworks, Standards/Frameworks, Standards.md\|Frameworks, Standards]]                                                     | Sun - 2/16/2025, 3:37 PM  |
 | [[📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md\|Cyber Frameworks, Ontologies]]          | Sun - 2/16/2025, 3:37 PM  |
 | [[🕸️ UNSTRUCTURED/Digital Garden.md\|Digital Garden]]                                                                                                     | Sun - 2/16/2025, 3:22 PM  |
@@ -65,6 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md\|My Canker Sore Protocol]]                                                           | Wed - 2/12/2025, 9:24 PM  |
 | [[📁 09 - Personal/📁 09 - Personal.md\|📁 09 - Personal]]                                                                                                 | Wed - 2/12/2025, 9:05 PM  |
 | [[📁 12 - Content Creation/Content Curation/Content Curation.md\|Content Curation]]                                                                        | Wed - 2/12/2025, 9:04 PM  |
-| [[📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md\|Awesome AI]]                                                                                         | Wed - 2/12/2025, 8:56 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

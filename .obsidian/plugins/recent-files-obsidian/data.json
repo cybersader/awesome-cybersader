@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "GRC",
+      "path": "📁 05 - Organizational Cyber/GRC/GRC.md"
+    },
+    {
       "basename": "Dataview and Chronos Roadmap",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Dataview & Mermaid Roadmaps",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Static Website Services for Obsidian",
@@ -191,14 +195,6 @@
     {
       "basename": "README",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/README.md"
-    },
-    {
-      "basename": "My Canker Sore Protocol",
-      "path": "📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md"
-    },
-    {
-      "basename": "Digital Content Creation",
-      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
     }
   ],
   "omittedPaths": [],

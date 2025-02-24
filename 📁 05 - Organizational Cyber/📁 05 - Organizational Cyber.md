@@ -32,6 +32,7 @@ publish: true
 - **[[Enterprise IAM]]**
 - **[[Frameworks, Standards]]**
 - **[[Game-Based Tabletops]]**
+- **[[GRC]]**
 - **[[Identity Governance]]**
 - **[[Identity Provider]]**
 - **[[Incident Response]]**
