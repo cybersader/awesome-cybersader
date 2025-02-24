@@ -16,8 +16,8 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 12:43 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 12:41 PM |
+| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 1:02 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 12:59 PM |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                    | Mon - 2/24/2025, 12:40 PM |
 | [[📁 05 - Organizational Cyber/GRC/GRC.md\|GRC]]                                                                                                           | Mon - 2/24/2025, 12:36 PM |
 | [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                                             | Mon - 2/24/2025, 12:35 PM |
