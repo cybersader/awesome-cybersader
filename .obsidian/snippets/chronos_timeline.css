@@ -1,0 +1,15 @@
+/* Chronos Timeline */
+.cm-preview-code-block:has(.block-language-chronos),
+.cm-preview-code-block .block-language-chronos,
+.chronos-timeline-container {
+    /* display: none; */
+    width: calc(var(--file-line-width) + 5em);
+    /* margin-left: -4em !important */
+}
+
+
+.markdown-source-view.mod-cm6 .cm-content .cm-preview-code-block:has(.block-language-chronos) {
+    /* display: none; */
+    /* width: calc(var(--file-line-width) + 20em); */
+    margin-left: -10em !important;
+}
