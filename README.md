@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Tuesday, February 18th 2025, 9:15 am
+date modified: Monday, February 24th 2025, 9:18 am
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -68,11 +68,11 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Feb 23, 2025 - [[Obsidian Roadmaps]]
+> Mon, Feb 24, 2025 - [[README]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
-# Links
+# 🔗 Links
 
 - 📄 [Resume & Portfolio](https://ben.cybersader.com/)
 - 🏠 [Home](https://cybersader.com/) 
@@ -88,7 +88,9 @@ if (pages.length === 0) {
 - [Blog](https://blog.cybersader.com/) 
 	- Tutorials and random stuff (updating workflow soon here)
 
-# Recent Activity
+# 📊 Cyberbase Activity
+
+## Recent Activity
 
 %% DATAVIEW_PUBLISHER: start
 ```dataview
@@ -96,22 +98,40 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                        | Last modified             |
-| ------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]             | Sun - 2/23/2025, 1:10 PM  |
-| [[🕸️ UNSTRUCTURED/RSS/RSS.md\|RSS]]                                                        | Sun - 2/23/2025, 12:59 PM |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                  | Sun - 2/23/2025, 12:59 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                              | Sun - 2/23/2025, 12:57 PM |
-| [[README.md\|README]]                                                                       | Sun - 2/23/2025, 12:57 PM |
-| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]     | Fri - 2/21/2025, 5:08 PM  |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                               | Fri - 2/21/2025, 4:14 PM  |
-| [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                  | Fri - 2/21/2025, 1:05 PM  |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]             | Fri - 2/21/2025, 12:35 PM |
-| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]] | Thu - 2/20/2025, 9:18 PM  |
+| File                                                                                                                                     | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 9:18 AM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 9:18 AM  |
+| [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 8:50 AM  |
+| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                            | Mon - 2/24/2025, 8:49 AM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Sun - 2/23/2025, 9:28 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                          | Sun - 2/23/2025, 7:41 PM  |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]          | Sun - 2/23/2025, 3:51 PM  |
+| [[🕸️ UNSTRUCTURED/RSS/RSS.md\|RSS]]                                                                                                     | Sun - 2/23/2025, 12:59 PM |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                               | Sun - 2/23/2025, 12:59 PM |
+| [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]                                                  | Fri - 2/21/2025, 5:08 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
 > [!info]  [📅 Changelog](📅%20Changelog/📅%20Changelog.md) - view more recent activity here
+
+## Cyberbase Source (GitHub)
+
+<a href="https://github.com/cybersader/awesome-cybersader">
+	<img width=500 src="https://github-readme-stats.vercel.app/api/pin/?username=cybersader&repo=awesome-cybersader&show_icons=true&theme=github_dark"/>
+</a>
+
+![Cybersader's GitHub stats | 500](https://github-readme-stats.vercel.app/api?username=cybersader&show_icons=true&theme=github_dark)
+
+### My Activity (1 Year)
+
+<img width=500 src="https://ghchart.rshah.org/cybersader" alt="cybersader's Github chart" />
+
+## Time Spent in Base
+
+<a href="https://wakatime.com/badge/github/cybersader/awesome-cybersader"><img width=200 src="https://wakatime.com/badge/github/cybersader/awesome-cybersader.svg" alt="wakatime"></a>
+
+![Cybersader Wakatime Stats | 500](https://github-readme-stats.vercel.app/api/wakatime?username=cybersader)
 
 # 📚 About | The Wiki
 

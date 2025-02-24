@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Static Website Services for Obsidian",
+      "path": "📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md"
+    },
+    {
       "basename": "Dataview and Chronos Roadmap",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
     },
@@ -51,10 +59,6 @@
     {
       "basename": "⬇️ Cyber News DROP",
       "path": "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "📅 Changelog",
@@ -195,10 +199,6 @@
     {
       "basename": "Digital Content Creation",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
-    },
-    {
-      "basename": "Content Curation",
-      "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
     }
   ],
   "omittedPaths": [],

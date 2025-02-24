@@ -46,7 +46,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[Obsidian Roadmaps]]**
 - **[[Portfolio CMSs]]**
 - **[[Quick Local JS Testing]]**
-- **[[Static Website Services]]**
+- **[[Static Website Services for Obsidian]]**
 - **[[WikiJS Examples]]**
 
 %% End Landmark %%
