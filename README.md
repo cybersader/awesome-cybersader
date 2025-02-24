@@ -90,8 +90,6 @@ if (pages.length === 0) {
 
 # 📊 Cyberbase Activity
 
-## Recent Activity
-
 %% DATAVIEW_PUBLISHER: start
 ```dataview
 TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mtime DESC LIMIT 10
@@ -100,7 +98,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                     | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 9:18 AM  |
+| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 9:35 AM  |
 | [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 9:18 AM  |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 8:50 AM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                            | Mon - 2/24/2025, 8:49 AM  |
@@ -129,7 +127,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 ## Time Spent in Base
 
-<a href="https://wakatime.com/badge/github/cybersader/awesome-cybersader"><img width=200 src="https://wakatime.com/badge/github/cybersader/awesome-cybersader.svg" alt="wakatime"></a>
+<a href="https://wakatime.com/badge/github/cybersader/awesome-cybersader"><img width=200 src="https://wakatime.com/badge/github/cybersader/awesome-cybersader.svg?style=for-the-badge" alt="wakatime"></a>
 
 ![Cybersader Wakatime Stats | 500](https://github-readme-stats.vercel.app/api/wakatime?username=cybersader)
 

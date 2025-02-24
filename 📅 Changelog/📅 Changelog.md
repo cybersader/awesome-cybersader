@@ -16,7 +16,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 9:18 AM  |
+| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 9:35 AM  |
 | [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 9:18 AM  |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]]                   | Mon - 2/24/2025, 8:50 AM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                              | Mon - 2/24/2025, 8:49 AM  |

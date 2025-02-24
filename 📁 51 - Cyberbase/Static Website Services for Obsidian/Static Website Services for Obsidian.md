@@ -21,4 +21,7 @@ date modified: Monday, February 24th 2025, 8:50 am
 ## Showing Vault Activity Metrics
 
 - [wakatime.com > WakaTime plugin for Obsidian](https://wakatime.com/obsidian)
-- 
+- [activitywatch.net > ActivityWatch - Open-source time tracker](https://activitywatch.net/)
+	- [github.com > simonla/obsidian_waka_box](https://github.com/simonla/obsidian_waka_box)
+	- [github.com > 0xbrayo/aw-import-wakatime: ActivityWatch importer for Wakatime stats](https://github.com/0xbrayo/aw-import-wakatime)
+	- 
