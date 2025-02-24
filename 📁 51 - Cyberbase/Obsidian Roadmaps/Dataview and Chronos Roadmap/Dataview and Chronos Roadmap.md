@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Sunday, February 23rd 2025, 6:53 pm
+date modified: Sunday, February 23rd 2025, 7:06 pm
 ---
 
 roadmapTitle:: "Roadmap"
@@ -62,6 +62,8 @@ Extra features:
 - When a frontmatter property named "marker__COLOR_NAME_HERE: date" is used, make a pointer at that date with that name and color
 - When a frontmatter property named "group_NAME_HERE: date_range" is used, make a group at that range with that name
 - When a frontmatter property named "period_COLOR_NAME_HERE: date_range" is used, make a period at that range with that name and color
+- Be able to take the current year from start and end and auto-generate the quarters and put them in as markers
+- Add links to the related task
 
 ## TEST ZONE
 
@@ -237,7 +239,7 @@ let topFlags = [];
 
 if (config.defaultViewStart && config.defaultViewEnd) {
   topFlags.push(`DEFAULTVIEW  ${config.defaultViewStart}|${config.defaultViewEnd}`);
-}
+} 
 
 // For ordering, you can decide how to handle. Let's do nothing by default:
 topFlags.push(`ORDERBY start`);
