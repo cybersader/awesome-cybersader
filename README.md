@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, February 24th 2025, 10:01 am
+date modified: Monday, February 24th 2025, 10:28 am
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -98,11 +98,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                     | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 9:54 AM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 9:50 AM  |
+| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 10:26 AM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 10:24 AM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Mon - 2/24/2025, 10:18 AM |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 9:41 AM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                            | Mon - 2/24/2025, 8:49 AM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Sun - 2/23/2025, 9:28 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                          | Sun - 2/23/2025, 7:41 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]          | Sun - 2/23/2025, 3:51 PM  |
 | [[🕸️ UNSTRUCTURED/RSS/RSS.md\|RSS]]                                                                                                     | Sun - 2/23/2025, 12:59 PM |
@@ -113,13 +113,16 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 > [!info]  [📅 Changelog](📅%20Changelog/📅%20Changelog.md) - view more recent activity here
 
-## GitHub Stats
+## Base Source
 
 <a href="https://github.com/cybersader/cyberbase">
 	<img width=500 src="https://github-readme-stats.vercel.app/api/pin/?username=cybersader&repo=cyberbase&show_icons=true&theme=github_dark"/>
 </a>
 
 ![Cybersader's GitHub stats | 500](https://github-readme-stats.vercel.app/api?username=cybersader&show_icons=true&theme=github_dark)
+
+> [!info]- What is GitHub?
+> I use [GitHub](https://github.com/about) to store versions of my cyberbase.  It's used by programmers to manage their code and deliver software to the world, but I use it for this base's content.
 
 ### My Activity (1 Year)
 
@@ -129,7 +132,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 <a href="https://wakatime.com/badge/github/cybersader/awesome-cybersader"><img width=200 src="https://wakatime.com/badge/github/cybersader/awesome-cybersader.svg?style=for-the-badge" alt="wakatime"></a>
 
-![Cybersader Wakatime Stats | 500](https://github-readme-stats.vercel.app/api/wakatime?username=cybersader)
+![Cybersader Wakatime Stats | 500](https://github-readme-stats.vercel.app/api/wakatime?username=cybersader?theme=github_dark&show_icons=true)
 
 # 📚 About | The Wiki
 

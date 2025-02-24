@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Sunday, February 23rd 2025, 6:54 pm
+date modified: Monday, February 24th 2025, 10:34 am
 ---
 
 %% Begin Waypoint %%
@@ -17,6 +17,19 @@ date modified: Sunday, February 23rd 2025, 6:54 pm
 - [forum.obsidian.md > Resize and align mermaid diagrams - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/resize-and-align-mermaid-diagrams/7019)
 - [forum.obsidian.md > Gantt charts are way too small to be readable - Bug graveyard - Obsidian Forum](https://forum.obsidian.md/t/gantt-charts-are-way-too-small-to-be-readable/7017)
 - 
+
+# FAKE TASKS
+
+- [ ] IR #roadmap 🚩 🔺 ➕ 2025-02-21 🛫 2025-04-25 📅 2025-06-05
+	- IR stuff
+- [ ] Test time #roadmap/dfir 🛫 2025-04-15 📅 2025-09-15
+- [ ] yrdy 3 #roadmap/dfir/child 🛫 2025-02-27 📅 2025-05-15
+- [ ] test_deep #roadmap/dfir/child/deeper 🛫 2025-04-02 📅 2025-08-12
+- [ ] test #roadmap/secops/vulnmgmt 🛫 2025-09-16 📅 2025-11-12
+- [ ] Title - desc 📅 2025-02-26
+- [ ] Title 2 - desc 🛫 2025-02-26
+
+# TESTING
 
 ```js
 /****************************************************************************************

@@ -6,7 +6,6 @@
   "theme": "system",
   "interfaceFontFamily": "",
   "enabledCssSnippets": [
-    "mermaid_gantt",
-    "chronos_timeline"
+    "mermaid_gantt"
   ]
 }
