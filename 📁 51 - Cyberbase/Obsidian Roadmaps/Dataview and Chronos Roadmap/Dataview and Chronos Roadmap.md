@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, February 23rd 2025, 3:51 pm
-date modified: Monday, February 24th 2025, 7:31 pm
+date modified: Monday, February 24th 2025, 7:45 pm
 ---
 
 # Chronos Timeline (Community Plugin)
@@ -24,7 +24,7 @@ Here's the things I need to implement with the new Chronos plugin:
 - [x] Leave an option/frontmatter to turn on these aspects at will along with other variables or behavior like with the breadcrumb vs full ✅ 2025-02-24
 - [x] Give an option to tune the order behavior ✅ 2025-02-24
 - [x] Use the status of tasks to also affect the color ✅ 2025-02-24
-- [x] Add links to the related task ✅ 2025-02-24
+- [ ] Add links to the related task
 
 Extra features:
 - Points
@@ -36,9 +36,9 @@ Extra features:
 - Functioning ChildLaneOption behavior
 	- [x] Groups based on the tags (use the breadcrumb and full as options again w/top-level used for major groups).  This has stopped working properly it seems. ✅ 2025-02-24
 - Creating periods
-	- [ ] Use `period` deeper than 2 depths on the tag to make a period instead of assuming the 2nd level is one. If a description is given, then  then instead use a "period" and base the color of the period of the, again, the task priority and/or status.  Done or cancelled could be the only time that green or red are used for instance to show those superseding statuses.
-	- [ ] To reiterate, let's say that someone defines a task `[ ] test_title - desc_or_no_desc \#roadmap/section/period 🛫 2025-02-27 📅 2025-05-15`.  This means that a period of "test_title" should be created under "section".  However, this means that it has to have a start or created date along with a due date to define the range.  I would rather have this than the less intuitive way I was creating periods before
-	- [ ] Moreover, if I create a period at a 2nd level and the "full" option is being used for child lanes, then that period needs to be duplicated for each of those generated child sections below it
+	- [x] Use `period` deeper than 2 depths on the tag to make a period instead of assuming the 2nd level is one. If a description is given, then  then instead use a "period" and base the color of the period of the, again, the task priority and/or status.  Done or cancelled could be the only time that green or red are used for instance to show those superseding statuses. ✅ 2025-02-24
+	- [x] To reiterate, let's say that someone defines a task `[ ] test_title - desc_or_no_desc \#roadmap/section/period 🛫 2025-02-27 📅 2025-05-15`.  This means that a period of "test_title" should be created under "section".  However, this means that it has to have a start or created date along with a due date to define the range.  I would rather have this than the less intuitive way I was creating periods before ✅ 2025-02-24
+	- [x] Moreover, if I create a period at a 2nd level and the "full" option is being used for child lanes, then that period needs to be duplicated for each of those generated child sections below it ✅ 2025-02-24
 
 Later:
 - [ ] When a frontmatter property named "marker__COLOR_NAME_HERE: date" is used, make a pointer at that date with that name and color
@@ -53,22 +53,6 @@ Later:
 
 ## TEST ZONE
 
-roadmapTitle:: "Roadmap"
-roadmapDateFormat:: "YYYY-MM-DD"
-roadmapAxisFormat:: "%b"
-roadmapDefaultLane:: "General"
-roadmapOverdueSuffix:: " overdue"
-roadmapOverdueFlag:: "red"
-roadmapStart:: "2025-01-01"
-roadmapEnd:: "2025-12-31"
-roadmapLinkTasks:: false
-showStart:: false            
-showDue:: false 
-showCreation:: false
-showQuarters:: true
-childLaneOption:: "full"
->  "breadcrumb" (default) or "full"
-
 quarterDivider:: "[Q#]"
 
 > [!info] Look at [Obsidian Roadmaps](../Obsidian%20Roadmaps.md) for the established tasks
@@ -76,8 +60,20 @@ quarterDivider:: "[Q#]"
 ## V1.0
 
 `Use TODO v0 to find items that need added or fixed`
-W
-```js
+
+roadmapTitle:: "Roadmap"
+roadmapDateFormat:: "YYYY-MM-DD"
+roadmapDefaultLane:: "General"
+roadmapStart:: "2025-01-01"
+roadmapEnd:: "2025-12-31"
+roadmapLinkTasks:: false
+roadmapPointHasColor:: true
+roadmapShowQuarters:: true
+roadmapChildLaneOption:: "breadcrumb"
+>  "breadcrumb" (default) or "full"
+
+
+```dataviewjs
 //////////////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION PULLED FROM FRONTMATTER OR INLINE FIELDS
 //////////////////////////////////////////////////////////////////////////////////////////
