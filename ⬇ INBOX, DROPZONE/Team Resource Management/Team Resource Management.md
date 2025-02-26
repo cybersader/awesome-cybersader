@@ -6,3 +6,7 @@
 - Monday.com
 - https://vikunja.io/features/ 
 - https://openalternative.co/plane
+- https://appflowy.com/
+- https://ever.team/
+- https://operately.com/
+- https://orgnise.in/
