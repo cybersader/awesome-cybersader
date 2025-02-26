@@ -14,6 +14,7 @@ publish: true
 
 # Misc
 - https://openalternative.co/
+- https://openalternative.co/postiz
 - https://rallly.co/
 - https://samay.app/
 - https://github.com/twentyhq/twenty - Open source alternative to Salesforce
