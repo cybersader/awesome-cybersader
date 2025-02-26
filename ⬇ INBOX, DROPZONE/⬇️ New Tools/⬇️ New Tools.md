@@ -13,7 +13,8 @@ publish: true
 [Desktop (mostly Windows)](../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Desktop%20(mostly%20Windows).md) 
 
 # Misc
-
+- https://rallly.co/
+- https://samay.app/
 - https://github.com/twentyhq/twenty - Open source alternative to Salesforce
 - https://github.com/leaningtech/webvm
 	- https://webvm.io/
