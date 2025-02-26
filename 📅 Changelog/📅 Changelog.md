@@ -16,6 +16,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/25/2025, 9:05 PM  |
 | [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 7:46 PM  |
 | [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 7:46 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]                         | Mon - 2/24/2025, 7:46 PM  |
@@ -33,7 +34,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                            | Fri - 2/21/2025, 12:35 PM |
 | [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                                | Thu - 2/20/2025, 9:18 PM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                             | Wed - 2/19/2025, 9:47 PM  |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/18/2025, 1:44 PM  |
 | [[📁 02 - CyberNews/📁 02 - CyberNews.md\|📁 02 - CyberNews]]                                                                                              | Tue - 2/18/2025, 9:26 AM  |
 | [[📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md\|Dangers of Indifference to Religion]] | Tue - 2/18/2025, 9:05 AM  |
 | [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                               | Tue - 2/18/2025, 9:05 AM  |

@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Monday, February 24th 2025, 5:00 pm
+date modified: Tuesday, February 25th 2025, 9:15 pm
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Feb 24, 2025 - [[📅 Changelog]]
+> Tue, Feb 25, 2025 - [[2025 Cyber News]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,6 +96,7 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                     | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                | Tue - 2/25/2025, 9:05 PM  |
 | [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 7:46 PM  |
 | [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 7:46 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Mon - 2/24/2025, 7:46 PM  |
@@ -105,7 +106,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                  | Mon - 2/24/2025, 12:40 PM |
 | [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                           | Mon - 2/24/2025, 12:35 PM |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]          | Mon - 2/24/2025, 10:34 AM |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                            | Mon - 2/24/2025, 8:49 AM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -130,9 +130,17 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 <a href="https://wakatime.com/badge/github/cybersader/cyberbase"><img width=200 src="https://wakatime.com/badge/github/cybersader/cyberbase.svg?style=for-the-badge" alt="wakatime"></a>
 
+%%
 <a href="https://wakatime.com/badge/user/a3508f49-71cc-4d2d-a781-a151a68e95e8/project/43681d5f-d201-42bc-bcf5-a086479be5da"><img width=200 src="https://wakatime.com/badge/user/a3508f49-71cc-4d2d-a781-a151a68e95e8/project/43681d5f-d201-42bc-bcf5-a086479be5da.svg?style=for-the-badge" alt="wakatime"></a>
+%%
 
-<img class="responsive-readme-img" src="https://github-readme-stats.vercel.app/api/wakatime?username=cybersader?theme=github_dark&show_icons=true" alt="cybersader activity" />
+%%
+<a href="https://wakatime.com/@a3508f49-71cc-4d2d-a781-a151a68e95e8"><img img width=200 src="https://wakatime.com/badge/user/a3508f49-71cc-4d2d-a781-a151a68e95e8.svg?style=for-the-badge" alt="Total time coded since Feb 24 2025" /></a>
+%%
+
+%%
+<img class="responsive-readme-img" src="https://github-readme-stats.vercel.app/api/wakatime?username=cybersader&show_icons=true" alt="cybersader activity" />
+%%
 
 ## 📛 Badges
 
