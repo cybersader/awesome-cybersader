@@ -11,3 +11,5 @@
 - https://operately.com/
 - https://orgnise.in/
 - https://www.cascade.app/
+- https://www.g2.com/categories/strategic-planning-and-execution
+- 
