@@ -233,6 +233,7 @@ date modified: Monday, February 17th 2025, 9:38 am
 		- [forum.obsidian.md > Conflict-Free Replicated Data Type (CRDT) - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/conflict-free-replicated-data-type-crdt/79940)
 		- 
 	- Tech - CRDT, OT, COOT, text editors, content editing
+		- https://pub.dev/packages/appflowy_editor
 		- [yjs.dev > Yjs Shared Editing](https://yjs.dev/#features)
 			- [github.com > yjs/yjs: Shared data types for building collaborative software](https://github.com/yjs/yjs)
 		- [github.com > KyleAMathews/trpc-crdt: tRPC integrations for CRDTs: CRDT-native RPC calls](https://github.com/KyleAMathews/trpc-crdt)
