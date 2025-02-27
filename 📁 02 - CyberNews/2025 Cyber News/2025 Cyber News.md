@@ -27,4 +27,5 @@ date modified: Tuesday, February 18th 2025, 9:27 am
 - These investigations are being executed at high speed without regard for the security ramifications.  
 - FOIA - freed of information act
     - There's a lot of information you don't want in an unclassed system
-    - 
+- You can't audit an open AI model because you have the tool and not how the tool was made.  Software is different from a utility piece of data just like how an exe doesn't show you the secret sauce.
+- Why do we all use O365 mail?
