@@ -16,9 +16,14 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Tue - 2/25/2025, 9:05 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Mon - 2/24/2025, 7:46 PM  |
-| [[README.md\|README]]                                                                                                                                      | Mon - 2/24/2025, 7:46 PM  |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                              | Thu - 2/27/2025, 8:59 PM  |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Thu - 2/27/2025, 8:59 PM  |
+| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                                                                | Thu - 2/27/2025, 8:59 PM  |
+| [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                                                           | Thu - 2/27/2025, 8:59 PM  |
+| [[⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md\|Financial Cyber]]                                                                                  | Thu - 2/27/2025, 8:59 PM  |
+| [[⬇ INBOX, DROPZONE/Team Resource Management/Team Resource Management.md\|Team Resource Management]]                                                       | Thu - 2/27/2025, 8:59 PM  |
+| [[README.md\|README]]                                                                                                                                      | Tue - 2/25/2025, 9:15 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Tue - 2/25/2025, 9:06 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]                         | Mon - 2/24/2025, 7:46 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                                            | Mon - 2/24/2025, 7:44 PM  |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]]                   | Mon - 2/24/2025, 3:02 PM  |
@@ -41,7 +46,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 13 - Religion, Ontology, Philosophy/Atheism vs Christianity/Atheism vs Christianity.md\|Atheism vs Christianity]]                                     | Tue - 2/18/2025, 9:04 AM  |
 | [[📁 13 - Religion, Ontology, Philosophy/Catholicism vs Protestantism/Catholicism vs Protestantism.md\|Catholicism vs Protestantism]]                      | Tue - 2/18/2025, 9:03 AM  |
 | [[📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md\|Portfolio CMSs]]                                                                                     | Mon - 2/17/2025, 10:14 AM |
-| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                                                                | Mon - 2/17/2025, 9:38 AM  |
 | [[🕸️ Daily Notes/2025/02/2025-02-17-Monday/2025-02-17-Monday.md\|2025-02-17-Monday]]                                                                      | Mon - 2/17/2025, 9:34 AM  |
 | [[🕸️ UNSTRUCTURED/Datetime Formatting/Datetime Formatting.md\|Datetime Formatting]]                                                                       | Sun - 2/16/2025, 6:57 PM  |
 | [[📁 12 - Content Creation/Free SVG/Free SVG.md\|Free SVG]]                                                                                                | Sun - 2/16/2025, 6:16 PM  |
@@ -62,9 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 12 - Content Creation/Cybersader Content/Cybersader Content.md\|Cybersader Content]]                                                                  | Sat - 2/15/2025, 5:22 PM  |
 | [[📁 12 - Content Creation/Cybersader Content/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md\|Stable Diffusion Setup]]              | Sat - 2/15/2025, 4:47 PM  |
 | [[📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md\|Cybersader Art Inspiration]]                       | Sat - 2/15/2025, 2:19 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-14-Friday/2025-02-14-Friday.md\|2025-02-14-Friday]]                                                                      | Fri - 2/14/2025, 12:51 PM |
-| [[📁 09 - Personal/My Canker Sore Protocol/My Canker Sore Protocol.md\|My Canker Sore Protocol]]                                                           | Wed - 2/12/2025, 9:24 PM  |
-| [[📁 09 - Personal/📁 09 - Personal.md\|📁 09 - Personal]]                                                                                                 | Wed - 2/12/2025, 9:05 PM  |
-| [[📁 12 - Content Creation/Content Curation/Content Curation.md\|Content Curation]]                                                                        | Wed - 2/12/2025, 9:04 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

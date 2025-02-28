@@ -16,12 +16,14 @@ publish: true
 - **[[BCDR, DFIR]]**
 - **[[Company Security Strategy from Zero]]**
 - **[[Content Link Downloader]]**
+- **[[Financial Cyber]]**
 - **[[From Other Wiki]]**
 - **[[Go Pro as a Webcam]]**
 - **[[Governance, Mgmt]]**
 - **[[Lookalike Domain Defenses]]**
 - **[[Malware Sandboxing]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
+- **[[Team Resource Management]]**
 - **[[Video Ideas]]**
 - **[[Windows 11 UI Stuff]]**
 - **[[Windows BCDR]]**

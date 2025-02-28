@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Tue, Feb 25, 2025 - [[2025 Cyber News]]
+> Thu, Feb 27, 2025 - [[⬇ INBOX, DROPZONE]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -94,18 +94,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                     | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                | Tue - 2/25/2025, 9:05 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                           | Mon - 2/24/2025, 7:46 PM  |
-| [[README.md\|README]]                                                                                                                    | Mon - 2/24/2025, 7:46 PM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]       | Mon - 2/24/2025, 7:46 PM  |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                          | Mon - 2/24/2025, 7:44 PM  |
-| [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]] | Mon - 2/24/2025, 3:02 PM  |
-| [[📁 05 - Organizational Cyber/GRC/GRC.md\|GRC]]                                                                                         | Mon - 2/24/2025, 1:28 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                  | Mon - 2/24/2025, 12:40 PM |
-| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                           | Mon - 2/24/2025, 12:35 PM |
-| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview & Mermaid Roadmaps/Dataview & Mermaid Roadmaps.md\|Dataview & Mermaid Roadmaps]]          | Mon - 2/24/2025, 10:34 AM |
+| File                                                                                                                               | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                      | Thu - 2/27/2025, 8:59 PM |
+| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                          | Thu - 2/27/2025, 8:59 PM |
+| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                                        | Thu - 2/27/2025, 8:59 PM |
+| [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                                   | Thu - 2/27/2025, 8:59 PM |
+| [[⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md\|Financial Cyber]]                                                          | Thu - 2/27/2025, 8:59 PM |
+| [[⬇ INBOX, DROPZONE/Team Resource Management/Team Resource Management.md\|Team Resource Management]]                               | Thu - 2/27/2025, 8:59 PM |
+| [[README.md\|README]]                                                                                                              | Tue - 2/25/2025, 9:15 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                     | Tue - 2/25/2025, 9:06 PM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]] | Mon - 2/24/2025, 7:46 PM |
+| [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                    | Mon - 2/24/2025, 7:44 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
