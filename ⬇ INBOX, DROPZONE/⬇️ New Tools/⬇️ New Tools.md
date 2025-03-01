@@ -3,7 +3,7 @@ permalink:
 aliases: [New Tech]
 tags: []
 date created: Monday, March 18th 2024, 1:59 pm
-date modified: Sunday, February 2nd 2025, 1:02 pm
+date modified: Friday, February 28th 2025, 10:12 pm
 created: Monday, Mar 18, 2024 01:59 PM
 updated: Tuesday, Mar 19, 2024 08:27 PM
 publish: true
@@ -13,6 +13,7 @@ publish: true
 [Desktop (mostly Windows)](../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Desktop%20(mostly%20Windows).md) 
 
 # Misc
+
 - https://openalternative.co/
 - https://openalternative.co/postiz
 - https://rallly.co/
@@ -34,6 +35,7 @@ publish: true
 
 - [Security Certification Roadmap - Paul Jerimy Media](https://pauljerimy.com/security-certification-roadmap/)
 - [Cloudflare | Log Explorer: monitor security events without third-party storage](https://blog.cloudflare.com/log-explorer)
+- [tryhackme.com > TryHackMe | Cyber Security Training](https://tryhackme.com/soc-sim/)
 
 # Notetaking
 

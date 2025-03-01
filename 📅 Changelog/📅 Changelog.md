@@ -16,14 +16,15 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md\|⬇️ Ontological Drop]]                                                 | Fri - 2/28/2025, 10:13 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Fri - 2/28/2025, 10:13 PM |
+| [[README.md\|README]]                                                                                                                                      | Fri - 2/28/2025, 10:13 PM |
+| [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                                                           | Fri - 2/28/2025, 10:12 PM |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                              | Thu - 2/27/2025, 8:59 PM  |
 | [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                                                                  | Thu - 2/27/2025, 8:59 PM  |
 | [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                                                                | Thu - 2/27/2025, 8:59 PM  |
-| [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                                                           | Thu - 2/27/2025, 8:59 PM  |
 | [[⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md\|Financial Cyber]]                                                                                  | Thu - 2/27/2025, 8:59 PM  |
 | [[⬇ INBOX, DROPZONE/Team Resource Management/Team Resource Management.md\|Team Resource Management]]                                                       | Thu - 2/27/2025, 8:59 PM  |
-| [[README.md\|README]]                                                                                                                                      | Tue - 2/25/2025, 9:15 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                             | Tue - 2/25/2025, 9:06 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md\|Dataview and Chronos Roadmap]]                         | Mon - 2/24/2025, 7:46 PM  |
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                                            | Mon - 2/24/2025, 7:44 PM  |
 | [[📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md\|Static Website Services for Obsidian]]                   | Mon - 2/24/2025, 3:02 PM  |
@@ -65,6 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/_attachments/_attachments.md\|_attachments]]                                          | Sat - 2/15/2025, 5:22 PM  |
 | [[📁 12 - Content Creation/Cybersader Content/Cybersader Content.md\|Cybersader Content]]                                                                  | Sat - 2/15/2025, 5:22 PM  |
 | [[📁 12 - Content Creation/Cybersader Content/AI Content Workflows/Stable Diffusion Setup/Stable Diffusion Setup.md\|Stable Diffusion Setup]]              | Sat - 2/15/2025, 4:47 PM  |
-| [[📁 12 - Content Creation/Cybersader Content/Cybersader Art Inspiration/Cybersader Art Inspiration.md\|Cybersader Art Inspiration]]                       | Sat - 2/15/2025, 2:19 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

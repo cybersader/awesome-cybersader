@@ -4,7 +4,7 @@ aliases: [Religion Drop, Christianity Drop, Catholicism Drop, Apologetics Drop]
 tags: []
 publish: true
 date created: Saturday, April 27th 2024, 8:56 pm
-date modified: Saturday, December 14th 2024, 1:36 pm
+date modified: Friday, February 28th 2025, 10:13 pm
 ---
 
 - What is religion? - the way we live and teachings - all in relation to reality?
@@ -18,3 +18,4 @@ date modified: Saturday, December 14th 2024, 1:36 pm
 	- [Divine Hide and Seek: Is There Truly a Hider, Are We Truly Seeking? - YouTube](https://www.youtube.com/watch?v=8k9A7d2Wnjk)
 - [Jimmy Akin](https://jimmyakin.com/)
 - [Jimmy Akin's Mysterious World - StarQuest Media](https://sqpn.com/podcasts/jimmy-akins-mysterious-world/) 
+- Gambling is never okay unless done on an occasion (not a business who only doing gambling)
