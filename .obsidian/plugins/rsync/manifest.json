@@ -1,0 +1,9 @@
+{
+  "id": "rsync",
+  "name": "Rsync",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Sync files across devices using rsync tool.",
+  "author": "Ganapathy Raman",
+  "isDesktopOnly": true
+}
