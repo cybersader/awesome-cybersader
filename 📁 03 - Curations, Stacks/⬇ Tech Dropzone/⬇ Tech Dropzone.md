@@ -4,11 +4,12 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, March 2nd 2025, 1:04 pm
+date modified: Sunday, March 2nd 2025, 6:53 pm
 ---
 
 # Software, Web
 
+ - [zefi.ai > Complete list of tools for Product Managers in 2024](https://www.zefi.ai/tools-hub)
 - [console.algora.io > Algora: Open source bounties](https://console.algora.io/)
 - [screenpi.pe > screenpipe | Context layer for AGI](https://screenpi.pe/)
 - [Mintlify — The documentation you want, effortlessly](https://mintlify.com/)
@@ -26,8 +27,6 @@ date modified: Sunday, March 2nd 2025, 1:04 pm
 - [screenpipe](https://screenpi.pe/)
 	- [louis030195/screen-pipe: Library to build personalized AI powered by what you've seen, said, or heard. Works with Ollama. Alternative to Rewind.ai. Open. Secure. You own your data. Rust.](https://github.com/louis030195/screen-pipe)
 - [Stashpad - Your streamlined Google Docs alternative](https://www.stashpad.com/)
-- Todo Apps
-	- Requirements: multi-platform, synced, shareable
 - [Analyst Builder](https://www.analystbuilder.com/)
 - https://www.nocode.tech/tools
 - https://datahub.io/
