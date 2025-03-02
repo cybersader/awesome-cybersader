@@ -868,6 +868,15 @@
       },
       "obsidian-wakatime": {
         "startupType": "instant"
+      },
+      "my-thesaurus": {
+        "startupType": "disabled"
+      },
+      "rsync": {
+        "startupType": "disabled"
+      },
+      "yourpulse": {
+        "startupType": "disabled"
       }
     }
   }
