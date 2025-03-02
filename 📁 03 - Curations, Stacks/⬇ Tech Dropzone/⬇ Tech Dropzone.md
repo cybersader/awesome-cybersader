@@ -4,11 +4,12 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, February 16th 2025, 4:33 pm
+date modified: Sunday, March 2nd 2025, 1:04 pm
 ---
 
 # Software, Web
 
+- [console.algora.io > Algora: Open source bounties](https://console.algora.io/)
 - [screenpi.pe > screenpipe | Context layer for AGI](https://screenpi.pe/)
 - [Mintlify — The documentation you want, effortlessly](https://mintlify.com/)
 - [resist.bot > Resistbot](https://resist.bot/)

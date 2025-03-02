@@ -21,5 +21,6 @@ date modified: Tuesday, November 12th 2024, 10:06 pm
 - **[[Marriage]]**
 - **[[Parenthood]]**
 	- **[[Parenthood Discernment and Prep]]**
+- **[[Responsibilities & Coldening]]**
 
 %% End Waypoint %%

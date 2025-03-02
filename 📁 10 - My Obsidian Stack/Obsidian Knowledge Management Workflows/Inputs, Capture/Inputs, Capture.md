@@ -16,6 +16,8 @@ date modified: Sunday, December 22nd 2024, 1:26 pm
 	- [Introduction to Obsidian Web Clipper - Obsidian Help](https://help.obsidian.md/web-clipper)
 - Browser Pasting
 - Daily Notes
+
+- [screenpi.pe > screenpipe | AI app store powered by 24/7 desktop history](https://screenpi.pe/)
 - 
 
 # Sync Between Mobile & Desktop? (Browsers)
