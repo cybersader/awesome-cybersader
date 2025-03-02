@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Mar 2, 2025 - [[Flashcards & Memorization]]
+> Sun, Mar 2, 2025 - [[📅 Changelog]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,11 +96,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                            | Last modified             |
 | --------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                  | Sun - 3/2/2025, 11:45 AM  |
+| [[README.md\|README]]                                                                                           | Sun - 3/2/2025, 11:45 AM  |
 | [[📁 03 - Curations, Stacks/Flashcards & Memorization/Flashcards & Memorization.md\|Flashcards & Memorization]] | Sat - 3/1/2025, 3:42 PM   |
 | [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                           | Sat - 3/1/2025, 3:27 PM   |
 | [[📁 11 - Community/📁 11 - Community.md\|📁 11 - Community]]                                                   | Sat - 3/1/2025, 11:42 AM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                  | Fri - 2/28/2025, 10:14 PM |
-| [[README.md\|README]]                                                                                           | Fri - 2/28/2025, 10:14 PM |
 | [[📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md\|⬇️ Ontological Drop]]      | Fri - 2/28/2025, 10:13 PM |
 | [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                | Fri - 2/28/2025, 10:12 PM |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                   | Thu - 2/27/2025, 8:59 PM  |
