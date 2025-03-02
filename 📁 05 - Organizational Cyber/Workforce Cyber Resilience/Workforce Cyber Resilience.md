@@ -4,12 +4,18 @@ aliases: [Organizational Cyber Pedagogy, Workforce Education]
 tags: []
 publish: true
 date created: Friday, June 14th 2024, 5:00 pm
-date modified: Friday, January 10th 2025, 1:29 pm
+date modified: Sunday, March 2nd 2025, 6:11 pm
 ---
+
+%% Begin Landmark %%
+- **[[Workforce Cyber Training Curriculum]]**
+
+%% End Landmark %%
 
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 
+- [knowbe4.com > Beyond Security Awareness Training | KnowBe4 Human Risk Mgmt Platform](https://www.knowbe4.com/)
 - [cypherlearning.com > CYPHER Learning: World’s leading AI-powered learning platform](https://www.cypherlearning.com/)
 - https://www.staysafeonline.org/resources/online-safety-and-privacy#toolkits
 
