@@ -1,0 +1,22 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+.blue-star-regex-input-flags {
+    width: 50px;
+}
+
+.blue-star-regex-input-alias {
+    width: 350px;
+}
+
+.blue-star-usage-instructions {
+    font-size: 0.8em;
+    color: rgb(174, 174, 174);
+    margin-top: -12px;
+}

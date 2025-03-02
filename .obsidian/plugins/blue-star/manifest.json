@@ -1,0 +1,10 @@
+{
+	"id": "blue-star",
+	"name": "Blue Star",
+	"version": "1.2.5",
+	"minAppVersion": "0.15.0",
+	"description": "Generate Anki flashcards in multiple ways.",
+	"author": "Wang Guoshi",
+	"authorUrl": "https://github.com/Lio5n",
+	"isDesktopOnly": true
+}

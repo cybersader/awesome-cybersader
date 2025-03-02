@@ -1,0 +1,49 @@
+div.custom-menu-hide-item {
+  display: none;
+}
+
+div.custom-menu-hide-separator {
+  display: none;
+}
+
+.hide-commands-description{
+  margin-bottom: var(--size-4-2);
+}
+
+.hide-commands-collapsible-header {
+  padding:  0.75em var(--size-4-4);
+  position: relative;
+  cursor: pointer;
+  color: var(--text-normal);
+  transition: background-color 0.2s;
+  font-weight: var(--font-semibold);
+}
+
+/* 使用 ::before 伪元素实现图标 */
+.hide-commands-collapsible-header::before {
+  content: '▶';
+  position: absolute;
+  left: var(--size-4-1);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: var(--text-faint);
+  transition: all 0.2s ease;
+}
+
+.hide-commands-collapsible.is-open .hide-commands-collapsible-header::before {
+  content: '▼';
+}
+
+/* 内容区域样式 */
+.hide-commands-collapsible-content {
+  padding: var(--size-4-2) var(--size-4-3) var(--size-4-2) var(--size-4-5);
+  background-color: var(--background-primary);
+  border-left: 2px solid var(--background-modifier-border);
+  margin-left: var(--size-4-2);
+}
+
+/* 鼠标交互效果 */
+.hide-commands-collapsible-header:hover {
+  background-color: var(--background-secondary);
+}
