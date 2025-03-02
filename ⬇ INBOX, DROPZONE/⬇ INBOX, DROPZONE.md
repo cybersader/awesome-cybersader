@@ -10,6 +10,7 @@ publish: true
 
 %% Begin Waypoint %%
 - **[[⬇️ New Tools]]**
+- **[[3D Printing]]**
 - **[[Arc Browser on Windows]]**
 - **[[Awesome Password Security]]**
 	- [[Self-Hosted Bitwarden]]

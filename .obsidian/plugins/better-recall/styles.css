@@ -1,0 +1,212 @@
+.better-recall-empty-state-title {
+  margin-bottom: 0.625rem;
+}
+
+.better-recall-card-modal-description {
+  padding-top: 0;
+}
+
+.better-recall-description {
+  margin-bottom: var(--size-2-2);
+}
+
+/* Affects all the fields (dropdown, input field) */
+.better-recall-field {
+  width: 100%;
+}
+.better-recall-back-field {
+  margin-top: var(--size-2-3);
+}
+.better-recall-deck-description-field {
+  margin-top: var(--size-2-3);
+}
+.better-recall-deck-name-field {
+  margin-top: 0;
+}
+
+.better-recall-decks-view .better-recall-buttons-bar {
+  margin-top: 1rem;
+}
+
+.better-recall-delete-button {
+  margin-top: var(--size-4-5);
+}
+
+.better-recall-buttons-bar {
+  margin-top: var(--size-4-5);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.better-recall-centered-view {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  inset-inline-start: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.better-recall-card {
+  background-color: var(--background-primary);
+  padding: var(--size-4-5);
+  cursor: var(--cursor);
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  width: 100%;
+  max-width: 38rem;
+}
+
+.better-recall-deck-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.better-recall-deck-table td {
+  padding: 6px 10px 6px 10px;
+  text-align: left;
+}
+
+.better-recall-deck-table tr:nth-child(2) td {
+  padding: 16px 10px 6px 10px;
+}
+
+.better-recall-deck-table tr:last-child td {
+  padding: 6px 10px 16px 10px;
+}
+
+.better-recall-deck-table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.better-recall-deck-table tr th:first-child {
+  width: 50%;
+}
+
+.better-recall-deck-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.better-recall-deck__buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-3);
+}
+
+.better-recall-deck__button .svg-icon {
+  cursor: var(--cursor-link);
+  display: none;
+  color: var(--text-muted);
+  opacity: 0.4;
+  width: var(--size-4-4);
+  transition: opacity 100ms ease-in-out;
+}
+.better-recall-deck__button .svg-icon:hover {
+  opacity: 1;
+}
+
+.better-recall-deck-action--visible .svg-icon {
+  display: block;
+}
+
+.better-recall-card__add-options {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-3);
+}
+
+.better-recall-new-cards-color {
+  color: var(--color-blue);
+}
+
+.better-recall-learn-cards-color {
+  color: var(--color-red);
+}
+
+.better-recall-due-cards-color {
+  color: var(--color-green);
+}
+
+.better-recall-review-card {
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.better-recall-review-card > p {
+  font-size: var(--font-ui-medium);
+}
+
+.better-recall-review-card__divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--background-modifier-cover);
+}
+
+.better-recall-review-card__content {
+  font-weight: unset;
+}
+
+.better-recall--display-none {
+  display: none;
+}
+
+.better-recall-review-card__answer-buttons-bar {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.better-recall-review-card__answer-buttons-bar button {
+  display: flex;
+  flex-direction: column;
+  height: calc(var(--input-height) * 3);
+  width: unset;
+  max-width: calc(var(--input-height) * 5);
+  min-width: calc(var(--input-height) * 3);
+  padding: 0 var(--size-4-4);
+}
+
+.better-recall-review-card__answer-buttons-bar button span:first-child {
+  font-size: var(--font-ui-large);
+}
+
+.better-recall__cards-list {
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Reset padding from natively used better-recall card. */
+}
+
+.better-recall__cards-list div {
+  transition: backgroundColor 100ms ease-in-out;
+  cursor: pointer;
+  padding: var(--size-2-2) var(--size-4-3);
+}
+
+.better-recall__cards-list div:hover {
+  background-color: var(--color-base-25);
+}
+
+.better-recall__buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.better-recall-review-card__time {
+  font-size: var(--font-smallest);
+  padding: var(--size-2-1) var(--size-2-2);
+  margin-top: var(--size-2-2);
+  border: 1px solid var(--color-base-35);
+  border-radius: var(--radius-s);
+}
