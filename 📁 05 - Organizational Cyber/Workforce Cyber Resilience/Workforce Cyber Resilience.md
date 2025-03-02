@@ -10,6 +10,7 @@ date modified: Friday, January 10th 2025, 1:29 pm
 [Cybersecurity Culture Building](../Cybersecurity%20Culture%20Building/Cybersecurity%20Culture%20Building.md)
 [📁 07 - Cybersader Arsenal](../../📁%2007%20-%20Cybersader%20Arsenal/📁%2007%20-%20Cybersader%20Arsenal.md)
 
+- [cypherlearning.com > CYPHER Learning: World’s leading AI-powered learning platform](https://www.cypherlearning.com/)
 - https://www.staysafeonline.org/resources/online-safety-and-privacy#toolkits
 
 - Data Privacy Week/Day
