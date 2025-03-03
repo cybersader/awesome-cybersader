@@ -14,7 +14,7 @@ date modified: Sunday, March 2nd 2025, 9:25 pm
 - [usageDirect: – Display reliable app usage statistics from up | AlternativeTo](https://alternativeto.net/software/usagedirect/about/ "usageDirect: – Display reliable app usage statistics from up | AlternativeTo")
 - [Truple: Randomly captures and shares screenshots with your accountability partner | AlternativeTo](https://alternativeto.net/software/truple/about/ "Truple: Randomly captures and shares screenshots with your accountability partner | AlternativeTo")
 - [Fortify: Science-based support for lasting healing from sexual compulsivity | AlternativeTo](https://alternativeto.net/software/fortify/about/ "Fortify: Science-based support for lasting healing from sexual compulsivity | AlternativeTo")
-
+- [unplugged.com > UP Phone](https://unplugged.com/products/up-phone/)
 # Persuasive Technology
 
 - 4As - accesibility, anonymity, affordability, addictiveness

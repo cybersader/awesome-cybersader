@@ -4,7 +4,7 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, March 2nd 2025, 7:05 pm
+date modified: Monday, March 3rd 2025, 12:16 pm
 ---
 
 # Software, Web
@@ -56,6 +56,7 @@ sarcasm, math, and language.
 - https://www.saymine.com/
 - https://www.vanta.com/
 - https://www.nudgesecurity.com/
+- [kroki.io > Kroki!](https://kroki.io/#about)
 
 # Hardware, Gadgets
 
