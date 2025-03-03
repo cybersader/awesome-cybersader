@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Mar 2, 2025 - [[📅 Changelog]]
+> Sun, Mar 2, 2025 - [[⬇ Tech Dropzone]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -94,18 +94,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                            | Last modified             |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                  | Sun - 3/2/2025, 11:45 AM  |
-| [[README.md\|README]]                                                                                           | Sun - 3/2/2025, 11:45 AM  |
-| [[📁 03 - Curations, Stacks/Flashcards & Memorization/Flashcards & Memorization.md\|Flashcards & Memorization]] | Sat - 3/1/2025, 3:42 PM   |
-| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                           | Sat - 3/1/2025, 3:27 PM   |
-| [[📁 11 - Community/📁 11 - Community.md\|📁 11 - Community]]                                                   | Sat - 3/1/2025, 11:42 AM  |
-| [[📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md\|⬇️ Ontological Drop]]      | Fri - 2/28/2025, 10:13 PM |
-| [[⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md\|⬇️ New Tools]]                                                | Fri - 2/28/2025, 10:12 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                   | Thu - 2/27/2025, 8:59 PM  |
-| [[📁 02 - CyberNews/2025 Cyber News/2025 Cyber News.md\|2025 Cyber News]]                                       | Thu - 2/27/2025, 8:59 PM  |
-| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                     | Thu - 2/27/2025, 8:59 PM  |
+| File                                                                                                                                          | Last modified           |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Sun - 3/2/2025, 6:53 PM |
+| [[📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md\|Implementing a Forum Website]]               | Sun - 3/2/2025, 6:49 PM |
+| [[📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md\|Cyberbase Development]]                                                   | Sun - 3/2/2025, 6:46 PM |
+| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Sun - 3/2/2025, 6:44 PM |
+| [[📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Resilience.md\|Workforce Cyber Resilience]]                         | Sun - 3/2/2025, 6:11 PM |
+| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                                | Sun - 3/2/2025, 6:11 PM |
+| [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                         | Sun - 3/2/2025, 6:00 PM |
+| [[📁 13 - Religion, Ontology, Philosophy/Responsibilities & Coldening/Responsibilities & Coldening.md\|Responsibilities & Coldening]]         | Sun - 3/2/2025, 6:00 PM |
+| [[📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md\|⬇️ Internet & Children]]          | Sun - 3/2/2025, 3:04 PM |
+| [[📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md\|Inputs, Capture]]                     | Sun - 3/2/2025, 1:03 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

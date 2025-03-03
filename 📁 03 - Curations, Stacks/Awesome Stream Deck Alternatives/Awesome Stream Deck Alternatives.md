@@ -10,6 +10,7 @@ date modified: Friday, January 31st 2025, 4:33 pm
 [Digital Content Creation](../../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Digital%20Content%20Creation.md) 
 [📁 11 - Content Creation](../../📁%2011%20-%20Content%20Creation/📁%2011%20-%20Content%20Creation.md)
 [Awesome Peripherals](../Awesome%20Peripherals/Awesome%20Peripherals.md)
+[Awesome Office Organizing](../Awesome%20Office%20Organizing/Awesome%20Office%20Organizing.md)
 
 # Hardware + Software Solutions
 

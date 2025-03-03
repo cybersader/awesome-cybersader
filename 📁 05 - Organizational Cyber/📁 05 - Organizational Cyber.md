@@ -12,6 +12,7 @@ publish: true
 	- **[[Cyber Small Business Edition]]**
 	- **[[Scanning Inboxes for SaaS Sprawl & Visibility]]**
 	- **[[Web App Vuln Scanning with Nuclei]]**
+- **[[⬇️ Org Tools]]**
 - **[[Active Directory]]**
 - **[[Adversary Emulation]]**
 - **[[AI Usage in Orgs]]**

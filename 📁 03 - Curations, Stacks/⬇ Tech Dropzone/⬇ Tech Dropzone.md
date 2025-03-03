@@ -4,11 +4,12 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, March 2nd 2025, 6:53 pm
+date modified: Sunday, March 2nd 2025, 7:05 pm
 ---
 
 # Software, Web
 
+- [blaze.ai > Blaze | The AI Tool for Teams of One](https://www.blaze.ai/)
  - [zefi.ai > Complete list of tools for Product Managers in 2024](https://www.zefi.ai/tools-hub)
 - [console.algora.io > Algora: Open source bounties](https://console.algora.io/)
 - [screenpi.pe > screenpipe | Context layer for AGI](https://screenpi.pe/)
@@ -83,7 +84,6 @@ sarcasm, math, and language.
 - Algolia Search stuff
     - [DocSearch: Search made for documentation | DocSearch by Algolia](https://docsearch.algolia.com/)
     - [Introducing TalkSearch — making videos searchable, one conference at a time - Algolia Blog | Algolia Blog](https://www.algolia.com/blog/product/talksearch-conference-video-search/)
-- [GitBook - Where technical teams document.](https://www.gitbook.com/)
 - [Raise and spend money with full transparency. - Open Collective](https://opencollective.com/)
 - [GitPlanet - Discover interesting open source projects](https://gitplanet.com/)
 - [Pentest-Tools.com | 20+ Online Penetration Testing Tools](https://pentest-tools.com/)
@@ -92,20 +92,13 @@ sarcasm, math, and language.
 - [Element | Secure collaboration and messaging](https://element.io/)
 - [Matrix.org](https://matrix.org/) - Matrix is an open source project that publishes the [Matrix open standard](https://matrix.org/docs/spec) for secure, decentralised, real-time communication, and its Apache licensed [reference implementations](https://github.com/matrix-org).
 - [Memex](https://memex.garden/) - curate stuff automatically from Discord
-- [Baserow: Open source no-code database and Airtable alternative](https://baserow.io/)
 - [Tines | No-code automation for security teams](https://www.tines.com/)
     - [https://aws.amazon.com/marketplace/search/results?searchTerms=knowledge&pageSize=50](https://aws.amazon.com/marketplace/search/results?searchTerms=knowledge&pageSize=50)
     - Really cool website and hosting options
-- [The headless CMS that your team will love - DatoCMS](https://www.datocms.com/)
-- [Serverless Compute Engine–AWS Fargate–Amazon Web Services](https://aws.amazon.com/fargate/)
 - [Flarum](https://flarum.org/)
     - [https://aws.amazon.com/marketplace/search/results?searchTerms=wiki](https://aws.amazon.com/marketplace/search/results?searchTerms=wiki)
 - [Scoold | An Open Source Q&A Platform](https://scoold.com/)
     - [https://aws.amazon.com/marketplace/search/results?searchTerms=wiki](https://aws.amazon.com/marketplace/search/results?searchTerms=wiki)
-- [BlockSuite](https://block-suite.com/) ****
-- [Alpine.js](https://alpinejs.dev/) - Your new, lightweight, JavaScript framework.
-- [ShareGPT: Share your wildest ChatGPT conversations with one click.](https://sharegpt.com/)
-- [Arc from The Browser Company](https://arc.net/)
 - [Tabox | Save and share tab groups](https://www.tabox.co/)
 - [Download | OpenRefine](https://openrefine.org/download) - explode JSON objects (data engineering)
 - [Expert led courses for front-end web developers. | egghead.io](https://egghead.io/)
@@ -113,7 +106,6 @@ sarcasm, math, and language.
 - [Managed Cloud Hosting Platform Simplified - Cloudways](https://www.cloudways.com/en/)
 - [https://www.iansresearch.com/](https://www.iansresearch.com/)
 - [https://docs.velociraptor.app/](https://docs.velociraptor.app/)
-- [Install PowerToys | Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/install)
 - [NotebookLM](https://notebooklm.google/)
 - [GPT-Powered Questionnaire Automation Software](https://www.conveyor.com/security-questionnaire-automation-software)
 - [Neverinstall: Your personal cloud computer powered by AI](https://neverinstall.com/)

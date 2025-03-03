@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇️ Org Tools",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md"
+    },
+    {
+      "basename": "Personal Productivity Stack",
+      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "Project Management",
+      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
+    },
+    {
+      "basename": "Scalable Project Management",
+      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
+    },
+    {
+      "basename": "Wiki, KB, KMS",
+      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
+    },
+    {
+      "basename": "Teleprompters",
+      "path": "📁 03 - Curations, Stacks/Teleprompters/Teleprompters.md"
+    },
+    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "Awesome Stream Deck Alternatives",
+      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
+    },
+    {
+      "basename": "Awesome Splunk",
+      "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
+    },
+    {
+      "basename": "Markdown Tools",
+      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools/Markdown Tools.md"
+    },
+    {
+      "basename": "Responsibilities & Coldening",
+      "path": "📁 13 - Religion, Ontology, Philosophy/Responsibilities & Coldening/Responsibilities & Coldening.md"
+    },
+    {
+      "basename": "Inputs, Capture",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
     },
     {
       "basename": "Workforce Cyber Resilience",
@@ -17,32 +65,12 @@
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
     {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "Wiki, KB, KMS",
-      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
-    },
-    {
-      "basename": "Personal Productivity Stack",
-      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
-    },
-    {
-      "basename": "Responsibilities & Coldening",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Responsibilities & Coldening/Responsibilities & Coldening.md"
-    },
-    {
       "basename": "Financial Cyber",
       "path": "⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md"
     },
     {
       "basename": "⬇️ Internet & Children",
       "path": "📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md"
-    },
-    {
-      "basename": "Inputs, Capture",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
     },
     {
       "basename": "📁 31 - Education, Pedagogy",
@@ -171,34 +199,6 @@
     {
       "basename": "Cybersader Art Prompts",
       "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Art Prompts/Cybersader Art Prompts.md"
-    },
-    {
-      "basename": "2025-02-17-Monday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-17-Monday/2025-02-17-Monday.md"
-    },
-    {
-      "basename": "Cyberbase Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
-    },
-    {
-      "basename": "Free SVG",
-      "path": "📁 12 - Content Creation/Free SVG/Free SVG.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
-    },
-    {
-      "basename": "Cyber Frameworks, Ontologies",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
-    },
-    {
-      "basename": "Digital Garden",
-      "path": "🕸️ UNSTRUCTURED/Digital Garden.md"
     }
   ],
   "omittedPaths": [],

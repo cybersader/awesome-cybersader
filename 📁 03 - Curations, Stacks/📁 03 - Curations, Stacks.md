@@ -49,6 +49,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Physical Storage]]**
 - **[[Polling Tools]]**
 - **[[Resume & CV Builders]]**
+- **[[Teleprompters]]**
 - **[[Website to Cure Boredom]]**
 - **[[Wiki, KB, KMS]]**
 
