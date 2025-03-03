@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+permalink:
+aliases: []
+tags: []
 publish: true
 date created: Friday, September 20th 2024, 1:59 pm
-date modified: Saturday, October 12th 2024, 5:24 pm
+date modified: Monday, March 3rd 2025, 8:07 am
 ---
 
 
@@ -20,7 +21,7 @@ date modified: Saturday, October 12th 2024, 5:24 pm
     - https://www.blackhillsinfosec.com/projects/
     - Cyber deception & active defense - https://www.activecountermeasures.com/
     - https://www.blackhillsinfosec.com/blog/
-    - https://www.antisyphontraining.com/
+    - [antisyphontraining.com > Home - Antisyphon Training](https://www.antisyphontraining.com/)
 
 # Videos
 
