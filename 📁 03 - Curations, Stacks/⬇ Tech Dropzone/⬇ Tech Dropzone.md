@@ -9,6 +9,10 @@ date modified: Sunday, March 2nd 2025, 7:05 pm
 
 # Software, Web
 
+- [clipdrop.co > Create stunning visuals in seconds with AI.](https://clipdrop.co/)
+- [brandbird.app > BrandBird - Powerful image](https://www.brandbird.app/)
+- [pliim.app > PliimPRO — Safely share your screen with one click](https://pliim.app/)
+- [tuple.app > Tuple: the best remote pair programming app on macOS and Windows](https://tuple.app/)
 - [blaze.ai > Blaze | The AI Tool for Teams of One](https://www.blaze.ai/)
  - [zefi.ai > Complete list of tools for Product Managers in 2024](https://www.zefi.ai/tools-hub)
 - [console.algora.io > Algora: Open source bounties](https://console.algora.io/)
