@@ -36,6 +36,7 @@ date modified: Friday, January 31st 2025, 4:56 pm
 - **[[GitHub Repo Size Limits]]**
 - **[[How to look at obsidian publish code]]**
 - **[[HTML in Obsidian]]**
+- **[[IPFS]]**
 - **[[Media Hosting in Obsidian]]**
 - **[[Obsidian as a CMS]]**
 - **[[Obsidian Markdown Examples]]**

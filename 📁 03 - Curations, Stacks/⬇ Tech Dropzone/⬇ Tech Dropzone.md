@@ -11,6 +11,7 @@ date modified: Sunday, March 2nd 2025, 7:05 pm
 
 - [meetzario.com > Meet Zario](https://www.meetzario.com/)
 - [are.na > Are.na](https://www.are.na/)
+- [habitica.com > Habitica - Gamify Your Life](https://habitica.com/static/home)
 - 
 - [clipdrop.co > Create stunning visuals in seconds with AI.](https://clipdrop.co/)
 - [brandbird.app > BrandBird - Powerful image](https://www.brandbird.app/)

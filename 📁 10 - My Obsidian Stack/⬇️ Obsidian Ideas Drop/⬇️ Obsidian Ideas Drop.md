@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Friday, January 31st 2025, 5:01 pm
+date modified: Sunday, March 2nd 2025, 9:57 pm
 ---
 
 %% Begin Waypoint %%
@@ -38,6 +38,7 @@ date modified: Friday, January 31st 2025, 5:01 pm
 
 # Plugins to look at 
 
+- [konodyuk.github.io > Home | Obsidian Typing](https://konodyuk.github.io/obsidian-typing/)
 - [Latticework: Unifying annotation and freeform text editing for augmented sensemaking](https://www.matthewsiu.com/Latticework)
 - Semantic Canvas
 - Telegraph Publish
