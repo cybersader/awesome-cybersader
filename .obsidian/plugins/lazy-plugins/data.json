@@ -877,6 +877,48 @@
       },
       "yourpulse": {
         "startupType": "disabled"
+      },
+      "better-recall": {
+        "startupType": "disabled"
+      },
+      "blue-star": {
+        "startupType": "disabled"
+      },
+      "card-board": {
+        "startupType": "disabled"
+      },
+      "obsidian-day-planner": {
+        "startupType": "disabled"
+      },
+      "folder-file-splitter": {
+        "startupType": "disabled"
+      },
+      "hide-commands-in-menu": {
+        "startupType": "disabled"
+      },
+      "obsidian-to-anki-plugin": {
+        "startupType": "disabled"
+      },
+      "paste-quote": {
+        "startupType": "disabled"
+      },
+      "publish-to-discourse": {
+        "startupType": "disabled"
+      },
+      "obsidian-spaced-repetition": {
+        "startupType": "disabled"
+      },
+      "task-board": {
+        "startupType": "disabled"
+      },
+      "obsidian-task-collector": {
+        "startupType": "disabled"
+      },
+      "time-ruler": {
+        "startupType": "disabled"
+      },
+      "yanki": {
+        "startupType": "disabled"
       }
     }
   }
