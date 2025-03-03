@@ -4,7 +4,7 @@ tags: [initiatives/cyberbase]
 publish: true
 permalink: 
 date created: Friday, February 21st 2025, 4:03 pm
-date modified: Monday, February 24th 2025, 6:33 pm
+date modified: Sunday, March 2nd 2025, 9:36 pm
 ---
 
 %% Begin Waypoint %%
@@ -16,7 +16,7 @@ date modified: Monday, February 24th 2025, 6:33 pm
 - [forum.obsidian.md > How to style GANTT chart (mermaid)? - Help - Obsidian Forum](https://forum.obsidian.md/t/how-to-style-gantt-chart-mermaid/47883/5)
 - [forum.obsidian.md > Resize and align mermaid diagrams - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/resize-and-align-mermaid-diagrams/7019)
 - [forum.obsidian.md > Gantt charts are way too small to be readable - Bug graveyard - Obsidian Forum](https://forum.obsidian.md/t/gantt-charts-are-way-too-small-to-be-readable/7017)
-- 
+- [youtube.com > How to Build Visual Roadmaps - A Case Study developing the Obsidian-Excalidraw Roadmap](https://www.youtube.com/watch?app=desktop&v=3Qt9WbkcGa4)
 
 # FAKE TASKS
 

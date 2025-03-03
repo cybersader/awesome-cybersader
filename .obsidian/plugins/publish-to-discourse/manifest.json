@@ -1,0 +1,11 @@
+{
+	"id": "publish-to-discourse",
+	"name": "Publish to Discourse",
+	"version": "1.0.9",
+	"minAppVersion": "0.15.0",
+	"description": "Publish notes to the Discourse forum.",
+	"author": "WoodChen",
+	"authorUrl": "https://woodchen.ink",
+	"fundingUrl": "https://wise.com/pay/business/czlltd",
+	"isDesktopOnly": true
+}

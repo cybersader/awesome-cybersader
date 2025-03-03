@@ -4,8 +4,12 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, March 2nd 2025, 12:22 pm
-date modified: Sunday, March 2nd 2025, 7:00 pm
+date modified: Sunday, March 2nd 2025, 9:24 pm
 ---
+
+[Wiki, KB, KMS](../Wiki,%20KB,%20KMS/Wiki,%20KB,%20KMS.md)
+[Organization Documentation & Wikis](../../📁%2005%20-%20Organizational%20Cyber/Organization%20Documentation%20&%20Wikis/Organization%20Documentation%20&%20Wikis.md)
+[Persuasive Technology Defenses](../../📁%2007%20-%20Cybersader%20Arsenal/Persuasive%20Technology%20Defenses/Persuasive%20Technology%20Defenses.md)
 
 - [Windows alternative to Raycast : r/Windows11](https://www.reddit.com/r/Windows11/comments/1d2kjcw/windows_alternative_to_raycast/ "Windows alternative to Raycast : r/Windows11")
 - [PowerToys Run utility for Windows | Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/run "PowerToys Run utility for Windows | Microsoft Learn")

@@ -1,0 +1,338 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+/* Basic Modal Style Override */
+.modal.mod-discourse-sync {
+  max-width: 500px;
+  max-height: 90vh;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content Area Style */
+.discourse-sync-modal {
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Form Area */
+.discourse-sync-modal .form-area {
+  flex-grow: 1;
+  min-height: 0;
+  margin-bottom: 16px;
+}
+
+/* Button Area Fixed at Bottom */
+.discourse-sync-modal .button-area {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.discourse-sync-modal h1 {
+  margin: 0 0 24px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+/* Common Form Container Style */
+.discourse-sync-modal .select-container,
+.discourse-sync-modal .tag-container {
+  margin-bottom: 24px;
+  padding: 0;  /* Remove padding */
+}
+
+.discourse-sync-modal .select-container label,
+.discourse-sync-modal .tag-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+/* Input and Selector Style */
+.discourse-sync-modal select,
+.discourse-sync-modal .tag-select-area {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  font-size: 14px;
+  min-height: 42px;
+}
+
+.discourse-sync-modal select {
+  height: 42px;
+  line-height: 1.5;
+}
+
+.discourse-sync-modal select:focus {
+  border-color: var(--interactive-accent);
+  outline: none;
+}
+
+.discourse-sync-modal .submit-button {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.discourse-sync-modal .submit-button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.discourse-sync-modal .submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Notice Style */
+.discourse-sync-modal .notice {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discourse-sync-modal .notice.success {
+  background-color: var(--background-modifier-success-hover);
+  color: var(--text-success);
+  text-align: center;
+  font-weight: 500;
+}
+
+.discourse-sync-modal .notice.error {
+  background: rgb(255, 235, 235);
+  border: 1px solid rgba(255, 82, 82, 0.2);
+  color: rgb(255, 82, 82);
+}
+
+.discourse-sync-modal .error-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: rgb(255, 82, 82);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.discourse-sync-modal .error-title::before {
+  content: "⚠️";
+  font-size: 16px;
+}
+
+.discourse-sync-modal .error-message {
+  color: rgb(255, 82, 82);
+  opacity: 0.8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.discourse-sync-modal .retry-button {
+  margin-top: 12px;
+  padding: 6px 16px;
+  background-color: transparent;
+  color: rgb(255, 82, 82);
+  border: 1px solid rgb(255, 82, 82);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.discourse-sync-modal .retry-button:hover {
+  background-color: rgb(255, 82, 82);
+  color: white;
+}
+
+/* Tag Select Area Style */
+.discourse-sync-modal .tag-select-area {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.discourse-sync-modal .selected-tags {
+  display: none;  /* Hidden by default */
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+  min-height: 28px;
+}
+
+.discourse-sync-modal .selected-tags:not(:empty) {
+  display: flex;  /* Show when has content */
+}
+
+.discourse-sync-modal .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.discourse-sync-modal .remove-tag {
+  cursor: pointer;
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 4px;
+}
+
+.discourse-sync-modal .remove-tag:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.discourse-sync-modal input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-normal);
+  font-size: 14px;
+  outline: none;
+}
+
+.discourse-sync-modal .suggestions-container {
+  max-height: 250px;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Tag Input Container */
+.discourse-sync-modal .tag-input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Tag Suggestion Dropdown */
+.discourse-sync-modal .tag-suggestions {
+  position: fixed;
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 4px;
+  display: none;  /* Hidden by default */
+}
+
+.discourse-sync-modal .tag-suggestions:not(:empty) {
+  display: block;  /* Show when has content */
+}
+
+/* Tag Suggestion Item */
+.discourse-sync-modal .tag-suggestion {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--text-normal);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: var(--background-primary);
+}
+
+.discourse-sync-modal .tag-suggestion:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+/* Tag Suggestion Scrollbar Style */
+.discourse-sync-modal .tag-suggestions::-webkit-scrollbar {
+  width: 4px;
+}
+
+.discourse-sync-modal .tag-suggestions::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.discourse-sync-modal .tag-suggestions::-webkit-scrollbar-thumb {
+  background-color: var(--background-modifier-border);
+  border-radius: 2px;
+}
+
+.discourse-sync-modal .tag-suggestions::-webkit-scrollbar-thumb:hover {
+  background-color: var(--background-modifier-border-hover);
+}
+
+/* Remove tag-container z-index to avoid interference */
+.discourse-sync-modal .tag-container {
+  position: relative;
+}
+
+.discourse-sync-modal .tag-notice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  background-color: rgb(255, 235, 235);
+  border: 1px solid rgba(255, 82, 82, 0.2);
+  color: rgb(255, 82, 82);
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+  z-index: 1002;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

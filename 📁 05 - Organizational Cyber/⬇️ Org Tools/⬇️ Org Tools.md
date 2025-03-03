@@ -48,6 +48,9 @@ date modified: Sunday, March 2nd 2025, 7:35 pm
 - [theapplaunchpad.com > AppLaunchpad: Free App Store Screenshot Generator](https://theapplaunchpad.com/)
 - [twist.com > Twist: Organized work communication for flexible teams](https://twist.com/)
 - [wrap.so > Wrap — Capture & Edit Beautiful Screenshots](https://wrap.so/)
+- [miro.com > Miro | The Innovation Workspace](https://miro.com/)
+- [morgen.so > Morgen - Daily planning in your calendars](https://www.morgen.so/)
+- [clickup.com > ClickUp™ for Project Management Solutions](https://clickup.com/teams/project-management)
 - 
 
 # Calendar and Scheduling
@@ -58,4 +61,5 @@ date modified: Sunday, March 2nd 2025, 7:35 pm
 - [getclockwise.com > Clockwise: AI Powered Time Management Calendar](https://www.getclockwise.com/)
 - [cal.com > Cal.com | Open Scheduling Infrastructure](https://cal.com/)
 - [worldtimebuddy.com > World Clock & Time Converter](https://www.worldtimebuddy.com/)
+- [microsoft.com > Microsoft Planner | Daily Task and Work Management](https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner)
 - 

@@ -9,6 +9,9 @@ date modified: Sunday, March 2nd 2025, 7:05 pm
 
 # Software, Web
 
+- [meetzario.com > Meet Zario](https://www.meetzario.com/)
+- [are.na > Are.na](https://www.are.na/)
+- 
 - [clipdrop.co > Create stunning visuals in seconds with AI.](https://clipdrop.co/)
 - [brandbird.app > BrandBird - Powerful image](https://www.brandbird.app/)
 - [pliim.app > PliimPRO — Safely share your screen with one click](https://pliim.app/)

@@ -4,10 +4,11 @@ tags: []
 publish: true
 permalink: 
 date created: Monday, December 16th 2024, 9:45 pm
-date modified: Monday, December 16th 2024, 9:46 pm
+date modified: Sunday, March 2nd 2025, 9:33 pm
 ---
 
 [Obsidian Setup for Corporate](../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
+[Obsidian Roadmaps](../../📁%2051%20-%20Cyberbase/Obsidian%20Roadmaps/Obsidian%20Roadmaps.md)
 
 - Use the "Projects" plugin
 	- ideally, go by tags like "project/project_name_here"
