@@ -26,4 +26,6 @@ date modified: Sunday, March 2nd 2025, 9:24 pm
 - [cal.com > Cal.com | Open Scheduling Infrastructure](https://cal.com/)
 - [reclaim.ai > Reclaim AI | Smart Scheduling App for Teams](https://reclaim.ai/)
 - [timeos.ai > timeOS](https://www.timeos.ai/)
+- [rallly.co > Rallly: Group Scheduling Tool](https://rallly.co/)
+- [samay.app > Samay — find a time which works for everyone](https://samay.app/)
 - 

@@ -22,6 +22,7 @@ date modified: Sunday, March 2nd 2025, 6:57 pm
 - [get.mem.ai > Mem – The AI Notes App That Keeps You Organized](https://get.mem.ai/)
 - [tana.inc > Tana](https://tana.inc/)
 - [affine.pro > AFFiNE - All In One KnowledgeOS](https://affine.pro/pricing)
+- [napkin.one > Napkin iPhone Beta](https://napkin.one/)
 - 
 
 # Opinionated Options

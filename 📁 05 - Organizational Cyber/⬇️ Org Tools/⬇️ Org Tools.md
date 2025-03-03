@@ -62,4 +62,5 @@ date modified: Sunday, March 2nd 2025, 7:35 pm
 - [cal.com > Cal.com | Open Scheduling Infrastructure](https://cal.com/)
 - [worldtimebuddy.com > World Clock & Time Converter](https://www.worldtimebuddy.com/)
 - [microsoft.com > Microsoft Planner | Daily Task and Work Management](https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner)
+- [doodle.com > Free online meeting scheduling tool](https://doodle.com/en/)
 - 
