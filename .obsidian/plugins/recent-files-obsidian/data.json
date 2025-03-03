@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
     },
@@ -13,12 +17,16 @@
       "path": "📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md"
     },
     {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
       "basename": "Project Management",
       "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
     },
     {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+      "basename": "📁 34 - Gaming",
+      "path": "📁 34 - Gaming/📁 34 - Gaming.md"
     },
     {
       "basename": "Persuasive Technology Defenses",
@@ -47,10 +55,6 @@
     {
       "basename": "Obsidian Roadmaps",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     },
     {
       "basename": "Scalable Project Management",
@@ -195,10 +199,6 @@
     {
       "basename": "Atheism vs Theism",
       "path": "📁 13 - Religion, Ontology, Philosophy/Atheism vs Theism/Atheism vs Theism.md"
-    },
-    {
-      "basename": "Atheism vs Christianity",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Atheism vs Christianity/Atheism vs Christianity.md"
     }
   ],
   "omittedPaths": [],

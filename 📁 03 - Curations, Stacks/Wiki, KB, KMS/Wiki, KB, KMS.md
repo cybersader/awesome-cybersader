@@ -23,6 +23,17 @@ date modified: Sunday, March 2nd 2025, 6:57 pm
 - [tana.inc > Tana](https://tana.inc/)
 - [affine.pro > AFFiNE - All In One KnowledgeOS](https://affine.pro/pricing)
 - [napkin.one > Napkin iPhone Beta](https://napkin.one/)
+- [appflowy.com > AppFlowy](https://appflowy.com/)
+- [joplinapp.org > Joplin website](https://joplinapp.org/)
+- [logseq.com > A privacy-first](https://logseq.com/)
+- [getoutline.com > Outline – Team knowledge base & wiki](https://www.getoutline.com/)
+- [docmost.com > Open-source collaborative wiki and documentation software | Docmost](https://docmost.com/)
+- [khoj.dev > Khoj AI](https://khoj.dev/)
+- [anytype.io > anytype — the everything app](https://anytype.io/)
+- [pintree.io > Pintree - Browser Bookmarks to Directory Website](https://www.pintree.io/)
+- [vrite.io > Vrite － developer content platform](https://vrite.io/)
+- [brace.to > Brace.to - Save links to visit later](https://brace.to/)
+- [hedgedoc.org > HedgeDoc - Ideas grow better together](https://hedgedoc.org/)
 - 
 
 # Opinionated Options

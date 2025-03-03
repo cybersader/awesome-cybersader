@@ -51,6 +51,14 @@ date modified: Sunday, March 2nd 2025, 7:35 pm
 - [miro.com > Miro | The Innovation Workspace](https://miro.com/)
 - [morgen.so > Morgen - Daily planning in your calendars](https://www.morgen.so/)
 - [clickup.com > ClickUp™ for Project Management Solutions](https://clickup.com/teams/project-management)
+- [odoo.com > Open Source ERP and CRM | Odoo](https://www.odoo.com/)
+- [plane.so > Plane - Project Management Software](https://plane.so/)
+- [vikunja.io > Vikunja: The open-source](https://vikunja.io/)
+- [ever.team > Ever Teams](https://ever.team/)
+- [ballerine.com > Ballerine - Risk Management Platform](https://www.ballerine.com/)
+	- [github.com > ballerine-io/ballerine: Open-source infrastructure and data orchestration platform for risk decisioning](https://github.com/ballerine-io/ballerine)
+- [formance.com > Formance - Open Source Financial Core](https://www.formance.com/)
+- [trycomp.ai > Comp AI - Open Source Platform for SOC 2](https://trycomp.ai/)
 - 
 
 # Calendar and Scheduling

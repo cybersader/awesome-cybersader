@@ -27,4 +27,7 @@ date modified: Sunday, March 2nd 2025, 7:29 pm
 - [atlassian.com > Jira | Issue & Project Tracking Software | Atlassian](https://www.atlassian.com/software/jira)
 - [basecamp.com > Project management software](https://basecamp.com/)
 - [asana.com > Manage your team’s work](https://asana.com/)
+- [appflowy.com > AppFlowy](https://appflowy.com/)
+- [getoutline.com > Outline – Team knowledge base & wiki](https://www.getoutline.com/)
+- [docmost.com > Open-source collaborative wiki and documentation software | Docmost](https://docmost.com/)
 - 
