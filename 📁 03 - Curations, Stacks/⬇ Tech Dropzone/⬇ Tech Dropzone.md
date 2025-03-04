@@ -4,7 +4,7 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Monday, March 3rd 2025, 12:16 pm
+date modified: Monday, March 3rd 2025, 9:03 pm
 ---
 
 # Software, Web
@@ -64,6 +64,11 @@ sarcasm, math, and language.
 - https://www.vanta.com/
 - https://www.nudgesecurity.com/
 - [kroki.io > Kroki!](https://kroki.io/#about)
+
+- [LearnHouse - Pricing](https://www.learnhouse.app/pricing "LearnHouse - Pricing")
+- [ClassroomIO | The Open Source Learning Management System for Companies](https://classroomio.com/ "ClassroomIO | The Open Source Learning Management System for Companies")
+- [Learn to Code for Free - TechBlitz](https://techblitz.dev/ "Learn to Code for Free - TechBlitz")
+- [CourseLit | An Open-source Alternative To Thinkific, Teachable, Podia etc.](https://courselit.app/ "CourseLit | An Open-source Alternative To Thinkific, Teachable, Podia etc.")
 
 # Hardware, Gadgets
 

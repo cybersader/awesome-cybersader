@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, March 2nd 2025, 7:03 pm
-date modified: Sunday, March 2nd 2025, 7:35 pm
+date modified: Monday, March 3rd 2025, 8:57 pm
 ---
 
 [Personal Productivity Stack](../../📁%2003%20-%20Curations,%20Stacks/Personal%20Productivity%20Stack/Personal%20Productivity%20Stack.md)
@@ -71,4 +71,41 @@ date modified: Sunday, March 2nd 2025, 7:35 pm
 - [worldtimebuddy.com > World Clock & Time Converter](https://www.worldtimebuddy.com/)
 - [microsoft.com > Microsoft Planner | Daily Task and Work Management](https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner)
 - [doodle.com > Free online meeting scheduling tool](https://doodle.com/en/)
-- 
+
+# Planning, Projects, Time Tracking
+
+- [OpenProject - Open Source Project Management Software](https://www.openproject.org/ "OpenProject - Open Source Project Management Software")
+- [Dein Gantt Chart - Unser Projektmanagement Tool Agantty](https://www.agantty.com/ "Dein Gantt Chart - Unser Projektmanagement Tool Agantty")
+- [Redbooth](https://redbooth.com/ "Redbooth")
+- [The Planner App for Google Calendar | Reclaim.ai](https://reclaim.ai/features/planner "The Planner App for Google Calendar | Reclaim.ai")
+- [Product roadmap template for teams](https://lucidspark.com/templates/product-roadmap-template "Product roadmap template for teams")
+- [All-In-One Project Management Software - Orangescrum](https://www.orangescrum.com/ "All-In-One Project Management Software - Orangescrum")
+- [Our products | Projectlibre](https://www.projectlibre.com/products "Our products | Projectlibre")
+- [Online Gantt Chart Software | Free Gantt Chart Maker](https://www.instagantt.com/ "Online Gantt Chart Software | Free Gantt Chart Maker")
+- [GanttProject - About](https://www.ganttproject.biz/about "GanttProject - About")
+- [Freedcamp - Free Project Management](https://freedcamp.com/ "Freedcamp - Free Project Management")
+- [Freedcamp - Free Project Management](https://freedcamp.com/ "Freedcamp - Free Project Management")
+- [Versatile &amp; Robust Project Management Software | Wrike](https://www.wrike.com/vay/ "Versatile &amp; Robust Project Management Software | Wrike")
+- [Overview - Redmine](https://www.redmine.org/ "Overview - Redmine")
+- [Kanboard](https://kanboard.org/ "Kanboard")
+- [Open Source ERP Software for Project Management | ERPNext](https://frappe.io/erpnext/open-source-project-management-software "Open Source ERP Software for Project Management | ERPNext")
+- [Project Management features | Odoo](https://www.odoo.com/app/project-features "Project Management features | Odoo")
+- [Groupware | Online Collaboration Apps | Free Trial available](https://www.egroupware.org/en "Groupware | Online Collaboration Apps | Free Trial available")
+- [LibrePlan/libreplan: LibrePlan - Open Web Planning](https://github.com/LibrePlan/libreplan "LibrePlan/libreplan: LibrePlan - Open Web Planning")
+- [TeamGantt Features That Make Work Easier](https://www.teamgantt.com/features "TeamGantt Features That Make Work Easier")
+- [Modern Project &amp; Work Management Platform | Smartsheet](https://www.smartsheet.com/ "Modern Project &amp; Work Management Platform | Smartsheet")
+- [Motion for Teams](https://www.usemotion.com/teams "Motion for Teams")
+- [Routine vs Todoist: Daily Planner Comparison (2025)](https://efficient.app/compare/routine-vs-todoist "Routine vs Todoist: Daily Planner Comparison (2025)")
+- [Time Tracking Software With Invoicing | Harvest](https://www.getharvest.com/ "Time Tracking Software With Invoicing | Harvest")
+- [Gusto: Online Payroll &amp; HR Solutions | #1 in Satisfaction Score](https://gusto.com/ "Gusto: Online Payroll &amp; HR Solutions | #1 in Satisfaction Score")
+- [Rize · Maximize Your Productivity](https://rize.io/?via=efficient "Rize · Maximize Your Productivity")
+- [Timely, automatic time tracking for consultancies, agencies and SaaS businesses](https://www.timely.com/ "Timely, automatic time tracking for consultancies, agencies and SaaS businesses")
+- [Toggl Track: Time Tracking Software for Any Workflow](https://toggl.com/ "Toggl Track: Time Tracking Software for Any Workflow")
+- [Mailman: Take your inbox to zero | Tool for Time Management](https://mailmanhq.com/ "Mailman: Take your inbox to zero | Tool for Time Management")
+- [Routine | The Most Advanced Calendar for Productive People | Routine](https://routine.co/?via=efficient "Routine | The Most Advanced Calendar for Productive People | Routine")
+- [Flexibits | Cardhop — The contacts app you'll actually want to use.](https://flexibits.com/cardhop "Flexibits | Cardhop — The contacts app you'll actually want to use.")
+- [Vimcal - The calendar for people with too many meetings](https://www.vimcal.com/?via=efficient "Vimcal - The calendar for people with too many meetings")
+- [Reclaim AI | Smart Scheduling App for Teams](https://reclaim.ai/?pscd=go.reclaim.ai&ps_partner_key=ZWZmaWNpZW50&ps_xid=Ofv1ArhiPyotsi&gsxid=Ofv1ArhiPyotsi&gspk=ZWZmaWNpZW50 "Reclaim AI | Smart Scheduling App for Teams")
+- [Clockwise: AI Powered Time Management Calendar](https://www.getclockwise.com/ "Clockwise: AI Powered Time Management Calendar")
+- [AI Calendar Generator | Automatically Plan Your Day With Motion](https://www.usemotion.com/calendar "AI Calendar Generator | Automatically Plan Your Day With Motion")
+- [tl;dv.io | AI Notetaker for Zoom, MS Teams &amp; Google Meet](https://tldv.io/?productId=tldv.io&ucc=jn4ukISKVam "tl;dv.io | AI Notetaker for Zoom, MS Teams &amp; Google Meet")
