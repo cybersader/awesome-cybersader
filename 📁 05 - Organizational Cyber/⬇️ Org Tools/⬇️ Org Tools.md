@@ -74,6 +74,15 @@ date modified: Monday, March 3rd 2025, 8:57 pm
 
 # Planning, Projects, Time Tracking
 
+- https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner
+- https://www.openproject.org/pricing/?users=25&currency=usd&mode=onpremises&period=12&support=community&edition=classic
+- https://lucidspark.com/templates/product-roadmap-template
+- https://freedcamp.com/
+- https://www.wrike.com/price/
+- https://www.teamgantt.com/integrations
+- https://www.usemotion.com/integrations
+- 
+
 - [OpenProject - Open Source Project Management Software](https://www.openproject.org/ "OpenProject - Open Source Project Management Software")
 - [Dein Gantt Chart - Unser Projektmanagement Tool Agantty](https://www.agantty.com/ "Dein Gantt Chart - Unser Projektmanagement Tool Agantty")
 - [Redbooth](https://redbooth.com/ "Redbooth")
